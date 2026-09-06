@@ -1,0 +1,225 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Deutsch Lernen", description = "Deine Plattform für Erfolg" } = Astro.props;
+import { ClientRouter } from "astro:transitions";
+import Footer from "../shared/ui/Footer.astro";
+import Navigation from "../shared/ui/Navigation.vue";
+import SkeletonLayouts from "../shared/ui/SkeletonLayouts.vue";
+import "../styles/global.css";
+
+const pathname = Astro.url.pathname;
+---
+
+<!doctype html>
+<html
+  class="no-js"
+  lang="de"
+  style="--font-poppins: 'Poppins', system-ui, sans-serif;"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>{title}</title>
+    <meta
+      content={description}
+      name="description"
+    />
+    <ClientRouter />
+    <link
+      href="/logo.svg"
+      rel="icon"
+      type="image/svg+xml"
+    />
+    <link
+      href="https://fonts.googleapis.com"
+      rel="preconnect"
+    />
+    <link
+      crossorigin
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased">
+    <script src="../shared/scripts/init.ts"></script>
+    <div class="container mx-auto max-w-7xl">
+      <Navigation
+        client:load
+        pathname={pathname}
+      />
+      <div class="px-2 mobile:px-8">
+        <main>
+          <!-- Skeleton container: hidden by default, shown during navigation -->
+          <div
+            aria-hidden="true"
+            class="hidden"
+            id="skeleton-container"
+          >
+            <div
+              class="hidden"
+              data-skeleton="/"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="home"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/themen"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="themen"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/grammatik"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="grammar-overview"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/grammatik/detail"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="grammar-detail"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/vokabeln"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="vocabulary-overview"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/vokabeln/level"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="vocabulary-level"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/vokabeln/detail"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="vocabulary-detail"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/vokabeln/family-tree"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="family-tree"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/pruefung"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="pruefung-overview"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/pruefung/level"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="pruefung-level"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/pruefung/modelltests"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="pruefung-modelltests"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/pruefung/study"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="pruefung-module-study"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/quiz"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="quiz"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/login"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="auth"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="/register"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="auth"
+              />
+            </div>
+            <div
+              class="hidden"
+              data-skeleton="default"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="default-pending"
+              />
+            </div>
+          </div>
+
+          <!-- Page Content -->
+          <div id="page-content">
+            <slot />
+          </div>
+        </main>
+        <Footer />
+      </div>
+    </div>
+    <script src="../shared/scripts/transitions.ts"></script>
+  </body>
+</html>

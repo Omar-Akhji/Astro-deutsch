@@ -1,0 +1,60 @@
+---
+import { getExamLevel, getRedemittel } from "../../../features/pruefung/api/services";
+import ModuleStudyView from "../../../features/pruefung/ui/ModuleStudyView.vue";
+import { getThemen } from "../../../features/themen/api/services";
+import Layout from "../../../layouts/Layout.astro";
+import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
+
+export async function getStaticPaths() {
+  return [
+    { params: { level: "b1", module: "sprechen" } },
+    { params: { level: "b1", module: "schreiben" } },
+    { params: { level: "b2", module: "sprechen" } },
+    { params: { level: "b2", module: "schreiben" } },
+    { params: { level: "B1", module: "sprechen" } },
+    { params: { level: "B1", module: "schreiben" } },
+    { params: { level: "B2", module: "sprechen" } },
+    { params: { level: "B2", module: "schreiben" } },
+  ];
+}
+
+const { level, module } = Astro.params;
+
+const [examResponse, redemittelResponse, themenResponse] = await Promise.all([
+  getExamLevel(level!),
+  getRedemittel(level!),
+  getThemen(),
+]);
+
+const currentExam = examResponse.data;
+const redemittel = redemittelResponse.data;
+const themen = themenResponse.data;
+---
+
+<Layout
+  description={`Struktur-Checkliste und Themen für den ${module}-Teil der Prüfung.`}
+  title={currentExam ?
+    `${currentExam.level} ${module!.charAt(0).toUpperCase() + module!.slice(1)} - Vorbereitung`
+  : "Modul - Vorbereitung"}
+>
+  {
+    !currentExam || !redemittel ?
+      <div class="px-8 py-16 text-center text-white">
+        <h1 class="mb-4 text-3xl">Lektion nicht gefunden</h1>
+      </div>
+    : <AnimateOnScroll
+        animation="fade-up"
+        as="main"
+        client:load
+      >
+        <ModuleStudyView
+          client:load
+          examData={currentExam}
+          initialThemen={themen ?? []}
+          level={level!}
+          module={module as "sprechen" | "schreiben"}
+          redemittel={redemittel}
+        />
+      </AnimateOnScroll>
+  }
+</Layout>

@@ -1,0 +1,16 @@
+---
+import AuthCard from "../features/auth/ui/AuthCard.vue";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  description="Melde dich bei Deutsch Lernen an, um deinen Lernfortschritt bei Vokabeln, Grammatik und Prüfungen zu speichern."
+  title="Anmelden | Deutsch Lernen"
+>
+  <main class="container mx-auto px-4 py-16 flex justify-center items-center">
+    <AuthCard
+      client:load
+      defaultView="signin"
+    />
+  </main>
+</Layout>

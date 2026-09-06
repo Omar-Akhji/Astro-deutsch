@@ -1,0 +1,95 @@
+---
+import { vocabList } from "../../../features/vocabulary/api/data";
+import { getVocabById } from "../../../features/vocabulary/api/services";
+import FamilyTree from "../../../features/vocabulary/ui/FamilyTree.vue";
+import VocabularyTable from "../../../features/vocabulary/ui/VocabularyTable.vue";
+import Layout from "../../../layouts/Layout.astro";
+import BackButton from "../../../shared/ui/BackButton.astro";
+import GlassCard from "../../../shared/ui/GlassCard.astro";
+import Hero from "../../../shared/ui/Hero.astro";
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const item of vocabList) {
+    if (item.sections) {
+      for (const section of item.sections) {
+        for (const topic of section.topics) {
+          paths.push({ params: { id: item.id.toString(), topicId: topic.id } });
+        }
+      }
+    }
+  }
+  return paths;
+}
+
+const { id, topicId } = Astro.params;
+const { data: item } = await getVocabById(Number(id));
+
+const topicMap = new Map(
+  item?.sections?.flatMap((s) => s.topics.map((t) => [t.id, { topic: t, section: s }] as const)),
+);
+
+const result = topicMap.get(topicId!);
+const topic = result?.topic;
+const section = result?.section;
+
+const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
+---
+
+<Layout
+  description={`Lerne Vokabeln zum Thema ${topic?.title ?? ""}.`}
+  title={topic ? `${topic.title} - ${item?.german}` : "Vokabel Thema"}
+>
+  {
+    !item || !topic ?
+      <div class="px-8 py-16 text-center text-white">
+        <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
+        <BackButton />
+      </div>
+    : <div class="relative min-h-dvh py-8">
+        <main>
+          <Hero
+            category={item.category}
+            description={section?.title ?? item.german}
+            title={topic.title}
+          />
+
+          {isFamilyTree ?
+            <>
+              <section class="mt-8">
+                <GlassCard className="p-8">
+                  {topic.familyTree ?
+                    <FamilyTree
+                      client:load
+                      members={topic.familyTree}
+                    />
+                  : null}
+                </GlassCard>
+              </section>
+
+              <section class="mt-8">
+                <VocabularyTable
+                  client:load
+                  words={topic.words ?? []}
+                />
+              </section>
+            </>
+          : topic.words && topic.words.length > 0 ?
+            <section class="mt-8">
+              <VocabularyTable
+                client:load
+                words={topic.words}
+              />
+            </section>
+          : <section class="mt-8">
+              <GlassCard className="p-8">
+                <div class="text-center text-zinc-400">
+                  <p>Noch keine Vokabeln für {topic.title} eingetragen.</p>
+                </div>
+              </GlassCard>
+            </section>
+          }
+        </main>
+      </div>
+  }
+</Layout>

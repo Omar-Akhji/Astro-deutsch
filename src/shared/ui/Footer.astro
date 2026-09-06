@@ -1,0 +1,208 @@
+---
+/** Modernized Zero-JS Premium Footer component */
+import {
+  ArrowUpRight,
+  BookOpen,
+  ClipboardList,
+  GraduationCap,
+  Heart,
+  Languages,
+  Sparkles,
+} from "lucide-astro";
+---
+
+<footer
+  class="relative mbs-24 overflow-hidden border-t border-(--glass-border) bg-card/60 pt-16 pb-12 backdrop-blur-(--glass-blur)"
+>
+  <!-- Ambient background glow effects -->
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute top-0 left-1/4 -z-10 size-96 rounded-full bg-yellow/5 blur-[120px]"
+  >
+  </div>
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute right-1/4 bottom-0 -z-10 size-96 rounded-full bg-orange/5 blur-[120px]"
+  >
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-5">
+      <!-- Column 1: Brand & Bio (2 spans on desktop) -->
+      <div class="lg:col-span-2">
+        <a
+          class="group inline-flex items-center gap-3 text-2xl font-bold text-white transition-opacity hover:opacity-90"
+          href="/"
+        >
+          <span
+            class="flex size-11 items-center justify-center rounded-2xl border-2 border-yellow/40 bg-linear-to-br from-yellow/20 to-orange/20 text-yellow shadow-lg shadow-yellow/10 transition-transform duration-300 group-hover:scale-105"
+          >
+            <GraduationCap class="size-6" />
+          </span>
+          <span
+            class="bg-linear-to-r from-white via-white/90 to-mist-400 bg-clip-text text-transparent"
+          >
+            Deutsch Lernen
+          </span>
+        </a>
+
+        <p class="mbs-4 max-w-sm text-sm leading-relaxed text-mist-500">
+          Deine interaktive Plattform für die erfolgreiche Vorbereitung auf die Goethe &amp; ÖSD
+          Zertifikatsprüfungen B1 &amp; B2.
+        </p>
+
+        <div class="mbs-6 flex items-center gap-2">
+          <span
+            class="inline-flex items-center gap-1.5 rounded-full border border-yellow/30 bg-yellow/10 px-3 py-1 text-xs font-medium text-yellow"
+          >
+            <Sparkles class="size-3.5" />
+            Goethe &amp; ÖSD B1/B2 Ready
+          </span>
+        </div>
+      </div>
+
+      <!-- Column 2: Vokabeln & Themen -->
+      <div>
+        <h3 class="flex items-center gap-2 text-sm font-semibold text-white">
+          <Languages class="size-4 text-yellow" />
+          Wortschatz
+        </h3>
+        <ul class="mbs-4 space-y-2.5 text-sm">
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/vokabeln"
+            >
+              Vokabeln Übersicht
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/themen"
+            >
+              Themenwelten
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/vokabeln/1"
+            >
+              Familie &amp; Alltag
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/vokabeln/2"
+            >
+              Wohnen &amp; Haushalt
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Grammatik -->
+      <div>
+        <h3 class="flex items-center gap-2 text-sm font-semibold text-white">
+          <BookOpen class="size-4 text-yellow" />
+          Grammatik
+        </h3>
+        <ul class="mbs-4 space-y-2.5 text-sm">
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/grammatik"
+            >
+              Grammatik Übersicht
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/grammatik/verben/grundverben"
+            >
+              Verben &amp; Zeiten
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/grammatik/nomen/genus"
+            >
+              Nomen &amp; Genus
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/grammatik/praepositionen/lokale-praep"
+            >
+              Präpositionen
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Prüfung & Quizzes -->
+      <div>
+        <h3 class="flex items-center gap-2 text-sm font-semibold text-white">
+          <ClipboardList class="size-4 text-yellow" />
+          Prüfungstraining
+        </h3>
+        <ul class="mbs-4 space-y-2.5 text-sm">
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/pruefung"
+            >
+              Prüfungsübersicht
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/pruefung/b1/modelltests"
+            >
+              Modelltests B1
+              <ArrowUpRight class="size-3 opacity-60" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/pruefung/b2/modelltests"
+            >
+              Modelltests B2
+              <ArrowUpRight class="size-3 opacity-60" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              href="/quiz/b1/lesen/1"
+            >
+              Leseverstehen Quiz
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar / Legal & Copyright -->
+    <div
+      class="mbs-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pbs-8 sm:flex-row"
+    >
+      <p class="text-xs text-mist-500">
+        &copy; {new Date().getFullYear()} Deutsch Lernen. Alle Rechte vorbehalten.
+      </p>
+
+      <div class="flex items-center gap-4 text-xs text-mist-500">
+        <span class="inline-flex items-center gap-1 text-mist-500">
+          Mit <Heart class="size-3 text-red-500 fill-red-500" /> für Deutschlerner entwickelt
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>

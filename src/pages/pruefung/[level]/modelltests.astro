@@ -1,0 +1,28 @@
+---
+import { getModelTests } from "../../../features/pruefung/api/services";
+import ModelTestsView from "../../../features/pruefung/ui/ModelTestsView.vue";
+import Layout from "../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return [
+    { params: { level: "b1" } },
+    { params: { level: "b2" } },
+    { params: { level: "B1" } },
+    { params: { level: "B2" } },
+  ];
+}
+
+const { level } = Astro.params;
+const { data: modelTests } = await getModelTests(level!);
+---
+
+<Layout
+  description="Übe mit offiziellen Modelltests für deine Deutschprüfung."
+  title="Modelltests | Deutsch Lernen"
+>
+  <ModelTestsView
+    client:load
+    initialModelTests={modelTests ?? []}
+    level={level!}
+  />
+</Layout>

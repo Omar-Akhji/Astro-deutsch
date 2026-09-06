@@ -1,0 +1,196 @@
+---
+import {
+  CheckCircle2,
+  ClipboardList,
+  Clock,
+  FileEdit,
+  Lightbulb,
+  MessageCircle,
+} from "lucide-vue-next";
+import { getExamLevel } from "../../../features/pruefung/api/services";
+import Layout from "../../../layouts/Layout.astro";
+import { PRUEFUNG_GRADIENTS } from "../../../shared/lib/gradients";
+import { getGradient } from "../../../shared/lib/utilities";
+import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
+import BackButton from "../../../shared/ui/BackButton.astro";
+import Hero from "../../../shared/ui/Hero.astro";
+
+export async function getStaticPaths() {
+  return [
+    { params: { level: "b1" } },
+    { params: { level: "b2" } },
+    { params: { level: "B1" } },
+    { params: { level: "B2" } },
+  ];
+}
+
+const { level } = Astro.params;
+const { data: currentExam } = await getExamLevel(level!);
+---
+
+<Layout
+  description={currentExam?.description ?? "Bereite dich auf deine Deutschprüfung vor."}
+  title={currentExam ? `${currentExam.title} - Prüfung` : "Prüfungsstufe"}
+>
+  {
+    currentExam ?
+      <div class="relative min-h-dvh py-8">
+        <main>
+          <Hero
+            category={currentExam.level}
+            description={currentExam.description}
+            stats={[
+              { label: "Dauer", value: currentExam.totalDuration, icon: Clock },
+              { label: "Bestehen", value: currentExam.passingScore, icon: CheckCircle2 },
+            ]}
+            title={currentExam.title}
+            variant="glass"
+          />
+
+          <div class="mb-12 flex justify-center">
+            <AnimateOnScroll
+              animation="fade-up"
+              client:load
+              delay={400}
+            >
+              <a
+                class="group flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-xl font-bold text-white no-underline backdrop-blur-md hover:bg-white/10 hover:text-white"
+                href={`/pruefung/${currentExam.id}/modelltests`}
+              >
+                <FileEdit
+                  class="text-yellow"
+                  size={24}
+                />
+                Modelltests Starten
+              </a>
+            </AnimateOnScroll>
+          </div>
+
+          <section class="mb-12 text-white">
+            <AnimateOnScroll
+              animation="fade-right"
+              client:load
+            >
+              <h2 class="mb-8 flex items-center gap-3 text-xl font-semibold text-text tablet:gap-4 tablet:text-[1.75rem]">
+                <span class="flex size-10 shrink-0 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
+                  <ClipboardList
+                    class="size-5 tablet:size-6"
+                    strokeWidth={2}
+                  />
+                </span>
+                Prüfungsstruktur
+              </h2>
+            </AnimateOnScroll>
+            <div class="grid gap-6">
+              {currentExam.sections.map((section, index) => (
+                <AnimateOnScroll
+                  animation="fade-up"
+                  client:load
+                  delay={index * 100}
+                >
+                  <article class="overflow-hidden rounded-2xl border border-white/5 bg-card">
+                    <div
+                      class="flex flex-col items-start gap-4 p-5 md:flex-row md:items-center md:justify-between"
+                      style={{ background: getGradient(index, PRUEFUNG_GRADIENTS) }}
+                    >
+                      <h3 class="m-0 text-xl font-semibold text-white">{section.title}</h3>
+                      <div class="flex gap-4 text-sm text-white/90">
+                        <span>{section.duration}</span>
+                        <span>{section.points} Punkte</span>
+                      </div>
+                    </div>
+                    <div class="p-6">
+                      <p class="mb-4 text-zinc-400">{section.description}</p>
+                      <table class="mb-4 w-full border-collapse text-left text-sm">
+                        <caption class="sr-only">Prüfungsstruktur Übersicht</caption>
+                        <thead>
+                          <tr>
+                            <th
+                              class="border-b border-white/10 p-2 text-xs font-semibold tracking-wide text-zinc-400 uppercase md:p-3"
+                              scope="col"
+                            >
+                              Teil
+                            </th>
+                            <th
+                              class="border-b border-white/10 p-2 text-xs font-semibold tracking-wide text-zinc-400 uppercase md:p-3"
+                              scope="col"
+                            >
+                              Aufgabentyp
+                            </th>
+                            <th
+                              class="border-b border-white/10 p-2 text-xs font-semibold tracking-wide text-zinc-400 uppercase md:p-3"
+                              scope="col"
+                            >
+                              Items
+                            </th>
+                            <th
+                              class="border-b border-white/10 p-2 text-xs font-semibold tracking-wide text-zinc-400 uppercase md:p-3"
+                              scope="col"
+                            >
+                              Punkte
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.parts.map((part) => (
+                            <tr>
+                              <td class="border-b border-white/5 p-2 text-white md:p-3">
+                                {part.name}
+                              </td>
+                              <td class="border-b border-white/5 p-2 text-white md:p-3">
+                                {part.taskType}
+                              </td>
+                              <td class="border-b border-white/5 p-2 text-white md:p-3">
+                                {part.items}
+                              </td>
+                              <td class="border-b border-white/5 p-2 text-white md:p-3">
+                                {part.points}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      <div class="mt-6 flex flex-col gap-6">
+                        <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                          <h4 class="m-0 mb-3 flex items-center gap-2 text-sm font-semibold text-white">
+                            <Lightbulb
+                              class="text-yellow"
+                              size={16}
+                            />
+                            Tipps
+                          </h4>
+                          <ul class="m-0 list-disc space-y-1 pl-5 text-zinc-400">
+                            {section.tips.map((tip) => (
+                              <li class="text-sm">{tip}</li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {(section.id.includes("sprechen") || section.id.includes("schreiben")) && (
+                          <a
+                            class="group md:is-auto flex items-center justify-center gap-2 rounded-full bg-linear-to-r from-amber-400 to-orange-500 px-8 py-3.5 font-bold text-zinc-950 no-underline shadow-lg shadow-amber-500/20 transition-[transform,filter] inline-full hover:scale-[1.02] hover:brightness-110 active:scale-95 md:self-start"
+                            href={`/pruefung/${currentExam.id}/${section.id.split("-", 2)[1]}`}
+                          >
+                            <MessageCircle
+                              class="transition-transform group-hover:rotate-12"
+                              size={20}
+                            />
+                            Lernmodus öffnen
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </article>
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </section>
+        </main>
+      </div>
+    : <div class="px-8 py-16 text-center text-white">
+        <h1 class="mb-4 text-3xl">Prüfung nicht gefunden</h1>
+        <p class="mb-8 text-zinc-400">Die gewünschte Prüfungsstufe existiert nicht.</p>
+        <BackButton />
+      </div>
+  }
+</Layout>

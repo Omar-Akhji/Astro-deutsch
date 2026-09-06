@@ -1,0 +1,31 @@
+---
+import { ClipboardList } from "lucide-astro";
+import { getExamLevels } from "../../features/pruefung/api/services";
+import PruefungSection from "../../features/pruefung/ui/PruefungSection.vue";
+import Layout from "../../layouts/Layout.astro";
+import AnimateOnScroll from "../../shared/ui/AnimateOnScroll.vue";
+import PageHeader from "../../shared/ui/PageHeader.astro";
+
+const { data: examLevels } = await getExamLevels();
+---
+
+<Layout
+  description="B1/B2 Prüfungsvorbereitung - Modelltests, Lesen, Hören, Schreiben, Sprechen. Trainiere für deine Deutschprüfung."
+  title="Prüfungstraining | Deutsch Lernen"
+>
+  <AnimateOnScroll
+    animation="fade-up"
+    as="main"
+    client:load
+  >
+    <PageHeader
+      icon={ClipboardList}
+      subtitle="Strukturierte Vorbereitung auf die Goethe & ÖSD Zertifikate B1 und B2"
+      title="Prüfungstraining"
+    />
+    <PruefungSection
+      client:load
+      examLevels={examLevels ?? []}
+    />
+  </AnimateOnScroll>
+</Layout>

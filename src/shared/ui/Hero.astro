@@ -1,0 +1,158 @@
+---
+import type { Component } from "vue";
+import AnimateOnScroll from "./AnimateOnScroll.vue";
+
+interface StatItem {
+  label: string;
+  value: string;
+  icon?: Component;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  category?: string;
+  example?: string;
+  badge?: string;
+  gradient?: string;
+  variant?: "default" | "glass";
+  stats?: StatItem[];
+}
+
+const {
+  title,
+  description,
+  category,
+  example,
+  badge,
+  gradient,
+  variant = "default",
+  stats,
+} = Astro.props;
+
+const isGlassBorder = !gradient || variant === "glass";
+---
+
+<AnimateOnScroll
+  animation="fade-in"
+  class:list={[
+    "relative mbe-12 overflow-hidden rounded-3xl p-8 shadow-2xl tablet:p-12",
+    { "border border-(--glass-border) bg-card": isGlassBorder },
+  ]}
+  duration={1000}
+  style={gradient && variant !== "glass" ? { background: gradient } : {}}
+>
+  <div class:list={[{ "max-inline-3xl": gradient, "text-center": !gradient }]}>
+    <AnimateOnScroll
+      animation="fade-up"
+      delay={100}
+    >
+      <div
+        class:list={["mbe-4 flex flex-wrap items-center gap-3", { "justify-center": !gradient }]}
+      >
+        {
+          category && (
+            <span
+              class:list={[
+                "inline-block rounded-full px-6 py-2 font-bold",
+                {
+                  "bg-black/20 text-xs text-white tablet:text-sm": gradient,
+                  "bg-linear-to-br from-yellow to-orange text-lg text-black shadow-lg shadow-yellow/20 tablet:text-xl":
+                    !gradient,
+                },
+              ]}
+            >
+              {category}
+            </span>
+          )
+        }
+        {
+          badge && (
+            <span
+              class:list={[
+                "inline-block rounded-lg px-3 py-1.5 text-xs font-bold shadow-sm tablet:text-sm",
+                { "bg-white/20 text-white": gradient, "bg-mist-900/50 text-mist-500": !gradient },
+              ]}
+            >
+              {badge}
+            </span>
+          )
+        }
+      </div>
+    </AnimateOnScroll>
+
+    <AnimateOnScroll
+      animation="blur-in"
+      delay={300}
+      duration={1000}
+    >
+      <h1
+        class:list={[
+          "-my-2 mbe-2 py-2 text-3xl font-bold text-shadow-sm tablet:text-4xl laptop:text-5xl",
+          {
+            "text-white drop-shadow-[0_2px_10px_black/20]": gradient,
+            "bg-linear-to-br from-white to-slate-200 bg-clip-text text-transparent": !gradient,
+          },
+        ]}
+      >
+        {title}
+      </h1>
+    </AnimateOnScroll>
+
+    <AnimateOnScroll
+      animation="fade-up"
+      delay={500}
+    >
+      <p
+        class:list={[
+          "m-0 text-base tablet:text-lg laptop:text-xl",
+          { "text-white/90": gradient, "text-mist-500": !gradient },
+        ]}
+      >
+        {description}
+      </p>
+    </AnimateOnScroll>
+
+    {
+      example && (
+        <AnimateOnScroll
+          animation="fade-in"
+          delay={500}
+        >
+          <p class="mbs-4 text-base text-white/80">
+            <em>{example}</em>
+          </p>
+        </AnimateOnScroll>
+      )
+    }
+
+    {
+      stats && stats.length > 0 && (
+        <AnimateOnScroll
+          animation="fade-up"
+          delay={700}
+        >
+          <dl class="mbs-8 flex flex-wrap justify-center gap-8">
+            {stats.map((stat) => {
+              /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+              const Icon = stat.icon as any;
+              return (
+                <div class="flex items-center gap-2">
+                  <dt class="sr-only">{stat.label}</dt>
+                  <dd class="m-0 flex items-center gap-2 text-sm text-mist-500 tablet:text-lg">
+                    {Icon && (
+                      <span class="flex size-5 items-center justify-center text-yellow tablet:size-6">
+                        <Icon class="size-full" />
+                      </span>
+                    )}
+                    {stat.value}
+                  </dd>
+                </div>
+              );
+            })}
+          </dl>
+        </AnimateOnScroll>
+      )
+    }
+  </div>
+</AnimateOnScroll>

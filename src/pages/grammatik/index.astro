@@ -1,0 +1,45 @@
+---
+import { BookOpen } from "lucide-astro";
+import { getGrammarSection } from "../../features/grammar/api/services";
+import GrammarSectionCards from "../../features/grammar/ui/GrammarSectionCards.vue";
+import Layout from "../../layouts/Layout.astro";
+import AnimateOnScroll from "../../shared/ui/AnimateOnScroll.vue";
+import PageHeader from "../../shared/ui/PageHeader.astro";
+
+const GRAMMAR_SECTION_IDS = [
+  "verben",
+  "nomen",
+  "praepositionen",
+  "satz",
+  "adverbien",
+  "partikeln",
+] as const;
+
+const sectionsResponses = await Promise.all(GRAMMAR_SECTION_IDS.map((id) => getGrammarSection(id)));
+const sections = sectionsResponses.map((s) => s.data).filter((s) => s != null);
+---
+
+<Layout
+  description="Deutsche Grammatik lernen - Verben, Nomen, Präpositionen, Satzstrukturen. Übersichtliche Erklärungen für alle Niveaus."
+  title="Grammatik | Deutsch Lernen"
+>
+  <AnimateOnScroll
+    animation="fade-up"
+    as="main"
+    client:load
+  >
+    <PageHeader
+      icon={BookOpen}
+      subtitle="Übersichtliche Erklärungen und Strukturen für dein B1/B2 Training"
+      title="Deutsche Grammatik"
+    />
+    {
+      sections.map((section) => (
+        <GrammarSectionCards
+          client:load
+          section={section}
+        />
+      ))
+    }
+  </AnimateOnScroll>
+</Layout>

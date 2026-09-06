@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  description="Die angeforderte Seite existiert nicht."
+  title="404 | Seite nicht gefunden"
+>
+  <main class="flex min-h-[60vh] flex-col items-center justify-center gap-6 text-center py-16">
+    <h1 class="text-6xl font-bold text-yellow text-shadow-sm tablet:text-8xl">404</h1>
+    <p class="max-w-md text-lg text-zinc-400">
+      Seite nicht gefunden. Die angeforderte Seite existiert nicht.
+    </p>
+    <a
+      class="rounded-full bg-linear-to-r from-yellow to-orange px-8 py-3.5 font-bold text-black shadow-lg shadow-yellow/20 transition-[transform,filter] hover:scale-105 hover:brightness-110 no-underline"
+      href="/"
+    >
+      Zurück zur Startseite
+    </a>
+  </main>
+</Layout>

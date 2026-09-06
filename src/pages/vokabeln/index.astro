@@ -1,0 +1,31 @@
+---
+import { Languages } from "lucide-astro";
+import { getVocabList } from "../../features/vocabulary/api/services";
+import VocabularySection from "../../features/vocabulary/ui/VocabularySection.vue";
+import Layout from "../../layouts/Layout.astro";
+import AnimateOnScroll from "../../shared/ui/AnimateOnScroll.vue";
+import PageHeader from "../../shared/ui/PageHeader.astro";
+
+const { data: vocabList } = await getVocabList();
+---
+
+<Layout
+  description="Deutsche Vokabeln lernen - Familie, Zahlen, Farben, Tiere und mehr. Interaktive Wortschatzübungen für Anfänger."
+  title="Vokabeln | Deutsch Lernen"
+>
+  <AnimateOnScroll
+    animation="fade-up"
+    as="main"
+    client:load
+  >
+    <PageHeader
+      icon={Languages}
+      subtitle="Thematisch sortierte Vokabellisten für dein A1/B1 Training"
+      title="Deutscher Wortschatz"
+    />
+    <VocabularySection
+      client:load
+      vocabList={vocabList ?? []}
+    />
+  </AnimateOnScroll>
+</Layout>

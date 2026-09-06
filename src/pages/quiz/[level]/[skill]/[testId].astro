@@ -1,0 +1,37 @@
+---
+import { quizQuestions } from "../../../../features/quiz/api/data";
+import { getQuestions } from "../../../../features/quiz/api/services";
+import QuizView from "../../../../features/quiz/ui/QuizView.vue";
+import Layout from "../../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const [level, skillsMap] of quizQuestions.entries()) {
+    for (const [skill, testsMap] of skillsMap.entries()) {
+      for (const testId of testsMap.keys()) {
+        paths.push(
+          { params: { level: level.toLowerCase(), skill, testId: testId.toString() } },
+          { params: { level: level.toUpperCase(), skill, testId: testId.toString() } },
+        );
+      }
+    }
+  }
+  return paths;
+}
+
+const { level, skill, testId } = Astro.params;
+const { data: questions } = await getQuestions(level!, skill!, Number.parseInt(testId!));
+---
+
+<Layout
+  description="Teste dein Wissen mit interaktiven Quizfragen zu Lesen, Hören, Schreiben und Sprechen."
+  title="Quiz | Deutsch Lernen"
+>
+  <QuizView
+    client:load
+    initialQuestions={questions ?? []}
+    level={level!}
+    skill={skill!}
+    testId={testId!}
+  />
+</Layout>
