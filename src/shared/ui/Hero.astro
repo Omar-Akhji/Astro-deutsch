@@ -15,7 +15,7 @@ interface Props {
   example?: string;
   badge?: string;
   gradient?: string;
-  variant?: "default" | "glass";
+  variant?: "default" | "glass" | "compact";
   stats?: StatItem[];
 }
 
@@ -30,19 +30,20 @@ const {
   stats,
 } = Astro.props;
 
-const isGlassBorder = !gradient || variant === "glass";
+const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
 ---
 
 <AnimateOnScroll
   animation="fade-in"
   class:list={[
-    "relative mbe-12 overflow-hidden rounded-3xl p-8 shadow-2xl tablet:p-12",
-    { "border border-(--glass-border) bg-card": isGlassBorder },
+    "relative overflow-hidden rounded-3xl shadow-2xl transition-all",
+    variant === "compact" ? "mbe-8 p-6 tablet:p-8" : "mbe-12 p-8 tablet:p-12",
+    { "border-2 border-(--glass-border) bg-card": isGlassBorder },
   ]}
-  duration={1000}
-  style={gradient && variant !== "glass" ? { background: gradient } : {}}
+  duration={800}
+  style={gradient && variant !== "glass" && variant !== "compact" ? { background: gradient } : {}}
 >
-  <div class:list={[{ "max-inline-3xl": gradient, "text-center": !gradient }]}>
+  <div class:list={[{ "max-inline-3xl": gradient && variant !== "compact", "text-center": !gradient || variant === "compact" }]}>
     <AnimateOnScroll
       animation="fade-up"
       delay={100}

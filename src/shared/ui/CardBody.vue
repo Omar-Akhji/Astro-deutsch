@@ -22,7 +22,7 @@ const iconText = computed(() => props.icon ?? getFirstLetter(props.title));
 <template>
   <article class="h-full">
     <div
-      class="group card-link relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl border-none bg-transparent p-4 text-left no-underline shadow-xl ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1.25"
+      class="group card-link relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl p-4 text-left no-underline"
       :aria-label="`${props.title} ${props.subtitle ?? ''}`"
     >
       <figure class="m-0 aspect-video w-full overflow-hidden rounded-2xl">

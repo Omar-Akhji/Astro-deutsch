@@ -19,7 +19,7 @@ const componentTag = computed(() => props.as);
     :is="componentTag"
     :class="
       cn(
-        'overflow-hidden border border-(--glass-border) bg-card shadow-sm',
+        'overflow-hidden border-2 border-(--glass-border) bg-card shadow-sm',
         props.rounded === '3xl' ? 'rounded-3xl' : 'rounded-2xl',
         !props.noBlur && 'backdrop-blur-(--glass-blur)',
         props.className,

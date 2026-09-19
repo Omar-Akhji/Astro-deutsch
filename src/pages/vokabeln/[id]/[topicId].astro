@@ -52,6 +52,7 @@ const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
             category={item.category}
             description={section?.title ?? item.german}
             title={topic.title}
+            variant="compact"
           />
 
           {isFamilyTree ?

@@ -67,7 +67,7 @@ watch(activeTab, () => {
 
 <template>
   <div
-    class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-[background-color,box-shadow] hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5"
+    class="group relative overflow-hidden rounded-2xl border-2 border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-[background-color,box-shadow] hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5"
   >
     <div class="mbe-4 flex items-start justify-between">
       <div>

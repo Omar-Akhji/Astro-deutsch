@@ -1,15 +1,15 @@
-/** Vocabulary cards (Kapitel overview) */
+/** Vocabulary cards (Kapitel overview) - Elegant, cohesive educational tones */
 export const VOCAB_GRADIENTS = [
-  "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
-  "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
-  "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
-  "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+  "linear-gradient(135deg, #d97706 0%, #b45309 100%)", // Rich amber gold
+  "linear-gradient(135deg, #ea580c 0%, #c2410c 100%)", // Warm terracotta
+  "linear-gradient(135deg, #059669 0%, #047857 100%)", // Deep forest emerald
+  "linear-gradient(135deg, #0284c7 0%, #0369a1 100%)", // Slate azure
 ];
 
 /** Prüfung exam level cards */
 export const PRUEFUNG_GRADIENTS = [
-  "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-  "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-  "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-  "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+  "linear-gradient(135deg, #4f46e5 0%, #3730a3 100%)", // Royal indigo
+  "linear-gradient(135deg, #d97706 0%, #92400e 100%)", // Warm bronze
+  "linear-gradient(135deg, #0d9488 0%, #115e59 100%)", // Deep teal
+  "linear-gradient(135deg, #e11d48 0%, #9f1239 100%)", // Rich crimson
 ];

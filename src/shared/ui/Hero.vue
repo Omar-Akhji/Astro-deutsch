@@ -16,28 +16,29 @@ interface Props {
   example?: string;
   badge?: string;
   gradient?: string;
-  variant?: "default" | "glass";
+  variant?: "default" | "glass" | "compact";
   stats?: StatItem[];
 }
 
 const props = withDefaults(defineProps<Props>(), { variant: "default" });
 
 const isGlassBorder = computed(() => {
-  return !props.gradient || props.variant === "glass";
+  return !props.gradient || props.variant === "glass" || props.variant === "compact";
 });
 </script>
 
 <template>
   <AnimateOnScroll
     animation="fade-in"
-    :duration="1000"
+    :duration="800"
     :class="[
-      'relative mbe-12 overflow-hidden rounded-3xl p-8 shadow-2xl tablet:p-12',
-      isGlassBorder ? 'border border-(--glass-border) bg-card' : '',
+      'relative overflow-hidden rounded-3xl shadow-2xl transition-all',
+      props.variant === 'compact' ? 'mbe-8 p-6 tablet:p-8' : 'mbe-12 p-8 tablet:p-12',
+      isGlassBorder ? 'border-2 border-(--glass-border) bg-card' : '',
     ]"
-    :style="props.gradient && props.variant !== 'glass' ? { background: props.gradient } : {}"
+    :style="props.gradient && props.variant !== 'glass' && props.variant !== 'compact' ? { background: props.gradient } : {}"
   >
-    <div :class="props.gradient ? 'max-inline-3xl' : 'text-center'">
+    <div :class="props.gradient && props.variant !== 'compact' ? 'max-inline-3xl' : 'text-center'">
       <AnimateOnScroll
         animation="fade-up"
         :delay="100"

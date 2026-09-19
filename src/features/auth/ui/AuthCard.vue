@@ -53,7 +53,7 @@ onMounted(() => {
     </a>
 
     <div
-      class="relative flex w-full max-w-md animate-scale-in flex-col overflow-hidden rounded-3xl border border-slate-800/80 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) md:max-w-4xl md:flex-row"
+      class="relative flex w-full max-w-md animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-slate-800/80 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) md:max-w-4xl md:flex-row"
     >
       <!-- PANEL 1: Left navigation menu (desktop/tablet) -->
       <nav
