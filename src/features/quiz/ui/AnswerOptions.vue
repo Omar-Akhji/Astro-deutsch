@@ -20,10 +20,10 @@ const emit = defineEmits<{ (e: "answer", val: string | string[]): void }>();
 const handleKeydown = (event: KeyboardEvent) => {
   // Ignore if user is typing in an input/textarea
   if (
-    event.target instanceof HTMLInputElement ||
-    event.target instanceof HTMLTextAreaElement ||
-    !props.options ||
-    props.options.length === 0
+    event.target instanceof HTMLInputElement
+    || event.target instanceof HTMLTextAreaElement
+    || !props.options
+    || props.options.length === 0
   ) {
     return;
   }
@@ -42,7 +42,7 @@ const handleKeydown = (event: KeyboardEvent) => {
 
   // Alpha shortcuts (a -> 0, b -> 1, c -> 2, d -> 3)
   const alphaIndex = ["a", "b", "c", "d", "e"].indexOf(key);
-  if (alphaIndex >= 0 && alphaIndex < props.options.length) {
+  if (alphaIndex !== -1 && alphaIndex < props.options.length) {
     const targetOpt = props.options[alphaIndex];
     if (targetOpt) {
       emit("answer", targetOpt);
@@ -62,13 +62,13 @@ const handleKeydown = (event: KeyboardEvent) => {
 
 onMounted(() => {
   if (typeof window !== "undefined") {
-    window.addEventListener("keydown", handleKeydown);
+    globalThis.addEventListener("keydown", handleKeydown);
   }
 });
 
 onUnmounted(() => {
   if (typeof window !== "undefined") {
-    window.removeEventListener("keydown", handleKeydown);
+    globalThis.removeEventListener("keydown", handleKeydown);
   }
 });
 </script>
@@ -97,17 +97,21 @@ onUnmounted(() => {
         :class="[
           props.isTableRow ? 'min-w-16 py-1.5 text-[10px]' : 'min-w-20 py-2 text-xs',
           'group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-full border font-bold tracking-tight uppercase transition-all duration-200 active:scale-95',
-          props.selectedAnswer === option
-            ? 'border-yellow bg-linear-to-br from-yellow to-orange text-black shadow-lg shadow-yellow/25 ring-2 ring-yellow/30'
-            : 'border-white/10 bg-white/5 text-mist-400 hover:border-white/30 hover:bg-white/10 hover:text-white',
+          props.selectedAnswer === option ?
+            'border-yellow bg-linear-to-br from-yellow to-orange text-black shadow-lg ring-2 shadow-yellow/25 ring-yellow/30'
+          : 'border-white/10 bg-white/5 text-mist-400 hover:border-white/30 hover:bg-white/10 hover:text-white',
         ]"
         @click="emit('answer', option)"
       >
         <span
-          class="size-4 rounded-full text-[9px] font-black flex items-center justify-center"
-          :class="props.selectedAnswer === option ? 'bg-black/20 text-black' : 'bg-white/10 text-mist-400 group-hover:text-white'"
+          class="flex size-4 items-center justify-center rounded-full text-[9px] font-black"
+          :class="
+            props.selectedAnswer === option ?
+              'bg-black/20 text-black'
+            : 'bg-white/10 text-mist-400 group-hover:text-white'
+          "
         >
-          {{ idx === 0 ? 'A' : 'B' }}
+          {{ idx === 0 ? "A" : "B" }}
         </span>
         <span>{{ option }}</span>
       </button>
@@ -136,9 +140,9 @@ onUnmounted(() => {
         type="button"
         :class="[
           'flex h-10 cursor-pointer items-center justify-center rounded-lg text-xs font-black transition-all active:scale-95',
-          props.selectedAnswer === option
-            ? 'bg-linear-to-br from-yellow to-orange text-black shadow-md shadow-yellow/20'
-            : 'bg-white/5 text-mist-400 hover:bg-white/10 hover:text-white',
+          props.selectedAnswer === option ?
+            'bg-linear-to-br from-yellow to-orange text-black shadow-md shadow-yellow/20'
+          : 'bg-white/5 text-mist-400 hover:bg-white/10 hover:text-white',
         ]"
         @click="emit('answer', option)"
       >
@@ -167,9 +171,9 @@ onUnmounted(() => {
         type="button"
         :class="[
           'group flex cursor-pointer items-center justify-between rounded-xl border p-3.5 text-left transition-all duration-200 active:scale-[0.99]',
-          props.selectedAnswer === option
-            ? 'border-yellow/50 bg-linear-to-r from-yellow/15 to-orange/15 font-semibold text-white shadow-md shadow-yellow/10 ring-1 ring-yellow/30'
-            : 'border-white/10 bg-white/5 font-medium text-mist-200 hover:border-white/25 hover:bg-white/10 hover:text-white',
+          props.selectedAnswer === option ?
+            'border-yellow/50 bg-linear-to-r from-yellow/15 to-orange/15 font-semibold text-white shadow-md ring-1 shadow-yellow/10 ring-yellow/30'
+          : 'border-white/10 bg-white/5 font-medium text-mist-200 hover:border-white/25 hover:bg-white/10 hover:text-white',
         ]"
         @click="emit('answer', option)"
       >
@@ -178,9 +182,9 @@ onUnmounted(() => {
           <span
             class="flex size-6 shrink-0 items-center justify-center rounded-lg text-xs font-bold transition-colors"
             :class="
-              props.selectedAnswer === option
-                ? 'bg-yellow text-black'
-                : 'border border-white/10 bg-white/5 text-mist-400 group-hover:border-white/30 group-hover:text-white'
+              props.selectedAnswer === option ?
+                'bg-yellow text-black'
+              : 'border border-white/10 bg-white/5 text-mist-400 group-hover:border-white/30 group-hover:text-white'
             "
           >
             {{ String.fromCharCode(65 + idx) }}

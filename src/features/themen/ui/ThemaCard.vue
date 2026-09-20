@@ -37,21 +37,21 @@ const runGsapTabAnimation = () => {
     }
 
     const content = contentRef.value;
-    if (content) {
-      const listItems = content.querySelectorAll("li");
-      if (listItems.length > 0) {
-        gsap.fromTo(
-          listItems,
-          { opacity: 0, x: -15 },
-          { opacity: 1, x: 0, stagger: 0.1, duration: 0.4, ease: "power2.out", clearProps: "all" },
-        );
-      } else {
-        gsap.fromTo(
-          content,
-          { opacity: 0, y: 10 },
-          { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" },
-        );
-      }
+    if (!content) return;
+
+    const listItems = content.querySelectorAll("li");
+    if (listItems.length > 0) {
+      gsap.fromTo(
+        listItems,
+        { opacity: 0, x: -15 },
+        { opacity: 1, x: 0, stagger: 0.1, duration: 0.4, ease: "power2.out", clearProps: "all" },
+      );
+    } else {
+      gsap.fromTo(
+        content,
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" },
+      );
     }
   });
 };

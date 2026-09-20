@@ -63,27 +63,31 @@ document.addEventListener("astro:before-preparation", (e) => {
     targetSkeleton = container.querySelector('[data-skeleton="default"]');
   }
 
-  if (targetSkeleton) {
-    // Hide all skeletons inside first
-    container.querySelectorAll("[data-skeleton]").forEach((el) => {
-      el.classList.add("hidden");
-    });
-    // Show targeted skeleton
-    targetSkeleton.classList.remove("hidden");
-    // Show container, hide current page content
-    container.classList.remove("hidden");
-    container.removeAttribute("aria-hidden");
-    content.classList.add("hidden");
+  if (!targetSkeleton) {
+    return;
   }
+
+  // Hide all skeletons inside first
+  container.querySelectorAll("[data-skeleton]").forEach((el) => {
+    el.classList.add("hidden");
+  });
+  // Show targeted skeleton
+  targetSkeleton.classList.remove("hidden");
+  // Show container, hide current page content
+  container.classList.remove("hidden");
+  container.removeAttribute("aria-hidden");
+  content.classList.add("hidden");
 });
 
 // Ensure that on swap or page load, the skeleton container is hidden and actual content is shown.
 document.addEventListener("astro:after-swap", () => {
   const container = document.querySelector("#skeleton-container");
   const content = document.querySelector("#page-content");
-  if (container && content) {
-    container.classList.add("hidden");
-    container.setAttribute("aria-hidden", "true");
-    content.classList.remove("hidden");
+  if (!(container && content)) {
+    return;
   }
+
+  container.classList.add("hidden");
+  container.setAttribute("aria-hidden", "true");
+  content.classList.remove("hidden");
 });

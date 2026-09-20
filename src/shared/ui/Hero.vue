@@ -36,7 +36,11 @@ const isGlassBorder = computed(() => {
       props.variant === 'compact' ? 'mbe-8 p-6 tablet:p-8' : 'mbe-12 p-8 tablet:p-12',
       isGlassBorder ? 'border-2 border-(--glass-border) bg-card' : '',
     ]"
-    :style="props.gradient && props.variant !== 'glass' && props.variant !== 'compact' ? { background: props.gradient } : {}"
+    :style="
+      props.gradient && props.variant !== 'glass' && props.variant !== 'compact' ?
+        { background: props.gradient }
+      : {}
+    "
   >
     <div :class="props.gradient && props.variant !== 'compact' ? 'max-inline-3xl' : 'text-center'">
       <AnimateOnScroll

@@ -33,13 +33,11 @@ const sections = sectionsResponses.map((s) => s.data).filter((s) => s != null);
       subtitle="Übersichtliche Erklärungen und Strukturen für dein B1/B2 Training"
       title="Deutsche Grammatik"
     />
-    {
-      sections.map((section) => (
-        <GrammarSectionCards
-          client:load
-          section={section}
-        />
-      ))
-    }
+    {sections.map((section) => (
+      <GrammarSectionCards
+        client:load
+        section={section}
+      />
+    ))}
   </AnimateOnScroll>
 </Layout>

@@ -1,6 +1,7 @@
 ## Package Manager & Tooling
 
 Strictly use **Bun** for all commands, scripts, package installations, and execution.
+
 - NEVER use `npm`, `npx`, `pnpm`, or `yarn`.
 - Always use `bun run <script>`, `bun install`, `bun add <pkg>`, `bun x <tool>`, etc.
 

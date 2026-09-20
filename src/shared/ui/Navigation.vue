@@ -1,13 +1,5 @@
 <script setup lang="ts">
-import {
-  ArrowLeft,
-  Award,
-  BookOpen,
-  GraduationCap,
-  Home,
-  Sparkles,
-  User,
-} from "lucide-vue-next";
+import { ArrowLeft, Award, BookOpen, GraduationCap, Home, Sparkles, User } from "lucide-vue-next";
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from "vue";
 import gsap from "../lib/gsap.ts";
 
@@ -112,7 +104,9 @@ watch(
           aria-label="Zurück"
           @click="goBack"
         >
-          <ArrowLeft class="size-4.5 text-yellow transition-transform duration-200 group-hover:-translate-x-0.5" />
+          <ArrowLeft
+            class="size-4.5 text-yellow transition-transform duration-200 group-hover:-translate-x-0.5"
+          />
           <span class="text-xs font-semibold text-white/90 tablet:text-sm">Zurück</span>
         </button>
 
@@ -170,9 +164,9 @@ watch(
           :href="link.to"
           :class="[
             'relative z-10 rounded-full px-5 py-2 text-sm font-semibold transition-all duration-200',
-            isActive(link.to)
-              ? 'text-black font-semibold'
-              : 'text-mist-400 hover:text-white hover:bg-white/5',
+            isActive(link.to) ?
+              'font-semibold text-black'
+            : 'text-mist-400 hover:bg-white/5 hover:text-white',
           ]"
           :aria-current="isActive(link.to) ? 'page' : undefined"
         >
@@ -196,9 +190,9 @@ watch(
       :aria-current="isActive(link.to) ? 'page' : undefined"
       :class="[
         'group relative flex flex-1 flex-col items-center justify-center rounded-2xl px-2 py-1.5 transition-all duration-200',
-        isActive(link.to)
-          ? 'bg-white/10 text-yellow shadow-inner shadow-white/5'
-          : 'text-mist-500 hover:text-white active:scale-95',
+        isActive(link.to) ?
+          'bg-white/10 text-yellow shadow-inner shadow-white/5'
+        : 'text-mist-500 hover:text-white active:scale-95',
       ]"
     >
       <!-- Active Top Glow / Indicator -->
@@ -212,9 +206,9 @@ watch(
         :is="link.icon"
         :class="[
           'size-5 transition-transform duration-200',
-          isActive(link.to)
-            ? 'scale-110 text-yellow'
-            : 'group-hover:scale-105 group-hover:text-mist-200',
+          isActive(link.to) ? 'scale-110 text-yellow' : (
+            'group-hover:scale-105 group-hover:text-mist-200'
+          ),
         ]"
       />
 
@@ -222,9 +216,9 @@ watch(
       <span
         :class="[
           'mt-1 text-[10px] leading-none tracking-tight transition-colors duration-200',
-          isActive(link.to)
-            ? 'font-bold text-white'
-            : 'font-medium text-mist-500 group-hover:text-mist-300',
+          isActive(link.to) ? 'font-bold text-white' : (
+            'font-medium text-mist-500 group-hover:text-mist-300'
+          ),
         ]"
       >
         {{ link.label }}

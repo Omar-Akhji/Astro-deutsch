@@ -24,8 +24,8 @@ const copyText = async (text: string) => {
         if (copiedPhrase.value === text) copiedPhrase.value = null;
       }, 1500);
     }
-  } catch (err) {
-    console.warn("Clipboard copy failed", err);
+  } catch (error) {
+    console.warn("Clipboard copy failed", error);
   }
 };
 
@@ -65,9 +65,9 @@ const processedPhrases = computed(() => {
   <div
     :class="[
       'group transition-all duration-300',
-      props.isChecklistItem
-        ? 'bg-transparent'
-        : 'overflow-hidden rounded-2xl border-2 border-white/10 bg-surface-raised/70 backdrop-blur-md hover:border-yellow/30 hover:bg-surface-raised/90 shadow-sm',
+      props.isChecklistItem ? 'bg-transparent' : (
+        'overflow-hidden rounded-2xl border-2 border-white/10 bg-surface-raised/70 shadow-sm backdrop-blur-md hover:border-yellow/30 hover:bg-surface-raised/90'
+      ),
     ]"
   >
     <!-- Header - Always Visible -->
@@ -88,7 +88,9 @@ const processedPhrases = computed(() => {
         <h4
           :class="[
             'text-sm font-bold transition-colors tablet:text-[15px]',
-            props.isChecklistItem ? 'text-zinc-200 group-hover:text-yellow' : 'text-white group-hover:text-yellow',
+            props.isChecklistItem ?
+              'text-zinc-200 group-hover:text-yellow'
+            : 'text-white group-hover:text-yellow',
           ]"
         >
           {{ props.group.label.replace(/^.*?\d+\s*[·–:]\s*/, "") }}
@@ -104,8 +106,10 @@ const processedPhrases = computed(() => {
         <div :class="['transition-transform duration-300', isOpen ? 'rotate-180' : '']">
           <ChevronDown
             :class="[
-              'size-4.5 tablet:size-5 transition-colors',
-              isOpen ? 'text-yellow' : props.isChecklistItem ? 'text-amber-400/50' : 'text-mist-400',
+              'size-4.5 transition-colors tablet:size-5',
+              isOpen ? 'text-yellow'
+              : props.isChecklistItem ? 'text-amber-400/50'
+              : 'text-mist-400',
             ]"
           />
         </div>
@@ -122,7 +126,9 @@ const processedPhrases = computed(() => {
       <div
         :class="[
           'p-6',
-          props.isChecklistItem ? 'border-t border-white/10 bg-white/2' : 'border-t border-white/5 bg-black/20',
+          props.isChecklistItem ?
+            'border-t border-white/10 bg-white/2'
+          : 'border-t border-white/5 bg-black/20',
         ]"
       >
         <div
@@ -140,27 +146,36 @@ const processedPhrases = computed(() => {
             >
               {{ phraseGroup.title }}
             </h5>
-            <div class="rounded-xl border border-white/5 bg-surface-overlay/40 p-3.5 backdrop-blur-sm">
+            <div
+              class="rounded-xl border border-white/5 bg-surface-overlay/40 p-3.5 backdrop-blur-sm"
+            >
               <div class="space-y-2.5">
                 <div
                   v-for="item in phraseGroup.items"
                   :key="item"
                   class="group/item flex items-center justify-between gap-3 rounded-lg p-2 transition-colors hover:bg-white/5"
                 >
-                  <div class="flex items-start gap-3 flex-1 min-w-0">
-                    <div class="size-1.5 rounded-full bg-yellow/60 mt-2 shrink-0" />
-                    <p class="text-sm leading-relaxed whitespace-pre-line text-white/90 tablet:text-[15px]">
+                  <div class="flex min-w-0 flex-1 items-start gap-3">
+                    <div class="mt-2 size-1.5 shrink-0 rounded-full bg-yellow/60" />
+                    <p
+                      class="text-sm leading-relaxed whitespace-pre-line text-white/90 tablet:text-[15px]"
+                    >
                       {{ item }}
                     </p>
                   </div>
 
                   <!-- Action Buttons: Audio & Copy -->
-                  <div class="flex items-center gap-1 shrink-0 opacity-80 group-hover/item:opacity-100 transition-opacity">
+                  <div
+                    class="flex shrink-0 items-center gap-1 opacity-80 transition-opacity group-hover/item:opacity-100"
+                  >
                     <!-- Listen Button -->
                     <button
                       type="button"
-                      class="flex size-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-mist-400 hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow transition-all"
-                      :class="{ 'border-yellow text-yellow bg-yellow/20 animate-pulse': speakingPhrase === item }"
+                      class="flex size-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
+                      :class="{
+                        'animate-pulse border-yellow bg-yellow/20 text-yellow':
+                          speakingPhrase === item,
+                      }"
                       title="Aussprechen"
                       aria-label="Aussprache anhören"
                       @click="playPhrase(item)"
@@ -171,8 +186,11 @@ const processedPhrases = computed(() => {
                     <!-- Copy Button -->
                     <button
                       type="button"
-                      class="flex size-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-mist-400 hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow transition-all"
-                      :class="{ 'border-emerald-500/50 text-emerald-400 bg-emerald-500/20': copiedPhrase === item }"
+                      class="flex size-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
+                      :class="{
+                        'border-emerald-500/50 bg-emerald-500/20 text-emerald-400':
+                          copiedPhrase === item,
+                      }"
                       title="In die Zwischenablage kopieren"
                       aria-label="Ausdruck kopieren"
                       @click="copyText(item)"

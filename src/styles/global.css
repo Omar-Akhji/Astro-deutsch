@@ -29,9 +29,9 @@
 
   /* German grammatical gender pedagogical tokens */
   --color-gender-der: oklch(68% 0.16 235deg); /* Masculine - Blue */
-  --color-gender-die: oklch(68% 0.19 15deg);  /* Feminine - Rose */
+  --color-gender-die: oklch(68% 0.19 15deg); /* Feminine - Rose */
   --color-gender-das: oklch(72% 0.17 155deg); /* Neuter - Emerald */
-  --color-gender-pl: oklch(78% 0.17 75deg);   /* Plural - Amber */
+  --color-gender-pl: oklch(78% 0.17 75deg); /* Plural - Amber */
 
   /* Calibrated Elevation Surface Tokens */
   --color-surface-base: oklch(14% 0.012 250deg);
@@ -239,7 +239,9 @@
   &:hover {
     background: oklch(21% 0.015 245deg / 90%);
     border-color: oklch(84% 0.18 90deg / 35%);
-    box-shadow: 0 16px 36px -8px oklch(0% 0 0deg / 50%), 0 0 24px -2px oklch(84% 0.18 90deg / 15%);
+    box-shadow:
+      0 16px 36px -8px oklch(0% 0 0deg / 50%),
+      0 0 24px -2px oklch(84% 0.18 90deg / 15%);
     transform: translateY(-4px);
   }
 }

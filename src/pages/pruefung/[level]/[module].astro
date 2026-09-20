@@ -33,28 +33,29 @@ const themen = themenResponse.data;
 
 <Layout
   description={`Struktur-Checkliste und Themen für den ${module}-Teil der Prüfung.`}
-  title={currentExam ?
-    `${currentExam.level} ${module!.charAt(0).toUpperCase() + module!.slice(1)} - Vorbereitung`
-  : "Modul - Vorbereitung"}
+  title={
+    currentExam ?
+      `${currentExam.level} ${module!.charAt(0).toUpperCase() + module!.slice(1)} - Vorbereitung`
+    : "Modul - Vorbereitung"
+  }
 >
-  {
-    !currentExam || !redemittel ?
-      <div class="px-8 py-16 text-center text-white">
-        <h1 class="mb-4 text-3xl">Lektion nicht gefunden</h1>
-      </div>
-    : <AnimateOnScroll
-        animation="fade-up"
-        as="main"
+  {!currentExam || !redemittel ?
+    <div class="px-8 py-16 text-center text-white">
+      <h1 class="mb-4 text-3xl">Lektion nicht gefunden</h1>
+    </div>
+  : <AnimateOnScroll
+      animation="fade-up"
+      as="main"
+      client:load
+    >
+      <ModuleStudyView
         client:load
-      >
-        <ModuleStudyView
-          client:load
-          examData={currentExam}
-          initialThemen={themen ?? []}
-          level={level!}
-          module={module as "sprechen" | "schreiben"}
-          redemittel={redemittel}
-        />
-      </AnimateOnScroll>
+        examData={currentExam}
+        initialThemen={themen ?? []}
+        level={level!}
+        module={module as "sprechen" | "schreiben"}
+        redemittel={redemittel}
+      />
+    </AnimateOnScroll>
   }
 </Layout>

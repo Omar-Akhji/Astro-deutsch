@@ -40,57 +40,56 @@ const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
   description={`Lerne Vokabeln zum Thema ${topic?.title ?? ""}.`}
   title={topic ? `${topic.title} - ${item?.german}` : "Vokabel Thema"}
 >
-  {
-    !item || !topic ?
-      <div class="px-8 py-16 text-center text-white">
-        <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
-        <BackButton />
-      </div>
-    : <div class="relative min-h-dvh py-8">
-        <main>
-          <Hero
-            category={item.category}
-            description={section?.title ?? item.german}
-            title={topic.title}
-            variant="compact"
-          />
+  {!item || !topic ?
+    <div class="px-8 py-16 text-center text-white">
+      <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
+      <BackButton />
+    </div>
+  : <div class="relative min-h-dvh py-8">
+      <main>
+        <Hero
+          category={item.category}
+          description={section?.title ?? item.german}
+          title={topic.title}
+          variant="compact"
+        />
 
-          {isFamilyTree ?
-            <>
-              <section class="mt-8">
-                <GlassCard className="p-8">
-                  {topic.familyTree ?
-                    <FamilyTree
-                      client:load
-                      members={topic.familyTree}
-                    />
-                  : null}
-                </GlassCard>
-              </section>
+        {isFamilyTree ?
+          <>
+            <section class="mt-8">
+              <GlassCard className="p-8">
+                {topic.familyTree ?
+                  <FamilyTree
+                    client:load
+                    members={topic.familyTree}
+                  />
+                : null}
+              </GlassCard>
+            </section>
 
-              <section class="mt-8">
-                <VocabularyTable
-                  client:load
-                  words={topic.words ?? []}
-                />
-              </section>
-            </>
-          : topic.words && topic.words.length > 0 ?
             <section class="mt-8">
               <VocabularyTable
                 client:load
-                words={topic.words}
+                words={topic.words ?? []}
               />
             </section>
-          : <section class="mt-8">
-              <GlassCard className="p-8">
-                <div class="text-center text-zinc-400">
-                  <p>Noch keine Vokabeln für {topic.title} eingetragen.</p>
-                </div>
-              </GlassCard>
-            </section>
-          }
-        </main>
-      </div>
+          </>
+        : topic.words && topic.words.length > 0 ?
+          <section class="mt-8">
+            <VocabularyTable
+              client:load
+              words={topic.words}
+            />
+          </section>
+        : <section class="mt-8">
+            <GlassCard className="p-8">
+              <div class="text-center text-zinc-400">
+                <p>Noch keine Vokabeln für {topic.title} eingetragen.</p>
+              </div>
+            </GlassCard>
+          </section>
+        }
+      </main>
+    </div>
   }
 </Layout>

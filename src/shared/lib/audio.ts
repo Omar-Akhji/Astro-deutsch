@@ -1,19 +1,19 @@
 /**
- * Zero-latency German Text-To-Speech (TTS) using the Web Speech API.
- * Provides clear, paced native pronunciation for language learners.
+ * Zero-latency German Text-To-Speech (TTS) using the Web Speech API. Provides clear, paced native
+ * pronunciation for language learners.
  */
 export function speakGerman(text: string, rate: number = 0.9): boolean {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) {
+  if (typeof window === "undefined" || !("speechSynthesis" in globalThis)) {
     return false;
   }
 
   try {
-    window.speechSynthesis.cancel();
+    globalThis.speechSynthesis.cancel();
 
     // Clean text: strip parenthesis annotations like (die), (Pl.) for pronunciation
     const cleanText = text
-      .replace(/\(.*?\)/g, "")
-      .replace(/[•/]/g, " ")
+      .replaceAll(/\(.*?\)/g, "")
+      .replaceAll(/[•/]/g, " ")
       .trim();
 
     if (!cleanText) return false;
@@ -23,16 +23,19 @@ export function speakGerman(text: string, rate: number = 0.9): boolean {
     utterance.rate = rate; // 0.9 is calibrated for educational clarity
 
     // Select natural German voice if available
-    const voices = window.speechSynthesis.getVoices();
-    const germanVoice = voices.find(
-      (v) => v.lang.startsWith("de") && (v.name.includes("Natural") || v.name.includes("Google") || v.localService),
-    ) ?? voices.find((v) => v.lang.startsWith("de"));
+    const voices = globalThis.speechSynthesis.getVoices();
+    const germanVoice =
+      voices.find(
+        (v) =>
+          v.lang.startsWith("de")
+          && (v.name.includes("Natural") || v.name.includes("Google") || v.localService),
+      ) ?? voices.find((v) => v.lang.startsWith("de"));
 
     if (germanVoice) {
       utterance.voice = germanVoice;
     }
 
-    window.speechSynthesis.speak(utterance);
+    globalThis.speechSynthesis.speak(utterance);
     return true;
   } catch (error) {
     console.warn("Speech synthesis error:", error);
@@ -51,9 +54,7 @@ export interface GenderInfo {
   textClass: string;
 }
 
-/**
- * Extracts and tags German noun genders (der/die/das/Plural) with pedagogical color semantics.
- */
+/** Extracts and tags German noun genders (der/die/das/Plural) with pedagogical color semantics. */
 export function parseNounGender(text: string): GenderInfo {
   const trimmed = text.trim();
   const lower = trimmed.toLowerCase();
@@ -73,7 +74,10 @@ export function parseNounGender(text: string): GenderInfo {
     return {
       gender: "pl",
       article: "die (Pl.)",
-      baseWord: trimmed.slice(4).replace(/\(pl\.?\)/i, "").trim(),
+      baseWord: trimmed
+        .slice(4)
+        .replace(/\(pl\.?\)/i, "")
+        .trim(),
       badgeClass: "bg-amber-500/15 text-amber-400 border-amber-500/30",
       borderClass: "border-amber-500/30",
       textClass: "text-amber-300",

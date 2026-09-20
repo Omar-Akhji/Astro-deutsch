@@ -2,7 +2,7 @@ import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import eslintPluginAstro from "eslint-plugin-astro";
 import nounsanitized from "eslint-plugin-no-unsanitized";
-import prettierRecommended from "eslint-plugin-prettier/recommended";
+import eslintConfigPrettier from "eslint-config-prettier";
 import eslintPluginVue from "eslint-plugin-vue";
 import vueParser from "vue-eslint-parser";
 import securityPlugin from "eslint-plugin-security";
@@ -133,6 +133,9 @@ const eslintConfig = defineConfig(
   {
     files: ["**/*.astro"],
     rules: {
+      // Allow flexible types for props / dynamic components in Astro templates
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
       // Astro requires the interface to be named "Props" for type inference
       "unicorn/name-replacements": ["error", { allowList: { Props: true } }],
       // All Astro-specific non-recommended rules
@@ -174,8 +177,8 @@ const eslintConfig = defineConfig(
     },
   },
 
-  // ─── Prettier — MUST be last ──────────────────────────────────────────────
-  prettierRecommended,
+  // ─── Prettier — MUST be last to disable conflicting rules ─────────────────
+  eslintConfigPrettier,
 
   // ─── Global ignores ───────────────────────────────────────────────────────
   {

@@ -33,7 +33,7 @@ const playAudio = (text: string) => {
   >
     <GlassCard class="@container">
       <div class="scrollbar-thin overflow-x-auto px-4 pb-4">
-        <table class="inline-full border-collapse text-left">
+        <table class="border-collapse text-left inline-full">
           <caption class="sr-only">
             Vokabelliste
           </caption>
@@ -53,7 +53,7 @@ const playAudio = (text: string) => {
               </th>
               <th
                 scope="col"
-                class="font-arabic border-be border-(--glass-border) px-3 pbs-3 text-right text-xs font-semibold tracking-wider text-mist-400 uppercase @md:px-4 @md:pbs-4 @md:text-sm"
+                class="border-be border-(--glass-border) px-3 pbs-3 text-right font-arabic text-xs font-semibold tracking-wider text-mist-400 uppercase @md:px-4 @md:pbs-4 @md:text-sm"
                 dir="rtl"
               >
                 العربية
@@ -64,7 +64,7 @@ const playAudio = (text: string) => {
             <tr
               v-for="word in props.words"
               :key="`${word.german}-${word.arabic}`"
-              class="group/row border-be border-white/5 transition-colors hover:bg-white/3 last:border-0"
+              class="group/row border-be border-white/5 transition-colors last:border-0 hover:bg-white/3"
             >
               <!-- German Word Column with Pronunciation & Gender Affordance -->
               <td class="px-3 py-3 font-medium @md:px-4 @md:py-3.5">
@@ -73,7 +73,10 @@ const playAudio = (text: string) => {
                   <button
                     type="button"
                     class="group/btn flex size-7 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-mist-400 transition-all hover:scale-105 hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow focus:ring-2 focus:ring-yellow/40 focus:outline-none"
-                    :class="{ 'border-yellow bg-yellow/20 text-yellow animate-pulse': playingWord === word.german }"
+                    :class="{
+                      'animate-pulse border-yellow bg-yellow/20 text-yellow':
+                        playingWord === word.german,
+                    }"
                     :aria-label="`Aussprache anhören für ${word.german}`"
                     :title="`Aussprache anhören`"
                     @click="playAudio(word.german)"
@@ -92,7 +95,11 @@ const playAudio = (text: string) => {
                     </span>
                     <span
                       class="font-semibold"
-                      :class="parseNounGender(word.german).article ? parseNounGender(word.german).textClass : 'text-orange font-semibold'"
+                      :class="
+                        parseNounGender(word.german).article ?
+                          parseNounGender(word.german).textClass
+                        : 'font-semibold text-orange'
+                      "
                     >
                       {{ parseNounGender(word.german).baseWord }}
                     </span>
@@ -107,7 +114,7 @@ const playAudio = (text: string) => {
 
               <!-- Arabic Column -->
               <td
-                class="font-arabic px-3 py-3 text-right text-base font-medium text-mist-300 @md:px-4 @md:py-3.5 @md:text-lg"
+                class="px-3 py-3 text-right font-arabic text-base font-medium text-mist-300 @md:px-4 @md:py-3.5 @md:text-lg"
                 dir="rtl"
               >
                 {{ word.arabic }}
