@@ -33,7 +33,9 @@ const isGlassBorder = computed(() => {
     :duration="800"
     :class="[
       'relative overflow-hidden rounded-3xl shadow-2xl transition-all',
-      props.variant === 'compact' ? 'mbe-8 p-6 tablet:p-8' : 'mbe-12 p-8 tablet:p-12',
+      props.variant === 'compact' ?
+        'mbe-6 p-4 mobile:p-6 tablet:p-8'
+      : 'mbe-8 p-5 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12',
       isGlassBorder ? 'border-2 border-(--glass-border) bg-card' : '',
     ]"
     :style="
@@ -83,7 +85,7 @@ const isGlassBorder = computed(() => {
       >
         <h1
           :class="[
-            '-my-2 mbe-2 py-2 text-3xl font-bold text-shadow-sm tablet:text-4xl laptop:text-5xl',
+            '-my-2 mbe-2 py-2 text-2xl font-bold text-shadow-sm mobile:text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl',
             props.gradient ?
               'text-white drop-shadow-[0_2px_10px_black/20]'
             : 'bg-linear-to-br from-white to-slate-200 bg-clip-text text-transparent',
@@ -122,7 +124,9 @@ const isGlassBorder = computed(() => {
         animation="fade-up"
         :delay="700"
       >
-        <dl class="mbs-8 flex flex-wrap justify-center gap-8">
+        <dl
+          class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+        >
           <div
             v-for="stat in props.stats"
             :key="stat.label"

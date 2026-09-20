@@ -77,7 +77,7 @@ onUnmounted(() => {
   <!-- Compact / Binary Question Layout (e.g. Richtig/Falsch or Ja/Nein) -->
   <div
     v-if="props.isCompact"
-    class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+    class="flex flex-col gap-3 mobile:flex-row mobile:items-center mobile:justify-between"
   >
     <div class="flex flex-1 items-baseline gap-3">
       <span
@@ -132,7 +132,7 @@ onUnmounted(() => {
       </h3>
     </div>
     <div
-      class="grid grid-cols-6 gap-1 overflow-hidden rounded-xl border border-white/10 bg-surface-raised p-1 backdrop-blur-sm sm:grid-cols-11"
+      class="grid grid-cols-5 gap-1 overflow-hidden rounded-xl border border-white/10 bg-surface-raised p-1 backdrop-blur-sm mobile:grid-cols-6 tablet:grid-cols-11"
     >
       <button
         v-for="option in props.options"

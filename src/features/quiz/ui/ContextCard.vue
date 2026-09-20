@@ -35,7 +35,7 @@ const ads = computed(() => {
     v-if="props.skill === 'lesen' && props.question.teil === 3"
     class="space-y-6"
   >
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 mobile:grid-cols-2 laptop:grid-cols-3">
       <button
         v-for="ad in ads"
         :key="ad.letter"

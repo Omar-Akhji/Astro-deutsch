@@ -1,9 +1,8 @@
 ---
 import { BookOpen } from "lucide-astro";
 import { getGrammarSection } from "../../features/grammar/api/services";
-import GrammarSectionCards from "../../features/grammar/ui/GrammarSectionCards.vue";
+import GrammarSectionCards from "../../features/grammar/ui/GrammarSectionCards.astro";
 import Layout from "../../layouts/Layout.astro";
-import AnimateOnScroll from "../../shared/ui/AnimateOnScroll.vue";
 import PageHeader from "../../shared/ui/PageHeader.astro";
 
 const GRAMMAR_SECTION_IDS = [
@@ -23,21 +22,14 @@ const sections = sectionsResponses.map((s) => s.data).filter((s) => s != null);
   description="Deutsche Grammatik lernen - Verben, Nomen, Präpositionen, Satzstrukturen. Übersichtliche Erklärungen für alle Niveaus."
   title="Grammatik | Deutsch Lernen"
 >
-  <AnimateOnScroll
-    animation="fade-up"
-    as="main"
-    client:load
-  >
+  <div class="py-4 mobile:py-8">
     <PageHeader
       icon={BookOpen}
       subtitle="Übersichtliche Erklärungen und Strukturen für dein B1/B2 Training"
       title="Deutsche Grammatik"
     />
     {sections.map((section) => (
-      <GrammarSectionCards
-        client:load
-        section={section}
-      />
+      <GrammarSectionCards section={section} />
     ))}
-  </AnimateOnScroll>
+  </div>
 </Layout>

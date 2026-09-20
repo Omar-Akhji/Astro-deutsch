@@ -219,7 +219,7 @@ const scrollToTop = () => {
           </div>
         </div>
 
-        <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8">
+        <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
           <AnimateOnScroll
             v-for="(thema, index) in themes"
             :key="thema.id"

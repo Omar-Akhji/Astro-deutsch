@@ -213,7 +213,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
         </div>
       </div>
     </header>
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8">
+    <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
       <article
         v-for="id in ['card-1', 'card-2', 'card-3']"
         :key="id"
@@ -303,7 +303,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
           <Skeleton class="h-4 w-32 rounded-md bg-white/5" />
         </div>
       </div>
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8">
+      <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
         <div
           v-for="cid in ['c1', 'c2', 'c3']"
           :key="cid"
@@ -391,7 +391,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
         <Skeleton class="h-8 w-52 rounded-md bg-white/10" />
       </div>
 
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
+      <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
         <article
           v-for="id in ['g1', 'g2', 'g3']"
           :key="id"
@@ -568,7 +568,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       </div>
     </header>
 
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8 py-4">
+    <div class="grid grid-cols-1 gap-6 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
       <div
         v-for="id in ['v1', 'v2', 'v3', 'v4', 'v5', 'v6']"
         :key="id"
@@ -995,7 +995,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
           />
           <Skeleton class="h-7 w-32 rounded-md bg-white/10" />
         </div>
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
+        <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
           <div
             v-for="id in ['mt1', 'mt2', 'mt3']"
             :key="id"
@@ -1146,7 +1146,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
         <Skeleton class="h-8 w-64 rounded-md bg-white/15" />
         <Skeleton class="h-5 w-full max-w-2xl rounded-md bg-white/5" />
       </div>
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8">
+      <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
         <div
           v-for="cid in ['tc1', 'tc2', 'tc3']"
           :key="cid"
@@ -1292,7 +1292,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       />
       <Skeleton class="h-8 w-52 rounded-md bg-white/10" />
     </div>
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
+    <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
       <article
         v-for="id in ['sc1', 'sc2', 'sc3']"
         :key="id"
@@ -1330,11 +1330,11 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     </div>
 
     <div
-      class="relative flex w-full max-w-md flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md md:max-w-4xl md:flex-row"
+      class="relative flex w-full max-w-md flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
     >
-      <!-- Panel 1: Left Navigation Sidebar (Desktop) -->
+      <!-- Panel 1: Left Navigation Sidebar (Tablet & Desktop) -->
       <div
-        class="hidden w-36 shrink-0 flex-col items-center justify-between border-r border-white/10 bg-white/5 py-8 md:flex"
+        class="hidden w-32 shrink-0 flex-col items-center justify-between border-r border-white/10 bg-white/5 py-8 tablet:flex laptop:w-36"
       >
         <Skeleton class="size-12 rounded-full bg-white/10" />
         <div class="w-full space-y-4 px-4">
@@ -1344,9 +1344,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
         <Skeleton class="h-3 w-10 rounded-md bg-white/5" />
       </div>
 
-      <!-- Panel 2: Showcase Banner (Desktop) -->
+      <!-- Panel 2: Showcase Banner (Laptop & Desktop) -->
       <div
-        class="hidden w-[320px] shrink-0 flex-col border-r border-white/10 bg-white/5 p-8 md:flex"
+        class="hidden w-[300px] shrink-0 flex-col border-r border-white/10 bg-white/5 p-8 laptop:flex desktop:w-[340px]"
       >
         <Skeleton class="h-4 w-24 rounded-md bg-white/10" />
         <Skeleton class="mt-4 h-8 w-3/4 rounded-md bg-white/15" />
@@ -1425,7 +1425,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <div class="mx-auto mbe-6 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
     </header>
     <section class="py-4">
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8 py-4">
+      <div class="grid grid-cols-1 gap-6 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
         <div
           v-for="id in ['s1', 's2', 's3', 's4', 's5', 's6']"
           :key="id"

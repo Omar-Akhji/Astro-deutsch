@@ -19,7 +19,9 @@ const props = defineProps<{ vocabList: VocabItem[] }>();
     >
       Vocabulary Topics
     </h2>
-    <ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8 p-0 py-4">
+    <ul
+      class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3"
+    >
       <li
         v-for="(item, index) in props.vocabList"
         :key="item.id"

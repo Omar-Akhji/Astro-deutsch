@@ -10,7 +10,7 @@ const props = defineProps<{ examLevels: ExamLevel[] }>();
 
 <template>
   <section class="py-4">
-    <ul class="m-0 grid list-none grid-cols-1 gap-8 p-0 py-4 laptop:grid-cols-2">
+    <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 tablet:grid-cols-2 tablet:gap-8">
       <li
         v-for="(exam, index) in props.examLevels"
         :key="exam.id"

@@ -12,11 +12,11 @@ import Hero from "../shared/ui/Hero.astro";
 >
   <AnimateOnScroll
     animation="fade-up"
-    as="main"
-    className="container mx-auto px-4 py-8"
+    as="div"
+    class="py-4 mobile:py-8"
     client:load
   >
-    <header class="mbe-16">
+    <header class="mbe-12 mobile:mbe-16">
       <Hero
         category="A1 - B2"
         description="Die umfassende Plattform für dein Deutsch-Training. Von den Grundlagen bis zum B1 & B2 Zertifikat – alles an einem Ort."
@@ -30,7 +30,7 @@ import Hero from "../shared/ui/Hero.astro";
       />
     </header>
 
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8">
+    <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
       <AnimateOnScroll
         animation="fade-up"
         client:load

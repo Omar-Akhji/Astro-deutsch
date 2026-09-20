@@ -43,7 +43,9 @@ const ICON_MAP: Record<string, Component | object> = {
       </h2>
     </AnimateOnScroll>
 
-    <ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6 p-0">
+    <ul
+      class="m-0 grid list-none grid-cols-1 gap-6 p-0 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3"
+    >
       <li
         v-for="(topic, index) in props.section.topics"
         :key="topic.id"

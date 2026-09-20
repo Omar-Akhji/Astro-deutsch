@@ -53,12 +53,12 @@ onMounted(() => {
     </a>
 
     <div
-      class="relative flex w-full max-w-md animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-slate-800/80 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) md:max-w-4xl md:flex-row"
+      class="relative flex w-full max-w-md animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-slate-800/80 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
     >
       <!-- PANEL 1: Left navigation menu (desktop/tablet) -->
       <nav
         aria-label="Auth Ansichtsauswahl"
-        class="relative hidden w-36 shrink-0 flex-col items-center justify-between border-r border-slate-800/50 bg-slate-950/10 py-8 md:flex"
+        class="relative hidden w-32 shrink-0 flex-col items-center justify-between border-r border-slate-800/50 bg-slate-950/10 py-8 tablet:flex laptop:w-36"
       >
         <!-- Logo -->
         <div class="relative size-12 transition-transform duration-500 select-none hover:rotate-12">
@@ -120,9 +120,9 @@ onMounted(() => {
         </div>
       </nav>
 
-      <!-- PANEL 2: Central showcase banner -->
+      <!-- PANEL 2: Central showcase banner (laptop & desktop) -->
       <div
-        class="relative z-10 -my-6 hidden w-[320px] shrink-0 flex-col overflow-hidden rounded-2xl bg-linear-to-br from-yellow to-orange text-slate-950 shadow-xl shadow-orange/15 md:flex"
+        class="relative z-10 -my-6 hidden w-[300px] shrink-0 flex-col overflow-hidden rounded-2xl bg-linear-to-br from-yellow to-orange text-slate-950 shadow-xl shadow-orange/15 laptop:flex desktop:w-[340px]"
       >
         <div
           aria-hidden="true"
@@ -203,10 +203,10 @@ onMounted(() => {
 
       <!-- PANEL 3: Active form -->
       <div
-        class="relative flex flex-1 flex-col justify-start px-6 pt-5 pb-9 md:px-8 md:pt-6 md:pb-10 lg:px-10 lg:pt-6 lg:pb-12"
+        class="relative flex flex-1 flex-col justify-start px-5 pt-5 pb-8 mobile:px-6 tablet:px-8 tablet:pt-6 tablet:pb-10 laptop:px-10"
       >
-        <!-- Mobile header (visible below md) -->
-        <div class="mb-6 flex flex-col items-center text-center md:hidden">
+        <!-- Mobile header (visible below tablet) -->
+        <div class="mb-6 flex flex-col items-center text-center tablet:hidden">
           <div class="relative mb-3 size-12 transition-transform duration-500 hover:rotate-12">
             <img
               src="/logo.svg"

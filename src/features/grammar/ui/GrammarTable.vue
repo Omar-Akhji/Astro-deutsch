@@ -34,7 +34,7 @@ const getRowKey = (row: (string | { text: string; highlight?: boolean })[]) => {
               <th
                 v-for="header in props.data.headers"
                 :key="header"
-                class="px-6 py-4 font-semibold tracking-widest text-orange/80"
+                class="px-3 py-2.5 font-semibold tracking-wider text-orange/80 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4"
               >
                 {{ header }}
               </th>
@@ -49,7 +49,10 @@ const getRowKey = (row: (string | { text: string; highlight?: boolean })[]) => {
               <td
                 v-for="(cell, index) in row"
                 :key="typeof cell === 'string' ? cell : cell.text"
-                :class="['px-6 py-4', index === 0 ? 'font-medium text-orange' : 'text-white/90']"
+                :class="[
+                  'px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4',
+                  index === 0 ? 'font-medium text-orange' : 'text-white/90',
+                ]"
               >
                 <ContentItem :content="cell" />
               </td>

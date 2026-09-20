@@ -74,7 +74,7 @@ const stats = [
             </h2>
           </AnimateOnScroll>
 
-          <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
+          <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
             <AnimateOnScroll
               v-for="(testId, testIndex) in props.initialModelTests"
               :key="`${skill.id}-${testId}`"
