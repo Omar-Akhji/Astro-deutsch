@@ -1,66 +1,102 @@
 ---
-/** Modernized Zero-JS Premium Footer component */
+/**
+ * Modern High-Craft Pedagogical Footer Component Calibrated strictly with senior UI/UX spacing
+ * principles (8pt/4pt mathematical grid, "Internal <= External" Gestalt grouping, WCAG touch target
+ * compliance, and responsive baseline).
+ */
 import {
+  ArrowUp,
   ArrowUpRight,
+  Award,
   BookOpen,
-  ClipboardList,
   GraduationCap,
   Heart,
   Languages,
-  Sparkles,
+  ShieldCheck,
+  Zap,
 } from "lucide-astro";
+
+const currentYear = new Date().getFullYear();
 ---
 
-<footer class="relative mbs-24 overflow-hidden border-t border-(--glass-border) bg-card/60 pt-16 pb-12 backdrop-blur-(--glass-blur)">
-  <!-- Ambient background glow effects -->
-  <div
-    aria-hidden="true"
-    class="pointer-events-none absolute top-0 left-1/4 -z-10 size-96 rounded-full bg-yellow/5 blur-[120px]"
-  ></div>
-  <div
-    aria-hidden="true"
-    class="pointer-events-none absolute right-1/4 bottom-0 -z-10 size-96 rounded-full bg-orange/5 blur-[120px]"
-  ></div>
+<footer
+  aria-labelledby="footer-heading"
+  class="relative mt-10 mb-8 overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) mobile:mt-12 mobile:mb-10 mobile:p-6 tablet:mt-14 tablet:mb-12 tablet:p-7 laptop:mb-14 laptop:p-8"
+  role="contentinfo"
+>
+  <h2
+    class="sr-only"
+    id="footer-heading"
+  >
+    Fußbereich
+  </h2>
 
-  <div class="mx-auto max-w-7xl px-4 mobile:px-6 tablet:px-8">
-    <div class="grid grid-cols-1 gap-8 mobile:gap-10 tablet:grid-cols-2 tablet:gap-12 laptop:grid-cols-5">
-      <!-- Column 1: Brand & Bio (spans 2 on tablet & desktop) -->
-      <div class="tablet:col-span-2 laptop:col-span-2">
+  <div class="w-full">
+    <!-- TIER 1: Brand & Pedagogical German Gender System (Tight 8pt/4pt Gestalt Spacing) -->
+    <div class="mb-6 flex flex-col gap-4 border-b border-white/10 pb-5 tablet:mb-7 tablet:flex-row tablet:items-center tablet:justify-between tablet:gap-6 tablet:pb-6">
+      <!-- Brand & Mission (8pt internal spacing, compact containment) -->
+      <div class="space-y-2 tablet:max-w-xl laptop:max-w-2xl">
         <a
-          class="group inline-flex items-center gap-3 text-2xl font-bold text-white transition-opacity hover:opacity-90"
+          aria-label="Deutsch Lernen Startseite"
+          class="group inline-flex items-center gap-2.5 transition-opacity hover:opacity-90"
           href="/"
         >
-          <span class="flex size-11 items-center justify-center rounded-2xl border-2 border-yellow/40 bg-linear-to-br from-yellow/20 to-orange/20 text-yellow shadow-lg shadow-yellow/10 transition-transform duration-300 group-hover:scale-105">
-            <GraduationCap class="size-6" />
+          <span class="flex size-9 items-center justify-center rounded-xl border border-yellow/40 bg-linear-to-br from-yellow/20 to-orange/20 text-yellow shadow-md shadow-yellow/10 transition-transform duration-300 group-hover:scale-105">
+            <GraduationCap class="size-5" />
           </span>
-          <span class="bg-linear-to-r from-white via-white/90 to-mist-400 bg-clip-text text-transparent">
-            Deutsch Lernen
-          </span>
+          <div class="space-y-0.5">
+            <span class="block text-base tablet:text-lg font-bold tracking-tight text-white text-shadow-sm transition-colors duration-300 group-hover:text-yellow">
+              Deutsch Lernen
+            </span>
+            <span class="block text-[11px] font-medium text-yellow/80">
+              B1 &amp; B2 Zertifikatsvorbereitung
+            </span>
+          </div>
         </a>
 
-        <p class="mbs-4 max-w-sm text-sm leading-relaxed text-mist-500">
-          Deine interaktive Plattform für die erfolgreiche Vorbereitung auf die Goethe &amp; ÖSD
-          Zertifikatsprüfungen B1 &amp; B2.
+        <p class="text-xs leading-relaxed text-mist-400 max-w-lg">
+          Deine kostenlose, interaktive Lernplattform zur gezielten Vorbereitung auf die offiziellen
+          B1 &amp; B2 Prüfungen des Goethe-Instituts und des ÖSD.
         </p>
+      </div>
 
-        <div class="mbs-6 flex items-center gap-2">
-          <span class="inline-flex items-center gap-1.5 rounded-full border border-yellow/30 bg-yellow/10 px-3 py-1 text-xs font-medium text-yellow">
-            <Sparkles class="size-3.5" />
-            Goethe &amp; ÖSD B1/B2 Ready
+      <!-- Pedagogical Gender Color Indicator (Compact 4pt/8pt Badges) -->
+      <div class="space-y-1.5 tablet:shrink-0">
+        <span class="block text-[10px] font-semibold uppercase tracking-wider text-mist-500">
+          Grammatik-Farbsystem
+        </span>
+        <div class="flex flex-wrap items-center gap-1.5 text-[11px]">
+          <span class="inline-flex items-center gap-1 rounded-md border border-gender-der/30 bg-gender-der/10 px-2 py-0.5 font-semibold text-gender-der">
+            der • Maskulin
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-md border border-[oklch(68%_0.19_15deg)]/30 bg-[oklch(68%_0.19_15deg)]/10 px-2 py-0.5 font-semibold text-[oklch(68%_0.19_15deg)]">
+            die • Feminin
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-md border border-[oklch(72%_0.17_155deg)]/30 bg-[oklch(72%_0.17_155deg)]/10 px-2 py-0.5 font-semibold text-[oklch(72%_0.17_155deg)]">
+            das • Neutral
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-md border border-[oklch(78%_0.17_75deg)]/30 bg-[oklch(78%_0.17_75deg)]/10 px-2 py-0.5 font-semibold text-[oklch(78%_0.17_75deg)]">
+            die • Plural
           </span>
         </div>
       </div>
+    </div>
 
-      <!-- Column 2: Vokabeln & Themen -->
+    <!-- TIER 2: Main Navigation Grid (Compact Senior Spacing & Fast Scanning) -->
+    <div class="grid grid-cols-2 gap-x-4 gap-y-6 mobile:gap-x-6 mobile:gap-y-6 tablet:grid-cols-4 tablet:gap-x-6 tablet:gap-y-0 laptop:gap-x-8">
+      <!-- Column 1: Wortschatz -->
       <div>
-        <h3 class="flex items-center gap-2 text-sm font-semibold text-white">
-          <Languages class="size-4 text-yellow" />
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <Languages class="size-3.5 text-yellow" />
           Wortschatz
         </h3>
-        <ul class="mbs-4 space-y-2.5 text-sm">
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/vokabeln"
             >
               Vokabeln Übersicht
@@ -68,7 +104,7 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/themen"
             >
               Themenwelten
@@ -76,7 +112,7 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/vokabeln/1"
             >
               Familie &amp; Alltag
@@ -84,25 +120,44 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/vokabeln/2"
             >
               Wohnen &amp; Haushalt
             </a>
           </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/vokabeln/3"
+            >
+              Essen &amp; Trinken
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/vokabeln/10"
+            >
+              Notruf &amp; Gesundheit
+            </a>
+          </li>
         </ul>
       </div>
 
-      <!-- Column 3: Grammatik -->
+      <!-- Column 2: Grammatik -->
       <div>
-        <h3 class="flex items-center gap-2 text-sm font-semibold text-white">
-          <BookOpen class="size-4 text-yellow" />
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <BookOpen class="size-3.5 text-yellow" />
           Grammatik
         </h3>
-        <ul class="mbs-4 space-y-2.5 text-sm">
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/grammatik"
             >
               Grammatik Übersicht
@@ -110,7 +165,7 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/grammatik/verben/grundverben"
             >
               Verben &amp; Zeiten
@@ -118,7 +173,7 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/grammatik/nomen/genus"
             >
               Nomen &amp; Genus
@@ -126,25 +181,36 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/grammatik/praepositionen/lokale-praep"
             >
               Präpositionen
             </a>
           </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/grammatik"
+            >
+              Satzstrukturen
+            </a>
+          </li>
         </ul>
       </div>
 
-      <!-- Column 4: Prüfung & Quizzes -->
+      <!-- Column 3: Prüfungstraining -->
       <div>
-        <h3 class="flex items-center gap-2 text-sm font-semibold text-white">
-          <ClipboardList class="size-4 text-yellow" />
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <Award class="size-3.5 text-yellow" />
           Prüfungstraining
         </h3>
-        <ul class="mbs-4 space-y-2.5 text-sm">
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/pruefung"
             >
               Prüfungsübersicht
@@ -152,7 +218,7 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/pruefung/b1/modelltests"
             >
               Modelltests B1
@@ -161,7 +227,7 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/pruefung/b2/modelltests"
             >
               Modelltests B2
@@ -170,27 +236,122 @@ import {
           </li>
           <li>
             <a
-              class="inline-flex items-center gap-1 text-mist-500 transition-colors hover:text-yellow"
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/pruefung/b1/lesen"
+            >
+              Lesen &amp; Hören
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/pruefung/b1/schreiben"
+            >
+              Schreiben &amp; Sprechen
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Interaktiv & Konto -->
+      <div>
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <Zap class="size-3.5 text-yellow" />
+          Interaktiv
+        </h3>
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/quiz"
+            >
+              Quiz Startseite
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
               href="/quiz/b1/lesen/1"
             >
               Leseverstehen Quiz
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/quiz/b1/hoeren/1"
+            >
+              Hörverstehen Quiz
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/login"
+            >
+              Lernkonto Anmelden
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/register"
+            >
+              Kostenlos registrieren
             </a>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- Bottom Bar / Legal & Copyright -->
-    <div class="mbs-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pbs-8 sm:flex-row">
-      <p class="text-xs text-mist-500">
-        &copy; {new Date().getFullYear()} Deutsch Lernen. Alle Rechte vorbehalten.
-      </p>
+    <!-- TIER 3: Bottom Bar / Legal, Standards & Smooth Back-to-Top (Compact 8pt Spacing) -->
+    <div class="mt-6 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-4 text-[11px] text-mist-500 sm:flex-row tablet:mt-7 tablet:pt-5">
+      <div class="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-center sm:justify-start sm:text-left">
+        <span>&copy; {currentYear} Deutsch Lernen. Alle Rechte vorbehalten.</span>
+        <span
+          aria-hidden="true"
+          class="text-white/25"
+        >
+          •
+        </span>
+        <span class="inline-flex items-center gap-1 text-mist-400">
+          <ShieldCheck class="size-3.5 text-yellow/80" />
+          Offizielle GER-Standards
+        </span>
+      </div>
 
-      <div class="flex items-center gap-4 text-xs text-mist-500">
-        <span class="inline-flex items-center gap-1 text-mist-500">
-          Mit <Heart class="size-3 text-red-500 fill-red-500" /> für Deutschlerner entwickelt
+      <div class="flex items-center gap-3">
+        <!-- Back-to-top button -->
+        <button
+          aria-label="Nach oben scrollen"
+          class="group inline-flex items-center gap-1 rounded-md border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-medium text-mist-300 transition-all hover:border-yellow/30 hover:bg-yellow/10 hover:text-yellow focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-yellow active:scale-95"
+          id="footer-back-to-top"
+          type="button"
+        >
+          <span>Nach oben</span>
+          <ArrowUp class="size-3 transition-transform duration-200 group-hover:-translate-y-0.5" />
+        </button>
+
+        <!-- Discrete German flag aesthetic accent -->
+        <div
+          aria-hidden="true"
+          class="flex h-2.5 w-4.5 overflow-hidden rounded-xs border border-white/10 opacity-75"
+          title="Deutschland Flagge"
+        >
+          <span class="h-full w-1/3 bg-neutral-900"></span>
+          <span class="h-full w-1/3 bg-red-600"></span>
+          <span class="h-full w-1/3 bg-yellow-400"></span>
+        </div>
+
+        <span class="inline-flex items-center gap-1 text-mist-400">
+          Mit <Heart class="inline size-2.5 fill-red-500 text-red-500" /> für Lerner
         </span>
       </div>
     </div>
   </div>
 </footer>
+
+<script src="../scripts/footer.ts"></script>

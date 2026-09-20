@@ -1102,35 +1102,41 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
             class="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-xl"
           >
             <!-- Browser Header with 3 dots -->
-            <div class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-4 py-3">
-              <div class="flex gap-1.5">
+            <div
+              class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3"
+            >
+              <div class="flex shrink-0 gap-1.5">
                 <Skeleton class="size-3 rounded-full bg-white/20" />
                 <Skeleton class="size-3 rounded-full bg-white/20" />
                 <Skeleton class="size-3 rounded-full bg-white/20" />
               </div>
-              <div class="flex flex-1 justify-center">
-                <Skeleton class="h-6 w-48 rounded-lg bg-white/10" />
+              <div class="flex min-w-0 flex-1 justify-center">
+                <Skeleton class="h-6 w-32 max-w-full rounded-lg bg-white/10 mobile:w-48" />
               </div>
             </div>
             <!-- Email Fields Header -->
-            <div class="space-y-3 space-y-px border-b border-white/10 bg-white/2 px-6 py-3">
-              <div class="flex items-center gap-3">
-                <Skeleton class="h-4 w-8 rounded-md bg-white/10" />
-                <Skeleton class="h-6 w-32 rounded-full bg-white/10" />
+            <div
+              class="space-y-3 border-b border-white/10 bg-white/2 px-4 py-2.5 mobile:px-6 mobile:py-3"
+            >
+              <div class="flex items-center gap-2.5 mobile:gap-3">
+                <Skeleton class="h-4 w-8 shrink-0 rounded-md bg-white/10" />
+                <Skeleton class="h-6 w-24 rounded-full bg-white/10 mobile:w-32" />
               </div>
-              <div class="flex items-center gap-3">
-                <Skeleton class="h-4 w-14 rounded-md bg-white/10" />
-                <Skeleton class="h-5 w-64 rounded-md bg-white/10" />
+              <div class="flex items-center gap-2.5 mobile:gap-3">
+                <Skeleton class="h-4 w-14 shrink-0 rounded-md bg-white/10" />
+                <Skeleton
+                  class="h-5 w-44 max-w-[calc(100%-4.5rem)] rounded-md bg-white/10 mobile:w-64"
+                />
               </div>
             </div>
             <!-- Email Body Blocks -->
-            <div class="space-y-4 p-8">
+            <div class="space-y-4 p-4 mobile:p-6 tablet:p-8">
               <div
                 v-for="sec in ['s1', 's2', 's3', 's4']"
                 :key="sec"
-                class="space-y-2 rounded-xl border border-white/10 bg-white/5 p-4"
+                class="space-y-2 rounded-xl border border-white/10 bg-white/5 p-3.5 mobile:p-4"
               >
-                <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                   <Skeleton class="h-3.5 w-24 rounded-md bg-white/10" />
                   <Skeleton class="h-3.5 w-32 rounded-md bg-white/5" />
                 </div>
@@ -1348,7 +1354,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
 
       <!-- Panel 2: Showcase Banner (Laptop & Desktop) -->
       <div
-        class="hidden w-[300px] shrink-0 flex-col border-r border-white/10 bg-white/5 p-8 laptop:flex desktop:w-[340px]"
+        class="hidden w-75 shrink-0 flex-col border-r border-white/10 bg-white/5 p-8 laptop:flex desktop:w-85"
       >
         <Skeleton class="h-4 w-24 rounded-md bg-white/10" />
         <Skeleton class="mt-4 h-8 w-3/4 rounded-md bg-white/15" />

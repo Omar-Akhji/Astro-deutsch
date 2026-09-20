@@ -21,7 +21,7 @@ bun x astro dev --background
 
 ## Documentation
 
-Full documentation: https://docs.astro.build
+Full documentation: <https://docs.astro.build>
 
 Consult these guides before working on related tasks:
 

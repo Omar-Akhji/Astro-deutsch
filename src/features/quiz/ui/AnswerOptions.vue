@@ -200,7 +200,7 @@ onUnmounted(() => {
           v-if="props.selectedAnswer === option"
           class="flex size-5 shrink-0 items-center justify-center rounded-full bg-yellow text-black"
         >
-          <Check class="size-3 stroke-[3]" />
+          <Check class="size-3 stroke-3" />
         </span>
       </button>
     </div>

@@ -16,51 +16,67 @@ const props = defineProps<Props>();
     class="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 shadow-2xl backdrop-blur-xl"
   >
     <!-- Browser/Email Header -->
-    <div class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-4 py-3">
-      <div class="flex gap-1.5">
+    <div
+      class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3"
+    >
+      <div class="flex shrink-0 gap-1.5">
         <div class="size-3 rounded-full bg-red-500/50" />
         <div class="size-3 rounded-full bg-amber-500/50" />
         <div class="size-3 rounded-full bg-emerald-500/50" />
       </div>
-      <div class="flex flex-1 justify-center">
-        <div class="flex items-center gap-2 rounded-lg bg-black/20 px-4 py-1 text-xs text-zinc-400">
-          <Mail :size="12" />
-          <span>Neues Dokument - {{ props.type === "informal" ? "Informell" : "Formell" }}</span>
+      <div class="flex min-w-0 flex-1 justify-center">
+        <div
+          class="flex max-w-full items-center gap-2 truncate rounded-lg bg-black/20 px-2.5 py-1 text-xs text-zinc-400 mobile:px-4"
+        >
+          <Mail
+            :size="12"
+            class="shrink-0"
+          />
+          <span class="truncate"
+            >Neues Dokument - {{ props.type === "informal" ? "Informell" : "Formell" }}</span
+          >
         </div>
       </div>
     </div>
 
     <!-- Email Fields -->
     <div class="space-y-px border-b border-white/10 bg-white/2">
-      <div class="flex items-center gap-3 px-6 py-3">
-        <span class="text-xs font-bold tracking-widest text-zinc-500 uppercase">An:</span>
+      <div class="flex items-center gap-2.5 px-4 py-2.5 mobile:gap-3 mobile:px-6 mobile:py-3">
+        <span class="shrink-0 text-xs font-bold tracking-widest text-zinc-500 uppercase">An:</span>
         <div
-          class="flex items-center gap-2 rounded-full bg-amber-400/10 px-3 py-1 text-sm font-medium text-amber-400"
+          class="flex max-w-full items-center gap-2 truncate rounded-full bg-amber-400/10 px-3 py-1 text-xs font-medium text-amber-400 mobile:text-sm"
         >
-          <User :size="14" />
-          {{ props.recipient }}
+          <User
+            :size="14"
+            class="shrink-0"
+          />
+          <span class="truncate">{{ props.recipient }}</span>
         </div>
       </div>
-      <div class="flex items-center gap-3 px-6 py-3">
-        <span class="text-xs font-bold tracking-widest text-zinc-500 uppercase"> Betreff: </span>
-        <div class="flex items-center gap-2 text-sm font-semibold text-white">
+      <div class="flex items-center gap-2.5 px-4 py-2.5 mobile:gap-3 mobile:px-6 mobile:py-3">
+        <span class="shrink-0 text-xs font-bold tracking-widest text-zinc-500 uppercase"
+          >Betreff:</span
+        >
+        <div
+          class="flex min-w-0 items-center gap-2 text-xs font-semibold wrap-break-word text-white mobile:text-sm"
+        >
           <Tag
             :size="14"
-            class="text-zinc-400"
+            class="shrink-0 text-zinc-400"
           />
-          {{ props.subject }}
+          <span class="wrap-break-word">{{ props.subject }}</span>
         </div>
       </div>
     </div>
 
     <!-- Email Content Area -->
-    <div class="relative p-8 pt-10">
+    <div class="relative p-4 pt-6 mobile:p-6 mobile:pt-8 tablet:p-8 tablet:pt-10">
       <!-- Background Pattern -->
       <div
         class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-size-[20px_20px] opacity-5"
       />
 
-      <div class="relative space-y-6">
+      <div class="relative space-y-4 mobile:space-y-6">
         <div
           v-for="(section, sectionIndex) in props.sections"
           :key="section.label"
@@ -83,7 +99,7 @@ const props = defineProps<Props>();
           <!-- Text Block -->
           <div
             :class="[
-              'relative rounded-xl border border-solid p-4 transition-all hover:bg-white/5',
+              'relative rounded-xl border border-solid p-3.5 transition-all hover:bg-white/5 mobile:p-4',
               section.color === 'text-amber-400' ? 'border-amber-400/30'
               : section.color === 'text-blue-400' ? 'border-blue-400/30'
               : section.color === 'text-fuchsia-400' ? 'border-fuchsia-400/30'
@@ -92,13 +108,13 @@ const props = defineProps<Props>();
               : 'border-white/20',
             ]"
           >
-            <div class="mb-1 flex items-center justify-between">
+            <div class="mb-1.5 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
               <span :class="['text-[10px] font-bold tracking-[0.2em] uppercase', section.color]">
                 {{ sectionIndex + 1 }}. {{ section.label }}
               </span>
-              <span class="text-[10px] text-zinc-500 italic">{{ section.description }}</span>
+              <span class="text-[10px] text-zinc-400 italic">{{ section.description }}</span>
             </div>
-            <p class="font-serif text-lg leading-relaxed text-zinc-200">
+            <p class="font-serif text-base leading-relaxed text-zinc-200 mobile:text-lg">
               {{ section.text }}
             </p>
           </div>

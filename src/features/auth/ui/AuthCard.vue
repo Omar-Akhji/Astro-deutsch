@@ -122,7 +122,7 @@ onMounted(() => {
 
       <!-- PANEL 2: Central showcase banner (laptop & desktop) -->
       <div
-        class="relative z-10 -my-6 hidden w-[300px] shrink-0 flex-col overflow-hidden rounded-2xl bg-linear-to-br from-yellow to-orange text-slate-950 shadow-xl shadow-orange/15 laptop:flex desktop:w-[340px]"
+        class="relative z-10 -my-6 hidden w-75 shrink-0 flex-col overflow-hidden rounded-2xl bg-linear-to-br from-yellow to-orange text-slate-950 shadow-xl shadow-orange/15 laptop:flex desktop:w-85"
       >
         <div
           aria-hidden="true"
