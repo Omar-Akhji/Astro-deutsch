@@ -203,6 +203,15 @@ const pathname = Astro.url.pathname;
             </div>
             <div
               class="hidden"
+              data-skeleton="/404"
+            >
+              <SkeletonLayouts
+                client:only="vue"
+                layout="404"
+              />
+            </div>
+            <div
+              class="hidden"
               data-skeleton="default"
             >
               <SkeletonLayouts

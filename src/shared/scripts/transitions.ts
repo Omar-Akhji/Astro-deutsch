@@ -24,9 +24,9 @@ document.addEventListener("astro:before-preparation", (e) => {
       const parts = lowerPath.split("/").filter(Boolean);
       if (parts.length === 1) {
         targetSkeleton = container.querySelector('[data-skeleton="/pruefung"]');
-      } else if (parts.length === 3 && parts[2] === "modelltests") {
+      } else if (parts.length >= 3 && parts[2] === "modelltests") {
         targetSkeleton = container.querySelector('[data-skeleton="/pruefung/modelltests"]');
-      } else if (parts.length === 3) {
+      } else if (parts.length >= 3) {
         targetSkeleton = container.querySelector('[data-skeleton="/pruefung/study"]');
       } else if (parts.length === 2) {
         targetSkeleton = container.querySelector('[data-skeleton="/pruefung/level"]');
@@ -35,9 +35,9 @@ document.addEventListener("astro:before-preparation", (e) => {
       const parts = lowerPath.split("/").filter(Boolean);
       if (parts.length === 1) {
         targetSkeleton = container.querySelector('[data-skeleton="/vokabeln"]');
-      } else if (parts.length === 3 && parts[2] === "stammbaum") {
+      } else if (parts.length >= 3 && parts[2] === "stammbaum") {
         targetSkeleton = container.querySelector('[data-skeleton="/vokabeln/family-tree"]');
-      } else if (parts.length === 3) {
+      } else if (parts.length >= 3) {
         targetSkeleton = container.querySelector('[data-skeleton="/vokabeln/detail"]');
       } else if (parts.length === 2) {
         targetSkeleton = container.querySelector('[data-skeleton="/vokabeln/level"]');
@@ -55,6 +55,8 @@ document.addEventListener("astro:before-preparation", (e) => {
       targetSkeleton = container.querySelector('[data-skeleton="/login"]');
     } else if (lowerPath.startsWith("/register")) {
       targetSkeleton = container.querySelector('[data-skeleton="/register"]');
+    } else if (lowerPath.startsWith("/404")) {
+      targetSkeleton = container.querySelector('[data-skeleton="/404"]');
     }
   }
 

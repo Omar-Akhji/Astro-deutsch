@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch, onMounted } from "vue";
-import { ChevronLeft, UserCheck, UserPlus } from "lucide-vue-next";
+import { UserCheck, UserPlus } from "lucide-vue-next";
 import SignInForm from "./SignInForm.vue";
 import SignUpForm from "./SignUpForm.vue";
 import { cn } from "../../../shared/lib/utilities.ts";
@@ -32,9 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    class="relative flex min-h-dvh animate-fade-in items-center justify-center px-4 py-6 md:px-6 md:py-0"
-  >
+  <div class="relative flex w-full animate-fade-in items-center justify-center py-2 tablet:py-8">
     <!-- Decorative ambient glows using theme colors -->
     <div
       class="pointer-events-none absolute top-1/4 left-1/4 -z-10 size-72 animate-glow-slow rounded-full bg-yellow/10 blur-[120px]"
@@ -43,17 +41,8 @@ onMounted(() => {
       class="pointer-events-none absolute right-1/4 bottom-1/4 -z-10 size-72 animate-glow-reverse rounded-full bg-orange/10 blur-[120px]"
     />
 
-    <!-- Back-to-home button -->
-    <a
-      href="/"
-      aria-label="Zurück zur Startseite"
-      class="absolute top-6 left-6 z-50 flex size-10 items-center justify-center rounded-full border border-slate-800 bg-slate-950/40 text-text-muted shadow-sm backdrop-blur-md transition-[transform,colors,box-shadow] duration-300 hover:scale-105 hover:border-orange/30 hover:bg-orange/10 hover:text-orange focus:ring-2 focus:ring-orange focus:outline-none"
-    >
-      <ChevronLeft class="size-5" />
-    </a>
-
     <div
-      class="relative flex w-full max-w-md animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-slate-800/80 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
+      class="relative flex w-full animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
     >
       <!-- PANEL 1: Left navigation menu (desktop/tablet) -->
       <nav
