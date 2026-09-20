@@ -154,7 +154,7 @@ watch(
       <!-- Right Side on Desktop: Floating Pill Navigation -->
       <nav
         ref="navRef"
-        class="relative hidden flex-wrap justify-center gap-1 overflow-hidden rounded-full border border-white/10 bg-card/75 px-2 py-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_1px_rgba(255,255,255,0.12)] backdrop-blur-(--glass-blur) mobile:inline-flex mobile:gap-1.5"
+        class="relative hidden flex-wrap justify-center gap-1 overflow-hidden rounded-full border-2 border-white/10 bg-card/75 px-2 py-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) mobile:inline-flex mobile:gap-1.5"
         aria-label="Hauptnavigation"
       >
         <!-- Sliding Indicator -->
@@ -184,7 +184,7 @@ watch(
 
   <!-- Mobile Floating Dock (Bottom Navigation Bar) -->
   <nav
-    class="fixed inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-50 mx-auto flex max-w-sm items-center justify-around rounded-3xl border border-white/12 bg-bg/85 px-1.5 py-1.5 shadow-[0_16px_40px_rgba(0,0,0,0.65),inset_0_1px_1px_rgba(255,255,255,0.16)] backdrop-blur-2xl mobile:hidden"
+    class="fixed inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-50 mx-auto flex max-w-sm items-center justify-around rounded-3xl border-2 border-white/12 bg-bg/85 px-1.5 py-1.5 shadow-[0_16px_40px_rgba(0,0,0,0.65)] backdrop-blur-2xl mobile:hidden"
     aria-label="Mobile Navigation"
   >
     <a
