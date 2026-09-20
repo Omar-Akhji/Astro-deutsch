@@ -14,7 +14,9 @@ const props = defineProps<Props>();
 <template>
   <header class="mb-12 text-center">
     <AnimateOnScroll animation="fade-up">
-      <h1 class="mb-4 flex items-center justify-center gap-3 text-3xl tablet:gap-4 tablet:text-4xl">
+      <h1
+        class="mb-4 flex flex-col items-center justify-center gap-3 text-center text-3xl tablet:flex-row tablet:gap-4 tablet:text-4xl"
+      >
         <span
           class="flex size-12 shrink-0 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-14"
         >
@@ -42,7 +44,7 @@ const props = defineProps<Props>();
     >
       <div class="flex justify-center px-2">
         <p
-          class="mx-auto w-fit max-w-full rounded-full border-2 border-solid border-white/10 bg-white/5 px-3.5 py-1 text-[11px] font-medium whitespace-nowrap text-text-muted shadow-sm min-[380px]:text-xs min-[480px]:px-4 min-[480px]:py-1.5 min-[480px]:text-sm tablet:px-6 tablet:py-2 tablet:text-base laptop:text-lg"
+          class="mx-auto w-fit max-w-full rounded-2xl border-2 border-solid border-white/10 bg-white/5 px-4 py-2 text-center text-xs leading-relaxed font-medium text-pretty text-text-muted shadow-sm min-[480px]:rounded-full min-[480px]:px-5 min-[480px]:py-1.5 min-[480px]:text-sm tablet:px-6 tablet:py-2 tablet:text-base laptop:text-lg"
         >
           {{ props.subtitle }}
         </p>

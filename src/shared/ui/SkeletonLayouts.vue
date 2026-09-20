@@ -165,7 +165,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     v-else-if="props.layout === 'page-header'"
     class="mbe-12 text-center"
   >
-    <div class="mbe-4 flex items-center justify-center gap-3 tablet:gap-4">
+    <div class="mbe-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
       <Skeleton
         class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14"
       />
@@ -365,7 +365,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     class="min-h-dvh space-y-12 py-8"
   >
     <header class="mbe-12 text-center">
-      <div class="mbe-4 flex items-center justify-center gap-3 tablet:gap-4">
+      <div
+        class="mbe-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4"
+      >
         <Skeleton
           class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14"
         />
