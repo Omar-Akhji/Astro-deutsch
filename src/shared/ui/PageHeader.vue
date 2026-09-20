@@ -42,7 +42,7 @@ const props = defineProps<Props>();
     >
       <div class="flex justify-center px-2">
         <p
-          class="mx-auto w-fit max-w-full rounded-full border-2 border-solid border-white/10 bg-white/5 px-3.5 py-1 text-[11px] font-medium text-text-muted whitespace-nowrap shadow-sm min-[380px]:text-xs min-[480px]:px-4 min-[480px]:py-1.5 min-[480px]:text-sm tablet:px-6 tablet:py-2 tablet:text-base laptop:text-lg"
+          class="mx-auto w-fit max-w-full rounded-full border-2 border-solid border-white/10 bg-white/5 px-3.5 py-1 text-[11px] font-medium whitespace-nowrap text-text-muted shadow-sm min-[380px]:text-xs min-[480px]:px-4 min-[480px]:py-1.5 min-[480px]:text-sm tablet:px-6 tablet:py-2 tablet:text-base laptop:text-lg"
         >
           {{ props.subtitle }}
         </p>
