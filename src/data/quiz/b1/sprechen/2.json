@@ -1,0 +1,18 @@
+{
+  "level": "b1",
+  "skill": "sprechen",
+  "testId": 2,
+  "questions": [
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Sprechen Modelltest 2",
+      "context": "...",
+      "options": [
+        "Erledigt"
+      ],
+      "correctAnswer": "Erledigt",
+      "teil": 1
+    }
+  ]
+}

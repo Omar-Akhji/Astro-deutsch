@@ -1,15 +1,32 @@
 import type { ApiResponse } from "@/shared/model";
+import { getCollection, getEntry } from "astro:content";
 import type { Question } from "../model/types.ts";
-import { quizQuestions } from "./data.ts";
 
-export const getQuestions = (
+export const getQuestions = async (
   level: string,
   skill: string,
   testId: number,
 ): Promise<ApiResponse<Question[]>> => {
-  const lvl = quizQuestions.get(level.toLowerCase());
-  const skl = lvl?.get(skill.toLowerCase());
-  const data = skl?.get(testId) ?? [];
+  const normLevel = level.toLowerCase();
+  const normSkill = skill.toLowerCase();
+  const entryId = `${normLevel}/${normSkill}/${testId}`;
 
-  return Promise.resolve({ data, success: true });
+  const entry = await getEntry("quiz", entryId);
+  if (entry) {
+    return { data: entry.data.questions as Question[], success: true };
+  }
+
+  const allEntries = await getCollection("quiz");
+  const found = allEntries.find(
+    (e) =>
+      e.data.level.toLowerCase() === normLevel &&
+      e.data.skill.toLowerCase() === normSkill &&
+      e.data.testId === testId,
+  );
+
+  return {
+    data: (found?.data.questions as Question[]) ?? [],
+    success: Boolean(found),
+    message: found ? undefined : `Test not found for ${level}/${skill}/${testId}`,
+  };
 };

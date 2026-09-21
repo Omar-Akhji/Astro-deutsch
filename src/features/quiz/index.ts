@@ -1,5 +1,3 @@
-export { quizQuestions } from "./api/data.ts";
-export { getQuestions } from "./api/services.ts";
 export * from "./lib/exam-structure.ts";
 export * from "./lib/useQuiz.ts";
 export type * from "./model/types.ts";

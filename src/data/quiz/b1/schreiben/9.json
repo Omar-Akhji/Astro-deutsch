@@ -1,0 +1,18 @@
+{
+  "level": "b1",
+  "skill": "schreiben",
+  "testId": 9,
+  "questions": [
+    {
+      "id": 35,
+      "type": "multiple-choice",
+      "question": "Schreiben Modelltest 9",
+      "context": "...",
+      "options": [
+        "Erledigt"
+      ],
+      "correctAnswer": "Erledigt",
+      "teil": 1
+    }
+  ]
+}

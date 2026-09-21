@@ -1,27 +1,28 @@
 ---
-import { getQuestions, quizQuestions, QuizView } from "@/features/quiz";
+import { getCollection } from "astro:content";
+import { type Question, QuizView } from "@/features/quiz";
 import Layout from "@/layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  const paths = [];
-  for (const [level, skillsMap] of quizQuestions.entries()) {
-    for (const [skill, testsMap] of skillsMap.entries()) {
-      for (const testId of testsMap.keys()) {
-        paths.push({ params: { level: level.toLowerCase(), skill, testId: testId.toString() } });
-      }
-    }
-  }
-  return paths;
+  const quizEntries = await getCollection("quiz");
+  return quizEntries.map((entry) => ({
+    params: {
+      level: entry.data.level.toLowerCase(),
+      skill: entry.data.skill.toLowerCase(),
+      testId: entry.data.testId.toString(),
+    },
+    props: {
+      questions: entry.data.questions,
+    },
+  }));
 }
 
 const { level, skill, testId } = Astro.params;
+const { questions } = Astro.props;
 
 if (!level || !skill || !testId) {
   throw new Error("Fehlende Quiz-Parameter.");
 }
-
-const parsedTestId = Number(testId);
-const { data: questions } = await getQuestions(level, skill, parsedTestId);
 ---
 
 <Layout
@@ -30,7 +31,7 @@ const { data: questions } = await getQuestions(level, skill, parsedTestId);
 >
   <QuizView
     client:load
-    initialQuestions={questions ?? []}
+    initialQuestions={(questions as unknown as Question[]) ?? []}
     level={level}
     skill={skill}
     testId={testId}

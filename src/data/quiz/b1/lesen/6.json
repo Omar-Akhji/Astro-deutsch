@@ -1,0 +1,426 @@
+{
+  "level": "b1",
+  "skill": "lesen",
+  "testId": 6,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Felix hat seine Alpenwanderung ganz alleine unternommen.",
+      "context": "Blog: Felix auf Wanderschaft\n\nServus Bergfreunde!\nLetzten Monat habe ich mir einen lang gehegten Traum erfüllt: eine fünftägige Hüttentour durch das Karwendelgebirge. Mein bester Freund Jan, der schon seit seiner Kindheit in den Bergen unterwegs ist, hat die Route geplant und die Übernachtungen auf den Berghütten reserviert. Ohne seine Erfahrung hätte ich mich das nie getraut.\n\nJeden Morgen ging es bereits um 6:30 Uhr los. Nach einem deftigen Bergsteigerfrühstück mit dunklem Brot, Käse und heißem Tee schulterten wir unsere Rucksäcke. Zehn Kilo Gepäck klingen zunächst nicht viel, aber nach vier Stunden steilem Aufstieg spürt man jeden einzelnen Muskel!\n\nAm dritten Tag hatten wir richtig Pech mit dem Wetter. Dichter Nebel zog auf und am frühen Nachmittag begann es heftig zu gewittern. Wir mussten unser Tempo drosseln und erreichten die nächste Hütte völlig durchnässt, aber überglücklich. Die Belohnung am vierten Tag war dafür umso schöner: strahlend blauer Himmel und ein atemberaubender Panoramablick auf die Zugspitze.\n\nIch habe in diesen fünf Tagen gelernt, wie wichtig gute Vorbereitung und respektvoller Umgang mit der Natur sind. Nächstes Jahr wollen wir die Tour auf jeden Fall wiederholen – dann vielleicht auf dem berühmten Fernwanderweg E5!",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1,
+      "teilTitle": "Blog / Artikel",
+      "teilInstruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Jan hatte bereits vor dieser Tour Erfahrung mit Bergtouren.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Felix und Jan wanderten an allen Tagen bei sonnigem Wetter.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Wegen des Unwetters am dritten Tag konnten sie keine Hütte erreichen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Am vierten Tag hatten sie eine hervorragende Aussicht auf die Zugspitze.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Felix plant, auch im kommenden Jahr wieder in den Bergen zu wandern.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "In einem Repair-Café ...",
+      "context": "Reparieren statt Wegwerfen: Der Siegeszug der Repair-Cafés\n\nDer Toaster streikt, das Bügeleisen wird nicht mehr heiß oder der Reißverschluss an der Winterjacke klemmt? Früher landeten solche Gegenstände im Müll, weil eine Reparatur im Fachhandel oft teurer war als ein Neukauf. In über 500 deutschen Städten gibt es heute eine beliebte Alternative: das Repair-Café.\n\nDas Konzept ist simpel: Ehrenamtliche Handwerker, Elektriker und Bastler treffen sich einmal im Monat in einem Stadtteilzentrum oder einer Werkstatt. Bürger bringen ihre defekten Geräte mit und reparieren sie gemeinsam mit den Experten. Werkzeuge und Messgeräte stehen kostenlos zur Verfügung. Bei Kaffee und selbstgebackenem Kuchen wartet man, bis man an der Reihe ist.\n\nDie Erfolgsquote kann sich sehen lassen: Über 60 Prozent der mitgebrachten Haushaltsgeräte können vor Ort erfolgreich repariert werden. Das spart den Besuchern nicht nur Geld, sondern leistet auch einen spürbaren Beitrag zum Ressourcenschutz und zur Vermeidung von gefährlichem Elektroschrott.",
+      "options": [
+        "a) bezahlt man feste Stundensätze an professionelle Mechaniker.",
+        "b) reparieren Freiwillige gemeinsam mit den Besitzern kaputte Gebrauchsgegenstände.",
+        "c) kann man fabrikneue Elektrogeräte besonders günstig erwerben."
+      ],
+      "correctAnswer": "b) reparieren Freiwillige gemeinsam mit den Besitzern kaputte Gebrauchsgegenstände.",
+      "teil": 2,
+      "teilTitle": "Zeitung / Presse",
+      "teilInstruction": "Lesen Sie die Texte aus der Zeitung und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Die Dienstleistungen und Werkzeuge im Repair-Café ...",
+      "options": [
+        "a) müssen im Voraus bar bezahlt werden.",
+        "b) sind nur für Vereinsmitglieder zugänglich.",
+        "c) werden Besuchern kostenlos zur Verfügung gestellt."
+      ],
+      "correctAnswer": "c) werden Besuchern kostenlos zur Verfügung gestellt.",
+      "teil": 2
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Ein wesentliches Ziel der Repair-Cafés ist es, ...",
+      "options": [
+        "a) alte Geräte durch modernste Computertechnik zu ersetzen.",
+        "b) Elektroschrott zu reduzieren und Ressourcen zu schonen.",
+        "c) gewerbliche Handwerksbetriebe finanziell zu fördern."
+      ],
+      "correctAnswer": "b) Elektroschrott zu reduzieren und Ressourcen zu schonen.",
+      "teil": 2
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Jugendliche im Freiwilligen Ökologischen Jahr (FÖJ) ...",
+      "context": "Freiwilliges Ökologisches Jahr: Einsatz für Flora und Fauna\n\nNach dem Abitur direkt in den Hörsaal oder ins Büro? Für immer mehr junge Menschen in Deutschland kommt das nicht infrage. Rund 3.000 Jugendliche zwischen 16 und 26 Jahren entscheiden sich jedes Jahr für ein Freiwilliges Ökologisches Jahr (FÖJ).\n\nZwölf Monate lang engagieren sich die Freiwilligen in Nationalparks, auf Biobauernhöfen, in forstwirtschaftlichen Betrieben oder Umweltbildungszentren. Zu den täglichen Aufgaben gehören das Anlegen von Schutzhecken, die Pflege seltener Biotope, Tierbeobachtungen oder die Durchführung von Führungen für Schulklassen.\n\nFinanziell reich wird man dabei zwar nicht – das monatliche Taschengeld liegt bei etwa 350 bis 450 Euro –, aber der Gewinn an persönlicher Reife und beruflicher Orientierung ist enorm. Viele Teilnehmer berichten, dass das praktische Jahr in der Natur ihnen geholfen hat, den richtigen Studiengang oder Ausbildungsberuf im Umweltsektor zu finden.",
+      "options": [
+        "a) verbringen ein ganzes Jahr mit praktischer Umweltarbeit in Betrieben oder Schutzgebieten.",
+        "b) absolvieren parallel ein reguläres Vollzeitstudium an der Universität.",
+        "c) erhalten ein Gehalt, das dem eines festangestellten Försters entspricht."
+      ],
+      "correctAnswer": "a) verbringen ein ganzes Jahr mit praktischer Umweltarbeit in Betrieben oder Schutzgebieten.",
+      "teil": 2
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Zu den Tätigkeiten der FÖJ-Freiwilligen gehört unter anderem, ...",
+      "options": [
+        "a) politische Gesetze im Umweltministerium zu verfassen.",
+        "b) Schulklassen bei Führungen Wissen über die Natur zu vermitteln.",
+        "c) Forstbetriebe gegen Umweltauflagen zu verteidigen."
+      ],
+      "correctAnswer": "b) Schulklassen bei Führungen Wissen über die Natur zu vermitteln.",
+      "teil": 2
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Viele Freiwillige betonen nach Abschluss des Jahres, dass ...",
+      "options": [
+        "a) sie nie wieder mit Tieren oder Pflanzen arbeiten wollen.",
+        "b) sie durch das FÖJ klare Vorstellungen für ihren künftigen Beruf gewonnen haben.",
+        "c) die körperliche Belastung viel zu gering war."
+      ],
+      "correctAnswer": "b) sie durch das FÖJ klare Vorstellungen für ihren künftigen Beruf gewonnen haben.",
+      "teil": 2
+    },
+    {
+      "id": 13,
+      "type": "matching",
+      "question": "13. Melanie beginnt im Oktober ihr Studium und sucht ein möbliertes WG-Zimmer in Uni-Nähe bis maximal 450 Euro warm.",
+      "context": "Lesen Sie die Situationen 13-19 und die Anzeigen a-j. Welche Anzeige passt zu welcher Situation?\nFür eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0.\n\na) Sonniges WG-Zimmer direkt am Campus: 18 qm, komplett möbliert (Bett, Schreibtisch, Kleiderschrank), moderne Wohnküche, Balkon. Miete inkl. Nebenkosten und WLAN 420 Euro. Ab sofort frei für Student/in. Kontakt: campus-wg@gmx.de.\n\nb) 1-Zimmer-Appartement im Grünen: 35 qm mit Kochnische und Duschbad, ruhige Lage am Stadtrand, S-Bahn 10 Gehminuten. Kaltmiete 550 Euro zzgl. NK. Ideal für Berufstätige. Tel. 089/764312.\n\nc) Zimmer zur Zwischenmiete für 6 Monate: Schönes helles Zimmer (22 qm) in gemütlicher 3er-WG während meines Auslandssemesters (Nov–Apr). Miete: 400 € alles inklusive. Schreibe an jan.ausland@web.de.\n\nd) Wochenendheimfahrer gesucht: Kleines, feines Pendlerzimmer (14 qm) von Mo bis Fr zu vermieten. Ruhige Wohngegend mit perfekter Tram-Anbindung. Nur 300 Euro monatlich. Tel. 0171/9924510.\n\ne) Traumhafte 3-Zimmer-Altbauwohnung: 85 qm, Parkettboden, Stuckdecke, Einbauküche, zwei Balkone. Zentral in Schwabing. Miete 1.650 Euro warm. Haustiere nach Vereinbarung. Immobilien Huber.\n\nf) Senioren-Wohnen mit Service: Barrierefreie 2-Zimmer-Wohnung (52 qm) in moderner Wohnanlage mit Notrufsystem und Gemeinschaftsräumen. Miete 890 Euro. Tel. 089/332145.\n\ng) WG-Zimmer für Hundebesitzer: Großes Zimmer (25 qm) im Erdgeschoss mit direktem Gartenzugang. Wir (beide berufstätig) haben selbst eine Hündin und freuen uns auf tierliebe Mitbewohner! Miete 480 € warm. tierfreunde-wg@mail.de.\n\nh) Großes Loft für Künstler / Freiberufler: Ehemalige Industriehalle (120 qm), viel Tageslicht, hohe Decken. Geeignet als Wohnatelier. Miete 1.400 € warm. Anfragen unter atelier-loft@muenchen.de.\n\ni) Möbliertes Business-Apartment: Exklusives Wohnen auf Zeit (ab 1 Monat), wöchentlicher Reinigungsservice, Highspeed-Internet, Fitnessraum im Haus. Miete ab 1.200 € monatlich. www.city-apartments.de.\n\nj) Stellplatz in Tiefgarage: Zentraler Duplex-Stellplatz Nähe Hauptbahnhof, 24h zugänglich mit Transponder. 90 Euro monatlich. Tel. 0160/4512987.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "a",
+      "teil": 3,
+      "teilTitle": "Anzeigen / Matching",
+      "teilInstruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Wählen Sie: Welche Anzeige passt zu welcher Situation? Für eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0."
+    },
+    {
+      "id": 14,
+      "type": "matching",
+      "question": "14. Herr Bergmann arbeitet montags bis freitags in der Stadt und sucht ein günstiges Pendlerzimmer nur für die Arbeitstage.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "d",
+      "teil": 3
+    },
+    {
+      "id": 15,
+      "type": "matching",
+      "question": "15. Sarah hat einen kleinen Mischlingshund und sucht ein WG-Zimmer, in dem ihr Haustier herzlich willkommen ist.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "g",
+      "teil": 3
+    },
+    {
+      "id": 16,
+      "type": "matching",
+      "question": "16. Ein Maler sucht einen geräumigen und tageslichtdurchfluteten Raum, in dem er sowohl wohnen als auch künstlerisch malen kann.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "h",
+      "teil": 3
+    },
+    {
+      "id": 17,
+      "type": "matching",
+      "question": "17. Ein Ingenieur ist für ein dreimonatiges Firmenprojekt in der Stadt und sucht ein bezugsfertiges Apartment mit Hotelservice.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "i",
+      "teil": 3
+    },
+    {
+      "id": 18,
+      "type": "matching",
+      "question": "18. Simon sucht für sein einsemestriges Praktikum (sechs Monate) eine befristete Bleibe in einer Wohngemeinschaft.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "c",
+      "teil": 3
+    },
+    {
+      "id": 19,
+      "type": "matching",
+      "question": "19. Familie Lehmann möchte ein Einfamilienhaus mit großem Garten zur Miete auf dem Land finden.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "0",
+      "teil": 3
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Karin",
+      "context": "In einem Internetforum für Mieter lesen Sie Meinungen zu der Frage:\n„Sollte Tierhaltung in Mietwohnungen grundsätzlich gesetzlich erlaubt sein?“\n\nBeispiel (Jens, 37, Kassel): Tiere bringen Freude und Wärme in das Leben der Menschen. Wer Haustiere pauschal verbietet, schränkt die persönliche Lebensgestaltung unverhältnismäßig ein. (Ja)\n\nKarin, 45, Nürnberg: Ein Hund in einer kleinen Zweizimmerwohnung ist Tierquälerei. Außerdem bellen viele Hunde stundenlang, wenn die Besitzer arbeiten sind. Das ständige Gebell und verschmutzte Treppenhäuser führen unweigerlich zu massivem Streit unter den Nachbarn. Ein klares Verbot ist absolut verständlich.\n\nMarkus, 28, Leipzig: Haustiere – egal ob Hund, Katze oder Kaninchen – gehören für Millionen Familien zum Leben dazu. Viele ältere oder alleinstehende Menschen finden durch ein Tier Halt und Einsamkeit wird vermieden. Ein pauschales Verbot durch Vermieter ist nicht mehr zeitgemäß.\n\nGisela, 61, Stuttgart: Ich leide unter einer schweren Tierhaarallergie. Wenn im gleichen Haus Katzen gehalten werden, bekomme ich schon im Fahrstuhl und im Flur kaum Luft. Das Recht auf Gesundheit und saubere Luft im eigenen Zuhause muss vor dem Hobby anderer Mieter stehen.\n\nChristian, 33, Bremen: Solange die Tiere artgerecht gehalten werden und weder die Bausubstanz beschädigen noch die Nachbarschaft durch Lärm belästigen, sollte der Vermieter kein Mitspracherecht haben. Eine Wohnung ist privater Lebensraum, da darf man nicht alles reglementieren.\n\nAndrea, 52, Mainz: Leider sind viele Tierhalter absolut rücksichtslos. Auf den Grünflächen rund um unsere Wohnanlage liegt überall Hundekot, weil niemand die Hinterlassenschaften wegräumt. Erst wenn alle Besitzer Verantwortungsbewusstsein zeigen, kann man über Freiheiten reden. Bis dahin sage ich: Nein.\n\nSven, 24, Kiel: Es ist wissenschaftlich nachgewiesen, dass Kinder, die mit Tieren aufwachsen, mehr Empathie und Pflichtbewusstsein entwickeln. Wenn Vermieter Familien mit Haustieren ablehnen, benachteiligen sie ganze Familienstrukturen. Tiere bereichern das Zusammenleben.\n\nRenate, 68, Augsburg: Große Hunde in Etagenwohnungen machen Lärm mit ihren Pfoten auf Parkettböden und manche Nachbarn haben schlicht Angst, wenn ihnen im engen Treppenhaus ein Kampfhund ohne Leine begegnet. Ohne Genehmigung des Eigentümers sollte kein Tier einziehen dürfen.",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4,
+      "teilTitle": "Diskussion / Meinungen",
+      "teilInstruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person dafür oder dagegen? Wählen Sie Ja oder Nein."
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Markus",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 22,
+      "type": "multiple-choice",
+      "question": "Gisela",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "Christian",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "Andrea",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 25,
+      "type": "multiple-choice",
+      "question": "Sven",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "Renate",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 27,
+      "type": "multiple-choice",
+      "question": "Die nächtliche Ruhezeit in der Wohnanlage ...",
+      "context": "Hausordnung der Wohnanlage Sonnenblick\n\n1. Ruhezeiten und Lärmschutz\nZur Wahrung des Hausfriedens sind alle Bewohner verpflichtet, unnötigen Lärm zu vermeiden. Als gesetzliche Ruhezeiten gelten:\n- Nachtruhe: täglich von 22:00 Uhr bis 07:00 Uhr morgens\n- Mittagsruhe: an Sonn- und Feiertagen von 13:00 bis 15:00 Uhr.\nWährend dieser Zeiten sind Musikhören in Zimmerlautstärke zu halten und laute Handwerksarbeiten (Bohren, Hämmern) untersagt.\n\n2. Flure, Treppenhaus und Brandschutz\nDas Treppenhaus und die Eingangsbereiche dienen im Notfall als primäre Fluchtwege. Aus Sicherheits- und Brandschutzgründen ist das dauerhafte Abstellen von Fahrrädern, Schuhschränken, Kinderwagen und Müllsäcken auf den Fluren untersagt. Fahrräder sind im ausgewiesenen Fahrradkeller abzustellen.\n\n3. Mülltrennung und Entsorgung\nHausmüll ist sorgfältig nach den Richtlinien der Stadtreinigung zu trennen (Restmüll, Altpapier, Biomüll, Wertstoffe/Gelber Sack). Sperrmüll und Bauschutt dürfen nicht in den regulären Müllcontainern entsorgt werden, sondern müssen beim städtischen Wertstoffhof abgegeben werden.\n\n4. Nutzung von Balkonen und Garten\nDas Grillen mit Holzkohle ist auf Balkonen wegen der starken Rauchentwicklung und Brandgefahr streng verboten; die Nutzung von Elektro- oder Gasgrills ist gestattet, sofern Rauchbelästigung der Nachbarn vermieden wird. Das Waschen und Trocknen von Wäsche auf dem Balkon darf die Balkonbrüstungshöhe nicht überschreiten.",
+      "options": [
+        "a) beginnt jeden Tag bereits um 20:00 Uhr.",
+        "b) gilt täglich zwischen 22:00 Uhr und 07:00 Uhr.",
+        "c) gilt nur an Samstagen und Sonntagen."
+      ],
+      "correctAnswer": "b) gilt täglich zwischen 22:00 Uhr und 07:00 Uhr.",
+      "teil": 5,
+      "teilTitle": "Hausordnung / Regeln",
+      "teilInstruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "Auf den Fluren und im Treppenhaus ...",
+      "options": [
+        "a) dürfen keine Fahrräder oder Schuhschränke dauerhaft stehen.",
+        "b) müssen Kinderwagen immer vor der Wohnungstür geparkt werden.",
+        "c) darf man Müllsäcke über Nacht lagern."
+      ],
+      "correctAnswer": "a) dürfen keine Fahrräder oder Schuhschränke dauerhaft stehen.",
+      "teil": 5
+    },
+    {
+      "id": 29,
+      "type": "multiple-choice",
+      "question": "Wer alten Sperrmüll oder Bauschutt entsorgen will, ...",
+      "options": [
+        "a) wirft ihn in den Restmüllcontainer im Hof.",
+        "b) muss ihn selbst zum städtischen Wertstoffhof bringen.",
+        "c) stellt ihn neben die Hauseingangstür."
+      ],
+      "correctAnswer": "b) muss ihn selbst zum städtischen Wertstoffhof bringen.",
+      "teil": 5
+    },
+    {
+      "id": 30,
+      "type": "multiple-choice",
+      "question": "Das Grillen auf dem Balkon ...",
+      "options": [
+        "a) ist mit einem Holzkohlegrill jederzeit erlaubt.",
+        "b) ist generell komplett untersagt.",
+        "c) ist mit Elektro- oder Gasgrills unter Rücksichtnahme gestattet."
+      ],
+      "correctAnswer": "c) ist mit Elektro- oder Gasgrills unter Rücksichtnahme gestattet.",
+      "teil": 5
+    }
+  ]
+}

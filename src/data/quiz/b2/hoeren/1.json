@@ -1,0 +1,18 @@
+{
+  "level": "b2",
+  "skill": "hoeren",
+  "testId": 1,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Hören B2 - Modelltest 1: Frage 1",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correctAnswer": "A"
+    }
+  ]
+}

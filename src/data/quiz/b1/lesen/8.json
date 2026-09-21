@@ -1,0 +1,426 @@
+{
+  "level": "b1",
+  "skill": "lesen",
+  "testId": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Miriam hat ihren Plastikverbrauch schrittweise und nicht von einem Tag auf den anderen reduziert.",
+      "context": "Blog: Miriams Zero-Waste-Experiment\n\nHallo ihr Lieben!\nVor genau einem Jahr habe ich beschlossen, meinen Müllberg drastisch zu verkleinern. Auslöser war ein Dokumentarfilm über Plastikmüll in den Weltmeeren, der mich zutiefst erschüttert hat. Ich habe mir vorgenommen, so weit wie möglich ohne Einwegplastik zu leben.\n\nVon heute auf morgen alles umzustellen, funktioniert allerdings nicht. Ich habe mit kleinen Schritten begonnen: Zuerst habe ich Plastikzahnbürsten durch Bambuszahnbürsten ersetzt und feste Seife statt Duschgel in Plastikflaschen gekauft. Als Nächstes habe ich mir Stoffbeutel und Glasdosen für den Wocheneinkauf besorgt.\n\nDie größte Herausforderung war der Lebensmitteleinkauf. Im normalen Supermarkt ist fast jedes Gemüse in Folie verschweißt. Inzwischen kaufe ich samstags auf dem Wochenmarkt oder in einem Unverpackt-Laden in unserer Stadt. Dort fülle ich Nudeln, Reis, Haferflocken und Nüsse direkt in meine mitgebrachten Gläser ab.\n\nDas Ganze erfordert natürlich mehr Zeit und gute Planung. Man kann nicht einfach spontan unterwegs einen schnellen Snack kaufen. Aber ich spare Geld, weil ich fast keine Fertigprodukte mehr konsumiere und viel bewusster koche. Mein Restmüll für das gesamte vergangene Jahr passt in ein einziges großes Einmachglas!",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1,
+      "teilTitle": "Blog / Artikel",
+      "teilInstruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Miriam benutzt weiterhin Duschgel in normalen Plastikflaschen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Im Unverpackt-Laden bringt Miriam ihre eigenen Gläser für Lebensmittel mit.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Miriam findet, dass das Zero-Waste-Leben ohne jegliche Vorbereitung gelingt.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Miriam gibt heute deutlich mehr Geld für Essen aus als vor dem Experiment.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Miriam hat im letzten Jahr extrem wenig Restmüll produziert.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Ein Duales Studium in Deutschland kombiniert ...",
+      "context": "Karriereweg mit Zukunft: Das Duale Studium\n\nWer nach dem Schulabschluss vor der Wahl zwischen einer Berufsausbildung und einem Hochschulstudium steht, muss sich längst nicht mehr für das eine oder andere entscheiden. Das sogenannte „Duale Studium“ erfreut sich wachsender Beliebtheit und verzeichnet jedes Jahr neue Rekordzahlen.\n\nDas Erfolgsmodell verbindet wissenschaftliche Theorie an einer Hochschule mit praktischer Berufsausbildung in einem Partnerunternehmen. Die Studierenden wechseln meist im Dreimonatsrhythmus zwischen Vorlesungssaal und Betrieb. Der größte Vorteil gegenüber einem klassischen Universitätsstudium: Die Studierenden erhalten vom ersten Tag an ein festes monatliches Ausbildungsgehalt vom Unternehmen, sodass Studiengebühren kein Hindernis darstellen.\n\nAllerdings verlangt das duale Modell ein hohes Maß an Disziplin und Belastbarkeit. Semesterferien im herkömmlichen Sinne gibt es nicht; der Erholungsurlaub richtet sich nach dem gesetzlichen Urlaubsanspruch der Angestellten (meist 25 bis 30 Tage pro Jahr). Wer den anspruchsvollen Doppelabschluss meistert, hat jedoch exzellente Berufsaussichten: Über 85 Prozent der Absolventen werden direkt nach Studienende von ihren Ausbildungsbetrieben in unbefristete Arbeitsverhältnisse übernommen.",
+      "options": [
+        "a) zwei verschiedene Masterstudiengänge an zwei Universitäten zeitgleich.",
+        "b) theoretische Studienphasen an der Hochschule mit bezahlter Praxisarbeit im Betrieb.",
+        "c) ein freiwilliges soziales Jahr im Ausland mit einem Online-Kurs."
+      ],
+      "correctAnswer": "b) theoretische Studienphasen an der Hochschule mit bezahlter Praxisarbeit im Betrieb.",
+      "teil": 2,
+      "teilTitle": "Zeitung / Presse",
+      "teilInstruction": "Lesen Sie die Texte aus der Zeitung und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Duale Studierende ...",
+      "options": [
+        "a) müssen alle Semesterbeiträge durch private Kredite finanzieren.",
+        "b) haben dreimonatige Semesterferien wie reguläre Universitätsstudenten.",
+        "c) erhalten von Beginn an eine monatliche Vergütung vom Unternehmen."
+      ],
+      "correctAnswer": "c) erhalten von Beginn an eine monatliche Vergütung vom Unternehmen.",
+      "teil": 2
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Für Absolventen eines dualen Studiums gilt, dass ...",
+      "options": [
+        "a) die allermeisten direkt nach dem Abschluss eine feste Anstellung im Betrieb finden.",
+        "b) sie gesetzlich verpflichtet sind, für immer im Ausbildungsbetrieb zu bleiben.",
+        "c) sie in der Regel keine Führungsaufgaben in der Wirtschaft übernehmen dürfen."
+      ],
+      "correctAnswer": "a) die allermeisten direkt nach dem Abschluss eine feste Anstellung im Betrieb finden.",
+      "teil": 2
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Der Markt für gebrauchte Kleidung (Second-Hand) ...",
+      "context": "Vintage statt Fast Fashion: Der Boom gebrauchter Kleidung\n\nFrüher haftete getragener Kleidung oft das Image des Verstaubten und Billigen an. Heute ist Second-Hand-Mode salonfähig geworden und hat sich insbesondere unter jungen Menschen zu einem echten Lifestyle-Trend entwickelt. Plattformen im Internet, Vintage-Boutiquen und Flohmärkte verzeichnen zweistellige Zuwachsraten.\n\nDie Motivation der Käufer hat sich grundlegend gewandelt: Neben dem Wunsch, seltene Einzelstücke und individuelle Kleidungsstücke abseits des modischen Massengeschmacks zu finden, spielt der Aspekt des Umweltschutzes die entscheidende Rolle. Die Textilindustrie gehört weltweit zu den größten Umweltverschmutzern und verbraucht gigantische Mengen Wasser und Chemikalien für die Herstellung kurzlebiger Billigkleidung („Fast Fashion“).\n\nWer Second Hand kauft, verlängert die Lebensdauer von Kleidungsstücken und verhindert, dass tragbare Textilien tonnenweise auf Mülldeponien landen. Zudem hat das Weiterverkaufen eigener abgelegter Kleidung über Smartphone-Apps den Markt revolutioniert: Kleiderschränke werden entrümpelt und das verdiente Geld fließt direkt in neue Lieblingsstücke aus zweiter Hand.",
+      "options": [
+        "a) wird von Jugendlichen und jungen Erwachsenen heutzutage strikt abgelehnt.",
+        "b) boomt vor allem wegen Umweltbewusstsein und dem Wunsch nach individueller Mode.",
+        "c) bietet ausschließlich Kleidung aus dem 19. Jahrhundert an."
+      ],
+      "correctAnswer": "b) boomt vor allem wegen Umweltbewusstsein und dem Wunsch nach individueller Mode.",
+      "teil": 2
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Gegenüber der Fast-Fashion-Industrie hat Second-Hand den Vorteil, dass ...",
+      "options": [
+        "a) keine Ressourcen und kein Wasser für neue Textilien verschwendet werden.",
+        "b) alle Kleidungsstücke teurer sind als im Luxusgeschäft.",
+        "c) Textilien nach einmaligem Tragen direkt verbrannt werden."
+      ],
+      "correctAnswer": "a) keine Ressourcen und kein Wasser für neue Textilien verschwendet werden.",
+      "teil": 2
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Smartphone-Apps haben dazu beigetragen, dass ...",
+      "options": [
+        "a) überhaupt keine Kleidung mehr im Geschäft verkauft werden darf.",
+        "b) Nutzer gebrauchte Kleidung sehr einfach selbst weiterverkaufen können.",
+        "c) der Versand von Paketen weltweit komplett verboten wurde."
+      ],
+      "correctAnswer": "b) Nutzer gebrauchte Kleidung sehr einfach selbst weiterverkaufen können.",
+      "teil": 2
+    },
+    {
+      "id": 13,
+      "type": "matching",
+      "question": "13. Jonas zieht in seine erste eigene Wohnung und sucht eine gut erhaltene gebrauchte Waschmaschine mit Lieferoption.",
+      "context": "Lesen Sie die Situationen 13-19 und die Anzeigen a-j. Welche Anzeige passt zu welcher Situation?\nFür eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0.\n\na) Elektrogeräte aus 2. Hand mit Garantie: Waschmaschinen, Kühlschränke, Herde. Werkstattgeprüft, 12 Monate Garantie. Günstige Lieferung bis in die Wohnung und Altgeräte-Mitnahme. Elektro-ReUse, Tel. 089/987123.\n\nb) Flohmarkt auf der Theresienwiese: Größter Trödelmarkt Bayerns jeden 1. Samstag im Monat. Kleidung, Spielzeug, Bücher und Kuriositäten. Standplatzbuchung online: www.flohmarkt-muenchen.de.\n\nc) Designer-Vintage-Boutique: Ausgewählte Markenkleidung der 70er, 80er und 90er Jahre. Lederjacken, Seidentücher, Retro-Sneaker. Leopoldstraße 45, Di–Sa 11–19 Uhr.\n\nd) Antiquitäten & Möbel-Restaurierung: Barockschränke, Gründerzeittische und Biedermeierstühle. Fachgerechte Aufarbeitung alter Holzmöbel. Antiquitätenhandel Stein, Tel. 089/223344.\n\ne) Kinderkleider- und Spielzeugbasar: Alles rund ums Kind (Gr. 50–164), Kinderwagen, Fahrräder, Spiele. Samstag 09:00–13:00 Uhr im Pfarrheim St. Paul. Kaffee & Kuchenbuffet.\n\nf) Kostenlose Möbelbörse der Diakonie: Gut erhaltene Sofas, Betten und Tische für Bedürftige gegen geringe Transportpauschale abzugeben. Spendenannahme nach telefonischer Absprache: Tel. 089/543210.\n\ng) Reparatur-Treff im Bürgerhaus: Jeden 2. Donnerstag im Monat. Wir reparieren gemeinsam Lampen, Radios, Toaster und Kleinmöbel. Werkzeug vorhanden, Teilnahme kostenlos.\n\nh) Buchantiquariat & Ankauf: Wir kaufen und verkaufen antiquarische Bücher, Erstausgaben, Bildbände und Schallplatten. Hausbesuche bei Sammlungsauflösungen möglich. Buchhandlung Gutenberg.\n\ni) Gebrauchte Fahrräder & Werkstatt: Über 100 verkehrssichere Citybikes, Rennräder und Mountainbikes ab 80 Euro. Kostenlose Probefahrt. Radstation am Hauptbahnhof.\n\nj) Smartphone- und Tablet-Reparatur: Displaytausch, Akkuwechsel und Datenrettung innerhalb von 60 Minuten ohne Voranmeldung. Handy-Klinik Zentrum.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "a",
+      "teil": 3,
+      "teilTitle": "Anzeigen / Matching",
+      "teilInstruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Wählen Sie: Welche Anzeige passt zu welcher Situation? Für eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0."
+    },
+    {
+      "id": 14,
+      "type": "matching",
+      "question": "14. Familie Weber erwartet ihr zweites Baby und möchte günstig gebrauchte Babykleidung und einen Kinderwagen erwerben.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "e",
+      "teil": 3
+    },
+    {
+      "id": 15,
+      "type": "matching",
+      "question": "15. Lisa liebt Mode der 80er Jahre und sucht eine Boutique, die originale Vintage-Markenkleidung und Lederjacken führt.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "c",
+      "teil": 3
+    },
+    {
+      "id": 16,
+      "type": "matching",
+      "question": "16. Herr Krause hat eine wertvolle historische Büchersammlung geerbt und sucht einen Händler, der die Bände begutachtet und ankauft.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "h",
+      "teil": 3
+    },
+    {
+      "id": 17,
+      "type": "matching",
+      "question": "17. Maximilian sucht ein verkehrssicheres, gebrauchtes Stadtrad für den täglichen Weg zur Arbeit bis 100 Euro.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "i",
+      "teil": 3
+    },
+    {
+      "id": 18,
+      "type": "matching",
+      "question": "18. Das Display von Annas Smartphone ist nach einem Sturz zerbrochen; sie braucht eine Sofortreparatur vor Ort.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "j",
+      "teil": 3
+    },
+    {
+      "id": 19,
+      "type": "matching",
+      "question": "19. Ein Sammler sucht ein originales Klavier aus dem 18. Jahrhundert zur Miete für ein klassisches Konzert.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "0",
+      "teil": 3
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Helmut",
+      "context": "In einer Automobilzeitschrift lesen Sie Leserbriefe zur Debatte:\n„Generelles Tempolimit von 130 km/h auf deutschen Autobahnen: Sollte es eingeführt werden?“\n\nBeispiel (Tobias, 31, Wolfsburg): Wer mit 200 km/h über die Autobahn rast, gefährdet nicht nur sich selbst, sondern völlig Unbeteiligte. Fast alle europäischen Nachbarländer haben längst Limits – nur Deutschland diskutiert noch. (Ja)\n\nHelmut, 58, Stuttgart: Die deutsche Autobahn ohne Tempolimit ist ein Markenzeichen für erstklassige Automobiltechnik und individuelle Freiheit. Unsere Straßen gehören trotz hoher Geschwindigkeiten zu den sichersten der Welt. Ein generelles Verbot ist reine Bevormundung der Autofahrer.\n\nCornelia, 42, Karlsruhe: Ein Tempolimit von 130 km/h würde sofort und ohne zusätzliche Kosten Millionen Tonnen CO2 pro Jahr einsparen. Angesichts der dramatischen Klimakrise ist das die einfachste Maßnahme für mehr Umweltschutz. Es gibt keinen vernünftigen Grund dagegen.\n\nAlexander, 29, Ingolstadt: Wenn man weite Strecken geschäftlich unterwegs ist, zählt jede halbe Stunde. Auf freier Strecke nachts bei leerer Autobahn mit 130 km/h dahinzuschleichen, macht müde und unaufmerksam. Man sollte die Geschwindigkeit situativ digital regeln, nicht pauschal deckeln.\n\nUlrike, 51, Kiel: Das Fahren auf Autobahnen im Ausland ist so viel entspannter als in Deutschland! Keine Drängler, keine Lichthupe von hinten, kein ständiges abruptes Bremsen. Mit 130 km/h fließt der Verkehr gleichmäßig und die Unfallzahlen mit schweren Verletzungen würden spürbar sinken.\n\nSebastian, 36, Nürnberg: Für mich als Ingenieur ist das Rasen pure Energieverschwendung. Der Spritverbrauch steigt ab 130 km/h exponentiell an. Wer langsamer fährt, schont die Umwelt, spart bares Geld an der Zapfsäule und kommt ausgeruht am Ziel an.\n\nDieter, 65, Dresden: Moderne Fahrzeuge haben heute so viele Sicherheitssysteme wie Spurhalte- und Notbremsassistenten, dass schwere Unfälle ohnehin seltener werden. Lasst den Menschen doch ein Stück Eigenverantwortung, statt immer nur mit Verboten zu regieren.\n\nBirgit, 44, Düsseldorf: Ich habe zwei Teenager, die gerade den Führerschein gemacht haben. Ich habe jedes Mal Angst, wenn sie auf die Autobahn müssen, weil andere mit 250 km/h heranrasen. Aus Rücksicht auf Familien und Fahranfänger gehört das Limit endlich her.",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4,
+      "teilTitle": "Diskussion / Meinungen",
+      "teilInstruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person dafür oder dagegen? Wählen Sie Ja oder Nein."
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Cornelia",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 22,
+      "type": "multiple-choice",
+      "question": "Alexander",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "Ulrike",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "Sebastian",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 25,
+      "type": "multiple-choice",
+      "question": "Dieter",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "Birgit",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 27,
+      "type": "multiple-choice",
+      "question": "Beim Betreten des Fitnessstudios ...",
+      "context": "Haus- und Trainingsordnung des Fitnessclubs Vitalis\n\n1. Check-in und Mitgliedsausweis\nDer Zutritt zur Trainingsfläche ist nur mit einem gültigen, personengebundenen Mitgliedsausweis gestattet. Dieser ist beim Betreten des Studios an der elektronischen Schranke einzuscannen. Bei Verlust des Ausweises ist eine Ersatzgebühr von 15 Euro zu entrichten. Eine Weitergabe der Karte an Dritte ist unzulässig und führt zur fristlosen Kündigung.\n\n2. Kleidung und Hygiene\nDas Training ist nur in sauberer Sportkleidung und mit separaten, sauberen Hallenturnschuhen mit heller Sohle gestattet. Das Trainieren mit Straßenschuhen, barfuß oder mit freiem Oberkörper ist untersagt. Aus hygienischen Gründen ist bei Benutzung der Trainingsgeräte und Hantelbänke stets ein ausreichend großes Handtuch als Unterlage zu verwenden. Geräte sind nach der Nutzung mit dem bereitgestellten Desinfektionsmittel zu reinigen.\n\n3. Hantelbereich und Gerätebenutzung\nGewichte und Hanteln sind nach Beendigung der Übung an ihren ursprünglichen Platz im Hantelständer zurückzulegen. Ein Fallenlassen von Hanteln auf den Boden ist verboten. Geräte dürfen in den Satzpausen nicht durch Handtücher für andere Trainierende blockiert werden.\n\n4. Spinde und Haftung\nDie Garderobenspinde sind mit der Mitgliedskarte zu verschließen und dürfen nur während der Anwesenheit im Studio belegt werden. Nach Betriebsschluss werden nicht geräumte Spinde vom Personal geöffnet; der Inhalt wird als Fundsache behandelt. Für den Verlust von Wertgegenständen wird keine Haftung übernommen.",
+      "options": [
+        "a) kann man seine Mitgliedskarte problemlos an Freunde verleihen.",
+        "b) muss man seinen Mitgliedsausweis an der Schranke einscannen.",
+        "c) muss man vor jedem Training 15 Euro Gebühr zahlen."
+      ],
+      "correctAnswer": "b) muss man seinen Mitgliedsausweis an der Schranke einscannen.",
+      "teil": 5,
+      "teilTitle": "Hausordnung / Regeln",
+      "teilInstruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "Auf der Trainingsfläche ...",
+      "options": [
+        "a) muss man saubere Hallenschuhe tragen und ein Handtuch auf Geräte legen.",
+        "b) darf man mit Straßenschuhen trainieren, wenn sie trocken sind.",
+        "c) ist das Tragen von Sportkleidung freigestellt."
+      ],
+      "correctAnswer": "a) muss man saubere Hallenschuhe tragen und ein Handtuch auf Geräte legen.",
+      "teil": 5
+    },
+    {
+      "id": 29,
+      "type": "multiple-choice",
+      "question": "Nach dem Training mit Hanteln ...",
+      "options": [
+        "a) lässt man die Gewichte auf dem Boden liegen.",
+        "b) muss man die Hanteln wieder an ihren festen Platz zurücklegen.",
+        "c) schenkt man die Hanteln dem nächsten Besucher."
+      ],
+      "correctAnswer": "b) muss man die Hanteln wieder an ihren festen Platz zurücklegen.",
+      "teil": 5
+    },
+    {
+      "id": 30,
+      "type": "multiple-choice",
+      "question": "Die Spinde in den Umkleiden ...",
+      "options": [
+        "a) dürfen dauerhaft über mehrere Tage belegt werden.",
+        "b) werden bei Betriebsschluss vom Personal geöffnet, wenn sie nicht geräumt wurden.",
+        "c) sind für den Schutz von teurem Schmuck rechtlich versichert."
+      ],
+      "correctAnswer": "b) werden bei Betriebsschluss vom Personal geöffnet, wenn sie nicht geräumt wurden.",
+      "teil": 5
+    }
+  ]
+}

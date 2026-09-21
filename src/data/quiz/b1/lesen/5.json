@@ -1,0 +1,426 @@
+{
+  "level": "b1",
+  "skill": "lesen",
+  "testId": 5,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Sophie arbeitet seit einem halben Jahr als Au-pair-Mädchen in Wien.",
+      "context": "Blog: Sophies Wiener Tagebuch\n\nLiebe Freunde,\nvor genau sechs Monaten bin ich in Wien angekommen. Ich erinnere mich noch genau an den ersten Tag am Flughafen Schwechat: Mein Koffer wog 25 Kilo und ich war furchtbar nervös. Meine Gastfamilie – die Hubers – hat mich mit einem bunten Willkommensschild abgeholt. Die beiden Kinder, Jonas (4) und Mia (7), haben mir gleich Zeichnungen geschenkt.\n\nMein Alltag ist abwechslungsreich, aber manchmal auch anstrengend. Morgens mache ich mit den Kindern das Frühstück und bringe Mia in die Schule und Jonas in den Kindergarten. Von 9 bis 12 Uhr habe ich frei: In dieser Zeit besuche ich dreimal pro Woche einen Deutschkurs an der Universität. Am Nachmittag spiele ich mit den Kindern, helfe Mia bei den Hausaufgaben oder wir gehen in den Prater oder in den Tiergarten Schönbrunn.\n\nAm Anfang hatte ich große Schwierigkeiten mit dem Wiener Dialekt. Als Herr Huber mich am ersten Tag fragte: „Magst a Semmerl zum Frühstück?“, wusste ich überhaupt nicht, was er meint! Jetzt weiß ich natürlich, dass ein „Semmerl“ ein Brötchen ist. Ich habe mich in die Stadt verliebt – vor allem in die gemütlichen Kaffeehäuser und die wunderschöne Architektur. Ich bleibe noch bis zum Sommer hier und überlege schon, danach in Wien zu studieren.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1,
+      "teilTitle": "Blog / Artikel",
+      "teilInstruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Sophie wurde von ihrer Gastfamilie am Bahnhof abgeholt.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Sophie besucht jeden Vormittag einen Sprachkurs an der Universität.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Sophie versteht den Wiener Dialekt mittlerweile besser als zu Beginn.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Am Nachmittag müssen die Kinder im Haushalt helfen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Sophie möchte eventuell auch nach ihrer Au-pair-Zeit in Wien bleiben.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "In der Stadt Freiburg ...",
+      "context": "Mobilität der Zukunft: Das autoreduzierte Stadtviertel\n\nIm Freiburger Stadtteil Vauban sieht man nur selten Autos auf der Straße. Vor über 20 Jahren entstand hier eines der ersten nachhaltigen Wohnviertel Deutschlands. Die Idee: Straßen sollen wieder Lebensraum für Menschen sein, nicht Parkplatz für Blechkarossen.\n\nWer hier einzieht, unterschreibt eine Vereinbarung: Private Autos dürfen nicht vor der Haustür geparkt werden. Wer ein Auto besitzt, muss für rund 20.000 Euro einen Stellplatz im Parkhaus am Rande des Viertels kaufen. Für rund 60 Prozent der Familien lohnt sich das nicht mehr – sie leben komplett autofrei.\n\nStattdessen fahren die Bewohner Straßenbahn oder nutzen Lastenfahrräder, um Einkäufe und Kinder zu transportieren. Die Vorteile liegen auf der Hand: Die Kinder spielen gefahrlos auf der Straße, die Luft ist spürbar sauberer und der Lärmpegel liegt bei einem Minimum. Studien zeigen, dass die Bewohner zufriedener sind und mehr soziale Kontakte in der Nachbarschaft pflegen als Menschen in gewöhnlichen Stadtteilen.",
+      "options": [
+        "a) dürfen Autos überhaupt nicht in das Viertel hineinfahren.",
+        "b) parken viele Bewohner ihr Auto in einer Garage am Rand des Stadtteils.",
+        "c) besitzen alle Bewohner mindestens ein eigenes Elektroauto."
+      ],
+      "correctAnswer": "b) parken viele Bewohner ihr Auto in einer Garage am Rand des Stadtteils.",
+      "teil": 2,
+      "teilTitle": "Zeitung / Presse",
+      "teilInstruction": "Lesen Sie die Texte aus der Zeitung und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Die meisten Familien im Stadtviertel Vauban ...",
+      "options": [
+        "a) verzichten ganz auf ein eigenes Kraftfahrzeug.",
+        "b) kaufen sich jedes Jahr ein neues Lastenfahrrad.",
+        "c) haben hohe Strafen für Falschparken bezahlt."
+      ],
+      "correctAnswer": "a) verzichten ganz auf ein eigenes Kraftfahrzeug.",
+      "teil": 2
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Ein wichtiges Ergebnis wissenschaftlicher Untersuchungen ist, dass ...",
+      "options": [
+        "a) die Bewohner in Vauban seltener krank werden als andere Menschen.",
+        "b) das Modell Vauban in ganz Deutschland gesetzlich vorgeschrieben wird.",
+        "c) die Lebensqualität und der Zusammenhalt der Nachbarn überdurchschnittlich hoch sind."
+      ],
+      "correctAnswer": "c) die Lebensqualität und der Zusammenhalt der Nachbarn überdurchschnittlich hoch sind.",
+      "teil": 2
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Beim Vertical Farming ...",
+      "context": "Frisches Gemüse aus dem Hochhaus: Vertical Farming in Berlin\n\nSalat und Kräuter wachsen längst nicht mehr nur auf dem Acker. In einer ehemaligen Fabrikhalle im Berliner Bezirk Tempelhof wachsen frischer Basilikum, Koriander und Salate in hohen Metallregalen übereinander – ganz ohne Erde und Sonnenlicht. Das Prinzip nennt sich „Vertical Farming“.\n\nSpezielle LED-Lampen liefern den Pflanzen genau das Lichtspektrum, das sie für das Wachstum benötigen. Ein geschlossener Wasserkreislauf versorgt die Wurzeln mit Mineralstoffen und verbraucht dabei 95 Prozent weniger Wasser als die traditionelle Landwirtschaft im Freiland. Zudem sind Pestizide im sterilen Innenraum überflüssig.\n\nEin weiterer entscheidender Vorteil sind die Transportwege: Vom Berliner Regal bis in den Supermarkt um die Ecke vergehen nur wenige Stunden. Kritiker verweisen allerdings auf den enormen Energiebedarf der Beleuchtungs- und Kühlsysteme. Die Betreiber setzen deshalb ausschließlich auf erneuerbare Energien aus regionalen Solar- und Windparks.",
+      "options": [
+        "a) wachsen Pflanzen in Regalen mit speziellen LED-Lampen und Wassernährstoffen.",
+        "b) wird besonders fruchtbare Erde aus Süddeutschland angeliefert.",
+        "c) kann man nur im Sommer frische Salate und Kräuter ernten."
+      ],
+      "correctAnswer": "a) wachsen Pflanzen in Regalen mit speziellen LED-Lampen und Wassernährstoffen.",
+      "teil": 2
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Gegenüber traditioneller Landwirtschaft zeichnet sich Vertical Farming dadurch aus, dass ...",
+      "options": [
+        "a) die Pflanzen viel mehr Pestizide benötigen.",
+        "b) der Wasserverbrauch um ein Vielfaches geringer ist.",
+        "c) die Transportwege ins Ausland viel billiger sind."
+      ],
+      "correctAnswer": "b) der Wasserverbrauch um ein Vielfaches geringer ist.",
+      "teil": 2
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Kritik an dem Projekt bezieht sich vor allem auf ...",
+      "options": [
+        "a) den Geschmack und die Qualität des Gemüses.",
+        "b) die hohen Arbeitskosten der Erntehelfer.",
+        "c) den hohen Stromverbrauch für Licht und Klimatisierung."
+      ],
+      "correctAnswer": "c) den hohen Stromverbrauch für Licht und Klimatisierung.",
+      "teil": 2
+    },
+    {
+      "id": 13,
+      "type": "matching",
+      "question": "13. Markus sucht einen Sprachkurs am Wochenende, um seine Spanischkenntnisse für die nächste Urlaubsreise aufzufrischen.",
+      "context": "Lesen Sie die Situationen 13-19 und die Anzeigen a-j. Welche Anzeige passt zu welcher Situation?\nFür eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0.\n\na) Spanisch intensiv am Wochenende: Samstag und Sonntag jeweils 10:00–16:00 Uhr. Auffrischung für Anfänger mit Vorkenntnissen (A2/B1). Sprachschule Viva, Tel. 089/452189.\n\nb) Tandempartner gesucht! Ich (Spanierin, 24) möchte mein Deutsch verbessern und biete Spanisch-Konversation. Treffen 1x wöchentlich im Café. Schreib an maria_bl@mail.de.\n\nc) Englisch für den Beruf: Abendkurse Dienstag und Donnerstag ab 18:30 Uhr. Fokus auf E-Mails, Telefonieren und Verhandeln. Zertifikat nach Kursabschluss. Berlitz Sprachenzentrum.\n\nd) Französisch-Kompaktkurs für Schüler: Vorbereitung auf die Abiturprüfung in den Sommerferien. Montag bis Freitag 9:00–12:30 Uhr. Schülerhilfe München-Nord.\n\ne) Italienisch kochen und lernen: Samstagabend gemeinsam toskanische Spezialitäten kochen und dabei die Sprache praktizieren. Max. 8 Personen. Anmeldung unter info@cucina-lingua.de.\n\nf) Japanisch für Einsteiger: Beginn ab 15. Oktober, immer mittwochs 19:00 Uhr. Keine Vorkenntnisse erforderlich. VHS Stadtmitte, Raum 204.\n\ng) Online-Sprachtraining flexibel: Über 15 Sprachen im Einzelunterricht via Videochat lernen. Freie Zeiteinteilung rund um die Uhr. Jetzt 30 Min. Probestunde buchen: www.lingua-connect.net.\n\nh) Portugiesisch-Konversationsclub: Jeden zweiten Freitagabend ungezwungener Austausch bei Wein und Tapas. Niveau B1–C1 erwünscht. Eintritt frei, Spenden willkommen.\n\ni) Deutsch als Fremdsprache B2-Intensiv: Montag bis Freitag 08:30–12:30 Uhr, Prüfungsvorbereitung telc / Goethe. Beginn monatlich. Sprachakademie Zentrum.\n\nj) Übersetzungsservice & Dolmetschen: Fachübersetzungen Spanisch, Deutsch, Englisch für Recht und Wirtschaft. Beglaubigte Urkunden. Kontakt: buero@uebersetzungen-schmidt.de",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "a",
+      "teil": 3,
+      "teilTitle": "Anzeigen / Matching",
+      "teilInstruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Wählen Sie: Welche Anzeige passt zu welcher Situation? Für eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0."
+    },
+    {
+      "id": 14,
+      "type": "matching",
+      "question": "14. Elena arbeitet im Schichtdienst und sucht eine Möglichkeit, zeitlich völlig unabhängig per Internet Englisch zu lernen.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "g",
+      "teil": 3
+    },
+    {
+      "id": 15,
+      "type": "matching",
+      "question": "15. David hat eine spanische Geburtsurkunde, die er für das Standesamt offiziell auf Deutsch übersetzen lassen muss.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "j",
+      "teil": 3
+    },
+    {
+      "id": 16,
+      "type": "matching",
+      "question": "16. Laura lernt seit zwei Jahren Italienisch und möchte ihre Sprachpraxis gern mit einer kulinarischen Freizeitaktivität verknüpfen.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "e",
+      "teil": 3
+    },
+    {
+      "id": 17,
+      "type": "matching",
+      "question": "17. Tim studiert Geschichte und möchte ohne Vorkenntnisse beginnen, die japanische Sprache von Grund auf zu erlernen.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "f",
+      "teil": 3
+    },
+    {
+      "id": 18,
+      "type": "matching",
+      "question": "18. Robert möchte sein geschäftliches Englisch verbessern, um internationale Kunden professionell am Telefon und per Mail zu betreuen.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "c",
+      "teil": 3
+    },
+    {
+      "id": 19,
+      "type": "matching",
+      "question": "19. Florian sucht einen kostenlosen Chinesisch-Kurs für Fortgeschrittene an einer Volkshochschule.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "0",
+      "teil": 3
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Sabine",
+      "context": "In einer Kulturzeitschrift lesen Sie Leserkommentare zum Thema:\n„E-Books statt Papierbücher: Werden gedruckte Bücher bald ganz verschwinden?“\n\nBeispiel (Martin, 42, Heidelberg): Ein Urlaub ohne meinen E-Reader ist für mich undenkbar. Statt zehn schwere Bücher mitzuschleppen, habe ich eine ganze Bibliothek in der Jackentasche. Papier ist einfach nicht mehr zeitgemäß. (Ja)\n\nSabine, 31, Regensburg: Für mich geht nichts über den Geruch von frisch gedrucktem Papier und das Gefühl, eine echte Seite umzublättern. Ein volles Bücherregal im Wohnzimmer strahlt Wärme und Persönlichkeit aus. Kein digitaler Bildschirm kann diese Atmosphäre ersetzen. Gedruckte Bücher werden niemals aussterben.\n\nLukas, 26, Köln: Seit ich für mein Studium täglich hunderte Seiten Fachliteratur lesen muss, schätze ich digitale Bücher sehr. Man kann Suchbegriffe eingeben, Stellen farbig markieren und Notizen synchronisieren. Für mich ist das E-Book dem Papierbuch in jeder Hinsicht überlegen.\n\nMonika, 55, Salzburg: Ich lese seit kurzem auf einem Reader, weil ich dort die Schriftgröße beliebig vergrößern kann. Für meine älter werdenden Augen ist das eine enorme Erleichterung! Trotzdem kaufe ich Bildbände und Kochbücher weiterhin gedruckt. Aber für Romane bevorzuge ich ganz klar das handliche E-Book.\n\nTobias, 22, Dresden: Mir fehlt bei digitalen Büchern der Wert. Wenn ich 15 Euro für ein Buch ausgebe, möchte ich etwas Echtes in den Händen halten, das ich nach dem Lesen auch an Freunde verleihen oder im Schrank aufbewahren kann. Eine PDF-Datei auf einer Festplatte fühlt sich für mich wertlos an.\n\nJasmin, 39, Hamburg: Wenn man bedenkt, wie viele Bäume für Papier abgeholzt und wie viel Wasser bei der Papierherstellung verbraucht wird, sollte jeder verantwortungsbewusste Mensch auf digitale Medien umsteigen. Ein modernes Lesegerät spart tonnenweise Ressourcen und schont die Natur.\n\nJürgen, 62, Innsbruck: Bücher sind Kulturgüter, keine schnöden Datensätze. Was passiert mit meinen E-Books, wenn ein Softwarehersteller den Dienst einstellt oder das Dateiformat nicht mehr unterstützt wird? Meine alten Lexika und Romane aus dem 19. Jahrhundert kann ich auch in 50 Jahren noch problemlos aufschlagen.\n\nHannah, 29, Berlin: Ich lese unterwegs in der U-Bahn grundsätzlich auf dem Smartphone oder E-Reader. Es wiegt nichts, passt in jede Handtasche und ich kann mir mitten in der Nacht spontan ein neues Buch herunterladen. Die Vorteile der digitalen Welt sind unschlagbar.",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4,
+      "teilTitle": "Diskussion / Meinungen",
+      "teilInstruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person dafür oder dagegen? Wählen Sie Ja oder Nein."
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Lukas",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 22,
+      "type": "multiple-choice",
+      "question": "Monika",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "Tobias",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "Jasmin",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 25,
+      "type": "multiple-choice",
+      "question": "Jürgen",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "Hannah",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 27,
+      "type": "multiple-choice",
+      "question": "Für die Anmeldung in der Stadtbibliothek ...",
+      "context": "Benutzungsordnung der Stadtbibliothek\n\n1. Mitgliedschaft und Leseausweis\nDie Benutzung der Bibliotheksräume und die Konsultation des Präsenzbestandes sind allen Personen gebührenfrei gestattet. Für die Ausleihe von Medien ist ein gültiger Bibliotheksausweis erforderlich. Dieser wird gegen Vorlage eines amtlichen Lichtbildausweises und einer Meldebestätigung ausgestellt. Für Erwachsene beträgt die Jahresgebühr 20 Euro, für Schüler, Studierende und Auszubildende ermäßigt 10 Euro.\n\n2. Leihfristen und Verlängerungen\nDie Regelleihfrist beträgt für Bücher, Noten und Hörbücher 4 Wochen, für Zeitschriften, Brettspiele und DVDs 2 Wochen. Eine Verlängerung der Leihfrist ist bis zu zweimal möglich, sofern keine Vormerkung durch einen anderen Leser vorliegt. Verlängerungen können online über das Benutzerkonto, telefonisch oder vor Ort vorgenommen werden.\n\n3. Versäumnisgebühren\nBei Überschreitung der Leihfrist wird ab dem ersten überfälligen Tag eine Mahngebühr in Höhe von 1,50 Euro pro Medium und angefangener Kalenderwoche erhoben. Nach vier Wochen erfolgt eine schriftliche Mahnung mit zusätzlichen Portokosten.\n\n4. Verhalten in den Räumen\nIn allen Lesesälen ist Ruhe zu bewahren. Das Telefonieren sowie der Konsum von Speisen und zuckerhaltigen Getränken sind nicht gestattet; das Mitführen von Wasser in verschließbaren Flaschen ist erlaubt. Taschen und Rucksäcke sind vor dem Betreten der Fachabteilungen in die dafür vorgesehenen Schließfächer im Eingangsbereich einzuschließen.",
+      "options": [
+        "a) müssen alle Personen zwingend 20 Euro bezahlen.",
+        "b) benötigt man einen Personalausweis und die Meldebestätigung.",
+        "c) muss man vorab eine schriftliche Prüfung ablegen."
+      ],
+      "correctAnswer": "b) benötigt man einen Personalausweis und die Meldebestätigung.",
+      "teil": 5,
+      "teilTitle": "Hausordnung / Regeln",
+      "teilInstruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "DVDs und Zeitschriften ...",
+      "options": [
+        "a) dürfen für maximal zwei Wochen ausgeliehen werden.",
+        "b) können unter keinen Umständen verlängert werden.",
+        "c) darf man nur vor Ort im Lesesaal ansehen."
+      ],
+      "correctAnswer": "a) dürfen für maximal zwei Wochen ausgeliehen werden.",
+      "teil": 5
+    },
+    {
+      "id": 29,
+      "type": "multiple-choice",
+      "question": "Wenn ein Buch verspätet zurückgebracht wird, ...",
+      "options": [
+        "a) verliert der Leseausweis sofort seine Gültigkeit.",
+        "b) muss man pro Medium und Woche 1,50 Euro Mahngebühr zahlen.",
+        "c) wird man für drei Monate von der Ausleihe gesperrt."
+      ],
+      "correctAnswer": "b) muss man pro Medium und Woche 1,50 Euro Mahngebühr zahlen.",
+      "teil": 5
+    },
+    {
+      "id": 30,
+      "type": "multiple-choice",
+      "question": "In den Lesesälen der Bibliothek ...",
+      "options": [
+        "a) darf man Snacks essen, wenn man leise ist.",
+        "b) muss man alle Handys und Computer am Eingang abgeben.",
+        "c) ist das Trinken von Wasser aus verschließbaren Flaschen gestattet."
+      ],
+      "correctAnswer": "c) ist das Trinken von Wasser aus verschließbaren Flaschen gestattet.",
+      "teil": 5
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "level": "b1",
+  "skill": "hoeren",
+  "testId": 7,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Die S-Bahnen fahren heute auf der normalen Strecke durch den City-Tunnel.",
+      "context": "Nummer 1: Sie hören eine Durchsage am S-Bahnhof. „Achtung an Gleis 2: Wegen dringender Gleiserneuerungen im City-Tunnel ist die Stammstrecke zwischen Hauptbahnhof und Ostbahnhof bis Sonntagabend gesperrt. Alle S-Bahnen enden vorzeitig am Hauptbahnhof. Zwischen Hauptbahnhof und Ostbahnhof ist ein Schienenersatzverkehr mit Gelenkbussen eingerichtet. Die Busse fahren im 5-Minuten-Takt vom Vorplatz ab. Bitte planen Sie mindestens 20 Minuten mehr Reisezeit ein.“",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "audioUrl": "/audio/b1/hoeren/test7/teil1_1.mp3",
+      "teil": 1,
+      "teilTitle": "Kurze Ansagen",
+      "teilInstruction": "Sie hören nun fünf kurze Texte. Sie hören jeden Text zweimal. Zu jedem Text lösen Sie zwei Aufgaben. Wählen Sie bei jeder Aufgabe die richtige Lösung."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Wie oft fahren die Ersatzbusse zwischen Hauptbahnhof und Ostbahnhof?",
+      "options": [
+        "a) Alle 5 Minuten.",
+        "b) Alle 15 Minuten.",
+        "c) Jede Stunde."
+      ],
+      "correctAnswer": "a) Alle 5 Minuten.",
+      "teil": 1
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Der Elektronikmarkt gibt 20 Prozent Rabatt auf alle Laptops und Tablets.",
+      "context": "Nummer 2: Sie hören eine Durchsage im Radio. „Herbst-Sparwochen bei Mega-Markt! Rüsten Sie sich jetzt für Homeoffice und Freizeit aus: Nur bis Samstag sparen Sie 20 Prozent auf alle vorrätigen Notebooks, Tablets und Zubehör führender Marken. Beim Kauf eines Laptops erhalten Sie zudem eine kabellose Maus geschenkt. Besuchen Sie uns in einer unserer fünf Filialen oder shoppen Sie bequem online unter mega-markt.de.“",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "audioUrl": "/audio/b1/hoeren/test7/teil1_2.mp3",
+      "teil": 1
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Was bekommt man beim Kauf eines Notebooks kostenlos dazu?",
+      "options": [
+        "a) Einen Drucker.",
+        "b) Eine kabellose Computermaus.",
+        "c) Eine Laptoptasche."
+      ],
+      "correctAnswer": "b) Eine kabellose Computermaus.",
+      "teil": 1
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Frau Sommer muss zur Besprechung der Laborwerte nochmals persönlich in die Praxis kommen.",
+      "context": "Nummer 3: Sie hören eine Nachricht auf dem Anrufbeantworter. „Guten Tag Frau Sommer, hier ist die Praxis Dr. Weber. Ihre Blutwerte aus der Laboruntersuchung vom Dienstag sind eingetroffen. Herr Dr. Weber hat die Befunde gesichtet und möchte die Ergebnisse gerne kurz telefonisch mit Ihnen besprechen. Sie müssen also nicht extra vorbeikommen. Bitte rufen Sie uns heute zwischen 12 und 13 Uhr unter der Durchwahl 22 an. Vielen Dank.“",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "audioUrl": "/audio/b1/hoeren/test7/teil1_3.mp3",
+      "teil": 1
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Wann soll Frau Sommer in der Arztpraxis anrufen?",
+      "options": [
+        "a) Morgen früh um 8 Uhr.",
+        "b) Heute zwischen 12 und 13 Uhr.",
+        "c) Am späten Abend nach 20 Uhr."
+      ],
+      "correctAnswer": "b) Heute zwischen 12 und 13 Uhr.",
+      "teil": 1
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Für das Wochenende wird nasskaltes Wetter mit Schnee vorhergesagt.",
+      "context": "Nummer 4: Sie hören den Wetterbericht im Radio. „Und hier die Aussichten für das kommende Wochenende: Der Oktober zeigt sich von seiner schönsten Seite! Ein stabiles Hoch über Osteuropa beschert uns sonniges, trockenes Herbstwetter in ganz Mitteldeutschland. Die Temperaturen klettern tagsüber auf angenehme 18 bis 21 Grad. Erst in den Nächten wird es mit Tiefstwerten um 5 Grad herbstlich kühl. Perfektes Wetter für Waldspaziergänge!“",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "audioUrl": "/audio/b1/hoeren/test7/teil1_4.mp3",
+      "teil": 1
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Welche Höchsttemperaturen werden am Wochenende erwartet?",
+      "options": [
+        "a) 8 bis 10 Grad.",
+        "b) 18 bis 21 Grad.",
+        "c) Über 30 Grad."
+      ],
+      "correctAnswer": "b) 18 bis 21 Grad.",
+      "teil": 1
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Nichtmitglieder können alle Sportkurse des Vereins dauerhaft kostenlos besuchen.",
+      "context": "Nummer 5: Sie hören die Telefonansage des Sportvereins TSV Eintracht. „Willkommen beim TSV Eintracht. Unser neues Winterprogramm ist gestartet! Von Yoga und Pilates bis zu Badminton und Hallenfußball bieten wir über 40 Kurse an. Ein kostenloses Schnuppertraining ist für alle Angebote nach Voranmeldung einmalig möglich. Die Vereinsgeschäftsstelle ist montags und donnerstags von 16 bis 19 Uhr für persönliche Beratung geöffnet.“",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "audioUrl": "/audio/b1/hoeren/test7/teil1_5.mp3",
+      "teil": 1
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Wie oft darf man ein kostenloses Schnuppertraining absolvieren?",
+      "options": [
+        "a) Einmalig pro Kurs.",
+        "b) Jeden Monat einmal.",
+        "c) Beliebig oft."
+      ],
+      "correctAnswer": "a) Einmalig pro Kurs.",
+      "teil": 1
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Frau Sommer begrüßt die neuen Auszubildenden in ihrer Funktion als ...",
+      "context": "Teil 2: Sie hören die Begrüßung neuer Auszubildender bei der Manufaktur Öko-Möbel.\n\n„Guten Morgen allerseits! Mein Name ist Sabine Sommer, und ich bin bei Öko-Möbel für die Personal- und Ausbildungsleitung zuständig. Ich freue mich sehr, heute acht neue Auszubildende in unserem Team willkommen zu heißen – fünf angehende Schreiner und drei Kaufleute für Büromanagement.\nIn den kommenden drei Jahren werden Sie lernen, wie hochwertiges Handwerk und nachhaltige Forstwirtschaft perfekt ineinandergreifen. Unser Betrieb verarbeitet zu 100 Prozent heimisches Holz aus zertifizierten Wäldern der Region. Auf giftige Lacke und chemische Leime verzichten wir komplett; unsere Möbel werden ausschließlich mit natürlichen Ölen und Bienenwachs veredelt.\nEin wichtiger Punkt am ersten Tag ist die Arbeitssicherheit: In der Schreinerei gilt strikte Pflicht zum Tragen von Gehörschutz, Schutzbrille und Sicherheitsschuhen mit Stahlkappe. Ihre Schutzkleidung erhalten Sie gleich nach dieser Einführung in der Materialausgabe.\nDamit Sie sich schnell einleben, steht jedem von Ihnen ein Auszubildender aus dem dritten Lehrjahr als persönlicher Pate zur Seite. Er zeigt Ihnen die Werkstätten, die Pausenräume und führt Sie heute Mittag auch in unsere Bio-Kantine zum gemeinsamen Mittagessen. Gibt es bis hierher erste Fragen? Ansonsten gehen wir jetzt zur Sicherheitsunterweisung.“",
+      "options": [
+        "a) Geschäftsführerin des Unternehmens.",
+        "b) Leiterin der Ausbildungs- und Personalabteilung.",
+        "c) Vorsitzende des städtischen Prüfungsausschusses."
+      ],
+      "correctAnswer": "b) Leiterin der Ausbildungs- und Personalabteilung.",
+      "audioUrl": "/audio/b1/hoeren/test7/teil2.mp3",
+      "teil": 2,
+      "teilTitle": "Präsentation",
+      "teilInstruction": "Sie hören nun einen Text. Sie hören den Text einmal. Dazu lösen Sie fünf Aufgaben. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Wie viele neue Auszubildende beginnen heute ihre Ausbildung?",
+      "options": [
+        "a) Drei Personen.",
+        "b) Acht Personen.",
+        "c) Fünfzehn Personen."
+      ],
+      "correctAnswer": "b) Acht Personen.",
+      "teil": 2
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Bei der Oberflächenbehandlung der Holzmöbel verwendet die Firma ...",
+      "options": [
+        "a) chemische Schnelltrockner.",
+        "b) giftige Industrielacke.",
+        "c) natürliche Öle und Bienenwachs."
+      ],
+      "correctAnswer": "c) natürliche Öle und Bienenwachs.",
+      "teil": 2
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Was müssen Auszubildende in der Schreinerei aus Sicherheitsgründen tragen?",
+      "options": [
+        "a) Gehörschutz, Schutzbrille und Sicherheitsschuhe.",
+        "b) Einen Taucheranzug und Handschuhe.",
+        "c) Nur bequeme Freizeitkleidung."
+      ],
+      "correctAnswer": "a) Gehörschutz, Schutzbrille und Sicherheitsschuhe.",
+      "teil": 2
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Wer unterstützt die neuen Azubis als persönlicher Ansprechpartner?",
+      "options": [
+        "a) Ein Auszubildender aus dem dritten Lehrjahr.",
+        "b) Die Buchhalterin der Firma.",
+        "c) Ein externer Sicherheitsberater."
+      ],
+      "correctAnswer": "a) Ein Auszubildender aus dem dritten Lehrjahr.",
+      "teil": 2
+    },
+    {
+      "id": 16,
+      "type": "multiple-choice",
+      "question": "Herr Krause und Frau Bergmann wohnen im selben Mietshaus.",
+      "context": "Teil 3: Sie hören ein Gespräch zwischen zwei Nachbarn im Hausflur.\n\nHerr Krause: „Guten Abend, Frau Bergmann! Haben Sie kurz einen Moment? Der Paketbote hat heute Nachmittag zwei schwere Kartons für Sie bei mir abgegeben.“\nFrau Bergmann: „Ach, Herr Krause, vielen herzlichen Dank! Das sind die neuen Gartenwerkzeuge und Blumentöpfe für meinen Balkon. Ich trage sie gleich hoch in den zweiten Stock.“\nHerr Krause: „Warten Sie, ich helfe Ihnen die Treppe rauf. Die Pakete wiegen bestimmt zehn Kilo das Stück.“\nFrau Bergmann: „Das ist wirklich sehr aufmerksam von Ihnen. Ich habe gesehen, wie schön Ihre roten Geranien am Balkon blühen! Welchen Dünger nehmen Sie denn?“\nHerr Krause: „Ganz normalen Bio-Flüssigdünger aus dem Baumarkt, einmal die Woche ins Gießwasser. Wissen Sie eigentlich schon das Neueste vom Hauseigentümer? Am letzten Samstag im Monat soll ein kleines Sommerfest im Gemeinschaftsgarten stattfinden!“\nFrau Bergmann: „Nein, das wusste ich noch gar nicht! Was für eine wunderbare Idee. Da lerne ich endlich mal die neuen Nachbarn aus dem Dachgeschoss kennen.“\nHerr Krause: „Genau. Jeder bringt einen Salat oder Kuchen mit und die Hausverwaltung spendiert die Getränke und Grillkohle.“\nFrau Bergmann: „Toll, dann backe ich meinen berühmten Apfelkuchen!“",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "audioUrl": "/audio/b1/hoeren/test7/teil3.mp3",
+      "teil": 3,
+      "teilTitle": "Gespräch",
+      "teilInstruction": "Sie hören nun ein Gespräch. Sie hören das Gespräch einmal. Dazu lösen Sie sieben Aufgaben. Wählen Sie: Sind die Aussagen Richtig oder Falsch?"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Herr Krause hat Pakete für Frau Bergmann entgegengenommen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 3
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Die Pakete enthalten neue Kleidung für den Winterurlaub.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 3
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Herr Krause weigert sich, Frau Bergmann beim Tragen zu helfen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 3
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Am Monatsende ist ein Nachbarschaftsfest im Garten geplant.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 3
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Die Getränke für das Fest müssen alle Nachbarn selbst bezahlen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 3
+    },
+    {
+      "id": 22,
+      "type": "multiple-choice",
+      "question": "Frau Bergmann möchte für das Fest einen Apfelkuchen backen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 3
+    },
+    {
+      "id": 23,
+      "type": "matching",
+      "question": "Pilotprojekte zur 4-Tage-Woche zeigen in vielen Ländern positive Ergebnisse.",
+      "context": "Teil 4: Der Moderator diskutiert mit Sabine Wolf und Stefan Meier über die Einführung einer 4-Tage-Woche.\n\na) Moderator (David Braun)\nb) Sabine Wolf (Unternehmerin im Maschinenbau)\nc) Stefan Meier (Gewerkschaftsvertreter)\n\nModerator: „Guten Abend zur Wirtschaftsrunde. Vier Tage arbeiten, drei Tage Wochenende – und das bei vollem Lohnausgleich. Was vor wenigen Jahren wie eine Utopie klang, wird in Ländern wie Großbritannien, Island und auch in ersten deutschen Betrieben erfolgreich getestet. Herr Meier, warum fordert Ihre Gewerkschaft die 4-Tage-Woche flächendeckend?“\nStefan Meier: „Ganz einfach: Weil die Arbeitswelt vor dem Kollaps steht. Die Zahl der Burnout-Erkrankungen und Fehltage wegen psychischer Belastung erreicht jedes Jahr neue Rekordstände. Die Pilotstudien belegen eindeutig: Beschäftigte mit vier Arbeitstagen sind gesünder, motivierter und die Krankheitsquote sinkt um fast 40 Prozent. Wer ausgeruht ist, arbeitet in 32 Stunden genauso viel wie vorher in 40 Stunden.“\nModerator: „Frau Wolf, Sie leiten ein mittelständisches Unternehmen mit 150 Mitarbeitern. Könnten Sie morgen auf vier Tage umstellen?“\nSabine Wolf: „Auf gar keinen Fall! Im produzierenden Gewerbe und in der Pflege kann man Maschinen und Patienten nicht einfach einen Tag pro Woche sich selbst überlassen. Wenn meine Maschinen freitags stillstehen, verlieren wir 20 Prozent unseres Umsatzes an die internationale Konkurrenz. Bei vollem Lohnausgleich würden unsere Produktionskosten explodieren.“\nStefan Meier: „Aber Frau Wolf, Sie klagen doch selbst über den dramatischen Fachkräftemangel! Betriebe mit 4-Tage-Woche erhalten viermal so viele Bewerbungen wie traditionelle Firmen. Es ist das stärkste Argument, um junge Fachkräfte zu gewinnen.“\nSabine Wolf: „Das mag für Werbeagenturen und IT-Büros in Berlin stimmen, wo man flexibel am Laptop arbeitet. Aber für Handwerker, Bäcker, Krankenhäuser und die Industrie ist eine generelle 4-Tage-Woche schlicht unbezahlbar und wirtschaftlich gefährlich.“",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a",
+      "audioUrl": "/audio/b1/hoeren/test7/teil4.mp3",
+      "teil": 4,
+      "teilTitle": "Diskussion",
+      "teilInstruction": "Sie hören nun eine Diskussion. Sie hören die Diskussion zweimal. Dazu lösen Sie acht Aufgaben. Ordnen Sie die Aussagen zu: Wer sagt was?"
+    },
+    {
+      "id": 24,
+      "type": "matching",
+      "question": "Verweist auf steigende Krankheitsquoten und Burnout durch zu hohe Arbeitsbelastung.",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "c",
+      "teil": 4
+    },
+    {
+      "id": 25,
+      "type": "matching",
+      "question": "Betont, dass ausgeruhte Angestellte in weniger Zeit dieselbe Arbeitsleistung erbringen.",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "c",
+      "teil": 4
+    },
+    {
+      "id": 26,
+      "type": "matching",
+      "question": "Befürchtet drastische Umsatzeinbußen und Wettbewerbsnachteile in der Fertigung.",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "b",
+      "teil": 4
+    },
+    {
+      "id": 27,
+      "type": "matching",
+      "question": "Sieht in der 4-Tage-Woche den größten Vorteil bei der Gewinnung neuer Fachkräfte.",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "c",
+      "teil": 4
+    },
+    {
+      "id": 28,
+      "type": "matching",
+      "question": "Erwähnt Branchen wie Handwerk, Krankenhäuser und Bäckereien als Gegenbeispiele.",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "b",
+      "teil": 4
+    },
+    {
+      "id": 29,
+      "type": "matching",
+      "question": "Hält das Modell für reine Büro- und IT-Berufe durchaus für vorstellbar.",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "b",
+      "teil": 4
+    },
+    {
+      "id": 30,
+      "type": "matching",
+      "question": "Leitet das Gespräch und fasst die Kernfrage des vollen Lohnausgleichs zusammen.",
+      "options": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a",
+      "teil": 4
+    }
+  ]
+}

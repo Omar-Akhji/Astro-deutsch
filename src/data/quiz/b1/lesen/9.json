@@ -1,0 +1,426 @@
+{
+  "level": "b1",
+  "skill": "lesen",
+  "testId": 9,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Katja hat während ihrer gesamten Schulferien im Tierheim geholfen.",
+      "context": "Blog: Katjas Herz für Pfoten\n\nLiebe Tierfreunde,\nin den letzten Sommerferien wollte ich nicht einfach nur am See liegen. Da ich Tiere über alles liebe, aber in meiner Mietwohnung keinen eigenen Hund halten darf, habe ich mich für vier Wochen als ehrenamtliche Helferin im Tierheim Leipzig gemeldet.\n\nMein Tag begann jeden Morgen um 8 Uhr mit dem Saubermachen der Hundegehege und Katzenhäuser. Das ist körperlich anstrengende Arbeit: Futtertröge schrubben, Decken waschen und frisches Stroh verteilen. Doch sobald man in die dankbaren Augen der Tiere blickt, vergisst man jede Anstrengung.\n\nAm Nachmittag durfte ich mit den Hunden im angrenzenden Wald spazieren gehen. Mein absoluter Liebling war „Balu“, ein sanftmütiger Schäferhund-Mischling, der wegen des Umzugs seiner Vorbesitzer ins Tierheim kam. Balu war am Anfang sehr ängstlich und traute sich kaum an der Leine zu laufen. Mit viel Geduld, Leckerlis und Streicheleinheiten konnte ich sein Vertrauen gewinnen.\n\nDas Schönste passierte in meiner letzten Arbeitswoche: Eine Familie mit zwei Kindern verliebte sich in Balu und nahm ihn mit in sein neues Zuhause! Es fiel mir zwar schwer, mich von ihm zu verabschieden, aber zu wissen, dass er jetzt ein glückliches Leben führt, war das schönste Geschenk. Ich werde auch weiterhin an den Wochenenden im Tierheim mithelfen.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1,
+      "teilTitle": "Blog / Artikel",
+      "teilInstruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Katja besitzt in ihrer eigenen Wohnung zwei große Hunde.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Die morgendliche Arbeit im Tierheim war für Katja körperlich nicht anstrengend.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Der Hund Balu war von Beginn an sehr zutraulich und lebhaft.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Falsch",
+      "teil": 1
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Balu wurde noch während Katjas Einsatzzeit an eine neue Familie vermittelt.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Katja plant, auch in Zukunft ehrenamtlich im Tierheim aktiv zu bleiben.",
+      "options": [
+        "Richtig",
+        "Falsch"
+      ],
+      "correctAnswer": "Richtig",
+      "teil": 1
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Künstliche Intelligenz (KI) im Schulunterricht ...",
+      "context": "Lernhelfer oder Schummelwerkzeug? Künstliche Intelligenz an Schulen\n\nSeit Textprogramme mit Künstlicher Intelligenz wie ChatGPT für jeden frei zugänglich sind, steht das deutsche Bildungssystem vor einer gewaltigen Herausforderung. Während manche Lehrer fürchten, dass Schüler keine eigenen Aufsätze mehr schreiben und Hausarbeiten nur noch per Mausklick generieren lassen, sehen Bildungsexperten darin eine historische Chance.\n\nAn ersten Modellschulen in Nordrhein-Westfalen wird KI bereits aktiv in den Unterricht integriert. Schüler nutzen die Algorithmen als digitale Lernpartner: Sie lassen sich komplexe mathematische Formeln schrittweise erklären, fremdsprachige Vokabeln im passenden Kontext übersetzen oder historische Debatten aus unterschiedlichen Blickwinkeln simulieren.\n\nEntscheidend ist laut Pädagogen jedoch die Vermittlung von Medienkompetenz. Die Jugendlichen müssen lernen, dass KI-generierte Texte oft sachliche Fehler („Halluzinationen“) enthalten und Quellen immer kritisch überprüft werden müssen. Statt stur Fakten auswendig zu lernen, rücken kreatives Problemlösen, kritisches Denken und Teamarbeit in den Mittelpunkt des modernen Unterrichts.",
+      "options": [
+        "a) ist an allen deutschen Schulen durch das Bildungsministerium gesetzlich verboten worden.",
+        "b) wird an Modellschulen bereits gezielt als interaktives Lernwerkzeug genutzt.",
+        "c) hat dafür gesorgt, dass überhaupt keine Lehrer mehr an Schulen gebraucht werden."
+      ],
+      "correctAnswer": "b) wird an Modellschulen bereits gezielt als interaktives Lernwerkzeug genutzt.",
+      "teil": 2,
+      "teilTitle": "Zeitung / Presse",
+      "teilInstruction": "Lesen Sie die Texte aus der Zeitung und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Laut Pädagogen müssen Schüler vor allem lernen, dass ...",
+      "options": [
+        "a) KI-Programme immer zu 100 Prozent fehlerfreie Wahrheiten liefern.",
+        "b) man Hausaufgaben nie wieder selbst kontrollieren muss.",
+        "c) Antworten von KI-Systemen kritisch hinterfragt und überprüft werden müssen."
+      ],
+      "correctAnswer": "c) Antworten von KI-Systemen kritisch hinterfragt und überprüft werden müssen.",
+      "teil": 2
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Durch den Einsatz von KI verändert sich der Unterricht so, dass ...",
+      "options": [
+        "a) kritisches Urteilsvermögen und Problemlösungskompetenz wichtiger werden als reines Faktenwissen.",
+        "b) nur noch schriftliche Prüfungen ohne Hilfsmittel stattfinden.",
+        "c) keine Fremdsprachen mehr an Schulen gelehrt werden."
+      ],
+      "correctAnswer": "a) kritisches Urteilsvermögen und Problemlösungskompetenz wichtiger werden als reines Faktenwissen.",
+      "teil": 2
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Nachtzüge in Europa ...",
+      "context": "Schlafend ans Ziel: Die Rückkehr der europäischen Nachtzüge\n\nLange Zeit galt der Nachtzug als veraltetes Relikt vergangener Eisenbahnepochen. Billigflieger und Autobahnen verdrängten die rollenden Schlafwagen fast vollständig. Doch angesichts des Klimawandels und steigender Umweltbelastung erlebt das Reisen auf Schienen eine spektakuläre Wiedergeburt.\n\nBahnunternehmen aus Österreich, Deutschland, Frankreich und der Schweiz investieren hunderte Millionen Euro in moderne Nachtzugnetze. Neue Linien verbinden Metropolen wie Berlin, Wien, Paris, Brüssel und Rom über Nacht. Reisende steigen abends um 20 Uhr gemütlich in den Zug, schlafen in bequemen Schlafabteilen und wachen morgens mitten im Zentrum der Zielstadt auf – ganz ohne Sicherheitskontrollen am Flughafen oder Stau auf der Autobahn.\n\nNeben der enormen CO2-Ersparnis – ein Nachtzug stößt pro Passagier rund 80 Prozent weniger Treibhausgase aus als ein Flugzeug – spart man sich gleichzeitig die Kosten für eine Hotelübernachtung. Die Nachfrage ist so gewaltig, dass Schlafwagenbetten auf vielen Strecken oft Wochen im Voraus restlos ausgebucht sind.",
+      "options": [
+        "a) werden von europäischen Bahnen wegen mangelnder Nachfrage komplett eingestellt.",
+        "b) erleben eine Renaissance als klimafreundliche und komfortable Reisealternative zum Flugzeug.",
+        "c) sind teurer und stoßen deutlich mehr Treibhausgase aus als Inlandsflüge."
+      ],
+      "correctAnswer": "b) erleben eine Renaissance als klimafreundliche und komfortable Reisealternative zum Flugzeug.",
+      "teil": 2
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Ein praktischer Vorteil der Nachtzugreise ist, dass ...",
+      "options": [
+        "a) man direkt im Stadtzentrum ankommt und eine Hotelübernachtung einspart.",
+        "b) man während der gesamten Fahrt nicht schlafen darf.",
+        "c) die Züge ausschließlich für Frachtgüter reserviert sind."
+      ],
+      "correctAnswer": "a) man direkt im Stadtzentrum ankommt und eine Hotelübernachtung einspart.",
+      "teil": 2
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Wegen des großen Erfolgs der Nachtzüge ...",
+      "options": [
+        "a) sind Tickets und Schlafwagenplätze auf beliebten Routen oft frühzeitig ausverkauft.",
+        "b) fahren Flugzeuge überhaupt nicht mehr zwischen europäischen Hauptstädten.",
+        "c) müssen alle Fahrgäste ihr eigenes Bettzeug von zu Hause mitbringen."
+      ],
+      "correctAnswer": "a) sind Tickets und Schlafwagenplätze auf beliebten Routen oft frühzeitig ausverkauft.",
+      "teil": 2
+    },
+    {
+      "id": 13,
+      "type": "matching",
+      "question": "13. Tanja möchte lernen, wie man traditionelles deutsches Sauerteigbrot zu Hause selbst backt, und sucht einen Kurs am Samstag.",
+      "context": "Lesen Sie die Situationen 13-19 und die Anzeigen a-j. Welche Anzeige passt zu welcher Situation?\nFür eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0.\n\na) Sauerteig-Brotbackkurs für Einsteiger: Vom Korn zum Laib! Echten Natursauerteig ansetzen, kneten und im Steinofen backen. Jeden Samstag 10:00–14:00 Uhr. Eigene Teigportion zum Mitnehmen. Biobäckerei Mahlkorn, Tel. 089/672109.\n\nb) Italienische Pasta-Werkstatt: Frische Pasta handgemacht! Tagliatelle, Ravioli und Gnocchi mit passenden Soßen zubereiten. Freitagabend 18:30 Uhr mit italienischem Wein. Kochstudio Bella Italia.\n\nc) Sushi-Meisterkurs für Fortgeschrittene: Maki, Nigiri und Sashimi mit frischem Lachs und Thunfisch perfekt rollen. Vorkenntnisse empfohlen. Sonntag 15:00 Uhr. Restaurant Sakura.\n\nd) Vegane Küche für den Alltag: Schnell, gesund und proteinreich kochen ohne tierische Produkte. Mittwoch 19:00 Uhr im Familienzentrum West. Kursgebühr 35 € inkl. Zutaten.\n\ne) Pralinen & Schokoladenzauber: Feine Trüffel und handgeschöpfte Schokoladen selbst kreieren. Schokoladen-Manufaktur Sweet Art. Termine samstags 14:00 Uhr. Ideal auch als Geschenk!\n\nf) Weinseminar & Verkostung: Einführung in die Welt deutscher Weiß- und Rotweine (Mosel, Rheingau, Pfalz). 6 Spitzenweine mit Käsebegleitung. Donnerstag 19:30 Uhr. Weinkontor Bacchus.\n\ng) Barista & Latte-Art Workshop: Perfekten Espresso zubereiten und Milchschaum-Herzen gießen. Sonntags 10:00–13:00 Uhr im Kaffeerösterei-Café Crema.\n\nh) Thailändisches Streetfood: Schnelle Wokgerichte, Pad Thai und aromatische Currys mit originalen Kräutern. Dienstag 18:00 Uhr. Kochakademie Asia.\n\ni) Wildkräuterwanderung & Kochkurs: Essbare Wildkräuter im Wald sammeln und anschließend zu leckeren Pestos und Salaten verarbeiten. Samstag 10:00–15:00 Uhr. Naturpark Isarauen.\n\nj) Professionelle Messer-Schleifschule: Kochmesser schärfen mit japanischen Wassersteinen. Bringen Sie Ihre eigenen Küchenmesser mit! Freitag 17:00–20:00 Uhr. Schärfdienst Stahl.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "a",
+      "teil": 3,
+      "teilTitle": "Anzeigen / Matching",
+      "teilInstruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Wählen Sie: Welche Anzeige passt zu welcher Situation? Für eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0."
+    },
+    {
+      "id": 14,
+      "type": "matching",
+      "question": "14. Felix liebt Kaffee und möchte lernen, wie man mit einer Siebträgermaschine Milchschaum-Kunst (Latte Art) kreiert.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "g",
+      "teil": 3
+    },
+    {
+      "id": 15,
+      "type": "matching",
+      "question": "15. Bettina möchte ihren Partner überraschen und lernen, wie man edle Pralinen und Schokoladentrüffel herstellt.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "e",
+      "teil": 3
+    },
+    {
+      "id": 16,
+      "type": "matching",
+      "question": "16. Simon ernährt sich seit kurzem rein pflanzlich und sucht günstige Rezepte und Ideen für den schnellen Küchenalltag.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "d",
+      "teil": 3
+    },
+    {
+      "id": 17,
+      "type": "matching",
+      "question": "17. Katharina möchte mehr über regionale Weine aus deutschen Anbaugebieten erfahren und an einer Weinprobe teilnehmen.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "f",
+      "teil": 3
+    },
+    {
+      "id": 18,
+      "type": "matching",
+      "question": "18. Daniel möchte am Freitagabend lernen, wie man echte italienische Nudeln und gefüllte Ravioli frisch zubereitet.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "b",
+      "teil": 3
+    },
+    {
+      "id": 19,
+      "type": "matching",
+      "question": "19. Ein Hobbykoch sucht einen Spezialkurs für mexikanische Mole-Soßen und traditionelle Tortilla-Herstellung.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "0"
+      ],
+      "correctAnswer": "0",
+      "teil": 3
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Monika",
+      "context": "In einem Ernährungsforum lesen Sie Leserbeiträge zur Frage:\n„Bioprodukte im Supermarkt: Teurer Werbegag oder unverzichtbar für Mensch und Umwelt?“\n\nBeispiel (Oliver, 34, Mainz): Bio bedeutet für mich weniger Pestizide im Essen und mehr Tierwohl auf den Höfen. Der höhere Preis ist eine Investition in unsere Gesundheit und Natur. (Ja)\n\nMonika, 51, Bochum: Hinter dem ganzen Bio-Siegel-Dschungel steckt vor allem ein gigantisches Geschäftsmodell der Lebensmittelkonzerne. Oft schmeckt die Bio-Tomate genauso wässrig wie die konventionelle, kostet aber das Doppelte. Viel wichtiger ist es, saisonal und regional beim Bauern um die Ecke einzukaufen, egal ob mit Bio-Siegel oder ohne.\n\nFabian, 27, Freiburg: Wer einmal gesehen hat, wie konventionelle Monokulturen den Boden auslaugen und das Insektensterben beschleunigen, greift freiwillig zu Bio. Der ökologische Landbau schützt das Grundwasser und erhält die Artenvielfalt. Jeder Euro für Bio ist gut angelegtes Geld.\n\nChrista, 64, Bremen: Für Familien mit kleinem Budget oder Alleinerziehende sind Bioprodukte schlicht unbezahlbar. Eine vierköpfige Familie kann sich die horrenden Preise im Bioladen nicht leisten. Gesunde Ernährung darf kein Luxusgut für Wohlhabende sein.\n\nStephan, 40, Leipzig: Durch den Kauf von Biofleisch unterstütze ich, dass Tiere mehr Platz im Stall haben, Tageslicht sehen und kein genmanipuliertes Futter bekommen. Reine Billigfleischproduktion ist moralisch nicht mehr zu rechtfertigen.\n\nKirsten, 36, Potsdam: Viele Bio-Produkte wie Bananen, Avocados oder Quinoa werden um den halben Globus geflogen oder mit Frachtschiffen transportiert. Was nützt mir ein Bio-Siegel, wenn die CO2-Bilanz des Transports die Umwelt völlig zerstört? Da kaufe ich lieber konventionelle Äpfel aus Deutschland.\n\nManuel, 22, Hamburg: Studien beweisen immer wieder, dass Biogemüse deutlich weniger Schadstoff- und Pestizidrückstände aufweist als Spritzgemüse. Gerade für die Entwicklung junger Menschen ist unbelastetes Essen extrem wichtig.\n\nHeike, 59, Erfurt: Die strengen Kontrollen bei zertifizierten Bio-Verbänden wie Demeter oder Bioland garantieren echte Qualität und Nachhaltigkeit. Wir müssen weg von der Geiz-ist-geil-Mentalität beim Essen. Bio ist der einzig zukunftsfähige Weg.",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4,
+      "teilTitle": "Diskussion / Meinungen",
+      "teilInstruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person dafür oder dagegen? Wählen Sie Ja oder Nein."
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Fabian",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 22,
+      "type": "multiple-choice",
+      "question": "Christa",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "Stephan",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "Kirsten",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Nein",
+      "teil": 4
+    },
+    {
+      "id": 25,
+      "type": "multiple-choice",
+      "question": "Manuel",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "Heike",
+      "options": [
+        "Ja",
+        "Nein"
+      ],
+      "correctAnswer": "Ja",
+      "teil": 4
+    },
+    {
+      "id": 27,
+      "type": "multiple-choice",
+      "question": "Die Anmeldung zu einem Kurs der Volkshochschule ...",
+      "context": "Allgemeine Geschäfts- und Kursordnung der Volkshochschule (VHS)\n\n1. Anmeldung und Zustandekommen des Vertrages\nDie Anmeldung zu den Kursen und Veranstaltungen kann schriftlich, persönlich in der Geschäftsstelle oder online über die VHS-Website erfolgen. Sie ist verbindlich und verpflichtet zur Zahlung der Kursgebühr vor Beginn der ersten Unterrichtsstunde. Eine Bestätigung per E-Mail gilt als rechtsgültiger Vertragsabschluss.\n\n2. Mindestteilnehmerzahl und Absage durch die VHS\nKurse finden in der Regel nur statt, wenn die festgelegte Mindestteilnehmerzahl (meist 8 Personen) drei Werktage vor Kursbeginn erreicht ist. Wird ein Kurs wegen zu geringer Teilnehmerzahl oder Erkrankung des Dozenten abgesagt, werden bereits gezahlte Gebühren in voller Höhe erstattet. Weitergehende Ansprüche sind ausgeschlossen.\n\n3. Rücktritt und Kündigung durch Teilnehmende\nEin Rücktritt ist bis zu 7 Tage vor Kursbeginn ohne Angabe von Gründen möglich; in diesem Fall wird eine Bearbeitungsgebühr von 10 Euro einbehalten. Bei einer späteren Abmeldung oder Nichtteilnahme ist die volle Kursgebühr fällig, es sei denn, es wird ein ärztliches Attest über eine dauerhafte Erkrankung vorgelegt.\n\n4. Teilnahmebescheinigungen und Prüfungen\nTeilnehmende, die an mindestens 80 Prozent der Unterrichtsstunden eines Kurses anwesend waren, erhalten auf Wunsch am Kursende eine offizielle Teilnahmebescheinigung. Für Prüfungen mit anerkannten Sprachzertifikaten (z. B. telc oder Goethe-Institut) gelten gesonderte Anmeldefristen und Gebühren.",
+      "options": [
+        "a) ist unverbindlich und muss erst nach dem dritten Kurstag bezahlt werden.",
+        "b) kann online, schriftlich oder persönlich erfolgen und verpflichtet zur Zahlung.",
+        "c) ist nur für Personen mit Abiturabschluss möglich."
+      ],
+      "correctAnswer": "b) kann online, schriftlich oder persönlich erfolgen und verpflichtet zur Zahlung.",
+      "teil": 5,
+      "teilTitle": "Hausordnung / Regeln",
+      "teilInstruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c."
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "Wenn ein Kurs wegen zu weniger Anmeldungen abgesagt werden muss, ...",
+      "options": [
+        "a) behält die Volkshochschule die gesamte Gebühr ein.",
+        "b) erhalten die Angemeldeten ihre bezahlte Gebühr vollständig zurück.",
+        "c) muss man stattdessen einen teureren Kurs buchen."
+      ],
+      "correctAnswer": "b) erhalten die Angemeldeten ihre bezahlte Gebühr vollständig zurück.",
+      "teil": 5
+    },
+    {
+      "id": 29,
+      "type": "multiple-choice",
+      "question": "Wer bis zu 7 Tage vor Kursbeginn vom Vertrag zurücktritt, ...",
+      "options": [
+        "a) muss eine Bearbeitungsgebühr von 10 Euro bezahlen.",
+        "b) muss die volle Kursgebühr ohne Ausnahme entrichten.",
+        "c) darf sich in den folgenden zwei Jahren nicht mehr anmelden."
+      ],
+      "correctAnswer": "a) muss eine Bearbeitungsgebühr von 10 Euro bezahlen.",
+      "teil": 5
+    },
+    {
+      "id": 30,
+      "type": "multiple-choice",
+      "question": "Eine offizielle Teilnahmebescheinigung erhält man, wenn man ...",
+      "options": [
+        "a) an mindestens 80 Prozent des Unterrichts anwesend war.",
+        "b) eine zusätzliche schriftliche Abschlussprüfung bestanden hat.",
+        "c) alle Hausaufgaben fehlerfrei abgegeben hat."
+      ],
+      "correctAnswer": "a) an mindestens 80 Prozent des Unterrichts anwesend war.",
+      "teil": 5
+    }
+  ]
+}
