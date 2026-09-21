@@ -3,4 +3,8 @@ import vue from "@astrojs/vue";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
-export default defineConfig({ integrations: [vue()], vite: { plugins: [tailwindcss()] } });
+export default defineConfig({
+  site: "https://deutsch-lernen.com",
+  integrations: [vue()],
+  vite: { plugins: [tailwindcss()] },
+});

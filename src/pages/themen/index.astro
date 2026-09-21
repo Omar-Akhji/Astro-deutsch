@@ -2,7 +2,6 @@
 import { getThemen } from "../../features/themen/api/services";
 import ThemenSection from "../../features/themen/ui/ThemenSection.vue";
 import Layout from "../../layouts/Layout.astro";
-import AnimateOnScroll from "../../shared/ui/AnimateOnScroll.vue";
 
 const { data: themen } = await getThemen();
 ---
@@ -11,14 +10,10 @@ const { data: themen } = await getThemen();
   description="58 B1 Sprechen und Schreiben Themen mit Pro- und Contra-Argumenten zur Prüfungsvorbereitung."
   title="B1 Themen - Deutsch Lernen"
 >
-  <AnimateOnScroll
-    animation="fade-up"
-    as="main"
-    client:load
-  >
+  <main class="animate-fade-in">
     <ThemenSection
       client:load
       initialThemen={themen ?? []}
     />
-  </AnimateOnScroll>
+  </main>
 </Layout>

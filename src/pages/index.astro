@@ -10,13 +10,8 @@ import Hero from "../shared/ui/Hero.astro";
   description="Lerne Deutsch effektiv mit interaktiven Vokabeln, Grammatik-Lektionen und gezielter Prüfungsvorbereitung für das B1 & B2 Zertifikat."
   title="Deutsch Lernen | Deine Plattform für Erfolg"
 >
-  <AnimateOnScroll
-    animation="fade-up"
-    as="div"
-    class="py-4 mobile:py-8"
-    client:load
-  >
-    <header class="mbe-12 mobile:mbe-16">
+  <div class="py-4 mobile:py-8">
+    <header class="mbe-12 mobile:mbe-16 animate-fade-in">
       <Hero
         category="A1 - B2"
         description="Die umfassende Plattform für dein Deutsch-Training. Von den Grundlagen bis zum B1 & B2 Zertifikat – alles an einem Ort."
@@ -33,7 +28,7 @@ import Hero from "../shared/ui/Hero.astro";
     <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
       <AnimateOnScroll
         animation="fade-up"
-        client:load
+        client:visible
         delay={200}
       >
         <Card
@@ -48,7 +43,7 @@ import Hero from "../shared/ui/Hero.astro";
       </AnimateOnScroll>
       <AnimateOnScroll
         animation="fade-up"
-        client:load
+        client:visible
         delay={300}
       >
         <Card
@@ -63,7 +58,7 @@ import Hero from "../shared/ui/Hero.astro";
       </AnimateOnScroll>
       <AnimateOnScroll
         animation="fade-up"
-        client:load
+        client:visible
         delay={400}
       >
         <Card
@@ -81,7 +76,7 @@ import Hero from "../shared/ui/Hero.astro";
     <section class="mbs-20">
       <AnimateOnScroll
         animation="fade-up"
-        client:load
+        client:visible
         delay={500}
       >
         <Hero
@@ -100,7 +95,7 @@ import Hero from "../shared/ui/Hero.astro";
     <section class="mbs-24 text-center">
       <AnimateOnScroll
         animation="blur-in"
-        client:load
+        client:visible
         delay={500}
       >
         <h2 class="mbe-6 text-shadow-sm text-white">
@@ -112,5 +107,5 @@ import Hero from "../shared/ui/Hero.astro";
         </p>
       </AnimateOnScroll>
     </section>
-  </AnimateOnScroll>
+  </div>
 </Layout>

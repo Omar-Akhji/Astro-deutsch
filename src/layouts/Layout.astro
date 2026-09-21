@@ -33,6 +33,10 @@ const pathname = Astro.url.pathname;
     />
     <ClientRouter />
     <link
+      href={new URL(Astro.url.pathname, Astro.site).href}
+      rel="canonical"
+    />
+    <link
       href="/logo.svg"
       rel="icon"
       type="image/svg+xml"
