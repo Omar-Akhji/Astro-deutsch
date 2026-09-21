@@ -1,7 +1,5 @@
 ---
-type RenderableComponent =
-  | ((...parameters: any[]) => any)
-  | (new (...parameters: any[]) => any);
+type RenderableComponent = ((...parameters: any[]) => any) | (new (...parameters: any[]) => any);
 
 interface Props {
   icon: RenderableComponent;
@@ -30,7 +28,7 @@ const { icon: Icon, title, subtitle } = Astro.props;
       class="flex justify-center px-2"
       data-animate="fade-up"
     >
-      <p class="mx-auto w-fit max-w-full rounded-2xl border-2 border-solid border-white/10 bg-white/5 px-4 py-2 text-center text-xs font-medium leading-relaxed text-text-muted text-pretty shadow-sm min-[480px]:rounded-full min-[480px]:px-5 min-[480px]:py-1.5 min-[480px]:text-sm tablet:px-6 tablet:py-2 tablet:text-base laptop:text-lg">
+      <p class="mx-auto w-fit max-w-2xl rounded-2xl border-2 border-solid border-white/10 bg-white/5 px-4 py-1.5 text-center text-xs font-medium leading-relaxed text-text-muted text-pretty shadow-sm min-[480px]:rounded-full min-[480px]:px-5 min-[480px]:py-1.5 tablet:px-6 tablet:py-1.5 tablet:text-sm">
         {subtitle}
       </p>
     </div>

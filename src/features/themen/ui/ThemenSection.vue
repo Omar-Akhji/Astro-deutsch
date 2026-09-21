@@ -13,8 +13,8 @@ import {
   Users,
   Utensils,
 } from "lucide-vue-next";
-import { cn } from "../../../shared/lib/utilities.ts";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
+import { cn } from "@/shared/lib";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
 import { getCategoryClasses, THEMEN_CATEGORY_COLORS } from "../lib/category-config.ts";
 import type { Thema } from "../model/types.ts";
 import ThemaCard from "./ThemaCard.vue";
@@ -86,14 +86,7 @@ const filteredGroups = computed<FilteredThemaGroup[]>(() => {
     const borderClass = classTokens.find((c) => c.startsWith("border-")) ?? "";
     const textClass = classTokens.find((c) => c.startsWith("text-")) ?? "";
 
-    groups.push({
-      catId,
-      label: config.label,
-      icon: config.icon,
-      borderClass,
-      textClass,
-      themes,
-    });
+    groups.push({ catId, label: config.label, icon: config.icon, borderClass, textClass, themes });
   }
 
   return groups;

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import { PartyPopper, Sparkles, ThumbsUp, Zap } from "lucide-vue-next";
-import gsap from "../../../shared/lib/gsap.ts";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
+import { gsap } from "@/shared/lib";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
 
 interface Props {
   score: number;

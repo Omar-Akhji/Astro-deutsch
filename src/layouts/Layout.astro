@@ -11,10 +11,10 @@ const {
   robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
 } = Astro.props;
 import { ClientRouter } from "astro:transitions";
-import Footer from "../shared/ui/Footer.astro";
-import Navigation from "../shared/ui/Navigation.vue";
-import SkeletonLayouts from "../shared/ui/SkeletonLayouts.vue";
-import "../styles/global.css";
+import Footer from "@/shared/ui/Footer.astro";
+import Navigation from "@/shared/ui/Navigation.vue";
+import SkeletonLayouts from "@/shared/ui/SkeletonLayouts.astro";
+import "@/styles/global.css";
 
 const pathname = Astro.url.pathname;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://deutsch-lernen.com").href;
@@ -30,14 +30,12 @@ const breadcrumbItems = [
     item: Astro.site ? Astro.site.toString() : "https://deutsch-lernen.com",
   },
   ...pathSegments.map((segment, index) => {
-    const url = new URL("/" + pathSegments.slice(0, index + 1).join("/"), Astro.site ?? "https://deutsch-lernen.com").href;
+    const url = new URL(
+      "/" + pathSegments.slice(0, index + 1).join("/"),
+      Astro.site ?? "https://deutsch-lernen.com",
+    ).href;
     const name = segment.charAt(0).toUpperCase() + segment.slice(1);
-    return {
-      "@type": "ListItem",
-      position: index + 2,
-      name,
-      item: url,
-    };
+    return { "@type": "ListItem", position: index + 2, name, item: url };
   }),
 ];
 
@@ -185,9 +183,9 @@ void schemaJson;
     <!-- Structured Data (JSON-LD) for Rich Results -->
     <script
       is:inline
+      set:html={JSON.stringify(schemaJson)}
       type="application/ld+json"
-    >{JSON.stringify(schemaJson)}</script>
-
+    ></script>
     <!-- Favicon & Brand Icons -->
     <link
       href="/favicon.ico"
@@ -223,11 +221,10 @@ void schemaJson;
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body class="antialiased">
-    <script src="../shared/scripts/init.ts"></script>
-    <script src="../shared/scripts/analytics.ts"></script>
+    <script src="@/shared/scripts/init.ts"></script>
+    <script src="@/shared/scripts/analytics.ts"></script>
     <div class="container mx-auto max-w-7xl">
       <Navigation
         client:load
@@ -245,154 +242,103 @@ void schemaJson;
               class="hidden"
               data-skeleton="/"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="home"
-              />
+              <SkeletonLayouts layout="home" />
             </div>
             <div
               class="hidden"
               data-skeleton="/themen"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="themen"
-              />
+              <SkeletonLayouts layout="themen" />
             </div>
             <div
               class="hidden"
               data-skeleton="/grammatik"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="grammar-overview"
-              />
+              <SkeletonLayouts layout="grammar-overview" />
             </div>
             <div
               class="hidden"
               data-skeleton="/grammatik/detail"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="grammar-detail"
-              />
+              <SkeletonLayouts layout="grammar-detail" />
             </div>
             <div
               class="hidden"
               data-skeleton="/vokabeln"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="vocabulary-overview"
-              />
+              <SkeletonLayouts layout="vocabulary-overview" />
             </div>
             <div
               class="hidden"
               data-skeleton="/vokabeln/level"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="vocabulary-level"
-              />
+              <SkeletonLayouts layout="vocabulary-level" />
             </div>
             <div
               class="hidden"
               data-skeleton="/vokabeln/detail"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="vocabulary-detail"
-              />
+              <SkeletonLayouts layout="vocabulary-detail" />
             </div>
             <div
               class="hidden"
               data-skeleton="/vokabeln/family-tree"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="family-tree"
-              />
+              <SkeletonLayouts layout="family-tree" />
             </div>
             <div
               class="hidden"
               data-skeleton="/pruefung"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="pruefung-overview"
-              />
+              <SkeletonLayouts layout="pruefung-overview" />
             </div>
             <div
               class="hidden"
               data-skeleton="/pruefung/level"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="pruefung-level"
-              />
+              <SkeletonLayouts layout="pruefung-level" />
             </div>
             <div
               class="hidden"
               data-skeleton="/pruefung/modelltests"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="pruefung-modelltests"
-              />
+              <SkeletonLayouts layout="pruefung-modelltests" />
             </div>
             <div
               class="hidden"
               data-skeleton="/pruefung/study"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="pruefung-module-study"
-              />
+              <SkeletonLayouts layout="pruefung-module-study" />
             </div>
             <div
               class="hidden"
               data-skeleton="/quiz"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="quiz"
-              />
+              <SkeletonLayouts layout="quiz" />
             </div>
             <div
               class="hidden"
               data-skeleton="/login"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="auth"
-              />
+              <SkeletonLayouts layout="auth" />
             </div>
             <div
               class="hidden"
               data-skeleton="/register"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="auth"
-              />
+              <SkeletonLayouts layout="auth" />
             </div>
             <div
               class="hidden"
               data-skeleton="/404"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="404"
-              />
+              <SkeletonLayouts layout="404" />
             </div>
             <div
               class="hidden"
               data-skeleton="default"
             >
-              <SkeletonLayouts
-                client:only="vue"
-                layout="default-pending"
-              />
+              <SkeletonLayouts layout="default-pending" />
             </div>
           </div>
 
@@ -404,7 +350,7 @@ void schemaJson;
         <Footer />
       </div>
     </div>
-    <script src="../shared/scripts/transitions.ts"></script>
-    <script src="../shared/scripts/animations.ts"></script>
+    <script src="@/shared/scripts/transitions.ts"></script>
+    <script src="@/shared/scripts/animations.ts"></script>
   </body>
 </html>

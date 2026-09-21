@@ -1,13 +1,11 @@
 ---
+import { getVocabById, vocabList } from "@/features/vocabulary";
+import Layout from "@/layouts/Layout.astro";
+import { getGradient, VOCAB_GRADIENTS } from "@/shared/lib";
+import BackButton from "@/shared/ui/BackButton.astro";
+import GlassCard from "@/shared/ui/GlassCard.astro";
+import Hero from "@/shared/ui/Hero.astro";
 import { ArrowRight, BookOpen, Languages } from "lucide-astro";
-import { vocabList } from "../../../features/vocabulary/api/data";
-import { getVocabById } from "../../../features/vocabulary/api/services";
-import Layout from "../../../layouts/Layout.astro";
-import { VOCAB_GRADIENTS } from "../../../shared/lib/gradients";
-import { getGradient } from "../../../shared/lib/utilities";
-import BackButton from "../../../shared/ui/BackButton.astro";
-import GlassCard from "../../../shared/ui/GlassCard.astro";
-import Hero from "../../../shared/ui/Hero.astro";
 
 export async function getStaticPaths() {
   return vocabList.map((item) => ({ params: { id: item.id.toString() } }));

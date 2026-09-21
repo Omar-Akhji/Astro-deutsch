@@ -1,0 +1,13 @@
+export { quizQuestions } from "./api/data.ts";
+export { getQuestions } from "./api/services.ts";
+export * from "./lib/exam-structure.ts";
+export * from "./lib/useQuiz.ts";
+export type * from "./model/types.ts";
+export { default as AdDetailDialog } from "./ui/AdDetailDialog.vue";
+export { default as AnswerOptions } from "./ui/AnswerOptions.vue";
+export { default as ContextCard } from "./ui/ContextCard.vue";
+export { default as QuizQuestion } from "./ui/QuizQuestion.vue";
+export { default as QuizResult } from "./ui/QuizResult.vue";
+export { default as QuizStart } from "./ui/QuizStart.vue";
+export { default as QuizView } from "./ui/QuizView.vue";
+export { default as TeilHeader } from "./ui/TeilHeader.vue";

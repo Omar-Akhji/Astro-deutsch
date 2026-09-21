@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 import { twMerge } from "tailwind-merge";
-import gsap from "../lib/gsap.ts";
+import { gsap } from "@/shared/lib";
 
 type AnimationType =
   | "fade-up"

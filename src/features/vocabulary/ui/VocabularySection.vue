@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { VOCAB_GRADIENTS } from "../../../shared/lib/gradients.ts";
-import { getGradient } from "../../../shared/lib/utilities.ts";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
-import Card from "../../../shared/ui/Card.vue";
+import { getGradient, VOCAB_GRADIENTS } from "@/shared/lib";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import Card from "@/shared/ui/Card.vue";
 import type { VocabItem } from "../model/types.ts";
 
 const props = defineProps<{ vocabList: VocabItem[] }>();

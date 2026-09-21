@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { CheckCircle2, Clock } from "lucide-vue-next";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
-import Hero from "../../../shared/ui/Hero.vue";
-import type { Thema } from "../../themen/model/types.ts";
-import ThemenSection from "../../themen/ui/ThemenSection.vue";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import Hero from "@/shared/ui/Hero.vue";
+import { type Thema, ThemenSection } from "@/features/themen";
 import type { ExamLevel, PhraseGroup, RedemittelCategory } from "../model/types.ts";
 import EmailVisualFrame from "./EmailVisualFrame.vue";
 import PhraseGroupCard from "./PhraseGroupCard.vue";
@@ -112,7 +111,7 @@ const enrichedParts = computed<EnrichedPart[]>(() => {
 <template>
   <div
     v-if="!section"
-    class="flex min-h-[360px] flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm"
+    class="flex min-h-90 flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm"
   >
     <div
       class="mb-4 flex size-14 items-center justify-center rounded-full bg-amber-400/10 text-amber-400"

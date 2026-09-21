@@ -1,14 +1,17 @@
 ---
+import {
+  getGrammarSection,
+  getGrammarTopic,
+  GrammarContentBlocks,
+  grammarSections,
+  GrammarTable,
+} from "@/features/grammar";
+import Layout from "@/layouts/Layout.astro";
+import { getGradient } from "@/shared/lib";
+import BackButton from "@/shared/ui/BackButton.astro";
+import GlassCard from "@/shared/ui/GlassCard.astro";
+import Hero from "@/shared/ui/Hero.astro";
 import { BookOpen, Languages } from "lucide-astro";
-import { grammarSections } from "../../../features/grammar/api/data";
-import { getGrammarSection, getGrammarTopic } from "../../../features/grammar/api/services";
-import GrammarContentBlocks from "../../../features/grammar/ui/GrammarContentBlocks.vue";
-import GrammarTable from "../../../features/grammar/ui/GrammarTable.vue";
-import Layout from "../../../layouts/Layout.astro";
-import { getGradient } from "../../../shared/lib/utilities";
-import BackButton from "../../../shared/ui/BackButton.astro";
-import GlassCard from "../../../shared/ui/GlassCard.astro";
-import Hero from "../../../shared/ui/Hero.astro";
 
 export async function getStaticPaths() {
   const paths = [];

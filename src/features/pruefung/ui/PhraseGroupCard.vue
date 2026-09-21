@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { ChevronDown, Copy, Check, Volume2 } from "lucide-vue-next";
-import { speakGerman } from "../../../shared/lib/audio.ts";
+import { speakGerman } from "@/shared/lib";
 import type { PhraseGroup } from "../model/types.ts";
 
 interface Props {

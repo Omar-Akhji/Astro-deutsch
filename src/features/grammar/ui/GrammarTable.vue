@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
-import GlassCard from "../../../shared/ui/GlassCard.vue";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import GlassCard from "@/shared/ui/GlassCard.vue";
 import ContentItem from "./ContentItem.vue";
 
 interface GrammarTableProperties {

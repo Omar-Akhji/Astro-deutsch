@@ -1,9 +1,8 @@
 ---
+import { getExamLevels, PruefungSection } from "@/features/pruefung";
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/shared/ui/PageHeader.astro";
 import { ClipboardList } from "lucide-astro";
-import { getExamLevels } from "../../features/pruefung/api/services";
-import PruefungSection from "../../features/pruefung/ui/PruefungSection.vue";
-import Layout from "../../layouts/Layout.astro";
-import PageHeader from "../../shared/ui/PageHeader.astro";
 
 const { data: examLevels } = await getExamLevels();
 ---

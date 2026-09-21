@@ -1,5 +1,5 @@
-import { wait } from "../../../shared/lib/wait.ts";
-import type { ApiResponse } from "../../../shared/model/api.ts";
+import { wait } from "@/shared/lib";
+import type { ApiResponse } from "@/shared/model";
 import type { GrammarSection, GrammarTopic } from "../model/types.ts";
 import { grammarSections } from "./data.ts";
 

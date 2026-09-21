@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch, nextTick } from "vue";
-import gsap from "../../../shared/lib/gsap.ts";
+import { gsap } from "@/shared/lib";
 import { getCategoryClasses } from "../lib/category-config.ts";
 import type { Thema } from "../model/types.ts";
 

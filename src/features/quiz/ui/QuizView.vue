@@ -227,9 +227,7 @@ const goBackUrl = computed(() => {
                         v-for="(item, index) in teil.groupQuestions"
                         :key="item.question.id"
                         :class="[
-                          index < teil.groupQuestions.length - 1 ?
-                            'border-b border-white/5'
-                          : '',
+                          index < teil.groupQuestions.length - 1 ? 'border-b border-white/5' : '',
                         ]"
                       >
                         <QuizQuestion

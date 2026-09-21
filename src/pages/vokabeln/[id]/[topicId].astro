@@ -1,12 +1,9 @@
 ---
-import { vocabList } from "../../../features/vocabulary/api/data";
-import { getVocabById } from "../../../features/vocabulary/api/services";
-import FamilyTree from "../../../features/vocabulary/ui/FamilyTree.vue";
-import VocabularyTable from "../../../features/vocabulary/ui/VocabularyTable.vue";
-import Layout from "../../../layouts/Layout.astro";
-import BackButton from "../../../shared/ui/BackButton.astro";
-import GlassCard from "../../../shared/ui/GlassCard.astro";
-import Hero from "../../../shared/ui/Hero.astro";
+import { FamilyTree, getVocabById, vocabList, VocabularyTable } from "@/features/vocabulary";
+import Layout from "@/layouts/Layout.astro";
+import BackButton from "@/shared/ui/BackButton.astro";
+import GlassCard from "@/shared/ui/GlassCard.astro";
+import Hero from "@/shared/ui/Hero.astro";
 
 export async function getStaticPaths() {
   const paths = [];

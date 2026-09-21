@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { cn } from "../lib/utilities.ts";
+import { cn } from "@/shared/lib";
 
 interface Props {
   className?: string;

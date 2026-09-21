@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Lightbulb } from "lucide-vue-next";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
 import type { GrammarSectionContent } from "../model/types.ts";
 import ContentItem from "./ContentItem.vue";
 

@@ -1,5 +1,5 @@
-import { wait } from "../../../shared/lib/wait.ts";
-import type { ApiResponse } from "../../../shared/model/api.ts";
+import { wait } from "@/shared/lib";
+import type { ApiResponse } from "@/shared/model";
 import type { VocabItem } from "../model/types.ts";
 import { vocabList } from "./data.ts";
 

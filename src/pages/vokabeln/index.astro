@@ -1,9 +1,8 @@
 ---
+import { getVocabList, VocabularySection } from "@/features/vocabulary";
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/shared/ui/PageHeader.astro";
 import { Languages } from "lucide-astro";
-import { getVocabList } from "../../features/vocabulary/api/services";
-import VocabularySection from "../../features/vocabulary/ui/VocabularySection.vue";
-import Layout from "../../layouts/Layout.astro";
-import PageHeader from "../../shared/ui/PageHeader.astro";
 
 const { data: vocabList } = await getVocabList();
 ---

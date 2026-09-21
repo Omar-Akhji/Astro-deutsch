@@ -1,9 +1,8 @@
 ---
+import { getGrammarSection, GrammarSectionCards } from "@/features/grammar";
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/shared/ui/PageHeader.astro";
 import { BookOpen } from "lucide-astro";
-import { getGrammarSection } from "../../features/grammar/api/services";
-import GrammarSectionCards from "../../features/grammar/ui/GrammarSectionCards.vue";
-import Layout from "../../layouts/Layout.astro";
-import PageHeader from "../../shared/ui/PageHeader.astro";
 
 const GRAMMAR_SECTION_IDS = [
   "verben",
@@ -25,14 +24,14 @@ const sections = sectionsResponses.map((s) => s.data).filter((s) => s != null);
   <main class="animate-fade-in py-4 mobile:py-8">
     <PageHeader
       icon={BookOpen}
-      subtitle="Übersichtliche Erklärungen und Strukturen für dein B1/B2 Training"
+      subtitle="Systematische Übersicht der deutschen Grammatikregeln von A1 bis B2 mit verständlichen Beispielen und Tabellen."
       title="Deutsche Grammatik"
     />
-    {sections.map((section) => (
-      <GrammarSectionCards
-        client:load
-        section={section}
-      />
-    ))}
+
+    <div class="space-y-12">
+      {sections.map((section) => (
+        <GrammarSectionCards section={section} />
+      ))}
+    </div>
   </main>
 </Layout>

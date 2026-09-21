@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ClipboardList } from "lucide-vue-next";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
 
 interface Props {
   title: string;

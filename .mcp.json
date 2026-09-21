@@ -1,11 +1,7 @@
 {
   "mcpServers": {
-    "astro-docs": {
-      "url": "https://mcp.docs.astro.build/mcp"
-    },
-    "vue-docs": {
-      "url": "https://mcp.vue-mcp.org/mcp"
-    },
+    "astro-docs": { "url": "https://mcp.docs.astro.build/mcp" },
+    "vue-docs": { "url": "https://mcp.vue-mcp.org/mcp" },
     "gsc": {
       "command": "npx",
       "args": ["-y", "mcp-server-gsc"],

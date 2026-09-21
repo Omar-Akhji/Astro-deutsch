@@ -1,4 +1,4 @@
-import type { ApiResponse } from "../../../shared/model/api.ts";
+import type { ApiResponse } from "@/shared/model";
 import type { Question } from "../model/types.ts";
 import { quizQuestions } from "./data.ts";
 

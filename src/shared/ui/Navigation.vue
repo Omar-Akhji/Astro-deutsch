@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ArrowLeft, Award, BookOpen, GraduationCap, Home, Sparkles, User } from "lucide-vue-next";
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from "vue";
-import gsap from "../lib/gsap.ts";
+import { gsap } from "@/shared/lib";
 
 interface Props {
   pathname: string;

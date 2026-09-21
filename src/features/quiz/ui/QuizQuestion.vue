@@ -22,9 +22,7 @@ const props = withDefaults(defineProps<Props>(), { variant: "standard" });
 const emit = defineEmits<{ (e: "answer", val: string | string[]): void }>();
 
 const isHeader = computed(() => props.variant === "header");
-const isTableRow = computed(
-  () => props.variant === "table-row" || props.variant === "example-row",
-);
+const isTableRow = computed(() => props.variant === "table-row" || props.variant === "example-row");
 const isExample = computed(() => props.variant === "example" || props.variant === "example-row");
 const isHideQuestionBody = computed(() => isHeader.value);
 const isShowTeilHeader = computed(() => isHeader.value);

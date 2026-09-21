@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { Volume2 } from "lucide-vue-next";
-import { parseNounGender, speakGerman, type GenderInfo } from "../../../shared/lib/audio.ts";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
-import GlassCard from "../../../shared/ui/GlassCard.vue";
+import { parseNounGender, speakGerman, type GenderInfo } from "@/shared/lib";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import GlassCard from "@/shared/ui/GlassCard.vue";
 import type { Word } from "../model/types.ts";
 
 interface Props {
@@ -18,10 +18,7 @@ interface EnrichedWord extends Word {
 }
 
 const enrichedWords = computed<EnrichedWord[]>(() => {
-  return props.words.map((word) => ({
-    ...word,
-    genderInfo: parseNounGender(word.german),
-  }));
+  return props.words.map((word) => ({ ...word, genderInfo: parseNounGender(word.german) }));
 });
 
 const playingWord = ref<string | null>(null);

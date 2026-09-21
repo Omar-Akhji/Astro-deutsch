@@ -153,7 +153,7 @@ const eslintConfig = defineConfig(
   },
   // ─── JsonLd component — safe set:html for pre-sanitized JSON-LD ─────────
   {
-    files: ["src/shared/ui/JsonLd.astro"],
+    files: ["src/shared/ui/JsonLd.astro", "src/layouts/Layout.astro"],
     rules: {
       "astro/no-set-html-directive": "off",
       // False positives in Astro frontmatter

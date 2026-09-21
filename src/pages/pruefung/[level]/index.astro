@@ -1,4 +1,9 @@
 ---
+import { getExamLevel } from "@/features/pruefung";
+import Layout from "@/layouts/Layout.astro";
+import { getGradient, PRUEFUNG_GRADIENTS } from "@/shared/lib";
+import BackButton from "@/shared/ui/BackButton.astro";
+import Hero from "@/shared/ui/Hero.astro";
 import {
   CheckCircle2,
   ClipboardList,
@@ -7,18 +12,9 @@ import {
   Lightbulb,
   MessageCircle,
 } from "lucide-vue-next";
-import { getExamLevel } from "../../../features/pruefung/api/services";
-import Layout from "../../../layouts/Layout.astro";
-import { PRUEFUNG_GRADIENTS } from "../../../shared/lib/gradients";
-import { getGradient } from "../../../shared/lib/utilities";
-import BackButton from "../../../shared/ui/BackButton.astro";
-import Hero from "../../../shared/ui/Hero.astro";
 
 export async function getStaticPaths() {
-  return [
-    { params: { level: "b1" } },
-    { params: { level: "b2" } },
-  ];
+  return [{ params: { level: "b1" } }, { params: { level: "b2" } }];
 }
 
 const { level } = Astro.params;

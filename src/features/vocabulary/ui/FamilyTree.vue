@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { Heart } from "lucide-vue-next";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
 import type { FamilyMember } from "../model/types.ts";
 
 interface Props {

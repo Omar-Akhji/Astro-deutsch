@@ -1,7 +1,5 @@
 ---
-type RenderableComponent =
-  | ((...parameters: any[]) => any)
-  | (new (...parameters: any[]) => any);
+type RenderableComponent = ((...parameters: any[]) => any) | (new (...parameters: any[]) => any);
 
 interface StatItem {
   label: string;

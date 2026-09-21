@@ -1,7 +1,6 @@
 ---
-import { getThemen } from "../../features/themen/api/services";
-import ThemenSection from "../../features/themen/ui/ThemenSection.vue";
-import Layout from "../../layouts/Layout.astro";
+import { getThemen, ThemenSection } from "@/features/themen";
+import Layout from "@/layouts/Layout.astro";
 
 const { data: themen } = await getThemen();
 ---

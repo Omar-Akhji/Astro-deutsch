@@ -1,17 +1,13 @@
 ---
-import { quizQuestions } from "../../../../features/quiz/api/data";
-import { getQuestions } from "../../../../features/quiz/api/services";
-import QuizView from "../../../../features/quiz/ui/QuizView.vue";
-import Layout from "../../../../layouts/Layout.astro";
+import { getQuestions, quizQuestions, QuizView } from "@/features/quiz";
+import Layout from "@/layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const paths = [];
   for (const [level, skillsMap] of quizQuestions.entries()) {
     for (const [skill, testsMap] of skillsMap.entries()) {
       for (const testId of testsMap.keys()) {
-        paths.push({
-          params: { level: level.toLowerCase(), skill, testId: testId.toString() },
-        });
+        paths.push({ params: { level: level.toLowerCase(), skill, testId: testId.toString() } });
       }
     }
   }

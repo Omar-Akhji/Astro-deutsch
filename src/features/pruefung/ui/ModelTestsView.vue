@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { BookOpen, Headphones, MessageCircle, PenLine, BarChart, Puzzle } from "lucide-vue-next";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
-import Card from "../../../shared/ui/Card.vue";
-import Hero from "../../../shared/ui/Hero.vue";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import Card from "@/shared/ui/Card.vue";
+import Hero from "@/shared/ui/Hero.vue";
 
 interface Props {
   level: string;

@@ -1,10 +1,10 @@
-import path from 'node:path';
-import sharp from 'sharp';
+import path from "node:path";
+import sharp from "sharp";
 
 async function processLogo(): Promise<void> {
-  const inputPath = path.resolve('Black and White Modern Military Logo.png');
-  const outputLogoPath = path.resolve('public/logo.png');
-  const outputFaviconPath = path.resolve('public/favicon.png');
+  const inputPath = path.resolve("Black and White Modern Military Logo.png");
+  const outputLogoPath = path.resolve("public/logo.png");
+  const outputFaviconPath = path.resolve("public/favicon.png");
 
   const image = sharp(inputPath);
   const metadata = await image.metadata();
@@ -80,40 +80,28 @@ async function processLogo(): Promise<void> {
 
   // Now create the trimmed version (extract the 1600x1600 circular region exactly)
   const fullProcessed = sharp(outBuffer, {
-    raw: {
-      width: outputWidth,
-      height: outputHeight,
-      channels: 4,
-    },
+    raw: { width: outputWidth, height: outputHeight, channels: 4 },
   });
 
-  const trimmed = fullProcessed.clone().extract({
-    left: 200,
-    top: 200,
-    width: 1600,
-    height: 1600,
-  });
+  const trimmed = fullProcessed.clone().extract({ left: 200, top: 200, width: 1600, height: 1600 });
 
   // Save main logo
-  await trimmed
-    .clone()
-    .png({ compressionLevel: 9 })
-    .toFile(outputLogoPath);
+  await trimmed.clone().png({ compressionLevel: 9 }).toFile(outputLogoPath);
   console.info(`Saved transparent logo to ${outputLogoPath} (1600x1600)`);
 
   // Save high quality favicon.png (512x512)
   await trimmed
     .clone()
-    .resize(512, 512, { fit: 'contain' })
+    .resize(512, 512, { fit: "contain" })
     .png({ compressionLevel: 9 })
     .toFile(outputFaviconPath);
   console.info(`Saved favicon to ${outputFaviconPath} (512x512)`);
 
   // Also create a 32x32 favicon
-  const favicon32Path = path.resolve('public/favicon-32x32.png');
+  const favicon32Path = path.resolve("public/favicon-32x32.png");
   await trimmed
     .clone()
-    .resize(32, 32, { fit: 'contain' })
+    .resize(32, 32, { fit: "contain" })
     .png({ compressionLevel: 9 })
     .toFile(favicon32Path);
   console.info(`Saved 32x32 favicon to ${favicon32Path}`);

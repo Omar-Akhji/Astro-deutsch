@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { PRUEFUNG_GRADIENTS } from "../../../shared/lib/gradients.ts";
-import { getGradient } from "../../../shared/lib/utilities.ts";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
-import Card from "../../../shared/ui/Card.vue";
+import { getGradient, PRUEFUNG_GRADIENTS } from "@/shared/lib";
+import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import Card from "@/shared/ui/Card.vue";
 import type { ExamLevel } from "../model/types.ts";
 
 const props = defineProps<{ examLevels: ExamLevel[] }>();

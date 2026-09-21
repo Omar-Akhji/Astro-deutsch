@@ -1,13 +1,9 @@
 ---
-import { getModelTests } from "../../../features/pruefung/api/services";
-import ModelTestsView from "../../../features/pruefung/ui/ModelTestsView.vue";
-import Layout from "../../../layouts/Layout.astro";
+import { getModelTests, ModelTestsView } from "@/features/pruefung";
+import Layout from "@/layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  return [
-    { params: { level: "b1" } },
-    { params: { level: "b2" } },
-  ];
+  return [{ params: { level: "b1" } }, { params: { level: "b2" } }];
 }
 
 const { level } = Astro.params;

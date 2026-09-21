@@ -1,9 +1,8 @@
 ---
-import { getExamLevel, getRedemittel } from "../../../features/pruefung/api/services";
-import ModuleStudyView from "../../../features/pruefung/ui/ModuleStudyView.vue";
-import { getThemen } from "../../../features/themen/api/services";
-import Layout from "../../../layouts/Layout.astro";
-import BackButton from "../../../shared/ui/BackButton.astro";
+import { getExamLevel, getRedemittel, ModuleStudyView } from "@/features/pruefung";
+import { getThemen } from "@/features/themen";
+import Layout from "@/layouts/Layout.astro";
+import BackButton from "@/shared/ui/BackButton.astro";
 
 export async function getStaticPaths() {
   return [

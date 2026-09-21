@@ -10,9 +10,7 @@ export default defineConfig({
     vue(),
     sitemap({
       filter: (page) =>
-        !page.includes("/404") &&
-        !page.endsWith("/login/") &&
-        !page.endsWith("/register/"),
+        !page.includes("/404") && !page.endsWith("/login/") && !page.endsWith("/register/"),
       changefreq: ChangeFreqEnum.WEEKLY,
       lastmod: new Date(),
       priority: 0.8,
@@ -21,9 +19,9 @@ export default defineConfig({
           item.priority = 1;
           item.changefreq = ChangeFreqEnum.DAILY;
         } else if (
-          item.url.includes("/vokabeln") ||
-          item.url.includes("/grammatik") ||
-          item.url.includes("/pruefung")
+          item.url.includes("/vokabeln")
+          || item.url.includes("/grammatik")
+          || item.url.includes("/pruefung")
         ) {
           item.priority = 0.9;
         }

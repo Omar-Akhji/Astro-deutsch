@@ -3,7 +3,7 @@ import { ref, watch, onMounted } from "vue";
 import { UserCheck, UserPlus } from "lucide-vue-next";
 import SignInForm from "./SignInForm.vue";
 import SignUpForm from "./SignUpForm.vue";
-import { cn } from "../../../shared/lib/utilities.ts";
+import { cn } from "@/shared/lib";
 
 interface Props {
   defaultView: "signin" | "signup";
