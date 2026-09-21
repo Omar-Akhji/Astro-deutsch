@@ -7,13 +7,16 @@ export async function getStaticPaths() {
   return [
     { params: { level: "b1" } },
     { params: { level: "b2" } },
-    { params: { level: "B1" } },
-    { params: { level: "B2" } },
   ];
 }
 
 const { level } = Astro.params;
-const { data: modelTests } = await getModelTests(level!);
+
+if (!level) {
+  throw new Error("Fehlender Prüfungs-Level-Parameter.");
+}
+
+const { data: modelTests } = await getModelTests(level);
 ---
 
 <Layout
@@ -23,6 +26,6 @@ const { data: modelTests } = await getModelTests(level!);
   <ModelTestsView
     client:load
     initialModelTests={modelTests ?? []}
-    level={level!}
+    level={level}
   />
 </Layout>

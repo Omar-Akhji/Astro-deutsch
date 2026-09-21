@@ -9,7 +9,6 @@ import {
   ArrowUpRight,
   Award,
   BookOpen,
-  GraduationCap,
   Heart,
   Languages,
   ShieldCheck,
@@ -34,30 +33,44 @@ const currentYear = new Date().getFullYear();
   <div class="w-full">
     <!-- TIER 1: Brand & Pedagogical German Gender System (Tight 8pt/4pt Gestalt Spacing) -->
     <div class="mb-6 flex flex-col gap-4 border-b border-white/10 pb-5 tablet:mb-7 tablet:flex-row tablet:items-center tablet:justify-between tablet:gap-6 tablet:pb-6">
-      <!-- Brand & Mission (8pt internal spacing, compact containment) -->
-      <div class="space-y-2 tablet:max-w-xl laptop:max-w-2xl">
+      <!-- Brand & Mission (Bigger Logo with Text Beside It) -->
+      <div class="flex items-center gap-3.5 mobile:gap-4 tablet:gap-5 tablet:max-w-xl laptop:max-w-2xl">
         <a
-          aria-label="Deutsch Lernen Startseite"
-          class="group inline-flex items-center gap-2.5 transition-opacity hover:opacity-90"
+          aria-label="Elite Regewelt Startseite"
+          class="group shrink-0 transition-opacity hover:opacity-90"
           href="/"
         >
-          <span class="flex size-9 items-center justify-center rounded-xl border border-yellow/40 bg-linear-to-br from-yellow/20 to-orange/20 text-yellow shadow-md shadow-yellow/10 transition-transform duration-300 group-hover:scale-105">
-            <GraduationCap class="size-5" />
+          <span class="flex size-16 items-center justify-center transition-transform duration-300 group-hover:scale-105 mobile:size-20 tablet:size-22">
+            <img
+              alt="Elite Regewelt"
+              class="size-full object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+              height="88"
+              loading="lazy"
+              src="/logo.png"
+              width="88"
+            />
           </span>
-          <div class="space-y-0.5">
-            <span class="block text-base tablet:text-lg font-bold tracking-tight text-white text-shadow-sm transition-colors duration-300 group-hover:text-yellow">
-              Deutsch Lernen
-            </span>
-            <span class="block text-[11px] font-medium text-yellow/80">
-              B1 &amp; B2 Zertifikatsvorbereitung
-            </span>
-          </div>
         </a>
 
-        <p class="text-xs leading-relaxed text-mist-400 max-w-lg">
-          Deine kostenlose, interaktive Lernplattform zur gezielten Vorbereitung auf die offiziellen
-          B1 &amp; B2 Prüfungen des Goethe-Instituts und des ÖSD.
-        </p>
+        <div class="space-y-1">
+          <a
+            aria-label="Elite Regewelt Startseite"
+            class="group inline-block space-y-0.5 transition-opacity hover:opacity-90"
+            href="/"
+          >
+            <span class="block text-lg font-bold tracking-tight text-white text-shadow-sm transition-colors duration-300 group-hover:text-yellow tablet:text-xl">
+              Elite Regewelt
+            </span>
+            <span class="block text-xs font-semibold tracking-wide text-yellow/85">
+              Deutch Sprache Lernen
+            </span>
+          </a>
+
+          <p class="max-w-lg text-xs leading-relaxed text-mist-400">
+            Deine kostenlose, interaktive Lernplattform zur gezielten Vorbereitung auf die offiziellen
+            B1 &amp; B2 Prüfungen des Goethe-Instituts und des ÖSD.
+          </p>
+        </div>
       </div>
 
       <!-- Pedagogical Gender Color Indicator (Compact 4pt/8pt Badges) -->

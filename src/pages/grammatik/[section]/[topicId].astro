@@ -21,9 +21,14 @@ export async function getStaticPaths() {
 }
 
 const { section, topicId } = Astro.params;
+
+if (!section || !topicId) {
+  throw new Error("Fehlende Grammatik-Parameter.");
+}
+
 const [sectionResponse, topicResponse] = await Promise.all([
-  getGrammarSection(section!),
-  getGrammarTopic(section!, topicId!),
+  getGrammarSection(section),
+  getGrammarTopic(section, topicId),
 ]);
 
 const currentSection = sectionResponse.data;

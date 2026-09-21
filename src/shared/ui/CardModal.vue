@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, watch, nextTick, onUnmounted } from "vue";
+import gsap from "../lib/gsap.ts";
 
 interface Props {
   isOpen: boolean;
@@ -15,10 +16,53 @@ const props = withDefaults(defineProps<Props>(), { previewTitles: () => [] });
 const emit = defineEmits<{ (e: "close"): void }>();
 
 const dialogRef = ref<HTMLDialogElement | null>(null);
+const backdropRef = ref<HTMLButtonElement | null>(null);
+const modalBoxRef = ref<HTMLDivElement | null>(null);
+
 let originalOverflow = "";
+let isClosing = false;
 
 const close = () => {
-  emit("close");
+  if (isClosing) return;
+  isClosing = true;
+
+  const backdrop = backdropRef.value;
+  const modalBox = modalBoxRef.value;
+  const dialog = dialogRef.value;
+
+  if (backdrop && modalBox) {
+    const tl = gsap.timeline({
+      onComplete: () => {
+        isClosing = false;
+        emit("close");
+        if (dialog && dialog.open) {
+          try {
+            dialog.close();
+          } catch {
+            // Ignore
+          }
+        }
+        document.body.style.overflow = originalOverflow || "";
+      },
+    });
+
+    tl.to(modalBox, { autoAlpha: 0, scale: 0.95, y: 10, duration: 0.2, ease: "power2.in" }).to(
+      backdrop,
+      { autoAlpha: 0, duration: 0.2, ease: "power2.in" },
+      "<",
+    );
+  } else {
+    isClosing = false;
+    emit("close");
+    if (dialog && dialog.open) {
+      try {
+        dialog.close();
+      } catch {
+        // Ignore
+      }
+    }
+    document.body.style.overflow = originalOverflow || "";
+  }
 };
 
 const handleCancel = (e: Event) => {
@@ -32,6 +76,7 @@ watch(
     if (typeof document === "undefined") return;
 
     if (newVal) {
+      isClosing = false;
       await nextTick();
       const dialog = dialogRef.value;
       if (!dialog) return;
@@ -45,6 +90,22 @@ watch(
       originalOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
       dialog.addEventListener("cancel", handleCancel);
+
+      const backdrop = backdropRef.value;
+      const modalBox = modalBoxRef.value;
+      if (backdrop && modalBox) {
+        const tl = gsap.timeline();
+        tl.fromTo(
+          backdrop,
+          { autoAlpha: 0 },
+          { autoAlpha: 1, duration: 0.25, ease: "power2.out" },
+        ).fromTo(
+          modalBox,
+          { autoAlpha: 0, scale: 0.94, y: 16 },
+          { autoAlpha: 1, scale: 1, y: 0, duration: 0.35, ease: "power3.out" },
+          "<0.05",
+        );
+      }
     } else {
       const dialog = dialogRef.value;
       if (dialog) {
@@ -80,6 +141,7 @@ onUnmounted(() => {
     >
       <!-- Backdrop -->
       <button
+        ref="backdropRef"
         type="button"
         class="absolute inset-0 cursor-default border-none bg-black/80 backdrop-blur-sm"
         aria-label="Dialog schließen"
@@ -88,6 +150,7 @@ onUnmounted(() => {
 
       <!-- Modal Content -->
       <div
+        ref="modalBoxRef"
         role="document"
         aria-labelledby="modal-title"
         class="relative z-10 flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#0e0e11] shadow-2xl backdrop-blur-xl inline-full max-block-[90vh] max-inline-lg sm:max-block-[85vh]"

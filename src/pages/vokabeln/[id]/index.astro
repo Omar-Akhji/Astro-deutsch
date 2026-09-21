@@ -5,7 +5,6 @@ import { getVocabById } from "../../../features/vocabulary/api/services";
 import Layout from "../../../layouts/Layout.astro";
 import { VOCAB_GRADIENTS } from "../../../shared/lib/gradients";
 import { getGradient } from "../../../shared/lib/utilities";
-import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
 import BackButton from "../../../shared/ui/BackButton.astro";
 import GlassCard from "../../../shared/ui/GlassCard.astro";
 import Hero from "../../../shared/ui/Hero.astro";
@@ -15,6 +14,9 @@ export async function getStaticPaths() {
 }
 
 const { id } = Astro.params;
+if (!id) {
+  throw new Error("Fehlende Vokabel-ID.");
+}
 const { data: item } = await getVocabById(Number(id));
 
 const totalTopics =
@@ -44,12 +46,9 @@ const totalTopics =
         {item.sections && item.sections.length > 0 ?
           <div class="grid gap-12">
             {item.sections.map((section, index) => (
-              <AnimateOnScroll
-                animation="fade-up"
+              <section
                 aria-labelledby={`section-${section.id}`}
-                as="section"
-                client:load
-                delay={index * 100}
+                data-animate="fade-up"
               >
                 <div
                   class="mb-8 flex flex-col items-start gap-4 rounded-2xl p-6 md:flex-row md:items-center md:justify-between"
@@ -95,14 +94,12 @@ const totalTopics =
                     Noch keine Themen in diesem Bereich.
                   </div>
                 }
-              </AnimateOnScroll>
+              </section>
             ))}
           </div>
-        : <AnimateOnScroll
-            animation="fade-up"
-            as="section"
-            className="mb-12 text-white"
-            client:load
+        : <section
+            class="mb-12 text-white"
+            data-animate="fade-up"
           >
             <h2 class="mb-8 flex items-center gap-4 text-[1.75rem] font-semibold text-white">
               <span class="flex size-12 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm">
@@ -120,19 +117,26 @@ const totalTopics =
                       rounded="2xl"
                     >
                       <div class="mb-2 flex items-baseline justify-between">
-                        <h3 class="text-lg font-semibold text-white">{word.german}</h3>
+                        <h3 class="text-lg font-semibold text-white group-hover:text-yellow">
+                          {word.german}
+                        </h3>
                       </div>
-                      <p class="font-arabic mb-3 text-xl font-medium text-white">{word.arabic}</p>
-                      <p class="text-sm text-zinc-400 italic">"{word.example}"</p>
+                      <p
+                        class="font-arabic mb-3 text-xl font-medium text-white"
+                        dir="rtl"
+                      >
+                        {word.arabic}
+                      </p>
+                      {word.example && <p class="text-sm text-zinc-400 italic">"{word.example}"</p>}
                     </GlassCard>
                   </article>
                 ))}
               </div>
-            : <div class="rounded-xl border border-dashed border-white/10 p-8 text-center text-zinc-400">
-                <p>Noch keine Vokabeln eingetragen.</p>
+            : <div class="text-zinc-450 rounded-xl border border-dashed border-white/10 p-6 text-center">
+                Keine Wörter für dieses Thema verfügbar.
               </div>
             }
-          </AnimateOnScroll>
+          </section>
         }
       </main>
     </div>

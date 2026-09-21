@@ -32,16 +32,26 @@ const isActive = (path: string) => {
   return props.pathname === path || props.pathname.startsWith(path + "/");
 };
 
+const computedNavLinks = computed(() => {
+  return navLinks.map((link) => ({ ...link, isActive: isActive(link.to) }));
+});
+
+const computedMobileNavLinks = computed(() => {
+  return mobileNavLinks.map((link) => ({ ...link, isActive: isActive(link.to) }));
+});
+
 const showBackButton = computed(() => {
   const p = props.pathname;
   return p !== "/vokabeln" && p !== "/grammatik" && p !== "/pruefung" && p !== "/";
 });
 
 function goBack() {
-  if (typeof window !== "undefined") {
+  if (globalThis.window !== undefined) {
     globalThis.history.back();
   }
 }
+
+let ctx: gsap.Context | null = null;
 
 const animateIndicator = () => {
   nextTick(() => {
@@ -52,31 +62,41 @@ const animateIndicator = () => {
     // Skip if desktop nav is hidden in mobile view
     if (nav.offsetParent === null) return;
 
-    const activeLink = nav.querySelector('a[aria-current="page"]') as HTMLElement | null;
-    if (activeLink && activeLink.offsetWidth > 0) {
+    const activeLink = nav.querySelector('a[aria-current="page"]');
+    if (activeLink instanceof HTMLElement && activeLink.offsetWidth > 0) {
       gsap.to(indicator, {
         x: activeLink.offsetLeft,
         width: activeLink.offsetWidth,
         duration: 0.45,
         ease: "power3.out",
-        opacity: 1,
+        autoAlpha: 1,
+        overwrite: "auto",
       });
     } else {
-      gsap.to(indicator, { opacity: 0, duration: 0.25 });
+      gsap.to(indicator, { autoAlpha: 0, duration: 0.25, overwrite: "auto" });
     }
   });
 };
 
 onMounted(() => {
-  animateIndicator();
-  if (typeof window !== "undefined") {
-    window.addEventListener("resize", animateIndicator);
+  if (navRef.value) {
+    ctx = gsap.context(() => {
+      animateIndicator();
+    }, navRef.value);
+  } else {
+    animateIndicator();
+  }
+
+  if (globalThis.window !== undefined) {
+    globalThis.window.addEventListener("resize", animateIndicator);
   }
 });
 
 onUnmounted(() => {
-  if (typeof window !== "undefined") {
-    window.removeEventListener("resize", animateIndicator);
+  ctx?.revert();
+  ctx = null;
+  if (globalThis.window !== undefined) {
+    globalThis.window.removeEventListener("resize", animateIndicator);
   }
 });
 
@@ -114,22 +134,31 @@ watch(
         <a
           v-else
           href="/"
-          class="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
-          aria-label="Deutsch Lernen Startseite"
+          class="flex items-center gap-2.5 rounded-2xl border-2 border-white/10 bg-card/80 p-1.5 pe-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-(--glass-blur) transition-colors duration-200 hover:border-yellow/50 mobile:gap-3.5 mobile:rounded-3xl mobile:p-2 mobile:pe-5"
+          aria-label="Elite Regewelt Startseite"
         >
           <span
-            class="flex size-9 items-center justify-center rounded-xl border border-yellow/40 bg-linear-to-br from-yellow/20 to-orange/20 text-yellow shadow-sm shadow-yellow/10 transition-transform duration-200 group-hover:scale-105 mobile:size-10"
+            class="flex size-11 shrink-0 items-center justify-center mobile:size-13 tablet:size-14"
           >
-            <GraduationCap class="size-5 mobile:size-5.5" />
+            <img
+              src="/logo.png"
+              alt="Elite Regewelt"
+              class="size-full object-contain drop-shadow-md"
+              width="56"
+              height="56"
+              loading="eager"
+            />
           </span>
           <div class="flex flex-col">
             <span
-              class="bg-linear-to-r from-white via-white/95 to-mist-400 bg-clip-text text-sm font-bold tracking-tight text-transparent mobile:text-base"
+              class="bg-linear-to-r from-white via-white/95 to-mist-400 bg-clip-text text-sm font-bold tracking-tight text-transparent mobile:text-base tablet:text-lg"
             >
-              Deutsch Lernen
+              Elite Regewelt
             </span>
-            <span class="hidden text-[10px] font-medium tracking-wide text-yellow/80 mobile:inline">
-              B1 &amp; B2 Zertifikat
+            <span
+              class="text-[10px] font-medium tracking-wide text-yellow/85 mobile:text-[11px] tablet:text-xs"
+            >
+              Deutch Sprache Lernen
             </span>
           </div>
         </a>
@@ -159,16 +188,16 @@ watch(
         />
 
         <a
-          v-for="link in navLinks"
+          v-for="link in computedNavLinks"
           :key="link.to"
           :href="link.to"
           :class="[
             'relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 laptop:px-5',
-            isActive(link.to) ?
+            link.isActive ?
               'font-semibold text-black'
             : 'text-mist-400 hover:bg-white/5 hover:text-white',
           ]"
-          :aria-current="isActive(link.to) ? 'page' : undefined"
+          :aria-current="link.isActive ? 'page' : undefined"
         >
           {{ link.label }}
         </a>
@@ -182,22 +211,22 @@ watch(
     aria-label="Mobile Navigation"
   >
     <a
-      v-for="link in mobileNavLinks"
+      v-for="link in computedMobileNavLinks"
       :key="link.to"
       :href="link.to"
       :aria-label="link.label"
       :title="link.label"
-      :aria-current="isActive(link.to) ? 'page' : undefined"
+      :aria-current="link.isActive ? 'page' : undefined"
       :class="[
         'group relative flex flex-1 flex-col items-center justify-center rounded-2xl px-2 py-1.5 transition-all duration-200',
-        isActive(link.to) ?
+        link.isActive ?
           'bg-white/10 text-yellow shadow-inner shadow-white/5'
         : 'text-mist-500 hover:text-white active:scale-95',
       ]"
     >
       <!-- Active Top Glow / Indicator -->
       <span
-        v-if="isActive(link.to)"
+        v-if="link.isActive"
         class="absolute -top-1.5 h-0.5 w-5 rounded-full bg-linear-to-r from-yellow to-orange shadow-[0_0_8px_var(--color-yellow)]"
       />
 
@@ -206,7 +235,7 @@ watch(
         :is="link.icon"
         :class="[
           'size-5 transition-transform duration-200',
-          isActive(link.to) ? 'scale-110 text-yellow' : (
+          link.isActive ? 'scale-110 text-yellow' : (
             'group-hover:scale-105 group-hover:text-mist-200'
           ),
         ]"

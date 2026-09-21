@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, nextTick } from "vue";
+import { ref, computed, nextTick, type Component } from "vue";
 import {
   Activity,
   ArrowUp,
@@ -56,23 +56,47 @@ const categoryConfig = {
   arbeit: { label: "Arbeitswelt", icon: Briefcase, color: THEMEN_CATEGORY_COLORS["arbeit"] ?? "" },
 };
 
-const groupedThemen = computed(() => {
-  const map = new Map<string, Thema[]>();
-  for (const cat of Object.keys(categoryConfig)) {
-    const themes = props.initialThemen.filter((t) => t.cat === cat);
-    if (themes.length > 0) {
-      map.set(cat, themes);
-    }
-  }
-  return map;
-});
+type CategoryKey = keyof typeof categoryConfig;
 
-const filteredGroups = computed(() => {
-  if (activeCategory.value) {
-    const themesForCat = groupedThemen.value.get(activeCategory.value) ?? [];
-    return new Map([[activeCategory.value, themesForCat]]);
+interface FilteredThemaGroup {
+  catId: CategoryKey;
+  label: string;
+  icon: Component;
+  borderClass: string;
+  textClass: string;
+  themes: Thema[];
+}
+
+const isCategoryKey = (key: string): key is CategoryKey => key in categoryConfig;
+
+const filteredGroups = computed<FilteredThemaGroup[]>(() => {
+  const groups: FilteredThemaGroup[] = [];
+  const entries: CategoryKey[] =
+    activeCategory.value && isCategoryKey(activeCategory.value) ?
+      [activeCategory.value]
+    : Object.keys(categoryConfig).filter(isCategoryKey);
+
+  for (const catId of entries) {
+    const config = categoryConfig[catId];
+    if (!config) continue;
+    const themes = props.initialThemen.filter((t) => t.cat === catId);
+    if (themes.length === 0) continue;
+
+    const classTokens = getCategoryClasses(catId).split(" ");
+    const borderClass = classTokens.find((c) => c.startsWith("border-")) ?? "";
+    const textClass = classTokens.find((c) => c.startsWith("text-")) ?? "";
+
+    groups.push({
+      catId,
+      label: config.label,
+      icon: config.icon,
+      borderClass,
+      textClass,
+      themes,
+    });
   }
-  return groupedThemen.value;
+
+  return groups;
 });
 
 const handleCategoryChange = (id: string | null) => {
@@ -84,8 +108,8 @@ const handleCategoryChange = (id: string | null) => {
 };
 
 const scrollToTop = () => {
-  if (typeof window !== "undefined") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  if (globalThis.window !== undefined) {
+    globalThis.window.scrollTo({ top: 0, behavior: "smooth" });
   }
 };
 </script>
@@ -185,43 +209,39 @@ const scrollToTop = () => {
       ]"
     >
       <section
-        v-for="[catId, themes] in filteredGroups"
-        :id="catId"
-        :key="catId"
+        v-for="group in filteredGroups"
+        :id="group.catId"
+        :key="group.catId"
         class="scroll-mbs-32"
       >
         <div class="mb-10 flex items-center gap-4">
           <div
             :class="[
               'flex size-12 shrink-0 items-center justify-center rounded-full border-3 text-yellow shadow-inner tablet:size-14',
-              getCategoryClasses(catId)
-                .split(' ')
-                .find((c: string) => c.startsWith('border-')),
-              getCategoryClasses(catId)
-                .split(' ')
-                .find((c: string) => c.startsWith('text-')),
+              group.borderClass,
+              group.textClass,
             ]"
           >
             <span class="flex size-6 items-center justify-center tablet:size-7">
               <component
-                :is="categoryConfig[catId as keyof typeof categoryConfig]?.icon"
+                :is="group.icon"
                 class="size-full"
               />
             </span>
           </div>
           <div>
             <h3 class="text-xl font-semibold text-white capitalize tablet:text-2xl">
-              {{ categoryConfig[catId as keyof typeof categoryConfig]?.label }}
+              {{ group.label }}
             </h3>
             <p class="text-xs text-zinc-400 tablet:text-sm">
-              {{ themes.length }} Themen zur Vorbereitung
+              {{ group.themes.length }} Themen zur Vorbereitung
             </p>
           </div>
         </div>
 
         <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
           <AnimateOnScroll
-            v-for="(thema, index) in themes"
+            v-for="(thema, index) in group.themes"
             :key="thema.id"
             animation="fade-up"
             :delay="(index % 3) * 100"

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { VOCAB_GRADIENTS } from "../../../shared/lib/gradients.ts";
 import { getGradient } from "../../../shared/lib/utilities.ts";
 import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
@@ -6,6 +7,19 @@ import Card from "../../../shared/ui/Card.vue";
 import type { VocabItem } from "../model/types.ts";
 
 const props = defineProps<{ vocabList: VocabItem[] }>();
+
+interface EnrichedVocabItem extends VocabItem {
+  gradient: string;
+  delay: number;
+}
+
+const enrichedVocabList = computed<EnrichedVocabItem[]>(() => {
+  return props.vocabList.map((item, index) => ({
+    ...item,
+    gradient: getGradient(index, VOCAB_GRADIENTS),
+    delay: (index % 4) * 100,
+  }));
+});
 </script>
 
 <template>
@@ -23,13 +37,13 @@ const props = defineProps<{ vocabList: VocabItem[] }>();
       class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3"
     >
       <li
-        v-for="(item, index) in props.vocabList"
+        v-for="item in enrichedVocabList"
         :key="item.id"
         class="h-full"
       >
         <AnimateOnScroll
           animation="fade-up"
-          :delay="(index % 4) * 100"
+          :delay="item.delay"
           class="h-full"
         >
           <Card
@@ -38,7 +52,7 @@ const props = defineProps<{ vocabList: VocabItem[] }>();
             :category="item.category"
             :description="item.description"
             subtitle="Wortschatz"
-            :gradient="getGradient(index, VOCAB_GRADIENTS)"
+            :gradient="item.gradient"
           />
         </AnimateOnScroll>
       </li>

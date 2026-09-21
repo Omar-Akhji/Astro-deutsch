@@ -18,6 +18,13 @@ const skills = [
   { id: "sprechen", title: "Sprechen", icon: MessageCircle, color: "from-fuchsia-500 to-pink-400" },
 ];
 
+const SKILL_GRADIENTS: Record<string, string> = {
+  lesen: "linear-gradient(135deg, var(--color-blue-500), var(--color-yellow))",
+  hoeren: "linear-gradient(135deg, var(--color-green-500), var(--color-yellow))",
+  schreiben: "linear-gradient(135deg, var(--color-orange-500), var(--color-yellow))",
+  sprechen: "linear-gradient(135deg, var(--color-pink-500), var(--color-yellow))",
+};
+
 const stats = [
   { label: "Niveau", value: props.level.toUpperCase(), icon: BarChart },
   { label: "Module", value: "4", icon: Puzzle },
@@ -87,12 +94,7 @@ const stats = [
                 subtitle="Übung"
                 :description="`Vollständiger ${skill.title}-Teil für das ${props.level.toUpperCase()}-Zertifikat.`"
                 :href="`/quiz/${props.level}/${skill.id}/${testId}`"
-                :gradient="`linear-gradient(135deg, var(--color-${
-                  skill.id === 'lesen' ? 'blue'
-                  : skill.id === 'hoeren' ? 'green'
-                  : skill.id === 'schreiben' ? 'orange'
-                  : 'pink'
-                }-500, var(--color-yellow))`"
+                :gradient="SKILL_GRADIENTS[skill.id] ?? SKILL_GRADIENTS.lesen"
                 variant="default"
               />
             </AnimateOnScroll>

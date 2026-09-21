@@ -1,10 +1,13 @@
-// Client-side script to handle skeleton displays during view transitions
+import type { TransitionBeforePreparationEvent } from "astro:transitions/client";
 
-document.addEventListener("astro:before-preparation", (e) => {
-  const event = e as unknown as { to: { pathname: string } };
-  if (!event?.to?.pathname) return;
+function isPreparationEvent(event: Event): event is TransitionBeforePreparationEvent {
+  return "to" in event && event.to instanceof URL;
+}
 
-  const toPath = event.to.pathname;
+document.addEventListener("astro:before-preparation", (e: Event) => {
+  if (!isPreparationEvent(e)) return;
+
+  const toPath = e.to.pathname;
   const container = document.querySelector("#skeleton-container");
   const content = document.querySelector("#page-content");
   if (!container || !content) return;

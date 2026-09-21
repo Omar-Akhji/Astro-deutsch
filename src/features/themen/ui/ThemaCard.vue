@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, watch, nextTick } from "vue";
+import { ref, computed, onMounted, onUnmounted, watch, nextTick } from "vue";
 import gsap from "../../../shared/lib/gsap.ts";
 import { getCategoryClasses } from "../lib/category-config.ts";
 import type { Thema } from "../model/types.ts";
@@ -10,11 +10,36 @@ interface Props {
 
 const props = defineProps<Props>();
 
+const categoryClass = computed(() => getCategoryClasses(props.thema.cat));
+
 const activeTab = ref<"pro" | "con" | "text">(props.thema.isTextOnly ? "text" : "pro");
 
+const cardRootRef = ref<HTMLDivElement | null>(null);
 const tabsRef = ref<HTMLDivElement | null>(null);
 const indicatorRef = ref<HTMLDivElement | null>(null);
 const contentRef = ref<HTMLDivElement | null>(null);
+
+let ctx: gsap.Context | null = null;
+
+const setInitialIndicator = () => {
+  if (props.thema.isTextOnly) return;
+
+  nextTick(() => {
+    const tabs = tabsRef.value;
+    const indicator = indicatorRef.value;
+    if (!tabs || !indicator) return;
+
+    const activeButton = tabs.querySelector(`button[data-active="true"]`);
+    if (activeButton instanceof HTMLElement) {
+      gsap.set(indicator, {
+        x: activeButton.offsetLeft,
+        width: activeButton.offsetWidth,
+        backgroundColor: activeTab.value === "pro" ? "#10b981" : "#ef4444",
+        autoAlpha: 1,
+      });
+    }
+  });
+};
 
 const runGsapTabAnimation = () => {
   if (props.thema.isTextOnly) return;
@@ -24,15 +49,16 @@ const runGsapTabAnimation = () => {
     const indicator = indicatorRef.value;
     if (!tabs || !indicator) return;
 
-    const activeButton = tabs.querySelector(`button[data-active="true"]`) as HTMLElement | null;
-    if (activeButton) {
+    const activeButton = tabs.querySelector(`button[data-active="true"]`);
+    if (activeButton instanceof HTMLElement) {
       gsap.to(indicator, {
         x: activeButton.offsetLeft,
         width: activeButton.offsetWidth,
-        backgroundColor: activeTab.value === "pro" ? "#10b981" : "#ef4444", // emerald-500, red-500
-        duration: 0.4,
+        backgroundColor: activeTab.value === "pro" ? "#10b981" : "#ef4444",
+        duration: 0.35,
         ease: "power2.out",
-        opacity: 1,
+        autoAlpha: 1,
+        overwrite: "auto",
       });
     }
 
@@ -43,21 +69,40 @@ const runGsapTabAnimation = () => {
     if (listItems.length > 0) {
       gsap.fromTo(
         listItems,
-        { opacity: 0, x: -15 },
-        { opacity: 1, x: 0, stagger: 0.1, duration: 0.4, ease: "power2.out", clearProps: "all" },
+        { autoAlpha: 0, x: -12 },
+        {
+          autoAlpha: 1,
+          x: 0,
+          stagger: 0.05,
+          duration: 0.35,
+          ease: "power2.out",
+          clearProps: "all",
+          overwrite: "auto",
+        },
       );
     } else {
       gsap.fromTo(
         content,
-        { opacity: 0, y: 10 },
-        { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" },
+        { autoAlpha: 0, y: 8 },
+        { autoAlpha: 1, y: 0, duration: 0.35, ease: "power2.out", overwrite: "auto" },
       );
     }
   });
 };
 
 onMounted(() => {
-  runGsapTabAnimation();
+  if (cardRootRef.value) {
+    ctx = gsap.context(() => {
+      setInitialIndicator();
+    }, cardRootRef.value);
+  } else {
+    setInitialIndicator();
+  }
+});
+
+onUnmounted(() => {
+  ctx?.revert();
+  ctx = null;
 });
 
 watch(activeTab, () => {
@@ -67,6 +112,7 @@ watch(activeTab, () => {
 
 <template>
   <div
+    ref="cardRootRef"
     class="group relative overflow-hidden rounded-2xl border-2 border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-[background-color,box-shadow] hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5"
   >
     <div class="mbe-4 flex items-start justify-between">
@@ -74,7 +120,7 @@ watch(activeTab, () => {
         <span
           :class="[
             'mbe-2 inline-block rounded-full px-2.5 pbs-0.5 pbe-0.5 text-xs font-semibold tracking-wider uppercase',
-            getCategoryClasses(props.thema.cat),
+            categoryClass,
           ]"
         >
           {{ props.thema.cat }}

@@ -9,10 +9,9 @@ export async function getStaticPaths() {
   for (const [level, skillsMap] of quizQuestions.entries()) {
     for (const [skill, testsMap] of skillsMap.entries()) {
       for (const testId of testsMap.keys()) {
-        paths.push(
-          { params: { level: level.toLowerCase(), skill, testId: testId.toString() } },
-          { params: { level: level.toUpperCase(), skill, testId: testId.toString() } },
-        );
+        paths.push({
+          params: { level: level.toLowerCase(), skill, testId: testId.toString() },
+        });
       }
     }
   }
@@ -20,7 +19,13 @@ export async function getStaticPaths() {
 }
 
 const { level, skill, testId } = Astro.params;
-const { data: questions } = await getQuestions(level!, skill!, Number.parseInt(testId!));
+
+if (!level || !skill || !testId) {
+  throw new Error("Fehlende Quiz-Parameter.");
+}
+
+const parsedTestId = Number(testId);
+const { data: questions } = await getQuestions(level, skill, parsedTestId);
 ---
 
 <Layout
@@ -30,8 +35,8 @@ const { data: questions } = await getQuestions(level!, skill!, Number.parseInt(t
   <QuizView
     client:load
     initialQuestions={questions ?? []}
-    level={level!}
-    skill={skill!}
-    testId={testId!}
+    level={level}
+    skill={skill}
+    testId={testId}
   />
 </Layout>

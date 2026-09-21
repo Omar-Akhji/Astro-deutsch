@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
 import Hero from "../../../shared/ui/Hero.vue";
 import type { Thema } from "../../themen/model/types.ts";
 import ThemenSection from "../../themen/ui/ThemenSection.vue";
-import type { ExamLevel, RedemittelCategory } from "../model/types.ts";
+import type { ExamLevel, PhraseGroup, RedemittelCategory } from "../model/types.ts";
 import EmailVisualFrame from "./EmailVisualFrame.vue";
 import PhraseGroupCard from "./PhraseGroupCard.vue";
 
@@ -42,12 +42,33 @@ const getPartNumber = (partName: string) => {
   return partName.match(/\d+/)?.[0] ?? "";
 };
 
-const getPartRedemittel = (partName: string) => {
-  const partNumber = getPartNumber(partName);
-  const secTitle = section.value?.title ?? "";
-  return filteredRedemittel.value.filter(([category]) =>
-    category.toLowerCase().includes(`${secTitle.toLowerCase()} ${partNumber}`),
-  );
+interface EnrichedRedemittelCategory {
+  category: string;
+  categoryLabel: string;
+  processedGroups: PhraseGroup[];
+}
+
+interface EnrichedPart {
+  name: string;
+  taskType: string;
+  description?: string;
+  points: number | string;
+  isEmail: boolean;
+  redemittelCategories: EnrichedRedemittelCategory[];
+}
+
+function isPhraseGroup(item: unknown): item is PhraseGroup {
+  return typeof item === "object" && item !== null && "label" in item;
+}
+
+const getProcessedGroups = (group: PhraseGroup): PhraseGroup[] => {
+  if (group.phrases.some((p) => typeof p !== "string")) {
+    return group.phrases.flatMap((p) => {
+      if (!isPhraseGroup(p)) return [];
+      return [{ ...p, label: `${group.label}: ${p.label}` }];
+    });
+  }
+  return [group];
 };
 
 const isEmailTask = (taskType: string) => {
@@ -55,20 +76,54 @@ const isEmailTask = (taskType: string) => {
   return props.module === "schreiben" && (t.includes("e-mail") || t.includes("schreiben"));
 };
 
-const getProcessedGroups = (group: { label: string; phrases: unknown[] }) => {
-  if (group.phrases.some((p) => typeof p !== "string")) {
-    return group.phrases.flatMap((p) => {
-      if (typeof p === "string") return [];
-      const item = p as { label: string };
-      return [{ ...item, label: `${group.label}: ${item.label}` }];
-    });
-  }
-  return [group];
-};
+const enrichedParts = computed<EnrichedPart[]>(() => {
+  if (!section.value) return [];
+  const secTitle = section.value.title.toLowerCase();
+
+  return section.value.parts.map((part) => {
+    const partNumber = getPartNumber(part.name);
+    const matchingCategories = filteredRedemittel.value.filter(([category]) =>
+      category.toLowerCase().includes(`${secTitle} ${partNumber}`),
+    );
+
+    const redemittelCategories: EnrichedRedemittelCategory[] = matchingCategories.map(
+      ([category, groups]) => {
+        const processedGroups = groups.flatMap((group) => getProcessedGroups(group));
+        return {
+          category,
+          categoryLabel: category.split(":").pop()?.trim() ?? category,
+          processedGroups,
+        };
+      },
+    );
+
+    return {
+      name: part.name,
+      taskType: part.taskType,
+      description: part.description,
+      points: part.points,
+      isEmail: isEmailTask(part.taskType),
+      redemittelCategories,
+    };
+  });
+});
 </script>
 
 <template>
-  <div v-if="!section">Modul nicht gefunden</div>
+  <div
+    v-if="!section"
+    class="flex min-h-[360px] flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm"
+  >
+    <div
+      class="mb-4 flex size-14 items-center justify-center rounded-full bg-amber-400/10 text-amber-400"
+    >
+      <Clock class="size-7" />
+    </div>
+    <h2 class="mb-2 text-2xl font-bold text-white">Modul nicht gefunden</h2>
+    <p class="max-w-md text-sm text-zinc-400">
+      Das gewünschte Prüfungsmodul existiert nicht oder konnte nicht geladen werden.
+    </p>
+  </div>
   <div
     v-else
     class="space-y-12 pbe-20"
@@ -86,7 +141,7 @@ const getProcessedGroups = (group: { label: string; phrases: unknown[] }) => {
 
     <div class="space-y-16">
       <section
-        v-for="part in section.parts"
+        v-for="part in enrichedParts"
         :key="part.name"
         class="relative space-y-8"
       >
@@ -126,8 +181,8 @@ const getProcessedGroups = (group: { label: string; phrases: unknown[] }) => {
 
         <div class="space-y-12">
           <AnimateOnScroll
-            v-for="([category, groups], index) in getPartRedemittel(part.name)"
-            :key="category"
+            v-for="(redemittelItem, index) in part.redemittelCategories"
+            :key="redemittelItem.category"
             animation="fade-up"
             :delay="index * 100"
           >
@@ -135,7 +190,7 @@ const getProcessedGroups = (group: { label: string; phrases: unknown[] }) => {
               <div class="flex items-center gap-6">
                 <div class="h-0.75 flex-1 rounded-full bg-white/10" />
                 <h3 class="text-sm font-semibold tracking-[0.2em] text-zinc-500 uppercase">
-                  {{ category.split(":").pop()?.trim() }}
+                  {{ redemittelItem.categoryLabel }}
                 </h3>
                 <div class="h-0.75 flex-1 rounded-full bg-white/10" />
               </div>
@@ -155,20 +210,18 @@ const getProcessedGroups = (group: { label: string; phrases: unknown[] }) => {
                   </h3>
                 </div>
                 <div class="divide-y divide-white/10">
-                  <template v-for="group in groups">
-                    <PhraseGroupCard
-                      v-for="processedGroup in getProcessedGroups(group)"
-                      :key="processedGroup.label"
-                      :group="processedGroup"
-                      is-checklist-item
-                    />
-                  </template>
+                  <PhraseGroupCard
+                    v-for="processedGroup in redemittelItem.processedGroups"
+                    :key="processedGroup.label"
+                    :group="processedGroup"
+                    is-checklist-item
+                  />
                 </div>
               </div>
 
               <!-- Email Visual Structure Frame -->
               <AnimateOnScroll
-                v-if="isEmailTask(part.taskType)"
+                v-if="part.isEmail"
                 animation="fade-up"
                 :delay="200"
               >

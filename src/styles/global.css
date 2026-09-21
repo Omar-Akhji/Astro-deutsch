@@ -350,7 +350,8 @@
    PROGRESSIVE ENHANCEMENT — GSAP Fallback
    Ensures content is visible if JS fails to load or is disabled.
    ============================================================================ */
-.no-js .animate-on-scroll {
+.no-js .animate-on-scroll,
+.no-js [data-animate] {
   visibility: visible;
   opacity: 100%;
   filter: none;

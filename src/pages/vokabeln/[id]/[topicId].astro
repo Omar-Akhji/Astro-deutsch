@@ -23,13 +23,18 @@ export async function getStaticPaths() {
 }
 
 const { id, topicId } = Astro.params;
+
+if (!id || !topicId) {
+  throw new Error("Fehlende Vokabel-Parameter.");
+}
+
 const { data: item } = await getVocabById(Number(id));
 
 const topicMap = new Map(
   item?.sections?.flatMap((s) => s.topics.map((t) => [t.id, { topic: t, section: s }] as const)),
 );
 
-const result = topicMap.get(topicId!);
+const result = topicMap.get(topicId);
 const topic = result?.topic;
 const section = result?.section;
 

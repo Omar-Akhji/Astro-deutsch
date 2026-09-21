@@ -2,9 +2,14 @@
 interface Props {
   title?: string;
   description?: string;
+  robots?: string;
 }
 
-const { title = "Deutsch Lernen", description = "Deine Plattform für Erfolg" } = Astro.props;
+const {
+  title = "Elite Regewelt | Deine Plattform für Erfolg",
+  description = "Die umfassende Plattform für dein Deutsch-Training. Vokabeln, Grammatik-Lektionen und gezielte Goethe & ÖSD Prüfungsvorbereitung für das B1 & B2 Zertifikat.",
+  robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+} = Astro.props;
 import { ClientRouter } from "astro:transitions";
 import Footer from "../shared/ui/Footer.astro";
 import Navigation from "../shared/ui/Navigation.vue";
@@ -12,6 +17,62 @@ import SkeletonLayouts from "../shared/ui/SkeletonLayouts.vue";
 import "../styles/global.css";
 
 const pathname = Astro.url.pathname;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://deutsch-lernen.com").href;
+const ogImageURL = new URL("/og-image.png", Astro.site ?? "https://deutsch-lernen.com").href;
+
+// Breadcrumb structured data for Google SERP
+const pathSegments = pathname.split("/").filter(Boolean);
+const breadcrumbItems = [
+  {
+    "@type": "ListItem",
+    position: 1,
+    name: "Startseite",
+    item: Astro.site ? Astro.site.toString() : "https://deutsch-lernen.com",
+  },
+  ...pathSegments.map((segment, index) => {
+    const url = new URL("/" + pathSegments.slice(0, index + 1).join("/"), Astro.site ?? "https://deutsch-lernen.com").href;
+    const name = segment.charAt(0).toUpperCase() + segment.slice(1);
+    return {
+      "@type": "ListItem",
+      position: index + 2,
+      name,
+      item: url,
+    };
+  }),
+];
+
+const schemaJson = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://deutsch-lernen.com/#website",
+      url: "https://deutsch-lernen.com",
+      name: "Elite Regewelt",
+      description: "Interaktive Lernplattform für die deutsche Sprache (A1 - B2).",
+      inLanguage: "de",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://deutsch-lernen.com/themen?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://deutsch-lernen.com/#organization",
+      name: "Elite Regewelt",
+      url: "https://deutsch-lernen.com",
+      logo: "https://deutsch-lernen.com/logo.png",
+      description: "Vorbereitung auf das Goethe-Zertifikat und ÖSD B1 & B2.",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonicalURL}#breadcrumb`,
+      itemListElement: breadcrumbItems,
+    },
+  ],
+};
+void schemaJson;
 ---
 
 <!doctype html>
@@ -32,14 +93,122 @@ const pathname = Astro.url.pathname;
       name="description"
     />
     <ClientRouter />
+
+    <!-- Canonical & Sitemap Discovery -->
     <link
-      href={new URL(Astro.url.pathname, Astro.site).href}
+      href={canonicalURL}
       rel="canonical"
     />
     <link
-      href="/logo.svg"
+      href="/sitemap-index.xml"
+      rel="sitemap"
+    />
+
+    <!-- Robots Meta for Search Engines -->
+    <meta
+      content={robots}
+      name="robots"
+    />
+    <meta
+      content={robots.includes("noindex") ? "noindex, nofollow" : "index, follow"}
+      name="googlebot"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      content="website"
+      property="og:type"
+    />
+    <meta
+      content="Elite Regewelt"
+      property="og:site_name"
+    />
+    <meta
+      content={canonicalURL}
+      property="og:url"
+    />
+    <meta
+      content={title}
+      property="og:title"
+    />
+    <meta
+      content={description}
+      property="og:description"
+    />
+    <meta
+      content={ogImageURL}
+      property="og:image"
+    />
+    <meta
+      content="image/png"
+      property="og:image:type"
+    />
+    <meta
+      content="1200"
+      property="og:image:width"
+    />
+    <meta
+      content="630"
+      property="og:image:height"
+    />
+    <meta
+      content={title}
+      property="og:image:alt"
+    />
+    <meta
+      content="de_DE"
+      property="og:locale"
+    />
+
+    <!-- Twitter / X Cards -->
+    <meta
+      content="summary_large_image"
+      name="twitter:card"
+    />
+    <meta
+      content={canonicalURL}
+      name="twitter:url"
+    />
+    <meta
+      content={title}
+      name="twitter:title"
+    />
+    <meta
+      content={description}
+      name="twitter:description"
+    />
+    <meta
+      content={ogImageURL}
+      name="twitter:image"
+    />
+
+    <!-- Structured Data (JSON-LD) for Rich Results -->
+    <script
+      is:inline
+      type="application/ld+json"
+    >{JSON.stringify(schemaJson)}</script>
+
+    <!-- Favicon & Brand Icons -->
+    <link
+      href="/favicon.ico"
       rel="icon"
-      type="image/svg+xml"
+      sizes="any"
+    />
+    <link
+      href="/logo.png"
+      rel="icon"
+      type="image/png"
+    />
+    <link
+      href="/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="/favicon.png"
+      rel="apple-touch-icon"
+      sizes="512x512"
     />
     <link
       href="https://fonts.googleapis.com"
@@ -54,9 +223,11 @@ const pathname = Astro.url.pathname;
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body class="antialiased">
     <script src="../shared/scripts/init.ts"></script>
+    <script src="../shared/scripts/analytics.ts"></script>
     <div class="container mx-auto max-w-7xl">
       <Navigation
         client:load
@@ -234,5 +405,6 @@ const pathname = Astro.url.pathname;
       </div>
     </div>
     <script src="../shared/scripts/transitions.ts"></script>
+    <script src="../shared/scripts/animations.ts"></script>
   </body>
 </html>

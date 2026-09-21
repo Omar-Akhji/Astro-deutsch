@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /404
+Disallow: /login
+Disallow: /register
 
 Sitemap: https://deutsch-lernen.com/sitemap-index.xml

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { Component } from "vue";
+import { computed, type Component } from "vue";
 import { BookOpen, FileText, Link, LayoutList, Clock, MessageCircle } from "lucide-vue-next";
 import { getGradient } from "../../../shared/lib/utilities.ts";
 import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
 import Card from "../../../shared/ui/Card.vue";
-import type { GrammarSection } from "../model/types.ts";
+import type { GrammarSection, GrammarTopic } from "../model/types.ts";
 
 const props = defineProps<{ section: GrammarSection }>();
 
@@ -16,6 +16,23 @@ const ICON_MAP: Record<string, Component | object> = {
   Clock,
   MessageCircle,
 };
+
+const sectionIcon = computed(() => {
+  return ICON_MAP[props.section.icon] ?? BookOpen;
+});
+
+interface EnrichedGrammarTopic extends GrammarTopic {
+  gradient: string;
+  delay: number;
+}
+
+const enrichedTopics = computed<EnrichedGrammarTopic[]>(() => {
+  return props.section.topics.map((topic, index) => ({
+    ...topic,
+    gradient: getGradient(index, props.section.gradients),
+    delay: (index % 3) * 100,
+  }));
+});
 </script>
 
 <template>
@@ -33,8 +50,7 @@ const ICON_MAP: Record<string, Component | object> = {
           aria-hidden="true"
         >
           <component
-            :is="ICON_MAP[props.section.icon]"
-            v-if="props.section.icon && ICON_MAP[props.section.icon]"
+            :is="sectionIcon"
             class="size-5 tablet:size-6"
             :stroke-width="2"
           />
@@ -47,13 +63,13 @@ const ICON_MAP: Record<string, Component | object> = {
       class="m-0 grid list-none grid-cols-1 gap-6 p-0 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3"
     >
       <li
-        v-for="(topic, index) in props.section.topics"
+        v-for="topic in enrichedTopics"
         :key="topic.id"
         class="h-full"
       >
         <AnimateOnScroll
           animation="fade-up"
-          :delay="(index % 3) * 100"
+          :delay="topic.delay"
           class="h-full"
         >
           <Card
@@ -62,7 +78,7 @@ const ICON_MAP: Record<string, Component | object> = {
             :category="topic.number"
             :subtitle="topic.category"
             :description="topic.description"
-            :gradient="getGradient(index, props.section.gradients)"
+            :gradient="topic.gradient"
           />
         </AnimateOnScroll>
       </li>

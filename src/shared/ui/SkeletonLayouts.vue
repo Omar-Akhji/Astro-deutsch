@@ -126,7 +126,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       'relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-2xl backdrop-blur-(--glass-blur)',
       props.variant === 'compact' ?
         'mbe-6 p-4 mobile:p-6 tablet:p-8'
-      : 'mbe-8 mobile:mbe-12 p-5 mobile:p-8 tablet:p-10 laptop:p-12',
+      : 'mbe-8 p-5 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12',
     ]"
   >
     <div class="flex flex-col items-center text-center">
@@ -134,7 +134,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
         <Skeleton class="h-9 w-28 rounded-full bg-white/10" />
       </div>
       <Skeleton
-        class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 rounded-md bg-white/15"
+        class="mx-auto -my-2 mbe-2 h-9 w-3/4 rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
       />
       <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
       <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
@@ -179,7 +179,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     <div class="mx-auto mb-6 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
     <div class="flex justify-center px-2">
       <Skeleton
-        class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-md rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5"
+        class="h-9 w-full max-w-[320px] rounded-2xl border-2 border-white/10 bg-white/5 min-[480px]:h-8 min-[480px]:max-w-md min-[480px]:rounded-full tablet:h-10"
       />
     </div>
   </header>
@@ -191,17 +191,19 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
   >
     <header class="mbe-12 mobile:mbe-16">
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
+        class="relative mbe-8 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
       >
         <div class="flex flex-col items-center text-center">
           <div class="mbe-4 flex items-center justify-center gap-3">
             <Skeleton class="h-9 w-28 rounded-full bg-white/10" />
           </div>
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-2xl rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
           <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
-          <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
+          <div
+            class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+          >
             <div class="flex items-center gap-2">
               <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
               <Skeleton class="h-5 w-24 rounded-md bg-white/10 tablet:h-6 tablet:w-28" />
@@ -244,14 +246,16 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     </div>
     <section class="mbs-20">
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
+        class="relative mbe-8 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
       >
         <div class="flex flex-col items-center text-center">
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-xl rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-xl rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
           <Skeleton class="mx-auto h-6 w-full max-w-2xl rounded-md bg-white/5 tablet:h-7" />
-          <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
+          <div
+            class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+          >
             <div class="flex items-center gap-2">
               <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
               <Skeleton class="h-5 w-24 rounded-md bg-white/10 tablet:h-6 tablet:w-28" />
@@ -269,9 +273,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       </div>
     </section>
     <section class="mbs-24 text-center">
-      <Skeleton
-        class="mx-auto mbe-6 h-9 w-2/3 max-w-md rounded-md bg-white/10 tablet:h-10"
-      />
+      <Skeleton class="mx-auto mbe-6 h-9 w-2/3 max-w-md rounded-md bg-white/10 tablet:h-10" />
       <Skeleton class="mx-auto mbe-8 h-5 w-full max-w-2xl rounded-md bg-white/5 tablet:h-6" />
     </section>
   </div>
@@ -282,7 +284,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     class="min-h-screen space-y-16 py-8"
   >
     <header class="mx-auto max-w-2xl space-y-4 text-center">
-      <Skeleton class="mx-auto h-9 w-72 max-w-full rounded-md bg-white/15 tablet:h-10 tablet:w-96" />
+      <Skeleton
+        class="mx-auto h-9 w-72 max-w-full rounded-md bg-white/15 tablet:h-10 tablet:w-96"
+      />
       <Skeleton class="mx-auto h-5 w-full max-w-lg rounded-md bg-white/5 tablet:h-6" />
     </header>
     <nav class="rounded-2xl border border-white/5 bg-zinc-950/50 p-4 shadow-xl backdrop-blur-md">
@@ -382,7 +386,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <div class="mx-auto mb-6 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
       <div class="flex justify-center px-2">
         <Skeleton
-          class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-md rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5"
+          class="h-9 w-full max-w-[320px] rounded-2xl border-2 border-white/10 bg-white/5 min-[480px]:h-8 min-[480px]:max-w-md min-[480px]:rounded-full tablet:h-10"
         />
       </div>
     </header>
@@ -434,17 +438,19 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     <main>
       <!-- Hero section -->
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
+        class="relative mbe-8 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
       >
         <div class="flex flex-col items-center text-center">
           <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
             <Skeleton class="h-7 w-24 rounded-full bg-white/10" />
           </div>
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-2xl rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
           <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
-          <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
+          <div
+            class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+          >
             <div class="flex items-center gap-2">
               <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
               <Skeleton class="h-5 w-24 rounded-md bg-white/10 tablet:h-6" />
@@ -467,7 +473,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
           </div>
           <div class="overflow-x-auto">
             <div class="w-full">
-              <div class="flex border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4">
+              <div
+                class="flex border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4"
+              >
                 <Skeleton class="h-4 w-1/3 rounded-md bg-white/10" />
                 <Skeleton class="ml-4 h-4 w-1/3 rounded-md bg-white/10" />
                 <Skeleton class="ml-4 h-4 w-1/3 rounded-md bg-white/10" />
@@ -534,7 +542,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <!-- Subtopics Section -->
       <section class="mb-16 text-white">
         <div class="mb-12 flex items-center gap-3 tablet:gap-4">
-          <Skeleton class="size-10 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-12" />
+          <Skeleton
+            class="size-10 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-12"
+          />
           <Skeleton class="h-7 w-36 rounded-md bg-white/10" />
         </div>
         <div class="grid gap-10">
@@ -566,7 +576,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     class="min-h-dvh py-4"
   >
     <header class="mb-12 text-center">
-      <div class="mb-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
+      <div
+        class="mb-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4"
+      >
         <Skeleton
           class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14"
         />
@@ -575,7 +587,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <div class="mx-auto mb-6 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
       <div class="flex justify-center px-2">
         <Skeleton
-          class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-md rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5"
+          class="h-9 w-full max-w-[320px] rounded-2xl border-2 border-white/10 bg-white/5 min-[480px]:h-8 min-[480px]:max-w-md min-[480px]:rounded-full tablet:h-10"
         />
       </div>
     </header>
@@ -616,17 +628,19 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     <main>
       <!-- Hero section (compact variant) -->
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mbe-6 mobile:p-6 tablet:p-8"
+        class="relative mbe-6 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mobile:p-6 tablet:p-8"
       >
         <div class="flex flex-col items-center text-center">
           <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
             <Skeleton class="h-7 w-28 rounded-full bg-white/10" />
           </div>
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-2xl rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
           <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
-          <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
+          <div
+            class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+          >
             <div class="flex items-center gap-2">
               <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
               <Skeleton class="h-5 w-24 rounded-md bg-white/10 tablet:h-6 tablet:w-28" />
@@ -677,14 +691,14 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     <main>
       <!-- Hero section (compact variant) -->
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mbe-6 mobile:p-6 tablet:p-8"
+        class="relative mbe-6 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mobile:p-6 tablet:p-8"
       >
         <div class="flex flex-col items-center text-center">
           <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
             <Skeleton class="h-7 w-24 rounded-full bg-white/10" />
           </div>
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-2xl rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
           <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
         </div>
@@ -692,10 +706,14 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
 
       <!-- Vocabulary Table Skeleton -->
       <section class="mt-8">
-        <div class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
+        <div
+          class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)"
+        >
           <div class="scrollbar-thin overflow-x-auto px-4 pb-4">
             <div class="w-full">
-              <div class="flex border-b border-(--glass-border) px-3 pbs-3 text-xs uppercase @md:px-4 @md:pbs-4 @md:text-sm">
+              <div
+                class="flex border-b border-(--glass-border) px-3 pbs-3 text-xs uppercase @md:px-4 @md:pbs-4 @md:text-sm"
+              >
                 <Skeleton class="h-4 flex-1 rounded-md bg-white/10" />
                 <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
                 <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
@@ -727,14 +745,14 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     <main>
       <!-- Hero section (compact variant) -->
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mbe-6 mobile:p-6 tablet:p-8"
+        class="relative mbe-6 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mobile:p-6 tablet:p-8"
       >
         <div class="flex flex-col items-center text-center">
           <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
             <Skeleton class="h-7 w-24 rounded-full bg-white/10" />
           </div>
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-2xl rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
         </div>
       </div>
@@ -808,10 +826,14 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
 
       <!-- Vocabulary Table Below Family Tree -->
       <section class="mt-8">
-        <div class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
+        <div
+          class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)"
+        >
           <div class="scrollbar-thin overflow-x-auto px-4 pb-4">
             <div class="w-full">
-              <div class="flex border-b border-(--glass-border) px-3 pbs-3 text-xs uppercase @md:px-4 @md:pbs-4 @md:text-sm">
+              <div
+                class="flex border-b border-(--glass-border) px-3 pbs-3 text-xs uppercase @md:px-4 @md:pbs-4 @md:text-sm"
+              >
                 <Skeleton class="h-4 flex-1 rounded-md bg-white/10" />
                 <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
                 <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
@@ -841,7 +863,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     class="min-h-dvh py-4"
   >
     <header class="mb-12 text-center">
-      <div class="mb-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
+      <div
+        class="mb-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4"
+      >
         <Skeleton
           class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14"
         />
@@ -850,7 +874,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <div class="mx-auto mb-6 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
       <div class="flex justify-center px-2">
         <Skeleton
-          class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-140 rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5"
+          class="h-9 w-full max-w-[320px] rounded-2xl border-2 border-white/10 bg-white/5 min-[480px]:h-8 min-[480px]:max-w-140 min-[480px]:rounded-full tablet:h-10"
         />
       </div>
     </header>
@@ -900,19 +924,21 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
   >
     <main>
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
+        class="relative mbe-8 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
       >
         <div class="flex flex-col items-center text-center">
           <!-- Level Category Badge -->
           <Skeleton class="mbe-4 h-10 w-20 rounded-full bg-white/15 tablet:h-11 tablet:w-24" />
           <!-- Title -->
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-xl rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-xl rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
           <!-- Description -->
           <Skeleton class="mx-auto h-6 w-full max-w-2xl rounded-md bg-white/5 tablet:h-7" />
           <!-- Stats -->
-          <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
+          <div
+            class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+          >
             <div class="flex items-center gap-2">
               <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
               <Skeleton class="h-5 w-28 rounded-md bg-white/10 tablet:h-6 tablet:w-32" />
@@ -1009,15 +1035,17 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
   >
     <main>
       <div
-        class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
+        class="relative mbe-8 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
       >
         <div class="flex flex-col items-center text-center">
           <Skeleton class="mbe-4 h-10 w-44 rounded-full bg-white/15 tablet:h-11 tablet:w-48" />
           <Skeleton
-            class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-lg rounded-md bg-white/15"
+            class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-lg rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
           />
           <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:h-7" />
-          <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
+          <div
+            class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+          >
             <div class="flex items-center gap-2">
               <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
               <Skeleton class="h-5 w-16 rounded-md bg-white/10 tablet:h-6 tablet:w-20" />
@@ -1076,15 +1104,17 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
   >
     <!-- Hero section -->
     <div
-      class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
+      class="relative mbe-8 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12"
     >
       <div class="flex flex-col items-center text-center">
         <Skeleton class="mbe-4 h-10 w-24 rounded-full bg-white/15 tablet:h-11 tablet:w-28" />
         <Skeleton
-          class="mx-auto -my-2 mbe-2 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-lg rounded-md bg-white/15"
+          class="mx-auto -my-2 mbe-2 h-9 w-3/4 max-w-lg rounded-md bg-white/15 mobile:h-10 tablet:h-12 laptop:h-14"
         />
         <Skeleton class="mx-auto h-6 w-full max-w-2xl rounded-md bg-white/5 tablet:h-7" />
-        <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
+        <div
+          class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+        >
           <div class="flex items-center gap-2">
             <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
             <Skeleton class="h-5 w-28 rounded-md bg-white/10 tablet:h-6 tablet:w-32" />
@@ -1252,7 +1282,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <!-- QuizStart Initial View -->
       <section class="mx-auto w-full max-w-lg p-8 text-center">
         <!-- Exam badge -->
-        <Skeleton class="mx-auto mbe-6 h-8 w-48 rounded-full border border-yellow/30 bg-yellow/10" />
+        <Skeleton
+          class="mx-auto mbe-6 h-8 w-48 rounded-full border border-yellow/30 bg-yellow/10"
+        />
 
         <!-- Title -->
         <Skeleton class="mx-auto mbe-3 h-9 w-3/4 max-w-md rounded-md bg-white/15" />
@@ -1262,18 +1294,24 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
 
         <!-- Exam info cards -->
         <div class="mbe-8 grid grid-cols-2 gap-4">
-          <div class="h-full space-y-2 rounded-xl border border-white/10 bg-mist-900/50 p-4 shadow-sm">
+          <div
+            class="h-full space-y-2 rounded-xl border border-white/10 bg-mist-900/50 p-4 shadow-sm"
+          >
             <Skeleton class="mx-auto h-8 w-12 rounded-md bg-white/15" />
             <Skeleton class="mx-auto h-3 w-20 rounded-md bg-white/5" />
           </div>
-          <div class="h-full space-y-2 rounded-xl border border-white/10 bg-mist-900/50 p-4 shadow-sm">
+          <div
+            class="h-full space-y-2 rounded-xl border border-white/10 bg-mist-900/50 p-4 shadow-sm"
+          >
             <Skeleton class="mx-auto h-8 w-12 rounded-md bg-white/15" />
             <Skeleton class="mx-auto h-3 w-24 rounded-md bg-white/5" />
           </div>
         </div>
 
         <!-- Start Button -->
-        <Skeleton class="h-14 w-full rounded-full bg-linear-to-r from-yellow/30 to-orange/30 shadow-xl" />
+        <Skeleton
+          class="h-14 w-full rounded-full bg-linear-to-r from-yellow/30 to-orange/30 shadow-xl"
+        />
       </section>
     </article>
   </main>
@@ -1285,7 +1323,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       class="overflow-x-auto"
     >
       <div class="w-full border-collapse">
-        <div class="flex border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4">
+        <div
+          class="flex border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4"
+        >
           <Skeleton
             v-for="(id, i) in COL_IDS.slice(0, props.columns)"
             :key="id"
@@ -1313,7 +1353,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     >
       <div class="overflow-x-auto">
         <div class="w-full border-collapse">
-          <div class="flex border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4">
+          <div
+            class="flex border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4"
+          >
             <Skeleton
               v-for="(id, i) in COL_IDS.slice(0, props.columns)"
               :key="id"
@@ -1416,14 +1458,16 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
             <Skeleton class="mb-3 size-12 rounded-full bg-white/10" />
             <Skeleton class="mb-1 h-6 w-36 rounded-md bg-white/15" />
             <Skeleton class="h-3.5 w-48 rounded-md bg-white/5" />
-            <div class="mt-6 flex w-full max-w-70 rounded-full border border-slate-800/60 bg-slate-950/30 p-1">
+            <div
+              class="mt-6 flex w-full max-w-70 rounded-full border border-slate-800/60 bg-slate-950/30 p-1"
+            >
               <Skeleton class="h-7 flex-1 rounded-full bg-white/15" />
               <Skeleton class="h-7 flex-1 rounded-full bg-transparent" />
             </div>
           </div>
 
           <!-- Desktop Form Header -->
-          <div class="hidden flex-col mb-4 md:flex">
+          <div class="mb-4 hidden flex-col md:flex">
             <Skeleton class="mb-1 h-6 w-28 rounded-md bg-white/15" />
             <Skeleton class="h-3.5 w-48 rounded-md bg-white/5" />
           </div>
@@ -1492,7 +1536,9 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
     class="min-h-screen py-8"
   >
     <header class="mb-12 text-center">
-      <div class="mb-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
+      <div
+        class="mb-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4"
+      >
         <Skeleton
           class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14"
         />
@@ -1501,7 +1547,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <div class="mx-auto mb-6 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
       <div class="flex justify-center px-2">
         <Skeleton
-          class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-md rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5"
+          class="h-9 w-full max-w-[320px] rounded-2xl border-2 border-white/10 bg-white/5 min-[480px]:h-8 min-[480px]:max-w-md min-[480px]:rounded-full tablet:h-10"
         />
       </div>
     </header>

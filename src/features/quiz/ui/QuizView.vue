@@ -84,6 +84,61 @@ const getQuestionIndex = (q: Question) => {
   return props.initialQuestions.indexOf(q);
 };
 
+interface TeilQuestionItem {
+  question: Question;
+  questionIndex: number;
+}
+
+interface ParsedTeil {
+  teilNumber: number | undefined;
+  isGrouped: boolean;
+  headerQuestion: Question;
+  firstQuestionStep: number;
+  activeContext?: string;
+  exampleQuestion?: Question;
+  groupQuestions: TeilQuestionItem[];
+  showSeparator: boolean;
+}
+
+const parsedTeils = computed<ParsedTeil[]>(() => {
+  const result: ParsedTeil[] = [];
+
+  for (const [teilIndex, teilNumber] of uniqueTeils.value.entries()) {
+    const allInTeil = getTeilQuestions(teilNumber);
+    if (allInTeil.length === 0) continue;
+
+    const firstQuestion = allInTeil[0]!;
+    const isGrouped = isGroupedTeil(teilNumber);
+    const activeContext =
+      isGrouped ? getActiveContext(allInTeil, firstQuestion, teilNumber) : undefined;
+    const exampleQuestion = getExample(allInTeil);
+    const group = getGroup(allInTeil);
+
+    const groupQuestions: TeilQuestionItem[] = group.map((q) => ({
+      question: q,
+      questionIndex: getQuestionIndex(q),
+    }));
+
+    const lastGroupItem = group.at(-1);
+    const showSeparator =
+      lastGroupItem !== undefined
+      && getQuestionIndex(lastGroupItem) < props.initialQuestions.length - 1;
+
+    result.push({
+      teilNumber: teilNumber ?? teilIndex,
+      isGrouped,
+      headerQuestion: isGrouped ? firstQuestion : { ...firstQuestion, context: "", audioUrl: "" },
+      firstQuestionStep: getQuestionIndex(firstQuestion) + 1,
+      activeContext,
+      exampleQuestion,
+      groupQuestions,
+      showSeparator,
+    });
+  }
+
+  return result;
+});
+
 const goBackUrl = computed(() => {
   return `/pruefung/${props.level}/modelltests`;
 });
@@ -132,73 +187,58 @@ const goBackUrl = computed(() => {
               <div class="flex flex-col gap-6">
                 <!-- Grouping Logic for Reading/Listening Table Look -->
                 <section
-                  v-for="(teilNumber, teilIndex) in uniqueTeils"
-                  :key="teilNumber ?? `teil-${teilIndex}`"
+                  v-for="teil in parsedTeils"
+                  :key="teil.teilNumber"
                   class="space-y-8"
                 >
-                  <div
-                    v-if="getTeilQuestions(teilNumber).length > 0"
-                    :class="[isGroupedTeil(teilNumber) ? 'space-y-3' : 'flex flex-col gap-1']"
-                  >
+                  <div :class="[teil.isGrouped ? 'space-y-3' : 'flex flex-col gap-1']">
                     <!-- 1. Header & Context -->
                     <QuizQuestion
-                      :key="`header-${teilNumber}`"
-                      :question="
-                        isGroupedTeil(teilNumber) ?
-                          getTeilQuestions(teilNumber)[0]
-                        : { ...getTeilQuestions(teilNumber)[0], context: '', audioUrl: '' }
-                      "
-                      :current-step="getQuestionIndex(getTeilQuestions(teilNumber)[0]) + 1"
+                      :key="`header-${teil.teilNumber}`"
+                      :question="teil.headerQuestion"
+                      :current-step="teil.firstQuestionStep"
                       :skill="props.skill"
                       variant="header"
-                      :active-context="
-                        isGroupedTeil(teilNumber) ?
-                          getActiveContext(
-                            getTeilQuestions(teilNumber),
-                            getTeilQuestions(teilNumber)[0],
-                            teilNumber,
-                          )
-                        : undefined
-                      "
+                      :active-context="teil.activeContext"
                       @answer="() => {}"
                     />
 
                     <!-- 2. Questions -->
                     <!-- Grouped in ONE TABLE (Card) -->
                     <div
-                      v-if="isGroupedTeil(teilNumber)"
-                      :key="`group-${teilNumber}`"
+                      v-if="teil.isGrouped"
+                      :key="`group-${teil.teilNumber}`"
                       class="overflow-hidden rounded-xl border border-white/10 bg-zinc-900/10"
                     >
                       <div
-                        v-if="getExample(getTeilQuestions(teilNumber))"
+                        v-if="teil.exampleQuestion"
                         class="border-b border-white/10"
                       >
                         <QuizQuestion
-                          :question="getExample(getTeilQuestions(teilNumber))!"
+                          :question="teil.exampleQuestion"
                           :current-step="0"
                           :skill="props.skill"
                           variant="example-row"
-                          :selected-answer="getExample(getTeilQuestions(teilNumber))!.correctAnswer"
+                          :selected-answer="teil.exampleQuestion.correctAnswer"
                           @answer="() => {}"
                         />
                       </div>
                       <div
-                        v-for="(q, index) in getGroup(getTeilQuestions(teilNumber))"
-                        :key="q.id"
+                        v-for="(item, index) in teil.groupQuestions"
+                        :key="item.question.id"
                         :class="[
-                          index < getGroup(getTeilQuestions(teilNumber)).length - 1 ?
+                          index < teil.groupQuestions.length - 1 ?
                             'border-b border-white/5'
                           : '',
                         ]"
                       >
                         <QuizQuestion
-                          :question="q"
-                          :current-step="q.id"
-                          :selected-answer="userAnswers[getQuestionIndex(q)]"
+                          :question="item.question"
+                          :current-step="item.question.id"
+                          :selected-answer="userAnswers[item.questionIndex]"
                           variant="table-row"
                           :skill="props.skill"
-                          @answer="handleAnswer($event, getQuestionIndex(q))"
+                          @answer="handleAnswer($event, item.questionIndex)"
                         />
                       </div>
                     </div>
@@ -209,34 +249,30 @@ const goBackUrl = computed(() => {
                       class="space-y-6"
                     >
                       <QuizQuestion
-                        v-if="getExample(getTeilQuestions(teilNumber))"
-                        :question="getExample(getTeilQuestions(teilNumber))!"
+                        v-if="teil.exampleQuestion"
+                        :question="teil.exampleQuestion"
                         :current-step="0"
                         :skill="props.skill"
                         variant="example"
-                        :selected-answer="getExample(getTeilQuestions(teilNumber))!.correctAnswer"
+                        :selected-answer="teil.exampleQuestion.correctAnswer"
                         @answer="() => {}"
                       />
                       <QuizQuestion
-                        v-for="q in getGroup(getTeilQuestions(teilNumber))"
-                        :key="q.id"
-                        :question="q"
-                        :current-step="q.id"
-                        :selected-answer="userAnswers[getQuestionIndex(q)]"
+                        v-for="item in teil.groupQuestions"
+                        :key="item.question.id"
+                        :question="item.question"
+                        :current-step="item.question.id"
+                        :selected-answer="userAnswers[item.questionIndex]"
                         :skill="props.skill"
-                        @answer="handleAnswer($event, getQuestionIndex(q))"
+                        @answer="handleAnswer($event, item.questionIndex)"
                       />
                     </div>
                   </div>
 
                   <!-- Decorative Separator between Teils -->
                   <div
-                    v-if="
-                      getGroup(getTeilQuestions(teilNumber)).at(-1)
-                      && getQuestionIndex(getGroup(getTeilQuestions(teilNumber)).at(-1)!)
-                        < props.initialQuestions.length - 1
-                    "
-                    :key="`sep-${teilNumber}`"
+                    v-if="teil.showSeparator"
+                    :key="`sep-${teil.teilNumber}`"
                     class="flex justify-center py-10"
                   >
                     <div

@@ -52,13 +52,5 @@ export function groupByKey<T, K extends PropertyKey>(
   items: Iterable<T>,
   keySelector: (item: T) => K,
 ): Partial<Record<K, T[]>> {
-  if (typeof Object.groupBy === "function") {
-    return Object.groupBy(items, keySelector);
-  }
-  const result = {} as Record<K, T[]>;
-  for (const item of items) {
-    const key = keySelector(item);
-    (result[key] ??= []).push(item);
-  }
-  return result;
+  return Object.groupBy(items, keySelector);
 }

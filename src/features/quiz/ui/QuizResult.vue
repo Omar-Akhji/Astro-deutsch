@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import { PartyPopper, Sparkles, ThumbsUp, Zap } from "lucide-vue-next";
+import gsap from "../../../shared/lib/gsap.ts";
 import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
 
 interface Props {
@@ -14,6 +15,39 @@ const emit = defineEmits<{ (e: "restart"): void; (e: "exit"): void }>();
 
 const percentage = computed(() => {
   return Math.round((props.score / props.total) * 100);
+});
+
+const circleRef = ref<SVGCircleElement | null>(null);
+const displayedPercent = ref(0);
+let ctx: gsap.Context | null = null;
+
+onMounted(() => {
+  ctx = gsap.context(() => {
+    const targetOffset = 440 - (440 * percentage.value) / 100;
+
+    const counterObj = { val: 0 };
+    gsap.to(counterObj, {
+      val: percentage.value,
+      duration: 1.2,
+      ease: "power2.out",
+      onUpdate: () => {
+        displayedPercent.value = Math.round(counterObj.val);
+      },
+    });
+
+    if (circleRef.value) {
+      gsap.fromTo(
+        circleRef.value,
+        { strokeDashoffset: 440 },
+        { strokeDashoffset: targetOffset, duration: 1.2, ease: "power2.out" },
+      );
+    }
+  });
+});
+
+onUnmounted(() => {
+  ctx?.revert();
+  ctx = null;
 });
 </script>
 
@@ -72,6 +106,7 @@ const percentage = computed(() => {
             fill="none"
           />
           <circle
+            ref="circleRef"
             cx="80"
             cy="80"
             r="70"
@@ -80,12 +115,11 @@ const percentage = computed(() => {
             fill="none"
             stroke-linecap="round"
             stroke-dasharray="440"
-            :stroke-dashoffset="440 - (440 * percentage) / 100"
-            class="transition-[stroke-dashoffset] duration-1000 ease-out"
+            stroke-dashoffset="440"
           />
         </svg>
         <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <span class="text-4xl font-bold text-shadow-sm">{{ percentage }}%</span>
+          <span class="text-4xl font-bold text-shadow-sm">{{ displayedPercent }}%</span>
           <span class="text-sm opacity-70"> {{ props.score }} / {{ props.total }} </span>
         </div>
       </div>

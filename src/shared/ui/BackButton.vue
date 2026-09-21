@@ -2,7 +2,7 @@
 import { ArrowLeft } from "lucide-vue-next";
 
 function goBack() {
-  if (typeof window !== "undefined") {
+  if (globalThis.window !== undefined) {
     globalThis.history.back();
   }
 }

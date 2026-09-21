@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import { Volume2 } from "lucide-vue-next";
-import { parseNounGender, speakGerman } from "../../../shared/lib/audio.ts";
+import { parseNounGender, speakGerman, type GenderInfo } from "../../../shared/lib/audio.ts";
 import AnimateOnScroll from "../../../shared/ui/AnimateOnScroll.vue";
 import GlassCard from "../../../shared/ui/GlassCard.vue";
 import type { Word } from "../model/types.ts";
@@ -12,6 +12,17 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), { englishLabel: "English" });
+
+interface EnrichedWord extends Word {
+  genderInfo: GenderInfo;
+}
+
+const enrichedWords = computed<EnrichedWord[]>(() => {
+  return props.words.map((word) => ({
+    ...word,
+    genderInfo: parseNounGender(word.german),
+  }));
+});
 
 const playingWord = ref<string | null>(null);
 
@@ -62,7 +73,7 @@ const playAudio = (text: string) => {
           </thead>
           <tbody>
             <tr
-              v-for="word in props.words"
+              v-for="word in enrichedWords"
               :key="`${word.german}-${word.arabic}`"
               class="group/row border-be border-white/5 transition-colors last:border-0 hover:bg-white/3"
             >
@@ -87,21 +98,21 @@ const playAudio = (text: string) => {
                   <!-- German Word with Article Badge -->
                   <div class="flex flex-wrap items-baseline gap-1.5 text-sm @md:text-base">
                     <span
-                      v-if="parseNounGender(word.german).article"
+                      v-if="word.genderInfo.article"
                       class="inline-flex items-center rounded-md border px-1.5 py-0.5 text-[11px] font-bold tracking-tight uppercase"
-                      :class="parseNounGender(word.german).badgeClass"
+                      :class="word.genderInfo.badgeClass"
                     >
-                      {{ parseNounGender(word.german).article }}
+                      {{ word.genderInfo.article }}
                     </span>
                     <span
                       class="font-semibold"
                       :class="
-                        parseNounGender(word.german).article ?
-                          parseNounGender(word.german).textClass
+                        word.genderInfo.article ?
+                          word.genderInfo.textClass
                         : 'font-semibold text-orange'
                       "
                     >
-                      {{ parseNounGender(word.german).baseWord }}
+                      {{ word.genderInfo.baseWord }}
                     </span>
                   </div>
                 </div>

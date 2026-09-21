@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import type { Question } from "../model/types.ts";
 import TeilHeader from "./TeilHeader.vue";
 import ContextCard from "./ContextCard.vue";
@@ -21,11 +21,13 @@ const props = withDefaults(defineProps<Props>(), { variant: "standard" });
 
 const emit = defineEmits<{ (e: "answer", val: string | string[]): void }>();
 
-const isHeader = props.variant === "header";
-const isTableRow = props.variant === "table-row" || props.variant === "example-row";
-const isExample = props.variant === "example" || props.variant === "example-row";
-const isHideQuestionBody = isHeader;
-const isShowTeilHeader = isHeader;
+const isHeader = computed(() => props.variant === "header");
+const isTableRow = computed(
+  () => props.variant === "table-row" || props.variant === "example-row",
+);
+const isExample = computed(() => props.variant === "example" || props.variant === "example-row");
+const isHideQuestionBody = computed(() => isHeader.value);
+const isShowTeilHeader = computed(() => isHeader.value);
 
 const selectedAd = ref<{ letter: string; content: string } | null>(null);
 
@@ -37,31 +39,46 @@ const handleCloseAd = () => {
   selectedAd.value = null;
 };
 
-const displayContext = props.question.context ?? props.activeContext;
+const displayContext = computed(() => props.question.context ?? props.activeContext);
 
-const contextLabel =
-  props.skill === "hoeren" ? "Sie hören:"
-  : props.skill === "lesen" ? "Lesen Sie den Text:"
-  : "Text:";
+const contextLabel = computed(() => {
+  if (props.skill === "hoeren") return "Sie hören:";
+  if (props.skill === "lesen") return "Lesen Sie den Text:";
+  return "Text:";
+});
 
-const isRichtigFalsch =
-  props.question.options?.length === 2
-  && props.question.options[0] === "Richtig"
-  && props.question.options[1] === "Falsch";
+const isRichtigFalsch = computed(() => {
+  return (
+    props.question.options?.length === 2
+    && props.question.options[0] === "Richtig"
+    && props.question.options[1] === "Falsch"
+  );
+});
 
-const isJaNein =
-  props.question.options?.length === 2
-  && props.question.options[0] === "Ja"
-  && props.question.options[1] === "Nein";
+const isJaNein = computed(() => {
+  return (
+    props.question.options?.length === 2
+    && props.question.options[0] === "Ja"
+    && props.question.options[1] === "Nein"
+  );
+});
 
-const isABC =
-  props.question.options?.length === 3
-  && props.question.options[0] === "a"
-  && props.question.options[1] === "b"
-  && props.question.options[2] === "c";
+const isABC = computed(() => {
+  return (
+    props.question.options?.length === 3
+    && props.question.options[0] === "a"
+    && props.question.options[1] === "b"
+    && props.question.options[2] === "c"
+  );
+});
 
-const isCompactRow = isRichtigFalsch || isJaNein || (isTableRow && isABC);
-const cleanedQuestionText = props.question.question.replace(/^\d+\.\s*/, "");
+const isCompactRow = computed(() => {
+  return isRichtigFalsch.value || isJaNein.value || (isTableRow.value && isABC.value);
+});
+
+const cleanedQuestionText = computed(() => {
+  return props.question.question.replace(/^\d+\.\s*/, "");
+});
 </script>
 
 <template>
