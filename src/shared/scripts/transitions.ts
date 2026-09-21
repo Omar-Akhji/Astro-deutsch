@@ -1,4 +1,7 @@
 import type { TransitionBeforePreparationEvent } from "astro:transitions/client";
+import { wait } from "@/shared/lib";
+
+const SKELETON_DEV_DELAY_MS = 600;
 
 function isPreparationEvent(event: Event): event is TransitionBeforePreparationEvent {
   return "to" in event && event.to instanceof URL;
@@ -6,6 +9,12 @@ function isPreparationEvent(event: Event): event is TransitionBeforePreparationE
 
 document.addEventListener("astro:before-preparation", (e: Event) => {
   if (!isPreparationEvent(e)) return;
+
+  // In development mode, delay page loader so skeleton transition is visible
+  const originalLoader = e.loader;
+  e.loader = async () => {
+    await Promise.all([originalLoader(), wait(SKELETON_DEV_DELAY_MS)]);
+  };
 
   const toPath = e.to.pathname;
   const container = document.querySelector("#skeleton-container");
@@ -82,17 +91,28 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
   container.classList.remove("hidden");
   container.removeAttribute("aria-hidden");
   content.classList.add("hidden");
+
+  // Show footer skeleton, hide footer content
+  const footerSkeleton = document.querySelector("#footer-skeleton");
+  const footerContent = document.querySelector("#footer-content");
+  footerSkeleton?.classList.remove("hidden");
+  footerSkeleton?.removeAttribute("aria-hidden");
+  footerContent?.classList.add("hidden");
 });
 
 // Ensure that on swap or page load, the skeleton container is hidden and actual content is shown.
 document.addEventListener("astro:after-swap", () => {
   const container = document.querySelector("#skeleton-container");
   const content = document.querySelector("#page-content");
-  if (!(container && content)) {
-    return;
-  }
+  if (!container || !content) return;
 
   container.classList.add("hidden");
   container.setAttribute("aria-hidden", "true");
   content.classList.remove("hidden");
+
+  const footerSkeleton = document.querySelector("#footer-skeleton");
+  const footerContent = document.querySelector("#footer-content");
+  footerSkeleton?.classList.add("hidden");
+  footerSkeleton?.setAttribute("aria-hidden", "true");
+  footerContent?.classList.remove("hidden");
 });

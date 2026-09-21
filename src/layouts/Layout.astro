@@ -12,6 +12,7 @@ const {
 } = Astro.props;
 import { ClientRouter } from "astro:transitions";
 import Footer from "@/shared/ui/Footer.astro";
+import FooterSkeleton from "@/shared/ui/FooterSkeleton.astro";
 import Navigation from "@/shared/ui/Navigation.vue";
 import SkeletonLayouts from "@/shared/ui/SkeletonLayouts.astro";
 import "@/styles/global.css";
@@ -230,7 +231,7 @@ void schemaJson;
         client:load
         pathname={pathname}
       />
-      <div class="px-3 mobile:px-6 tablet:px-8 pb-24 tablet:pb-0">
+      <div class="px-3 mobile:px-6 tablet:px-8 pb-24 tablet:pb-28 laptop:pb-0">
         <main>
           <!-- Skeleton container: hidden by default, shown during navigation -->
           <div
@@ -347,7 +348,17 @@ void schemaJson;
             <slot />
           </div>
         </main>
-        <Footer />
+        <!-- Footer with transition skeleton support -->
+        <div
+          aria-hidden="true"
+          class="hidden"
+          id="footer-skeleton"
+        >
+          <FooterSkeleton />
+        </div>
+        <div id="footer-content">
+          <Footer />
+        </div>
       </div>
     </div>
     <script src="@/shared/scripts/transitions.ts"></script>

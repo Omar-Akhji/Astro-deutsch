@@ -6,6 +6,7 @@ export { default as CardBody } from "./CardBody.vue";
 export { default as CardModal } from "./CardModal.vue";
 export { default as CardWithModal } from "./CardWithModal.vue";
 export { default as Footer } from "./Footer.astro";
+export { default as FooterSkeleton } from "./FooterSkeleton.astro";
 export { default as GlassCard } from "./GlassCard.astro";
 export { default as GlassCardVue } from "./GlassCard.vue";
 export { default as Hero } from "./Hero.astro";
