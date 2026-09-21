@@ -38,9 +38,9 @@
 
     // ─── Types ─────────────────────────────────────────────────────────────
     // CRITICAL in TS6: @types/* no longer auto-discovered
-    // Add bun-types only if you use Bun APIs (Bun.serve, Bun.file, etc.)
+    // Add bun only if you use Bun APIs (Bun.serve, Bun.file, etc.)
     // Add node if you use Node APIs (process.env, path, fs, etc.)
-    "types": ["node"],
+    "types": ["bun", "node"],
 
     // ─── Astro TS Plugin ───────────────────────────────────────────────────
     // Enables IntelliSense for .astro files in editors

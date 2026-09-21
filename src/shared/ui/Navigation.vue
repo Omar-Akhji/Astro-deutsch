@@ -112,28 +112,32 @@ watch(
   <!-- Top Navigation Header -->
   <header class="relative mbe-2 mobile:mbe-6">
     <div
-      class="relative mx-auto flex max-w-7xl items-center justify-center px-3 py-3 mobile:px-8 mobile:py-6 laptop:justify-between"
+      :class="[
+        'relative mx-auto flex max-w-7xl items-center px-3 py-3 mobile:px-8 mobile:py-6',
+        showBackButton ? 'justify-between' : 'justify-center laptop:justify-between',
+      ]"
     >
       <!-- Brand Logo & Optional Back Button -->
-      <div class="flex items-center justify-center laptop:justify-start laptop:gap-3.5">
+      <div class="flex items-center justify-start gap-3.5">
         <!-- Back Button when deep in subpages -->
         <button
           v-if="showBackButton"
           type="button"
-          class="group absolute top-1/2 left-3 inline-flex -translate-y-1/2 items-center gap-1.5 rounded-full border border-white/10 bg-card/80 p-2 text-sm font-semibold text-text shadow-sm backdrop-blur-(--glass-blur) transition-all duration-200 hover:-translate-x-0.5 hover:border-yellow/30 hover:bg-white/10 active:scale-95 min-[420px]:px-3.5 min-[420px]:py-2 mobile:left-8 tablet:px-5 tablet:py-2.5 laptop:static laptop:translate-y-0"
+          class="group inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-card/80 px-3.5 py-2 text-sm font-semibold text-text shadow-sm backdrop-blur-(--glass-blur) transition-all duration-200 hover:-translate-x-0.5 hover:border-yellow/30 hover:bg-white/10 active:scale-95 tablet:px-5 tablet:py-2.5"
           aria-label="Zurück"
           @click="goBack"
         >
           <ArrowLeft
             class="size-4.5 text-yellow transition-transform duration-200 group-hover:-translate-x-0.5"
           />
-          <span class="hidden text-xs font-semibold text-white/90 min-[420px]:inline tablet:text-sm"
+          <span class="text-xs font-semibold text-white/90 tablet:text-sm"
             >Zurück</span
           >
         </button>
 
         <!-- Brand Mark: Centered on mobile & tablet, left-aligned on laptop & desktop -->
         <a
+          v-if="!showBackButton"
           href="/"
           class="flex items-center gap-2.5 rounded-2xl border-2 border-white/10 bg-card/80 p-1.5 pe-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-(--glass-blur) transition-colors duration-200 hover:border-yellow/50 mobile:gap-3.5 mobile:rounded-3xl mobile:p-2 mobile:pe-5"
           aria-label="Elite Regewelt Startseite"
