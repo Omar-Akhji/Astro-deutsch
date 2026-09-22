@@ -113,13 +113,13 @@ watch(activeTab, () => {
 <template>
   <div
     ref="cardRootRef"
-    class="group relative overflow-hidden rounded-2xl border-2 border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-[background-color,box-shadow] hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5"
+    class="group relative overflow-hidden rounded-2xl border-2 border-white/10 bg-white/5 p-5 backdrop-blur-sm transition-[background-color,box-shadow] hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5 tablet:p-6"
   >
-    <div class="mbe-4 flex items-start justify-between">
+    <div class="mbe-3.5 flex items-start justify-between">
       <div>
         <span
           :class="[
-            'mbe-2 inline-block rounded-full px-2.5 pbs-0.5 pbe-0.5 text-xs font-semibold tracking-wider uppercase',
+            'mbe-1.5 inline-block rounded-full px-2.5 pbs-0.5 pbe-0.5 text-xs font-semibold tracking-wider uppercase',
             categoryClass,
           ]"
         >
@@ -135,7 +135,7 @@ watch(activeTab, () => {
 
     <div
       ref="tabsRef"
-      class="relative mb-4 flex gap-1 rounded-full bg-black/20 p-1"
+      class="relative mb-3.5 flex gap-1 rounded-full bg-black/20 p-1"
     >
       <template v-if="!props.thema.isTextOnly">
         <!-- Sliding Indicator -->
@@ -183,12 +183,12 @@ watch(activeTab, () => {
     >
       <ul
         v-if="activeTab === 'pro' && props.thema.pro"
-        class="m-0 list-none space-y-3 p-0"
+        class="m-0 list-none space-y-2.5 p-0"
       >
         <li
           v-for="point in props.thema.pro"
           :key="point"
-          class="flex gap-3 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
+          class="flex gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
         >
           <span class="mt-1 size-1.5 shrink-0 rounded-full bg-emerald-500" />
           {{ point }}
@@ -196,12 +196,12 @@ watch(activeTab, () => {
       </ul>
       <ul
         v-if="activeTab === 'con' && props.thema.con"
-        class="m-0 list-none space-y-3 p-0"
+        class="m-0 list-none space-y-2.5 p-0"
       >
         <li
           v-for="point in props.thema.con"
           :key="point"
-          class="flex gap-3 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
+          class="flex gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
         >
           <span class="mt-1 size-1.5 shrink-0 rounded-full bg-red-500" />
           {{ point }}
@@ -216,7 +216,7 @@ watch(activeTab, () => {
     </div>
 
     <div
-      class="mbs-6 flex justify-end border-bs border-white/5 pbs-4 opacity-0 transition-opacity group-hover:opacity-100"
+      class="mbs-4 flex justify-end border-bs border-white/5 pbs-3 opacity-0 transition-opacity group-hover:opacity-100 tablet:mbs-5 tablet:pbs-3.5"
     >
       <span class="font-mono text-[10px] text-zinc-500 uppercase">
         Zertifikat B1 Topic #{{ props.thema.id }}

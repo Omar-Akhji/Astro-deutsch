@@ -37,7 +37,7 @@ const iconText = icon ?? getFirstLetter(title);
   <article class="h-full">
     <div
       aria-label={`${title} ${subtitle ?? ""}`}
-      class="group card-link relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl p-4 text-left no-underline"
+      class="group card-link relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl p-4 text-left no-underline tablet:p-5"
     >
       <figure class="m-0 aspect-video w-full overflow-hidden rounded-2xl">
         <div
@@ -58,9 +58,9 @@ const iconText = icon ?? getFirstLetter(title);
           </span>
         </div>
       </figure>
-      <div class="flex flex-1 flex-col px-2 pt-5 pb-2">
+      <div class="flex flex-1 flex-col px-1 pt-4 pb-1">
         {(category || badge || subtitle) && (
-          <div class="m-0 mbe-3 flex items-center gap-2 text-mist-500">
+          <div class="m-0 mbe-2.5 flex items-center gap-2 text-mist-500">
             {category && (
               <span class="rounded-full border border-yellow/30 bg-yellow/20 px-3 py-1 font-bold text-yellow">
                 {category}
@@ -81,7 +81,7 @@ const iconText = icon ?? getFirstLetter(title);
               "text-xl tablet:text-2xl": variant === "large",
               "text-lg tablet:text-xl": variant !== "large",
             },
-            "m-0 mbe-2 font-bold text-white transition-colors duration-300 text-shadow-sm group-hover:text-yellow",
+            "m-0 mbe-2 font-bold leading-snug text-white transition-colors duration-300 text-shadow-sm group-hover:text-yellow",
           ]}
         >
           {title}
@@ -93,7 +93,7 @@ const iconText = icon ?? getFirstLetter(title);
         )}
 
         {stats && stats.length > 0 && (
-          <dl class="mbs-auto flex gap-8 border-bs border-(--glass-border) pbs-4">
+          <dl class="mbs-auto flex gap-4 border-bs border-(--glass-border) pbs-4 tablet:gap-6">
             {stats.map((stat) => (
               <div class="flex flex-col">
                 <dd class="stat-value m-0 text-xl font-bold text-orange tablet:text-2xl">

@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative flex w-full animate-fade-in items-center justify-center py-2 tablet:py-8">
+  <div class="relative flex w-full animate-fade-in items-center justify-center">
     <!-- Decorative ambient glows using theme colors -->
     <div
       class="pointer-events-none absolute top-1/4 left-1/4 -z-10 size-72 animate-glow-slow rounded-full bg-yellow/10 blur-[120px]"
@@ -192,7 +192,7 @@ onMounted(() => {
 
       <!-- PANEL 3: Active form -->
       <div
-        class="relative flex flex-1 flex-col justify-start px-5 pt-5 pb-8 mobile:px-6 tablet:px-8 tablet:pt-6 tablet:pb-10 laptop:px-10"
+        class="relative flex flex-1 flex-col justify-start px-5 py-6 mobile:px-6 mobile:py-7 tablet:p-8 laptop:p-10"
       >
         <!-- Mobile header (visible below tablet) -->
         <div class="mb-6 flex flex-col items-center text-center tablet:hidden">

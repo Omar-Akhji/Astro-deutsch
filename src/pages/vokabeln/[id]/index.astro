@@ -28,7 +28,7 @@ const totalTopics =
   title={item ? `${item.german} - Vokabeln` : "Vokabel Lektion"}
 >
   {item ?
-    <div class="relative min-h-dvh py-8">
+    <div class="relative min-h-dvh py-6 tablet:py-10">
       <main>
         <Hero
           category={item.category}
@@ -42,18 +42,18 @@ const totalTopics =
         />
 
         {item.sections && item.sections.length > 0 ?
-          <div class="grid gap-12">
+          <div class="grid gap-10 tablet:gap-12">
             {item.sections.map((section, index) => (
               <section
                 aria-labelledby={`section-${section.id}`}
                 data-animate="fade-up"
               >
                 <div
-                  class="mb-8 flex flex-col items-start gap-4 rounded-2xl p-6 md:flex-row md:items-center md:justify-between"
+                  class="mb-6 flex flex-col items-start gap-4 rounded-2xl p-5 md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6"
                   style={{ background: getGradient(index, VOCAB_GRADIENTS) }}
                 >
                   <h2
-                    class="m-0 text-2xl font-semibold tracking-wide text-white uppercase"
+                    class="m-0 text-xl font-semibold tracking-wide text-white uppercase tablet:text-2xl"
                     id={`section-${section.id}`}
                   >
                     {section.title}
@@ -64,7 +64,7 @@ const totalTopics =
                 </div>
 
                 {section.topics.length > 0 ?
-                  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <div class="grid gap-4 sm:grid-cols-2 tablet:gap-5 lg:grid-cols-3">
                     {section.topics.map((topic) => (
                       <a
                         class="group block no-underline"

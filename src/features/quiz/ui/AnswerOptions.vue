@@ -95,8 +95,10 @@ onUnmounted(() => {
         :key="option"
         type="button"
         :class="[
-          props.isTableRow ? 'min-w-16 py-1.5 text-[10px]' : 'min-w-20 py-2 text-xs',
-          'group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-full border font-bold tracking-tight uppercase transition-all duration-200 active:scale-95',
+          props.isTableRow ?
+            'min-w-16 px-2 py-1.5 text-[10px]'
+          : 'min-w-20 px-2.5 py-2 text-xs',
+          'group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-lg border font-bold tracking-tight uppercase transition-all duration-200 active:scale-95',
           props.selectedAnswer === option ?
             'border-yellow bg-linear-to-br from-yellow to-orange text-black shadow-lg ring-2 shadow-yellow/25 ring-yellow/30'
           : 'border-white/10 bg-white/5 text-mist-400 hover:border-white/30 hover:bg-white/10 hover:text-white',
@@ -104,7 +106,7 @@ onUnmounted(() => {
         @click="emit('answer', option)"
       >
         <span
-          class="flex size-4 items-center justify-center rounded-full text-[9px] font-black"
+          class="flex size-4 items-center justify-center rounded-md text-[9px] font-black"
           :class="
             props.selectedAnswer === option ?
               'bg-black/20 text-black'

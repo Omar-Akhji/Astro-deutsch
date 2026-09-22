@@ -108,7 +108,7 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <main :class="['space-y-16 py-8', props.isEmbedded ? '' : 'min-h-screen']">
+  <main :class="['space-y-12 tablet:space-y-16 py-6 tablet:py-10', props.isEmbedded ? '' : 'min-h-screen']">
     <header
       v-if="!props.isEmbedded"
       class="mx-auto max-w-2xl space-y-4 text-center"
@@ -197,7 +197,7 @@ const scrollToTop = () => {
 
     <div
       :class="[
-        'space-y-24 transition-opacity duration-300',
+        'space-y-16 tablet:space-y-20 transition-opacity duration-300',
         isPending ? 'opacity-40' : 'opacity-100',
       ]"
     >
@@ -207,7 +207,7 @@ const scrollToTop = () => {
         :key="group.catId"
         class="scroll-mbs-32"
       >
-        <div class="mb-10 flex items-center gap-4">
+        <div class="mb-6 flex items-center gap-3.5 tablet:mb-8 tablet:gap-4">
           <div
             :class="[
               'flex size-12 shrink-0 items-center justify-center rounded-full border-3 text-yellow shadow-inner tablet:size-14',

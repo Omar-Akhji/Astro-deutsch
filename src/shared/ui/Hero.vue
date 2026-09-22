@@ -85,7 +85,7 @@ const isGlassBorder = computed(() => {
       >
         <h1
           :class="[
-            '-my-2 mbe-2 py-2 text-2xl font-bold text-shadow-sm mobile:text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl',
+            'm-0 mbe-4 text-2xl font-bold tracking-tight text-shadow-sm mobile:text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl',
             props.gradient ?
               'text-white drop-shadow-[0_2px_10px_black/20]'
             : 'bg-linear-to-br from-white to-slate-200 bg-clip-text text-transparent',
@@ -101,7 +101,7 @@ const isGlassBorder = computed(() => {
       >
         <p
           :class="[
-            'm-0 text-base tablet:text-lg laptop:text-xl',
+            'm-0 mx-auto max-w-2xl text-base leading-relaxed tablet:text-lg laptop:text-xl',
             props.gradient ? 'text-white/90' : 'text-mist-500',
           ]"
         >
@@ -125,7 +125,7 @@ const isGlassBorder = computed(() => {
         :delay="700"
       >
         <dl
-          class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+          class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8"
         >
           <div
             v-for="stat in props.stats"
@@ -133,7 +133,7 @@ const isGlassBorder = computed(() => {
             class="flex items-center gap-2"
           >
             <dt class="sr-only">{{ stat.label }}</dt>
-            <dd class="m-0 flex items-center gap-2 text-sm text-mist-500 tablet:text-lg">
+            <dd class="m-0 flex items-center gap-2 text-sm text-mist-500 tablet:text-base">
               <span
                 v-if="stat.icon"
                 class="flex size-5 items-center justify-center text-yellow tablet:size-6"

@@ -84,7 +84,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
 
     <h1
       class:list={[
-        "-my-2 mbe-2 py-2 text-2xl font-bold text-shadow-sm mobile:text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl",
+        "m-0 mbe-4 text-2xl font-bold tracking-tight text-shadow-sm mobile:text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl",
         {
           "text-white drop-shadow-[0_2px_10px_black/20]": gradient,
           "bg-linear-to-br from-white to-slate-200 bg-clip-text text-transparent": !gradient,
@@ -97,7 +97,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
 
     <p
       class:list={[
-        "m-0 text-base tablet:text-lg laptop:text-xl",
+        "m-0 mx-auto max-w-2xl text-base leading-relaxed tablet:text-lg laptop:text-xl",
         { "text-white/90": gradient, "text-mist-500": !gradient },
       ]}
       data-animate="fade-up"
@@ -116,13 +116,13 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
 
     {stats && stats.length > 0 && (
       <dl
-        class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8"
+        class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8"
         data-animate="zoom-in"
       >
         {stats.map(({ label, value, icon: Icon }) => (
           <div class="flex items-center gap-2">
             <dt class="sr-only">{label}</dt>
-            <dd class="m-0 flex items-center gap-2 text-sm text-mist-500 tablet:text-lg">
+            <dd class="m-0 flex items-center gap-2 text-sm text-mist-500 tablet:text-base">
               {Icon && (
                 <span class="flex size-5 items-center justify-center text-yellow tablet:size-6">
                   <Icon class="size-full" />

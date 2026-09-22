@@ -22,7 +22,7 @@ const iconText = computed(() => props.icon ?? getFirstLetter(props.title));
 <template>
   <article class="h-full">
     <div
-      class="group card-link relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl p-4 text-left no-underline"
+      class="group card-link relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl p-4 text-left no-underline tablet:p-5"
       :aria-label="`${props.title} ${props.subtitle ?? ''}`"
     >
       <figure class="m-0 aspect-video w-full overflow-hidden rounded-2xl">
@@ -41,10 +41,10 @@ const iconText = computed(() => props.icon ?? getFirstLetter(props.title));
           </span>
         </div>
       </figure>
-      <div class="flex flex-1 flex-col px-2 pt-5 pb-2">
+      <div class="flex flex-1 flex-col px-1 pt-4 pb-1">
         <div
           v-if="props.category || props.badge"
-          class="m-0 mbe-3 flex items-center gap-2 text-mist-500"
+          class="m-0 mbe-2.5 flex items-center gap-2 text-mist-500"
         >
           <span
             v-if="props.category"
@@ -68,7 +68,7 @@ const iconText = computed(() => props.icon ?? getFirstLetter(props.title));
         <h3
           :class="[
             props.variant === 'large' ? 'text-xl tablet:text-2xl' : 'text-lg tablet:text-xl',
-            'm-0 mbe-2 font-bold text-white transition-colors duration-300 text-shadow-sm group-hover:text-yellow',
+            'm-0 mbe-2 font-bold leading-snug text-white transition-colors duration-300 text-shadow-sm group-hover:text-yellow',
           ]"
         >
           {{ props.title }}
@@ -82,7 +82,7 @@ const iconText = computed(() => props.icon ?? getFirstLetter(props.title));
 
         <dl
           v-if="props.stats && props.stats.length > 0"
-          class="mbs-auto flex gap-8 border-bs border-(--glass-border) pbs-4"
+          class="mbs-auto flex gap-4 border-bs border-(--glass-border) pbs-4 tablet:gap-6"
         >
           <div
             v-for="stat in props.stats"

@@ -48,7 +48,7 @@ const currentTopic = topicResponse.data;
       <p class="mb-8 text-zinc-400">Das gewünschte Grammatikthema existiert nicht.</p>
       <BackButton />
     </div>
-  : <div class="relative min-h-dvh py-8">
+  : <div class="relative min-h-dvh py-6 tablet:py-10">
       <main>
         <Hero
           category={currentTopic.category}
@@ -61,7 +61,7 @@ const currentTopic = topicResponse.data;
         />
 
         {currentTopic.hasTable && currentTopic.tableData ?
-          <section class="mb-16">
+          <section class="mb-12 tablet:mb-16">
             <GrammarTable
               client:load
               data={currentTopic.tableData}
@@ -70,7 +70,7 @@ const currentTopic = topicResponse.data;
         : null}
 
         {currentTopic.content || currentTopic.usage ?
-          <section class="mb-16">
+          <section class="mb-12 tablet:mb-16">
             <GrammarContentBlocks
               blocks={currentTopic.content ?? []}
               client:load
@@ -80,30 +80,30 @@ const currentTopic = topicResponse.data;
         : null}
 
         {currentTopic.subtopics ?
-          <section class="mb-16 text-white">
-            <h2 class="mb-12 flex items-center gap-3 text-xl font-semibold text-text tablet:gap-4 tablet:text-2xl">
+          <section class="mb-12 text-white tablet:mb-16">
+            <h2 class="mb-6 flex items-center gap-3 text-xl font-semibold text-text tablet:mb-8 tablet:gap-4 tablet:text-2xl">
               <span class="flex size-10 shrink-0 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
                 <BookOpen class="size-5 tablet:size-6" />
               </span>
               Unterthemen
             </h2>
-            <div class="grid gap-10">
+            <div class="grid gap-8 tablet:gap-10">
               {currentTopic.subtopics.map((subtopic, index) => (
                 <article>
                   <GlassCard rounded="2xl">
                     <header
-                      class="flex flex-row items-center gap-4 p-5"
+                      class="flex flex-row items-center gap-4 p-4 tablet:p-5"
                       style={{ background: getGradient(index + 1, currentSection.gradients) }}
                     >
                       <span class="rounded-md bg-white/20 px-2.5 py-1 text-xs font-bold text-white">
                         {subtopic.number}
                       </span>
-                      <h3 class="m-0 text-lg text-white tablet:text-xl">{subtopic.title}</h3>
+                      <h3 class="m-0 text-lg font-semibold text-white tablet:text-xl">{subtopic.title}</h3>
                     </header>
-                    <div class="p-6">
-                      <p class="m-0 mb-8 leading-relaxed text-zinc-400">{subtopic.description}</p>
+                    <div class="p-5 tablet:p-6">
+                      <p class="m-0 mb-5 leading-relaxed text-zinc-400 tablet:mb-6">{subtopic.description}</p>
                       {subtopic.hasTable && subtopic.tableData ?
-                        <div class="mb-12">
+                        <div class="mb-6 tablet:mb-8">
                           <GrammarTable
                             client:load
                             data={subtopic.tableData}

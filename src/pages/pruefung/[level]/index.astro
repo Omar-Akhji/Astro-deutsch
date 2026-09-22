@@ -31,7 +31,7 @@ const { data: currentExam } = await getExamLevel(level);
   title={currentExam ? `${currentExam.title} - Prüfung` : "Prüfungsstufe"}
 >
   {currentExam ?
-    <div class="relative min-h-dvh py-8">
+    <div class="relative min-h-dvh py-6 tablet:py-10">
       <main>
         <Hero
           category={currentExam.level}
@@ -44,7 +44,7 @@ const { data: currentExam } = await getExamLevel(level);
           variant="glass"
         />
 
-        <div class="mb-12 flex justify-center">
+        <div class="mb-10 flex justify-center tablet:mb-12">
           <div data-animate="fade-up">
             <a
               class="group flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-xl font-bold text-white no-underline backdrop-blur-md hover:bg-white/10 hover:text-white"
@@ -59,9 +59,9 @@ const { data: currentExam } = await getExamLevel(level);
           </div>
         </div>
 
-        <section class="mb-12 text-white">
+        <section class="mb-12 text-white tablet:mb-16">
           <div data-animate="fade-right">
-            <h2 class="mb-8 flex items-center gap-3 text-xl font-semibold text-text tablet:gap-4 tablet:text-[1.75rem]">
+            <h2 class="mb-6 flex items-center gap-3 text-xl font-semibold text-text tablet:mb-8 tablet:gap-4 tablet:text-[1.75rem]">
               <span class="flex size-10 shrink-0 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
                 <ClipboardList
                   class="size-5 tablet:size-6"
@@ -76,7 +76,7 @@ const { data: currentExam } = await getExamLevel(level);
               <div data-animate="fade-up">
                 <article class="overflow-hidden rounded-2xl border border-white/5 bg-card">
                   <div
-                    class="flex flex-col items-start gap-4 p-5 md:flex-row md:items-center md:justify-between"
+                    class="flex flex-col items-start gap-4 p-4.5 tablet:p-5 md:flex-row md:items-center md:justify-between"
                     style={{ background: getGradient(index, PRUEFUNG_GRADIENTS) }}
                   >
                     <h3 class="m-0 text-xl font-semibold text-white">{section.title}</h3>
@@ -85,9 +85,9 @@ const { data: currentExam } = await getExamLevel(level);
                       <span>{section.points} Punkte</span>
                     </div>
                   </div>
-                  <div class="p-6">
-                    <p class="mb-4 text-zinc-400">{section.description}</p>
-                    <table class="mb-4 w-full border-collapse text-left text-sm">
+                  <div class="p-5 tablet:p-6">
+                    <p class="mb-4 text-zinc-400 leading-relaxed">{section.description}</p>
+                    <table class="mb-5 w-full border-collapse text-left text-sm">
                       <caption class="sr-only">Prüfungsstruktur Übersicht</caption>
                       <thead>
                         <tr>
@@ -136,18 +136,18 @@ const { data: currentExam } = await getExamLevel(level);
                         ))}
                       </tbody>
                     </table>
-                    <div class="mt-6 flex flex-col gap-6">
-                      <div class="rounded-xl border border-white/10 bg-white/5 p-4">
-                        <h4 class="m-0 mb-3 flex items-center gap-2 text-sm font-semibold text-white">
+                    <div class="mt-5 flex flex-col gap-5 tablet:gap-6">
+                      <div class="rounded-xl border border-white/10 bg-white/5 p-4 tablet:p-5">
+                        <h4 class="m-0 mb-2.5 flex items-center gap-2 text-sm font-semibold text-white">
                           <Lightbulb
                             class="text-yellow"
                             size={16}
                           />
                           Tipps
                         </h4>
-                        <ul class="m-0 list-disc space-y-1 pl-5 text-zinc-400">
+                        <ul class="m-0 list-disc space-y-1.5 pl-5 text-zinc-400">
                           {section.tips.map((tip) => (
-                            <li class="text-sm">{tip}</li>
+                            <li class="text-sm leading-relaxed">{tip}</li>
                           ))}
                         </ul>
                       </div>
@@ -173,9 +173,9 @@ const { data: currentExam } = await getExamLevel(level);
         </section>
       </main>
     </div>
-  : <div class="px-8 py-16 text-center text-white">
-      <h1 class="mb-4 text-3xl">Prüfung nicht gefunden</h1>
-      <p class="mb-8 text-zinc-400">Die gewünschte Prüfungsstufe existiert nicht.</p>
+  : <div class="px-4 py-12 text-center text-white tablet:py-16">
+      <h1 class="mb-3 text-2xl font-bold tablet:text-3xl">Prüfung nicht gefunden</h1>
+      <p class="mx-auto mb-6 max-w-md text-zinc-400 leading-relaxed">Die gewünschte Prüfungsstufe existiert nicht.</p>
       <BackButton />
     </div>
   }
