@@ -10,17 +10,15 @@ import Layout from "@/layouts/Layout.astro";
 import { getGradient } from "@/shared/lib";
 import BackButton from "@/shared/ui/BackButton.astro";
 import GlassCard from "@/shared/ui/GlassCard.astro";
-import Hero from "@/shared/ui/Hero.astro";
+import { Hero } from "@/widgets/hero";
 import { BookOpen, Languages } from "lucide-astro";
 
 export async function getStaticPaths() {
-  const paths = [];
-  for (const section of grammarSections) {
-    for (const topic of section.topics) {
-      paths.push({ params: { section: section.id, topicId: topic.id } });
-    }
-  }
-  return paths;
+  return grammarSections.flatMap((section) =>
+    section.topics.map((topic) => ({
+      params: { section: section.id, topicId: topic.id },
+    })),
+  );
 }
 
 const { section, topicId } = Astro.params;

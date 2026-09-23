@@ -35,6 +35,7 @@ coverage/
 .gemini/
 .kiro/
 .claude/
+skills-catalog/
 
 # Reports & Audits
 lighthouse-*.html

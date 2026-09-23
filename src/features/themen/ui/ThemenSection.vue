@@ -15,7 +15,7 @@ import {
 } from "lucide-vue-next";
 import { cn } from "@/shared/lib";
 import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
-import { getCategoryClasses, THEMEN_CATEGORY_COLORS } from "../lib/category-config.ts";
+import { getCategoryStyle, THEMEN_CATEGORY_COLORS } from "../lib/category-config.ts";
 import type { Thema } from "../model/types.ts";
 import ThemaCard from "./ThemaCard.vue";
 
@@ -82,11 +82,15 @@ const filteredGroups = computed<FilteredThemaGroup[]>(() => {
     const themes = props.initialThemen.filter((t) => t.cat === catId);
     if (themes.length === 0) continue;
 
-    const classTokens = getCategoryClasses(catId).split(" ");
-    const borderClass = classTokens.find((c) => c.startsWith("border-")) ?? "";
-    const textClass = classTokens.find((c) => c.startsWith("text-")) ?? "";
-
-    groups.push({ catId, label: config.label, icon: config.icon, borderClass, textClass, themes });
+    const style = getCategoryStyle(catId);
+    groups.push({
+      catId,
+      label: config.label,
+      icon: config.icon,
+      borderClass: style.border,
+      textClass: style.text,
+      themes,
+    });
   }
 
   return groups;
@@ -170,12 +174,7 @@ const scrollToTop = () => {
           :class="[
             'flex cursor-pointer items-center gap-2 rounded-full border-none px-4 pbs-2 pbe-2 text-sm font-medium transition-all',
             activeCategory === id ?
-              cn(
-                'text-black shadow-lg shadow-black/20',
-                getCategoryClasses(id)
-                  .split(' ')
-                  .find((c: string) => c.startsWith('bg-')),
-              )
+              cn('text-black shadow-lg shadow-black/20', getCategoryStyle(id).bg)
             : 'bg-white/5 text-zinc-400 hover:bg-white/10',
           ]"
           @click="handleCategoryChange(id)"
@@ -183,11 +182,7 @@ const scrollToTop = () => {
           <span
             :class="[
               'scale-75 transition-transform group-hover:scale-110',
-              activeCategory === id ? 'text-black' : (
-                getCategoryClasses(id)
-                  .split(' ')
-                  .find((c: string) => c.startsWith('text-'))
-              ),
+              activeCategory === id ? 'text-black' : getCategoryStyle(id).text,
             ]"
           >
             <component

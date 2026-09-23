@@ -13,7 +13,7 @@ export const getQuestions = async (
 
   const entry = await getEntry("quiz", entryId);
   if (entry) {
-    return { data: entry.data.questions as Question[], success: true };
+    return { data: entry.data.questions, success: true };
   }
 
   const allEntries = await getCollection("quiz");
@@ -25,7 +25,7 @@ export const getQuestions = async (
   );
 
   return {
-    data: (found?.data.questions as Question[]) ?? [],
+    data: found?.data.questions ?? [],
     success: Boolean(found),
     message: found ? undefined : `Test not found for ${level}/${skill}/${testId}`,
   };

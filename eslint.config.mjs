@@ -191,6 +191,7 @@ const eslintConfig = defineConfig(
       ".kiro/**",
       ".agent/**",
       ".agents/**",
+      "skills-catalog/**",
       "*.md",
       "*.json",
       "*.lock",

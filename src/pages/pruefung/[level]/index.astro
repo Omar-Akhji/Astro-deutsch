@@ -3,7 +3,7 @@ import { getExamLevel } from "@/features/pruefung";
 import Layout from "@/layouts/Layout.astro";
 import { getGradient, PRUEFUNG_GRADIENTS } from "@/shared/lib";
 import BackButton from "@/shared/ui/BackButton.astro";
-import Hero from "@/shared/ui/Hero.astro";
+import { Hero } from "@/widgets/hero";
 import {
   CheckCircle2,
   ClipboardList,
@@ -11,7 +11,7 @@ import {
   FileEdit,
   Lightbulb,
   MessageCircle,
-} from "lucide-vue-next";
+} from "lucide-astro";
 
 export async function getStaticPaths() {
   return [{ params: { level: "b1" } }, { params: { level: "b2" } }];

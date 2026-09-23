@@ -7,6 +7,44 @@ function isPreparationEvent(event: Event): event is TransitionBeforePreparationE
   return "to" in event && event.to instanceof URL;
 }
 
+/**
+ * Resolves an arbitrary navigation pathname to the matching skeleton key.
+ * Pure function separated from DOM manipulation for testability and clarity.
+ */
+export function resolveSkeletonRoute(pathname: string): string {
+  const target = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
+  const lower = target.toLowerCase();
+
+  if (lower.startsWith("/quiz")) return "/quiz";
+  if (lower.startsWith("/themen")) return "/themen";
+  if (lower.startsWith("/login")) return "/login";
+  if (lower.startsWith("/register")) return "/register";
+  if (lower.startsWith("/404")) return "/404";
+
+  if (lower.startsWith("/pruefung")) {
+    const parts = lower.split("/").filter(Boolean);
+    if (parts.length === 1) return "/pruefung";
+    if (parts.length >= 3 && parts[2] === "modelltests") return "/pruefung/modelltests";
+    if (parts.length >= 3) return "/pruefung/study";
+    if (parts.length === 2) return "/pruefung/level";
+  }
+
+  if (lower.startsWith("/vokabeln")) {
+    const parts = lower.split("/").filter(Boolean);
+    if (parts.length === 1) return "/vokabeln";
+    if (parts.length >= 3 && parts[2] === "stammbaum") return "/vokabeln/family-tree";
+    if (parts.length >= 3) return "/vokabeln/detail";
+    if (parts.length === 2) return "/vokabeln/level";
+  }
+
+  if (lower.startsWith("/grammatik")) {
+    const parts = lower.split("/").filter(Boolean);
+    return parts.length === 1 ? "/grammatik" : "/grammatik/detail";
+  }
+
+  return target;
+}
+
 document.addEventListener("astro:before-preparation", (e: Event) => {
   if (!isPreparationEvent(e)) return;
 
@@ -29,47 +67,8 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
 
   // 2. Specialized pattern matching for dynamic routes
   if (!targetSkeleton) {
-    const lowerPath = targetPath.toLowerCase();
-    if (lowerPath.startsWith("/quiz")) {
-      targetSkeleton = container.querySelector('[data-skeleton="/quiz"]');
-    } else if (lowerPath.startsWith("/pruefung")) {
-      const parts = lowerPath.split("/").filter(Boolean);
-      if (parts.length === 1) {
-        targetSkeleton = container.querySelector('[data-skeleton="/pruefung"]');
-      } else if (parts.length >= 3 && parts[2] === "modelltests") {
-        targetSkeleton = container.querySelector('[data-skeleton="/pruefung/modelltests"]');
-      } else if (parts.length >= 3) {
-        targetSkeleton = container.querySelector('[data-skeleton="/pruefung/study"]');
-      } else if (parts.length === 2) {
-        targetSkeleton = container.querySelector('[data-skeleton="/pruefung/level"]');
-      }
-    } else if (lowerPath.startsWith("/vokabeln")) {
-      const parts = lowerPath.split("/").filter(Boolean);
-      if (parts.length === 1) {
-        targetSkeleton = container.querySelector('[data-skeleton="/vokabeln"]');
-      } else if (parts.length >= 3 && parts[2] === "stammbaum") {
-        targetSkeleton = container.querySelector('[data-skeleton="/vokabeln/family-tree"]');
-      } else if (parts.length >= 3) {
-        targetSkeleton = container.querySelector('[data-skeleton="/vokabeln/detail"]');
-      } else if (parts.length === 2) {
-        targetSkeleton = container.querySelector('[data-skeleton="/vokabeln/level"]');
-      }
-    } else if (lowerPath.startsWith("/grammatik")) {
-      const parts = lowerPath.split("/").filter(Boolean);
-      if (parts.length === 1) {
-        targetSkeleton = container.querySelector('[data-skeleton="/grammatik"]');
-      } else {
-        targetSkeleton = container.querySelector('[data-skeleton="/grammatik/detail"]');
-      }
-    } else if (lowerPath.startsWith("/themen")) {
-      targetSkeleton = container.querySelector('[data-skeleton="/themen"]');
-    } else if (lowerPath.startsWith("/login")) {
-      targetSkeleton = container.querySelector('[data-skeleton="/login"]');
-    } else if (lowerPath.startsWith("/register")) {
-      targetSkeleton = container.querySelector('[data-skeleton="/register"]');
-    } else if (lowerPath.startsWith("/404")) {
-      targetSkeleton = container.querySelector('[data-skeleton="/404"]');
-    }
+    const resolvedKey = resolveSkeletonRoute(targetPath);
+    targetSkeleton = container.querySelector(`[data-skeleton="${CSS.escape(resolvedKey)}"]`);
   }
 
   // 3. Fallback to default skeleton if no specific skeleton found

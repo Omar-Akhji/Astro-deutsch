@@ -1,5 +1,5 @@
 ---
-import { type Question, QuizView } from "@/features/quiz";
+import { QuizView } from "@/features/quiz";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -29,7 +29,7 @@ if (!level || !skill || !testId) {
 >
   <QuizView
     client:load
-    initialQuestions={(questions as unknown as Question[]) ?? []}
+    initialQuestions={questions ?? []}
     level={level}
     skill={skill}
     testId={testId}

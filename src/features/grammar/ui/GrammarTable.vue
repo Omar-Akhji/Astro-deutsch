@@ -1,15 +1,10 @@
 <script setup lang="ts">
 import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
 import GlassCard from "@/shared/ui/GlassCard.vue";
+import type { GrammarTableData } from "../model/types.ts";
 import ContentItem from "./ContentItem.vue";
 
-interface GrammarTableProperties {
-  caption?: string;
-  headers: string[];
-  rows: (string | { text: string; highlight?: boolean })[][];
-}
-
-const props = defineProps<{ data: GrammarTableProperties }>();
+const props = defineProps<{ data: GrammarTableData }>();
 
 const getRowKey = (row: (string | { text: string; highlight?: boolean })[]) => {
   return row.map((c) => (typeof c === "string" ? c : c.text)).join("|");

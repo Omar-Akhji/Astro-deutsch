@@ -10,6 +10,7 @@ dist/
 .kiro/
 .agent/
 .agents/
+skills-catalog/
 
 # Lockfiles and TS build cache
 bun.lock

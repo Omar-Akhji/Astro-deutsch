@@ -54,6 +54,32 @@ export interface GenderInfo {
   textClass: string;
 }
 
+const GENDER_STYLES: Record<
+  "der" | "die" | "das" | "pl",
+  { badgeClass: string; borderClass: string; textClass: string }
+> = {
+  der: {
+    badgeClass: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    borderClass: "border-blue-500/30",
+    textClass: "text-blue-300",
+  },
+  die: {
+    badgeClass: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    borderClass: "border-rose-500/30",
+    textClass: "text-rose-300",
+  },
+  das: {
+    badgeClass: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+    borderClass: "border-emerald-500/30",
+    textClass: "text-emerald-300",
+  },
+  pl: {
+    badgeClass: "bg-amber-500/15 text-amber-400 border-amber-500/30",
+    borderClass: "border-amber-500/30",
+    textClass: "text-amber-300",
+  },
+};
+
 /** Extracts and tags German noun genders (der/die/das/Plural) with pedagogical color semantics. */
 export function parseNounGender(text: string): GenderInfo {
   const trimmed = text.trim();
@@ -64,9 +90,7 @@ export function parseNounGender(text: string): GenderInfo {
       gender: "der",
       article: "der",
       baseWord: trimmed.slice(4),
-      badgeClass: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-      borderClass: "border-blue-500/30",
-      textClass: "text-blue-300",
+      ...GENDER_STYLES.der,
     };
   }
 
@@ -74,13 +98,8 @@ export function parseNounGender(text: string): GenderInfo {
     return {
       gender: "pl",
       article: "die (Pl.)",
-      baseWord: trimmed
-        .slice(4)
-        .replace(/\(pl\.?\)/i, "")
-        .trim(),
-      badgeClass: "bg-amber-500/15 text-amber-400 border-amber-500/30",
-      borderClass: "border-amber-500/30",
-      textClass: "text-amber-300",
+      baseWord: trimmed.slice(4).replace(/\(pl\.?\)/i, "").trim(),
+      ...GENDER_STYLES.pl,
     };
   }
 
@@ -89,9 +108,7 @@ export function parseNounGender(text: string): GenderInfo {
       gender: "die",
       article: "die",
       baseWord: trimmed.slice(4),
-      badgeClass: "bg-rose-500/15 text-rose-400 border-rose-500/30",
-      borderClass: "border-rose-500/30",
-      textClass: "text-rose-300",
+      ...GENDER_STYLES.die,
     };
   }
 
@@ -100,9 +117,7 @@ export function parseNounGender(text: string): GenderInfo {
       gender: "das",
       article: "das",
       baseWord: trimmed.slice(4),
-      badgeClass: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-      borderClass: "border-emerald-500/30",
-      textClass: "text-emerald-300",
+      ...GENDER_STYLES.das,
     };
   }
 

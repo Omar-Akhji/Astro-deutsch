@@ -142,6 +142,12 @@ const parsedTeils = computed<ParsedTeil[]>(() => {
 const goBackUrl = computed(() => {
   return `/pruefung/${props.level}/modelltests`;
 });
+
+const handleExit = () => {
+  if (globalThis.window !== undefined) {
+    globalThis.location.assign(goBackUrl.value);
+  }
+};
 </script>
 
 <template>
@@ -176,7 +182,7 @@ const goBackUrl = computed(() => {
             :score="score"
             :total="props.initialQuestions.length"
             @restart="startQuiz"
-            @exit="globalThis.location.href = goBackUrl"
+            @exit="handleExit"
           />
 
           <div

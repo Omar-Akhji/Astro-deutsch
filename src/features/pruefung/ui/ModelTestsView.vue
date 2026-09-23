@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { BookOpen, Headphones, MessageCircle, PenLine, BarChart, Puzzle } from "lucide-vue-next";
 import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
 import Card from "@/shared/ui/Card.vue";
-import Hero from "@/shared/ui/Hero.vue";
+import { HeroVue as Hero } from "@/widgets/hero";
 
 interface Props {
   level: string;
@@ -25,10 +26,10 @@ const SKILL_GRADIENTS: Record<string, string> = {
   sprechen: "linear-gradient(135deg, var(--color-pink-500), var(--color-yellow))",
 };
 
-const stats = [
+const stats = computed(() => [
   { label: "Niveau", value: props.level.toUpperCase(), icon: BarChart },
   { label: "Module", value: "4", icon: Puzzle },
-];
+]);
 </script>
 
 <template>

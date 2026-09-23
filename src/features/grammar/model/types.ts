@@ -3,7 +3,7 @@ export interface GrammarSectionContent {
   items: (string | { text: string; highlight?: boolean })[];
 }
 
-interface GrammarTableData {
+export interface GrammarTableData {
   caption?: string;
   headers: string[];
   rows: (string | { text: string; highlight?: boolean })[][];

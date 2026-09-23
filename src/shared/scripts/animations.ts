@@ -1,9 +1,4 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-if (typeof document !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
+import { gsap, ScrollTrigger } from "@/shared/lib";
 
 let pageMatchMedia: gsap.MatchMedia | null = null;
 

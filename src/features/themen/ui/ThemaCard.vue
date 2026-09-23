@@ -19,9 +19,14 @@ const tabsRef = ref<HTMLDivElement | null>(null);
 const indicatorRef = ref<HTMLDivElement | null>(null);
 const contentRef = ref<HTMLDivElement | null>(null);
 
+const TAB_COLORS = {
+  pro: "#10b981",
+  con: "#ef4444",
+} as const;
+
 let ctx: gsap.Context | null = null;
 
-const setInitialIndicator = () => {
+const updateIndicator = (immediate = false) => {
   if (props.thema.isTextOnly) return;
 
   nextTick(() => {
@@ -29,13 +34,24 @@ const setInitialIndicator = () => {
     const indicator = indicatorRef.value;
     if (!tabs || !indicator) return;
 
-    const activeButton = tabs.querySelector(`button[data-active="true"]`);
-    if (activeButton instanceof HTMLElement) {
-      gsap.set(indicator, {
-        x: activeButton.offsetLeft,
-        width: activeButton.offsetWidth,
-        backgroundColor: activeTab.value === "pro" ? "#10b981" : "#ef4444",
-        autoAlpha: 1,
+    const activeButton = tabs.querySelector('button[data-active="true"]');
+    if (!(activeButton instanceof HTMLElement)) return;
+
+    const targetState = {
+      x: activeButton.offsetLeft,
+      width: activeButton.offsetWidth,
+      backgroundColor: activeTab.value === "pro" ? TAB_COLORS.pro : TAB_COLORS.con,
+      autoAlpha: 1,
+    };
+
+    if (immediate) {
+      gsap.set(indicator, targetState);
+    } else {
+      gsap.to(indicator, {
+        ...targetState,
+        duration: 0.35,
+        ease: "power2.out",
+        overwrite: "auto",
       });
     }
   });
@@ -44,24 +60,9 @@ const setInitialIndicator = () => {
 const runGsapTabAnimation = () => {
   if (props.thema.isTextOnly) return;
 
+  updateIndicator(false);
+
   nextTick(() => {
-    const tabs = tabsRef.value;
-    const indicator = indicatorRef.value;
-    if (!tabs || !indicator) return;
-
-    const activeButton = tabs.querySelector(`button[data-active="true"]`);
-    if (activeButton instanceof HTMLElement) {
-      gsap.to(indicator, {
-        x: activeButton.offsetLeft,
-        width: activeButton.offsetWidth,
-        backgroundColor: activeTab.value === "pro" ? "#10b981" : "#ef4444",
-        duration: 0.35,
-        ease: "power2.out",
-        autoAlpha: 1,
-        overwrite: "auto",
-      });
-    }
-
     const content = contentRef.value;
     if (!content) return;
 
@@ -93,10 +94,10 @@ const runGsapTabAnimation = () => {
 onMounted(() => {
   if (cardRootRef.value) {
     ctx = gsap.context(() => {
-      setInitialIndicator();
+      updateIndicator(true);
     }, cardRootRef.value);
   } else {
-    setInitialIndicator();
+    updateIndicator(true);
   }
 });
 

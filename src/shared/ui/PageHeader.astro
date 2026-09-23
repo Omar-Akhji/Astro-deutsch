@@ -1,5 +1,7 @@
 ---
-type RenderableComponent = ((...parameters: any[]) => any) | (new (...parameters: any[]) => any);
+type RenderableComponent =
+  | ((properties: Record<string, any>) => any)
+  | (new (properties: Record<string, any>) => any);
 
 interface Props {
   icon: RenderableComponent;
