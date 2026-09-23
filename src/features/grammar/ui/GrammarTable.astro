@@ -1,0 +1,58 @@
+---
+import GlassCard from "@/shared/ui/GlassCard.astro";
+import type { GrammarTableData } from "../model/types.ts";
+import ContentItem from "./ContentItem.astro";
+
+interface Props {
+  data: GrammarTableData;
+}
+
+const { data } = Astro.props;
+---
+
+<div data-animate="fade-up">
+  <GlassCard>
+    {
+      data.caption && (
+        <div class="border-be border-white/10 bg-white/5 px-6 py-4">
+          <h3 class="text-base font-medium text-yellow text-shadow-sm tablet:text-lg">
+            {data.caption}
+          </h3>
+        </div>
+      )
+    }
+    <div class="overflow-x-auto">
+      <table class="w-full text-left text-sm tablet:text-base">
+        <thead class="bg-white/5 text-[10px] text-white/60 uppercase tablet:text-xs">
+          <tr>
+            {
+              data.headers.map((header) => (
+                <th class="px-3 py-2.5 font-semibold tracking-wider text-orange/80 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4">
+                  {header}
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/5">
+          {
+            data.rows.map((row) => (
+              <tr class="transition-colors hover:bg-white/5">
+                {row.map((cell, index) => (
+                  <td
+                    class:list={[
+                      "px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4",
+                      index === 0 ? "font-medium text-orange" : "text-white/90",
+                    ]}
+                  >
+                    <ContentItem content={cell} />
+                  </td>
+                ))}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </GlassCard>
+</div>

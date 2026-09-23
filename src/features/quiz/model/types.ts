@@ -1,9 +1,4 @@
-export type QuestionType =
-  | "multiple-choice"
-  | "matching"
-  | "fill-in"
-  | "drag-drop"
-  | "fill-gap";
+export type QuestionType = "multiple-choice" | "matching" | "fill-in" | "drag-drop" | "fill-gap";
 
 export interface Question {
   id: number;

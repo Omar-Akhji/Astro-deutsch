@@ -17,9 +17,6 @@ const { data: vocabList } = await getVocabList();
       subtitle="Thematisch sortierte Vokabellisten für dein A1/B1 Training"
       title="Deutscher Wortschatz"
     />
-    <VocabularySection
-      client:load
-      vocabList={vocabList ?? []}
-    />
+    <VocabularySection vocabList={vocabList ?? []} />
   </main>
 </Layout>

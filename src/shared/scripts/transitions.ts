@@ -8,8 +8,8 @@ function isPreparationEvent(event: Event): event is TransitionBeforePreparationE
 }
 
 /**
- * Resolves an arbitrary navigation pathname to the matching skeleton key.
- * Pure function separated from DOM manipulation for testability and clarity.
+ * Resolves an arbitrary navigation pathname to the matching skeleton key. Pure function separated
+ * from DOM manipulation for testability and clarity.
  */
 export function resolveSkeletonRoute(pathname: string): string {
   const target = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
@@ -49,10 +49,12 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
   if (!isPreparationEvent(e)) return;
 
   // In development mode, delay page loader so skeleton transition is visible
-  const originalLoader = e.loader;
-  e.loader = async () => {
-    await Promise.all([originalLoader(), wait(SKELETON_DEV_DELAY_MS)]);
-  };
+  if (import.meta.env.DEV) {
+    const originalLoader = e.loader;
+    e.loader = async () => {
+      await Promise.all([originalLoader(), wait(SKELETON_DEV_DELAY_MS)]);
+    };
+  }
 
   const toPath = e.to.pathname;
   const container = document.querySelector("#skeleton-container");

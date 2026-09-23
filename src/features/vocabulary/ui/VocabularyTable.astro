@@ -1,0 +1,142 @@
+---
+import { Volume2 } from "lucide-astro";
+import { parseNounGender, type GenderInfo } from "@/shared/lib";
+import GlassCard from "@/shared/ui/GlassCard.astro";
+import type { Word } from "../model/types";
+
+interface Props {
+  words: Word[];
+  englishLabel?: string | undefined;
+}
+
+const { words, englishLabel = "English" } = Astro.props;
+
+interface EnrichedWord extends Word {
+  genderInfo: GenderInfo;
+}
+
+const enrichedWords: EnrichedWord[] = words.map((word) => ({
+  ...word,
+  genderInfo: parseNounGender(word.german),
+}));
+---
+
+{
+  words.length > 0 && (
+    <div data-animate="fade-up">
+      <GlassCard className="@container">
+        <div class="scrollbar-thin overflow-x-auto px-4 pb-4">
+          <table class="inline-full border-collapse text-left">
+            <caption class="sr-only">Vokabelliste</caption>
+            <thead>
+              <tr>
+                <th
+                  scope="col"
+                  class="border-be border-(--glass-border) px-3 pbs-3 text-xs font-semibold tracking-wider text-mist-400 uppercase @md:px-4 @md:pbs-4 @md:text-sm"
+                >
+                  Deutsch
+                </th>
+                <th
+                  scope="col"
+                  class="border-be border-(--glass-border) px-3 pbs-3 text-xs font-semibold tracking-wider text-mist-400 uppercase @md:px-4 @md:pbs-4 @md:text-sm"
+                >
+                  {englishLabel}
+                </th>
+                <th
+                  scope="col"
+                  class="border-be border-(--glass-border) px-3 pbs-3 text-right font-arabic text-xs font-semibold tracking-wider text-mist-400 uppercase @md:px-4 @md:pbs-4 @md:text-sm"
+                  dir="rtl"
+                >
+                  العربية
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {enrichedWords.map((word) => (
+                <tr class="group/row border-be border-white/5 transition-colors last:border-0 hover:bg-white/3">
+                  <!-- German Word Column with Pronunciation & Gender Affordance -->
+                  <td class="px-3 py-3 font-medium @md:px-4 @md:py-3.5">
+                    <div class="flex items-center gap-2.5">
+                      <!-- Audio Pronunciation Button -->
+                      <button
+                        type="button"
+                        class="group/btn flex size-7 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-mist-400 transition-all hover:scale-105 hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow focus:ring-2 focus:ring-yellow/40 focus:outline-none"
+                        aria-label={`Aussprache anhören für ${word.german}`}
+                        title="Aussprache anhören"
+                        data-speak={word.german}
+                      >
+                        <Volume2 class="size-3.5 transition-transform group-hover/btn:scale-110" />
+                      </button>
+
+                      <!-- German Word with Article Badge -->
+                      <div class="flex flex-wrap items-baseline gap-1.5 text-sm @md:text-base">
+                        {word.genderInfo.article && (
+                          <span
+                            class:list={[
+                              "inline-flex items-center rounded-md border px-1.5 py-0.5 text-[11px] font-bold tracking-tight uppercase",
+                              word.genderInfo.badgeClass,
+                            ]}
+                          >
+                            {word.genderInfo.article}
+                          </span>
+                        )}
+                        <span
+                          class:list={[
+                            "font-semibold",
+                            word.genderInfo.article
+                              ? word.genderInfo.textClass
+                              : "font-semibold text-orange",
+                          ]}
+                        >
+                          {word.genderInfo.baseWord}
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <!-- English / Example Column -->
+                  <td class="px-3 py-3 text-sm text-mist-200 @md:px-4 @md:py-3.5 @md:text-base">
+                    <span>{word.english ?? word.example}</span>
+                  </td>
+
+                  <!-- Arabic Column -->
+                  <td
+                    class="px-3 py-3 text-right font-arabic text-base font-medium text-mist-300 @md:px-4 @md:py-3.5 @md:text-lg"
+                    dir="rtl"
+                  >
+                    {word.arabic}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </GlassCard>
+    </div>
+  )
+}
+
+<script>
+  import { speakGerman } from "@/shared/lib";
+
+  function initVocabularyAudio() {
+    const buttons = document.querySelectorAll<HTMLButtonElement>("button[data-speak]");
+    buttons.forEach((btn) => {
+      if (btn.dataset["audioBound"]) return;
+      btn.dataset["audioBound"] = "true";
+
+      btn.addEventListener("click", () => {
+        const text = btn.getAttribute("data-speak");
+        if (!text) return;
+
+        btn.classList.add("animate-pulse", "border-yellow", "bg-yellow/20", "text-yellow");
+        speakGerman(text);
+        setTimeout(() => {
+          btn.classList.remove("animate-pulse", "border-yellow", "bg-yellow/20", "text-yellow");
+        }, 1200);
+      });
+    });
+  }
+
+  document.addEventListener("astro:page-load", initVocabularyAudio);
+</script>

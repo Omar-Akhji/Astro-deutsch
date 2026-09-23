@@ -17,9 +17,6 @@ const { data: examLevels } = await getExamLevels();
       subtitle="Strukturierte Vorbereitung auf die Goethe & ÖSD Zertifikate B1 und B2"
       title="Prüfungstraining"
     />
-    <PruefungSection
-      client:load
-      examLevels={examLevels ?? []}
-    />
+    <PruefungSection examLevels={examLevels ?? []} />
   </main>
 </Layout>

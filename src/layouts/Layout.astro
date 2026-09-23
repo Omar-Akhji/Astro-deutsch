@@ -1,4 +1,10 @@
 ---
+import { ClientRouter } from "astro:transitions";
+import TransitionSkeletons from "./components/TransitionSkeletons.astro";
+import { Footer, FooterSkeleton } from "@/widgets/footer";
+import { Navigation } from "@/widgets/navigation";
+import "@/styles/global.css";
+
 interface Props {
   title?: string;
   description?: string;
@@ -10,11 +16,6 @@ const {
   description = "Die umfassende Plattform für dein Deutsch-Training. Vokabeln, Grammatik-Lektionen und gezielte Goethe & ÖSD Prüfungsvorbereitung für das B1 & B2 Zertifikat.",
   robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
 } = Astro.props;
-import { ClientRouter } from "astro:transitions";
-import TransitionSkeletons from "./components/TransitionSkeletons.astro";
-import { Footer, FooterSkeleton } from "@/widgets/footer";
-import { Navigation } from "@/widgets/navigation";
-import "@/styles/global.css";
 
 const pathname = Astro.url.pathname;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://deutsch-lernen.com").href;
@@ -225,10 +226,7 @@ const schemaJson = {
     <script src="@/shared/scripts/init.ts"></script>
     <script src="@/shared/scripts/analytics.ts"></script>
     <div class="container mx-auto max-w-7xl">
-      <Navigation
-        client:load
-        pathname={pathname}
-      />
+      <Navigation pathname={pathname} />
       <div class="px-4 mobile:px-6 tablet:px-8 pb-24 tablet:pb-28 laptop:pb-0">
         <main>
           <!-- Skeleton container: hidden by default, shown during navigation -->

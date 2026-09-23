@@ -1,16 +1,9 @@
 /**
- * Strict category types and single-source-of-truth styling configuration for B1 Themen.
- * Literal Tailwind CSS classes are kept intact for Tailwind v4 compiler scanning.
+ * Strict category types and single-source-of-truth styling configuration for B1 Themen. Literal
+ * Tailwind CSS classes are kept intact for Tailwind v4 compiler scanning.
  */
 export type ThemaCategory =
-  | "essen"
-  | "tech"
-  | "gesellschaft"
-  | "bildung"
-  | "gesundheit"
-  | "freizeit"
-  | "umwelt"
-  | "arbeit";
+  "essen" | "tech" | "gesellschaft" | "bildung" | "gesundheit" | "freizeit" | "umwelt" | "arbeit";
 
 export interface CategoryThemeStyle {
   color: string;
@@ -93,8 +86,8 @@ export const THEMEN_CATEGORY_COLORS: Record<string, string> = Object.fromEntries
 );
 
 /**
- * Returns pre-split structured styling tokens for a category.
- * Prevents runtime string parsing and split operations in components.
+ * Returns pre-split structured styling tokens for a category. Prevents runtime string parsing and
+ * split operations in components.
  */
 export function getCategoryStyle(cat: string): CategoryThemeStyle {
   if (cat in THEMEN_CATEGORY_CONFIG) {
@@ -103,9 +96,7 @@ export function getCategoryStyle(cat: string): CategoryThemeStyle {
   return DEFAULT_CATEGORY_STYLE;
 }
 
-/**
- * Returns full tailwind classes for a category badge.
- */
+/** Returns full tailwind classes for a category badge. */
 export function getCategoryClasses(cat: string): string {
   return getCategoryStyle(cat).badge;
 }

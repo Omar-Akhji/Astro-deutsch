@@ -1,24 +1,11 @@
 ---
+import type { HeroProps, HeroStatItem } from "../model/types.ts";
+
 type RenderableComponent =
-  | ((properties: Record<string, any>) => any)
-  | (new (properties: Record<string, any>) => any);
+  ((properties: Record<string, any>) => any) | (new (properties: Record<string, any>) => any);
 
-interface StatItem {
-  label: string;
-  value: string;
-  icon?: RenderableComponent;
-}
-
-interface Props {
-  title: string;
-  description: string;
-  category?: string;
-  example?: string;
-  badge?: string;
-  gradient?: string;
-  variant?: "default" | "glass" | "compact";
-  stats?: StatItem[];
-}
+export type StatItem = HeroStatItem<RenderableComponent>;
+export type Props = HeroProps<RenderableComponent>;
 
 const {
   title,

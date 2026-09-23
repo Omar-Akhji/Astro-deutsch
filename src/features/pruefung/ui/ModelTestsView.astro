@@ -1,0 +1,103 @@
+---
+import Card from "@/shared/ui/Card.astro";
+import { Hero } from "@/widgets/hero";
+import {
+  BarChart,
+  BookOpen,
+  Headphones,
+  MessageCircle,
+  PenLine,
+  Puzzle,
+} from "lucide-astro";
+
+interface Props {
+  level: string;
+  initialModelTests: number[];
+}
+
+const { level, initialModelTests } = Astro.props;
+
+const skills = [
+  { id: "lesen", title: "Lesen", icon: BookOpen },
+  { id: "hoeren", title: "Hören", icon: Headphones },
+  { id: "schreiben", title: "Schreiben", icon: PenLine },
+  { id: "sprechen", title: "Sprechen", icon: MessageCircle },
+];
+
+const SKILL_GRADIENTS: Record<string, string> = {
+  lesen: "linear-gradient(135deg, var(--color-blue-500), var(--color-yellow))",
+  hoeren: "linear-gradient(135deg, var(--color-green-500), var(--color-yellow))",
+  schreiben: "linear-gradient(135deg, var(--color-orange-500), var(--color-yellow))",
+  sprechen: "linear-gradient(135deg, var(--color-pink-500), var(--color-yellow))",
+};
+
+const stats = [
+  { label: "Niveau", value: level.toUpperCase(), icon: BarChart },
+  { label: "Module", value: "4", icon: Puzzle },
+];
+---
+
+<div class="relative min-h-dvh py-8">
+  <main>
+    <Hero
+      category="Prüfungsvorbereitung"
+      description="Wähle einen Fertigkeitsbereich und einen Modelltest aus."
+      stats={stats}
+      title={`Modelltests ${level.toUpperCase()}`}
+      variant="glass"
+    />
+
+    <div
+      class="mt-8 mb-12 flex justify-center"
+      data-animate="fade-up"
+    >
+      <a
+        class="flex items-center gap-2 rounded-full border border-white/20 px-6 py-2 text-sm text-white no-underline transition-colors hover:bg-white/10"
+        href={`/pruefung/${level}`}
+      >
+        <span>&larr;</span> Zurück zur Übersicht
+      </a>
+    </div>
+
+    <div class="grid gap-12">
+      {
+        skills.map((skill) => {
+          const SkillIcon = skill.icon;
+          return (
+            <section>
+              <div data-animate="fade-right">
+                <h2 class="mb-6 flex items-center gap-3 text-xl font-semibold text-white tablet:gap-4 tablet:text-2xl">
+                  <span class="flex size-10 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
+                    <SkillIcon
+                      class="size-5 tablet:size-6"
+                      strokeWidth={2}
+                    />
+                  </span>
+                  <span class="text-white">{skill.title}</span>
+                </h2>
+              </div>
+
+              <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+                {initialModelTests.map((testId) => (
+                  <div
+                    class="h-full"
+                    data-animate="fade-up"
+                  >
+                    <Card
+                      description={`Vollständiger ${skill.title}-Teil für das ${level.toUpperCase()}-Zertifikat.`}
+                      gradient={SKILL_GRADIENTS[skill.id] ?? SKILL_GRADIENTS["lesen"] ?? ""}
+                      href={`/quiz/${level}/${skill.id}/${testId}`}
+                      subtitle="Übung"
+                      title={`Modelltest ${testId}`}
+                      variant="default"
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })
+      }
+    </div>
+  </main>
+</div>

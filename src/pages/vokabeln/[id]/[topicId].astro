@@ -61,27 +61,18 @@ const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
             <section class="mt-8">
               <GlassCard className="p-8">
                 {topic.familyTree ?
-                  <FamilyTree
-                    client:load
-                    members={topic.familyTree}
-                  />
+                  <FamilyTree members={topic.familyTree} />
                 : null}
               </GlassCard>
             </section>
 
             <section class="mt-8">
-              <VocabularyTable
-                client:load
-                words={topic.words ?? []}
-              />
+              <VocabularyTable words={topic.words ?? []} />
             </section>
           </>
         : topic.words && topic.words.length > 0 ?
           <section class="mt-8">
-            <VocabularyTable
-              client:load
-              words={topic.words}
-            />
+            <VocabularyTable words={topic.words} />
           </section>
         : <section class="mt-8">
             <GlassCard className="p-8">

@@ -15,9 +15,7 @@ import { BookOpen, Languages } from "lucide-astro";
 
 export async function getStaticPaths() {
   return grammarSections.flatMap((section) =>
-    section.topics.map((topic) => ({
-      params: { section: section.id, topicId: topic.id },
-    })),
+    section.topics.map((topic) => ({ params: { section: section.id, topicId: topic.id } })),
   );
 }
 
@@ -60,10 +58,7 @@ const currentTopic = topicResponse.data;
 
         {currentTopic.hasTable && currentTopic.tableData ?
           <section class="mb-12 tablet:mb-16">
-            <GrammarTable
-              client:load
-              data={currentTopic.tableData}
-            />
+            <GrammarTable data={currentTopic.tableData} />
           </section>
         : null}
 
@@ -71,7 +66,6 @@ const currentTopic = topicResponse.data;
           <section class="mb-12 tablet:mb-16">
             <GrammarContentBlocks
               blocks={currentTopic.content ?? []}
-              client:load
               usage={currentTopic.usage}
             />
           </section>
@@ -106,16 +100,12 @@ const currentTopic = topicResponse.data;
                       </p>
                       {subtopic.hasTable && subtopic.tableData ?
                         <div class="mb-6 tablet:mb-8">
-                          <GrammarTable
-                            client:load
-                            data={subtopic.tableData}
-                          />
+                          <GrammarTable data={subtopic.tableData} />
                         </div>
                       : null}
                       {subtopic.content || subtopic.usage || subtopic.tips ?
                         <GrammarContentBlocks
                           blocks={subtopic.content ?? []}
-                          client:load
                           tips={subtopic.tips}
                           usage={subtopic.usage}
                         />
@@ -132,7 +122,6 @@ const currentTopic = topicResponse.data;
           <section class="mb-16">
             <GrammarContentBlocks
               blocks={[]}
-              client:load
               tips={currentTopic.tips}
             />
           </section>

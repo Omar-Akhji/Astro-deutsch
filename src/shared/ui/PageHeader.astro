@@ -1,7 +1,6 @@
 ---
 type RenderableComponent =
-  | ((properties: Record<string, any>) => any)
-  | (new (properties: Record<string, any>) => any);
+  ((properties: Record<string, any>) => any) | (new (properties: Record<string, any>) => any);
 
 interface Props {
   icon: RenderableComponent;

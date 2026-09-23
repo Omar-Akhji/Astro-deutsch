@@ -1,9 +1,6 @@
-import { wait } from "@/shared/lib";
 import type { ApiResponse } from "@/shared/model";
 import type { GrammarSection, GrammarTopic } from "../model/types.ts";
 import { grammarSections } from "./data.ts";
-
-const SECTION_DELAY_MS = 1000;
 
 const grammarMap = new Map(grammarSections.map((s) => [s.id, s]));
 
@@ -11,7 +8,6 @@ export async function getGrammarSection(
   sectionId: string,
 ): Promise<ApiResponse<GrammarSection | undefined>> {
   const section = grammarMap.get(sectionId);
-  await wait(SECTION_DELAY_MS);
   return {
     data: section,
     success: Boolean(section),

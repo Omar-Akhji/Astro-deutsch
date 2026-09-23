@@ -4,14 +4,14 @@ import { getFirstLetter } from "@/shared/lib";
 interface Props {
   href: string;
   title: string;
-  subtitle?: string;
-  description?: string;
-  category?: string;
-  badge?: string;
+  subtitle?: string | undefined;
+  description?: string | undefined;
+  category?: string | undefined;
+  badge?: string | undefined;
   gradient: string;
-  icon?: string;
-  stats?: Array<{ label: string; value: string }>;
-  variant?: "default" | "large";
+  icon?: string | undefined;
+  stats?: Array<{ label: string; value: string }> | undefined;
+  variant?: "default" | "large" | undefined;
 }
 
 const {

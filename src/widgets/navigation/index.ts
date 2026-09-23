@@ -1,1 +1,1 @@
-export { default as Navigation } from "./ui/Navigation.vue";
+export { default as Navigation } from "./ui/Navigation.astro";

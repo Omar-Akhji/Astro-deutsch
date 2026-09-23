@@ -1,0 +1,157 @@
+---
+import { Heart } from "lucide-astro";
+import type { FamilyMember } from "../model/types.ts";
+
+interface Props {
+  members: FamilyMember[];
+}
+
+const { members } = Astro.props;
+
+const levelLabels = new Map<number, string>([
+  [1, "Die Großeltern"],
+  [2, "Die Eltern"],
+  [3, "Die Kinder"],
+  [4, "Die Enkel"],
+]);
+
+const groupIntoCouples = (levelMembers: FamilyMember[]) => {
+  const visited = new Set<string>();
+  const groups: (FamilyMember | [FamilyMember, FamilyMember])[] = [];
+  const membersMap = new Map(levelMembers.map((m) => [m.id, m]));
+
+  for (const member of levelMembers) {
+    if (visited.has(member.id)) continue;
+    visited.add(member.id);
+
+    if (member.partnerId) {
+      const partner = membersMap.get(member.partnerId);
+      if (partner && !visited.has(partner.id)) {
+        visited.add(partner.id);
+        groups.push(member.gender === "female" ? [member, partner] : [partner, member]);
+        continue;
+      }
+    }
+    groups.push(member);
+  }
+  return groups;
+};
+
+const levels = [1, 2, 3, 4].flatMap((lvl) => {
+  const group = members.filter((m) => m.level === lvl);
+  return group.length > 0 ? [group] : [];
+});
+
+const isCouple = (group: unknown): group is [FamilyMember, FamilyMember] => {
+  return Array.isArray(group);
+};
+
+const getCardClasses = (member: FamilyMember) => {
+  const isSelf = member.relation === "self";
+  const isMale = member.gender === "male";
+
+  return (
+    isSelf ? "border-amber-400 bg-amber-500/10 shadow-xl shadow-amber-400/25"
+    : isMale ? "border-sky-400/40 bg-sky-500/5 hover:border-sky-400/70"
+    : "border-pink-400/40 bg-pink-500/5 hover:border-pink-400/70"
+  );
+};
+---
+
+<div class="@container flex flex-col items-center gap-2 p-2 @md:p-4">
+  {
+    levels.map((levelMembers, levelIndex) => (
+      <div
+        class="flex w-full flex-col items-center"
+        data-animate="fade-up"
+      >
+        <!-- Level label -->
+        <div class="mb-3 text-xs font-semibold tracking-widest text-mist-500 uppercase">
+          {levelLabels.get(levelMembers[0]?.level ?? levelIndex + 1) ??
+            `Generation ${levelMembers[0]?.level ?? levelIndex + 1}`}
+        </div>
+
+        <!-- Members row -->
+        <div class="flex flex-wrap items-end justify-center gap-4 @md:gap-6">
+          {groupIntoCouples(levelMembers).map((group) =>
+            isCouple(group) ? (
+              <div class="flex items-center gap-1 @md:gap-2">
+                <div
+                  class:list={[
+                    "flex h-24 w-28 flex-col items-center justify-center rounded-xl border-2 text-center transition-all duration-300 hover:scale-105 @md:h-28 @md:w-36",
+                    getCardClasses(group[0]),
+                  ]}
+                >
+                  {group[0].relation === "self" && (
+                    <span class="mb-0.5 text-[0.6rem] font-bold tracking-wider text-amber-400 uppercase @md:text-xs">
+                      ICH
+                    </span>
+                  )}
+                  <div class="text-sm font-bold text-white @md:text-base">{group[0].german}</div>
+                  <div
+                    class="font-arabic text-sm font-medium text-white/80 @md:text-base"
+                    dir="rtl"
+                  >
+                    {group[0].arabic}
+                  </div>
+                </div>
+
+                <Heart
+                  class="fill-pink-400/30 text-pink-400/70"
+                  size={16}
+                />
+
+                <div
+                  class:list={[
+                    "flex h-24 w-28 flex-col items-center justify-center rounded-xl border-2 text-center transition-all duration-300 hover:scale-105 @md:h-28 @md:w-36",
+                    getCardClasses(group[1]),
+                  ]}
+                >
+                  {group[1].relation === "self" && (
+                    <span class="mb-0.5 text-[0.6rem] font-bold tracking-wider text-amber-400 uppercase @md:text-xs">
+                      ICH
+                    </span>
+                  )}
+                  <div class="text-sm font-bold text-white @md:text-base">{group[1].german}</div>
+                  <div
+                    class="font-arabic text-sm font-medium text-white/80 @md:text-base"
+                    dir="rtl"
+                  >
+                    {group[1].arabic}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div
+                class:list={[
+                  "flex h-24 w-28 flex-col items-center justify-center rounded-xl border-2 text-center transition-all duration-300 hover:scale-105 @md:h-28 @md:w-36",
+                  getCardClasses(group),
+                ]}
+              >
+                {group.relation === "self" && (
+                  <span class="mb-0.5 text-[0.6rem] font-bold tracking-wider text-amber-400 uppercase @md:text-xs">
+                    ICH
+                  </span>
+                )}
+                <div class="text-sm font-bold text-white @md:text-base">{group.german}</div>
+                <div
+                  class="font-arabic text-sm font-medium text-white/80 @md:text-base"
+                  dir="rtl"
+                >
+                  {group.arabic}
+                </div>
+              </div>
+            ),
+          )}
+        </div>
+
+        <!-- Connector line to next level -->
+        {levelIndex < levels.length - 1 && (
+          <div class="flex h-10 w-full items-center justify-center @md:h-14">
+            <div class="h-full w-px bg-linear-to-b from-white/20 to-white/5" />
+          </div>
+        )}
+      </div>
+    ))
+  }
+</div>

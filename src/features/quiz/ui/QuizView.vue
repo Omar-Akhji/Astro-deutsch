@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import { parseTeils } from "../lib/parseTeils.ts";
 import { useQuiz } from "../lib/useQuiz.ts";
 import type { Question } from "../model/types.ts";
 import QuizQuestion from "./QuizQuestion.vue";
@@ -38,106 +39,7 @@ const {
   finishQuiz,
 } = useQuiz(props.initialQuestions);
 
-const uniqueTeils = computed(() => {
-  return [...new Set(props.initialQuestions.map((q) => q.teil))];
-});
-
-const getTeilQuestions = (teilNumber: number | undefined) => {
-  return props.initialQuestions.filter((q) => q.teil === teilNumber);
-};
-
-const getExample = (allInTeil: Question[]) => {
-  return allInTeil.find((q) => q.id === 0);
-};
-
-const getGroup = (allInTeil: Question[]) => {
-  return allInTeil.filter((q) => q.id !== 0);
-};
-
-const isGroupedTeil = (teilNumber: number | undefined) => {
-  if (props.skill === "lesen") {
-    return teilNumber === 1 || teilNumber === 4;
-  }
-  return teilNumber === 3 || teilNumber === 4;
-};
-
-const getActiveContext = (
-  allInTeil: Question[],
-  firstQuestion: Question,
-  teilNumber: number | undefined,
-) => {
-  let activeContext = firstQuestion.context;
-  if (!activeContext) {
-    const firstIndex = props.initialQuestions.indexOf(firstQuestion);
-    for (let index = firstIndex - 1; index >= 0; index--) {
-      const previousQ = props.initialQuestions[index];
-      if (previousQ && previousQ.teil === teilNumber && previousQ.context) {
-        activeContext = previousQ.context;
-        break;
-      }
-    }
-  }
-  return activeContext;
-};
-
-const getQuestionIndex = (q: Question) => {
-  return props.initialQuestions.indexOf(q);
-};
-
-interface TeilQuestionItem {
-  question: Question;
-  questionIndex: number;
-}
-
-interface ParsedTeil {
-  teilNumber: number | undefined;
-  isGrouped: boolean;
-  headerQuestion: Question;
-  firstQuestionStep: number;
-  activeContext?: string;
-  exampleQuestion?: Question;
-  groupQuestions: TeilQuestionItem[];
-  showSeparator: boolean;
-}
-
-const parsedTeils = computed<ParsedTeil[]>(() => {
-  const result: ParsedTeil[] = [];
-
-  for (const [teilIndex, teilNumber] of uniqueTeils.value.entries()) {
-    const allInTeil = getTeilQuestions(teilNumber);
-    if (allInTeil.length === 0) continue;
-
-    const firstQuestion = allInTeil[0]!;
-    const isGrouped = isGroupedTeil(teilNumber);
-    const activeContext =
-      isGrouped ? getActiveContext(allInTeil, firstQuestion, teilNumber) : undefined;
-    const exampleQuestion = getExample(allInTeil);
-    const group = getGroup(allInTeil);
-
-    const groupQuestions: TeilQuestionItem[] = group.map((q) => ({
-      question: q,
-      questionIndex: getQuestionIndex(q),
-    }));
-
-    const lastGroupItem = group.at(-1);
-    const showSeparator =
-      lastGroupItem !== undefined
-      && getQuestionIndex(lastGroupItem) < props.initialQuestions.length - 1;
-
-    result.push({
-      teilNumber: teilNumber ?? teilIndex,
-      isGrouped,
-      headerQuestion: isGrouped ? firstQuestion : { ...firstQuestion, context: "", audioUrl: "" },
-      firstQuestionStep: getQuestionIndex(firstQuestion) + 1,
-      activeContext,
-      exampleQuestion,
-      groupQuestions,
-      showSeparator,
-    });
-  }
-
-  return result;
-});
+const parsedTeils = computed(() => parseTeils(props.initialQuestions, props.skill));
 
 const goBackUrl = computed(() => {
   return `/pruefung/${props.level}/modelltests`;

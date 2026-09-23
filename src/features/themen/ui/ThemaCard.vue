@@ -19,10 +19,7 @@ const tabsRef = ref<HTMLDivElement | null>(null);
 const indicatorRef = ref<HTMLDivElement | null>(null);
 const contentRef = ref<HTMLDivElement | null>(null);
 
-const TAB_COLORS = {
-  pro: "#10b981",
-  con: "#ef4444",
-} as const;
+const TAB_COLORS = { pro: "#10b981", con: "#ef4444" } as const;
 
 let ctx: gsap.Context | null = null;
 
@@ -47,12 +44,7 @@ const updateIndicator = (immediate = false) => {
     if (immediate) {
       gsap.set(indicator, targetState);
     } else {
-      gsap.to(indicator, {
-        ...targetState,
-        duration: 0.35,
-        ease: "power2.out",
-        overwrite: "auto",
-      });
+      gsap.to(indicator, { ...targetState, duration: 0.35, ease: "power2.out", overwrite: "auto" });
     }
   });
 };

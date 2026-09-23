@@ -1,0 +1,15 @@
+---
+import FormattedText from "./FormattedText.astro";
+
+interface Props {
+  content: string | { text: string; highlight?: boolean };
+}
+
+const { content } = Astro.props;
+const text = typeof content === "string" ? content : content.text;
+const isHighlighted = typeof content !== "string" && Boolean(content.highlight);
+---
+
+<span class:list={[{ "font-medium text-yellow": isHighlighted }]}>
+  <FormattedText text={text} />
+</span>
