@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Marco hat seine Reise nach Wien selbst organisiert.",
       "context": "Blog: Marcos Reisetagebuch\n\nLetztes Wochenende war ich zum ersten Mal in Wien. Meine Freundin Lisa hat alles organisiert – vom Hotel bis zu den Eintrittskarten für die Museen. Am ersten Tag haben wir das Schloss Schönbrunn besichtigt. Es war beeindruckend! Besonders der Garten hat mir gefallen.\n\nAm Abend waren wir in einem typischen Wiener Kaffeehaus. Ich habe eine Sachertorte probiert – die war aber ehrlich gesagt etwas zu süß für meinen Geschmack. Lisa fand sie fantastisch.\n\nAm nächsten Tag hatten wir leider schlechtes Wetter, deshalb sind wir ins Kunsthistorische Museum gegangen. Ich kann Wien wirklich empfehlen, vor allem im Frühling, wenn die Parks so schön grün sind.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1,
       "teilTitle": "Blog / Artikel",
@@ -21,10 +18,7 @@
       "id": 2,
       "type": "multiple-choice",
       "question": "Marco hat die Sachertorte sehr gut geschmeckt.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -32,10 +26,7 @@
       "id": 3,
       "type": "multiple-choice",
       "question": "Am zweiten Tag war das Wetter schlecht.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -44,10 +35,7 @@
       "type": "multiple-choice",
       "question": "Anna macht regelmäßig Sport.",
       "context": "Blog: Annas Fitness-Tagebuch\n\nSeit drei Monaten gehe ich jeden Morgen vor der Arbeit joggen. Am Anfang war es furchtbar – ich konnte kaum 10 Minuten laufen. Jetzt schaffe ich problemlos 30 Minuten. Mein Ziel ist es, im Herbst an einem 10-km-Lauf teilzunehmen. Mein Kollege Thomas hat mich überredet, mich anzumelden. Er läuft schon seit Jahren Marathon.\n\nDas Beste am Laufen ist, dass ich mich danach so energiegeladen fühle. Außerdem schlafe ich viel besser und bin weniger gestresst.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -55,10 +43,7 @@
       "id": 5,
       "type": "multiple-choice",
       "question": "Anna will an einem Marathon teilnehmen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -66,10 +51,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Anna schläft seit dem Joggen schlechter.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -154,19 +136,7 @@
       "type": "matching",
       "question": "13. Familie Berger sucht einen Urlaub am Meer, bei dem auch ihr Hund willkommen ist.",
       "context": "Lesen Sie die Anzeigen a–j. Welche Anzeige passt zu welcher Situation?\n\na) Ferienwohnung \"Alpenblick\": Erholung pur in den Bergen! Ideal für Wanderer und Naturliebhaber. Hunde sind bei uns herzlich willkommen. Keine Nebenkosten.\nb) Familienhotel \"Sonnenschein\" an der Ostsee: Direkt am Strand gelegen. Mit großer Poollandschaft und Kinderbetreuung. Haustiere sind leider nicht gestattet.\nc) Sprachreise nach Südspanien: Verbinden Sie Urlaub mit Lernen! Vormittags Spanischkurs, nachmittags Ausflüge ans Meer. Unterbringung bei Gastfamilien.\nd) Action & Adventure Camp! Wildwasser-Rafting, Klettern und Mountainbiken für Jugendliche (14-18 Jahre) in Österreich. Inklusive Zeltlager und Vollverpflegung.\ne) Ferienhaus \"Strandkrabbe\" an der Nordsee: Gemütliches Haus für bis zu 6 Personen, nur 100m vom Hundestrand entfernt. Eingezäunter Garten, ideal für Ihren Vierbeiner!\nf) Entspannungs-Wochenende im Schwarzwald: 2 Übernachtungen im 4-Sterne-Wellnesshotel mit Massage und Sauna-Nutzung. Perfekt für Paare.\ng) Städtereise Berlin: Erleben Sie die Hauptstadt! 3 Tage inkl. Übernachtung im zentralen Hostel, Ticket für den Nahverkehr und Museumspass. Speziell für Studenten!\nh) Fahrrad-Rundfahrt am Bodensee: Organisierte 7-Tage-Tour inkl. Gepäcktransport und Hotelübernachtungen. Lernen Sie die Region aktiv kennen!\ni) Sommercamp für 8-12 Jährige auf dem Bauernhof: Tiere füttern, reiten und Natur erleben. Ohne Eltern! Betreuung rund um die Uhr.\nj) Luxuskreuzfahrt im Mittelmeer: 14 Tage auf dem Traumschiff. 5-Sterne-Essen, Shows am Abend und Landausflüge in historische Städte.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "e",
       "teil": 3,
       "teilTitle": "Anzeigen / Matching",
@@ -176,19 +146,7 @@
       "id": 14,
       "type": "matching",
       "question": "14. Thomas und Sarah suchen ein entspanntes Wochenende ohne Kinder.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "f",
       "teil": 3
     },
@@ -196,19 +154,7 @@
       "id": 15,
       "type": "matching",
       "question": "15. Lukas (16) möchte in den Ferien Sport machen und andere Jugendliche treffen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "d",
       "teil": 3
     },
@@ -216,19 +162,7 @@
       "id": 16,
       "type": "matching",
       "question": "16. Herr und Frau Meyer wollen eine Reise machen, ohne ihr Gepäck selbst zu tragen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "h",
       "teil": 3
     },
@@ -236,19 +170,7 @@
       "id": 17,
       "type": "matching",
       "question": "17. Elena (20) studiert Architektur und möchte in den Ferien alte Gebäude besichtigen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "0",
       "teil": 3
     },
@@ -256,19 +178,7 @@
       "id": 18,
       "type": "matching",
       "question": "18. Familie Schmidt sucht ein sonniges Hotel am Strand, wo die Kinder betreut werden.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "b",
       "teil": 3
     },
@@ -276,19 +186,7 @@
       "id": 19,
       "type": "matching",
       "question": "19. Mia möchte im Urlaub eine neue Sprache lernen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "c",
       "teil": 3
     },
@@ -297,10 +195,7 @@
       "type": "multiple-choice",
       "question": "Felix ist dafür, dass in Schulen mehr Sport unterrichtet wird.",
       "context": "Diskussion: „Brauchen wir mehr Sportunterricht in der Schule?\"\n\nFelix: Definitiv ja! Kinder bewegen sich viel zu wenig. Mehr Sport in der Schule wäre die beste Lösung. Drei Stunden pro Woche reichen nicht aus.\n\nKatharina: Ich bin dagegen. Der Stundenplan ist schon voll genug. Wenn man mehr Sport einführt, muss man andere Fächer kürzen. Mathematik und Sprachen sind wichtiger.\n\nRobert: Sport ist genauso wichtig wie jedes andere Fach. Bewegung hilft beim Lernen und reduziert Stress. Ich bin absolut dafür.\n\nHelena: Die Kinder können doch nach der Schule Sport machen. Dafür braucht man keinen extra Unterricht. Es gibt genug Sportvereine.\n\nMichael: Viele Familien können sich keinen Sportverein leisten. In der Schule hat jedes Kind die gleichen Chancen. Deshalb bin ich für mehr Sportunterricht.\n\nLaura: Ich finde, die Qualität ist wichtiger als die Quantität. Statt mehr Stunden brauchen wir bessere Sportlehrer und modernere Sporthallen.\n\nStefan: Mehr Bewegung in der Schule? Auf jeden Fall! Die Statistiken zeigen, dass immer mehr Kinder übergewichtig sind.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4,
       "teilTitle": "Diskussion / Meinungen",
@@ -310,10 +205,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Katharina ist dafür, dass in Schulen mehr Sport unterrichtet wird.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -321,10 +213,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Robert ist dafür, dass in Schulen mehr Sport unterrichtet wird.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -332,10 +221,7 @@
       "id": 23,
       "type": "multiple-choice",
       "question": "Helena ist dafür, dass in Schulen mehr Sport unterrichtet wird.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -343,10 +229,7 @@
       "id": 24,
       "type": "multiple-choice",
       "question": "Michael ist dafür, dass in Schulen mehr Sport unterrichtet wird.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -354,10 +237,7 @@
       "id": 25,
       "type": "multiple-choice",
       "question": "Laura ist dafür, dass in Schulen mehr Sport unterrichtet wird.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -365,10 +245,7 @@
       "id": 26,
       "type": "multiple-choice",
       "question": "Stefan ist dafür, dass in Schulen mehr Sport unterrichtet wird.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },

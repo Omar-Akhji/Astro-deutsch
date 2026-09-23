@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Der Flug nach Madrid startet pünktlich von Flugsteig B24.",
       "context": "Nummer 1: Sie hören eine Durchsage am Flughafen. „Fluggäste nach Madrid, gebucht auf Lufthansa-Flug LH 1802: Bitte beachten Sie den kurzfristigen Gate-Wechsel. Ihr Flug wird nicht wie auf Ihrer Bordkarte angegeben an Flugsteig B24 abgefertigt, sondern an Flugsteig C12 im Terminal 2. Der Einsteigevorgang beginnt in circa zehn Minuten. Bitte begeben Sie sich unverzüglich zu Gate C12.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test5/teil1_1.mp3",
       "teil": 1,
@@ -35,10 +32,7 @@
       "type": "multiple-choice",
       "question": "Bei der Küchen-Aktion entfallen die Kosten für Lieferung und Montage.",
       "context": "Nummer 2: Sie hören eine Durchsage im Radio. „Küchen-Wochen im Möbelzentrum Ost! Planen Sie jetzt Ihre Traumküche mit unseren Experten. Nur bis kommenden Samstag schenken wir Ihnen die komplette Lieferung und fachgerechte Montage im Wert von bis zu 800 Euro ab einem Einkaufswert von 3.000 Euro. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin unter moebel-ost.de.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test5/teil1_2.mp3",
       "teil": 1
@@ -60,10 +54,7 @@
       "type": "multiple-choice",
       "question": "Herr Krüger kann sein Auto sofort abholen, ohne dass zusätzliche Reparaturen nötig sind.",
       "context": "Nummer 3: Sie hören eine Nachricht auf dem Anrufbeantworter. „Guten Tag Herr Krüger, hier ist die Kfz-Werkstatt Schulz. Wir haben die Jahresinspektion an Ihrem Golf durchgeführt. Motor und Öl sind in Ordnung, allerdings sind die vorderen Bremsbeläge stark abgenutzt. Aus Sicherheitsgründen sollten wir diese erneuern, das würde etwa 120 Euro kosten. Bitte rufen Sie uns bis 15 Uhr kurz zurück, damit wir die Teile noch heute bestellen können.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test5/teil1_3.mp3",
       "teil": 1
@@ -85,10 +76,7 @@
       "type": "multiple-choice",
       "question": "Auf der Autobahn A8 gibt es freie Fahrt in beide Richtungen.",
       "context": "Nummer 4: Sie hören den Verkehrsfunk im Radio. „Achtung Autofahrer auf der Autobahn A8 München Richtung Salzburg: Zwischen Holzkirchen und Weyarn hat sich nach einem Unfall mit zwei Lkw ein Stau von derzeit acht Kilometern Länge gebildet. Der Zeitverlust beträgt mindestens 45 Minuten. Autofahrern wird empfohlen, das Gebiet weiträumig über die Bundesstraße B318 zu umfahren.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test5/teil1_4.mp3",
       "teil": 1
@@ -97,11 +85,7 @@
       "id": 8,
       "type": "multiple-choice",
       "question": "Wie lang ist der Stau auf der Autobahn A8?",
-      "options": [
-        "a) 3 Kilometer.",
-        "b) 8 Kilometer.",
-        "c) 15 Kilometer."
-      ],
+      "options": ["a) 3 Kilometer.", "b) 8 Kilometer.", "c) 15 Kilometer."],
       "correctAnswer": "b) 8 Kilometer.",
       "teil": 1
     },
@@ -110,10 +94,7 @@
       "type": "multiple-choice",
       "question": "Man kann im Bürgerbüro auch ohne Termin vorbeikommen.",
       "context": "Nummer 5: Sie hören eine telefonische Bandansage. „Herzlich willkommen beim Bürgerservice der Stadtverwaltung. Bitte beachten Sie: Zur Beantragung von Personalausweisen, Pässen oder Wohnsitzanmeldungen ist eine vorherige Terminvereinbarung zwingend erforderlich. Termine können Sie bequem online unter www.buergerbuero-online.de buchen. Für reine Passabholungen ist dienstags und donnerstags von 14 bis 16 Uhr kein Termin nötig.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test5/teil1_5.mp3",
       "teil": 1
@@ -186,11 +167,7 @@
       "id": 15,
       "type": "multiple-choice",
       "question": "Welche Station der Führung wird als Erstes besucht?",
-      "options": [
-        "a) Der Kälberstall.",
-        "b) Die Käserei.",
-        "c) Der Hofladen."
-      ],
+      "options": ["a) Der Kälberstall.", "b) Die Käserei.", "c) Der Hofladen."],
       "correctAnswer": "a) Der Kälberstall.",
       "teil": 2
     },
@@ -199,10 +176,7 @@
       "type": "multiple-choice",
       "question": "Sarah und Paul unterhalten sich über die schwierige Wohnungssuche in der Universitätsstadt.",
       "context": "Teil 3: Sie warten an einer Haltestelle und hören ein Gespräch zwischen zwei Studierenden.\n\nPaul: „Hallo Sarah! Du siehst aber geschafft aus. Kommst du gerade aus der Universitätsbibliothek?“\nSarah: „Schön wär’s, Paul! Nein, ich hatte heute schon die dritte WG-Besichtigung in dieser Woche. Ich suche seit über zwei Monaten ein bezahlbares Zimmer und finde einfach nichts.“\nPaul: „Oh je, das kenne ich vom letzten Jahr. Die Mieten hier sind einfach der Wahnsinn. Wie war denn die Wohnung eben?“\nSarah: „Eine absolute Katastrophe! Das Zimmer hatte gerade mal zehn Quadratmeter, kein richtiges Fenster zum Hof und sollte 550 Euro kalt kosten. Und vor der Haustür standen bestimmt 30 andere Bewerber in der Schlange.“\nPaul: „Unfassbar! Hast du schon im Studentenwohnheim nachgefragt?“\nSarah: „Ja, aber die Warteliste hat über 800 Namen. Da habe ich vor dem nächsten Frühjahr keine Chance.“\nPaul: „Warte mal: Bei uns im Haus zieht zum Monatsende eine Mitbewohnerin aus, weil sie ihr Auslandsjahr in Schweden macht. Das Zimmer ist 16 Quadratmeter groß, hat einen Südbalkon und kostet 380 Euro warm!“\nSarah: „Meinst du das im Ernst? Paul, das wäre meine Rettung! Wann kann ich mir das Zimmer ansehen?“\nPaul: „Komm doch heute Abend gegen 19 Uhr einfach bei uns vorbei. Dann lernen dich meine anderen beiden Mitbewohner gleich kennen.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test5/teil3.mp3",
       "teil": 3,
@@ -213,10 +187,7 @@
       "id": 17,
       "type": "multiple-choice",
       "question": "Sarah sucht erst seit wenigen Tagen nach einem Zimmer.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -224,10 +195,7 @@
       "id": 18,
       "type": "multiple-choice",
       "question": "Das besichtigte Zimmer war groß und sehr günstig.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -235,10 +203,7 @@
       "id": 19,
       "type": "multiple-choice",
       "question": "Im Studentenwohnheim bekommt Sarah sofort ein Zimmer.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -246,10 +211,7 @@
       "id": 20,
       "type": "multiple-choice",
       "question": "In Pauls Wohngemeinschaft wird bald ein Zimmer frei.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -257,10 +219,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Das Zimmer in Pauls WG kostet über 600 Euro im Monat.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -268,10 +227,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Sarah soll Pauls Mitbewohner bereits heute Abend kennenlernen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -280,11 +236,7 @@
       "type": "matching",
       "question": "In den ersten beiden Schuljahren gibt es in vielen Bundesländern bereits keine Noten.",
       "context": "Teil 4: Der Moderator diskutiert mit Eva Lang und Prof. Martin Keller über Schulnoten in der Grundschule.\n\na) Moderator (Florian Schmidt)\nb) Eva Lang (Grundschullehrerin)\nc) Prof. Dr. Martin Keller (Bildungspsychologe)\n\nModerator: „Willkommen zu unserer Diskussionsrunde bei Radio Kultur. Brauchen Grundschulkinder Noten von 1 bis 6, oder erzeugen sie vor allem Prüfungsangst und Frust? In vielen Bundesländern erhalten Erst- und Zweitklässler ausführliche Berichte statt Ziffernnoten. Frau Lang, Sie unterrichten seit 15 Jahren an einer Grundschule in Frankfurt. Was halten Sie von Noten ab der dritten Klasse?“\nEva Lang: „Aus meiner täglichen Schulpraxis kann ich sagen: Noten motivieren die Kinder keineswegs besser. Im Gegenteil: Eine Fünf in Mathe sagt einem achtjährigen Kind nur, dass es versagt hat, aber nicht, was es konkret verbessern muss. Schriftliche Beurteilungen und persönliche Lerngespräche sind viel individueller und ermutigender.“\nModerator: „Herr Professor Keller, als Psychologe betrachten Sie Leistungsbeurteilungen aus wissenschaftlicher Sicht. Brauchen Kinder keine frühzeitige Rückmeldung über ihren Leistungsstand?“\nProf. Keller: „Kinder brauchen Feedback, aber nicht zwingend in Form starrer Ziffern. Die Forschung zeigt eindeutig: Früher Notendruck hemmt die angeborene Neugier und Lernfreude. Kinder lernen dann nicht mehr aus Interesse am Thema, sondern nur noch für eine gute Zensur.“\nEva Lang: „Hinzu kommt der enorme Druck durch die Eltern. Sobald Noten vergeben werden, vergleichen Eltern ihre Kinder auf dem Pausenhof und buchen teure Nachhilfe. Die Schule wird zum Wettkampfplatz.“\nModerator: „Aber wie soll am Ende der vierten Klasse ohne Noten die Entscheidung für die weiterführende Schule – Gymnasium oder Realschule – getroffen werden?“\nProf. Keller: „Dafür eignen sich umfassende Lernportfolios und Kompetenzberichte über die gesamte Grundschulzeit viel besser als der punktuelle Notendurchschnitt einer einzelnen Zeugniskonferenz.“",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "audioUrl": "/audio/b1/hoeren/test5/teil4.mp3",
       "teil": 4,
@@ -295,11 +247,7 @@
       "id": 24,
       "type": "matching",
       "question": "Meint, dass Ziffernnoten Grundschulkinder eher entmutigen als anspornen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -307,11 +255,7 @@
       "id": 25,
       "type": "matching",
       "question": "Erklärt, dass wissenschaftliche Studien negative Effekte von Notendruck auf die Lernfreude belegen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -319,11 +263,7 @@
       "id": 26,
       "type": "matching",
       "question": "Betont, dass Ziffern nicht erklären, woran ein Kind inhaltlich arbeiten muss.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -331,11 +271,7 @@
       "id": 27,
       "type": "matching",
       "question": "Kritisiert, dass Noten zu Konkurrenz und Nachhilfedruck unter Eltern führen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -343,11 +279,7 @@
       "id": 28,
       "type": "matching",
       "question": "Fragt nach der Auswahl der passenden weiterführenden Schule nach der vierten Klasse.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "teil": 4
     },
@@ -355,11 +287,7 @@
       "id": 29,
       "type": "matching",
       "question": "Schlägt Lernportfolios als bessere Entscheidungsgrundlage für die Schullaufbahn vor.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -367,11 +295,7 @@
       "id": 30,
       "type": "matching",
       "question": "Warnte davor, dass Kinder nur noch für Zensuren statt aus sachlichem Interesse lernen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     }

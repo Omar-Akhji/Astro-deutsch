@@ -8,9 +8,7 @@
       "type": "multiple-choice",
       "question": "Sprechen Modelltest 9",
       "context": "...",
-      "options": [
-        "Erledigt"
-      ],
+      "options": ["Erledigt"],
       "correctAnswer": "Erledigt",
       "teil": 1
     }

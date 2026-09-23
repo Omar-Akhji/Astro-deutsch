@@ -1,0 +1,41 @@
+---
+import Skeleton from "@/shared/ui/Skeleton.astro";
+
+interface Props {
+  variant?: "default" | "glass" | "compact";
+}
+
+const { variant = "default" } = Astro.props;
+---
+
+<div
+  class:list={[
+    "relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-2xl backdrop-blur-(--glass-blur)",
+    {
+      "mbe-6 p-4 mobile:p-6 tablet:p-8": variant === "compact",
+      "mbe-8 mobile:mbe-12 p-5 mobile:p-8 tablet:p-10 laptop:p-12": variant !== "compact",
+    },
+  ]}
+>
+  <div class="flex flex-col items-center text-center">
+    <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
+      <Skeleton class="h-9 w-28 rounded-full bg-white/10" />
+    </div>
+    <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 rounded-md bg-white/15" />
+    <Skeleton class="mx-auto h-6 w-full max-w-xl tablet:w-2/3 rounded-md bg-white/5" />
+    <div class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8">
+      <div class="flex items-center gap-2">
+        <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
+        <Skeleton class="h-5 w-24 rounded-md bg-white/10 tablet:h-6 tablet:w-28" />
+      </div>
+      <div class="flex items-center gap-2">
+        <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
+        <Skeleton class="h-5 w-20 rounded-md bg-white/10 tablet:h-6 tablet:w-24" />
+      </div>
+      <div class="flex items-center gap-2">
+        <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
+        <Skeleton class="h-5 w-28 rounded-md bg-white/10 tablet:h-6 tablet:w-32" />
+      </div>
+    </div>
+  </div>
+</div>

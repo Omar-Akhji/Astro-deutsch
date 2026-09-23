@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Die Autorenlesung am Freitagabend ist restlos ausverkauft.",
       "context": "Nummer 1: Sie hören eine Durchsage in einer Buchhandlung. „Verehrte Kundinnen und Kunden, wir möchten Sie herzlich auf unsere literarische Veranstaltung an diesem Freitag um 19:30 Uhr hinweisen: Der bekannte Kriminalautor Sebastian Berg liest aus seinem neuen Bestseller ‚Nacht über Berlin‘. Für die Veranstaltung sind an unserer Kasse noch etwa 20 Restkarten zum Preis von 12 Euro erhältlich. Im Anschluss an die Lesung steht der Autor für Autogramme und persönliche Gespräche zur Verfügung.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test9/teil1_1.mp3",
       "teil": 1,
@@ -35,10 +32,7 @@
       "type": "multiple-choice",
       "question": "Vom Bahnhof zum Festivalgelände fahren kostenlose Shuttlebusse.",
       "context": "Nummer 2: Sie hören eine Durchsage im Radio. „Feiern unter freiem Himmel beim Summer-Beat-Festival am Silbersee! Vom 18. bis 20. Juli erwarten Sie über 30 Live-Bands und DJs auf drei Bühnen. Umweltschonend anreisen lohnt sich: Ihr Festivalticket gilt gleichzeitig als Fahrkarte für alle Züge im Verkehrsverbund. Zudem verkehren ab Hauptbahnhof alle 15 Minuten kostenlose Shuttlebusse direkt zum Eingang. Sichern Sie sich jetzt Ihr Wochenendticket unter summer-beat.de!“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test9/teil1_2.mp3",
       "teil": 1
@@ -60,10 +54,7 @@
       "type": "multiple-choice",
       "question": "Frau Keller kann ihr repariertes Fahrrad heute bis 18:30 Uhr abholen.",
       "context": "Nummer 3: Sie hören eine Nachricht auf dem Anrufbeantworter. „Guten Tag Frau Keller, hier ist Wagner von der Rad-Werkstatt. Ihr Tourenrad ist fertig! Die Schaltung ist neu eingestellt und wir haben wie besprochen das defekte LED-Rücklicht ausgetauscht. Die Gesamtkosten belaufen sich auf 48 Euro. Sie können das Rad heute bis 18:30 Uhr oder morgen ab 9 Uhr bei uns im Laden abholen. Einen schönen Tag noch!“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test9/teil1_3.mp3",
       "teil": 1
@@ -72,11 +63,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Wie viel kostet die Reparatur des Fahrrads?",
-      "options": [
-        "a) 25 Euro.",
-        "b) 48 Euro.",
-        "c) 90 Euro."
-      ],
+      "options": ["a) 25 Euro.", "b) 48 Euro.", "c) 90 Euro."],
       "correctAnswer": "b) 48 Euro.",
       "teil": 1
     },
@@ -85,10 +72,7 @@
       "type": "multiple-choice",
       "question": "Am Rhein droht in den nächsten Tagen akute Trockenheit.",
       "context": "Nummer 4: Sie hören den Wetterbericht im Radio. „Und nun die Wetteraussichten für Nordrhein-Westfalen und Rheinland-Pfalz: Ein kräftiges Tiefdruckgebiet bringt in den kommenden 48 Stunden heftigen Dauerregen. Die Hochwasserzentrale warnt vor rasch ansteigenden Pegelständen an Rhein, Mosel und Nebenflüssen. Anwohner in ufernahen Gebieten sollten Kellerräume sichern und Fahrzeuge vorsorglich aus Überschwemmungszonen entfernen.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test9/teil1_4.mp3",
       "teil": 1
@@ -110,10 +94,7 @@
       "type": "multiple-choice",
       "question": "Während der Schnupperwoche kann man Musikinstrumente ohne Anmeldung ausprobieren.",
       "context": "Nummer 5: Sie hören die Telefonansage der Städtischen Musikschule. „Herzlich willkommen bei der Musikschule der Stadt. Vom 15. bis 20. September laden wir alle Kinder, Jugendlichen und Erwachsenen zur großen Schnupperwoche ein! Probieren Sie Geige, Klavier, Trompete, Gitarre oder Schlagzeug ganz unverbindlich und ohne Voranmeldung unter Anleitung unserer Musiklehrer aus. Die Beratungsräume im Kulturhaus sind täglich von 15 bis 18 Uhr für Sie geöffnet.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test9/teil1_5.mp3",
       "teil": 1
@@ -199,10 +180,7 @@
       "type": "multiple-choice",
       "question": "Elena und Ahmed bereiten sich gemeinsam auf ihre mündliche B1-Deutschprüfung vor.",
       "context": "Teil 3: Sie hören zwei Deutschlerner, die sich in einer Bibliothek über ihre Prüfungsvorbereitung unterhalten.\n\nAhmed: „Hallo Elena! Gut, dass wir uns treffen. In drei Wochen ist unsere mündliche B1-Prüfung beim Goethe-Institut, und ich bin ehrlich gesagt schon ganz schön nervös.“\nElena: „Keine Panik, Ahmed! Vor Teil 1 – dem gemeinsamen Planen einer Feier oder eines Ausflugs – habe ich überhaupt keine Angst, das haben wir im Sprachkurs oft genug geübt. Aber Teil 2, die Einzelpräsentation über drei Minuten, macht mir Sorgen.“\nAhmed: „Welches Thema hast du denn gewählt?“\nElena: „Ich möchte über ‚Brauchen Kinder Handys?‘ sprechen. Ich habe meine Folien schon strukturiert: Zuerst persönliche Erfahrungen, dann die Situation in meinem Heimatland Spanien, danach Vor- und Nachteile und zum Schluss meine eigene Meinung.“\nAhmed: „Das ist genau die geforderte Struktur! Und welche Redemittel benutzt du für den Übergang?“\nElena: „Ich sage zum Beispiel: ‚Nun komme ich zum nächsten Punkt‘ oder ‚Ein weiterer wichtiger Aspekt ist...‘. Wollen wir uns gegenseitig abhören? Ich halte meine Präsentation und du stoppst die Zeit mit dem Handy.“\nAhmed: „Abgemacht! Drei Minuten sind schneller vorbei, als man denkt. Und danach bist du dran mit meinem Vortrag über ‚Öffentliche Verkehrsmittel in der Großstadt‘.“\nElena: „Super. Lass uns in den Gruppenarbeitsraum im dritten Stock gehen, da stören wir niemanden beim Sprechen.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test9/teil3.mp3",
       "teil": 3,
@@ -213,10 +191,7 @@
       "id": 17,
       "type": "multiple-choice",
       "question": "Die mündliche Prüfung findet bereits am morgigen Tag statt.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -224,10 +199,7 @@
       "id": 18,
       "type": "multiple-choice",
       "question": "Elena hat große Angst vor Teil 1 der Prüfung (Planung).",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -235,10 +207,7 @@
       "id": 19,
       "type": "multiple-choice",
       "question": "Elena spricht in ihrer Präsentation auch über die Situation in Spanien.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -246,10 +215,7 @@
       "id": 20,
       "type": "multiple-choice",
       "question": "Elena verwendet passende Übergangs-Redemittel für ihren Vortrag.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -257,10 +223,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Ahmed möchte eine Präsentation über traditionelle Kochrezepte halten.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -268,10 +231,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Die beiden gehen in einen separaten Gruppenraum, um ungestört laut zu üben.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -280,11 +240,7 @@
       "type": "matching",
       "question": "Immer mehr Warenhäuser und Fachgeschäfte in deutschen Fußgängerzonen müssen schließen.",
       "context": "Teil 4: Der Moderator diskutiert mit Thomas Krause und Anna Winter über Online-Handel und Innenstädte.\n\na) Moderator (Jonas Berg)\nb) Thomas Krause (Handelsexperte und E-Commerce-Berater)\nc) Anna Winter (Beauftragte für Innenstadtentwicklung)\n\nModerator: „Guten Tag und willkommen zu unserer Debatte. Früher waren die Fußgängerzonen an Samstagen voller Menschen, die bummelten und einkauften. Heute stehen in vielen deutschen Städten traditionsreiche Modehäuser und Fachgeschäfte leer. Der Online-Handel wächst rasant und liefert per Klick direkt an die Haustür. Frau Winter, stirbt die klassische Innenstadt aus?“\nAnna Winter: „Wenn wir nicht sofort gegensteuern, lautet die Antwort leider: Ja. Der Verlust von inhabergeführten Geschäften schmerzt enorm. Eine lebendige Innenstadt ist nicht nur ein Ort zum Geldausgeben, sondern das soziale Herz einer Gemeinde. Wenn Läden schließen, verschwinden auch Cafés, Begegnungsorte und die Identität einer Stadt.“\nModerator: „Herr Krause, Sie beraten Firmen beim Online-Verkauf. Ist das Sterben der Geschäfte der unvermeidliche Preis des Fortschritts?“\nThomas Krause: „Man darf die Entwicklung nicht einseitig verteufeln. Verbraucher schätzen die riesige Auswahl im Internet, transparente Preisvergleiche und Öffnungszeiten rund um die Uhr. Geschäfte, die heute nur Standardware ohne persönliche Beratung oder Erlebnis anbieten, haben kein tragfähiges Konzept mehr. Wer überleben will, muss den Laden mit digitalen Angeboten verknüpfen – etwa online bestellen und im Laden abholen.“\nAnna Winter: „Aber kleine Buchhändler oder Boutiquen können doch finanziell niemals mit Milliardenkonzernen aus Übersee konkurrieren! Wir fordern eine Paketsteuer auf Online-Bestellungen und steuerliche Entlastungen für Händler vor Ort, um faire Wettbewerbsbedingungen zu schaffen.“\nThomas Krause: „Eine zusätzliche Steuer bestraft am Ende nur die Verbraucher. Innenstädte müssen sich neu erfinden: Mehr Kultur, mehr Grünflächen, mehr Wohnungen in den Zentren statt reiner Monokultur des Einkaufens.“",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "audioUrl": "/audio/b1/hoeren/test9/teil4.mp3",
       "teil": 4,
@@ -295,11 +251,7 @@
       "id": 24,
       "type": "matching",
       "question": "Betont die Bedeutung der Innenstadt als sozialen Begegnungsort für die Menschen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -307,11 +259,7 @@
       "id": 25,
       "type": "matching",
       "question": "Hebt die Vorteile des Online-Shoppings wie ständige Verfügbarkeit und Preisvergleiche hervor.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -319,11 +267,7 @@
       "id": 26,
       "type": "matching",
       "question": "Rät stationären Einzelhändlern zur Verknüpfung von Ladengeschäft und digitalem Angebot.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -331,11 +275,7 @@
       "id": 27,
       "type": "matching",
       "question": "Schlägt eine Paketsteuer und steuerliche Hilfen für lokale Ladenbesitzer vor.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -343,11 +283,7 @@
       "id": 28,
       "type": "matching",
       "question": "Lehnt neue Steuern ab, da diese letztlich die Kunden finanziell belasten würden.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -355,11 +291,7 @@
       "id": 29,
       "type": "matching",
       "question": "Sieht die Zukunft der Innenstädte in einer Mischung aus Kultur, Wohnen und Grünflächen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -367,11 +299,7 @@
       "id": 30,
       "type": "matching",
       "question": "Fragt, ob der Niedergang traditioneller Läden eine unausweichliche Konsequenz des Fortschritts ist.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "teil": 4
     }

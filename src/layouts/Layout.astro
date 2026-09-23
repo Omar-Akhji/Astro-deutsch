@@ -11,10 +11,9 @@ const {
   robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
 } = Astro.props;
 import { ClientRouter } from "astro:transitions";
-import Footer from "@/shared/ui/Footer.astro";
-import FooterSkeleton from "@/shared/ui/FooterSkeleton.astro";
-import Navigation from "@/shared/ui/Navigation.vue";
-import SkeletonLayouts from "@/shared/ui/SkeletonLayouts.astro";
+import TransitionSkeletons from "./components/TransitionSkeletons.astro";
+import { Footer, FooterSkeleton } from "@/widgets/footer";
+import { Navigation } from "@/widgets/navigation";
 import "@/styles/global.css";
 
 const pathname = Astro.url.pathname;
@@ -234,114 +233,7 @@ void schemaJson;
       <div class="px-4 mobile:px-6 tablet:px-8 pb-24 tablet:pb-28 laptop:pb-0">
         <main>
           <!-- Skeleton container: hidden by default, shown during navigation -->
-          <div
-            aria-hidden="true"
-            class="hidden"
-            id="skeleton-container"
-          >
-            <div
-              class="hidden"
-              data-skeleton="/"
-            >
-              <SkeletonLayouts layout="home" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/themen"
-            >
-              <SkeletonLayouts layout="themen" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/grammatik"
-            >
-              <SkeletonLayouts layout="grammar-overview" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/grammatik/detail"
-            >
-              <SkeletonLayouts layout="grammar-detail" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/vokabeln"
-            >
-              <SkeletonLayouts layout="vocabulary-overview" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/vokabeln/level"
-            >
-              <SkeletonLayouts layout="vocabulary-level" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/vokabeln/detail"
-            >
-              <SkeletonLayouts layout="vocabulary-detail" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/vokabeln/family-tree"
-            >
-              <SkeletonLayouts layout="family-tree" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/pruefung"
-            >
-              <SkeletonLayouts layout="pruefung-overview" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/pruefung/level"
-            >
-              <SkeletonLayouts layout="pruefung-level" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/pruefung/modelltests"
-            >
-              <SkeletonLayouts layout="pruefung-modelltests" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/pruefung/study"
-            >
-              <SkeletonLayouts layout="pruefung-module-study" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/quiz"
-            >
-              <SkeletonLayouts layout="quiz" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/login"
-            >
-              <SkeletonLayouts layout="auth" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/register"
-            >
-              <SkeletonLayouts layout="auth" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="/404"
-            >
-              <SkeletonLayouts layout="404" />
-            </div>
-            <div
-              class="hidden"
-              data-skeleton="default"
-            >
-              <SkeletonLayouts layout="default-pending" />
-            </div>
-          </div>
+          <TransitionSkeletons />
 
           <!-- Page Content -->
           <div id="page-content">

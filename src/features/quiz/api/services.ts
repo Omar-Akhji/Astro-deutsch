@@ -19,9 +19,9 @@ export const getQuestions = async (
   const allEntries = await getCollection("quiz");
   const found = allEntries.find(
     (e) =>
-      e.data.level.toLowerCase() === normLevel &&
-      e.data.skill.toLowerCase() === normSkill &&
-      e.data.testId === testId,
+      e.data.level.toLowerCase() === normLevel
+      && e.data.skill.toLowerCase() === normSkill
+      && e.data.testId === testId,
   );
 
   return {

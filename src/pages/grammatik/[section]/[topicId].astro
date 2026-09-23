@@ -98,10 +98,14 @@ const currentTopic = topicResponse.data;
                       <span class="rounded-md bg-white/20 px-2.5 py-1 text-xs font-bold text-white">
                         {subtopic.number}
                       </span>
-                      <h3 class="m-0 text-lg font-semibold text-white tablet:text-xl">{subtopic.title}</h3>
+                      <h3 class="m-0 text-lg font-semibold text-white tablet:text-xl">
+                        {subtopic.title}
+                      </h3>
                     </header>
                     <div class="p-5 tablet:p-6">
-                      <p class="m-0 mb-5 leading-relaxed text-zinc-400 tablet:mb-6">{subtopic.description}</p>
+                      <p class="m-0 mb-5 leading-relaxed text-zinc-400 tablet:mb-6">
+                        {subtopic.description}
+                      </p>
                       {subtopic.hasTable && subtopic.tableData ?
                         <div class="mb-6 tablet:mb-8">
                           <GrammarTable

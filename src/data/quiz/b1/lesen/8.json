@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Miriam hat ihren Plastikverbrauch schrittweise und nicht von einem Tag auf den anderen reduziert.",
       "context": "Blog: Miriams Zero-Waste-Experiment\n\nHallo ihr Lieben!\nVor genau einem Jahr habe ich beschlossen, meinen Müllberg drastisch zu verkleinern. Auslöser war ein Dokumentarfilm über Plastikmüll in den Weltmeeren, der mich zutiefst erschüttert hat. Ich habe mir vorgenommen, so weit wie möglich ohne Einwegplastik zu leben.\n\nVon heute auf morgen alles umzustellen, funktioniert allerdings nicht. Ich habe mit kleinen Schritten begonnen: Zuerst habe ich Plastikzahnbürsten durch Bambuszahnbürsten ersetzt und feste Seife statt Duschgel in Plastikflaschen gekauft. Als Nächstes habe ich mir Stoffbeutel und Glasdosen für den Wocheneinkauf besorgt.\n\nDie größte Herausforderung war der Lebensmitteleinkauf. Im normalen Supermarkt ist fast jedes Gemüse in Folie verschweißt. Inzwischen kaufe ich samstags auf dem Wochenmarkt oder in einem Unverpackt-Laden in unserer Stadt. Dort fülle ich Nudeln, Reis, Haferflocken und Nüsse direkt in meine mitgebrachten Gläser ab.\n\nDas Ganze erfordert natürlich mehr Zeit und gute Planung. Man kann nicht einfach spontan unterwegs einen schnellen Snack kaufen. Aber ich spare Geld, weil ich fast keine Fertigprodukte mehr konsumiere und viel bewusster koche. Mein Restmüll für das gesamte vergangene Jahr passt in ein einziges großes Einmachglas!",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1,
       "teilTitle": "Blog / Artikel",
@@ -21,10 +18,7 @@
       "id": 2,
       "type": "multiple-choice",
       "question": "Miriam benutzt weiterhin Duschgel in normalen Plastikflaschen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -32,10 +26,7 @@
       "id": 3,
       "type": "multiple-choice",
       "question": "Im Unverpackt-Laden bringt Miriam ihre eigenen Gläser für Lebensmittel mit.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -43,10 +34,7 @@
       "id": 4,
       "type": "multiple-choice",
       "question": "Miriam findet, dass das Zero-Waste-Leben ohne jegliche Vorbereitung gelingt.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -54,10 +42,7 @@
       "id": 5,
       "type": "multiple-choice",
       "question": "Miriam gibt heute deutlich mehr Geld für Essen aus als vor dem Experiment.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -65,10 +50,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Miriam hat im letzten Jahr extrem wenig Restmüll produziert.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -153,19 +135,7 @@
       "type": "matching",
       "question": "13. Jonas zieht in seine erste eigene Wohnung und sucht eine gut erhaltene gebrauchte Waschmaschine mit Lieferoption.",
       "context": "Lesen Sie die Situationen 13-19 und die Anzeigen a-j. Welche Anzeige passt zu welcher Situation?\nFür eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0.\n\na) Elektrogeräte aus 2. Hand mit Garantie: Waschmaschinen, Kühlschränke, Herde. Werkstattgeprüft, 12 Monate Garantie. Günstige Lieferung bis in die Wohnung und Altgeräte-Mitnahme. Elektro-ReUse, Tel. 089/987123.\n\nb) Flohmarkt auf der Theresienwiese: Größter Trödelmarkt Bayerns jeden 1. Samstag im Monat. Kleidung, Spielzeug, Bücher und Kuriositäten. Standplatzbuchung online: www.flohmarkt-muenchen.de.\n\nc) Designer-Vintage-Boutique: Ausgewählte Markenkleidung der 70er, 80er und 90er Jahre. Lederjacken, Seidentücher, Retro-Sneaker. Leopoldstraße 45, Di–Sa 11–19 Uhr.\n\nd) Antiquitäten & Möbel-Restaurierung: Barockschränke, Gründerzeittische und Biedermeierstühle. Fachgerechte Aufarbeitung alter Holzmöbel. Antiquitätenhandel Stein, Tel. 089/223344.\n\ne) Kinderkleider- und Spielzeugbasar: Alles rund ums Kind (Gr. 50–164), Kinderwagen, Fahrräder, Spiele. Samstag 09:00–13:00 Uhr im Pfarrheim St. Paul. Kaffee & Kuchenbuffet.\n\nf) Kostenlose Möbelbörse der Diakonie: Gut erhaltene Sofas, Betten und Tische für Bedürftige gegen geringe Transportpauschale abzugeben. Spendenannahme nach telefonischer Absprache: Tel. 089/543210.\n\ng) Reparatur-Treff im Bürgerhaus: Jeden 2. Donnerstag im Monat. Wir reparieren gemeinsam Lampen, Radios, Toaster und Kleinmöbel. Werkzeug vorhanden, Teilnahme kostenlos.\n\nh) Buchantiquariat & Ankauf: Wir kaufen und verkaufen antiquarische Bücher, Erstausgaben, Bildbände und Schallplatten. Hausbesuche bei Sammlungsauflösungen möglich. Buchhandlung Gutenberg.\n\ni) Gebrauchte Fahrräder & Werkstatt: Über 100 verkehrssichere Citybikes, Rennräder und Mountainbikes ab 80 Euro. Kostenlose Probefahrt. Radstation am Hauptbahnhof.\n\nj) Smartphone- und Tablet-Reparatur: Displaytausch, Akkuwechsel und Datenrettung innerhalb von 60 Minuten ohne Voranmeldung. Handy-Klinik Zentrum.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "a",
       "teil": 3,
       "teilTitle": "Anzeigen / Matching",
@@ -175,19 +145,7 @@
       "id": 14,
       "type": "matching",
       "question": "14. Familie Weber erwartet ihr zweites Baby und möchte günstig gebrauchte Babykleidung und einen Kinderwagen erwerben.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "e",
       "teil": 3
     },
@@ -195,19 +153,7 @@
       "id": 15,
       "type": "matching",
       "question": "15. Lisa liebt Mode der 80er Jahre und sucht eine Boutique, die originale Vintage-Markenkleidung und Lederjacken führt.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "c",
       "teil": 3
     },
@@ -215,19 +161,7 @@
       "id": 16,
       "type": "matching",
       "question": "16. Herr Krause hat eine wertvolle historische Büchersammlung geerbt und sucht einen Händler, der die Bände begutachtet und ankauft.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "h",
       "teil": 3
     },
@@ -235,19 +169,7 @@
       "id": 17,
       "type": "matching",
       "question": "17. Maximilian sucht ein verkehrssicheres, gebrauchtes Stadtrad für den täglichen Weg zur Arbeit bis 100 Euro.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "i",
       "teil": 3
     },
@@ -255,19 +177,7 @@
       "id": 18,
       "type": "matching",
       "question": "18. Das Display von Annas Smartphone ist nach einem Sturz zerbrochen; sie braucht eine Sofortreparatur vor Ort.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "j",
       "teil": 3
     },
@@ -275,19 +185,7 @@
       "id": 19,
       "type": "matching",
       "question": "19. Ein Sammler sucht ein originales Klavier aus dem 18. Jahrhundert zur Miete für ein klassisches Konzert.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "0",
       "teil": 3
     },
@@ -296,10 +194,7 @@
       "type": "multiple-choice",
       "question": "Helmut",
       "context": "In einer Automobilzeitschrift lesen Sie Leserbriefe zur Debatte:\n„Generelles Tempolimit von 130 km/h auf deutschen Autobahnen: Sollte es eingeführt werden?“\n\nBeispiel (Tobias, 31, Wolfsburg): Wer mit 200 km/h über die Autobahn rast, gefährdet nicht nur sich selbst, sondern völlig Unbeteiligte. Fast alle europäischen Nachbarländer haben längst Limits – nur Deutschland diskutiert noch. (Ja)\n\nHelmut, 58, Stuttgart: Die deutsche Autobahn ohne Tempolimit ist ein Markenzeichen für erstklassige Automobiltechnik und individuelle Freiheit. Unsere Straßen gehören trotz hoher Geschwindigkeiten zu den sichersten der Welt. Ein generelles Verbot ist reine Bevormundung der Autofahrer.\n\nCornelia, 42, Karlsruhe: Ein Tempolimit von 130 km/h würde sofort und ohne zusätzliche Kosten Millionen Tonnen CO2 pro Jahr einsparen. Angesichts der dramatischen Klimakrise ist das die einfachste Maßnahme für mehr Umweltschutz. Es gibt keinen vernünftigen Grund dagegen.\n\nAlexander, 29, Ingolstadt: Wenn man weite Strecken geschäftlich unterwegs ist, zählt jede halbe Stunde. Auf freier Strecke nachts bei leerer Autobahn mit 130 km/h dahinzuschleichen, macht müde und unaufmerksam. Man sollte die Geschwindigkeit situativ digital regeln, nicht pauschal deckeln.\n\nUlrike, 51, Kiel: Das Fahren auf Autobahnen im Ausland ist so viel entspannter als in Deutschland! Keine Drängler, keine Lichthupe von hinten, kein ständiges abruptes Bremsen. Mit 130 km/h fließt der Verkehr gleichmäßig und die Unfallzahlen mit schweren Verletzungen würden spürbar sinken.\n\nSebastian, 36, Nürnberg: Für mich als Ingenieur ist das Rasen pure Energieverschwendung. Der Spritverbrauch steigt ab 130 km/h exponentiell an. Wer langsamer fährt, schont die Umwelt, spart bares Geld an der Zapfsäule und kommt ausgeruht am Ziel an.\n\nDieter, 65, Dresden: Moderne Fahrzeuge haben heute so viele Sicherheitssysteme wie Spurhalte- und Notbremsassistenten, dass schwere Unfälle ohnehin seltener werden. Lasst den Menschen doch ein Stück Eigenverantwortung, statt immer nur mit Verboten zu regieren.\n\nBirgit, 44, Düsseldorf: Ich habe zwei Teenager, die gerade den Führerschein gemacht haben. Ich habe jedes Mal Angst, wenn sie auf die Autobahn müssen, weil andere mit 250 km/h heranrasen. Aus Rücksicht auf Familien und Fahranfänger gehört das Limit endlich her.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4,
       "teilTitle": "Diskussion / Meinungen",
@@ -309,10 +204,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Cornelia",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -320,10 +212,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Alexander",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -331,10 +220,7 @@
       "id": 23,
       "type": "multiple-choice",
       "question": "Ulrike",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -342,10 +228,7 @@
       "id": 24,
       "type": "multiple-choice",
       "question": "Sebastian",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -353,10 +236,7 @@
       "id": 25,
       "type": "multiple-choice",
       "question": "Dieter",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -364,10 +244,7 @@
       "id": 26,
       "type": "multiple-choice",
       "question": "Birgit",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },

@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Julia hat den Kochkurs allein besucht.",
       "context": "Blog: Julias Kochabenteuer\n\nAm Wochenende habe ich zusammen mit meiner Schwester einen Kochkurs besucht. Wir haben einen thailändischen Kurs gewählt, weil wir beide die asiatische Küche lieben. Der Kurs hat drei Stunden gedauert und wir haben drei verschiedene Gerichte zubereitet: eine Suppe, ein Curry und einen Mango-Salat.\n\nAm besten hat mir das grüne Curry geschmeckt, obwohl es ziemlich scharf war. Meine Schwester fand den Mango-Salat am besten. Der Kursleiter, ein Koch aus Bangkok, war sehr geduldig und hat alles gut erklärt.\n\nIch möchte auf jeden Fall noch einen weiteren Kurs machen – vielleicht japanisch oder indisch!",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1,
       "teilTitle": "Blog / Artikel",
@@ -21,10 +18,7 @@
       "id": 2,
       "type": "multiple-choice",
       "question": "Im Kurs haben sie nur ein Gericht gekocht.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -32,10 +26,7 @@
       "id": 3,
       "type": "multiple-choice",
       "question": "Julia plant, weitere Kochkurse zu besuchen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -44,10 +35,7 @@
       "type": "multiple-choice",
       "question": "Familie Weber ist dieses Jahr in die Berge gefahren.",
       "context": "Blog: Familienurlaub an der Ostsee\n\nWir haben dieses Jahr unseren Familienurlaub an der Ostsee verbracht. Normalerweise fahren wir in die Berge, aber die Kinder wollten unbedingt ans Meer. Wir haben eine kleine Ferienwohnung in Kühlungsborn gemietet.\n\nDas Wetter war leider nicht immer gut – an drei von sieben Tagen hat es geregnet. Trotzdem hatten wir eine tolle Zeit. Bei Regen sind wir ins Ozeaneum nach Stralsund gefahren. Die Kinder waren begeistert von den Haien und Pinguinen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -55,10 +43,7 @@
       "id": 5,
       "type": "multiple-choice",
       "question": "Das Wetter war die ganze Woche gut.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -66,10 +51,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Bei Regen haben sie ein Museum besucht.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -141,11 +123,7 @@
       "id": 12,
       "type": "multiple-choice",
       "question": "Wie viele Mitglieder hat Foodsharing ungefähr?",
-      "options": [
-        "40.000",
-        "400.000",
-        "4 Millionen"
-      ],
+      "options": ["40.000", "400.000", "4 Millionen"],
       "correctAnswer": "400.000",
       "teil": 2
     },
@@ -154,19 +132,7 @@
       "type": "matching",
       "question": "13. Susanne möchte heute Abend einen spannenden Film sehen.",
       "context": "Lesen Sie das Fernsehprogramm a–j. Welche Sendung passt zu welcher Person?\n\na) 20:15 Uhr - \"Tatort: Dunkle Geheimnisse\". Der beliebte Krimi aus München. Die Kommissare ermitteln in einem mysteriösen Mordfall. Spannung garantiert!\nb) 20:15 Uhr - \"Die Höhle der Löwen\". Gründer präsentieren ihre innovativen Geschäftsideen und hoffen auf ein Investment von erfolgreichen Unternehmern.\nc) 19:30 Uhr - \"Wissen macht Ah!\". Das clevere Magazin für Kinder und Jugendliche. Heute geht es um den Weltraum und wie Astronauten leben.\nd) 21:00 Uhr - \"Rund um die Welt\". Eine faszinierende Dokumentation über die Natur und Tierwelt in Südamerika. Atemberaubende Bilder aus dem Regenwald.\ne) 20:15 Uhr - \"Das große Backen\". Prominente treten im Backwettbewerb gegeneinander an. Wer zaubert die beste Torte? Mit vielen Tipps zum Nachmachen.\nf) 18:00 Uhr - \"Sportschau\". Die Zusammenfassung aller wichtigen Fußballspiele des Wochenendes, inklusive Interviews mit Spielern und Trainern.\ng) 22:30 Uhr - \"Late Night Show\". Comedy, Musik und prominente Gäste. Perfekt, um den Tag mit einem Lachen ausklingen zu lassen.\nh) 20:15 Uhr - \"Der Bachelor\". Die neue Staffel beginnt! Ein attraktiver Single-Mann sucht unter 20 Frauen seine Traumpartnerin. Romantik und Drama.\ni) 19:00 Uhr - \"Tagesschau\". Die wichtigsten Nachrichten des Tages aus aller Welt. Politik, Wirtschaft und aktuelles Wetter.\nj) 20:15 Uhr - \"Gute Zeiten, schlechte Zeiten\". Die tägliche Seifenoper geht weiter. Wie entscheidet sich Laura? Findet Leon endlich die Wahrheit heraus?",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "a",
       "teil": 3,
       "teilTitle": "Anzeigen / Matching",
@@ -176,19 +142,7 @@
       "id": 14,
       "type": "matching",
       "question": "14. Max (10 Jahre) interessiert sich sehr für den Weltraum.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "c",
       "teil": 3
     },
@@ -196,19 +150,7 @@
       "id": 15,
       "type": "matching",
       "question": "15. Herr Weber möchte wissen, wie er einen Schokoladenkuchen macht.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "e",
       "teil": 3
     },
@@ -216,19 +158,7 @@
       "id": 16,
       "type": "matching",
       "question": "16. Lisa und Tim suchen eine Sendung über exotische Tiere und Landschaften.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "d",
       "teil": 3
     },
@@ -236,19 +166,7 @@
       "id": 17,
       "type": "matching",
       "question": "17. Frau Müller verpasst keine Folge ihrer Lieblingsserie um 20:15 Uhr.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "j",
       "teil": 3
     },
@@ -256,19 +174,7 @@
       "id": 18,
       "type": "matching",
       "question": "18. Jan sucht Tipps für den Bau eines Regals aus Holz.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "0",
       "teil": 3
     },
@@ -276,19 +182,7 @@
       "id": 19,
       "type": "matching",
       "question": "19. Anna möchte sehen, wie junge Unternehmer ihre Firmen-Ideen vorstellen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "b",
       "teil": 3
     },
@@ -297,10 +191,7 @@
       "type": "multiple-choice",
       "question": "Angela ist dafür, dass man soziale Medien in der Freizeit nutzt.",
       "context": "Diskussion: „Soziale Medien – Fluch oder Segen?\"\n\nAngela: Ich nutze soziale Medien täglich und finde sie großartig. Ich kann mit Freunden in Kontakt bleiben, die weit weg wohnen. Ohne Instagram hätte ich den Kontakt zu vielen verloren.\n\nMarkus: Soziale Medien machen süchtig und unglücklich. Studien zeigen, dass junge Menschen, die viel Zeit auf Social Media verbringen, häufiger depressiv sind. Ich halte mich bewusst fern.\n\nSabine: Für mich sind soziale Medien wichtig für die Arbeit. Als Grafikdesignerin zeige ich dort meine Werke und finde neue Kunden. Privat nutze ich sie aber kaum.\n\nJörg: Ich finde soziale Medien gefährlich, besonders für Kinder. Man weiß nie, wer sich hinter einem Profil versteckt. Da brauchen wir strengere Regeln.\n\nNicole: Ich liebe soziale Medien! Man kann so viel Neues lernen – Rezepte, Sprachen, Handwerkskunst. Man muss nur die richtigen Kanäle finden.\n\nBernd: Social Media ist reine Zeitverschwendung. Statt stundenlang durch Feeds zu scrollen, sollte man lieber ein Buch lesen oder Sport treiben.\n\nHeike: Ich nutze Facebook vor allem, um mich über lokale Veranstaltungen zu informieren. Das finde ich sehr praktisch. Problematisch ist nur, wenn man zu viel persönliche Informationen teilt.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4,
       "teilTitle": "Diskussion / Meinungen",
@@ -310,10 +201,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Markus ist dafür, dass man soziale Medien in der Freizeit nutzt.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -321,10 +209,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Sabine ist dafür, dass man soziale Medien in der Freizeit nutzt.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -332,10 +217,7 @@
       "id": 23,
       "type": "multiple-choice",
       "question": "Jörg ist dafür, dass man soziale Medien in der Freizeit nutzt.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -343,10 +225,7 @@
       "id": 24,
       "type": "multiple-choice",
       "question": "Nicole ist dafür, dass man soziale Medien in der Freizeit nutzt.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -354,10 +233,7 @@
       "id": 25,
       "type": "multiple-choice",
       "question": "Bernd ist dafür, dass man soziale Medien in der Freizeit nutzt.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -365,10 +241,7 @@
       "id": 26,
       "type": "multiple-choice",
       "question": "Heike ist dafür, dass man soziale Medien in der Freizeit nutzt.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },

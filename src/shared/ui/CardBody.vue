@@ -68,7 +68,7 @@ const iconText = computed(() => props.icon ?? getFirstLetter(props.title));
         <h3
           :class="[
             props.variant === 'large' ? 'text-xl tablet:text-2xl' : 'text-lg tablet:text-xl',
-            'm-0 mbe-2 font-bold leading-snug text-white transition-colors duration-300 text-shadow-sm group-hover:text-yellow',
+            'm-0 mbe-2 leading-snug font-bold text-white transition-colors duration-300 text-shadow-sm group-hover:text-yellow',
           ]"
         >
           {{ props.title }}

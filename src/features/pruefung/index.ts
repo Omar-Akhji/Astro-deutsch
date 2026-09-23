@@ -6,3 +6,4 @@ export { default as ModelTestsView } from "./ui/ModelTestsView.vue";
 export { default as ModuleStudyView } from "./ui/ModuleStudyView.vue";
 export { default as PhraseGroupCard } from "./ui/PhraseGroupCard.vue";
 export { default as PruefungSection } from "./ui/PruefungSection.vue";
+export { default as PruefungSkeleton } from "./ui/PruefungSkeleton.astro";

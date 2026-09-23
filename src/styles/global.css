@@ -165,19 +165,19 @@
 /* Base Headings with Responsive Typography */
 @layer base {
   h1 {
-    @apply text-3xl font-extrabold tracking-tight leading-tight tablet:text-4xl tablet:leading-tight laptop:text-5xl laptop:leading-tight;
+    @apply text-3xl leading-tight font-extrabold tracking-tight tablet:text-4xl tablet:leading-tight laptop:text-5xl laptop:leading-tight;
 
     margin: 0;
   }
 
   h2 {
-    @apply text-2xl font-bold tracking-tight leading-tight tablet:text-3xl tablet:leading-tight laptop:text-4xl laptop:leading-tight;
+    @apply text-2xl leading-tight font-bold tracking-tight tablet:text-3xl tablet:leading-tight laptop:text-4xl laptop:leading-tight;
 
     margin: 0;
   }
 
   h3 {
-    @apply text-xl font-semibold tracking-tight leading-snug tablet:text-2xl tablet:leading-snug;
+    @apply text-xl leading-snug font-semibold tracking-tight tablet:text-2xl tablet:leading-snug;
 
     margin: 0;
   }

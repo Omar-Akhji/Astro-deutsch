@@ -1,0 +1,190 @@
+---
+import { AuthSkeleton } from "@/features/auth";
+import { GrammarSkeleton } from "@/features/grammar";
+import { PruefungSkeleton } from "@/features/pruefung";
+import { QuizSkeleton } from "@/features/quiz";
+import { ThemenSkeleton } from "@/features/themen";
+import { VocabularySkeleton } from "@/features/vocabulary";
+import CardSkeleton from "@/shared/ui/CardSkeleton.astro";
+import Skeleton from "@/shared/ui/Skeleton.astro";
+import { HeroSkeleton } from "@/widgets/hero";
+---
+
+<!-- Skeleton container: hidden by default, shown during page transitions -->
+<div
+  aria-hidden="true"
+  class="hidden"
+  id="skeleton-container"
+>
+  <!-- Home Skeleton -->
+  <div
+    class="hidden"
+    data-skeleton="/"
+  >
+    <div class="py-6 tablet:py-10 laptop:py-14">
+      <header class="mbe-10 tablet:mbe-14 laptop:mbe-16">
+        <HeroSkeleton />
+      </header>
+      <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+      </div>
+      <section class="mbs-16 tablet:mbs-20 laptop:mbs-24">
+        <HeroSkeleton />
+      </section>
+      <section class="mbs-16 pb-8 text-center tablet:mbs-20 laptop:mbs-24">
+        <Skeleton class="mx-auto mbe-4 h-9 w-2/3 max-w-md rounded-md bg-white/10 tablet:mbe-5 tablet:h-10" />
+        <Skeleton class="mx-auto mbe-6 h-5 w-full max-w-2xl rounded-md bg-white/5 tablet:mbe-8 tablet:h-6" />
+      </section>
+    </div>
+  </div>
+
+  <!-- Themen Feature Skeleton -->
+  <div
+    class="hidden"
+    data-skeleton="/themen"
+  >
+    <ThemenSkeleton />
+  </div>
+
+  <!-- Grammar Feature Skeletons -->
+  <div
+    class="hidden"
+    data-skeleton="/grammatik"
+  >
+    <GrammarSkeleton variant="overview" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/grammatik/detail"
+  >
+    <GrammarSkeleton variant="detail" />
+  </div>
+
+  <!-- Vocabulary Feature Skeletons -->
+  <div
+    class="hidden"
+    data-skeleton="/vokabeln"
+  >
+    <VocabularySkeleton variant="overview" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/vokabeln/level"
+  >
+    <VocabularySkeleton variant="level" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/vokabeln/detail"
+  >
+    <VocabularySkeleton variant="detail" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/vokabeln/family-tree"
+  >
+    <VocabularySkeleton variant="family-tree" />
+  </div>
+
+  <!-- Prüfung Feature Skeletons -->
+  <div
+    class="hidden"
+    data-skeleton="/pruefung"
+  >
+    <PruefungSkeleton variant="overview" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/pruefung/level"
+  >
+    <PruefungSkeleton variant="level" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/pruefung/modelltests"
+  >
+    <PruefungSkeleton variant="modelltests" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/pruefung/study"
+  >
+    <PruefungSkeleton variant="study" />
+  </div>
+
+  <!-- Quiz Feature Skeleton -->
+  <div
+    class="hidden"
+    data-skeleton="/quiz"
+  >
+    <QuizSkeleton />
+  </div>
+
+  <!-- Auth Feature Skeletons -->
+  <div
+    class="hidden"
+    data-skeleton="/login"
+  >
+    <AuthSkeleton />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/register"
+  >
+    <AuthSkeleton />
+  </div>
+
+  <!-- 404 Skeleton -->
+  <div
+    class="hidden"
+    data-skeleton="/404"
+  >
+    <main class="flex min-h-[60vh] flex-col items-center justify-center gap-6 py-16 text-center">
+      <Skeleton class="h-16 w-36 rounded-2xl bg-white/15 tablet:h-24 tablet:w-48" />
+      <Skeleton class="h-6 w-72 max-w-md rounded-md bg-white/5" />
+      <Skeleton class="h-12 w-52 rounded-full bg-white/15" />
+    </main>
+  </div>
+
+  <!-- Default Pending Skeleton -->
+  <div
+    class="hidden"
+    data-skeleton="default"
+  >
+    <main class="min-h-screen py-8">
+      <header class="mb-12 text-center">
+        <div class="mb-4 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
+          <Skeleton class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14" />
+          <Skeleton class="h-9 w-64 rounded-md bg-white/15 tablet:h-10 tablet:w-80" />
+        </div>
+        <div class="mx-auto mb-6 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
+        <div class="flex justify-center px-2">
+          <Skeleton class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-2xl rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5" />
+        </div>
+      </header>
+      <section class="py-4">
+        <div class="grid grid-cols-1 gap-6 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+          {["s1", "s2", "s3", "s4", "s5", "s6"].map(() => (
+            <div class="h-full">
+              <div class="relative z-1 flex h-full w-full flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-4 shadow-xl backdrop-blur-(--glass-blur)">
+                <div class="aspect-video w-full overflow-hidden rounded-2xl">
+                  <Skeleton class="h-full w-full rounded-2xl bg-white/5" />
+                </div>
+                <div class="flex flex-1 flex-col px-2 pt-5 pb-2">
+                  <div class="mbe-3 flex items-center gap-2">
+                    <Skeleton class="h-6 w-16 rounded-full bg-white/10" />
+                    <Skeleton class="h-4 w-20 rounded-full bg-white/5" />
+                  </div>
+                  <Skeleton class="mb-2 h-7 w-3/4 rounded-md bg-white/10" />
+                  <Skeleton class="mbe-4 h-4 w-full rounded-md bg-white/5" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+  </div>
+</div>

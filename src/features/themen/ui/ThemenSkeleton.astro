@@ -1,0 +1,77 @@
+---
+import Skeleton from "@/shared/ui/Skeleton.astro";
+---
+
+<main class="min-h-screen space-y-12 py-6 tablet:space-y-16 tablet:py-10">
+  <header class="mx-auto max-w-2xl space-y-4 text-center">
+    <Skeleton class="mx-auto h-9 w-72 max-w-full rounded-md bg-white/15 tablet:h-10 tablet:w-96" />
+    <Skeleton class="mx-auto h-5 w-full max-w-lg rounded-md bg-white/5 tablet:h-6" />
+  </header>
+  <nav class="rounded-2xl border border-white/5 bg-zinc-950/50 p-4 shadow-xl backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-2">
+      {["n1", "n2", "n3", "n4", "n5", "n6", "n7", "n8", "n9"].map(() => (
+        <Skeleton class="h-9 w-28 rounded-full bg-white/10" />
+      ))}
+    </div>
+  </nav>
+  <div class="space-y-16 tablet:space-y-20">
+    {["s1", "s2", "s3"].map(() => (
+      <section>
+        <div class="mb-6 flex items-center gap-4 tablet:mb-8">
+          <Skeleton class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14" />
+          <div class="space-y-2">
+            <Skeleton class="h-7 w-48 rounded-md bg-white/10" />
+            <Skeleton class="h-4 w-32 rounded-md bg-white/5" />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+          {["c1", "c2", "c3"].map(() => (
+            <div class="relative overflow-hidden rounded-2xl border-2 border-white/10 bg-white/5 p-5 backdrop-blur-sm tablet:p-6">
+              <div class="mbe-3.5 flex items-start justify-between">
+                <div class="w-full space-y-2">
+                  <Skeleton class="h-5 w-20 rounded-full bg-white/10" />
+                  <Skeleton class="h-5 w-3/4 rounded-md bg-white/10" />
+                </div>
+              </div>
+              <div class="relative mb-3.5 flex gap-1 rounded-full bg-black/20 p-1">
+                <Skeleton class="h-7 flex-1 rounded-full bg-white/10" />
+                <Skeleton class="h-7 flex-1 rounded-full bg-white/5" />
+              </div>
+              <div class="min-h-30 space-y-2.5">
+                <div class="flex gap-2.5">
+                  <Skeleton class="mt-1 size-1.5 shrink-0 rounded-full bg-white/10" />
+                  <Skeleton class="h-4 w-full rounded-md bg-white/5" />
+                </div>
+                <div class="flex gap-2.5">
+                  <Skeleton class="mt-1 size-1.5 shrink-0 rounded-full bg-white/10" />
+                  <Skeleton class="h-4 w-5/6 rounded-md bg-white/5" />
+                </div>
+                <div class="flex gap-2.5">
+                  <Skeleton class="mt-1 size-1.5 shrink-0 rounded-full bg-white/10" />
+                  <Skeleton class="h-4 w-4/5 rounded-md bg-white/5" />
+                </div>
+              </div>
+              <div class="mbs-4 flex justify-end border-bs border-white/5 pbs-3 tablet:mbs-5 tablet:pbs-3.5">
+                <Skeleton class="h-3.5 w-32 rounded-md bg-white/5" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+  <aside class="mt-20 rounded-3xl border border-amber-500/20 bg-linear-to-br from-yellow/20 to-orange/20 p-8 backdrop-blur-sm">
+    <div class="mb-4 flex items-center gap-3">
+      <Skeleton class="size-9 shrink-0 rounded-full border-[3px] border-amber-400/40 bg-white/5 tablet:size-10" />
+      <Skeleton class="h-7 w-64 rounded-md bg-white/10" />
+    </div>
+    <ul class="m-0 grid list-none gap-4 p-0 md:grid-cols-2">
+      {["t1", "t2", "t3", "t4", "t5", "t6"].map(() => (
+        <li class="flex gap-3">
+          <Skeleton class="size-4 shrink-0 rounded-full bg-white/10" />
+          <Skeleton class="h-4 w-full rounded-md bg-white/5" />
+        </li>
+      ))}
+    </ul>
+  </aside>
+</main>

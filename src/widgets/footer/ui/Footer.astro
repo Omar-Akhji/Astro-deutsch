@@ -1,0 +1,370 @@
+---
+/**
+ * Modern High-Craft Pedagogical Footer Component Calibrated strictly with senior UI/UX spacing
+ * principles (8pt/4pt mathematical grid, "Internal <= External" Gestalt grouping, WCAG touch target
+ * compliance, and responsive baseline).
+ */
+import {
+  ArrowUp,
+  ArrowUpRight,
+  Award,
+  BookOpen,
+  Heart,
+  Languages,
+  ShieldCheck,
+  Zap,
+} from "lucide-astro";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  aria-labelledby="footer-heading"
+  class="relative mt-10 mb-8 overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) mobile:mt-12 mobile:mb-10 mobile:p-6 tablet:mt-14 tablet:mb-12 tablet:p-7 laptop:mb-14 laptop:p-8"
+  role="contentinfo"
+>
+  <h2
+    class="sr-only"
+    id="footer-heading"
+  >
+    Fußbereich
+  </h2>
+
+  <div class="w-full">
+    <!-- TIER 1: Brand & Pedagogical German Gender System (Tight 8pt/4pt Gestalt Spacing) -->
+    <div class="mb-6 flex flex-col gap-4 border-b border-white/10 pb-5 tablet:mb-7 tablet:gap-5 tablet:pb-6 laptop:flex-row laptop:items-center laptop:justify-between laptop:gap-6">
+      <!-- Brand & Mission (Bigger Logo with Text Beside It) -->
+      <div class="flex items-center gap-3.5 mobile:gap-4 tablet:gap-5 laptop:max-w-2xl">
+        <a
+          aria-label="Elite Regewelt Startseite"
+          class="group shrink-0 transition-opacity hover:opacity-90"
+          href="/"
+        >
+          <span class="flex size-16 items-center justify-center transition-transform duration-300 group-hover:scale-105 mobile:size-20 tablet:size-22">
+            <img
+              alt="Elite Regewelt"
+              class="size-full object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+              height="88"
+              loading="lazy"
+              src="/logo.png"
+              width="88"
+            />
+          </span>
+        </a>
+
+        <div class="space-y-1">
+          <a
+            aria-label="Elite Regewelt Startseite"
+            class="group inline-block space-y-0.5 transition-opacity hover:opacity-90"
+            href="/"
+          >
+            <span class="block text-lg font-bold tracking-tight text-white text-shadow-sm transition-colors duration-300 group-hover:text-yellow tablet:text-xl">
+              Elite Regewelt
+            </span>
+            <span class="block text-xs font-semibold tracking-wide text-yellow/85">
+              Deutch Sprache Lernen
+            </span>
+          </a>
+
+          <p class="max-w-lg text-xs leading-relaxed text-mist-400">
+            Deine kostenlose, interaktive Lernplattform zur gezielten Vorbereitung auf die
+            offiziellen B1 &amp; B2 Prüfungen des Goethe-Instituts und des ÖSD.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pedagogical Gender Color Indicator (Compact 4pt/8pt Badges) -->
+      <div class="space-y-1.5 laptop:shrink-0">
+        <span class="block text-[10px] font-semibold uppercase tracking-wider text-mist-500">
+          Grammatik-Farbsystem
+        </span>
+        <div class="flex flex-wrap items-center gap-1.5 text-[11px]">
+          <span class="inline-flex items-center gap-1 rounded-md border border-gender-der/30 bg-gender-der/10 px-2 py-0.5 font-semibold text-gender-der">
+            der • Maskulin
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-md border border-gender-die/30 bg-gender-die/10 px-2 py-0.5 font-semibold text-gender-die">
+            die • Feminin
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-md border border-gender-das/30 bg-gender-das/10 px-2 py-0.5 font-semibold text-gender-das">
+            das • Neutral
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-md border border-gender-pl/30 bg-gender-pl/10 px-2 py-0.5 font-semibold text-gender-pl">
+            die • Plural
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIER 2: Main Navigation Grid (Compact Senior Spacing & Fast Scanning) -->
+    <div class="grid grid-cols-2 gap-x-4 gap-y-6 mobile:gap-x-6 mobile:gap-y-6 tablet:grid-cols-4 tablet:gap-x-6 tablet:gap-y-0 laptop:gap-x-8">
+      <!-- Column 1: Wortschatz -->
+      <div>
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <Languages class="size-3.5 text-yellow" />
+          Wortschatz
+        </h3>
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/vokabeln"
+            >
+              Vokabeln Übersicht
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/themen"
+            >
+              Themenwelten
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/vokabeln/1"
+            >
+              Familie &amp; Alltag
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/vokabeln/2"
+            >
+              Wohnen &amp; Haushalt
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/vokabeln/3"
+            >
+              Essen &amp; Trinken
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/vokabeln/10"
+            >
+              Notruf &amp; Gesundheit
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Grammatik -->
+      <div>
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <BookOpen class="size-3.5 text-yellow" />
+          Grammatik
+        </h3>
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/grammatik"
+            >
+              Grammatik Übersicht
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/grammatik/verben/grundverben"
+            >
+              Verben &amp; Zeiten
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/grammatik/nomen/genus"
+            >
+              Nomen &amp; Genus
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/grammatik/praepositionen/lokale-praep"
+            >
+              Präpositionen
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/grammatik"
+            >
+              Satzstrukturen
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Prüfungstraining -->
+      <div>
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <Award class="size-3.5 text-yellow" />
+          Prüfungstraining
+        </h3>
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/pruefung"
+            >
+              Prüfungsübersicht
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/pruefung/b1/modelltests"
+            >
+              Modelltests B1
+              <ArrowUpRight class="size-3 opacity-60" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/pruefung/b2/modelltests"
+            >
+              Modelltests B2
+              <ArrowUpRight class="size-3 opacity-60" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/pruefung/b1/lesen"
+            >
+              Lesen &amp; Hören
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/pruefung/b1/schreiben"
+            >
+              Schreiben &amp; Sprechen
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Interaktiv & Konto -->
+      <div>
+        <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
+          <Zap class="size-3.5 text-yellow" />
+          Interaktiv
+        </h3>
+        <ul
+          class="flex flex-col space-y-0.5"
+          role="list"
+        >
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/quiz"
+            >
+              Quiz Startseite
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/quiz/b1/lesen/1"
+            >
+              Leseverstehen Quiz
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/quiz/b1/hoeren/1"
+            >
+              Hörverstehen Quiz
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/login"
+            >
+              Lernkonto Anmelden
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center gap-1 py-0.5 text-[12px] tablet:text-[12.5px] leading-5 text-mist-400 transition-colors hover:text-yellow"
+              href="/register"
+            >
+              Kostenlos registrieren
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TIER 3: Bottom Bar / Legal, Standards & Smooth Back-to-Top (Compact 8pt Spacing) -->
+    <div class="mt-6 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-4 text-[11px] text-mist-500 sm:flex-row tablet:mt-7 tablet:pt-5">
+      <div class="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-center sm:justify-start sm:text-left">
+        <span>&copy; {currentYear} Deutsch Lernen. Alle Rechte vorbehalten.</span>
+        <span
+          aria-hidden="true"
+          class="text-white/25"
+        >
+          •
+        </span>
+        <span class="inline-flex items-center gap-1 text-mist-400">
+          <ShieldCheck class="size-3.5 text-yellow/80" />
+          Offizielle GER-Standards
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- Back-to-top button -->
+        <button
+          aria-label="Nach oben scrollen"
+          class="group inline-flex items-center gap-1 rounded-md border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-medium text-mist-300 transition-all hover:border-yellow/30 hover:bg-yellow/10 hover:text-yellow focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-yellow active:scale-95"
+          id="footer-back-to-top"
+          type="button"
+        >
+          <span>Nach oben</span>
+          <ArrowUp class="size-3 transition-transform duration-200 group-hover:-translate-y-0.5" />
+        </button>
+
+        <!-- Discrete German flag aesthetic accent -->
+        <div
+          aria-hidden="true"
+          class="flex h-2.5 w-4.5 overflow-hidden rounded-xs border border-white/10 opacity-75"
+          title="Deutschland Flagge"
+        >
+          <span class="h-full w-1/3 bg-neutral-900"></span>
+          <span class="h-full w-1/3 bg-red-600"></span>
+          <span class="h-full w-1/3 bg-yellow-400"></span>
+        </div>
+
+        <span class="inline-flex items-center gap-1 text-mist-400">
+          Mit <Heart class="inline size-2.5 fill-red-500 text-red-500" /> für Lerner
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../lib/footer.ts"></script>

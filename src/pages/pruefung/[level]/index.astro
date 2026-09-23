@@ -175,7 +175,9 @@ const { data: currentExam } = await getExamLevel(level);
     </div>
   : <div class="px-4 py-12 text-center text-white tablet:py-16">
       <h1 class="mb-3 text-2xl font-bold tablet:text-3xl">Prüfung nicht gefunden</h1>
-      <p class="mx-auto mb-6 max-w-md text-zinc-400 leading-relaxed">Die gewünschte Prüfungsstufe existiert nicht.</p>
+      <p class="mx-auto mb-6 max-w-md text-zinc-400 leading-relaxed">
+        Die gewünschte Prüfungsstufe existiert nicht.
+      </p>
       <BackButton />
     </div>
   }

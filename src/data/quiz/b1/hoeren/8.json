@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Der gesamte Fitnessclub bleibt heute wegen Bauarbeiten geschlossen.",
       "context": "Nummer 1: Sie hören eine Durchsage im Sport- und Fitnesszentrum. „Liebe Mitglieder, bitte beachten Sie folgenden wichtigen Hinweis: Wegen eines Wasserrohrbruchs im Duschbereich der Herren muss das Hallenschwimmbad sowie der Herren-Duschraum für den heutigen Tag leider gesperrt bleiben. Die Trainingsflächen im ersten und zweiten Stock, die Damenumkleiden sowie der gesamte Saunabereich stehen Ihnen jedoch uneingeschränkt zur Verfügung. Wir bitten die Unannehmlichkeiten zu entschuldigen.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test8/teil1_1.mp3",
       "teil": 1,
@@ -35,10 +32,7 @@
       "type": "multiple-choice",
       "question": "Bei den Südtiroler Wanderwochen ist ein geprüfter Bergführer im Preis inbegriffen.",
       "context": "Nummer 2: Sie hören eine Durchsage im Radio. „Entdecken Sie die Faszination der Dolomiten mit Alpen-Aktiv! Unsere geführten Wanderwochen in Südtirol bieten Ihnen sechs unvergessliche Tage in herrlicher Bergkulisse. Im Reisepreis ab 540 Euro enthalten: 3-Sterne-Hotel mit Halbpension, täglich geführte Touren mit staatlich geprüften Bergführern sowie kostenlose Nutzung aller Bergbahnen. Jetzt buchen unter alpen-aktiv-reisen.de!“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test8/teil1_2.mp3",
       "teil": 1
@@ -60,10 +54,7 @@
       "type": "multiple-choice",
       "question": "Die Tierarztpraxis erinnert an die fällige Jahresimpfung für Katze Luna.",
       "context": "Nummer 3: Sie hören eine Nachricht auf dem Anrufbeantworter. „Guten Tag Frau Hansen, hier ist die Tierarztpraxis Dr. Fischer. Wir möchten Sie freundlich daran erinnern, dass bei Ihrer Katze Luna die jährliche Auffrischungsimpfung gegen Katzenschnupfen und Tollwut fällig ist. Bitte vereinbaren Sie in den nächsten zwei Wochen einen kurzen Untersuchungstermin. Unsere Sprechzeiten sind montags bis freitags jeweils von 9 bis 12 und von 15 bis 18 Uhr. Auf Wiederhören!“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test8/teil1_3.mp3",
       "teil": 1
@@ -85,10 +76,7 @@
       "type": "multiple-choice",
       "question": "In den Alpen bleibt das Wetter in den kommenden Tagen dauerhaft warm und windstill.",
       "context": "Nummer 4: Sie hören den Wetterbericht im Radio. „Das Wetter für den Alpenraum: Zurzeit sorgt starker Föhn an der Alpennordseite für ungewöhnlich milde 23 Grad in Garmisch und Berchtesgaden. Doch Vorsicht: Ab morgen Mittag bricht der Föhn zusammen. Eine Kaltfront aus Nordwesten bringt schwere Sturmböen und einen Temperatursturz um mehr als 15 Grad. Oberhalb von 1.200 Metern setzt starker Schneefall ein. Bergsteiger sollten Touren unbedingt verschieben.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test8/teil1_4.mp3",
       "teil": 1
@@ -110,10 +98,7 @@
       "type": "multiple-choice",
       "question": "Mietwagen können außerhalb der Öffnungszeiten nicht zurückgegeben werden.",
       "context": "Nummer 5: Sie hören die telefonische Bandansage der Autovermietung City-Drive. „Willkommen bei City-Drive Autovermietung. Unsere Mietstation am Bahnhof hat täglich von 7:00 bis 20:00 Uhr geöffnet. Eine Fahrzeugrückgabe außerhalb der Geschäftszeiten ist jederzeit möglich: Parken Sie den Wagen einfach auf den gekennzeichneten Stellplätzen im Parkhaus P3 und werfen Sie den Autoschlüssel in den Tresorkasten neben der Eingangstür. Für Pannenhilfe wählen Sie bitte die Notfalltaste 1.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test8/teil1_5.mp3",
       "teil": 1
@@ -135,11 +120,7 @@
       "type": "multiple-choice",
       "question": "Das historische Tropengewächshaus wurde errichtet im Jahr ...",
       "context": "Teil 2: Sie nehmen an einer Führung durch den Botanischen Garten und das historische Palmenhaus teil.\n\n„Guten Morgen, meine Damen und Herren! Ich begrüße Sie sehr herzlich zu unserem Rundgang durch die Pflanzenwelt der Tropen. Mein Name ist Dr. Michael Hoffmann, ich bin leitender Botaniker unseres Gartens. Unser Herzstück, das große historische Palmenhaus aus Eisen und Glas, stammt aus dem Jahr 1906 und ist eines der größten freitragenden Gewächshäuser Europas.\nIn diesem Pavillon herrscht das gesamte Jahr über eine Luftfeuchtigkeit von über 85 Prozent bei konstanten 26 Grad Celsius. Sie sehen hier mehr als 3.000 verschiedene Pflanzenarten aus den Regenwäldern Südamerikas, Afrikas und Asiens. Ein besonderes Highlight auf unserem Weg sind die Riesen-Seerosen im Wasserbecken: Ihre Blätter können einen Durchmesser von über zwei Metern erreichen und tragen problemlos das Gewicht eines kleinen Kindes!\nIm hinteren Bereich zeigen wir unsere Sammlung fleischfressender Pflanzen wie die Kannenpflanze und die Venusfliegenfalle, die sich an extrem nährstoffarme Böden angepasst haben. Bitte beachten Sie: Das Berühren der Pflanzen und das Verlassen der Wege sind nicht gestattet, um die empfindlichen Triebe nicht zu beschädigen. Wenn Sie Fragen haben, unterbrechen Sie mich jederzeit gern. Lassen Sie uns mit der Orchideensammlung beginnen.“",
-      "options": [
-        "a) 1850.",
-        "b) 1906.",
-        "c) 1975."
-      ],
+      "options": ["a) 1850.", "b) 1906.", "c) 1975."],
       "correctAnswer": "b) 1906.",
       "audioUrl": "/audio/b1/hoeren/test8/teil2.mp3",
       "teil": 2,
@@ -199,10 +180,7 @@
       "type": "multiple-choice",
       "question": "Katrin möchte sich einen Hund aus dem Tierheim adoptieren.",
       "context": "Teil 3: Sie hören ein Gespräch zwischen zwei Freunden in einer Buchhandlung.\n\nLukas: „Hallo Katrin! Du stehst ja vor der Haustier-Abteilung. Suchst du ein Geschenk für deine Schwester?“\nKatrin: „Nein, Lukas, für mich selbst! Ich habe mich am Wochenende endgültig entschieden: Ich möchte einen Hund aus dem städtischen Tierheim adoptieren.“\nLukas: „Wirklich? Das ist ja toll! Aber hast du dir das auch gut überlegt? Ein Hund bedeutet jede Menge Arbeit und Verantwortung für die nächsten zehn bis fünfzehn Jahre.“\nKatrin: „Absolut. Ich habe schon mit meinem Vermieter gesprochen, und er hat mir die schriftliche Erlaubnis zur Hundehaltung gegeben. Außerdem arbeite ich vier Tage pro Woche im Homeoffice und mein Chef erlaubt es sogar, Hunde mit ins Büro zu bringen.“\nLukas: „Das sind natürlich ideale Voraussetzungen! Hast du denn schon einen bestimmten Hund im Blick?“\nKatrin: „Ja, im Tierheim gibt es einen dreijährigen Mischling namens Sam. Er ist total lieb, kinderlieb und schon stubenrein. Ich war letzte Woche schon dreimal mit ihm im Park spazieren.“\nLukas: „Super. Dann musst du jetzt wohl Körbchen, Leine und Futternäpfe einkaufen gehen.“\nKatrin: „Genau. Wollen wir am Samstag zusammen in den großen Tierfachmarkt am Stadtrand fahren? Mit deinem Auto ginge das viel einfacher als mit der Straßenbahn.“\nLukas: „Klar, sehr gern! Samstag um 10 Uhr hole ich dich ab.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test8/teil3.mp3",
       "teil": 3,
@@ -213,10 +191,7 @@
       "id": 17,
       "type": "multiple-choice",
       "question": "Katrins Vermieter verbietet jegliche Tierhaltung in der Wohnung.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -224,10 +199,7 @@
       "id": 18,
       "type": "multiple-choice",
       "question": "Katrin darf ihren Hund bei Bedarf auch mit zur Arbeit ins Büro nehmen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -235,10 +207,7 @@
       "id": 19,
       "type": "multiple-choice",
       "question": "Katrin hat bereits einen bestimmten Hund im Tierheim kennengelernt.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -246,10 +215,7 @@
       "id": 20,
       "type": "multiple-choice",
       "question": "Der Hund Sam ist aggressiv und bellt ununterbrochen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -257,10 +223,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Katrin möchte alle Hundesachen allein mit dem Fahrrad transportieren.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -268,10 +231,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Lukas bietet an, Katrin am Samstag mit dem Auto zum Fachmarkt zu fahren.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -280,11 +240,7 @@
       "type": "matching",
       "question": "In Frankreich und den Niederlanden gilt an Schulen bereits ein striktes Handyverbot.",
       "context": "Teil 4: Die Moderatorin diskutiert mit Dr. Jan Holzer und Dr. Carola Berg über Smartphones im Schulunterricht.\n\na) Moderatorin (Melanie Frank)\nb) Dr. Jan Holzer (Medienpädagoge)\nc) Dr. Carola Berg (Jugendpsychologin)\n\nModeratorin: „Herzlich willkommen zum Bildungsforum. Fast 95 Prozent aller Schüler ab der fünften Klasse besitzen ein eigenes Smartphone. In vielen Nachbarländern wie Frankreich oder den Niederlanden sind Handys auf dem gesamten Schulgelände gesetzlich verboten. Frau Dr. Berg, fordern Sie ein solches Verbot auch für deutsche Schulen?“\nDr. Carola Berg: „Ich befürworte das ausdrücklich! In den Pausen sehen wir kaum noch Kinder, die miteinander Fußball spielen oder sich unterhalten – alle starren mit gesenktem Kopf auf ihre Displays. Zudem belegen psychologische Studien, dass ständige Benachrichtigungen zu Konzentrationsverlust und Schlafstörungen führen. Auch Cybermobbing auf dem Schulhof nimmt drastisch ab, wenn Handys in Schließfächern bleiben.“\nModeratorin: „Herr Dr. Holzer, Sie bilden Lehrkräfte im Bereich digitaler Unterricht aus. Teilen Sie diese Skepsis?“\nDr. Jan Holzer: „Nein, ein pauschales Verbot ist der falsche Weg und geht an der Lebensrealität vorbei. Die Schüler leben in einer digitalen Welt – die Schule muss ihnen beibringen, verantwortungsvoll damit umzugehen. Handys können im Unterricht als hochmoderne Recherchewerkzeuge, zur Erstellung von Lernvideos oder für interaktive Quizze genutzt werden. Wegsperren löst keine Probleme, es verhindert nur Medienbildung.“\nDr. Carola Berg: „Theoretisch klingt das gut, Herr Holzer. Aber in der Praxis verbringen viele Schüler den Unterricht damit, heimlich unter der Schulbank Computerspiele zu spielen oder WhatsApp-Nachrichten zu tippen. Die Lehrkräfte sind doch ständig damit beschäftigt, Polizist zu spielen.“\nModeratorin: „Gibt es vielleicht einen Mittelweg – etwa handyfreie Zonen und geregelte Unterrichtszeiten?“\nDr. Jan Holzer: „Genau das ist der beste Kompromiss: Klare Regeln, wann das Smartphone für pädagogische Zwecke auf dem Tisch liegt, und wann es stumm in der Schultasche bleibt.“",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "audioUrl": "/audio/b1/hoeren/test8/teil4.mp3",
       "teil": 4,
@@ -295,11 +251,7 @@
       "id": 24,
       "type": "matching",
       "question": "Befürwortet ein striktes Handyverbot, um soziale Kontakte und Bewegung in Pausen zu fördern.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -307,11 +259,7 @@
       "id": 25,
       "type": "matching",
       "question": "Verweist auf Risiken wie Cybermobbing, Konzentrationsverlust und Schlafprobleme.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -319,11 +267,7 @@
       "id": 26,
       "type": "matching",
       "question": "Argumentiert, dass Schulen Schülern den kompetenten Umgang mit digitalen Medien beibringen müssen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -331,11 +275,7 @@
       "id": 27,
       "type": "matching",
       "question": "Sieht Smartphones als nützliche Lernwerkzeuge für Recherchen und Schülerprojekte.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -343,11 +283,7 @@
       "id": 28,
       "type": "matching",
       "question": "Kritisiert, dass Schüler während des Unterrichts heimlich chatten und spielen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -355,11 +291,7 @@
       "id": 29,
       "type": "matching",
       "question": "Schlägt einen Mittelweg mit geregelten Nutzungsphasen vor.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "teil": 4
     },
@@ -367,11 +299,7 @@
       "id": 30,
       "type": "matching",
       "question": "Befürwortet klare Vereinbarungen statt vollständiger Verbote als zeitgemäße Lösung.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     }

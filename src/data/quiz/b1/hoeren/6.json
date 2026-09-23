@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Die Theateraufführung beginnt heute pünktlich um 19:30 Uhr.",
       "context": "Nummer 1: Sie hören eine Durchsage im Theater. „Sehr geehrte Damen und Herren, wir begrüßen Sie im Schauspielhaus. Wegen eines plötzlichen technischen Defekts an der Bühnenbeleuchtung verzögert sich der Vorstellungsbeginn unseres Stücks ‚Faust‘ um circa 20 Minuten. Das Theatercafé im Foyer ist für Sie geöffnet. Wir laden Sie ein, die Wartezeit bei einem kostenlosen Glas Mineralwasser oder Orangensaft zu überbrücken. Wir danken für Ihr Verständnis.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test6/teil1_1.mp3",
       "teil": 1,
@@ -35,10 +32,7 @@
       "type": "multiple-choice",
       "question": "Das Reisebüro bietet günstige Last-Minute-Flüge auf die Kanarischen Inseln an.",
       "context": "Nummer 2: Sie hören eine Durchsage im Radio. „Dem nasskalten Schmuddelwetter entfliehen? Jetzt Sonne tanken mit Sonnen-Reisen! Buchen Sie diese Woche exklusive Last-Minute-Pakete für Teneriffa und Gran Canaria: Eine Woche 4-Sterne-Hotel inklusive Flug, Halbpension und Transfer schon ab 399 Euro pro Person. Nur solange der Vorrat reicht – buchen Sie direkt online unter sonnenreisen.de oder im Reisebüro in Ihrer Stadt.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test6/teil1_2.mp3",
       "teil": 1
@@ -60,10 +54,7 @@
       "type": "multiple-choice",
       "question": "Die Heizungswartung findet am Freitagnachmittag statt.",
       "context": "Nummer 3: Sie hören eine Nachricht auf dem Anrufbeantworter. „Guten Tag Herr Werner, hier spricht Meier von der Hausverwaltung. Ich rufe an wegen der alljährlichen Heizungsüberprüfung in Ihrem Gebäude. Die Techniker der Firma Thermotec kommen am Donnerstag zwischen 8:00 und 11:30 Uhr zu Ihnen ins Haus. Bitte stellen Sie sicher, dass jemand zu Hause ist oder hinterlegen Sie den Wohnungsschlüssel bei den Nachbarn im Erdgeschoss. Vielen Dank!“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test6/teil1_3.mp3",
       "teil": 1
@@ -85,10 +76,7 @@
       "type": "multiple-choice",
       "question": "An der Ostseeküste wird für morgen ruhiges und windstilles Wetter vorhergesagt.",
       "context": "Nummer 4: Sie hören den Wetterbericht im Radio. „Und nun das Wetter für Norddeutschland: Ein kräftiges Sturmtief über Skandinavien sorgt an der Nord- und Ostseeküste ab Mitternacht für orkanartige Böen der Stärke 10 bis 11. Auf den Inseln muss mit Einschränkungen im Fährverkehr gerechnet werden. Im Binnenland fällt verbreitet ergiebiger Dauerregen bei Höchsttemperaturen um 12 Grad. Erst ab Donnerstag beruhigt sich die Wetterlage allmählich.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test6/teil1_4.mp3",
       "teil": 1
@@ -110,10 +98,7 @@
       "type": "multiple-choice",
       "question": "Ausgeliehene Bücher können rund um die Uhr online verlängert werden.",
       "context": "Nummer 5: Sie hören die Telefonansage der Stadtbücherei. „Guten Tag und herzlich willkommen bei der Stadtbücherei. Bitte beachten Sie: Unser Hauptgebäude ist montags geschlossen. Unsere Leihfristen können Sie jedoch jederzeit 24 Stunden am Tag online über Ihr Leserkonto auf unserer Website verlängern, sofern die Medien nicht von anderen Nutzern vorbestellt wurden. Für Fragen zu Gebühren erreichen Sie unsere Mitarbeiter wieder ab Dienstag ab 10 Uhr.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test6/teil1_5.mp3",
       "teil": 1
@@ -122,11 +107,7 @@
       "id": 10,
       "type": "multiple-choice",
       "question": "Wann hat die Bibliothek im Hauptgebäude Ruhetag?",
-      "options": [
-        "a) Montags.",
-        "b) Mittwochs.",
-        "c) Samstags."
-      ],
+      "options": ["a) Montags.", "b) Mittwochs.", "c) Samstags."],
       "correctAnswer": "a) Montags.",
       "teil": 1
     },
@@ -135,11 +116,7 @@
       "type": "multiple-choice",
       "question": "Die Schokoladenmanufaktur wurde gegründet im Jahr ...",
       "context": "Teil 2: Sie nehmen an einer Führung durch die historische Kölner Schokoladenmanufaktur teil.\n\n„Guten Tag, liebe Schokoladenliebhaber! Ich heiße Sie herzlich willkommen in unserer Schokoladenwelt am Rhein. Mein Name ist Andreas Klein. Unser traditionsreiches Familienunternehmen wurde im Jahr 1885 von meinem Urgroßvater gegründet und stellt seither handwerklich feinste Schokoladenkreationen her.\nAuf unserem Rundgang verfolgen wir den Weg der Schokolade von der Kakaoplantage bis zur fertigen Praline. Zunächst sehen Sie im Tropenhaus echte Kakaobäume mit frischen Früchten. Sie werden überrascht sein zu erfahren, dass eine Kakaofrucht etwa 30 bis 50 Bohnen enthält, die nach der Ernte fermentiert und in der Sonne getrocknet werden müssen.\nIm zweiten Raum erleben Sie die Röstung und das Mahlen. Die Bohnen werden gemahlen, bis die flüssige Kakaomasse entsteht. Das Geheimnis unseres zarten Schmelzes ist das sogenannte ‚Conchieren‘: Die Schokoladenmasse wird bis zu 72 Stunden lang ununterbrochen gerührt und belüftet.\nDas Highlight erwartet Sie am Ende des Rundgangs: Unser drei Meter hoher goldener Schokoladenbrunnen, an dem täglich 200 Kilogramm warme Vollmilchschokolade sprudeln! Dort darf jeder von Ihnen frische Waffeln direkt in die Schokolade tauchen und probieren. Folgen Sie mir bitte zum Eingang des Tropenhauses.“",
-      "options": [
-        "a) 1885.",
-        "b) 1920.",
-        "c) 1950."
-      ],
+      "options": ["a) 1885.", "b) 1920.", "c) 1950."],
       "correctAnswer": "a) 1885.",
       "audioUrl": "/audio/b1/hoeren/test6/teil2.mp3",
       "teil": 2,
@@ -199,10 +176,7 @@
       "type": "multiple-choice",
       "question": "Tobias und Miriam möchten am Wochenende eine gemeinsame Radtour an der Mosel machen.",
       "context": "Teil 3: Sie hören ein Gespräch zwischen zwei Freunden in einem Café.\n\nTobias: „Hey Miriam, hast du den Wetterbericht fürs Wochenende gesehen? Es soll bis zu 24 Grad warm werden und die Sonne scheint beide Tage!“\nMiriam: „Genial! Das müssen wir unbedingt ausnutzen. Wollen wir nicht unsere geplante Fahrradtour an der Mosel machen?“\nTobias: „Super Idee! Von Trier nach Bernkastel-Kues sind es etwa 60 Kilometer. Die Strecke ist fast völlig flach, weil sie direkt am Fluss entlanggeht.“\nMiriam: „Klingt machbar! Aber wie kommen wir mit den Fahrrädern nach Trier? Mit dem Auto haben wir nur einen Fahrradträger für ein Rad.“\nTobias: „Wir nehmen einfach den Regionalexpress! Mit dem Rheinland-Pfalz-Ticket können wir samstags ab 9 Uhr fahren und die Fahrräder dürfen im Zug mitgenommen werden.“\nMiriam: „Perfekt. Wo übernachten wir denn in Bernkastel? Die Hotels sind bestimmt teuer.“\nTobias: „Ein Kumpel von mir hat mir eine kleine Pension bei einem Winzer empfohlen. Die haben gemütliche Zimmer und bieten abends sogar eine Weinprobe an. Ich habe schon nachgeschaut: Ein Doppelzimmer kostet 75 Euro inklusive Frühstück.“\nMiriam: „Das ist ja wirklich ein Schnäppchen! Buch das bitte sofort, Tobias. Ich kümmere mich um die Fahrradtaschen und Luftpumpe.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test6/teil3.mp3",
       "teil": 3,
@@ -213,10 +187,7 @@
       "id": 17,
       "type": "multiple-choice",
       "question": "Die geplante Radstrecke verläuft über steile Berge.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -224,10 +195,7 @@
       "id": 18,
       "type": "multiple-choice",
       "question": "Die beiden wollen mit dem Auto nach Trier fahren.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -235,10 +203,7 @@
       "id": 19,
       "type": "multiple-choice",
       "question": "Fahrräder dürfen im Regionalzug mitgenommen werden.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -246,10 +211,7 @@
       "id": 20,
       "type": "multiple-choice",
       "question": "Die Pension in Bernkastel gehört einem Winzer.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -257,10 +219,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Das Doppelzimmer kostet mehr als 150 Euro pro Nacht.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -268,10 +227,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Miriam übernimmt die Buchung der Übernachtung.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -280,11 +236,7 @@
       "type": "matching",
       "question": "In den letzten Jahren wurden in deutschen Großstädten zehntausende E-Scooter aufgestellt.",
       "context": "Teil 4: Die Moderatorin diskutiert mit Markus Vogt und Clara Sommer über E-Scooter im Straßenverkehr.\n\na) Moderatorin (Julia Becker)\nb) Markus Vogt (Stadtrat für Verkehrsplanung)\nc) Clara Sommer (Vertreterin eines Mobilitätsverbands)\n\nModeratorin: „Guten Abend und willkommen zum Stadtgespräch. Seit ihrer Zulassung vor einigen Jahren prägen elektrische Tretroller das Bild deutscher Großstädte. Zehntausende Miet-Scooter stehen an jeder Straßenecke bereit. Während die einen von moderner Mikromobilität schwärmen, klagen andere über Unfälle und blockierte Gehwege. Herr Vogt, wie fällt Ihre Bilanz als Verkehrsplaner aus?“\nMarkus Vogt: „Ganz offen gesagt: ernüchternd. Die erhoffte Entlastung des Autoverkehrs ist kaum eingetreten. Untersuchungen zeigen, dass E-Scooter zu 80 Prozent Fuß- und Radwege ersetzen, aber fast niemanden dazu bewegen, das eigene Auto stehen zu lassen. Stattdessen haben wir täglich Beschwerden über rücksichtsloses Fahren auf Gehwegen und gestürzte Fußgänger.“\nClara Sommer: „Da muss ich entschieden widersprechen, Herr Vogt! E-Scooter sind ein unverzichtbarer Baustein der Verkehrswende für die sogenannte ‚letzte Meile‘ zwischen U-Bahn-Station und Haustür. Das Problem sind nicht die Roller selbst, sondern die veraltete Infrastruktur. Wenn Radwege breit und sicher ausgebaut wären, müsste niemand auf den Bürgersteig ausweichen.“\nMarkus Vogt: „Trotzdem müssen wir für Ordnung sorgen. Viele Nutzer stellen die Roller mitten auf Blindenleitsystemen oder vor Rettungswegen ab. Unsere Stadtverwaltung plant deshalb feste Abstellzonen und saftige Bußgelder für Leihfirmen, die ihre Roller nicht innerhalb von zwei Stunden wegräumen.“\nModeratorin: „Wäre eine Helmpflicht und ein striktes Alkoholverbot für E-Scooter-Fahrer sinnvoll?“\nClara Sommer: „Ein striktes Alkoholverbot von 0,0 Promille unterstützen wir vollkommen, das schützt alle Beteiligten. Eine Helmpflicht würde jedoch die spontane Nutzung im Alltag abwürgen. Besser sind digitale Geschwindigkeitsbegrenzungen in Fußgängerzonen per GPS.“",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "audioUrl": "/audio/b1/hoeren/test6/teil4.mp3",
       "teil": 4,
@@ -295,11 +247,7 @@
       "id": 24,
       "type": "matching",
       "question": "Stellt fest, dass E-Scooter kaum Autofahrten ersetzen, sondern vor allem Fußgängerwege.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -307,11 +255,7 @@
       "id": 25,
       "type": "matching",
       "question": "Sieht E-Scooter als unverzichtbaren Bestandteil für die Verbindung von Haltestelle und Wohnort.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -319,11 +263,7 @@
       "id": 26,
       "type": "matching",
       "question": "Kritisiert fehlende und zu schmale Radwege als eigentliche Ursache für Konflikte.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -331,11 +271,7 @@
       "id": 27,
       "type": "matching",
       "question": "Kündigt feste Parkzonen und Geldstrafen für falsch abgestellte Roller an.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -343,11 +279,7 @@
       "id": 28,
       "type": "matching",
       "question": "Fragt nach einer gesetzlichen Helmpflicht und Promillegrenzen für Rollerfahrer.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "teil": 4
     },
@@ -355,11 +287,7 @@
       "id": 29,
       "type": "matching",
       "question": "Befürwortet ein striktes Alkoholverbot von 0,0 Promille beim Fahren.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -367,11 +295,7 @@
       "id": 30,
       "type": "matching",
       "question": "Lehnt eine Helmpflicht ab, weil sie die spontane Nutzung der Roller verhindern würde.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     }

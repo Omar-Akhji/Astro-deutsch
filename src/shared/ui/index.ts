@@ -1,17 +1,19 @@
+// Generic Design System Primitives
 export { default as AnimateOnScroll } from "./AnimateOnScroll.vue";
 export { default as BackButton } from "./BackButton.astro";
 export { default as Card } from "./Card.astro";
 export { default as CardVue } from "./Card.vue";
 export { default as CardBody } from "./CardBody.vue";
 export { default as CardModal } from "./CardModal.vue";
+export { default as CardSkeleton } from "./CardSkeleton.astro";
 export { default as CardWithModal } from "./CardWithModal.vue";
-export { default as Footer } from "./Footer.astro";
-export { default as FooterSkeleton } from "./FooterSkeleton.astro";
 export { default as GlassCard } from "./GlassCard.astro";
 export { default as GlassCardVue } from "./GlassCard.vue";
-export { default as Hero } from "./Hero.astro";
-export { default as HeroVue } from "./Hero.vue";
-export { default as Navigation } from "./Navigation.vue";
 export { default as PageHeader } from "./PageHeader.astro";
 export { default as Skeleton } from "./Skeleton.astro";
 export { default as SkeletonLayouts } from "./SkeletonLayouts.astro";
+
+// Composite Layout Widgets (Re-exported from @/widgets for backward compatibility)
+export { Footer, FooterSkeleton } from "@/widgets/footer";
+export { Hero, HeroSkeleton, HeroVue } from "@/widgets/hero";
+export { Navigation } from "@/widgets/navigation";

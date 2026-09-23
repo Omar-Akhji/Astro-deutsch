@@ -1,0 +1,233 @@
+---
+import Skeleton from "@/shared/ui/Skeleton.astro";
+
+interface Props {
+  variant?: "overview" | "detail";
+}
+
+const { variant = "overview" } = Astro.props;
+---
+
+{variant === "overview" && (
+  <div class="py-4 mobile:py-8">
+    <header class="mb-10 text-center tablet:mb-12 laptop:mb-14">
+      <div class="mb-3 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
+        <Skeleton class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14" />
+        <Skeleton class="h-9 w-64 rounded-md bg-white/15 tablet:h-10 tablet:w-80" />
+      </div>
+      <div class="mx-auto mb-5 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
+      <div class="flex justify-center px-2">
+        <Skeleton class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-2xl rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5" />
+      </div>
+    </header>
+
+    {["sec1", "sec2", "sec3"].map(() => (
+      <div class="mbe-16">
+        <div class="mbe-8 flex items-center gap-3 tablet:gap-4">
+          <Skeleton class="size-10 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-12" />
+          <Skeleton class="h-8 w-52 rounded-md bg-white/10 tablet:h-9 tablet:w-64" />
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+          {["g1", "g2", "g3"].map(() => (
+            <article class="h-full">
+              <div class="relative z-1 flex h-full w-full flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-4 text-left shadow-xl backdrop-blur-(--glass-blur) tablet:p-5">
+                <div class="aspect-video w-full overflow-hidden rounded-2xl">
+                  <Skeleton class="h-full w-full rounded-2xl bg-white/5" />
+                </div>
+                <div class="flex flex-1 flex-col px-1 pt-4 pb-1">
+                  <div class="mbe-2.5 flex items-center gap-2">
+                    <Skeleton class="h-6 w-16 rounded-full bg-white/10" />
+                    <Skeleton class="h-4 w-20 rounded-full bg-white/5" />
+                  </div>
+                  <Skeleton class="mb-2 h-7 w-3/4 rounded-md bg-white/10" />
+                  <Skeleton class="mbe-1 h-4 w-full rounded-md bg-white/5" />
+                  <Skeleton class="mbe-4 h-4 w-2/3 rounded-md bg-white/5" />
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+)}
+
+{variant === "detail" && (
+  <div class="relative min-h-dvh py-6 tablet:py-10">
+    <main>
+      <!-- Hero section -->
+      <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12">
+        <div class="flex flex-col items-center text-center">
+          <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
+            <Skeleton class="h-7 w-24 rounded-full bg-white/10" />
+          </div>
+          <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15" />
+          <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
+          <div class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8">
+            <div class="flex items-center gap-2">
+              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
+              <Skeleton class="h-5 w-24 rounded-md bg-white/10 tablet:h-6" />
+            </div>
+            <div class="flex items-center gap-2">
+              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
+              <Skeleton class="h-5 w-20 rounded-md bg-white/10 tablet:h-6" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unterthemen (Subtopics) Section -->
+      <section class="mb-12 text-white tablet:mb-16">
+        <div class="mb-6 flex items-center gap-3 tablet:mb-8 tablet:gap-4">
+          <Skeleton class="size-10 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-12" />
+          <Skeleton class="h-7 w-36 rounded-md bg-white/10 tablet:h-8 tablet:w-44" />
+        </div>
+
+        <div class="grid gap-8 tablet:gap-10">
+          <!-- Subtopic 1: Content blocks (Usage & Explanations) -->
+          <article>
+            <div class="overflow-hidden rounded-2xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
+              <header class="flex flex-row items-center gap-4 bg-white/10 p-4.5 tablet:p-5">
+                <Skeleton class="h-6 w-10 rounded-md bg-white/20" />
+                <Skeleton class="h-6 w-64 rounded-md bg-white/15 tablet:w-80" />
+              </header>
+              <div class="p-5 tablet:p-6">
+                <Skeleton class="mb-5 h-4 w-3/4 max-w-lg rounded-md bg-white/5 tablet:mb-6" />
+                <div class="flex flex-col gap-6 tablet:gap-8">
+                  <div class="space-y-4">
+                    <Skeleton class="h-6 w-32 rounded-md bg-white/10" />
+                    <div class="grid gap-3">
+                      <div
+                        class="rounded-e-xl border-s-[6px] border-white/15 bg-white/5 p-4"
+                        style="border-start-start-radius: 0; border-end-start-radius: 0"
+                      >
+                        <Skeleton class="h-4 w-full rounded-md bg-white/5" />
+                      </div>
+                      <div
+                        class="rounded-e-xl border-s-[6px] border-white/15 bg-white/5 p-4"
+                        style="border-start-start-radius: 0; border-end-start-radius: 0"
+                      >
+                        <Skeleton class="h-4 w-5/6 rounded-md bg-white/5" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <Skeleton class="h-6 w-28 rounded-md bg-white/10" />
+                    <div class="grid gap-3">
+                      <div
+                        class="rounded-e-xl border-s-[6px] border-white/15 bg-white/5 p-4"
+                        style="border-start-start-radius: 0; border-end-start-radius: 0"
+                      >
+                        <Skeleton class="h-4 w-full rounded-md bg-white/5" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Subtopic 2: Table & Content -->
+          <article>
+            <div class="overflow-hidden rounded-2xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
+              <header class="flex flex-row items-center gap-4 bg-white/10 p-4.5 tablet:p-5">
+                <Skeleton class="h-6 w-10 rounded-md bg-white/20" />
+                <Skeleton class="h-6 w-72 rounded-md bg-white/15 tablet:w-96" />
+              </header>
+              <div class="p-5 tablet:p-6">
+                <Skeleton class="mb-5 h-4 w-2/3 max-w-md rounded-md bg-white/5 tablet:mb-6" />
+                <!-- Nested Table -->
+                <div class="mb-6 tablet:mb-8">
+                  <div class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
+                    <div class="border-b border-white/10 bg-white/5 px-4 py-3 tablet:px-6 tablet:py-3.5">
+                      <Skeleton class="h-5 w-44 rounded-md bg-white/10" />
+                    </div>
+                    <div class="overflow-x-auto">
+                      <div class="w-full">
+                        <div class="flex border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4">
+                          <Skeleton class="h-4 w-1/4 rounded-md bg-white/10" />
+                          <Skeleton class="ml-4 h-4 w-1/4 rounded-md bg-white/10" />
+                          <Skeleton class="ml-4 h-4 w-1/4 rounded-md bg-white/10" />
+                          <Skeleton class="ml-4 h-4 w-1/4 rounded-md bg-white/10" />
+                        </div>
+                        {["t1", "t2", "t3", "t4"].map(() => (
+                          <div class="flex border-b border-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4">
+                            <Skeleton class="h-5 w-1/4 rounded-md bg-white/10" />
+                            <Skeleton class="ml-4 h-5 w-1/4 rounded-md bg-white/5" />
+                            <Skeleton class="ml-4 h-5 w-1/4 rounded-md bg-white/5" />
+                            <Skeleton class="ml-4 h-5 w-1/4 rounded-md bg-white/5" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content block -->
+                <div class="flex flex-col gap-6 tablet:gap-8">
+                  <div class="space-y-4">
+                    <Skeleton class="h-6 w-24 rounded-md bg-white/10" />
+                    <div class="grid gap-3">
+                      <div
+                        class="rounded-e-xl border-s-[6px] border-white/15 bg-white/5 p-4"
+                        style="border-start-start-radius: 0; border-end-start-radius: 0"
+                      >
+                        <Skeleton class="h-4 w-4/5 rounded-md bg-white/5" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Subtopic 3: Content & Tips -->
+          <article>
+            <div class="overflow-hidden rounded-2xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
+              <header class="flex flex-row items-center gap-4 bg-white/10 p-4.5 tablet:p-5">
+                <Skeleton class="h-6 w-10 rounded-md bg-white/20" />
+                <Skeleton class="h-6 w-56 rounded-md bg-white/15 tablet:w-72" />
+              </header>
+              <div class="p-5 tablet:p-6">
+                <Skeleton class="mb-5 h-4 w-3/4 max-w-lg rounded-md bg-white/5 tablet:mb-6" />
+                <div class="flex flex-col gap-6 tablet:gap-8">
+                  <div class="space-y-4">
+                    <Skeleton class="h-6 w-32 rounded-md bg-white/10" />
+                    <div class="grid gap-3">
+                      <div
+                        class="rounded-e-xl border-s-[6px] border-white/15 bg-white/5 p-4"
+                        style="border-start-start-radius: 0; border-end-start-radius: 0"
+                      >
+                        <Skeleton class="h-4 w-full rounded-md bg-white/5" />
+                      </div>
+                      <div
+                        class="rounded-e-xl border-s-[6px] border-white/15 bg-white/5 p-4"
+                        style="border-start-start-radius: 0; border-end-start-radius: 0"
+                      >
+                        <Skeleton class="h-4 w-5/6 rounded-md bg-white/5" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Tips inside subtopic -->
+                  <div class="space-y-4">
+                    <Skeleton class="h-6 w-20 rounded-md bg-white/10" />
+                    <div class="grid gap-4 sm:grid-cols-2">
+                      <div class="flex items-start gap-2 rounded-xl border border-white/10 bg-white/5 p-4 tablet:p-5">
+                        <Skeleton class="size-4 shrink-0 rounded-full bg-white/10 tablet:size-5" />
+                        <Skeleton class="h-4 w-full rounded-md bg-white/5" />
+                      </div>
+                      <div class="flex items-start gap-2 rounded-xl border border-white/10 bg-white/5 p-4 tablet:p-5">
+                        <Skeleton class="size-4 shrink-0 rounded-full bg-white/10 tablet:size-5" />
+                        <Skeleton class="h-4 w-full rounded-md bg-white/5" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+)}

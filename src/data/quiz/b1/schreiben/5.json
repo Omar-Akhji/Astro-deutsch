@@ -8,9 +8,7 @@
       "type": "multiple-choice",
       "question": "Schreiben Modelltest 5",
       "context": "...",
-      "options": [
-        "Erledigt"
-      ],
+      "options": ["Erledigt"],
       "correctAnswer": "Erledigt",
       "teil": 1
     }

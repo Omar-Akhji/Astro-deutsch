@@ -124,9 +124,7 @@ const isGlassBorder = computed(() => {
         animation="fade-up"
         :delay="700"
       >
-        <dl
-          class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8"
-        >
+        <dl class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8">
           <div
             v-for="stat in props.stats"
             :key="stat.label"

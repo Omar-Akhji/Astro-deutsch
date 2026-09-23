@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Der ICE nach Berlin fährt heute planmäßig von Gleis 9 ab.",
       "context": "Nummer 1: Sie hören eine Durchsage am Hauptbahnhof. „Achtung am Gleis 9: Der ICE 702 nach Berlin Hauptbahnhof über Nürnberg und Leipzig mit der planmäßigen Abfahrt um 14:15 Uhr fällt heute wegen einer technischen Störung am Triebfahrzeug aus. Fahrgäste nach Berlin nutzen bitte den ICE 704 um 14:35 Uhr von Gleis 11. Ihre Fahrkarten sind für diesen Zug ohne Aufpreis gültig. Wir bitten um Entschuldigung.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test4/teil1_1.mp3",
       "teil": 1,
@@ -35,10 +32,7 @@
       "type": "multiple-choice",
       "question": "Der Baumarkt bietet Rabatte auf alle Gartenmöbel und Pflanzen.",
       "context": "Nummer 2: Sie hören eine Durchsage im Radio. „Frühlingserwachen bei Heim & Garten! Ab diesem Donnerstag feiern wir den Saisonstart mit satten Preisnachlässen: Sparen Sie 25 Prozent auf sämtliche Gartenmöbel aus Holz und Rattan. Außerdem erhalten Sie beim Kauf von drei Balkonpflanzen die vierte gratis dazu. Kommen Sie vorbei – unsere Gartenfachabteilung ist am Freitag bis 21 Uhr für Sie geöffnet.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test4/teil1_2.mp3",
       "teil": 1
@@ -47,11 +41,7 @@
       "id": 4,
       "type": "multiple-choice",
       "question": "Wie lange hat die Gartenabteilung am Freitag geöffnet?",
-      "options": [
-        "a) Bis 18 Uhr.",
-        "b) Bis 20 Uhr.",
-        "c) Bis 21 Uhr."
-      ],
+      "options": ["a) Bis 18 Uhr.", "b) Bis 20 Uhr.", "c) Bis 21 Uhr."],
       "correctAnswer": "c) Bis 21 Uhr.",
       "teil": 1
     },
@@ -60,10 +50,7 @@
       "type": "multiple-choice",
       "question": "Susanne möchte das morgige Projekttreffen komplett absagen.",
       "context": "Nummer 3: Sie hören eine Nachricht auf dem Anrufbeantworter. „Hallo Daniel, hier ist Susanne aus dem Marketing. Du, ich habe schlechte Nachrichten für unser morgiges Projekttreffen um 10 Uhr: Herr Wagner von der Geschäftsleitung muss dringend zu einem Notfalltermin nach Frankfurt. Er hat gefragt, ob wir das Meeting um zwei Stunden nach hinten verschieben können, also auf 12 Uhr. Sag mir bitte bis heute Abend Bescheid, ob das bei dir klappt.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test4/teil1_3.mp3",
       "teil": 1
@@ -72,11 +59,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Um wie viel Uhr soll das Treffen nun stattfinden?",
-      "options": [
-        "a) Um 10 Uhr.",
-        "b) Um 12 Uhr.",
-        "c) Um 14 Uhr."
-      ],
+      "options": ["a) Um 10 Uhr.", "b) Um 12 Uhr.", "c) Um 14 Uhr."],
       "correctAnswer": "b) Um 12 Uhr.",
       "teil": 1
     },
@@ -85,10 +68,7 @@
       "type": "multiple-choice",
       "question": "Am Abend werden in Süddeutschland schwere Unwetter erwartet.",
       "context": "Nummer 4: Sie hören den Wetterbericht im Radio. „Und nun die Wetteraussichten für Bayern und Baden-Württemberg: Heute Nachmittag bleibt es zunächst noch heiter und sommerlich warm mit Höchstwerten bis zu 29 Grad. Ab dem späten Abend ziehen von den Alpen her jedoch dunkle Gewitterwolken auf. Der Deutsche Wetterdienst warnt vor Starkregen, stürmischen Böen und Hagel. Sichern Sie lose Gegenstände im Garten.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test4/teil1_4.mp3",
       "teil": 1
@@ -110,10 +90,7 @@
       "type": "multiple-choice",
       "question": "Die Zahnarztpraxis Dr. Berger ist diese Woche wie gewohnt geöffnet.",
       "context": "Nummer 5: Sie hören eine telefonische Ansage. „Guten Tag, Sie sind verbunden mit der Zahnarztpraxis Dr. Michael Berger. Unsere Praxis bleibt wegen Fortbildung und Betriebsurlaubs von Montag, dem 12., bis einschließlich Freitag, den 16. Mai geschlossen. In dringenden Schmerzfällen wenden Sie sich bitte an die Praxis Dr. Katja Sommer in der Rosenstraße 14, Telefon 089 44 22 11. Ab Montag, dem 19. Mai, sind wir wieder wie gewohnt für Sie da.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test4/teil1_5.mp3",
       "teil": 1
@@ -199,10 +176,7 @@
       "type": "multiple-choice",
       "question": "Lena und Marco planen das alljährliche Sommerfest ihrer Firma.",
       "context": "Teil 3: Sie hören ein Gespräch zwischen zwei Arbeitskollegen in der Büroküche.\n\nMarco: „Hi Lena, hast du kurz zwei Minuten? Wir müssen dringend das Sommerfest planen. Chef hat gesagt, wir haben dieses Jahr ein etwas größeres Budget!“\nLena: „Super, Marco! Letztes Jahr im Restaurant am Fluss war es zwar nett, aber viel zu eng für alle 80 Kollegen.“\nMarco: „Genau. Deshalb habe ich überlegt, ob wir nicht den Grillplatz am Waldsee mieten. Da gibt es eine überdachte Hütte, falls es regnet, und genug Platz für Musik und Spiele.“\nLena: „Die Idee ist toll! Aber wer kümmert sich um das Essen? Wenn wir alles selber grillen, steht wieder dieselbe Gruppe den ganzen Abend am Rost und hat keinen Spaß.“\nMarco: „Stimmt auch wieder. Wir könnten doch einen Foodtruck bestellen! Ein Bekannter von mir hat einen Burger- und Falafel-Truck. Er bietet auch vegetarische und vegane Sachen an.“\nLena: „Klasse! Das spart uns Arbeit und schmeckt jedem. Und was machen wir mit der Musik? Ein DJ kostet meistens ein Vermögen.“\nMarco: „Unser Azubi Nico legt doch in seiner Freizeit auf! Er hat professionelle Lautsprecher und würde das sicher gerne übernehmen.“\nLena: „Perfekt. Dann frage ich heute Nico und du holst das Angebot vom Foodtruck ein.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test4/teil3.mp3",
       "teil": 3,
@@ -213,10 +187,7 @@
       "id": 17,
       "type": "multiple-choice",
       "question": "Das Firmenfest fand letztes Jahr auf einem Schiff statt.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -224,10 +195,7 @@
       "id": 18,
       "type": "multiple-choice",
       "question": "Marco schlägt vor, den Grillplatz am Waldsee zu reservieren.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -235,10 +203,7 @@
       "id": 19,
       "type": "multiple-choice",
       "question": "Lena möchte, dass die Mitarbeiter das gesamte Fleisch selbst grillen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -246,10 +211,7 @@
       "id": 20,
       "type": "multiple-choice",
       "question": "Der empfohlene Foodtruck bietet auch vegetarische Speisen an.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -257,10 +219,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Die Firma hat bereits einen teuren professionellen DJ engagiert.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -268,10 +227,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Auszubildender Nico soll für die Musik auf dem Fest sorgen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -280,11 +236,7 @@
       "type": "matching",
       "question": "Ein Freiwilligendienst hilft jungen Menschen herauszufinden, was sie beruflich wollen.",
       "context": "Teil 4: Die Moderatorin diskutiert mit Felix Richter und Dr. Ursula Brandt über das Freiwillige Soziale Jahr (FSJ).\n\na) Moderatorin (Sandra Koch)\nb) Felix Richter (ehemaliger FSJler)\nc) Dr. Ursula Brandt (Soziologin und Jugendforscherin)\n\nModeratorin: „Herzlich willkommen zu unserer Sendung ‚Forum Bildung‘. Heute sprechen wir über das Freiwillige Soziale Jahr. Nach dem Schulabschluss entscheiden sich jedes Jahr rund 50.000 junge Menschen für ein FSJ in Krankenhäusern, Pflegeheimen oder Kitas. Herr Richter, Sie haben Ihr FSJ in einer Werkstatt für Menschen mit Behinderung gemacht. War das eine gute Entscheidung?“\nFelix Richter: „Für mich war es absolut goldrichtig. Nach zwölf Jahren Schulbank wusste ich überhaupt nicht, wohin mein Weg gehen soll. Das Jahr im sozialen Bereich hat mich erwachsen gemacht. Ich habe Verantwortung gelernt und gemerkt, dass ich gerne mit Menschen arbeite. Jetzt studiere ich soziale Arbeit.“\nModeratorin: „Frau Dr. Brandt, Sie forschen über den Berufseinstieg Jugendlicher. Sehen Sie das FSJ genauso positiv?“\nDr. Brandt: „Grundsätzlich ja, die persönliche Reifung ist unbestritten. Dennoch müssen wir kritisch hinschauen: In vielen Einrichtungen werden Freiwillige leider als billige Vollzeitarbeitskräfte ausgenutzt, um Personalmangel in der Pflege zu kompensieren. Bei einem Taschengeld von oft unter 400 Euro ist das sozialpolitisch bedenklich.“\nFelix Richter: „Da muss ich Frau Dr. Brandt teilweise recht geben. Die Bezahlung reicht kaum zum Leben, wenn man nicht bei den Eltern wohnen kann. Das Taschengeld müsste dringend erhöht werden.“\nModeratorin: „Wäre ein verpflichtendes soziales Jahr für alle Schulabgänger eine sinnvolle Lösung?“\nDr. Brandt: „Davon halte ich gar nichts. Zwang führt nur zu Demotivation. Freiwilliges Engagement kann man nicht verordnen, man muss es attraktiv gestalten.“",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "audioUrl": "/audio/b1/hoeren/test4/teil4.mp3",
       "teil": 4,
@@ -295,11 +247,7 @@
       "id": 24,
       "type": "matching",
       "question": "Rund 50.000 Jugendliche leisten jährlich einen Freiwilligendienst in sozialen Einrichtungen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "teil": 4
     },
@@ -307,11 +255,7 @@
       "id": 25,
       "type": "matching",
       "question": "Kritisiert, dass Freiwillige oft als billige Arbeitskräfte im Pflegenotstand eingesetzt werden.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -319,11 +263,7 @@
       "id": 26,
       "type": "matching",
       "question": "Stimmt zu, dass das Taschengeld für ein eigenständiges Leben oft nicht ausreicht.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -331,11 +271,7 @@
       "id": 27,
       "type": "matching",
       "question": "Fragt nach der Idee eines verpflichtenden Dienstjahres für alle Jugendlichen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "teil": 4
     },
@@ -343,11 +279,7 @@
       "id": 28,
       "type": "matching",
       "question": "Lehnt ein verpflichtendes soziales Jahr ab, weil Zwang zu Unlust und Demotivation führt.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -355,11 +287,7 @@
       "id": 29,
       "type": "matching",
       "question": "Entschied sich durch das FSJ für ein Studium im sozialen Bereich.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -367,11 +295,7 @@
       "id": 30,
       "type": "matching",
       "question": "Fordert bessere Bedingungen und Attraktivität statt staatlichem Pflichtdienst.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     }

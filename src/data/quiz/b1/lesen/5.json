@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Sophie arbeitet seit einem halben Jahr als Au-pair-Mädchen in Wien.",
       "context": "Blog: Sophies Wiener Tagebuch\n\nLiebe Freunde,\nvor genau sechs Monaten bin ich in Wien angekommen. Ich erinnere mich noch genau an den ersten Tag am Flughafen Schwechat: Mein Koffer wog 25 Kilo und ich war furchtbar nervös. Meine Gastfamilie – die Hubers – hat mich mit einem bunten Willkommensschild abgeholt. Die beiden Kinder, Jonas (4) und Mia (7), haben mir gleich Zeichnungen geschenkt.\n\nMein Alltag ist abwechslungsreich, aber manchmal auch anstrengend. Morgens mache ich mit den Kindern das Frühstück und bringe Mia in die Schule und Jonas in den Kindergarten. Von 9 bis 12 Uhr habe ich frei: In dieser Zeit besuche ich dreimal pro Woche einen Deutschkurs an der Universität. Am Nachmittag spiele ich mit den Kindern, helfe Mia bei den Hausaufgaben oder wir gehen in den Prater oder in den Tiergarten Schönbrunn.\n\nAm Anfang hatte ich große Schwierigkeiten mit dem Wiener Dialekt. Als Herr Huber mich am ersten Tag fragte: „Magst a Semmerl zum Frühstück?“, wusste ich überhaupt nicht, was er meint! Jetzt weiß ich natürlich, dass ein „Semmerl“ ein Brötchen ist. Ich habe mich in die Stadt verliebt – vor allem in die gemütlichen Kaffeehäuser und die wunderschöne Architektur. Ich bleibe noch bis zum Sommer hier und überlege schon, danach in Wien zu studieren.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1,
       "teilTitle": "Blog / Artikel",
@@ -21,10 +18,7 @@
       "id": 2,
       "type": "multiple-choice",
       "question": "Sophie wurde von ihrer Gastfamilie am Bahnhof abgeholt.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -32,10 +26,7 @@
       "id": 3,
       "type": "multiple-choice",
       "question": "Sophie besucht jeden Vormittag einen Sprachkurs an der Universität.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -43,10 +34,7 @@
       "id": 4,
       "type": "multiple-choice",
       "question": "Sophie versteht den Wiener Dialekt mittlerweile besser als zu Beginn.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -54,10 +42,7 @@
       "id": 5,
       "type": "multiple-choice",
       "question": "Am Nachmittag müssen die Kinder im Haushalt helfen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -65,10 +50,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Sophie möchte eventuell auch nach ihrer Au-pair-Zeit in Wien bleiben.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -153,19 +135,7 @@
       "type": "matching",
       "question": "13. Markus sucht einen Sprachkurs am Wochenende, um seine Spanischkenntnisse für die nächste Urlaubsreise aufzufrischen.",
       "context": "Lesen Sie die Situationen 13-19 und die Anzeigen a-j. Welche Anzeige passt zu welcher Situation?\nFür eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0.\n\na) Spanisch intensiv am Wochenende: Samstag und Sonntag jeweils 10:00–16:00 Uhr. Auffrischung für Anfänger mit Vorkenntnissen (A2/B1). Sprachschule Viva, Tel. 089/452189.\n\nb) Tandempartner gesucht! Ich (Spanierin, 24) möchte mein Deutsch verbessern und biete Spanisch-Konversation. Treffen 1x wöchentlich im Café. Schreib an maria_bl@mail.de.\n\nc) Englisch für den Beruf: Abendkurse Dienstag und Donnerstag ab 18:30 Uhr. Fokus auf E-Mails, Telefonieren und Verhandeln. Zertifikat nach Kursabschluss. Berlitz Sprachenzentrum.\n\nd) Französisch-Kompaktkurs für Schüler: Vorbereitung auf die Abiturprüfung in den Sommerferien. Montag bis Freitag 9:00–12:30 Uhr. Schülerhilfe München-Nord.\n\ne) Italienisch kochen und lernen: Samstagabend gemeinsam toskanische Spezialitäten kochen und dabei die Sprache praktizieren. Max. 8 Personen. Anmeldung unter info@cucina-lingua.de.\n\nf) Japanisch für Einsteiger: Beginn ab 15. Oktober, immer mittwochs 19:00 Uhr. Keine Vorkenntnisse erforderlich. VHS Stadtmitte, Raum 204.\n\ng) Online-Sprachtraining flexibel: Über 15 Sprachen im Einzelunterricht via Videochat lernen. Freie Zeiteinteilung rund um die Uhr. Jetzt 30 Min. Probestunde buchen: www.lingua-connect.net.\n\nh) Portugiesisch-Konversationsclub: Jeden zweiten Freitagabend ungezwungener Austausch bei Wein und Tapas. Niveau B1–C1 erwünscht. Eintritt frei, Spenden willkommen.\n\ni) Deutsch als Fremdsprache B2-Intensiv: Montag bis Freitag 08:30–12:30 Uhr, Prüfungsvorbereitung telc / Goethe. Beginn monatlich. Sprachakademie Zentrum.\n\nj) Übersetzungsservice & Dolmetschen: Fachübersetzungen Spanisch, Deutsch, Englisch für Recht und Wirtschaft. Beglaubigte Urkunden. Kontakt: buero@uebersetzungen-schmidt.de",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "a",
       "teil": 3,
       "teilTitle": "Anzeigen / Matching",
@@ -175,19 +145,7 @@
       "id": 14,
       "type": "matching",
       "question": "14. Elena arbeitet im Schichtdienst und sucht eine Möglichkeit, zeitlich völlig unabhängig per Internet Englisch zu lernen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "g",
       "teil": 3
     },
@@ -195,19 +153,7 @@
       "id": 15,
       "type": "matching",
       "question": "15. David hat eine spanische Geburtsurkunde, die er für das Standesamt offiziell auf Deutsch übersetzen lassen muss.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "j",
       "teil": 3
     },
@@ -215,19 +161,7 @@
       "id": 16,
       "type": "matching",
       "question": "16. Laura lernt seit zwei Jahren Italienisch und möchte ihre Sprachpraxis gern mit einer kulinarischen Freizeitaktivität verknüpfen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "e",
       "teil": 3
     },
@@ -235,19 +169,7 @@
       "id": 17,
       "type": "matching",
       "question": "17. Tim studiert Geschichte und möchte ohne Vorkenntnisse beginnen, die japanische Sprache von Grund auf zu erlernen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "f",
       "teil": 3
     },
@@ -255,19 +177,7 @@
       "id": 18,
       "type": "matching",
       "question": "18. Robert möchte sein geschäftliches Englisch verbessern, um internationale Kunden professionell am Telefon und per Mail zu betreuen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "c",
       "teil": 3
     },
@@ -275,19 +185,7 @@
       "id": 19,
       "type": "matching",
       "question": "19. Florian sucht einen kostenlosen Chinesisch-Kurs für Fortgeschrittene an einer Volkshochschule.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "0",
       "teil": 3
     },
@@ -296,10 +194,7 @@
       "type": "multiple-choice",
       "question": "Sabine",
       "context": "In einer Kulturzeitschrift lesen Sie Leserkommentare zum Thema:\n„E-Books statt Papierbücher: Werden gedruckte Bücher bald ganz verschwinden?“\n\nBeispiel (Martin, 42, Heidelberg): Ein Urlaub ohne meinen E-Reader ist für mich undenkbar. Statt zehn schwere Bücher mitzuschleppen, habe ich eine ganze Bibliothek in der Jackentasche. Papier ist einfach nicht mehr zeitgemäß. (Ja)\n\nSabine, 31, Regensburg: Für mich geht nichts über den Geruch von frisch gedrucktem Papier und das Gefühl, eine echte Seite umzublättern. Ein volles Bücherregal im Wohnzimmer strahlt Wärme und Persönlichkeit aus. Kein digitaler Bildschirm kann diese Atmosphäre ersetzen. Gedruckte Bücher werden niemals aussterben.\n\nLukas, 26, Köln: Seit ich für mein Studium täglich hunderte Seiten Fachliteratur lesen muss, schätze ich digitale Bücher sehr. Man kann Suchbegriffe eingeben, Stellen farbig markieren und Notizen synchronisieren. Für mich ist das E-Book dem Papierbuch in jeder Hinsicht überlegen.\n\nMonika, 55, Salzburg: Ich lese seit kurzem auf einem Reader, weil ich dort die Schriftgröße beliebig vergrößern kann. Für meine älter werdenden Augen ist das eine enorme Erleichterung! Trotzdem kaufe ich Bildbände und Kochbücher weiterhin gedruckt. Aber für Romane bevorzuge ich ganz klar das handliche E-Book.\n\nTobias, 22, Dresden: Mir fehlt bei digitalen Büchern der Wert. Wenn ich 15 Euro für ein Buch ausgebe, möchte ich etwas Echtes in den Händen halten, das ich nach dem Lesen auch an Freunde verleihen oder im Schrank aufbewahren kann. Eine PDF-Datei auf einer Festplatte fühlt sich für mich wertlos an.\n\nJasmin, 39, Hamburg: Wenn man bedenkt, wie viele Bäume für Papier abgeholzt und wie viel Wasser bei der Papierherstellung verbraucht wird, sollte jeder verantwortungsbewusste Mensch auf digitale Medien umsteigen. Ein modernes Lesegerät spart tonnenweise Ressourcen und schont die Natur.\n\nJürgen, 62, Innsbruck: Bücher sind Kulturgüter, keine schnöden Datensätze. Was passiert mit meinen E-Books, wenn ein Softwarehersteller den Dienst einstellt oder das Dateiformat nicht mehr unterstützt wird? Meine alten Lexika und Romane aus dem 19. Jahrhundert kann ich auch in 50 Jahren noch problemlos aufschlagen.\n\nHannah, 29, Berlin: Ich lese unterwegs in der U-Bahn grundsätzlich auf dem Smartphone oder E-Reader. Es wiegt nichts, passt in jede Handtasche und ich kann mir mitten in der Nacht spontan ein neues Buch herunterladen. Die Vorteile der digitalen Welt sind unschlagbar.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4,
       "teilTitle": "Diskussion / Meinungen",
@@ -309,10 +204,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Lukas",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -320,10 +212,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Monika",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -331,10 +220,7 @@
       "id": 23,
       "type": "multiple-choice",
       "question": "Tobias",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -342,10 +228,7 @@
       "id": 24,
       "type": "multiple-choice",
       "question": "Jasmin",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -353,10 +236,7 @@
       "id": 25,
       "type": "multiple-choice",
       "question": "Jürgen",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -364,10 +244,7 @@
       "id": 26,
       "type": "multiple-choice",
       "question": "Hannah",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },

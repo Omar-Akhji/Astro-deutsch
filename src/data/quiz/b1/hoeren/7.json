@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Die S-Bahnen fahren heute auf der normalen Strecke durch den City-Tunnel.",
       "context": "Nummer 1: Sie hören eine Durchsage am S-Bahnhof. „Achtung an Gleis 2: Wegen dringender Gleiserneuerungen im City-Tunnel ist die Stammstrecke zwischen Hauptbahnhof und Ostbahnhof bis Sonntagabend gesperrt. Alle S-Bahnen enden vorzeitig am Hauptbahnhof. Zwischen Hauptbahnhof und Ostbahnhof ist ein Schienenersatzverkehr mit Gelenkbussen eingerichtet. Die Busse fahren im 5-Minuten-Takt vom Vorplatz ab. Bitte planen Sie mindestens 20 Minuten mehr Reisezeit ein.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test7/teil1_1.mp3",
       "teil": 1,
@@ -35,10 +32,7 @@
       "type": "multiple-choice",
       "question": "Der Elektronikmarkt gibt 20 Prozent Rabatt auf alle Laptops und Tablets.",
       "context": "Nummer 2: Sie hören eine Durchsage im Radio. „Herbst-Sparwochen bei Mega-Markt! Rüsten Sie sich jetzt für Homeoffice und Freizeit aus: Nur bis Samstag sparen Sie 20 Prozent auf alle vorrätigen Notebooks, Tablets und Zubehör führender Marken. Beim Kauf eines Laptops erhalten Sie zudem eine kabellose Maus geschenkt. Besuchen Sie uns in einer unserer fünf Filialen oder shoppen Sie bequem online unter mega-markt.de.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test7/teil1_2.mp3",
       "teil": 1
@@ -60,10 +54,7 @@
       "type": "multiple-choice",
       "question": "Frau Sommer muss zur Besprechung der Laborwerte nochmals persönlich in die Praxis kommen.",
       "context": "Nummer 3: Sie hören eine Nachricht auf dem Anrufbeantworter. „Guten Tag Frau Sommer, hier ist die Praxis Dr. Weber. Ihre Blutwerte aus der Laboruntersuchung vom Dienstag sind eingetroffen. Herr Dr. Weber hat die Befunde gesichtet und möchte die Ergebnisse gerne kurz telefonisch mit Ihnen besprechen. Sie müssen also nicht extra vorbeikommen. Bitte rufen Sie uns heute zwischen 12 und 13 Uhr unter der Durchwahl 22 an. Vielen Dank.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test7/teil1_3.mp3",
       "teil": 1
@@ -85,10 +76,7 @@
       "type": "multiple-choice",
       "question": "Für das Wochenende wird nasskaltes Wetter mit Schnee vorhergesagt.",
       "context": "Nummer 4: Sie hören den Wetterbericht im Radio. „Und hier die Aussichten für das kommende Wochenende: Der Oktober zeigt sich von seiner schönsten Seite! Ein stabiles Hoch über Osteuropa beschert uns sonniges, trockenes Herbstwetter in ganz Mitteldeutschland. Die Temperaturen klettern tagsüber auf angenehme 18 bis 21 Grad. Erst in den Nächten wird es mit Tiefstwerten um 5 Grad herbstlich kühl. Perfektes Wetter für Waldspaziergänge!“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test7/teil1_4.mp3",
       "teil": 1
@@ -110,10 +98,7 @@
       "type": "multiple-choice",
       "question": "Nichtmitglieder können alle Sportkurse des Vereins dauerhaft kostenlos besuchen.",
       "context": "Nummer 5: Sie hören die Telefonansage des Sportvereins TSV Eintracht. „Willkommen beim TSV Eintracht. Unser neues Winterprogramm ist gestartet! Von Yoga und Pilates bis zu Badminton und Hallenfußball bieten wir über 40 Kurse an. Ein kostenloses Schnuppertraining ist für alle Angebote nach Voranmeldung einmalig möglich. Die Vereinsgeschäftsstelle ist montags und donnerstags von 16 bis 19 Uhr für persönliche Beratung geöffnet.“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "audioUrl": "/audio/b1/hoeren/test7/teil1_5.mp3",
       "teil": 1
@@ -199,10 +184,7 @@
       "type": "multiple-choice",
       "question": "Herr Krause und Frau Bergmann wohnen im selben Mietshaus.",
       "context": "Teil 3: Sie hören ein Gespräch zwischen zwei Nachbarn im Hausflur.\n\nHerr Krause: „Guten Abend, Frau Bergmann! Haben Sie kurz einen Moment? Der Paketbote hat heute Nachmittag zwei schwere Kartons für Sie bei mir abgegeben.“\nFrau Bergmann: „Ach, Herr Krause, vielen herzlichen Dank! Das sind die neuen Gartenwerkzeuge und Blumentöpfe für meinen Balkon. Ich trage sie gleich hoch in den zweiten Stock.“\nHerr Krause: „Warten Sie, ich helfe Ihnen die Treppe rauf. Die Pakete wiegen bestimmt zehn Kilo das Stück.“\nFrau Bergmann: „Das ist wirklich sehr aufmerksam von Ihnen. Ich habe gesehen, wie schön Ihre roten Geranien am Balkon blühen! Welchen Dünger nehmen Sie denn?“\nHerr Krause: „Ganz normalen Bio-Flüssigdünger aus dem Baumarkt, einmal die Woche ins Gießwasser. Wissen Sie eigentlich schon das Neueste vom Hauseigentümer? Am letzten Samstag im Monat soll ein kleines Sommerfest im Gemeinschaftsgarten stattfinden!“\nFrau Bergmann: „Nein, das wusste ich noch gar nicht! Was für eine wunderbare Idee. Da lerne ich endlich mal die neuen Nachbarn aus dem Dachgeschoss kennen.“\nHerr Krause: „Genau. Jeder bringt einen Salat oder Kuchen mit und die Hausverwaltung spendiert die Getränke und Grillkohle.“\nFrau Bergmann: „Toll, dann backe ich meinen berühmten Apfelkuchen!“",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "audioUrl": "/audio/b1/hoeren/test7/teil3.mp3",
       "teil": 3,
@@ -213,10 +195,7 @@
       "id": 17,
       "type": "multiple-choice",
       "question": "Herr Krause hat Pakete für Frau Bergmann entgegengenommen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -224,10 +203,7 @@
       "id": 18,
       "type": "multiple-choice",
       "question": "Die Pakete enthalten neue Kleidung für den Winterurlaub.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -235,10 +211,7 @@
       "id": 19,
       "type": "multiple-choice",
       "question": "Herr Krause weigert sich, Frau Bergmann beim Tragen zu helfen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -246,10 +219,7 @@
       "id": 20,
       "type": "multiple-choice",
       "question": "Am Monatsende ist ein Nachbarschaftsfest im Garten geplant.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -257,10 +227,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Die Getränke für das Fest müssen alle Nachbarn selbst bezahlen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 3
     },
@@ -268,10 +235,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Frau Bergmann möchte für das Fest einen Apfelkuchen backen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 3
     },
@@ -280,11 +244,7 @@
       "type": "matching",
       "question": "Pilotprojekte zur 4-Tage-Woche zeigen in vielen Ländern positive Ergebnisse.",
       "context": "Teil 4: Der Moderator diskutiert mit Sabine Wolf und Stefan Meier über die Einführung einer 4-Tage-Woche.\n\na) Moderator (David Braun)\nb) Sabine Wolf (Unternehmerin im Maschinenbau)\nc) Stefan Meier (Gewerkschaftsvertreter)\n\nModerator: „Guten Abend zur Wirtschaftsrunde. Vier Tage arbeiten, drei Tage Wochenende – und das bei vollem Lohnausgleich. Was vor wenigen Jahren wie eine Utopie klang, wird in Ländern wie Großbritannien, Island und auch in ersten deutschen Betrieben erfolgreich getestet. Herr Meier, warum fordert Ihre Gewerkschaft die 4-Tage-Woche flächendeckend?“\nStefan Meier: „Ganz einfach: Weil die Arbeitswelt vor dem Kollaps steht. Die Zahl der Burnout-Erkrankungen und Fehltage wegen psychischer Belastung erreicht jedes Jahr neue Rekordstände. Die Pilotstudien belegen eindeutig: Beschäftigte mit vier Arbeitstagen sind gesünder, motivierter und die Krankheitsquote sinkt um fast 40 Prozent. Wer ausgeruht ist, arbeitet in 32 Stunden genauso viel wie vorher in 40 Stunden.“\nModerator: „Frau Wolf, Sie leiten ein mittelständisches Unternehmen mit 150 Mitarbeitern. Könnten Sie morgen auf vier Tage umstellen?“\nSabine Wolf: „Auf gar keinen Fall! Im produzierenden Gewerbe und in der Pflege kann man Maschinen und Patienten nicht einfach einen Tag pro Woche sich selbst überlassen. Wenn meine Maschinen freitags stillstehen, verlieren wir 20 Prozent unseres Umsatzes an die internationale Konkurrenz. Bei vollem Lohnausgleich würden unsere Produktionskosten explodieren.“\nStefan Meier: „Aber Frau Wolf, Sie klagen doch selbst über den dramatischen Fachkräftemangel! Betriebe mit 4-Tage-Woche erhalten viermal so viele Bewerbungen wie traditionelle Firmen. Es ist das stärkste Argument, um junge Fachkräfte zu gewinnen.“\nSabine Wolf: „Das mag für Werbeagenturen und IT-Büros in Berlin stimmen, wo man flexibel am Laptop arbeitet. Aber für Handwerker, Bäcker, Krankenhäuser und die Industrie ist eine generelle 4-Tage-Woche schlicht unbezahlbar und wirtschaftlich gefährlich.“",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "audioUrl": "/audio/b1/hoeren/test7/teil4.mp3",
       "teil": 4,
@@ -295,11 +255,7 @@
       "id": 24,
       "type": "matching",
       "question": "Verweist auf steigende Krankheitsquoten und Burnout durch zu hohe Arbeitsbelastung.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -307,11 +263,7 @@
       "id": 25,
       "type": "matching",
       "question": "Betont, dass ausgeruhte Angestellte in weniger Zeit dieselbe Arbeitsleistung erbringen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -319,11 +271,7 @@
       "id": 26,
       "type": "matching",
       "question": "Befürchtet drastische Umsatzeinbußen und Wettbewerbsnachteile in der Fertigung.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -331,11 +279,7 @@
       "id": 27,
       "type": "matching",
       "question": "Sieht in der 4-Tage-Woche den größten Vorteil bei der Gewinnung neuer Fachkräfte.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "c",
       "teil": 4
     },
@@ -343,11 +287,7 @@
       "id": 28,
       "type": "matching",
       "question": "Erwähnt Branchen wie Handwerk, Krankenhäuser und Bäckereien als Gegenbeispiele.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -355,11 +295,7 @@
       "id": 29,
       "type": "matching",
       "question": "Hält das Modell für reine Büro- und IT-Berufe durchaus für vorstellbar.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "b",
       "teil": 4
     },
@@ -367,11 +303,7 @@
       "id": 30,
       "type": "matching",
       "question": "Leitet das Gespräch und fasst die Kernfrage des vollen Lohnausgleichs zusammen.",
-      "options": [
-        "a",
-        "b",
-        "c"
-      ],
+      "options": ["a", "b", "c"],
       "correctAnswer": "a",
       "teil": 4
     }

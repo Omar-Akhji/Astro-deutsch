@@ -47,6 +47,11 @@
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
 
     // ─── Path aliases ──────────────────────────────────────────────────────
-    "paths": { "@/*": ["./src/*"] }
+    "paths": {
+      "@/*": ["./src/*"],
+      "@features/*": ["./src/features/*"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@shared/*": ["./src/shared/*"]
+    }
   }
 }

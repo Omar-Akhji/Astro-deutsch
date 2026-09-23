@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Kiara ist nicht allein ins Konzert gegangen.",
       "context": "Kiara Wenzel\n10. März\n\nHallo TH-Fans,\nich und meine Freundin waren im Tokio-Hotel-Konzert in Erfurt dabei. Wir hatten uns rechtzeitig Karten geholt. Schon viele Wochen vor dem Konzert war ich tierisch happy. Am 6. März stand ich um 5 Uhr morgens auf, ging zu meiner Freundin und gemeinsam fuhren wir nach Erfurt. Als wir so ca. gegen 8 Uhr vor der Thüringenhalle ankamen, waren wir erstaunt, dass zum Glück gerade mal 20 Leute oder so da waren. Das hieß für uns, wir waren mit im ersten Block und damit war uns die erste Reihe sicher.\n\nNach endlosen Stunden Warten, es war ungefähr um 12, kamen einige Fernsehteams und fragten uns, wen wir am besten finden, wie lange wir schon stehen usw. Die letzte Stunde vor dem Einlass kam uns unendlich lang vor. In dieser Zeit wurde uns erzählt, wie das dann alles abläuft. Nun war es endlich so weit. Eine Dreiviertelstunde vor dem offiziellen Einlass (es war 16.45 Uhr) durften wir mit unseren Bändchen als Erste rein.\n\nWir sind sofort losgerannt, um unsere Plätze zu sichern. Und tatsächlich: wir waren in der 1. Reihe! Dann wurde es im Saal dunkel. Alle schrien. Nur Bill kam nicht. Wir mussten noch zehn Minuten warten, die uns wie Stunden vorkamen. Aber dann ging es endlich los. Das Konzert war der absolute Hammer. Wir haben die ganze Zeit mitgesungen. Bill stand am Ende genau vor mir und hat meine Hand berührt! Ich werde dieses Konzert nie vergessen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1,
       "teilTitle": "Blog / Artikel",
@@ -21,10 +18,7 @@
       "id": 1,
       "type": "multiple-choice",
       "question": "Kiara musste lange vor der Konzerthalle warten.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -32,10 +26,7 @@
       "id": 2,
       "type": "multiple-choice",
       "question": "Die Band wurde von Fernsehreportern interviewt.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -43,10 +34,7 @@
       "id": 3,
       "type": "multiple-choice",
       "question": "Kiara schaffte es schließlich, ganz vorn zu stehen.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -54,10 +42,7 @@
       "id": 4,
       "type": "multiple-choice",
       "question": "Als es in der Halle dunkel wurde, schrien alle vor Angst.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -65,10 +50,7 @@
       "id": 5,
       "type": "multiple-choice",
       "question": "Bill kam und schrie am lautesten.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -76,10 +58,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Die Bandmitglieder haben Kiara die Hand gegeben.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -127,19 +106,7 @@
       "type": "matching",
       "question": "Ilse lebt auf einem Bauernhof. Sie hat einen Hund, zwei Katzen, Kaninchen und sogar ein Pferd. Trotzdem hätte sie gern auch noch einen Esel.",
       "context": "Anzeigen:\na) Dringend gesucht: Frauchen u./od. Herrchen für Cockerspaniel. Tel. 089/3095486\nb) Eselfohlen Diana zu verkaufen. Tel. 07631-7192\nc) Arme Katze „Blacky“, 4j., Wer nimmt sie liebevoll auf?\nd) Gesucht wird der Graupapagei „Burli“. ☎ 01/290 60 43\ne) Graupapageienbabys zu verkaufen. Tel. 02166/930305\nf) Nehme Ihren Hund / Ihre Katze während Ihres Urlaubs in Pflege! Tel. 08084/529763\ng) ARCHE NOAH - TIERKLINIK Salzburg: Wir versorgen Kleintiere liebevoll während Ihres Urlaubs!\nh) Nehme Ihren Hund in Pflege (Wohnung). Tel. 01 73-28 85 11 99\ni) Suche Aquarium kostenlos mit Zubehör. ☎ 07631 / 18357\nj) Fisch- & Korallentag. Verkauf von Fischen, Pflanzen, Zubehör.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "b",
       "teil": 2
     },
@@ -147,19 +114,7 @@
       "id": 13,
       "type": "matching",
       "question": "13. Susanne möchte im Urlaub verreisen und weiß nicht, wer in dieser Zeit auf ihre kleine, weiße Maus aufpassen kann.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "g",
       "teil": 2
     },
@@ -167,19 +122,7 @@
       "id": 14,
       "type": "matching",
       "question": "14. Thomas ist Single und hält sich einen Dackel. Die Nachbarn haben sich beschwert, weil der Hund in der Wohnung laut wird, wenn Thomas tagsüber im Büro ist.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "h",
       "teil": 2
     },
@@ -187,19 +130,7 @@
       "id": 15,
       "type": "matching",
       "question": "15. Die Familie Schmidt hat einen großen Garten and eine Bernhardiner-Hündin. Damit ihr Haustier nicht allein ist, wären sie bereit, einen zweiten Hund aufzunehmen. Er soll aber nicht so groß sein.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "a",
       "teil": 2
     },
@@ -207,19 +138,7 @@
       "id": 16,
       "type": "matching",
       "question": "16. Herr Albrecht muss aus beruflichen Gründen umziehen und kann seinen Hund nicht mitnehmen. Er sucht ein neues Zuhause für ihn.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "0",
       "teil": 3,
       "teilTitle": "Anzeigen / Matching",
@@ -229,19 +148,7 @@
       "id": 17,
       "type": "matching",
       "question": "17. Eva möchte für ihr neues, großes Aquarium einige Fische kaufen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "j",
       "teil": 3
     },
@@ -249,19 +156,7 @@
       "id": 18,
       "type": "matching",
       "question": "18. Karl will sich eine Katze anschaffen. Er mag diese Tiere, weil sie nicht viel Pflege brauchen und sehr selbstständig sind.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "c",
       "teil": 3
     },
@@ -269,19 +164,7 @@
       "id": 19,
       "type": "matching",
       "question": "19. Frau Bach mag Vögel, sie sucht zurzeit einen Papagei.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "e",
       "teil": 3
     },
@@ -290,10 +173,7 @@
       "type": "multiple-choice",
       "question": "Henriette",
       "context": "Diskussion über Kettenmails:\nHenriette: Wenn du eine Mail bekommst, sie an alle weiterzuschicken – dann lass es bleiben. Du machst dich nur unbeliebt.\nAlexandra: Kettenmails sind für mich einfach ein Teil der Kommunikation. Wenn die Mail lustig ist, schicke ich sie weiter.\nNils: Ich lösche Kettenmails sofort. Werbefirmen sammeln so Adressen für Spam.\nStefan: Ich prüfe Notrufe nach, würde sie aber nicht weiterschicken, um andere nicht zu ärgern.\nCharlotte: Ich habe bei einem Rezept-Spiel mitgemacht und freue mich auf die Rezepte.\nVictor: Zeitverschwendung! Man sollte lieber richtige Mails an Freunde schreiben.\nWiebke: Man sollte Interessantes immer an alle weiterleiten. Das ist das Gute am Internet.\nKatta: Psychoterror! Ich will bei keiner Kettenmail mehr mitmachen.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 3
     },
@@ -301,10 +181,7 @@
       "id": 20,
       "type": "multiple-choice",
       "question": "Alexandra",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 3
     },
@@ -312,10 +189,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Nils",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 3
     },
@@ -323,10 +197,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Stefan",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 3
     },
@@ -334,10 +205,7 @@
       "id": 23,
       "type": "multiple-choice",
       "question": "Charlotte",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4,
       "teilTitle": "Diskussion / Meinungen",
@@ -347,10 +215,7 @@
       "id": 24,
       "type": "multiple-choice",
       "question": "Victor",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -358,10 +223,7 @@
       "id": 25,
       "type": "multiple-choice",
       "question": "Wiebke",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -369,10 +231,7 @@
       "id": 26,
       "type": "multiple-choice",
       "question": "Katta",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },

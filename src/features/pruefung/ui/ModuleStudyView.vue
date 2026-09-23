@@ -2,7 +2,7 @@
 import { computed } from "vue";
 import { CheckCircle2, Clock } from "lucide-vue-next";
 import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
-import Hero from "@/shared/ui/Hero.vue";
+import { HeroVue as Hero } from "@/widgets/hero";
 import { type Thema, ThemenSection } from "@/features/themen";
 import type { ExamLevel, PhraseGroup, RedemittelCategory } from "../model/types.ts";
 import EmailVisualFrame from "./EmailVisualFrame.vue";

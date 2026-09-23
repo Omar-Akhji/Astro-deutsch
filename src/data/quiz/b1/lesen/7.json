@@ -8,10 +8,7 @@
       "type": "multiple-choice",
       "question": "Timm hat seine Ausbildungsstelle in seiner Heimatstadt gefunden.",
       "context": "Blog: Timms Neustart an der Elbe\n\nMoin zusammen!\nSeit drei Monaten lebe ich nun in Hamburg und mache eine Ausbildung zum Mechatroniker bei einer großen Werft im Hafen. Ich bin in einem kleinen Dorf im Sauerland aufgewachsen – Hamburg war für mich am Anfang ein riesiger Kulturschock! Alles schien schneller, lauter und hektischer zu sein als zu Hause.\n\nMeine erste eigene Wohnung ist winzig: 24 Quadratmeter im Stadtteil Wilhelmsburg. Aber ich habe sie ganz nach meinem Geschmack eingerichtet und bin mächtig stolz darauf. In den ersten Wochen habe ich meine Familie und meine alten Schulfreunde sehr vermisst. Jeden Sonntagabend haben wir lange telefoniert.\n\nInzwischen habe ich mich aber super eingelebt. Im Betrieb verstehe ich mich hervorragend mit den anderen Auszubildenden. Nach Feierabend treffen wir uns oft an den Landungsbrücken oder gehen gemeinsam am Elbstrand spazieren, um den riesigen Containerschiffen zuzusehen.\n\nBesonders gefällt mir an meinem Beruf, dass ich Theorie und Praxis verbinden kann: Zwei Wochen arbeite ich im Werk und lerne, Motoren und elektronische Systeme zu reparieren, dann folgt eine Woche Unterricht in der Berufsschule. Ich bereue den Schritt in die Großstadt keine Sekunde!",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1,
       "teilTitle": "Blog / Artikel",
@@ -21,10 +18,7 @@
       "id": 2,
       "type": "multiple-choice",
       "question": "Timm fand das Leben in Hamburg von Anfang an sehr ruhig und vertraut.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -32,10 +26,7 @@
       "id": 3,
       "type": "multiple-choice",
       "question": "In den ersten Wochen hatte Timm Heimweh nach seiner Familie.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -43,10 +34,7 @@
       "id": 4,
       "type": "multiple-choice",
       "question": "Timm verbringt seine Freizeit oft mit anderen Auszubildenden aus seiner Firma.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -54,10 +42,7 @@
       "id": 5,
       "type": "multiple-choice",
       "question": "In seiner Ausbildung hat Timm ausschließlich Unterricht an der Berufsschule.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Falsch",
       "teil": 1
     },
@@ -65,10 +50,7 @@
       "id": 6,
       "type": "multiple-choice",
       "question": "Timm ist heute froh über seine Entscheidung, nach Hamburg gezogen zu sein.",
-      "options": [
-        "Richtig",
-        "Falsch"
-      ],
+      "options": ["Richtig", "Falsch"],
       "correctAnswer": "Richtig",
       "teil": 1
     },
@@ -153,19 +135,7 @@
       "type": "matching",
       "question": "13. Petra möchte nach der Arbeit in entspannter Atmosphäre Hatha-Yoga lernen und sucht einen Anfängerkurs am Dienstagabend.",
       "context": "Lesen Sie die Situationen 13-19 und die Anzeigen a-j. Welche Anzeige passt zu welcher Situation?\nFür eine Situation gibt es keine passende Anzeige. In diesem Fall wählen Sie 0.\n\na) Yoga & Achtsamkeit für Einsteiger: Sanftes Hatha-Yoga zur Dehnung und Entspannung. Immer dienstags 18:30–20:00 Uhr. Kleine Gruppen (max. 10 Pers.). Yoga-Studio Lotus, Tel. 089/882190.\n\nb) Schwimmkurse für Erwachsene: Kraultechnik von Grund auf lernen oder Brustschwimmen optimieren. Donnerstag 20:00 Uhr im Stadtbad Nord. Anmeldung bei Trainer Martin: schwimmen@sportverein.de.\n\nc) Bouldern für Neugierige: 2-stündiger Schnupperkurs jeden Samstag 11:00 Uhr inkl. Leihschuhe und Trainerbegleitung. Boulderhalle Kraftwerk, Tel. 089/410293.\n\nd) Lauftreff für Halbmarathon: Gezieltes Vorbereitungstraining für Fortgeschrittene (Zielzeit unter 2 Std.). Mo & Do 19:00 Uhr im Olympiapark. Teilnahme kostenlos.\n\ne) Salsa & Bachata Tanzkurse: Rhythmus, Schwung und Lebensfreude! Anfängerkurs ohne festen Tanzpartner möglich. Mittwoch 19:30 Uhr im Tanzlokal Havanna. info@havanna-tanz.de.\n\nf) Pilates zur Rückenstärkung: Sanftes Ganzkörpertraining zur Stärkung der Tiefenmuskulatur. Jeden Donnerstag 09:00–10:00 Uhr für Senioren und Frühaufsteher. Praxis Reha-Fit.\n\ng) Geführte Mountainbike-Touren im Isartal: Samstags 10:00–15:00 Uhr, anspruchsvolle Trails für Geübte mit eigenem MTB und Helmpflicht. Anmeldung: info@bike-adventures.de.\n\nh) Segelschein Binnen & Bodensee: Wochenend-Intensivkurs am Starnberger See. Theorie und Praxis auf modernen Jollen. Frühbucherrabatt bis 15. April. www.segeln-bayern.de.\n\ni) Fitnessboxen für Frauen: Kraft, Ausdauer und Selbstverteidigung ohne blaue Flecken. Training Montag & Freitag 18:00 Uhr. Boxclub Westend.\n\nj) Schachclub für Turnierspieler: Trainingsabende Freitag ab 19 Uhr. Regelmäßige Turnierteilnahme in der Landesliga. Schulsportzentrum Süd.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "a",
       "teil": 3,
       "teilTitle": "Anzeigen / Matching",
@@ -175,19 +145,7 @@
       "id": 14,
       "type": "matching",
       "question": "14. Niklas möchte das Klettern ausprobieren und sucht einen Schnupperkurs mit Leihausrüstung am Wochenende.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "c",
       "teil": 3
     },
@@ -195,19 +153,7 @@
       "id": 15,
       "type": "matching",
       "question": "15. Claudia sucht ein spezielles Boxtraining ausschließlich für Frauen, um Fitness und Selbstverteidigung zu trainieren.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "i",
       "teil": 3
     },
@@ -215,19 +161,7 @@
       "id": 16,
       "type": "matching",
       "question": "16. Tobias möchte auf einem bayerischen See den Segelschein machen und sucht einen Kompaktkurs am Wochenende.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "h",
       "teil": 3
     },
@@ -235,19 +169,7 @@
       "id": 17,
       "type": "matching",
       "question": "17. Julia hat keinen festen Tanzpartner, möchte aber gerne mittwochs lateinamerikanische Tänze erlernen.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "e",
       "teil": 3
     },
@@ -255,19 +177,7 @@
       "id": 18,
       "type": "matching",
       "question": "18. Herr Sommer ist 68 Jahre alt, hat Rückenbeschwerden und sucht ein sanftes Bewegungstraining am Vormittag.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "f",
       "teil": 3
     },
@@ -275,19 +185,7 @@
       "id": 19,
       "type": "matching",
       "question": "19. Martin sucht einen professionellen Golflehrer für individuellen Einzelunterricht auf einem Meisterschaftsplatz.",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f",
-        "g",
-        "h",
-        "i",
-        "j",
-        "0"
-      ],
+      "options": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "0"],
       "correctAnswer": "0",
       "teil": 3
     },
@@ -296,10 +194,7 @@
       "type": "multiple-choice",
       "question": "Carsten",
       "context": "In einem Verbrauchermagazin lesen Sie die Diskussion über das Thema:\n„Bargeldloses Bezahlen: Sollten Scheine und Münzen vollständig abgeschafft werden?“\n\nBeispiel (Leon, 25, Bremen): Ich bezahle selbst den Kaugummi am Kiosk mit dem Smartphone. Bargeld ist unhygienisch, schwer in der Tasche und man muss ständig zum Geldautomaten rennen. Weg damit! (Ja)\n\nCarsten, 48, Dortmund: Mit Bargeld behält man die absolute Kontrolle über die eigenen Ausgaben. Wenn man sieht, wie sich das Portemonnaie leert, überlegt man sich Spontankäufe zweimal. Bei reinen Kartenzahlungen verliert man viel zu schnell den Überblick und gerät in die Schuldenfalle.\n\nMelanie, 29, Frankfurt: In Skandinavien bezahlt man seit Jahren selbst auf dem Wochenmarkt und in öffentlichen Toiletten digital per App. Es geht blitzschnell, spart langes Schlangestehen an den Kassen und schützt vor Diebstählen auf offener Straße. Deutschland hinkt der Moderne mal wieder hinterher.\n\nWalter, 71, Passau: Was machen ältere Menschen, die kein modernes Smartphone besitzen oder sich mit Touchscreens schwer tun? Sollen die vom täglichen Leben und Einkaufen ausgeschlossen werden? Bargeld bedeutet Teilhabe und Freiheit für alle Generationen.\n\nKatrin, 34, Berlin: Die vollständige Abschaffung von Bargeld bedeutet das Ende der Privatsphäre. Banken, Bezahldienste und der Staat können bei jeder Transaktion genau nachvollziehen, wann, wo und wofür ich mein Geld ausgebe. Ich will kein gläserner Bürger sein!\n\nDennis, 23, Hannover: Das lästige Suchen nach passendem Kleingeld an der Kasse nervt einfach jeden. Kontaktloses Bezahlen mit Karte oder Smartwatch dauert zwei Sekunden. Kein Händler müsste mehr mühsam Wechselgeld zählen und teure Geldtransporte beauftragen.\n\nBettina, 50, Würzburg: Was passiert bei einem großflächigen Stromausfall oder einem Cyberangriff auf das Bankensystem? Ohne Scheine und Münzen bricht die gesamte Grundversorgung sofort zusammen. Bargeld ist die einzige krisensichere Währung.\n\nFlorian, 38, Münster: Für mich ist digital zu bezahlen eine enorme Erleichterung. Ich muss nie wieder nach einem funktionierenden Geldautomaten meiner Hausbank suchen, um hohe Gebühren für Fremdabhebungen zu vermeiden. Die digitale Zahlung ist moderner und praktischer.",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4,
       "teilTitle": "Diskussion / Meinungen",
@@ -309,10 +204,7 @@
       "id": 21,
       "type": "multiple-choice",
       "question": "Melanie",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -320,10 +212,7 @@
       "id": 22,
       "type": "multiple-choice",
       "question": "Walter",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -331,10 +220,7 @@
       "id": 23,
       "type": "multiple-choice",
       "question": "Katrin",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -342,10 +228,7 @@
       "id": 24,
       "type": "multiple-choice",
       "question": "Dennis",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
@@ -353,10 +236,7 @@
       "id": 25,
       "type": "multiple-choice",
       "question": "Bettina",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Nein",
       "teil": 4
     },
@@ -364,10 +244,7 @@
       "id": 26,
       "type": "multiple-choice",
       "question": "Florian",
-      "options": [
-        "Ja",
-        "Nein"
-      ],
+      "options": ["Ja", "Nein"],
       "correctAnswer": "Ja",
       "teil": 4
     },
