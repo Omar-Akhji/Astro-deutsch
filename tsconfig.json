@@ -3,55 +3,101 @@
   "extends": "astro/tsconfigs/strictest",
 
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "node_modules", "skills-catalog", ".agents"],
+  "exclude": [
+    "dist",
+    "node_modules",
+    ".cache",
+    ".temp",
+    "coverage",
+    "skills-catalog",
+    ".agents",
+    ".gemini",
+    ".kiro"
+  ],
 
   "compilerOptions": {
-    // ─── Target & Lib ──────────────────────────────────────────────────────
-    // TS6 defaults to ES2025 but explicit is clearer
+    // ─── Target & ECMAScript Baseline ──────────────────────────────────────────
+    // Modern 2026 runtime target: explicit ES2025/ESNext alignment
     "target": "ES2025",
     "lib": ["ES2025", "DOM", "DOM.Iterable"],
     "ignoreDeprecations": "6.0",
 
-    // ─── Vue Template & JSX Preservation ──────────────────────────────────
-    "jsx": "preserve",
-
-    // ─── Module ────────────────────────────────────────────────────────────
+    // ─── Module Resolution & Bundler Architecture ──────────────────────────────
     "module": "ESNext",
     "moduleResolution": "bundler",
-    // Forces every file to be treated as a module, not a global script
+    // Forces every file to be evaluated as a module, preventing global leakage
     "moduleDetection": "force",
-    // Allows .ts extensions in imports — required for Bun native TS execution
+    // Allows importing .ts extensions natively with Bun and modern Vite bundlers
     "allowImportingTsExtensions": true,
+    // Emits are handled by Bun and Astro; tsc is purely used for type verification
+    "noEmit": true,
+    // Enable type-safe JSON module imports
+    "resolveJsonModule": true,
 
-    // ─── Interop ───────────────────────────────────────────────────────────
-    // Enforces `import type` for type-only imports
-    // Modern replacement for esModuleInterop (deprecated in TS6)
+    // ─── Modern Syntax Erasure & Type Stripping (Bun / TS 6) ───────────────────
+    // Enforces `import type` for type-only imports; zero runtime overhead
     "verbatimModuleSyntax": true,
-
-    // ─── TS6 Strictness ────────────────────────────────────────────────────
-    // No enums/namespaces — required for Bun native TS stripping
+    // Enforces only erasable syntax (no runtime enums or namespaces); required for Bun TS stripping
     "erasableSyntaxOnly": true,
-    // Explicit even though TS6 default — important behavior to document
-    "noUncheckedSideEffectImports": true,
-    // Prevents dot-access on index-signature types
+    // Guarantees that each file can be transpiled independently by Bun / Vite / esbuild
+    "isolatedModules": true,
+
+    // ─── Strictest Type Safety Matrix ──────────────────────────────────────────
+    // Core strict suite: noImplicitAny, strictNullChecks, strictFunctionTypes, etc.
+    "strict": true,
+    // Forces indexed lookups (arr[i], obj[k]) to include undefined in their return type
+    "noUncheckedIndexedAccess": true,
+    // Disallows assigning undefined to optional properties unless explicitly typed with undefined
+    "exactOptionalPropertyTypes": true,
+    // Enforces bracket notation (obj["key"]) for index-signature properties to prevent typos
     "noPropertyAccessFromIndexSignature": true,
+    // Validates that side-effect imports (e.g. CSS files) resolve to existing physical files
+    "noUncheckedSideEffectImports": true,
+    // Enforces explicit `override` keyword when subclassing or extending methods
+    "noImplicitOverride": true,
+    // Ensures all execution branches within a function return an explicit value
+    "noImplicitReturns": true,
+    // Prevents accidental fallthrough bugs in switch statements
+    "noFallthroughCasesInSwitch": true,
+    // Flags declared variables that are never read
+    "noUnusedLocals": true,
+    // Flags function parameters that are never read
+    "noUnusedParameters": true,
+    // Disallows unreachable dead code blocks
+    "allowUnreachableCode": false,
+    // Disallows unused loop or block labels
+    "allowUnusedLabels": false,
+    // Ensures catch clause variables are typed as unknown instead of any
+    "useUnknownInCatchVariables": true,
 
-    // ─── Types ─────────────────────────────────────────────────────────────
-    // CRITICAL in TS6: @types/* no longer auto-discovered
-    // Add bun only if you use Bun APIs (Bun.serve, Bun.file, etc.)
-    // Add node if you use Node APIs (process.env, path, fs, etc.)
-    "types": ["bun", "node"],
+    // ─── Quality & Filesystem Hygiene ──────────────────────────────────────────
+    // Guarantees cross-platform casing compatibility across Windows, Linux, and macOS
+    "forceConsistentCasingInFileNames": true,
+    // Skips redundant type checking inside node_modules for peak build/check velocity
+    "skipLibCheck": true,
+    // Allows JS files in project while preventing unchecked JS compilation errors
+    "allowJs": true,
+    "checkJs": false,
 
-    // ─── Astro TS Plugin ───────────────────────────────────────────────────
-    // Enables IntelliSense for .astro files in editors
+    // ─── Framework & JSX Preservation ──────────────────────────────────────────
+    // Preserves JSX structures for Astro and Vue 3.5 compiler transformations
+    "jsx": "preserve",
+    // Language server plugin enabling editor diagnostics for .astro files
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
 
-    // ─── Path aliases ──────────────────────────────────────────────────────
+    // ─── Runtime Environment Types ─────────────────────────────────────────────
+    // Explicitly loaded ambient types for Bun and Node.js built-ins in TS 6
+    "types": ["bun", "node"],
+
+    // ─── Path Mapping & FSD Aliases ────────────────────────────────────────────
     "paths": {
       "@/*": ["./src/*"],
       "@features/*": ["./src/features/*"],
       "@widgets/*": ["./src/widgets/*"],
-      "@shared/*": ["./src/shared/*"]
+      "@shared/*": ["./src/shared/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@assets/*": ["./src/assets/*"]
     }
   }
 }

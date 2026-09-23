@@ -12,28 +12,26 @@ const { examLevels } = Astro.props;
 
 <section class="py-4">
   <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 tablet:grid-cols-2 tablet:gap-8">
-    {
-      examLevels.map((exam, index) => (
-        <li
-          class="h-full"
-          data-animate="fade-up"
-        >
-          <Card
-            category={exam.category}
-            description={exam.description}
-            gradient={getGradient(index, PRUEFUNG_GRADIENTS)}
-            href={`/pruefung/${exam.id}`}
-            icon={exam.level}
-            stats={[
-              { label: "Module", value: String(exam.sections.length) },
-              { label: "Bestehen", value: exam.passingScore.split(" ", 1)[0] ?? "" },
-            ]}
-            subtitle={exam.totalDuration}
-            title={exam.title}
-            variant="large"
-          />
-        </li>
-      ))
-    }
+    {examLevels.map((exam, index) => (
+      <li
+        class="h-full"
+        data-animate="fade-up"
+      >
+        <Card
+          category={exam.category}
+          description={exam.description}
+          gradient={getGradient(index, PRUEFUNG_GRADIENTS)}
+          href={`/pruefung/${exam.id}`}
+          icon={exam.level}
+          stats={[
+            { label: "Module", value: String(exam.sections.length) },
+            { label: "Bestehen", value: exam.passingScore.split(" ", 1)[0] ?? "" },
+          ]}
+          subtitle={exam.totalDuration}
+          title={exam.title}
+          variant="large"
+        />
+      </li>
+    ))}
   </ul>
 </section>

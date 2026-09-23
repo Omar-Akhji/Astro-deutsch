@@ -1,35 +1,93 @@
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import eslintPluginAstro from "eslint-plugin-astro";
-import nounsanitized from "eslint-plugin-no-unsanitized";
 import eslintConfigPrettier from "eslint-config-prettier";
-import eslintPluginVue from "eslint-plugin-vue";
-import vueParser from "vue-eslint-parser";
+import nounsanitized from "eslint-plugin-no-unsanitized";
 import securityPlugin from "eslint-plugin-security";
 import unicorn from "eslint-plugin-unicorn";
+import eslintPluginVue from "eslint-plugin-vue";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
+import vueParser from "vue-eslint-parser";
 
+/**
+ * Modern 2026 ESLint Flat Configuration
+ *
+ * Tailored for Astro, Vue 3.5, Tailwind CSS v4, TypeScript 6, and Bun. Enforces strict type safety,
+ * CSP security, and modern web ergonomics while seamlessly delegating code style and formatting to
+ * Prettier.
+ */
 const eslintConfig = defineConfig(
-  // ─── Recommended configs (flat variants required for ESLint 10) ──────────
+  // ─── Global Ignores ───────────────────────────────────────────────────────
+  {
+    name: "global-ignores",
+    ignores: [
+      "dist/**",
+      ".astro/**",
+      "node_modules/**",
+      "public/**",
+      "coverage/**",
+      ".temp/**",
+      ".cache/**",
+      "*.log",
+      ".gemini/**",
+      ".kiro/**",
+      ".agent/**",
+      ".agents/**",
+      "skills-catalog/**",
+      "*.md",
+      "*.json",
+      "*.lock",
+      "tsconfig.tsbuildinfo",
+    ],
+  },
+
+  // ─── Recommended Flat Presets ─────────────────────────────────────────────
   ...tsPlugin.configs["flat/recommended"],
   ...eslintPluginAstro.configs["flat/recommended"],
   ...eslintPluginAstro.configs["flat/jsx-a11y-recommended"],
-
-  // ─── Unicorn ──────────────────────────────────────────────────────────────
+  ...eslintPluginVue.configs["flat/recommended"],
   unicorn.configs.recommended,
-
-  // ─── Security ─────────────────────────────────────────────────────────────
   securityPlugin.configs.recommended,
   nounsanitized.configs.recommended,
 
-  // ─── Unicorn overrides ────────────────────────────────────────────────────
+  // ─── Global Environment & Runtime Globals ─────────────────────────────────
   {
+    name: "global-environment",
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: {
+        ...globals.browser,
+        ...globals.nodeBuiltin,
+        ...globals.bunBuiltin,
+        ...globals.es2026,
+      },
+    },
+    rules: {
+      "no-console": ["warn", { allow: ["warn", "error", "info"] }],
+      prefer_const: "off",
+      "prefer-const": "error",
+      eqeqeq: ["error", "always", { null: "ignore" }],
+      "no-nested-ternary": "off",
+      "no-implicit-coercion": "error",
+      "no-return-assign": "error",
+      "no-throw-literal": "error",
+      "no-unused-expressions": ["error", { allowShortCircuit: true, allowTernary: true }],
+      "no-void": ["error", { allowAsStatement: true }],
+    },
+  },
+
+  // ─── Unicorn Modern 2026 Ergonomics ───────────────────────────────────────
+  {
+    name: "unicorn-overrides",
     rules: {
       "unicorn/filename-case": "off",
       "unicorn/name-replacements": "off",
+      "unicorn/prevent-abbreviations": "off",
       "unicorn/no-null": "off",
       "unicorn/no-array-reduce": "off",
+      "unicorn/no-array-for-each": "off",
       "unicorn/prefer-math-trunc": "off",
       "unicorn/prefer-string-slice": "off",
       "unicorn/prefer-top-level-await": "off",
@@ -47,9 +105,10 @@ const eslintConfig = defineConfig(
     },
   },
 
-  // ─── TypeScript ───────────────────────────────────────────────────────────
+  // ─── TypeScript Strictness (Aligned with TS 6 & verbatimModuleSyntax) ─────
   {
-    files: ["**/*.ts", "**/*.tsx"],
+    name: "typescript-rules",
+    files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
     languageOptions: {
       parser: tsParser,
       parserOptions: { project: true, tsconfigRootDir: import.meta.dirname },
@@ -88,39 +147,52 @@ const eslintConfig = defineConfig(
     },
   },
 
-  // ─── Vue Flat Config ──────────────────────────────────────────────────────
-  ...eslintPluginVue.configs["flat/recommended"],
+  // ─── Vue 3.5 Modern Component Support ─────────────────────────────────────
   {
+    name: "vue-rules",
     files: ["**/*.vue"],
     languageOptions: {
       parser: vueParser,
       parserOptions: { parser: tsParser, extraFileExtensions: [".vue"] },
     },
     rules: {
-      "vue/multi-word-component-names": "off", // Disable multi-word constraints for pages/blocks
+      // Allow flexible single-word names for pages, cards, and feature blocks
+      "vue/multi-word-component-names": "off",
+      // Vue 3.5 supports reactive props destructuring natively
+      "vue/no-setup-props-destructure": "off",
       "vue/no-v-html": "warn",
       "vue/require-default-prop": "off",
     },
   },
 
-  // ─── General quality ──────────────────────────────────────────────────────
+  // ─── Astro Modern Architecture & CSP Security ─────────────────────────────
   {
-    languageOptions: { globals: { ...globals.browser, ...globals.es2024 } },
+    name: "astro-rules",
+    files: ["**/*.astro"],
     rules: {
-      "no-console": ["warn", { allow: ["warn", "error", "info"] }],
-      "prefer-const": "error",
-      eqeqeq: ["error", "always", { null: "ignore" }],
-      "no-nested-ternary": "off",
-      "no-implicit-coercion": "error",
-      "no-return-assign": "error",
-      "no-throw-literal": "error",
-      "no-unused-expressions": ["error", { allowShortCircuit: true, allowTernary: true }],
-      "no-void": ["error", { allowAsStatement: true }],
+      // Flexible typing for Astro props & dynamic layout components
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      // Standard Astro props contract
+      "unicorn/name-replacements": ["error", { allowList: { Props: true } }],
+      // Security & CSP boundaries
+      "astro/no-set-html-directive": "error",
+      "astro/no-unsafe-inline-scripts": ["error", { allowModuleScripts: true }],
+      "astro/no-exports-from-components": "error",
+      "astro/no-prerender-export-outside-pages": "error",
+      "astro/no-set-text-directive": "warn",
+      "astro/no-unused-css-selector": "warn",
+      "astro/prefer-class-list-directive": "warn",
+      // Turn off rules that fight Tailwind CSS utility classes and Prettier formatting
+      "astro/prefer-object-class-list": "off",
+      "astro/prefer-split-class-list": "off",
+      "astro/sort-attributes": "off",
     },
   },
 
-  // ─── Security tuning ──────────────────────────────────────────────────────
+  // ─── Security Tuning ──────────────────────────────────────────────────────
   {
+    name: "security-tuning",
     rules: {
       "security/detect-object-injection": "off",
       "security/detect-non-literal-regexp": "warn",
@@ -129,34 +201,12 @@ const eslintConfig = defineConfig(
     },
   },
 
-  // ─── Astro overrides ──────────────────────────────────────────────────────
+  // ─── Structured Data (Safe Pre-Sanitized JSON-LD) ──────────────────────────
   {
-    files: ["**/*.astro"],
-    rules: {
-      // Allow flexible types for props / dynamic components in Astro templates
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-unsafe-assignment": "off",
-      // Astro requires the interface to be named "Props" for type inference
-      "unicorn/name-replacements": ["error", { allowList: { Props: true } }],
-      // All Astro-specific non-recommended rules
-      "astro/no-set-html-directive": "error",
-      "astro/no-unsafe-inline-scripts": ["error", { allowModuleScripts: true }],
-      "astro/no-exports-from-components": "error",
-      "astro/no-prerender-export-outside-pages": "error",
-      "astro/no-set-text-directive": "warn",
-      "astro/no-unused-css-selector": "warn",
-      "astro/prefer-class-list-directive": "warn",
-      "astro/prefer-object-class-list": "warn",
-      "astro/prefer-split-class-list": "warn",
-      "astro/sort-attributes": ["warn", { type: "alphabetical", ignoreCase: true }],
-    },
-  },
-  // ─── JsonLd component — safe set:html for pre-sanitized JSON-LD ─────────
-  {
+    name: "jsonld-allowlist",
     files: ["src/shared/ui/JsonLd.astro", "src/layouts/Layout.astro"],
     rules: {
       "astro/no-set-html-directive": "off",
-      // False positives in Astro frontmatter
       "unicorn/prefer-module": "off",
       "unicorn/no-await-expression-member": "off",
       "unicorn/prefer-top-level-await": "off",
@@ -166,8 +216,9 @@ const eslintConfig = defineConfig(
     },
   },
 
-  // ─── Server actions / API routes ──────────────────────────────────────────
+  // ─── Server Actions / API Routes ──────────────────────────────────────────
   {
+    name: "server-api-allowlist",
     files: ["src/actions/**/*.ts", "src/pages/api/**/*.ts"],
     rules: {
       "no-unsanitized/method": "off",
@@ -177,27 +228,8 @@ const eslintConfig = defineConfig(
     },
   },
 
-  // ─── Prettier — MUST be last to disable conflicting rules ─────────────────
+  // ─── Prettier Compatibility (MUST be last) ────────────────────────────────
   eslintConfigPrettier,
-
-  // ─── Global ignores ───────────────────────────────────────────────────────
-  {
-    ignores: [
-      "dist/**",
-      ".astro/**",
-      "node_modules/**",
-      "public/**",
-      ".gemini/**",
-      ".kiro/**",
-      ".agent/**",
-      ".agents/**",
-      "skills-catalog/**",
-      "*.md",
-      "*.json",
-      "*.lock",
-      "tsconfig.tsbuildinfo",
-    ],
-  },
 );
 
 export default eslintConfig;

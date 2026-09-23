@@ -20,25 +20,21 @@ const { vocabList } = Astro.props;
   >
     Vocabulary Topics
   </h2>
-  <ul
-    class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3"
-  >
-    {
-      vocabList.map((item, index) => (
-        <li
-          class="h-full"
-          data-animate="fade-up"
-        >
-          <Card
-            category={item.category}
-            description={item.description}
-            gradient={getGradient(index, VOCAB_GRADIENTS)}
-            href={`/vokabeln/${item.id}`}
-            subtitle="Wortschatz"
-            title={item.german}
-          />
-        </li>
-      ))
-    }
+  <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+    {vocabList.map((item, index) => (
+      <li
+        class="h-full"
+        data-animate="fade-up"
+      >
+        <Card
+          category={item.category}
+          description={item.description}
+          gradient={getGradient(index, VOCAB_GRADIENTS)}
+          href={`/vokabeln/${item.id}`}
+          subtitle="Wortschatz"
+          title={item.german}
+        />
+      </li>
+    ))}
   </ul>
 </section>

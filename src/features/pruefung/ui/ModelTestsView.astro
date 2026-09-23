@@ -1,14 +1,7 @@
 ---
 import Card from "@/shared/ui/Card.astro";
 import { Hero } from "@/widgets/hero";
-import {
-  BarChart,
-  BookOpen,
-  Headphones,
-  MessageCircle,
-  PenLine,
-  Puzzle,
-} from "lucide-astro";
+import { BarChart, BookOpen, Headphones, MessageCircle, PenLine, Puzzle } from "lucide-astro";
 
 interface Props {
   level: string;
@@ -60,44 +53,42 @@ const stats = [
     </div>
 
     <div class="grid gap-12">
-      {
-        skills.map((skill) => {
-          const SkillIcon = skill.icon;
-          return (
-            <section>
-              <div data-animate="fade-right">
-                <h2 class="mb-6 flex items-center gap-3 text-xl font-semibold text-white tablet:gap-4 tablet:text-2xl">
-                  <span class="flex size-10 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
-                    <SkillIcon
-                      class="size-5 tablet:size-6"
-                      strokeWidth={2}
-                    />
-                  </span>
-                  <span class="text-white">{skill.title}</span>
-                </h2>
-              </div>
+      {skills.map((skill) => {
+        const SkillIcon = skill.icon;
+        return (
+          <section>
+            <div data-animate="fade-right">
+              <h2 class="mb-6 flex items-center gap-3 text-xl font-semibold text-white tablet:gap-4 tablet:text-2xl">
+                <span class="flex size-10 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
+                  <SkillIcon
+                    class="size-5 tablet:size-6"
+                    strokeWidth={2}
+                  />
+                </span>
+                <span class="text-white">{skill.title}</span>
+              </h2>
+            </div>
 
-              <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
-                {initialModelTests.map((testId) => (
-                  <div
-                    class="h-full"
-                    data-animate="fade-up"
-                  >
-                    <Card
-                      description={`Vollständiger ${skill.title}-Teil für das ${level.toUpperCase()}-Zertifikat.`}
-                      gradient={SKILL_GRADIENTS[skill.id] ?? SKILL_GRADIENTS["lesen"] ?? ""}
-                      href={`/quiz/${level}/${skill.id}/${testId}`}
-                      subtitle="Übung"
-                      title={`Modelltest ${testId}`}
-                      variant="default"
-                    />
-                  </div>
-                ))}
-              </div>
-            </section>
-          );
-        })
-      }
+            <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+              {initialModelTests.map((testId) => (
+                <div
+                  class="h-full"
+                  data-animate="fade-up"
+                >
+                  <Card
+                    description={`Vollständiger ${skill.title}-Teil für das ${level.toUpperCase()}-Zertifikat.`}
+                    gradient={SKILL_GRADIENTS[skill.id] ?? SKILL_GRADIENTS["lesen"] ?? ""}
+                    href={`/quiz/${level}/${skill.id}/${testId}`}
+                    subtitle="Übung"
+                    title={`Modelltest ${testId}`}
+                    variant="default"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        );
+      })}
     </div>
   </main>
 </div>

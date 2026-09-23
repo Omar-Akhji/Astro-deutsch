@@ -9,24 +9,26 @@ interface Props {
 }
 
 const { type, subject, recipient, sections } = Astro.props;
+
+const COLOR_BORDER_MAP: Record<string, string> = {
+  "text-amber-400": "border-amber-400/30",
+  "text-blue-400": "border-blue-400/30",
+  "text-fuchsia-400": "border-fuchsia-400/30",
+  "text-emerald-400": "border-emerald-400/30",
+  "text-pink-400": "border-pink-400/30",
+};
 ---
 
-<div
-  class="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 shadow-2xl backdrop-blur-xl"
->
+<div class="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 shadow-2xl backdrop-blur-xl">
   <!-- Browser/Email Header -->
-  <div
-    class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3"
-  >
+  <div class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3">
     <div class="flex shrink-0 gap-1.5">
       <div class="size-3 rounded-full bg-red-500/50"></div>
       <div class="size-3 rounded-full bg-amber-500/50"></div>
       <div class="size-3 rounded-full bg-emerald-500/50"></div>
     </div>
     <div class="flex min-w-0 flex-1 justify-center">
-      <div
-        class="flex max-w-full items-center gap-2 truncate rounded-lg bg-black/20 px-2.5 py-1 text-xs text-zinc-400 mobile:px-4"
-      >
+      <div class="flex max-w-full items-center gap-2 truncate rounded-lg bg-black/20 px-2.5 py-1 text-xs text-zinc-400 mobile:px-4">
         <Mail
           class="shrink-0"
           size={12}
@@ -42,9 +44,7 @@ const { type, subject, recipient, sections } = Astro.props;
   <div class="space-y-px border-b border-white/10 bg-white/2">
     <div class="flex items-center gap-2.5 px-4 py-2.5 mobile:gap-3 mobile:px-6 mobile:py-3">
       <span class="shrink-0 text-xs font-bold tracking-widest text-zinc-500 uppercase">An:</span>
-      <div
-        class="flex max-w-full items-center gap-2 truncate rounded-full bg-amber-400/10 px-3 py-1 text-xs font-medium text-amber-400 mobile:text-sm"
-      >
+      <div class="flex max-w-full items-center gap-2 truncate rounded-full bg-amber-400/10 px-3 py-1 text-xs font-medium text-amber-400 mobile:text-sm">
         <User
           class="shrink-0"
           size={14}
@@ -53,10 +53,10 @@ const { type, subject, recipient, sections } = Astro.props;
       </div>
     </div>
     <div class="flex items-center gap-2.5 px-4 py-2.5 mobile:gap-3 mobile:px-6 mobile:py-3">
-      <span class="shrink-0 text-xs font-bold tracking-widest text-zinc-500 uppercase">Betreff:</span>
-      <div
-        class="flex min-w-0 items-center gap-2 text-xs font-semibold wrap-break-word text-white mobile:text-sm"
-      >
+      <span class="shrink-0 text-xs font-bold tracking-widest text-zinc-500 uppercase">
+        Betreff:
+      </span>
+      <div class="flex min-w-0 items-center gap-2 text-xs font-semibold wrap-break-word text-white mobile:text-sm">
         <Tag
           class="shrink-0 text-zinc-400"
           size={14}
@@ -69,57 +69,44 @@ const { type, subject, recipient, sections } = Astro.props;
   <!-- Email Content Area -->
   <div class="relative p-4 pt-6 mobile:p-6 mobile:pt-8 tablet:p-8 tablet:pt-10">
     <!-- Background Pattern -->
-    <div
-      class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-size-[20px_20px] opacity-5"
-    >
-    </div>
+    <div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-size-[20px_20px] opacity-5"></div>
 
     <div class="relative space-y-4 mobile:space-y-6">
-      {
-        sections.map((section, sectionIndex) => (
-          <div class="group relative">
-            <!-- Annotation Label -->
-            <div class="absolute top-0 -left-4 hidden -translate-x-full pr-4 opacity-0 transition-opacity group-hover:opacity-100 lg:block">
-              <div
-                class:list={[
-                  "rounded-lg border px-3 py-1.5 text-[10px] font-black tracking-widest uppercase shadow-lg backdrop-blur-md",
-                  section.color,
-                ]}
-              >
-                {section.label}
-              </div>
-            </div>
-
-            <!-- Text Block -->
+      {sections.map((section, sectionIndex) => (
+        <div class="group relative">
+          <!-- Annotation Label -->
+          <div class="absolute top-0 -left-4 hidden -translate-x-full pr-4 opacity-0 transition-opacity group-hover:opacity-100 lg:block">
             <div
               class:list={[
-                "relative rounded-xl border border-solid p-3.5 transition-all hover:bg-white/5 mobile:p-4",
-                section.color === "text-amber-400" ? "border-amber-400/30"
-                : section.color === "text-blue-400" ? "border-blue-400/30"
-                : section.color === "text-fuchsia-400" ? "border-fuchsia-400/30"
-                : section.color === "text-emerald-400" ? "border-emerald-400/30"
-                : section.color === "text-pink-400" ? "border-pink-400/30"
-                : "border-white/20",
+                "rounded-lg border px-3 py-1.5 text-[10px] font-black tracking-widest uppercase shadow-lg backdrop-blur-md",
+                section.color,
               ]}
             >
-              <div class="mb-1.5 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                <span
-                  class:list={[
-                    "text-[10px] font-bold tracking-[0.2em] uppercase",
-                    section.color,
-                  ]}
-                >
-                  {sectionIndex + 1}. {section.label}
-                </span>
-                <span class="text-[10px] text-zinc-400 italic">{section.description}</span>
-              </div>
-              <p class="font-serif text-base leading-relaxed text-zinc-200 mobile:text-lg">
-                {section.text}
-              </p>
+              {section.label}
             </div>
           </div>
-        ))
-      }
+
+          <!-- Text Block -->
+          <div
+            class:list={[
+              "relative rounded-xl border border-solid p-3.5 transition-all hover:bg-white/5 mobile:p-4",
+              COLOR_BORDER_MAP[section.color] ?? "border-white/20",
+            ]}
+          >
+            <div class="mb-1.5 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+              <span
+                class:list={["text-[10px] font-bold tracking-[0.2em] uppercase", section.color]}
+              >
+                {sectionIndex + 1}. {section.label}
+              </span>
+              <span class="text-[10px] text-zinc-400 italic">{section.description}</span>
+            </div>
+            <p class="font-serif text-base leading-relaxed text-zinc-200 mobile:text-lg">
+              {section.text}
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 </div>

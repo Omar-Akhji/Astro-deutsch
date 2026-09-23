@@ -8,15 +8,13 @@ const parts = text.split(/(\*\*.*?\*\*|\*.*?\*)/g);
 ---
 
 <span>
-  {
-    parts.map((part) => {
-      if (part.startsWith("**") && part.endsWith("**")) {
-        return <strong class="font-bold text-yellow">{part.slice(2, -2)}</strong>;
-      }
-      if (part.startsWith("*") && part.endsWith("*")) {
-        return <span class="font-medium text-yellow">{part.slice(1, -1)}</span>;
-      }
-      return part;
-    })
-  }
+  {parts.map((part) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong class="font-bold text-yellow">{part.slice(2, -2)}</strong>;
+    }
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return <span class="font-medium text-yellow">{part.slice(1, -1)}</span>;
+    }
+    return part;
+  })}
 </span>
