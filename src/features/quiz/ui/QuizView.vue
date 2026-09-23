@@ -59,7 +59,7 @@ const handleExit = () => {
   >
     <p>Keine Fragen gefunden.</p>
   </div>
-  <main
+  <div
     v-else
     class="relative min-h-dvh py-4"
   >
@@ -218,5 +218,5 @@ const handleExit = () => {
         />
       </div>
     </article>
-  </main>
+  </div>
 </template>

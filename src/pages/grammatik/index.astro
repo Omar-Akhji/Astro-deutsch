@@ -15,13 +15,30 @@ const GRAMMAR_SECTION_IDS = [
 
 const sectionsResponses = await Promise.all(GRAMMAR_SECTION_IDS.map((id) => getGrammarSection(id)));
 const sections = sectionsResponses.map((s) => s.data).filter((s) => s != null);
+
+const pageTitle = "Deutsche Grammatik von A1 bis B2: Regeln & Tabellen | Elite Regewelt";
+const pageDescription =
+  "Systematische Übersicht der deutschen Grammatik: Verben, Nomen, Artikel, Präpositionen & Satzbau. Klare Regeln, Beispielsätze und Konjugationstabellen.";
+
+const grammarSchema = {
+  "@type": "CollectionPage",
+  name: "Deutsche Grammatik von A1 bis B2: Regeln, Tabellen & Beispiele",
+  description: pageDescription,
+  about: {
+    "@type": "Course",
+    name: "Deutsche Grammatik (A1–B2)",
+    description: "Umfassender Grammatikkurs mit Regeln, Übersichten und Konjugationstabellen.",
+    provider: { "@type": "Organization", name: "Elite Regewelt" },
+  },
+};
 ---
 
 <Layout
-  description="Deutsche Grammatik lernen - Verben, Nomen, Präpositionen, Satzstrukturen. Übersichtliche Erklärungen für alle Niveaus."
-  title="Grammatik | Deutsch Lernen"
+  description={pageDescription}
+  extraSchema={grammarSchema}
+  title={pageTitle}
 >
-  <main class="animate-fade-in py-4 mobile:py-8">
+  <div class="animate-fade-in py-4 mobile:py-8">
     <PageHeader
       icon={BookOpen}
       subtitle="Systematische Übersicht der deutschen Grammatikregeln von A1 bis B2 mit verständlichen Beispielen und Tabellen."
@@ -33,5 +50,5 @@ const sections = sectionsResponses.map((s) => s.data).filter((s) => s != null);
         <GrammarSectionCards section={section} />
       ))}
     </div>
-  </main>
+  </div>
 </Layout>

@@ -5,18 +5,32 @@ import PageHeader from "@/shared/ui/PageHeader.astro";
 import { Languages } from "lucide-astro";
 
 const { data: vocabList } = await getVocabList();
+
+const vocabSchema = {
+  "@type": "CollectionPage",
+  name: "Deutscher Wortschatz & Vokabeln (A1–B1)",
+  description:
+    "Systematischer deutscher Wortschatz nach Themen: Familie, Wohnen, Beruf, Gesundheit und mehr mit Beispielen und Übersetzungen.",
+  about: {
+    "@type": "LearningResource",
+    learningResourceType: "Vocabulary List",
+    educationalLevel: "A1-B1",
+    inLanguage: ["de", "ar"],
+  },
+};
 ---
 
 <Layout
-  description="Deutsche Vokabeln lernen - Familie, Zahlen, Farben, Tiere und mehr. Interaktive Wortschatzübungen für Anfänger."
-  title="Vokabeln | Deutsch Lernen"
+  description="Lerne deutsche Vokabeln systematisch: Thematische Wortschatzlisten mit Übersetzungen, Beispielsätzen und interaktiven Übungen für Alltag und Prüfung."
+  extraSchema={vocabSchema}
+  title="Deutscher Wortschatz & Vokabeln (A1–B1) | Elite Regewelt"
 >
-  <main class="animate-fade-in">
+  <div class="animate-fade-in py-4 mobile:py-8">
     <PageHeader
       icon={Languages}
       subtitle="Thematisch sortierte Vokabellisten für dein A1/B1 Training"
       title="Deutscher Wortschatz"
     />
     <VocabularySection vocabList={vocabList ?? []} />
-  </main>
+  </div>
 </Layout>

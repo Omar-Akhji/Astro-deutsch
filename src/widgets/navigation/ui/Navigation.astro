@@ -8,23 +8,22 @@ interface Props {
 const pathname = Astro.props.pathname ?? Astro.url.pathname;
 
 const navLinks = [
-  { to: "/vokabeln", label: "Vokabeln" },
-  { to: "/grammatik", label: "Grammatik" },
-  { to: "/pruefung", label: "Prüfung" },
-  { to: "/login", label: "Anmelden" },
+  { to: "/vokabeln/", label: "Vokabeln" },
+  { to: "/grammatik/", label: "Grammatik" },
+  { to: "/pruefung/", label: "Prüfung" },
 ];
 
 const mobileNavLinks = [
   { to: "/", label: "Start", icon: Home },
-  { to: "/vokabeln", label: "Vokabeln", icon: BookOpen },
-  { to: "/grammatik", label: "Grammatik", icon: GraduationCap },
-  { to: "/pruefung", label: "Prüfung", icon: Award },
-  { to: "/login", label: "Profil", icon: User },
+  { to: "/vokabeln/", label: "Vokabeln", icon: BookOpen },
+  { to: "/grammatik/", label: "Grammatik", icon: GraduationCap },
+  { to: "/pruefung/", label: "Prüfung", icon: Award },
 ];
 
 const isActive = (path: string) => {
   if (path === "/") return pathname === "/";
-  return pathname === path || pathname.startsWith(path + "/");
+  const cleanPath = path.endsWith("/") ? path.slice(0, -1) : path;
+  return pathname === path || pathname === cleanPath || pathname.startsWith(cleanPath + "/");
 };
 
 const computedNavLinks = navLinks.map((link) => ({ ...link, isActive: isActive(link.to) }));
@@ -36,22 +35,19 @@ const computedMobileNavLinks = mobileNavLinks.map((link) => ({
 
 const showBackButton =
   pathname !== "/vokabeln"
+  && pathname !== "/vokabeln/"
   && pathname !== "/grammatik"
+  && pathname !== "/grammatik/"
   && pathname !== "/pruefung"
+  && pathname !== "/pruefung/"
   && pathname !== "/";
+
+const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/register");
 ---
 
 <!-- Top Navigation Header -->
 <header class="relative mbe-2 mobile:mbe-6">
-  <div
-    class:list={[
-      "relative mx-auto flex max-w-7xl items-center px-3 py-3 mobile:px-8 mobile:py-6",
-      {
-        "justify-between": showBackButton,
-        "justify-center laptop:justify-between": !showBackButton,
-      },
-    ]}
-  >
+  <div class="relative mx-auto flex max-w-7xl items-center justify-between px-3 py-3 mobile:px-8 mobile:py-6">
     <!-- Brand Logo & Optional Back Button -->
     <div class="flex items-center justify-start gap-3.5">
       {showBackButton ?
@@ -91,34 +87,74 @@ const showBackButton =
       }
     </div>
 
-    <!-- Right Side on Laptop & Desktop: Floating Pill Navigation -->
-    <nav
-      aria-label="Hauptnavigation"
-      class="relative hidden flex-wrap justify-center gap-1 overflow-hidden rounded-full border-2 border-white/10 bg-card/75 px-2 py-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) laptop:inline-flex laptop:gap-1.5"
-      id="desktop-nav"
-    >
-      <!-- Sliding Indicator -->
-      <div
-        class="pointer-events-none absolute inset-y-1.5 left-0 z-0 rounded-full bg-linear-to-br from-yellow to-orange opacity-0 shadow-lg shadow-yellow/25"
-        id="desktop-nav-indicator"
-      ></div>
+    <!-- Right Side on Laptop & Desktop: Floating Pill Navigation + Auth Icon beside it -->
+    <div class="hidden items-center gap-3 laptop:flex">
+      <nav
+        aria-label="Hauptnavigation"
+        class="relative flex flex-wrap justify-center gap-1 overflow-hidden rounded-full border-2 border-white/10 bg-card/75 px-2 py-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) laptop:inline-flex laptop:gap-1.5"
+        id="desktop-nav"
+      >
+        <!-- Sliding Indicator -->
+        <div
+          class="pointer-events-none absolute inset-y-1.5 left-0 z-0 rounded-full bg-linear-to-br from-yellow to-orange opacity-0 shadow-lg shadow-yellow/25"
+          id="desktop-nav-indicator"
+        ></div>
 
-      {computedNavLinks.map((link) => (
-        <a
-          aria-current={link.isActive ? "page" : undefined}
-          class:list={[
-            "relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 laptop:px-5",
-            {
-              "font-semibold text-black": link.isActive,
-              "text-mist-400 hover:bg-white/5 hover:text-white": !link.isActive,
-            },
-          ]}
-          href={link.to}
-        >
-          {link.label}
-        </a>
-      ))}
-    </nav>
+        {computedNavLinks.map((link) => (
+          <a
+            aria-current={link.isActive ? "page" : undefined}
+            class:list={[
+              "relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 laptop:px-5",
+              {
+                "font-semibold text-black": link.isActive,
+                "text-mist-400 hover:bg-white/5 hover:text-white": !link.isActive,
+              },
+            ]}
+            href={link.to}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+      <!-- Auth Icon Button beside navbar (no text) -->
+      <a
+        aria-current={isAuthActive ? "page" : undefined}
+        aria-label="Anmelden oder Registrieren"
+        class:list={[
+          "group relative flex size-11 items-center justify-center rounded-full border-2 border-white/10 bg-card/75 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) transition-all duration-200 hover:border-yellow/50 hover:bg-white/10 active:scale-95",
+          {
+            "border-yellow/50 bg-white/15 text-yellow shadow-[0_0_16px_rgba(241,196,15,0.25)]":
+              isAuthActive,
+            "text-mist-300 hover:text-white": !isAuthActive,
+          },
+        ]}
+        href="/login/"
+        title="Anmelden / Konto"
+      >
+        <User class="size-5 text-yellow transition-transform duration-200 group-hover:scale-110" />
+      </a>
+    </div>
+
+    <!-- Tablet & Mobile: Top Right Auth Icon (no text) -->
+    <div class="flex items-center gap-2 laptop:hidden">
+      <a
+        aria-current={isAuthActive ? "page" : undefined}
+        aria-label="Anmelden oder Registrieren"
+        class:list={[
+          "group relative flex size-11 items-center justify-center rounded-2xl border-2 border-white/10 bg-card/80 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-(--glass-blur) transition-all duration-200 hover:border-yellow/50 hover:bg-white/10 active:scale-95 mobile:size-12 mobile:rounded-3xl",
+          {
+            "border-yellow/50 bg-white/15 text-yellow shadow-[0_0_15px_rgba(241,196,15,0.25)]":
+              isAuthActive,
+            "text-mist-300": !isAuthActive,
+          },
+        ]}
+        href="/login/"
+        title="Anmelden / Konto"
+      >
+        <User class="size-5 text-yellow transition-transform duration-200 group-hover:scale-110 mobile:size-5.5" />
+      </a>
+    </div>
   </div>
 </header>
 

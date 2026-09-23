@@ -1,0 +1,31 @@
+# Elite Regewelt – Interaktive Deutsch-Lernplattform (A1–B2)
+
+> Elite Regewelt (https://elite-regewelt.com) ist eine moderne, interaktive Lernplattform für die deutsche Sprache, optimiert für Deutschlerner von Niveau A1 bis B2 sowie für die gezielte Vorbereitung auf die offiziellen Goethe- und ÖSD-Zertifikate.
+
+## Hauptbereiche
+
+- [Deutscher Wortschatz (Vokabeln)](https://elite-regewelt.com/vokabeln/): Thematisch strukturierte Vokabellisten mit Übersetzungen (Deutsch/Arabisch), Lautschrift, Beispielsätzen und interaktiven Wortschatzkarten für Alltag, Beruf und Prüfung.
+- [Deutsche Grammatik](https://elite-regewelt.com/grammatik/): Systematische Grammatik-Referenz und Übungen von A1 bis B2 mit verständlichen Regeln, Deklinationstabellen, Konjugationen und Anwendungsbeispielen.
+- [Prüfungstraining B1 & B2](https://elite-regewelt.com/pruefung/): Strukturierte Vorbereitung auf die vier Prüfungsmodule (Lesen, Hören, Schreiben, Sprechen) für das Goethe-Zertifikat B1/B2 und das ÖSD-Zertifikat B1/B2.
+- [Prüfungsthemen (Redemittel)](https://elite-regewelt.com/themen/): 58 prüfungsrelevante Themen für Sprechen und Schreiben mit Argumenten (Pro & Contra) und praktischen Formulierungen.
+- [Interaktives Quiz](https://elite-regewelt.com/quiz/): 38 interaktive Übungstests für B1 und B2 in den Fertigkeiten Lesen, Hören, Schreiben und Sprechen mit direkter Auswertung.
+
+## Grammatik-Themenbereiche
+
+1. **Verben**: Grundverben, Tempora (Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I & II), reflexive Verben, trennbare Verben, Verben mit Präpositionen, Konjunktiv II & I, Passiv, Partizip I & II, Funktionsverbgefüge.
+2. **Nomen & Artikel**: Genusregeln, Pluralformen, n-Deklination, Kasus (Nominativ, Akkusativ, Dativ, Genitiv), Artikelwörter, Adjektivdeklination, Komparation, Pronomen, Komposita, Nominalisierung.
+3. **Präpositionen**: Lokale, temporale, modale und kausale Präpositionen sowie Wechselpräpositionen und feste Genitivpräpositionen.
+4. **Satzbau**: Hauptsätze, Fragesätze, Nebensätze (weil, dass, wenn, obwohl, etc.), Relativsätze, Infinitiv mit zu und Satzverbindungen.
+5. **Adverbien & Partikeln**: Temporale, lokale, modale, kausale, konjunktionale Adverbien sowie Modalpartikeln und Negation.
+
+## Prüfungszertifikate
+
+- **Goethe-Zertifikat B1 / ÖSD Zertifikat B1**: Modularer Aufbau (Lesen: 65 Min, Hören: 40 Min, Schreiben: 60 Min, Sprechen: 15 Min). Bestehensgrenze: 60 Punkte (60%) pro Modul.
+- **Goethe-Zertifikat B2 / ÖSD Zertifikat B2**: Fortgeschrittene Kompetenz für Studium und Beruf (Lesen: 65 Min, Hören: 40 Min, Schreiben: 75 Min, Sprechen: 15 Min). Bestehensgrenze: 60% pro Modul.
+
+## Pädagogisches Farbsystem
+
+- Blau: Maskulin (*der*)
+- Rot: Feminin (*die*)
+- Grün: Neutral (*das*)
+- Gelb/Orange: Plural (*die*)

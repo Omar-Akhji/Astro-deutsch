@@ -24,15 +24,44 @@ if (!level) {
 }
 
 const { data: currentExam } = await getExamLevel(level);
+
+const pageTitle =
+  currentExam ?
+    `${currentExam.title} Vorbereitung: Struktur, Zeiten & Modelltests | Elite Regewelt`
+  : "Prüfungsvorbereitung | Elite Regewelt";
+
+const pageDescription =
+  currentExam ?
+    `Vollständige Vorbereitung auf ${currentExam.title} (Goethe & ÖSD). Prüfungsstruktur, Zeitvorgaben, Bestehensgrenze (${currentExam.passingScore}) und Modelltests.`
+  : "Bereite dich auf deine Deutschprüfung vor.";
+
+const examSchema =
+  currentExam ?
+    {
+      "@type": "Course",
+      name: `${currentExam.title} Vorbereitung`,
+      description: currentExam.description,
+      educationalLevel: currentExam.level,
+      inLanguage: "de",
+      timeRequired: currentExam.totalDuration,
+      provider: { "@type": "Organization", name: "Elite Regewelt" },
+      hasCourseInstance: currentExam.sections.map((sec) => ({
+        "@type": "CourseInstance",
+        name: sec.title,
+        description: sec.description,
+      })),
+    }
+  : undefined;
 ---
 
 <Layout
-  description={currentExam?.description ?? "Bereite dich auf deine Deutschprüfung vor."}
-  title={currentExam ? `${currentExam.title} - Prüfung` : "Prüfungsstufe"}
+  description={pageDescription}
+  extraSchema={examSchema}
+  title={pageTitle}
 >
   {currentExam ?
     <div class="relative min-h-dvh py-6 tablet:py-10">
-      <main>
+      <div class="animate-fade-in">
         <Hero
           category={currentExam.level}
           description={currentExam.description}
@@ -48,7 +77,7 @@ const { data: currentExam } = await getExamLevel(level);
           <div data-animate="fade-up">
             <a
               class="group flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-xl font-bold text-white no-underline backdrop-blur-md hover:bg-white/10 hover:text-white"
-              href={`/pruefung/${currentExam.id}/modelltests`}
+              href={`/pruefung/${currentExam.id}/modelltests/`}
             >
               <FileEdit
                 class="text-yellow"
@@ -155,7 +184,7 @@ const { data: currentExam } = await getExamLevel(level);
                       {(section.id.includes("sprechen") || section.id.includes("schreiben")) && (
                         <a
                           class="group md:is-auto flex items-center justify-center gap-2 rounded-full bg-linear-to-r from-amber-400 to-orange-500 px-8 py-3.5 font-bold text-zinc-950 no-underline shadow-lg shadow-amber-500/20 transition-[transform,filter] inline-full hover:scale-[1.02] hover:brightness-110 active:scale-95 md:self-start"
-                          href={`/pruefung/${currentExam.id}/${section.id.split("-", 2)[1]}`}
+                          href={`/pruefung/${currentExam.id}/${section.id.split("-", 2)[1]}/`}
                         >
                           <MessageCircle
                             class="transition-transform group-hover:rotate-12"
@@ -171,7 +200,7 @@ const { data: currentExam } = await getExamLevel(level);
             ))}
           </div>
         </section>
-      </main>
+      </div>
     </div>
   : <div class="px-4 py-12 text-center text-white tablet:py-16">
       <h1 class="mb-3 text-2xl font-bold tablet:text-3xl">Prüfung nicht gefunden</h1>

@@ -16,8 +16,10 @@ const {
   gradient,
   variant = "default",
   stats,
+  headingLevel = "h1",
 } = Astro.props;
 
+const HeadingTag = headingLevel;
 const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
 ---
 
@@ -71,7 +73,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
       )}
     </div>
 
-    <h1
+    <HeadingTag
       class:list={[
         "m-0 mbe-4 text-2xl font-bold tracking-tight text-shadow-sm mobile:text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl",
         {
@@ -82,7 +84,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
       data-animate="fade-up"
     >
       {title}
-    </h1>
+    </HeadingTag>
 
     <p
       class:list={[

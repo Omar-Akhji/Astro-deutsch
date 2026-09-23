@@ -112,7 +112,7 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <main
+  <div
     :class="[
       'space-y-12 py-6 tablet:space-y-16 tablet:py-10',
       props.isEmbedded ? '' : 'min-h-screen',
@@ -299,5 +299,5 @@ const scrollToTop = () => {
     >
       <ArrowUp :size="28" />
     </button>
-  </main>
+  </div>
 </template>

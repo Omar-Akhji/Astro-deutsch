@@ -32,11 +32,35 @@ const [sectionResponse, topicResponse] = await Promise.all([
 
 const currentSection = sectionResponse.data;
 const currentTopic = topicResponse.data;
+
+const pageTitle =
+  currentTopic && currentSection ?
+    `${currentTopic.title} – Deutsche Grammatik (${currentTopic.category}) | Elite Regewelt`
+  : "Grammatik Thema | Elite Regewelt";
+
+const pageDescription =
+  currentTopic && currentSection ?
+    `${currentTopic.description || `Lerne ${currentTopic.title} im Bereich ${currentSection.title}.`} Grammatikregeln, Beispielsätze und Übersichtstabellen.`
+  : "Lerne deutsche Grammatik systematisch.";
+
+const extraSchema =
+  currentTopic && currentSection ?
+    {
+      "@type": "TechArticle",
+      headline: `${currentTopic.title} – Deutsche Grammatik`,
+      description: currentTopic.description,
+      educationalLevel: "A1-B2",
+      inLanguage: "de",
+      articleSection: currentSection.title,
+      about: { "@type": "Thing", name: currentTopic.title, description: currentTopic.category },
+    }
+  : undefined;
 ---
 
 <Layout
-  description={currentTopic?.description ?? "Lerne deutsche Grammatik."}
-  title={currentTopic ? `${currentTopic.title} - Grammatik` : "Grammatik Thema"}
+  description={pageDescription}
+  extraSchema={extraSchema}
+  title={pageTitle}
 >
   {!currentTopic || !currentSection ?
     <div class="px-8 py-16 text-center text-white">
@@ -45,7 +69,7 @@ const currentTopic = topicResponse.data;
       <BackButton />
     </div>
   : <div class="relative min-h-dvh py-6 tablet:py-10">
-      <main>
+      <div class="animate-fade-in">
         <Hero
           category={currentTopic.category}
           description={currentTopic.description}
@@ -126,7 +150,7 @@ const currentTopic = topicResponse.data;
             />
           </section>
         : null}
-      </main>
+      </div>
     </div>
   }
 </Layout>

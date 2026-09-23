@@ -15,4 +15,5 @@ export interface HeroProps<TComponent = unknown> {
   gradient?: string | undefined;
   variant?: HeroVariant | undefined;
   stats?: HeroStatItem<TComponent>[] | undefined;
+  headingLevel?: "h1" | "h2" | undefined;
 }

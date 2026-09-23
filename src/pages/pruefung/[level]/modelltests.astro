@@ -13,11 +13,28 @@ if (!level) {
 }
 
 const { data: modelTests } = await getModelTests(level);
+
+const pageTitle = `Modelltests ${level.toUpperCase()}: Goethe & ÖSD Prüfungssimulation | Elite Regewelt`;
+const pageDescription = `Offizielle Modelltests und Übungssätze für das Niveau ${level.toUpperCase()}. Trainiere Lesen, Hören, Schreiben und Sprechen unter realistischen Prüfungsbedingungen.`;
+
+const modelltestsSchema = {
+  "@type": "CollectionPage",
+  name: `Modelltests ${level.toUpperCase()} (Goethe & ÖSD)`,
+  description: pageDescription,
+  about: {
+    "@type": "Course",
+    name: `Prüfungssimulation ${level.toUpperCase()}`,
+    educationalLevel: level.toUpperCase(),
+    inLanguage: "de",
+    provider: { "@type": "Organization", name: "Elite Regewelt" },
+  },
+};
 ---
 
 <Layout
-  description="Übe mit offiziellen Modelltests für deine Deutschprüfung."
-  title="Modelltests | Deutsch Lernen"
+  description={pageDescription}
+  extraSchema={modelltestsSchema}
+  title={pageTitle}
 >
   <ModelTestsView
     initialModelTests={modelTests ?? []}

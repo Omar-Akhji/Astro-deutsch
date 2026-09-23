@@ -3,16 +3,41 @@ import { getThemen, ThemenSection } from "@/features/themen";
 import Layout from "@/layouts/Layout.astro";
 
 const { data: themen } = await getThemen();
+
+const pageTitle = "58 B1 Sprechen & Schreiben Themen: Argumente & Redemittel | Elite Regewelt";
+const pageDescription =
+  "58 B1 Prüfungsthemen für Goethe & ÖSD Sprechen Teil 2 und Schreiben. Strukturierte Pro- & Contra-Argumente, Redemittel und Beispielfolien.";
+
+const themenSchema = {
+  "@type": "CollectionPage",
+  name: "58 B1 Sprechen & Schreiben Prüfungsthemen",
+  description: pageDescription,
+  about: {
+    "@type": "LearningResource",
+    name: "B1 Prüfungsthemen Sammlung",
+    educationalLevel: "B1",
+    inLanguage: "de",
+    learningResourceType: "Discussion Topics",
+  },
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: themen?.length ?? 58,
+    itemListElement: (themen ?? [])
+      .slice(0, 30)
+      .map((t, index) => ({ "@type": "ListItem", position: index + 1, name: t.label })),
+  },
+};
 ---
 
 <Layout
-  description="58 B1 Sprechen und Schreiben Themen mit Pro- und Contra-Argumenten zur Prüfungsvorbereitung."
-  title="B1 Themen - Deutsch Lernen"
+  description={pageDescription}
+  extraSchema={themenSchema}
+  title={pageTitle}
 >
-  <main class="animate-fade-in">
+  <div class="animate-fade-in">
     <ThemenSection
       client:load
       initialThemen={themen ?? []}
     />
-  </main>
+  </div>
 </Layout>

@@ -21,21 +21,56 @@ const totalTopics =
   item?.sections?.reduce((accumulator, sec) => accumulator + sec.topics.length, 0)
   ?? item?.words?.length
   ?? 0;
+
+const pageTitle =
+  item ?
+    `${item.german} Vokabeln & Wortschatz (${item.category}) | Elite Regewelt`
+  : "Vokabel Lektion | Elite Regewelt";
+
+const pageDescription =
+  item ?
+    `Lerne deutsche Vokabeln zum Thema ${item.german} (${item.category}). Wortschatz mit arabischer Übersetzung, Beispielsätzen und praktischen Übungen.`
+  : "Lerne wichtige deutsche Vokabeln systematisch.";
+
+const extraSchema =
+  item ?
+    {
+      "@type": "CollectionPage",
+      name: `${item.german} Vokabeln & Wortschatz (${item.category})`,
+      description: pageDescription,
+      about: {
+        "@type": "DefinedTermSet",
+        name: item.german,
+        educationalLevel: item.category,
+        inLanguage: ["de", "ar"],
+      },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: (item.sections?.flatMap((s) => s.topics) ?? []).map((t, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: t.title,
+          url: `https://elite-regewelt.com/vokabeln/${item.id}/${t.id}/`,
+        })),
+      },
+    }
+  : undefined;
 ---
 
 <Layout
-  description={item?.description ?? "Lerne wichtige deutsche Vokabeln."}
-  title={item ? `${item.german} - Vokabeln` : "Vokabel Lektion"}
+  description={pageDescription}
+  extraSchema={extraSchema}
+  title={pageTitle}
 >
   {item ?
     <div class="relative min-h-dvh py-6 tablet:py-10">
-      <main>
+      <div class="animate-fade-in">
         <Hero
           category={item.category}
           description={item.description ?? "Vokabeln und Ausdrücke"}
           stats={[
             { label: "Themen", value: `${totalTopics} Themen` },
-            { label: "Niveau", value: "A1", icon: Languages },
+            { label: "Niveau", value: item.category || "A1", icon: Languages },
           ]}
           title={item.german}
           variant="compact"
@@ -68,7 +103,7 @@ const totalTopics =
                     {section.topics.map((topic) => (
                       <a
                         class="group block no-underline"
-                        href={`/vokabeln/${item.id}/${topic.id}`}
+                        href={`/vokabeln/${item.id}/${topic.id}/`}
                       >
                         <GlassCard
                           className="p-5 transition-[transform,border-color,box-shadow] duration-300 group-hover:-translate-y-1 group-hover:border-(--color-primary) group-hover:shadow-lg"
@@ -82,7 +117,7 @@ const totalTopics =
                               class="text-secondary"
                               size={14}
                             />
-                            <span>Details ansehen</span>
+                            <span>{topic.title} lernen</span>
                           </div>
                         </GlassCard>
                       </a>
@@ -136,7 +171,7 @@ const totalTopics =
             }
           </section>
         }
-      </main>
+      </div>
     </div>
   : <div class="px-8 py-16 text-center text-white">
       <h1 class="mb-4 text-3xl">Lektion nicht gefunden</h1>

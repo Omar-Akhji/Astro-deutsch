@@ -58,7 +58,7 @@ const { variant = "overview" } = Astro.props;
 
 {variant === "level" && (
   <div class="relative min-h-dvh py-6 tablet:py-10">
-    <main>
+    <div>
       <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12">
         <div class="flex flex-col items-center text-center">
           <Skeleton class="mbe-4 h-10 w-20 rounded-full bg-white/15 tablet:h-11 tablet:w-24" />
@@ -140,13 +140,13 @@ const { variant = "overview" } = Astro.props;
           ))}
         </div>
       </section>
-    </main>
+    </div>
   </div>
 )}
 
 {variant === "modelltests" && (
   <div class="relative min-h-dvh py-8">
-    <main>
+    <div>
       <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12">
         <div class="flex flex-col items-center text-center">
           <Skeleton class="mbe-4 h-10 w-44 rounded-full bg-white/15 tablet:h-11 tablet:w-48" />
@@ -198,7 +198,7 @@ const { variant = "overview" } = Astro.props;
           </section>
         ))}
       </div>
-    </main>
+    </div>
   </div>
 )}
 

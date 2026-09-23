@@ -21,7 +21,7 @@ const { examLevels } = Astro.props;
           category={exam.category}
           description={exam.description}
           gradient={getGradient(index, PRUEFUNG_GRADIENTS)}
-          href={`/pruefung/${exam.id}`}
+          href={`/pruefung/${exam.id}/`}
           icon={exam.level}
           stats={[
             { label: "Module", value: String(exam.sections.length) },

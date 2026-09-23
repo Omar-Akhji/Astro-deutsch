@@ -5,18 +5,36 @@ import PageHeader from "@/shared/ui/PageHeader.astro";
 import { ClipboardList } from "lucide-astro";
 
 const { data: examLevels } = await getExamLevels();
+
+const pageTitle = "Goethe & ÖSD Prüfungstraining B1 & B2: Modelltests & Module | Elite Regewelt";
+const pageDescription =
+  "Gezielte Prüfungsvorbereitung für Goethe-Zertifikat & ÖSD B1/B2. Kostenlose Modelltests, Strategien und Übungen für Lesen, Hören, Schreiben und Sprechen.";
+
+const pruefungSchema = {
+  "@type": "CollectionPage",
+  name: "Goethe & ÖSD Prüfungstraining B1 & B2",
+  description: pageDescription,
+  about: {
+    "@type": "Course",
+    name: "Deutsch Prüfungsvorbereitung B1 & B2",
+    description:
+      "Systematisches Training für alle vier Prüfungsmodule (Lesen, Hören, Schreiben, Sprechen) nach Goethe- und ÖSD-Standard.",
+    provider: { "@type": "Organization", name: "Elite Regewelt" },
+  },
+};
 ---
 
 <Layout
-  description="B1/B2 Prüfungsvorbereitung - Modelltests, Lesen, Hören, Schreiben, Sprechen. Trainiere für deine Deutschprüfung."
-  title="Prüfungstraining | Deutsch Lernen"
+  description={pageDescription}
+  extraSchema={pruefungSchema}
+  title={pageTitle}
 >
-  <main class="animate-fade-in">
+  <div class="animate-fade-in py-4 mobile:py-8">
     <PageHeader
       icon={ClipboardList}
       subtitle="Strukturierte Vorbereitung auf die Goethe & ÖSD Zertifikate B1 und B2"
       title="Prüfungstraining"
     />
     <PruefungSection examLevels={examLevels ?? []} />
-  </main>
+  </div>
 </Layout>

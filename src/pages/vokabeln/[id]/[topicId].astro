@@ -36,11 +36,42 @@ const topic = result?.topic;
 const section = result?.section;
 
 const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
+
+const pageTitle =
+  topic && item ?
+    `${topic.title} – Wortschatz ${item.german} (${item.category}) | Elite Regewelt`
+  : "Vokabel Thema | Elite Regewelt";
+
+const pageDescription =
+  topic && item ?
+    `Lerne deutsche Vokabeln & Ausdrücke zu ${topic.title} im Bereich ${item.german}. Inklusive arabischer Übersetzung, Beispielsätzen und praktischen Übungen.`
+  : "Lerne deutsche Vokabeln systematisch.";
+
+const extraSchema =
+  topic && item ?
+    {
+      "@type": "LearningResource",
+      name: `${topic.title} – Wortschatz ${item.german}`,
+      description: `Deutsche Vokabeln und Ausdrücke für ${topic.title} (${item.german}) mit arabischer Bedeutung und Beispielsätzen.`,
+      educationalLevel: item.category || "A1-B2",
+      inLanguage: ["de", "ar"],
+      learningResourceType: "Vocabulary List",
+      hasPart: topic.words
+        ?.slice(0, 30)
+        .map((w) => ({
+          "@type": "DefinedTerm",
+          name: w.german,
+          description: w.arabic,
+          ...(w.example && { disambiguatingDescription: w.example }),
+        })),
+    }
+  : undefined;
 ---
 
 <Layout
-  description={`Lerne Vokabeln zum Thema ${topic?.title ?? ""}.`}
-  title={topic ? `${topic.title} - ${item?.german}` : "Vokabel Thema"}
+  description={pageDescription}
+  extraSchema={extraSchema}
+  title={pageTitle}
 >
   {!item || !topic ?
     <div class="px-8 py-16 text-center text-white">
@@ -48,7 +79,7 @@ const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
       <BackButton />
     </div>
   : <div class="relative min-h-dvh py-8">
-      <main>
+      <div class="animate-fade-in">
         <Hero
           category={item.category}
           description={section?.title ?? item.german}
@@ -82,7 +113,7 @@ const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
             </GlassCard>
           </section>
         }
-      </main>
+      </div>
     </div>
   }
 </Layout>

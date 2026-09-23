@@ -21,11 +21,36 @@ const { questions } = Astro.props;
 if (!level || !skill || !testId) {
   throw new Error("Fehlende Quiz-Parameter.");
 }
+const skillLabels: Record<string, string> = {
+  lesen: "Leseverstehen",
+  hoeren: "Hörverstehen",
+  schreiben: "Schreiben",
+  sprechen: "Sprechen",
+};
+
+const skillLabel = skillLabels[skill] ?? skill.charAt(0).toUpperCase() + skill.slice(1);
+const formattedLevel = level.toUpperCase();
+const testTitle = `Quiz ${formattedLevel} ${skillLabel} – Test ${testId} | Elite Regewelt`;
+const testDescription = `Interaktiver Deutsch-Test: Trainiere ${skillLabel} auf Niveau ${formattedLevel} (Test ${testId}) mit ${questions?.length ?? 5} Fragen und sofortiger Auswertung.`;
+
+const testSchema = {
+  "@type": "Quiz",
+  name: `Deutsch Quiz ${formattedLevel}: ${skillLabel} (Test ${testId})`,
+  description: testDescription,
+  educationalLevel: formattedLevel,
+  about: { "@type": "Thing", name: `Deutsche Sprache ${formattedLevel} ${skillLabel}` },
+  provider: {
+    "@type": "EducationalOrganization",
+    name: "Elite Regewelt",
+    url: "https://elite-regewelt.com/",
+  },
+};
 ---
 
 <Layout
-  description="Teste dein Wissen mit interaktiven Quizfragen zu Lesen, Hören, Schreiben und Sprechen."
-  title="Quiz | Deutsch Lernen"
+  description={testDescription}
+  extraSchema={testSchema}
+  title={testTitle}
 >
   <QuizView
     client:load

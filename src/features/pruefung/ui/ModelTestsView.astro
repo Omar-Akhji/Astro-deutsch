@@ -31,7 +31,7 @@ const stats = [
 ---
 
 <div class="relative min-h-dvh py-8">
-  <main>
+  <div class="animate-fade-in">
     <Hero
       category="Prüfungsvorbereitung"
       description="Wähle einen Fertigkeitsbereich und einen Modelltest aus."
@@ -46,7 +46,7 @@ const stats = [
     >
       <a
         class="flex items-center gap-2 rounded-full border border-white/20 px-6 py-2 text-sm text-white no-underline transition-colors hover:bg-white/10"
-        href={`/pruefung/${level}`}
+        href={`/pruefung/${level}/`}
       >
         <span>&larr;</span> Zurück zur Übersicht
       </a>
@@ -78,7 +78,7 @@ const stats = [
                   <Card
                     description={`Vollständiger ${skill.title}-Teil für das ${level.toUpperCase()}-Zertifikat.`}
                     gradient={SKILL_GRADIENTS[skill.id] ?? SKILL_GRADIENTS["lesen"] ?? ""}
-                    href={`/quiz/${level}/${skill.id}/${testId}`}
+                    href={`/quiz/${level}/${skill.id}/${testId}/`}
                     subtitle="Übung"
                     title={`Modelltest ${testId}`}
                     variant="default"
@@ -90,5 +90,5 @@ const stats = [
         );
       })}
     </div>
-  </main>
+  </div>
 </div>

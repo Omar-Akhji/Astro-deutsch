@@ -1,0 +1,207 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/shared/ui/PageHeader.astro";
+import { getCollection } from "astro:content";
+import {
+  BookOpen,
+  CheckCircle2,
+  Headphones,
+  HelpCircle,
+  MessageCircle,
+  PenTool,
+  Trophy,
+} from "lucide-astro";
+
+const quizEntries = await getCollection("quiz");
+
+const skillIcons = {
+  lesen: BookOpen,
+  hoeren: Headphones,
+  schreiben: PenTool,
+  sprechen: MessageCircle,
+} as const;
+
+const skillLabels: Record<string, string> = {
+  lesen: "Leseverstehen",
+  hoeren: "Hörverstehen",
+  schreiben: "Schriftlicher Ausdruck",
+  sprechen: "Mündlicher Ausdruck",
+};
+
+const skillGradients: Record<string, string> = {
+  lesen: "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+  hoeren: "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+  schreiben: "linear-gradient(135deg, #e67e22 0%, #d35400 100%)",
+  sprechen: "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+};
+
+interface QuizGroupItem {
+  testId: string | number;
+  questionCount: number;
+}
+
+type GroupedQuizzes = Record<string, Record<string, QuizGroupItem[]>>;
+
+const grouped: GroupedQuizzes = {};
+
+for (const entry of quizEntries) {
+  const level = entry.data.level.toLowerCase();
+  const skill = entry.data.skill.toLowerCase();
+  if (!grouped[level]) grouped[level] = {};
+  const levelObject = grouped[level];
+  if (!levelObject) continue;
+  if (!levelObject[skill]) levelObject[skill] = [];
+  levelObject[skill].push({
+    testId: entry.data.testId,
+    questionCount: entry.data.questions?.length ?? 0,
+  });
+}
+
+// Sort test numbers numerically
+for (const levelObject of Object.values(grouped)) {
+  for (const list of Object.values(levelObject)) {
+    list.sort((a, b) => Number(a.testId) - Number(b.testId));
+  }
+}
+
+const levels = ["b1", "b2"].filter((lvl) => grouped[lvl]);
+
+const quizSchema = {
+  "@type": "CollectionPage",
+  name: "Interaktives Deutsch-Quiz (B1 & B2)",
+  description:
+    "38 interaktive Quiz-Tests für Goethe & ÖSD Prüfungsvorbereitung in Lesen, Hören, Schreiben und Sprechen.",
+  about: {
+    "@type": "Course",
+    name: "Deutsch Prüfungstraining Quiz",
+    description:
+      "Interaktive Prüfungssimulationen mit sofortiger Rückmeldung und Punkteauswertung.",
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "Elite Regewelt",
+      url: "https://elite-regewelt.com/",
+    },
+  },
+};
+---
+
+<Layout
+  description="Teste dein Deutsch mit 38 interaktiven Quiz-Tests für B1 und B2. Gezielte Übungen für Leseverstehen, Hörverstehen, Schreiben und Sprechen."
+  extraSchema={quizSchema}
+  title="Interaktives Deutsch-Quiz (B1 & B2) | Elite Regewelt"
+>
+  <div class="animate-fade-in py-4 mobile:py-8">
+    <PageHeader
+      icon={HelpCircle}
+      subtitle="38 interaktive Trainingstests mit sofortiger Auswertung für deine Goethe & ÖSD Prüfung"
+      title="Interaktives Deutsch-Quiz"
+    />
+
+    <!-- Quick Stats -->
+    <div
+      class="mb-10 grid grid-cols-2 gap-4 tablet:mb-12 tablet:grid-cols-4 tablet:gap-6"
+      data-animate="fade-up"
+    >
+      <div class="rounded-2xl border border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
+        <Trophy class="mx-auto mb-2 size-6 text-yellow" />
+        <div class="text-2xl font-bold text-white">38</div>
+        <div class="text-xs text-mist-400">Übungstests</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
+        <BookOpen class="mx-auto mb-2 size-6 text-yellow" />
+        <div class="text-2xl font-bold text-white">4</div>
+        <div class="text-xs text-mist-400">Fertigkeiten</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
+        <CheckCircle2 class="mx-auto mb-2 size-6 text-yellow" />
+        <div class="text-2xl font-bold text-white">B1 & B2</div>
+        <div class="text-xs text-mist-400">Prüfungsniveaus</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
+        <HelpCircle class="mx-auto mb-2 size-6 text-yellow" />
+        <div class="text-2xl font-bold text-white">100%</div>
+        <div class="text-xs text-mist-400">Kostenlos</div>
+      </div>
+    </div>
+
+    <!-- Levels & Skills Directory -->
+    <div class="space-y-14 tablet:space-y-16">
+      {levels.map((level) => (
+        <section
+          aria-labelledby={`heading-level-${level}`}
+          class="space-y-8"
+        >
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+            <span class="rounded-full bg-linear-to-r from-yellow to-orange px-4 py-1 text-sm font-bold text-black uppercase shadow-md shadow-yellow/20">
+              {level.toUpperCase()}
+            </span>
+            <h2
+              class="m-0 text-xl font-bold text-white tablet:text-2xl"
+              id={`heading-level-${level}`}
+            >
+              Prüfungstraining Niveau {level.toUpperCase()}
+            </h2>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 laptop:grid-cols-2">
+            {grouped[level]
+              && Object.keys(grouped[level]!).map((skill) => {
+                const SkillIcon = skillIcons[skill as keyof typeof skillIcons] ?? HelpCircle;
+                const tests = grouped[level]?.[skill] ?? [];
+                const gradient =
+                  skillGradients[skill] ?? "linear-gradient(135deg, #4b6cb7 0%, #182848 100%)";
+
+                return (
+                  <article class="overflow-hidden rounded-2xl border border-white/10 bg-card/75 shadow-lg backdrop-blur-md">
+                    <header
+                      class="flex items-center justify-between p-4 tablet:p-5"
+                      style={{ background: gradient }}
+                    >
+                      <div class="flex items-center gap-3">
+                        <span class="flex size-10 items-center justify-center rounded-xl bg-black/20 text-white backdrop-blur-sm">
+                          <SkillIcon size={20} />
+                        </span>
+                        <div>
+                          <h3 class="m-0 text-lg font-bold text-white">
+                            {skillLabels[skill] ?? skill}
+                          </h3>
+                          <p class="m-0 text-xs text-white/80">
+                            {tests.length} {tests.length === 1 ? "Test" : "Tests"} verfügbar
+                          </p>
+                        </div>
+                      </div>
+                    </header>
+
+                    <div class="p-4 tablet:p-5">
+                      <p class="mb-4 text-xs text-mist-400">
+                        Wähle einen Test zur interaktiven Bearbeitung:
+                      </p>
+                      <div class="grid grid-cols-3 gap-2 mobile:grid-cols-4 tablet:grid-cols-3 laptop:grid-cols-4">
+                        {tests.map((test) => (
+                          <a
+                            class="group flex flex-col items-center justify-center rounded-xl border border-white/10 bg-white/5 p-3 text-center transition-all duration-200 hover:-translate-y-0.5 hover:border-yellow/50 hover:bg-yellow/10 active:scale-95"
+                            href={`/quiz/${level}/${skill}/${test.testId}/`}
+                            title={`Starte ${skillLabels[skill]} Test ${test.testId}`}
+                          >
+                            <span class="text-xs font-semibold text-mist-400 group-hover:text-yellow">
+                              Test
+                            </span>
+                            <span class="text-lg font-bold text-white group-hover:text-yellow">
+                              {test.testId}
+                            </span>
+                            <span class="text-[10px] text-zinc-400">
+                              {test.questionCount} {test.questionCount === 1 ? "Frage" : "Fragen"}
+                            </span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+</Layout>

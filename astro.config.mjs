@@ -5,7 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://deutsch-lernen.com",
+  site: "https://elite-regewelt.com",
+  trailingSlash: "always",
   integrations: [
     vue(),
     sitemap({
@@ -15,15 +16,25 @@ export default defineConfig({
       lastmod: new Date(),
       priority: 0.8,
       serialize(item) {
-        if (item.url === "https://deutsch-lernen.com/") {
+        const CORE_HUBS = [
+          "https://elite-regewelt.com/vokabeln/",
+          "https://elite-regewelt.com/grammatik/",
+          "https://elite-regewelt.com/pruefung/",
+          "https://elite-regewelt.com/themen/",
+          "https://elite-regewelt.com/quiz/",
+        ];
+        if (item.url === "https://elite-regewelt.com/") {
           item.priority = 1;
           item.changefreq = ChangeFreqEnum.DAILY;
-        } else if (
-          item.url.includes("/vokabeln")
-          || item.url.includes("/grammatik")
-          || item.url.includes("/pruefung")
-        ) {
+        } else if (CORE_HUBS.includes(item.url)) {
           item.priority = 0.9;
+          item.changefreq = ChangeFreqEnum.WEEKLY;
+        } else if (item.url.includes("/quiz/")) {
+          item.priority = 0.7;
+          item.changefreq = ChangeFreqEnum.MONTHLY;
+        } else {
+          item.priority = 0.8;
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         return item;
       },

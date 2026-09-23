@@ -53,7 +53,7 @@ onMounted(() => {
         <div class="relative size-12 transition-transform duration-500 select-none hover:rotate-12">
           <img
             src="/logo.svg"
-            alt="Deutsch Lernen Logo"
+            alt="Elite Regewelt Logo"
             class="size-full object-contain"
           />
         </div>
@@ -132,7 +132,7 @@ onMounted(() => {
           >
             <div>
               <span class="text-[10px] font-extrabold tracking-[0.2em] text-slate-800 uppercase">
-                Deutsch Lernen
+                Elite Regewelt
               </span>
               <h2
                 class="font-display mt-2 text-2xl leading-tight font-extrabold tracking-tight text-slate-950"
@@ -199,11 +199,11 @@ onMounted(() => {
           <div class="relative mb-3 size-12 transition-transform duration-500 hover:rotate-12">
             <img
               src="/logo.svg"
-              alt="Deutsch Lernen logo"
+              alt="Elite Regewelt logo"
               class="size-full object-contain"
             />
           </div>
-          <h1 class="font-display text-xl font-bold text-white">Deutsch Lernen</h1>
+          <h1 class="font-display text-xl font-bold text-white">Elite Regewelt</h1>
           <p class="mt-1 text-xs text-text-muted">Deine umfassende Deutsch-Lernplattform.</p>
 
           <!-- Pill switcher -->
