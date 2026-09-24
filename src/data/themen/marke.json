@@ -1,0 +1,15 @@
+{
+  "id": "marke",
+  "label": "Brauchen wir Markenkleidung?",
+  "cat": "gesellschaft",
+  "pro": [
+    "Markenkleidung hat gute Qualität, hält lange und sieht sehr gut aus.",
+    "Wenn man Markenkleidung trägt, fühlt man sich selbstbewusster.",
+    "Markenkleidung ist oft modern und trendy."
+  ],
+  "con": [
+    "Markenkleidung ist sehr teuer und kann süchtig machen.",
+    "Markenkleidung ist oft nur Marketing – man zahlt für das Logo.",
+    "Man sollte Geld nicht für Status ausgeben."
+  ]
+}

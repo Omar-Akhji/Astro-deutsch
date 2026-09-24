@@ -1,0 +1,17 @@
+{
+  "id": "homeoffice",
+  "label": "Homeoffice / Arbeit von zu Hause",
+  "cat": "arbeit",
+  "pro": [
+    "Man spart Zeit und Geld durch weniger Pendeln.",
+    "Man kann flexibler arbeiten und hat mehr Zeit für die Familie.",
+    "Weniger Ablenkung durch Kollegen – oft produktiver.",
+    "Umweltfreundlicher – weniger Autofahrten."
+  ],
+  "con": [
+    "Man kann sich zu Hause schlechter konzentrieren (Kinder, Haushalt).",
+    "Man vermisst den Kontakt zu Kollegen – soziale Isolation.",
+    "Die Grenze zwischen Arbeit und Freizeit verschwimmt.",
+    "Nicht alle Jobs können im Homeoffice erledigt werden."
+  ]
+}

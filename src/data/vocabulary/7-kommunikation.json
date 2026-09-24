@@ -1,0 +1,50 @@
+{
+  "id": 7,
+  "german": "KOMMUNIKATION",
+  "category": "Kapitel 7",
+  "description": "Medien, Technologie und wie wir heute miteinander sprechen.",
+  "sections": [
+    {
+      "id": "medien_und_tech",
+      "title": "Medien und Technologie",
+      "topics": [
+        {
+          "id": "smartphone",
+          "title": "Das Smartphone",
+          "words": [
+            {
+              "german": "das Handy, -s",
+              "arabic": "الهاتف المحمول",
+              "english": "cell phone, mobile",
+              "example": "Mein Handy hat keinen Akku mehr."
+            },
+            {
+              "german": "die Nachricht, -en",
+              "arabic": "الرسالة",
+              "english": "message",
+              "example": "Ich habe dir eine Nachricht geschrieben."
+            },
+            {
+              "german": "anrufen",
+              "arabic": "يتصل (هاتفياً)",
+              "english": "to call (on phone)",
+              "example": "Ich werde dich später anrufen."
+            },
+            {
+              "german": "das Internet",
+              "arabic": "الإنترنت",
+              "english": "internet",
+              "example": "Man findet alles im Internet."
+            },
+            {
+              "german": "der Computer, -",
+              "arabic": "الحاسوب / الكمبيوتر",
+              "english": "computer",
+              "example": "Ich arbeite am Computer."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

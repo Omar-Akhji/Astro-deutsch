@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, envField } from "astro/config";
 import sitemap, { ChangeFreqEnum } from "@astrojs/sitemap";
 import vue from "@astrojs/vue";
 import tailwindcss from "@tailwindcss/vite";
@@ -7,6 +7,15 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: "https://elite-regewelt.com",
   trailingSlash: "always",
+  env: {
+    schema: {
+      PUBLIC_GA_MEASUREMENT_ID: envField.string({
+        context: "client",
+        access: "public",
+        optional: true,
+      }),
+    },
+  },
   integrations: [
     vue(),
     sitemap({

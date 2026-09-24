@@ -1,0 +1,50 @@
+{
+  "id": 11,
+  "german": "ERDE UND NATUR",
+  "category": "Kapitel 11",
+  "description": "Umwelt, Wetter und die Vielfalt der Natur auf unserem Planeten.",
+  "sections": [
+    {
+      "id": "wetter_und_natur",
+      "title": "Wetter und Natur",
+      "topics": [
+        {
+          "id": "das_wetter",
+          "title": "Das Wetter",
+          "words": [
+            {
+              "german": "die Sonne",
+              "arabic": "الشمس",
+              "english": "sun",
+              "example": "Die Sonne scheint heute sehr schön."
+            },
+            {
+              "german": "der Regen",
+              "arabic": "المطر",
+              "english": "rain",
+              "example": "Wir bleiben zu Hause wegen des Regens."
+            },
+            {
+              "german": "der Schnee",
+              "arabic": "الثلج",
+              "english": "snow",
+              "example": "Die Kinder spielen im Schnee."
+            },
+            {
+              "german": "der Wind",
+              "arabic": "الرياح",
+              "english": "wind",
+              "example": "Der Wind weht heute stark."
+            },
+            {
+              "german": "die Wolke, -n",
+              "arabic": "السحابة / الغيمة",
+              "english": "cloud",
+              "example": "Es sind viele Wolken am Himmel."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

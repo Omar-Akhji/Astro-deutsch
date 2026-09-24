@@ -1,0 +1,14 @@
+{
+  "id": "urlaub",
+  "label": "Verreisen oder zu Hause bleiben?",
+  "cat": "freizeit",
+  "pro": [
+    "Verreisen: Neue Kulturen, Orte und Menschen kennenlernen – hilft, Stress zu vergessen.",
+    "Verreisen macht offen und weltgewandt.",
+    "Zu Hause bleiben: Geld sparen, andere Hobbys machen, entspannen."
+  ],
+  "con": [
+    "Verreisen: Kostet Geld und Kraft. Durch Klimawechsel kann man krank werden.",
+    "Zu Hause bleiben: Langweilig – man bleibt im Alltag stecken."
+  ]
+}

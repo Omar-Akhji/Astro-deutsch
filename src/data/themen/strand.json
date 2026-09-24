@@ -1,0 +1,15 @@
+{
+  "id": "strand",
+  "label": "Urlaub am Strand",
+  "cat": "freizeit",
+  "pro": [
+    "Am Strand kann man sich erholen, entspannen und den Alltag vergessen.",
+    "Die Sonne und das Wasser geben positive Energie.",
+    "Man kann aktiv sein: Beachvolleyball, Schwimmen, Surfen."
+  ],
+  "con": [
+    "Urlaub am Strand macht manchmal passiv und faul.",
+    "Zu viel Sonne ist schädlich für die Haut.",
+    "Man lernt wenig über andere Kulturen und Orte."
+  ]
+}

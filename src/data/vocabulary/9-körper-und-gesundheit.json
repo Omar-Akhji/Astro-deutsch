@@ -1,0 +1,74 @@
+{
+  "id": 9,
+  "german": "KÖRPER UND GESUNDHEIT",
+  "category": "Kapitel 9",
+  "description": "Körperteile, Krankheiten und nützliche Ausdrücke für den Arztbesuch.",
+  "sections": [
+    {
+      "id": "beim_arzt",
+      "title": "Beim Arzt und der Körper",
+      "topics": [
+        {
+          "id": "der_koerper",
+          "title": "Der Körper",
+          "words": [
+            {
+              "german": "der Kopf, -̈e",
+              "arabic": "الرأس",
+              "english": "head",
+              "example": "Mein Kopf tut weh."
+            },
+            {
+              "german": "der Arm, -e",
+              "arabic": "الذراع",
+              "english": "arm",
+              "example": "Sein linker Arm ist gebrochen."
+            },
+            {
+              "german": "das Bein, -e",
+              "arabic": "الساق",
+              "english": "leg",
+              "example": "Meine Beine sind müde vom Laufen."
+            },
+            {
+              "german": "der Bauch, -̈e",
+              "arabic": "البطن",
+              "english": "stomach, belly",
+              "example": "Er hat Bauchschmerzen."
+            }
+          ]
+        },
+        {
+          "id": "krankheiten",
+          "title": "Krankheiten",
+          "words": [
+            {
+              "german": "die Schmerzen (Pl.)",
+              "arabic": "الآلام",
+              "english": "pain, ache",
+              "example": "Haben Sie Schmerzen?"
+            },
+            {
+              "german": "der Arzt, -̈e",
+              "arabic": "الطبيب",
+              "english": "doctor",
+              "example": "Du musst zum Arzt gehen."
+            },
+            {
+              "german": "das Medikament, -e",
+              "arabic": "الدواء",
+              "english": "medicine, medication",
+              "example": "Nimm deine Medikamente regelmäßig ein."
+            },
+            {
+              "german": "die Erkältung, -en",
+              "arabic": "نزلات البرد / الزكام",
+              "english": "cold",
+              "example": "Im Winter habe ich oft eine Erkältung."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

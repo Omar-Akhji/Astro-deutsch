@@ -1,0 +1,16 @@
+{
+  "id": "einkauf",
+  "label": "Einkaufen im Internet",
+  "cat": "tech",
+  "pro": [
+    "Einkaufen im Internet ist schnell, bequem, einfach und oft günstiger.",
+    "Das Angebot ist groß und vielfältig – viele Sonderangebote.",
+    "Man spart Zeit und Energie und kann Waren aus dem Ausland bestellen."
+  ],
+  "con": [
+    "Einkaufen im Internet kann gefährlich sein – persönliche Daten sind nicht immer geschützt.",
+    "Die Produkte können schlechter sein als auf den Fotos.",
+    "Man kann die Produkte nicht ausprobieren oder testen.",
+    "Die Lieferung kann sich verzögern. Reklamationen sind schwierig."
+  ]
+}

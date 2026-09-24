@@ -1,0 +1,15 @@
+{
+  "id": "flexi",
+  "label": "Flexible Arbeitszeiten",
+  "cat": "arbeit",
+  "pro": [
+    "Flexible Arbeitszeiten sind ideal für Familien mit Kindern.",
+    "Mitarbeiter arbeiten besser, wenn sie selbst entscheiden, wann sie produktiv sind.",
+    "Man kann private Termine leichter wahrnehmen."
+  ],
+  "con": [
+    "Feste Arbeitszeiten schaffen Ordnung und erleichtern die Teamarbeit.",
+    "Bei flexiblen Zeiten kann es zu Kommunikationsproblemen im Team kommen.",
+    "Manche Mitarbeiter können ihre Zeit nicht gut einteilen."
+  ]
+}

@@ -1,7 +1,9 @@
 import type { ApiResponse } from "@/shared/model";
 import type { Thema } from "../model/types.ts";
-import { themenData } from "./data.ts";
+import { getCollection } from "astro:content";
 
 export async function getThemen(): Promise<ApiResponse<Thema[]>> {
-  return { data: themenData, success: true };
+  const entries = await getCollection("themen");
+  const data = entries.map((e) => e.data as unknown as Thema);
+  return { data, success: true };
 }

@@ -1,0 +1,60 @@
+{
+  "level": "b2",
+  "categories": {
+    "Schreiben 1: Forumsbeitrag": [
+      {
+        "label": "1 · Einleitung",
+        "phrases": [
+          "Das Thema \"...\" ist heutzutage von großer Bedeutung.",
+          "Immer mehr Menschen beschäftigen sich mit der Frage,...",
+          "In meinem Beitrag möchte ich die Frage diskutieren, ob..."
+        ]
+      },
+      {
+        "label": "2 · Argumentation",
+        "phrases": [
+          "Einerseits... andererseits...",
+          "Dafür/Dagegen spricht, dass...",
+          "Ein weiteres Argument ist...",
+          "Hinzu kommt, dass...",
+          "Man darf nicht vergessen, dass..."
+        ]
+      },
+      {
+        "label": "3 · Beispiele",
+        "phrases": [
+          "Das zeigt sich zum Beispiel daran, dass...",
+          "Ein gutes Beispiel dafür ist...",
+          "Dies kann man an folgendem Beispiel verdeutlichen:..."
+        ]
+      },
+      {
+        "label": "4 · Schluss",
+        "phrases": [
+          "Zusammenfassend lässt sich sagen, dass...",
+          "Abschließend möchte ich betonen, dass...",
+          "Alles in allem bin ich der Meinung, dass..."
+        ]
+      }
+    ],
+    "Schreiben 2: Formelle Nachricht": [
+      {
+        "label": "1 · Anrede",
+        "phrases": [
+          "Sehr geehrte Damen und Herren,"
+        ]
+      }
+    ],
+    "Sprechen 2: Diskussion": [
+      {
+        "label": "Diskussion führen",
+        "phrases": [
+          "Was meinst du dazu?",
+          "Ich verstehe deinen Standpunkt, aber...",
+          "Das ist ein interessanter Punkt, jedoch...",
+          "Könntest du das näher erläutern?"
+        ]
+      }
+    ]
+  }
+}

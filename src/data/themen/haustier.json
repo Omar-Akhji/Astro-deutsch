@@ -1,0 +1,16 @@
+{
+  "id": "haustier",
+  "label": "Haustiere",
+  "cat": "gesellschaft",
+  "pro": [
+    "Haustiere sind treu und unterhaltsam.",
+    "Haustiere helfen behinderten und blinden Menschen.",
+    "Haustiere sind eine gute Lösung gegen Einsamkeit.",
+    "Kinder lernen durch ein Haustier mehr Verantwortung."
+  ],
+  "con": [
+    "Haustiere haben viele Bedürfnisse – man muss sie füttern, pflegen und Gassi gehen.",
+    "Haustiere kosten Geld (Tierarzt, Futter, Zubehör).",
+    "Wenn man ein Haustier hat, kann man nicht einfach Urlaub machen."
+  ]
+}

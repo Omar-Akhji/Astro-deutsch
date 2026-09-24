@@ -1,0 +1,16 @@
+{
+  "id": "social",
+  "label": "Soziale Netzwerke / Facebook",
+  "cat": "tech",
+  "pro": [
+    "Soziale Netzwerke verbinden Menschen aus der ganzen Welt.",
+    "Sie sind ein gutes Mittel, um Kontakt mit Familie und Freunden zu pflegen.",
+    "Man kann andere Kulturen entdecken und ist immer informiert.",
+    "Man kann soziale Netzwerke für Werbung und Karriere nutzen."
+  ],
+  "con": [
+    "Soziale Netzwerke machen einsam und faul – Depressionen und Übergewicht können entstehen.",
+    "In sozialen Netzwerken sind persönliche Daten nicht immer geschützt.",
+    "Man wird abhängig und verschwendet viel Zeit."
+  ]
+}

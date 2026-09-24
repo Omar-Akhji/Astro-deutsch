@@ -1,0 +1,407 @@
+{
+  "id": "praepositionen",
+  "title": "Präpositionen",
+  "icon": "Link",
+  "topics": [
+    {
+      "id": "lokale-praep",
+      "number": "1",
+      "title": "Lokale Präpositionen",
+      "category": "Präpositionen",
+      "description": "Wo? Wohin? Woher?",
+      "gradients": [
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "lokal-wohin",
+          "number": "1.1",
+          "title": "Wohin? (Richtung)",
+          "description": "Bewegung zu einem Ziel",
+          "content": [
+            {
+              "title": "Häufige Präpositionen",
+              "items": [
+                "**nach**: Städte, Länder ohne Artikel, Richtungen (nach Berlin, nach Hause, nach links)",
+                "**in (+ Akk)**: Räume, Gebäude, Länder mit Artikel (ins Kino, in die Schweiz, in den Wald)",
+                "**zu**: Personen, Ziele in der Stadt, Geschäfte (zu Maria, zum Bahnhof, zur Post)",
+                "**an (+ Akk)**: Wasser, Grenzen (ans Meer, an den Strand, an die Tür)",
+                "**auf (+ Akk)**: Plätze, Inseln, Berge, Behörden (auf den Markt, auf die Insel, auf die Post)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lokal-wo",
+          "number": "1.2",
+          "title": "Wo? (Ort)",
+          "description": "Position an einem Ort",
+          "content": [
+            {
+              "title": "Häufige Präpositionen",
+              "items": [
+                "**in (+ Dat)**: Räume, Länder, Städte (im Kino, in Berlin, in der Schweiz)",
+                "**bei**: Personen, Firmen, Nähe (bei BMW, bei Frankfurt, beim Arzt)",
+                "**an (+ Dat)**: Rand, Wasser (am Fenster, am Meer, an der Ampel)",
+                "**auf (+ Dat)**: Fläche, Insel (auf dem Tisch, auf der Insel)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lokal-woher",
+          "number": "1.3",
+          "title": "Woher? (Herkunft)",
+          "description": "Bewegung von einem Ursprung",
+          "content": [
+            {
+              "title": "Häufige Präpositionen",
+              "items": [
+                "**aus**: Aus dem Inneren (aus dem Haus, aus Berlin, aus der Schweiz)",
+                "**von**: Von einem Ort/Person (vom Bahnhof, vom Arzt, von zu Hause)"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "**nach Hause** (wohin) vs. **zu Hause** (wo).",
+        "Kurzformen: am, im, ans, ins, zum, zur, vom, beim."
+      ]
+    },
+    {
+      "id": "temporale-praep",
+      "number": "2",
+      "title": "Temporale Präpositionen",
+      "category": "Präpositionen",
+      "description": "Wann? Wie lange? Wie oft?",
+      "gradients": [
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "temp-wann",
+          "number": "2.1",
+          "title": "Wann? (Zeitpunkt)",
+          "description": "Spezifische Zeitpunkte im Kalender",
+          "content": [
+            {
+              "title": "Häufige Präpositionen",
+              "items": [
+                "**an (+ Dat)**: Tage, Datum, Tageszeiten (am Montag, am 1. Mai, am Abend - Ausnahme: in der Nacht)",
+                "**in (+ Dat)**: Wochen, Monate, Jahreszeiten, Zukunft (in einer Woche, im Mai, im Sommer, in 5 Minuten)",
+                "**um (+ Akk)**: Uhrzeit (um 8 Uhr)",
+                "**gegen (+ Akk)**: Ungenaue Zeit (gegen Mittag, gegen 8 Uhr)",
+                "**vor / nach (+ Dat)**: Vorher/Nachher (vor dem Essen, nach der Arbeit)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "temp-dauer",
+          "number": "2.2",
+          "title": "Zeitdauer",
+          "description": "Wie lange etwas dauert",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**seit (+ Dat)**: Beginn in der Vergangenheit, dauert noch an (seit einem Jahr).",
+                "**ab (+ Dat)**: Beginn in der Gegenwart/Zukunft (ab Montag).",
+                "**von ... bis (+ Dat)**: Zeitraum (von 8 bis 16 Uhr).",
+                "**für (+ Akk)**: Zeitraum in der Zukunft (für zwei Wochen)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "temp-gleich",
+          "number": "2.3",
+          "title": "Gleichzeitigkeit",
+          "description": "Aktionen, die zur gleichen Zeit stattfinden",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**während (+ Gen/Dat)**: Während einer Aktion (während der Fahrt).",
+                "**bei (+ Dat)**: Beim Tun (beim Essen)."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kasus-praep",
+      "number": "3",
+      "title": "Kasus-Regeln",
+      "category": "Präpositionen",
+      "description": "Übersicht der Präpositionen nach Kasus",
+      "gradients": [
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "kasus-praep-tabelle",
+          "number": "3.1",
+          "title": "Präpositionen und ihre Fälle",
+          "description": "Zusammenfassung der Kasus-Zugehörigkeit",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Fall",
+              "Präpositionen"
+            ],
+            "rows": [
+              [
+                "Akkusativ",
+                "durch, für, gegen, ohne, um, bis, entlang"
+              ],
+              [
+                "Dativ",
+                "aus, bei, mit, nach, seit, von, zu, ab, gegenüber"
+              ],
+              [
+                "Wechsel (Akk/Dat)",
+                "in, an, auf, unter, über, vor, hinter, neben, zwischen"
+              ],
+              [
+                "Genitiv",
+                "wegen, trotz, während, innerhalb, außerhalb, statt"
+              ]
+            ]
+          }
+        }
+      ],
+      "tips": [
+        "**Akkusativ**: Wohin? (Bewegung)",
+        "**Dativ**: Wo? (Zustand/Position)"
+      ]
+    },
+    {
+      "id": "genitiv-praep",
+      "number": "4",
+      "title": "Genitiv-Präpositionen",
+      "category": "Präpositionen",
+      "description": "Präpositionen, die den Genitiv verlangen",
+      "gradients": [
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "genitiv-praep-haupt",
+          "number": "4.1",
+          "title": "Die 4 wichtigsten Präpositionen",
+          "description": "Häufig verwendete Genitiv-Präpositionen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**wegen**: Grund (Wegen des schlechten Wetters bleiben wir zu Hause).",
+                "**während**: Zeit (Während der Fahrt darf man nicht mit dem Fahrer sprechen).",
+                "**trotz**: Gegensatz (Trotz der Kälte trägt er keinen Mantel).",
+                "**statt / anstatt**: Alternative (Ich nehme den Bus statt meines Autos)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "genitiv-praep-weitere",
+          "number": "4.2",
+          "title": "Weitere Genitiv-Präpositionen",
+          "description": "Ergänzende Präpositionen der gehobenen Sprache",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**innerhalb / außerhalb**: Ort/Zeit (innerhalb der Stadt, außerhalb der Sprechzeiten).",
+                "**aufgrund**: Grund (formeller als wegen).",
+                "**mithilfe**: Instrumentell (mithilfe eines Wörterbuchs)."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "In der gesprochenen Sprache wird bei **wegen** und **während** oft der Dativ verwendet (wegen dem Wetter), aber im schriftlichen Deutsch ist der Genitiv korrekt."
+      ]
+    },
+    {
+      "id": "wechsel-praep",
+      "number": "5",
+      "title": "Wechselpräpositionen",
+      "category": "Präpositionen",
+      "description": "Die 9 Präpositionen mit Dativ ODER Akkusativ",
+      "gradients": [
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "wechsel-9",
+          "number": "5.1",
+          "title": "Die 9 Wechselpräpositionen",
+          "description": "Wo? (Dativ) vs. Wohin? (Akkusativ)",
+          "hasTable": true,
+          "tableData": {
+            "caption": "Wo? (Dativ) ↔ Wohin? (Akkusativ)",
+            "headers": [
+              "Präposition",
+              "Wo? (Dativ)",
+              "Wohin? (Akkusativ)"
+            ],
+            "rows": [
+              [
+                "an",
+                "Das Bild hängt an **der** Wand.",
+                "Ich hänge das Bild an **die** Wand."
+              ],
+              [
+                "auf",
+                "Der Schlüssel liegt auf **dem** Tisch.",
+                "Ich lege den Schlüssel auf **den** Tisch."
+              ],
+              [
+                "hinter",
+                "Der Hund sitzt hinter **dem** Sofa.",
+                "Der Hund läuft hinter **das** Sofa."
+              ],
+              [
+                "in",
+                "Die Katze sitzt in **dem** Karton.",
+                "Die Katze klettert in **den** Karton."
+              ],
+              [
+                "neben",
+                "Ich sitze neben **dir**.",
+                "Setz dich neben **mich**."
+              ],
+              [
+                "über",
+                "Das Foto hängt über **dem** Schreibtisch.",
+                "Ich hänge das Foto über **den** Schreibtisch."
+              ],
+              [
+                "unter",
+                "Der Hund schläft unter **der** Decke.",
+                "Der Hund kriecht unter **die** Decke."
+              ],
+              [
+                "vor",
+                "Das Paket steht vor **der** Tür.",
+                "Stell das Paket vor **die** Tür."
+              ],
+              [
+                "zwischen",
+                "Das Kind steht zwischen **den** Eltern.",
+                "Das Kind setzt sich zwischen **die** Eltern."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "wechsel-merkhilfe",
+          "number": "5.2",
+          "title": "Merkhilfe",
+          "description": "Wie man sich die Regel merkt",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Wo?** → Dativ (Position, Zustand): Ich **bin** im Kino.",
+                "**Wohin?** → Akkusativ (Richtung, Bewegung): Ich **gehe** ins Kino.",
+                "**Merksatz**: „Wo ich bin, ist Dativ – wohin ich geh, ist Akkusativ.\""
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Kurzformen: **in dem** = im, **in das** = ins, **an dem** = am, **an das** = ans.",
+        "Bei **Verben der Ruhe** (sein, stehen, sitzen, liegen, hängen) → immer **Dativ**.",
+        "Bei **Verben der Bewegung** (gehen, stellen, setzen, legen, hängen) → immer **Akkusativ**."
+      ]
+    },
+    {
+      "id": "modale-kausale-praep",
+      "number": "6",
+      "title": "Modale & Kausale Präpositionen",
+      "category": "Präpositionen",
+      "description": "Art und Weise, Grund und Gegengrund",
+      "gradients": [
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "modal-praep",
+          "number": "6.1",
+          "title": "Modale Präpositionen (Wie?)",
+          "description": "Art und Weise, Begleitung, Mittel",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**mit (+ Dat)**: Begleitung, Mittel (Ich fahre mit dem Zug. Ich schreibe mit einem Bleistift).",
+                "**ohne (+ Akk)**: Abwesenheit (Er geht ohne seinen Bruder. Kaffee ohne Milch).",
+                "**gegen (+ Akk)**: Gegensatz, Richtung (Ich bin gegen den Vorschlag. Wir fahren gegen die Wand).",
+                "**für (+ Akk)**: Zweck, Person (Das Geschenk ist für dich. Für mich einen Kaffee, bitte).",
+                "**als**: Funktion/Rolle (Er arbeitet als Arzt. Ich habe Berlin als Tourist besucht)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kausal-praep",
+          "number": "6.2",
+          "title": "Kausale Präpositionen (Warum?)",
+          "description": "Gründe und Gegenargumente",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**wegen (+ Gen)**: Grund (Wegen des Regens bleibe ich zu Hause).",
+                "**aus (+ Dat)**: Innerer Grund, Gefühl (Aus Angst hat er nicht gefragt. Aus Liebe).",
+                "**vor (+ Dat)**: Gefühl als Ursache (Ich zittere vor Kälte. Sie weint vor Freude).",
+                "**trotz (+ Gen)**: Gegengrund (Trotz des Regens gehe ich spazieren)."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Unterschied: **mit** (Dativ) = zusammen mit / **ohne** (Akkusativ) = nicht zusammen mit.",
+        "**wegen** verlangt im schriftlichen Deutsch den **Genitiv**, in der Umgangssprache oft den Dativ."
+      ]
+    }
+  ],
+  "gradients": [
+    "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+    "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+    "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+    "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+    "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)"
+  ]
+}

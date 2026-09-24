@@ -1,0 +1,15 @@
+{
+  "id": "auswand",
+  "label": "Auswanderung",
+  "cat": "gesellschaft",
+  "pro": [
+    "Neue Kulturen, Menschen und Bräuche kennenlernen.",
+    "Bessere Lebensverhältnisse – bessere Arbeit, höheres Einkommen.",
+    "Die Kinder bekommen eine bessere Bildung und Gesundheitsversorgung."
+  ],
+  "con": [
+    "Man fühlt sich fremd und einsam.",
+    "Es ist schwierig, sich an die neue Sprache und Kultur zu gewöhnen.",
+    "Man hat Heimweh und ist weit von Familie und Freunden entfernt."
+  ]
+}

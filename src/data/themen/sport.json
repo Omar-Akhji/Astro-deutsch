@@ -1,0 +1,15 @@
+{
+  "id": "sport",
+  "label": "Wie viel Sport ist gesund?",
+  "cat": "gesundheit",
+  "pro": [
+    "Regelmäßiger Sport ist gesund und notwendig – alle Ärzte raten dazu.",
+    "Sport baut Stress ab und macht glücklich.",
+    "3–4-mal pro Woche, 1–2 Stunden ist ideal."
+  ],
+  "con": [
+    "Zu viel Sport ist schädlich – der Körper braucht Erholung.",
+    "Zu wenig Sport führt zu Übergewicht und Faulheit.",
+    "Man darf seinen Körper auf keinen Fall überfordern."
+  ]
+}

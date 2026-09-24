@@ -1,0 +1,15 @@
+{
+  "id": "handy",
+  "label": "Brauchen Kinder ein Handy?",
+  "cat": "tech",
+  "pro": [
+    "Mit einem Handy ist das Kind immer erreichbar – wichtig bei Notfällen.",
+    "Mit dem Handy kann man nicht nur telefonieren, sondern auch lernen und recherchieren.",
+    "Heutzutage bilden Schüler Lerngruppen über WhatsApp."
+  ],
+  "con": [
+    "Handynutzung kostet viel Zeit und Geld.",
+    "Kann den Augen schaden, Schulleistung verschlechtern und süchtig machen.",
+    "Handys können gefährlich sein – viele kinderfeindliche Inhalte im Internet."
+  ]
+}

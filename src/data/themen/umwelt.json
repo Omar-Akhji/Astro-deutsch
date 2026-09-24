@@ -1,0 +1,15 @@
+{
+  "id": "umwelt",
+  "label": "Umweltschutz / Klimawandel",
+  "cat": "umwelt",
+  "pro": [
+    "Der Klimawandel ist eine der größten Bedrohungen unserer Zeit.",
+    "Jeder Mensch kann durch sein Verhalten die Umwelt schützen: Recycling, weniger Autofahren, Energie sparen.",
+    "Ohne Umweltschutz hinterlassen wir unseren Kindern eine zerstörte Erde."
+  ],
+  "con": [
+    "Umweltschutzmaßnahmen kosten viel Geld und gefährden Arbeitsplätze.",
+    "Viele Menschen können sich umweltfreundliche Produkte nicht leisten.",
+    "Ohne internationale Zusammenarbeit bringen nationale Maßnahmen wenig."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "englisch",
+  "label": "Sollen alle Englisch lernen?",
+  "cat": "bildung",
+  "pro": [
+    "Englisch ist eine weltweite Sprache der Wissenschaft und Technik.",
+    "Die meisten Fachbücher und Websites sind auf Englisch.",
+    "Englisch verbindet Menschen aus verschiedenen Kulturen.",
+    "Mit Englisch hat man bessere Chancen im Berufsleben."
+  ],
+  "con": [
+    "Eine neue Fremdsprache zu lernen ist nicht immer einfach.",
+    "Viele Forscher meinen, dass Chinesisch die Sprache der Zukunft ist.",
+    "Andere Sprachen und Kulturen werden dadurch vernachlässigt."
+  ]
+}

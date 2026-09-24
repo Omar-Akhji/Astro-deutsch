@@ -1,5 +1,4 @@
-export { grammarSections } from "./api/data.ts";
-export { getGrammarSection, getGrammarTopic } from "./api/services.ts";
+export { grammarCollectionSchema } from "./model/schema.ts";
 export type * from "./model/types.ts";
 export { default as ContentItem } from "./ui/ContentItem.astro";
 export { default as FormattedText } from "./ui/FormattedText.astro";

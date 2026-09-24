@@ -1,11 +1,13 @@
 ---
 import {
-  getGrammarSection,
-  getGrammarTopic,
   GrammarContentBlocks,
-  grammarSections,
   GrammarTable,
 } from "@/features/grammar";
+import {
+  getGrammarSection,
+  getGrammarSections,
+  getGrammarTopic,
+} from "@/features/grammar/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import { getGradient } from "@/shared/lib";
 import BackButton from "@/shared/ui/BackButton.astro";
@@ -14,7 +16,8 @@ import { Hero } from "@/widgets/hero";
 import { BookOpen, Languages } from "lucide-astro";
 
 export async function getStaticPaths() {
-  return grammarSections.flatMap((section) =>
+  const { data: grammarSections } = await getGrammarSections();
+  return (grammarSections ?? []).flatMap((section) =>
     section.topics.map((topic) => ({ params: { section: section.id, topicId: topic.id } })),
   );
 }

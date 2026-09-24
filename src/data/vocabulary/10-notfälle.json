@@ -1,0 +1,50 @@
+{
+  "id": 10,
+  "german": "NOTFÄLLE",
+  "category": "Kapitel 10",
+  "description": "Wichtige Sätze und Wörter für dringende Situationen und Hilfe.",
+  "sections": [
+    {
+      "id": "hilfe_rufen",
+      "title": "Hilfe rufen",
+      "topics": [
+        {
+          "id": "notruf",
+          "title": "Der Notruf",
+          "words": [
+            {
+              "german": "Hilfe!",
+              "arabic": "النجدة! / ساعدوني!",
+              "english": "Help!",
+              "example": "Hilfe! Ich brauche einen Arzt."
+            },
+            {
+              "german": "der Notfall, -̈e",
+              "arabic": "حالة طوارئ",
+              "english": "emergency",
+              "example": "Das ist ein Notfall."
+            },
+            {
+              "german": "die Feuerwehr",
+              "arabic": "المطافئ / الإطفاء",
+              "english": "fire department",
+              "example": "Wir müssen die Feuerwehr rufen."
+            },
+            {
+              "german": "der Unfall, -̈e",
+              "arabic": "الحادث",
+              "english": "accident",
+              "example": "Es gab einen kleinen Unfall."
+            },
+            {
+              "german": "der Krankenwagen, -",
+              "arabic": "سيارة الإسعاف",
+              "english": "ambulance",
+              "example": "Rufen Sie schnell einen Krankenwagen!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

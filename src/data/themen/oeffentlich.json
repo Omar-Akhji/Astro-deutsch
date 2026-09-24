@@ -1,0 +1,15 @@
+{
+  "id": "oeffentlich",
+  "label": "Öffentliche Verkehrsmittel vs. Auto",
+  "cat": "umwelt",
+  "pro": [
+    "Öffentliche Verkehrsmittel sind umweltfreundlicher und günstiger.",
+    "Man kann während der Fahrt lesen, arbeiten oder schlafen.",
+    "Kein Stress durch Stau oder Parkplatzsuche."
+  ],
+  "con": [
+    "Öffentliche Verkehrsmittel sind oft unpünktlich und überfüllt.",
+    "Auf dem Land gibt es oft keine guten Verbindungen.",
+    "Mit dem Auto ist man flexibler und schneller, besonders auf dem Land."
+  ]
+}

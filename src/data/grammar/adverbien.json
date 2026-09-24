@@ -1,0 +1,264 @@
+{
+  "id": "adverbien",
+  "title": "Adverbien",
+  "icon": "Clock",
+  "topics": [
+    {
+      "id": "temporal",
+      "number": "1",
+      "title": "Temporaladverbien",
+      "category": "Adverbien",
+      "description": "Wann? Wie lange? Wie oft?",
+      "gradients": [
+        "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
+        "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
+        "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
+        "linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "adv-temp-wann",
+          "number": "1.1",
+          "title": "Zeitpunkt (Wann?)",
+          "description": "Von heute bis damals",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "heute, morgen, gestern, vorgestern, übermorgen",
+                "gerade, jetzt, sofort, bald, damals, vorhin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adv-temp-oft",
+          "number": "1.2",
+          "title": "Häufigkeit (Wie oft?)",
+          "description": "Von immer bis nie",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "immer, fast immer, meistens",
+                "oft, manchmal, ab und zu",
+                "selten, fast nie, nie"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adv-temp-folge",
+          "number": "1.3",
+          "title": "Reihenfolge",
+          "description": "Abläufe strukturieren",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "zuerst, dann, danach, schließlich, zuletzt"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Häufigkeits-Skala: **immer** → fast immer → meistens → oft → manchmal → selten → fast nie → **nie**."
+      ]
+    },
+    {
+      "id": "lokal",
+      "number": "2",
+      "title": "Lokaladverbien",
+      "category": "Adverbien",
+      "description": "Wo? Wohin? Woher?",
+      "gradients": [
+        "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
+        "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
+        "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
+        "linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "adv-lokal-wo",
+          "number": "2.1",
+          "title": "Ort (Wo?)",
+          "description": "Position an einem Ort",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "hier, da, dort",
+                "oben, unten, vorn, hinten, links, rechts",
+                "draußen, drinnen, drüben, überall, nirgends"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adv-lokal-wohin",
+          "number": "2.2",
+          "title": "Richtung (Wohin?)",
+          "description": "Bewegung zu einem Ziel",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "hierher, dorthin",
+                "rauf, runter, rein, raus, rüber",
+                "vorwärts, rückwärts, aufwärts"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Adverbien stehen allein, Präpositionen stehen bei einem Nomen.",
+        "**Beispiel**: Ich gehe nach draußen (Adv). Ich gehe in den Garten (Präp)."
+      ]
+    },
+    {
+      "id": "modal-kausal",
+      "number": "3",
+      "title": "Modal- & Kausaladverbien",
+      "category": "Adverbien",
+      "description": "Wie? Warum?",
+      "gradients": [
+        "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
+        "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
+        "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
+        "linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "adv-modal",
+          "number": "3.1",
+          "title": "Modal (Wie?)",
+          "description": "Art und Weise or Einstellung",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "gern, lieber, am liebsten",
+                "vielleicht, wahrscheinlich, sicher",
+                "leider, hoffentlich"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adv-kausal",
+          "number": "3.2",
+          "title": "Kausal (Warum?)",
+          "description": "Gründe und Folgen",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "deshalb, darum, deswegen, folglich"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Modaladverbien wie **vielleicht, wahrscheinlich, sicher** drücken den **Grad der Sicherheit** aus.",
+        "Kausaladverbien (**deshalb, darum, deswegen**) sind austauschbar und haben die gleiche Bedeutung."
+      ]
+    },
+    {
+      "id": "konjunktional",
+      "number": "4",
+      "title": "Konjunktionaladverbien",
+      "category": "Adverbien",
+      "description": "Adverbien, die Sätze verbinden",
+      "gradients": [
+        "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
+        "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
+        "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
+        "linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "adv-konj-typen",
+          "number": "4.1",
+          "title": "Typen und Position",
+          "description": "Wie Konjunktionaladverbien im Satz stehen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "Konjunktionaladverbien stehen auf **Position 1** und das Verb folgt direkt auf **Position 2**.",
+                "**Kausal (Grund)**: deshalb, darum, deswegen (Ich war müde, **deshalb** bin ich früh ins Bett gegangen).",
+                "**Konzessiv (Gegengrund)**: trotzdem, dennoch (Es regnet, **trotzdem** geht er spazieren).",
+                "**Konsekutiv (Folge)**: also, folglich, infolgedessen (Er hat die Prüfung bestanden, **also** feiert er).",
+                "**Adversativ (Gegensatz)**: allerdings, jedoch (Das Essen ist gut, **allerdings** etwas teuer).",
+                "**Additiv (Ergänzung)**: außerdem, zudem, darüber hinaus (Er spricht Deutsch, **außerdem** kann er Französisch).",
+                "**Temporal (Zeit)**: danach, dann, anschließend, zuvor (Zuerst esse ich, **danach** gehe ich spazieren)."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Nicht verwechseln: **weil/obwohl** (Nebensatz → Verb am Ende) vs. **deshalb/trotzdem** (Hauptsatz → Verb auf Pos. 2)."
+      ]
+    },
+    {
+      "id": "pronominaladverbien",
+      "number": "5",
+      "title": "Pronominaladverbien",
+      "category": "Adverbien",
+      "description": "da(r)- und wo(r)- Formen für Sachen",
+      "gradients": [
+        "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
+        "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
+        "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
+        "linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "adv-da",
+          "number": "5.1",
+          "title": "da(r)- + Präposition",
+          "description": "Verweis auf Sachen (nicht Personen)",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "Ersetzt **Präposition + Sache**: Ich interessiere mich für den Film. → Ich interessiere mich **dafür**.",
+                "Wenn die Präposition mit einem Vokal beginnt, wird **-r-** eingefügt: da**r**auf, da**r**über, da**r**in.",
+                "**Häufige Formen**: dafür, dagegen, damit, daran, darauf, darüber, daraus, darin, davon, dazu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adv-wo",
+          "number": "5.2",
+          "title": "wo(r)- + Präposition",
+          "description": "Fragen nach Sachen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "Fragt nach **Präposition + Sache**: **Wofür** interessierst du dich? – Für Musik.",
+                "Mit Vokal: wo**r**auf, wo**r**über, wo**r**in.",
+                "**Häufige Formen**: wofür, wogegen, womit, woran, worauf, worüber, woraus, worin, wovon, wozu."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Bei **Personen** verwendet man **Präposition + Pronomen**: Für **wen** interessierst du dich? – Für **ihn**. (NICHT: wofür / dafür)"
+      ]
+    }
+  ],
+  "gradients": [
+    "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
+    "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
+    "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
+    "linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%)"
+  ]
+}

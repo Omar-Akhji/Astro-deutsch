@@ -1,0 +1,15 @@
+{
+  "id": "musik",
+  "label": "Müssen Kinder ein Musikinstrument lernen?",
+  "cat": "freizeit",
+  "pro": [
+    "Musik entwickelt die Intelligenz und Konzentration des Kindes.",
+    "Kinder können dadurch ihre Freizeit sinnvoll nutzen.",
+    "Musik fördert Kreativität und Geduld."
+  ],
+  "con": [
+    "Musiklernen kann teuer sein (Instrument, Unterricht).",
+    "Es kostet viel Zeit und Mühe.",
+    "Kinder sollten frei wählen können, welches Hobby sie mögen."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "plastik",
+  "label": "Plastiktüten verbieten?",
+  "cat": "umwelt",
+  "pro": [
+    "Plastiktüten verschmutzen Meere und Natur – Millionen Tiere sterben daran.",
+    "Papiertüten und Stoffbeutel sind umweltfreundlichere Alternativen.",
+    "Ein Verbot würde das Bewusstsein für Umweltschutz stärken."
+  ],
+  "con": [
+    "Plastiktüten sind praktisch, günstig und wasserdicht.",
+    "Papiertüten verbrauchen auch viele Ressourcen bei der Herstellung.",
+    "Ein Verbot allein löst das Müllproblem nicht."
+  ]
+}

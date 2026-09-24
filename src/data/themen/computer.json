@@ -1,0 +1,16 @@
+{
+  "id": "computer",
+  "label": "Computer in jedem Kursraum?",
+  "cat": "bildung",
+  "pro": [
+    "Ein Computer in jedem Kursraum erleichtert den Unterricht und macht ihn interessanter.",
+    "Mit dem Computer kann man lernen, präsentieren und im Internet recherchieren.",
+    "Die Schüler lernen den Umgang mit dem Computer – das hilft im Berufsleben."
+  ],
+  "con": [
+    "Ein Computer in jedem Kursraum kostet viel Geld.",
+    "Computer können faul und passiv machen.",
+    "Man kann sich nicht immer auf die Technik verlassen.",
+    "Ablenkung durch Internet und Spiele."
+  ]
+}

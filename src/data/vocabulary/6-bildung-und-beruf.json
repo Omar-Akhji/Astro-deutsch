@@ -1,0 +1,86 @@
+{
+  "id": 6,
+  "german": "BILDUNG UND BERUF",
+  "category": "Kapitel 6",
+  "description": "Wörter für Schule, Universität und die moderne Arbeitswelt.",
+  "sections": [
+    {
+      "id": "schule_und_uni",
+      "title": "Schule und Universität",
+      "topics": [
+        {
+          "id": "in_der_schule",
+          "title": "In der Schule",
+          "words": [
+            {
+              "german": "die Schule, -n",
+              "arabic": "المدرسة",
+              "english": "school",
+              "example": "Die Kinder gehen morgens in die Schule."
+            },
+            {
+              "german": "der Lehrer, -",
+              "arabic": "المعلم",
+              "english": "teacher",
+              "example": "Unser Lehrer erklärt alles sehr gut."
+            },
+            {
+              "german": "der Schüler, -",
+              "arabic": "التلميذ / الطالب",
+              "english": "student, pupil",
+              "example": "Die Schüler machen ihre Hausaufgaben."
+            },
+            {
+              "german": "der Unterricht",
+              "arabic": "الدرس / الحصة",
+              "english": "class, lesson",
+              "example": "Der Unterricht beginnt um 8 Uhr."
+            },
+            {
+              "german": "die Pause, -n",
+              "arabic": "الاستراحة / الفسحة",
+              "english": "break",
+              "example": "In der Pause spielen die Kinder auf dem Hof."
+            }
+          ]
+        },
+        {
+          "id": "buero_und_arbeit",
+          "title": "Büro und Arbeit",
+          "words": [
+            {
+              "german": "die Arbeit, -en",
+              "arabic": "العمل",
+              "english": "work",
+              "example": "Er geht jeden Tag zur Arbeit."
+            },
+            {
+              "german": "der Beruf, -e",
+              "arabic": "المهنة",
+              "english": "profession, job",
+              "example": "Was sind Sie von Beruf?"
+            },
+            {
+              "german": "das Büro, -s",
+              "arabic": "المكتب",
+              "english": "office",
+              "example": "Ich arbeite heute im Büro."
+            },
+            {
+              "german": "der Kollege, -n",
+              "arabic": "الزميل",
+              "english": "colleague",
+              "example": "Mein Kollege hilft mir bei dem Projekt."
+            },
+            {
+              "german": "der Chef, -s",
+              "arabic": "المدير / الرئيس",
+              "english": "boss",
+              "example": "Der Chef hat heute Meeting."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

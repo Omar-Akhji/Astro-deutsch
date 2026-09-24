@@ -1,13 +1,16 @@
 ---
-import { FamilyTree, getVocabById, vocabList, VocabularyTable } from "@/features/vocabulary";
+import { FamilyTree, VocabularyTable } from "@/features/vocabulary";
+import { getVocabById, getVocabList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import BackButton from "@/shared/ui/BackButton.astro";
 import GlassCard from "@/shared/ui/GlassCard.astro";
 import { Hero } from "@/widgets/hero";
 
 export async function getStaticPaths() {
+  const { data: vocabList } = await getVocabList();
   const paths = [];
-  for (const item of vocabList) {
+  const items = vocabList ?? [];
+  for (const item of items) {
     if (item.sections) {
       for (const section of item.sections) {
         for (const topic of section.topics) {

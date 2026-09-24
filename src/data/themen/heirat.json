@@ -1,0 +1,15 @@
+{
+  "id": "heirat",
+  "label": "Heiraten",
+  "cat": "gesellschaft",
+  "pro": [
+    "Die Ehe bietet Sicherheit und Stabilität für die Familie.",
+    "Man zeigt seine Liebe und Verbundenheit offiziell.",
+    "Es gibt rechtliche und steuerliche Vorteile."
+  ],
+  "con": [
+    "Eine Hochzeit ist oft sehr teuer und stressig.",
+    "Man verliert ein Stück seiner Unabhängigkeit.",
+    "Viele Ehen enden leider in einer Scheidung."
+  ]
+}

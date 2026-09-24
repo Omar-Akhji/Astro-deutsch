@@ -1,0 +1,16 @@
+{
+  "id": "veg",
+  "label": "Vegetarisch essen",
+  "cat": "essen",
+  "pro": [
+    "Vegetarisch essen ist gesund – man schützt sich vor Krankheiten wie Krebs und Diabetes.",
+    "Man ist immer fit und bleibt schlank.",
+    "Tiere haben auch das Recht auf Leben.",
+    "Vegane / vegetarische Ernährung ist umweltfreundlicher."
+  ],
+  "con": [
+    "Der Körper braucht Eiweiß und wichtige Nährstoffe, die oft in Fleisch vorkommen.",
+    "Fleisch spielt eine große Rolle in der Ernährung, besonders bei Kindern.",
+    "Vegetarisches Essen schmeckt manchen nicht und macht nicht immer satt."
+  ]
+}

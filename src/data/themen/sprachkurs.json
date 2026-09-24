@@ -1,0 +1,14 @@
+{
+  "id": "sprachkurs",
+  "label": "Online-Sprachkurs vs. Präsenzkurs",
+  "cat": "bildung",
+  "pro": [
+    "Online: kostenlos oder günstig, bequem von zu Hause, flexibel.",
+    "Präsenzkurs: Man lernt Grammatik und Wortschatz schneller, Lehrer kann direkt helfen.",
+    "Online: Man kann im eigenen Tempo lernen."
+  ],
+  "con": [
+    "Online: Man kann keine direkten Fragen stellen, keine echte Konversation.",
+    "Präsenzkurs: Kann teuer sein und feste Zeiten haben."
+  ]
+}

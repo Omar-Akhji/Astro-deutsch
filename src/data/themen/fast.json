@@ -1,0 +1,15 @@
+{
+  "id": "fast",
+  "label": "Fast Food",
+  "cat": "essen",
+  "pro": [
+    "Fast Food schmeckt gut und spart Zeit.",
+    "Fast Food ist preiswert – gut für Menschen mit wenig Geld oder Zeit.",
+    "Man kann es leicht bestellen – zu Hause oder im Büro."
+  ],
+  "con": [
+    "Fast Food ist ungesund und verursacht Krankheiten wie Diabetes und Herzprobleme.",
+    "Fast Food macht dick und faul.",
+    "Man weiß oft nicht, woraus es besteht – viele Zusatzstoffe."
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "id": "nomen",
+  "title": "Nomen",
+  "icon": "FileText",
+  "topics": [
+    {
+      "id": "genus",
+      "number": "1",
+      "title": "Genus (Artikel)",
+      "category": "Nomen",
+      "description": "Regeln für der, die und das",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "genus-maskulin",
+          "number": "1.1",
+          "title": "Maskulinum (der)",
+          "description": "Wann man „der“ verwendet",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Personen/Tiere (männl.)**: der Lehrer, der Hund",
+                "**Zeit**: der Mittwoch, der Mai, der Sommer, der Morgen",
+                "**Wetter/Himmelsrichtungen**: der Schnee, der Süden",
+                "**Berufsbezeichnungen (männl.)**: der Mechaniker, der Arzt",
+                "**Alkohol**: der Wein (Ausnahme: das Bier)",
+                "**Endungen -ling, -ismus**: der Liebling, der Tourismus",
+                "**Endungen -or, -us**: der Motor, der Rhythmus, der Fokus",
+                "**Endungen -er (bei Geräten)**: der Computer, der Drucker"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "genus-feminin",
+          "number": "1.2",
+          "title": "Femininum (die)",
+          "description": "Wann man „die“ verwendet",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Personen/Tiere (weibl.)**: die Mutter, die Ärztin (Ausnahme: das Mädchen)",
+                "**Berufsbezeichnungen (weibl.)**: die Ärztin, die Lehrerin",
+                "**Blumen**: die Rose, die Tulpe",
+                "**Endungen -ung, -heit, -keit, -schaft**: die Zeitung, die Gesundheit, die Möglichkeit, die Freundschaft",
+                "**Endungen -ion, -ur, -ik**: die Nation, die Kultur, die Musik",
+                "**Endungen -tät, -ie, -anz, -enz**: die Universität, die Demokratie, die Toleranz, die Existenz",
+                "**Die meisten Nomen auf -e**: die Dose, die Lampe (Ausnahmen: der Käse, der Name)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "genus-neutrum",
+          "number": "1.3",
+          "title": "Neutrum (das)",
+          "description": "Wann man „das“ verwendet",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Substantivierungen von Verben**: das Essen, das Trinken",
+                "**Endungen -chen, -lein** (Diminutiv): das Mädchen, das Tischlein, das Häuschen",
+                "**Endungen -um, -ment, -nis**: das Zentrum, das Dokument, das Ergebnis",
+                "**Vorsilbe Ge-**: das Gebäude, das Getränk, das Gespräch, das Gebirge",
+                "**Fremdwörter auf -ma, -o**: das Thema, das Kino, das Büro"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Lernen Sie Nomen immer zusammen mit dem Artikel!",
+        "Fast alle Nomen auf -e sind feminin (die Dose). Ausnahmen: der Käse, der Name."
+      ]
+    },
+    {
+      "id": "plural",
+      "number": "2",
+      "title": "Plural",
+      "category": "Nomen",
+      "description": "Die fünf Pluraltypen im Deutschen",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "plural-typen",
+          "number": "2.1",
+          "title": "Die 5 Pluraltypen",
+          "description": "Übersicht der verschiedenen Endungen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Typ 1 (- / -¨)**: Meist Nomen auf -er, -el, -en; immer -chen, -lein (der Lehrer -> die Lehrer, der Apfel -> die Äpfel)",
+                "**Typ 2 (-e / -¨e)**: Oft Maskulina, einsilbige Feminina/Neutra (der Fisch -> die Fische, die Kuh -> die Kühe)",
+                "**Typ 3 (-er / -¨er)**: Oft einsilbige Neutra, einige Maskulina (das Kind -> die Kinder, das Glas -> die Gläser)",
+                "**Typ 4 (-n / -en / -nen)**: Viele Feminina, alle auf -e; immer -ung, -heit, -keit (die Dose -> die Dosen, die Studentin -> die Studentinnen)",
+                "**Typ 5 (-s)**: Nomen auf -a, -i, -o and Internationalismen (das Sofa -> die Sofas, das Hotel -> die Hotels)"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Es gibt **keine feste Regel** für den Plural – man muss den Plural zusammen mit dem Nomen lernen.",
+        "Im **Wörterbuch** steht der Plural immer hinter dem Nomen: der Tisch, **-e** = die Tische."
+      ]
+    },
+    {
+      "id": "n-deklination",
+      "number": "3",
+      "title": "n-Deklination",
+      "category": "Nomen",
+      "description": "Besondere Deklination für maskuline Nomen",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "n-dekl-gruppen",
+          "number": "3.1",
+          "title": "Wer gehört zur n-Deklination?",
+          "description": "Kategorien der betroffenen Nomen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Lebewesen (mask.) auf -e**: der Kollege, der Kunde, der Junge",
+                "**Nationalitäten (mask.) auf -e**: der Russe, der Franzose, der Pole",
+                "**Tiere (mask.) auf -e**: der Hase, der Affe",
+                "**Endungen (aus Latein/Griech.)**: -ant, -ent, -ist, -oge, -at (der Student, der Tourist, der Pädagoge, der Diplomat)",
+                "**Sonderfälle (+s im Genitiv)**: der Name, der Gedanke, der Glaube, der Buchstabe"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "n-dekl-beispiel",
+          "number": "3.2",
+          "title": "Deklinationstabelle",
+          "description": "Beispiel: der Junge",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Kasus",
+              "Singular",
+              "Plural"
+            ],
+            "rows": [
+              [
+                "Nominativ",
+                "der Junge",
+                "die Jungen"
+              ],
+              [
+                "Akkusativ",
+                "den Jungen",
+                "die Jungen"
+              ],
+              [
+                "Dativ",
+                "dem Jungen",
+                "den Jungen"
+              ],
+              [
+                "Genitiv",
+                "des Jungen",
+                "der Jungen"
+              ]
+            ]
+          }
+        }
+      ],
+      "tips": [
+        "Nomen der n-Deklination enden in **allen Fällen** (außer Nominativ Singular) auf **-n** oder **-en**.",
+        "Typisch: der Kunde → de**n** Kunde**n**, de**m** Kunde**n**, de**s** Kunde**n**."
+      ]
+    },
+    {
+      "id": "kasus-nomen",
+      "number": "4",
+      "title": "Kasus (Die vier Fälle)",
+      "category": "Nomen",
+      "description": "Nominativ, Akkusativ, Dativ und Genitiv",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "kasus-verwendung",
+          "number": "4.1",
+          "title": "Verwendung",
+          "description": "Welcher Fall für welche Funktion?",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Nominativ**: Wer oder was? (Subjekt)",
+                "**Akkusativ**: Wen oder was? (Direktes Objekt / nur eine Ergänzung)",
+                "**Dativ**: Wem? (Person bei zwei Objekten / spezielle Verben wie helfen, gefallen)",
+                "**Genitiv**: Wessen? (Besitz oder Zugehörigkeit)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kasus-artikel",
+          "number": "4.2",
+          "title": "Bestimmter Artikel im Kasus",
+          "description": "Deklination der Artikel",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Kasus",
+              "Maskulin",
+              "Feminin",
+              "Neutral",
+              "Plural"
+            ],
+            "rows": [
+              [
+                "Nominativ",
+                "der",
+                "die",
+                "das",
+                "die"
+              ],
+              [
+                "Akkusativ",
+                "den",
+                "die",
+                "das",
+                "die"
+              ],
+              [
+                "Dativ",
+                "dem",
+                "der",
+                "dem",
+                "den (n)*"
+              ],
+              [
+                "Genitiv",
+                "des (s)**",
+                "der",
+                "des (s)**",
+                "der"
+              ]
+            ]
+          }
+        }
+      ],
+      "tips": [
+        "*(n): Im Dativ Plural haben fast alle Nomen ein -n (Ausnahme: Plural-s).",
+        "**(s): Im Genitiv maskulin/neutral haben Nomen die Endung -s oder -es."
+      ]
+    },
+    {
+      "id": "artikelwoerter",
+      "number": "5",
+      "title": "Artikelwörter",
+      "category": "Nomen",
+      "description": "Bestimmte, unbestimmte und Possessivartikel",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "artikel-verwendung",
+          "number": "5.1",
+          "title": "Verwendung",
+          "description": "Wann man welchen Artikeltyp wählt",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Bestimmter Artikel**: Signalisiert Bekanntes (Das ist die Katze vom Nachbarn).",
+                "**Unbestimmter Artikel**: Neue Informationen (Angela hat eine neue Wohnung).",
+                "**Possessivartikel**: Sagt, wem etwas gehört (Das ist mein Fahrrad)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nullartikel",
+          "number": "5.2",
+          "title": "Nullartikel (Kein Artikel)",
+          "description": "Wann man gar keinen Artikel benutzt",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Namen/Städte/Länder**: Susanne wohnt in Berlin (Ausnahme: in der Schweiz).",
+                "**Berufe/Nationalitäten**: Er ist Franzose. Sie ist Ingenieurin.",
+                "**Mengen/Material**: Milch kaufen, aus Plastik.",
+                "**Gefühle**: Hast du Angst?"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Der unbestimmte Artikel hat keine Pluralform (Nullartikel).",
+        "Possessivartikel in der 3. Person: **sein** (bei mask./neut. Besitzer) vs. **ihr** (bei fem. Besitzer)."
+      ]
+    },
+    {
+      "id": "adjektivdeklination",
+      "number": "6",
+      "title": "Adjektivdeklination",
+      "category": "Nomen",
+      "description": "Endungen der Adjektive vor dem Nomen",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "adj-dekl-typen",
+          "number": "6.1",
+          "title": "Drei Deklinationstypen",
+          "description": "Übersicht der verschiedenen Endungsmuster",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Typ 1 (Bestimmter Artikel)**: Endung fast immer **-en** (außer Nom Sg & Akk Sg fem/neut: **-e**).",
+                "**Typ 2 (Unbestimmter Artikel)**: Nominativ-Endungen wie bestimmter Artikel (ein neuer Film, eine schöne Frau, ein gutes Buch).",
+                "**Typ 3 (Starke Deklination / Nullartikel)**: Das Adjektiv übernimmt das Kasus-Signal des Artikels (frischer Kaffee, deutsches Bier)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adj-dekl-besonder",
+          "number": "6.2",
+          "title": "Besonderheiten & Partizipien",
+          "description": "Spezialfälle und Adjektivierung",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Adjektive auf -el / -er**: Das e vor l/r fällt bei der Deklination weg (dunkel -> ein dunkles Zimmer, teuer -> ein teures Auto).",
+                "**Partizip I als Adjektiv**: Aktiv, gleichzeitig (das singende Kind).",
+                "**Partizip II als Adjektiv**: Passiv, abgeschlossen (das gekochte Ei)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adj-dekl-beispiel",
+          "number": "6.3",
+          "title": "Beispiel: Typ 1 (Bestimmter Artikel)",
+          "description": "Deklinationstabelle für den bestimmten Artikel",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Kasus",
+              "Maskulin",
+              "Feminin",
+              "Neutral",
+              "Plural"
+            ],
+            "rows": [
+              [
+                "Nominativ",
+                "der neue",
+                "die schöne",
+                "das gute",
+                "die schönen"
+              ],
+              [
+                "Akkusativ",
+                "den neuen",
+                "die schöne",
+                "das gute",
+                "die schönen"
+              ],
+              [
+                "Dativ",
+                "dem neuen",
+                "der schönen",
+                "dem guten",
+                "den schönen"
+              ],
+              [
+                "Genitiv",
+                "des neuen",
+                "der schönen",
+                "des neuen",
+                "der schönen"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "adj-dekl-typ2",
+          "number": "6.4",
+          "title": "Beispiel: Typ 2 (Unbestimmter Artikel)",
+          "description": "Deklinationstabelle für den unbestimmten Artikel",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Kasus",
+              "Maskulin",
+              "Feminin",
+              "Neutral"
+            ],
+            "rows": [
+              [
+                "Nominativ",
+                "ein neuer",
+                "eine schöne",
+                "ein gutes"
+              ],
+              [
+                "Akkusativ",
+                "einen neuen",
+                "eine schöne",
+                "ein gutes"
+              ],
+              [
+                "Dativ",
+                "einem neuen",
+                "einer schönen",
+                "einem guten"
+              ],
+              [
+                "Genitiv",
+                "eines neuen",
+                "einer schönen",
+                "eines guten"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "adj-dekl-typ3",
+          "number": "6.5",
+          "title": "Beispiel: Typ 3 (Ohne Artikel)",
+          "description": "Deklinationstabelle ohne Artikel (starke Deklination)",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Kasus",
+              "Maskulin",
+              "Feminin",
+              "Neutral",
+              "Plural"
+            ],
+            "rows": [
+              [
+                "Nominativ",
+                "frischer Kaffee",
+                "kalte Milch",
+                "deutsches Bier",
+                "kleine Kinder"
+              ],
+              [
+                "Akkusativ",
+                "frischen Kaffee",
+                "kalte Milch",
+                "deutsches Bier",
+                "kleine Kinder"
+              ],
+              [
+                "Dativ",
+                "frischem Kaffee",
+                "kalter Milch",
+                "deutschem Bier",
+                "kleinen Kindern"
+              ],
+              [
+                "Genitiv",
+                "frischen Kaffees",
+                "kalter Milch",
+                "deutschen Bieres",
+                "kleiner Kinder"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "komparation",
+      "number": "7",
+      "title": "Komparation",
+      "category": "Nomen",
+      "description": "Steigerung der Adjektive",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "komp-stufen",
+          "number": "7.1",
+          "title": "Steigerungsstufen",
+          "description": "Positiv, Komparativ und Superlativ",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Positiv**: schnell (so schnell wie)",
+                "**Komparativ**: schneller (schneller als)",
+                "**Superlativ**: am schnellsten / der schnellste"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "komp-sonder",
+          "number": "7.2",
+          "title": "Sonderformen",
+          "description": "Unregelmäßige Steigerungen",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "**gut** – besser – am besten",
+                "**viel** – mehr – am meisten",
+                "**gern** – lieber – am liebsten",
+                "**nah** – näher – am nächsten",
+                "**hoch** – höher – am höchsten"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Umlaut bei vielen einsilbigen Adjektiven: warm – wärmer – am wärmsten.",
+        "Superlativ auf **-est** nach d, t, s, ß, sch, x, z: hübsch – hübscher – am hübschesten."
+      ]
+    },
+    {
+      "id": "pronomen",
+      "number": "8",
+      "title": "Pronomen",
+      "category": "Nomen",
+      "description": "Personal-, Indefinit- und Possessivpronomen",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "pron-personal",
+          "number": "8.1",
+          "title": "Personalpronomen",
+          "description": "Bezug auf Personen und Sachen",
+          "content": [
+            {
+              "title": "Kasus-Formen",
+              "items": [
+                "**ich, du, er, sie, es, wir, ihr, sie, Sie** (Nominativ)",
+                "**mich, dich, ihn, sie, es, uns, euch, sie, Sie** (Akkusativ)",
+                "**mir, dir, ihm, ihr, ihm, uns, euch, ihnen, Ihnen** (Dativ)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pron-indefinit",
+          "number": "8.2",
+          "title": "Indefinitpronomen",
+          "description": "Unbestimmte Mengen und Personen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Personen**: jemand, niemand, man (Jemand hat angerufen. Man darf hier nicht parken.)",
+                "**Sachen**: etwas, nichts, alles (Ich habe etwas Tolles gesehen. Er weiß alles.)",
+                "**Ersatz für Nomen**: Hast du ein Fahrrad? – Ja, ich habe **eins** / Nein, ich habe **keins**.",
+                "**Plural**: Hast du Eier? – Ja, ich habe **welche**."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pron-demo",
+          "number": "8.3",
+          "title": "Demonstrativpronomen",
+          "description": "Hinweis auf etwas Bestimmtes",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**dieser / diese / dieses**: Hinweis auf etwas Nahes oder bereits Erwähntes (Dieser Wein schmeckt gut, jener nicht).",
+                "**derselbe / dieselbe / dasselbe**: Die identische Person/Sache (Wir haben denselben Lehrer)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pron-posses",
+          "number": "8.4",
+          "title": "Possessivpronomen",
+          "description": "Ersatz für Nomen mit Besitzbezug",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "Ersatz für Nomen: Ist das dein Schlüssel? – Ja, das ist **meiner**.",
+                "Endungen wie bei Indefinitpronomen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pron-frage",
+          "number": "8.5",
+          "title": "Fragepronomen",
+          "description": "Welchen? Was für ein?",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**welcher / welche / welches**: Frage nach einer bestimmten Sache aus einer Gruppe.",
+                "**was für ein-**: Frage nach einem Typ oder einer Sorte."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Personalpronomen im **Dativ** und **Akkusativ** muss man auswendig lernen – besonders die **3. Person** (ihn/ihm, sie/ihr, es/ihm).",
+        "**Höflichkeitsform Sie** (+ Ihnen) wird immer großgeschrieben."
+      ]
+    },
+    {
+      "id": "komposita",
+      "number": "9",
+      "title": "Komposita (Zusammengesetzte Nomen)",
+      "category": "Nomen",
+      "description": "Wie man im Deutschen neue Nomen zusammensetzt",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "komp-regeln",
+          "number": "9.1",
+          "title": "Grundregeln",
+          "description": "Aufbau und Genus von Komposita",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "Das **letzte Wort** bestimmt den Artikel und die Grundbedeutung (der Apfel + der Baum = **der** Apfelbaum).",
+                "Die vorangehenden Wörter beschreiben oder spezifizieren das letzte Wort.",
+                "Im Deutschen werden Komposita immer **zusammengeschrieben** (anders als im Englischen)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "komp-typen",
+          "number": "9.2",
+          "title": "Typen von Komposita",
+          "description": "Welche Wortarten kombiniert werden können",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Typ",
+              "Beispiel",
+              "Erklärung"
+            ],
+            "rows": [
+              [
+                "Nomen + Nomen",
+                "die Haustür",
+                "das Haus + die Tür"
+              ],
+              [
+                "Verb + Nomen",
+                "das Esszimmer",
+                "essen + das Zimmer"
+              ],
+              [
+                "Adjektiv + Nomen",
+                "das Hochhaus",
+                "hoch + das Haus"
+              ],
+              [
+                "Adverb + Nomen",
+                "die Wiederwahl",
+                "wieder + die Wahl"
+              ],
+              [
+                "Präposition + Nomen",
+                "der Vorname",
+                "vor + der Name"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "komp-fuge",
+          "number": "9.3",
+          "title": "Fugeelemente",
+          "description": "Bindeelemente zwischen den Wörtern",
+          "content": [
+            {
+              "title": "Häufige Fugeelemente",
+              "items": [
+                "**-s-**: die Geburt + der Tag = der Geburt**s**tag, die Arbeit + der Platz = der Arbeit**s**platz",
+                "**-n-/-en-**: die Orange + der Saft = der Orange**n**saft, die Straße + der Name = der Straße**n**name",
+                "**-er-**: das Kind + der Garten = der Kind**er**garten",
+                "**-e-**: der Hund + die Hütte = die Hund**e**hütte",
+                "**ohne Fugeelement**: der Schuh + das Geschäft = das Schuhgeschäft"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Komposita können theoretisch **endlos lang** sein: Donau**dampf**schiff**fahrt**gesellschaft.",
+        "Beim Lesen: Teilen Sie das Wort von **rechts nach links** in seine Bestandteile auf."
+      ]
+    },
+    {
+      "id": "nominalisierung",
+      "number": "10",
+      "title": "Nominalisierung",
+      "category": "Nomen",
+      "description": "Verben und Adjektive als Nomen verwenden",
+      "gradients": [
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "nom-verben",
+          "number": "10.1",
+          "title": "Nominalisierung von Verben",
+          "description": "Verben werden zu Nomen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Infinitiv als Nomen** (immer Neutrum): lesen → **das** Lesen, essen → **das** Essen, schwimmen → **das** Schwimmen",
+                "**Suffixe -ung** (immer Feminin): übersetzen → die Übersetz**ung**, bezahlen → die Bezahl**ung**",
+                "**Suffixe -er** (immer Maskulin): lesen → der Les**er**, fahren → der Fahr**er**",
+                "**Vorsilbe Ge-** (oft Neutrum): fühlen → das Ge**fühl**, sprechen → das Ge**spräch**"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nom-adj",
+          "number": "10.2",
+          "title": "Nominalisierung von Adjektiven",
+          "description": "Adjektive werden zu Nomen",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Suffixe -heit** (immer Feminin): krank → die Krank**heit**, gesund → die Gesund**heit**",
+                "**Suffixe -keit** (immer Feminin): möglich → die Möglich**keit**, freundlich → die Freundlich**keit**",
+                "**Suffixe -nis** (Feminin/Neutrum): finster → die Finster**nis**, ergebnis → das Ergeb**nis**",
+                "**Suffixe -schaft** (immer Feminin): bereit → die Bereit**schaft**, freund → die Freund**schaft**"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nom-adj-als-nomen",
+          "number": "10.3",
+          "title": "Adjektive als Nomen (Personen)",
+          "description": "Adjektive bezeichnen Personen und werden wie Adjektive dekliniert",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "Adjektive als Nomen werden **großgeschrieben** und **wie Adjektive dekliniert**.",
+                "**Mit bestimmtem Artikel**: der Deutsche, die Deutsche, die Deutschen",
+                "**Mit unbestimmtem Artikel**: ein Deutscher, eine Deutsche (Endung wie Adjektivdeklination!)",
+                "**Beispiele**: der/die Bekannte, der/die Verwandte, der/die Jugendliche, der/die Erwachsene, der/die Angestellte"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Nach **etwas, nichts, viel, wenig, alles** wird das nominalisierte Adjektiv großgeschrieben und hat die Endung **-es**: etwas Schönes, nichts Neues, alles Gute."
+      ]
+    }
+  ],
+  "gradients": [
+    "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+    "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+    "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)",
+    "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+    "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+    "linear-gradient(135deg, #f8835f 0%, #e67e22 100%)",
+    "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+    "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)"
+  ]
+}

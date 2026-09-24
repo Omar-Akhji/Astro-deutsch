@@ -1,0 +1,15 @@
+{
+  "id": "zoo",
+  "label": "Tiere im Zoo",
+  "cat": "gesellschaft",
+  "pro": [
+    "Zoos schützen bedrohte Tierarten.",
+    "Kinder können im Zoo viel über Tiere lernen.",
+    "Zoos betreiben wichtige Forschung für den Tierschutz."
+  ],
+  "con": [
+    "Tiere gehören in die Natur, nicht in den Zoo.",
+    "Zootiere leben in zu kleinen, unnatürlichen Gehegen.",
+    "Es wäre sinnvoller, natürliche Lebensräume zu schützen."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "vleisch",
+  "label": "Sollen wir weniger Fleisch essen?",
+  "cat": "essen",
+  "pro": [
+    "Weniger Fleisch essen ist gut für die Gesundheit und reduziert das Krebsrisiko.",
+    "Die Fleischindustrie ist einer der größten Klimasündiger – weniger Fleisch schützt die Umwelt.",
+    "Tiere werden in der Massentierhaltung schlecht behandelt."
+  ],
+  "con": [
+    "Fleisch ist eine wichtige Eiweißquelle, besonders für Kinder und Sportler.",
+    "In vielen Kulturen und Familien ist Fleischessen eine wichtige Tradition.",
+    "Ohne Fleisch kann es zu Nährstoffmangel kommen."
+  ]
+}

@@ -1,17 +1,23 @@
 import type { ApiResponse } from "@/shared/model";
 import type { GrammarSection, GrammarTopic } from "../model/types.ts";
-import { grammarSections } from "./data.ts";
+import { getCollection } from "astro:content";
 
-const grammarMap = new Map(grammarSections.map((s) => [s.id, s]));
+export async function getGrammarSections(): Promise<ApiResponse<GrammarSection[]>> {
+  const entries = await getCollection("grammar");
+  const data = entries.map((e) => e.data as unknown as GrammarSection);
+  return { data, success: true };
+}
 
 export async function getGrammarSection(
   sectionId: string,
 ): Promise<ApiResponse<GrammarSection | undefined>> {
-  const section = grammarMap.get(sectionId);
+  const entries = await getCollection("grammar");
+  const entry = entries.find((e) => e.data.id === sectionId);
+
   return {
-    data: section,
-    success: Boolean(section),
-    message: section ? undefined : `Grammar section ${sectionId} not found`,
+    data: entry ? (entry.data as unknown as GrammarSection) : undefined,
+    success: Boolean(entry),
+    message: entry ? undefined : `Grammar section ${sectionId} not found`,
   };
 }
 

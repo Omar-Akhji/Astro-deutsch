@@ -1,20 +1,21 @@
 import type { ApiResponse } from "@/shared/model";
 import type { VocabItem } from "../model/types.ts";
-import { vocabList } from "./data.ts";
-
-const vocabMap = new Map(vocabList.map((item) => [String(item.id), item]));
+import { getCollection } from "astro:content";
 
 export async function getVocabList(): Promise<ApiResponse<VocabItem[]>> {
-  return { data: vocabList, success: true };
+  const entries = await getCollection("vocabulary");
+  const data = entries.map((e) => e.data as unknown as VocabItem);
+  return { data, success: true };
 }
 
 export async function getVocabById(
   id: string | number,
 ): Promise<ApiResponse<VocabItem | undefined>> {
-  const item = vocabMap.get(String(id));
+  const entries = await getCollection("vocabulary");
+  const item = entries.find((e) => e.data.id === Number(id));
 
   return {
-    data: item,
+    data: item ? (item.data as unknown as VocabItem) : undefined,
     success: Boolean(item),
     message: item ? undefined : `Vocabulary item with id ${id} not found`,
   };

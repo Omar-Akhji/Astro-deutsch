@@ -1,0 +1,16 @@
+{
+  "id": "fremd",
+  "label": "Fremdsprachen im Kindergarten?",
+  "cat": "bildung",
+  "pro": [
+    "Kinder lernen Fremdsprachen schneller und besser als Erwachsene.",
+    "Fremdsprachen sind wichtig im Berufsleben.",
+    "Wenn man eine neue Sprache lernt, entdeckt man eine neue Kultur.",
+    "Fremdsprachenlernen erhöht nachweislich die Intelligenz."
+  ],
+  "con": [
+    "Kinder sollte ihre Kindheit leben und nicht nur lernen.",
+    "Kinder brauchen Zeit zum Spielen.",
+    "Kinder sollten zuerst ihre Muttersprache beherrschen."
+  ]
+}

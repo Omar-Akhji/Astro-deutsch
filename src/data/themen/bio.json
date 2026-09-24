@@ -1,0 +1,16 @@
+{
+  "id": "bio",
+  "label": "Bio-Lebensmittel",
+  "cat": "essen",
+  "pro": [
+    "Bio-Lebensmittel sind gesünder – keine Pestizide oder Chemikalien.",
+    "Bio-Produkte sind umweltfreundlicher und schützen die Natur.",
+    "Sie schmecken oft besser als normale Produkte.",
+    "Man unterstützt lokale Bauern."
+  ],
+  "con": [
+    "Bio-Lebensmittel sind viel teurer als normale Produkte.",
+    "Es ist schwierig zu überprüfen, ob Produkte wirklich bio sind.",
+    "Nicht jeder kann sich Bio-Lebensmittel leisten."
+  ]
+}

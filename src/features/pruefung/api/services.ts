@@ -1,21 +1,28 @@
 import type { ApiResponse } from "@/shared/model";
 import type { ExamLevel, RedemittelCategory } from "../model/types.ts";
-import { examLevels, redemittelData } from "./data.ts";
-
-const examMap = new Map(examLevels.map((e) => [e.id, e]));
+import { getCollection } from "astro:content";
 
 export async function getExamLevels(): Promise<ApiResponse<ExamLevel[]>> {
-  return { data: examLevels, success: true };
+  const entries = await getCollection("exams");
+  const data = entries.map((e) => e.data as unknown as ExamLevel);
+  return { data, success: true };
 }
 
 export async function getExamLevel(id: string): Promise<ApiResponse<ExamLevel | undefined>> {
-  const exam = examMap.get(id.toLowerCase());
-  return { data: exam, success: Boolean(exam), message: exam ? undefined : "Exam level not found" };
+  const entries = await getCollection("exams");
+  const entry = entries.find((e) => e.data.id === id.toLowerCase());
+
+  return {
+    data: entry ? (entry.data as unknown as ExamLevel) : undefined,
+    success: Boolean(entry),
+    message: entry ? undefined : "Exam level not found",
+  };
 }
 
 export async function getRedemittel(level: string): Promise<ApiResponse<RedemittelCategory>> {
-  const lvl = level.toLowerCase();
-  const data = lvl === "b1" ? redemittelData.b1 : redemittelData.b2;
+  const entries = await getCollection("redemittel");
+  const entry = entries.find((e) => e.data.level === level.toLowerCase());
+  const data = (entry?.data.categories ?? {}) as unknown as RedemittelCategory;
   return { data, success: true };
 }
 

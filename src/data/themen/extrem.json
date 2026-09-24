@@ -1,0 +1,15 @@
+{
+  "id": "extrem",
+  "label": "Extremsport",
+  "cat": "gesundheit",
+  "pro": [
+    "Extremsport baut Stress ab und ist ein Adrenalinkick.",
+    "Man fühlt sich frei und geht an seine Grenzen.",
+    "Extremsport hilft, Ängste zu überwinden."
+  ],
+  "con": [
+    "Extremsport ist sehr gefährlich und kann zu schweren Verletzungen führen.",
+    "Man gefährdet seinen Körper und manchmal sein Leben.",
+    "Extremsport ist meistens sehr teuer."
+  ]
+}

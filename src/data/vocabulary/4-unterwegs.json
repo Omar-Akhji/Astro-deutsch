@@ -1,0 +1,122 @@
+{
+  "id": 4,
+  "german": "UNTERWEGS",
+  "category": "Kapitel 4",
+  "description": "Reisen, Verkehrsmittel und Orientierung in einer neuen Umgebung.",
+  "sections": [
+    {
+      "id": "verkehr",
+      "title": "VERKEHR",
+      "topics": [
+        {
+          "id": "verkehrsmittel",
+          "title": "Verkehrsmittel",
+          "words": [
+            {
+              "german": "das Auto, -s",
+              "arabic": "السيارة",
+              "english": "car",
+              "example": "Ich fahre mit dem Auto zur Arbeit."
+            },
+            {
+              "german": "der Bus, -se",
+              "arabic": "الحافلة / الباص",
+              "english": "bus",
+              "example": "Der Bus kommt in fünf Minuten."
+            },
+            {
+              "german": "der Zug, -̈e",
+              "arabic": "القطار",
+              "english": "train",
+              "example": "Der Zug nach Berlin hat Verspätung."
+            },
+            {
+              "german": "die U-Bahn, -en",
+              "arabic": "مترو الأنفاق",
+              "english": "subway, underground",
+              "example": "Die U-Bahn ist sehr schnell."
+            },
+            {
+              "german": "das Fahrrad, -̈er",
+              "arabic": "الدراجة الهوائية / البسكليت",
+              "english": "bicycle",
+              "example": "Ich fahre jeden Tag mit dem Fahrrad."
+            }
+          ]
+        },
+        {
+          "id": "flughafen_bahnhof",
+          "title": "Am Flughafen und Bahnhof",
+          "words": [
+            {
+              "german": "der Flughafen, -̈",
+              "arabic": "المطار",
+              "english": "airport",
+              "example": "Wir müssen früh am Flughafen sein."
+            },
+            {
+              "german": "das Flugzeug, -e",
+              "arabic": "الطائرة",
+              "english": "airplane",
+              "example": "Das Flugzeug startet um 14 Uhr."
+            },
+            {
+              "german": "der Bahnhof, -̈e",
+              "arabic": "محطة القطار",
+              "english": "train station",
+              "example": "Ich warte am Bahnhof auf dich."
+            },
+            {
+              "german": "das Gleis, -e",
+              "arabic": "رصيف القطار",
+              "english": "platform, track",
+              "example": "Der Zug fährt von Gleis 3 ab."
+            },
+            {
+              "german": "die Fahrkarte, -n",
+              "arabic": "تذكرة السفر / الرحلة",
+              "english": "ticket",
+              "example": "Hast du schon eine Fahrkarte gekauft?"
+            }
+          ]
+        },
+        {
+          "id": "orientierung",
+          "title": "Orientierung",
+          "words": [
+            {
+              "german": "die Straße, -n",
+              "arabic": "الشارع",
+              "english": "street, road",
+              "example": "Gehen Sie diese Straße geradeaus."
+            },
+            {
+              "german": "die Kreuzung, -en",
+              "arabic": "التقاطع / مفترق الطرق",
+              "english": "intersection, crossroads",
+              "example": "An der Kreuzung müssen Sie rechts abbiegen."
+            },
+            {
+              "german": "die Ampel, -n",
+              "arabic": "إشارة المرور",
+              "english": "traffic light",
+              "example": "Die Ampel ist rot. Wir müssen warten."
+            },
+            {
+              "german": "rechts",
+              "arabic": "يميناً",
+              "english": "right",
+              "example": "Biegen Sie die nächste Straße rechts ab."
+            },
+            {
+              "german": "links",
+              "arabic": "يساراً",
+              "english": "left",
+              "example": "Auf der linken Seite sehen Sie die Bank."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

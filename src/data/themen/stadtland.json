@@ -1,0 +1,13 @@
+{
+  "id": "stadtland",
+  "label": "Leben in der Stadt oder auf dem Land",
+  "cat": "gesellschaft",
+  "pro": [
+    "Stadt: Großes Jobangebot, viele Krankenhäuser, Schulen, Verkehrsmittel, aktives Leben.",
+    "Land: Viel Natur, frische Luft, frisches Essen, gastfreundliche Menschen, günstiges Leben."
+  ],
+  "con": [
+    "Stadt: Viel Lärm, Stress, Stau, teure Mieten, Kriminalität.",
+    "Land: Langweilig, keine Krankenhäuser, Schulen oder Einkaufsmöglichkeiten in der Nähe."
+  ]
+}

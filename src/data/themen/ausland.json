@@ -1,0 +1,15 @@
+{
+  "id": "ausland",
+  "label": "Studium im Ausland",
+  "cat": "bildung",
+  "pro": [
+    "Man lernt neue Kulturen, Sprachen und Menschen kennen.",
+    "Auslandserfahrung verbessert die Chancen auf dem Arbeitsmarkt.",
+    "Man wird selbstständiger und reifer."
+  ],
+  "con": [
+    "Studium im Ausland ist teuer – Studiengebühren und Lebenshaltungskosten.",
+    "Man ist weit weg von Familie und Freunden.",
+    "Sprach- und Kulturbarrieren können schwierig sein."
+  ]
+}

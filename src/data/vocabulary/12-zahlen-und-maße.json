@@ -1,0 +1,50 @@
+{
+  "id": 12,
+  "german": "ZAHLEN UND MAẞE",
+  "category": "Kapitel 12",
+  "description": "Mathematische Grundbegriffe, Gewichte, Maße und Zeitangaben.",
+  "sections": [
+    {
+      "id": "zeit_und_zahlen",
+      "title": "Zeit und Zahlen",
+      "topics": [
+        {
+          "id": "die_zeit",
+          "title": "Die Zeit",
+          "words": [
+            {
+              "german": "die Uhrzeit, -en",
+              "arabic": "الوقت / الساعة",
+              "english": "time (of day)",
+              "example": "Können Sie mir die Uhrzeit sagen?"
+            },
+            {
+              "german": "die Stunde, -n",
+              "arabic": "الساعة (مدة)",
+              "english": "hour",
+              "example": "Der Film dauert zwei Stunden."
+            },
+            {
+              "german": "die Minute, -n",
+              "arabic": "الدقيقة",
+              "english": "minute",
+              "example": "Ich bin in fünf Minuten da."
+            },
+            {
+              "german": "der Tag, -e",
+              "arabic": "اليوم",
+              "english": "day",
+              "example": "Heute ist ein schöner Tag."
+            },
+            {
+              "german": "die Woche, -n",
+              "arabic": "الأسبوع",
+              "english": "week",
+              "example": "Nächste Woche fahre ich in den Urlaub."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

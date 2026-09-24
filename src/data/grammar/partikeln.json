@@ -1,0 +1,147 @@
+{
+  "id": "partikeln",
+  "title": "Partikeln",
+  "icon": "MessageCircle",
+  "topics": [
+    {
+      "id": "modalpartikeln",
+      "number": "1",
+      "title": "Modalpartikeln",
+      "category": "Partikeln",
+      "description": "Gefühle und Einstellungen in der gesprochenen Sprache",
+      "gradients": [
+        "linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)",
+        "linear-gradient(135deg, #4834d4 0%, #686de0 100%)",
+        "linear-gradient(135deg, #22a6b3 0%, #7ed6df 100%)",
+        "linear-gradient(135deg, #f9ca24 0%, #f0932b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "part-modal",
+          "number": "1.1",
+          "title": "Häufige Partikeln",
+          "description": "Nuancen in der Konversation",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "**denn**: Was machst du **denn** hier? (Interesse/Überraschung)",
+                "**doch**: Das ist **doch** toll! (Bekräftigung) / Komm **doch** mit! (Aufforderung verstärken)",
+                "**mal**: Komm **mal** her. (macht Sätze freundlicher/unverbindlicher)",
+                "**ja**: Das weißt du **ja**. (Bekanntes) / Das ist **ja** furchtbar! (Überraschung)",
+                "**eigentlich**: Was ist **eigentlich** passiert? (Interesse)",
+                "**halt / eben**: Das ist **halt** so. (Resignation, Akzeptanz)",
+                "**ruhig**: Du kannst **ruhig** fragen. (Ermutigung)",
+                "**schon**: Das wird **schon** klappen. (Zuversicht)",
+                "**wohl**: Er ist **wohl** krank. (Vermutung)",
+                "**bloß**: Mach das **bloß** nicht! (Warnung, Angst)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "number": "2",
+      "title": "Negation",
+      "category": "Partikeln",
+      "description": "Verneinung mit nicht oder kein",
+      "gradients": [
+        "linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)",
+        "linear-gradient(135deg, #4834d4 0%, #686de0 100%)",
+        "linear-gradient(135deg, #22a6b3 0%, #7ed6df 100%)",
+        "linear-gradient(135deg, #f9ca24 0%, #f0932b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "part-neg-nicht-kein",
+          "number": "2.1",
+          "title": "nicht vs. kein",
+          "description": "Wann man welche Verneinung nutzt",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**kein**: Verneint Nomen mit unbestimmtem Artikel oder ohne Artikel (Ich habe **kein** Auto).",
+                "**nicht**: Verneint Verben, Adjektive, Adverbien, Nomen mit bestimmtem Artikel (Ich schlafe **nicht**. Das ist **nicht** mein Auto)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "part-neg-position",
+          "number": "2.2",
+          "title": "Position von nicht",
+          "description": "Wo steht nicht im Satz?",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**Vor** Adjektiven: Das Essen ist **nicht** gut.",
+                "**Vor** Adverbien: Er fährt **nicht** schnell.",
+                "**Vor** Präpositionalphrasen: Ich fahre **nicht** nach Berlin.",
+                "**Am Satzende** (wenn ein Verb verneint wird): Ich schlafe **nicht**.",
+                "**Vor** dem zweiten Verbteil: Ich habe das Buch **nicht** gelesen."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fokus-grad",
+      "number": "3",
+      "title": "Fokus- & Gradpartikeln",
+      "category": "Partikeln",
+      "description": "Hervorhebung und Intensität",
+      "gradients": [
+        "linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)",
+        "linear-gradient(135deg, #4834d4 0%, #686de0 100%)",
+        "linear-gradient(135deg, #22a6b3 0%, #7ed6df 100%)",
+        "linear-gradient(135deg, #f9ca24 0%, #f0932b 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "part-fokus",
+          "number": "3.1",
+          "title": "Fokus",
+          "description": "Hervorhebung von Satzteilen",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "nur, auch, sogar, selbst, besonders"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "part-grad",
+          "number": "3.2",
+          "title": "Grad",
+          "description": "Intensität ausdrücken",
+          "content": [
+            {
+              "title": "Beispiele",
+              "items": [
+                "sehr, ziemlich, total, völlig, etwas, ein bisschen",
+                "kaum, fast"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "**nur** schränkt ein (Ich habe **nur** 5 Euro), **sogar** verstärkt (Er spricht **sogar** Chinesisch).",
+        "Gradpartikeln stehen immer **vor** dem Wort, das sie verstärken: **sehr** gut, **ziemlich** teuer."
+      ]
+    }
+  ],
+  "gradients": [
+    "linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)",
+    "linear-gradient(135deg, #4834d4 0%, #686de0 100%)",
+    "linear-gradient(135deg, #22a6b3 0%, #7ed6df 100%)",
+    "linear-gradient(135deg, #f9ca24 0%, #f0932b 100%)"
+  ]
+}

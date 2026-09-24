@@ -1,5 +1,6 @@
 ---
-import { getThemen, ThemenSection } from "@/features/themen";
+import { ThemenSection } from "@/features/themen";
+import { getThemen } from "@/features/themen/server.ts";
 import Layout from "@/layouts/Layout.astro";
 
 const { data: themen } = await getThemen();

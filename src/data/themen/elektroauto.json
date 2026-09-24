@@ -1,0 +1,15 @@
+{
+  "id": "elektroauto",
+  "label": "Elektroautos",
+  "cat": "umwelt",
+  "pro": [
+    "Elektroautos verursachen keine direkten Abgase – gut für die Luft in Städten.",
+    "Langfristig sind sie günstiger im Betrieb.",
+    "Sie sind leiser und komfortabler als Benzinmotoren."
+  ],
+  "con": [
+    "Elektroautos sind sehr teuer zu kaufen.",
+    "Die Reichweite ist begrenzt und es gibt zu wenige Ladestationen.",
+    "Die Batterien werden aus seltenen Rohstoffen hergestellt – nicht immer umweltfreundlich."
+  ]
+}

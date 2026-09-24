@@ -1,0 +1,15 @@
+{
+  "id": "inet",
+  "label": "Informationen aus dem Internet glauben?",
+  "cat": "tech",
+  "pro": [
+    "Das Internet bietet eine riesige Menge an Informationen – schnell und kostenlos zugänglich.",
+    "Es ist bequem und einfach – man findet schnell Antworten.",
+    "Es gibt viele zuverlässige Quellen wie Universitäten und Zeitungen."
+  ],
+  "con": [
+    "Informationen aus dem Internet sind nicht immer wahr – viele Fake News.",
+    "Man muss viel suchen, um echte Informationen zu finden.",
+    "Jeder kann Informationen veröffentlichen, ohne Experte zu sein."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "stadtauto",
+  "label": "Stadtzentrum ohne Autos",
+  "cat": "umwelt",
+  "pro": [
+    "Stadtteile ohne Autos sind ruhiger, sauberer und umweltfreundlicher.",
+    "Kinder und Fußgänger haben mehr Sicherheit.",
+    "Man spart viel Platz, der sonst für Parkplätze gebraucht wird."
+  ],
+  "con": [
+    "Man braucht mehr Zeit für öffentliche Verkehrsmittel.",
+    "Ältere Menschen und Familien mit Kindern müssen länger laufen.",
+    "Ein autofreies Stadtzentrum ist nicht gut für Geschäfte und Lieferungen."
+  ]
+}

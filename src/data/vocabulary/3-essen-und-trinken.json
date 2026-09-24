@@ -1,0 +1,158 @@
+{
+  "id": 3,
+  "german": "ESSEN UND TRINKEN",
+  "category": "Kapitel 3",
+  "description": "Vokabeln für Lebensmittel, Mahlzeiten und Restaurantbesuche.",
+  "sections": [
+    {
+      "id": "lebensmittel",
+      "title": "LEBENSMITTEL",
+      "topics": [
+        {
+          "id": "obst_und_gemuese",
+          "title": "Obst und Gemüse",
+          "words": [
+            {
+              "german": "der Apfel, -̈",
+              "arabic": "التفاحة",
+              "english": "apple",
+              "example": "Ein Apfel am Tag ist gesund."
+            },
+            {
+              "german": "die Banane, -n",
+              "arabic": "الموزة",
+              "english": "banana",
+              "example": "Affen essen gerne Bananen."
+            },
+            {
+              "german": "die Tomate, -n",
+              "arabic": "الطماطم (البندورة)",
+              "english": "tomato",
+              "example": "Tomaten sind gut für den Salat."
+            },
+            {
+              "german": "die Kartoffel, -n",
+              "arabic": "البطاطا",
+              "english": "potato",
+              "example": "Wir essen heute Kartoffeln mit Fleisch."
+            },
+            {
+              "german": "die Zwiebel, -n",
+              "arabic": "البصل",
+              "english": "onion",
+              "example": "Beim Zwiebelschneiden weint man."
+            }
+          ]
+        },
+        {
+          "id": "fleisch_und_fisch",
+          "title": "Fleisch und Fisch",
+          "words": [
+            {
+              "german": "das Fleisch",
+              "arabic": "اللحم",
+              "english": "meat",
+              "example": "Ich esse kein Fleisch, ich bin Vegetarier."
+            },
+            {
+              "german": "das Hähnchen, -",
+              "arabic": "الدجاج",
+              "english": "chicken",
+              "example": "Heute gibt es gebratenes Hähnchen."
+            },
+            {
+              "german": "das Rindfleisch",
+              "arabic": "لحم البقر",
+              "english": "beef",
+              "example": "Rindfleisch ist manchmal zäh."
+            },
+            {
+              "german": "der Fisch, -e",
+              "arabic": "السمك",
+              "english": "fish",
+              "example": "Freitags essen wir oft Fisch."
+            },
+            {
+              "german": "die Wurst, -̈e",
+              "arabic": "النقانق (السجق)",
+              "english": "sausage",
+              "example": "In Deutschland isst man viel Wurst."
+            }
+          ]
+        },
+        {
+          "id": "getraenke",
+          "title": "Getränke",
+          "words": [
+            {
+              "german": "das Wasser",
+              "arabic": "الماء",
+              "english": "water",
+              "example": "Ich trinke jeden Tag zwei Liter Wasser."
+            },
+            {
+              "german": "der Kaffee, -s",
+              "arabic": "القهوة",
+              "english": "coffee",
+              "example": "Morgens brauche ich einen Kaffee."
+            },
+            {
+              "german": "der Tee, -s",
+              "arabic": "الشاي",
+              "english": "tea",
+              "example": "Schwarzer Tee mit Zucker, bitte."
+            },
+            {
+              "german": "der Saft, -̈e",
+              "arabic": "العصير",
+              "english": "juice",
+              "example": "Orangensaft hat viel Vitamin C."
+            },
+            {
+              "german": "die Milch",
+              "arabic": "الحليب",
+              "english": "milk",
+              "example": "Die Kinder trinken gerne Milch."
+            }
+          ]
+        },
+        {
+          "id": "mahlzeiten",
+          "title": "Mahlzeiten und Restaurant",
+          "words": [
+            {
+              "german": "das Frühstück, -e",
+              "arabic": "الفطور",
+              "english": "breakfast",
+              "example": "Das Frühstück ist die wichtigste Mahlzeit."
+            },
+            {
+              "german": "das Mittagessen, -",
+              "arabic": "الغداء",
+              "english": "lunch",
+              "example": "Wir treffen uns zum Mittagessen um 13 Uhr."
+            },
+            {
+              "german": "das Abendessen, -",
+              "arabic": "العشاء",
+              "english": "dinner",
+              "example": "Das Abendessen steht auf dem Tisch."
+            },
+            {
+              "german": "die Speisekarte, -n",
+              "arabic": "قائمة الطعام",
+              "english": "menu",
+              "example": "Könnte ich bitte die Speisekarte haben?"
+            },
+            {
+              "german": "die Rechnung, -en",
+              "arabic": "الفاتورة (الحساب)",
+              "english": "bill, check",
+              "example": "Die Rechnung, bitte!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

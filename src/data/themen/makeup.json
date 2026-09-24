@@ -1,0 +1,15 @@
+{
+  "id": "makeup",
+  "label": "Make-up?",
+  "cat": "gesundheit",
+  "pro": [
+    "Make-up macht hübscher und attraktiver.",
+    "Make-up gibt ein Gefühl von Selbstbewusstsein.",
+    "Make-up deckt Makel und man fühlt sich sicherer."
+  ],
+  "con": [
+    "Make-up schadet der Haut bei regelmäßigem Gebrauch.",
+    "Es kostet viel Zeit und Geld.",
+    "Viele Studien zeigen, dass Make-up süchtig machen kann."
+  ]
+}

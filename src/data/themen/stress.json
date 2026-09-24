@@ -1,0 +1,15 @@
+{
+  "id": "stress",
+  "label": "Stress im Alltag / Work-Life-Balance",
+  "cat": "arbeit",
+  "pro": [
+    "Eine gute Work-Life-Balance ist wichtig für die Gesundheit.",
+    "Regelmäßige Pausen und Freizeitaktivitäten reduzieren Stress.",
+    "Entspannte Mitarbeiter sind produktiver und kreativer."
+  ],
+  "con": [
+    "In der modernen Welt ist es schwierig, Arbeit und Privatleben zu trennen.",
+    "Viele Menschen definieren sich durch ihre Arbeit und wollen viel arbeiten.",
+    "Wirtschaftlicher Druck zwingt viele Menschen zur Überstunden."
+  ]
+}

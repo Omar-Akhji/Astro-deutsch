@@ -1,0 +1,419 @@
+{
+  "id": "satz",
+  "title": "Satz",
+  "icon": "LayoutList",
+  "topics": [
+    {
+      "id": "fragesatz",
+      "number": "1",
+      "category": "Satz",
+      "title": "Fragesatz & Imperativ",
+      "description": "Satzbau bei Fragen und Aufforderungen",
+      "gradients": [
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "frage-formen",
+          "number": "1.1",
+          "title": "Frageformen",
+          "description": "W-Fragen, Ja/Nein-Fragen and Imperativ",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**W-Frage**: Fragewort an Position 1, Verb an **Position 2** (Wer bist du?).",
+                "**Ja/Nein-Frage**: Verb an **Position 1** (Kommst du morgen?).",
+                "**Imperativ**: Verb an **Position 1** (Komm bitte her!)."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Merkhilfe: W-Frage = Verb auf **Position 2**, Ja/Nein-Frage = Verb auf **Position 1**."
+      ]
+    },
+    {
+      "id": "hauptsatz",
+      "number": "2",
+      "category": "Satz",
+      "title": "Hauptsatz (Aussagesatz)",
+      "description": "Verbposition und Satzglieder im Hauptsatz",
+      "gradients": [
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "haupt-gold-regel",
+          "number": "2.1",
+          "title": "Die goldene Regel",
+          "description": "Verbposition im Hauptsatz",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "Das konjugierte Verb steht immer an **Position 2**.",
+                "An Position 1 kann das Subjekt oder eine andere Information (Zeit, Ort) stehen.",
+                "Zweiteilige Verben (trennbare Verben, Perfekt, Modalverben): Der zweite Teil steht am **Satzende**."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "haupt-mittelfeld",
+          "number": "2.2",
+          "title": "Reihenfolge im Mittelfeld (TE-KA-MO-LO)",
+          "description": "Struktur der Satzglieder",
+          "content": [
+            {
+              "title": "TE-KA-MO-LO Schema",
+              "items": [
+                "**TE**mporal (Wann?): heute",
+                "**KA**usal (Warum?): wegen des Regens",
+                "**MO**dal (Wie?): mit dem Auto",
+                "**LO**kal (Wo/Wohin?): nach Hause",
+                "Beispiel: Ich fahre **heute** (Te) **wegen des Termins** (Ka) **schnell** (Mo) **nach Berlin** (Lo)."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Pronomen stehen vor Nomen: Ich schenke **es** (Pron.) **meiner Mutter** (Nomen).",
+        "Dativ vor Akkusativ (bei Nomen): Ich gebe **dem Mann** (Dat) **den Schlüssel** (Akk)."
+      ]
+    },
+    {
+      "id": "nebensatz",
+      "number": "3",
+      "category": "Satz",
+      "title": "Nebensatz",
+      "description": "Satzbau mit Konjunktionen und Relativpronomen",
+      "gradients": [
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "ns-allgemein",
+          "number": "3.1",
+          "title": "Allgemeine Regel",
+          "description": "Das konjugierte Verb steht am Ende.",
+          "content": [
+            {
+              "title": "Struktur",
+              "items": [
+                "Ein Nebensatz wird durch eine Konjunktion (weil, dass, wenn ...) eingeleitet.",
+                "Das konjugierte Verb rutscht ganz ans **Satzende**."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "relativsatz",
+          "number": "3.2",
+          "title": "Relativsatz",
+          "description": "Nomen genauer beschreiben",
+          "content": [
+            {
+              "title": "Bildung",
+              "items": [
+                "Bezieht sich auf ein Nomen im Hauptsatz.",
+                "Relativpronomen (der, die, das ...) richtet sich in Genus/Numerus nach dem Nomen, Kasus nach seiner Funktion im NS."
+              ]
+            },
+            {
+              "title": "Mit Präpositionen",
+              "items": [
+                "Die Präposition steht vor dem Relativpronomen.",
+                "**Beispiel**: Der Freund, **mit dem** ich telefoniert habe. Die Firma, **bei der** ich arbeite."
+              ]
+            },
+            {
+              "title": "Relativsatz mit wo / wohin / woher",
+              "items": [
+                "**wo**: Bei Orten (Die Stadt, **wo** ich lebe, ist sehr schön).",
+                "**wohin**: Bei Richtung (Das Land, **wohin** wir fahren, ist warm).",
+                "**woher**: Bei Herkunft (Die Stadt, **woher** er kommt, ist klein)."
+              ]
+            },
+            {
+              "title": "Relativsatz mit was",
+              "items": [
+                "Nach **alles, etwas, nichts, das**: Alles, **was** ich weiß. Das ist etwas, **was** mich freut.",
+                "Nach **dem Superlativ**: Das ist das Beste, **was** ich je gesehen habe.",
+                "Bezug auf einen ganzen Satz: Er kam zu spät, **was** mich geärgert hat."
+              ]
+            }
+          ],
+          "hasTable": true,
+          "tableData": {
+            "caption": "Relativpronomen",
+            "headers": [
+              "Kasus",
+              "Maskulin",
+              "Feminin",
+              "Neutral",
+              "Plural"
+            ],
+            "rows": [
+              [
+                "Nominativ",
+                "der",
+                "die",
+                "das",
+                "die"
+              ],
+              [
+                "Akkusativ",
+                "den",
+                "die",
+                "das",
+                "die"
+              ],
+              [
+                "Dativ",
+                "dem",
+                "der",
+                "dem",
+                "denen"
+              ],
+              [
+                "Genitiv",
+                "dessen",
+                "deren",
+                "dessen",
+                "deren"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ts-nebensatz",
+          "number": "3.3",
+          "title": "Temporale Nebensätze",
+          "description": "Wann etwas passiert ist/passiert",
+          "content": [
+            {
+              "title": "Häufige Konjunktionen",
+              "items": [
+                "**wenn**: Wiederholte Aktionen in der Gegenwart/Vergangenheit (Immer wenn er kam, kauften wir Pizza). Einmalige Aktion in der Zukunft.",
+                "**als**: Einmalige Aktion in der Vergangenheit (Als ich 10 Jahre alt war, fing ich an, Klavier zu spielen).",
+                "**bevor / nachdem**: Vorzeitigkeit/Nachzeitigkeit (Bevor ich ins Kino gehe, esse ich etwas. Nachdem er gegessen hatte, ging er spazieren).",
+                "**während**: Gleichzeitigkeit (Während ich koche, höre ich Musik).",
+                "**seit / seitdem**: Beginn in der Vergangenheit bis jetzt (Seit ich in Deutschland wohne, lerne ich Deutsch).",
+                "**bis**: Endpunkt einer Aktion (Ich warte hier, bis du kommst).",
+                "**sobald**: Unmittelbare Folge (Sobald ich fertig bin, rufe ich dich an)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kc-nebensatz",
+          "number": "3.4",
+          "title": "Kausale & Konditionale Nebensätze",
+          "description": "Warum? Unter welcher Bedingung?",
+          "content": [
+            {
+              "title": "Kausal (Grund)",
+              "items": [
+                "**weil**: Antwortet auf Warum? (Ich bleibe zu Hause, weil ich krank bin).",
+                "**da**: Oft am Satzanfang, bekannter Grund (Da ich kein Geld habe, bleibe ich zu Hause)."
+              ]
+            },
+            {
+              "title": "Konditional (Bedingung)",
+              "items": [
+                "**wenn**: (Wenn du Zeit hast, gehen wir ins Kino).",
+                "**falls**: Geringere Wahrscheinlichkeit (Falls es regnet, nehmen wir den Bus)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fk-nebensatz",
+          "number": "3.5",
+          "title": "Finale & Konsekutive Nebensätze",
+          "description": "Wozu? Mit welcher Folge?",
+          "content": [
+            {
+              "title": "Final (Ziel/Zweck)",
+              "items": [
+                "**damit**: Wenn Subjekte unterschiedlich sind (Ich gebe dir Geld, damit du Brot kaufst).",
+                "**um...zu**: Wenn Subjekte gleich sind (Ich lerne Deutsch, um in Deutschland zu arbeiten)."
+              ]
+            },
+            {
+              "title": "Konsekutiv (Folge)",
+              "items": [
+                "**sodass**: (Es regnete stark, sodass wir nass wurden).",
+                "**so ... dass**: (Der Film war so langweilig, dass ich eingeschlafen bin)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "km-nebensatz",
+          "number": "3.6",
+          "title": "Konzessive & Modale Nebensätze",
+          "description": "Trotz was? Wie?",
+          "content": [
+            {
+              "title": "Konzessiv (Gegengrund)",
+              "items": [
+                "**obwohl**: (Obwohl es regnet, gehe ich spazieren)."
+              ]
+            },
+            {
+              "title": "Modal (Art und Weise)",
+              "items": [
+                "**indem**: (Er hat viel Geld gespart, indem er weniger ausgegeben hat).",
+                "**dadurch dass**: Ähnlich wie indem (Dadurch dass sie viel lernte, bestand sie die Prüfung)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ob-indirekt",
+          "number": "3.7",
+          "title": "Indirekte Fragen / ob-Sätze",
+          "description": "Fragen im Nebensatz",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**ob**: Ersetzt Ja/Nein-Fragen im Nebensatz (Kommst du? → Ich weiß nicht, **ob** du kommst).",
+                "**Indirekte W-Frage**: Das Fragewort leitet den Nebensatz ein (Wo wohnst du? → Ich frage mich, **wo** du wohnst).",
+                "Das Verb steht am **Satzende** (wie bei allen Nebensätzen)."
+              ]
+            },
+            {
+              "title": "Beispiele",
+              "items": [
+                "Könnten Sie mir sagen, **ob** der Zug pünktlich kommt?",
+                "Ich möchte wissen, **wann** der Kurs anfängt.",
+                "Weißt du, **wie viel** das kostet?"
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Hauptregel: Im Nebensatz steht das konjugierte Verb **immer am Ende**.",
+        "**wenn** (Gegenwart/Zukunft + wiederholte Vergangenheit) vs. **als** (einmalige Vergangenheit)."
+      ]
+    },
+    {
+      "id": "satzverbindungen",
+      "number": "4",
+      "category": "Satz",
+      "title": "Satzverbindungen",
+      "description": "Konnektoren und ihre Positionen",
+      "gradients": [
+        "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+        "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+        "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+        "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+        "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+        "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)"
+      ],
+      "subtopics": [
+        {
+          "id": "konnektoren-typen",
+          "number": "4.1",
+          "title": "Konnektoren-Typen",
+          "description": "Übersicht der Satzverbindungen nach Positionen",
+          "hasTable": true,
+          "tableData": {
+            "headers": [
+              "Typ",
+              "Position",
+              "Beispiele",
+              "Verbposition"
+            ],
+            "rows": [
+              [
+                "Koordinierend",
+                "0",
+                "und, aber, denn, oder, sondern",
+                "Position 2"
+              ],
+              [
+                "Subordinierend",
+                "NS",
+                "weil, dass, wenn, obwohl, als",
+                "Satzende"
+              ],
+              [
+                "Adverbial",
+                "1",
+                "deshalb, trotzdem, dann, danach",
+                "Position 2 (direkt nach Konnektor)"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "doppelkonnektoren",
+          "number": "4.2",
+          "title": "Zweiteilige Konnektoren (Doppelkonnektoren)",
+          "description": "Beziehungen zwischen Satzteilen ausdrücken",
+          "content": [
+            {
+              "title": "Häufige Beispiele",
+              "items": [
+                "**sowohl ... als auch**: Aufzählung (Ich lerne sowohl Deutsch als auch Englisch).",
+                "**nicht nur ... sondern auch**: Steigerung (Er ist nicht nur klug, sondern auch nett).",
+                "**entweder ... oder**: Alternative (Entweder wir gehen ins Kino oder wir bleiben zu Hause).",
+                "**weder ... noch**: Doppelte Negation (Ich trinke weder Kaffee noch Tee).",
+                "**zwar ... aber**: Gegensatz (Er ist zwar reich, aber er ist nicht glücklich)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prop-konnektoren",
+          "number": "4.3",
+          "title": "Proportionale Konnektoren",
+          "description": "Je ... desto / umso",
+          "content": [
+            {
+              "title": "Regeln",
+              "items": [
+                "**je ... desto / umso**: Parallelität (Je mehr ich lerne, desto besser verstehe ich es).",
+                "Verwendung: je + Nebensatz (Verb am Ende), desto + Hauptsatz (Verb nach desto + Adj)."
+              ]
+            }
+          ]
+        }
+      ],
+      "tips": [
+        "Konnektoren der Position 0 (und, aber, denn, oder, sondern) lassen das Verb auf Position 2.",
+        "Bei **je...desto** steht das Verb im zweiten Teil direkt nach dem Adjektiv (Desto schneller **lerne** ich)."
+      ]
+    }
+  ],
+  "gradients": [
+    "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+    "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+    "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+    "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+    "linear-gradient(135deg, #f1c40f 0%, #f39c12 100%)",
+    "linear-gradient(135deg, #1abc9c 0%, #16a085 100%)"
+  ]
+}

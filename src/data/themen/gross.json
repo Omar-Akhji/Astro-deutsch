@@ -1,0 +1,16 @@
+{
+  "id": "gross",
+  "label": "Großeltern als Kinderbetreuung?",
+  "cat": "gesellschaft",
+  "pro": [
+    "Großeltern haben große Erfahrung in der Erziehung und sind geduldig.",
+    "Großeltern freuen sich, Zeit mit den Enkeln zu verbringen.",
+    "Großeltern sind oft kostenlos und liebevoll.",
+    "Kinder können viel von Großeltern lernen."
+  ],
+  "con": [
+    "Großeltern können das Elterngefühl nicht ersetzen.",
+    "Großeltern verwöhnen die Kinder und halten sich nicht immer an Regeln.",
+    "Großeltern brauchen auch Ruhe und haben vielleicht nicht die Kraft dazu."
+  ]
+}

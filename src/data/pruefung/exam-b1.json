@@ -1,0 +1,210 @@
+{
+  "id": "b1",
+  "level": "B1",
+  "title": "Goethe & ÖSD Zertifikat B1",
+  "category": "Prüfung",
+  "description": "Strukturierte Vorbereitung auf das Goethe & ÖSD B1 Zertifikat",
+  "totalDuration": "ca. 3,5 Stunden",
+  "passingScore": "60% (60 von 100 Punkten pro Modul)",
+  "sections": [
+    {
+      "id": "b1-lesen",
+      "title": "Lesen",
+      "duration": "65 Minuten",
+      "points": 100,
+      "description": "Leseverstehen in verschiedenen Textsorten",
+      "parts": [
+        {
+          "name": "Teil 1",
+          "taskType": "Zuordnung (Blog-Texte)",
+          "items": 6,
+          "points": 20
+        },
+        {
+          "name": "Teil 2",
+          "taskType": "Multiple Choice (Artikel)",
+          "items": 6,
+          "points": 20
+        },
+        {
+          "name": "Teil 3",
+          "taskType": "Richtig/Falsch (Anleitungen)",
+          "items": 7,
+          "points": 20
+        },
+        {
+          "name": "Teil 4",
+          "taskType": "Zuordnung (Leserkommentare)",
+          "items": 7,
+          "points": 20
+        },
+        {
+          "name": "Teil 5",
+          "taskType": "Multiple Choice (Anzeigen)",
+          "items": 4,
+          "points": 20
+        }
+      ],
+      "tips": [
+        "Bestehensgrenze: 60 Punkte (max. 100).",
+        "Überschriften und erste Sätze zuerst lesen.",
+        "Schlüsselwörter markieren.",
+        "Bei Multiple Choice: Ausschlussprinzip nutzen.",
+        "Zeit einteilen: ca. 12 Min. pro Teil."
+      ]
+    },
+    {
+      "id": "b1-hoeren",
+      "title": "Hören",
+      "duration": "40 Minuten",
+      "points": 100,
+      "description": "Hörverstehen mit verschiedenen Audioformaten",
+      "parts": [
+        {
+          "name": "Teil 1",
+          "taskType": "Richtig/Falsch (Durchsagen)",
+          "items": 10,
+          "points": 25
+        },
+        {
+          "name": "Teil 2",
+          "taskType": "Multiple Choice (Vortrag)",
+          "items": 5,
+          "points": 25
+        },
+        {
+          "name": "Teil 3",
+          "taskType": "Richtig/Falsch (Gespräch)",
+          "items": 7,
+          "points": 25
+        },
+        {
+          "name": "Teil 4",
+          "taskType": "Zuordnung (Diskussion)",
+          "items": 8,
+          "points": 25
+        }
+      ],
+      "tips": [
+        "Module können einzeln abgelegt werden.",
+        "Aufgaben vor dem Hören lesen.",
+        "Beim ersten Hören: Hauptidee verstehen.",
+        "Beim zweiten Hören: Details prüfen.",
+        "Auf Signalwörter achten (aber, trotzdem, deshalb)."
+      ]
+    },
+    {
+      "id": "b1-schreiben",
+      "title": "Schreiben",
+      "duration": "60 Minuten",
+      "points": 100,
+      "description": "Persönliche und formelle E-Mails sowie Meinungsäußerung",
+      "parts": [
+        {
+          "name": "Teil 1",
+          "taskType": "Informelle E-Mail",
+          "items": 1,
+          "points": 40,
+          "description": "ca. 80 Wörter · 3 Inhaltspunkte · Anrede → Einleitung → Inhalt → Schluss",
+          "checklist": [
+            "Anrede",
+            "Einleitung",
+            "Beschreibung",
+            "Begründung (Präsens)",
+            "Vorschlag für ein Treffen",
+            "Schlusssatz & Gruß"
+          ]
+        },
+        {
+          "name": "Teil 2",
+          "taskType": "Diskussionsbeitrag",
+          "items": 1,
+          "points": 40,
+          "description": "ca. 80 Wörter · Meinung äußern · Pro- und Kontra-Argumente",
+          "checklist": [
+            "Einleitung",
+            "Überleitung",
+            "Pro-Argument",
+            "Kontra-Argument",
+            "Eigene Meinung",
+            "Schluss"
+          ]
+        },
+        {
+          "name": "Teil 3",
+          "taskType": "Formelle E-Mail",
+          "items": 1,
+          "points": 20,
+          "description": "ca. 40 Wörter · Entschuldigung / Absage / Anfrage · Sie-Form",
+          "checklist": [
+            "Formelle Anrede",
+            "Grund des Schreibens",
+            "Entschuldigung / Bitte",
+            "Dank",
+            "Formeller Gruß"
+          ]
+        }
+      ],
+      "tips": [
+        "Alle Inhaltspunkte bearbeiten. Jeder fehlende Punkt kostet massiv Punkte!",
+        "Schreiben 1: Anrede + Einleitung + alle 3 Punkte + Vorschlag + Schluss.",
+        "Schreiben 2: Einleitung → Pro → Kontra → Meinung → Schluss.",
+        "Schreiben 3: Sehr kurz halten, aber formell (Sie-Form!)."
+      ]
+    },
+    {
+      "id": "b1-sprechen",
+      "title": "Sprechen",
+      "duration": "15 Minuten (+ 15 Min. Vorbereitung)",
+      "points": 100,
+      "description": "Paarprüfung mit drei Teilen",
+      "parts": [
+        {
+          "name": "Teil 1",
+          "taskType": "Gemeinsam planen",
+          "items": 1,
+          "points": 25,
+          "description": "ca. 3 Min · Gemeinsam etwas besprechen · Vorschläge machen und reagieren",
+          "checklist": [
+            "Einleitung & Einstieg",
+            "Vorschläge machen",
+            "Zustimmen / Ablehnen",
+            "Fragen stellen",
+            "Einigung & Schluss"
+          ]
+        },
+        {
+          "name": "Teil 2",
+          "taskType": "Präsentation (5 Folien)",
+          "items": 1,
+          "points": 50,
+          "description": "ca. 3 Min · Ein Thema vorstellen · 5-Folien-Struktur",
+          "checklist": [
+            "Folie 1: Thema & Struktur",
+            "Folie 2: Erfahrungen",
+            "Folie 3: Heimatland",
+            "Folie 4: Vor-/Nachteile & Meinung",
+            "Folie 5: Dank & Schluss"
+          ]
+        },
+        {
+          "name": "Teil 3",
+          "taskType": "Feedback & Frage",
+          "items": 1,
+          "points": 25,
+          "description": "ca. 2 Min · Rückmeldung zur Präsentation · Eine Frage stellen",
+          "checklist": [
+            "Rückmeldung geben",
+            "Interessante Frage stellen",
+            "Auf Fragen antworten"
+          ]
+        }
+      ],
+      "tips": [
+        "Frei sprechen! Augenkontakt halten.",
+        "Flüssigkeit: Nicht zu viele Pausen, Füllwörter nutzen.",
+        "Interaktion: Auf den Partner reagieren."
+      ]
+    }
+  ]
+}

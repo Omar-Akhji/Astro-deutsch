@@ -1,0 +1,50 @@
+{
+  "id": 8,
+  "german": "FREIZEIT",
+  "category": "Kapitel 8",
+  "description": "Hobbys, Sport und Unterhaltung für eine aktive Freizeitgestaltung.",
+  "sections": [
+    {
+      "id": "hobbys_und_sport",
+      "title": "Hobbys und Sport",
+      "topics": [
+        {
+          "id": "freizeitaktivitaeten",
+          "title": "Freizeitaktivitäten",
+          "words": [
+            {
+              "german": "lesen",
+              "arabic": "يقرأ",
+              "english": "to read",
+              "example": "Sie liest gerne Bücher."
+            },
+            {
+              "german": "Musik hören",
+              "arabic": "يستمع للموسيقى",
+              "english": "to listen to music",
+              "example": "Ich höre Musik beim Joggen."
+            },
+            {
+              "german": "der Sport",
+              "arabic": "الرياضة",
+              "english": "sports",
+              "example": "Treibst du regelmäßig Sport?"
+            },
+            {
+              "german": "das Kino, -s",
+              "arabic": "السينما",
+              "english": "cinema, movie theater",
+              "example": "Gehen wir am Wochenende ins Kino?"
+            },
+            {
+              "german": "spielen",
+              "arabic": "يلعب",
+              "english": "to play",
+              "example": "Die Kinder spielen im Park."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

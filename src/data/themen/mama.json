@@ -1,0 +1,16 @@
+{
+  "id": "mama",
+  "label": "Hotel Mama?",
+  "cat": "gesellschaft",
+  "pro": [
+    "Man spart Geld und muss nicht selbst kochen und putzen.",
+    "Bei Mama gibt es jeden Tag gesundes Essen.",
+    "Man kann sich besser auf das Studium konzentrieren.",
+    "Man genießt die Gesellschaft der Familie."
+  ],
+  "con": [
+    "Man hat wenig Freiheit und kaum Privatsphäre.",
+    "Man wird faul und unselbstständig.",
+    "Wenn man allein wohnt, lernt man mehr Verantwortung und Selbstständigkeit."
+  ]
+}

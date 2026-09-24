@@ -1,0 +1,158 @@
+{
+  "id": 2,
+  "german": "ZU HAUSE",
+  "category": "Kapitel 2",
+  "description": "Alles rund um das Wohnen: Möbel, Räume und das tägliche Leben zu Hause.",
+  "sections": [
+    {
+      "id": "das_haus",
+      "title": "DAS HAUS",
+      "topics": [
+        {
+          "id": "wohnzimmer",
+          "title": "Das Wohnzimmer",
+          "words": [
+            {
+              "german": "das Sofa, -s",
+              "arabic": "الأريكة / الكنبة",
+              "english": "sofa, couch",
+              "example": "Wir sitzen gemütlich auf dem Sofa."
+            },
+            {
+              "german": "der Sessel, -",
+              "arabic": "الكرسي ذو ذراعين",
+              "english": "armchair",
+              "example": "Opa liest oft im Sessel."
+            },
+            {
+              "german": "der Fernseher, -",
+              "arabic": "التلفاز",
+              "english": "television (TV set)",
+              "example": "Der Fernseher ist kaputt."
+            },
+            {
+              "german": "der Teppich, -e",
+              "arabic": "السجادة",
+              "english": "rug, carpet",
+              "example": "Wir haben einen neuen Teppich gekauft."
+            },
+            {
+              "german": "das Regal, -e",
+              "arabic": "الرف",
+              "english": "shelf, bookcase",
+              "example": "Die Bücher stehen im Regal."
+            }
+          ]
+        },
+        {
+          "id": "kueche",
+          "title": "Die Küche",
+          "words": [
+            {
+              "german": "der Kühlschrank, -̈e",
+              "arabic": "الثلاجة",
+              "english": "refrigerator, fridge",
+              "example": "Die Milch ist im Kühlschrank."
+            },
+            {
+              "german": "der Herd, -e",
+              "arabic": "الموقد / الفرن",
+              "english": "stove",
+              "example": "Der Topf steht auf dem Herd."
+            },
+            {
+              "german": "der Backofen, -̈",
+              "arabic": "الفرن",
+              "english": "oven",
+              "example": "Der Kuchen backt im Backofen."
+            },
+            {
+              "german": "die Spülmaschine, -n",
+              "arabic": "غسالة الصحون",
+              "english": "dishwasher",
+              "example": "Ich räume die Spülmaschine aus."
+            },
+            {
+              "german": "die Mikrowelle, -n",
+              "arabic": "الميكروويف",
+              "english": "microwave",
+              "example": "Mach das Essen in der Mikrowelle warm!"
+            }
+          ]
+        },
+        {
+          "id": "schlafzimmer",
+          "title": "Das Schlafzimmer",
+          "words": [
+            {
+              "german": "das Bett, -en",
+              "arabic": "السرير",
+              "english": "bed",
+              "example": "Ich gehe jetzt ins Bett."
+            },
+            {
+              "german": "der Kleiderschrank, -̈e",
+              "arabic": "خزانة الملابس",
+              "english": "wardrobe, closet",
+              "example": "Häng deine Jacke in den Kleiderschrank!"
+            },
+            {
+              "german": "der Nachttisch, -e",
+              "arabic": "طاولة بجانب السرير (الكمودينو)",
+              "english": "nightstand",
+              "example": "Die Lampe steht auf dem Nachttisch."
+            },
+            {
+              "german": "das Kissen, -",
+              "arabic": "الوسادة / المخدة",
+              "english": "pillow",
+              "example": "Ich brauche ein weiches Kissen."
+            },
+            {
+              "german": "die Decke, -n",
+              "arabic": "البطانية / الغطاء",
+              "english": "blanket",
+              "example": "Mir ist kalt, ich brauche eine Decke."
+            }
+          ]
+        },
+        {
+          "id": "badezimmer",
+          "title": "Das Badezimmer",
+          "words": [
+            {
+              "german": "die Dusche, -n",
+              "arabic": "الدش",
+              "english": "shower",
+              "example": "Ich benutze jeden Morgen die Dusche."
+            },
+            {
+              "german": "die Badewanne, -n",
+              "arabic": "حوض الاستحمام (البانيو)",
+              "english": "bathtub",
+              "example": "Die Kinder spielen in der Badewanne."
+            },
+            {
+              "german": "das Waschbecken, -",
+              "arabic": "المغسلة / الحوض",
+              "english": "sink, washbasin",
+              "example": "Wasch dir die Hände am Waschbecken!"
+            },
+            {
+              "german": "der Spiegel, -",
+              "arabic": "المرآة",
+              "english": "mirror",
+              "example": "Sie schaut in den Spiegel."
+            },
+            {
+              "german": "die Toilette, -n",
+              "arabic": "المرحاض (التواليت)",
+              "english": "toilet",
+              "example": "Wo ist bitte die Toilette?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

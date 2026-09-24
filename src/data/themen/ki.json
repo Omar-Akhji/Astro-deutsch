@@ -1,0 +1,15 @@
+{
+  "id": "ki",
+  "label": "Künstliche Intelligenz (KI)",
+  "cat": "tech",
+  "pro": [
+    "Künstliche Intelligenz kann bei der Arbeit helfen und Zeit sparen.",
+    "KI kann in der Medizin Leben retten – bessere Diagnosen.",
+    "KI kann in der Schule personalisiertes Lernen ermöglichen."
+  ],
+  "con": [
+    "KI kann Arbeitsplätze vernichten.",
+    "KI kann missbraucht werden – Fake News, Überwachung.",
+    "Daten, die für KI genutzt werden, sind oft nicht geschützt."
+  ]
+}

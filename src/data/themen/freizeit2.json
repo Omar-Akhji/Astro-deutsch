@@ -1,0 +1,15 @@
+{
+  "id": "freizeit2",
+  "label": "Sollten Kinder ihre Freizeit planen?",
+  "cat": "freizeit",
+  "pro": [
+    "Wenn Kinder ihre Freizeit planen, lernen sie Selbstständigkeit und Verantwortung.",
+    "Sie werden ordentlicher und pünktlicher.",
+    "Strukturierte Freizeit verhindert, dass Kinder stundenlang Videospiele spielen."
+  ],
+  "con": [
+    "Kinder brauchen auch Spontanität und unstrukturierte Spielzeit.",
+    "Zu viel Planung macht Kinder unsicher und gestresst.",
+    "Kinder sind keine Roboter – sie brauchen Freiheit."
+  ]
+}

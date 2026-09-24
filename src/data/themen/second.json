@@ -1,0 +1,15 @@
+{
+  "id": "second",
+  "label": "Second-Hand-Kleidung",
+  "cat": "gesellschaft",
+  "pro": [
+    "Second-Hand-Kleidung ist billig – man kann sogar Markenkleidung günstig finden.",
+    "Second-Hand-Kleidung ist eine gute Lösung für Menschen mit wenig Geld.",
+    "Second-Hand-Kleidung ist umweltfreundlich – weniger Abfall."
+  ],
+  "con": [
+    "Second-Hand-Kleidung kann Krankheiten und Allergien übertragen.",
+    "Sie sieht oft nicht gut aus und man findet nicht alle Größen.",
+    "Not immer vorrätig."
+  ]
+}

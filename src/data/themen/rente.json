@@ -1,0 +1,15 @@
+{
+  "id": "rente",
+  "label": "Rentenalter erhöhen?",
+  "cat": "gesellschaft",
+  "pro": [
+    "Die Bevölkerung wird älter – das Rentensystem braucht Reformen.",
+    "Viele Menschen sind auch mit 67 noch fit und können arbeiten.",
+    "Ohne Reformen kann das Rentensystem kollabieren."
+  ],
+  "con": [
+    "Körperliche Arbeit ist mit 67 sehr anstrengend und gesundheitsschädlich.",
+    "Ältere Arbeitnehmer blockieren Arbeitsplätze für junge Menschen.",
+    "Man sollte nach einem langen Arbeitsleben Ruhe verdient haben."
+  ]
+}

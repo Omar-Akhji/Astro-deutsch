@@ -1,0 +1,17 @@
+{
+  "id": "einkz",
+  "label": "Brauchen wir Einkaufszentren?",
+  "cat": "gesellschaft",
+  "pro": [
+    "Im Einkaufszentrum hat man viele Möglichkeiten an einem Ort.",
+    "Man kann bei jedem Wetter einkaufen.",
+    "Es gibt Freizeitmöglichkeiten: Restaurants, Kinos, Spielplätze.",
+    "Einkaufszentren schaffen viele Arbeitsplätze."
+  ],
+  "con": [
+    "Einkaufszentren liegen oft am Stadtrand – man muss lange fahren.",
+    "Sie sind immer voll – lange Schlangen an der Kasse.",
+    "Man gibt viel Geld aus.",
+    "Sie verdrängen kleine lokale Geschäfte."
+  ]
+}

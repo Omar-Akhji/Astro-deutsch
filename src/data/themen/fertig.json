@@ -1,0 +1,14 @@
+{
+  "id": "fertig",
+  "label": "Fertigessen",
+  "cat": "essen",
+  "pro": [
+    "Wenn man Fertigessen isst, spart man Zeit. Man kann es schnell in der Mikrowelle aufwärmen.",
+    "Fertigessen ist preiswert und praktisch."
+  ],
+  "con": [
+    "Fertigessen ist ungesund und verursacht viele Krankheiten.",
+    "Fertigessen macht dick und faul.",
+    "Man weiß nicht, woraus es besteht – viele ungesunde Zutaten."
+  ]
+}

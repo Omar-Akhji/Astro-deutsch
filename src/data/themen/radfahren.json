@@ -1,0 +1,15 @@
+{
+  "id": "radfahren",
+  "label": "Fahrrad vs. Auto in der Stadt",
+  "cat": "umwelt",
+  "pro": [
+    "Fahrrad fahren ist gesund, umweltfreundlich und spart Geld.",
+    "In der Stadt ist das Fahrrad oft schneller als das Auto.",
+    "Keine Parkplatzsuche und keine Stauprobleme."
+  ],
+  "con": [
+    "Bei schlechtem Wetter ist Fahrradfahren unangenehm.",
+    "Mit dem Fahrrad kann man keine schweren Einkäufe transportieren.",
+    "Nicht alle Städte haben gute Fahrradwege."
+  ]
+}

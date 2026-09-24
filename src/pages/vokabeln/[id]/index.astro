@@ -1,5 +1,5 @@
 ---
-import { getVocabById, vocabList } from "@/features/vocabulary";
+import { getVocabById, getVocabList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import { getGradient, VOCAB_GRADIENTS } from "@/shared/lib";
 import BackButton from "@/shared/ui/BackButton.astro";
@@ -8,7 +8,8 @@ import { Hero } from "@/widgets/hero";
 import { ArrowRight, BookOpen, Languages } from "lucide-astro";
 
 export async function getStaticPaths() {
-  return vocabList.map((item) => ({ params: { id: item.id.toString() } }));
+  const { data: vocabList } = await getVocabList();
+  return (vocabList ?? []).map((item) => ({ params: { id: item.id.toString() } }));
 }
 
 const { id } = Astro.params;

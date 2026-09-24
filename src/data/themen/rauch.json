@@ -1,0 +1,15 @@
+{
+  "id": "rauch",
+  "label": "Rauchverbot im Restaurant?",
+  "cat": "gesundheit",
+  "pro": [
+    "Raucher schaden nicht nur sich selbst, sondern auch anderen Gästen durch Passivrauchen.",
+    "Restaurants sind öffentliche Plätze mit Kindern und schwangeren Frauen.",
+    "Das Essen schmeckt besser ohne Rauch."
+  ],
+  "con": [
+    "Rauchern sollte die Freiheit gelassen werden, in öffentlichen Räumen zu rauchen.",
+    "Ein Rauchverbot kann Kunden vertreiben.",
+    "Rauchen ist ein legales Produkt."
+  ]
+}

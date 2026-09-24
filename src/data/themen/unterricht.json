@@ -1,0 +1,15 @@
+{
+  "id": "unterricht",
+  "label": "Gemischter oder getrennter Unterricht?",
+  "cat": "bildung",
+  "pro": [
+    "Gemischter Unterricht bereitet auf das echte Leben vor – im Leben ist alles gemischt.",
+    "Er erhöht den gesunden Wettbewerb zwischen Mädchen und Jungen.",
+    "Beide Geschlechter lernen, ohne Hemmungen miteinander zu kommunizieren."
+  ],
+  "con": [
+    "Manche Schüler schämen sich vor dem anderen Geschlecht.",
+    "Getrennter Unterricht fördert schüchterne Schüler und verbessert die Leistung.",
+    "Unterschiedliche Lernstile von Mädchen und Jungen werden besser berücksichtigt."
+  ]
+}

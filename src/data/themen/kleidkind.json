@@ -1,0 +1,14 @@
+{
+  "id": "kleidkind",
+  "label": "Sollen Eltern bestimmen, was Kinder anziehen?",
+  "cat": "gesellschaft",
+  "pro": [
+    "Die Eltern wissen besser, what for their children is suitable.",
+    "Die Eltern achten besser auf den Preis und die Qualität."
+  ],
+  "con": [
+    "Wenn Kinder ihre Kleidung selbst wählen, entwickelt sich ihre Persönlichkeit besser.",
+    "Sie werden selbstbewusster und selbstständiger.",
+    "Kinder wissen, was in Mode ist und möchten dazugehören."
+  ]
+}

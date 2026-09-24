@@ -1,0 +1,14 @@
+{
+  "id": "schoen",
+  "label": "Schönheitsoperationen",
+  "cat": "gesundheit",
+  "pro": [
+    "Mit Schönheitsoperationen sieht man jünger und attraktiver aus.",
+    "Sie können Makel abdecken und das Selbstbewusstsein stärken."
+  ],
+  "con": [
+    "Schönheitsoperationen können schlimme Risiken und Komplikationen haben.",
+    "Ärzte können Fehler machen und das ist nicht rückgängig zu machen.",
+    "Es gibt natürliche Alternativen: Sport, gesunde Ernährung, Naturkosmetik."
+  ]
+}

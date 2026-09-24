@@ -1,5 +1,4 @@
-export { examLevels, redemittelData } from "./api/data.ts";
-export { getExamLevel, getExamLevels, getModelTests, getRedemittel } from "./api/services.ts";
+export { examCollectionSchema, redemittelCollectionSchema } from "./model/schema.ts";
 export type * from "./model/types.ts";
 export { default as EmailVisualFrame } from "./ui/EmailVisualFrame.astro";
 export { default as ModelTestsView } from "./ui/ModelTestsView.astro";

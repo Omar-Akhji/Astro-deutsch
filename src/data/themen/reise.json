@@ -1,0 +1,15 @@
+{
+  "id": "reise",
+  "label": "Reisen",
+  "cat": "freizeit",
+  "pro": [
+    "Man entdeckt neue Kulturen, Sprachen und Lebensweisen.",
+    "Reisen erweitert den Horizont und macht offener.",
+    "Man kann sich vom Alltagsstress erholen und neue Energie tanken."
+  ],
+  "con": [
+    "Reisen ist oft teuer (Flug, Hotel, Verpflegung).",
+    "Massentourismus schadet der Umwelt und dem Klima.",
+    "Man kann Heimweh bekommen oder Probleme im Ausland haben."
+  ]
+}

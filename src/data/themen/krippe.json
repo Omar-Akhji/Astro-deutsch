@@ -1,0 +1,15 @@
+{
+  "id": "krippe",
+  "label": "Kinder früh in die Krippe?",
+  "cat": "gesellschaft",
+  "pro": [
+    "In der Krippe lernen Kinder früh soziale Kompetenzen und Teamarbeit.",
+    "Eltern können früher arbeiten gehen und die Karriere fortführen.",
+    "Professionelle Betreuung fördert die Entwicklung des Kindes."
+  ],
+  "con": [
+    "Kleine Kinder brauchen vor allem die Nähe der Eltern.",
+    "Krippen können teuer sein.",
+    "Manche Eltern haben ein schlechtes Gewissen, das Kind früh abzugeben."
+  ]
+}

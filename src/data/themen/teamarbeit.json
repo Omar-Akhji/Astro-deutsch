@@ -1,0 +1,15 @@
+{
+  "id": "teamarbeit",
+  "label": "Teamarbeit vs. Einzelarbeit",
+  "cat": "arbeit",
+  "pro": [
+    "Teamarbeit steigert Motivation und Kreativität – man lernt voneinander.",
+    "Im Team teilt man die Arbeit und löst Probleme schneller.",
+    "Teamarbeit fördert soziale Kompetenzen."
+  ],
+  "con": [
+    "Im Team kann es zu Konflikten kommen.",
+    "Manche Mitarbeiter arbeiten allein effizienter.",
+    "Aufgaben werden manchmal nicht gleichmäßig verteilt."
+  ]
+}

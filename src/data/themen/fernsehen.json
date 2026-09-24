@@ -1,0 +1,15 @@
+{
+  "id": "fernsehen",
+  "label": "Kinder and Television",
+  "cat": "freizeit",
+  "pro": [
+    "Im Fernsehen kann man viele nützliche Sendungen sehen (Natur, Geschichte, Sprachen).",
+    "Zeichentrickfilme können die Fantasie der Kinder entwickeln.",
+    "Das Fernsehen ist ein Fenster auf die Welt."
+  ],
+  "con": [
+    "Zu viel Fernsehen macht Kinder faul und passiv.",
+    "Kinder sollten sich mehr bewegen und mit anderen Kindern spielen.",
+    "Es gibt viele Sendungen, die für Kinder nicht geeignet sind."
+  ]
+}

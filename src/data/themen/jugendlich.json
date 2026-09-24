@@ -1,0 +1,13 @@
+{
+  "id": "jugendlich",
+  "label": "Haben Kinder zu viel / zu wenig Freizeit?",
+  "cat": "freizeit",
+  "pro": [
+    "In der Schule haben Kinder viele Fächer und der Stundenplan ist voll.",
+    "Kinder haben immer viele Hausaufgaben und müssen zu Hause helfen."
+  ],
+  "con": [
+    "Kinder brauchen Freizeit zum Spielen, Basteln und Ausruhen.",
+    "Kinder brauchen mehr Bewegung und Kontakt mit anderen Kindern."
+  ]
+}

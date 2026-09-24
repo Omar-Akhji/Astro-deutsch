@@ -1,0 +1,116 @@
+{
+  "id": 5,
+  "german": "IN DER STADT",
+  "category": "Kapitel 5",
+  "description": "Gebäude, Orte und Dienstleistungen, die man in einer Stadt findet.",
+  "sections": [
+    {
+      "id": "stadtleben",
+      "title": "STADTLEBEN",
+      "topics": [
+        {
+          "id": "gebaeude_und_orte",
+          "title": "Gebäude und Orte",
+          "words": [
+            {
+              "german": "die Stadt, -̈e",
+              "arabic": "المدينة",
+              "english": "city, town",
+              "example": "Berlin ist eine große Stadt."
+            },
+            {
+              "german": "das Zentrum",
+              "arabic": "مركز المدينة",
+              "english": "center, downtown",
+              "example": "Wir treffen uns im Zentrum."
+            },
+            {
+              "german": "das Rathaus, -̈er",
+              "arabic": "مبنى البلدية",
+              "english": "city hall, town hall",
+              "example": "Das Rathaus ist auf dem Marktplatz."
+            },
+            {
+              "german": "die Post",
+              "arabic": "البريد",
+              "english": "post office",
+              "example": "Ich muss ein Paket zur Post bringen."
+            },
+            {
+              "german": "die Bank, -en",
+              "arabic": "البنك",
+              "english": "bank",
+              "example": "Ich hole Geld von der Bank."
+            },
+            {
+              "german": "die Apotheke, -n",
+              "arabic": "الصيدلية",
+              "english": "pharmacy",
+              "example": "Ich kaufe Medizin in der Apotheke."
+            },
+            {
+              "german": "das Krankenhaus, -̈er",
+              "arabic": "المستشفى",
+              "english": "hospital",
+              "example": "Der Krankenwagen fährt ins Krankenhaus."
+            },
+            {
+              "german": "die Polizei",
+              "arabic": "الشرطة",
+              "english": "police",
+              "example": "Rufen Sie die Polizei!"
+            }
+          ]
+        },
+        {
+          "id": "einkaufen",
+          "title": "Einkaufen",
+          "words": [
+            {
+              "german": "das Geschäft, -e",
+              "arabic": "المتجر / المحل",
+              "english": "shop, store",
+              "example": "Das Geschäft öffnet um 9 Uhr."
+            },
+            {
+              "german": "der Supermarkt, -̈e",
+              "arabic": "السوبر ماركت",
+              "english": "supermarket",
+              "example": "Ich kaufe Lebensmittel im Supermarkt."
+            },
+            {
+              "german": "die Bäckerei, -en",
+              "arabic": "المخبز",
+              "english": "bakery",
+              "example": "Ich kaufe morgens frische Brötchen in der Bäckerei."
+            },
+            {
+              "german": "der Markt, -̈e",
+              "arabic": "السوق",
+              "english": "market",
+              "example": "Am Samstag gehe ich auf den Markt."
+            },
+            {
+              "german": "das Geld",
+              "arabic": "النقود",
+              "english": "money",
+              "example": "Ich habe nicht genug Geld dabei."
+            },
+            {
+              "german": "teuer",
+              "arabic": "غالٍ",
+              "english": "expensive",
+              "example": "Dieses Auto ist sehr teuer."
+            },
+            {
+              "german": "billig / günstig",
+              "arabic": "رخيص / مناسب السعر",
+              "english": "cheap / reasonable",
+              "example": "Die Äpfel sind heute billig."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

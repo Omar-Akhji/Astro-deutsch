@@ -1,0 +1,15 @@
+{
+  "id": "freund",
+  "label": "Freundschaft",
+  "cat": "gesellschaft",
+  "pro": [
+    "Freunde unterstützen uns in schwierigen Zeiten.",
+    "Freundschaft macht das Leben glücklicher und weniger einsam.",
+    "Man kann mit Freunden Hobbys teilen und Spaß haben."
+  ],
+  "con": [
+    "Freundschaften brauchen viel Zeit und Pflege.",
+    "Es kann zu Enttäuschungen oder Streit kommen.",
+    "Manchmal ist es schwierig, echte Freunde zu finden."
+  ]
+}

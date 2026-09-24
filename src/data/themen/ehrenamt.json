@@ -1,0 +1,16 @@
+{
+  "id": "ehrenamt",
+  "label": "Freiwillige / Ehrenamtliche Arbeit",
+  "cat": "gesellschaft",
+  "pro": [
+    "Man kann Menschen aus aller Welt helfen – das ist ein gutes Gefühl.",
+    "Es ist eine Chance, neue Kulturen und Lebensstile kennenzulernen.",
+    "Man entdeckt eigene Fähigkeiten und Stärken.",
+    "Freiwillige Arbeit verbessert den Lebenslauf."
+  ],
+  "con": [
+    "Freiwillige Arbeit ist unbezahlt – man verliert Zeit für bezahlte Arbeit.",
+    "Oft werden Freiwillige ausgenutzt.",
+    "Nicht jeder hat die Zeit oder die Möglichkeit, freiwillig zu arbeiten."
+  ]
+}

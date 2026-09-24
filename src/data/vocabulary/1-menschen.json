@@ -1,0 +1,1514 @@
+{
+  "id": 1,
+  "german": "MENSCHEN",
+  "category": "Kapitel 1",
+  "description": "Wichtige Wörter und Ausdrücke rund um das Thema Menschen und Persönlichkeit.",
+  "sections": [
+    {
+      "id": "familie",
+      "title": "DIE FAMILIE",
+      "topics": [
+        {
+          "id": "stammbaum",
+          "title": "Der Stammbaum",
+          "familyTree": [
+            {
+              "id": "gm1",
+              "german": "die Großmutter",
+              "arabic": "الجدة",
+              "gender": "female",
+              "relation": "grandparent",
+              "level": 1,
+              "partnerId": "gv1"
+            },
+            {
+              "id": "gv1",
+              "german": "der Großvater",
+              "arabic": "الجد",
+              "gender": "male",
+              "relation": "grandparent",
+              "level": 1,
+              "partnerId": "gm1"
+            },
+            {
+              "id": "m",
+              "german": "die Mutter",
+              "arabic": "الأم",
+              "gender": "female",
+              "relation": "parent",
+              "level": 2,
+              "partnerId": "v"
+            },
+            {
+              "id": "v",
+              "german": "der Vater",
+              "arabic": "الأب",
+              "gender": "male",
+              "relation": "parent",
+              "level": 2,
+              "partnerId": "m"
+            },
+            {
+              "id": "tante",
+              "german": "die Tante",
+              "arabic": "العمة / الخالة",
+              "gender": "female",
+              "relation": "relative",
+              "level": 2,
+              "partnerId": "onkel"
+            },
+            {
+              "id": "onkel",
+              "german": "der Onkel",
+              "arabic": "العم / الخال",
+              "gender": "male",
+              "relation": "relative",
+              "level": 2,
+              "partnerId": "tante"
+            },
+            {
+              "id": "ich",
+              "german": "der Sohn",
+              "arabic": "الابن",
+              "gender": "male",
+              "relation": "self",
+              "level": 3
+            },
+            {
+              "id": "bruder",
+              "german": "der Bruder",
+              "arabic": "الأخ",
+              "gender": "male",
+              "relation": "sibling",
+              "level": 3
+            },
+            {
+              "id": "schwester",
+              "german": "die Schwester",
+              "arabic": "الأخت",
+              "gender": "female",
+              "relation": "sibling",
+              "level": 3
+            },
+            {
+              "id": "schwiegersohn",
+              "german": "der Schwiegersohn",
+              "arabic": "زوج الابنة",
+              "gender": "male",
+              "relation": "in-law",
+              "level": 3
+            },
+            {
+              "id": "schwiegertochter",
+              "german": "die Schwiegertochter",
+              "arabic": "زوجة الابن",
+              "gender": "female",
+              "relation": "in-law",
+              "level": 3
+            },
+            {
+              "id": "schwager",
+              "german": "der Schwager",
+              "arabic": "أخو الزوج/الزوجة",
+              "gender": "male",
+              "relation": "in-law",
+              "level": 3
+            },
+            {
+              "id": "schwaegerin",
+              "german": "die Schwägerin",
+              "arabic": "أخت الزوج/الزوجة",
+              "gender": "female",
+              "relation": "in-law",
+              "level": 3
+            },
+            {
+              "id": "cousin",
+              "german": "der Cousin",
+              "arabic": "ابن العم/الخال",
+              "gender": "male",
+              "relation": "cousin",
+              "level": 3
+            },
+            {
+              "id": "cousine",
+              "german": "die Cousine",
+              "arabic": "بنت العم/الخال",
+              "gender": "female",
+              "relation": "cousin",
+              "level": 3
+            },
+            {
+              "id": "enkel",
+              "german": "der Enkel",
+              "arabic": "الحفيد",
+              "gender": "male",
+              "relation": "grandchild",
+              "level": 4
+            },
+            {
+              "id": "enkelin",
+              "german": "die Enkelin",
+              "arabic": "الحفيدة",
+              "gender": "female",
+              "relation": "grandchild",
+              "level": 4
+            }
+          ],
+          "words": [
+            {
+              "german": "der/die Verwandte",
+              "english": "relative",
+              "arabic": "القريب / القريبة",
+              "example": "Meine Verwandten wohnen in Berlin."
+            },
+            {
+              "german": "die Großeltern",
+              "english": "grandparents",
+              "arabic": "الأجداد",
+              "example": "Meine Großeltern sind 80 Jahre alt."
+            },
+            {
+              "german": "die Eltern",
+              "english": "parents",
+              "arabic": "الوالدان",
+              "example": "Meine Eltern kommen aus München."
+            },
+            {
+              "german": "das Ehepaar",
+              "english": "married couple",
+              "arabic": "الزوجان",
+              "example": "Das Ehepaar hat zwei Kinder."
+            },
+            {
+              "german": "der Vorfahre",
+              "english": "ancestor",
+              "arabic": "السلف / الجد",
+              "example": "Unsere Vorfahren kamen aus Ägypten."
+            },
+            {
+              "german": "ledig",
+              "english": "single",
+              "arabic": "أعزب / عزباء",
+              "example": "Er ist noch ledig."
+            },
+            {
+              "german": "verheiratet",
+              "english": "married",
+              "arabic": "متزوج / متزوجة",
+              "example": "Wir sind seit fünf Jahren verheiratet."
+            },
+            {
+              "german": "geschieden",
+              "english": "divorced",
+              "arabic": "مطلق / مطلقة",
+              "example": "Sie sind seit letztem Jahr geschieden."
+            },
+            {
+              "german": "verlobt",
+              "english": "engaged",
+              "arabic": "مخطوب / مخطوبة",
+              "example": "Das Paar ist frisch verlobt."
+            },
+            {
+              "german": "verwitwet",
+              "english": "widowed",
+              "arabic": "أرمل / أرملة",
+              "example": "Mein Nachbar ist seit kurzem verwitwet."
+            },
+            {
+              "german": "verwandt",
+              "english": "related",
+              "arabic": "قريب / ذو قرابة",
+              "example": "Sind Sie mit ihm verwandt?"
+            }
+          ]
+        },
+        {
+          "id": "beziehungen",
+          "title": "BEZIEHUNGEN",
+          "words": [
+            {
+              "german": "die Beziehung",
+              "english": "relationship",
+              "arabic": "العلاقة",
+              "example": "Sie haben eine gute Beziehung."
+            },
+            {
+              "german": "die Freundschaft",
+              "english": "friendship",
+              "arabic": "الصداقة",
+              "example": "Unsere Freundschaft ist sehr wichtig."
+            },
+            {
+              "german": "die Liebe",
+              "english": "love",
+              "arabic": "الحب",
+              "example": "Die Liebe ist das Wichtigste im Leben."
+            },
+            {
+              "german": "der Partner / die Partnerin",
+              "english": "partner",
+              "arabic": "الشريك / الشريكة",
+              "example": "Mein Partner kommt aus Österreich."
+            },
+            {
+              "german": "sich verlieben",
+              "english": "to fall in love",
+              "arabic": "يقع في الحب",
+              "example": "Er hat sich sofort in sie verliebt."
+            },
+            {
+              "german": "sich verstehen",
+              "english": "to get along",
+              "arabic": "يتفاهم",
+              "example": "Wir verstehen uns sehr gut."
+            },
+            {
+              "german": "vertrauen",
+              "english": "to trust",
+              "arabic": "يثق",
+              "example": "Ich vertraue meinem besten Freund."
+            },
+            {
+              "german": "der Streit",
+              "english": "argument, fight",
+              "arabic": "الخلاف / الشجار",
+              "example": "Nach dem Streit haben sie sich versöhnt."
+            },
+            {
+              "german": "der Kumpel",
+              "english": "buddy, pal",
+              "arabic": "الصاحب / الرفيق",
+              "example": "Er ist mein bester Kumpel."
+            },
+            {
+              "german": "der/die Bekannte",
+              "english": "acquaintance",
+              "arabic": "المعارف",
+              "example": "Sie ist eine Bekannte von mir."
+            },
+            {
+              "german": "zusammenziehen",
+              "english": "to move in together",
+              "arabic": "ينتقل للعيش معاً",
+              "example": "Nächsten Monat ziehen wir zusammen."
+            },
+            {
+              "german": "die Zuneigung",
+              "english": "affection",
+              "arabic": "المودة / العاطفة",
+              "example": "Er zeigt seine Zuneigung selten."
+            }
+          ]
+        },
+        {
+          "id": "lebensphasen",
+          "title": "Familie und Lebensphasen",
+          "words": [
+            {
+              "german": "das Baby",
+              "english": "baby",
+              "arabic": "الرضيع",
+              "example": "Das Baby schläft den ganzen Tag."
+            },
+            {
+              "german": "der Säugling",
+              "english": "infant",
+              "arabic": "الرضيع (حديث الولادة)",
+              "example": "Der Säugling braucht viel Pflege."
+            },
+            {
+              "german": "das Kind",
+              "english": "child",
+              "arabic": "الطفل",
+              "example": "Das Kind spielt im Garten."
+            },
+            {
+              "german": "der Jugendliche / die Jugendliche",
+              "english": "teenager",
+              "arabic": "المراهق / المراهقة",
+              "example": "Die Jugendlichen treffen sich im Park."
+            },
+            {
+              "german": "der Erwachsene / die Erwachsene",
+              "english": "adult",
+              "arabic": "البالغ / البالغة",
+              "example": "Als Erwachsener hat man mehr Verantwortung."
+            },
+            {
+              "german": "die Geburt",
+              "english": "birth",
+              "arabic": "الولادة",
+              "example": "Die Geburt war am 3. März."
+            },
+            {
+              "german": "die Kindheit",
+              "english": "childhood",
+              "arabic": "الطفولة",
+              "example": "Meine Kindheit war sehr schön."
+            },
+            {
+              "german": "die Jugend",
+              "english": "youth",
+              "arabic": "الشباب / المراهقة",
+              "example": "In meiner Jugend habe ich viel Sport gemacht."
+            },
+            {
+              "german": "die Pubertät",
+              "english": "puberty",
+              "arabic": "البلوغ",
+              "example": "Die Pubertät beginnt mit 12 oder 13 Jahren."
+            },
+            {
+              "german": "das Alter",
+              "english": "old age",
+              "arabic": "الشيخوخة",
+              "example": "Im Alter braucht man mehr Ruhe."
+            },
+            {
+              "german": "die Schwangerschaft",
+              "english": "pregnancy",
+              "arabic": "الحمل",
+              "example": "Die Schwangerschaft dauert neun Monate."
+            },
+            {
+              "german": "die Rente",
+              "english": "retirement, pension",
+              "arabic": "التقاعد / المعاش",
+              "example": "Mein Opa ist seit zwei Jahren in Rente."
+            }
+          ]
+        },
+        {
+          "id": "begruessen",
+          "title": "Begrüßen und verabschieden",
+          "words": [
+            {
+              "german": "Hallo!",
+              "english": "Hello!",
+              "arabic": "مرحبا!",
+              "example": "Hallo, wie geht es dir?"
+            },
+            {
+              "german": "Guten Morgen!",
+              "english": "Good morning!",
+              "arabic": "صباح الخير!",
+              "example": "Guten Morgen, Frau Müller!"
+            },
+            {
+              "german": "Guten Tag!",
+              "english": "Good day!",
+              "arabic": "نهارك سعيد!",
+              "example": "Guten Tag, kann ich Ihnen helfen?"
+            },
+            {
+              "german": "Guten Abend!",
+              "english": "Good evening!",
+              "arabic": "مساء الخير!",
+              "example": "Guten Abend, willkommen im Restaurant."
+            },
+            {
+              "german": "Auf Wiedersehen!",
+              "english": "Goodbye!",
+              "arabic": "مع السلامة!",
+              "example": "Auf Wiedersehen, bis nächste Woche!"
+            },
+            {
+              "german": "Tschüss!",
+              "english": "Bye!",
+              "arabic": "باي! / إلى اللقاء!",
+              "example": "Tschüss, wir sehen uns morgen!"
+            },
+            {
+              "german": "Wie geht es Ihnen?",
+              "english": "How are you? (formal)",
+              "arabic": "كيف حالكم؟ (رسمي)",
+              "example": "Guten Tag, wie geht es Ihnen?"
+            },
+            {
+              "german": "Wie geht's?",
+              "english": "How's it going? (informal)",
+              "arabic": "كيف الحال؟ (غير رسمي)",
+              "example": "Hey, wie geht's dir heute?"
+            },
+            {
+              "german": "Bis bald!",
+              "english": "See you soon!",
+              "arabic": "إلى اللقاء القريب!",
+              "example": "Bis bald, pass auf dich auf!"
+            },
+            {
+              "german": "Gute Nacht!",
+              "english": "Good night!",
+              "arabic": "تصبح على خير!",
+              "example": "Gute Nacht, schlaf gut!"
+            },
+            {
+              "german": "Freut mich!",
+              "english": "Nice to meet you!",
+              "arabic": "تشرفت بمعرفتك!",
+              "example": "Ich bin Anna. – Freut mich!"
+            },
+            {
+              "german": "Grüß Gott!",
+              "english": "Hello! (Southern German)",
+              "arabic": "مرحبا! (ألمانيا الجنوبية)",
+              "example": "Grüß Gott, Herr Doktor!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ereignisse",
+      "title": "EREIGNISSE IM LEBEN",
+      "topics": [
+        {
+          "id": "feste",
+          "title": "Feste",
+          "words": [
+            {
+              "german": "Weihnachten",
+              "english": "Christmas",
+              "arabic": "عيد الميلاد",
+              "example": "An Weihnachten besuchen wir die Familie."
+            },
+            {
+              "german": "Ostern",
+              "english": "Easter",
+              "arabic": "عيد الفصح",
+              "example": "Zu Ostern suchen die Kinder Eier."
+            },
+            {
+              "german": "Silvester",
+              "english": "New Year's Eve",
+              "arabic": "ليلة رأس السنة",
+              "example": "An Silvester gibt es ein Feuerwerk."
+            },
+            {
+              "german": "der Karneval / der Fasching",
+              "english": "Carnival",
+              "arabic": "الكرنفال",
+              "example": "Im Karneval tragen die Leute Kostüme."
+            },
+            {
+              "german": "die Hochzeit",
+              "english": "wedding",
+              "arabic": "حفل الزفاف",
+              "example": "Die Hochzeit war im Sommer."
+            },
+            {
+              "german": "der Geburtstag",
+              "english": "birthday",
+              "arabic": "عيد الميلاد (يوم الميلاد)",
+              "example": "Morgen feiere ich meinen Geburtstag."
+            },
+            {
+              "german": "die Feier",
+              "english": "celebration, party",
+              "arabic": "الاحتفال / الحفلة",
+              "example": "Die Feier war sehr schön."
+            },
+            {
+              "german": "der Feiertag",
+              "english": "public holiday",
+              "arabic": "العطلة الرسمية",
+              "example": "Am Feiertag haben die Geschäfte geschlossen."
+            },
+            {
+              "german": "das Oktoberfest",
+              "english": "Oktoberfest",
+              "arabic": "مهرجان أكتوبر",
+              "example": "Das Oktoberfest findet in München statt."
+            },
+            {
+              "german": "Herzlichen Glückwunsch!",
+              "english": "Congratulations!",
+              "arabic": "تهانينا!",
+              "example": "Herzlichen Glückwunsch zum Geburtstag!"
+            },
+            {
+              "german": "Frohe Weihnachten!",
+              "english": "Merry Christmas!",
+              "arabic": "عيد ميلاد مجيد!",
+              "example": "Frohe Weihnachten und ein gutes neues Jahr!"
+            },
+            {
+              "german": "die Tradition",
+              "english": "tradition",
+              "arabic": "التقليد",
+              "example": "Das ist eine alte deutsche Tradition."
+            }
+          ]
+        },
+        {
+          "id": "wendepunkte",
+          "title": "Wendepunkte",
+          "words": [
+            {
+              "german": "die Geburt",
+              "english": "birth",
+              "arabic": "الولادة",
+              "example": "Die Geburt eines Kindes verändert das Leben."
+            },
+            {
+              "german": "der Schulabschluss",
+              "english": "graduation (school)",
+              "arabic": "التخرج من المدرسة",
+              "example": "Nach dem Schulabschluss will er studieren."
+            },
+            {
+              "german": "die Ausbildung",
+              "english": "vocational training",
+              "arabic": "التدريب المهني",
+              "example": "Sie macht eine Ausbildung als Krankenschwester."
+            },
+            {
+              "german": "der Berufseinstieg",
+              "english": "start of career",
+              "arabic": "بداية الحياة المهنية",
+              "example": "Der Berufseinstieg war schwierig."
+            },
+            {
+              "german": "der Umzug",
+              "english": "moving (house)",
+              "arabic": "الانتقال",
+              "example": "Der Umzug nach Berlin war aufregend."
+            },
+            {
+              "german": "die Heirat",
+              "english": "marriage",
+              "arabic": "الزواج",
+              "example": "Nach der Heirat wohnten sie zusammen."
+            },
+            {
+              "german": "die Scheidung",
+              "english": "divorce",
+              "arabic": "الطلاق",
+              "example": "Die Scheidung war für alle schwer."
+            },
+            {
+              "german": "der Ruhestand",
+              "english": "retirement",
+              "arabic": "التقاعد",
+              "example": "Im Ruhestand reist er gerne."
+            },
+            {
+              "german": "der Neuanfang",
+              "english": "new beginning",
+              "arabic": "البداية الجديدة",
+              "example": "Der Umzug war ein Neuanfang für die Familie."
+            },
+            {
+              "german": "die Krise",
+              "english": "crisis",
+              "arabic": "الأزمة",
+              "example": "Die Krise hat uns stärker gemacht."
+            },
+            {
+              "german": "der Tod",
+              "english": "death",
+              "arabic": "الموت / الوفاة",
+              "example": "Der Tod seines Vaters war ein Schock."
+            },
+            {
+              "german": "die Beerdigung",
+              "english": "funeral",
+              "arabic": "الجنازة",
+              "example": "Viele Menschen kamen zur Beerdigung."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beschreiben",
+      "title": "MENSCHEN BESCHREIBEN",
+      "topics": [
+        {
+          "id": "gesicht",
+          "title": "Das Gesicht",
+          "words": [
+            {
+              "german": "das Auge, -n",
+              "english": "eye",
+              "arabic": "العين",
+              "example": "Sie hat blaue Augen."
+            },
+            {
+              "german": "die Nase, -n",
+              "english": "nose",
+              "arabic": "الأنف",
+              "example": "Er hat eine kleine Nase."
+            },
+            {
+              "german": "der Mund, -̈er",
+              "english": "mouth",
+              "arabic": "الفم",
+              "example": "Mach bitte den Mund auf!"
+            },
+            {
+              "german": "das Ohr, -en",
+              "english": "ear",
+              "arabic": "الأذن",
+              "example": "Er trägt Ohrringe in beiden Ohren."
+            },
+            {
+              "german": "die Stirn",
+              "english": "forehead",
+              "arabic": "الجبهة",
+              "example": "Er hat eine hohe Stirn."
+            },
+            {
+              "german": "das Kinn",
+              "english": "chin",
+              "arabic": "الذقن",
+              "example": "Er hat ein markantes Kinn."
+            },
+            {
+              "german": "die Wange, -n",
+              "english": "cheek",
+              "arabic": "الخد",
+              "example": "Das Baby hat rote Wangen."
+            },
+            {
+              "german": "die Lippe, -n",
+              "english": "lip",
+              "arabic": "الشفة",
+              "example": "Sie hat volle Lippen."
+            },
+            {
+              "german": "der Bart, -̈e",
+              "english": "beard",
+              "arabic": "اللحية",
+              "example": "Mein Vater trägt einen Bart."
+            },
+            {
+              "german": "die Augenbraue, -n",
+              "english": "eyebrow",
+              "arabic": "الحاجب",
+              "example": "Sie hat dunkle Augenbrauen."
+            },
+            {
+              "german": "die Sommersprossen (Pl.)",
+              "english": "freckles",
+              "arabic": "النمش",
+              "example": "Sie hat Sommersprossen auf der Nase."
+            },
+            {
+              "german": "die Falte, -n",
+              "english": "wrinkle",
+              "arabic": "التجعيدة",
+              "example": "Meine Oma hat viele Falten im Gesicht."
+            }
+          ]
+        },
+        {
+          "id": "haar",
+          "title": "Das Haar",
+          "words": [
+            {
+              "german": "blond",
+              "english": "blond",
+              "arabic": "أشقر",
+              "example": "Sie hat blonde Haare."
+            },
+            {
+              "german": "braun",
+              "english": "brown (hair)",
+              "arabic": "بني",
+              "example": "Er hat braune Haare."
+            },
+            {
+              "german": "schwarz",
+              "english": "black (hair)",
+              "arabic": "أسود",
+              "example": "Meine Haare sind schwarz."
+            },
+            {
+              "german": "rot",
+              "english": "red (hair)",
+              "arabic": "أحمر",
+              "example": "Sie hat rote Haare und grüne Augen."
+            },
+            {
+              "german": "grau",
+              "english": "grey (hair)",
+              "arabic": "رمادي / أشيب",
+              "example": "Sein Haar wird langsam grau."
+            },
+            {
+              "german": "glatt",
+              "english": "straight (hair)",
+              "arabic": "أملس / ناعم",
+              "example": "Sie hat lange, glatte Haare."
+            },
+            {
+              "german": "lockig",
+              "english": "curly",
+              "arabic": "مجعد",
+              "example": "Er hat lockige, dunkle Haare."
+            },
+            {
+              "german": "wellig",
+              "english": "wavy",
+              "arabic": "مموج",
+              "example": "Ihre Haare sind leicht wellig."
+            },
+            {
+              "german": "kurz",
+              "english": "short (hair)",
+              "arabic": "قصير",
+              "example": "Er trägt sein Haar kurz."
+            },
+            {
+              "german": "lang",
+              "english": "long (hair)",
+              "arabic": "طويل",
+              "example": "Sie hat langes, blondes Haar."
+            },
+            {
+              "german": "die Glatze",
+              "english": "bald head",
+              "arabic": "الصلع",
+              "example": "Mein Onkel hat eine Glatze."
+            },
+            {
+              "german": "die Frisur, -en",
+              "english": "hairstyle",
+              "arabic": "تسريحة الشعر",
+              "example": "Deine neue Frisur sieht toll aus!"
+            }
+          ]
+        },
+        {
+          "id": "aeusseres",
+          "title": "Die äußere Erscheinung",
+          "words": [
+            {
+              "german": "groß",
+              "english": "tall",
+              "arabic": "طويل القامة",
+              "example": "Er ist sehr groß, fast zwei Meter."
+            },
+            {
+              "german": "klein",
+              "english": "short (height)",
+              "arabic": "قصير القامة",
+              "example": "Sie ist klein, aber sehr stark."
+            },
+            {
+              "german": "schlank",
+              "english": "slim",
+              "arabic": "نحيف / رشيق",
+              "example": "Sie ist groß und schlank."
+            },
+            {
+              "german": "dick",
+              "english": "fat, overweight",
+              "arabic": "سمين",
+              "example": "Die Katze ist zu dick."
+            },
+            {
+              "german": "kräftig",
+              "english": "strong, sturdy",
+              "arabic": "قوي البنية",
+              "example": "Er ist groß und kräftig."
+            },
+            {
+              "german": "athletisch",
+              "english": "athletic",
+              "arabic": "رياضي البنية",
+              "example": "Der Sportler hat einen athletischen Körper."
+            },
+            {
+              "german": "hübsch",
+              "english": "pretty, handsome",
+              "arabic": "جميل / وسيم",
+              "example": "Sie ist ein hübsches Mädchen."
+            },
+            {
+              "german": "gutaussehend",
+              "english": "good-looking",
+              "arabic": "حسن المظهر",
+              "example": "Er ist ein gutaussehender Mann."
+            },
+            {
+              "german": "jung",
+              "english": "young",
+              "arabic": "شاب / صغير",
+              "example": "Sie sieht sehr jung aus."
+            },
+            {
+              "german": "alt",
+              "english": "old",
+              "arabic": "كبير في السن",
+              "example": "Wie alt bist du?"
+            },
+            {
+              "german": "mittleren Alters",
+              "english": "middle-aged",
+              "arabic": "في منتصف العمر",
+              "example": "Er ist ein Mann mittleren Alters."
+            },
+            {
+              "german": "eine Brille tragen",
+              "english": "to wear glasses",
+              "arabic": "يرتدي نظارة",
+              "example": "Mein Lehrer trägt eine Brille."
+            }
+          ]
+        },
+        {
+          "id": "gefuehle",
+          "title": "Gefühle und Persönlichkeit",
+          "words": [
+            {
+              "german": "glücklich",
+              "english": "happy",
+              "arabic": "سعيد",
+              "example": "Ich bin heute sehr glücklich."
+            },
+            {
+              "german": "traurig",
+              "english": "sad",
+              "arabic": "حزين",
+              "example": "Warum bist du so traurig?"
+            },
+            {
+              "german": "wütend",
+              "english": "angry, furious",
+              "arabic": "غاضب",
+              "example": "Er ist wütend auf seinen Bruder."
+            },
+            {
+              "german": "nervös",
+              "english": "nervous",
+              "arabic": "متوتر",
+              "example": "Vor der Prüfung bin ich immer nervös."
+            },
+            {
+              "german": "ängstlich",
+              "english": "anxious, scared",
+              "arabic": "خائف / قلق",
+              "example": "Das Kind ist ängstlich im Dunkeln."
+            },
+            {
+              "german": "stolz",
+              "english": "proud",
+              "arabic": "فخور",
+              "example": "Die Eltern sind stolz auf ihre Tochter."
+            },
+            {
+              "german": "freundlich",
+              "english": "friendly",
+              "arabic": "ودود",
+              "example": "Die Nachbarin ist sehr freundlich."
+            },
+            {
+              "german": "ehrlich",
+              "english": "honest",
+              "arabic": "صادق",
+              "example": "Sei bitte ehrlich mit mir!"
+            },
+            {
+              "german": "faul",
+              "english": "lazy",
+              "arabic": "كسول",
+              "example": "Er ist zu faul zum Aufräumen."
+            },
+            {
+              "german": "fleißig",
+              "english": "hardworking, diligent",
+              "arabic": "مجتهد",
+              "example": "Sie ist eine fleißige Schülerin."
+            },
+            {
+              "german": "schüchtern",
+              "english": "shy",
+              "arabic": "خجول",
+              "example": "Er ist ein bisschen schüchtern."
+            },
+            {
+              "german": "selbstbewusst",
+              "english": "self-confident",
+              "arabic": "واثق من نفسه",
+              "example": "Sie ist sehr selbstbewusst und offen."
+            },
+            {
+              "german": "geduldig",
+              "english": "patient",
+              "arabic": "صبور",
+              "example": "Ein Lehrer muss geduldig sein."
+            },
+            {
+              "german": "großzügig",
+              "english": "generous",
+              "arabic": "كريم / سخي",
+              "example": "Er ist sehr großzügig mit seinen Freunden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kleidung",
+      "title": "DIE KLEIDUNG",
+      "topics": [
+        {
+          "id": "babysachen",
+          "title": "Babysachen",
+          "words": [
+            {
+              "german": "der Strampler",
+              "english": "baby onesie, romper",
+              "arabic": "أفرول الأطفال",
+              "example": "Der Strampler ist weich und bequem."
+            },
+            {
+              "german": "das Lätzchen",
+              "english": "bib",
+              "arabic": "مريلة الأطفال",
+              "example": "Das Baby braucht ein Lätzchen beim Essen."
+            },
+            {
+              "german": "die Windel, -n",
+              "english": "diaper, nappy",
+              "arabic": "الحفاضة",
+              "example": "Die Windel muss gewechselt werden."
+            },
+            {
+              "german": "das Mützchen",
+              "english": "baby cap",
+              "arabic": "قبعة الرضيع",
+              "example": "Das Mützchen hält den Kopf warm."
+            },
+            {
+              "german": "die Söckchen (Pl.)",
+              "english": "baby socks",
+              "arabic": "جوارب الرضيع",
+              "example": "Die Söckchen sind so klein und süß!"
+            },
+            {
+              "german": "der Schlafsack",
+              "english": "baby sleeping bag",
+              "arabic": "كيس النوم",
+              "example": "Im Winter schläft das Baby im Schlafsack."
+            },
+            {
+              "german": "der Body",
+              "english": "baby bodysuit",
+              "arabic": "بودي الأطفال",
+              "example": "Der Body hat Druckknöpfe."
+            },
+            {
+              "german": "die Babyschuhe (Pl.)",
+              "english": "baby shoes",
+              "arabic": "أحذية الرضيع",
+              "example": "Die Babyschuhe sind wirklich winzig."
+            }
+          ]
+        },
+        {
+          "id": "unisex",
+          "title": "Unisex-Kleidung",
+          "words": [
+            {
+              "german": "das T-Shirt, -s",
+              "english": "T-shirt",
+              "arabic": "التيشيرت",
+              "example": "Im Sommer trage ich gerne T-Shirts."
+            },
+            {
+              "german": "die Jeans",
+              "english": "jeans",
+              "arabic": "الجينز",
+              "example": "Diese Jeans passt mir perfekt."
+            },
+            {
+              "german": "die Hose, -n",
+              "english": "pants, trousers",
+              "arabic": "البنطلون",
+              "example": "Die Hose ist zu lang."
+            },
+            {
+              "german": "der Pullover, -",
+              "english": "sweater, pullover",
+              "arabic": "السترة / البلوفر",
+              "example": "Zieh einen Pullover an, es ist kalt!"
+            },
+            {
+              "german": "die Jacke, -n",
+              "english": "jacket",
+              "arabic": "الجاكيت",
+              "example": "Vergiss deine Jacke nicht!"
+            },
+            {
+              "german": "der Mantel, -̈",
+              "english": "coat",
+              "arabic": "المعطف",
+              "example": "Im Winter brauche ich einen warmen Mantel."
+            },
+            {
+              "german": "der Hoodie, -s",
+              "english": "hoodie",
+              "arabic": "الهودي",
+              "example": "Er trägt immer einen schwarzen Hoodie."
+            },
+            {
+              "german": "die Socken (Pl.)",
+              "english": "socks",
+              "arabic": "الجوارب",
+              "example": "Ich brauche neue Socken."
+            },
+            {
+              "german": "die Unterwäsche",
+              "english": "underwear",
+              "arabic": "الملابس الداخلية",
+              "example": "Die Unterwäsche ist aus Baumwolle."
+            },
+            {
+              "german": "die kurze Hose",
+              "english": "shorts",
+              "arabic": "البنطلون القصير / الشورت",
+              "example": "Bei 30 Grad trage ich eine kurze Hose."
+            },
+            {
+              "german": "der Trainingsanzug",
+              "english": "tracksuit",
+              "arabic": "بدلة رياضية",
+              "example": "Zum Sport trage ich einen Trainingsanzug."
+            },
+            {
+              "german": "der Schlafanzug",
+              "english": "pajamas",
+              "arabic": "بيجاما",
+              "example": "Die Kinder haben schon den Schlafanzug an."
+            }
+          ]
+        },
+        {
+          "id": "herren",
+          "title": "Herrenkleidung",
+          "words": [
+            {
+              "german": "der Anzug, -̈e",
+              "english": "suit",
+              "arabic": "البدلة الرسمية",
+              "example": "Er trägt einen Anzug zur Arbeit."
+            },
+            {
+              "german": "das Hemd, -en",
+              "english": "shirt (dress shirt)",
+              "arabic": "القميص",
+              "example": "Das weiße Hemd passt zum Anzug."
+            },
+            {
+              "german": "die Krawatte, -n",
+              "english": "tie",
+              "arabic": "ربطة العنق",
+              "example": "Die Krawatte ist blau gestreift."
+            },
+            {
+              "german": "die Fliege, -n",
+              "english": "bow tie",
+              "arabic": "ربطة العنق الفراشة",
+              "example": "Zur Hochzeit trägt er eine Fliege."
+            },
+            {
+              "german": "die Weste, -n",
+              "english": "vest, waistcoat",
+              "arabic": "الصدرية",
+              "example": "Die Weste passt unter den Blazer."
+            },
+            {
+              "german": "der Blazer, -",
+              "english": "blazer",
+              "arabic": "البليزر",
+              "example": "Er kombiniert den Blazer mit Jeans."
+            },
+            {
+              "german": "das Unterhemd, -en",
+              "english": "undershirt",
+              "arabic": "الفانيلا الداخلية",
+              "example": "Im Winter trage ich ein Unterhemd."
+            },
+            {
+              "german": "die Badehose, -n",
+              "english": "swimming trunks",
+              "arabic": "مايوه السباحة (رجالي)",
+              "example": "Pack deine Badehose für den Urlaub ein!"
+            },
+            {
+              "german": "die Boxershorts (Pl.)",
+              "english": "boxer shorts",
+              "arabic": "بوكسر",
+              "example": "Er kauft neue Boxershorts."
+            },
+            {
+              "german": "der Bademantel, -̈",
+              "english": "bathrobe",
+              "arabic": "روب الحمام",
+              "example": "Nach dem Duschen zieht er den Bademantel an."
+            }
+          ]
+        },
+        {
+          "id": "damen",
+          "title": "Damenkleidung",
+          "words": [
+            {
+              "german": "das Kleid, -er",
+              "english": "dress",
+              "arabic": "الفستان",
+              "example": "Sie trägt ein rotes Kleid."
+            },
+            {
+              "german": "die Bluse, -n",
+              "english": "blouse",
+              "arabic": "البلوزة",
+              "example": "Die Bluse ist aus Seide."
+            },
+            {
+              "german": "der Rock, -̈e",
+              "english": "skirt",
+              "arabic": "التنورة",
+              "example": "Der Rock ist zu kurz."
+            },
+            {
+              "german": "die Strumpfhose, -n",
+              "english": "tights, pantyhose",
+              "arabic": "جوارب طويلة نسائية",
+              "example": "Im Winter trage ich eine Strumpfhose."
+            },
+            {
+              "german": "der BH (Büstenhalter)",
+              "english": "bra",
+              "arabic": "حمالة الصدر",
+              "example": "Sie kauft einen neuen BH."
+            },
+            {
+              "german": "das Abendkleid, -er",
+              "english": "evening gown",
+              "arabic": "فستان السهرة",
+              "example": "Das Abendkleid ist wunderschön."
+            },
+            {
+              "german": "die Leggings",
+              "english": "leggings",
+              "arabic": "اللقنز",
+              "example": "Leggings sind bequem für den Sport."
+            },
+            {
+              "german": "die Strickjacke, -n",
+              "english": "cardigan",
+              "arabic": "الكارديغان",
+              "example": "Die Strickjacke ist sehr gemütlich."
+            },
+            {
+              "german": "der Badeanzug, -̈e",
+              "english": "swimsuit",
+              "arabic": "مايوه السباحة (نسائي)",
+              "example": "Sie braucht einen neuen Badeanzug."
+            },
+            {
+              "german": "das Nachthemd, -en",
+              "english": "nightgown",
+              "arabic": "قميص النوم",
+              "example": "Das Nachthemd ist weich und bequem."
+            }
+          ]
+        },
+        {
+          "id": "accessoires",
+          "title": "Accessoires",
+          "words": [
+            {
+              "german": "der Gürtel, -",
+              "english": "belt",
+              "arabic": "الحزام",
+              "example": "Der Gürtel ist aus Leder."
+            },
+            {
+              "german": "der Schal, -s",
+              "english": "scarf",
+              "arabic": "الوشاح",
+              "example": "Im Winter trage ich einen warmen Schal."
+            },
+            {
+              "german": "der Hut, -̈e",
+              "english": "hat",
+              "arabic": "القبعة",
+              "example": "Sie trägt einen eleganten Hut."
+            },
+            {
+              "german": "die Mütze, -n",
+              "english": "cap, beanie",
+              "arabic": "القبعة الصوفية",
+              "example": "Setz deine Mütze auf, es ist kalt!"
+            },
+            {
+              "german": "die Handschuhe (Pl.)",
+              "english": "gloves",
+              "arabic": "القفازات",
+              "example": "Vergiss die Handschuhe nicht!"
+            },
+            {
+              "german": "die Halskette, -n",
+              "english": "necklace",
+              "arabic": "العقد / القلادة",
+              "example": "Die Halskette ist aus Gold."
+            },
+            {
+              "german": "der Ring, -e",
+              "english": "ring",
+              "arabic": "الخاتم",
+              "example": "Sie trägt einen silbernen Ring."
+            },
+            {
+              "german": "die Uhr, -en",
+              "english": "watch",
+              "arabic": "الساعة",
+              "example": "Die Uhr ist ein Geschenk."
+            },
+            {
+              "german": "die Sonnenbrille, -n",
+              "english": "sunglasses",
+              "arabic": "النظارة الشمسية",
+              "example": "Im Sommer brauche ich eine Sonnenbrille."
+            },
+            {
+              "german": "die Ohrringe (Pl.)",
+              "english": "earrings",
+              "arabic": "الأقراط",
+              "example": "Die Ohrringe passen zum Kleid."
+            }
+          ]
+        },
+        {
+          "id": "schuhe",
+          "title": "Schuhe und Lederwaren",
+          "words": [
+            {
+              "german": "die Schuhe (Pl.)",
+              "english": "shoes",
+              "arabic": "الأحذية",
+              "example": "Ich brauche neue Schuhe."
+            },
+            {
+              "german": "die Turnschuhe / die Sneakers",
+              "english": "sneakers, trainers",
+              "arabic": "حذاء رياضي",
+              "example": "Zum Sport trage ich Turnschuhe."
+            },
+            {
+              "german": "die Stiefel (Pl.)",
+              "english": "boots",
+              "arabic": "الأحذية الطويلة",
+              "example": "Im Winter trage ich warme Stiefel."
+            },
+            {
+              "german": "die Sandalen (Pl.)",
+              "english": "sandals",
+              "arabic": "الصنادل",
+              "example": "Im Sommer trage ich Sandalen."
+            },
+            {
+              "german": "die Hausschuhe (Pl.)",
+              "english": "slippers",
+              "arabic": "شبشب البيت",
+              "example": "Zu Hause trage ich bequeme Hausschuhe."
+            },
+            {
+              "german": "die hohen Absätze (Pl.)",
+              "english": "high heels",
+              "arabic": "الكعب العالي",
+              "example": "Sie kann nicht in hohen Absätzen laufen."
+            },
+            {
+              "german": "die Handtasche, -n",
+              "english": "handbag",
+              "arabic": "حقيبة اليد",
+              "example": "Die Handtasche ist aus echtem Leder."
+            },
+            {
+              "german": "die Geldbörse, -n",
+              "english": "wallet, purse",
+              "arabic": "المحفظة",
+              "example": "Meine Geldbörse ist im Rucksack."
+            },
+            {
+              "german": "der Rucksack, -̈e",
+              "english": "backpack",
+              "arabic": "حقيبة الظهر",
+              "example": "Ich nehme meinen Rucksack zur Uni."
+            },
+            {
+              "german": "der Koffer, -",
+              "english": "suitcase",
+              "arabic": "حقيبة السفر",
+              "example": "Der Koffer ist schon gepackt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "koerperpflege",
+      "title": "DIE KÖRPERPFLEGE",
+      "topics": [
+        {
+          "id": "pflege",
+          "title": "Körperpflege und Hygiene",
+          "words": [
+            {
+              "german": "die Seife, -n",
+              "english": "soap",
+              "arabic": "الصابون",
+              "example": "Wasch dir die Hände mit Seife!"
+            },
+            {
+              "german": "das Shampoo, -s",
+              "english": "shampoo",
+              "arabic": "الشامبو",
+              "example": "Dieses Shampoo riecht gut."
+            },
+            {
+              "german": "das Duschgel, -s",
+              "english": "shower gel",
+              "arabic": "جل الاستحمام",
+              "example": "Ich benutze Duschgel statt Seife."
+            },
+            {
+              "german": "die Zahnbürste, -n",
+              "english": "toothbrush",
+              "arabic": "فرشاة الأسنان",
+              "example": "Ich putze mir dreimal am Tag die Zähne mit der Zahnbürste."
+            },
+            {
+              "german": "die Zahnpasta",
+              "english": "toothpaste",
+              "arabic": "معجون الأسنان",
+              "example": "Die Zahnpasta schmeckt nach Minze."
+            },
+            {
+              "german": "das Deodorant, -s",
+              "english": "deodorant",
+              "arabic": "مزيل العرق",
+              "example": "Vergiss das Deodorant nicht!"
+            },
+            {
+              "german": "der Kamm, -̈e",
+              "english": "comb",
+              "arabic": "المشط",
+              "example": "Kämm dir bitte die Haare!"
+            },
+            {
+              "german": "der Föhn / der Haartrockner",
+              "english": "hair dryer",
+              "arabic": "مجفف الشعر",
+              "example": "Trockne deine Haare mit dem Föhn."
+            },
+            {
+              "german": "der Rasierer, -",
+              "english": "razor, shaver",
+              "arabic": "الشفرة / ماكينة الحلاقة",
+              "example": "Er rasiert sich jeden Morgen mit dem Rasierer."
+            },
+            {
+              "german": "das Handtuch, -̈er",
+              "english": "towel",
+              "arabic": "المنشفة",
+              "example": "Das Handtuch hängt im Badezimmer."
+            },
+            {
+              "german": "die Sonnencreme",
+              "english": "sunscreen",
+              "arabic": "واقي الشمس",
+              "example": "Im Sommer benutze ich Sonnencreme."
+            },
+            {
+              "german": "das Parfüm, -s",
+              "english": "perfume",
+              "arabic": "العطر",
+              "example": "Dieses Parfüm riecht sehr angenehm."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schminksachen",
+      "title": "DIE SCHMINKSACHEN",
+      "topics": [
+        {
+          "id": "makeup",
+          "title": "Make-up und Kosmetik",
+          "words": [
+            {
+              "german": "der Lippenstift, -e",
+              "english": "lipstick",
+              "arabic": "أحمر الشفاه",
+              "example": "Sie trägt einen roten Lippenstift."
+            },
+            {
+              "german": "die Wimperntusche / die Mascara",
+              "english": "mascara",
+              "arabic": "الماسكارا",
+              "example": "Die Wimperntusche macht die Augen größer."
+            },
+            {
+              "german": "der Lidschatten",
+              "english": "eyeshadow",
+              "arabic": "ظل العيون",
+              "example": "Sie benutzt einen blauen Lidschatten."
+            },
+            {
+              "german": "die Foundation / die Grundierung",
+              "english": "foundation",
+              "arabic": "كريم الأساس",
+              "example": "Die Foundation passt zu meiner Hautfarbe."
+            },
+            {
+              "german": "der Puder",
+              "english": "powder",
+              "arabic": "البودرة",
+              "example": "Der Puder mattiert die Haut."
+            },
+            {
+              "german": "der Eyeliner",
+              "english": "eyeliner",
+              "arabic": "الآيلاينر",
+              "example": "Sie zieht einen dünnen Eyeliner."
+            },
+            {
+              "german": "der Nagellack",
+              "english": "nail polish",
+              "arabic": "طلاء الأظافر",
+              "example": "Der rote Nagellack sieht toll aus."
+            },
+            {
+              "german": "das Rouge",
+              "english": "blush",
+              "arabic": "أحمر الخدود",
+              "example": "Das Rouge gibt dem Gesicht Farbe."
+            },
+            {
+              "german": "der Concealer",
+              "english": "concealer",
+              "arabic": "الكونسيلر",
+              "example": "Der Concealer verdeckt die Augenringe."
+            },
+            {
+              "german": "der Schminkpinsel, -",
+              "english": "makeup brush",
+              "arabic": "فرشاة المكياج",
+              "example": "Benutze einen sauberen Schminkpinsel."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

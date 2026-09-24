@@ -1,10 +1,10 @@
+import { PUBLIC_GA_MEASUREMENT_ID } from "astro:env/client";
+
 interface CustomGlobalScope {
   dataLayer?: unknown[];
 }
 
-const env = import.meta.env as Record<string, unknown>;
-const rawGaId = env["PUBLIC_GA_MEASUREMENT_ID"];
-const gaId = typeof rawGaId === "string" && rawGaId.length > 0 ? rawGaId : undefined;
+const gaId = PUBLIC_GA_MEASUREMENT_ID;
 
 if (gaId && globalThis.window !== undefined) {
   const script = document.createElement("script");
