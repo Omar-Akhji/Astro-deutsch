@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative flex w-full animate-fade-in items-center justify-center">
+  <div class="relative flex w-full min-w-0 animate-fade-in items-center justify-center">
     <!-- Decorative ambient glows using theme colors -->
     <div
       class="pointer-events-none absolute top-1/4 left-1/4 -z-10 size-72 animate-glow-slow rounded-full bg-yellow/10 blur-[120px]"
@@ -42,7 +42,7 @@ onMounted(() => {
     />
 
     <div
-      class="relative flex w-full animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
+      class="relative flex w-full min-w-0 animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
     >
       <!-- PANEL 1: Left navigation menu (desktop/tablet) -->
       <nav
@@ -192,7 +192,7 @@ onMounted(() => {
 
       <!-- PANEL 3: Active form -->
       <div
-        class="relative flex flex-1 flex-col justify-start px-5 py-6 mobile:px-6 mobile:py-7 tablet:p-8 laptop:p-10"
+        class="relative flex min-w-0 flex-1 flex-col justify-start px-4 py-6 mobile:px-6 mobile:py-7 tablet:p-8 laptop:p-10"
       >
         <!-- Mobile header (visible below tablet) -->
         <div class="mb-6 flex flex-col items-center text-center tablet:hidden">
@@ -244,7 +244,7 @@ onMounted(() => {
         </div>
 
         <!-- Form switcher -->
-        <div class="relative w-full">
+        <div class="relative w-full min-w-0">
           <!-- SIGN IN VIEW -->
           <div
             :class="
