@@ -40,7 +40,7 @@ const { blocks, usage, tips } = Astro.props;
         <div class="grid gap-3">
           {block.items.map((item) => (
             <div
-              class="rounded-e-xl border-s-[6px] border-yellow bg-white/5 p-4 text-white/90 backdrop-blur-sm transition-[transform,background-color] duration-200 hover:translate-x-1 hover:bg-white/8"
+              class="rounded-e-xl border-s-[6px] border-yellow bg-white/5 p-4 text-white/90 backdrop-blur-sm transition-[translate,background-color] duration-200 hover:translate-x-1 hover:bg-white/8"
               style="border-start-start-radius: 0; border-end-start-radius: 0"
             >
               <ContentItem content={item} />

@@ -183,7 +183,7 @@ const examSchema =
 
                       {(section.id.includes("sprechen") || section.id.includes("schreiben")) && (
                         <a
-                          class="group md:is-auto flex items-center justify-center gap-2 rounded-full bg-linear-to-r from-amber-400 to-orange-500 px-8 py-3.5 font-bold text-zinc-950 no-underline shadow-lg shadow-amber-500/20 transition-[transform,filter] inline-full hover:scale-[1.02] hover:brightness-110 active:scale-95 md:self-start"
+                          class="group md:is-auto flex items-center justify-center gap-2 rounded-full bg-linear-to-r from-amber-400 to-orange-500 px-8 py-3.5 font-bold text-zinc-950 no-underline shadow-lg shadow-amber-500/20 transition-[scale,filter] inline-full hover:scale-[1.02] hover:brightness-110 active:scale-95 md:self-start"
                           href={`/pruefung/${currentExam.id}/${section.id.split("-", 2)[1]}/`}
                         >
                           <MessageCircle

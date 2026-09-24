@@ -140,7 +140,7 @@ onUnmounted(() => {
         </button>
         <button
           type="button"
-          class="cursor-pointer rounded-full border-none bg-linear-to-br from-yellow to-orange px-8 py-3 font-semibold text-black shadow-xl shadow-yellow/20 transition-[transform,filter] hover:scale-105 hover:brightness-110"
+          class="cursor-pointer rounded-full border-none bg-linear-to-br from-yellow to-orange px-8 py-3 font-semibold text-black shadow-xl shadow-yellow/20 transition-[scale,filter] hover:scale-105 hover:brightness-110"
           @click="emit('restart')"
         >
           Nochmal

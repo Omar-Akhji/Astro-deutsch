@@ -50,7 +50,7 @@ const handleSignUp = async () => {
           <button
             type="button"
             :disabled="isPending"
-            class="cursor-pointer border-none bg-transparent p-0 font-bold text-orange transition-colors hover:text-yellow hover:underline focus:outline-none"
+            class="cursor-pointer border-none bg-transparent p-0 font-bold text-orange transition-colors hover:text-yellow hover:underline focus:outline-hidden"
             @click="emit('toggle-view', 'signin')"
           >
             Anmelden
@@ -84,7 +84,7 @@ const handleSignUp = async () => {
             autocomplete="email"
             placeholder="beispiel@domain.de"
             :disabled="isPending"
-            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm text-white placeholder-text-muted/50 transition-colors duration-300 hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-none"
+            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm text-white placeholder-text-muted/50 transition-colors duration-300 hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
           />
           <Mail
             class="pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 text-text-muted transition-colors duration-300 group-focus-within:text-orange"
@@ -111,14 +111,14 @@ const handleSignUp = async () => {
             minlength="8"
             placeholder="Mindestens 8 Zeichen"
             :disabled="isPending"
-            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/80 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-none"
+            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/80 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
           />
           <button
             type="button"
             tabindex="-1"
             :disabled="isPending"
             :aria-label="showPassword ? 'Passwort verbergen' : 'Passwort anzeigen'"
-            class="absolute top-1/2 right-3.5 -translate-y-1/2 cursor-pointer border-none bg-transparent p-0 text-text-muted transition-colors duration-300 hover:text-orange focus:outline-none"
+            class="absolute top-1/2 right-3.5 -translate-y-1/2 cursor-pointer border-none bg-transparent p-0 text-text-muted transition-colors duration-300 hover:text-orange focus:outline-hidden"
             @click="showPassword = !showPassword"
           >
             <EyeOff
@@ -152,7 +152,7 @@ const handleSignUp = async () => {
             minlength="8"
             placeholder="Passwort wiederholen"
             :disabled="isPending"
-            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-none"
+            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
           />
           <Lock
             class="pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 text-text-muted"
@@ -166,7 +166,7 @@ const handleSignUp = async () => {
       <button
         type="submit"
         :disabled="isPending"
-        class="h-11 w-full cursor-pointer rounded-xl bg-linear-to-r from-yellow to-orange text-sm font-extrabold tracking-widest text-black uppercase shadow-lg shadow-orange/10 transition-[transform,box-shadow,filter] duration-300 hover:-translate-y-0.5 hover:shadow-orange/25 hover:brightness-110 focus:ring-2 focus:ring-orange focus:outline-none active:scale-[0.98]"
+        class="h-11 w-full cursor-pointer rounded-xl bg-linear-to-r from-yellow to-orange text-sm font-extrabold tracking-widest text-black uppercase shadow-lg shadow-orange/10 transition-[translate,scale,box-shadow,filter] duration-300 hover:-translate-y-0.5 hover:shadow-orange/25 hover:brightness-110 focus:ring-2 focus:ring-orange focus:outline-hidden active:scale-[0.98]"
       >
         {{ isPending ? "Erstelle..." : "Registrieren" }}
       </button>

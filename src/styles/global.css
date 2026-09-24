@@ -206,27 +206,6 @@
   animation: fade-in 500ms ease forwards;
 }
 
-@utility btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-block: 0.5rem;
-  padding-inline: 1.5rem;
-  font-weight: 600;
-  color: #000;
-  cursor: pointer;
-  background: linear-gradient(to bottom right, var(--color-yellow), var(--color-orange));
-  border: none;
-  border-radius: 9999px;
-  box-shadow: 0 10px 15px -3px oklch(84% 0.18 90deg / 20%);
-  transition: all 200ms;
-
-  &:hover {
-    filter: brightness(1.1);
-    transform: scale(1.05);
-  }
-}
-
 @utility card-link {
   position: relative;
   background: oklch(18% 0.012 245deg / 75%);
@@ -273,15 +252,6 @@
   max-inline-size: 1200px;
   padding-inline: 0.5rem;
   margin-inline: auto;
-}
-
-.site-footer {
-  padding-block: 2rem;
-  padding-inline: 0;
-  margin-block-start: 4rem;
-  color: var(--color-text-muted);
-  text-align: center;
-  border-block-start: 1px solid var(--glass-border);
 }
 
 @theme inline {

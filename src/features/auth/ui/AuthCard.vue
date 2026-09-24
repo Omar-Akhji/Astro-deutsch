@@ -74,7 +74,7 @@ onMounted(() => {
                 :aria-pressed="view === 'signin'"
                 :class="
                   cn(
-                    'flex h-20 w-full cursor-pointer flex-col items-center justify-center gap-2 border-0 bg-transparent text-[11px] font-bold tracking-widest uppercase transition-colors duration-300 focus:outline-none disabled:cursor-not-allowed',
+                    'flex h-20 w-full cursor-pointer flex-col items-center justify-center gap-2 border-0 bg-transparent text-[11px] font-bold tracking-widest uppercase transition-colors duration-300 focus:outline-hidden disabled:cursor-not-allowed',
                     view === 'signin' ? 'text-orange' : 'text-text-muted hover:text-white',
                   )
                 "
@@ -91,7 +91,7 @@ onMounted(() => {
                 :aria-pressed="view === 'signup'"
                 :class="
                   cn(
-                    'flex h-20 w-full cursor-pointer flex-col items-center justify-center gap-2 border-0 bg-transparent text-[11px] font-bold tracking-widest uppercase transition-colors duration-300 focus:outline-none disabled:cursor-not-allowed',
+                    'flex h-20 w-full cursor-pointer flex-col items-center justify-center gap-2 border-0 bg-transparent text-[11px] font-bold tracking-widest uppercase transition-colors duration-300 focus:outline-hidden disabled:cursor-not-allowed',
                     view === 'signup' ? 'text-orange' : 'text-text-muted hover:text-white',
                   )
                 "
@@ -215,7 +215,7 @@ onMounted(() => {
               :disabled="isPending"
               :class="
                 cn(
-                  'flex-1 cursor-pointer rounded-full border-none py-2 text-xs font-bold transition-all duration-300 focus:outline-none disabled:opacity-60',
+                  'flex-1 cursor-pointer rounded-full border-none py-2 text-xs font-bold transition-all duration-300 focus:outline-hidden disabled:opacity-60',
                   view === 'signin' ?
                     'bg-linear-to-r from-yellow to-orange text-black shadow-xs'
                   : 'bg-transparent text-text-muted hover:text-white',
@@ -230,7 +230,7 @@ onMounted(() => {
               :disabled="isPending"
               :class="
                 cn(
-                  'flex-1 cursor-pointer rounded-full border-none py-2 text-xs font-bold transition-all duration-300 focus:outline-none disabled:opacity-60',
+                  'flex-1 cursor-pointer rounded-full border-none py-2 text-xs font-bold transition-all duration-300 focus:outline-hidden disabled:opacity-60',
                   view === 'signup' ?
                     'bg-linear-to-r from-yellow to-orange text-black shadow-xs'
                   : 'bg-transparent text-text-muted hover:text-white',

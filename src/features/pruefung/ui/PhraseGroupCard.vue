@@ -73,7 +73,7 @@ const processedPhrases = computed(() => {
     <!-- Header - Always Visible -->
     <button
       type="button"
-      class="flex w-full cursor-pointer items-center justify-between border-none bg-transparent px-6 py-4 text-left transition-colors select-none hover:bg-white/5 focus:outline-none focus-visible:bg-white/10"
+      class="flex w-full cursor-pointer items-center justify-between border-none bg-transparent px-6 py-4 text-left transition-colors select-none hover:bg-white/5 focus:outline-hidden focus-visible:bg-white/10"
       @click="isOpen = !isOpen"
       @keydown.enter.prevent="isOpen = !isOpen"
       @keydown.space.prevent="isOpen = !isOpen"

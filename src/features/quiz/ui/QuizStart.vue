@@ -77,7 +77,7 @@ const emit = defineEmits<{ (e: "start"): void }>();
     >
       <button
         type="button"
-        class="cursor-pointer rounded-full border-none bg-linear-to-r from-yellow to-orange px-8 py-4 text-lg font-bold text-black shadow-xl shadow-yellow/20 transition-[transform,filter] inline-full hover:scale-[1.02] hover:brightness-110"
+        class="cursor-pointer rounded-full border-none bg-linear-to-r from-yellow to-orange px-8 py-4 text-lg font-bold text-black shadow-xl shadow-yellow/20 transition-[scale,filter] inline-full hover:scale-[1.02] hover:brightness-110"
         @click="emit('start')"
       >
         Prüfung Starten
