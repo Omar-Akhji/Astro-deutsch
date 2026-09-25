@@ -35,11 +35,16 @@ onMounted(() => {
   <div class="relative flex w-full min-w-0 animate-fade-in items-center justify-center">
     <!-- Decorative ambient glows using theme colors -->
     <div
-      class="pointer-events-none absolute top-1/4 left-1/4 -z-10 size-72 animate-glow-slow rounded-full bg-yellow/10 blur-[120px]"
-    />
-    <div
-      class="pointer-events-none absolute right-1/4 bottom-1/4 -z-10 size-72 animate-glow-reverse rounded-full bg-orange/10 blur-[120px]"
-    />
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-0 overflow-hidden"
+    >
+      <div
+        class="absolute top-1/4 left-1/4 -z-10 size-72 animate-glow-slow rounded-full bg-yellow/10 blur-[120px]"
+      />
+      <div
+        class="absolute right-1/4 bottom-1/4 -z-10 size-72 animate-glow-reverse rounded-full bg-orange/10 blur-[120px]"
+      />
+    </div>
 
     <div
       class="relative flex w-full min-w-0 animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
