@@ -6,6 +6,7 @@ import nounsanitized from "eslint-plugin-no-unsanitized";
 import securityPlugin from "eslint-plugin-security";
 import unicorn from "eslint-plugin-unicorn";
 import eslintPluginVue from "eslint-plugin-vue";
+import eslintPluginVueAccessibility from "eslint-plugin-vuejs-accessibility";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
 import vueParser from "vue-eslint-parser";
@@ -43,10 +44,28 @@ const eslintConfig = defineConfig(
   },
 
   // ─── Recommended Flat Presets ─────────────────────────────────────────────
-  ...tsPlugin.configs["flat/recommended"],
+  ...tsPlugin.configs["flat/strict-type-checked"].map((config) => ({
+    ...config,
+    files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
+  })),
+  ...tsPlugin.configs["flat/stylistic-type-checked"].map((config) => ({
+    ...config,
+    files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
+  })),
   ...eslintPluginAstro.configs["flat/recommended"],
-  ...eslintPluginAstro.configs["flat/jsx-a11y-recommended"],
-  ...eslintPluginVue.configs["flat/recommended"],
+  ...eslintPluginAstro.configs["flat/jsx-a11y-strict"],
+  ...eslintPluginVue.configs["flat/recommended-error"],
+  ...eslintPluginVueAccessibility.configs["flat/recommended"],
+  {
+    name: "vue-accessibility-strict-overrides",
+    files: ["**/*.vue"],
+    rules: {
+      // Require an explicit label-to-control ID association, which is valid without nesting.
+      "vuejs-accessibility/label-has-for": ["error", { required: "id" }],
+      "vuejs-accessibility/no-aria-hidden-on-focusable": "error",
+      "vuejs-accessibility/no-role-presentation-on-focusable": "error",
+    },
+  },
   unicorn.configs.recommended,
   securityPlugin.configs.recommended,
   nounsanitized.configs.recommended,
@@ -111,7 +130,7 @@ const eslintConfig = defineConfig(
     files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
     languageOptions: {
       parser: tsParser,
-      parserOptions: { project: true, tsconfigRootDir: import.meta.dirname },
+      parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname },
     },
     plugins: { "@typescript-eslint": tsPlugin },
     rules: {
@@ -135,15 +154,14 @@ const eslintConfig = defineConfig(
       "@typescript-eslint/await-thenable": "error",
       "@typescript-eslint/no-unnecessary-type-assertion": "error",
       "@typescript-eslint/array-type": ["error", { default: "array" }],
-      "@typescript-eslint/no-non-null-assertion": "warn",
-      "@typescript-eslint/return-await": ["error", "in-try-catch"],
+      "@typescript-eslint/no-non-null-assertion": "error",
       "@typescript-eslint/prefer-promise-reject-errors": "error",
-      "@typescript-eslint/no-explicit-any": "warn",
-      "@typescript-eslint/no-unsafe-assignment": "warn",
-      "@typescript-eslint/no-unsafe-call": "warn",
-      "@typescript-eslint/no-unsafe-member-access": "warn",
-      "@typescript-eslint/no-unsafe-return": "warn",
-      "@typescript-eslint/no-unsafe-argument": "warn",
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-unsafe-assignment": "error",
+      "@typescript-eslint/no-unsafe-call": "error",
+      "@typescript-eslint/no-unsafe-member-access": "error",
+      "@typescript-eslint/no-unsafe-return": "error",
+      "@typescript-eslint/no-unsafe-argument": "error",
     },
   },
 
@@ -160,7 +178,7 @@ const eslintConfig = defineConfig(
       "vue/multi-word-component-names": "off",
       // Vue 3.5 supports reactive props destructuring natively
       "vue/no-setup-props-destructure": "off",
-      "vue/no-v-html": "warn",
+      "vue/no-v-html": "error",
       "vue/require-default-prop": "off",
     },
   },

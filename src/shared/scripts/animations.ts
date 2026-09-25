@@ -160,9 +160,7 @@ export function cleanupPageAnimations() {
     pageMatchMedia.revert();
     pageMatchMedia = null;
   }
-  if (ScrollTrigger !== undefined) {
-    for (const trigger of ScrollTrigger.getAll()) trigger.kill();
-  }
+  for (const trigger of ScrollTrigger.getAll()) trigger.kill();
 }
 
 // Lifecycle listeners for Astro View Transitions (ClientRouter)

@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "astro": "astro",
-    "build": "bun --bun astro build",
+    "build": "bun run lint && bun run check && bun --bun astro build",
     "check": "astro check && tsc --noEmit",
     "dev": "bun --bun astro dev",
     "format": "prettier --write .",
@@ -42,6 +42,7 @@
     "eslint-plugin-security": "^4.0.1",
     "eslint-plugin-unicorn": "^76.0.0",
     "eslint-plugin-vue": "^10.11.1",
+    "eslint-plugin-vuejs-accessibility": "^2.6.0",
     "globals": "^17.12.0",
     "prettier": "^3.9.9",
     "prettier-plugin-astro": "1.1.0",

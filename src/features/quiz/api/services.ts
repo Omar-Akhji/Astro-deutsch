@@ -9,7 +9,7 @@ export const getQuestions = async (
 ): Promise<ApiResponse<Question[]>> => {
   const normLevel = level.toLowerCase();
   const normSkill = skill.toLowerCase();
-  const entryId = `${normLevel}/${normSkill}/${testId}`;
+  const entryId = `${normLevel}/${normSkill}/${String(testId)}`;
 
   const entry = await getEntry("quiz", entryId);
   if (entry) {
@@ -27,6 +27,6 @@ export const getQuestions = async (
   return {
     data: found?.data.questions ?? [],
     success: Boolean(found),
-    message: found ? undefined : `Test not found for ${level}/${skill}/${testId}`,
+    message: found ? undefined : `Test not found for ${level}/${skill}/${String(testId)}`,
   };
 };

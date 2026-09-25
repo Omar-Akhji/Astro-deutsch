@@ -26,7 +26,7 @@ export async function getRedemittel(level: string): Promise<ApiResponse<Redemitt
   return { data, success: true };
 }
 
-export async function getModelTests(level: string): Promise<ApiResponse<number[]>> {
+export function getModelTests(level: string): ApiResponse<number[]> {
   const lvl = level.toLowerCase();
   const tests = lvl === "b1" ? [1, 2, 3, 4, 5, 6, 7, 8, 9] : [1];
   return { data: tests, success: true };

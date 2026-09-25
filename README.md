@@ -1,48 +1,38 @@
-# Astro Starter Kit: Basics
+# Elite Regewelt
+
+An Astro site for learning German vocabulary, grammar, and exam skills. Pages are statically
+generated; Vue is used for interactive learning features.
+
+## Requirements
+
+- Bun 1.x
+- Node.js 24.x
+
+## Local development
 
 ```sh
-bun create astro@latest -- --template basics
+bun install
+bun run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+`bun run build` runs ESLint, Astro and TypeScript checks, then creates the production site in
+`dist/`. Use `bun run preview` to serve that build locally.
 
-## 🚀 Project Structure
+## Deploy to Vercel
 
-Inside of your Astro project, you'll see the following folders and files:
+Import the repository into Vercel and keep the project root at the repository root. The checked-in
+`vercel.json` selects Astro, installs from `bun.lock`, runs the verified build command, and serves
+`dist/`. All routes are prerendered, so this project does not need a Vercel adapter or server
+functions.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+`PUBLIC_GA_MEASUREMENT_ID` is optional. Set it in Vercel’s environment variables only if Google
+Analytics should be enabled; use the GA4 measurement ID, such as `G-ABC123XYZ`. The value is public
+and is embedded in the client build.
+
+## Checks
+
+```sh
+bun run lint
+bun run check
+bun run build
 ```
-
-To learn more about the folder structure of an Astro project, refer to
-[our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command               | Action                                           |
-| :-------------------- | :----------------------------------------------- |
-| `bun install`         | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our
-[Discord server](https://astro.build/chat).

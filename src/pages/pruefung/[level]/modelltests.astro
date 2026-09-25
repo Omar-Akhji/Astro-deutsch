@@ -13,7 +13,7 @@ if (!level) {
   throw new Error("Fehlender Prüfungs-Level-Parameter.");
 }
 
-const { data: modelTests } = await getModelTests(level);
+const { data: modelTests } = getModelTests(level);
 
 const pageTitle = `Modelltests ${level.toUpperCase()}: Goethe & ÖSD Prüfungssimulation | Elite Regewelt`;
 const pageDescription = `Offizielle Modelltests und Übungssätze für das Niveau ${level.toUpperCase()}. Trainiere Lesen, Hören, Schreiben und Sprechen unter realistischen Prüfungsbedingungen.`;

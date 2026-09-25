@@ -6,14 +6,15 @@ interface CustomGlobalScope {
 
 const gaId = PUBLIC_GA_MEASUREMENT_ID;
 
-if (gaId && globalThis.window !== undefined) {
+if (gaId && typeof window !== "undefined") {
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
   document.head.append(script);
 
   const globalScope = globalThis as typeof globalThis & CustomGlobalScope;
-  const dataLayer = (globalScope.dataLayer ||= []);
+  globalScope.dataLayer ??= [];
+  const dataLayer = globalScope.dataLayer;
   const gtag = (...args: unknown[]) => {
     dataLayer.push(args);
   };

@@ -33,9 +33,7 @@ export interface PhraseGroup {
   phrases: (string | PhraseGroup)[];
 }
 
-export interface RedemittelCategory {
-  [key: string]: PhraseGroup[];
-}
+export type RedemittelCategory = Record<string, PhraseGroup[]>;
 
 export interface RedemittelData {
   b1: RedemittelCategory;

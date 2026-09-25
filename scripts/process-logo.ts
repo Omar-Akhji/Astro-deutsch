@@ -8,10 +8,10 @@ async function processLogo(): Promise<void> {
 
   const image = sharp(inputPath);
   const metadata = await image.metadata();
-  const width = metadata.width ?? 2000;
-  const height = metadata.height ?? 2000;
+  const width = metadata.width;
+  const height = metadata.height;
 
-  console.info(`Original dimensions: ${width}x${height}`);
+  console.info("Original dimensions:", width, "x", height);
 
   const raw = await image.ensureAlpha().raw().toBuffer();
 

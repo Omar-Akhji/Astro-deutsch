@@ -157,8 +157,12 @@ const handleDemoLogin = async () => {
 
       <!-- Remember Me + Try Demo -->
       <div class="flex items-center justify-between pt-1">
-        <label class="flex cursor-pointer items-center gap-2 select-none">
+        <label
+          for="signin-remember"
+          class="flex cursor-pointer items-center gap-2 select-none"
+        >
           <input
+            id="signin-remember"
             v-model="formData.rememberMe"
             type="checkbox"
             :disabled="isPending"

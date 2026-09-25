@@ -2,7 +2,7 @@
  * Zero-latency German Text-To-Speech (TTS) using the Web Speech API. Provides clear, paced native
  * pronunciation for language learners.
  */
-export function speakGerman(text: string, rate: number = 0.9): boolean {
+export function speakGerman(text: string, rate = 0.9): boolean {
   if (typeof window === "undefined" || !("speechSynthesis" in globalThis)) {
     return false;
   }

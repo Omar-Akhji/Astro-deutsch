@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   site: "https://elite-regewelt.com",
+  output: "static",
   trailingSlash: "always",
   env: {
     schema: {
@@ -22,7 +23,6 @@ export default defineConfig({
       filter: (page) =>
         !page.includes("/404") && !page.endsWith("/login/") && !page.endsWith("/register/"),
       changefreq: ChangeFreqEnum.WEEKLY,
-      lastmod: new Date(),
       priority: 0.8,
       serialize(item) {
         const CORE_HUBS = [

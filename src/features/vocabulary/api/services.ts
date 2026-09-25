@@ -17,6 +17,6 @@ export async function getVocabById(
   return {
     data: item ? (item.data as unknown as VocabItem) : undefined,
     success: Boolean(item),
-    message: item ? undefined : `Vocabulary item with id ${id} not found`,
+    message: item ? undefined : `Vocabulary item with id ${String(id)} not found`,
   };
 }
