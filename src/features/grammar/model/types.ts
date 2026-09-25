@@ -1,46 +1,16 @@
-export interface GrammarSectionContent {
-  title: string;
-  items: (string | { text: string; highlight?: boolean })[];
-}
+import type { z } from "astro/zod";
+import type {
+  grammarCellSchema,
+  grammarCollectionSchema,
+  grammarSectionContentSchema,
+  grammarSubtopicSchema,
+  grammarTableDataSchema,
+  grammarTopicSchema,
+} from "./schema.ts";
 
-export interface GrammarTableData {
-  caption?: string;
-  headers: string[];
-  rows: (string | { text: string; highlight?: boolean })[][];
-}
-
-interface GrammarSubtopic {
-  id: string;
-  number: string;
-  title: string;
-  description: string;
-  hasTable?: boolean;
-  tableData?: GrammarTableData;
-  content?: GrammarSectionContent[];
-  usage?: { speaker: string; text: string }[];
-  tips?: string[];
-}
-
-export interface GrammarTopic {
-  id: string;
-  number: string;
-  category: string;
-  title: string;
-  description: string;
-  example?: string;
-  gradients?: string[];
-  hasTable?: boolean;
-  subtopics?: GrammarSubtopic[];
-  content?: GrammarSectionContent[];
-  tableData?: GrammarTableData;
-  usage?: { speaker: string; text: string }[];
-  tips?: string[];
-}
-
-export interface GrammarSection {
-  id: string;
-  title: string;
-  icon: string;
-  gradients: string[];
-  topics: GrammarTopic[];
-}
+export type GrammarCell = z.infer<typeof grammarCellSchema>;
+export type GrammarSectionContent = z.infer<typeof grammarSectionContentSchema>;
+export type GrammarTableData = z.infer<typeof grammarTableDataSchema>;
+export type GrammarSubtopic = z.infer<typeof grammarSubtopicSchema>;
+export type GrammarTopic = z.infer<typeof grammarTopicSchema>;
+export type GrammarSection = z.infer<typeof grammarCollectionSchema>;

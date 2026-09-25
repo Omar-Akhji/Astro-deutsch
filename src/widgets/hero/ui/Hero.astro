@@ -1,8 +1,9 @@
 ---
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import type { HeroProps, HeroStatItem } from "../model/types.ts";
 
-type RenderableComponent =
-  ((properties: Record<string, any>) => any) | (new (properties: Record<string, any>) => any);
+export type RenderableComponent =
+  AstroComponentFactory | ((properties: Record<string, unknown>) => unknown);
 
 export type StatItem = HeroStatItem<RenderableComponent>;
 export type Props = HeroProps<RenderableComponent>;

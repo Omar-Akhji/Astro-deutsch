@@ -1,11 +1,4 @@
-export interface Thema {
-  text?: string | undefined;
-  id: string;
-  label: string;
-  cat: string;
+import type { z } from "astro/zod";
+import type { themenCollectionSchema } from "./schema.ts";
 
-  pro?: string[] | undefined;
-  con?: string[] | undefined;
-  isTextOnly?: boolean | undefined;
-  sampleText?: string | undefined;
-}
+export type Thema = z.infer<typeof themenCollectionSchema>;

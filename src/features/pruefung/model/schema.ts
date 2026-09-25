@@ -1,6 +1,6 @@
 import { z } from "astro/zod";
 
-const examPartSubSchema = z.object({
+export const examPartSubSchema = z.object({
   name: z.string(),
   taskType: z.string(),
   items: z.number(),
@@ -9,7 +9,7 @@ const examPartSubSchema = z.object({
   checklist: z.array(z.string()).optional(),
 });
 
-const examPartSchema = z.object({
+export const examPartSchema = z.object({
   id: z.string(),
   title: z.string(),
   duration: z.string(),
@@ -31,16 +31,13 @@ export const examCollectionSchema = z.object({
 });
 
 /** Recursive phrase group: a group can contain strings or nested groups */
-const basePhraseGroupSchema = z.object({
-  label: z.string(),
-  badge: z.string().optional(),
-});
+const basePhraseGroupSchema = z.object({ label: z.string(), badge: z.string().optional() });
 
 type PhraseGroupInput = z.infer<typeof basePhraseGroupSchema> & {
   phrases: (string | PhraseGroupInput)[];
 };
 
-const phraseGroupSchema: z.ZodType<PhraseGroupInput> = basePhraseGroupSchema.extend({
+export const phraseGroupSchema: z.ZodType<PhraseGroupInput> = basePhraseGroupSchema.extend({
   phrases: z.lazy(() => z.array(z.union([z.string(), phraseGroupSchema]))),
 });
 

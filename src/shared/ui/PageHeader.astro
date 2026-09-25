@@ -1,11 +1,13 @@
 ---
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+
 type RenderableComponent =
-  ((properties: Record<string, any>) => any) | (new (properties: Record<string, any>) => any);
+  AstroComponentFactory | ((properties: Record<string, unknown>) => unknown);
 
 interface Props {
   icon: RenderableComponent;
   title: string;
-  subtitle?: string;
+  subtitle?: string | undefined;
 }
 
 const { icon: Icon, title, subtitle } = Astro.props;

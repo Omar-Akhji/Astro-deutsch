@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 
 export async function getExamLevels(): Promise<ApiResponse<ExamLevel[]>> {
   const entries = await getCollection("exams");
-  const data = entries.map((e) => e.data as unknown as ExamLevel);
+  const data = entries.map((e) => e.data);
   return { data, success: true };
 }
 
@@ -13,7 +13,7 @@ export async function getExamLevel(id: string): Promise<ApiResponse<ExamLevel | 
   const entry = entries.find((e) => e.data.id === id.toLowerCase());
 
   return {
-    data: entry ? (entry.data as unknown as ExamLevel) : undefined,
+    data: entry ? entry.data : undefined,
     success: Boolean(entry),
     message: entry ? undefined : "Exam level not found",
   };
@@ -22,7 +22,7 @@ export async function getExamLevel(id: string): Promise<ApiResponse<ExamLevel | 
 export async function getRedemittel(level: string): Promise<ApiResponse<RedemittelCategory>> {
   const entries = await getCollection("redemittel");
   const entry = entries.find((e) => e.data.level === level.toLowerCase());
-  const data = (entry?.data.categories ?? {}) as unknown as RedemittelCategory;
+  const data: RedemittelCategory = entry?.data.categories ?? {};
   return { data, success: true };
 }
 

@@ -1,8 +1,9 @@
 ---
+import type { GrammarCell } from "../model/types.ts";
 import FormattedText from "./FormattedText.astro";
 
 interface Props {
-  content: string | { text: string; highlight?: boolean };
+  content: GrammarCell;
 }
 
 const { content } = Astro.props;

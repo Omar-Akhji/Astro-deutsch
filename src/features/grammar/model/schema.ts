@@ -1,25 +1,25 @@
 import { z } from "astro/zod";
 
-const grammarCellSchema = z.union([
+export const grammarCellSchema = z.union([
   z.string(),
   z.object({ text: z.string(), highlight: z.boolean().optional() }),
 ]);
 
-const grammarTableRowSchema = z.array(grammarCellSchema);
-const grammarUsageSchema = z.object({ speaker: z.string(), text: z.string() });
+export const grammarTableRowSchema = z.array(grammarCellSchema);
+export const grammarUsageSchema = z.object({ speaker: z.string(), text: z.string() });
 
-const grammarSectionContentSchema = z.object({
+export const grammarSectionContentSchema = z.object({
   title: z.string(),
   items: z.array(grammarCellSchema),
 });
 
-const grammarTableDataSchema = z.object({
+export const grammarTableDataSchema = z.object({
   caption: z.string().optional(),
   headers: z.array(z.string()),
   rows: z.array(grammarTableRowSchema),
 });
 
-const grammarSubtopicSchema = z.object({
+export const grammarSubtopicSchema = z.object({
   id: z.string(),
   number: z.string(),
   title: z.string(),
@@ -31,7 +31,7 @@ const grammarSubtopicSchema = z.object({
   tips: z.array(z.string()).optional(),
 });
 
-const grammarTopicSchema = z.object({
+export const grammarTopicSchema = z.object({
   id: z.string(),
   number: z.string(),
   category: z.string(),

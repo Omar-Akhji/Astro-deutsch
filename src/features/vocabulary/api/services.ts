@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 
 export async function getVocabList(): Promise<ApiResponse<VocabItem[]>> {
   const entries = await getCollection("vocabulary");
-  const data = entries.map((e) => e.data as unknown as VocabItem);
+  const data = entries.map((e) => e.data);
   return { data, success: true };
 }
 
@@ -15,7 +15,7 @@ export async function getVocabById(
   const item = entries.find((e) => e.data.id === Number(id));
 
   return {
-    data: item ? (item.data as unknown as VocabItem) : undefined,
+    data: item ? item.data : undefined,
     success: Boolean(item),
     message: item ? undefined : `Vocabulary item with id ${String(id)} not found`,
   };

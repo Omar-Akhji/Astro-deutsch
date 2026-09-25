@@ -1,41 +1,15 @@
-interface ExamPart {
-  id: string;
-  title: string;
-  duration: string;
-  points: number;
-  description: string;
-  tips: string[];
-  parts: {
-    name: string;
-    taskType: string;
-    items: number;
-    points: number;
-    description?: string;
-    checklist?: string[];
-  }[];
-}
+import type { z } from "astro/zod";
+import type {
+  examCollectionSchema,
+  examPartSchema,
+  examPartSubSchema,
+  phraseGroupSchema,
+  redemittelCollectionSchema,
+} from "./schema.ts";
 
-export interface ExamLevel {
-  id: string;
-  level: string;
-  title: string;
-
-  category: string;
-  description: string;
-  totalDuration: string;
-  passingScore: string;
-  sections: ExamPart[];
-}
-
-export interface PhraseGroup {
-  label: string;
-  badge?: string;
-  phrases: (string | PhraseGroup)[];
-}
-
+export type ExamPartSub = z.infer<typeof examPartSubSchema>;
+export type ExamPart = z.infer<typeof examPartSchema>;
+export type ExamLevel = z.infer<typeof examCollectionSchema>;
+export type PhraseGroup = z.infer<typeof phraseGroupSchema>;
 export type RedemittelCategory = Record<string, PhraseGroup[]>;
-
-export interface RedemittelData {
-  b1: RedemittelCategory;
-  b2: RedemittelCategory;
-}
+export type RedemittelData = z.infer<typeof redemittelCollectionSchema>;

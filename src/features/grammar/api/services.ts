@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 
 export async function getGrammarSections(): Promise<ApiResponse<GrammarSection[]>> {
   const entries = await getCollection("grammar");
-  const data = entries.map((e) => e.data as unknown as GrammarSection);
+  const data = entries.map((e) => e.data);
   return { data, success: true };
 }
 
@@ -15,7 +15,7 @@ export async function getGrammarSection(
   const entry = entries.find((e) => e.data.id === sectionId);
 
   return {
-    data: entry ? (entry.data as unknown as GrammarSection) : undefined,
+    data: entry ? entry.data : undefined,
     success: Boolean(entry),
     message: entry ? undefined : `Grammar section ${sectionId} not found`,
   };
