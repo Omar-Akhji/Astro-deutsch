@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "astro": "astro",
-    "build": "bun run lint && bun run check && bun --bun astro build",
+    "build": "bun run astro sync && bun run lint && bun run check && bun --bun astro build",
     "check": "astro check && tsc --noEmit",
     "dev": "bun --bun astro dev",
     "format": "prettier --write .",
