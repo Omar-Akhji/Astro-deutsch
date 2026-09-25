@@ -8,6 +8,7 @@ export default defineConfig({
   site: "https://elite-regewelt.com",
   output: "static",
   trailingSlash: "always",
+  build: { inlineStylesheets: "always" },
   env: {
     schema: {
       PUBLIC_GA_MEASUREMENT_ID: envField.string({
