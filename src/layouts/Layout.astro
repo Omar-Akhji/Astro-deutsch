@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import SpeedInsights from "@vercel/speed-insights/astro";
 import TransitionSkeletons from "./components/TransitionSkeletons.astro";
 import { Footer, FooterSkeleton } from "@/widgets/footer";
 import { Navigation } from "@/widgets/navigation";
@@ -316,5 +317,6 @@ const schemaJson = {
     </div>
     <script src="@/shared/scripts/transitions.ts"></script>
     <script src="@/shared/scripts/animations.ts"></script>
+    <SpeedInsights />
   </body>
 </html>
