@@ -12,6 +12,7 @@ interface Props {
   icon?: string | undefined;
   stats?: Array<{ label: string; value: string }> | undefined;
   variant?: "default" | "large" | undefined;
+  headingLevel?: "h2" | "h3" | undefined;
 }
 
 const {
@@ -25,8 +26,10 @@ const {
   icon,
   stats,
   variant = "default",
+  headingLevel = "h2",
 } = Astro.props;
 
+const HeadingTag = headingLevel;
 const iconText = icon ?? getFirstLetter(title);
 ---
 
@@ -75,7 +78,7 @@ const iconText = icon ?? getFirstLetter(title);
           </div>
         )}
 
-        <h3
+        <HeadingTag
           class:list={[
             {
               "text-xl tablet:text-2xl": variant === "large",
@@ -85,7 +88,7 @@ const iconText = icon ?? getFirstLetter(title);
           ]}
         >
           {title}
-        </h3>
+        </HeadingTag>
         {description && (
           <p class="m-0 mbe-4 text-xs leading-relaxed text-mist-500 tablet:text-sm">
             {description}

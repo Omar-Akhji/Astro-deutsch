@@ -36,25 +36,31 @@ const currentYear = new Date().getFullYear();
       <!-- Brand & Mission (Bigger Logo with Text Beside It) -->
       <div class="flex items-center gap-3.5 mobile:gap-4 tablet:gap-5 laptop:max-w-2xl">
         <a
-          aria-label="Elite Regewelt Startseite"
+          aria-label="Elite Regewelt - Zur Startseite"
           class="group shrink-0 transition-opacity hover:opacity-90"
           href="/"
         >
           <span class="flex size-16 items-center justify-center transition-transform duration-300 group-hover:scale-105 mobile:size-20 tablet:size-22">
-            <img
-              alt="Elite Regewelt"
-              class="size-full object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105"
-              height="88"
-              loading="lazy"
-              src="/logo.png"
-              width="88"
-            />
+            <picture>
+              <source
+                srcset="/logo.webp"
+                type="image/webp"
+              />
+              <img
+                alt="Elite Regewelt Logo"
+                class="size-full object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+                decoding="async"
+                height="88"
+                loading="lazy"
+                src="/logo.png"
+                width="88"
+              />
+            </picture>
           </span>
         </a>
 
         <div class="space-y-1">
           <a
-            aria-label="Elite Regewelt Startseite"
             class="group inline-block space-y-0.5 transition-opacity hover:opacity-90"
             href="/"
           >
@@ -62,7 +68,7 @@ const currentYear = new Date().getFullYear();
               Elite Regewelt
             </span>
             <span class="block text-xs font-semibold tracking-wide text-yellow/85">
-              Deutch Sprache Lernen
+              Deutsch Sprache Lernen
             </span>
           </a>
 

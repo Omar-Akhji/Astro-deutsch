@@ -22,6 +22,9 @@ const {
 
 const HeadingTag = headingLevel;
 const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
+const isPrimaryHero = headingLevel === "h1";
+const animateFadeIn = isPrimaryHero ? undefined : "fade-in";
+const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
 ---
 
 <section
@@ -33,7 +36,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
       "mbe-8 mobile:mbe-12 p-5 mobile:p-8 tablet:p-10 laptop:p-12": variant !== "compact",
     },
   ]}
-  data-animate="fade-in"
+  data-animate={animateFadeIn}
   style={gradient && variant !== "glass" && variant !== "compact" ? { background: gradient } : {}}
 >
   <div
@@ -46,7 +49,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
   >
     <div
       class:list={["mbe-4 flex flex-wrap items-center gap-3", { "justify-center": !gradient }]}
-      data-animate="fade-up"
+      data-animate={animateFadeUp}
     >
       {category && (
         <span
@@ -82,7 +85,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
           "bg-linear-to-br from-white to-slate-200 bg-clip-text text-transparent": !gradient,
         },
       ]}
-      data-animate="fade-up"
+      data-animate={animateFadeUp}
     >
       {title}
     </HeadingTag>
@@ -92,7 +95,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
         "m-0 mx-auto max-w-2xl text-base leading-relaxed tablet:text-lg laptop:text-xl",
         { "text-white/90": gradient, "text-mist-500": !gradient },
       ]}
-      data-animate="fade-up"
+      data-animate={animateFadeUp}
     >
       {description}
     </p>
@@ -100,7 +103,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
     {example && (
       <p
         class="mbs-4 text-base text-white/80"
-        data-animate="fade-in"
+        data-animate={animateFadeIn}
       >
         <em>{example}</em>
       </p>
