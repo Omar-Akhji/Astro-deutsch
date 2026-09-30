@@ -59,42 +59,12 @@
               "werden (Präs/Prät)"
             ],
             "rows": [
-              [
-                "ich",
-                "habe / hatte",
-                "bin / war",
-                "werde / wurde"
-              ],
-              [
-                "du",
-                "hast / hattest",
-                "bist / warst",
-                "wirst / wurdest"
-              ],
-              [
-                "er/sie/es",
-                "hat / hatte",
-                "ist / war",
-                "wird / wurde"
-              ],
-              [
-                "wir",
-                "haben / hatten",
-                "sind / waren",
-                "werden / wurden"
-              ],
-              [
-                "ihr",
-                "habt / hattet",
-                "seid / wart",
-                "werdet / wurdet"
-              ],
-              [
-                "sie/Sie",
-                "haben / hatten",
-                "sind / waren",
-                "werden / wurden"
-              ]
+              ["ich", "habe / hatte", "bin / war", "werde / wurde"],
+              ["du", "hast / hattest", "bist / warst", "wirst / wurdest"],
+              ["er/sie/es", "hat / hatte", "ist / war", "wird / wurde"],
+              ["wir", "haben / hatten", "sind / waren", "werden / wurden"],
+              ["ihr", "habt / hattet", "seid / wart", "werdet / wurdet"],
+              ["sie/Sie", "haben / hatten", "sind / waren", "werden / wurden"]
             ]
           },
           "content": [
@@ -195,16 +165,7 @@
               "mögen"
             ],
             "rows": [
-              [
-                "ich",
-                "kann",
-                "darf",
-                "muss",
-                "soll",
-                "will",
-                "möchte",
-                "mag"
-              ],
+              ["ich", "kann", "darf", "muss", "soll", "will", "möchte", "mag"],
               [
                 "du",
                 "kannst",
@@ -306,42 +267,14 @@
           "hasTable": true,
           "tableData": {
             "caption": "Regelmäßige Verbendungen im Präsens",
-            "headers": [
-              "Pronomen",
-              "Endung",
-              "Beispiel (fragen)"
-            ],
+            "headers": ["Pronomen", "Endung", "Beispiel (fragen)"],
             "rows": [
-              [
-                "ich",
-                "-e",
-                "frage"
-              ],
-              [
-                "du",
-                "-st",
-                "fragst"
-              ],
-              [
-                "er/sie/es",
-                "-t",
-                "fragt"
-              ],
-              [
-                "wir",
-                "-en",
-                "fragen"
-              ],
-              [
-                "ihr",
-                "-t",
-                "fragt"
-              ],
-              [
-                "sie/Sie",
-                "-en",
-                "fragen"
-              ]
+              ["ich", "-e", "frage"],
+              ["du", "-st", "fragst"],
+              ["er/sie/es", "-t", "fragt"],
+              ["wir", "-en", "fragen"],
+              ["ihr", "-t", "fragt"],
+              ["sie/Sie", "-en", "fragen"]
             ]
           }
         },
@@ -404,42 +337,14 @@
           "hasTable": true,
           "tableData": {
             "caption": "Regelmäßige & Unregelmäßige Verben im Präteritum",
-            "headers": [
-              "Pronomen",
-              "Endung (sagen)",
-              "Endung (gehen)"
-            ],
+            "headers": ["Pronomen", "Endung (sagen)", "Endung (gehen)"],
             "rows": [
-              [
-                "ich",
-                "-t-e (sagte)",
-                "- (ging)"
-              ],
-              [
-                "du",
-                "-t-est (sagtest)",
-                "-st (gingst)"
-              ],
-              [
-                "er/sie/es",
-                "-t-e (sagte)",
-                "- (ging)"
-              ],
-              [
-                "wir",
-                "-t-en (sagten)",
-                "-en (gingen)"
-              ],
-              [
-                "ihr",
-                "-t-et (sagtet)",
-                "-t (gingt)"
-              ],
-              [
-                "sie/Sie",
-                "-t-en (sagten)",
-                "-en (gingen)"
-              ]
+              ["ich", "-t-e (sagte)", "- (ging)"],
+              ["du", "-t-est (sagtest)", "-st (gingst)"],
+              ["er/sie/es", "-t-e (sagte)", "- (ging)"],
+              ["wir", "-t-en (sagten)", "-en (gingen)"],
+              ["ihr", "-t-et (sagtet)", "-t (gingt)"],
+              ["sie/Sie", "-t-en (sagten)", "-en (gingen)"]
             ]
           }
         },
@@ -557,42 +462,14 @@
           "description": "Deklination im Akkusativ und Dativ",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Pronomen",
-              "Akkusativ",
-              "Dativ"
-            ],
+            "headers": ["Pronomen", "Akkusativ", "Dativ"],
             "rows": [
-              [
-                "ich",
-                "mich",
-                "mir"
-              ],
-              [
-                "du",
-                "dich",
-                "dir"
-              ],
-              [
-                "er/sie/es",
-                "sich",
-                "sich"
-              ],
-              [
-                "wir",
-                "uns",
-                "uns"
-              ],
-              [
-                "ihr",
-                "euch",
-                "euch"
-              ],
-              [
-                "sie/Sie",
-                "sich",
-                "sich"
-              ]
+              ["ich", "mich", "mir"],
+              ["du", "dich", "dir"],
+              ["er/sie/es", "sich", "sich"],
+              ["wir", "uns", "uns"],
+              ["ihr", "euch", "euch"],
+              ["sie/Sie", "sich", "sich"]
             ]
           }
         }
@@ -847,31 +724,11 @@
           "description": "Konjugation für du, ihr und Sie",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Form",
-              "gehen",
-              "essen",
-              "sein"
-            ],
+            "headers": ["Form", "gehen", "essen", "sein"],
             "rows": [
-              [
-                "du",
-                "Geh!",
-                "Iss!",
-                "Sei!"
-              ],
-              [
-                "ihr",
-                "Geht!",
-                "Esst!",
-                "Seid!"
-              ],
-              [
-                "Sie",
-                "Gehen Sie!",
-                "Essen Sie!",
-                "Seien Sie!"
-              ]
+              ["du", "Geh!", "Iss!", "Sei!"],
+              ["ihr", "Geht!", "Esst!", "Seid!"],
+              ["Sie", "Gehen Sie!", "Essen Sie!", "Seien Sie!"]
             ]
           }
         }
@@ -1041,12 +898,7 @@
           "description": "Grundlegende Unterschiede",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Typ",
-              "Bildung",
-              "Beispiel",
-              "Bedeutung"
-            ],
+            "headers": ["Typ", "Bildung", "Beispiel", "Bedeutung"],
             "rows": [
               [
                 "Partizip I",
@@ -1121,11 +973,7 @@
           "description": "Verben nach Kasus-Gruppen",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Kasus",
-              "Verben",
-              "Beispiel"
-            ],
+            "headers": ["Kasus", "Verben", "Beispiel"],
             "rows": [
               [
                 "nur Akkusativ",
@@ -1190,49 +1038,14 @@
           "description": "Formen für verschiedene Personen",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Pronomen",
-              "sein",
-              "haben",
-              "kommen"
-            ],
+            "headers": ["Pronomen", "sein", "haben", "kommen"],
             "rows": [
-              [
-                "ich",
-                "sei",
-                "habe",
-                "komme"
-              ],
-              [
-                "du",
-                "seist",
-                "habest",
-                "kommest"
-              ],
-              [
-                "er/sie/es",
-                "sei",
-                "habe",
-                "komme"
-              ],
-              [
-                "wir",
-                "seien",
-                "haben",
-                "kommen"
-              ],
-              [
-                "ihr",
-                "seiet",
-                "habet",
-                "kommet"
-              ],
-              [
-                "sie/Sie",
-                "seien",
-                "haben",
-                "kommen"
-              ]
+              ["ich", "sei", "habe", "komme"],
+              ["du", "seist", "habest", "kommest"],
+              ["er/sie/es", "sei", "habe", "komme"],
+              ["wir", "seien", "haben", "kommen"],
+              ["ihr", "seiet", "habet", "kommet"],
+              ["sie/Sie", "seien", "haben", "kommen"]
             ]
           }
         },
@@ -1306,22 +1119,10 @@
           "description": "Häufige Verbindungen und ihre einfachen Entsprechungen",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Funktionsverbgefüge",
-              "Einfaches Verb",
-              "Beispiel"
-            ],
+            "headers": ["Funktionsverbgefüge", "Einfaches Verb", "Beispiel"],
             "rows": [
-              [
-                "eine Frage stellen",
-                "fragen",
-                "Er stellt eine Frage."
-              ],
-              [
-                "Kritik üben",
-                "kritisieren",
-                "Sie übt Kritik an dem Plan."
-              ],
+              ["eine Frage stellen", "fragen", "Er stellt eine Frage."],
+              ["Kritik üben", "kritisieren", "Sie übt Kritik an dem Plan."],
               [
                 "zur Verfügung stellen",
                 "bereitstellen",
@@ -1352,11 +1153,7 @@
                 "informieren",
                 "Geben Sie mir bitte Bescheid."
               ],
-              [
-                "in Frage kommen",
-                "möglich sein",
-                "Das kommt nicht in Frage."
-              ],
+              ["in Frage kommen", "möglich sein", "Das kommt nicht in Frage."],
               [
                 "in Anspruch nehmen",
                 "nutzen/beanspruchen",
@@ -1464,690 +1261,125 @@
               "Perfekt (Partizip II)"
             ],
             "rows": [
-              [
-                "anfangen",
-                "fängt an",
-                "fing an",
-                "hat angefangen"
-              ],
-              [
-                "backen",
-                "backt/bäckt",
-                "buk/backte",
-                "hat gebacken"
-              ],
-              [
-                "befehlen",
-                "befiehlt",
-                "befahl",
-                "hat befohlen"
-              ],
-              [
-                "beginnen",
-                "beginnt",
-                "begann",
-                "hat begonnen"
-              ],
-              [
-                "beißen",
-                "beißt",
-                "biss",
-                "hat gebissen"
-              ],
-              [
-                "betrügen",
-                "betrügt",
-                "betrog",
-                "hat betrogen"
-              ],
-              [
-                "biegen",
-                "biegt",
-                "bog",
-                "ist/hat gebogen"
-              ],
-              [
-                "bieten",
-                "bietet",
-                "bot",
-                "hat geboten"
-              ],
-              [
-                "binden",
-                "bindet",
-                "band",
-                "hat gebunden"
-              ],
-              [
-                "bitten",
-                "bittet",
-                "bat",
-                "hat gebeten"
-              ],
-              [
-                "bleiben",
-                "bleibt",
-                "blieb",
-                "ist geblieben"
-              ],
-              [
-                "braten",
-                "brät",
-                "briet",
-                "hat gebraten"
-              ],
-              [
-                "brechen",
-                "bricht",
-                "brach",
-                "ist/hat gebrochen"
-              ],
-              [
-                "brennen",
-                "brennt",
-                "brannte",
-                "hat gebrannt"
-              ],
-              [
-                "bringen",
-                "bringt",
-                "brachte",
-                "hat gebracht"
-              ],
-              [
-                "denken",
-                "denkt",
-                "dachte",
-                "hat gedacht"
-              ],
-              [
-                "dürfen",
-                "darf",
-                "durfte",
-                "hat gedurft/dürfen"
-              ],
-              [
-                "empfehlen",
-                "empfiehlt",
-                "empfahl",
-                "hat empfohlen"
-              ],
-              [
-                "essen",
-                "isst",
-                "aß",
-                "hat gegessen"
-              ],
-              [
-                "fahren",
-                "fährt",
-                "fuhr",
-                "ist/hat gefahren"
-              ],
-              [
-                "fallen",
-                "fällt",
-                "fiel",
-                "ist gefallen"
-              ],
-              [
-                "fangen",
-                "fängt",
-                "fing",
-                "hat gefangen"
-              ],
-              [
-                "finden",
-                "findet",
-                "fand",
-                "hat gefunden"
-              ],
-              [
-                "fliegen",
-                "fliegt",
-                "flog",
-                "ist/hat geflogen"
-              ],
-              [
-                "fressen",
-                "frisst",
-                "fraß",
-                "hat gefressen"
-              ],
-              [
-                "geben",
-                "gibt",
-                "gab",
-                "hat gegeben"
-              ],
-              [
-                "gehen",
-                "geht",
-                "ging",
-                "ist gegangen"
-              ],
-              [
-                "gelingen",
-                "gelingt",
-                "gelang",
-                "ist gelungen"
-              ],
-              [
-                "gelten",
-                "gilt",
-                "galt",
-                "hat gegolten"
-              ],
-              [
-                "genießen",
-                "genießt",
-                "genoss",
-                "hat genossen"
-              ],
-              [
-                "geschehen",
-                "geschieht",
-                "geschah",
-                "ist geschehen"
-              ],
-              [
-                "gewinnen",
-                "gewinnt",
-                "gewann",
-                "hat gewonnen"
-              ],
-              [
-                "gießen",
-                "gießt",
-                "goss",
-                "hat gegossen"
-              ],
-              [
-                "haben",
-                "hat",
-                "hatte",
-                "hat gehabt"
-              ],
-              [
-                "halten",
-                "hält",
-                "hielt",
-                "hat gehalten"
-              ],
-              [
-                "hängen",
-                "hängt",
-                "hing",
-                "hat gehangen"
-              ],
-              [
-                "heben",
-                "hebt",
-                "hob",
-                "hat gehoben"
-              ],
-              [
-                "heißen",
-                "heißt",
-                "hieß",
-                "hat geheißen"
-              ],
-              [
-                "helfen",
-                "hilft",
-                "half",
-                "hat geholfen"
-              ],
-              [
-                "kennen",
-                "kennt",
-                "kannte",
-                "hat gekannt"
-              ],
-              [
-                "kommen",
-                "kommt",
-                "kam",
-                "ist gekommen"
-              ],
-              [
-                "können",
-                "kann",
-                "konnte",
-                "hat gekonnt/können"
-              ],
-              [
-                "laden",
-                "lädt",
-                "lud",
-                "hat geladen"
-              ],
-              [
-                "lassen",
-                "lässt",
-                "ließ",
-                "hat gelassen"
-              ],
-              [
-                "laufen",
-                "läuft",
-                "lief",
-                "ist gelaufen"
-              ],
-              [
-                "leiden",
-                "leidet",
-                "litt",
-                "hat gelitten"
-              ],
-              [
-                "leihen",
-                "leiht",
-                "lieh",
-                "hat geliehen"
-              ],
-              [
-                "lesen",
-                "liest",
-                "las",
-                "hat gelesen"
-              ],
-              [
-                "liegen",
-                "liegt",
-                "lag",
-                "hat/ist gelegen"
-              ],
-              [
-                "lügen",
-                "lügt",
-                "log",
-                "hat gelogen"
-              ],
-              [
-                "nehmen",
-                "nimmt",
-                "nahm",
-                "hat genommen"
-              ],
-              [
-                "nennen",
-                "nennt",
-                "nannte",
-                "hat genannt"
-              ],
-              [
-                "pfeifen",
-                "pfeift",
-                "pfiff",
-                "hat gepfiffen"
-              ],
-              [
-                "raten",
-                "rät",
-                "riet",
-                "hat geraten"
-              ],
-              [
-                "reißen",
-                "reißt",
-                "riss",
-                "ist/hat gerissen"
-              ],
-              [
-                "reiten",
-                "reitet",
-                "ritt",
-                "ist/hat geritten"
-              ],
-              [
-                "rennen",
-                "rennt",
-                "rannte",
-                "ist gerannt"
-              ],
-              [
-                "riechen",
-                "riecht",
-                "roch",
-                "hat gerochen"
-              ],
-              [
-                "rufen",
-                "ruft",
-                "rief",
-                "hat gerufen"
-              ],
-              [
-                "scheinen",
-                "scheint",
-                "schien",
-                "hat geschienen"
-              ],
-              [
-                "schieben",
-                "schiebt",
-                "schob",
-                "hat geschoben"
-              ],
-              [
-                "schießen",
-                "schießt",
-                "schoss",
-                "hat geschossen"
-              ],
-              [
-                "schlafen",
-                "schläft",
-                "schlief",
-                "hat geschlafen"
-              ],
-              [
-                "schlagen",
-                "schlägt",
-                "schlug",
-                "hat geschlagen"
-              ],
-              [
-                "schließen",
-                "schließt",
-                "schloss",
-                "hat geschlossen"
-              ],
-              [
-                "schneiden",
-                "schneidet",
-                "schnitt",
-                "hat geschnitten"
-              ],
-              [
-                "schreiben",
-                "schreibt",
-                "schrieb",
-                "hat geschrieben"
-              ],
-              [
-                "schreien",
-                "schreit",
-                "schrie",
-                "hat geschrien"
-              ],
-              [
-                "schweigen",
-                "schweigt",
-                "schwieg",
-                "hat geschwiegen"
-              ],
-              [
-                "schwimmen",
-                "schwimmt",
-                "schwamm",
-                "ist/hat geschwommen"
-              ],
-              [
-                "sehen",
-                "sieht",
-                "sah",
-                "hat gesehen"
-              ],
-              [
-                "sein",
-                "ist",
-                "war",
-                "ist gewesen"
-              ],
-              [
-                "senden",
-                "sendet",
-                "sandte/sendete",
-                "hat gesandt/gesendet"
-              ],
-              [
-                "singen",
-                "singt",
-                "sang",
-                "hat gesungen"
-              ],
-              [
-                "sinken",
-                "sinkt",
-                "sank",
-                "ist gesunken"
-              ],
-              [
-                "sitzen",
-                "sitzt",
-                "saß",
-                "hat/ist gesessen"
-              ],
-              [
-                "sollen",
-                "soll",
-                "sollte",
-                "hat gesollt/sollen"
-              ],
-              [
-                "sprechen",
-                "spricht",
-                "sprach",
-                "hat gesprochen"
-              ],
-              [
-                "springen",
-                "springt",
-                "sprang",
-                "ist gesprungen"
-              ],
-              [
-                "stehen",
-                "steht",
-                "stand",
-                "hat/ist gestanden"
-              ],
-              [
-                "stehlen",
-                "stiehlt",
-                "stahl",
-                "hat gestohlen"
-              ],
-              [
-                "steigen",
-                "steigt",
-                "stieg",
-                "ist gestiegen"
-              ],
-              [
-                "sterben",
-                "stirbt",
-                "starb",
-                "ist gestorben"
-              ],
-              [
-                "stoßen",
-                "stößt",
-                "stieß",
-                "hat/ist gestoßen"
-              ],
-              [
-                "streiten",
-                "streitet",
-                "stritt",
-                "hat gestritten"
-              ],
-              [
-                "tragen",
-                "trägt",
-                "trug",
-                "hat getragen"
-              ],
-              [
-                "treffen",
-                "trifft",
-                "traf",
-                "hat getroffen"
-              ],
-              [
-                "treiben",
-                "treibt",
-                "trieb",
-                "hat/ist getrieben"
-              ],
-              [
-                "treten",
-                "tritt",
-                "trat",
-                "ist/hat getreten"
-              ],
-              [
-                "trinken",
-                "trinkt",
-                "trank",
-                "hat getrunken"
-              ],
-              [
-                "tun",
-                "tut",
-                "tat",
-                "hat getan"
-              ],
-              [
-                "verderben",
-                "verdirbt",
-                "verdarb",
-                "ist/hat verdorben"
-              ],
-              [
-                "vergessen",
-                "vergisst",
-                "vergaß",
-                "hat vergessen"
-              ],
-              [
-                "vergleichen",
-                "vergleicht",
-                "verglich",
-                "hat verglichen"
-              ],
-              [
-                "verlieren",
-                "verliert",
-                "verlor",
-                "hat verloren"
-              ],
-              [
-                "verzeihen",
-                "verzeiht",
-                "verzieh",
-                "hat verziehen"
-              ],
-              [
-                "wachsen",
-                "wächst",
-                "wuchs",
-                "ist gewachsen"
-              ],
-              [
-                "waschen",
-                "wäscht",
-                "wusch",
-                "hat gewaschen"
-              ],
-              [
-                "werden",
-                "wird",
-                "wurde",
-                "ist geworden"
-              ],
-              [
-                "werfen",
-                "wirft",
-                "warf",
-                "hat geworfen"
-              ],
-              [
-                "wiegen",
-                "wiegt",
-                "wog",
-                "hat gewogen"
-              ],
-              [
-                "wissen",
-                "weiß",
-                "wusste",
-                "hat gewusst"
-              ],
-              [
-                "wollen",
-                "will",
-                "wollte",
-                "hat gewollt/wollen"
-              ],
-              [
-                "ziehen",
-                "zieht",
-                "zog",
-                "hat/ist gezogen"
-              ],
-              [
-                "schaffen",
-                "schafft",
-                "schuf",
-                "hat geschaffen"
-              ],
-              [
-                "schmelzen",
-                "schmilzt",
-                "schmolz",
-                "ist/hat geschmolzen"
-              ],
-              [
-                "streichen",
-                "streicht",
-                "strich",
-                "hat gestrichen"
-              ],
-              [
-                "schwören",
-                "schwört",
-                "schwor",
-                "hat geschworen"
-              ],
-              [
-                "stinken",
-                "stinkt",
-                "stank",
-                "hat gestunken"
-              ],
-              [
-                "verbieten",
-                "verbietet",
-                "verbot",
-                "hat verboten"
-              ],
-              [
-                "vermeiden",
-                "vermeidet",
-                "vermied",
-                "hat vermieden"
-              ],
+              ["anfangen", "fängt an", "fing an", "hat angefangen"],
+              ["backen", "backt/bäckt", "buk/backte", "hat gebacken"],
+              ["befehlen", "befiehlt", "befahl", "hat befohlen"],
+              ["beginnen", "beginnt", "begann", "hat begonnen"],
+              ["beißen", "beißt", "biss", "hat gebissen"],
+              ["betrügen", "betrügt", "betrog", "hat betrogen"],
+              ["biegen", "biegt", "bog", "ist/hat gebogen"],
+              ["bieten", "bietet", "bot", "hat geboten"],
+              ["binden", "bindet", "band", "hat gebunden"],
+              ["bitten", "bittet", "bat", "hat gebeten"],
+              ["bleiben", "bleibt", "blieb", "ist geblieben"],
+              ["braten", "brät", "briet", "hat gebraten"],
+              ["brechen", "bricht", "brach", "ist/hat gebrochen"],
+              ["brennen", "brennt", "brannte", "hat gebrannt"],
+              ["bringen", "bringt", "brachte", "hat gebracht"],
+              ["denken", "denkt", "dachte", "hat gedacht"],
+              ["dürfen", "darf", "durfte", "hat gedurft/dürfen"],
+              ["empfehlen", "empfiehlt", "empfahl", "hat empfohlen"],
+              ["essen", "isst", "aß", "hat gegessen"],
+              ["fahren", "fährt", "fuhr", "ist/hat gefahren"],
+              ["fallen", "fällt", "fiel", "ist gefallen"],
+              ["fangen", "fängt", "fing", "hat gefangen"],
+              ["finden", "findet", "fand", "hat gefunden"],
+              ["fliegen", "fliegt", "flog", "ist/hat geflogen"],
+              ["fressen", "frisst", "fraß", "hat gefressen"],
+              ["geben", "gibt", "gab", "hat gegeben"],
+              ["gehen", "geht", "ging", "ist gegangen"],
+              ["gelingen", "gelingt", "gelang", "ist gelungen"],
+              ["gelten", "gilt", "galt", "hat gegolten"],
+              ["genießen", "genießt", "genoss", "hat genossen"],
+              ["geschehen", "geschieht", "geschah", "ist geschehen"],
+              ["gewinnen", "gewinnt", "gewann", "hat gewonnen"],
+              ["gießen", "gießt", "goss", "hat gegossen"],
+              ["haben", "hat", "hatte", "hat gehabt"],
+              ["halten", "hält", "hielt", "hat gehalten"],
+              ["hängen", "hängt", "hing", "hat gehangen"],
+              ["heben", "hebt", "hob", "hat gehoben"],
+              ["heißen", "heißt", "hieß", "hat geheißen"],
+              ["helfen", "hilft", "half", "hat geholfen"],
+              ["kennen", "kennt", "kannte", "hat gekannt"],
+              ["kommen", "kommt", "kam", "ist gekommen"],
+              ["können", "kann", "konnte", "hat gekonnt/können"],
+              ["laden", "lädt", "lud", "hat geladen"],
+              ["lassen", "lässt", "ließ", "hat gelassen"],
+              ["laufen", "läuft", "lief", "ist gelaufen"],
+              ["leiden", "leidet", "litt", "hat gelitten"],
+              ["leihen", "leiht", "lieh", "hat geliehen"],
+              ["lesen", "liest", "las", "hat gelesen"],
+              ["liegen", "liegt", "lag", "hat/ist gelegen"],
+              ["lügen", "lügt", "log", "hat gelogen"],
+              ["nehmen", "nimmt", "nahm", "hat genommen"],
+              ["nennen", "nennt", "nannte", "hat genannt"],
+              ["pfeifen", "pfeift", "pfiff", "hat gepfiffen"],
+              ["raten", "rät", "riet", "hat geraten"],
+              ["reißen", "reißt", "riss", "ist/hat gerissen"],
+              ["reiten", "reitet", "ritt", "ist/hat geritten"],
+              ["rennen", "rennt", "rannte", "ist gerannt"],
+              ["riechen", "riecht", "roch", "hat gerochen"],
+              ["rufen", "ruft", "rief", "hat gerufen"],
+              ["scheinen", "scheint", "schien", "hat geschienen"],
+              ["schieben", "schiebt", "schob", "hat geschoben"],
+              ["schießen", "schießt", "schoss", "hat geschossen"],
+              ["schlafen", "schläft", "schlief", "hat geschlafen"],
+              ["schlagen", "schlägt", "schlug", "hat geschlagen"],
+              ["schließen", "schließt", "schloss", "hat geschlossen"],
+              ["schneiden", "schneidet", "schnitt", "hat geschnitten"],
+              ["schreiben", "schreibt", "schrieb", "hat geschrieben"],
+              ["schreien", "schreit", "schrie", "hat geschrien"],
+              ["schweigen", "schweigt", "schwieg", "hat geschwiegen"],
+              ["schwimmen", "schwimmt", "schwamm", "ist/hat geschwommen"],
+              ["sehen", "sieht", "sah", "hat gesehen"],
+              ["sein", "ist", "war", "ist gewesen"],
+              ["senden", "sendet", "sandte/sendete", "hat gesandt/gesendet"],
+              ["singen", "singt", "sang", "hat gesungen"],
+              ["sinken", "sinkt", "sank", "ist gesunken"],
+              ["sitzen", "sitzt", "saß", "hat/ist gesessen"],
+              ["sollen", "soll", "sollte", "hat gesollt/sollen"],
+              ["sprechen", "spricht", "sprach", "hat gesprochen"],
+              ["springen", "springt", "sprang", "ist gesprungen"],
+              ["stehen", "steht", "stand", "hat/ist gestanden"],
+              ["stehlen", "stiehlt", "stahl", "hat gestohlen"],
+              ["steigen", "steigt", "stieg", "ist gestiegen"],
+              ["sterben", "stirbt", "starb", "ist gestorben"],
+              ["stoßen", "stößt", "stieß", "hat/ist gestoßen"],
+              ["streiten", "streitet", "stritt", "hat gestritten"],
+              ["tragen", "trägt", "trug", "hat getragen"],
+              ["treffen", "trifft", "traf", "hat getroffen"],
+              ["treiben", "treibt", "trieb", "hat/ist getrieben"],
+              ["treten", "tritt", "trat", "ist/hat getreten"],
+              ["trinken", "trinkt", "trank", "hat getrunken"],
+              ["tun", "tut", "tat", "hat getan"],
+              ["verderben", "verdirbt", "verdarb", "ist/hat verdorben"],
+              ["vergessen", "vergisst", "vergaß", "hat vergessen"],
+              ["vergleichen", "vergleicht", "verglich", "hat verglichen"],
+              ["verlieren", "verliert", "verlor", "hat verloren"],
+              ["verzeihen", "verzeiht", "verzieh", "hat verziehen"],
+              ["wachsen", "wächst", "wuchs", "ist gewachsen"],
+              ["waschen", "wäscht", "wusch", "hat gewaschen"],
+              ["werden", "wird", "wurde", "ist geworden"],
+              ["werfen", "wirft", "warf", "hat geworfen"],
+              ["wiegen", "wiegt", "wog", "hat gewogen"],
+              ["wissen", "weiß", "wusste", "hat gewusst"],
+              ["wollen", "will", "wollte", "hat gewollt/wollen"],
+              ["ziehen", "zieht", "zog", "hat/ist gezogen"],
+              ["schaffen", "schafft", "schuf", "hat geschaffen"],
+              ["schmelzen", "schmilzt", "schmolz", "ist/hat geschmolzen"],
+              ["streichen", "streicht", "strich", "hat gestrichen"],
+              ["schwören", "schwört", "schwor", "hat geschworen"],
+              ["stinken", "stinkt", "stank", "hat gestunken"],
+              ["verbieten", "verbietet", "verbot", "hat verboten"],
+              ["vermeiden", "vermeidet", "vermied", "hat vermieden"],
               [
                 "verschwinden",
                 "verschwindet",
                 "verschwand",
                 "ist verschwunden"
               ],
-              [
-                "weisen",
-                "weist",
-                "wies",
-                "hat gewiesen"
-              ],
-              [
-                "zwingen",
-                "zwingt",
-                "zwang",
-                "hat gezwungen"
-              ]
+              ["weisen", "weist", "wies", "hat gewiesen"],
+              ["zwingen", "zwingt", "zwang", "hat gezwungen"]
             ]
           }
         }

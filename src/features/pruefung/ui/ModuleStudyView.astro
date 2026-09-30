@@ -21,9 +21,9 @@ const section = examData.sections.find((s) => s.id === `${level.toLowerCase()}-$
 const filteredRedemittel = Object.entries(redemittel).filter(([category]) => {
   const normalizedCategory = category.toLowerCase();
   const isVocabulary =
-    normalizedCategory.includes("konnektoren") ||
-    normalizedCategory.includes("zeitausdrücke") ||
-    normalizedCategory.includes("wortschatz");
+    normalizedCategory.includes("konnektoren")
+    || normalizedCategory.includes("zeitausdrücke")
+    || normalizedCategory.includes("wortschatz");
 
   return module === "sprechen" ?
       normalizedCategory.includes("sprechen") || isVocabulary

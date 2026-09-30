@@ -1,7 +1,10 @@
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import { grammarCollectionSchema } from "@/features/grammar/model/schema.ts";
-import { examCollectionSchema, redemittelCollectionSchema } from "@/features/pruefung/model/schema.ts";
+import {
+  examCollectionSchema,
+  redemittelCollectionSchema,
+} from "@/features/pruefung/model/schema.ts";
 import { quizCollectionSchema } from "@/features/quiz/model/schema.ts";
 import { themenCollectionSchema } from "@/features/themen/model/schema.ts";
 import { vocabularyCollectionSchema } from "@/features/vocabulary/model/schema.ts";

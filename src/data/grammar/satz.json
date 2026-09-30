@@ -164,42 +164,12 @@
           "hasTable": true,
           "tableData": {
             "caption": "Relativpronomen",
-            "headers": [
-              "Kasus",
-              "Maskulin",
-              "Feminin",
-              "Neutral",
-              "Plural"
-            ],
+            "headers": ["Kasus", "Maskulin", "Feminin", "Neutral", "Plural"],
             "rows": [
-              [
-                "Nominativ",
-                "der",
-                "die",
-                "das",
-                "die"
-              ],
-              [
-                "Akkusativ",
-                "den",
-                "die",
-                "das",
-                "die"
-              ],
-              [
-                "Dativ",
-                "dem",
-                "der",
-                "dem",
-                "denen"
-              ],
-              [
-                "Genitiv",
-                "dessen",
-                "deren",
-                "dessen",
-                "deren"
-              ]
+              ["Nominativ", "der", "die", "das", "die"],
+              ["Akkusativ", "den", "die", "das", "die"],
+              ["Dativ", "dem", "der", "dem", "denen"],
+              ["Genitiv", "dessen", "deren", "dessen", "deren"]
             ]
           }
         },
@@ -275,9 +245,7 @@
           "content": [
             {
               "title": "Konzessiv (Gegengrund)",
-              "items": [
-                "**obwohl**: (Obwohl es regnet, gehe ich spazieren)."
-              ]
+              "items": ["**obwohl**: (Obwohl es regnet, gehe ich spazieren)."]
             },
             {
               "title": "Modal (Art und Weise)",
@@ -340,12 +308,7 @@
           "description": "Übersicht der Satzverbindungen nach Positionen",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Typ",
-              "Position",
-              "Beispiele",
-              "Verbposition"
-            ],
+            "headers": ["Typ", "Position", "Beispiele", "Verbposition"],
             "rows": [
               [
                 "Koordinierend",

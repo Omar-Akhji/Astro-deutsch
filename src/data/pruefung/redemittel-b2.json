@@ -38,12 +38,7 @@
       }
     ],
     "Schreiben 2: Formelle Nachricht": [
-      {
-        "label": "1 · Anrede",
-        "phrases": [
-          "Sehr geehrte Damen und Herren,"
-        ]
-      }
+      { "label": "1 · Anrede", "phrases": ["Sehr geehrte Damen und Herren,"] }
     ],
     "Sprechen 2: Diskussion": [
       {

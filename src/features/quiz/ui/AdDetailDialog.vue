@@ -39,7 +39,7 @@ const handleCancel = (e: Event) => {
   <dialog
     ref="dialogRef"
     aria-label="Erklärung"
-  class="fixed inset-0 m-auto flex h-max max-h-[90vh] w-max max-w-[min(90vw,32rem)] scale-95 scrollbar-none flex-col overflow-hidden rounded-2xl border-2 border-white/10 bg-zinc-950 p-0 text-white opacity-0 shadow-2xl transition-[opacity,scale,overlay,display] duration-250 ease-in-out backdrop:bg-black/80 backdrop:backdrop-blur-sm backdrop:transition-[background-color,backdrop-filter,overlay,display] backdrop:duration-250 open:scale-100 open:opacity-100 starting:open:scale-95 starting:open:opacity-0"
+    class="fixed inset-0 m-auto flex h-max max-h-[90vh] w-max max-w-[min(90vw,32rem)] scale-95 scrollbar-none flex-col overflow-hidden rounded-2xl border-2 border-white/10 bg-zinc-950 p-0 text-white opacity-0 shadow-2xl transition-[opacity,scale,overlay,display] duration-250 ease-in-out backdrop:bg-black/80 backdrop:backdrop-blur-sm backdrop:transition-[background-color,backdrop-filter,overlay,display] backdrop:duration-250 open:scale-100 open:opacity-100 starting:open:scale-95 starting:open:opacity-0"
     @cancel="handleCancel"
     @close="emit('close')"
   >

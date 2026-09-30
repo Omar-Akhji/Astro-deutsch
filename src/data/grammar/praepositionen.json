@@ -160,27 +160,15 @@
           "description": "Zusammenfassung der Kasus-Zugehörigkeit",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Fall",
-              "Präpositionen"
-            ],
+            "headers": ["Fall", "Präpositionen"],
             "rows": [
-              [
-                "Akkusativ",
-                "durch, für, gegen, ohne, um, bis, entlang"
-              ],
-              [
-                "Dativ",
-                "aus, bei, mit, nach, seit, von, zu, ab, gegenüber"
-              ],
+              ["Akkusativ", "durch, für, gegen, ohne, um, bis, entlang"],
+              ["Dativ", "aus, bei, mit, nach, seit, von, zu, ab, gegenüber"],
               [
                 "Wechsel (Akk/Dat)",
                 "in, an, auf, unter, über, vor, hinter, neben, zwischen"
               ],
-              [
-                "Genitiv",
-                "wegen, trotz, während, innerhalb, außerhalb, statt"
-              ]
+              ["Genitiv", "wegen, trotz, während, innerhalb, außerhalb, statt"]
             ]
           }
         }
@@ -264,11 +252,7 @@
           "hasTable": true,
           "tableData": {
             "caption": "Wo? (Dativ) ↔ Wohin? (Akkusativ)",
-            "headers": [
-              "Präposition",
-              "Wo? (Dativ)",
-              "Wohin? (Akkusativ)"
-            ],
+            "headers": ["Präposition", "Wo? (Dativ)", "Wohin? (Akkusativ)"],
             "rows": [
               [
                 "an",

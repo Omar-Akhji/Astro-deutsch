@@ -168,32 +168,12 @@
           "description": "Beispiel: der Junge",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Kasus",
-              "Singular",
-              "Plural"
-            ],
+            "headers": ["Kasus", "Singular", "Plural"],
             "rows": [
-              [
-                "Nominativ",
-                "der Junge",
-                "die Jungen"
-              ],
-              [
-                "Akkusativ",
-                "den Jungen",
-                "die Jungen"
-              ],
-              [
-                "Dativ",
-                "dem Jungen",
-                "den Jungen"
-              ],
-              [
-                "Genitiv",
-                "des Jungen",
-                "der Jungen"
-              ]
+              ["Nominativ", "der Junge", "die Jungen"],
+              ["Akkusativ", "den Jungen", "die Jungen"],
+              ["Dativ", "dem Jungen", "den Jungen"],
+              ["Genitiv", "des Jungen", "der Jungen"]
             ]
           }
         }
@@ -244,42 +224,12 @@
           "description": "Deklination der Artikel",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Kasus",
-              "Maskulin",
-              "Feminin",
-              "Neutral",
-              "Plural"
-            ],
+            "headers": ["Kasus", "Maskulin", "Feminin", "Neutral", "Plural"],
             "rows": [
-              [
-                "Nominativ",
-                "der",
-                "die",
-                "das",
-                "die"
-              ],
-              [
-                "Akkusativ",
-                "den",
-                "die",
-                "das",
-                "die"
-              ],
-              [
-                "Dativ",
-                "dem",
-                "der",
-                "dem",
-                "den (n)*"
-              ],
-              [
-                "Genitiv",
-                "des (s)**",
-                "der",
-                "des (s)**",
-                "der"
-              ]
+              ["Nominativ", "der", "die", "das", "die"],
+              ["Akkusativ", "den", "die", "das", "die"],
+              ["Dativ", "dem", "der", "dem", "den (n)*"],
+              ["Genitiv", "des (s)**", "der", "des (s)**", "der"]
             ]
           }
         }
@@ -401,13 +351,7 @@
           "description": "Deklinationstabelle für den bestimmten Artikel",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Kasus",
-              "Maskulin",
-              "Feminin",
-              "Neutral",
-              "Plural"
-            ],
+            "headers": ["Kasus", "Maskulin", "Feminin", "Neutral", "Plural"],
             "rows": [
               [
                 "Nominativ",
@@ -423,13 +367,7 @@
                 "das gute",
                 "die schönen"
               ],
-              [
-                "Dativ",
-                "dem neuen",
-                "der schönen",
-                "dem guten",
-                "den schönen"
-              ],
+              ["Dativ", "dem neuen", "der schönen", "dem guten", "den schönen"],
               [
                 "Genitiv",
                 "des neuen",
@@ -447,37 +385,12 @@
           "description": "Deklinationstabelle für den unbestimmten Artikel",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Kasus",
-              "Maskulin",
-              "Feminin",
-              "Neutral"
-            ],
+            "headers": ["Kasus", "Maskulin", "Feminin", "Neutral"],
             "rows": [
-              [
-                "Nominativ",
-                "ein neuer",
-                "eine schöne",
-                "ein gutes"
-              ],
-              [
-                "Akkusativ",
-                "einen neuen",
-                "eine schöne",
-                "ein gutes"
-              ],
-              [
-                "Dativ",
-                "einem neuen",
-                "einer schönen",
-                "einem guten"
-              ],
-              [
-                "Genitiv",
-                "eines neuen",
-                "einer schönen",
-                "eines guten"
-              ]
+              ["Nominativ", "ein neuer", "eine schöne", "ein gutes"],
+              ["Akkusativ", "einen neuen", "eine schöne", "ein gutes"],
+              ["Dativ", "einem neuen", "einer schönen", "einem guten"],
+              ["Genitiv", "eines neuen", "einer schönen", "eines guten"]
             ]
           }
         },
@@ -488,13 +401,7 @@
           "description": "Deklinationstabelle ohne Artikel (starke Deklination)",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Kasus",
-              "Maskulin",
-              "Feminin",
-              "Neutral",
-              "Plural"
-            ],
+            "headers": ["Kasus", "Maskulin", "Feminin", "Neutral", "Plural"],
             "rows": [
               [
                 "Nominativ",
@@ -727,37 +634,13 @@
           "description": "Welche Wortarten kombiniert werden können",
           "hasTable": true,
           "tableData": {
-            "headers": [
-              "Typ",
-              "Beispiel",
-              "Erklärung"
-            ],
+            "headers": ["Typ", "Beispiel", "Erklärung"],
             "rows": [
-              [
-                "Nomen + Nomen",
-                "die Haustür",
-                "das Haus + die Tür"
-              ],
-              [
-                "Verb + Nomen",
-                "das Esszimmer",
-                "essen + das Zimmer"
-              ],
-              [
-                "Adjektiv + Nomen",
-                "das Hochhaus",
-                "hoch + das Haus"
-              ],
-              [
-                "Adverb + Nomen",
-                "die Wiederwahl",
-                "wieder + die Wahl"
-              ],
-              [
-                "Präposition + Nomen",
-                "der Vorname",
-                "vor + der Name"
-              ]
+              ["Nomen + Nomen", "die Haustür", "das Haus + die Tür"],
+              ["Verb + Nomen", "das Esszimmer", "essen + das Zimmer"],
+              ["Adjektiv + Nomen", "das Hochhaus", "hoch + das Haus"],
+              ["Adverb + Nomen", "die Wiederwahl", "wieder + die Wahl"],
+              ["Präposition + Nomen", "der Vorname", "vor + der Name"]
             ]
           }
         },

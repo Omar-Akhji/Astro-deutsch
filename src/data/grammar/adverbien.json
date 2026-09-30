@@ -55,9 +55,7 @@
           "content": [
             {
               "title": "Beispiele",
-              "items": [
-                "zuerst, dann, danach, schließlich, zuletzt"
-              ]
+              "items": ["zuerst, dann, danach, schließlich, zuletzt"]
             }
           ]
         }
@@ -154,9 +152,7 @@
           "content": [
             {
               "title": "Beispiele",
-              "items": [
-                "deshalb, darum, deswegen, folglich"
-              ]
+              "items": ["deshalb, darum, deswegen, folglich"]
             }
           ]
         }
