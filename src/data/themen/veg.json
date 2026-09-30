@@ -1,7 +1,7 @@
 {
   "id": "veg",
   "label": "Vegetarisch essen",
-  "cat": "essen",
+  "category": "essen",
   "pro": [
     "Vegetarisch essen ist gesund – man schützt sich vor Krankheiten wie Krebs und Diabetes.",
     "Man ist immer fit und bleibt schlank.",

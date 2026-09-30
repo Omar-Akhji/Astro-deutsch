@@ -1,7 +1,7 @@
 {
   "id": "makeup",
   "label": "Make-up?",
-  "cat": "gesundheit",
+  "category": "gesundheit",
   "pro": [
     "Make-up macht hübscher und attraktiver.",
     "Make-up gibt ein Gefühl von Selbstbewusstsein.",

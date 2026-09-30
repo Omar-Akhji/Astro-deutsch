@@ -1,7 +1,7 @@
 {
   "id": "elektroauto",
   "label": "Elektroautos",
-  "cat": "umwelt",
+  "category": "umwelt",
   "pro": [
     "Elektroautos verursachen keine direkten Abgase – gut für die Luft in Städten.",
     "Langfristig sind sie günstiger im Betrieb.",

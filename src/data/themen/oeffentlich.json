@@ -1,7 +1,7 @@
 {
   "id": "oeffentlich",
   "label": "Öffentliche Verkehrsmittel vs. Auto",
-  "cat": "umwelt",
+  "category": "umwelt",
   "pro": [
     "Öffentliche Verkehrsmittel sind umweltfreundlicher und günstiger.",
     "Man kann während der Fahrt lesen, arbeiten oder schlafen.",

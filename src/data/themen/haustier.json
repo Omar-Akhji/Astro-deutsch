@@ -1,7 +1,7 @@
 {
   "id": "haustier",
   "label": "Haustiere",
-  "cat": "gesellschaft",
+  "category": "gesellschaft",
   "pro": [
     "Haustiere sind treu und unterhaltsam.",
     "Haustiere helfen behinderten und blinden Menschen.",

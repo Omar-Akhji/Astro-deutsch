@@ -1,7 +1,7 @@
 {
   "id": "buch",
   "label": "Gedrucktes Buch vs. E-Book",
-  "cat": "tech",
+  "category": "tech",
   "pro": [
     "Gedrucktes Buch: Gut für die Augen, kein Strom nötig, schönes Lesegefühl.",
     "E-Book: Preiswert, praktisch – man kann viele Bücher auf einem Gerät speichern.",

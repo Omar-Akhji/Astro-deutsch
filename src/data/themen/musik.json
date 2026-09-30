@@ -1,7 +1,7 @@
 {
   "id": "musik",
   "label": "Müssen Kinder ein Musikinstrument lernen?",
-  "cat": "freizeit",
+  "category": "freizeit",
   "pro": [
     "Musik entwickelt die Intelligenz und Konzentration des Kindes.",
     "Kinder können dadurch ihre Freizeit sinnvoll nutzen.",

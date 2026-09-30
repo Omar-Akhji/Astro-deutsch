@@ -61,7 +61,7 @@ const isJaNein = computed(() => {
   );
 });
 
-const isABC = computed(() => {
+const isAbc = computed(() => {
   return (
     props.question.options?.length === 3
     && props.question.options[0] === "a"
@@ -71,7 +71,7 @@ const isABC = computed(() => {
 });
 
 const isCompactRow = computed(() => {
-  return isRichtigFalsch.value || isJaNein.value || (isTableRow.value && isABC.value);
+  return isRichtigFalsch.value || isJaNein.value || (isTableRow.value && isAbc.value);
 });
 
 const cleanedQuestionText = computed(() => {

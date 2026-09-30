@@ -1,7 +1,7 @@
 {
   "id": "rente",
   "label": "Rentenalter erhöhen?",
-  "cat": "gesellschaft",
+  "category": "gesellschaft",
   "pro": [
     "Die Bevölkerung wird älter – das Rentensystem braucht Reformen.",
     "Viele Menschen sind auch mit 67 noch fit und können arbeiten.",

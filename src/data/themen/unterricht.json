@@ -1,7 +1,7 @@
 {
   "id": "unterricht",
   "label": "Gemischter oder getrennter Unterricht?",
-  "cat": "bildung",
+  "category": "bildung",
   "pro": [
     "Gemischter Unterricht bereitet auf das echte Leben vor – im Leben ist alles gemischt.",
     "Er erhöht den gesunden Wettbewerb zwischen Mädchen und Jungen.",

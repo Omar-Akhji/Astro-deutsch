@@ -10,7 +10,7 @@ const showPassword = ref(false);
 const error = ref<string | null>(null);
 const isPending = ref(false);
 
-const notConfigured = (provider: string) => {
+const handleNotConfigured = (provider: string) => {
   alert(`${provider} Anmeldung wird in der Laravel-Integration konfiguriert.`);
 };
 
@@ -46,7 +46,7 @@ const handleSignUp = async () => {
       <div class="hidden flex-col md:flex">
         <h3 class="font-display text-lg font-bold tracking-tight text-white">Registrieren</h3>
         <p class="mt-1 text-[12px] text-text-muted">
-          Bereits ein Konto?{{ " " }}
+          Bereits ein Konto?{" "}
           <button
             type="button"
             :disabled="isPending"
@@ -189,12 +189,12 @@ const handleSignUp = async () => {
         <SocialButton
           provider="Google"
           :disabled="isPending"
-          @click="notConfigured('Google')"
+          @click="handleNotConfigured('Google')"
         />
         <SocialButton
           provider="Microsoft"
           :disabled="isPending"
-          @click="notConfigured('Microsoft')"
+          @click="handleNotConfigured('Microsoft')"
         />
       </div>
 

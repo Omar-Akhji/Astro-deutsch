@@ -1,7 +1,7 @@
 {
   "id": "fast",
   "label": "Fast Food",
-  "cat": "essen",
+  "category": "essen",
   "pro": [
     "Fast Food schmeckt gut und spart Zeit.",
     "Fast Food ist preiswert – gut für Menschen mit wenig Geld oder Zeit.",

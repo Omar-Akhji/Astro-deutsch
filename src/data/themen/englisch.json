@@ -1,7 +1,7 @@
 {
   "id": "englisch",
   "label": "Sollen alle Englisch lernen?",
-  "cat": "bildung",
+  "category": "bildung",
   "pro": [
     "Englisch ist eine weltweite Sprache der Wissenschaft und Technik.",
     "Die meisten Fachbücher und Websites sind auf Englisch.",

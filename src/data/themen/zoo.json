@@ -1,7 +1,7 @@
 {
   "id": "zoo",
   "label": "Tiere im Zoo",
-  "cat": "gesellschaft",
+  "category": "gesellschaft",
   "pro": [
     "Zoos schützen bedrohte Tierarten.",
     "Kinder können im Zoo viel über Tiere lernen.",

@@ -1,7 +1,7 @@
 {
   "id": "computer",
   "label": "Computer in jedem Kursraum?",
-  "cat": "bildung",
+  "category": "bildung",
   "pro": [
     "Ein Computer in jedem Kursraum erleichtert den Unterricht und macht ihn interessanter.",
     "Mit dem Computer kann man lernen, präsentieren und im Internet recherchieren.",

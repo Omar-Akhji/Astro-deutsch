@@ -10,7 +10,7 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const categoryClass = computed(() => getCategoryClasses(props.thema.cat));
+const categoryClass = computed(() => getCategoryClasses(props.thema.category));
 
 const activeTab = ref<"pro" | "con" | "text">(props.thema.isTextOnly ? "text" : "pro");
 
@@ -116,7 +116,7 @@ watch(activeTab, () => {
             categoryClass,
           ]"
         >
-          {{ props.thema.cat }}
+          {{ props.thema.category }}
         </span>
         <h3
           class="text-sm font-semibold text-white transition-colors group-hover:text-amber-400 tablet:text-base"

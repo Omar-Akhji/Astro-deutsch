@@ -1,7 +1,7 @@
 {
   "id": "einkauf",
   "label": "Einkaufen im Internet",
-  "cat": "tech",
+  "category": "tech",
   "pro": [
     "Einkaufen im Internet ist schnell, bequem, einfach und oft günstiger.",
     "Das Angebot ist groß und vielfältig – viele Sonderangebote.",

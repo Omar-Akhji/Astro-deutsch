@@ -1,22 +1,22 @@
 ---
-import { getVocabById, getVocabList } from "@/features/vocabulary/server.ts";
+import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
-import { getGradient, VOCAB_GRADIENTS } from "@/shared/lib";
+import { getGradient, VOCABULARY_GRADIENTS } from "@/shared/lib";
 import BackButton from "@/shared/ui/BackButton.astro";
 import GlassCard from "@/shared/ui/GlassCard.astro";
 import { Hero } from "@/widgets/hero";
 import { ArrowRight, BookOpen, Languages } from "lucide-astro";
 
 export async function getStaticPaths() {
-  const { data: vocabList } = await getVocabList();
-  return (vocabList ?? []).map((item) => ({ params: { id: item.id.toString() } }));
+  const { data: vocabularyList } = await getVocabularyList();
+  return (vocabularyList ?? []).map((item) => ({ params: { id: item.id.toString() } }));
 }
 
 const { id } = Astro.params;
 if (!id) {
   throw new Error("Fehlende Vokabel-ID.");
 }
-const { data: item } = await getVocabById(Number(id));
+const { data: item } = await getVocabularyById(Number(id));
 
 const totalTopics =
   item?.sections?.reduce((accumulator, sec) => accumulator + sec.topics.length, 0)
@@ -86,7 +86,7 @@ const extraSchema =
               >
                 <div
                   class="mb-6 flex flex-col items-start gap-4 rounded-2xl p-5 md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6"
-                  style={{ background: getGradient(index, VOCAB_GRADIENTS) }}
+                  style={{ background: getGradient(index, VOCABULARY_GRADIENTS) }}
                 >
                   <h2
                     class="m-0 text-xl font-semibold tracking-wide text-white uppercase tablet:text-2xl"

@@ -59,7 +59,7 @@ const categoryConfig = {
 type CategoryKey = keyof typeof categoryConfig;
 
 interface FilteredThemaGroup {
-  catId: CategoryKey;
+  categoryId: CategoryKey;
   label: string;
   icon: Component;
   borderClass: string;
@@ -76,15 +76,15 @@ const filteredGroups = computed<FilteredThemaGroup[]>(() => {
       [activeCategory.value]
     : Object.keys(categoryConfig).filter(isCategoryKey);
 
-  for (const catId of entries) {
-    const config = categoryConfig[catId];
+  for (const categoryId of entries) {
+    const config = categoryConfig[categoryId];
     if (!config) continue;
-    const themes = props.initialThemen.filter((t) => t.cat === catId);
+    const themes = props.initialThemen.filter((t) => t.category === categoryId);
     if (themes.length === 0) continue;
 
-    const style = getCategoryStyle(catId);
+    const style = getCategoryStyle(categoryId);
     groups.push({
-      catId,
+      categoryId,
       label: config.label,
       icon: config.icon,
       borderClass: style.border,
@@ -104,7 +104,7 @@ const handleCategoryChange = (id: string | null) => {
   });
 };
 
-const scrollToTop = () => {
+const handleScrollToTop = () => {
   if (globalThis.window !== undefined) {
     globalThis.window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -203,8 +203,8 @@ const scrollToTop = () => {
     >
       <section
         v-for="group in filteredGroups"
-        :id="group.catId"
-        :key="group.catId"
+        :id="group.categoryId"
+        :key="group.categoryId"
         class="scroll-mbs-32"
       >
         <div class="mb-6 flex items-center gap-3.5 tablet:mb-8 tablet:gap-4">
@@ -295,7 +295,7 @@ const scrollToTop = () => {
       type="button"
       aria-label="Nach oben scrollen"
       class="fixed right-8 bottom-8 z-50 flex size-14 cursor-pointer items-center justify-center rounded-full border-none bg-amber-500 text-black shadow-2xl transition-transform hover:scale-110 active:scale-95"
-      @click="scrollToTop"
+      @click="handleScrollToTop"
     >
       <ArrowUp :size="28" />
     </button>

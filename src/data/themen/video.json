@@ -1,7 +1,7 @@
 {
   "id": "video",
   "label": "Videospiele",
-  "cat": "freizeit",
+  "category": "freizeit",
   "pro": [
     "Videospiele fördern die Konzentration und das strategische Denken.",
     "Man kann online mit Freunden spielen und neue Leute kennenlernen.",

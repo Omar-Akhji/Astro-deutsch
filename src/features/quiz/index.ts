@@ -1,5 +1,5 @@
 export * from "./lib/exam-structure.ts";
-export * from "./lib/useQuiz.ts";
+export * from "./lib/use-quiz.ts";
 export * from "./model/schema.ts";
 export type * from "./model/types.ts";
 export { default as AdDetailDialog } from "./ui/AdDetailDialog.vue";

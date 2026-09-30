@@ -1,27 +1,27 @@
 ---
-import { getGradient, VOCAB_GRADIENTS } from "@/shared/lib";
+import { getGradient, VOCABULARY_GRADIENTS } from "@/shared/lib";
 import Card from "@/shared/ui/Card.astro";
-import type { VocabItem } from "../model/types.ts";
+import type { VocabularyItem } from "../model/types.ts";
 
 interface Props {
-  vocabList: VocabItem[];
+  vocabularyList: VocabularyItem[];
 }
 
-const { vocabList } = Astro.props;
+const { vocabularyList } = Astro.props;
 ---
 
 <section
-  aria-labelledby="vocab-heading"
+  aria-labelledby="vocabulary-heading"
   class="py-4"
 >
   <h2
     class="sr-only"
-    id="vocab-heading"
+    id="vocabulary-heading"
   >
     Wortschatz-Themen
   </h2>
   <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
-    {vocabList.map((item, index) => (
+    {vocabularyList.map((item, index) => (
       <li
         class="h-full"
         data-animate="fade-up"
@@ -29,7 +29,7 @@ const { vocabList } = Astro.props;
         <Card
           category={item.category}
           description={item.description}
-          gradient={getGradient(index, VOCAB_GRADIENTS)}
+          gradient={getGradient(index, VOCABULARY_GRADIENTS)}
           href={`/vokabeln/${item.id}/`}
           subtitle="Wortschatz"
           title={item.german}

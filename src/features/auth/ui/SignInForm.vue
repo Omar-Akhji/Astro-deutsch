@@ -13,7 +13,7 @@ const showPassword = ref(false);
 const error = ref<string | null>(null);
 const isPending = ref(false);
 
-const notConfigured = (provider: string) => {
+const handleNotConfigured = (provider: string) => {
   alert(`${provider} Anmeldung wird in der Laravel-Integration konfiguriert.`);
 };
 
@@ -59,7 +59,7 @@ const handleDemoLogin = async () => {
       <div class="hidden flex-col md:flex">
         <h3 class="font-display text-lg font-bold tracking-tight text-white">Anmelden</h3>
         <p class="mt-1 text-[12px] text-text-muted">
-          Noch kein Konto?{{ " " }}
+          Noch kein Konto?{" "}
           <button
             type="button"
             :disabled="isPending"
@@ -118,7 +118,7 @@ const handleDemoLogin = async () => {
             type="button"
             tabindex="-1"
             class="cursor-pointer border-none bg-transparent p-0 text-xs font-bold text-orange/80 transition-colors hover:text-orange focus:outline-hidden"
-            @click="notConfigured('Passwort zurücksetzen')"
+            @click="handleNotConfigured('Passwort zurücksetzen')"
           >
             Vergessen?
           </button>
@@ -213,12 +213,12 @@ const handleDemoLogin = async () => {
         <SocialButton
           provider="Google"
           :disabled="isPending"
-          @click="notConfigured('Google')"
+          @click="handleNotConfigured('Google')"
         />
         <SocialButton
           provider="Microsoft"
           :disabled="isPending"
-          @click="notConfigured('Microsoft')"
+          @click="handleNotConfigured('Microsoft')"
         />
       </div>
 

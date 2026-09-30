@@ -1,7 +1,7 @@
 {
   "id": "strom",
   "label": "Erneuerbare Energien / Strom sparen",
-  "cat": "umwelt",
+  "category": "umwelt",
   "pro": [
     "Erneuerbare Energien (Solar, Wind) schützen die Umwelt und sind langfristig günstiger.",
     "Strom sparen reduziert den CO₂-Ausstoß und spart Geld.",

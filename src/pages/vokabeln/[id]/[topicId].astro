@@ -1,15 +1,15 @@
 ---
 import { FamilyTree, VocabularyTable } from "@/features/vocabulary";
-import { getVocabById, getVocabList } from "@/features/vocabulary/server.ts";
+import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import BackButton from "@/shared/ui/BackButton.astro";
 import GlassCard from "@/shared/ui/GlassCard.astro";
 import { Hero } from "@/widgets/hero";
 
 export async function getStaticPaths() {
-  const { data: vocabList } = await getVocabList();
+  const { data: vocabularyList } = await getVocabularyList();
   const paths = [];
-  const items = vocabList ?? [];
+  const items = vocabularyList ?? [];
   for (const item of items) {
     if (item.sections) {
       for (const section of item.sections) {
@@ -28,7 +28,7 @@ if (!id || !topicId) {
   throw new Error("Fehlende Vokabel-Parameter.");
 }
 
-const { data: item } = await getVocabById(Number(id));
+const { data: item } = await getVocabularyById(Number(id));
 
 const topicMap = new Map(
   item?.sections?.flatMap((s) => s.topics.map((t) => [t.id, { topic: t, section: s }] as const)),

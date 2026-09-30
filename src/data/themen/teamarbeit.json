@@ -1,7 +1,7 @@
 {
   "id": "teamarbeit",
   "label": "Teamarbeit vs. Einzelarbeit",
-  "cat": "arbeit",
+  "category": "arbeit",
   "pro": [
     "Teamarbeit steigert Motivation und Kreativität – man lernt voneinander.",
     "Im Team teilt man die Arbeit und löst Probleme schneller.",

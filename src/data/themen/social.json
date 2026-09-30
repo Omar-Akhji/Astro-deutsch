@@ -1,7 +1,7 @@
 {
   "id": "social",
   "label": "Soziale Netzwerke / Facebook",
-  "cat": "tech",
+  "category": "tech",
   "pro": [
     "Soziale Netzwerke verbinden Menschen aus der ganzen Welt.",
     "Sie sind ein gutes Mittel, um Kontakt mit Familie und Freunden zu pflegen.",

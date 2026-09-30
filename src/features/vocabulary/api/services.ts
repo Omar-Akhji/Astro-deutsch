@@ -1,16 +1,16 @@
 import type { ApiResponse } from "@/shared/model";
-import type { VocabItem } from "../model/types.ts";
+import type { VocabularyItem } from "../model/types.ts";
 import { getCollection } from "astro:content";
 
-export async function getVocabList(): Promise<ApiResponse<VocabItem[]>> {
+export async function getVocabularyList(): Promise<ApiResponse<VocabularyItem[]>> {
   const entries = await getCollection("vocabulary");
   const data = entries.map((e) => e.data);
   return { data, success: true };
 }
 
-export async function getVocabById(
+export async function getVocabularyById(
   id: string | number,
-): Promise<ApiResponse<VocabItem | undefined>> {
+): Promise<ApiResponse<VocabularyItem | undefined>> {
   const entries = await getCollection("vocabulary");
   const item = entries.find((e) => e.data.id === Number(id));
 

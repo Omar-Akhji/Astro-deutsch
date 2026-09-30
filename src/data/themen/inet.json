@@ -1,7 +1,7 @@
 {
   "id": "inet",
   "label": "Informationen aus dem Internet glauben?",
-  "cat": "tech",
+  "category": "tech",
   "pro": [
     "Das Internet bietet eine riesige Menge an Informationen – schnell und kostenlos zugänglich.",
     "Es ist bequem und einfach – man findet schnell Antworten.",

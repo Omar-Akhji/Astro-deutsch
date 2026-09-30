@@ -37,8 +37,8 @@ const groupIntoCouples = (levelMembers: FamilyMember[]) => {
   return groups;
 };
 
-const levels = [1, 2, 3, 4].flatMap((lvl) => {
-  const group = members.filter((m) => m.level === lvl);
+const levels = [1, 2, 3, 4].flatMap((level) => {
+  const group = members.filter((m) => m.level === level);
   return group.length > 0 ? [group] : [];
 });
 

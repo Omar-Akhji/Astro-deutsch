@@ -18,7 +18,7 @@ async function processLogo(): Promise<void> {
   const cx = 1000;
   const cy = 1000;
   const targetRadius = 799.5; // outer edge of the red ring
-  const ss = 4; // 4x4 subpixel sampling for smooth anti-aliasing
+  const sampleCount = 4; // 4x4 subpixel sampling for smooth anti-aliasing
 
   const outputWidth = width;
   const outputHeight = height;
@@ -26,53 +26,53 @@ async function processLogo(): Promise<void> {
 
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
-      const idx = (y * width + x) * 4;
+      const index = (y * width + x) * 4;
       const dx = x - cx;
       const dy = y - cy;
-      const dist = Math.hypot(dx, dy);
+      const distance = Math.hypot(dx, dy);
 
-      const r = raw[idx] ?? 0;
-      const g = raw[idx + 1] ?? 0;
-      const b = raw[idx + 2] ?? 0;
+      const r = raw[index] ?? 0;
+      const g = raw[index + 1] ?? 0;
+      const b = raw[index + 2] ?? 0;
 
-      if (dist <= targetRadius - 1.5) {
+      if (distance <= targetRadius - 1.5) {
         // Fully inside the badge
-        outBuffer[idx] = r;
-        outBuffer[idx + 1] = g;
-        outBuffer[idx + 2] = b;
-        outBuffer[idx + 3] = 255;
-      } else if (dist >= targetRadius + 1.5) {
+        outBuffer[index] = r;
+        outBuffer[index + 1] = g;
+        outBuffer[index + 2] = b;
+        outBuffer[index + 3] = 255;
+      } else if (distance >= targetRadius + 1.5) {
         // Fully outside the badge -> pure transparent
-        outBuffer[idx] = 0;
-        outBuffer[idx + 1] = 0;
-        outBuffer[idx + 2] = 0;
-        outBuffer[idx + 3] = 0;
+        outBuffer[index] = 0;
+        outBuffer[index + 1] = 0;
+        outBuffer[index + 2] = 0;
+        outBuffer[index + 3] = 0;
       } else {
         // On the edge: supersample 4x4 grid
         let insideCount = 0;
-        for (let sy = 0; sy < ss; sy++) {
-          for (let sx = 0; sx < ss; sx++) {
-            const subX = x - 0.5 + (sx + 0.5) / ss;
-            const subY = y - 0.5 + (sy + 0.5) / ss;
+        for (let sy = 0; sy < sampleCount; sy++) {
+          for (let sx = 0; sx < sampleCount; sx++) {
+            const subX = x - 0.5 + (sx + 0.5) / sampleCount;
+            const subY = y - 0.5 + (sy + 0.5) / sampleCount;
             const subDist = Math.hypot(subX - cx, subY - cy);
             if (subDist <= targetRadius) {
               insideCount++;
             }
           }
         }
-        const alpha = Math.round((insideCount / (ss * ss)) * 255);
+        const alpha = Math.round((insideCount / (sampleCount * sampleCount)) * 255);
         if (alpha > 0) {
           // Clean red perimeter color for anti-aliasing without white fringe
           const isNearWhite = r > 230 && g > 230 && b > 230;
-          outBuffer[idx] = isNearWhite ? 255 : r;
-          outBuffer[idx + 1] = isNearWhite ? 49 : g;
-          outBuffer[idx + 2] = isNearWhite ? 49 : b;
-          outBuffer[idx + 3] = alpha;
+          outBuffer[index] = isNearWhite ? 255 : r;
+          outBuffer[index + 1] = isNearWhite ? 49 : g;
+          outBuffer[index + 2] = isNearWhite ? 49 : b;
+          outBuffer[index + 3] = alpha;
         } else {
-          outBuffer[idx] = 0;
-          outBuffer[idx + 1] = 0;
-          outBuffer[idx + 2] = 0;
-          outBuffer[idx + 3] = 0;
+          outBuffer[index] = 0;
+          outBuffer[index + 1] = 0;
+          outBuffer[index + 2] = 0;
+          outBuffer[index + 3] = 0;
         }
       }
     }

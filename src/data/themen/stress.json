@@ -1,7 +1,7 @@
 {
   "id": "stress",
   "label": "Stress im Alltag / Work-Life-Balance",
-  "cat": "arbeit",
+  "category": "arbeit",
   "pro": [
     "Eine gute Work-Life-Balance ist wichtig für die Gesundheit.",
     "Regelmäßige Pausen und Freizeitaktivitäten reduzieren Stress.",

@@ -1,7 +1,7 @@
 {
   "id": "schlaf",
   "label": "Mittagsschlaf in Firmen?",
-  "cat": "arbeit",
+  "category": "arbeit",
   "pro": [
     "Mitarbeiter fühlen sich nach dem Mittagsschlaf besser und arbeiten produktiver.",
     "Studien belegen, dass Mittagsschlaf Mitarbeiter kreativer und konzentrierter macht.",

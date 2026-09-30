@@ -1,5 +1,5 @@
 /** Vocabulary cards (Kapitel overview) - Elegant, cohesive educational tones */
-export const VOCAB_GRADIENTS = [
+export const VOCABULARY_GRADIENTS = [
   "linear-gradient(135deg, #d97706 0%, #b45309 100%)", // Rich amber gold
   "linear-gradient(135deg, #ea580c 0%, #c2410c 100%)", // Warm terracotta
   "linear-gradient(135deg, #059669 0%, #047857 100%)", // Deep forest emerald

@@ -89,14 +89,14 @@ export const THEMEN_CATEGORY_COLORS: Record<string, string> = Object.fromEntries
  * Returns pre-split structured styling tokens for a category. Prevents runtime string parsing and
  * split operations in components.
  */
-export function getCategoryStyle(cat: string): CategoryThemeStyle {
-  if (cat in THEMEN_CATEGORY_CONFIG) {
-    return THEMEN_CATEGORY_CONFIG[cat as ThemaCategory];
+export function getCategoryStyle(category: string): CategoryThemeStyle {
+  if (category in THEMEN_CATEGORY_CONFIG) {
+    return THEMEN_CATEGORY_CONFIG[category as ThemaCategory];
   }
   return DEFAULT_CATEGORY_STYLE;
 }
 
 /** Returns full tailwind classes for a category badge. */
-export function getCategoryClasses(cat: string): string {
-  return getCategoryStyle(cat).badge;
+export function getCategoryClasses(category: string): string {
+  return getCategoryStyle(category).badge;
 }

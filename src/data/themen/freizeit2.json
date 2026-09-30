@@ -1,7 +1,7 @@
 {
   "id": "freizeit2",
   "label": "Sollten Kinder ihre Freizeit planen?",
-  "cat": "freizeit",
+  "category": "freizeit",
   "pro": [
     "Wenn Kinder ihre Freizeit planen, lernen sie Selbstständigkeit und Verantwortung.",
     "Sie werden ordentlicher und pünktlicher.",

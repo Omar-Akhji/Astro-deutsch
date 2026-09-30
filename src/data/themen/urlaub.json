@@ -1,7 +1,7 @@
 {
   "id": "urlaub",
   "label": "Verreisen oder zu Hause bleiben?",
-  "cat": "freizeit",
+  "category": "freizeit",
   "pro": [
     "Verreisen: Neue Kulturen, Orte und Menschen kennenlernen – hilft, Stress zu vergessen.",
     "Verreisen macht offen und weltgewandt.",

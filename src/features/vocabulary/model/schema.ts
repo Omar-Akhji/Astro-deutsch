@@ -17,24 +17,24 @@ export const familyMemberSchema = z.object({
   partnerId: z.string().optional(),
 });
 
-export const vocabTopicSchema = z.object({
+export const vocabularyTopicSchema = z.object({
   id: z.string(),
   title: z.string(),
   words: z.array(wordSchema).optional(),
   familyTree: z.array(familyMemberSchema).optional(),
 });
 
-export const vocabSectionSchema = z.object({
+export const vocabularySectionSchema = z.object({
   id: z.string(),
   title: z.string(),
-  topics: z.array(vocabTopicSchema),
+  topics: z.array(vocabularyTopicSchema),
 });
 
-export const vocabCollectionSchema = z.object({
+export const vocabularyCollectionSchema = z.object({
   id: z.number(),
   german: z.string(),
   category: z.string(),
   description: z.string().optional(),
   words: z.array(wordSchema).optional(),
-  sections: z.array(vocabSectionSchema).optional(),
+  sections: z.array(vocabularySectionSchema).optional(),
 });

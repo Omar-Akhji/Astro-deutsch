@@ -1,7 +1,7 @@
 {
   "id": "vleisch",
   "label": "Sollen wir weniger Fleisch essen?",
-  "cat": "essen",
+  "category": "essen",
   "pro": [
     "Weniger Fleisch essen ist gut für die Gesundheit und reduziert das Krebsrisiko.",
     "Die Fleischindustrie ist einer der größten Klimasündiger – weniger Fleisch schützt die Umwelt.",

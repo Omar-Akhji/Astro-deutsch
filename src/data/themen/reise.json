@@ -1,7 +1,7 @@
 {
   "id": "reise",
   "label": "Reisen",
-  "cat": "freizeit",
+  "category": "freizeit",
   "pro": [
     "Man entdeckt neue Kulturen, Sprachen und Lebensweisen.",
     "Reisen erweitert den Horizont und macht offener.",

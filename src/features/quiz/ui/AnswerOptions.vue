@@ -91,7 +91,7 @@ onUnmounted(() => {
     </div>
     <div class="flex flex-none gap-2">
       <button
-        v-for="(option, idx) in props.options"
+        v-for="(option, index) in props.options"
         :key="option"
         type="button"
         :class="[
@@ -111,7 +111,7 @@ onUnmounted(() => {
             : 'bg-white/10 text-mist-400 group-hover:text-white'
           "
         >
-          {{ idx === 0 ? "A" : "B" }}
+          {{ index === 0 ? "A" : "B" }}
         </span>
         <span>{{ option }}</span>
       </button>
@@ -166,7 +166,7 @@ onUnmounted(() => {
     </div>
     <div class="grid gap-2.5">
       <button
-        v-for="(option, idx) in props.options"
+        v-for="(option, index) in props.options"
         :key="option"
         type="button"
         :class="[
@@ -187,7 +187,7 @@ onUnmounted(() => {
               : 'border border-white/10 bg-white/5 text-mist-400 group-hover:border-white/30 group-hover:text-white'
             "
           >
-            {{ String.fromCharCode(65 + idx) }}
+            {{ String.fromCharCode(65 + index) }}
           </span>
 
           <span class="text-xs tablet:text-sm">

@@ -1,14 +1,14 @@
 import type { z } from "astro/zod";
 import type {
   familyMemberSchema,
-  vocabCollectionSchema,
-  vocabSectionSchema,
-  vocabTopicSchema,
+  vocabularyCollectionSchema,
+  vocabularySectionSchema,
+  vocabularyTopicSchema,
   wordSchema,
 } from "./schema.ts";
 
 export type Word = z.infer<typeof wordSchema>;
 export type FamilyMember = z.infer<typeof familyMemberSchema>;
-export type VocabTopic = z.infer<typeof vocabTopicSchema>;
-export type VocabSection = z.infer<typeof vocabSectionSchema>;
-export type VocabItem = z.infer<typeof vocabCollectionSchema>;
+export type VocabularyTopic = z.infer<typeof vocabularyTopicSchema>;
+export type VocabularySection = z.infer<typeof vocabularySectionSchema>;
+export type VocabularyItem = z.infer<typeof vocabularyCollectionSchema>;

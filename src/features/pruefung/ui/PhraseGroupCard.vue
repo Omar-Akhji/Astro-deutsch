@@ -15,7 +15,7 @@ const isOpen = ref(false);
 const copiedPhrase = ref<string | null>(null);
 const speakingPhrase = ref<string | null>(null);
 
-const copyText = async (text: string) => {
+const handleCopyText = async (text: string) => {
   try {
     if (navigator.clipboard) {
       await navigator.clipboard.writeText(text);
@@ -29,7 +29,7 @@ const copyText = async (text: string) => {
   }
 };
 
-const playPhrase = (text: string) => {
+const handlePlayPhrase = (text: string) => {
   speakingPhrase.value = text;
   speakGerman(text, 0.88);
   setTimeout(() => {
@@ -178,7 +178,7 @@ const processedPhrases = computed(() => {
                       }"
                       title="Aussprechen"
                       aria-label="Aussprache anhören"
-                      @click="playPhrase(item)"
+                      @click="handlePlayPhrase(item)"
                     >
                       <Volume2 class="size-3.5" />
                     </button>
@@ -193,7 +193,7 @@ const processedPhrases = computed(() => {
                       }"
                       title="In die Zwischenablage kopieren"
                       aria-label="Ausdruck kopieren"
-                      @click="copyText(item)"
+                      @click="handleCopyText(item)"
                     >
                       <Check
                         v-if="copiedPhrase === item"

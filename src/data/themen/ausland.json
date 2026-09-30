@@ -1,7 +1,7 @@
 {
   "id": "ausland",
   "label": "Studium im Ausland",
-  "cat": "bildung",
+  "category": "bildung",
   "pro": [
     "Man lernt neue Kulturen, Sprachen und Menschen kennen.",
     "Auslandserfahrung verbessert die Chancen auf dem Arbeitsmarkt.",

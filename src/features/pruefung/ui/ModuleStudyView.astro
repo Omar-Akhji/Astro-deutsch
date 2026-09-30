@@ -19,13 +19,15 @@ const { level, module, examData, redemittel, initialThemen } = Astro.props;
 const section = examData.sections.find((s) => s.id === `${level.toLowerCase()}-${module}`);
 
 const filteredRedemittel = Object.entries(redemittel).filter(([category]) => {
-  const cat = category.toLowerCase();
-  const isVocab =
-    cat.includes("konnektoren") || cat.includes("zeitausdrücke") || cat.includes("wortschatz");
+  const normalizedCategory = category.toLowerCase();
+  const isVocabulary =
+    normalizedCategory.includes("konnektoren") ||
+    normalizedCategory.includes("zeitausdrücke") ||
+    normalizedCategory.includes("wortschatz");
 
   return module === "sprechen" ?
-      cat.includes("sprechen") || isVocab
-    : cat.includes("schreiben") || isVocab;
+      normalizedCategory.includes("sprechen") || isVocabulary
+    : normalizedCategory.includes("schreiben") || isVocabulary;
 });
 
 const getPartNumber = (partName: string) => {

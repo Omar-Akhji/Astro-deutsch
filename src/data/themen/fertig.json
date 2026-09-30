@@ -1,7 +1,7 @@
 {
   "id": "fertig",
   "label": "Fertigessen",
-  "cat": "essen",
+  "category": "essen",
   "pro": [
     "Wenn man Fertigessen isst, spart man Zeit. Man kann es schnell in der Mikrowelle aufwärmen.",
     "Fertigessen ist preiswert und praktisch."

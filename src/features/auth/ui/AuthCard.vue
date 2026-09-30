@@ -14,7 +14,7 @@ const props = defineProps<Props>();
 const view = ref<"signin" | "signup">(props.defaultView);
 const isPending = ref(false);
 
-const toggleView = (target: "signin" | "signup") => {
+const handleToggleView = (target: "signin" | "signup") => {
   view.value = target;
 };
 
@@ -83,7 +83,7 @@ onMounted(() => {
                     view === 'signin' ? 'text-orange' : 'text-text-muted hover:text-white',
                   )
                 "
-                @click="toggleView('signin')"
+                @click="handleToggleView('signin')"
               >
                 <UserCheck class="size-5" />
                 <span>Anmelden</span>
@@ -100,7 +100,7 @@ onMounted(() => {
                     view === 'signup' ? 'text-orange' : 'text-text-muted hover:text-white',
                   )
                 "
-                @click="toggleView('signup')"
+                @click="handleToggleView('signup')"
               >
                 <UserPlus class="size-5" />
                 <span>Registrieren</span>
@@ -226,7 +226,7 @@ onMounted(() => {
                   : 'bg-transparent text-text-muted hover:text-white',
                 )
               "
-              @click="toggleView('signin')"
+              @click="handleToggleView('signin')"
             >
               Anmelden
             </button>
@@ -241,7 +241,7 @@ onMounted(() => {
                   : 'bg-transparent text-text-muted hover:text-white',
                 )
               "
-              @click="toggleView('signup')"
+              @click="handleToggleView('signup')"
             >
               Registrieren
             </button>
@@ -262,7 +262,7 @@ onMounted(() => {
             "
             :aria-hidden="view !== 'signin'"
           >
-            <SignInForm @toggle-view="toggleView" />
+            <SignInForm @toggle-view="handleToggleView" />
           </div>
 
           <!-- SIGN UP VIEW -->
@@ -277,7 +277,7 @@ onMounted(() => {
             "
             :aria-hidden="view !== 'signup'"
           >
-            <SignUpForm @toggle-view="toggleView" />
+            <SignUpForm @toggle-view="handleToggleView" />
           </div>
         </div>
       </div>

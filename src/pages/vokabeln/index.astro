@@ -1,13 +1,13 @@
 ---
 import { VocabularySection } from "@/features/vocabulary";
-import { getVocabList } from "@/features/vocabulary/server.ts";
+import { getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import PageHeader from "@/shared/ui/PageHeader.astro";
 import { Languages } from "lucide-astro";
 
-const { data: vocabList } = await getVocabList();
+const { data: vocabularyList } = await getVocabularyList();
 
-const vocabSchema = {
+const vocabularySchema = {
   "@type": "CollectionPage",
   name: "Deutscher Wortschatz & Vokabeln (A1–B1)",
   description:
@@ -23,7 +23,7 @@ const vocabSchema = {
 
 <Layout
   description="Lerne deutsche Vokabeln systematisch: Thematische Wortschatzlisten mit Übersetzungen, Beispielsätzen und interaktiven Übungen für Alltag und Prüfung."
-  extraSchema={vocabSchema}
+  extraSchema={vocabularySchema}
   title="Deutscher Wortschatz & Vokabeln (A1–B1) | Elite Regewelt"
 >
   <div class="animate-fade-in py-4 mobile:py-8">
@@ -32,6 +32,6 @@ const vocabSchema = {
       subtitle="Thematisch sortierte Vokabellisten für dein A1/B1 Training"
       title="Deutscher Wortschatz"
     />
-    <VocabularySection vocabList={vocabList ?? []} />
+    <VocabularySection vocabularyList={vocabularyList ?? []} />
   </div>
 </Layout>

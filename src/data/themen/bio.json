@@ -1,7 +1,7 @@
 {
   "id": "bio",
   "label": "Bio-Lebensmittel",
-  "cat": "essen",
+  "category": "essen",
   "pro": [
     "Bio-Lebensmittel sind gesünder – keine Pestizide oder Chemikalien.",
     "Bio-Produkte sind umweltfreundlicher und schützen die Natur.",

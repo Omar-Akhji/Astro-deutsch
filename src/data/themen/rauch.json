@@ -1,7 +1,7 @@
 {
   "id": "rauch",
   "label": "Rauchverbot im Restaurant?",
-  "cat": "gesundheit",
+  "category": "gesundheit",
   "pro": [
     "Raucher schaden nicht nur sich selbst, sondern auch anderen Gästen durch Passivrauchen.",
     "Restaurants sind öffentliche Plätze mit Kindern und schwangeren Frauen.",

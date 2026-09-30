@@ -1,7 +1,7 @@
 {
   "id": "fernsehen",
   "label": "Kinder and Television",
-  "cat": "freizeit",
+  "category": "freizeit",
   "pro": [
     "Im Fernsehen kann man viele nützliche Sendungen sehen (Natur, Geschichte, Sprachen).",
     "Zeichentrickfilme können die Fantasie der Kinder entwickeln.",

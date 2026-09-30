@@ -1,7 +1,7 @@
 {
   "id": "homeoffice",
   "label": "Homeoffice / Arbeit von zu Hause",
-  "cat": "arbeit",
+  "category": "arbeit",
   "pro": [
     "Man spart Zeit und Geld durch weniger Pendeln.",
     "Man kann flexibler arbeiten und hat mehr Zeit für die Familie.",

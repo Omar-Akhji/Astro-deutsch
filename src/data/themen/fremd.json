@@ -1,7 +1,7 @@
 {
   "id": "fremd",
   "label": "Fremdsprachen im Kindergarten?",
-  "cat": "bildung",
+  "category": "bildung",
   "pro": [
     "Kinder lernen Fremdsprachen schneller und besser als Erwachsene.",
     "Fremdsprachen sind wichtig im Berufsleben.",

@@ -69,7 +69,7 @@ export function useQuiz(questions: Question[]) {
     }
   };
 
-  const finishQuiz = () => {
+  const handleFinishQuiz = () => {
     isFinished.value = true;
   };
 
@@ -84,6 +84,6 @@ export function useQuiz(questions: Question[]) {
     startQuiz,
     handleAnswer,
     jumpToQuestion,
-    finishQuiz,
+    handleFinishQuiz,
   };
 }

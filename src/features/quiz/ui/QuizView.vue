@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { parseTeils } from "../lib/parseTeils.ts";
-import { useQuiz } from "../lib/useQuiz.ts";
+import { parseTeils } from "../lib/parse-teils.ts";
+import { useQuiz } from "../lib/use-quiz.ts";
 import type { Question } from "../model/types.ts";
 import QuizQuestion from "./QuizQuestion.vue";
 import QuizResult from "./QuizResult.vue";
@@ -36,7 +36,7 @@ const {
   userAnswers,
   startQuiz,
   handleAnswer,
-  finishQuiz,
+  handleFinishQuiz,
 } = useQuiz(props.initialQuestions);
 
 const parsedTeils = computed(() => parseTeils(props.initialQuestions, props.skill));
@@ -191,7 +191,7 @@ const handleExit = () => {
                 <button
                   type="button"
                   class="cursor-pointer rounded border border-yellow/50 bg-yellow/10 px-8 py-2 text-sm font-bold text-yellow transition-colors hover:bg-yellow hover:text-black"
-                  @click="finishQuiz"
+                  @click="handleFinishQuiz"
                 >
                   Prüfung beenden
                 </button>

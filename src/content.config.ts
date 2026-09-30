@@ -4,7 +4,7 @@ import { grammarCollectionSchema } from "@/features/grammar/model/schema.ts";
 import { examCollectionSchema, redemittelCollectionSchema } from "@/features/pruefung/model/schema.ts";
 import { quizCollectionSchema } from "@/features/quiz/model/schema.ts";
 import { themenCollectionSchema } from "@/features/themen/model/schema.ts";
-import { vocabCollectionSchema } from "@/features/vocabulary/model/schema.ts";
+import { vocabularyCollectionSchema } from "@/features/vocabulary/model/schema.ts";
 
 const quiz = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/data/quiz" }),
@@ -13,7 +13,7 @@ const quiz = defineCollection({
 
 const vocabulary = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/data/vocabulary" }),
-  schema: vocabCollectionSchema,
+  schema: vocabularyCollectionSchema,
 });
 
 const grammar = defineCollection({

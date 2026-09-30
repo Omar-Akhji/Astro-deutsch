@@ -1,7 +1,7 @@
 {
   "id": "strand",
   "label": "Urlaub am Strand",
-  "cat": "freizeit",
+  "category": "freizeit",
   "pro": [
     "Am Strand kann man sich erholen, entspannen und den Alltag vergessen.",
     "Die Sonne und das Wasser geben positive Energie.",

@@ -1,7 +1,7 @@
 {
   "id": "privschule",
   "label": "Privatschulen vs. staatliche Schulen",
-  "cat": "bildung",
+  "category": "bildung",
   "pro": [
     "Privatschulen haben oft bessere Ausstattung und kleinere Klassen.",
     "Privatschulen bieten zusätzliche Angebote wie Sport, Musik und Sprachen.",

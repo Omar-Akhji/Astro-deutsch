@@ -1,7 +1,7 @@
 {
   "id": "sport",
   "label": "Wie viel Sport ist gesund?",
-  "cat": "gesundheit",
+  "category": "gesundheit",
   "pro": [
     "Regelmäßiger Sport ist gesund und notwendig – alle Ärzte raten dazu.",
     "Sport baut Stress ab und macht glücklich.",
