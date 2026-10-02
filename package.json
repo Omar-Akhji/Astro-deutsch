@@ -47,7 +47,7 @@
     "globals": "^17.13.0",
     "prettier": "^3.9.9",
     "prettier-plugin-astro": "1.1.0",
-    "prettier-plugin-astro-organize-imports": "^0.4.13",
+    "prettier-plugin-astro-organize-imports": "^0.4.14",
     "prettier-plugin-jsdoc": "^1.8.1",
     "prettier-plugin-packagejson": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.8.1",
