@@ -96,7 +96,7 @@ onUnmounted(() => {
         type="button"
         :class="[
           props.isTableRow ? 'min-w-16 px-2 py-1.5 text-[10px]' : 'min-w-20 px-2.5 py-2 text-xs',
-          'group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-lg border font-bold tracking-tight uppercase transition-all duration-200 active:scale-95',
+          'group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-lg border-[1.5px] font-bold tracking-tight uppercase transition-all duration-200 active:scale-95',
           props.selectedAnswer === option ?
             'border-yellow bg-linear-to-br from-yellow to-orange text-black shadow-lg ring-2 shadow-yellow/25 ring-yellow/30'
           : 'border-white/10 bg-white/5 text-mist-400 hover:border-white/30 hover:bg-white/10 hover:text-white',
@@ -132,7 +132,7 @@ onUnmounted(() => {
       </h3>
     </div>
     <div
-      class="grid grid-cols-5 gap-1 overflow-hidden rounded-xl border border-white/10 bg-surface-raised p-1 backdrop-blur-sm mobile:grid-cols-6 tablet:grid-cols-11"
+      class="grid grid-cols-5 gap-1 overflow-hidden rounded-xl border-[1.5px] border-white/10 bg-surface-raised p-1 backdrop-blur-sm mobile:grid-cols-6 tablet:grid-cols-11"
     >
       <button
         v-for="option in props.options"
@@ -170,7 +170,7 @@ onUnmounted(() => {
         :key="option"
         type="button"
         :class="[
-          'group flex cursor-pointer items-center justify-between rounded-xl border p-3.5 text-left transition-all duration-200 active:scale-[0.99]',
+          'group flex cursor-pointer items-center justify-between rounded-xl border-[1.5px] p-3.5 text-left transition-all duration-200 active:scale-[0.99]',
           props.selectedAnswer === option ?
             'border-yellow/50 bg-linear-to-r from-yellow/15 to-orange/15 font-semibold text-white shadow-md ring-1 shadow-yellow/10 ring-yellow/30'
           : 'border-white/10 bg-white/5 font-medium text-mist-200 hover:border-white/25 hover:bg-white/10 hover:text-white',
@@ -184,7 +184,7 @@ onUnmounted(() => {
             :class="
               props.selectedAnswer === option ?
                 'bg-yellow text-black'
-              : 'border border-white/10 bg-white/5 text-mist-400 group-hover:border-white/30 group-hover:text-white'
+              : 'border-[1.5px] border-white/10 bg-white/5 text-mist-400 group-hover:border-white/30 group-hover:text-white'
             "
           >
             {{ String.fromCharCode(65 + index) }}

@@ -44,19 +44,74 @@
             }
           ],
           "story": {
-            "badge": "Mobilität & Verkehr",
-            "title": "Unterwegs in der Großstadt",
+            "badge": "A1 – Grundstufe",
+            "title": "Unterwegs in der Stadt",
+            "intro": "Grundlegende Verkehrsmittel für jeden Tag (A1).",
             "paragraphs": [
               [
-                "In einer modernen Stadt gibt es viele praktische [das Verkehrsmittel|Verkehrsmittel] für den Alltag.",
-                "Herr Becker fährt jeden Morgen mit der schnellen [die U-Bahn|U-Bahn] direkt zur Arbeit.",
-                "Wenn das Wetter schön ist, nimmt er gerne das umweltfreundliche [das Fahrrad|Fahrrad] durch den Stadtpark."
-              ],
-              [
-                "Für längere Strecken nutzt er den modernen [der Zug|Zug] der Deutschen Bahn.",
-                "Wenn er viel Gepäck transportieren muss, bestellt er bequem ein [das Taxi|Taxi]."
+                "Ich fahre jeden Tag mit dem [das Fahrrad, -̈er|Fahrrad] zur Arbeit.",
+                "Bei Regen nehme ich lieber den [der Bus, -se|Bus] oder das [das Auto, -s|Auto].",
+                "Der schnelle [der Zug, -̈e|Zug] fährt pünktlich von der Stadt ab.",
+                "Unter der Erde fährt die moderne [die U-Bahn, -en|U-Bahn]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Unterwegs in der Stadt",
+              "intro": "Grundlegende Verkehrsmittel für jeden Tag (A1).",
+              "paragraphs": [
+                [
+                  "Ich fahre jeden Tag mit dem [das Fahrrad, -̈er|Fahrrad] zur Arbeit.",
+                  "Bei Regen nehme ich lieber den [der Bus, -se|Bus] oder das [das Auto, -s|Auto].",
+                  "Der schnelle [der Zug, -̈e|Zug] fährt pünktlich von der Stadt ab.",
+                  "Unter der Erde fährt die moderne [die U-Bahn, -en|U-Bahn]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Mobil im Alltag",
+              "intro": "Verkehrsmittel vergleichen und nutzen (A2).",
+              "paragraphs": [
+                [
+                  "In Großstädten ist die [die U-Bahn, -en|U-Bahn] oft viel schneller als das [das Auto, -s|Auto].",
+                  "Am Wochenende machen wir eine Radtour mit dem [das Fahrrad, -̈er|Fahrrad] am Fluss entlang.",
+                  "Der [der Bus, -se|Bus] hält direkt vor meiner Haustür.",
+                  "Mit dem bequemen [der Zug, -̈e|Zug] reisen wir entspannt in andere Städte."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Moderne Mobilität und Klimaschutz",
+              "intro": "Nachhaltiger Verkehr und vernetzte Wege (B1).",
+              "paragraphs": [
+                [
+                  "Immer mehr Berufspendler verzichten bewusst auf das eigene [das Auto, -s|Auto] und steigen auf öffentliche Verkehrsmittel um.",
+                  "Ein gut ausgebautes Netz von [der Bus, -se|Bussen] und [die U-Bahn, -en|U-Bahnen] reduziert Staus und schont das Klima.",
+                  "Für mittlere Strecken ist der moderne [der Zug, -̈e|Zug] eine komfortable und umweltfreundliche Alternative.",
+                  "Dank neuer Radwege wird das [das Fahrrad, -̈er|Fahrrad] zum beliebtesten Verkehrsmittel für die täglichen Wege."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Urbane Verkehrswende und intermodale Mobilität",
+              "intro": "Infrastrukturstrategien für zukunftsfähige Metropolen (B2).",
+              "paragraphs": [
+                [
+                  "Die Dekarbonisierung des Verkehrssektors erfordert einen Paradigmenwechsel weg von der autozentrierten Stadtplanung.",
+                  "Die intelligente Verknüpfung von Hochgeschwindigkeits-[der Zug, -̈e|Zügen], getakteter [die U-Bahn, -en|U-Bahn] und emissionsfreiem [das Fahrrad, -̈er|Fahrrad] definiert zukunftsfähige Mobilitätskonzepte.",
+                  "Elektrifizierte [der Bus, -se|Busse] und Car-Sharing-Modelle ergänzen den öffentlichen Nahverkehr effektiv."
+                ]
+              ]
+            }
           }
         },
         {
@@ -95,19 +150,76 @@
             }
           ],
           "story": {
-            "badge": "Reisen & Fernverkehr",
-            "title": "Die Reise beginnt",
+            "badge": "A1 – Grundstufe",
+            "title": "Auf Reisen gehen",
+            "intro": "Einfache Wörter für Bahnhof und Flughafen (A1).",
             "paragraphs": [
               [
-                "Am frühen Morgen herrscht am großen Hauptbahnhof reger Betrieb.",
-                "Reisende schauen auf die Anzeigetafel, um ihr [das Gleis|Gleis] für den ICE zu finden.",
-                "Am Schalter kauft Sarah ihre [die Fahrkarte|Fahrkarte] und fragt nach Reservierungen."
-              ],
-              [
-                "Am Flughafen passieren die Passagiere pünktlich die Sicherheitskontrolle zum [das Flugzeug|Flugzeug].",
-                "Reisen eröffnet neue Horizonte und verbindet Menschen über alle Grenzen hinweg."
+                "Wir kommen am großen [der Bahnhof, -̈e|Bahnhof] an.",
+                "Unser Zug fährt heute von [das Gleis, -e|Gleis] 4 ab.",
+                "Ich kaufe eine [die Fahrkarte, -n|Fahrkarte] am Automaten.",
+                "Danach fahren wir zum internationalen [der Flughafen, -̈|Flughafen].",
+                "Dort wartet das große [das Flugzeug, -e|Flugzeug] auf die Passagiere."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Auf Reisen gehen",
+              "intro": "Einfache Wörter für Bahnhof und Flughafen (A1).",
+              "paragraphs": [
+                [
+                  "Wir kommen am großen [der Bahnhof, -̈e|Bahnhof] an.",
+                  "Unser Zug fährt heute von [das Gleis, -e|Gleis] 4 ab.",
+                  "Ich kaufe eine [die Fahrkarte, -n|Fahrkarte] am Automaten.",
+                  "Danach fahren wir zum internationalen [der Flughafen, -̈|Flughafen].",
+                  "Dort wartet das große [das Flugzeug, -e|Flugzeug] auf die Passagiere."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Die Urlaubsreise beginnt",
+              "intro": "Reisevorbereitung und Orientierung an Gleis und Gate (A2).",
+              "paragraphs": [
+                [
+                  "Am [der Bahnhof, -̈e|Bahnhof] zeigen wir dem Schaffner unsere gültige [die Fahrkarte, -n|Fahrkarte].",
+                  "Der Zug rollt pünktlich an [das Gleis, -e|Gleis] 7 ein.",
+                  "Am modernen [der Flughafen, -̈|Flughafen] geben wir unsere Koffer am Schalter auf.",
+                  "Das silberne [das Flugzeug, -e|Flugzeug] startet pünktlich in Richtung Süden."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Reiseorganisation und Anschlüsse",
+              "intro": "Reibungsloser Ablauf an Drehkreuzen des Fernverkehrs (B1).",
+              "paragraphs": [
+                [
+                  "Wer mit der Bahn reist, sollte bei knappen Umstiegszeiten genau auf die Anzeigetafeln an [das Gleis, -e|Gleisen] achten.",
+                  "Dank digitaler Buchung lässt sich die [die Fahrkarte, -n|Fahrkarte] bequem auf dem Smartphone vorzeigen.",
+                  "Internationale Passagiere müssen am [der Flughafen, -̈|Flughafen] rechtzeitig die Sicherheitskontrolle passieren, bevor das [das Flugzeug, -e|Flugzeug] zum Boarding bereitsteht.",
+                  "Ein zentral gelegener [der Bahnhof, -̈e|Bahnhof] bietet dabei optimale Anbindungen an den Nah- und Fernverkehr."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Globale Verkehrsknotenpunkte und Intermodalität",
+              "intro": "Logistische Komplexität moderner Reiseinfrastrukturen (B2).",
+              "paragraphs": [
+                [
+                  "Großflughäfen und Hauptbahnhöfe fungieren als hochkomplexe Schnittstellen des weltweiten Personen- und Güterverkehrs.",
+                  "Die nahtlose Anbindung von [der Flughafen, -̈|Flughafen] und Hochgeschwindigkeits-[das Gleis, -e|Gleisen] am [der Bahnhof, -̈e|Bahnhof] minimiert Umsteigezeiten und CO2-Emissionen.",
+                  "Automatisierte Ticketingsysteme für jede [die Fahrkarte, -n|Fahrkarte] sowie modernste Avionik im [das Flugzeug, -e|Flugzeug] gewährleisten höchste Sicherheits- und Kapazitätsstandards."
+                ]
+              ]
+            }
           }
         },
         {
@@ -146,19 +258,74 @@
             }
           ],
           "story": {
-            "badge": "Wegbeschreibung & Orientierung",
-            "title": "Den richtigen Weg finden",
+            "badge": "A1 – Grundstufe",
+            "title": "Den Weg finden",
+            "intro": "Grundwortschatz für Richtungen und Straßenverkehr (A1).",
             "paragraphs": [
               [
-                "Ein Tourist steht mit einem Stadtplan an der großen Kreuzung und sucht das historische Rathaus.",
-                "Er fragt eine Passantin höflich: „Entschuldigung, wie komme ich zum Marktplatz?“",
-                "Die freundliche Dame erklärt: „Gehen Sie hier geradeaus und biegen Sie an der Ampel nach links ab.“"
-              ],
-              [
-                "Hinter der großen Kirche liegt der Platz direkt auf der rechten Seite.",
-                "Mit einer guten Wegbeschreibung findet man sich in jeder fremden Stadt mühelos zurecht."
+                "Wir gehen geradeaus die lange [die Straße, -n|Straße] entlang.",
+                "An der großen [die Kreuzung, -en|Kreuzung] biegen wir [rechts|rechts] ab.",
+                "An der nächsten Ecke gehen wir nach [links|links].",
+                "Vor dem Überqueren warten wir, bis die [die Ampel, -n|Ampel] grün wird."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Den Weg finden",
+              "intro": "Grundwortschatz für Richtungen und Straßenverkehr (A1).",
+              "paragraphs": [
+                [
+                  "Wir gehen geradeaus die lange [die Straße, -n|Straße] entlang.",
+                  "An der großen [die Kreuzung, -en|Kreuzung] biegen wir [rechts|rechts] ab.",
+                  "An der nächsten Ecke gehen wir nach [links|links].",
+                  "Vor dem Überqueren warten wir, bis die [die Ampel, -n|Ampel] grün wird."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Nach dem Weg fragen",
+              "intro": "Wegbeschreibungen im Alltag verstehen (A2).",
+              "paragraphs": [
+                [
+                  "Entschuldigung, wie komme ich zum Rathaus?",
+                  "Gehen Sie diese [die Straße, -n|Straße] etwa zweihundert Meter geradeaus.",
+                  "An der [die Kreuzung, -en|Kreuzung] biegen Sie bitte [links|links] ab.",
+                  "An der roten [die Ampel, -n|Ampel] halten Sie an und sehen das Gebäude gleich auf der [rechts|rechten] Seite."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Sichere Orientierung in der Großstadt",
+              "intro": "Präzise Ortsangaben und Fußgängersicherheit (B1).",
+              "paragraphs": [
+                [
+                  "In einer unbekannten Stadt hilft ein genauer Blick auf die Straßenschilder, um sich nicht zu verlaufen.",
+                  "An einer unübersichtlichen [die Kreuzung, -en|Kreuzung] sollte man aufmerksam auf den Abbiegeverkehr achten.",
+                  "Sobald die [die Ampel, -n|Ampel] auf Grün umschaltet, überquert man zügig die [die Straße, -n|Straße].",
+                  "Wer nach [rechts|rechts] oder [links|links] schaut, behält stets die Orientierung."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Urbane Topografie und kognitive Kartierung",
+              "intro": "Räumliche Wahrnehmung und städtische Wegeleitsysteme (B2).",
+              "paragraphs": [
+                [
+                  "Die menschliche Raumorientierung stützt sich auf markante Landmarken und das orthogonale Raster historischer [die Straße, -n|Straßen].",
+                  "Komplexe [die Kreuzung, -en|Kreuzungen] erfordern intelligente Lichtsignalanlagen wie adaptive [die Ampel, -n|Ampeln], um Verkehrsflüsse dynamisch zu steuern.",
+                  "Die intuitive Wahrnehmung von [rechts|rechts] und [links|links] wird in modernen Smart Cities durch barrierefreie taktile Leitsysteme ergänzt."
+                ]
+              ]
+            }
           }
         }
       ]

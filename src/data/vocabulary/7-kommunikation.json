@@ -44,18 +44,76 @@
             }
           ],
           "story": {
-            "badge": "Technologie & Alltag",
-            "title": "Immer verbunden",
+            "badge": "A1 – Grundstufe",
+            "title": "Mein Smartphone",
+            "intro": "Grundwortschatz zu digitalen Geräten (A1).",
             "paragraphs": [
               [
-                "Das moderne Smartphone ist heute ein ständiger und nützlicher Begleiter im Alltag geworden.",
-                "Mit praktischen Apps liest man Nachrichten, navigiert durch Städte und lernt neue Sprachen.",
-                "Über Videoanrufe bleibt man täglich mit Familie und Freunden in aller Welt in Verbindung."
-              ],
-              [
-                "Trotz aller Technik ist ein echtes persönliches Gespräch von Angesicht zu Angesicht unersetzbar."
+                "Ich benutze mein neues [das Handy, -s|Handy] jeden Tag.",
+                "Ich schreibe eine kurze [die Nachricht, -en|Nachricht] an meine Familie.",
+                "Ich kann meine Freunde jederzeit [anrufen|anrufen].",
+                "Über das schnelle [das Internet|Internet] lese ich die Nachrichten.",
+                "Am Abend arbeite ich an meinem [der Computer, -|Computer]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mein Smartphone",
+              "intro": "Grundwortschatz zu digitalen Geräten (A1).",
+              "paragraphs": [
+                [
+                  "Ich benutze mein neues [das Handy, -s|Handy] jeden Tag.",
+                  "Ich schreibe eine kurze [die Nachricht, -en|Nachricht] an meine Familie.",
+                  "Ich kann meine Freunde jederzeit [anrufen|anrufen].",
+                  "Über das schnelle [das Internet|Internet] lese ich die Nachrichten.",
+                  "Am Abend arbeite ich an meinem [der Computer, -|Computer]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Digitale Vernetzung",
+              "intro": "Smartphones und Computer im Alltag nutzen (A2).",
+              "paragraphs": [
+                [
+                  "Mit dem modernen [das Handy, -s|Handy] kann man tolle Fotos machen und Musik hören.",
+                  "Über verschiedene Apps kann ich Verwandte im Ausland [anrufen|anrufen] und ihnen eine [die Nachricht, -en|Nachricht] schicken.",
+                  "Über das weltweite [das Internet|Internet] finden wir schnell alle benötigten Informationen.",
+                  "Für lange Texte und Tabellen benutze ich lieber den großen [der Computer, -|Computer]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Chancen und Verantwortung im digitalen Raum",
+              "intro": "Digitale Medien, Datenschutz und Bildschirmzeit (B1).",
+              "paragraphs": [
+                [
+                  "Mobile Endgeräte wie das [das Handy, -s|Handy] erleichtern unsere tägliche Organisation enorm.",
+                  "Innerhalb von Sekunden lässt sich eine wichtige [die Nachricht, -en|Nachricht] an mehrere Empfänger gleichzeitig versenden.",
+                  "Allerdings sollte man im [das Internet|Internet] vorsichtig mit persönlichen Daten umgehen und starke Passwörter wählen.",
+                  "Der nahtlose Datenaustausch zwischen [der Computer, -|Computer] und mobilen Geräten sorgt für maximale Flexibilität beim Lernen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Medienökologie und digitale Achtsamkeit",
+              "intro": "Kritische Analyse von permanenter Konnektivität und Informationsflut (B2).",
+              "paragraphs": [
+                [
+                  "Die Allgegenwart ubiquitärer Kommunikationstechnologien via [das Handy, -s|Handy] und Hochleistungs-[der Computer, -|Computer] strukturiert soziale Interaktionen grundlegend neu.",
+                  "Die ständige Erreichbarkeit über jede eingehende [die Nachricht, -en|Nachricht] erfordert von Individuen ein hohes Maß an digitaler Selbstdisziplin und gezieltem Medienfasten.",
+                  "Zugleich eröffnet der freie Zugang zum [das Internet|Internet] beispiellose Bildungsressourcen, die kollaboratives Arbeiten über Ländergrenzen hinweg ermöglichen."
+                ]
+              ]
+            }
           }
         }
       ]

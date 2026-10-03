@@ -44,20 +44,77 @@
             }
           ],
           "story": {
-            "badge": "Wohnen & Gemütlichkeit",
-            "title": "Ein gemütlicher Abend im Wohnzimmer",
+            "badge": "A1 – Grundstufe",
+            "title": "Das gemütliche Wohnzimmer",
+            "intro": "Einfache Wörter für Möbel im Wohnbereich (A1).",
             "paragraphs": [
               [
-                "Nach einem langen Arbeitstag versammelt sich die Familie im gemütlichen [das Wohnzimmer|Wohnzimmer].",
-                "Der Vater setzt sich in den bequemen [der Sessel, -|Sessel] und liest ein interessantes Buch.",
-                "Die Mutter ruht sich auf dem großen [das Sofa, -s|Sofa] aus und trinkt eine Tasse Tee."
-              ],
-              [
-                "Auf dem weichen [der Teppich, -e|Teppich] spielen die Kinder mit ihren Spielsachen.",
-                "Im hohen [das Regal, -e|Regal] an der Wand stehen viele Romane und dekorative Pflanzen.",
-                "Später schalten alle den modernen [der Fernseher, -|Fernseher] ein, um gemeinsam einen spannenden Film zu sehen."
+                "In unserem Wohnzimmer steht ein großes, weiches [das Sofa, -s|Sofa].",
+                "Daneben steht ein bequemer [der Sessel, -|Sessel] zum Lesen.",
+                "Am Abend schalten wir den [der Fernseher, -|Fernseher] ein.",
+                "Auf dem Boden liegt ein schöner, bunter [der Teppich, -e|Teppich].",
+                "Unsere Lieblingsbücher stehen ordentlich im [das Regal, -e|Regal]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Das gemütliche Wohnzimmer",
+              "intro": "Einfache Wörter für Möbel im Wohnbereich (A1).",
+              "paragraphs": [
+                [
+                  "In unserem Wohnzimmer steht ein großes, weiches [das Sofa, -s|Sofa].",
+                  "Daneben steht ein bequemer [der Sessel, -|Sessel] zum Lesen.",
+                  "Am Abend schalten wir den [der Fernseher, -|Fernseher] ein.",
+                  "Auf dem Boden liegt ein schöner, bunter [der Teppich, -e|Teppich].",
+                  "Unsere Lieblingsbücher stehen ordentlich im [das Regal, -e|Regal]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Ein Abend zu Hause",
+              "intro": "Möbel und Entspannung im Wohnzimmer (A2).",
+              "paragraphs": [
+                [
+                  "Nach der Arbeit setze ich mich gern auf das [das Sofa, -s|Sofa] und höre Musik.",
+                  "Mein Vater liest im ledernen [der Sessel, -|Sessel] die Zeitung.",
+                  "Der flache [der Fernseher, -|Fernseher] hängt direkt über dem Holzboard.",
+                  "Ein warmer [der Teppich, -e|Teppich] sorgt für warme Füße im Winter.",
+                  "Im neuen [das Regal, -e|Regal] haben wir viele Fotos und Souvenirs aufgestellt."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Wohnkultur und Wohlfühlambiente",
+              "intro": "Harmonische Raumgestaltung und Gemütlichkeit (B1).",
+              "paragraphs": [
+                [
+                  "Das Wohnzimmer bildet das kommunikative Herzstück jeder Wohnung.",
+                  "Durch die geschickte Platzierung von [das Sofa, -s|Sofa] und [der Sessel, -|Sesseln] entsteht eine einladende Sitzecke für angeregte Gespräche.",
+                  "Ein handgewebter [der Teppich, -e|Teppich] dämpft die Akustik und verleiht dem Raum zusammen mit einem modernen [das Regal, -e|Regal] optische Wärme.",
+                  "Der [der Fernseher, -|Fernseher] tritt dabei dezent in den Hintergrund, um die Behaglichkeit nicht zu stören."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Innenarchitektur und räumliche Anthropologie",
+              "intro": "Konzepte moderner Wohnraumästhetik (B2).",
+              "paragraphs": [
+                [
+                  "Zeitgenössische Wohnkonzepte betonen die multifunktionale Nutzung des Wohnzimmers als Rückzugsort und Repräsentationsfläche.",
+                  "Die sorgfältige Symbiose aus modularem [das Sofa, -s|Sofa], skandinavischem [der Sessel, -|Sessel] und raumhohem [das Regal, -e|Regal] schafft architektonische Balance.",
+                  "Haptische Textilien wie ein exklusiver [der Teppich, -e|Teppich] kontrastieren reizvoll mit minimalistischer Medientechnik wie dem smarten [der Fernseher, -|Fernseher]."
+                ]
+              ]
+            }
           }
         },
         {
@@ -96,19 +153,77 @@
             }
           ],
           "story": {
-            "badge": "Kochen & Küche",
-            "title": "Gemeinsam kochen in der Küche",
+            "badge": "A1 – Grundstufe",
+            "title": "In der Küche kochen",
+            "intro": "Grundgeräte in der modernen Küche (A1).",
             "paragraphs": [
               [
-                "Die [die Küche|Küche] ist der lebendigste Raum in der ganzen Wohnung.",
-                "Am Mittag holt Hannah frisches Gemüse und Milch aus dem kalten [der Kühlschrank, -̈e|Kühlschrank].",
-                "Auf dem heißen [der Herd, -e|Herd] kocht bereits eine duftende Tomatensuppe in einem großen Topf."
-              ],
-              [
-                "Nach dem Essen stellt sie das schmutzige Geschirr in die moderne [die Spülmaschine, -n|Spülmaschine].",
-                "Mit dem praktischen [der Wasserkocher, -|Wasserkocher] bereitet sie noch schnell heißen Kaffee zu."
+                "In der Küche kochen wir jeden Tag frisches Essen.",
+                "Die Milch und der Käse stehen im kühlen [der Kühlschrank, -̈e|Kühlschrank].",
+                "Auf dem [der Herd, -e|Herd] kocht das heiße Wasser.",
+                "Der Kuchen backt im warmen [der Backofen, -̈|Backofen].",
+                "Nach dem Essen wäscht die [die Spülmaschine, -n|Spülmaschine] alle Teller ab."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "In der Küche kochen",
+              "intro": "Grundgeräte in der modernen Küche (A1).",
+              "paragraphs": [
+                [
+                  "In der Küche kochen wir jeden Tag frisches Essen.",
+                  "Die Milch und der Käse stehen im kühlen [der Kühlschrank, -̈e|Kühlschrank].",
+                  "Auf dem [der Herd, -e|Herd] kocht das heiße Wasser.",
+                  "Der Kuchen backt im warmen [der Backofen, -̈|Backofen].",
+                  "Nach dem Essen wäscht die [die Spülmaschine, -n|Spülmaschine] alle Teller ab."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Zusammen kochen",
+              "intro": "Kochen und Küchentechnik im Alltag (A2).",
+              "paragraphs": [
+                [
+                  "Heute kochen wir gemeinsam mit Freunden eine leckere Lasagne.",
+                  "Wir holen das frische Gemüse aus dem großen [der Kühlschrank, -̈e|Kühlschrank].",
+                  "Die Suppe wärmen wir schnell in der [die Mikrowelle, -n|Mikrowelle] auf.",
+                  "Auf dem modernen Induktions-[der Herd, -e|Herd] braten wir die Zutaten an.",
+                  "Danach kommt die Auflaufform für dreißig Minuten in den heißen [der Backofen, -̈|Backofen]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Kulinarische Leidenschaft und Küchengeräte",
+              "intro": "Moderne Küchenausstattung und Zubereitungstechniken (B1).",
+              "paragraphs": [
+                [
+                  "Eine gut ausgestattete Küche erleichtert die Zubereitung vollwertiger Gerichte ungemein.",
+                  "Ein energieeffizienter [der Kühlschrank, -̈e|Kühlschrank] mit Frischezonen hält Salate und Kräuter tagelang knackig.",
+                  "Präzise Hitzeeinstellungen auf dem [der Herd, -e|Herd] und im [der Backofen, -̈|Backofen] garantieren perfekte Garergebnisse.",
+                  "Während die [die Spülmaschine, -n|Spülmaschine] das schmutzige Geschirr reinigt, bleibt mehr Zeit, um das Essen mit den Gästen zu genießen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Die Küche als sozialer Treffpunkt und Technologiezentrum",
+              "intro": "Smart-Kitchen-Technologie und kulinarische Kultur (B2).",
+              "paragraphs": [
+                [
+                  "Die Metamorphose der Küche vom funktionalen Arbeitsraum zum kommunikativen Lebensraum prägt die moderne Wohnkultur.",
+                  "Vernetzte Großgeräte wie der smarte [der Kühlschrank, -̈e|Kühlschrank] und der sensorunterstützte [der Backofen, -̈|Backofen] revolutionieren das Kocherlebnis.",
+                  "Die Integration leiser [die Spülmaschine, -n|Spülmaschinen] und hocheffizienter [der Herd, -e|Herde] ermöglicht offene Wohnküchenkonzepte von bestechender Eleganz."
+                ]
+              ]
+            }
           }
         },
         {
@@ -147,19 +262,76 @@
             }
           ],
           "story": {
-            "badge": "Ruhe & Erholung",
-            "title": "Ein Ort der Erholung",
+            "badge": "A1 – Grundstufe",
+            "title": "Das Schlafzimmer",
+            "intro": "Einfache Wörter für Schlafzimmermöbel (A1).",
             "paragraphs": [
               [
-                "Das [das Schlafzimmer|Schlafzimmer] ist hell eingerichtet und sorgt für erholsamen Schlaf.",
-                "In der Mitte des Raumes steht ein großes, bequemes [das Bett, -en|Bett] mit weichen Kissen.",
-                "Neben dem Bett spendet eine kleine [die Nachttischlampe, -n|Nachttischlampe] warmes Licht zum Lesen."
-              ],
-              [
-                "Im geräumigen [der Kleiderschrank, -̈e|Kleiderschrank] hängt die Kleidung ordentlich sortiert.",
-                "Am Morgen klingelt der [der Wecker, -|Wecker] pünktlich um sieben Uhr."
+                "In der Nacht schlafe ich in meinem gemütlichen [das Bett, -en|Bett].",
+                "Meine Kleidung hängt ordentlich im großen [der Kleiderschrank, -̈e|Kleiderschrank].",
+                "Neben dem Bett steht ein kleiner [der Nachttisch, -e|Nachttisch].",
+                "Mein Kopf liegt auf einem weichen [das Kissen, -|Kissen].",
+                "Im Winter wärmt mich eine dicke [die Decke, -n|Decke]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Das Schlafzimmer",
+              "intro": "Einfache Wörter für Schlafzimmermöbel (A1).",
+              "paragraphs": [
+                [
+                  "In der Nacht schlafe ich in meinem gemütlichen [das Bett, -en|Bett].",
+                  "Meine Kleidung hängt ordentlich im großen [der Kleiderschrank, -̈e|Kleiderschrank].",
+                  "Neben dem Bett steht ein kleiner [der Nachttisch, -e|Nachttisch].",
+                  "Mein Kopf liegt auf einem weichen [das Kissen, -|Kissen].",
+                  "Im Winter wärmt mich eine dicke [die Decke, -n|Decke]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Erholung und Ordnung",
+              "intro": "Ruhe und Schlafhygiene im Schlafbereich (A2).",
+              "paragraphs": [
+                [
+                  "Am Abend schalte ich die kleine Lampe auf dem [der Nachttisch, -e|Nachttisch] an.",
+                  "Ich schüttle das weiche [das Kissen, -|Kissen] auf und ziehe die warme [die Decke, -n|Decke] über.",
+                  "Im geräumigen [der Kleiderschrank, -̈e|Kleiderschrank] ist viel Platz für Pullover und Hosen.",
+                  "Ein bequemes [das Bett, -en|Bett] garantiert erholsamen Schlaf für den nächsten Tag."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Guter Schlaf für mehr Wohlbefinden",
+              "intro": "Schlafhygiene und harmonische Raumatmosphäre (B1).",
+              "paragraphs": [
+                [
+                  "Gesunder Schlaf ist die Grundvoraussetzung für geistige und körperliche Leistungsfähigkeit.",
+                  "Eine hochwertige Matratze im [das Bett, -en|Bett] entlastet die Wirbelsäule, während ein ergonomisches [das Kissen, -|Kissen] den Nacken stützt.",
+                  "Für ein aufgeräumtes Ambiente sorgt ein wandbündiger [der Kleiderschrank, -̈e|Kleiderschrank], in dem alle Kleidungsstücke ihren festen Platz finden.",
+                  "Auf dem [der Nachttisch, -e|Nachttisch] sollte man nachts auf Bildschirme verzichten, um zur Ruhe zu kommen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Schlafforschung und somatische Regeneration",
+              "intro": "Chronobiologische Optimierung des Schlafumfelds (B2).",
+              "paragraphs": [
+                [
+                  "Die Architektur des Schlafzimmers übt einen direkten Einfluss auf die Schlafarchitektur und die Ausschüttung von Melatonin aus.",
+                  "Naturmaterialien für [die Decke, -n|Decke] und [das Kissen, -|Kissen] fördern die Thermoregulation und verhindern nächtliches Erwachen.",
+                  "Das [das Bett, -en|Bett] sollte als ausschließlicher Erholungsort fungieren, während großzügige [der Kleiderschrank, -̈e|Kleiderschränke] visuelle Ruhe im Schlafraum garantieren."
+                ]
+              ]
+            }
           }
         },
         {
@@ -198,19 +370,76 @@
             }
           ],
           "story": {
-            "badge": "Pflege & Routine",
-            "title": "Der Start in den Tag im Bad",
+            "badge": "A1 – Grundstufe",
+            "title": "Im Badezimmer",
+            "intro": "Grundausstattung im Badezimmer (A1).",
             "paragraphs": [
               [
-                "Jeder Tag beginnt für Jonas im sauberen [das Badezimmer|Badezimmer].",
-                "Zuerst wäscht er sich am großen [das Waschbecken, -|Waschbecken] mit kaltem Wasser das Gesicht.",
-                "Über dem Becken hängt ein klarer [der Spiegel, -|Spiegel], in dem er sich die Haare kämmt."
-              ],
-              [
-                "Unter der warmen [die Dusche, -n|Dusche] wacht er endgültig auf und fühlt sich frisch.",
-                "Danach trocknet er sich mit einem weichen [das Handtuch, -̈er|Handtuch] ab."
+                "Jeden Morgen wasche ich mein Gesicht am sauberen [das Waschbecken, -|Waschbecken].",
+                "Ich schaue in den großen [der Spiegel, -|Spiegel] und kämme mein Haar.",
+                "Am Abend nehme ich eine warme [die Dusche, -n|Dusche].",
+                "Am Wochenende bade ich gern in der [die Badewanne, -n|Badewanne].",
+                "Die [die Toilette, -n|Toilette] wird stets hygienisch sauber gehalten."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Im Badezimmer",
+              "intro": "Grundausstattung im Badezimmer (A1).",
+              "paragraphs": [
+                [
+                  "Jeden Morgen wasche ich mein Gesicht am sauberen [das Waschbecken, -|Waschbecken].",
+                  "Ich schaue in den großen [der Spiegel, -|Spiegel] und kämme mein Haar.",
+                  "Am Abend nehme ich eine warme [die Dusche, -n|Dusche].",
+                  "Am Wochenende bade ich gern in der [die Badewanne, -n|Badewanne].",
+                  "Die [die Toilette, -n|Toilette] wird stets hygienisch sauber gehalten."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Ein entspannendes Bad",
+              "intro": "Körperpflege und Wohlbefinden im Badezimmer (A2).",
+              "paragraphs": [
+                [
+                  "Nach dem Sport tut eine heiße [die Dusche, -n|Dusche] besonders gut.",
+                  "Am Sonntag lasse ich warmes Schaumwasser in die [die Badewanne, -n|Badewanne] ein.",
+                  "Am breiten [das Waschbecken, -|Waschbecken] putzen sich die Kinder gründlich die Zähne.",
+                  "Im hell beleuchteten [der Spiegel, -|Spiegel] kontrolliere ich meine Rasur."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Das Bad als private Wellness-Oase",
+              "intro": "Moderne Sanitärtechnik und Wohlfühlatmosphäre (B1).",
+              "paragraphs": [
+                [
+                  "Moderne Badezimmer vereinen Funktionalität mit dem Komfort eines privaten Spas.",
+                  "Eine bodengleiche [die Dusche, -n|Dusche] mit Regenduschkopf erfreut sich wachsender Beliebtheit in der modernen Architektur.",
+                  "Wer nach einem langen Arbeitstag abschalten möchte, findet in einer ergonomischen [die Badewanne, -n|Badewanne] pure Erholung.",
+                  "Ein großzügiger [der Spiegel, -|Spiegel] über dem Doppel-[das Waschbecken, -|Waschbecken] lässt auch kleinere Bäder optisch weit wirken."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Sanitärarchitektur und Hydrotherapie",
+              "intro": "Nachhaltiges Wassermanagement und Spa-Konzepte (B2).",
+              "paragraphs": [
+                [
+                  "Die Konzeption moderner Nassräume reflektiert den Wandel von der simplen Waschzelle zum ganzheitlichen Rückzugsort für Hydrotherapie.",
+                  "Wassersparende Armaturen am [das Waschbecken, -|Waschbecken] und in der [die Dusche, -n|Dusche] schonen Ressourcen, ohne den Nutzungskomfort zu mindern.",
+                  "Die Integration fugenloser Oberflächen, freistehender [die Badewanne, -n|Badewannen] und beschlagfreier [der Spiegel, -|Spiegel] setzt architektonische Maßstäbe."
+                ]
+              ]
+            }
           }
         }
       ]

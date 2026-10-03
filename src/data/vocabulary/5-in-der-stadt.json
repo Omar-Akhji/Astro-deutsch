@@ -62,19 +62,76 @@
             }
           ],
           "story": {
-            "badge": "Stadtleben & Infrastruktur",
-            "title": "Ein Spaziergang durch die Stadt",
+            "badge": "A1 – Grundstufe",
+            "title": "Wichtige Orte in der Stadt",
+            "intro": "Einfache Wörter für öffentliche Gebäude (A1).",
             "paragraphs": [
               [
-                "Die Innenstadt bietet viele wichtige Gebäude und kulturelle Orte für Bürger und Besucher.",
-                "Mitten im Zentrum steht das alte Rathaus neben der bekannten [die Bibliothek|Stadtbibliothek].",
-                "Am großen Platz befindet sich die moderne [die Post|Postfiliale] und gegenüber eine internationale [die Bank|Bank]."
-              ],
-              [
-                "Viele Familien verbringen den Nachmittag im sonnigen Park oder besuchen das nahe gelegene Museum.",
-                "Ein lebendiges Stadtzentrum macht das Leben abwechslungsreich und lebenswert."
+                "Ich lebe gern in dieser schönen [die Stadt, -̈e|Stadt].",
+                "Im lebendigen [das Zentrum|Zentrum] steht das historische [das Rathaus, -̈er|Rathaus].",
+                "Ich bringe ein Paket zur [die Post|Post] und hebe Geld bei der [die Bank, -en|Bank] ab.",
+                "Medikamente kaufe ich in der [die Apotheke, -n|Apotheke].",
+                "Kranke Menschen werden im [das Krankenhaus, -̈er|Krankenhaus] behandelt, und die [die Polizei|Polizei] sorgt für Sicherheit."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Wichtige Orte in der Stadt",
+              "intro": "Einfache Wörter für öffentliche Gebäude (A1).",
+              "paragraphs": [
+                [
+                  "Ich lebe gern in dieser schönen [die Stadt, -̈e|Stadt].",
+                  "Im lebendigen [das Zentrum|Zentrum] steht das historische [das Rathaus, -̈er|Rathaus].",
+                  "Ich bringe ein Paket zur [die Post|Post] und hebe Geld bei der [die Bank, -en|Bank] ab.",
+                  "Medikamente kaufe ich in der [die Apotheke, -n|Apotheke].",
+                  "Kranke Menschen werden im [das Krankenhaus, -̈er|Krankenhaus] behandelt, und die [die Polizei|Polizei] sorgt für Sicherheit."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Erledigungen in der Nachbarschaft",
+              "intro": "Öffentliche Einrichtungen im Alltag nutzen (A2).",
+              "paragraphs": [
+                [
+                  "Gestern hatte ich viele Erledigungen in der [die Stadt, -̈e|Stadt].",
+                  "Zuerst ging ich zur [die Bank, -en|Bank], um ein neues Konto zu eröffnen.",
+                  "Danach holte ich ein Rezept in der [die Apotheke, -n|Apotheke] ab.",
+                  "Im [das Zentrum|Zentrum] der Stadt patrouilliert [die Polizei|die Polizei] regelmäßig für die Sicherheit aller Bürger."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Öffentliche Infrastruktur und Bürgerdienste",
+              "intro": "Verwaltung, Gesundheit und Sicherheit in Kommunen (B1).",
+              "paragraphs": [
+                [
+                  "Eine bürgernahe [die Stadt, -̈e|Stadt] zeichnet sich durch kurze Wege zu allen lebenswichtigen Institutionen aus.",
+                  "Im [das Rathaus, -̈er|Rathaus] können Einwohner ihren Wohnsitz anmelden und Ausweisdokumente beantragen.",
+                  "Das moderne [das Krankenhaus, -̈er|Krankenhaus] gewährleistet zusammen mit Notfallapotheken eine lückenlose medizinische Versorgung rund um die Uhr.",
+                  "Sowohl [die Post|die Post] als auch Bankfilialen sichern die tägliche Nahversorgung im städtischen [das Zentrum|Zentrum]."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Kommunale Daseinsvorsorge und Stadtentwicklung",
+              "intro": "Städtebauliche Infrastruktur und institutionelle Stabilität (B2).",
+              "paragraphs": [
+                [
+                  "Die institutionelle Daseinsvorsorge bildet das unverzichtbare Fundament florierender Kommunen.",
+                  "Die Konzentration zentraler Einrichtungen wie [das Rathaus, -̈er|Rathaus], Haupt-[die Post|Post] und administrativer Zentren im historischen [das Zentrum|Zentrum] stärkt die urbane Identität.",
+                  "Gleichzeitig bildet die enge Kooperation von [das Krankenhaus, -̈er|Krankenhaus] und [die Polizei|Polizei] das Rückgrat ziviler Resilienz und öffentlicher Sicherheit."
+                ]
+              ]
+            }
           }
         },
         {
@@ -125,19 +182,76 @@
             }
           ],
           "story": {
-            "badge": "Einkauf & Shopping",
-            "title": "Ein Einkaufsbummel am Samstag",
+            "badge": "A1 – Grundstufe",
+            "title": "Einkaufen im Alltag",
+            "intro": "Grundwortschatz zum Thema Einkaufen (A1).",
             "paragraphs": [
               [
-                "Am Samstagnachmittag gehen viele Menschen gerne in die Fußgängerzone zum Einkaufen.",
-                "Im großen Supermarkt füllt Thomas seinen Einkaufswagen mit Lebensmitteln für die ganze Woche.",
-                "An der Kasse bezahlt er bequem mit Karte und erhält seine Quittung."
-              ],
-              [
-                "In der Bäckerei nebenan kauft er noch frische Brötchen und ein knuspriges Vollkornbrot.",
-                "Einkaufen in lokalen Geschäften unterstützt die Gemeinschaft und macht Freude."
+                "Ich gehe in den großen [der Supermarkt, -̈e|Supermarkt], um Lebensmittel zu kaufen.",
+                "Frisches Brot kaufe ich morgens in der [die Bäckerei, -en|Bäckerei].",
+                "Am Samstag besuche ich den bunten [der Markt, -̈e|Markt] auf dem Platz.",
+                "Ich bezahle an der Kasse mit [das Geld|Geld].",
+                "Manche Produkte sind [billig / günstig|günstig], aber andere sind sehr [teuer|teuer]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Einkaufen im Alltag",
+              "intro": "Grundwortschatz zum Thema Einkaufen (A1).",
+              "paragraphs": [
+                [
+                  "Ich gehe in den großen [der Supermarkt, -̈e|Supermarkt], um Lebensmittel zu kaufen.",
+                  "Frisches Brot kaufe ich morgens in der [die Bäckerei, -en|Bäckerei].",
+                  "Am Samstag besuche ich den bunten [der Markt, -̈e|Markt] auf dem Platz.",
+                  "Ich bezahle an der Kasse mit [das Geld|Geld].",
+                  "Manche Produkte sind [billig / günstig|günstig], aber andere sind sehr [teuer|teuer]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Angebote vergleichen",
+              "intro": "Preise und Geschäfte im Alltag (A2).",
+              "paragraphs": [
+                [
+                  "In der Fußgängerzone gibt es viele schöne [das Geschäft, -e|Geschäfte].",
+                  "In der [die Bäckerei, -en|Bäckerei] duftet es herrlich nach warmen Brötchen.",
+                  "Im [der Supermarkt, -̈e|Supermarkt] vergleiche ich die Preise, um [das Geld|Geld] zu sparen.",
+                  "Frisches Gemüse auf dem [der Markt, -̈e|Markt] ist oft von besserer Qualität als die [billig / günstig|billige] Ware im Discounter."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Preisbewusstes und nachhaltiges Einkaufen",
+              "intro": "Einkaufsplanung und Konsumverhalten (B1).",
+              "paragraphs": [
+                [
+                  "Ein durchdachter Einkaufszettel hilft dabei, im [der Supermarkt, -̈e|Supermarkt] keine unnötigen Dinge zu kaufen.",
+                  "Wer lokale [das Geschäft, -e|Geschäfte] und inhabergeführte [die Bäckerei, -en|Bäckereien] unterstützt, stärkt die Wirtschaft im eigenen Viertel.",
+                  "Auf dem regionalen [der Markt, -̈e|Markt] bekommt man saisonale Produkte direkt vom Erzeuger, was oft gar nicht [teuer|teurer] als im Supermarkt ist.",
+                  "Ein bewusster Umgang mit [das Geld|Geld] ermöglicht es, auf [billig / günstig|günstige] Sonderangebote zurückzugreifen, ohne auf Qualität zu verzichten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Konsumsoziologie und Strukturwandel des Einzelhandels",
+              "intro": "Analyse des Wandels vom stationären Handel zum E-Commerce (B2).",
+              "paragraphs": [
+                [
+                  "Der stationäre Einzelhandel steht im Zuge der Digitalisierung vor tiefgreifenden ökonomischen Umbrüchen.",
+                  "Traditionsreiche Fach-[das Geschäft, -e|Geschäfte] müssen ihr Profil schärfen, um gegen großflächige [der Supermarkt, -̈e|Supermärkte] und Online-Plattformen zu bestehen.",
+                  "Verbraucher reflektieren zunehmend die Wertschöpfung hinter scheinbar [billig / günstig|billigen] Preisen und sind bereit, für ethisch erzeugte Produkte angemessenes [das Geld|Geld] zu investieren."
+                ]
+              ]
+            }
           }
         }
       ]

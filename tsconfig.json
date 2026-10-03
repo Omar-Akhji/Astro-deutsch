@@ -12,7 +12,8 @@
     "skills-catalog",
     ".agents",
     ".gemini",
-    ".kiro"
+    ".kiro",
+    "scratch"
   ],
 
   "compilerOptions": {

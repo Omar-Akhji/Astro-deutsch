@@ -19,7 +19,7 @@ const emit = defineEmits<{ (e: "start"): void }>();
     <!-- Exam badge -->
     <AnimateOnScroll animation="fade-up">
       <div
-        class="mx-auto mbe-6 inline-flex items-center gap-2 rounded-full border border-yellow/30 bg-yellow/10 px-4 py-1.5 text-sm font-medium text-yellow"
+        class="mx-auto mbe-6 inline-flex items-center gap-2 rounded-full border-[1.5px] border-yellow/30 bg-yellow/10 px-4 py-1.5 text-sm font-medium text-yellow"
       >
         <ClipboardList :size="16" /> Goethe / ÖSD Zertifikat
       </div>
@@ -50,7 +50,7 @@ const emit = defineEmits<{ (e: "start"): void }>();
         :delay="300"
         class="h-full"
       >
-        <div class="h-full rounded-xl border border-white/10 bg-mist-900/50 p-4 shadow-sm">
+        <div class="h-full rounded-xl border-[1.5px] border-white/10 bg-mist-900/50 p-4 shadow-sm">
           <dd class="m-0 text-2xl font-bold text-yellow">
             {{ props.questionCount }}
           </dd>
@@ -62,7 +62,7 @@ const emit = defineEmits<{ (e: "start"): void }>();
         :delay="400"
         class="h-full"
       >
-        <div class="h-full rounded-xl border border-white/10 bg-mist-900/50 p-4 shadow-sm">
+        <div class="h-full rounded-xl border-[1.5px] border-white/10 bg-mist-900/50 p-4 shadow-sm">
           <dd class="m-0 text-2xl font-bold text-yellow">
             {{ props.duration }}
           </dd>

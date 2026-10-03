@@ -44,19 +44,76 @@
             }
           ],
           "story": {
-            "badge": "Freizeit & Hobbys",
-            "title": "Ein aktives Wochenende",
+            "badge": "A1 – Grundstufe",
+            "title": "Hobbys und Freizeit",
+            "intro": "Grundwortschatz zu beliebten Freizeitbeschäftigungen (A1).",
             "paragraphs": [
               [
-                "Am Wochenende haben die Menschen Zeit für ihre liebsten Freizeitaktivitäten und Hobbys.",
-                "Manche wandern gern durch die grünen Wälder oder fahren mit dem Rad am Fluss entlang.",
-                "Andere treffen sich im Sportverein zum Fußballspielen, Schwimmen oder Tennis."
-              ],
-              [
-                "Kreative Menschen zeichnen, spielen ein Musikinstrument oder kochen gemeinsam mit Freunden.",
-                "Ausgewogene Freizeit schenkt neue Kraft und gute Laune für die kommende Woche."
+                "In meiner Freizeit mag ich ein spannendes Buch [lesen|lesen].",
+                "Am liebsten möchte ich entspannte [Musik hören|Musik hören].",
+                "Am Wochenende treibe ich gern [der Sport|Sport] im Park.",
+                "Mit Freunden gehe ich ins [das Kino, -s|Kino] und schaue Filme.",
+                "Im Garten können die Kinder fröhlich [spielen|spielen]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Hobbys und Freizeit",
+              "intro": "Grundwortschatz zu beliebten Freizeitbeschäftigungen (A1).",
+              "paragraphs": [
+                [
+                  "In meiner Freizeit mag ich ein spannendes Buch [lesen|lesen].",
+                  "Am liebsten möchte ich entspannte [Musik hören|Musik hören].",
+                  "Am Wochenende treibe ich gern [der Sport|Sport] im Park.",
+                  "Mit Freunden gehe ich ins [das Kino, -s|Kino] und schaue Filme.",
+                  "Im Garten können die Kinder fröhlich [spielen|spielen]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Ein freier Nachmittag",
+              "intro": "Hobbys mit Freunden und Familie teilen (A2).",
+              "paragraphs": [
+                [
+                  "Nach der Schule haben wir viel Zeit für unsere liebsten Hobbys.",
+                  "Am Nachmittag wollen wir im Verein Fußball [spielen|spielen].",
+                  "Auf dem Sofa kann ich mich ausruhen und schöne [Musik hören|Musik hören].",
+                  "Am Samstagabend verabreden wir uns vor dem [das Kino, -s|Kino] für eine neue Komödie."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Ausgleich und aktive Erholung",
+              "intro": "Bewusste Freizeitgestaltung für Körper und Geist (B1).",
+              "paragraphs": [
+                [
+                  "Ein aktiver Ausgleich zum oft bewegungsarmen Berufsalltag ist essenziell für die Gesundheit.",
+                  "Regelmäßiger [der Sport|Sport] baut Stresshormone ab und stärkt das körperliche Wohlbefinden nachhaltig.",
+                  "Wer gern liest, kann beim [lesen|Lesen] anspruchsvoller Literatur in fremde Gedankenwelten eintauchen.",
+                  "Gemeinsame Kulturerlebnisse im [das Kino, -s|Kino] oder Konzerte bieten eine wunderbare Gelegenheit, Freundschaften zu pflegen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Freizeitsoziologie und Work-Life-Balance",
+              "intro": "Reflexion über Entschleunigung und schöpferische Freizeit (B2).",
+              "paragraphs": [
+                [
+                  "In der modernen Leistungsgesellschaft gewinnt die bewusste Gestaltung von Muße und Rekreation zunehmend an strategischer Bedeutung.",
+                  "Ob man beim konzentrierten [lesen|Lesen], beim meditativen [Musik hören|Musikhören] oder bei anspruchsvollem [der Sport|Sport] Entlastung findet – entscheidend ist die intrinsische Motivation.",
+                  "Kulturelle Teilhabe durch das [das Kino, -s|Kino] und kreative Räume zum zweckfreien [spielen|Spielen] fördern die geistige Agilität und emotionale Resilienz."
+                ]
+              ]
+            }
           }
         }
       ]

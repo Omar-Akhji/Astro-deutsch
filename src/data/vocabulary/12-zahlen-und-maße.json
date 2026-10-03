@@ -44,18 +44,74 @@
             }
           ],
           "story": {
-            "badge": "Uhrzeit & Tagesablauf",
-            "title": "Jeder Moment zählt",
+            "badge": "A1 – Grundstufe",
+            "title": "Uhrzeit und Tage",
+            "intro": "Grundwortschatz zu Stunden, Minuten und Tagen (A1).",
             "paragraphs": [
               [
-                "Pünktlichkeit und ein gut strukturierter Tagesablauf haben in Deutschland einen hohen Stellenwert.",
-                "Ein Tag hat vierundzwanzig Stunden, jede Stunde sechzig Minuten und jede Minute sechzig Sekunden.",
-                "Wer seine Termine sorgfältig plant, vermeidet Hektik und schafft Zeit für die schönen Dinge des Lebens."
-              ],
-              [
-                "Die gemeinsame Zeit mit lieben Menschen ist das Wertvollste, was wir besitzen."
+                "Wie viel Uhr ist es? Ich prüfe die [die Uhrzeit, -en|Uhrzeit].",
+                "Ein [der Tag, -e|Tag] hat vierundzwanzig Stunden.",
+                "Sieben Tage bilden eine ganze [die Woche, -n|Woche].",
+                "Eine [die Stunde, -n|Stunde] vergeht oft sehr schnell."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Uhrzeit und Tage",
+              "intro": "Grundwortschatz zu Stunden, Minuten und Tagen (A1).",
+              "paragraphs": [
+                [
+                  "Wie viel Uhr ist es? Ich prüfe die [die Uhrzeit, -en|Uhrzeit].",
+                  "Ein [der Tag, -e|Tag] hat vierundzwanzig Stunden.",
+                  "Sieben Tage bilden eine ganze [die Woche, -n|Woche].",
+                  "Eine [die Stunde, -n|Stunde] vergeht oft sehr schnell."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Pünktlich durch den Tag",
+              "intro": "Termine planen und Zeitspannen berechnen (A2).",
+              "paragraphs": [
+                [
+                  "Sechzig [die Minute, -n|Minuten] ergeben genau eine [die Stunde, -n|Stunde].",
+                  "Wir haben uns für eine feste [die Uhrzeit, -en|Uhrzeit] zum Kaffee verabredet.",
+                  "Jeder [der Tag, -e|Tag] bringt neue spannende Aufgaben mit sich.",
+                  "Am Ende der arbeitsreichen [die Woche, -n|Woche] freuen wir uns auf das Wochenende."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Effektives Zeitmanagement",
+              "intro": "Planung, Prioritäten und bewusste Lebenszeit (B1).",
+              "paragraphs": [
+                [
+                  "Wer seine Termine strukturiert plant, spart jeden [der Tag, -e|Tag] wertvolle [die Minute, -n|Minuten].",
+                  "Eine bewusste Zeiteinteilung über die gesamte [die Woche, -n|Woche] hinweg reduziert Stress und erhöht die Produktivität.",
+                  "Pünktlichkeit gilt im deutschen Sprachraum als Zeichen von Zuverlässigkeit und Respekt gegenüber der vereinbarten [die Uhrzeit, -en|Uhrzeit].",
+                  "Man sollte sich jedoch jeden Tag mindestens eine [die Stunde, -n|Stunde] für Sport und Erholung reservieren."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Chronobiologie und die Beschleunigung der Moderne",
+              "intro": "Philosophische und soziologische Dimensionen von Zeit (B2).",
+              "paragraphs": [
+                [
+                  "Die moderne Gesellschaft ist geprägt von einer fortschreitenden Verdichtung von Zeit, in der jede [die Minute, -n|Minute] ökonomisch verwertet wird.",
+                  "Chronobiologische Erkenntnisse unterstreichen jedoch, dass der menschliche Biorhythmus nicht starr nach der [die Uhrzeit, -en|Uhrzeit] getaktet werden kann.",
+                  "Ein souveräner Umgang mit dem Faktor Zeit erfordert die Fähigkeit, inmitten einer hektischen [die Woche, -n|Woche] Phasen kontemplativer Entschleunigung zu etablieren."
+                ]
+              ]
+            }
           }
         }
       ]

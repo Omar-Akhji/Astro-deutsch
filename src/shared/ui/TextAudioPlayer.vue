@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount, nextTick, watch } from "vue";
 import { Play, Pause, Square, SkipBack, SkipForward, Volume2, Headphones } from "lucide-vue-next";
+import gsap from "@/shared/lib/gsap.ts";
 
 interface Props {
   /** Optional direct text to read */
@@ -39,6 +40,7 @@ const currentIndex = ref(0);
 const currentRate = ref(props.defaultRate);
 const resolvedSentences = ref<string[]>(props.sentences ? [...props.sentences] : []);
 const domSentenceElements = ref<HTMLElement[]>([]);
+const instanceId = Math.random().toString(36).slice(2);
 
 let currentAudio: HTMLAudioElement | null = null;
 let activeUtterance: SpeechSynthesisUtterance | null = null;
@@ -98,8 +100,11 @@ const syncDomHighlight = () => {
 
   for (const [idx, el] of domSentenceElements.value.entries()) {
     if (idx === currentIndex.value && (isPlaying.value || isPaused.value)) {
-      el.classList.add(props.activeClass);
-      el.setAttribute("aria-current", "true");
+      if (!el.classList.contains(props.activeClass)) {
+        el.classList.add(props.activeClass);
+        el.setAttribute("aria-current", "true");
+        gsap.fromTo(el, { opacity: 0.8 }, { opacity: 1, duration: 0.22, ease: "power2.out" });
+      }
     } else {
       el.classList.remove(props.activeClass);
       el.removeAttribute("aria-current");
@@ -201,6 +206,10 @@ const speakCurrentSentence = async () => {
   isPlaying.value = true;
   isPaused.value = false;
   syncDomHighlight();
+
+  if (typeof globalThis !== "undefined") {
+    globalThis.dispatchEvent(new CustomEvent("text-audio-play", { detail: { id: instanceId } }));
+  }
 
   // High-fidelity native German pronunciation audio stream
   const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=de&client=tw-ob&q=${encodeURIComponent(clean)}`;
@@ -304,6 +313,51 @@ const nextSentence = () => {
   }
 };
 
+const rates = [
+  { value: 0.75, label: "0.75x", title: "0.75x: Langsames Lerntempo" },
+  { value: 0.9, label: "0.9x", title: "0.9x: Optimales Sprachlerntempo (Empfohlen)" },
+  { value: 1, label: "1.0x", title: "1.0x: Normale Sprechgeschwindigkeit" },
+  { value: 1.2, label: "1.2x", title: "1.2x: Schnelles Tempo" },
+];
+
+const speedContainerRef = ref<HTMLElement | null>(null);
+const speedIndicatorRef = ref<HTMLElement | null>(null);
+const speedButtonsRef = ref<Record<number, HTMLElement>>({});
+let speedResizeObserver: ResizeObserver | null = null;
+
+const setSpeedButtonRef = (val: number, el: unknown) => {
+  if (el instanceof HTMLElement) {
+    speedButtonsRef.value[val] = el;
+  }
+};
+
+const updateSpeedIndicator = (immediate = false) => {
+  if (!speedIndicatorRef.value) return;
+  const activeBtn = speedButtonsRef.value[currentRate.value];
+  if (!activeBtn || activeBtn.offsetWidth === 0) return;
+
+  if (immediate) {
+    gsap.set(speedIndicatorRef.value, {
+      x: activeBtn.offsetLeft,
+      width: activeBtn.offsetWidth,
+      autoAlpha: 1,
+    });
+  } else {
+    gsap.to(speedIndicatorRef.value, {
+      x: activeBtn.offsetLeft,
+      width: activeBtn.offsetWidth,
+      duration: 0.4,
+      ease: "power3.out",
+      autoAlpha: 1,
+      overwrite: "auto",
+    });
+  }
+};
+
+watch(currentRate, () => {
+  void nextTick(() => updateSpeedIndicator(false));
+});
+
 const setRate = (rate: number) => {
   currentRate.value = rate;
   if (currentAudio) {
@@ -379,6 +433,13 @@ const handleBeforeSwap = () => {
   stopAllAudio();
 };
 
+const handleOtherPlayerPlay = (event: Event) => {
+  const customEvent = event as CustomEvent<{ id: string }>;
+  if (customEvent.detail?.id !== instanceId && (isPlaying.value || isPaused.value)) {
+    pause();
+  }
+};
+
 onMounted(() => {
   loadGermanVoice();
   if (typeof globalThis !== "undefined" && "speechSynthesis" in globalThis) {
@@ -392,25 +453,48 @@ onMounted(() => {
 
   document.addEventListener("astro:before-swap", handleBeforeSwap);
   document.addEventListener("astro:page-load", discoverSentences);
-  window.addEventListener("beforeunload", handleBeforeSwap);
+  globalThis.addEventListener("beforeunload", handleBeforeSwap);
+  globalThis.addEventListener("text-audio-play", handleOtherPlayerPlay);
+
+  void nextTick(() => {
+    updateSpeedIndicator(true);
+  });
+
+  if (typeof ResizeObserver === "undefined") {
+    return;
+  }
+
+  speedResizeObserver = new ResizeObserver(() => {
+    updateSpeedIndicator(true);
+  });
+  if (speedContainerRef.value) {
+    speedResizeObserver.observe(speedContainerRef.value);
+  }
 });
 
 onBeforeUnmount(() => {
   stopAllAudio();
+  if (speedResizeObserver) {
+    speedResizeObserver.disconnect();
+    speedResizeObserver = null;
+  }
   if (typeof document !== "undefined") {
     document.removeEventListener("astro:before-swap", handleBeforeSwap);
     document.removeEventListener("astro:page-load", discoverSentences);
   }
-  if (typeof window !== "undefined") {
-    window.removeEventListener("beforeunload", handleBeforeSwap);
+  if (typeof globalThis === "undefined") {
+    return;
   }
+
+  globalThis.removeEventListener("beforeunload", handleBeforeSwap);
+  globalThis.removeEventListener("text-audio-play", handleOtherPlayerPlay);
 });
 </script>
 
 <template>
   <div
-    class="w-full overflow-hidden rounded-2xl border bg-linear-to-b from-white/8 to-white/2 p-4 shadow-xl backdrop-blur-xl transition-colors duration-300 tablet:p-5"
-    :class="isPlaying ? 'border-amber-400/25 shadow-amber-400/5' : 'border-white/10'"
+    class="w-full rounded-2xl border-[1.5px] bg-linear-to-b from-white/5 to-white/2 p-4 shadow-xl backdrop-blur-xl transition-colors duration-300 tablet:p-5"
+    :class="isPlaying ? 'border-yellow/30 shadow-yellow/5' : 'border-white/15'"
     role="region"
     :aria-label="title"
   >
@@ -418,7 +502,7 @@ onBeforeUnmount(() => {
     <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/8 pb-3.5">
       <div class="flex items-center gap-3">
         <div
-          class="flex size-10 items-center justify-center rounded-full border border-amber-400/30 bg-amber-400/10 text-amber-300 shadow-md shadow-amber-400/10"
+          class="flex size-10 items-center justify-center rounded-full border-[1.5px] border-yellow/30 bg-yellow/10 text-yellow shadow-md shadow-yellow/10"
         >
           <Headphones class="size-5" />
         </div>
@@ -435,19 +519,19 @@ onBeforeUnmount(() => {
               aria-hidden="true"
             >
               <span
-                class="w-0.75 rounded-full bg-amber-400/60 transition-all duration-300"
+                class="w-0.75 rounded-full bg-yellow/60 transition-all duration-300"
                 :class="isPlaying ? 'animate-eq-1' : 'h-1.5'"
               ></span>
               <span
-                class="w-0.75 rounded-full bg-amber-400 transition-all duration-300"
+                class="w-0.75 rounded-full bg-yellow transition-all duration-300"
                 :class="isPlaying ? 'animate-eq-2' : 'h-3'"
               ></span>
               <span
-                class="w-0.75 rounded-full bg-amber-400/80 transition-all duration-300"
+                class="w-0.75 rounded-full bg-yellow/80 transition-all duration-300"
                 :class="isPlaying ? 'animate-eq-3' : 'h-2'"
               ></span>
               <span
-                class="w-0.75 rounded-full bg-amber-300 transition-all duration-300"
+                class="w-0.75 rounded-full bg-yellow transition-all duration-300"
                 :class="isPlaying ? 'animate-eq-4' : 'h-4'"
               ></span>
             </div>
@@ -462,16 +546,16 @@ onBeforeUnmount(() => {
       <!-- Right: Voice & Sentence Indicator -->
       <div class="flex items-center gap-2">
         <span
-          class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-mist-300"
+          class="rounded-full border-[1.5px] border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-mist-300"
         >
           Satz
-          <strong class="text-amber-300">{{ totalCount > 0 ? currentIndex + 1 : 0 }}</strong> von
+          <strong class="text-yellow">{{ totalCount > 0 ? currentIndex + 1 : 0 }}</strong> von
           {{ totalCount }}
         </span>
         <div
-          class="hidden items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-mist-400 mobile:flex"
+          class="hidden items-center gap-1.5 rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-1 text-xs text-mist-400 mobile:flex"
         >
-          <Volume2 class="size-3.5 text-amber-300" />
+          <Volume2 class="size-3.5 text-yellow" />
           <span>Deutsch (DE)</span>
         </div>
       </div>
@@ -484,7 +568,7 @@ onBeforeUnmount(() => {
         <!-- Prev Sentence Button -->
         <button
           type="button"
-          class="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-mist-300 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white active:scale-95 disabled:pointer-events-none disabled:opacity-30"
+          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white outline-none focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
           :disabled="currentIndex <= 0 || !isSupported"
           aria-label="Vorheriger Satz"
           title="Vorheriger Satz"
@@ -496,20 +580,30 @@ onBeforeUnmount(() => {
         <!-- Main Play/Pause Button -->
         <button
           type="button"
-          class="group relative flex size-10 items-center justify-center rounded-full bg-linear-to-r from-amber-400 via-amber-300 to-yellow-400 text-neutral-950 shadow-lg shadow-amber-400/25 transition-all hover:scale-105 hover:shadow-amber-400/40 active:scale-95 disabled:pointer-events-none disabled:opacity-50"
+          class="relative flex size-10 items-center justify-center rounded-full border-[1.5px] border-yellow bg-transparent text-yellow transition-colors outline-none focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-50"
           :disabled="!isSupported || totalCount === 0"
           :aria-label="isPlaying ? 'Pause' : 'Vorlesen'"
-          :title="isPlaying ? 'Pause' : (isPaused ? 'Fortsetzen' : 'Vorlesen')"
+          :title="
+            isPlaying ? 'Pause'
+            : isPaused ? 'Fortsetzen'
+            : 'Vorlesen'
+          "
           @click="togglePlay"
         >
-          <Pause v-if="isPlaying" class="size-4.5 fill-current transition-transform group-hover:scale-110" />
-          <Play v-else class="ml-0.5 size-4.5 fill-current transition-transform group-hover:scale-110" />
+          <Pause
+            v-if="isPlaying"
+            class="size-4.5 fill-current"
+          />
+          <Play
+            v-else
+            class="ml-0.5 size-4.5 fill-current"
+          />
         </button>
 
         <!-- Next Sentence Button -->
         <button
           type="button"
-          class="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-mist-300 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white active:scale-95 disabled:pointer-events-none disabled:opacity-30"
+          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white outline-none focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
           :disabled="currentIndex >= totalCount - 1 || !isSupported"
           aria-label="Nächster Satz"
           title="Nächster Satz"
@@ -521,7 +615,7 @@ onBeforeUnmount(() => {
         <!-- Stop Button -->
         <button
           type="button"
-          class="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-mist-300 transition-all hover:border-rose-400/40 hover:bg-rose-400/10 hover:text-rose-300 active:scale-95 disabled:pointer-events-none disabled:opacity-30"
+          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all hover:border-rose-400/40 hover:bg-rose-400/10 hover:text-rose-300 outline-none focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
           :disabled="!isPlaying && !isPaused"
           aria-label="Wiedergabe stoppen"
           title="Zurücksetzen & Stoppen"
@@ -531,63 +625,34 @@ onBeforeUnmount(() => {
         </button>
       </div>
 
-      <!-- Speed / Tempo Selector -->
+      <!-- Speed / Tempo Selector matching Desktop Navbar -->
       <div class="flex items-center gap-1.5">
         <span class="mr-1 hidden text-xs font-medium text-mist-400 tablet:inline"
           >Geschwindigkeit:</span
         >
-        <div class="flex rounded-full border border-white/10 bg-black/40 p-0.5 text-xs font-semibold">
+        <div
+          ref="speedContainerRef"
+          class="relative flex items-center overflow-hidden rounded-full border-[1.5px] border-white/10 bg-card/75 p-1 shadow-[0_4px_20px_rgba(0,0,0,0.35)] backdrop-blur-(--glass-blur)"
+        >
+          <!-- Sliding Indicator matching Desktop Navbar -->
+          <div
+            ref="speedIndicatorRef"
+            class="pointer-events-none absolute inset-y-1 left-0 z-0 rounded-full bg-linear-to-br from-yellow to-orange opacity-0 shadow-lg shadow-yellow/25"
+          ></div>
+
           <button
+            v-for="rate in rates"
+            :key="rate.value"
+            :ref="(el) => setSpeedButtonRef(rate.value, el)"
             type="button"
-            class="rounded-full px-2.5 py-1 transition-all"
+            class="relative z-10 rounded-full px-3 py-1 text-xs font-semibold transition-colors duration-200 outline-none focus:outline-none focus-visible:outline-none"
             :class="
-              currentRate === 0.75 ?
-                'bg-amber-400 text-neutral-950 shadow-sm'
-              : 'text-mist-400 hover:text-white'
+              currentRate === rate.value ? 'font-bold text-black' : 'text-mist-400 hover:text-white'
             "
-            title="0.75x: Langsames Lerntempo"
-            @click="setRate(0.75)"
+            :title="rate.title"
+            @click="setRate(rate.value)"
           >
-            0.75x
-          </button>
-          <button
-            type="button"
-            class="rounded-full px-2.5 py-1 transition-all"
-            :class="
-              currentRate === 0.9 ?
-                'bg-amber-400 text-neutral-950 shadow-sm'
-              : 'text-mist-400 hover:text-white'
-            "
-            title="0.9x: Optimales Sprachlerntempo (Empfohlen)"
-            @click="setRate(0.9)"
-          >
-            0.9x
-          </button>
-          <button
-            type="button"
-            class="rounded-full px-2.5 py-1 transition-all"
-            :class="
-              currentRate === 1.0 ?
-                'bg-amber-400 text-neutral-950 shadow-sm'
-              : 'text-mist-400 hover:text-white'
-            "
-            title="1.0x: Normale Sprechgeschwindigkeit"
-            @click="setRate(1.0)"
-          >
-            1.0x
-          </button>
-          <button
-            type="button"
-            class="rounded-full px-2.5 py-1 transition-all"
-            :class="
-              currentRate === 1.2 ?
-                'bg-amber-400 text-neutral-950 shadow-sm'
-              : 'text-mist-400 hover:text-white'
-            "
-            title="1.2x: Schnelles Tempo"
-            @click="setRate(1.2)"
-          >
-            1.2x
+            {{ rate.label }}
           </button>
         </div>
       </div>
@@ -597,7 +662,7 @@ onBeforeUnmount(() => {
     <div class="mt-3.5 space-y-1.5">
       <button
         type="button"
-        class="relative block h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 p-0 transition-colors hover:bg-white/15 focus:ring-1 focus:ring-amber-400/50 focus:outline-none"
+        class="relative block h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 p-0 transition-colors hover:bg-white/15 outline-none focus:outline-none focus-visible:outline-none ring-0 focus:ring-0"
         aria-label="Wiedergabefortschritt"
         title="Klicken zum Springen im Text"
         @click="seekByClick"
@@ -605,7 +670,7 @@ onBeforeUnmount(() => {
         @keydown.space.prevent="togglePlay"
       >
         <span
-          class="block h-full rounded-full bg-linear-to-r from-amber-400 to-yellow-300 transition-all duration-300"
+          class="block h-full rounded-full bg-linear-to-r from-yellow to-orange shadow-[0_0_12px_rgba(241,196,15,0.35)] transition-all duration-300"
           :style="{ width: `${progressPercent.toString()}%` }"
         ></span>
       </button>
@@ -615,8 +680,15 @@ onBeforeUnmount(() => {
           <span v-if="currentSentenceText">„{{ cleanTextForSpeech(currentSentenceText) }}“</span>
           <span v-else>Klicke auf Vorlesen, um die Sprachausgabe zu starten.</span>
         </div>
-        <span class="shrink-0 font-mono font-medium text-amber-300/80">{{ progressPercent }}%</span>
+        <span class="shrink-0 font-mono font-medium text-yellow/90">{{ progressPercent }}%</span>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+</style>

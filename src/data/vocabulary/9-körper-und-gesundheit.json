@@ -38,18 +38,74 @@
             }
           ],
           "story": {
-            "badge": "Gesundheit & Körper",
-            "title": "Fit und gesund durch den Tag",
+            "badge": "A1 – Grundstufe",
+            "title": "Der menschliche Körper",
+            "intro": "Grundlegende Bezeichnungen für Körperteile (A1).",
             "paragraphs": [
               [
-                "Ein gesunder Körper braucht regelmäßige Bewegung, frische Luft und ausgewogene Ernährung.",
-                "Beim Joggen am Morgen trainiert man Muskeln, Ausdauer und das Herz-Kreislauf-System.",
-                "Ausreichend Schlaf und viel klares Wasser unterstützen den gesamten Organismus optimal."
-              ],
-              [
-                "Auf die Signale des eigenen Körpers zu achten ist die beste Vorsorge für ein langes, aktives Leben."
+                "Auf meinem [der Kopf, -̈e|Kopf] wachsen die Haare.",
+                "Ich hebe schwere Taschen mit meinem starken [der Arm, -e|Arm].",
+                "Beim Laufen bewege ich jedes [das Bein, -e|Bein].",
+                "Nach dem leckeren Essen ist mein [der Bauch, -̈e|Bauch] voll und zufrieden."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Der menschliche Körper",
+              "intro": "Grundlegende Bezeichnungen für Körperteile (A1).",
+              "paragraphs": [
+                [
+                  "Auf meinem [der Kopf, -̈e|Kopf] wachsen die Haare.",
+                  "Ich hebe schwere Taschen mit meinem starken [der Arm, -e|Arm].",
+                  "Beim Laufen bewege ich jedes [das Bein, -e|Bein].",
+                  "Nach dem leckeren Essen ist mein [der Bauch, -̈e|Bauch] voll und zufrieden."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Bewegung und Fitness",
+              "intro": "Körperteile beim Sport und im Alltag (A2).",
+              "paragraphs": [
+                [
+                  "Vor dem Sport dehne ich meine [der Arm, -e|Arme] und meine [der Bein, -e|Beine] gründlich.",
+                  "Wenn man zu viel Süßes isst, bekommt man manchmal Schmerzen im [der Bauch, -̈e|Bauch].",
+                  "Nach einem langen Arbeitstag am Computer tut mir oft der [der Kopf, -̈e|Kopf] weh.",
+                  "Ein Spaziergang an der frischen Luft tut dem ganzen Körper gut."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Körperbewusstsein und Ergonomie",
+              "intro": "Haltung, Muskelaufbau und Gesundheit (B1).",
+              "paragraphs": [
+                [
+                  "Eine ergonomische Sitzhaltung am Schreibtisch entlastet Nacken, [der Kopf, -̈e|Kopf] und Schultern wirksam.",
+                  "Gezieltes Krafttraining stärkt die Muskeln in [der Arm, -e|Armen] und [das Bein, -e|Beinen], was Fehlhaltungen im Alltag vorbeugt.",
+                  "Die Verdauungsorgane im [der Bauch, -̈e|Bauch] reagieren hochsensibel auf psychischen Stress und ungesunde Nahrung.",
+                  "Wer auf die Signale seines Körpers achtet, bleibt langfristig vital und leistungsfähig."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Somatische Intelligenz und muskuloskelettale Funktionalität",
+              "intro": "Ganzheitliche Anatomie und psychosomatische Zusammenhänge (B2).",
+              "paragraphs": [
+                [
+                  "Der menschliche Bewegungsapparat bildet ein hochkomplexes biomechanisches System kinetischer Ketten.",
+                  "Die koordinierte Kraftübertragung von den [das Bein, -e|Beinen] über das Becken bis in die [der Arm, -e|Arme] ermöglicht Höchstleistungen im Leistungssport.",
+                  "Psychosomatische Spannungen manifestieren sich häufig in Spannungskopfschmerzen im [der Kopf, -̈e|Kopf] oder in viszeralen Dysfunktionen im [der Bauch, -̈e|Bauch]."
+                ]
+              ]
+            }
           }
         },
         {
@@ -82,19 +138,74 @@
             }
           ],
           "story": {
-            "badge": "Medizin & Genesung",
-            "title": "Ein Besuch in der Arztpraxis",
+            "badge": "A1 – Grundstufe",
+            "title": "Krank sein",
+            "intro": "Grundwortschatz zu Krankheit und Arztbesuch (A1).",
             "paragraphs": [
               [
-                "Wenn man sich unwohl fühlt oder Fieber hat, vereinbart man einen Termin in der Praxis.",
-                "Die Ärztin untersucht den Patienten gründlich und hört mit dem Stethoskop die Lunge ab.",
-                "Sie stellt eine Diagnose und verschreibt wirksame Medikamente zur schnellen Besserung."
-              ],
-              [
-                "In der Apotheke holt man die Medizin ab und schont sich einige Tage zu Hause im Bett.",
-                "Ruhe und viel warmer Tee sind oft die beste Medizin für eine schnelle Genesung."
+                "Wenn ich krank bin, spüre ich unangenehme [die Schmerzen (Pl.)|Schmerzen].",
+                "Ich gehe in die Praxis und spreche mit dem [der Arzt, -̈e|Arzt].",
+                "Der Arzt verschreibt mir ein wirksames [das Medikament, -e|Medikament].",
+                "Im kalten Winter habe ich manchmal eine starke [die Erkältung, -en|Erkältung] mit Husten."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Krank sein",
+              "intro": "Grundwortschatz zu Krankheit und Arztbesuch (A1).",
+              "paragraphs": [
+                [
+                  "Wenn ich krank bin, spüre ich unangenehme [die Schmerzen (Pl.)|Schmerzen].",
+                  "Ich gehe in die Praxis und spreche mit dem [der Arzt, -̈e|Arzt].",
+                  "Der Arzt verschreibt mir ein wirksames [das Medikament, -e|Medikament].",
+                  "Im kalten Winter habe ich manchmal eine starke [die Erkältung, -en|Erkältung] mit Husten."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Ein Besuch beim Arzt",
+              "intro": "Symptome beschreiben und Medikamente einnehmen (A2).",
+              "paragraphs": [
+                [
+                  "Gestern fühlte sich Lisa schlapp und hatte hohes Fieber.",
+                  "Der freundliche [der Arzt, -̈e|Arzt] untersuchte ihren Hals und ihre Lunge gründlich.",
+                  "Gegen die [die Schmerzen (Pl.)|Schmerzen] und das Fieber gab er ihr ein gutes [das Medikament, -e|Medikament].",
+                  "Bei einer gewöhnlichen [die Erkältung, -en|Erkältung] sollte man viel warmen Tee trinken und im Bett bleiben."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Genesung und Gesundheitsvorsorge",
+              "intro": "Symptombehandlung, Medikation und Immunsystem (B1).",
+              "paragraphs": [
+                [
+                  "Bei ersten Anzeichen einer [die Erkältung, -en|Erkältung] kann man mit Ruhe und Vitaminen eine Verschlimmerung verhindern.",
+                  "Sollten anhaltende [die Schmerzen (Pl.)|Schmerzen] auftreten, ist der zeitnahe Gang zum [der Arzt, -̈e|Arzt] dringend ratsam.",
+                  "Verschreibungspflichtige [das Medikament, -e|Medikamente] müssen stets exakt nach ärztlicher Verordnung eingenommen werden.",
+                  "Ein starkes Immunsystem und regelmäßige Bewegung sind der beste Schutz vor vielen Infektionskrankheiten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Klinische Diagnostik und evidenzbasierte Pharmakotherapie",
+              "intro": "Medizinische Zusammenhänge, Prävention und Therapie (B2).",
+              "paragraphs": [
+                [
+                  "Die moderne Allgemeinmedizin verfolgt einen ganzheitlichen Ansatz bei der Diagnose akuter und chronischer Erkrankungen.",
+                  "Ein erfahrener [der Arzt, -̈e|Arzt] differenziert präzise zwischen viralen Infekten wie einer banalen [die Erkältung, -en|Erkältung] und behandlungsbedürftigen bakteriellen Komplikationen.",
+                  "Die zielgerichtete Verordnung von [das Medikament, -e|Medikamenten] dient nicht allein der Linderung quälender [die Schmerzen (Pl.)|Schmerzen], sondern der kausalen Beseitigung pathologischer Ursachen."
+                ]
+              ]
+            }
           }
         }
       ]

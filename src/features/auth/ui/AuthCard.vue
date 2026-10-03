@@ -213,7 +213,7 @@ onMounted(() => {
 
           <!-- Pill switcher -->
           <div
-            class="mt-6 flex w-full max-w-70 rounded-full border border-slate-800/60 bg-slate-950/30 p-1"
+            class="mt-6 flex w-full max-w-70 rounded-full border-[1.5px] border-slate-800/60 bg-slate-950/30 p-1"
           >
             <button
               type="button"

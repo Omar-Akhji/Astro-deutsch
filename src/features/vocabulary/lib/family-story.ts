@@ -1,3 +1,5 @@
+import gsap from "@/shared/lib/gsap.ts";
+
 interface GlossaryEntry {
   german: string;
   arabic: string;
@@ -63,7 +65,17 @@ export function initFamilyStoryTooltips() {
     }
 
     const hide = () => {
-      tooltip.hidden = true;
+      gsap.to(tooltip, {
+        autoAlpha: 0,
+        scale: 0.96,
+        y: -2,
+        duration: 0.14,
+        ease: "power2.in",
+        overwrite: "auto",
+        onComplete: () => {
+          tooltip.hidden = true;
+        },
+      });
     };
 
     const show = (word: HTMLElement) => {
@@ -93,14 +105,20 @@ export function initFamilyStoryTooltips() {
       const tooltipWidth = tooltip.offsetWidth || 300;
       const tooltipHeight = tooltip.offsetHeight || 160;
 
-      const left = Math.max(16, Math.min(bounds.left, window.innerWidth - tooltipWidth - 16));
+      const left = Math.max(16, Math.min(bounds.left, globalThis.innerWidth - tooltipWidth - 16));
       const top =
-        bounds.bottom + tooltipHeight + 12 < window.innerHeight
+        bounds.bottom + tooltipHeight + 12 < globalThis.innerHeight
           ? bounds.bottom + 8
           : Math.max(16, bounds.top - tooltipHeight - 8);
 
       tooltip.style.left = `${left.toString()}px`;
       tooltip.style.top = `${top.toString()}px`;
+
+      gsap.fromTo(
+        tooltip,
+        { autoAlpha: 0, scale: 0.94, y: -4 },
+        { autoAlpha: 1, scale: 1, y: 0, duration: 0.18, ease: "power2.out", overwrite: "auto" },
+      );
     };
 
     const words = story.querySelectorAll<HTMLElement>(".story-word");
@@ -119,7 +137,7 @@ export function initFamilyStoryTooltips() {
       });
     }
 
-    window.addEventListener("scroll", hide, { passive: true });
+    globalThis.addEventListener("scroll", hide, { passive: true });
   }
 }
 

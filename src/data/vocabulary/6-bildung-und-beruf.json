@@ -44,19 +44,76 @@
             }
           ],
           "story": {
-            "badge": "Bildung & Schule",
-            "title": "Ein Tag in der Schule",
+            "badge": "A1 – Grundstufe",
+            "title": "Mein Schultag",
+            "intro": "Grundwortschatz zu Schule und Unterricht (A1).",
             "paragraphs": [
               [
-                "Um acht Uhr morgens beginnt der Unterricht im hellen Klassenzimmer der Schule.",
-                "Die engagierte Lehrerin schreibt wichtige grammatische Regeln mit Kreide an die Tafel.",
-                "Die Schüler öffnen ihre Hefte und schreiben die Übungen aufmerksam ab."
-              ],
-              [
-                "In der Pause spielen die Kinder auf dem Schulhof und tauschen ihre Pausenbrote aus.",
-                "Bildung und Neugier sind die wichtigsten Schlüssel für eine erfolgreiche Zukunft."
+                "Die Kinder gehen gern in die [die Schule, -n|Schule].",
+                "Der freundliche [der Lehrer, -|Lehrer] erklärt die deutsche Grammatik.",
+                "Jeder fleißige [der Schüler, -|Schüler] hört aufmerksam zu.",
+                "Um acht Uhr beginnt der spannende [der Unterricht|Unterricht].",
+                "Auf dem Schulhof spielen alle fröhlich in der großen [die Pause, -n|Pause]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mein Schultag",
+              "intro": "Grundwortschatz zu Schule und Unterricht (A1).",
+              "paragraphs": [
+                [
+                  "Die Kinder gehen gern in die [die Schule, -n|Schule].",
+                  "Der freundliche [der Lehrer, -|Lehrer] erklärt die deutsche Grammatik.",
+                  "Jeder fleißige [der Schüler, -|Schüler] hört aufmerksam zu.",
+                  "Um acht Uhr beginnt der spannende [der Unterricht|Unterricht].",
+                  "Auf dem Schulhof spielen alle fröhlich in der großen [die Pause, -n|Pause]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Lernen im Klassenzimmer",
+              "intro": "Aktivitäten und Pausen in der Schule (A2).",
+              "paragraphs": [
+                [
+                  "In der [die Schule, -n|Schule] lernen wir viele interessante Schulfächer.",
+                  "Wenn ein [der Schüler, -|Schüler] eine Frage hat, hilft der [der Lehrer, -|Lehrer] sofort.",
+                  "Während des [der Unterricht|Unterrichts] schreiben wir wichtige Notizen in unsere Hefte.",
+                  "In der [die Pause, -n|Pause] essen wir ein gesundes Pausenbrot und unterhalten uns mit Freunden."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Schulbildung und Motivation",
+              "intro": "Lernmethoden und Gemeinschaft in der Schule (B1).",
+              "paragraphs": [
+                [
+                  "Eine moderne [die Schule, -n|Schule] vermittelt nicht nur Fachwissen, sondern fördert auch soziale Kompetenzen.",
+                  "Ein engagierter [der Lehrer, -|Lehrer] motiviert seine Klasse durch interaktive Methoden und abwechslungsreichen [der Unterricht|Unterricht].",
+                  "Wenn [der Schüler, -|Schüler] aktiv mitarbeiten, fällt das Lernen für anstehende Prüfungen wesentlich leichter.",
+                  "Gemeinsame Aktivitäten in der [die Pause, -n|Pause] stärken den Zusammenhalt unter den Mitschülern."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Pädagogische Reformen und zukunftsorientierte Didaktik",
+              "intro": "Analyse moderner Bildungssysteme und Kompetenzvermittlung (B2).",
+              "paragraphs": [
+                [
+                  "Die Transformation der [die Schule, -n|Schule] zu einem integrativen Lebens- und Lernort erfordert neuartige didaktische Ansätze.",
+                  "Die Rolle vom [der Lehrer, -|Lehrer] wandelt sich dabei vom reinen Wissensvermittler zum Lernbegleiter, der den [der Schüler, -|Schüler] individuell fördert.",
+                  "Ein differenzierter [der Unterricht|Unterricht] verknüpft kognitive Herausforderungen mit Entspannungsphasen in der [die Pause, -n|Pause], um nachhaltige Bildungserfolge zu sichern."
+                ]
+              ]
+            }
           }
         },
         {
@@ -95,19 +152,76 @@
             }
           ],
           "story": {
-            "badge": "Arbeitswelt & Büro",
-            "title": "Ein produktiver Arbeitstag",
+            "badge": "A1 – Grundstufe",
+            "title": "Die Arbeit im Büro",
+            "intro": "Einfache Wörter für Beruf und Arbeitsplatz (A1).",
             "paragraphs": [
               [
-                "Im modernen Großraumbüro arbeitet das Projektteam gemeinsam an neuen Ideen.",
-                "Am Computer beantwortet Sandra wichtige E-Mails von internationalen Kunden und Partnern.",
-                "Im Konferenzraum findet um zehn Uhr eine wichtige Besprechung über die Quartalsziele statt."
-              ],
-              [
-                "In der Kaffeeküche sprechen die Kollegen kurz über ihre Pläne für das Wochenende.",
-                "Gute Zusammenarbeit und respektvolle Kommunikation führen jedes Team zum Erfolg."
+                "Ich fahre jeden Morgen pünktlich zur [die Arbeit, -en|Arbeit].",
+                "Mein [der Beruf, -e|Beruf] macht mir viel Freude.",
+                "Ich sitze an einem hellen Schreibtisch im [das Büro, -s|Büro].",
+                "Mein [der Kollege, -n|Kollege] unterstützt mich bei neuen Aufgaben.",
+                "Unser [der Chef, -s|Chef] leitet das Team sehr freundlich."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Die Arbeit im Büro",
+              "intro": "Einfache Wörter für Beruf und Arbeitsplatz (A1).",
+              "paragraphs": [
+                [
+                  "Ich fahre jeden Morgen pünktlich zur [die Arbeit, -en|Arbeit].",
+                  "Mein [der Beruf, -e|Beruf] macht mir viel Freude.",
+                  "Ich sitze an einem hellen Schreibtisch im [das Büro, -s|Büro].",
+                  "Mein [der Kollege, -n|Kollege] unterstützt mich bei neuen Aufgaben.",
+                  "Unser [der Chef, -s|Chef] leitet das Team sehr freundlich."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Ein Tag am Arbeitsplatz",
+              "intro": "Arbeitsalltag, E-Mails und Teamarbeit (A2).",
+              "paragraphs": [
+                [
+                  "Im [das Büro, -s|Büro] beantworten wir wichtige E-Mails und führen Telefonate.",
+                  "Gemeinsam mit jedem netten [der Kollege, -n|Kollegen] bearbeiten wir spannende Projekte.",
+                  "Unser verständnisvoller [der Chef, -s|Chef] lobt gute Leistungen regelmäßig im Teammeeting.",
+                  "Ein interessanter [der Beruf, -e|Beruf] und eine faire [die Arbeit, -en|Arbeit] sind die Basis für berufliche Zufriedenheit."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Karriere und Teamzusammenhalt",
+              "intro": "Kommunikation und berufliche Weiterentwicklung (B1).",
+              "paragraphs": [
+                [
+                  "In der modernen Arbeitswelt gewinnt die kollegiale Zusammenarbeit im [das Büro, -s|Büro] stetig an Bedeutung.",
+                  "Wer mit jedem [der Kollege, -n|Kollegen] respektvoll und konstruktiv kommuniziert, meistert auch anspruchsvolle Deadlines erfolgreich.",
+                  "Ein erfahrener [der Chef, -s|Chef] delegiert Aufgaben zielgerichtet und fördert die Stärken seiner Mitarbeiter.",
+                  "Wer Freude an seiner täglichen [die Arbeit, -en|Arbeit] hat, entwickelt sich in seinem [der Beruf, -e|Beruf] kontinuierlich weiter."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "New Work und die Transformation der Arbeitswelt",
+              "intro": "Führungskultur, Agilität und ergonomische Arbeitsplatzgestaltung (B2).",
+              "paragraphs": [
+                [
+                  "Das Paradigma von New Work revolutioniert traditionelle Vorstellungen von Raum und Zeit in der täglichen [die Arbeit, -en|Arbeit].",
+                  "Das physische [das Büro, -s|Büro] transformiert sich von einer reinen Präsenzstätte zur kollaborativen Begegnungszone für jeden kreativen [der Kollege, -n|Kollegen].",
+                  "Erfolgreiche Führungskräfte wie ein moderner [der Chef, -s|Chef] agieren zunehmend als Enabler, um den Anforderungen in einem dynamischen [der Beruf, -e|Beruf] gerecht zu werden."
+                ]
+              ]
+            }
           }
         }
       ]

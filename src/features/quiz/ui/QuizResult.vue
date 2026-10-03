@@ -133,7 +133,7 @@ onUnmounted(() => {
       <div class="flex justify-center gap-4">
         <button
           type="button"
-          class="cursor-pointer rounded-full border border-white/40 bg-transparent px-6 py-2 text-white transition-colors hover:bg-white/10"
+          class="cursor-pointer rounded-full border-[1.5px] border-white/40 bg-transparent px-6 py-2 text-white transition-colors hover:bg-white/10"
           @click="emit('exit')"
         >
           Beenden

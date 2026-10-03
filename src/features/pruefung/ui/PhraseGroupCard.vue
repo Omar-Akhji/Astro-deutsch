@@ -81,7 +81,7 @@ const processedPhrases = computed(() => {
       <div class="flex items-center gap-4">
         <span
           v-if="/\d+/.test(props.group.label)"
-          class="flex size-7 shrink-0 items-center justify-center rounded-xl border border-yellow/30 bg-yellow/15 text-xs font-black text-yellow backdrop-blur-md"
+          class="flex size-7 shrink-0 items-center justify-center rounded-xl border-[1.5px] border-yellow/30 bg-yellow/15 text-xs font-black text-yellow backdrop-blur-md"
         >
           {{ props.group.label.match(/\d+/)?.[0] }}
         </span>
@@ -97,7 +97,7 @@ const processedPhrases = computed(() => {
         </h4>
         <span
           v-if="props.group.badge"
-          class="rounded-full border border-yellow/30 bg-yellow/15 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-yellow uppercase"
+          class="rounded-full border-[1.5px] border-yellow/30 bg-yellow/15 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-yellow uppercase"
         >
           {{ props.group.badge }}
         </span>
@@ -147,7 +147,7 @@ const processedPhrases = computed(() => {
               {{ phraseGroup.title }}
             </h5>
             <div
-              class="rounded-xl border border-white/5 bg-surface-overlay/40 p-3.5 backdrop-blur-sm"
+              class="rounded-xl border-[1.5px] border-white/5 bg-surface-overlay/40 p-3.5 backdrop-blur-sm"
             >
               <div class="space-y-2.5">
                 <div
@@ -171,7 +171,7 @@ const processedPhrases = computed(() => {
                     <!-- Listen Button -->
                     <button
                       type="button"
-                      class="flex size-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
+                      class="flex size-7 items-center justify-center rounded-md border-[1.5px] border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
                       :class="{
                         'animate-pulse border-yellow bg-yellow/20 text-yellow':
                           speakingPhrase === item,
@@ -186,7 +186,7 @@ const processedPhrases = computed(() => {
                     <!-- Copy Button -->
                     <button
                       type="button"
-                      class="flex size-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
+                      class="flex size-7 items-center justify-center rounded-md border-[1.5px] border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
                       :class="{
                         'border-emerald-500/50 bg-emerald-500/20 text-emerald-400':
                           copiedPhrase === item,

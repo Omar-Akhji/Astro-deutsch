@@ -44,19 +44,73 @@
             }
           ],
           "story": {
-            "badge": "Natur & Umwelt",
-            "title": "Die vier Jahreszeiten",
+            "badge": "A1 – Grundstufe",
+            "title": "Wie ist das Wetter?",
+            "intro": "Einfache Wörter für Sonne, Regen und Schnee (A1).",
             "paragraphs": [
               [
-                "Das Wetter in Mitteleuropa wechselt mit den vier verschiedenen Jahreszeiten im Jahr.",
-                "Im Frühling erwacht die Natur, bunte Blumen blühen und die Temperaturen steigen spürbar.",
-                "Der heiße Sommer lockt mit viel Sonnenschein an Seen, Meere und in schattige Parks."
-              ],
-              [
-                "Im Herbst färben sich die Blätter golden, während Wind und Nebel durch die Straßen ziehen.",
-                "Wenn im Winter weißer Schnee fällt, verwandelt sich die Landschaft in ein ruhiges Märchenland."
+                "Heute scheint die helle [die Sonne|Sonne] vom blauen Himmel.",
+                "Gestern fiel kalter [der Regen|Regen] und alle nahmen Schirme mit.",
+                "Im Winter freuen sich die Kinder über weißen [der Schnee|Schnee].",
+                "Der kühle [der Wind|Wind] bewegt die Blätter an den Bäumen."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Wie ist das Wetter?",
+              "intro": "Einfache Wörter für Sonne, Regen und Schnee (A1).",
+              "paragraphs": [
+                [
+                  "Heute scheint die helle [die Sonne|Sonne] vom blauen Himmel.",
+                  "Gestern fiel kalter [der Regen|Regen] und alle nahmen Schirme mit.",
+                  "Im Winter freuen sich die Kinder über weißen [der Schnee|Schnee].",
+                  "Der kühle [der Wind|Wind] bewegt die Blätter an den Bäumen."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Wetterbericht für die Woche",
+              "intro": "Wetterwechsel und Vorhersagen verstehen (A2).",
+              "paragraphs": [
+                [
+                  "Am Himmel sieht man heute viele dunkle [die Wolke, -n|Wolken].",
+                  "Der Wetterbericht kündigt starken [der Wind|Wind] und kräftigen [der Regen|Regen] an.",
+                  "Wenn die [die Sonne|Sonne] wieder herauskommt, wird es angenehm warm.",
+                  "In den Bergen liegt bereits der erste [der Schnee|Schnee] der Saison."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Jahreszeiten und Wetterkapriolen",
+              "intro": "Ausführliche Schilderung von Wetterphänomenen (B1).",
+              "paragraphs": [
+                [
+                  "Im mitteleuropäischen Frühling wechselt das Wetter oft innerhalb weniger Stunden von strahlender [die Sonne|Sonne] zu peitschendem [der Regen|Regen].",
+                  "Wenn eine dichte [die Wolke, -n|Wolke] die Sicht verdeckt und böiger [der Wind|Wind] aufzieht, sollte man auf Bergtouren besonders vorsichtig sein.",
+                  "Für Wintersportler bedeutet frischer [der Schnee|Schnee] in den Alpen ideale Bedingungen auf den Skipisten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Meteorologische Dynamik und Klimatologie",
+              "intro": "Atmosphärische Prozesse und wissenschaftliche Wetteranalyse (B2).",
+              "paragraphs": [
+                [
+                  "Tiefdruckgebiete transportieren feuchte Luftmassen, die zur Entstehung mächtiger [die Wolke, -n|Wolken] und intensiver Niederschläge führen.",
+                  "Das komplexe Wechselspiel zwischen solarer Einstrahlung durch [die Sonne|die Sonne] und globalen Windsystemen wie dem [der Wind|Wind] bestimmt das regionale Klima.",
+                  "Veränderte Niederschlagsmuster führen dazu, dass sowohl langanhaltender [der Regen|Regen] als auch das Ausbleiben von [der Schnee|Schnee] erhebliche ökologische Folgen nach sich ziehen."
+                ]
+              ]
+            }
           }
         }
       ]

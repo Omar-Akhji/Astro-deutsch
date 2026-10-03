@@ -44,19 +44,74 @@
             }
           ],
           "story": {
-            "badge": "Frische Lebensmittel",
-            "title": "Frischer Einkauf auf dem Wochenmarkt",
+            "badge": "A1 – Grundstufe",
+            "title": "Frisches Obst und Gemüse",
+            "intro": "Grundwortschatz zu beliebten Obst- und Gemüsesorten (A1).",
             "paragraphs": [
               [
-                "Jeden Samstagmorgen geht Frau Weber zum beliebten Wochenmarkt in der Stadt.",
-                "Sie kauft saftige rote [der Apfel, -̈|Äpfel] und süße gelbe [die Banane, -n|Bananen] für das Frühstück.",
-                "Am Gemüsestand wählt sie frische grüne [die Gurke, -n|Gurken] und knackige [die Karotte, -n|Karotten] aus."
-              ],
-              [
-                "Für die Suppe am Sonntag nimmt sie auch aromatische [die Tomate, -n|Tomaten] mit.",
-                "Gesunde Ernährung mit frischem Obst und Gemüse gibt dem Körper wertvolle Energie."
+                "Ich esse jeden Tag einen roten [der Apfel, -̈|Apfel] und eine gelbe [die Banane, -n|Banane].",
+                "Im Salat schmeckt die rote [die Tomate, -n|Tomate] besonders frisch.",
+                "In Deutschland kocht man viele leckere [die Kartoffel, -n|Kartoffeln].",
+                "Zum Braten schneide ich eine scharfe [die Zwiebel, -n|Zwiebel] klein."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Frisches Obst und Gemüse",
+              "intro": "Grundwortschatz zu beliebten Obst- und Gemüsesorten (A1).",
+              "paragraphs": [
+                [
+                  "Ich esse jeden Tag einen roten [der Apfel, -̈|Apfel] und eine gelbe [die Banane, -n|Banane].",
+                  "Im Salat schmeckt die rote [die Tomate, -n|Tomate] besonders frisch.",
+                  "In Deutschland kocht man viele leckere [die Kartoffel, -n|Kartoffeln].",
+                  "Zum Braten schneide ich eine scharfe [die Zwiebel, -n|Zwiebel] klein."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Einkauf auf dem Wochenmarkt",
+              "intro": "Frische Zutaten für gesunde Mahlzeiten (A2).",
+              "paragraphs": [
+                [
+                  "Samstags kaufe ich frisches Obst und Gemüse auf dem Markt.",
+                  "Die süßen [die Banane, -n|Bananen] und saftigen [der Apfel, -̈|Äpfel] schmecken den Kindern wunderbar.",
+                  "Für die Gemüsesuppe schäle ich drei [die Kartoffel, -n|Kartoffeln] und schneide zwei [die Zwiebel, -n|Zwiebeln].",
+                  "Reife [die Tomate, -n|Tomaten] verarbeite ich zu einer aromatischen Nudelsauce."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Ausgewogene Ernährung und Vitalstoffe",
+              "intro": "Gesundheitsbewusste Ernährung mit regionalen Produkten (B1).",
+              "paragraphs": [
+                [
+                  "Eine pflanzenbasierte Ernährung liefert essenzielle Vitamine und Ballaststoffe für das Immunsystem.",
+                  "Ein knackiger [der Apfel, -̈|Apfel] oder eine energiereiche [die Banane, -n|Banane] dient als idealer Snack für Zwischendurch.",
+                  "In der traditionellen Küche bildet die [die Kartoffel, -n|Kartoffel] die sättigende Basis zahlreicher beliebter Gerichte.",
+                  "Frisch angebratene [die Zwiebel, -n|Zwiebeln] und sonnengereifte [die Tomate, -n|Tomaten] verleihen jeder Mahlzeit ein volles Aroma."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Agrarökologie und Nährstoffdichte frischer Erzeugnisse",
+              "intro": "Qualitätskriterien und Nachhaltigkeit in der Nahrungsmittelkette (B2).",
+              "paragraphs": [
+                [
+                  "Der Nährstoffgehalt von Kulturpflanzen wie der [die Kartoffel, -n|Kartoffel] oder der [die Tomate, -n|Tomate] korreliert maßgeblich mit Bodengesundheit und Reifegrad.",
+                  "Während der globale Import von [die Banane, -n|Bananen] faire Handelsketten erfordert, punktet der heimische [der Apfel, -̈|Apfel] durch eine hervorragende Ökobilanz.",
+                  "Sulfide in der [die Zwiebel, -n|Zwiebel] entfalten nachweislich antioxidative Wirkungen im menschlichen Organismus."
+                ]
+              ]
+            }
           }
         },
         {
@@ -95,19 +150,76 @@
             }
           ],
           "story": {
-            "badge": "Kochen & Genuss",
-            "title": "Ein Festessen zubereiten",
+            "badge": "A1 – Grundstufe",
+            "title": "Fleisch und Fisch",
+            "intro": "Grundwortschatz zu Fleisch- und Fischgerichten (A1).",
             "paragraphs": [
               [
-                "Für das Abendessen mit Freunden geht Lukas in die Metzgerei und Fischhandlung.",
-                "Er kauft zartes [das Rindfleisch|Rindfleisch] und frisches [das Hähnchen|Hähnchenfilet].",
-                "Für die Gäste, die Fisch bevorzugen, wählt er feinen [der Lachs|Lachs] aus dem Atlantik."
-              ],
-              [
-                "In der Pfanne brät er das Fleisch mit aromatischen Kräutern und Olivenöl an.",
-                "Ein gutes Essen verbindet Menschen und macht jeden Abend besonders."
+                "Manche Menschen essen gern [das Fleisch|Fleisch], andere bevorzugen Gemüse.",
+                "Am Sonntag gibt es knuspriges [das Hähnchen, -|Hähnchen] aus dem Ofen.",
+                "Zum Fest kochen wir zartes [das Rindfleisch|Rindfleisch].",
+                "Im Urlaub an der Nordsee essen wir frischen [der Fisch, -e|Fisch].",
+                "Zum Frühstück gehört oft eine leckere [die Wurst, -̈e|Wurst]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Fleisch und Fisch",
+              "intro": "Grundwortschatz zu Fleisch- und Fischgerichten (A1).",
+              "paragraphs": [
+                [
+                  "Manche Menschen essen gern [das Fleisch|Fleisch], andere bevorzugen Gemüse.",
+                  "Am Sonntag gibt es knuspriges [das Hähnchen, -|Hähnchen] aus dem Ofen.",
+                  "Zum Fest kochen wir zartes [das Rindfleisch|Rindfleisch].",
+                  "Im Urlaub an der Nordsee essen wir frischen [der Fisch, -e|Fisch].",
+                  "Zum Frühstück gehört oft eine leckere [die Wurst, -̈e|Wurst]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Zubereitung in der Pfanne",
+              "intro": "Kochen mit Fleisch und Fisch im Alltag (A2).",
+              "paragraphs": [
+                [
+                  "Gestern haben wir zartes [das Hähnchen, -|Hähnchen] mit Reis serviert.",
+                  "Mein Vater kauft hochwertiges [das Rindfleisch|Rindfleisch] direkt beim Metzger im Dorf.",
+                  "Am Freitag braten wir frischen [der Fisch, -e|Fisch] mit Zitrone und Kräutern.",
+                  "Zur Brotzeit am Abend gibt es verschiedene Sorten geräucherte [die Wurst, -̈e|Wurst]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Bewusster Konsum und Herkunft",
+              "intro": "Qualität, Tierwohl und nachhaltige Fischerei (B1).",
+              "paragraphs": [
+                [
+                  "Immer mehr Verbraucher achten beim Kauf von [das Fleisch|Fleisch] auf regionale Herkunft und artgerechte Haltung.",
+                  "Bio-[das Rindfleisch|Rindfleisch] und Freiland-[das Hähnchen, -|Hähnchen] zeichnen sich durch einen intensiveren Geschmack und bessere Nährwerte aus.",
+                  "Beim Kauf von [der Fisch, -e|Fisch] sollte man auf Nachhaltigkeitssiegel achten, um die Überfischung der Ozeane nicht zu unterstützen.",
+                  "Traditionell hergestellte [die Wurst, -̈e|Wurst] ohne künstliche Zusätze erfreut sich bei Feinschmeckern großer Beliebtheit."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Ernährungsethik und marine Ökosysteme",
+              "intro": "Tiefgründige Analyse von Viehwirtschaft und mariner Biodiversität (B2).",
+              "paragraphs": [
+                [
+                  "Die ökologischen Folgen der intensiven Viehwirtschaft für [das Rindfleisch|Rindfleisch] treiben die gesellschaftliche Debatte über Fleischkonsum voran.",
+                  "Zugleich erfordert die Schonung mariner Bestände den Verzehr von [der Fisch, -e|Fisch] aus zertifizierter Aquakultur oder selektivem Wildfang.",
+                  "Das Verständnis für die Wertschöpfungskette von [das Fleisch|Fleisch] und handwerklicher [die Wurst, -̈e|Wurst] fördert den bewussten Respekt vor Ressourcen."
+                ]
+              ]
+            }
           }
         },
         {
@@ -146,19 +258,74 @@
             }
           ],
           "story": {
-            "badge": "Getränke & Erfrischung",
-            "title": "Erfrischung im Café",
+            "badge": "A1 – Grundstufe",
+            "title": "Was wir trinken",
+            "intro": "Grundlegende Getränke für jeden Tag (A1).",
             "paragraphs": [
               [
-                "Im Sommercafé bestellen die Gäste kühle und heiße [das Getränk|Getränke].",
-                "Maria bestellt ein Glas stilles [das Mineralwasser|Mineralwasser] mit einer Scheibe Zitrone.",
-                "Ihr Kollege David trinkt lieber einen frisch gepressten [der Orangensaft|Orangensaft]."
-              ],
-              [
-                "Nach dem Essen trinken beide noch einen heißen [der Kaffee|Kaffee] mit etwas Milch.",
-                "Eine kleine Pause mit guten Getränken bringt neue Frische in den Alltag."
+                "Klares [das Wasser|Wasser] ist das wichtigste Getränk für den Körper.",
+                "Am Morgen trinke ich gern eine heiße Tasse [der Kaffee, -s|Kaffee].",
+                "Am Nachmittag genieße ich einen beruhigenden [der Tee, -s|Tee].",
+                "Die Kinder trinken süßen [der Saft, -̈e|Saft] oder frische [die Milch|Milch]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Was wir trinken",
+              "intro": "Grundlegende Getränke für jeden Tag (A1).",
+              "paragraphs": [
+                [
+                  "Klares [das Wasser|Wasser] ist das wichtigste Getränk für den Körper.",
+                  "Am Morgen trinke ich gern eine heiße Tasse [der Kaffee, -s|Kaffee].",
+                  "Am Nachmittag genieße ich einen beruhigenden [der Tee, -s|Tee].",
+                  "Die Kinder trinken süßen [der Saft, -̈e|Saft] oder frische [die Milch|Milch]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Getränke für Gäste",
+              "intro": "Erfrischungen und Heißgetränke servieren (A2).",
+              "paragraphs": [
+                [
+                  "Wenn Freunde zu Besuch kommen, koche ich frischen [der Kaffee, -s|Kaffee] mit warmer [die Milch|Milch].",
+                  "An heißen Sommertagen servieren wir kühles [das Wasser|Wasser] mit Zitrone und Minze.",
+                  "Frisch gepresster [der Saft, -̈e|Saft] liefert wertvolle Vitamine.",
+                  "Im Winter wärmt ein aromatischer schwarzer oder grüner [der Tee, -s|Tee]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Getränkekultur und Genuss",
+              "intro": "Gesundes Trinkverhalten und Spezialitäten (B1).",
+              "paragraphs": [
+                [
+                  "Ausreichend mineralstoffreiches [das Wasser|Wasser] über den Tag verteilt zu trinken, fördert die Konzentration und körperliche Fitness.",
+                  "Die Zubereitung von Spezialitäten-[der Kaffee, -s|Kaffee] mit aufgeschäumter [die Milch|Milch] hat sich zu einer echten Kunstform entwickelt.",
+                  "In vielen Kulturen ist die traditionelle Zeremonie um erlesenen [der Tee, -s|Tee] ein Symbol gelebter Gastfreundschaft.",
+                  "Wer auf Zucker verzichten möchte, verdünnt naturtrüben [der Saft, -̈e|Saft] zu einer erfrischenden Schorle."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Hydrogeologie und sensorische Getränkekunde",
+              "intro": "Wissenschaftliche Betrachtung von Wasserqualität und Röstprofilen (B2).",
+              "paragraphs": [
+                [
+                  "Die sensorische Qualität von aufgebrühtem [der Kaffee, -s|Kaffee] und feinstem [der Tee, -s|Tee] wird maßgeblich durch den Härtegrad des verwendeten [das Wasser|Wassers] determiniert.",
+                  "Pflanzliche Alternativen fordern die traditionelle Vormachtstellung von tierischer [die Milch|Milch] in Barista-Kreisen heraus.",
+                  "Kaltgepresster, unfiltrierter [der Saft, -̈e|Saft] bewahrt hitzeempfindliche sekundäre Pflanzenstoffe und bietet ein facettenreiches Geschmacksprofil."
+                ]
+              ]
+            }
           }
         },
         {
@@ -197,19 +364,74 @@
             }
           ],
           "story": {
-            "badge": "Gastronomie & Genuss",
-            "title": "Ein Abendessen im Restaurant",
+            "badge": "A1 – Grundstufe",
+            "title": "Mahlzeiten am Tag",
+            "intro": "Einfache Wörter für Mahlzeiten und Restaurant (A1).",
             "paragraphs": [
               [
-                "Heute Abend essen Anna und Tim in einem gemütlichen Restaurant im Stadtzentrum.",
-                "Der freundliche Kellner bringt ihnen die [die Speisekarte|Speisekarte] und empfiehlt die Spezialität des Hauses.",
-                "Als [die Vorspeise|Vorspeise] wählen sie eine heiße Suppe mit frischem Brot."
-              ],
-              [
-                "Die [das Hauptgericht|Hauptspeise] schmeckt hervorragend und ist kunstvoll angerichtet.",
-                "Zum Schluss bestellen sie ein süßes Dessert und bitten höflich um [die Rechnung|die Rechnung]."
+                "Am Morgen essen wir ein gesundes [das Frühstück, -e|Frühstück].",
+                "Um zwölf Uhr machen wir Pause für das [das Mittagessen, -|Mittagessen].",
+                "Am Abend sitzt die Familie beim gemütlichen [das Abendessen, -|Abendessen] zusammen.",
+                "Im Restaurant lese ich die [die Speisekarte, -n|Speisekarte] und bezahle am Ende die [die Rechnung, -en|Rechnung]."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mahlzeiten am Tag",
+              "intro": "Einfache Wörter für Mahlzeiten und Restaurant (A1).",
+              "paragraphs": [
+                [
+                  "Am Morgen essen wir ein gesundes [das Frühstück, -e|Frühstück].",
+                  "Um zwölf Uhr machen wir Pause für das [das Mittagessen, -|Mittagessen].",
+                  "Am Abend sitzt die Familie beim gemütlichen [das Abendessen, -|Abendessen] zusammen.",
+                  "Im Restaurant lese ich die [die Speisekarte, -n|Speisekarte] und bezahle am Ende die [die Rechnung, -en|Rechnung]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Ein Besuch im Restaurant",
+              "intro": "Essen bestellen und den Abend genießen (A2).",
+              "paragraphs": [
+                [
+                  "Gestern haben wir im Restaurant einen Tisch für vier Personen reserviert.",
+                  "Der Kellner brachte uns sofort die reichhaltige [die Speisekarte, -n|Speisekarte].",
+                  "Das [das Abendessen, -|Abendessen] war köstlich und frisch zubereitet.",
+                  "Zum Schluss bat mein Vater höflich um die [die Rechnung, -en|Rechnung] und gab ein Trinkgeld."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Esskultur und gemeinsame Mahlzeiten",
+              "intro": "Genuss im Alltag und gesellige Restaurantbesuche (B1).",
+              "paragraphs": [
+                [
+                  "Ein ausgewogenes [das Frühstück, -e|Frühstück] liefert die nötige Energie für einen produktiven Arbeitstag.",
+                  "In der Mittagspause bietet ein leichtes [das Mittagessen, -|Mittagessen] die Gelegenheit, sich mit Kollegen auszutauschen.",
+                  "Beim Studium der [die Speisekarte, -n|Speisekarte] im Restaurant achten immer mehr Gäste auf saisonale und vegetarische Optionen.",
+                  "Nach einem gelungenen Abend wird die [die Rechnung, -en|Rechnung] oft freundschaftlich geteilt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Soziologie der Kommensalität und Gastrosophie",
+              "intro": "Kulturelle Dimensionen des gemeinsamen Speisens (B2).",
+              "paragraphs": [
+                [
+                  "Die gemeinschaftliche Mahlzeit transzendiert die reine Kalorienaufnahme und fungiert als primäres Ritual sozialer Kohäsion.",
+                  "Vom kontemplativen [das Frühstück, -e|Frühstück] bis zum mehrgängigen [das Abendessen, -|Abendessen] artikuliert sich die kulinarische Identität einer Gesellschaft.",
+                  "Eine anspruchsvoll kuratierte [die Speisekarte, -n|Speisekarte] zeugt von gastronomischer Exzellenz und Transparenz gegenüber dem Gast."
+                ]
+              ]
+            }
           }
         }
       ]

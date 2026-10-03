@@ -105,7 +105,7 @@ const cleanedQuestionText = computed(() => {
       v-if="!isHideQuestionBody"
       :class="[
         isTableRow ? 'w-full' : (
-          'group relative overflow-hidden rounded-xl border border-white/10 bg-zinc-950/40 backdrop-blur-md transition-colors hover:bg-zinc-900/60'
+          'group relative overflow-hidden rounded-xl border-[1.5px] border-white/10 bg-zinc-950/40 backdrop-blur-md transition-colors hover:bg-zinc-900/60'
         ),
       ]"
     >

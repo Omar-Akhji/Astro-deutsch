@@ -142,7 +142,7 @@ const handleScrollToTop = () => {
 
     <!-- Internal Navigation Bar -->
     <nav
-      class="rounded-2xl border border-white/5 bg-zinc-950/50 p-4 shadow-xl backdrop-blur-md"
+      class="rounded-2xl border-[1.5px] border-white/5 bg-zinc-950/50 p-4 shadow-xl backdrop-blur-md"
       aria-label="Themen Kategorien"
     >
       <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-2">
@@ -250,7 +250,7 @@ const handleScrollToTop = () => {
       :delay="200"
     >
       <aside
-        class="mt-20 rounded-3xl border border-amber-500/20 bg-linear-to-br from-yellow/20 to-orange/20 p-8 backdrop-blur-sm"
+        class="mt-20 rounded-3xl border-[1.5px] border-amber-500/20 bg-linear-to-br from-yellow/20 to-orange/20 p-8 backdrop-blur-sm"
       >
         <h3 class="mb-4 flex items-center gap-3 text-xl font-semibold text-white tablet:text-2xl">
           <span

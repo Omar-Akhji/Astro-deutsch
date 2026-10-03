@@ -17,7 +17,7 @@ const { blocks, usage, tips } = Astro.props;
     <div data-animate="fade-up">
       <div class="space-y-4">
         <h3 class="text-lg font-semibold text-yellow tablet:text-xl">Gebrauch</h3>
-        <div class="space-y-4 rounded-3xl border border-yellow/10 bg-white/3 p-6 backdrop-blur-md">
+        <div class="space-y-4 rounded-3xl border-[1.5px] border-yellow/10 bg-white/3 p-6 backdrop-blur-md">
           {usage.map((dialogue) => (
             <div class="flex gap-4">
               <div class="flex size-8 shrink-0 items-center justify-center rounded-full bg-yellow/20 text-xs font-bold text-yellow tablet:size-10 tablet:text-sm">
@@ -57,7 +57,7 @@ const { blocks, usage, tips } = Astro.props;
         <h3 class="text-lg font-semibold text-orange tablet:text-xl">Tipps</h3>
         <div class="grid gap-4 sm:grid-cols-2">
           {tips.map((tip) => (
-            <div class="flex items-start gap-2 rounded-xl border border-orange/20 bg-orange/5 p-4 text-orange brightness-125">
+            <div class="flex items-start gap-2 rounded-xl border-[1.5px] border-orange/20 bg-orange/5 p-4 text-orange brightness-125">
               <Lightbulb class="size-4 shrink-0 tablet:size-5" />
               <ContentItem content={tip} />
             </div>

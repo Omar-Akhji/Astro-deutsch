@@ -40,7 +40,7 @@ const ads = computed(() => {
         v-for="ad in ads"
         :key="ad.letter"
         type="button"
-        class="group relative min-h-30 cursor-pointer rounded-lg border border-white/10 bg-zinc-950/60 p-5 pt-9 text-left text-white/90 shadow-lg backdrop-blur-md transition-[color,background-color,border-color,scale,translate,rotate] duration-200 hover:bg-zinc-900/80 focus:ring-2 focus:ring-yellow/50 focus:outline-hidden active:scale-95"
+        class="group relative min-h-30 cursor-pointer rounded-lg border-[1.5px] border-white/10 bg-zinc-950/60 p-5 pt-9 text-left text-white/90 shadow-lg backdrop-blur-md transition-[color,background-color,border-color,scale,translate,rotate] duration-200 hover:bg-zinc-900/80 focus:ring-2 focus:ring-yellow/50 focus:outline-hidden active:scale-95"
         @click="emit('selectAd', ad)"
       >
         <div
@@ -60,7 +60,7 @@ const ads = computed(() => {
 
   <div
     v-else
-    class="relative overflow-hidden rounded-xl border border-white/10 bg-zinc-900/40 shadow-lg backdrop-blur-md"
+    class="relative overflow-hidden rounded-xl border-[1.5px] border-white/10 bg-zinc-900/40 shadow-lg backdrop-blur-md"
   >
     <div
       class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-size-[24px_24px] opacity-[0.02]"

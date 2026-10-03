@@ -69,7 +69,10 @@ const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
         <span
           class:list={[
             "inline-block rounded-lg px-3 py-1.5 text-xs font-bold shadow-sm tablet:text-sm",
-            { "bg-white/20 text-white": gradient, "bg-mist-900/50 text-mist-500": !gradient },
+            {
+              "bg-white/20 text-white": gradient,
+              "border-[1.5px] border-white/15 bg-white/10 text-mist-200 backdrop-blur-md": !gradient,
+            },
           ]}
         >
           {badge}
@@ -92,8 +95,8 @@ const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
 
     <p
       class:list={[
-        "m-0 mx-auto max-w-2xl text-base leading-relaxed tablet:text-lg laptop:text-xl",
-        { "text-white/90": gradient, "text-mist-500": !gradient },
+        "m-0 mx-auto max-w-3xl text-base leading-relaxed tablet:text-lg laptop:text-xl",
+        { "text-white/90": gradient, "text-mist-300": !gradient },
       ]}
       data-animate={animateFadeUp}
     >
@@ -102,10 +105,10 @@ const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
 
     {example && (
       <p
-        class="mbs-4 text-base text-white/80"
+        class="mbs-3 text-sm font-medium text-amber-300/90 tablet:text-base"
         data-animate={animateFadeIn}
       >
-        <em>{example}</em>
+        <span>{example}</span>
       </p>
     )}
 

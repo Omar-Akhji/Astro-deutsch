@@ -31,6 +31,7 @@ const eslintConfig = defineConfig(
       ".temp/**",
       ".cache/**",
       "*.log",
+      "scratch/**",
       ".gemini/**",
       ".kiro/**",
       ".agent/**",
@@ -121,6 +122,8 @@ const eslintConfig = defineConfig(
       "unicorn/no-top-level-assignment-in-function": "off",
       "unicorn/prefer-at": "off",
       "unicorn/single-line-block-comment-style": "off",
+      "unicorn/no-asterisk-prefix-in-documentation-comments": "off",
+      "unicorn/no-unnecessary-array-flat-map": "off",
     },
   },
 

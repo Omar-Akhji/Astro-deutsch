@@ -40,6 +40,17 @@ export function parseNounGender(text: string): GenderInfo {
   const trimmed = text.trim();
   const lower = trimmed.toLowerCase();
 
+  if (lower.startsWith("der/die ")) {
+    return {
+      gender: "der",
+      article: "der/die",
+      baseWord: trimmed.slice(8),
+      badgeClass: "bg-purple-500/15 text-purple-400 border-purple-500/30",
+      borderClass: "border-purple-500/30",
+      textClass: "text-purple-300",
+    };
+  }
+
   if (lower.startsWith("der ")) {
     return { gender: "der", article: "der", baseWord: trimmed.slice(4), ...GENDER_STYLES.der };
   }

@@ -64,7 +64,7 @@ const handleExit = () => {
     class="relative min-h-dvh py-4"
   >
     <article
-      class="relative z-10 flex w-full flex-col rounded-2xl border border-white/10 bg-card px-4 py-6 shadow-2xl backdrop-blur-xl"
+      class="relative z-10 flex w-full flex-col rounded-2xl border-[1.5px] border-white/10 bg-card px-4 py-6 shadow-2xl backdrop-blur-xl"
     >
       <header
         class="mb-4 flex items-center justify-between border-b border-white/10 pb-2 text-white"
@@ -116,7 +116,7 @@ const handleExit = () => {
                     <div
                       v-if="teil.isGrouped"
                       :key="`group-${teil.teilNumber}`"
-                      class="overflow-hidden rounded-xl border border-white/10 bg-zinc-900/10"
+                      class="overflow-hidden rounded-xl border-[1.5px] border-white/10 bg-zinc-900/10"
                     >
                       <div
                         v-if="teil.exampleQuestion"
@@ -190,7 +190,7 @@ const handleExit = () => {
               <div class="mt-4 flex justify-center border-t border-white/10 pt-4">
                 <button
                   type="button"
-                  class="cursor-pointer rounded border border-yellow/50 bg-yellow/10 px-8 py-2 text-sm font-bold text-yellow transition-colors hover:bg-yellow hover:text-black"
+                  class="cursor-pointer rounded border-[1.5px] border-yellow/50 bg-yellow/10 px-8 py-2 text-sm font-bold text-yellow transition-colors hover:bg-yellow hover:text-black"
                   @click="handleFinishQuiz"
                 >
                   Prüfung beenden

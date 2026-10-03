@@ -2,10 +2,11 @@
 import TextAudioPlayer from "@/shared/ui/TextAudioPlayer.vue";
 import {
   cleanTextForSpeech,
+  getTopicStories,
   getTopicStory,
   parseSentenceTokens,
 } from "../data/topic-stories.ts";
-import type { FamilyMember, Topic, Word } from "../model/types.ts";
+import type { CefrLevel, FamilyMember, Topic, Word } from "../model/types.ts";
 
 interface Props {
   topic: Topic;
@@ -21,7 +22,24 @@ const {
   familyTree = topic.familyTree,
 } = Astro.props;
 
-const story = topic.story ?? getTopicStory(topic.id, topic, categoryTitle);
+const storiesRecord = topic.stories ?? getTopicStories(topic.id, topic, categoryTitle);
+const levels: CefrLevel[] = ["A1", "A2", "B1", "B2"];
+
+const levelConfigs: Record<CefrLevel, { pillClass: string; levelName: string }> = {
+  A1: {
+    pillClass: "border-emerald-400/30 bg-emerald-500/10 text-emerald-300",
+    levelName: "Grundstufe",
+  },
+  A2: { pillClass: "border-sky-400/30 bg-sky-500/10 text-sky-300", levelName: "Alltag & Praxis" },
+  B1: {
+    pillClass: "border-amber-400/30 bg-amber-500/10 text-amber-300",
+    levelName: "Selbstständige Sprachanwendung",
+  },
+  B2: {
+    pillClass: "border-purple-400/30 bg-purple-500/10 text-purple-300",
+    levelName: "Differenziert & Komplex",
+  },
+};
 
 const familyTranslations: Record<string, string> = {
   "die Großmutter": "grandmother",
@@ -78,90 +96,138 @@ const glossary = [
     german: word.german,
     arabic: word.arabic,
     translation: word.english ?? "",
-    explanation: word.english ? `Wortschatz-Bedeutung: ${word.english}.` : "Wichtiger Begriff zum Thema.",
+    explanation:
+      word.english ? `Wortschatz-Bedeutung: ${word.english}.` : "Wichtiger Begriff zum Thema.",
     example: word.example ?? "",
   })),
 ];
 
-// Build plain audio speech sentences and structured display tokens
-const storySentences: string[] = [];
-let runningSentenceIndex = 0;
+const preparedLevels = levels.map((lvl) => {
+  const lvlStory =
+    storiesRecord[lvl] ?? topic.story ?? getTopicStory(topic.id, topic, categoryTitle, lvl);
+  const sentences: string[] = [];
+  let runningSentenceIndex = 0;
 
-const preparedParagraphs = story.paragraphs.map((paragraph) => {
-  return paragraph.map((sentence) => {
-    const plain = cleanTextForSpeech(sentence);
-    storySentences.push(plain);
-    const index = runningSentenceIndex;
-    runningSentenceIndex += 1;
-    return {
-      index,
-      tokens: parseSentenceTokens(sentence),
-    };
+  const preparedParagraphs = lvlStory.paragraphs.map((paragraph) => {
+    return paragraph.map((sentence) => {
+      const plain = cleanTextForSpeech(sentence);
+      sentences.push(plain);
+      const sIndex = runningSentenceIndex;
+      runningSentenceIndex += 1;
+      return { index: sIndex, tokens: parseSentenceTokens(sentence) };
+    });
   });
+
+  return {
+    level: lvl,
+    story: lvlStory,
+    sentences,
+    sentenceCount: sentences.length,
+    preparedParagraphs,
+    pillClass: levelConfigs[lvl].pillClass,
+    levelName: levelConfigs[lvl].levelName,
+  };
 });
 ---
 
-<article
-  class="topic-story relative w-full overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) transition-all mobile:p-6 tablet:p-8"
-  aria-labelledby="topic-story-heading"
+<div
+  class="topic-story topic-stories-suite space-y-4"
   data-glossary={JSON.stringify(glossary)}
 >
-  <!-- Header -->
-  <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+  <!-- Section Title -->
+  <div class="mb-4 flex flex-wrap items-end justify-between gap-3 px-1">
     <div>
-      <p class="mb-2 text-xs font-semibold tracking-[0.18em] text-amber-300 uppercase">
-        {story.badge}
+      <p class="text-xs font-semibold tracking-[0.18em] text-amber-300 uppercase">
+        Texte nach Sprachniveau (GER / CEFR)
       </p>
-      <h2 id="topic-story-heading" class="text-2xl font-bold text-white @md:text-3xl">
-        {story.title}
-      </h2>
     </div>
-    <p class="text-sm text-mist-400">
-      {story.intro ?? "Fahre über die markierten Wörter oder wähle sie mit der Tastatur aus."}
+    <p class="text-xs text-mist-400">
+      4 Niveaustufen (A1, A2, B1, B2) zum systematischen Lernen, Lesen & Mitlesen
     </p>
   </div>
 
-  <!-- Story Content with Native Highlightable Words and Read-Along Sentences -->
-  <div class="topic-story-content space-y-5 text-base leading-8 text-mist-200 @md:text-lg @md:leading-9">
-    {preparedParagraphs.map((paragraph) => (
-      <p>
-        {paragraph.map((sentence) => (
-          <span
-            class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
-            data-sentence-index={sentence.index}
-            tabindex="0"
-            role="button"
-            aria-label={`Satz ${sentence.index + 1} vorlesen`}
-            title="Klicken zum Vorlesen ab diesem Satz"
-          >
-            {sentence.tokens.map((token) =>
-              token.type === "word" ? (
-                <span class="story-word" tabindex="0" data-word={token.baseWord}>
-                  {token.display}
+  <!-- 4 Stacked CEFR Level Cards (Static boxes, no collapsing or size changes on activation) -->
+  <div class="space-y-6">
+    {preparedLevels.map((item) => (
+      <article class="topic-level-card overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-xl backdrop-blur-(--glass-blur) transition-all duration-300 hover:border-white/15 tablet:p-7">
+        <header class="mb-5 border-b border-white/8 pb-4">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+              <span
+                class:list={[
+                  "rounded-full border-[1.5px] px-3 py-1 text-xs font-bold tracking-wide",
+                  item.pillClass,
+                ]}
+              >
+                {item.level}
+              </span>
+              <span class="text-xs font-medium text-mist-400">
+                {item.levelName}
+              </span>
+            </div>
+
+            <span class="rounded-full border-[1.5px] border-white/8 bg-white/5 px-2.5 py-0.5 text-xs font-medium text-mist-400">
+              {item.sentenceCount} Sätze
+            </span>
+          </div>
+
+          <h3 class="mt-3.5 text-xl font-bold text-white tablet:text-2xl">{item.story.title}</h3>
+
+          <p class="mt-2 text-sm text-mist-400">
+            {item.story.intro
+              ?? "Fahre über die markierten Wörter oder klicke auf einen Satz zum Vorlesen."}
+          </p>
+        </header>
+
+        <!-- Story Content with Native Highlightable Words and Read-Along Sentences -->
+        <div
+          id={`story-content-${item.level.toLowerCase()}-${topic.id}`}
+          class="topic-story-content space-y-4 text-base leading-8 text-mist-200 tablet:text-lg tablet:leading-9"
+        >
+          {item.preparedParagraphs.map((paragraph) => (
+            <p>
+              {paragraph.map((sentence) => (
+                <span
+                  class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+                  data-sentence-index={sentence.index}
+                  tabindex="0"
+                  role="button"
+                  aria-label={`Satz ${sentence.index + 1} vorlesen`}
+                  title="Klicken zum Vorlesen ab diesem Satz"
+                >
+                  {sentence.tokens.map((token) =>
+                    token.type === "word" ?
+                      <span
+                        class="story-word"
+                        tabindex="0"
+                        data-word={token.baseWord}
+                      >
+                        {token.display}
+                      </span>
+                    : token.content,
+                  )}
                 </span>
-              ) : (
-                token.content
-              )
-            )}
-          </span>
-        ))}
-      </p>
+              ))}
+            </p>
+          ))}
+        </div>
+
+        <!-- Audio Player Component Island for this level -->
+        <div class="mt-6">
+          <TextAudioPlayer
+            client:load
+            sentences={item.sentences}
+            targetSelector={`#story-content-${item.level.toLowerCase()}-${topic.id}`}
+            title={`Audio-Begleiter (${item.level})`}
+            subtitle={`Höre dir den ${item.level}-Text Satz für Satz an oder klicke auf einen Satz`}
+          />
+        </div>
+      </article>
     ))}
   </div>
 
-  <!-- Reusable Audio Player Component Island (Below Story Text) -->
-  <div class="mt-8">
-    <TextAudioPlayer
-      client:load
-      sentences={storySentences}
-      targetSelector=".topic-story-content"
-      title="Audio-Begleiter"
-      subtitle="Höre dir die Geschichte Satz für Satz an oder klicke auf einen Satz im Text"
-    />
-  </div>
-
   <!-- Footer Help Tip & Legend -->
-  <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/8 pt-5 text-sm text-mist-400">
+  <div class="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-white/8 px-1 pt-5 text-sm text-mist-400">
     <div class="flex items-center gap-2">
       <span class="h-0.5 w-6 rounded bg-amber-300"></span>
       <span>Markierte Wörter: Übersetzung, Erklärung und Beispielsatz (Hover / Tastatur)</span>
@@ -172,8 +238,12 @@ const preparedParagraphs = story.paragraphs.map((paragraph) => {
   </div>
 
   <!-- Tooltip Modal for Word Explanations -->
-  <div class="story-tooltip" role="tooltip" hidden></div>
-</article>
+  <div
+    class="story-tooltip"
+    role="tooltip"
+    hidden
+  ></div>
+</div>
 
 <script src="../lib/family-story.ts"></script>
 
@@ -187,7 +257,9 @@ const preparedParagraphs = story.paragraphs.map((paragraph) => {
     text-decoration-thickness: 1.5px;
     text-underline-offset: 4px;
     cursor: help;
-    transition: color 0.15s ease, background-color 0.15s ease;
+    transition:
+      color 0.15s ease,
+      background-color 0.15s ease;
   }
   .story-word:hover,
   .story-word:focus-visible {
@@ -198,11 +270,18 @@ const preparedParagraphs = story.paragraphs.map((paragraph) => {
     outline: none;
   }
 
-  /* Sentence Read-Along styling */
+  /* Sentence Read-Along styling: NO line, ONLY clean gray background */
   .story-sentence {
     position: relative;
     border-radius: 0.375rem;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    outline: none;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+  .story-sentence:focus,
+  .story-sentence:focus-visible {
+    outline: none;
   }
   :global(.story-sentence.is-active) {
     background-color: rgb(255 255 255 / 15%);
@@ -215,11 +294,13 @@ const preparedParagraphs = story.paragraphs.map((paragraph) => {
     z-index: 9999;
     width: min(22rem, calc(100vw - 2rem));
     padding: 0.9rem 1rem;
-    border: 1px solid rgb(255 255 255 / 20%);
+    border: 1.5px solid rgb(255 255 255 / 20%);
     border-radius: 0.85rem;
     background: #171923;
     color: #f4f4f5;
-    box-shadow: 0 16px 48px rgb(0 0 0 / 60%), 0 0 0 1px rgb(252 211 77 / 15%);
+    box-shadow:
+      0 16px 48px rgb(0 0 0 / 60%),
+      0 0 0 1px rgb(252 211 77 / 15%);
     font-size: 0.875rem;
     line-height: 1.5;
     pointer-events: none;

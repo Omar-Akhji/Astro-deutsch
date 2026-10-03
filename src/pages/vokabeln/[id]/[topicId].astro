@@ -1,4 +1,5 @@
 ---
+import { BookOpen, Headphones, Users } from "lucide-astro";
 import { TopicStory, VocabularyTable } from "@/features/vocabulary";
 import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
@@ -67,6 +68,37 @@ const extraSchema =
         })),
     }
   : undefined;
+const heroDescription =
+  topic?.description ??
+  (topic?.id === "stammbaum" ?
+    "Familienmitglieder, Verwandtschaftsverhältnisse und Beziehungsstatus im Überblick."
+  : `Wichtige Wörter, Redewendungen und Sprachübungen zum Thema ${topic?.title ?? ""} im Bereich ${section?.title ?? item?.german ?? ""}.`);
+
+const heroStats = [
+  ...(topic?.familyTree && topic.familyTree.length > 0 ?
+    [
+      {
+        label: "Familienmitglieder",
+        value: `${topic.familyTree.length} Personen im Stammbaum`,
+        icon: Users,
+      },
+    ]
+  : []),
+  ...(topic?.words && topic.words.length > 0 ?
+    [
+      {
+        label: "Wortschatz",
+        value: `${topic.words.length} Vokabeln (Nomen · Verben · Adj.)`,
+        icon: BookOpen,
+      },
+    ]
+  : []),
+  {
+    label: "Niveaustufen",
+    value: "4 Niveaus (A1 · A2 · B1 · B2)",
+    icon: Headphones,
+  },
+];
 ---
 
 <Layout
@@ -83,7 +115,9 @@ const extraSchema =
       <div class="animate-fade-in">
         <Hero
           category={item.category}
-          description={section?.title ?? item.german}
+          description={heroDescription}
+          example={topic.details ?? (topic.id === "stammbaum" ? "Stammbaum, Verwandtschaft und Beziehungsstatus (A1–B2)" : undefined)}
+          stats={heroStats}
           title={topic.title}
           variant="compact"
         />

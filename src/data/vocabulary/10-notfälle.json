@@ -44,18 +44,74 @@
             }
           ],
           "story": {
-            "badge": "Sicherheit & Erste Hilfe",
-            "title": "Im Notfall richtig handeln",
+            "badge": "A1 – Grundstufe",
+            "title": "Im Notfall helfen",
+            "intro": "Grundwortschatz für Notsituationen (A1).",
             "paragraphs": [
               [
-                "In ganz Europa gilt die lebenswichtige Notrufnummer 112 für Feuerwehr und Rettungsdienst.",
-                "Bei einem Unfall ist es entscheidend, ruhig zu bleiben und die genaue Position zu nennen.",
-                "Der Disponent in der Notrufzentrale fragt: Wo ist es passiert? Was ist geschehen? Wie viele Verletzte gibt es?"
-              ],
-              [
-                "Schnelles und überlegtes Handeln rettet im Ernstfall wertvolle Menschenleben."
+                "Wenn Gefahr droht, rufen die Menschen laut: [Hilfe!|„Hilfe!“].",
+                "Bei einem [der Notfall, -̈e|Notfall] wählen wir sofort die Nummer 112.",
+                "Der schnelle [der Krankenwagen, -|Krankenwagen] bringt verletzte Personen ins Spital.",
+                "Die mutige [die Feuerwehr|Feuerwehr] löscht gefährliche Brände."
               ]
             ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Im Notfall helfen",
+              "intro": "Grundwortschatz für Notsituationen (A1).",
+              "paragraphs": [
+                [
+                  "Wenn Gefahr droht, rufen die Menschen laut: [Hilfe!|„Hilfe!“].",
+                  "Bei einem [der Notfall, -̈e|Notfall] wählen wir sofort die Nummer 112.",
+                  "Der schnelle [der Krankenwagen, -|Krankenwagen] bringt verletzte Personen ins Spital.",
+                  "Die mutige [die Feuerwehr|Feuerwehr] löscht gefährliche Brände."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Ein Unfall auf der Kreuzung",
+              "intro": "Schnelle Reaktion bei Verkehrsunfällen (A2).",
+              "paragraphs": [
+                [
+                  "Gestern gab es auf der Hauptstraße einen schweren [der Unfall, -̈e|Unfall].",
+                  "Zwei Autos sind zusammengestoßen, und die Fahrer brauchten sofort Hilfe.",
+                  "Binnen weniger Minuten traf der [der Krankenwagen, -|Krankenwagen] mit Sanitätern ein.",
+                  "Auch [die Feuerwehr|die Feuerwehr] sicherte die Unfallstelle schnell ab."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Die Rettungskette und Erste Hilfe",
+              "intro": "Verhalten im Ernstfall und wichtige Notruf-Angaben (B1).",
+              "paragraphs": [
+                [
+                  "Im Falle eines schweren [der Notfall, -̈e|Notfalls] kommt es auf jede einzelne Sekunde an.",
+                  "Beim Absetzen des Notrufs muss man ruhig bleiben und erklären, wo der [der Unfall, -̈e|Unfall] passiert ist und wie viele Verletzte Hilfe benötigen.",
+                  "Während die Disponenten den [der Krankenwagen, -|Krankenwagen] alarmieren, können Ersthelfer bereits lebensrettende Sofortmaßnahmen durchführen.",
+                  "Gleichzeitig kümmert sich [die Feuerwehr|die Feuerwehr] um die Bergung eingeklemmter Insassen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Notfalllogistik und integrierte Leitstellen",
+              "intro": "Analyse von Krisenintervention und Rettungsinfrastruktur (B2).",
+              "paragraphs": [
+                [
+                  "Die Effizienz des Rettungswesens basiert auf einer lückenlosen Verzahnung von Rettungsleitstelle, Notarztversorgung und Spezialkliniken.",
+                  "Bei einem unübersichtlichen [der Notfall, -̈e|Notfall] koordinieren Einsatzleiter das simultane Ausrücken von [die Feuerwehr|Feuerwehr] und mehreren [der Krankenwagen, -|Krankenwagen].",
+                  "Eine rasche Absicherung der Unfallstelle bei einem schweren [der Unfall, -̈e|Unfall] verhindert folgenschwere Kettenreaktionen im dichten Straßenverkehr."
+                ]
+              ]
+            }
           }
         }
       ]

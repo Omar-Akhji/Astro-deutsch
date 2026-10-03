@@ -1,13 +1,22 @@
-import type { StoryDefinition } from "../model/types.ts";
+import type {
+  CefrLevel,
+  StoryDefinition,
+  TopicStoriesRecord,
+} from "../model/types.ts";
 import topicStoriesJson from "./topic-stories.json";
 
-export type { StoryDefinition } from "../model/types.ts";
+export type {
+  CefrLevel,
+  StoryDefinition,
+  StoryLevelDefinition,
+  TopicStoriesRecord,
+} from "../model/types.ts";
 
 /**
  * All curated story contents loaded directly from topic-stories.json.
  */
-export const TOPIC_STORIES: Record<string, StoryDefinition> = topicStoriesJson;
-
+export const TOPIC_STORIES: Record<string, TopicStoriesRecord> =
+  topicStoriesJson as unknown as Record<string, TopicStoriesRecord>;
 
 export interface StoryToken {
   type: "text" | "word";
@@ -73,8 +82,57 @@ export function parseSentenceTokens(sentence: string): StoryToken[] {
 }
 
 /**
- * Retrieves the curated story definition for a topic, or synthesizes
- * a coherent learning story from the topic's word list if not yet defined.
+ * Retrieves the curated 4-level CEFR stories (A1, A2, B1, B2) for a topic,
+ * or synthesizes fallback stories from the word list if not yet defined.
+ */
+export function getTopicStories(
+  topicId: string,
+  fallbackTopic?: {
+    title: string;
+    words?: { german: string; example?: string | undefined }[] | undefined;
+  },
+  categoryTitle = "Themenwortschatz",
+): TopicStoriesRecord {
+  const existing = TOPIC_STORIES[topicId];
+  if (existing) {
+    return existing;
+  }
+
+  const baseStory = getTopicStory(topicId, fallbackTopic, categoryTitle, "A1");
+  return {
+    A1: {
+      level: "A1",
+      badge: "A1 – Grundstufe",
+      title: `${baseStory.title} (A1)`,
+      intro: "Einfache Sätze für den Einstieg (A1).",
+      paragraphs: baseStory.paragraphs,
+    },
+    A2: {
+      level: "A2",
+      badge: "A2 – Alltag & Praxis",
+      title: `${baseStory.title} (A2)`,
+      intro: "Alltägliche Situationen und zusammenhängende Sätze (A2).",
+      paragraphs: baseStory.paragraphs,
+    },
+    B1: {
+      level: "B1",
+      badge: "B1 – Ausführliche Erzählung",
+      title: `${baseStory.title} (B1)`,
+      intro: "Ausführliche Beschreibungen mit Begründungen (B1).",
+      paragraphs: baseStory.paragraphs,
+    },
+    B2: {
+      level: "B2",
+      badge: "B2 – Differenziert & Komplex",
+      title: `${baseStory.title} (B2)`,
+      intro: "Anspruchsvolle Texte mit stilistischen Nuancen (B2).",
+      paragraphs: baseStory.paragraphs,
+    },
+  };
+}
+
+/**
+ * Retrieves a single story definition for a topic and CEFR level.
  */
 export function getTopicStory(
   topicId: string,
@@ -83,10 +141,14 @@ export function getTopicStory(
     words?: { german: string; example?: string | undefined }[] | undefined;
   },
   categoryTitle = "Themenwortschatz",
+  level: CefrLevel = "A1",
 ): StoryDefinition {
-  const existing = TOPIC_STORIES[topicId];
-  if (existing) {
-    return existing;
+  const existingGroup = TOPIC_STORIES[topicId];
+  if (existingGroup?.[level]) {
+    return existingGroup[level];
+  }
+  if (existingGroup?.A1) {
+    return existingGroup.A1;
   }
 
   const topicTitle = fallbackTopic?.title ?? "Themenwortschatz";

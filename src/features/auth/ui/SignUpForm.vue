@@ -61,7 +61,7 @@ const handleSignUp = async () => {
       <div
         v-if="error"
         role="alert"
-        class="animate-fade-in rounded-xl border border-red-500/25 bg-red-500/10 px-4 py-2 text-xs leading-normal font-bold text-red-500"
+        class="animate-fade-in rounded-xl border-[1.5px] border-red-500/25 bg-red-500/10 px-4 py-2 text-xs leading-normal font-bold text-red-500"
       >
         {{ error }}
       </div>
@@ -84,7 +84,7 @@ const handleSignUp = async () => {
             autocomplete="email"
             placeholder="beispiel@domain.de"
             :disabled="isPending"
-            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm text-white placeholder-text-muted/50 transition-colors duration-300 hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
+            class="h-11 w-full rounded-xl border-[1.5px] border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm text-white placeholder-text-muted/50 transition-colors duration-300 hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
           />
           <Mail
             class="pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 text-text-muted transition-colors duration-300 group-focus-within:text-orange"
@@ -111,7 +111,7 @@ const handleSignUp = async () => {
             minlength="8"
             placeholder="Mindestens 8 Zeichen"
             :disabled="isPending"
-            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/80 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
+            class="h-11 w-full rounded-xl border-[1.5px] border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/80 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
           />
           <button
             type="button"
@@ -152,7 +152,7 @@ const handleSignUp = async () => {
             minlength="8"
             placeholder="Passwort wiederholen"
             :disabled="isPending"
-            class="h-11 w-full rounded-xl border border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
+            class="h-11 w-full rounded-xl border-[1.5px] border-slate-800 bg-slate-950/25 px-4 pr-10 font-sans text-sm tracking-widest text-white placeholder-text-muted/50 transition-colors duration-300 placeholder:tracking-normal hover:border-slate-700/85 hover:bg-slate-950/30 focus:border-orange focus:bg-slate-950/45 focus:ring-4 focus:ring-orange/10 focus:outline-hidden"
           />
           <Lock
             class="pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 text-text-muted"

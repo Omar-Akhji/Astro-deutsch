@@ -79,7 +79,7 @@ const { variant = "overview" } = Astro.props;
 
       <!-- Modelltests Starten CTA Button -->
       <div class="mb-10 flex justify-center tablet:mb-12">
-        <Skeleton class="h-15 w-72 rounded-full border border-white/10 bg-white/5 tablet:h-16 tablet:w-80" />
+        <Skeleton class="h-15 w-72 rounded-full border-[1.5px] border-white/10 bg-white/5 tablet:h-16 tablet:w-80" />
       </div>
 
       <!-- Prüfungsstruktur Section -->
@@ -90,7 +90,7 @@ const { variant = "overview" } = Astro.props;
         </div>
         <div class="grid gap-6">
           {["Lesen", "Hören", "Schreiben", "Sprechen"].map((module_) => (
-            <div class="overflow-hidden rounded-2xl border border-white/5 bg-card">
+            <div class="overflow-hidden rounded-2xl border-[1.5px] border-white/5 bg-card">
               <!-- Section Card Header -->
               <div class="flex flex-col items-start gap-4 bg-white/10 p-4.5 md:flex-row md:items-center md:justify-between tablet:p-5">
                 <Skeleton class="h-7 w-28 rounded-md bg-white/15" />
@@ -121,7 +121,7 @@ const { variant = "overview" } = Astro.props;
                 </div>
                 <!-- Tips Box Skeleton -->
                 <div class="mt-5 flex flex-col gap-5 tablet:gap-6">
-                  <div class="rounded-xl border border-white/10 bg-white/5 p-4 tablet:p-5">
+                  <div class="rounded-xl border-[1.5px] border-white/10 bg-white/5 p-4 tablet:p-5">
                     <div class="mb-2.5 flex items-center gap-2">
                       <Skeleton class="size-4 rounded-full bg-white/10" />
                       <Skeleton class="h-4 w-16 rounded-md bg-white/10" />
@@ -166,7 +166,7 @@ const { variant = "overview" } = Astro.props;
       </div>
 
       <div class="mt-8 mb-12 flex justify-center">
-        <Skeleton class="h-10 w-48 rounded-full border border-white/20 bg-white/5" />
+        <Skeleton class="h-10 w-48 rounded-full border-[1.5px] border-white/20 bg-white/5" />
       </div>
 
       <div class="grid gap-12">
@@ -248,7 +248,7 @@ const { variant = "overview" } = Astro.props;
             </div>
 
             <!-- Checklist Box -->
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+            <div class="overflow-hidden rounded-2xl border-[1.5px] border-white/10 bg-white/5 backdrop-blur-sm">
               <div class="border-b border-white/10 bg-white/5 px-6 py-3">
                 <Skeleton class="h-5 w-44 rounded-md bg-white/10" />
               </div>
@@ -266,7 +266,7 @@ const { variant = "overview" } = Astro.props;
             </div>
 
             <!-- Email Visual Frame Skeleton -->
-            <div class="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 shadow-2xl backdrop-blur-xl">
+            <div class="mt-8 overflow-hidden rounded-2xl border-[1.5px] border-white/10 bg-zinc-900/50 shadow-2xl backdrop-blur-xl">
               <!-- Browser Header with 3 dots -->
               <div class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3">
                 <div class="flex shrink-0 gap-1.5">
@@ -292,7 +292,7 @@ const { variant = "overview" } = Astro.props;
               <!-- Email Body Blocks -->
               <div class="space-y-4 p-4 mobile:p-6 tablet:p-8">
                 {["s1", "s2", "s3", "s4"].map(() => (
-                  <div class="space-y-2 rounded-xl border border-white/10 bg-white/5 p-3.5 mobile:p-4">
+                  <div class="space-y-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 p-3.5 mobile:p-4">
                     <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                       <Skeleton class="h-3.5 w-24 rounded-md bg-white/10" />
                       <Skeleton class="h-3.5 w-32 rounded-md bg-white/5" />
