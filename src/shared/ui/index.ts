@@ -7,6 +7,7 @@ export { default as GlassCard } from "./GlassCard.astro";
 export { default as PageHeader } from "./PageHeader.astro";
 export { default as Skeleton } from "./Skeleton.astro";
 export { default as SkeletonLayouts } from "./SkeletonLayouts.astro";
+export { default as TextAudioPlayer } from "./TextAudioPlayer.vue";
 
 // Composite Layout Widgets (Re-exported from @/widgets for backward compatibility)
 export { Footer, FooterSkeleton } from "@/widgets/footer";

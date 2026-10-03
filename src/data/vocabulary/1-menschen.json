@@ -222,7 +222,43 @@
               "arabic": "قريب / ذو قرابة",
               "example": "Sind Sie mit ihm verwandt?"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Eine Familiengeschichte",
+            "title": "Ein Foto erzählt",
+            "intro": "Fahre über die markierten Wörter oder wähle sie mit der Tastatur aus.",
+            "paragraphs": [
+              [
+                "Am Sonntag besucht Amir seine [die Großmutter|Großmutter] und seinen [der Großvater|Großvater].",
+                "Sie sitzen zusammen und schauen sich ein altes Familienfoto an.",
+                "„Das sind meine [die Großeltern|Großeltern]“, sagt Amir.",
+                "„Sie sind die [der Vorfahre|Vorfahren] unserer Familie.“",
+                "Auf dem Foto sieht man auch seine [die Mutter|Mutter] und seinen [der Vater|Vater].",
+                "Zusammen sind sie Amirs [die Eltern|Eltern]."
+              ],
+              [
+                "Amirs Mutter hat eine Schwester: seine [die Tante|Tante].",
+                "Der Mann neben ihr ist sein [der Onkel|Onkel].",
+                "Die beiden sind ein [das Ehepaar|Ehepaar].",
+                "Amirs Tante ist [verheiratet|verheiratet], aber sein Onkel war früher [geschieden|geschieden].",
+                "Amirs Cousin ist noch [ledig|ledig], und seine Cousine ist seit Kurzem [verlobt|verlobt]."
+              ],
+              [
+                "Auf dem Bild steht Amir als kleiner [der Sohn|Sohn] neben seinem [der Bruder|Bruder] und seiner [die Schwester|Schwester].",
+                "Heute hat seine Schwester einen Mann, Amirs [der Schwager|Schwager].",
+                "Amirs Bruder ist mit einer Frau verheiratet; sie ist seine [die Schwägerin|Schwägerin].",
+                "Der Mann seiner Cousine ist ihr [der Schwiegersohn|Schwiegersohn] in der Familie, und die Frau seines Cousins ist die [die Schwiegertochter|Schwiegertochter] seiner Tante."
+              ],
+              [
+                "Inzwischen hat Amirs Schwester zwei Kinder: einen [der Enkel|Enkel] und eine [die Enkelin|Enkelin] für die Großeltern.",
+                "Alle diese Menschen sind [der/die Verwandte|Verwandte] und miteinander [verwandt|verwandt].",
+                "Amirs Nachbar ist dagegen nicht mit ihnen verwandt.",
+                "Er ist seit einem Jahr [verwitwet|verwitwet].",
+                "„Eine Familie kann viele Geschichten haben“, sagt Amir.",
+                "„Und jede Generation gehört zu unserem Stammbaum.“"
+              ]
+            ]
+          }
         },
         {
           "id": "beziehungen",
@@ -300,7 +336,23 @@
               "arabic": "المودة / العاطفة",
               "example": "Er zeigt seine Zuneigung selten."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Zwischenmenschliches",
+            "title": "Freunde fürs Leben",
+            "paragraphs": [
+              [
+                "Leon und Maya sind seit der Schulzeit [die Freundschaft|beste Freunde].",
+                "Sie haben eine enge [die Beziehung|Beziehung] zueinander und sprechen über alle [das Gefühl|Gefühle].",
+                "Wenn Maya traurig ist, hilft Leon ihr immer mit viel [das Vertrauen|Vertrauen] und Verständnis."
+              ],
+              [
+                "Gestern haben sie über neue [der Kontakt|Kontakte] und Bekannte in der Universität gesprochen.",
+                "Ein guter [der Partner|Partner] im Leben braucht Ehrlichkeit und Geduld.",
+                "„Echte [die Liebe|Liebe] und Freundschaft sind die wertvollsten Geschenke“, lächelt Maya."
+              ]
+            ]
+          }
         },
         {
           "id": "lebensphasen",
@@ -378,7 +430,22 @@
               "arabic": "التقاعد / المعاش",
               "example": "Mein Opa ist seit zwei Jahren in Rente."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Lebensweg & Stationen",
+            "title": "Die Stationen des Lebens",
+            "paragraphs": [
+              [
+                "Jeder Mensch durchläuft verschiedene [die Lebensphase|Lebensphasen] in seinem Alltag.",
+                "Als [das Kind|Kind] lernt man spielerisch die Welt kennen und entdeckt jeden Tag etwas Neues.",
+                "In der [die Jugend|Jugend] entwickeln Jugendliche ihre eigene Persönlichkeit und Träume."
+              ],
+              [
+                "Im [das Erwachsenenalter|Erwachsenenalter] übernimmt man Verantwortung für Beruf und Familie.",
+                "Im [das Alter|Alter] blickt man mit Zufriedenheit und Ruhe auf ein erfülltes Leben zurück."
+              ]
+            ]
+          }
         },
         {
           "id": "begruessen",
@@ -456,7 +523,22 @@
               "arabic": "مرحبا! (ألمانيا الجنوبية)",
               "example": "Grüß Gott, Herr Doktor!"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Kommunikation & Alltag",
+            "title": "Ein Treffen in Berlin",
+            "paragraphs": [
+              [
+                "Am Morgen treffen sich die Kollegen im Büro und sagen freundlich [Guten Morgen|„Guten Morgen“].",
+                "Herr Müller gibt seinem neuen Gast die Hand und sagt höflich [Herzlich willkommen|„Herzlich willkommen in unserem Team!“].",
+                "In der Mittagspause wünschen sich alle einen guten Appetit."
+              ],
+              [
+                "Am Abend verabschieden sich die Freunde mit [Auf Wiedersehen|„Auf Wiedersehen“] und [Bis bald|„Bis bald“].",
+                "Höfliche Worte schaffen überall eine angenehme und herzliche Atmosphäre."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -540,7 +622,22 @@
               "arabic": "التقليد",
               "example": "Das ist eine alte deutsche Tradition."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Tradition & Feiern",
+            "title": "Ein unvergessliches Fest",
+            "paragraphs": [
+              [
+                "Heute feiert Familie Schneider ein großes [das Fest|Fest] mit allen Verwandten und Nachbarn.",
+                "Zum [der Geburtstag|Geburtstag] gratulieren alle Gäste von Herzen und überreichen bunte [das Geschenk|Geschenke].",
+                "Auf dem festlich gedeckten Tisch steht eine leckere [die Torte|Torte] mit brennenden Kerzen."
+              ],
+              [
+                "Alle erheben ihre Gläser und stoßen auf die [die Gesundheit|Gesundheit] des Jubilars an.",
+                "Es wird fröhlich gelacht, gesungen und bis spät in die Nacht getanzt."
+              ]
+            ]
+          }
         },
         {
           "id": "wendepunkte",
@@ -618,7 +715,27 @@
               "arabic": "الجنازة",
               "example": "Viele Menschen kamen zur Beerdigung."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Lebenswege & Entscheidungen",
+            "title": "Die großen Wendepunkte des Lebens",
+            "paragraphs": [
+              [
+                "Jeder Lebensweg beginnt mit dem wunderbaren Moment der [die Geburt|Geburt].",
+                "Nach vielen Schuljahren freuen sich die Jugendlichen auf ihren [der Schulabschluss|Schulabschluss].",
+                "Viele beginnen danach eine praktische [die Ausbildung|Ausbildung] oder feiern einen erfolgreichen [der Berufseinstieg|Berufseinstieg]."
+              ],
+              [
+                "Im Laufe der Jahre bringt ein [der Umzug|Umzug] in eine neue Stadt oft frischen Wind.",
+                "Eine glückliche [die Heirat|Heirat] verbindet zwei Menschen, doch manchmal führt ein schwieriger Weg zur [die Scheidung|Scheidung].",
+                "Nach jeder schmerzhaften [die Krise|Krise] gibt es die Chance auf einen hoffnungsvollen [der Neuanfang|Neuanfang]."
+              ],
+              [
+                "Im wohlverdienten [der Ruhestand|Ruhestand] genießen die Menschen ihre freie Zeit.",
+                "Wenn ein geliebter Mensch stirbt, erinnern der [der Tod|Tod] und die [die Beerdigung|Beerdigung] an den Wert des Lebens."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -702,7 +819,27 @@
               "arabic": "التجعيدة",
               "example": "Meine Oma hat viele Falten im Gesicht."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Porträt & Ausdruck",
+            "title": "Ein Blick in den Spiegel",
+            "paragraphs": [
+              [
+                "Wenn man in den Spiegel blickt, fällt zuerst der freundliche Ausdruck der [das Auge, -n|Augen] auf.",
+                "Über den Augen formt jede [die Augenbraue, -n|Augenbraue] die Mimik des Gesichts.",
+                "Mitten im Gesicht sitzt die [die Nase, -n|Nase], und darunter lächelt ein fröhlicher [der Mund, -̈er|Mund]."
+              ],
+              [
+                "Auf der rechten und linken Seite sorgt jedes [das Ohr, -en|Ohr] für gutes Hören.",
+                "An sonnigen Tagen zeigen sich auf jeder [die Wange, -n|Wange] und auf der [die Stirn|Stirn] kleine [die Sommersprossen (Pl.)|Sommersprossen].",
+                "Am unteren Ende schließt das markante [das Kinn|Kinn] das Gesicht ab."
+              ],
+              [
+                "Rote [die Lippe, -n|Lippen] verleihen dem Lächeln Wärme.",
+                "Manche Männer tragen einen gepflegten [der Bart, -̈e|Bart], während mit den Jahren feine [die Falte, -n|Falten] von Lebenserfahrung erzählen."
+              ]
+            ]
+          }
         },
         {
           "id": "haar",
@@ -780,7 +917,22 @@
               "arabic": "تسريحة الشعر",
               "example": "Deine neue Frisur sieht toll aus!"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Stil & Aussehen",
+            "title": "Ein neuer Haarschnitt",
+            "paragraphs": [
+              [
+                "Im Friseursalon entscheidet sich Miriam für eine völlig neue [die Frisur, -en|Frisur].",
+                "Bisher hatte sie sehr [lang|langes], [glatt|glattes] und von Natur aus [braun|braunes] Haar.",
+                "Ihre Freundin Sarah trägt dagegen [kurz|kurzes], [lockig|lockiges] und leuchtend [blond|blondes] Haar."
+              ],
+              [
+                "Ihr Kollege Robert hat volles, [schwarz|schwarzes] und [wellig|welliges] Haar ohne jedes graue Haar.",
+                "Sein älterer Chef ist stolz auf seine glänzende [die Glatze|Glatze], während Großvater seine edlen [grau|grauen] Haare mit Würde trägt."
+              ]
+            ]
+          }
         },
         {
           "id": "aeusseres",
@@ -858,7 +1010,22 @@
               "arabic": "يرتدي نظارة",
               "example": "Mein Lehrer trägt eine Brille."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Menschliche Erscheinung",
+            "title": "Begegnungen im Park",
+            "paragraphs": [
+              [
+                "Auf der belebten Promenade spazieren Menschen jeden Alters.",
+                "Dort drüben geht ein [groß|großer], [athletisch|athletischer] Mann neben einer [klein|kleinen], [schlank|schlanken] Frau.",
+                "Beide sind [jung|jung], wirken sehr [gutaussehend|gutaussehend] und lachen herzlich miteinander."
+              ],
+              [
+                "Ein gemütlicher Spaziergänger [mittleren Alters|mittleren Alters] genießt die Sonne auf der Bank.",
+                "Ob man [kräftig|kräftig] gebaut ist oder eine modische [eine Brille tragen|Brille trägt]: Wahre Schönheit kommt immer von innen."
+              ]
+            ]
+          }
         },
         {
           "id": "gefuehle",
@@ -948,7 +1115,23 @@
               "arabic": "كريم / سخي",
               "example": "Er ist sehr großzügig mit seinen Freunden."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Emotionen & Charakter",
+            "title": "Ein Tag voller Emotionen",
+            "paragraphs": [
+              [
+                "Nach der bestandenen Prüfung war Jonas überglücklich und [stolz|stolz] auf seine Leistung.",
+                "Zuvor war er tagelang furchtbar [nervös|nervös] und ein wenig [ängstlich|ängstlich] gewesen.",
+                "Doch seine [freundlich|freundlichen] und [ehrlich|ehrlichen] Freunde machten ihm immer wieder Mut."
+              ],
+              [
+                "Jonas ist ein [fleißig|fleißiger] Student, der nie [faul|faul] auf der Couch liegt.",
+                "Mit viel [geduldig|Geduld] und einem [selbstbewusst|selbstbewussten] Auftreten meisterte er die Präsentation.",
+                "Am Abend lud er alle [großzügig|großzügig] zum Abendessen ein."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -1008,7 +1191,22 @@
               "arabic": "أحذية الرضيع",
               "example": "Die Babyschuhe sind wirklich winzig."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Die Kleinsten",
+            "title": "Alles bereit fürs Baby",
+            "paragraphs": [
+              [
+                "Vor der Ankunft des Babys richten die Eltern das Kinderzimmer liebevoll ein.",
+                "Im Schrank liegen ein weicher [der Body|Body] und ein warmer [der Strampler|Strampler] bereit.",
+                "Für die kalten Tage gibt es ein winziges [das Mützchen|Mützchen] und gestrickte [die Söckchen (Pl.)|Söckchen]."
+              ],
+              [
+                "Auf dem Wickeltisch liegt immer eine frische [die Windel, -n|Windel] griffbereit.",
+                "Beim Füttern schützt ein buntes [das Lätzchen|Lätzchen] die Kleidung, und nachts schläft das Kind geborgen in einem kuscheligen [der Schlafsack|Schlafsack]."
+              ]
+            ]
+          }
         },
         {
           "id": "unisex",
@@ -1086,7 +1284,22 @@
               "arabic": "بيجاما",
               "example": "Die Kinder haben schon den Schlafanzug an."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Alltagskleidung",
+            "title": "Bequem durch den Tag",
+            "paragraphs": [
+              [
+                "Für die Universität zieht sich Alex heute ganz unkompliziert an.",
+                "Er wählt ein schlichtes weißes [das T-Shirt, -s|T-Shirt] und eine bequeme blaue [die Jeans|Jeans].",
+                "Weil es draußen kühl ist, zieht er einen kuscheligen [der Hoodie, -s|Hoodie] und eine warme [die Jacke, -n|Jacke] an."
+              ],
+              [
+                "Zu Hause wechselt er nach dem Sport in einen gemütlichen [der Trainingsanzug|Trainingsanzug].",
+                "Am späten Abend freut er sich auf seinen weichen [der Schlafanzug|Schlafanzug] und erholsamen Schlaf."
+              ]
+            ]
+          }
         },
         {
           "id": "herren",
@@ -1152,7 +1365,22 @@
               "arabic": "روب الحمام",
               "example": "Nach dem Duschen zieht er den Bademantel an."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Klassische Eleganz",
+            "title": "Der festliche Auftritt",
+            "paragraphs": [
+              [
+                "Für die feierliche Abendgala kleidet sich Julian besonders elegant.",
+                "Er trägt einen maßgeschneiderten dunklen [der Anzug, -̈e|Anzug] und ein frisch gebügeltes weißes [das Hemd, -en|Hemd].",
+                "Dazu wählt er eine edle seidene [die Krawatte, -n|Krawatte] und eine passende [die Weste, -n|Weste]."
+              ],
+              [
+                "Bei weniger formellen Anlässen kombiniert er gern einen sportlichen [der Blazer, -|Blazer] mit Chinos.",
+                "Nach dem Wellnessbereich zieht er am liebsten einen weichen [der Bademantel, -̈|Bademantel] an."
+              ]
+            ]
+          }
         },
         {
           "id": "damen",
@@ -1218,7 +1446,22 @@
               "arabic": "قميص النوم",
               "example": "Das Nachthemd ist weich und bequem."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Damenmode & Stil",
+            "title": "Ein festlicher Sommerabend",
+            "paragraphs": [
+              [
+                "Zur Sommerhochzeit ihrer besten Freundin wählt Clara ein wunderschönes florales [das Kleid, -er|Kleid].",
+                "Für kühlere Abendstunden nimmt sie eine feine [die Strickjacke, -n|Strickjacke] mit.",
+                "Im Büro trägt sie am liebsten eine elegante weiße [die Bluse, -n|Bluse] zu einem klassischen [der Rock, -̈e|Rock]."
+              ],
+              [
+                "Am Wochenende entspannt sie zu Hause bequem in dehnbaren [die Leggings|Leggings].",
+                "Für die Reise an den Strand packt sie ihren bunten [der Badeanzug, -̈e|Badeanzug] und ein luftiges Outfit ein."
+              ]
+            ]
+          }
         },
         {
           "id": "accessoires",
@@ -1284,7 +1527,22 @@
               "arabic": "الأقراط",
               "example": "Die Ohrringe passen zum Kleid."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Details & Akzente",
+            "title": "Die perfekten Begleiter",
+            "paragraphs": [
+              [
+                "Erst die passenden Accessoires machen ein schönes Outfit wirklich komplett.",
+                "Ein hochwertiger lederner [der Gürtel, -|Gürtel] hält die Hose zuverlässig an Ort und Stelle.",
+                "Im Winter schützen ein warmer [der Schal, -s|Schal], eine weiche [die Mütze, -n|Mütze] und gefütterte [die Handschuhe (Pl.)|Handschuhe] vor eisiger Kälte."
+              ],
+              [
+                "An sonnigen Sommertagen darf eine stilvolle [die Sonnenbrille, -n|Sonnenbrille] in keiner Tasche fehlen.",
+                "Eine präzise [die Uhr, -en|Uhr] am Handgelenk und ein feiner silberner [der Ring, -e|Ring] setzen edle Akzente."
+              ]
+            ]
+          }
         },
         {
           "id": "schuhe",
@@ -1350,7 +1608,22 @@
               "arabic": "حقيبة السفر",
               "example": "Der Koffer ist schon gepackt."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Schuhwerk & Lederwaren",
+            "title": "Auf Schritt und Tritt",
+            "paragraphs": [
+              [
+                "Für lange Spaziergänge in der Stadt sind bequeme [die Turnschuhe / die Sneakers|Sneakers] die allerbeste Wahl.",
+                "Im kalten Winter halten gefütterte [die Stiefel (Pl.)|Stiefel] die Füße angenehm warm und trocken.",
+                "Zu Hause schlüpft man sofort in gemütliche [die Hausschuhe (Pl.)|Hausschuhe] für maximale Gemütlichkeit."
+              ],
+              [
+                "Zur Arbeit nimmt David seinen praktischen [der Rucksack, -̈e|Rucksack] mit, in dem auch seine [die Geldbörse, -n|Geldbörse] liegt.",
+                "Für die große Urlaubsreise packt die ganze Familie ihren geräumigen [der Koffer, -|Koffer]."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -1434,7 +1707,22 @@
               "arabic": "العطر",
               "example": "Dieses Parfüm riecht sehr angenehm."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Hygiene & Wohlbefinden",
+            "title": "Die morgendliche Pflegeroutine",
+            "paragraphs": [
+              [
+                "Der Tag beginnt im Badezimmer mit einer erfrischenden Dusche mit gut duftendem [das Duschgel, -s|Duschgel].",
+                "Für die Haare verwendet man ein pflegendes [das Shampoo, -s|Shampoo] und trocknet sich mit einem weichen [das Handtuch, -̈er|Handtuch] ab.",
+                "Mit [die Zahnbürste, -n|Zahnbürste] und frischer [die Zahnpasta|Zahnpasta] werden die Zähne gründlich geputzt."
+              ],
+              [
+                "Ein zuverlässiges [das Deodorant, -s|Deodorant] und ein Hauch von feinem [das Parfüm, -s|Parfüm] schenken ein gepflegtes Gefühl für den ganzen Tag.",
+                "An sonnigen Tagen schützt hochwertige [die Sonnencreme|Sonnencreme] die Haut vor Sonnenbrand."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -1506,7 +1794,22 @@
               "arabic": "فرشاة المكياج",
               "example": "Benutze einen sauberen Schminkpinsel."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Kosmetik & Ausstrahlung",
+            "title": "Farben und Akzente",
+            "paragraphs": [
+              [
+                "Vor dem großen Abend bereitet sich Elena am Schminktisch vor.",
+                "Zuerst trägt sie mit einem weichen [der Schminkpinsel, -|Schminkpinsel] eine leichte [die Foundation / die Grundierung|Foundation] auf.",
+                "Kleine Unebenheiten deckt sie dezent mit etwas [der Concealer|Concealer] und feinem [der Puder|Puder] ab."
+              ],
+              [
+                "Die Wimpern erhalten mit schwarzer [die Wimperntusche / die Mascara|Wimperntusche] wunderbaren Schwung und Fülle.",
+                "Ein Hauch von zartem [das Rouge|Rouge] auf den Wangen und ein samtiger [der Lippenstift, -e|Lippenstift] vollenden den strahlenden Look."
+              ]
+            ]
+          }
         }
       ]
     }

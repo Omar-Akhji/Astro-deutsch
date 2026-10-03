@@ -42,7 +42,22 @@
               "english": "onion",
               "example": "Beim Zwiebelschneiden weint man."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Frische Lebensmittel",
+            "title": "Frischer Einkauf auf dem Wochenmarkt",
+            "paragraphs": [
+              [
+                "Jeden Samstagmorgen geht Frau Weber zum beliebten Wochenmarkt in der Stadt.",
+                "Sie kauft saftige rote [der Apfel, -̈|Äpfel] und süße gelbe [die Banane, -n|Bananen] für das Frühstück.",
+                "Am Gemüsestand wählt sie frische grüne [die Gurke, -n|Gurken] und knackige [die Karotte, -n|Karotten] aus."
+              ],
+              [
+                "Für die Suppe am Sonntag nimmt sie auch aromatische [die Tomate, -n|Tomaten] mit.",
+                "Gesunde Ernährung mit frischem Obst und Gemüse gibt dem Körper wertvolle Energie."
+              ]
+            ]
+          }
         },
         {
           "id": "fleisch_und_fisch",
@@ -78,7 +93,22 @@
               "english": "sausage",
               "example": "In Deutschland isst man viel Wurst."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Kochen & Genuss",
+            "title": "Ein Festessen zubereiten",
+            "paragraphs": [
+              [
+                "Für das Abendessen mit Freunden geht Lukas in die Metzgerei und Fischhandlung.",
+                "Er kauft zartes [das Rindfleisch|Rindfleisch] und frisches [das Hähnchen|Hähnchenfilet].",
+                "Für die Gäste, die Fisch bevorzugen, wählt er feinen [der Lachs|Lachs] aus dem Atlantik."
+              ],
+              [
+                "In der Pfanne brät er das Fleisch mit aromatischen Kräutern und Olivenöl an.",
+                "Ein gutes Essen verbindet Menschen und macht jeden Abend besonders."
+              ]
+            ]
+          }
         },
         {
           "id": "getraenke",
@@ -114,7 +144,22 @@
               "english": "milk",
               "example": "Die Kinder trinken gerne Milch."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Getränke & Erfrischung",
+            "title": "Erfrischung im Café",
+            "paragraphs": [
+              [
+                "Im Sommercafé bestellen die Gäste kühle und heiße [das Getränk|Getränke].",
+                "Maria bestellt ein Glas stilles [das Mineralwasser|Mineralwasser] mit einer Scheibe Zitrone.",
+                "Ihr Kollege David trinkt lieber einen frisch gepressten [der Orangensaft|Orangensaft]."
+              ],
+              [
+                "Nach dem Essen trinken beide noch einen heißen [der Kaffee|Kaffee] mit etwas Milch.",
+                "Eine kleine Pause mit guten Getränken bringt neue Frische in den Alltag."
+              ]
+            ]
+          }
         },
         {
           "id": "mahlzeiten",
@@ -150,7 +195,22 @@
               "english": "bill, check",
               "example": "Die Rechnung, bitte!"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Gastronomie & Genuss",
+            "title": "Ein Abendessen im Restaurant",
+            "paragraphs": [
+              [
+                "Heute Abend essen Anna und Tim in einem gemütlichen Restaurant im Stadtzentrum.",
+                "Der freundliche Kellner bringt ihnen die [die Speisekarte|Speisekarte] und empfiehlt die Spezialität des Hauses.",
+                "Als [die Vorspeise|Vorspeise] wählen sie eine heiße Suppe mit frischem Brot."
+              ],
+              [
+                "Die [das Hauptgericht|Hauptspeise] schmeckt hervorragend und ist kunstvoll angerichtet.",
+                "Zum Schluss bestellen sie ein süßes Dessert und bitten höflich um [die Rechnung|die Rechnung]."
+              ]
+            ]
+          }
         }
       ]
     }

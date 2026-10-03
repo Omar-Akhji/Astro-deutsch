@@ -42,7 +42,22 @@
               "english": "cloud",
               "example": "Es sind viele Wolken am Himmel."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Natur & Umwelt",
+            "title": "Die vier Jahreszeiten",
+            "paragraphs": [
+              [
+                "Das Wetter in Mitteleuropa wechselt mit den vier verschiedenen Jahreszeiten im Jahr.",
+                "Im Frühling erwacht die Natur, bunte Blumen blühen und die Temperaturen steigen spürbar.",
+                "Der heiße Sommer lockt mit viel Sonnenschein an Seen, Meere und in schattige Parks."
+              ],
+              [
+                "Im Herbst färben sich die Blätter golden, während Wind und Nebel durch die Straßen ziehen.",
+                "Wenn im Winter weißer Schnee fällt, verwandelt sich die Landschaft in ein ruhiges Märchenland."
+              ]
+            ]
+          }
         }
       ]
     }

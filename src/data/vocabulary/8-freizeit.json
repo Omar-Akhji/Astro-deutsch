@@ -42,7 +42,22 @@
               "english": "to play",
               "example": "Die Kinder spielen im Park."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Freizeit & Hobbys",
+            "title": "Ein aktives Wochenende",
+            "paragraphs": [
+              [
+                "Am Wochenende haben die Menschen Zeit für ihre liebsten Freizeitaktivitäten und Hobbys.",
+                "Manche wandern gern durch die grünen Wälder oder fahren mit dem Rad am Fluss entlang.",
+                "Andere treffen sich im Sportverein zum Fußballspielen, Schwimmen oder Tennis."
+              ],
+              [
+                "Kreative Menschen zeichnen, spielen ein Musikinstrument oder kochen gemeinsam mit Freunden.",
+                "Ausgewogene Freizeit schenkt neue Kraft und gute Laune für die kommende Woche."
+              ]
+            ]
+          }
         }
       ]
     }

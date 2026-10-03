@@ -1,4 +1,5 @@
 ---
+import TextAudioPlayer from "@/shared/ui/TextAudioPlayer.vue";
 import type { FamilyMember, Word } from "../model/types.ts";
 
 interface Props {
@@ -7,15 +8,27 @@ interface Props {
 }
 
 const { members, words } = Astro.props;
+
 const familyTranslations: Record<string, string> = {
-  "die Großmutter": "grandmother", "der Großvater": "grandfather",
-  "die Mutter": "mother", "der Vater": "father", "die Tante": "aunt",
-  "der Onkel": "uncle", "der Sohn": "son", "der Bruder": "brother",
-  "die Schwester": "sister", "der Schwiegersohn": "son-in-law",
-  "die Schwiegertochter": "daughter-in-law", "der Schwager": "brother-in-law",
-  "die Schwägerin": "sister-in-law", "der Cousin": "male cousin",
-  "die Cousine": "female cousin", "der Enkel": "grandson", "die Enkelin": "granddaughter",
+  "die Großmutter": "grandmother",
+  "der Großvater": "grandfather",
+  "die Mutter": "mother",
+  "der Vater": "father",
+  "die Tante": "aunt",
+  "der Onkel": "uncle",
+  "der Sohn": "son",
+  "der Bruder": "brother",
+  "die Schwester": "sister",
+  "der Schwiegersohn": "son-in-law",
+  "die Schwiegertochter": "daughter-in-law",
+  "der Schwager": "brother-in-law",
+  "die Schwägerin": "sister-in-law",
+  "der Cousin": "male cousin",
+  "die Cousine": "female cousin",
+  "der Enkel": "grandson",
+  "die Enkelin": "granddaughter",
 };
+
 const examples: Record<string, string> = {
   "die Großmutter": "Meine Großmutter erzählt gern Geschichten.",
   "der Großvater": "Mein Großvater lebt auf dem Land.",
@@ -35,6 +48,7 @@ const examples: Record<string, string> = {
   "der Enkel": "Der Enkel besucht seine Großeltern.",
   "die Enkelin": "Die Enkelin liest ihrer Oma vor.",
 };
+
 const glossary = [
   ...members.map((member) => ({
     german: member.german,
@@ -51,10 +65,39 @@ const glossary = [
     example: word.example ?? "",
   })),
 ];
+
+const storySentences = [
+  "Am Sonntag besucht Amir seine Großmutter und seinen Großvater.",
+  "Sie sitzen zusammen und schauen sich ein altes Familienfoto an.",
+  "„Das sind meine Großeltern“, sagt Amir.",
+  "„Sie sind die Vorfahren unserer Familie.“",
+  "Auf dem Foto sieht man auch seine Mutter und seinen Vater.",
+  "Zusammen sind sie Amirs Eltern.",
+  "Amirs Mutter hat eine Schwester: seine Tante.",
+  "Der Mann neben ihr ist sein Onkel.",
+  "Die beiden sind ein Ehepaar.",
+  "Amirs Tante ist verheiratet, aber sein Onkel war früher geschieden.",
+  "Amirs Cousin ist noch ledig, und seine Cousine ist seit Kurzem verlobt.",
+  "Auf dem Bild steht Amir als kleiner Sohn neben seinem Bruder und seiner Schwester.",
+  "Heute hat seine Schwester einen Mann, Amirs Schwager.",
+  "Amirs Bruder ist mit einer Frau verheiratet; sie ist seine Schwägerin.",
+  "Der Mann seiner Cousine ist ihr Schwiegersohn in der Familie, und die Frau seines Cousins ist die Schwiegertochter seiner Tante.",
+  "Inzwischen hat Amirs Schwester zwei Kinder: einen Enkel und eine Enkelin für die Großeltern.",
+  "Alle diese Menschen sind Verwandte und miteinander verwandt.",
+  "Amirs Nachbar ist dagegen nicht mit ihnen verwandt.",
+  "Er ist seit einem Jahr verwitwet.",
+  "„Eine Familie kann viele Geschichten haben“, sagt Amir.",
+  "„Und jede Generation gehört zu unserem Stammbaum.“",
+];
 ---
 
-<article class="family-story w-full rounded-2xl" aria-labelledby="story-heading">
-  <div class="mb-7 flex flex-wrap items-end justify-between gap-3">
+<article
+  class="family-story relative w-full overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) transition-all mobile:p-6 tablet:p-8"
+  aria-labelledby="story-heading"
+  data-glossary={JSON.stringify(glossary)}
+>
+  <!-- Header -->
+  <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
     <div>
       <p class="mb-2 text-xs font-semibold tracking-[0.18em] text-amber-300 uppercase">Eine Familiengeschichte</p>
       <h2 id="story-heading" class="text-2xl font-bold text-white @md:text-3xl">Ein Foto erzählt</h2>
@@ -62,96 +105,150 @@ const glossary = [
     <p class="text-sm text-mist-400">Fahre über die markierten Wörter oder wähle sie mit der Tastatur aus.</p>
   </div>
 
-  <div class="space-y-5 text-base leading-8 text-mist-200 @md:text-lg @md:leading-9">
+  <!-- Story Content with Native Highlightable Words and Read-Along Sentences -->
+  <div class="family-story-content space-y-5 text-base leading-8 text-mist-200 @md:text-lg @md:leading-9">
     <p>
-      Am Sonntag besucht Amir seine <span class="story-word" tabindex="0" data-word="die Großmutter">Großmutter</span> und seinen <span class="story-word" tabindex="0" data-word="der Großvater">Großvater</span>. Sie sitzen zusammen und schauen sich ein altes Familienfoto an. „Das sind meine <span class="story-word" tabindex="0" data-word="die Großeltern">Großeltern</span>“, sagt Amir. „Sie sind die <span class="story-word" tabindex="0" data-word="der Vorfahre">Vorfahren</span> unserer Familie.“ Auf dem Foto sieht man auch seine <span class="story-word" tabindex="0" data-word="die Mutter">Mutter</span> und seinen <span class="story-word" tabindex="0" data-word="der Vater">Vater</span>. Zusammen sind sie Amirs <span class="story-word" tabindex="0" data-word="die Eltern">Eltern</span>.
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="0" tabindex="0" role="button" aria-label="Satz 1 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Am Sonntag besucht Amir seine <span class="story-word" tabindex="0" data-word="die Großmutter">Großmutter</span> und seinen <span class="story-word" tabindex="0" data-word="der Großvater">Großvater</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="1" tabindex="0" role="button" aria-label="Satz 2 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Sie sitzen zusammen und schauen sich ein altes Familienfoto an.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="2" tabindex="0" role="button" aria-label="Satz 3 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">„Das sind meine <span class="story-word" tabindex="0" data-word="die Großeltern">Großeltern</span>“, sagt Amir.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="3" tabindex="0" role="button" aria-label="Satz 4 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">„Sie sind die <span class="story-word" tabindex="0" data-word="der Vorfahre">Vorfahren</span> unserer Familie.“</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="4" tabindex="0" role="button" aria-label="Satz 5 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Auf dem Foto sieht man auch seine <span class="story-word" tabindex="0" data-word="die Mutter">Mutter</span> und seinen <span class="story-word" tabindex="0" data-word="der Vater">Vater</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="5" tabindex="0" role="button" aria-label="Satz 6 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Zusammen sind sie Amirs <span class="story-word" tabindex="0" data-word="die Eltern">Eltern</span>.</span>
     </p>
+
     <p>
-      Amirs Mutter hat eine Schwester: seine <span class="story-word" tabindex="0" data-word="die Tante">Tante</span>. Der Mann neben ihr ist sein <span class="story-word" tabindex="0" data-word="der Onkel">Onkel</span>. Die beiden sind ein <span class="story-word" tabindex="0" data-word="das Ehepaar">Ehepaar</span>. Amirs Tante ist <span class="story-word" tabindex="0" data-word="verheiratet">verheiratet</span>, aber sein Onkel war früher <span class="story-word" tabindex="0" data-word="geschieden">geschieden</span>. Amirs Cousin ist noch <span class="story-word" tabindex="0" data-word="ledig">ledig</span>, und seine Cousine ist seit Kurzem <span class="story-word" tabindex="0" data-word="verlobt">verlobt</span>.
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="6" tabindex="0" role="button" aria-label="Satz 7 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Amirs Mutter hat eine Schwester: seine <span class="story-word" tabindex="0" data-word="die Tante">Tante</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="7" tabindex="0" role="button" aria-label="Satz 8 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Der Mann neben ihr ist sein <span class="story-word" tabindex="0" data-word="der Onkel">Onkel</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="8" tabindex="0" role="button" aria-label="Satz 9 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Die beiden sind ein <span class="story-word" tabindex="0" data-word="das Ehepaar">Ehepaar</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="9" tabindex="0" role="button" aria-label="Satz 10 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Amirs Tante ist <span class="story-word" tabindex="0" data-word="verheiratet">verheiratet</span>, aber sein Onkel war früher <span class="story-word" tabindex="0" data-word="geschieden">geschieden</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="10" tabindex="0" role="button" aria-label="Satz 11 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Amirs Cousin ist noch <span class="story-word" tabindex="0" data-word="ledig">ledig</span>, und seine Cousine ist seit Kurzem <span class="story-word" tabindex="0" data-word="verlobt">verlobt</span>.</span>
     </p>
+
     <p>
-      Auf dem Bild steht Amir als kleiner <span class="story-word" tabindex="0" data-word="der Sohn">Sohn</span> neben seinem <span class="story-word" tabindex="0" data-word="der Bruder">Bruder</span> und seiner <span class="story-word" tabindex="0" data-word="die Schwester">Schwester</span>. Heute hat seine Schwester einen Mann, Amirs <span class="story-word" tabindex="0" data-word="der Schwager">Schwager</span>. Amirs Bruder ist mit einer Frau verheiratet; sie ist seine <span class="story-word" tabindex="0" data-word="die Schwägerin">Schwägerin</span>. Der Mann seiner Cousine ist ihr <span class="story-word" tabindex="0" data-word="der Schwiegersohn">Schwiegersohn</span> in der Familie, und die Frau seines Cousins ist die <span class="story-word" tabindex="0" data-word="die Schwiegertochter">Schwiegertochter</span> seiner Tante.
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="11" tabindex="0" role="button" aria-label="Satz 12 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Auf dem Bild steht Amir als kleiner <span class="story-word" tabindex="0" data-word="der Sohn">Sohn</span> neben seinem <span class="story-word" tabindex="0" data-word="der Bruder">Bruder</span> und seiner <span class="story-word" tabindex="0" data-word="die Schwester">Schwester</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="12" tabindex="0" role="button" aria-label="Satz 13 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Heute hat seine Schwester einen Mann, Amirs <span class="story-word" tabindex="0" data-word="der Schwager">Schwager</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="13" tabindex="0" role="button" aria-label="Satz 14 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Amirs Bruder ist mit einer Frau verheiratet; sie ist seine <span class="story-word" tabindex="0" data-word="die Schwägerin">Schwägerin</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="14" tabindex="0" role="button" aria-label="Satz 15 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Der Mann seiner Cousine ist ihr <span class="story-word" tabindex="0" data-word="der Schwiegersohn">Schwiegersohn</span> in der Familie, und die Frau seines Cousins ist die <span class="story-word" tabindex="0" data-word="die Schwiegertochter">Schwiegertochter</span> seiner Tante.</span>
     </p>
+
     <p>
-      Inzwischen hat Amirs Schwester zwei Kinder: einen <span class="story-word" tabindex="0" data-word="der Enkel">Enkel</span> und eine <span class="story-word" tabindex="0" data-word="die Enkelin">Enkelin</span> für die Großeltern. Alle diese Menschen sind <span class="story-word" tabindex="0" data-word="der/die Verwandte">Verwandte</span> und miteinander <span class="story-word" tabindex="0" data-word="verwandt">verwandt</span>. Amirs Nachbar ist dagegen nicht mit ihnen verwandt. Er ist seit einem Jahr <span class="story-word" tabindex="0" data-word="verwitwet">verwitwet</span>. „Eine Familie kann viele Geschichten haben“, sagt Amir. „Und jede Generation gehört zu unserem Stammbaum.“
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="15" tabindex="0" role="button" aria-label="Satz 16 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Inzwischen hat Amirs Schwester zwei Kinder: einen <span class="story-word" tabindex="0" data-word="der Enkel">Enkel</span> und eine <span class="story-word" tabindex="0" data-word="die Enkelin">Enkelin</span> für die Großeltern.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="16" tabindex="0" role="button" aria-label="Satz 17 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Alle diese Menschen sind <span class="story-word" tabindex="0" data-word="der/die Verwandte">Verwandte</span> und miteinander <span class="story-word" tabindex="0" data-word="verwandt">verwandt</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="17" tabindex="0" role="button" aria-label="Satz 18 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Amirs Nachbar ist dagegen nicht mit ihnen verwandt.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="18" tabindex="0" role="button" aria-label="Satz 19 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">Er ist seit einem Jahr <span class="story-word" tabindex="0" data-word="verwitwet">verwitwet</span>.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="19" tabindex="0" role="button" aria-label="Satz 20 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">„Eine Familie kann viele Geschichten haben“, sagt Amir.</span>
+      <span class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white" data-sentence-index="20" tabindex="0" role="button" aria-label="Satz 21 vorlesen" title="Klicken zum Vorlesen ab diesem Satz">„Und jede Generation gehört zu unserem Stammbaum.“</span>
     </p>
   </div>
 
-  <div class="mt-8 flex items-center gap-2 text-sm text-mist-400">
-    <span class="h-0.5 w-6 rounded bg-amber-300"></span>
-    Markierte Wörter: Übersetzung, Erklärung und Beispielsatz
+  <!-- Reusable Audio Player Component Island (Below Story Text) -->
+  <div class="mt-8">
+    <TextAudioPlayer
+      client:load
+      sentences={storySentences}
+      targetSelector=".family-story-content"
+      title="Audio-Begleiter"
+      subtitle="Höre dir die Geschichte Satz für Satz an oder klicke auf einen Satz im Text"
+    />
   </div>
+
+  <!-- Footer Help Tip & Legend -->
+  <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/8 pt-5 text-sm text-mist-400">
+    <div class="flex items-center gap-2">
+      <span class="h-0.5 w-6 rounded bg-amber-300"></span>
+      <span>Markierte Wörter: Übersetzung, Erklärung und Beispielsatz (Hover / Tastatur)</span>
+    </div>
+    <div class="text-xs text-mist-500">
+      Tipp: Du kannst jeden Satz anklicken, um direkt ab dort zu hören.
+    </div>
+  </div>
+
+  <!-- Tooltip Modal for Word Explanations -->
   <div class="story-tooltip" role="tooltip" hidden></div>
-  <script type="application/json" class="story-glossary" set:html={JSON.stringify(glossary)}></script>
 </article>
 
+<script src="../lib/family-story.ts"></script>
+
 <style>
+  /* Word glossary styling */
   .story-word {
     color: #fcd34d;
+    font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: rgb(252 211 77 / 65%);
-    text-decoration-thickness: 1px;
+    text-decoration-color: rgb(252 211 77 / 70%);
+    text-decoration-thickness: 1.5px;
     text-underline-offset: 4px;
     cursor: help;
+    transition: color 0.15s ease, background-color 0.15s ease;
   }
   .story-word:hover,
   .story-word:focus-visible {
-    color: #fff;
+    color: #ffffff;
+    background-color: rgb(252 211 77 / 25%);
+    border-radius: 0.25rem;
     text-decoration-thickness: 2px;
     outline: none;
   }
+
+  /* Sentence Read-Along styling */
+  .story-sentence {
+    position: relative;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  :global(.story-sentence.is-active) {
+    background-color: rgb(255 255 255 / 15%);
+    color: #ffffff;
+  }
+
+  /* Tooltip box styling */
   .story-tooltip {
     position: fixed;
-    z-index: 50;
-    width: min(20rem, calc(100vw - 2rem));
+    z-index: 9999;
+    width: min(22rem, calc(100vw - 2rem));
     padding: 0.9rem 1rem;
-    border: 1px solid rgb(255 255 255 / 16%);
+    border: 1px solid rgb(255 255 255 / 20%);
     border-radius: 0.85rem;
     background: #171923;
     color: #f4f4f5;
-    box-shadow: 0 12px 40px rgb(0 0 0 / 40%);
+    box-shadow: 0 16px 48px rgb(0 0 0 / 60%), 0 0 0 1px rgb(252 211 77 / 15%);
     font-size: 0.875rem;
     line-height: 1.5;
     pointer-events: none;
+    backdrop-filter: blur(12px);
   }
-  .story-tooltip[hidden] { display: none; }
-  .story-tooltip strong { display: block; color: #fcd34d; font-size: 1rem; }
-  .story-tooltip .translation { margin-top: 0.2rem; }
-  .story-tooltip .arabic { color: #d4d4d8; font-family: var(--font-arabic, sans-serif); }
-  .story-tooltip .explanation { margin-top: 0.55rem; color: #d4d4d8; }
-  .story-tooltip .example { margin-top: 0.5rem; color: #a1a1aa; font-style: italic; }
+  .story-tooltip[hidden] {
+    display: none;
+  }
+  :global(.story-tooltip strong) {
+    display: block;
+    color: #fcd34d;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+  :global(.story-tooltip .translation) {
+    color: #e4e4e7;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  :global(.story-tooltip .arabic) {
+    color: #fef08a;
+    font-family: var(--font-arabic, sans-serif);
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+  }
+  :global(.story-tooltip .explanation) {
+    margin-top: 0.55rem;
+    color: #d4d4d8;
+    border-top: 1px solid rgb(255 255 255 / 10%);
+    padding-top: 0.4rem;
+  }
+  :global(.story-tooltip .example) {
+    margin-top: 0.45rem;
+    color: #a1a1aa;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.375rem;
+  }
 </style>
-
-<script>
-  document.querySelectorAll<HTMLElement>(".family-story").forEach((story) => {
-    const tooltip = story.querySelector<HTMLElement>(".story-tooltip");
-    const glossaryNode = story.querySelector<HTMLScriptElement>(".story-glossary");
-    if (!tooltip || !glossaryNode) return;
-
-    const entries = new Map<string, { german: string; arabic: string; translation: string; explanation: string; example: string }>(
-      (JSON.parse(glossaryNode.textContent ?? "[]") as Array<{ german: string; arabic: string; translation: string; explanation: string; example: string }>).map((entry) => [entry.german, entry]),
-    );
-    const escape = (value: string) => value.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char] ?? char);
-
-    const hide = () => { tooltip.hidden = true; };
-    const show = (word: HTMLElement) => {
-      const entry = entries.get(word.dataset["word"] ?? "");
-      if (!entry) return;
-      tooltip.innerHTML = `<strong>${escape(entry.german)}</strong><div class="translation">${escape(entry.translation)}</div><div class="arabic" dir="rtl">${escape(entry.arabic)}</div><div class="explanation">${escape(entry.explanation)}</div><div class="example">${escape(entry.example)}</div>`;
-      tooltip.hidden = false;
-      const bounds = word.getBoundingClientRect();
-      const left = Math.max(16, Math.min(bounds.left, window.innerWidth - tooltip.offsetWidth - 16));
-      const top = bounds.bottom + tooltip.offsetHeight + 12 < window.innerHeight ? bounds.bottom + 8 : Math.max(16, bounds.top - tooltip.offsetHeight - 8);
-      tooltip.style.left = `${left}px`;
-      tooltip.style.top = `${top}px`;
-    };
-
-    story.querySelectorAll<HTMLElement>(".story-word").forEach((word) => {
-      word.addEventListener("mouseenter", () => show(word));
-      word.addEventListener("mouseleave", hide);
-      word.addEventListener("focus", () => show(word));
-      word.addEventListener("blur", hide);
-    });
-    window.addEventListener("scroll", hide, { passive: true });
-  });
-</script>

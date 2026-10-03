@@ -60,7 +60,22 @@
               "english": "police",
               "example": "Rufen Sie die Polizei!"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Stadtleben & Infrastruktur",
+            "title": "Ein Spaziergang durch die Stadt",
+            "paragraphs": [
+              [
+                "Die Innenstadt bietet viele wichtige Gebäude und kulturelle Orte für Bürger und Besucher.",
+                "Mitten im Zentrum steht das alte Rathaus neben der bekannten [die Bibliothek|Stadtbibliothek].",
+                "Am großen Platz befindet sich die moderne [die Post|Postfiliale] und gegenüber eine internationale [die Bank|Bank]."
+              ],
+              [
+                "Viele Familien verbringen den Nachmittag im sonnigen Park oder besuchen das nahe gelegene Museum.",
+                "Ein lebendiges Stadtzentrum macht das Leben abwechslungsreich und lebenswert."
+              ]
+            ]
+          }
         },
         {
           "id": "einkaufen",
@@ -108,7 +123,22 @@
               "english": "cheap / reasonable",
               "example": "Die Äpfel sind heute billig."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Einkauf & Shopping",
+            "title": "Ein Einkaufsbummel am Samstag",
+            "paragraphs": [
+              [
+                "Am Samstagnachmittag gehen viele Menschen gerne in die Fußgängerzone zum Einkaufen.",
+                "Im großen Supermarkt füllt Thomas seinen Einkaufswagen mit Lebensmitteln für die ganze Woche.",
+                "An der Kasse bezahlt er bequem mit Karte und erhält seine Quittung."
+              ],
+              [
+                "In der Bäckerei nebenan kauft er noch frische Brötchen und ein knuspriges Vollkornbrot.",
+                "Einkaufen in lokalen Geschäften unterstützt die Gemeinschaft und macht Freude."
+              ]
+            ]
+          }
         }
       ]
     }

@@ -42,7 +42,21 @@
               "english": "ambulance",
               "example": "Rufen Sie schnell einen Krankenwagen!"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Sicherheit & Erste Hilfe",
+            "title": "Im Notfall richtig handeln",
+            "paragraphs": [
+              [
+                "In ganz Europa gilt die lebenswichtige Notrufnummer 112 für Feuerwehr und Rettungsdienst.",
+                "Bei einem Unfall ist es entscheidend, ruhig zu bleiben und die genaue Position zu nennen.",
+                "Der Disponent in der Notrufzentrale fragt: Wo ist es passiert? Was ist geschehen? Wie viele Verletzte gibt es?"
+              ],
+              [
+                "Schnelles und überlegtes Handeln rettet im Ernstfall wertvolle Menschenleben."
+              ]
+            ]
+          }
         }
       ]
     }

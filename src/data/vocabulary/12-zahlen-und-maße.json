@@ -42,7 +42,21 @@
               "english": "week",
               "example": "Nächste Woche fahre ich in den Urlaub."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Uhrzeit & Tagesablauf",
+            "title": "Jeder Moment zählt",
+            "paragraphs": [
+              [
+                "Pünktlichkeit und ein gut strukturierter Tagesablauf haben in Deutschland einen hohen Stellenwert.",
+                "Ein Tag hat vierundzwanzig Stunden, jede Stunde sechzig Minuten und jede Minute sechzig Sekunden.",
+                "Wer seine Termine sorgfältig plant, vermeidet Hektik und schafft Zeit für die schönen Dinge des Lebens."
+              ],
+              [
+                "Die gemeinsame Zeit mit lieben Menschen ist das Wertvollste, was wir besitzen."
+              ]
+            ]
+          }
         }
       ]
     }

@@ -42,7 +42,23 @@
               "english": "shelf, bookcase",
               "example": "Die Bücher stehen im Regal."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Wohnen & Gemütlichkeit",
+            "title": "Ein gemütlicher Abend im Wohnzimmer",
+            "paragraphs": [
+              [
+                "Nach einem langen Arbeitstag versammelt sich die Familie im gemütlichen [das Wohnzimmer|Wohnzimmer].",
+                "Der Vater setzt sich in den bequemen [der Sessel, -|Sessel] und liest ein interessantes Buch.",
+                "Die Mutter ruht sich auf dem großen [das Sofa, -s|Sofa] aus und trinkt eine Tasse Tee."
+              ],
+              [
+                "Auf dem weichen [der Teppich, -e|Teppich] spielen die Kinder mit ihren Spielsachen.",
+                "Im hohen [das Regal, -e|Regal] an der Wand stehen viele Romane und dekorative Pflanzen.",
+                "Später schalten alle den modernen [der Fernseher, -|Fernseher] ein, um gemeinsam einen spannenden Film zu sehen."
+              ]
+            ]
+          }
         },
         {
           "id": "kueche",
@@ -78,7 +94,22 @@
               "english": "microwave",
               "example": "Mach das Essen in der Mikrowelle warm!"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Kochen & Küche",
+            "title": "Gemeinsam kochen in der Küche",
+            "paragraphs": [
+              [
+                "Die [die Küche|Küche] ist der lebendigste Raum in der ganzen Wohnung.",
+                "Am Mittag holt Hannah frisches Gemüse und Milch aus dem kalten [der Kühlschrank, -̈e|Kühlschrank].",
+                "Auf dem heißen [der Herd, -e|Herd] kocht bereits eine duftende Tomatensuppe in einem großen Topf."
+              ],
+              [
+                "Nach dem Essen stellt sie das schmutzige Geschirr in die moderne [die Spülmaschine, -n|Spülmaschine].",
+                "Mit dem praktischen [der Wasserkocher, -|Wasserkocher] bereitet sie noch schnell heißen Kaffee zu."
+              ]
+            ]
+          }
         },
         {
           "id": "schlafzimmer",
@@ -114,7 +145,22 @@
               "english": "blanket",
               "example": "Mir ist kalt, ich brauche eine Decke."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Ruhe & Erholung",
+            "title": "Ein Ort der Erholung",
+            "paragraphs": [
+              [
+                "Das [das Schlafzimmer|Schlafzimmer] ist hell eingerichtet und sorgt für erholsamen Schlaf.",
+                "In der Mitte des Raumes steht ein großes, bequemes [das Bett, -en|Bett] mit weichen Kissen.",
+                "Neben dem Bett spendet eine kleine [die Nachttischlampe, -n|Nachttischlampe] warmes Licht zum Lesen."
+              ],
+              [
+                "Im geräumigen [der Kleiderschrank, -̈e|Kleiderschrank] hängt die Kleidung ordentlich sortiert.",
+                "Am Morgen klingelt der [der Wecker, -|Wecker] pünktlich um sieben Uhr."
+              ]
+            ]
+          }
         },
         {
           "id": "badezimmer",
@@ -150,7 +196,22 @@
               "english": "toilet",
               "example": "Wo ist bitte die Toilette?"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Pflege & Routine",
+            "title": "Der Start in den Tag im Bad",
+            "paragraphs": [
+              [
+                "Jeder Tag beginnt für Jonas im sauberen [das Badezimmer|Badezimmer].",
+                "Zuerst wäscht er sich am großen [das Waschbecken, -|Waschbecken] mit kaltem Wasser das Gesicht.",
+                "Über dem Becken hängt ein klarer [der Spiegel, -|Spiegel], in dem er sich die Haare kämmt."
+              ],
+              [
+                "Unter der warmen [die Dusche, -n|Dusche] wacht er endgültig auf und fühlt sich frisch.",
+                "Danach trocknet er sich mit einem weichen [das Handtuch, -̈er|Handtuch] ab."
+              ]
+            ]
+          }
         }
       ]
     }

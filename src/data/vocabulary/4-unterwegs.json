@@ -42,7 +42,22 @@
               "english": "bicycle",
               "example": "Ich fahre jeden Tag mit dem Fahrrad."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Mobilität & Verkehr",
+            "title": "Unterwegs in der Großstadt",
+            "paragraphs": [
+              [
+                "In einer modernen Stadt gibt es viele praktische [das Verkehrsmittel|Verkehrsmittel] für den Alltag.",
+                "Herr Becker fährt jeden Morgen mit der schnellen [die U-Bahn|U-Bahn] direkt zur Arbeit.",
+                "Wenn das Wetter schön ist, nimmt er gerne das umweltfreundliche [das Fahrrad|Fahrrad] durch den Stadtpark."
+              ],
+              [
+                "Für längere Strecken nutzt er den modernen [der Zug|Zug] der Deutschen Bahn.",
+                "Wenn er viel Gepäck transportieren muss, bestellt er bequem ein [das Taxi|Taxi]."
+              ]
+            ]
+          }
         },
         {
           "id": "flughafen_bahnhof",
@@ -78,7 +93,22 @@
               "english": "ticket",
               "example": "Hast du schon eine Fahrkarte gekauft?"
             }
-          ]
+          ],
+          "story": {
+            "badge": "Reisen & Fernverkehr",
+            "title": "Die Reise beginnt",
+            "paragraphs": [
+              [
+                "Am frühen Morgen herrscht am großen Hauptbahnhof reger Betrieb.",
+                "Reisende schauen auf die Anzeigetafel, um ihr [das Gleis|Gleis] für den ICE zu finden.",
+                "Am Schalter kauft Sarah ihre [die Fahrkarte|Fahrkarte] und fragt nach Reservierungen."
+              ],
+              [
+                "Am Flughafen passieren die Passagiere pünktlich die Sicherheitskontrolle zum [das Flugzeug|Flugzeug].",
+                "Reisen eröffnet neue Horizonte und verbindet Menschen über alle Grenzen hinweg."
+              ]
+            ]
+          }
         },
         {
           "id": "orientierung",
@@ -114,7 +144,22 @@
               "english": "left",
               "example": "Auf der linken Seite sehen Sie die Bank."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Wegbeschreibung & Orientierung",
+            "title": "Den richtigen Weg finden",
+            "paragraphs": [
+              [
+                "Ein Tourist steht mit einem Stadtplan an der großen Kreuzung und sucht das historische Rathaus.",
+                "Er fragt eine Passantin höflich: „Entschuldigung, wie komme ich zum Marktplatz?“",
+                "Die freundliche Dame erklärt: „Gehen Sie hier geradeaus und biegen Sie an der Ampel nach links ab.“"
+              ],
+              [
+                "Hinter der großen Kirche liegt der Platz direkt auf der rechten Seite.",
+                "Mit einer guten Wegbeschreibung findet man sich in jeder fremden Stadt mühelos zurecht."
+              ]
+            ]
+          }
         }
       ]
     }

@@ -17,12 +17,24 @@ export const familyMemberSchema = z.object({
   partnerId: z.string().optional(),
 });
 
+const paragraphSchema = z.array(z.string());
+
+export const storySchema = z.object({
+  badge: z.string(),
+  title: z.string(),
+  intro: z.string().optional(),
+  paragraphs: z.array(paragraphSchema),
+});
+
+
 export const vocabularyTopicSchema = z.object({
   id: z.string(),
   title: z.string(),
   words: z.array(wordSchema).optional(),
   familyTree: z.array(familyMemberSchema).optional(),
+  story: storySchema.optional(),
 });
+
 
 export const vocabularySectionSchema = z.object({
   id: z.string(),

@@ -42,7 +42,21 @@
               "english": "computer",
               "example": "Ich arbeite am Computer."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Technologie & Alltag",
+            "title": "Immer verbunden",
+            "paragraphs": [
+              [
+                "Das moderne Smartphone ist heute ein ständiger und nützlicher Begleiter im Alltag geworden.",
+                "Mit praktischen Apps liest man Nachrichten, navigiert durch Städte und lernt neue Sprachen.",
+                "Über Videoanrufe bleibt man täglich mit Familie und Freunden in aller Welt in Verbindung."
+              ],
+              [
+                "Trotz aller Technik ist ein echtes persönliches Gespräch von Angesicht zu Angesicht unersetzbar."
+              ]
+            ]
+          }
         }
       ]
     }

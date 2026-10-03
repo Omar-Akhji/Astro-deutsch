@@ -1,5 +1,5 @@
 ---
-import { FamilyStory, VocabularyTable } from "@/features/vocabulary";
+import { TopicStory, VocabularyTable } from "@/features/vocabulary";
 import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import BackButton from "@/shared/ui/BackButton.astro";
@@ -37,8 +37,6 @@ const topicMap = new Map(
 const result = topicMap.get(topicId);
 const topic = result?.topic;
 const section = result?.section;
-
-const isFamilyTree = topic?.id === "stammbaum" && Boolean(topic?.familyTree);
 
 const pageTitle =
   topic && item ?
@@ -90,18 +88,16 @@ const extraSchema =
           variant="compact"
         />
 
-        {isFamilyTree ?
-          <>
-            <section class="mt-8">
-              <GlassCard className="w-full rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) transition-all mobile:p-6 tablet:p-8">
-                {topic.familyTree ?
-                  <FamilyStory members={topic.familyTree} words={topic.words ?? []} />
-                : null}
-              </GlassCard>
-            </section>
+        <section class="mt-8">
+          <TopicStory
+            categoryTitle={item.german}
+            familyTree={topic.familyTree}
+            topic={topic}
+            words={topic.words ?? []}
+          />
+        </section>
 
-          </>
-        : topic.words && topic.words.length > 0 ?
+        {topic.words && topic.words.length > 0 ?
           <section class="mt-8">
             <VocabularyTable words={topic.words} />
           </section>

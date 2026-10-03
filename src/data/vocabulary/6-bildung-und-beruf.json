@@ -42,7 +42,22 @@
               "english": "break",
               "example": "In der Pause spielen die Kinder auf dem Hof."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Bildung & Schule",
+            "title": "Ein Tag in der Schule",
+            "paragraphs": [
+              [
+                "Um acht Uhr morgens beginnt der Unterricht im hellen Klassenzimmer der Schule.",
+                "Die engagierte Lehrerin schreibt wichtige grammatische Regeln mit Kreide an die Tafel.",
+                "Die Schüler öffnen ihre Hefte und schreiben die Übungen aufmerksam ab."
+              ],
+              [
+                "In der Pause spielen die Kinder auf dem Schulhof und tauschen ihre Pausenbrote aus.",
+                "Bildung und Neugier sind die wichtigsten Schlüssel für eine erfolgreiche Zukunft."
+              ]
+            ]
+          }
         },
         {
           "id": "buero_und_arbeit",
@@ -78,7 +93,22 @@
               "english": "boss",
               "example": "Der Chef hat heute Meeting."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Arbeitswelt & Büro",
+            "title": "Ein produktiver Arbeitstag",
+            "paragraphs": [
+              [
+                "Im modernen Großraumbüro arbeitet das Projektteam gemeinsam an neuen Ideen.",
+                "Am Computer beantwortet Sandra wichtige E-Mails von internationalen Kunden und Partnern.",
+                "Im Konferenzraum findet um zehn Uhr eine wichtige Besprechung über die Quartalsziele statt."
+              ],
+              [
+                "In der Kaffeeküche sprechen die Kollegen kurz über ihre Pläne für das Wochenende.",
+                "Gute Zusammenarbeit und respektvolle Kommunikation führen jedes Team zum Erfolg."
+              ]
+            ]
+          }
         }
       ]
     }

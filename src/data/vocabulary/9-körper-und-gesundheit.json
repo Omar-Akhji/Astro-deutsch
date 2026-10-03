@@ -36,7 +36,21 @@
               "english": "stomach, belly",
               "example": "Er hat Bauchschmerzen."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Gesundheit & Körper",
+            "title": "Fit und gesund durch den Tag",
+            "paragraphs": [
+              [
+                "Ein gesunder Körper braucht regelmäßige Bewegung, frische Luft und ausgewogene Ernährung.",
+                "Beim Joggen am Morgen trainiert man Muskeln, Ausdauer und das Herz-Kreislauf-System.",
+                "Ausreichend Schlaf und viel klares Wasser unterstützen den gesamten Organismus optimal."
+              ],
+              [
+                "Auf die Signale des eigenen Körpers zu achten ist die beste Vorsorge für ein langes, aktives Leben."
+              ]
+            ]
+          }
         },
         {
           "id": "krankheiten",
@@ -66,7 +80,22 @@
               "english": "cold",
               "example": "Im Winter habe ich oft eine Erkältung."
             }
-          ]
+          ],
+          "story": {
+            "badge": "Medizin & Genesung",
+            "title": "Ein Besuch in der Arztpraxis",
+            "paragraphs": [
+              [
+                "Wenn man sich unwohl fühlt oder Fieber hat, vereinbart man einen Termin in der Praxis.",
+                "Die Ärztin untersucht den Patienten gründlich und hört mit dem Stethoskop die Lunge ab.",
+                "Sie stellt eine Diagnose und verschreibt wirksame Medikamente zur schnellen Besserung."
+              ],
+              [
+                "In der Apotheke holt man die Medizin ab und schont sich einige Tage zu Hause im Bett.",
+                "Ruhe und viel warmer Tee sind oft die beste Medizin für eine schnelle Genesung."
+              ]
+            ]
+          }
         }
       ]
     }
