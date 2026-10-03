@@ -41,6 +41,15 @@ const currentRate = ref(props.defaultRate);
 const resolvedSentences = ref<string[]>(props.sentences ? [...props.sentences] : []);
 const domSentenceElements = ref<HTMLElement[]>([]);
 const instanceId = Math.random().toString(36).slice(2);
+const selectedVoice = ref<"de-DE-ConradNeural" | "de-DE-KatjaNeural">("de-DE-ConradNeural");
+
+const toggleVoice = () => {
+  selectedVoice.value =
+    selectedVoice.value === "de-DE-ConradNeural" ? "de-DE-KatjaNeural" : "de-DE-ConradNeural";
+  if (isPlaying.value) {
+    void speakCurrentSentence();
+  }
+};
 
 let currentAudio: HTMLAudioElement | null = null;
 let activeUtterance: SpeechSynthesisUtterance | null = null;
@@ -211,8 +220,8 @@ const speakCurrentSentence = async () => {
     globalThis.dispatchEvent(new CustomEvent("text-audio-play", { detail: { id: instanceId } }));
   }
 
-  // High-fidelity native German pronunciation audio stream
-  const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=de&client=tw-ob&q=${encodeURIComponent(clean)}`;
+  // Professional Studio German Neural voice via on-demand Edge TTS API
+  const audioUrl = `/api/tts/?text=${encodeURIComponent(clean)}&rate=${currentRate.value.toString()}&voice=${selectedVoice.value}`;
   const audio = new Audio(audioUrl);
   audio.playbackRate = currentRate.value;
   currentAudio = audio;
@@ -552,12 +561,15 @@ onBeforeUnmount(() => {
           <strong class="text-yellow">{{ totalCount > 0 ? currentIndex + 1 : 0 }}</strong> von
           {{ totalCount }}
         </span>
-        <div
-          class="hidden items-center gap-1.5 rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-1 text-xs text-mist-400 mobile:flex"
+        <button
+          type="button"
+          class="flex items-center gap-1.5 rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-1 text-xs text-mist-300 transition-colors hover:border-yellow/30 hover:bg-white/10 hover:text-white outline-none focus:outline-none focus-visible:outline-none"
+          title="Klicken zum Umschalten zwischen Conrad (Männlich) und Katja (Weiblich)"
+          @click="toggleVoice"
         >
           <Volume2 class="size-3.5 text-yellow" />
-          <span>Deutsch (DE)</span>
-        </div>
+          <span>{{ selectedVoice === "de-DE-ConradNeural" ? "Conrad (Studio)" : "Katja (Studio)" }}</span>
+        </button>
       </div>
     </div>
 

@@ -1,12 +1,14 @@
-import { defineConfig, envField } from "astro/config";
+import node from "@astrojs/node";
 import sitemap, { ChangeFreqEnum } from "@astrojs/sitemap";
 import vue from "@astrojs/vue";
 import tailwindcss from "@tailwindcss/vite";
+import { defineConfig, envField } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://elite-regewelt.com",
   output: "static",
+  adapter: node({ mode: "standalone" }),
   trailingSlash: "always",
   build: { inlineStylesheets: "always" },
   env: {
