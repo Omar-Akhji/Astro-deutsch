@@ -42,6 +42,29 @@ const resolvedSentences = ref<string[]>(props.sentences ? [...props.sentences] :
 const domSentenceElements = ref<HTMLElement[]>([]);
 const instanceId = Math.random().toString(36).slice(2);
 const selectedVoice = ref<"de-DE-ConradNeural" | "de-DE-KatjaNeural">("de-DE-ConradNeural");
+const equalizerBars = new Map<number, HTMLElement>();
+const progressBar = ref<HTMLElement | null>(null);
+const setEqualizerBar = (element: Element | null, index: number) => {
+  if (element instanceof HTMLElement) equalizerBars.set(index, element);
+  else equalizerBars.delete(index);
+};
+
+watch(isPlaying, (playing) => {
+  for (const [index, bar] of equalizerBars) {
+    gsap.killTweensOf(bar);
+    gsap.set(bar, { scaleY: 1, transformOrigin: "bottom" });
+    if (playing && !globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.to(bar, {
+        scaleY: index % 2 === 0 ? 1.45 : 0.5,
+        duration: 0.35 + index * 0.06,
+        repeat: -1,
+        repeatDelay: index * 0.04,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    }
+  }
+});
 
 const toggleVoice = () => {
   selectedVoice.value =
@@ -74,6 +97,16 @@ const progressPercent = computed(() => {
   if (totalCount.value === 0) return 0;
   const progress = ((currentIndex.value + (isPlaying.value ? 1 : 0)) / totalCount.value) * 100;
   return Math.min(100, Math.round(progress));
+});
+
+watch(progressPercent, (percent) => {
+  if (!progressBar.value) return;
+  gsap.to(progressBar.value, {
+    scaleX: percent / 100,
+    duration: globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 0.3,
+    ease: "power2.out",
+    overwrite: "auto",
+  });
 });
 
 const statusLabel = computed(() => {
@@ -116,8 +149,7 @@ const syncDomHighlight = () => {
         gsap.fromTo(el, { opacity: 0.8 }, { opacity: 1, duration: 0.22, ease: "power2.out" });
       }
     } else {
-      el.classList.remove(props.activeClass);
-      el.classList.remove("bg-white/15", "text-white");
+      el.classList.remove(props.activeClass, "bg-white/15", "text-white");
       el.removeAttribute("aria-current");
     }
   }
@@ -132,8 +164,7 @@ const syncDomHighlight = () => {
 
 const clearDomHighlight = () => {
   for (const el of domSentenceElements.value) {
-    el.classList.remove(props.activeClass);
-    el.classList.remove("bg-white/15", "text-white");
+    el.classList.remove(props.activeClass, "bg-white/15", "text-white");
     el.removeAttribute("aria-current");
   }
 };
@@ -334,18 +365,20 @@ const rates = [
 
 const speedContainerRef = ref<HTMLElement | null>(null);
 const speedIndicatorRef = ref<HTMLElement | null>(null);
-const speedButtonsRef = ref<Record<number, HTMLElement>>({});
+const speedButtonsRef = new Map<number, HTMLElement>();
 let speedResizeObserver: ResizeObserver | null = null;
 
 const setSpeedButtonRef = (val: number, el: unknown) => {
   if (el instanceof HTMLElement) {
-    speedButtonsRef.value[val] = el;
+    speedButtonsRef.set(val, el);
+  } else {
+    speedButtonsRef.delete(val);
   }
 };
 
 const updateSpeedIndicator = (immediate = false) => {
   if (!speedIndicatorRef.value) return;
-  const activeBtn = speedButtonsRef.value[currentRate.value];
+  const activeBtn = speedButtonsRef.get(currentRate.value);
   if (!activeBtn || activeBtn.offsetWidth === 0) return;
 
   if (immediate) {
@@ -486,6 +519,8 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   stopAllAudio();
+  for (const bar of equalizerBars.values()) gsap.killTweensOf(bar);
+  if (progressBar.value) gsap.killTweensOf(progressBar.value);
   if (speedResizeObserver) {
     speedResizeObserver.disconnect();
     speedResizeObserver = null;
@@ -531,20 +566,20 @@ onBeforeUnmount(() => {
               aria-hidden="true"
             >
               <span
-                class="w-0.75 rounded-full bg-yellow/60 transition-all duration-300"
-                :class="isPlaying ? 'animate-eq-1' : 'h-1.5'"
+                :ref="(element) => setEqualizerBar(element, 0)"
+                class="h-1.5 w-0.75 rounded-full bg-yellow/60"
               ></span>
               <span
-                class="w-0.75 rounded-full bg-yellow transition-all duration-300"
-                :class="isPlaying ? 'animate-eq-2' : 'h-3'"
+                :ref="(element) => setEqualizerBar(element, 1)"
+                class="h-3 w-0.75 rounded-full bg-yellow"
               ></span>
               <span
-                class="w-0.75 rounded-full bg-yellow/80 transition-all duration-300"
-                :class="isPlaying ? 'animate-eq-3' : 'h-2'"
+                :ref="(element) => setEqualizerBar(element, 2)"
+                class="h-2 w-0.75 rounded-full bg-yellow/80"
               ></span>
               <span
-                class="w-0.75 rounded-full bg-yellow transition-all duration-300"
-                :class="isPlaying ? 'animate-eq-4' : 'h-4'"
+                :ref="(element) => setEqualizerBar(element, 3)"
+                class="h-4 w-0.75 rounded-full bg-yellow"
               ></span>
             </div>
           </div>
@@ -685,8 +720,8 @@ onBeforeUnmount(() => {
         @keydown.space.prevent="togglePlay"
       >
         <span
-          class="block h-full rounded-full bg-linear-to-r from-yellow to-orange shadow-[0_0_12px_rgba(241,196,15,0.35)] transition-all duration-300"
-          :style="{ width: `${progressPercent.toString()}%` }"
+          ref="progressBar"
+          class="block h-full w-full origin-left scale-x-0 rounded-full bg-linear-to-r from-yellow to-orange shadow-[0_0_12px_rgba(241,196,15,0.35)]"
         ></span>
       </button>
 

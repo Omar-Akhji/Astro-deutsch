@@ -46,11 +46,11 @@ const { data, theme } = Astro.props;
         <tr>
           {data.headers.map((header, colIndex) => (
             <th
-              scope="col"
-              class:list={[
-                "px-4 py-3.5 tablet:px-6 tablet:py-4",
-                colIndex === 0 ? "text-amber-400 font-bold" : "text-mist-200 font-semibold",
-              ]}
+              class:list={{
+                "px-4 py-3.5 tablet:px-6 tablet:py-4": true,
+                "text-amber-400 font-bold": colIndex === 0,
+                "text-mist-200 font-semibold": colIndex !== 0,
+              }}               scope="col"
             >
               {header}
             </th>
@@ -65,12 +65,11 @@ const { data, theme } = Astro.props;
 
               return (
                 <td
-                  class:list={[
-                    "px-4 py-3 tablet:px-6 tablet:py-3.5",
-                    isPerson ?
-                      "font-semibold text-amber-300/90 whitespace-nowrap"
-                    : "text-white/90",
-                  ]}
+                  class:list={{
+                    "px-4 py-3 tablet:px-6 tablet:py-3.5": true,
+                    "font-semibold text-amber-300/90 whitespace-nowrap": isPerson,
+                    "text-white/90": !isPerson,
+                  }}
                 >
                   <div class="leading-relaxed">
                     <ContentItem content={cell} />

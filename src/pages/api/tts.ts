@@ -18,6 +18,8 @@ export const GET: APIRoute = async ({ request }) => {
     return Response.json({ error: "Text exceeds 2000 characters limit" }, { status: 400 });
   }
 
+  // A blank voice parameter should select the default voice, just like an omitted parameter.
+  // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
   const voice = url.searchParams.get("voice")?.trim() || "de-DE-ConradNeural";
   const rateParam = url.searchParams.get("rate")?.trim();
 

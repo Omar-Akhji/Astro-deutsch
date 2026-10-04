@@ -61,6 +61,10 @@ export function initFamilyStoryTooltips() {
     }
 
     const hide = () => {
+      if (globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        tooltip.hidden = true;
+        return;
+      }
       gsap.to(tooltip, {
         autoAlpha: 0,
         scale: 0.96,
@@ -110,11 +114,13 @@ export function initFamilyStoryTooltips() {
       tooltip.style.setProperty("--tooltip-left", `${left.toString()}px`);
       tooltip.style.setProperty("--tooltip-top", `${top.toString()}px`);
 
-      gsap.fromTo(
-        tooltip,
-        { autoAlpha: 0, scale: 0.94, y: -4 },
-        { autoAlpha: 1, scale: 1, y: 0, duration: 0.18, ease: "power2.out", overwrite: "auto" },
-      );
+      if (!globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        gsap.fromTo(
+          tooltip,
+          { autoAlpha: 0, scale: 0.94, y: -4 },
+          { autoAlpha: 1, scale: 1, y: 0, duration: 0.18, ease: "power2.out", overwrite: "auto" },
+        );
+      }
     };
 
     const words = story.querySelectorAll<HTMLElement>(".story-word");

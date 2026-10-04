@@ -23,7 +23,7 @@ export function useQuiz(questions: Question[]) {
     let currentScore = 0;
     for (const [index, answer] of userAnswers.value.entries()) {
       if (answer === null) continue;
-      const question = questions[index];
+      const question = questions.at(index);
       if (!question) continue;
 
       const correct = question.correctAnswer;
@@ -53,7 +53,10 @@ export function useQuiz(questions: Question[]) {
 
   const handleAnswer = (answer: string | string[], index?: number) => {
     const targetIndex = index ?? currentQuestionIndex.value;
-    userAnswers.value[targetIndex] = answer;
+    if (!Number.isSafeInteger(targetIndex) || targetIndex < 0 || targetIndex >= questions.length) {
+      return;
+    }
+    userAnswers.value = userAnswers.value.with(targetIndex, answer);
 
     // For sequential mode, auto-advance if no index was provided
     if (index === undefined && targetIndex < questions.length - 1) {

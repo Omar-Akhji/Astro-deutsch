@@ -39,10 +39,12 @@ onMounted(() => {
       class="pointer-events-none absolute inset-0 overflow-hidden"
     >
       <div
-        class="absolute top-1/4 left-1/4 -z-10 size-72 animate-glow-slow rounded-full bg-yellow/10 blur-[120px]"
+        class="absolute top-1/4 left-1/4 -z-10 size-72 rounded-full bg-yellow/10 blur-[120px]"
+        data-gsap-glow="slow"
       />
       <div
-        class="absolute right-1/4 bottom-1/4 -z-10 size-72 animate-glow-reverse rounded-full bg-orange/10 blur-[120px]"
+        class="absolute right-1/4 bottom-1/4 -z-10 size-72 rounded-full bg-orange/10 blur-[120px]"
+        data-gsap-glow="reverse"
       />
     </div>
 

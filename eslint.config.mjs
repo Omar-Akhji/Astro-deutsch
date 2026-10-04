@@ -85,11 +85,10 @@ const eslintConfig = defineConfig(
       },
     },
     rules: {
-      "no-console": ["warn", { allow: ["warn", "error", "info"] }],
-      prefer_const: "off",
+      "no-console": ["error", { allow: ["warn", "error"] }],
       "prefer-const": "error",
       eqeqeq: ["error", "always", { null: "ignore" }],
-      "no-nested-ternary": "off",
+      "no-nested-ternary": "error",
       "no-implicit-coercion": "error",
       "no-return-assign": "error",
       "no-throw-literal": "error",
@@ -102,28 +101,23 @@ const eslintConfig = defineConfig(
   {
     name: "unicorn-overrides",
     rules: {
+      // Keep project naming, module initialization, and iteration idioms flexible.
       "unicorn/filename-case": "off",
       "unicorn/name-replacements": "off",
       "unicorn/prevent-abbreviations": "off",
       "unicorn/no-null": "off",
       "unicorn/no-array-reduce": "off",
-      "unicorn/no-array-for-each": "off",
-      "unicorn/prefer-math-trunc": "off",
-      "unicorn/prefer-string-slice": "off",
+      "unicorn/no-for-each": "off",
       "unicorn/prefer-top-level-await": "off",
-      "unicorn/no-empty-file": "off",
       "unicorn/prefer-logical-operator-over-ternary": "off",
       "unicorn/text-encoding-identifier-case": "off",
       "unicorn/consistent-boolean-name": "off",
       "unicorn/no-top-level-side-effects": "off",
       "unicorn/no-unnecessary-global-this": "off",
       "unicorn/prefer-ternary": "off",
-      "unicorn/no-computed-property-existence-check": "off",
       "unicorn/no-top-level-assignment-in-function": "off",
-      "unicorn/prefer-at": "off",
       "unicorn/single-line-block-comment-style": "off",
       "unicorn/no-asterisk-prefix-in-documentation-comments": "off",
-      "unicorn/no-unnecessary-array-flat-map": "off",
     },
   },
 
@@ -146,8 +140,7 @@ const eslintConfig = defineConfig(
         { prefer: "type-imports", fixStyle: "inline-type-imports" },
       ],
       "@typescript-eslint/no-import-type-side-effects": "error",
-      "@typescript-eslint/consistent-type-definitions": "off",
-      "@typescript-eslint/prefer-nullish-coalescing": "off",
+      "@typescript-eslint/prefer-nullish-coalescing": "error",
       "@typescript-eslint/prefer-optional-chain": "error",
       "@typescript-eslint/no-floating-promises": "error",
       "@typescript-eslint/no-misused-promises": [
@@ -180,9 +173,7 @@ const eslintConfig = defineConfig(
     },
     rules: {
       // Allow flexible single-word names for pages, cards, and feature blocks
-      "vue/multi-word-component-names": "off",
-      // Vue 3.5 supports reactive props destructuring natively
-      "vue/no-setup-props-destructure": "off",
+      "vue/multi-word-component-names": "error",
       "vue/no-v-html": "error",
       "vue/require-default-prop": "off",
       // Keep component structure and Composition API usage consistent across SFCs.
@@ -196,18 +187,24 @@ const eslintConfig = defineConfig(
     },
   },
 
+  {
+    name: "image-processing-script-logging",
+    files: ["scripts/process-logo.ts"],
+    rules: {
+      // This one-off asset script reports progress when run manually.
+      "no-console": ["error", { allow: ["log", "info", "warn", "error"] }],
+    },
+  },
+
   // ─── Astro Modern Architecture & CSP Security ─────────────────────────────
   {
     name: "astro-rules",
     files: ["**/*.astro"],
     rules: {
       // Flexible typing for Astro props & dynamic layout components
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-unsafe-assignment": "off",
       // Standard Astro props contract
       "unicorn/name-replacements": ["error", { allowList: { Props: true } }],
       // Astro frontmatter scripts allow top-level returns (e.g. return Astro.redirect())
-      "unicorn/prefer-module": "off",
       // Security & CSP boundaries
       "astro/no-set-html-directive": "error",
       "astro/no-unsafe-inline-scripts": ["error", { allowModuleScripts: true }],
@@ -220,9 +217,9 @@ const eslintConfig = defineConfig(
       "astro/no-conflict-set-directives": "error",
       "astro/no-unused-define-vars-in-style": "error",
       "astro/valid-compile": "error",
-      // Turn off rules that fight Tailwind CSS utility classes and Prettier formatting
-      "astro/prefer-object-class-list": "off",
-      "astro/prefer-split-class-list": "off",
+      "astro/prefer-object-class-list": "error",
+      "astro/prefer-split-class-list": "error",
+      // Attribute ordering is delegated to Prettier to avoid competing formatters.
       "astro/sort-attributes": "off",
     },
   },
@@ -231,10 +228,19 @@ const eslintConfig = defineConfig(
   {
     name: "security-tuning",
     rules: {
-      "security/detect-object-injection": "off",
-      "security/detect-non-literal-regexp": "warn",
+      // The security plugin recommends this as a hotspot warning because it flags all computed keys.
+      "security/detect-object-injection": "warn",
+      "security/detect-non-literal-regexp": "error",
       "no-unsanitized/method": "error",
       "no-unsanitized/property": "error",
+    },
+  },
+  {
+    name: "bounded-pixel-buffer-access",
+    files: ["scripts/process-logo.ts"],
+    rules: {
+      // Pixel offsets are bounded by image dimensions and only index allocated typed arrays.
+      "security/detect-object-injection": "off",
     },
   },
 
@@ -244,12 +250,6 @@ const eslintConfig = defineConfig(
     files: ["src/shared/ui/JsonLd.astro", "src/layouts/Layout.astro"],
     rules: {
       "astro/no-set-html-directive": "off",
-      "unicorn/prefer-module": "off",
-      "unicorn/no-await-expression-member": "off",
-      "unicorn/prefer-top-level-await": "off",
-      "no-unsanitized/method": "off",
-      "security/detect-object-injection": "off",
-      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 
@@ -258,10 +258,6 @@ const eslintConfig = defineConfig(
     name: "server-api-allowlist",
     files: ["src/actions/**/*.ts", "src/pages/api/**/*.ts"],
     rules: {
-      "no-unsanitized/method": "off",
-      "unicorn/no-await-expression-member": "off",
-      "security/detect-object-injection": "off",
-      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 

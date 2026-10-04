@@ -21,7 +21,7 @@ const ICON_MAP: Record<string, LucideComponent> = {
   MessageCircle,
 };
 
-const SectionIcon = (section.icon in ICON_MAP ? ICON_MAP[section.icon] : undefined) ?? BookOpen;
+const SectionIcon = (Object.hasOwn(ICON_MAP, section.icon) ? ICON_MAP[section.icon] : undefined) ?? BookOpen;
 ---
 
 <section

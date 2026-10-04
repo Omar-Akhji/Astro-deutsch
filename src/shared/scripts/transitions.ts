@@ -74,9 +74,7 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
   }
 
   // 3. Fallback to default skeleton if no specific skeleton found
-  if (!targetSkeleton) {
-    targetSkeleton = container.querySelector('[data-skeleton="default"]');
-  }
+  targetSkeleton ??= container.querySelector('[data-skeleton="default"]');
 
   if (!targetSkeleton) {
     return;

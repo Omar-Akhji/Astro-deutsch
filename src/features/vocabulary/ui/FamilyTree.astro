@@ -48,13 +48,10 @@ const isCouple = (group: unknown): group is [FamilyMember, FamilyMember] => {
 
 const getCardClasses = (member: FamilyMember) => {
   const isSelf = member.relation === "self";
+  if (isSelf) return "border-amber-400 bg-amber-500/10 shadow-xl shadow-amber-400/25";
   const isMale = member.gender === "male";
-
-  return (
-    isSelf ? "border-amber-400 bg-amber-500/10 shadow-xl shadow-amber-400/25"
-    : isMale ? "border-sky-400/40 bg-sky-500/5 hover:border-sky-400/70"
-    : "border-pink-400/40 bg-pink-500/5 hover:border-pink-400/70"
-  );
+  if (isMale) return "border-sky-400/40 bg-sky-500/5 hover:border-sky-400/70";
+  return "border-pink-400/40 bg-pink-500/5 hover:border-pink-400/70";
 };
 ---
 

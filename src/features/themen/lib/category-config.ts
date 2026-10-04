@@ -90,7 +90,7 @@ export const THEMEN_CATEGORY_COLORS: Record<string, string> = Object.fromEntries
  * split operations in components.
  */
 export function getCategoryStyle(category: string): CategoryThemeStyle {
-  if (category in THEMEN_CATEGORY_CONFIG) {
+  if (Object.hasOwn(THEMEN_CATEGORY_CONFIG, category)) {
     return THEMEN_CATEGORY_CONFIG[category as ThemaCategory];
   }
   return DEFAULT_CATEGORY_STYLE;

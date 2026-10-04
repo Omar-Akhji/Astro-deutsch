@@ -20,5 +20,5 @@ export const CHAPTER_SLUG_ALIASES: Record<string, string> = {
 };
 
 export function getVocabularySlug(item: { id: number; slug?: string | undefined }): string {
-  return item.slug || CHAPTER_ID_TO_SLUG[item.id] || String(item.id);
+  return item.slug ?? CHAPTER_ID_TO_SLUG[item.id] ?? String(item.id);
 }

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, watch, onBeforeUnmount } from "vue";
 import { ChevronDown, Copy, Check, Volume2 } from "lucide-vue-next";
 import { speakGerman } from "@/shared/lib";
+import gsap from "@/shared/lib/gsap.ts";
 import type { PhraseGroup } from "../model/types.ts";
 
 interface Props {
@@ -14,6 +15,27 @@ const props = withDefaults(defineProps<Props>(), { isChecklistItem: false });
 const isOpen = ref(false);
 const copiedPhrase = ref<string | null>(null);
 const speakingPhrase = ref<string | null>(null);
+const componentRef = ref<HTMLElement | null>(null);
+
+watch(
+  speakingPhrase,
+  (phrase) => {
+    const button = componentRef.value?.querySelector<HTMLElement>("[data-speaking-phrase]");
+    if (!button) return;
+    gsap.killTweensOf(button);
+    if (phrase && !globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.to(button, { scale: 1.12, duration: 0.25, repeat: 3, yoyo: true, ease: "sine.inOut" });
+    } else {
+      gsap.set(button, { clearProps: "transform" });
+    }
+  },
+  { flush: "post" },
+);
+
+onBeforeUnmount(() => {
+  const button = componentRef.value?.querySelector<HTMLElement>("[data-speaking-phrase]");
+  if (button) gsap.killTweensOf(button);
+});
 
 const handleCopyText = async (text: string) => {
   try {
@@ -63,6 +85,7 @@ const processedPhrases = computed(() => {
 
 <template>
   <div
+    ref="componentRef"
     :class="[
       'group transition-all duration-300',
       props.isChecklistItem ? 'bg-transparent' : (
@@ -120,7 +143,7 @@ const processedPhrases = computed(() => {
     <div
       :class="[
         'overflow-hidden transition-all duration-300 ease-in-out',
-        isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0',
+        isOpen ? 'max-h-200 opacity-100' : 'max-h-0 opacity-0',
       ]"
     >
       <div
@@ -172,10 +195,8 @@ const processedPhrases = computed(() => {
                     <button
                       type="button"
                       class="flex size-7 items-center justify-center rounded-md border-[1.5px] border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
-                      :class="{
-                        'animate-pulse border-yellow bg-yellow/20 text-yellow':
-                          speakingPhrase === item,
-                      }"
+                      :class="{ 'border-yellow bg-yellow/20 text-yellow': speakingPhrase === item }"
+                      :data-speaking-phrase="speakingPhrase === item ? 'true' : undefined"
                       title="Aussprechen"
                       aria-label="Aussprache anhören"
                       @click="handlePlayPhrase(item)"

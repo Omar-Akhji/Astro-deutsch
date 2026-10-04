@@ -15,8 +15,9 @@ export type {
 /**
  * All curated story contents loaded directly from topic-stories.json.
  */
-export const TOPIC_STORIES: Record<string, TopicStoriesRecord> =
-  topicStoriesJson as unknown as Record<string, TopicStoriesRecord>;
+export const TOPIC_STORIES = new Map<string, TopicStoriesRecord>(
+  Object.entries(topicStoriesJson as unknown as Record<string, TopicStoriesRecord>),
+);
 
 export interface StoryToken {
   type: "text" | "word";
@@ -93,7 +94,7 @@ export function getTopicStories(
   },
   categoryTitle = "Themenwortschatz",
 ): TopicStoriesRecord {
-  const existing = TOPIC_STORIES[topicId];
+  const existing = TOPIC_STORIES.get(topicId);
   if (existing) {
     return existing;
   }
@@ -143,9 +144,10 @@ export function getTopicStory(
   categoryTitle = "Themenwortschatz",
   level: CefrLevel = "A1",
 ): StoryDefinition {
-  const existingGroup = TOPIC_STORIES[topicId];
-  if (existingGroup?.[level]) {
-    return existingGroup[level];
+  const existingGroup = TOPIC_STORIES.get(topicId);
+  const levelStory = existingGroup && Object.entries(existingGroup).find(([key]) => key === level)?.[1];
+  if (levelStory !== undefined) {
+    return levelStory;
   }
   if (existingGroup?.A1) {
     return existingGroup.A1;

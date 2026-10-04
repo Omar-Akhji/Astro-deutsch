@@ -131,16 +131,15 @@ const heroExample =
               </p>
             </div>
 
-            <nav class="flex flex-wrap items-center gap-2" aria-label="Unterthemen Navigation">
+            <nav aria-label="Unterthemen Navigation" class="flex flex-wrap items-center gap-2">
               {currentTopic.subtopics.map((subtopic, index) => {
                 const theme = getGrammarTheme(index);
                 return (
                   <a
-                    href={`#subtopic-${subtopic.id}`}
                     class:list={[
                       "inline-flex items-center gap-1.5 rounded-full border-[1.5px] px-3 py-1 text-xs font-semibold tracking-wide transition-all duration-150 hover:brightness-125 hover:shadow-sm active:scale-95",
                       theme.badgeClass,
-                    ]}
+                    ]}                     href={`#subtopic-${subtopic.id}`}
                   >
                     <span class="font-bold opacity-80">{subtopic.number}</span>
                     <span>{subtopic.title}</span>
@@ -162,8 +161,7 @@ const heroExample =
           <section class="space-y-4">
             <GrammarContentBlocks
               blocks={currentTopic.content ?? []}
-              usage={currentTopic.usage}
-              theme={getGrammarTheme(0)}
+              theme={getGrammarTheme(0)}               usage={currentTopic.usage}
             />
           </section>
         )}
@@ -176,11 +174,10 @@ const heroExample =
                 const theme = getGrammarTheme(index);
                 return (
                   <article
-                    id={`subtopic-${subtopic.id}`}
                     class:list={[
                       "scroll-mt-24 overflow-hidden rounded-3xl border-2 bg-card/60 shadow-xl backdrop-blur-(--glass-blur) transition-all duration-300 hover:border-white/15",
                       theme.cardBorderClass,
-                    ]}
+                    ]}                     id={`subtopic-${subtopic.id}`}
                   >
                     <!-- Subtopic Header Banner -->
                     <header
@@ -234,9 +231,7 @@ const heroExample =
                         <div class="space-y-4">
                           <GrammarContentBlocks
                             blocks={subtopic.content ?? []}
-                            tips={subtopic.tips}
-                            usage={subtopic.usage}
-                            theme={theme}
+                            theme={theme}                             tips={subtopic.tips}                             usage={subtopic.usage}
                           />
                         </div>
                       )}
@@ -253,8 +248,7 @@ const heroExample =
           <section class="mt-8">
             <GrammarContentBlocks
               blocks={[]}
-              tips={currentTopic.tips}
-              theme={getGrammarTheme(2)}
+              theme={getGrammarTheme(2)}               tips={currentTopic.tips}
             />
           </section>
         )}

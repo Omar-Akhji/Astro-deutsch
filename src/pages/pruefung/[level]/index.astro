@@ -151,7 +151,7 @@ const heroExample =
           <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div class="space-y-1">
               <div class="flex items-center gap-2">
-                <span class="inline-flex size-2 rounded-full bg-yellow animate-pulse"></span>
+                <span class="inline-flex size-2 rounded-full bg-yellow" data-gsap-pulse></span>
                 <h3 class="text-sm font-bold tracking-tight text-white tablet:text-base">
                   Prüfungsmodule Schnellübersicht
                 </h3>
@@ -167,8 +167,7 @@ const heroExample =
                 const theme = getExamModuleTheme(section.id);
                 return (
                   <a
-                    href={`#section-${section.id}`}
-                    class="group inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold text-mist-200 no-underline transition-all hover:border-white/25 hover:bg-white/10 hover:text-white"
+                    class="group inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold text-mist-200 no-underline transition-all hover:border-white/25 hover:bg-white/10 hover:text-white"                     href={`#section-${section.id}`}
                   >
                     <span class:list={["size-2 rounded-full", theme.dotColor]}></span>
                     <span>
@@ -180,8 +179,7 @@ const heroExample =
               })}
 
               <a
-                href={`/pruefung/${currentExam.id}/modelltests/`}
-                class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-amber-500/40 bg-amber-500/15 px-3.5 py-1.5 text-xs font-bold text-amber-300 no-underline shadow-sm shadow-amber-500/10 transition-all hover:border-amber-400 hover:bg-amber-500/25 hover:text-amber-200"
+                class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-amber-500/40 bg-amber-500/15 px-3.5 py-1.5 text-xs font-bold text-amber-300 no-underline shadow-sm shadow-amber-500/10 transition-all hover:border-amber-400 hover:bg-amber-500/25 hover:text-amber-200"                 href={`/pruefung/${currentExam.id}/modelltests/`}
               >
                 <FileEdit class="size-3.5" />
                 <span>Modelltests</span>
@@ -200,12 +198,10 @@ const heroExample =
 
             return (
               <div
-                id={`section-${section.id}`}
                 class:list={[
                   "overflow-hidden rounded-2xl border-2 bg-card/60 shadow-lg backdrop-blur-(--glass-blur) transition-all duration-200 scroll-mt-24",
                   theme.cardBorderClass,
-                ]}
-                data-animate="fade-up"
+                ]}                 data-animate="fade-up"                 id={`section-${section.id}`}
               >
                 <!-- Module Header Bar -->
                 <div
@@ -248,26 +244,22 @@ const heroExample =
                     <thead class="border-b border-white/10 bg-white/4 text-[11px] font-bold uppercase tracking-wider text-mist-300 tablet:text-xs">
                       <tr>
                         <th
-                          scope="col"
-                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"
+                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"                           scope="col"
                         >
                           Teil
                         </th>
                         <th
-                          scope="col"
-                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"
+                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"                           scope="col"
                         >
                           Aufgabentyp & Struktur
                         </th>
                         <th
-                          scope="col"
-                          class="px-4 py-3.5 text-center tablet:px-6 tablet:py-4"
+                          class="px-4 py-3.5 text-center tablet:px-6 tablet:py-4"                           scope="col"
                         >
                           Aufgaben
                         </th>
                         <th
-                          scope="col"
-                          class="px-4 py-3.5 text-right tablet:px-6 tablet:py-4"
+                          class="px-4 py-3.5 text-right tablet:px-6 tablet:py-4"                           scope="col"
                         >
                           Punkte
                         </th>
@@ -364,19 +356,17 @@ const heroExample =
                     <div class="flex flex-wrap items-center gap-3">
                       {isSpeakingOrWriting ?
                         <a
-                          href={`/pruefung/${currentExam.id}/${moduleSlug}/`}
-                          class="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-amber-400 to-orange-500 px-5 py-2.5 text-sm font-bold text-zinc-950 no-underline shadow-md shadow-amber-500/20 transition-all hover:scale-[1.02] hover:brightness-110 active:scale-95"
+                          class="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-amber-400 to-orange-500 px-5 py-2.5 text-sm font-bold text-zinc-950 no-underline shadow-md shadow-amber-500/20 transition-all hover:scale-[1.02] hover:brightness-110 active:scale-95"                           href={`/pruefung/${currentExam.id}/${moduleSlug}/`}
                         >
                           <MessageSquare class="size-4" />
                           <span>Lernmodus & Redemittel</span>
                           <ArrowRight class="size-4" />
                         </a>
                       : <a
-                          href={`/quiz/${currentExam.id}/${moduleSlug}/1/`}
                           class:list={[
                             "inline-flex items-center gap-2 rounded-xl border-[1.5px] px-5 py-2.5 text-sm font-bold no-underline transition-all hover:scale-[1.02] active:scale-95",
                             theme.buttonClass,
-                          ]}
+                          ]}                           href={`/quiz/${currentExam.id}/${moduleSlug}/1/`}
                         >
                           <Sparkles class="size-4" />
                           <span>Interaktives Quiz starten</span>
@@ -385,8 +375,7 @@ const heroExample =
                       }
 
                       <a
-                        href={`/pruefung/${currentExam.id}/modelltests/`}
-                        class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-mist-300 no-underline transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white"
+                        class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-mist-300 no-underline transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white"                         href={`/pruefung/${currentExam.id}/modelltests/`}
                       >
                         <FileEdit class="size-4" />
                         <span>Modelltests ansehen</span>

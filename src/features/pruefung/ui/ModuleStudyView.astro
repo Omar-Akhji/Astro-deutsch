@@ -55,10 +55,9 @@ function isPhraseGroup(item: unknown): item is PhraseGroup {
 
 const getProcessedGroups = (group: PhraseGroup): PhraseGroup[] => {
   if (group.phrases.some((p) => typeof p !== "string")) {
-    return group.phrases.flatMap((p) => {
-      if (!isPhraseGroup(p)) return [];
-      return [{ ...p, label: `${group.label}: ${p.label}` }];
-    });
+    return group.phrases
+      .filter(isPhraseGroup)
+      .map((p) => ({ ...p, label: `${group.label}: ${p.label}` }));
   }
   return [group];
 };

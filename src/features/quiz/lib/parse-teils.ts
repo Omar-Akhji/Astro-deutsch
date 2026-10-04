@@ -34,7 +34,7 @@ function findActiveContext(
 
   const firstIndex = allQuestions.indexOf(firstQuestion);
   for (let index = firstIndex - 1; index >= 0; index--) {
-    const previousQuestion = allQuestions[index];
+    const previousQuestion = allQuestions.at(index);
     if (previousQuestion && previousQuestion.teil === teilNumber && previousQuestion.context) {
       return previousQuestion.context;
     }

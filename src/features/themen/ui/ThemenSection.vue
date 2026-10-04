@@ -67,7 +67,7 @@ interface FilteredThemaGroup {
   themes: Thema[];
 }
 
-const isCategoryKey = (key: string): key is CategoryKey => key in categoryConfig;
+const isCategoryKey = (key: string): key is CategoryKey => Object.hasOwn(categoryConfig, key);
 
 const filteredGroups = computed<FilteredThemaGroup[]>(() => {
   const groups: FilteredThemaGroup[] = [];
@@ -77,7 +77,7 @@ const filteredGroups = computed<FilteredThemaGroup[]>(() => {
     : Object.keys(categoryConfig).filter(isCategoryKey);
 
   for (const categoryId of entries) {
-    const config = categoryConfig[categoryId];
+    const config = Object.entries(categoryConfig).find(([key]) => key === categoryId)?.[1];
     if (!config) continue;
     const themes = props.initialThemen.filter((t) => t.category === categoryId);
     if (themes.length === 0) continue;

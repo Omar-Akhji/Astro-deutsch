@@ -43,7 +43,7 @@ const handleKeydown = (event: KeyboardEvent) => {
   // Alpha shortcuts (a -> 0, b -> 1, c -> 2, d -> 3)
   const alphaIndex = ["a", "b", "c", "d", "e"].indexOf(key);
   if (alphaIndex !== -1 && alphaIndex < props.options.length) {
-    const targetOpt = props.options[alphaIndex];
+    const targetOpt = props.options.at(alphaIndex);
     if (targetOpt) {
       emit("answer", targetOpt);
       return;

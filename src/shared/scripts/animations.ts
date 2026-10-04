@@ -2,6 +2,89 @@ import { gsap, ScrollTrigger } from "@/shared/lib";
 
 let pageMatchMedia: gsap.MatchMedia | null = null;
 
+function initializeGsapUtilityAnimations(root: ParentNode) {
+  const elements = [
+    ...(root instanceof HTMLElement ? [root] : []),
+    ...root.querySelectorAll<HTMLElement>(
+      ".animate-fade-in, .animate-scale-in, [data-gsap-glow], [data-gsap-shimmer], [data-gsap-pulse]",
+    ),
+  ];
+
+  for (const element of elements) {
+    if (element.dataset["gsapAnimationBound"]) continue;
+    element.dataset["gsapAnimationBound"] = "true";
+
+    if (element.matches(".animate-fade-in")) {
+      gsap.fromTo(
+        element,
+        { autoAlpha: 0, y: 10 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.5,
+          ease: "power2.out",
+          clearProps: "transform,opacity,visibility",
+        },
+      );
+    } else if (element.matches(".animate-scale-in")) {
+      gsap.fromTo(
+        element,
+        { autoAlpha: 0, scale: 0.96, y: 8 },
+        {
+          autoAlpha: 1,
+          scale: 1,
+          y: 0,
+          duration: 0.4,
+          ease: "back.out(1.2)",
+          clearProps: "transform,opacity,visibility",
+        },
+      );
+    } else if (element.matches("[data-gsap-glow]")) {
+      const reverse = element.dataset["gsapGlow"] === "reverse";
+      gsap.fromTo(
+        element,
+        reverse ? { autoAlpha: 0.6, scale: 1.1 } : { autoAlpha: 0.5 },
+        reverse ?
+          {
+            autoAlpha: 0.4,
+            scale: 0.9,
+            x: -20,
+            y: 30,
+            duration: 5,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+          }
+        : {
+            autoAlpha: 0.8,
+            scale: 1.15,
+            x: 30,
+            y: -20,
+            duration: 4,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+          },
+      );
+    } else if (element.matches("[data-gsap-shimmer]")) {
+      gsap.fromTo(
+        element,
+        { xPercent: -100 },
+        { xPercent: 200, duration: 2, repeat: -1, ease: "none" },
+      );
+    } else if (element.matches("[data-gsap-pulse]")) {
+      gsap.to(element, {
+        scale: 1.15,
+        autoAlpha: 0.65,
+        duration: 0.75,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    }
+  }
+}
+
 /**
  * Initializes global GSAP animations for static and server-rendered Astro content. Integrates with
  * ScrollTrigger.batch() for maximum performance and 60fps compositor smoothness.
@@ -31,6 +114,25 @@ export function initPageAnimations() {
   });
 
   pageMatchMedia.add("(prefers-reduced-motion: no-preference)", () => {
+    initializeGsapUtilityAnimations(document);
+
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+          if (node instanceof HTMLElement) initializeGsapUtilityAnimations(node);
+        }
+        if (mutation.target instanceof HTMLElement) {
+          initializeGsapUtilityAnimations(mutation.target);
+        }
+      }
+    });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
     // 1. Batched staggered entrance for cards and grid items
     const batchedElements = gsap.utils.toArray<HTMLElement>(
       '[data-animate="fade-up"], [data-animate="stagger-card"], .animate-on-scroll:not([data-vue-managed])',
@@ -148,6 +250,10 @@ export function initPageAnimations() {
     requestAnimationFrame(() => {
       ScrollTrigger.refresh();
     });
+
+    return () => {
+      observer.disconnect();
+    };
   });
 }
 

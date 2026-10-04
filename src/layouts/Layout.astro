@@ -62,7 +62,7 @@ const BREADCRUMB_MAP: Record<string, string> = {
 };
 
 const formatSegmentName = (segment: string) => {
-  if (BREADCRUMB_MAP[segment.toLowerCase()]) {
+  if (Object.hasOwn(BREADCRUMB_MAP, segment.toLowerCase())) {
     return BREADCRUMB_MAP[segment.toLowerCase()];
   }
   return segment
@@ -90,10 +90,11 @@ const breadcrumbItems =
       }),
     ];
 
-const additionalSchemas =
-  Array.isArray(extraSchema) ? extraSchema
-  : extraSchema ? [extraSchema]
-  : [];
+const additionalSchemas = (() => {
+  if (Array.isArray(extraSchema)) return extraSchema;
+  if (extraSchema) return [extraSchema];
+  return [];
+})();
 
 const schemaJson = {
   "@context": "https://schema.org",

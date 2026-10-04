@@ -40,6 +40,9 @@ const levelConfigs: Record<CefrLevel, { pillClass: string; levelName: string }> 
     levelName: "Differenziert & Komplex",
   },
 };
+const levelConfigByLevel = new Map(
+  Object.entries(levelConfigs) as [CefrLevel, { pillClass: string; levelName: string }][] ,
+);
 
 const familyTranslations: Record<string, string> = {
   "die Großmutter": "grandmother",
@@ -80,6 +83,8 @@ const familyExamples: Record<string, string> = {
   "der Enkel": "Der Enkel besucht seine Großeltern.",
   "die Enkelin": "Die Enkelin liest ihrer Oma vor.",
 };
+const familyTranslationByWord = new Map(Object.entries(familyTranslations));
+const familyExampleByWord = new Map(Object.entries(familyExamples));
 
 const safeWords: Word[] = words ?? [];
 const safeMembers: FamilyMember[] = familyTree ?? [];
@@ -88,9 +93,9 @@ const glossary = [
   ...safeMembers.map((member: FamilyMember) => ({
     german: member.german,
     arabic: member.arabic,
-    translation: familyTranslations[member.german] ?? "family member",
-    explanation: `Familienbeziehung: ${familyTranslations[member.german] ?? member.german}.`,
-    example: familyExamples[member.german] ?? `${member.german} gehört zu unserer Familie.`,
+    translation: familyTranslationByWord.get(member.german) ?? "family member",
+    explanation: `Familienbeziehung: ${familyTranslationByWord.get(member.german) ?? member.german}.`,
+    example: familyExampleByWord.get(member.german) ?? `${member.german} gehört zu unserer Familie.`,
   })),
   ...safeWords.map((word: Word) => ({
     german: word.german,
@@ -104,7 +109,9 @@ const glossary = [
 
 const preparedLevels = levels.map((lvl) => {
   const lvlStory =
-    storiesRecord[lvl] ?? topic.story ?? getTopicStory(topic.id, topic, categoryTitle, lvl);
+    Object.entries(storiesRecord).find(([key]) => key === lvl)?.[1]
+    ?? topic.story
+    ?? getTopicStory(topic.id, topic, categoryTitle, lvl);
   const sentences: string[] = [];
   let runningSentenceIndex = 0;
 
@@ -124,8 +131,8 @@ const preparedLevels = levels.map((lvl) => {
     sentences,
     sentenceCount: sentences.length,
     preparedParagraphs,
-    pillClass: levelConfigs[lvl].pillClass,
-    levelName: levelConfigs[lvl].levelName,
+    pillClass: levelConfigByLevel.get(lvl)?.pillClass ?? "",
+    levelName: levelConfigByLevel.get(lvl)?.levelName ?? lvl,
   };
 });
 ---
@@ -161,9 +168,7 @@ const preparedLevels = levels.map((lvl) => {
               >
                 {item.level}
               </span>
-              <span class="text-xs font-medium text-mist-400">
-                {item.levelName}
-              </span>
+              <span class="text-xs font-medium text-mist-400">{item.levelName}</span>
             </div>
 
             <span class="rounded-full border-[1.5px] border-white/8 bg-white/5 px-2.5 py-0.5 text-xs font-medium text-mist-400">
@@ -181,26 +186,26 @@ const preparedLevels = levels.map((lvl) => {
 
         <!-- Story Content with Native Highlightable Words and Read-Along Sentences -->
         <div
-          id={`story-content-${item.level.toLowerCase()}-${topic.id}`}
           class="topic-story-content space-y-4 text-base leading-8 text-mist-200 tablet:text-lg tablet:leading-9"
+          id={`story-content-${item.level.toLowerCase()}-${topic.id}`}
         >
           {item.preparedParagraphs.map((paragraph) => (
             <p>
               {paragraph.map((sentence) => (
                 <span
+                  aria-label={`Satz ${sentence.index + 1} vorlesen`}
                   class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white focus-visible:bg-white/15 focus-visible:text-white"
                   data-sentence-index={sentence.index}
-                  tabindex="0"
                   role="button"
-                  aria-label={`Satz ${sentence.index + 1} vorlesen`}
+                  tabindex="0"
                   title="Klicken zum Vorlesen ab diesem Satz"
                 >
                   {sentence.tokens.map((token) =>
                     token.type === "word" ?
                       <span
                         class="story-word cursor-help font-semibold text-amber-300 underline decoration-amber-300/70 decoration-[1.5px] underline-offset-4 transition-colors duration-150 hover:rounded hover:bg-amber-300/25 hover:text-white hover:decoration-2 focus-visible:rounded focus-visible:bg-amber-300/25 focus-visible:text-white focus-visible:decoration-2 focus-visible:outline-none"
-                        tabindex="0"
                         data-word={token.baseWord}
+                        tabindex="0"
                       >
                         {token.display}
                       </span>
@@ -217,9 +222,9 @@ const preparedLevels = levels.map((lvl) => {
           <TextAudioPlayer
             client:load
             sentences={item.sentences}
+            subtitle={`Höre dir den ${item.level}-Text Satz für Satz an oder klicke auf einen Satz`}
             targetSelector={`#story-content-${item.level.toLowerCase()}-${topic.id}`}
             title={`Audio-Begleiter (${item.level})`}
-            subtitle={`Höre dir den ${item.level}-Text Satz für Satz an oder klicke auf einen Satz`}
           />
         </div>
       </article>
@@ -239,15 +244,32 @@ const preparedLevels = levels.map((lvl) => {
 
   <!-- Tooltip Modal for Word Explanations -->
   <div
-    class="story-tooltip fixed top-[var(--tooltip-top)] left-[var(--tooltip-left)] z-[9999] w-[min(22rem,calc(100vw-2rem))] rounded-[0.85rem] border-[1.5px] border-white/20 bg-[#171923] px-4 py-[0.9rem] text-sm leading-normal text-zinc-100 shadow-[0_16px_48px_rgba(0,0,0,0.6),0_0_0_1px_rgba(252,211,77,0.15)] pointer-events-none backdrop-blur-xl"
-    role="tooltip"
+    class="story-tooltip fixed top-(--tooltip-top) left-(--tooltip-left) z-9999 w-[min(22rem,calc(100vw-2rem))] rounded-[0.85rem] border-[1.5px] border-white/20 bg-[#171923] px-4 py-[0.9rem] text-sm leading-normal text-zinc-100 shadow-[0_16px_48px_rgba(0,0,0,0.6),0_0_0_1px_rgba(252,211,77,0.15)] pointer-events-none backdrop-blur-xl"
     hidden
+    role="tooltip"
   >
-    <strong class="mb-1 block text-[1.05rem] text-amber-300" data-tooltip-german></strong>
-    <div class="text-[0.9rem] font-medium text-zinc-200" data-tooltip-translation></div>
-    <div class="mt-1 font-arabic text-[1.1rem] text-yellow-200" data-tooltip-arabic dir="rtl"></div>
-    <div class="mt-2 border-t border-white/10 pt-2 text-zinc-300" data-tooltip-explanation></div>
-    <div class="mt-2 rounded-md bg-white/5 px-2 py-1.5 text-zinc-400 italic" data-tooltip-example hidden></div>
+    <strong
+      class="mb-1 block text-[1.05rem] text-amber-300"
+      data-tooltip-german
+    ></strong>
+    <div
+      class="text-[0.9rem] font-medium text-zinc-200"
+      data-tooltip-translation
+    ></div>
+    <div
+      class="mt-1 font-arabic text-[1.1rem] text-yellow-200"
+      data-tooltip-arabic
+      dir="rtl"
+    ></div>
+    <div
+      class="mt-2 border-t border-white/10 pt-2 text-zinc-300"
+      data-tooltip-explanation
+    ></div>
+    <div
+      class="mt-2 rounded-md bg-white/5 px-2 py-1.5 text-zinc-400 italic"
+      data-tooltip-example
+      hidden
+    ></div>
   </div>
 </div>
 

@@ -50,9 +50,11 @@ export const GRAMMAR_THEME_PALETTES: GrammarThemePalette[] = [
 ];
 
 export function getGrammarTheme(index: number): GrammarThemePalette {
-  const safeIndex = Math.abs(index) % GRAMMAR_THEME_PALETTES.length;
+  const safeIndex =
+    Number.isSafeInteger(index) ? Math.abs(index) % GRAMMAR_THEME_PALETTES.length : NaN;
+  const palette = Number.isFinite(safeIndex) ? GRAMMAR_THEME_PALETTES.at(safeIndex) : undefined;
   return (
-    GRAMMAR_THEME_PALETTES[safeIndex] ?? {
+    palette ?? {
       badgeClass: "border-sky-500/30 bg-sky-500/10 text-sky-400",
       cardBorderClass: "border-2 border-sky-500/30 hover:border-sky-500/50 shadow-sky-500/5",
       headerBorderClass: "border-sky-500/20",
