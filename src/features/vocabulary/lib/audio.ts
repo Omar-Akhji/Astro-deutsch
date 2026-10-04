@@ -10,10 +10,10 @@ export function initVocabularyAudio() {
       const text = btn.dataset["speak"];
       if (!text) return;
 
-      btn.classList.add("animate-pulse", "border-yellow", "bg-yellow/20", "text-yellow");
+      btn.dataset["playing"] = "true";
       speakGerman(text);
       setTimeout(() => {
-        btn.classList.remove("animate-pulse", "border-yellow", "bg-yellow/20", "text-yellow");
+        delete btn.dataset["playing"];
       }, 1200);
     });
   });

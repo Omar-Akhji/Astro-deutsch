@@ -109,6 +109,7 @@ const syncDomHighlight = () => {
 
   for (const [idx, el] of domSentenceElements.value.entries()) {
     if (idx === currentIndex.value && (isPlaying.value || isPaused.value)) {
+      el.classList.add("bg-white/15", "text-white");
       if (!el.classList.contains(props.activeClass)) {
         el.classList.add(props.activeClass);
         el.setAttribute("aria-current", "true");
@@ -116,6 +117,7 @@ const syncDomHighlight = () => {
       }
     } else {
       el.classList.remove(props.activeClass);
+      el.classList.remove("bg-white/15", "text-white");
       el.removeAttribute("aria-current");
     }
   }
@@ -131,6 +133,7 @@ const syncDomHighlight = () => {
 const clearDomHighlight = () => {
   for (const el of domSentenceElements.value) {
     el.classList.remove(props.activeClass);
+    el.classList.remove("bg-white/15", "text-white");
     el.removeAttribute("aria-current");
   }
 };
@@ -697,10 +700,3 @@ onBeforeUnmount(() => {
     </div>
   </div>
 </template>
-
-<style scoped>
-button:focus,
-button:focus-visible {
-  outline: none;
-}
-</style>

@@ -20,7 +20,7 @@ export function initPageAnimations() {
   // Accessibility: Respect user's motion preferences
   pageMatchMedia.add("(prefers-reduced-motion: reduce)", () => {
     // Instantly reveal all animatable items without movement
-    gsap.set("[data-animate], .animate-on-scroll:not([data-vue-managed]), .card-link", {
+    gsap.set("[data-animate], .animate-on-scroll:not([data-vue-managed]), [data-card-link]", {
       autoAlpha: 1,
       y: 0,
       x: 0,

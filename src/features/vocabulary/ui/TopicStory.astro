@@ -131,7 +131,7 @@ const preparedLevels = levels.map((lvl) => {
 ---
 
 <div
-  class="topic-story topic-stories-suite space-y-4"
+  class="topic-story topic-stories-suite space-y-4 [&_.story-sentence:focus]:outline-none [&_.story-sentence:focus-visible]:outline-none [&_.story-sentence.is-active]:bg-white/15 [&_.story-sentence.is-active]:text-white"
   data-glossary={JSON.stringify(glossary)}
 >
   <!-- Section Title -->
@@ -188,7 +188,7 @@ const preparedLevels = levels.map((lvl) => {
             <p>
               {paragraph.map((sentence) => (
                 <span
-                  class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+                  class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white focus-visible:bg-white/15 focus-visible:text-white"
                   data-sentence-index={sentence.index}
                   tabindex="0"
                   role="button"
@@ -198,7 +198,7 @@ const preparedLevels = levels.map((lvl) => {
                   {sentence.tokens.map((token) =>
                     token.type === "word" ?
                       <span
-                        class="story-word"
+                        class="story-word cursor-help font-semibold text-amber-300 underline decoration-amber-300/70 decoration-[1.5px] underline-offset-4 transition-colors duration-150 hover:rounded hover:bg-amber-300/25 hover:text-white hover:decoration-2 focus-visible:rounded focus-visible:bg-amber-300/25 focus-visible:text-white focus-visible:decoration-2 focus-visible:outline-none"
                         tabindex="0"
                         data-word={token.baseWord}
                       >
@@ -239,105 +239,16 @@ const preparedLevels = levels.map((lvl) => {
 
   <!-- Tooltip Modal for Word Explanations -->
   <div
-    class="story-tooltip"
+    class="story-tooltip fixed top-[var(--tooltip-top)] left-[var(--tooltip-left)] z-[9999] w-[min(22rem,calc(100vw-2rem))] rounded-[0.85rem] border-[1.5px] border-white/20 bg-[#171923] px-4 py-[0.9rem] text-sm leading-normal text-zinc-100 shadow-[0_16px_48px_rgba(0,0,0,0.6),0_0_0_1px_rgba(252,211,77,0.15)] pointer-events-none backdrop-blur-xl"
     role="tooltip"
     hidden
-  ></div>
+  >
+    <strong class="mb-1 block text-[1.05rem] text-amber-300" data-tooltip-german></strong>
+    <div class="text-[0.9rem] font-medium text-zinc-200" data-tooltip-translation></div>
+    <div class="mt-1 font-arabic text-[1.1rem] text-yellow-200" data-tooltip-arabic dir="rtl"></div>
+    <div class="mt-2 border-t border-white/10 pt-2 text-zinc-300" data-tooltip-explanation></div>
+    <div class="mt-2 rounded-md bg-white/5 px-2 py-1.5 text-zinc-400 italic" data-tooltip-example hidden></div>
+  </div>
 </div>
 
 <script src="../lib/family-story.ts"></script>
-
-<style>
-  /* Word glossary styling */
-  .story-word {
-    color: #fcd34d;
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: rgb(252 211 77 / 70%);
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 4px;
-    cursor: help;
-    transition:
-      color 0.15s ease,
-      background-color 0.15s ease;
-  }
-  .story-word:hover,
-  .story-word:focus-visible {
-    color: #ffffff;
-    background-color: rgb(252 211 77 / 25%);
-    border-radius: 0.25rem;
-    text-decoration-thickness: 2px;
-    outline: none;
-  }
-
-  /* Sentence Read-Along styling: NO line, ONLY clean gray background */
-  .story-sentence {
-    position: relative;
-    border-radius: 0.375rem;
-    outline: none;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease;
-  }
-  .story-sentence:focus,
-  .story-sentence:focus-visible {
-    outline: none;
-  }
-  :global(.story-sentence.is-active) {
-    background-color: rgb(255 255 255 / 15%);
-    color: #ffffff;
-  }
-
-  /* Tooltip box styling */
-  .story-tooltip {
-    position: fixed;
-    z-index: 9999;
-    width: min(22rem, calc(100vw - 2rem));
-    padding: 0.9rem 1rem;
-    border: 1.5px solid rgb(255 255 255 / 20%);
-    border-radius: 0.85rem;
-    background: #171923;
-    color: #f4f4f5;
-    box-shadow:
-      0 16px 48px rgb(0 0 0 / 60%),
-      0 0 0 1px rgb(252 211 77 / 15%);
-    font-size: 0.875rem;
-    line-height: 1.5;
-    pointer-events: none;
-    backdrop-filter: blur(12px);
-  }
-  .story-tooltip[hidden] {
-    display: none;
-  }
-  :global(.story-tooltip strong) {
-    display: block;
-    color: #fcd34d;
-    font-size: 1.05rem;
-    margin-bottom: 0.25rem;
-  }
-  :global(.story-tooltip .translation) {
-    color: #e4e4e7;
-    font-weight: 500;
-    font-size: 0.9rem;
-  }
-  :global(.story-tooltip .arabic) {
-    color: #fef08a;
-    font-family: var(--font-arabic, sans-serif);
-    font-size: 1.1rem;
-    margin-top: 0.2rem;
-  }
-  :global(.story-tooltip .explanation) {
-    margin-top: 0.55rem;
-    color: #d4d4d8;
-    border-top: 1px solid rgb(255 255 255 / 10%);
-    padding-top: 0.4rem;
-  }
-  :global(.story-tooltip .example) {
-    margin-top: 0.45rem;
-    color: #a1a1aa;
-    font-style: italic;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.35rem 0.5rem;
-    border-radius: 0.375rem;
-  }
-</style>

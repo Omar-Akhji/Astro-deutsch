@@ -270,7 +270,7 @@ const sections: CategoryConfig[] = [
                         <!-- Audio Pronunciation Button -->
                         <button
                           aria-label={`Aussprache anhören für ${word.german}`}
-                          class="group/btn mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border-[1.5px] border-white/15 bg-white/5 text-mist-400 transition-colors hover:border-yellow/50 hover:bg-yellow/15 hover:text-yellow focus:ring-2 focus:ring-yellow/40 focus:outline-hidden"
+                          class="group/btn mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border-[1.5px] border-white/15 bg-white/5 text-mist-400 transition-colors hover:border-yellow/50 hover:bg-yellow/15 hover:text-yellow focus:ring-2 focus:ring-yellow/40 focus:outline-hidden data-[playing=true]:animate-pulse data-[playing=true]:border-yellow data-[playing=true]:bg-yellow/20 data-[playing=true]:text-yellow"
                           data-speak={word.german}
                           title="Aussprache anhören"
                           type="button"

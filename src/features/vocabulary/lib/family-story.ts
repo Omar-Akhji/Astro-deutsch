@@ -8,17 +8,6 @@ interface GlossaryEntry {
   example: string;
 }
 
-function escapeHtml(value: string): string {
-  const entityMap: Record<string, string> = {
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;",
-  };
-  return value.replaceAll(/[&<>"']/g, (char) => entityMap[char] ?? char);
-}
-
 export function initFamilyStoryTooltips() {
   const stories = document.querySelectorAll<HTMLElement>(".family-story, .topic-story");
   for (const story of stories) {
@@ -26,8 +15,15 @@ export function initFamilyStoryTooltips() {
     story.dataset["tooltipBound"] = "true";
 
     const tooltip = story.querySelector<HTMLElement>(".story-tooltip");
+    const tooltipGerman = tooltip?.querySelector<HTMLElement>("[data-tooltip-german]");
+    const tooltipTranslation = tooltip?.querySelector<HTMLElement>("[data-tooltip-translation]");
+    const tooltipArabic = tooltip?.querySelector<HTMLElement>("[data-tooltip-arabic]");
+    const tooltipExplanation = tooltip?.querySelector<HTMLElement>("[data-tooltip-explanation]");
+    const tooltipExample = tooltip?.querySelector<HTMLElement>("[data-tooltip-example]");
     const rawGlossary = story.dataset["glossary"];
-    if (!tooltip || !rawGlossary) continue;
+    if (
+      !tooltip || !tooltipGerman || !tooltipTranslation || !tooltipArabic || !tooltipExplanation || !tooltipExample || !rawGlossary
+    ) continue;
 
     let parsedList: GlossaryEntry[] = [];
     try {
@@ -93,12 +89,12 @@ export function initFamilyStoryTooltips() {
 
       if (!entry) return;
 
-      const exampleHtml = entry.example
-        ? `<div class="example">„${escapeHtml(entry.example)}“</div>`
-        : "";
-
-      /* eslint-disable-next-line no-unsanitized/property */
-      tooltip.innerHTML = `<strong>${escapeHtml(entry.german)}</strong><div class="translation">${escapeHtml(entry.translation)}</div><div class="arabic" dir="rtl">${escapeHtml(entry.arabic)}</div><div class="explanation">${escapeHtml(entry.explanation)}</div>${exampleHtml}`;
+      tooltipGerman.textContent = entry.german;
+      tooltipTranslation.textContent = entry.translation;
+      tooltipArabic.textContent = entry.arabic;
+      tooltipExplanation.textContent = entry.explanation;
+      tooltipExample.textContent = entry.example ? `„${entry.example}“` : "";
+      tooltipExample.hidden = !entry.example;
 
       tooltip.hidden = false;
       const bounds = word.getBoundingClientRect();
@@ -111,8 +107,8 @@ export function initFamilyStoryTooltips() {
           ? bounds.bottom + 8
           : Math.max(16, bounds.top - tooltipHeight - 8);
 
-      tooltip.style.left = `${left.toString()}px`;
-      tooltip.style.top = `${top.toString()}px`;
+      tooltip.style.setProperty("--tooltip-left", `${left.toString()}px`);
+      tooltip.style.setProperty("--tooltip-top", `${top.toString()}px`);
 
       gsap.fromTo(
         tooltip,
