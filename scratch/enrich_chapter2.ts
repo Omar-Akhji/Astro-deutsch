@@ -1,0 +1,694 @@
+import fs from "fs";
+import path from "path";
+
+// Chapter 2 Topics enrichment
+export const chapter2TopicsEnrichment = [
+  {
+    id: "wohnzimmer",
+    title: "Das Wohnzimmer",
+    description: "Der zentrale Aufenthalts- und Erholungsort im Haus: Möbel, Unterhaltungselektronik und gemütliche Beleuchtung.",
+    details: "Im Wohnzimmer spielen die zweifachen Wechselpräpositionen (an, auf, in, neben, unter, über, vor, hinter, zwischen) eine herausragende grammatikalische Rolle. Merke: Wo? + Dativ (z. B. 'Ich sitze auf dem Sofa'), Wohin? + Akkusativ (z. B. 'Ich setze mich auf das Sofa'). Kulturell gilt das Wohnzimmer in Deutschland, Österreich und der Schweiz als persönlicher Rückzugsort ('die Wohlfühloase'), in dem nach Feierabend ('der Feierabend') Entspannung, Lesen und geselliges Beisammensein im Mittelpunkt stehen.",
+    arabicDescription: "غرفة المعيشة هي قلب المنزل ومركز الاسترخاء واللقاءات العائلية في الثقافة الألمانية. يشمل هذا القسم مفردات الأثاث الأساسية مع التركيز على حروف الجر المكانية المشتركة (Wechselpräpositionen) والتمييز الدقيق بين حالة الجر (Dativ) للسكون وحالة النصب (Akkusativ) للحركة.",
+    words: [
+      {
+        german: "das Sofa, -s",
+        arabic: "الأريكة / الكنبة",
+        english: "sofa, couch",
+        example: "Wir sitzen abends gemütlich auf dem Sofa und sprechen über unseren Tag."
+      },
+      {
+        german: "der Sessel, -",
+        arabic: "الكرسي ذو ذراعين",
+        english: "armchair",
+        example: "Opa liest seine Zeitung am liebsten im bequemen Sessel am Fenster."
+      },
+      {
+        german: "der Fernseher, -",
+        arabic: "التلفاز",
+        english: "television (TV set)",
+        example: "Der moderne Fernseher hängt direkt an der Wand gegenüber der Sitzecke."
+      },
+      {
+        german: "der Teppich, -e",
+        arabic: "السجادة",
+        english: "rug, carpet",
+        example: "Ein flauschiger Teppich liegt auf dem Holzboden und wärmt die Füße."
+      },
+      {
+        german: "das Regal, -e",
+        arabic: "الرف / خزانة الكتب",
+        english: "shelf, bookcase",
+        example: "Im hohen Regal stehen Hunderte Bücher geordnet nach Autoren."
+      },
+      {
+        german: "der Couchtisch, -e",
+        arabic: "طاولة القهوة / طاولة الصالون",
+        english: "coffee table",
+        example: "Auf dem niedrigen Couchtisch stehen eine Kerze und eine Kanne Tee."
+      },
+      {
+        german: "die Stehlampe, -n",
+        arabic: "المصباح القائم",
+        english: "floor lamp",
+        example: "Die Stehlampe in der Ecke spendet warmes, blendfreies Abendlicht."
+      },
+      {
+        german: "das Kissen, -",
+        arabic: "الوسادة / الخدادية",
+        english: "cushion, throw pillow",
+        example: "Auf dem Sofa liegen farblich abgestimmte Kissen zum Anlehnen."
+      },
+      {
+        german: "der Vorhang, -̈e",
+        arabic: "الستارة",
+        english: "curtain",
+        example: "Sobald es dunkel wird, ziehen wir die schweren Vorhänge zu."
+      },
+      {
+        german: "die Zimmerpflanze, -n",
+        arabic: "نبتة الزينة المنزلية",
+        english: "houseplant, indoor plant",
+        example: "Die grüne Zimmerpflanze bringt frische Luft und Natur ins Zimmer."
+      },
+      {
+        german: "das Bild, -er",
+        arabic: "اللوحة / الصورة",
+        english: "picture, painting",
+        example: "Über der Kommode hängt ein ausdrucksstarkes Bild unserer Urlaubsreise."
+      },
+      {
+        german: "der Kamin, -e",
+        arabic: "المدفأة / الموقد",
+        english: "fireplace",
+        example: "Im Winter knistert echtes Buchenholz im Kamin und wärmt den ganzen Raum."
+      }
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Unser gemütliches Wohnzimmer",
+        intro: "Ein Rundgang durch das Wohnzimmer mit einfachen Sätzen und klaren Beschreibungen (A1).",
+        paragraphs: [
+          [
+            "Unser Wohnzimmer ist hell und sehr gemütlich.",
+            "In der Mitte steht ein großes, weiches [das Sofa, -s|Sofa] mit zwei bunten [das Kissen, -|Kissen].",
+            "Vor dem Sofa steht ein kleiner [der Couchtisch, -e|Couchtisch] aus hellem Holz.",
+            "Auf dem Fußboden liegt ein weicher [der Teppich, -e|Teppich], auf dem die Kinder gern spielen."
+          ],
+          [
+            "In der rechten Ecke steht ein bequemer [der Sessel, -|Sessel] zum Lesen.",
+            "Daneben spendet eine moderne [die Stehlampe, -n|Stehlampe] angenehmes Licht.",
+            "An der Wand hängt ein flacher [der Fernseher, -|Fernseher], und daneben steht ein hohes [das Regal, -e|Regal] voller Bücher.",
+            "Am großen Fenster steht eine grüne [die Zimmerpflanze, -n|Zimmerpflanze], und abends ziehen wir den [der Vorhang, -̈e|Vorhang] zu."
+          ]
+        ]
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Alltag & Praxis",
+        title: "Ein entspannter Feierabend zu Hause",
+        intro: "Familienleben und Entspannung im Wohnbereich nach einem langen Arbeitstag (A2).",
+        paragraphs: [
+          [
+            "Nach einem anstrengenden Arbeitstag freue ich mich jedes Mal auf mein Wohnzimmer.",
+            "Ich ziehe die Schuhe aus, mache es mir auf dem [das Sofa, -s|Sofa] bequem und lege ein [das Kissen, -|Kissen] in meinen Rücken.",
+            "Mein Partner stellt zwei Tassen heißen Tee auf den [der Couchtisch, -e|Couchtisch], während draußen der Regen gegen die Scheiben prasselt.",
+            "Wir schalten die warme [die Stehlampe, -n|Stehlampe] an und ziehen die dicken [der Vorhang, -̈e|Vorhänge] zu, damit es drinnen schön behaglich bleibt."
+          ],
+          [
+            "„Möchtest du heute den [der Fernseher, -|Fernseher] anmachen oder lieber Musik hören?“, fragt er mich lächelnd.",
+            "Ich antworte: „Lass uns lieber im [das Regal, -e|Regal] nach einem guten Roman suchen.“",
+            "Er nickt, setzt sich in den ledernen [der Sessel, -|Sessel] und betrachtet das bunte [das Bild, -er|Bild] an der Wand.",
+            "Sogar an kühlen Abenden brauchen wir nicht zu frieren, denn das knisternde Feuer im [der Kamin, -e|Kamin] spendet wunderbare Wärme."
+          ]
+        ]
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Ausführliche Erzählung",
+        title: "Wohnkultur, Behaglichkeit und Raumgestaltung",
+        intro: "Gestaltungsideen für ein harmonisches und einladendes Wohnambiente (B1).",
+        paragraphs: [
+          [
+            "Das Wohnzimmer gilt zu Recht als der gesellschaftliche Mittelpunkt jedes Haushalts, da hier Erholung und soziale Kontakte harmonisch zusammenfließen.",
+            "Bei der Einrichtung haben wir großen Wert darauf gelegt, dass das modulare [das Sofa, -s|Sofa] und der ergonomische [der Sessel, -|Sessel] eine kommunikative Sitzecke bilden.",
+            "Ein handgewebter [der Teppich, -e|Teppich] aus reiner Schurwolle schluckt störenden Hall und verleiht dem Raum eine spürbare optische Tiefe.",
+            "Auf dem massiven [der Couchtisch, -e|Couchtisch] finden neben aktuellen Bildbänden auch Dekorationselemente ihren wohlüberlegten Platz."
+          ],
+          [
+            "Um eine entspannte Atmosphäre zu erzeugen, verzichten wir auf grelles Deckenlicht und nutzen stattdessen eine dimmbare [die Stehlampe, -n|Stehlampe] sowie dezente Lichtquellen in Wandnischen.",
+            "Eine prächtige [die Zimmerpflanze, -n|Zimmerpflanze] neben dem maßgefertigten [das Regal, -e|Regal] filtert Schadstoffe und verbessert das Raumklima nachhaltig.",
+            "Obwohl ein moderner [der Fernseher, -|Fernseher] integriert wurde, tritt er dank einer cleveren Schiebewand dezent in den Hintergrund.",
+            "Besonders an verschneiten Sonntagnachmittagen versammelt sich die Familie vor dem offenen [der Kamin, -e|Kamin], um gemeinsam zur Ruhe zu kommen."
+          ]
+        ]
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Differenziert & Komplex",
+        title: "Innenarchitektur und die Psychologie häuslicher Rückzugsorte",
+        intro: "Analytische Betrachtung zeitgenössischer Wohnraumkonzepte und psychologischer Wohnbedürfnisse (B2).",
+        paragraphs: [
+          [
+            "Die architektonische Gestaltung des Wohnzimmers spiegelt stets die sich wandelnden gesellschaftlichen Vorstellungen von Privatsphäre, Repräsentanz und Muße wider.",
+            "Während frühere Epochen formelle Salons bevorzugten, verlangen gegenwärtige Lebensentwürfe nach flexiblen Raumkonzepten, in denen das zonierte [das Sofa, -s|Sofa] als multifunktionale Insel fungiert.",
+            "In Kombination mit einem skandinavisch reduzierten [der Sessel, -|Sessel] entsteht eine dynamische Balance zwischen individueller Abgrenzung und gemeinschaftlicher Interaktion.",
+            "Haptische Textilien wie ein hochfloriger [der Teppich, -e|Teppich] und feinfühlig drapierte [der Vorhang, -̈e|Vorhänge] dämpfen akustische Frequenzen und etablieren eine behütende Geborgenheit."
+          ],
+          [
+            "Zugleich wandelt sich die Rolle medialer Schnittstellen: Der omnipräsente [der Fernseher, -|Fernseher] wird zunehmend zugunsten analoger Kulturträger wie dem deckenhohen [das Regal, -e|Regal] architektonisch kaschiert.",
+            "Eine gezielt ausgerichtete [die Stehlampe, -n|Stehlampe] illuminiert ein ausgewähltes [das Bild, -er|Bild] und verleiht dem Raum kuratorischen Charakter, während das lebendige Grün einer [die Zimmerpflanze, -n|Zimmerpflanze] biophile Architekturprinzipien verkörpert.",
+            "Der traditionelle [der Kamin, -e|Kamin] behauptet sich in dieser Symbiose als archaisches Zentrum visueller Kontemplation, das dem beschleunigten digitalen Alltag ein entschleunigendes Element entgegensetzt."
+          ]
+        ]
+      }
+    }
+  },
+  {
+    id: "kueche",
+    title: "Die Küche",
+    description: "Der kulinarische Arbeits- und Begegnungsraum: Haushaltsgeräte, Kochutensilien und Essbereich.",
+    details: "In der deutschen Sprache wird die Küche oft als 'die Werkstatt des Genusses' oder das 'Herzstück der Wohnung' bezeichnet. Wichtige Verben sind trennbar (z. B. 'ausräumen', 'einräumen', 'aufwärmen', 'anbraten'). Grammatikalisch ist die Unterscheidung zwischen dem Ort des Kochens (auf dem Herd, im Backofen, in der Pfanne) und Handlungen mit Werkzeugen (mit dem Messer schneiden, mit dem Wasserkocher erhitzen) wesentlich. In modernen deutschsprachigen Wohnungen ist die offene Wohnküche mit großem Esstisch für gemeinsame Mahlzeiten besonders geschätzt.",
+    arabicDescription: "المطبخ هو ورشة الطهي وملتقى العائلة في المنزل الألماني الحديث. يركز هذا الدرس على الأجهزة الكهربائية المنزلية، وأدوات الطهي، وأفعال المطبخ القابلة للانفصال (Trennbare Verben)، واستخدام حروف الجر مع أدوات ومواقع الطبخ المختلفة.",
+    words: [
+      {
+        german: "der Kühlschrank, -̈e",
+        arabic: "الثلاجة",
+        english: "refrigerator, fridge",
+        example: "Im geräumigen Kühlschrank lagern frisches Gemüse, Joghurt und Käse."
+      },
+      {
+        german: "der Herd, -e",
+        arabic: "الموقد / عين الغاز أو الكهرباء",
+        english: "stove, cooktop",
+        example: "Auf der vorderen Platte des Herds köchelt eine aromatische Tomatensauce."
+      },
+      {
+        german: "der Backofen, -̈",
+        arabic: "الفرن",
+        english: "oven",
+        example: "Der Auflauf muss bei 180 Grad eine halbe Stunde im Backofen backen."
+      },
+      {
+        german: "die Spülmaschine, -n",
+        arabic: "غسالة الصحون",
+        english: "dishwasher",
+        example: "Nach dem Abendessen räumen wir das benutzte Geschirr in die Spülmaschine."
+      },
+      {
+        german: "die Mikrowelle, -n",
+        arabic: "الميكروويف",
+        english: "microwave",
+        example: "In der Mikrowelle kann man Speisen vom Vortag innerhalb weniger Minuten aufwärmen."
+      },
+      {
+        german: "die Spüle, -n",
+        arabic: "المجلى / حوض المطبخ",
+        english: "kitchen sink",
+        example: "Das Schneidebrett wasche ich mit warmem Wasser und Spülmittel in der Spüle ab."
+      },
+      {
+        german: "der Wasserkocher, -",
+        arabic: "غلاية الماء",
+        english: "electric kettle",
+        example: "Der Wasserkocher bringt das Teewasser in knapp zwei Minuten zum Kochen."
+      },
+      {
+        german: "die Kaffeemaschine, -n",
+        arabic: "آلة صنع القهوة",
+        english: "coffee maker",
+        example: "Am frühen Morgen verströmt die frisch eingeschaltete Kaffeemaschine ein herrliches Aroma."
+      },
+      {
+        german: "der Esstisch, -e",
+        arabic: "طاولة الطعام",
+        english: "dining table",
+        example: "Um zwölf Uhr setzen sich alle Familienmitglieder gemeinsam an den Esstisch."
+      },
+      {
+        german: "der Stuhl, -̈e",
+        arabic: "الكرسي",
+        english: "chair",
+        example: "Wir rücken die bequemen Stühle heran und beginnen mit dem Essen."
+      },
+      {
+        german: "der Topf, -̈e",
+        arabic: "القدر / الطنجرة",
+        english: "pot, cooking pot",
+        example: "In dem großen Topf kochen die Kartoffeln für den Kartoffelsalat."
+      },
+      {
+        german: "die Pfanne, -n",
+        arabic: "المقلاة",
+        english: "frying pan",
+        example: "In der beschichteten Pfanne brate ich Zwiebeln und Champignons goldbraun an."
+      }
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Kochen in der Küche",
+        intro: "Einfache Wörter für Geräte und Küchenarbeiten beim Kochen (A1).",
+        paragraphs: [
+          [
+            "Unsere Küche ist modern, sauber und sehr praktisch eingerichtet.",
+            "Zuerst öffne ich den großen [der Kühlschrank, -̈e|Kühlschrank] und nehme Eier, Milch und Butter heraus.",
+            "Ich schalte die [die Kaffeemaschine, -n|Kaffeemaschine] ein, und sofort riecht es wunderbar nach frischem Kaffee.",
+            "Für meinen Tee koche ich schnell Wasser mit dem [der Wasserkocher, -|Wasserkocher]."
+          ],
+          [
+            "Auf dem [der Herd, -e|Herd] steht ein großer [der Topf, -̈e|Topf] mit Wasser für die Nudeln.",
+            "In der heißen [die Pfanne, -n|Pfanne] brate ich knackiges Gemüse an.",
+            "Im [der Backofen, -̈|Backofen] backt ein leckerer Kuchen für den Nachmittag.",
+            "Nach dem Essen stellen wir die Teller in die [die Spülmaschine, -n|Spülmaschine] und waschen die Gläser in der [die Spüle, -n|Spüle]."
+          ]
+        ]
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Alltag & Praxis",
+        title: "Ein gemeinsamer Kochabend mit Freunden",
+        intro: "Gemeinsames Zubereiten eines Abendessens und Aufgabenteilung in der Küche (A2).",
+        paragraphs: [
+          [
+            "Am Freitagabend lade ich zwei gute Freunde zu einem gemütlichen Kochabend zu mir ein.",
+            "Gemeinsam holen wir frische Zutaten aus dem [der Kühlschrank, -̈e|Kühlschrank] und stellen sie auf die Arbeitsplatte.",
+            "Jonas nimmt das Messer und schneidet das Gemüse, während ich es vorher gründlich in der [die Spüle, -n|Spüle] abwasche.",
+            "In der Zwischenzeit schmilzt bereits aromatische Butter in der schweren [die Pfanne, -n|Pfanne] auf dem Ceranfeld."
+          ],
+          [
+            "„Kannst du bitte nachschauen, ob der [der Backofen, -̈|Backofen] schon vorgeheizt ist?“, frage ich Jonas.",
+            "Er kontrolliert die Temperatur und stellt das überbackene Gratin hinein, während die Soße im [der Topf, -̈e|Topf] leise köchelt.",
+            "Wir decken den großen [der Esstisch, -e|Esstisch], stellen für jeden Gast einen bequemen [der Stuhl, -̈e|Stuhl] bereit und zünden Kerzen an.",
+            "Später räumen wir alle Töpfe und Teller in die [die Spülmaschine, -n|Spülmaschine], sodass die Küche im Nu wieder aufgeräumt ist."
+          ]
+        ]
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Ausführliche Erzählung",
+        title: "Die Küche als kulinarischer und sozialer Treffpunkt",
+        intro: "Wie moderne Küchentechnik und gesellige Kochkultur den Alltag bereichern (B1).",
+        paragraphs: [
+          [
+            "In vielen zeitgemäßen Wohnungen hat die Küche ihren rein funktionalen Charakter als Arbeitsraum längst verloren und sich in ein lebendiges Kommunikationszentrum verwandelt.",
+            "Hier beginnen die Morgenstunden mit dem vertrauten Mahlgeräusch der [die Kaffeemaschine, -n|Kaffeemaschine], während der energieeffiziente [der Kühlschrank, -̈e|Kühlschrank] alle frischen Köstlichkeiten griffbereit bereithält.",
+            "Ein leistungsstarker [der Wasserkocher, -|Wasserkocher] ermöglicht die schnelle Zubereitung von Heißgetränken, während anspruchsvolle Teige im präzise geregelten [der Backofen, -̈|Backofen] goldbraun aufgehen.",
+            "Dank intelligenter Dunstabzugshauben bleiben Gerüche dezent, selbst wenn in der gusseisernen [die Pfanne, -n|Pfanne] scharf angebraten wird."
+          ],
+          [
+            "Die ergonomische Anordnung von [der Herd, -e|Herd], Arbeitsfläche und tiefem Becken der [die Spüle, -n|Spüle] gewährleistet reibungslose Arbeitsabläufe bei der Menüzubereitung.",
+            "Wenn Gäste eintreffen, versammeln sich alle ungezwungen um den massiven [der Esstisch, -e|Esstisch], nehmen auf den gepolsterten [der Stuhl, -̈e|Stühlen] Platz und beobachten die Kochfortschritte.",
+            "Selbst eilige Reste lassen sich am nächsten Tag mühelos in der [die Mikrowelle, -n|Mikrowelle] erwärmen, ohne an Geschmack einzubüßen.",
+            "Schließlich nimmt eine vollintegrierte, geräuscharme [die Spülmaschine, -n|Spülmaschine] den Gastgebern den lästigen Abwasch ab, sodass der Abend entspannt ausklingen kann."
+          ]
+        ]
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Differenziert & Komplex",
+        title: "Gastrosophie und die architektonische Evolution der Kochzone",
+        intro: "Kulturhistorische und soziologische Reflexion über die Küche im Wandel der Zeiten (B2).",
+        paragraphs: [
+          [
+            "Die Evolution der Küche vom isolierten Frankfurter Zweckbau hin zur offenen Loft-Wohnküche illustriert eindrucksvoll den soziokulturellen Stellenwert von Ernährung und Gastlichkeit.",
+            "Kochen fungiert im modernen Lebensstil nicht mehr bloß als basale Nahrungszubereitung, sondern als sinnlicher Ausgleich zur digitalisierten Arbeitswelt, zelebriert auf dem Induktionsfeld des [der Herd, -e|Herdes].",
+            "Hochwertiges Kochgeschirr wie der schwere, emaillierte [der Topf, -̈e|Topf] und die geschmiedete [die Pfanne, -n|Pfanne] verkörpern dabei ein neues Bewusstsein für Nachhaltigkeit und handwerkliche Beständigkeit.",
+            "Geräte wie der sensorgesteuerte [der Backofen, -̈|Backofen] oder der vernetzte [der Kühlschrank, -̈e|Kühlschrank] verschmelzen nahtlos mit maßgefertigten Fronten, sodass Hightech-Funktionalität dezent im Hintergrund operiert."
+          ],
+          [
+            "Die räumliche Verschmelzung von Zubereitungs- und Konsumbereich kulminiert im großzügig dimensionierten [der Esstisch, -e|Esstisch], der von Designer-[der Stuhl, -̈e|Stühlen] flankiert wird.",
+            "Hier verwischen die Grenzen zwischen Koch und Gast, da vorbereitende Handgriffe an der unterbaufähigen [die Spüle, -n|Spüle] in angeregte Diskussionsrunden übergehen.",
+            "Während apparative Helfer wie die hocheffiziente [die Spülmaschine, -n|Spülmaschine] und die programmierbare [die Kaffeemaschine, -n|Kaffeemaschine] die Küchenroutine minimieren, bleibt die Küche der unangefochtene emotionale Ankerpunkt des häuslichen Mikrokosmos."
+          ]
+        ]
+      }
+    }
+  },
+  {
+    id: "schlafzimmer",
+    title: "Das Schlafzimmer",
+    description: "Der Ort der Nachtruhe, Erholung und persönlichen Aufbewahrung: Betten, Schränke und Schlafkultur.",
+    details: "Das Schlafzimmer ist im deutschsprachigen Raum eng mit Konzepten von Schlafhygiene ('die Schlafhygiene') und Wohnruhe verbunden. Typisch sind das tägliche 'Stoßlüften' (kurzes, vollständiges Öffnen des Fensters für frische Raumluft) sowie getrennte Bettdecken ('die Daunendecke') bei Doppelbetten. Sprachlich sind Wendungen wie 'ins Bett gehen', 'das Bett machen', 'den Wecker stellen' und 'die Kleider in den Schrank hängen' absolute Grundbausteine für das Niveau A1 bis B1.",
+    arabicDescription: "غرفة النوم هي واحة الراحة والهدوء واستعادة الطاقة في المنزل. يغطي هذا الدرس مفردات السرير، ومفارش النوم، والخزائن، وعادات النوم الصحية في ألمانيا مثل تهوية الغرفة السريعة (Stoßlüften) وضبط المنبه وتنظيم الملابس بدقة.",
+    words: [
+      {
+        german: "das Bett, -en",
+        arabic: "السرير",
+        english: "bed",
+        example: "Nach einem langen Tag lege ich mich dankbar in mein bequemes Bett."
+      },
+      {
+        german: "der Kleiderschrank, -̈e",
+        arabic: "خزانة الملابس",
+        english: "wardrobe, clothes closet",
+        example: "Im geräumigen Kleiderschrank hängen alle Anzüge und Kleider ordentlich sortiert."
+      },
+      {
+        german: "der Nachttisch, -e",
+        arabic: "طاولة السرير الجانبية / الكومودينو",
+        english: "bedside table, nightstand",
+        example: "Auf dem kleinen Nachttisch neben dem Bett liegt mein Lieblingsbuch."
+      },
+      {
+        german: "das Kissen, -",
+        arabic: "الوسادة / المخدة",
+        english: "pillow",
+        example: "Ein ergonomisches Kissen stützt den Nacken optimal während der Nacht."
+      },
+      {
+        german: "die Decke, -n",
+        arabic: "البطانية / اللحاف",
+        english: "blanket, duvet",
+        example: "Die warme Daunendecke schützt im kalten Winter zuverlässig vor Frost."
+      },
+      {
+        german: "die Matratze, -n",
+        arabic: "المرتبة / الفرشة",
+        english: "mattress",
+        example: "Eine hochwertige Matratze sorgt für erholsamen Schlaf und schont den Rücken."
+      },
+      {
+        german: "die Bettwäsche",
+        arabic: "شراشف وبياضات السرير",
+        english: "bed linen, bedsheets",
+        example: "Jeden Samstag beziehe ich das Bett mit duftender, frisch gewaschener Bettwäsche."
+      },
+      {
+        german: "der Wecker, -",
+        arabic: "المنبه",
+        english: "alarm clock",
+        example: "Morgens um sechs Uhr dreißig reißt mich das Klingeln des Weckers aus den Träumen."
+      },
+      {
+        german: "die Nachttischlampe, -n",
+        arabic: "مصباح طاولة السرير",
+        english: "bedside lamp",
+        example: "Vor dem Einschlafen schalte ich die gedimmte Nachttischlampe mit einem Klick aus."
+      },
+      {
+        german: "die Kommode, -n",
+        arabic: "خزانة ذات أدراج",
+        english: "chest of drawers, dresser",
+        example: "In den geräumigen Schubladen der Kommode liegen Socken und T-Shirts geordnet."
+      },
+      {
+        german: "der Kleiderbügel, -",
+        arabic: "علاقة الملابس",
+        english: "clothes hanger",
+        example: "Ich hänge jedes frisch gebügelte Hemd sorgfältig auf einen stabilen Kleiderbügel."
+      },
+      {
+        german: "der Spiegel, -",
+        arabic: "المرآة",
+        english: "mirror",
+        example: "Vor dem Verlassen des Schlafzimmers kontrolliere ich mein Outfit im großen Spiegel."
+      }
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Mein ruhiges Schlafzimmer",
+        intro: "Einfache Sätze über die Einrichtung des Schlafzimmers und die Nachtruhe (A1).",
+        paragraphs: [
+          [
+            "Mein Schlafzimmer ist ruhig, hell und sehr ordentlich.",
+            "In der Mitte des Zimmers steht ein großes [das Bett, -en|Bett] mit einer bequemen [die Matratze, -n|Matratze].",
+            "Darauf liegen ein weiches [das Kissen, -|Kissen] und eine warme [die Decke, -n|Decke].",
+            "Die [die Bettwäsche|Bettwäsche] ist blau, weiß und riecht frisch nach Sommer."
+          ],
+          [
+            "Neben dem Bett steht ein kleiner [der Nachttisch, -e|Nachttisch] mit einer hübschen [die Nachttischlampe, -n|Nachttischlampe].",
+            "Dort steht auch mein digitaler [der Wecker, -|Wecker], der mich jeden Morgen pünktlich weckt.",
+            "An der Wand steht ein großer [der Kleiderschrank, -̈e|Kleiderschrank] aus hellem Holz.",
+            "Darin hängen viele Hemden auf dem [der Kleiderbügel, -|Kleiderbügel], und an der Schranktür hängt ein großer [der Spiegel, -|Spiegel]."
+          ]
+        ]
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Alltag & Praxis",
+        title: "Abendroutine und Ordnung im Schlafbereich",
+        intro: "Praktische Gewohnheiten vor dem Schlafen und beim morgendlichen Anziehen (A2).",
+        paragraphs: [
+          [
+            "Eine feste Abendroutine hilft mir dabei, nach der Arbeit schnell abzuschalten und gut zu schlafen.",
+            "Bevor ich ins [das Bett, -en|Bett] gehe, lüfte ich das Zimmer für zehn Minuten und mache mein Bett zurecht.",
+            "Ich klopfe das weiche [das Kissen, -|Kissen] auf und ziehe die kuschelige [die Decke, -n|Decke] glatt.",
+            "Auf dem [der Nachttisch, -e|Nachttisch] stelle ich meinen [der Wecker, -|Wecker] auf sieben Uhr morgens und schalte die [die Nachttischlampe, -n|Nachttischlampe] ein, um noch ein Kapitel zu lesen."
+          ],
+          [
+            "Am nächsten Morgen stehe ich ausgeruht von der festen [die Matratze, -n|Matratze] auf.",
+            "Ich öffne den großen [der Kleiderschrank, -̈e|Kleiderschrank], wähle eine saubere Hose und nehme ein Hemd vom [der Kleiderbügel, -|Kleiderbügel].",
+            "In der hölzernen [die Kommode, -n|Kommode] finde ich schnell passende Socken.",
+            "Bevor ich zur Arbeit gehe, werfe ich noch einen kurzen prüfenden Blick in den [der Spiegel, -|Spiegel]."
+          ]
+        ]
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Ausführliche Erzählung",
+        title: "Schlafhygiene und ein harmonischer Rückzugsort",
+        intro: "Gesunder Schlaf, hochwertige Bettausstattung und reduzierte Raumgestaltung (B1).",
+        paragraphs: [
+          [
+            "In einer von Reizüberflutung geprägten Welt gewinnt das Schlafzimmer als Oase absoluter Regeneration enorm an Bedeutung.",
+            "Zentraler Faktor für körperliche Erholung ist die abgestimmte Kombination aus einer punktelastischen [die Matratze, -n|Matratze] und einem ergonomischen [das Kissen, -|Kissen], die zusammen die Wirbelsäule entlasten.",
+            "Atmungsaktive [die Bettwäsche|Bettwäsche] aus reiner Bio-Baumwolle und eine temperaturausgleichende [die Decke, -n|Decke] schaffen ein ideales Schlafklima zu jeder Jahreszeit.",
+            "Um den Melatoninspiegel nicht zu beeinträchtigen, meiden wir grelle Bildschirme und bevorzugen das gedämpfte Licht der [die Nachttischlampe, -n|Nachttischlampe] auf dem minimalistischen [der Nachttisch, -e|Nachttisch]."
+          ],
+          [
+            "Ein aufgeräumtes Umfeld fördert erwiesenermaßen die innere Ruhe, weshalb Kleidung nicht offen herumliegt, sondern im deckenhohen [der Kleiderschrank, -̈e|Kleiderschrank] verschwindet.",
+            "Dort hängen Jackets knitterfrei auf formstabilen [der Kleiderbügel, -|Kleiderbügeln], während Accessoires in den leichtgängigen Schubladen einer schlichten [die Kommode, -n|Kommode] sortiert sind.",
+            "Ein strategisch platzierter [der Spiegel, -|Spiegel] reflektiert das Tageslicht und lässt den Raum optisch weitläufiger und luftiger wirken.",
+            "Statt durch schrille Handytöne werden wir morgens sanft von einem simulierten Sonnenaufgang unseres modernen [der Wecker, -|Weckers] geweckt."
+          ]
+        ]
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Differenziert & Komplex",
+        title: "Chronobiologie und die Ästhetik somnologischer Refugien",
+        intro: "Wissenschaftliche und raumgestalterische Reflexion über Schlafarchitektur und mentale Hygiene (B2).",
+        paragraphs: [
+          [
+            "Die moderne Somnologie belegt unmissverständlich, dass erholsamer Schlaf kein passiver Ruhezustand ist, sondern ein hochkomplexer neurophysiologischer Erholungsprozess.",
+            "Dementsprechend fungiert das [das Bett, -en|Bett] nicht bloß als Möbelstück, sondern als biophysikalisches System, dessen Herzstück die differenzierte Zonierung der [die Matratze, -n|Matratze] bildet.",
+            "Flankiert von einer thermoregulierenden [die Decke, -n|Decke] und einem anatomisch formulierten [das Kissen, -|Kissen] wird eine optimale Mikrozirkulation gewährleistet, während schadstofffreie [die Bettwäsche|Bettwäsche] dermatologische Reizungen ausschließt.",
+            "Die bewusste Verbannung digitaler Störquellen vom [der Nachttisch, -e|Nachttisch] forciert die zirkadiane Rhythmik, sodass der klassische [der Wecker, -|Wecker] die biologische Aufwachphase hormonell schonend initiiert."
+          ],
+          [
+            "Architektonisch verlangt ein modernes Schlafrefugium nach kompromisslosem Purismus, um visuelle Reize vor dem Schlafengehen systematisch zu minimieren.",
+            "Der maßintegrierte [der Kleiderschrank, -̈e|Kleiderschrank] verbirgt textile Fülle hinter grifflosen Fronten, wobei hochwertige [der Kleiderbügel, -|Kleiderbügel] eine adäquate Werterhaltung feiner Stoffe garantieren.",
+            "Eine skandinavische [die Kommode, -n|Kommode] und ein akzentuierender [der Spiegel, -|Spiegel] brechen die Strenge des Raumes auf, ohne dessen kontemplativen Charakter zu kompromittieren.",
+            "Eine warmtönige [die Nachttischlampe, -n|Nachttischlampe] komplettiert dieses Refugium der Entschleunigung, in dem der Mensch neue Vitalität für die Anforderungen des nächsten Tages schöpft."
+          ]
+        ]
+      }
+    }
+  },
+  {
+    id: "badezimmer",
+    title: "Das Badezimmer",
+    description: "Der Bereich der Körperpflege, Frische und des Wohlbefindens: Sanitäreinrichtungen, Hygieneartikel und Badetrends.",
+    details: "Das Badezimmer (umgangssprachlich auch 'das Bad' genannt) hat sich in der mitteleuropäischen Wohnkultur von der reinen 'Nasszelle' zum privaten Wellnessbereich gewandelt. Im Deutschen gibt es klare sprachliche Feinheiten: Man 'geht unter die Dusche' oder 'nimmt eine Dusche', 'legt sich in die Badewanne' und 'putzt sich die Zähne mit Zahnbürste und Zahnpasta'. Auf die Trennung von Müll (Wattestäbchen, leere Shampooflaschen) und das regelmäßige Lüften zur Schimmelvermeidung ('das Schimmelrisiko') wird in Deutschland besonderer Wert gelegt.",
+    arabicDescription: "الحمام هو مساحة النظافة الشخصية والاسترخاء والانتعاش اليومي. يتناول هذا القسم تجهيزات الحمام الصحية ومستحضرات النظافة الأساسية والعبارات الشائعة مثل الاستحمام السريع أو الاسترخاء في البانيو والعناية بالأسنان والتدابير البيئية المتبعة في المنازل الألمانية.",
+    words: [
+      {
+        german: "die Dusche, -n",
+        arabic: "الدش / كابينة الاستحمام",
+        english: "shower",
+        example: "Jeden Morgen nehme ich eine schnelle, belebende Dusche mit warmem Wasser."
+      },
+      {
+        german: "die Badewanne, -n",
+        arabic: "حوض الاستحمام / البانيو",
+        english: "bathtub",
+        example: "An kalten Winterabenden fülle ich mir ein heißes Schaumbad in die Badewanne."
+      },
+      {
+        german: "das Waschbecken, -",
+        arabic: "مغسلة الأيدي / حوض الحمام",
+        english: "washbasin, bathroom sink",
+        example: "Über dem weißen Waschbecken befindet sich eine elegante Mischbatterie."
+      },
+      {
+        german: "der Spiegel, -",
+        arabic: "المرآة",
+        english: "mirror",
+        example: "Im gut beleuchteten Spiegel rasiere ich mich morgens besonders gründlich."
+      },
+      {
+        german: "die Toilette, -n",
+        arabic: "المرحاض / التواليت",
+        english: "toilet",
+        example: "Die Toilette wird regelmäßig desinfiziert und blitzsauber gehalten."
+      },
+      {
+        german: "das Handtuch, -̈er",
+        arabic: "المنشفة / الفوطة",
+        english: "towel",
+        example: "Auf der beheizten Handtuchstange hängt immer ein trockenes, weiches Handtuch."
+      },
+      {
+        german: "die Seife, -n",
+        arabic: "الصابون",
+        english: "soap",
+        example: "Die duftende Seife mit Olivenöl pflegt und reinigt die Hände schonend."
+      },
+      {
+        german: "das Shampoo, -s",
+        arabic: "الشامبو",
+        english: "shampoo",
+        example: "Mit einem milden Shampoo wasche ich mir unter der Dusche die Haare."
+      },
+      {
+        german: "die Zahnbürste, -n",
+        arabic: "فرشاة الأسنان",
+        english: "toothbrush",
+        example: "Zahnärzte empfehlen, die Zahnbürste mindestens dreimal täglich zu benutzen."
+      },
+      {
+        german: "die Zahnpasta, -en",
+        arabic: "معجون الأسنان",
+        english: "toothpaste",
+        example: "Auf die Zahnbürste gebe ich einen kleinen Klecks erfrischende Zahnpasta."
+      },
+      {
+        german: "der Föhn, -e",
+        arabic: "مجفف الشعر / السيشوار",
+        english: "hair dryer",
+        example: "Mit dem Föhn trockne und style ich meine feuchten Haare in wenigen Minuten."
+      },
+      {
+        german: "die Waschmaschine, -n",
+        arabic: "غسالة الملابس",
+        english: "washing machine",
+        example: "In der Ecke des Badezimmers schleudert die leise Waschmaschine unsere Handtücher."
+      }
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Am Morgen im Badezimmer",
+        intro: "Einfache Sätze über die morgendliche Körperpflege und Badezimmermöbel (A1).",
+        paragraphs: [
+          [
+            "Unser Badezimmer ist weiß gefliest, hell und immer sauber.",
+            "Am Morgen gehe ich zuerst ins Bad und stelle mich unter die warme [die Dusche, -n|Dusche].",
+            "Ich wasche meine Haare mit einem wohlriechenden [das Shampoo, -s|Shampoo] und wasche meinen Körper ab.",
+            "Nach dem Duschen trockne ich mich gründlich mit einem weichen [das Handtuch, -̈er|Handtuch] ab."
+          ],
+          [
+            "Danach gehe ich zum [das Waschbecken, -|Waschbecken] und wasche mir die Hände mit [die Seife, -n|Seife].",
+            "Ich nehme meine [die Zahnbürste, -n|Zahnbürste], gebe etwas [die Zahnpasta, -en|Zahnpasta] darauf und putze meine Zähne.",
+            "Im beleuchteten [der Spiegel, -|Spiegel] kämme ich meine Haare und trockne sie mit dem [der Föhn, -e|Föhn].",
+            "Neben der [die Toilette, -n|Toilette] steht eine bequeme [die Badewanne, -n|Badewanne], und in der Ecke wäscht die [die Waschmaschine, -n|Waschmaschine] unsere Wäsche."
+          ]
+        ]
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Alltag & Praxis",
+        title: "Das tägliche Pflegeritual und ein warmes Bad",
+        intro: "Morgendlicher Ablauf und entspannende Wellness im heimischen Badezimmer (A2).",
+        paragraphs: [
+          [
+            "Wenn morgens der Wecker klingelt, beginnt der Tag für die meisten Menschen im Badezimmer.",
+            "Während ich mir am [das Waschbecken, -|Waschbecken] mit frischer [die Seife, -n|Seife] das Gesicht wasche, schaue ich noch etwas müde in den [der Spiegel, -|Spiegel].",
+            "Dann greife ich zur elektrischen [die Zahnbürste, -n|Zahnbürste], trage weiße [die Zahnpasta, -en|Zahnpasta] auf und putze mir gründlich drei Minuten lang die Zähne.",
+            "Ein Griff zum flauschigen [das Handtuch, -̈er|Handtuch], und schon bin ich bereit für die schnelle [die Dusche, -n|Dusche] mit erfrischendem [das Shampoo, -s|Shampoo]."
+          ],
+          [
+            "„Hast du schon den [der Föhn, -e|Föhn] benutzt?“, ruft meine Schwester ungeduldig von der Tür.",
+            "„Ja, er liegt auf der Ablage neben dem Becken!“, antworte ich ihr freundlich.",
+            "Ganz anders sieht es am entspannten Sonntag aus: Dann lasse ich heißes Wasser in die [die Badewanne, -n|Badewanne] ein und gebe duftendes Badesalz dazu.",
+            "Während ich im warmen Schaum liege, dreht nebenan die [die Waschmaschine, -n|Waschmaschine] leise ihre Runden und reinigt die Handtücher der ganzen Familie."
+          ]
+        ]
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Ausführliche Erzählung",
+        title: "Vom Waschraum zur privaten Wellness-Oase",
+        intro: "Körperpflege, moderne Sanitärstandards und Achtsamkeit im Badezimmer (B1).",
+        paragraphs: [
+          [
+            "Das Badezimmer hat in der modernen Wohnkultur eine bemerkenswerte Wandlung vollzogen und gilt heute als zentraler Ort für Selbstfürsorge und Entspannung.",
+            "Bodengleiche Walk-in-[die Dusche, -n|Duschen] mit Regenduschkopf haben die engen Duschkabinen vergangener Tage abgelöst und bieten barrierefreien Komfort.",
+            "Hier wird die Haarpflege mit silikonfreiem [das Shampoo, -s|Shampoo] zelebriert, bevor man sich in ein wärmendes [das Handtuch, -̈er|Handtuch] hüllt.",
+            "Ein Doppel-[das Waschbecken, -|Waschbecken] mit fugenlosen Oberflächen verhindert morgendliche Staus, wenn sich mehrere Personen gleichzeitig frisch machen."
+          ],
+          [
+            "Vor dem beschlagfreien [der Spiegel, -|Spiegel] mit integriertem Touch-Licht werden Zahnpflege mit enzymatischer [die Zahnpasta, -en|Zahnpasta] und Schall-[die Zahnbürste, -n|Zahnbürste] zur festen Hygiene-Routine.",
+            "Ein ionisierender [der Föhn, -e|Föhn] schont die Haarstruktur beim Trocknen und reduziert statische Aufladung spürbar.",
+            "Wer nach arbeitsreichen Tagen tief abschalten möchte, findet in der freistehenden [die Badewanne, -n|Badewanne] vollkommene Ruhe vor Alltagshektik.",
+            "Dank wassersparender Armaturen an der [die Toilette, -n|Toilette] und einer smarten [die Waschmaschine, -n|Waschmaschine] verbindet das Bad heute luxuriöse Ästhetik mit ökologischem Umweltbewusstsein."
+          ]
+        ]
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Differenziert & Komplex",
+        title: "Hydrotherapie, Ästhetik und die Transformation des Nassbereichs",
+        intro: "Kultursoziologische und architektonische Betrachtung privater Spa-Kulturen (B2).",
+        paragraphs: [
+          [
+            "Historisch betrachtet markiert die Transformation des Badezimmers von einer rein utilitaristischen Sanitätszelle hin zum privaten Day-Spa einen fundamentalen Paradigmenwechsel im urbanen Wohnen.",
+            "Moderne Badkonzepte inszenieren Wasser als therapeutisches Element, wobei die barrierefreie [die Dusche, -n|Dusche] mit wechselnden Strahlarten Kneippsche Hydrotherapie in den häuslichen Rhythmus integriert.",
+            "Die Auswahl pflegender Substanzen wie sulfatfreiem [das Shampoo, -s|Shampoo] und kaltgesiedeter [die Seife, -n|Seife] spiegelt das gestiegene Bewusstsein für dermatologische Verträglichkeit und ökologische Mikroplastikvermeidung wider.",
+            "Schwere, gekämmte [das Handtuch, -̈er|Handtücher] aus ägyptischer Baumwolle unterstreichen diesen haptischen Luxus auf sensibler Haut."
+          ],
+          [
+            "Ein skulpturales [das Waschbecken, -|Waschbecken] aus edlem Mineralguss wird von einem hinterleuchteten, blendfreien [der Spiegel, -|Spiegel] dominiert, der präzise Ausleuchtung für kosmetische Routinen gewährleistet.",
+            "Während professionelle Werkzeuge wie der bürstenlose [der Föhn, -e|Föhn] Friseurstandards ins Eigenheim transferieren, setzt die remineralisierende [die Zahnpasta, -en|Zahnpasta] auf modernste biomimetische Wirkstoffe.",
+            "Den Höhepunkt kontemplativer Entspannung verkörpert die ergonomisch geschwungene [die Badewanne, -n|Badewanne], die als solitäres Kunstwerk im Raum platziert wird.",
+            "Gleichzeitig operieren nachhaltige Technologien wie spülrandlose [die Toilette, -n|Toiletten] und sensorüberwachte [die Waschmaschine, -n|Waschmaschinen] im Einklang mit strengen Ressourcen- und Energieeffizienzstandards."
+          ]
+        ]
+      }
+    }
+  }
+];
+
+// Apply script logic
+async function apply() {
+  const ch2Path = path.resolve("src/data/vocabulary/2-zu-hause.json");
+  const storiesPath = path.resolve("src/features/vocabulary/data/topic-stories.json");
+
+  const ch2Data = JSON.parse(fs.readFileSync(ch2Path, "utf8"));
+  const storiesData = JSON.parse(fs.readFileSync(storiesPath, "utf8"));
+
+  // Check section and topics
+  for (const topicEnrichment of chapter2TopicsEnrichment) {
+    // 1. Update topic in ch2Data
+    for (const sec of ch2Data.sections) {
+      const topic = sec.topics.find((t: any) => t.id === topicEnrichment.id);
+      if (topic) {
+        topic.title = topicEnrichment.title;
+        topic.description = topicEnrichment.description;
+        topic.details = topicEnrichment.details;
+        topic.arabicDescription = topicEnrichment.arabicDescription;
+        topic.words = topicEnrichment.words;
+        topic.story = topicEnrichment.stories.A1;
+        topic.stories = topicEnrichment.stories;
+        console.log(`Updated 2-zu-hause.json topic: ${topicEnrichment.id}`);
+      }
+    }
+
+    // 2. Update topic in storiesData
+    storiesData[topicEnrichment.id] = topicEnrichment.stories;
+    console.log(`Updated topic-stories.json topic: ${topicEnrichment.id}`);
+  }
+
+  // Write back formatted JSON
+  fs.writeFileSync(ch2Path, JSON.stringify(ch2Data, null, 2), "utf8");
+  fs.writeFileSync(storiesPath, JSON.stringify(storiesData, null, 2), "utf8");
+  console.log("Files written successfully!");
+}
+
+apply();

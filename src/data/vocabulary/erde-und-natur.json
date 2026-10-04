@@ -16,43 +16,92 @@
               "german": "die Sonne",
               "arabic": "الشمس",
               "english": "sun",
-              "example": "Die Sonne scheint heute sehr schön."
+              "example": "Am wolkenlosen blauen Himmel scheint den ganzen Tag die warme Sonne."
             },
             {
               "german": "der Regen",
               "arabic": "المطر",
               "english": "rain",
-              "example": "Wir bleiben zu Hause wegen des Regens."
+              "example": "Der sanfte Regen im Frühling lässt die Pflanzen und Bäume sprießen."
             },
             {
               "german": "der Schnee",
-              "arabic": "الثلج",
+              "arabic": "الثلج / الجليد",
               "english": "snow",
-              "example": "Die Kinder spielen im Schnee."
+              "example": "Im Winter bedeckt eine dicke weiße Decke aus Schnee die Landschaft."
             },
             {
               "german": "der Wind",
-              "arabic": "الرياح",
+              "arabic": "الرياح / الهواء",
               "english": "wind",
-              "example": "Der Wind weht heute stark."
+              "example": "Ein kräftiger Wind weht vom Meer herüber und treibt die Segelboote an."
             },
             {
               "german": "die Wolke, -n",
               "arabic": "السحابة / الغيمة",
               "english": "cloud",
-              "example": "Es sind viele Wolken am Himmel."
+              "example": "Dunkle graue Wolken ziehen am Horizont auf und kündigen ein Unwetter an."
+            },
+            {
+              "german": "das Gewitter, -",
+              "arabic": "العاصفة الرعدية",
+              "english": "thunderstorm",
+              "example": "Während des heftigen Gewitters zuckten helle Blitze über den Nachthimmel."
+            },
+            {
+              "german": "der Sturm, -̈e",
+              "arabic": "العاصفة / الرياح العاتية",
+              "english": "storm, gale",
+              "example": "Der orkanartige Sturm knickte im Park mehrere alte Bäume um."
+            },
+            {
+              "german": "der Nebel",
+              "arabic": "الضباب",
+              "english": "fog, mist",
+              "example": "Dichter Nebel im Herbst schränkte die Sicht auf der Autobahn massiv ein."
+            },
+            {
+              "german": "die Temperatur, -en",
+              "arabic": "درجة الحرارة",
+              "english": "temperature",
+              "example": "Im Juli klettert die Temperatur im Schatten oft auf über dreißig Grad."
+            },
+            {
+              "german": "warm",
+              "arabic": "دافئ / حار",
+              "english": "warm",
+              "example": "Heute ist es angenehm warm, ideal für einen Ausflug an den Badesee."
+            },
+            {
+              "german": "kalt",
+              "arabic": "بارد",
+              "english": "cold",
+              "example": "Im Januar ist es draußen oft eisig kalt mit Minustemperaturen."
+            },
+            {
+              "german": "scheinen",
+              "arabic": "تشرق / تسطع (الشمس)",
+              "english": "to shine (sun)",
+              "example": "Die goldenen Sonnenstrahlen scheinen durch das geöffnete Fenster ins Zimmer."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Wie ist das Wetter?",
-            "intro": "Einfache Wörter für Sonne, Regen und Schnee (A1).",
+            "title": "Wie ist das Wetter heute?",
+            "intro": "Einfache Sätze über das Wetter, Sonne und Regen im Jahreslauf (A1).",
             "paragraphs": [
               [
-                "Heute scheint die helle [die Sonne|Sonne] vom blauen Himmel.",
-                "Gestern fiel kalter [der Regen|Regen] und alle nahmen Schirme mit.",
-                "Im Winter freuen sich die Kinder über weißen [der Schnee|Schnee].",
-                "Der kühle [der Wind|Wind] bewegt die Blätter an den Bäumen."
+                "Das Wetter ändert sich in Deutschland sehr oft.",
+                "Im Sommer ist es herrlich [warm|warm], und die goldene [die Sonne|Sonne] beginnt früh am Morgen zu [scheinen|scheinen].",
+                "Manchmal ziehen weiße [die Wolke, -n|Wolken] über den blauen Himmel.",
+                "Im Herbst weht ein frischer [der Wind|Wind], und es fällt oft kühler [der Regen|Regen]."
+              ],
+              [
+                "Im Winter ist es draußen richtig [kalt|kalt] und friert.",
+                "Wenn die [die Temperatur, -en|Temperatur] unter null Grad fällt, rieselt weißer [der Schnee|Schnee] vom Himmel.",
+                "Im November liegt am Morgen oft dichter [der Nebel|Nebel] über den Feldern.",
+                "Wenn ein lautes [das Gewitter, -|Gewitter] mit Blitz und Donner kommt, bleibe ich gern sicher zu Hause."
               ]
             ]
           },
@@ -60,60 +109,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Wie ist das Wetter?",
-              "intro": "Einfache Wörter für Sonne, Regen und Schnee (A1).",
+              "title": "Wie ist das Wetter heute?",
+              "intro": "Einfache Sätze über das Wetter, Sonne und Regen im Jahreslauf (A1).",
               "paragraphs": [
                 [
-                  "Heute scheint die helle [die Sonne|Sonne] vom blauen Himmel.",
-                  "Gestern fiel kalter [der Regen|Regen] und alle nahmen Schirme mit.",
-                  "Im Winter freuen sich die Kinder über weißen [der Schnee|Schnee].",
-                  "Der kühle [der Wind|Wind] bewegt die Blätter an den Bäumen."
+                  "Das Wetter ändert sich in Deutschland sehr oft.",
+                  "Im Sommer ist es herrlich [warm|warm], und die goldene [die Sonne|Sonne] beginnt früh am Morgen zu [scheinen|scheinen].",
+                  "Manchmal ziehen weiße [die Wolke, -n|Wolken] über den blauen Himmel.",
+                  "Im Herbst weht ein frischer [der Wind|Wind], und es fällt oft kühler [der Regen|Regen]."
+                ],
+                [
+                  "Im Winter ist es draußen richtig [kalt|kalt] und friert.",
+                  "Wenn die [die Temperatur, -en|Temperatur] unter null Grad fällt, rieselt weißer [der Schnee|Schnee] vom Himmel.",
+                  "Im November liegt am Morgen oft dichter [der Nebel|Nebel] über den Feldern.",
+                  "Wenn ein lautes [das Gewitter, -|Gewitter] mit Blitz und Donner kommt, bleibe ich gern sicher zu Hause."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Wetterbericht für die Woche",
-              "intro": "Wetterwechsel und Vorhersagen verstehen (A2).",
+              "title": "Der tägliche Wetterbericht und der Wechsel der Jahreszeiten",
+              "intro": "Wettervorhersagen verstehen und die passende Kleidung wählen (A2).",
               "paragraphs": [
                 [
-                  "Am Himmel sieht man heute viele dunkle [die Wolke, -n|Wolken].",
-                  "Der Wetterbericht kündigt starken [der Wind|Wind] und kräftigen [der Regen|Regen] an.",
-                  "Wenn die [die Sonne|Sonne] wieder herauskommt, wird es angenehm warm.",
-                  "In den Bergen liegt bereits der erste [der Schnee|Schnee] der Saison."
+                  "Bevor ich morgens das Haus verlasse, schaue ich mir immer kurz die Wetter-App auf dem Smartphone an.",
+                  "Die Meteorologen melden für den Nachmittag eine maximale [die Temperatur, -en|Temperatur] von 22 Grad, also angenehm [warm|warm].",
+                  "Am Vormittag soll die [die Sonne|Sonne] noch ungestört [scheinen|scheinen], aber gegen Abend zieht eine dunkle [die Wolke, -n|Wolke] auf.",
+                  "Ein mäßiger [der Wind|Wind] kündigt bereits einen bevorstehenden Wetterumschwung an."
+                ],
+                [
+                  "„Hast du deinen Regenschirm eingepackt?“, fragt mich mein Vater an der Haustür.",
+                  "„Ja, denn laut Wetterbericht droht am Abend ein kräftiges [das Gewitter, -|Gewitter] mit ergiebigem [der Regen|Regen]“, antworte ich vorsichtig.",
+                  "Ganz anders war das Wetter letzte Woche: Da blies ein heftiger [der Sturm, -̈e|Sturm] über das Land, gefolgt von feuchtem [der Nebel|Nebel].",
+                  "Im mitteleuropäischen Klima muss man auf jede Überraschung der Natur vorbereitet sein."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Jahreszeiten und Wetterkapriolen",
-              "intro": "Ausführliche Schilderung von Wetterphänomenen (B1).",
+              "title": "Klimatische Dynamik und mitteleuropäische Wetterlagen",
+              "intro": "Wie Hoch- und Tiefdruckgebiete das Wettergeschehen und den Alltag prägen (B1).",
               "paragraphs": [
                 [
-                  "Im mitteleuropäischen Frühling wechselt das Wetter oft innerhalb weniger Stunden von strahlender [die Sonne|Sonne] zu peitschendem [der Regen|Regen].",
-                  "Wenn eine dichte [die Wolke, -n|Wolke] die Sicht verdeckt und böiger [der Wind|Wind] aufzieht, sollte man auf Bergtouren besonders vorsichtig sein.",
-                  "Für Wintersportler bedeutet frischer [der Schnee|Schnee] in den Alpen ideale Bedingungen auf den Skipisten."
+                  "Das mitteleuropäische Wettergeschehen wird maßgeblich durch das Aufeinandertreffen maritimer Atlantikluft mit kontinentalen Strömungen bestimmt.",
+                  "Ein stabiles Hochdruckgebiet beschert im Hochsommer strahlenden Sonnenschein, bei dem die [die Sonne|Sonne] stundenlang vom Firmament brennt und die [die Temperatur, -en|Temperatur] auf Rekordwerte steigen lässt.",
+                  "Doch wenn sich feuchtwarme Luftmassen aufheizen, entlädt sich die Energie oft in einem gewaltigen [das Gewitter, -|Gewitter], das sintflutartigen [der Regen|Regen] mit sich bringt.",
+                  "Orkanartige Böen verwandeln ein solches Sommerunwetter schnell in einen gefährlichen [der Sturm, -̈e|Sturm], der Dächer abdeckt und Äste abbricht."
+                ],
+                [
+                  "Im Übergang zum Spätherbst dominieren Inversionswetterlagen, bei denen feuchter [der Nebel|Nebel] Talsenken tagelang in diffuses Licht hüllt.",
+                  "Während es im Flachland empfindlich [kalt|kalt] und trüb bleibt, kann man auf den Bergen sonnige Aussichten genießen.",
+                  "Im Hochgebirge verwandelt der erste ergiebige [der Schnee|Schnee] die Gipfel in weiße Winterlandschaften, die Skifahrer und Naturfreunde magisch anziehen.",
+                  "Die Faszination des Wetters liegt in dieser unberechenbaren Vielfalt, die den Rhythmus unseres Lebens seit Urzeiten prägt."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Meteorologische Dynamik und Klimatologie",
-              "intro": "Atmosphärische Prozesse und wissenschaftliche Wetteranalyse (B2).",
+              "title": "Klimatologie im Anthropozän: Extremwetter und globale Erwärmung",
+              "intro": "Wissenschaftliche und meteorologische Analyse klimatischer Destabilisierung (B2).",
               "paragraphs": [
                 [
-                  "Tiefdruckgebiete transportieren feuchte Luftmassen, die zur Entstehung mächtiger [die Wolke, -n|Wolken] und intensiver Niederschläge führen.",
-                  "Das komplexe Wechselspiel zwischen solarer Einstrahlung durch [die Sonne|die Sonne] und globalen Windsystemen wie dem [der Wind|Wind] bestimmt das regionale Klima.",
-                  "Veränderte Niederschlagsmuster führen dazu, dass sowohl langanhaltender [der Regen|Regen] als auch das Ausbleiben von [der Schnee|Schnee] erhebliche ökologische Folgen nach sich ziehen."
+                  "Die fortschreitende anthropogene Erwärmung der Erdatmosphäre verändert die globalen Zirkulationsmuster und destabilisiert den polaren Jetstream nachhaltig.",
+                  "Als Konsequenz verharren atmosphärische Blocking-Wetterlagen wochenlang stationär, sodass persistente Hitzewellen mit extremer [die Temperatur, -en|Temperatur] verheerende Dürreperioden in agrarischen Regionen auslösen.",
+                  "Die Erwärmung der Ozeane speist gigantische Energiemengen in atlantische Tiefdruckgebiete ein, wodurch ein orkanartiger [der Sturm, -̈e|Sturm] an zerstörerischer Intensität gewinnt.",
+                  "Konvektive Starkregenereignisse, bei denen sintflutartiger [der Regen|Regen] innerhalb kürzester Zeit ganze Flussläufe über die Ufer treten lässt, werden zur neuen Normalität."
+                ],
+                [
+                  "Gleichzeitig schwindet die Verlässlichkeit traditioneller winterlicher Phänomene: Natürlicher [der Schnee|Schnee] wird in mittleren Gebirgslagen zur Rarität, während der Ausfall von Niederschlägen die Grundwasserneubildung gefährdet.",
+                  "Meteorologische Phänomene wie bodennaher [der Nebel|Nebel] oder feinstaubbelastete Inversionsschichten illustrieren die komplexe Wechselwirkung zwischen atmosphärischer Chemie und urbaner Topografie.",
+                  "Die Menschheit steht vor der existenziellen Notwendigkeit, rigorose Klimaschutzmaßnahmen mit adaptiven Infrastrukturen zu verbinden, um den Wetterextremen des 21. Jahrhunderts resilient zu begegnen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Meteorologie, Jahreszeiten, Wetterphänomene, Klimazonen und Wetterbericht.",
+          "details": "Wetterphänomene, Jahreszeiten und Wettervorhersage (A1–B2)",
+          "arabicDescription": "الطقس والأحوال الجوية والظواهر المناخية في ألمانيا وأوروبا. يتناول هذا الدرس الفصول الأربعة، والمطر، والثلج، والرياح، والعواصف، والضباب، واستخدام الضمير غير الشخصي (es) في التعبير عن الطقس (es regnet, es schneit)، وقراءة النشرات الجوية والتحدث عن درجات الحرارة."
         }
       ]
     }
-  ]
+  ],
+  "slug": "erde-und-natur"
 }

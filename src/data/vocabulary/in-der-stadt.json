@@ -16,62 +16,92 @@
               "german": "die Stadt, -̈e",
               "arabic": "المدينة",
               "english": "city, town",
-              "example": "Berlin ist eine große Stadt."
+              "example": "Berlin ist die bevölkerungsreichste Stadt der Bundesrepublik Deutschland."
             },
             {
               "german": "das Zentrum",
-              "arabic": "مركز المدينة",
+              "arabic": "المركز / وسط المدينة",
               "english": "center, downtown",
-              "example": "Wir treffen uns im Zentrum."
+              "example": "Im belebten Zentrum der Stadt pulsiert das geschäftige Leben bis in die Nacht."
             },
             {
               "german": "das Rathaus, -̈er",
               "arabic": "مبنى البلدية",
               "english": "city hall, town hall",
-              "example": "Das Rathaus ist auf dem Marktplatz."
+              "example": "Im historischen Rathaus habe ich meinen neuen Wohnsitz offiziell angemeldet."
             },
             {
               "german": "die Post",
-              "arabic": "البريد",
-              "english": "post office",
-              "example": "Ich muss ein Paket zur Post bringen."
+              "arabic": "البريد / مكتب البريد",
+              "english": "post office, mail",
+              "example": "Ich bringe ein wichtiges Einschreiben zur Post an der Ecke."
             },
             {
               "german": "die Bank, -en",
-              "arabic": "البنك",
-              "english": "bank",
-              "example": "Ich hole Geld von der Bank."
+              "arabic": "البنك / المصرف",
+              "english": "bank (financial)",
+              "example": "Am Geldautomaten der Bank hebe ich Bargeld für das Wochenende ab."
             },
             {
               "german": "die Apotheke, -n",
               "arabic": "الصيدلية",
-              "english": "pharmacy",
-              "example": "Ich kaufe Medizin in der Apotheke."
+              "english": "pharmacy, chemist's",
+              "example": "In der Notdienst-Apotheke bekomme ich auch sonntags dringend benötigte Medikamente."
             },
             {
               "german": "das Krankenhaus, -̈er",
               "arabic": "المستشفى",
               "english": "hospital",
-              "example": "Der Krankenwagen fährt ins Krankenhaus."
+              "example": "Die Notaufnahme im städtischen Krankenhaus ist rund um die Uhr geöffnet."
             },
             {
               "german": "die Polizei",
               "arabic": "الشرطة",
               "english": "police",
-              "example": "Rufen Sie die Polizei!"
+              "example": "Die Polizei sorgt Tag und Nacht für Sicherheit und Ordnung auf den Straßen."
+            },
+            {
+              "german": "die Bibliothek, -en",
+              "arabic": "المكتبة العامة",
+              "english": "library",
+              "example": "In der ruhigen Bibliothek leihe ich mir Fachbücher für mein Studium aus."
+            },
+            {
+              "german": "das Museum, Museen",
+              "arabic": "المتحف",
+              "english": "museum",
+              "example": "Am ersten Sonntag des Monats ist der Eintritt in das städtische Museum kostenlos."
+            },
+            {
+              "german": "die Kirche, -n",
+              "arabic": "الكنيسة",
+              "english": "church",
+              "example": "Die gotische Kirche mit ihren kunstvollen Fenstern überragt den historischen Marktplatz."
+            },
+            {
+              "german": "der Park, -s",
+              "arabic": "الحديقة العامة / المنتزه",
+              "english": "park",
+              "example": "Nach getaner Arbeit spazieren viele Menschen gern im grünen Park."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Wichtige Orte in der Stadt",
-            "intro": "Einfache Wörter für öffentliche Gebäude (A1).",
+            "title": "Ein Spaziergang durch die Stadt",
+            "intro": "Einfache Sätze über wichtige Gebäude und Orte in einer Stadt (A1).",
             "paragraphs": [
               [
-                "Ich lebe gern in dieser schönen [die Stadt, -̈e|Stadt].",
-                "Im lebendigen [das Zentrum|Zentrum] steht das historische [das Rathaus, -̈er|Rathaus].",
-                "Ich bringe ein Paket zur [die Post|Post] und hebe Geld bei der [die Bank, -en|Bank] ab.",
-                "Medikamente kaufe ich in der [die Apotheke, -n|Apotheke].",
-                "Kranke Menschen werden im [das Krankenhaus, -̈er|Krankenhaus] behandelt, und die [die Polizei|Polizei] sorgt für Sicherheit."
+                "Unsere [die Stadt, -̈e|Stadt] ist nicht sehr groß, aber wunderschön.",
+                "Direkt im [das Zentrum|Zentrum] steht das alte [das Rathaus, -̈er|Rathaus] mit einem großen Turm.",
+                "Neben dem Rathaus liegt die [die Post|Post], wo ich Briefe und Pakete abgebe.",
+                "Auf der anderen Seite befindet sich die [die Bank, -en|Bank] mit einem modernen Geldautomaten."
+              ],
+              [
+                "Wenn jemand krank ist, geht er zur [die Apotheke, -n|Apotheke] oder ins [das Krankenhaus, -̈er|Krankenhaus].",
+                "Für unsere Sicherheit sorgt die freundliche [die Polizei|Polizei].",
+                "Am Nachmittag gehe ich in die ruhige [die Bibliothek, -en|Bibliothek] und lese ein Buch.",
+                "Danach entspanne ich mich im grünen [der Park, -s|Park] unter alten Bäumen."
               ]
             ]
           },
@@ -79,60 +109,86 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Wichtige Orte in der Stadt",
-              "intro": "Einfache Wörter für öffentliche Gebäude (A1).",
+              "title": "Ein Spaziergang durch die Stadt",
+              "intro": "Einfache Sätze über wichtige Gebäude und Orte in einer Stadt (A1).",
               "paragraphs": [
                 [
-                  "Ich lebe gern in dieser schönen [die Stadt, -̈e|Stadt].",
-                  "Im lebendigen [das Zentrum|Zentrum] steht das historische [das Rathaus, -̈er|Rathaus].",
-                  "Ich bringe ein Paket zur [die Post|Post] und hebe Geld bei der [die Bank, -en|Bank] ab.",
-                  "Medikamente kaufe ich in der [die Apotheke, -n|Apotheke].",
-                  "Kranke Menschen werden im [das Krankenhaus, -̈er|Krankenhaus] behandelt, und die [die Polizei|Polizei] sorgt für Sicherheit."
+                  "Unsere [die Stadt, -̈e|Stadt] ist nicht sehr groß, aber wunderschön.",
+                  "Direkt im [das Zentrum|Zentrum] steht das alte [das Rathaus, -̈er|Rathaus] mit einem großen Turm.",
+                  "Neben dem Rathaus liegt die [die Post|Post], wo ich Briefe und Pakete abgebe.",
+                  "Auf der anderen Seite befindet sich die [die Bank, -en|Bank] mit einem modernen Geldautomaten."
+                ],
+                [
+                  "Wenn jemand krank ist, geht er zur [die Apotheke, -n|Apotheke] oder ins [das Krankenhaus, -̈er|Krankenhaus].",
+                  "Für unsere Sicherheit sorgt die freundliche [die Polizei|Polizei].",
+                  "Am Nachmittag gehe ich in die ruhige [die Bibliothek, -en|Bibliothek] und lese ein Buch.",
+                  "Danach entspanne ich mich im grünen [der Park, -s|Park] unter alten Bäumen."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Erledigungen in der Nachbarschaft",
-              "intro": "Öffentliche Einrichtungen im Alltag nutzen (A2).",
+              "title": "Erledigungen in der Innenstadt am Samstag",
+              "intro": "Typische Behördengänge, Einkäufe und Freizeitorte in der Stadt (A2).",
               "paragraphs": [
                 [
-                  "Gestern hatte ich viele Erledigungen in der [die Stadt, -̈e|Stadt].",
-                  "Zuerst ging ich zur [die Bank, -en|Bank], um ein neues Konto zu eröffnen.",
-                  "Danach holte ich ein Rezept in der [die Apotheke, -n|Apotheke] ab.",
-                  "Im [das Zentrum|Zentrum] der Stadt patrouilliert [die Polizei|die Polizei] regelmäßig für die Sicherheit aller Bürger."
+                  "Am Samstag habe ich viele Erledigungen in der Stadt zu erledigen.",
+                  "Zuerst fahre ich ins [das Zentrum|Zentrum] und gehe zum Bürgerbüro im [das Rathaus, -̈er|Rathaus], um meinen Personalausweis zu verlängern.",
+                  "Danach laufe ich zur [die Bank, -en|Bank], hebe etwas Bargeld ab und bringe ein Päckchen zur [die Post|Post].",
+                  "Weil mein Hals schmerzt, kaufe ich in der [die Apotheke, -n|Apotheke] noch wohltuende Halstabletten."
+                ],
+                [
+                  "„Treffen wir uns später noch auf einen Kaffee?“, fragt mich meine Freundin am Telefon.",
+                  "„Gern! Ich schaue mir vorher noch die neue Kunstausstellung im [das Museum, Museen|Museum] an“, antworte ich ihr.",
+                  "Wir verabreden uns vor der alten [die Kirche, -n|Kirche] und spazieren anschließend gemeinsam durch den weitläufigen [der Park, -s|Park].",
+                  "Es ist beruhigend zu wissen, dass auch das moderne [das Krankenhaus, -̈er|Krankenhaus] und die [die Polizei|Polizei] in wenigen Minuten erreichbar sind."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Öffentliche Infrastruktur und Bürgerdienste",
-              "intro": "Verwaltung, Gesundheit und Sicherheit in Kommunen (B1).",
+              "title": "Urbane Infrastruktur und kommunale Daseinsvorsorge",
+              "intro": "Wie öffentliche Gebäude das Zusammenleben und die Lebensqualität sichern (B1).",
               "paragraphs": [
                 [
-                  "Eine bürgernahe [die Stadt, -̈e|Stadt] zeichnet sich durch kurze Wege zu allen lebenswichtigen Institutionen aus.",
-                  "Im [das Rathaus, -̈er|Rathaus] können Einwohner ihren Wohnsitz anmelden und Ausweisdokumente beantragen.",
-                  "Das moderne [das Krankenhaus, -̈er|Krankenhaus] gewährleistet zusammen mit Notfallapotheken eine lückenlose medizinische Versorgung rund um die Uhr.",
-                  "Sowohl [die Post|die Post] als auch Bankfilialen sichern die tägliche Nahversorgung im städtischen [das Zentrum|Zentrum]."
+                  "Eine lebenswerte [die Stadt, -̈e|Stadt] zeichnet sich durch eine ausgewogene Symbiose aus bürgernahen Institutionen, kulturellen Angeboten und Erholungsräumen aus.",
+                  "Das historische [das Rathaus, -̈er|Rathaus] bildet nicht nur die administrative Schaltzentrale der Kommunalpolitik, sondern fungiert im belebten [das Zentrum|Zentrum] als identitätsstiftendes Wahrzeichen.",
+                  "Die fußläufige Erreichbarkeit von grundlegenden Dienstleistern wie [die Bank, -en|Bank] und [die Post|Post] erleichtert den Alltag von Senioren und Familien gleichermaßen.",
+                  "Im medizinischen Notfall garantiert das leistungsstarke städtische [das Krankenhaus, -̈er|Krankenhaus] in enger Kooperation mit der diensthabenden [die Apotheke, -n|Apotheke] eine lückenlose Notfallversorgung."
+                ],
+                [
+                  "Neben Sicherheit, für die eine bürgernahe [die Polizei|Polizei] sorgt, bedarf eine vitale Stadtgesellschaft auch geistiger Freiräume.",
+                  "Die moderne städtische [die Bibliothek, -en|Bibliothek] und das vielseitige [das Museum, Museen|Museum] bieten niederschwelligen Zugang zu Bildung und historischem Wissen.",
+                  "Eine jahrhundertealte [die Kirche, -n|Kirche] erinnert an die baukulturellen Wurzeln der Gemeinde, während der weitläufige [der Park, -s|Park] als grüne Lunge fungiert.",
+                  "So vereinen sich funktionale Infrastruktur und ästhetische Freiräume zu einem harmonischen urbanen Lebensraum."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Kommunale Daseinsvorsorge und Stadtentwicklung",
-              "intro": "Städtebauliche Infrastruktur und institutionelle Stabilität (B2).",
+              "title": "Raumsoziologie der Polis: Institutionelle Topografie und Öffentlichkeit",
+              "intro": "Interdisziplinäre Reflexion über städtische Monumentalität und bürgerliche Partizipation (B2).",
               "paragraphs": [
                 [
-                  "Die institutionelle Daseinsvorsorge bildet das unverzichtbare Fundament florierender Kommunen.",
-                  "Die Konzentration zentraler Einrichtungen wie [das Rathaus, -̈er|Rathaus], Haupt-[die Post|Post] und administrativer Zentren im historischen [das Zentrum|Zentrum] stärkt die urbane Identität.",
-                  "Gleichzeitig bildet die enge Kooperation von [das Krankenhaus, -̈er|Krankenhaus] und [die Polizei|Polizei] das Rückgrat ziviler Resilienz und öffentlicher Sicherheit."
+                  "Die institutionelle Topografie moderner Metropolen manifestiert die Machtarchitektur und Wertesysteme einer demokratischen Gesellschaft.",
+                  "Das monumentale [das Rathaus, -̈er|Rathaus] im historischen Kern einer [die Stadt, -̈e|Stadt] symbolisiert bürgerschaftliche Selbstverwaltung und politische Souveränität im verdichteten [das Zentrum|Zentrum].",
+                  "Gleichzeitig erfordert die Transformation von Dienstleistungsbauten wie [die Bank, -en|Bank] und [die Post|Post] durch die fortschreitende Digitalisierung neue Nutzungskonzepte für ehemals hochfrequentierte innerstädtische Schalterhallen.",
+                  "Staatliche Schutzorgane wie die rechtsstaatlich gebundene [die Polizei|Polizei] und kritische Infrastrukturen wie das akademische [das Krankenhaus, -̈er|Krankenhaus] garantieren das verfassungsrechtliche Grundversprechen physischer Unversehrtheit."
+                ],
+                [
+                  "Demokratische Resilienz manifestiert sich jedoch gleichermaßen in konsumfreien Resonanzräumen des Geistes.",
+                  "Eine progressive [die Bibliothek, -en|Bibliothek] fungiert heute als inklusiver 'Dritter Ort' des Wissensaustauschs, flankiert vom kuratorischen Diskursraum eines [das Museum, Museen|Museums].",
+                  "Sakrale Bauten wie die ehrwürdige [die Kirche, -n|Kirche] bieten spirituelle Kontemplation jenseits ökonomischer Verwertungslogiken, während der ökologisch konzipierte [der Park, -s|Park] klimatische Resilienz und soziale Durchmischung stiftet."
                 ]
               ]
             }
-          }
+          },
+          "description": "Öffentliche Einrichtungen, Institutionen, Sehenswürdigkeiten und urbane Plätze.",
+          "details": "Öffentliche Gebäude, Institutionen und Sehenswürdigkeiten (A1–B2)",
+          "arabicDescription": "المباني العامة والمؤسسات الحيوية في المدينة الألمانية. يشمل هذا الدرس مبنى البلدية (Rathaus)، والمستشفى، والصيدلية، والبنك، ومركز الشرطة، ومكتب البريد، والمكتبة، مع شرح حروف الجر الدالة على التوجه إلى هذه الأماكن أو التواجد فيها."
         },
         {
           "id": "einkaufen",
@@ -140,58 +196,94 @@
           "words": [
             {
               "german": "das Geschäft, -e",
-              "arabic": "المتجر / المحل",
+              "arabic": "المحل / المتجر",
               "english": "shop, store",
-              "example": "Das Geschäft öffnet um 9 Uhr."
+              "example": "In der Fußgängerzone reiht sich ein elegantes Geschäft an das andere."
             },
             {
               "german": "der Supermarkt, -̈e",
-              "arabic": "السوبر ماركت",
+              "arabic": "السوبرماركت / المتجر الكبير",
               "english": "supermarket",
-              "example": "Ich kaufe Lebensmittel im Supermarkt."
+              "example": "Im großen Supermarkt am Stadtrand kaufen wir alle Lebensmittel für die Woche ein."
             },
             {
               "german": "die Bäckerei, -en",
               "arabic": "المخبز",
               "english": "bakery",
-              "example": "Ich kaufe morgens frische Brötchen in der Bäckerei."
+              "example": "Morgens um sieben Uhr duftet es in der Bäckerei nach ofenfrischen Brötchen."
             },
             {
               "german": "der Markt, -̈e",
               "arabic": "السوق",
               "english": "market",
-              "example": "Am Samstag gehe ich auf den Markt."
+              "example": "Auf dem Wochenmarkt bieten regionale Landwirte frisches Obst und Gemüse an."
             },
             {
               "german": "das Geld",
-              "arabic": "النقود",
+              "arabic": "النقود / المال",
               "english": "money",
-              "example": "Ich habe nicht genug Geld dabei."
+              "example": "Ich habe nicht genug Geld im Portemonnaie, deshalb zahle ich bargeldlos."
             },
             {
               "german": "teuer",
-              "arabic": "غالٍ",
+              "arabic": "غالٍ / مرتفع السعر",
               "english": "expensive",
-              "example": "Dieses Auto ist sehr teuer."
+              "example": "Markenkleidung in der Innenstadt ist oft sehr teuer, aber qualitativ hochwertig."
             },
             {
               "german": "billig / günstig",
-              "arabic": "رخيص / مناسب السعر",
-              "english": "cheap / reasonable",
-              "example": "Die Äpfel sind heute billig."
+              "arabic": "رخيص / اقتصادي / مناسب السعر",
+              "english": "cheap / reasonably priced, affordable",
+              "example": "Dieses Angebot im Prospekt ist wirklich unschlagbar günstig."
+            },
+            {
+              "german": "die Kasse, -n",
+              "arabic": "صندوق الدفع / الكاشير",
+              "english": "cash register, checkout",
+              "example": "An der Kasse bildet sich zu Stoßzeiten eine lange Schlange ungeduldiger Kunden."
+            },
+            {
+              "german": "der Einkaufswagen, -",
+              "arabic": "عربة التسوق",
+              "english": "shopping cart, trolley",
+              "example": "Ich schiebe den vollen Einkaufswagen zum Kofferraum meines Autos."
+            },
+            {
+              "german": "die Quittung, -en",
+              "arabic": "الإيصال / الفاتورة",
+              "english": "receipt",
+              "example": "Bitte bewahren Sie die Quittung sorgfältig auf, falls Sie die Ware umtauschen möchten."
+            },
+            {
+              "german": "die Tasche, -n",
+              "arabic": "الحقيبة / الكيس القماشي",
+              "english": "bag",
+              "example": "Um Plastikmüll zu vermeiden, bringe ich immer eine eigene Stofftasche mit."
+            },
+            {
+              "german": "bezahlen",
+              "arabic": "يدفع الحساب",
+              "english": "to pay",
+              "example": "Sie können an diesem Terminal kontaktlos mit Ihrer Bankkarte bezahlen."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Einkaufen im Alltag",
-            "intro": "Grundwortschatz zum Thema Einkaufen (A1).",
+            "title": "Einkaufen für das Wochenende",
+            "intro": "Einfache Sätze über den Lebensmitteleinkauf und das Bezahlen (A1).",
             "paragraphs": [
               [
-                "Ich gehe in den großen [der Supermarkt, -̈e|Supermarkt], um Lebensmittel zu kaufen.",
-                "Frisches Brot kaufe ich morgens in der [die Bäckerei, -en|Bäckerei].",
-                "Am Samstag besuche ich den bunten [der Markt, -̈e|Markt] auf dem Platz.",
-                "Ich bezahle an der Kasse mit [das Geld|Geld].",
-                "Manche Produkte sind [billig / günstig|günstig], aber andere sind sehr [teuer|teuer]."
+                "Heute ist Samstag und ich gehe für die ganze Familie einkaufen.",
+                "Zuerst gehe ich in die [die Bäckerei, -en|Bäckerei] und kaufe frisches Brot.",
+                "Danach fahre ich zum großen [der Supermarkt, -̈e|Supermarkt] und nehme einen [der Einkaufswagen, -|Einkaufswagen].",
+                "Auf dem bunten [der Markt, -̈e|Markt] kaufe ich noch süße Äpfel und Tomaten."
+              ],
+              [
+                "Manche Bio-Produkte sind etwas [teuer|teuer], aber andere Lebensmittel sind sehr [billig / günstig|günstig].",
+                "An der [die Kasse, -n|Kasse] lege ich alle Waren auf das Band.",
+                "Ich möchte mit Karte [bezahlen|bezahlen], aber ich habe auch etwas [das Geld|Geld] dabei.",
+                "Die Kassiererin gibt mir die [die Quittung, -en|Quittung], und ich packe alles in meine [die Tasche, -n|Tasche]."
               ]
             ]
           },
@@ -199,62 +291,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Einkaufen im Alltag",
-              "intro": "Grundwortschatz zum Thema Einkaufen (A1).",
+              "title": "Einkaufen für das Wochenende",
+              "intro": "Einfache Sätze über den Lebensmitteleinkauf und das Bezahlen (A1).",
               "paragraphs": [
                 [
-                  "Ich gehe in den großen [der Supermarkt, -̈e|Supermarkt], um Lebensmittel zu kaufen.",
-                  "Frisches Brot kaufe ich morgens in der [die Bäckerei, -en|Bäckerei].",
-                  "Am Samstag besuche ich den bunten [der Markt, -̈e|Markt] auf dem Platz.",
-                  "Ich bezahle an der Kasse mit [das Geld|Geld].",
-                  "Manche Produkte sind [billig / günstig|günstig], aber andere sind sehr [teuer|teuer]."
+                  "Heute ist Samstag und ich gehe für die ganze Familie einkaufen.",
+                  "Zuerst gehe ich in die [die Bäckerei, -en|Bäckerei] und kaufe frisches Brot.",
+                  "Danach fahre ich zum großen [der Supermarkt, -̈e|Supermarkt] und nehme einen [der Einkaufswagen, -|Einkaufswagen].",
+                  "Auf dem bunten [der Markt, -̈e|Markt] kaufe ich noch süße Äpfel und Tomaten."
+                ],
+                [
+                  "Manche Bio-Produkte sind etwas [teuer|teuer], aber andere Lebensmittel sind sehr [billig / günstig|günstig].",
+                  "An der [die Kasse, -n|Kasse] lege ich alle Waren auf das Band.",
+                  "Ich möchte mit Karte [bezahlen|bezahlen], aber ich habe auch etwas [das Geld|Geld] dabei.",
+                  "Die Kassiererin gibt mir die [die Quittung, -en|Quittung], und ich packe alles in meine [die Tasche, -n|Tasche]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Angebote vergleichen",
-              "intro": "Preise und Geschäfte im Alltag (A2).",
+              "title": "Ein gelungener Einkaufsbummel in der Stadt",
+              "intro": "Praktische Tipps beim Einkaufen und bewusster Umgang mit Geld (A2).",
               "paragraphs": [
                 [
-                  "In der Fußgängerzone gibt es viele schöne [das Geschäft, -e|Geschäfte].",
-                  "In der [die Bäckerei, -en|Bäckerei] duftet es herrlich nach warmen Brötchen.",
-                  "Im [der Supermarkt, -̈e|Supermarkt] vergleiche ich die Preise, um [das Geld|Geld] zu sparen.",
-                  "Frisches Gemüse auf dem [der Markt, -̈e|Markt] ist oft von besserer Qualität als die [billig / günstig|billige] Ware im Discounter."
+                  "Wer in Deutschland einkaufen geht, sollte bedenken, dass die meisten Geschäfte am Sonntag geschlossen haben.",
+                  "Deshalb erledige ich meine Einkäufe gern am Freitagnachmittag, wenn der [der Supermarkt, -̈e|Supermarkt] noch nicht überfüllt ist.",
+                  "Ich schnappe mir einen [der Einkaufswagen, -|Einkaufswagen] und arbeite meinen Einkaufszettel Punkt für Punkt ab.",
+                  "Für spezielle Delikatessen besuche ich anschließend ein kleines, feines [das Geschäft, -e|Geschäft] in der Fußgängerzone."
+                ],
+                [
+                  "„Kann ich hier auch kontaktlos mit dem Smartphone [bezahlen|bezahlen]?“, frage ich den Verkäufer freundlich.",
+                  "„Selbstverständlich! Wir akzeptieren sowohl Karte als auch Bargeld“, antwortet er mir mit einem Nicken.",
+                  "Ich kontrolliere kurz die gedruckte [die Quittung, -en|Quittung], damit keine Fehler bei den Preisen vorliegen.",
+                  "Zufrieden verstaue ich alle Einkäufe in einer robusten [die Tasche, -n|Tasche], froh darüber, dass einige Produkte heute besonders [billig / günstig|günstig] waren."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Preisbewusstes und nachhaltiges Einkaufen",
-              "intro": "Einkaufsplanung und Konsumverhalten (B1).",
+              "title": "Konsumgewohnheiten im Wandel: Zwischen Discounter und Fachgeschäft",
+              "intro": "Wie sich Einkaufsverhalten, Preisbewusstsein und Nachhaltigkeit entwickeln (B1).",
               "paragraphs": [
                 [
-                  "Ein durchdachter Einkaufszettel hilft dabei, im [der Supermarkt, -̈e|Supermarkt] keine unnötigen Dinge zu kaufen.",
-                  "Wer lokale [das Geschäft, -e|Geschäfte] und inhabergeführte [die Bäckerei, -en|Bäckereien] unterstützt, stärkt die Wirtschaft im eigenen Viertel.",
-                  "Auf dem regionalen [der Markt, -̈e|Markt] bekommt man saisonale Produkte direkt vom Erzeuger, was oft gar nicht [teuer|teurer] als im Supermarkt ist.",
-                  "Ein bewusster Umgang mit [das Geld|Geld] ermöglicht es, auf [billig / günstig|günstige] Sonderangebote zurückzugreifen, ohne auf Qualität zu verzichten."
+                  "Das Konsumverhalten der mitteleuropäischen Bevölkerung spiegelt ein faszinierendes Spannungsfeld zwischen Sparsamkeit und Qualitätsanspruch wider.",
+                  "Einerseits erfreuen sich große [der Supermarkt, -̈e|Supermärkte] und Discounter enormer Beliebtheit, weil sie Produkte des täglichen Bedarfs erstaunlich [billig / günstig|günstig] anbieten.",
+                  "Andererseits schätzen Kunden für besondere Anlässe das inhabergeführte [das Geschäft, -e|Geschäft] oder die traditionelle [die Bäckerei, -en|Bäckerei], wo Handwerkskunst zelebriert wird.",
+                  "Auf dem lokalen [der Markt, -̈e|Markt] wiederum steht der direkte Kontakt zu regionalen Erzeugern im Vordergrund, selbst wenn die Ware dort etwas [teuer|teurer] ausfällt."
+                ],
+                [
+                  "An der modernen [die Kasse, -n|Kasse] haben Self-Scanning-Systeme und digitale Wallets den klassischen Bezahlvorgang mit [das Geld|Geld] revolutioniert.",
+                  "Immer mehr Verbraucher verzichten bewusst auf Plastiktüten und bringen stattdessen ihre eigene waschbare [die Tasche, -n|Tasche] zum Großeinkauf mit.",
+                  "Die digitale [die Quittung, -en|Quittung] per App reduziert den Papierverbrauch und ermöglicht eine transparente Buchführung über das Monatsbudget.",
+                  "So verbindet modernes Einkaufen wirtschaftliche Vernunft mit ökologischem Weitblick."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Konsumsoziologie und Strukturwandel des Einzelhandels",
-              "intro": "Analyse des Wandels vom stationären Handel zum E-Commerce (B2).",
+              "title": "Konsumökonomie, Plattformkapitalismus und der stationäre Einzelhandel",
+              "intro": "Kritische Analyse von Konsumkultur, Verdrängungswettbewerb und nachhaltigem Konsum (B2).",
               "paragraphs": [
                 [
-                  "Der stationäre Einzelhandel steht im Zuge der Digitalisierung vor tiefgreifenden ökonomischen Umbrüchen.",
-                  "Traditionsreiche Fach-[das Geschäft, -e|Geschäfte] müssen ihr Profil schärfen, um gegen großflächige [der Supermarkt, -̈e|Supermärkte] und Online-Plattformen zu bestehen.",
-                  "Verbraucher reflektieren zunehmend die Wertschöpfung hinter scheinbar [billig / günstig|billigen] Preisen und sind bereit, für ethisch erzeugte Produkte angemessenes [das Geld|Geld] zu investieren."
+                  "Der stationäre Einzelhandel erfährt durch den rasanten Vormarsch des E-Commerce einen tiefgreifenden Strukturwandel, der das traditionelle [das Geschäft, -e|Geschäft] existenziell bedroht.",
+                  "Innenstädte laufen Gefahr, zu monofunktionalen Konsumzonen zu veröden, wenn inhabergeführte Manufakturen wie die handwerkliche [die Bäckerei, -en|Bäckerei] durch austauschbare Filialisten verdrängt werden.",
+                  "Während die Discounter-Logik Produkte permanent [billig / günstig|günstig] kalkuliert, werden die ökologischen und sozialen Folgekosten der Massenproduktion systematisch externalisiert.",
+                  "Demgegenüber reüssiert der partizipative [der Markt, -̈e|Markt] als Gegenentwurf, der transparente Herkunft über den reinen Preiskampf um [das Geld|Geld] stellt."
+                ],
+                [
+                  "Die Digitalisierung des Bezahlens an der automatisierten [die Kasse, -n|Kasse] mittels RFID und Algorithmen optimiert den Durchsatz, entindividualisiert jedoch den Dienstleistungsakt.",
+                  "Wer heute bewusst [bezahlen|bezahlt], wägt zunehmend zwischen Bequemlichkeit und ethischer Verantwortung ab, da selbst scheinbar banale Handlungen wie der Griff zum [der Einkaufswagen, -|Einkaufswagen] politische Dimensionen berühren.",
+                  "Die Wertschätzung für langlebige Güter, die zwar [teuer|teurer] in der Anschaffung sind, symbolisiert eine Abkehr von der Wegwerfgesellschaft hin zu suffizienten Konsummustern."
                 ]
               ]
             }
-          }
+          },
+          "description": "Einzelhandel, Supermärkte, Wochenmärkte, Bezahlvorgänge und Konsumgewohnheiten.",
+          "details": "Geschäfte, Supermarkt, Kasse und Bezahlvorgänge (A1–B2)",
+          "arabicDescription": "التسوق والمتاجر وعمليات الدفع في ألمانيا. يغطي هذا الدرس السوبرماركت والمخابز والأسواق، ومفردات الأسعار (غالي، رخيص، مناسب)، وطرق الدفع (نقداً أو بالبطاقة المصرفية)، وقوانين إغلاق المتاجر يوم الأحد في ألمانيا وعادات حمل حقائب التسوق الصديقة للبيئة."
         }
       ]
     }
-  ]
+  ],
+  "slug": "in-der-stadt"
 }

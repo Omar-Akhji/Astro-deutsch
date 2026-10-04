@@ -14,45 +14,94 @@
           "words": [
             {
               "german": "Hilfe!",
-              "arabic": "النجدة! / ساعدوني!",
+              "arabic": "النجدة! / المساعدة!",
               "english": "Help!",
-              "example": "Hilfe! Ich brauche einen Arzt."
+              "example": "„Hilfe! Bitte rufen Sie schnell einen Krankenwagen!“, rief der Passant laut."
             },
             {
               "german": "der Notfall, -̈e",
-              "arabic": "حالة طوارئ",
+              "arabic": "الحالة الطارئة / الطوارئ",
               "english": "emergency",
-              "example": "Das ist ein Notfall."
+              "example": "In einem lebensbedrohlichen Notfall zählt jede einzelne Minute."
             },
             {
               "german": "die Feuerwehr",
-              "arabic": "المطافئ / الإطفاء",
-              "english": "fire department",
-              "example": "Wir müssen die Feuerwehr rufen."
+              "arabic": "رجال الإطفاء / المطافئ",
+              "english": "fire department, fire brigade",
+              "example": "Die Feuerwehr rückte mit Blaulicht und Sirene an, um den Brand zu löschen."
             },
             {
               "german": "der Unfall, -̈e",
               "arabic": "الحادث",
               "english": "accident",
-              "example": "Es gab einen kleinen Unfall."
+              "example": "An der Kreuzung ereignete sich ein Verkehrsunfall zwischen zwei Fahrzeugen."
             },
             {
               "german": "der Krankenwagen, -",
               "arabic": "سيارة الإسعاف",
               "english": "ambulance",
-              "example": "Rufen Sie schnell einen Krankenwagen!"
+              "example": "Die Sanitäter trugen den Verletzten vorsichtig in den Krankenwagen."
+            },
+            {
+              "german": "die Polizei",
+              "arabic": "الشرطة",
+              "english": "police",
+              "example": "Die Polizei sperrte die Unfallstelle ab und nahm das Protokoll auf."
+            },
+            {
+              "german": "der Notarzt, -̈e",
+              "arabic": "طبيب الطوارئ / طبيب الإسعاف",
+              "english": "emergency doctor",
+              "example": "Der Notarzt leitete sofort am Unfallort lebensrettende Maßnahmen ein."
+            },
+            {
+              "german": "das Krankenhaus, -̈er",
+              "arabic": "المستشفى",
+              "english": "hospital",
+              "example": "Der Patient wurde zur weiteren Operation ins nächste Krankenhaus transportiert."
+            },
+            {
+              "german": "die Notaufnahme, -n",
+              "arabic": "قسم الطوارئ / الإسعاف بالمستشفى",
+              "english": "emergency room (ER)",
+              "example": "In der Notaufnahme kümmern sich Ärzte und Pfleger um die Erstversorgung."
+            },
+            {
+              "german": "die Erste Hilfe",
+              "arabic": "الإسعافات الأولية",
+              "english": "first aid",
+              "example": "Jeder Führerscheininhaber in Deutschland muss einen Kurs in Erster Hilfe absolvieren."
+            },
+            {
+              "german": "die Gefahr, -en",
+              "arabic": "الخطر",
+              "english": "danger, hazard",
+              "example": "Wegen ausgelaufenen Benzins bestand akute Gefahr einer Explosion."
+            },
+            {
+              "german": "retten",
+              "arabic": "ينقذ",
+              "english": "to rescue, save",
+              "example": "Den mutigen Rettern gelang es, das Kind aus dem brennenden Gebäude zu retten."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Im Notfall helfen",
-            "intro": "Grundwortschatz für Notsituationen (A1).",
+            "title": "Schnelle Hilfe im Notfall",
+            "intro": "Einfache Sätze über Notrufnummern, Rettung und Erste Hilfe (A1).",
             "paragraphs": [
               [
-                "Wenn Gefahr droht, rufen die Menschen laut: [Hilfe!|„Hilfe!“].",
-                "Bei einem [der Notfall, -̈e|Notfall] wählen wir sofort die Nummer 112.",
-                "Der schnelle [der Krankenwagen, -|Krankenwagen] bringt verletzte Personen ins Spital.",
-                "Die mutige [die Feuerwehr|Feuerwehr] löscht gefährliche Brände."
+                "Ein [der Notfall, -̈e|Notfall] kann plötzlich passieren.",
+                "Auf der Straße gibt es einen schweren [der Unfall, -̈e|Unfall] mit zwei Autos.",
+                "Jemand ruft laut: „[Hilfe!|Hilfe!] Bitte wählen Sie sofort die Notrufnummer 112!“",
+                "Ich bleibe ruhig, nehme mein Handy und rufe die Rettungskräfte an."
+              ],
+              [
+                "In wenigen Minuten kommt ein schneller [der Krankenwagen, -|Krankenwagen] mit lautem Blaulicht.",
+                "Auch die [die Feuerwehr|Feuerwehr] und die [die Polizei|Polizei] sind sofort vor Ort.",
+                "Ein Helfer leistet sofort [die Erste Hilfe|Erste Hilfe] am Straßenrand.",
+                "Die mutigen Sanitäter [retten|retten] den verletzten Fahrer und bringen ihn ins nächste [das Krankenhaus, -̈er|Krankenhaus]."
               ]
             ]
           },
@@ -60,61 +109,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Im Notfall helfen",
-              "intro": "Grundwortschatz für Notsituationen (A1).",
+              "title": "Schnelle Hilfe im Notfall",
+              "intro": "Einfache Sätze über Notrufnummern, Rettung und Erste Hilfe (A1).",
               "paragraphs": [
                 [
-                  "Wenn Gefahr droht, rufen die Menschen laut: [Hilfe!|„Hilfe!“].",
-                  "Bei einem [der Notfall, -̈e|Notfall] wählen wir sofort die Nummer 112.",
-                  "Der schnelle [der Krankenwagen, -|Krankenwagen] bringt verletzte Personen ins Spital.",
-                  "Die mutige [die Feuerwehr|Feuerwehr] löscht gefährliche Brände."
+                  "Ein [der Notfall, -̈e|Notfall] kann plötzlich passieren.",
+                  "Auf der Straße gibt es einen schweren [der Unfall, -̈e|Unfall] mit zwei Autos.",
+                  "Jemand ruft laut: „[Hilfe!|Hilfe!] Bitte wählen Sie sofort die Notrufnummer 112!“",
+                  "Ich bleibe ruhig, nehme mein Handy und rufe die Rettungskräfte an."
+                ],
+                [
+                  "In wenigen Minuten kommt ein schneller [der Krankenwagen, -|Krankenwagen] mit lautem Blaulicht.",
+                  "Auch die [die Feuerwehr|Feuerwehr] und die [die Polizei|Polizei] sind sofort vor Ort.",
+                  "Ein Helfer leistet sofort [die Erste Hilfe|Erste Hilfe] am Straßenrand.",
+                  "Die mutigen Sanitäter [retten|retten] den verletzten Fahrer und bringen ihn ins nächste [das Krankenhaus, -̈er|Krankenhaus]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Ein Unfall auf der Kreuzung",
-              "intro": "Schnelle Reaktion bei Verkehrsunfällen (A2).",
+              "title": "Das richtige Verhalten am Unfallort",
+              "intro": "Rettungskette, 5-W-Fragen und Übergabe an den Notarzt (A2).",
               "paragraphs": [
                 [
-                  "Gestern gab es auf der Hauptstraße einen schweren [der Unfall, -̈e|Unfall].",
-                  "Zwei Autos sind zusammengestoßen, und die Fahrer brauchten sofort Hilfe.",
-                  "Binnen weniger Minuten traf der [der Krankenwagen, -|Krankenwagen] mit Sanitätern ein.",
-                  "Auch [die Feuerwehr|die Feuerwehr] sicherte die Unfallstelle schnell ab."
+                  "Gestern Nachmittag wurde ich Zeuge von einem gefährlichen [der Unfall, -̈e|Unfall] auf der Landstraße.",
+                  "Sofort schaltete ich das Warnblinklicht ein, sicherte die Unfallstelle mit dem Warndreieck ab und leistete [die Erste Hilfe|Erste Hilfe].",
+                  "Es bestand große [die Gefahr, -en|Gefahr], da dichter Rauch aus dem Motorraum aufstieg.",
+                  "Ich wählte die europäische Notrufnummer 112 und meldete der Leitstelle präzise: Wo es passierte und wie viele Personen verletzt waren."
+                ],
+                [
+                  "„Bleiben Sie am Apparat, der [der Krankenwagen, -|Krankenwagen] und die [die Feuerwehr|Feuerwehr] sind bereits unterwegs!“, wies mich der Disponent an.",
+                  "Kurz darauf traf die [die Polizei|Polizei] ein und sperrte beide Fahrspuren ab.",
+                  "Der erfahrene [der Notarzt, -̈e|Notarzt] stabilisierte den Kreislauf des verletzten Fahrers noch im Rettungswagen.",
+                  "Anschließend wurde der Patient zur intensivmedizinischen Überwachung in die [die Notaufnahme, -n|Notaufnahme] gefahren."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Die Rettungskette und Erste Hilfe",
-              "intro": "Verhalten im Ernstfall und wichtige Notruf-Angaben (B1).",
+              "title": "Die Rettungskette: Zahnräder im Wettlauf gegen die Zeit",
+              "intro": "Wie professionelle Rettungskräfte und Zivilcourage zusammenwirken (B1).",
               "paragraphs": [
                 [
-                  "Im Falle eines schweren [der Notfall, -̈e|Notfalls] kommt es auf jede einzelne Sekunde an.",
-                  "Beim Absetzen des Notrufs muss man ruhig bleiben und erklären, wo der [der Unfall, -̈e|Unfall] passiert ist und wie viele Verletzte Hilfe benötigen.",
-                  "Während die Disponenten den [der Krankenwagen, -|Krankenwagen] alarmieren, können Ersthelfer bereits lebensrettende Sofortmaßnahmen durchführen.",
-                  "Gleichzeitig kümmert sich [die Feuerwehr|die Feuerwehr] um die Bergung eingeklemmter Insassen."
+                  "In einer akuten Gefahrenlage entscheidet das reibungslose Ineinandergreifen der Rettungskette über Leben und Tod.",
+                  "Ersthelfer sind das erste und wichtigste Glied dieser Kette: Wer beherzt [die Erste Hilfe|Erste Hilfe] leistet und lebensrettende Sofortmaßnahmen einleitet, überbrückt das therapiefreie Intervall.",
+                  "Der telefonische Notruf an die Leitstelle setzt binnen Sekunden spezialisierte Einsatzkräfte in Marsch.",
+                  "Während die technische Einheit der [die Feuerwehr|Feuerwehr] eingeklemmte Personen aus Wracks befreit, bannt sie zeitgleich jede explosive [die Gefahr, -en|Gefahr]."
+                ],
+                [
+                  "Parallel dazu übernimmt ein hochqualifizierter [der Notarzt, -̈e|Notarzt] die präklinische Notfallmedizin direkt am Unglücksort.",
+                  "Im modernen [der Krankenwagen, -|Krankenwagen] wird der Verunfallte beatmet und medikamentös versorgt, während die [die Polizei|Polizei] den Rettungskorridor freihält.",
+                  "Die telefonische Voranmeldung in der [die Notaufnahme, -n|Notaufnahme] stellt sicher, dass das Traumateam im [das Krankenhaus, -̈er|Krankenhaus] lückenlos vorbereitet bereitsteht.",
+                  "Dank dieses eingespielten Systems gelingt es tagtäglich, Tausende Menschenleben erfolgreich zu [retten|retten]."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Notfalllogistik und integrierte Leitstellen",
-              "intro": "Analyse von Krisenintervention und Rettungsinfrastruktur (B2).",
+              "title": "Katastrophenmedizin, Risikomanagement und Notfallresilienz",
+              "intro": "Systemtheoretische und organisationssoziologische Analyse integrierter Gefahrenabwehr (B2).",
               "paragraphs": [
                 [
-                  "Die Effizienz des Rettungswesens basiert auf einer lückenlosen Verzahnung von Rettungsleitstelle, Notarztversorgung und Spezialkliniken.",
-                  "Bei einem unübersichtlichen [der Notfall, -̈e|Notfall] koordinieren Einsatzleiter das simultane Ausrücken von [die Feuerwehr|Feuerwehr] und mehreren [der Krankenwagen, -|Krankenwagen].",
-                  "Eine rasche Absicherung der Unfallstelle bei einem schweren [der Unfall, -̈e|Unfall] verhindert folgenschwere Kettenreaktionen im dichten Straßenverkehr."
+                  "Die Bewältigung von Großschadenslagen und komplexen MANV-Szenarien (Massenanfall von Verletzten) stellt die ultimativen Anforderungen an die Krisenfestigkeit einer Gesellschaft.",
+                  "Ein schwerer [der Unfall, -̈e|Unfall] auf Hochgeschwindigkeitsstrecken erfordert die synchrone Triage durch den leitenden [der Notarzt, -̈e|Notarzt] unter extremen zeitlichen und psychologischen Restriktionen.",
+                  "Interdisziplinäre Einsatzstäbe aus [die Feuerwehr|Feuerwehr], THW und [die Polizei|Polizei] operieren nach standardisierten Stabsdienstordnungen, um unübersichtliche Gefahrenlagen zu deeskalieren.",
+                  "Die systemische [die Gefahr, -en|Gefahr] von Sekundärschäden zwingt Einsatzleiter zu rigorosem Ressourcenmanagement im Angesicht akut bedrohter Menschenleben."
+                ],
+                [
+                  "Auf zivilgesellschaftlicher Ebene verdeutlicht jeder dramatische [der Notfall, -̈e|Notfall], dass staatliche Rettungssysteme ohne zivilcouragierte Laienhilfe an ihre Kapazitätsgrenzen stoßen.",
+                  "Die Implementierung digitaler Ersthelfer-Alarmierungssysteme via Smartphone revolutioniert die Rettungskette, bevor der reguläre [der Krankenwagen, -|Krankenwagen] eintrifft.",
+                  "In der klinischen Endstufe fungiert die interdisziplinäre [die Notaufnahme, -n|Notaufnahme] in einem zertifizierten überregionalen [das Krankenhaus, -̈er|Krankenhaus] als Hochleistungszentrum moderner Schockraumversorgung, dessen Mission es bleibt, menschliche Existenz gegen das Unvorhersehbare zu [retten|retten]."
                 ]
               ]
             }
-          }
+          },
+          "description": "Notrufnummern (112 und 110), Erste Hilfe, Rettungsdienste, Unfallmeldung und Verhalten in Gefahrensituationen.",
+          "details": "Notrufnummern, Erste Hilfe und Rettungsdienste (A1–B2)",
+          "arabicDescription": "أرقام الطوارئ والإسعاف والإنقاذ والإسعافات الأولية في ألمانيا. يتناول هذا الدرس أرقام الطوارئ الأوروبية الموحدة (112 للإسعاف والإطفاء، 110 للشرطة)، وقواعد الإبلاغ الخمس (5 W-Fragen)، والإسعافات الأولية (Erste Hilfe) الإلزامية قانونياً في ألمانيا لإنقاذ الأرواح في الحوادث."
         }
       ]
     }
-  ]
+  ],
+  "slug": "notfaelle"
 }

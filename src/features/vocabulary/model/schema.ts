@@ -62,6 +62,7 @@ export const vocabularySectionSchema = z.object({
 
 export const vocabularyCollectionSchema = z.object({
   id: z.number(),
+  slug: z.string().optional(),
   german: z.string(),
   category: z.string(),
   description: z.string().optional(),

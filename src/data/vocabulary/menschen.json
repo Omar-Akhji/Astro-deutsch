@@ -444,15 +444,16 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Freunde fürs Leben",
-              "intro": "Grundwortschatz zu Freundschaft und gegenseitigem Vertrauen (A1).",
+              "title": "Gute Freunde im Alltag",
+              "intro": "Grundwortschatz zu Freundschaft, Unterstützung und gegenseitigem Vertrauen (A1).",
               "paragraphs": [
                 [
-                  "Leon und Maya sind seit der Schulzeit beste Freunde.",
-                  "Ihre [die Freundschaft|Freundschaft] ist sehr eng.",
-                  "Sie sprechen über ihre Gefühle und [vertrauen|vertrauen] einander.",
-                  "Leon ist ein treuer [der Kumpel|Kumpel] und hilft Maya immer gern.",
-                  "An der Universität haben sie auch viele neue [der/die Bekannte|Bekannte] kennengelernt."
+                  "Leon und Maya sind seit vielen Jahren beste Freunde.",
+                  "Ihre [die Freundschaft|Freundschaft] ist sehr eng und wichtig für beide.",
+                  "Leon ist ein treuer [der Kumpel|Kumpel] und hilft immer, wenn jemand Hilfe braucht.",
+                  "Sie sprechen offen über ihre Gefühle und [vertrauen|vertrauen] einander in jeder Situation.",
+                  "An der Universität haben sie auch viele neue [der/die Bekannte|Bekannte] kennengelernt.",
+                  "Echte Freunde sind ein großes und wertvolles Geschenk im Leben."
                 ]
               ]
             },
@@ -460,27 +461,40 @@
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
               "title": "Ein Abend im Freundeskreis",
-              "intro": "Gespräche über Beziehungen und Alltagserlebnisse (A2).",
+              "intro": "Gespräche über Alltagserlebnisse, Beziehungsfragen und gemeinsame Kompromisse (A2).",
               "paragraphs": [
                 [
-                  "Gestern haben sich Leon und Maya im Café getroffen.",
-                  "Sie führten ein langes Gespräch über die [die Beziehung|Beziehung] zwischen Menschen.",
-                  "Wenn es einmal zu einem kleinen [der Streit|Streit] kommt, finden sie schnell einen Kompromiss.",
-                  "Sie [sich verstehen|verstehen sich] wunderbar und schätzen den gegenseitigen Austausch."
+                  "Gestern Abend haben sich Leon und Maya in einem gemütlichen Café in der Stadt getroffen.",
+                  "Sie führten ein langes Gespräch über die [die Beziehung|Beziehung] zwischen Freunden und Lebenspartnern.",
+                  "„Wir [sich verstehen|verstehen uns] einfach ohne viele Worte“, lachte Maya beim Kaffee.",
+                  "Wenn es einmal zu einem kleinen [der Streit|Streit] kommt, finden sie schnell einen fairen Kompromiss.",
+                  "Beide hören immer aufmerksam zu und respektieren die Meinung des anderen."
+                ],
+                [
+                  "Später kam noch ein alter [der Kumpel|Kumpel] aus ihrer Schulzeit vorbei.",
+                  "Gemeinsam schauten sie alte Fotos an und erinnerten sich an lustige Schulerlebnisse.",
+                  "Solche Abende vertiefen das gegenseitige [vertrauen|Vertrauen] noch weiter.",
+                  "Maya sagte zum Abschied: „Ich bin froh, dass wir so gute Freunde geblieben sind.“"
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Partnerschaft und Vertrauen",
-              "intro": "Ausführliche Betrachtung von Liebe und Partnerschaft (B1).",
+              "title": "Partnerschaft, Liebe und Zusammenleben",
+              "intro": "Ausführliche Betrachtung von Liebe, Partnerschaft und gemeinsamen Lebensentscheidungen (B1).",
               "paragraphs": [
                 [
-                  "Nachdem sich Sophie und Jonas kennenlernten, hat es nicht lange gedauert, bis sie [sich verlieben|sich ineinander verliebten].",
-                  "Für Jonas ist Sophie die perfekte [der Partner / die Partnerin|Partnerin], weil sie gemeinsame Werte teilen.",
-                  "In ihrer Beziehung spüren beide eine tiefe [die Zuneigung|Zuneigung] und gegenseitigen Respekt.",
-                  "Weil alles so harmonisch verlief, haben sie beschlossen, in eine gemeinsame Wohnung [zusammenziehen|zusammenzuziehen]."
+                  "Als Sophie und Jonas sich vor zwei Jahren kennenlernten, hat es nicht lange gedauert, bis sie [sich verlieben|sich ineinander verliebten].",
+                  "Für Jonas ist Sophie die ideale [der Partner / die Partnerin|Partnerin], weil sie gemeinsame Werte und Zukunftspläne teilen.",
+                  "In ihrer harmonischen [die Beziehung|Beziehung] spüren beide eine aufrichtige [die Zuneigung|Zuneigung] und tiefen gegenseitigen Respekt.",
+                  "Weil alles so positiv verlief, haben sie vor kurzem beschlossen, in eine gemeinsame Wohnung [zusammenziehen|zusammenzuziehen]."
+                ],
+                [
+                  "Natürlich bringt das Zusammenleben im Alltag auch neue Verantwortungen mit sich.",
+                  "Wenn Meinungsverschiedenheiten über den Haushalt auftreten, vermeiden sie verletzenden [der Streit|Streit] und suchen das ruhige Gespräch.",
+                  "Ihre [die Liebe|Liebe] basiert auf gegenseitiger Rücksichtnahme und der Bereitschaft, Kompromisse einzugehen.",
+                  "Eine langfristig gelingende Partnerschaft verlangt von beiden Seiten ständige Aufmerksamkeit und ehrlichen Austausch."
                 ]
               ]
             },
@@ -488,16 +502,23 @@
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
               "title": "Die Psychologie zwischenmenschlicher Bindungen",
-              "intro": "Anspruchsvolle Analyse von Bindungsmustern und Konfliktkultur (B2).",
+              "intro": "Anspruchsvolle Analyse von Bindungsmustern, Autonomie und Konfliktkultur (B2).",
               "paragraphs": [
                 [
-                  "Zwischenmenschliche Beziehungen bewegen sich im Spannungsfeld zwischen individueller Autonomie und emotionaler Nähe.",
-                  "Eine tragfähige [die Beziehung|Beziehung] erfordert kontinuierliche Reflexionsbereitschaft sowie eine konstruktive Bewältigung von jedem aufkeimenden [der Streit|Streit].",
-                  "Wahre [die Zuneigung|Zuneigung] und tief empfundene [die Liebe|Liebe] erweisen sich vor allem in Krisenzeiten, in denen gegenseitiges Verständnis den Ausschlag gibt."
+                  "Zwischenmenschliche Beziehungen bewegen sich in einem kontinuierlichen Spannungsfeld zwischen individueller Autonomie und emotionaler Verbundenheit.",
+                  "Eine stabile [die Beziehung|Beziehung] verlangt von beiden Partnern ein hohes Maß an Selbstreflexion sowie die Fähigkeit, in Konfliktsituationen aufkeimenden [der Streit|Streit] konstruktiv zu deeskalieren.",
+                  "Echtes [vertrauen|Vertrauen] entsteht nicht spontan, sondern wächst durch kontinuierliche Verlässlichkeit und geteilte Verantwortung im Alltag."
+                ],
+                [
+                  "Während flüchtige [der/die Bekannte|Bekannte] im Laufe des Lebens häufig wechseln, zeichnet sich eine tief verwurzelte [die Freundschaft|Freundschaft] durch emotionale Beständigkeit über räumliche Distanzen hinweg aus.",
+                  "Letztlich bilden aufrichtige [die Zuneigung|Zuneigung] und gelebte [die Liebe|Liebe] das tragfähige Fundament, auf dem Menschen gemeinsam Krisen überstehen und aneinander reifen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Wichtige Ausdrücke rund um Partnerschaft, Freundschaft, Vertrauen und das Lösen von Konflikten im Alltag.",
+          "details": "Freundschaft, Partnerschaft und zwischenmenschliche Beziehungen (A1–B2)",
+          "arabicDescription": "المفردات الأساسية والتعابير المتقدمة حول العلاقات، الصداقة، الثقة والتعامل مع الخلافات في الحياة اليومية."
         },
         {
           "id": "lebensphasen",
@@ -594,60 +615,81 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Die Stationen des Lebens",
-              "intro": "Grundwortschatz zu den Lebensphasen vom Baby bis ins Alter (A1).",
+              "title": "Stationen des Lebens",
+              "intro": "Einfache Sätze über die verschiedenen Lebensphasen des Menschen (A1).",
               "paragraphs": [
                 [
-                  "Jeder Mensch durchläuft verschiedene Stationen im Leben.",
-                  "Zuerst ist man ein kleines [das Baby|Baby] oder ein neugeborener [der Säugling|Säugling].",
-                  "Danach wird man ein neugieriges [das Kind|Kind] und spielt viel.",
-                  "Später ist man ein [der Jugendliche / die Jugendliche|Jugendlicher] und geht zur Schule.",
-                  "Als [der Erwachsene / die Erwachsene|Erwachsener] arbeitet man jeden Tag."
+                  "Das Leben eines Menschen beginnt mit der wunderbaren [die Geburt|Geburt].",
+                  "Ein kleines [das Baby|Baby] schläft sehr viel und braucht liebevolle Fürsorge.",
+                  "Schon bald wird aus dem Säugling ein fröhliches [das Kind|Kind], das die Welt neugierig entdeckt.",
+                  "Später geht der [der Jugendliche / die Jugendliche|Jugendliche] zur Schule und verbringt viel Zeit mit Freunden.",
+                  "Schließlich wird man ein selbstständiger [der Erwachsene / die Erwachsene|Erwachsener] mit einem festen Beruf.",
+                  "Jede Lebensphase bringt eigene und unvergessliche Momente mit sich."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Erinnerungen an das Aufwachsen",
-              "intro": "Erfahrungen in der Kindheit und Jugendzeit (A2).",
+              "title": "Erinnerungen an die Kindheit",
+              "intro": "Alltägliche Familienerzählungen über Aufwachsen, Lernen und Älterwerden (A2).",
               "paragraphs": [
                 [
-                  "Eine glückliche [die Kindheit|Kindheit] schenkt einem viele schöne Erinnerungen.",
-                  "In der [die Jugend|Jugend] verändert sich der Körper und man sucht seinen eigenen Weg.",
-                  "Die [die Pubertät|Pubertät] ist oft eine anstrengende, aber auch spannende Zeit für die ganze Familie.",
-                  "Gestern haben die Eltern Fotos von der [die Geburt|Geburt] ihres Sohnes angeschaut."
+                  "Anna erinnert sich gerne an ihre unbeschwerte [die Kindheit|Kindheit] auf dem Lande zurück.",
+                  "Sie spielte jeden Tag draußen in der Natur und lernte mit ihren Geschwistern spielerisch neue Dinge.",
+                  "In ihrer [die Jugend|Jugend] entdeckte sie ihre große Leidenschaft für Musik und Sportvereine.",
+                  "Die turbulente Phase der [die Pubertät|Pubertät] war nicht immer leicht, aber ihre Familie hatte stets viel Geduld.",
+                  "Sie hatte das Glück, in einer verständnisvollen Umgebung behütet aufzuwachsen."
+                ],
+                [
+                  "Heute ist Anna eine verantwortungsbewusste [der Erwachsene / die Erwachsene|Erwachsene] und arbeitet als Grundschullehrerin.",
+                  "Ihre geliebten Großeltern genießen inzwischen ihren wohlverdienten Lebensabend im hohen [das Alter|Alter].",
+                  "Gestern hat Annas Schwester mit großer Freude verkündet, dass eine glückliche [die Schwangerschaft|Schwangerschaft] ihr Leben bereichert.",
+                  "Die gesamte Familie freut sich schon riesig auf den neugeborenen [der Säugling|Säugling]."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Meilensteine und Familienplanung",
-              "intro": "Wichtige Lebensabschnitte, Schwangerschaft und Ruhestand (B1).",
+              "title": "Der stetige Wandel im Lebenslauf",
+              "intro": "Ausführliche Betrachtung über persönliche Entwicklung, berufliche Reife und Ruhestand (B1).",
               "paragraphs": [
                 [
-                  "Wenn ein Paar die Nachricht von einer [die Schwangerschaft|Schwangerschaft] erhält, beginnt ein völlig neues Kapitel.",
-                  "Die Vorbereitung auf die [die Geburt|Geburt] bringt viele Emotionen und praktische Veränderungen mit sich.",
-                  "Gleichzeitig blicken die Großeltern dankbar auf ihr erfülltes [das Alter|Alter] zurück.",
-                  "Seit mein Großvater in [die Rente|Rente] gegangen ist, genießt er seinen Garten und verbringt viel Zeit mit den Enkeln."
+                  "Jeder Lebensabschnitt stellt den Menschen vor neue entwicklungspsychologische Herausforderungen und Lernchancen.",
+                  "Während ein neugeborenes [das Baby|Baby] vollkommen auf den Schutz und die Zuneigung der Eltern angewiesen ist, strebt ein heranwachsender [der Jugendliche / die Jugendliche|Jugendlicher] nach Unabhängigkeit und eigener Identität.",
+                  "Die [die Jugend|Jugend] ist geprägt von weichenstellenden Entscheidungen, ersten beruflichen Orientierungen und dem Finden des eigenen Platzes in der Gesellschaft.",
+                  "Sobald junge Menschen ins Erwerbsleben eintreten, übernehmen sie als [der Erwachsene / die Erwachsene|Erwachsene] Verantwortung für Familie, Beruf und Gesellschaft."
+                ],
+                [
+                  "Jahrzehnte später, wenn die Phase intensiver Erwerbsarbeit endet und der Übergang in die [die Rente|Rente] ansteht, gewinnen andere Lebenswerte an Bedeutung.",
+                  "Im fortgeschrittenen [das Alter|Alter] blicken viele Menschen mit Gelassenheit und wertvoller Lebenserfahrung auf ihren Weg zurück.",
+                  "Von den ersten Momenten nach der [die Geburt|Geburt] bis zu den späten Jahren bleibt das menschliche Leben eine faszinierende Reise des stetigen Lernens."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Demografischer Wandel und biographische Dynamik",
-              "intro": "Soziologische Betrachtung von Altersstrukturen und Lebensverläufen (B2).",
+              "title": "Biografische Übergänge und Generationenvertrag",
+              "intro": "Anspruchsvolle soziologische Reflexion über Lebenslaufregime, demografischen Wandel und Altersbilder (B2).",
               "paragraphs": [
                 [
-                  "In modernen Industriegesellschaften verschieben sich die klassischen Grenzen biographischer Übergänge signifikant.",
-                  "Der Eintritt in die [die Rente|Rente] wird heute keineswegs mehr als Rückzug betrachtet, sondern eröffnet aktive Entfaltungsmöglichkeiten im [das Alter|Alter].",
-                  "Gleichzeitig erfordert die Begleitung junger Menschen durch die [die Pubertät|Pubertät] fundierte pädagogische Sensibilität seitens der [der Erwachsene / die Erwachsene|Erwachsenen]."
+                  "Die soziologische Analyse von Lebensphasen verdeutlicht eindrücklich, wie stark gesellschaftliche Rahmenbedingungen und ökonomische Strukturen den individuellen Lebenslauf normieren.",
+                  "Wurde die [die Kindheit|Kindheit] in früheren Jahrhunderten oft durch frühzeitige Einbindung in familiäre Arbeitsprozesse verkürzt, so kennzeichnet moderne Gesellschaften eine ausgedehnte Bildungsphase, die den Status als [der Erwachsene / die Erwachsene|Erwachsener] zeitlich nach hinten verschiebt.",
+                  "Insbesondere die [die Pubertät|Pubertät] fungiert dabei als krisenhafte Schwellenphase, in der bestehende Konventionen kritisch hinterfragt und persönliche Wertehierarchien neu verhandelt werden."
+                ],
+                [
+                  "Parallel dazu erzwingt der demografische Wandel eine fundamentale Neudefinition des Alters und des generationenübergreifenden Solidarvertrags.",
+                  "Der Eintritt in die [die Rente|Rente] markiert in der Gegenwart keinesfalls mehr den passiven Rückzug ins Private, sondern eröffnet aktive bürgerschaftliche Gestaltungsräume im höheren [das Alter|Alter].",
+                  "Ein produktiver Dialog zwischen den Generationen erweist sich somit als unverzichtbare Voraussetzung für sozialen Zusammenhalt und gesellschaftliche Innovationskraft."
                 ]
               ]
             }
-          }
+          },
+          "description": "Der menschliche Lebenslauf von der Geburt über Kindheit und Jugend bis hin zum Erwachsenenalter und Ruhestand.",
+          "details": "Kindheit, Jugend, Erwachsenenalter und Lebensabschnitte (A1–B2)",
+          "arabicDescription": "مراحل حياة الإنسان وتطورها من الولادة والطفولة والشباب حتى سن الرشد وسن التقاعد."
         },
         {
           "id": "begruessen",
@@ -743,59 +785,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Guten Tag im Alltag",
-              "intro": "Typische Begrüßungen und Abschiede für jeden Tag (A1).",
+              "title": "Höflich grüßen von früh bis spät",
+              "intro": "Die wichtigsten Begrüßungs- und Abschiedsformeln für den Alltag (A1).",
               "paragraphs": [
                 [
-                  "Am Morgen sagt man freundlich [Guten Morgen!|„Guten Morgen!“].",
-                  "Tagsüber begrüßen wir Freunde mit [Hallo!|„Hallo!“] oder Kollegen mit [Guten Tag!|„Guten Tag!“].",
-                  "Am Abend wünschen wir allen einen [Guten Abend!|„Guten Abend!“].",
-                  "Wenn wir gehen, sagen wir [Tschüss!|„Tschüss!“] oder formell [Auf Wiedersehen!|„Auf Wiedersehen!“]."
+                  "In Deutschland gehört eine freundliche Begrüßung zu jedem guten Gespräch.",
+                  "Am frühen Morgen sagt man zu Kollegen und Nachbarn: „[Guten Morgen!|Guten Morgen!]“.",
+                  "Im Laufe des Tages begrüßt man Menschen höflich mit „[Guten Tag!|Guten Tag!]“.",
+                  "Wenn man gute Freunde trifft, sagt man einfach: „[Hallo!|Hallo!], [Wie geht's?|wie geht's?]“.",
+                  "Am Abend verabschiedet man sich mit einem freundlichen „[Tschüss!|Tschüss!]“ oder „[Bis bald!|Bis bald!]“.",
+                  "Kurz vor dem Schlafengehen wünscht man der Familie von Herzen: „[Gute Nacht!|Gute Nacht!]“."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Höflichkeit im Gespräch",
-              "intro": "Gesprächseinstiege und Verabschiedungen im Alltag (A2).",
+              "title": "Begegnungen im Büro und auf der Straße",
+              "intro": "Höfliche Dialoge zwischen formeller Sie-Form und freundschaftlicher Du-Form (A2).",
               "paragraphs": [
                 [
-                  "Wenn man eine bekannte Person trifft, fragt man: [Wie geht's?|„Wie geht's?“].",
-                  "Im Büro fragt man höflich: [Wie geht es Ihnen?|„Wie geht es Ihnen?“].",
-                  "Vor dem Schlafengehen wünscht man der Familie eine [Gute Nacht!|„Gute Nacht!“].",
-                  "Beim Abschied freut man sich auf das nächste Treffen und sagt [Bis bald!|„Bis bald!“]."
+                  "Herr Weber betritt pünktlich um acht Uhr das Bürogebäude und grüßt am Empfang: „[Guten Morgen!|Guten Morgen!], [Wie geht es Ihnen?|wie geht es Ihnen?]“.",
+                  "Die Sekretärin antwortet freundlich: „Danke sehr gut, und Ihnen?“.",
+                  "Kurz darauf wird ihm ein neuer Kunde vorgestellt, und Herr Weber sagt mit einem Händedruck: „Sehr angenehm, [Freut mich!|freut mich]!“.",
+                  "Im beruflichen Umfeld ist die formelle Sie-Form ein wichtiges Zeichen von Respekt und Professionalität."
+                ],
+                [
+                  "Nach Feierabend trifft Herr Weber zufällig seinen Nachbarn im Supermarkt.",
+                  "„[Hallo!|Hallo] Jonas! Wie schön, dich nach der Arbeit noch zu treffen!“, sagt er fröhlich.",
+                  "Beim Verlassen des Geschäfts verabschiedet er sich von den Mitarbeitern mit „[Auf Wiedersehen!|Auf Wiedersehen!]“ und ruft Jonas zu: „[Bis bald!|Bis bald!]“.",
+                  "Als er letzte Woche geschäftlich in München war, hörte er überall den traditionellen Gruß „[Grüß Gott!|Grüß Gott!]“."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Begegnungen und regionale Besonderheiten",
-              "intro": "Höfliche Wendungen und regionale Begrüßungsformen (B1).",
+              "title": "Höflichkeitskonventionen und regionale Besonderheiten",
+              "intro": "Angemessene Wortwahl je nach Kontext, Hierarchie und Geografie im deutschen Sprachraum (B1).",
               "paragraphs": [
                 [
-                  "Beim ersten Kennenlernen sagt man höflich [Freut mich!|„Freut mich sehr, Sie kennenzulernen“].",
-                  "In Süddeutschland und Österreich hört man oft das traditionelle [Grüß Gott!|„Grüß Gott!“].",
-                  "Eine freundliche Begrüßung öffnet Türen und schafft sofort eine angenehme Atmosphäre zwischen Gesprächspartnern.",
-                  "Wer die richtigen Höflichkeitsregeln beherrscht, fühlt sich in jedem deutschsprachigen Umfeld sicher."
+                  "Die Wahl der passenden Begrüßungsformel hängt im deutschen Sprachraum maßgeblich vom Kontext und vom Grad der Vertrautheit ab.",
+                  "Während ein formelles „[Guten Tag!|Guten Tag!]“ oder „[Guten Abend!|Guten Abend!]“ professionelle Distanz und Höflichkeit ausdrückt, bleibt ein lockeres „[Hallo!|Hallo!]“ oder „[Tschüss!|Tschüss!]“ dem privaten Freundes- und Familienkreis vorbehalten.",
+                  "Wenn man einer Person im geschäftlichen Rahmen vorgestellt wird, ist die Erkundigung „[Wie geht es Ihnen?|Wie geht es Ihnen?]“ nicht nur eine Floskel, sondern signalisiert ehrliches Interesse und guten Ton.",
+                  "Ein aufrichtiges „[Freut mich!|Freut mich]!“ rundet das erste Kennenlernen sympathisch und professionell ab."
+                ],
+                [
+                  "Darüber hinaus zeichnet sich der deutschsprachige Raum durch faszinierende regionale Grußkulturen aus.",
+                  "Während man in Bayern und Österreich überall dem traditionsreichen „[Grüß Gott!|Grüß Gott!]“ begegnet, hört man in Norddeutschland zu jeder Tageszeit ein herzliches „Moin“.",
+                  "Wer diese sprachlichen Feinheiten sensibel anwendet und beim Verlassen formeller Runden stets „[Auf Wiedersehen!|Auf Wiedersehen!]“ wählt, meistert den Alltag in Deutschland mit Bravour."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Soziolinguistische Höflichkeitskonventionen",
-              "intro": "Differenzierte Registerwahl und interkulturelle Etikette (B2).",
+              "title": "Kommunikative Etikette und soziolinguistische Nuancen",
+              "intro": "Anspruchsvolle Analyse von Höflichkeitsstrategien, Rollenbildern und Sprachwandel (B2).",
               "paragraphs": [
                 [
-                  "Die Wahl der adäquaten Grußformel signalisiert sozialen Respekt und situatives Fingerspitzengefühl.",
-                  "Während im beruflichen Kontext die formelle Distanz mit [Wie geht es Ihnen?|„Wie geht es Ihnen?“] gewahrt wird, dominiert privat oft ein herzliches [Hallo!|„Hallo!“].",
-                  "Regionale Idiome wie [Grüß Gott!|„Grüß Gott!“] spiegeln zudem die lebendige kulturelle Vielfalt des deutschen Sprachraums wider."
+                  "Begrüßungs- und Verabschiedungsrituale bilden fundamentale Pfeiler der sozialen Interaktionsordnung und spiegeln feinsinnig bestehende Rollenerwartungen und Machtverhältnisse wider.",
+                  "Die sprachliche Differenzierung zwischen der vertraulichen Anfrage „[Wie geht's?|Wie geht's?]“ und dem distanzierten „[Wie geht es Ihnen?|Wie geht es Ihnen?]“ markiert verlässlich die Grenze zwischen institutioneller Zurückhaltung und informeller Kollegialität.",
+                  "Ein souverän formuliertes „[Freut mich!|Freut mich]!“ bei repräsentativen Anlässen etabliert augenblicklich eine konstruktive, von gegenseitiger Wertschätzung getragene Verhandlungsgrundlage."
+                ],
+                [
+                  "Gleichzeitig zeugt die reflektierte Rezeption lokaler Idiome – wie des süddeutschen „[Grüß Gott!|Grüß Gott!]“ – von ausgeprägter interkultureller und pragmatischer Kompetenz.",
+                  "In Zeiten zunehmend flacher Unternehmenshierarchien bleibt die situativ treffsichere Wahl zwischen formellem „[Auf Wiedersehen!|Auf Wiedersehen!]“ und modernem Abschiedsgruß ein aussagekräftiger Indikator kommunikativer Eloquenz."
                 ]
               ]
             }
-          }
+          },
+          "description": "Formelle und informelle Begrüßungs- und Abschiedsformeln, Höflichkeitsregeln und tageszeitliche Redemittel.",
+          "details": "Begrüßungsformeln, Verabschiedung und Höflichkeit im Alltag (A1–B2)",
+          "arabicDescription": "صيغ التحية والوداع الرسمية وغير الرسمية، قواعد اللباقة والتعابير اليومية المناسبة لكل وقت وموقف."
         }
       ]
     },
@@ -897,58 +959,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Feste und Feiertage",
-              "intro": "Grundwortschatz zu beliebten Festen im Jahreslauf (A1).",
+              "title": "Ein Jahr voller schöner Feste",
+              "intro": "Einfache Sätze über Geburtstage, Feiertage und Geschenke (A1).",
               "paragraphs": [
                 [
-                  "Im Dezember feiern viele Menschen [Weihnachten|Weihnachten] mit der Familie.",
-                  "Im Frühling freuen sich die Kinder auf [Ostern|Ostern] und bunte Eier.",
-                  "Am 31. Dezember begrüßen wir das neue Jahr an [Silvester|Silvester].",
-                  "Zu jedem Geburtstag rufen wir fröhlich: [Herzlichen Glückwunsch!|„Herzlichen Glückwunsch!“]."
+                  "Im Laufe des Jahres gibt es in Deutschland viele schöne Feste.",
+                  "Besonders beliebt ist der persönliche [der Geburtstag|Geburtstag] mit Freunden und Familie.",
+                  "Man singt Lieder, überreicht Geschenke und sagt: „[Herzlichen Glückwunsch!|Herzlichen Glückwunsch!]“.",
+                  "Im Frühling feiern die Menschen das fröhliche Osterfest [Ostern|Ostern] mit bunten Eiern.",
+                  "Am Ende des Jahres feiert man im Dezember das besinnliche [Weihnachten|Weihnachten] unter dem Tannenbaum.",
+                  "Jede [die Feier|Feier] bringt Menschen zusammen und schenkt Freude."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Eine fröhliche Feier",
-              "intro": "Feiern mit Freunden und besondere Anlässe (A2).",
+              "title": "Vorbereitung für das große Fest",
+              "intro": "Alltägliche Erzählungen über Festvorbereitungen, Traditionen und Feiertage (A2).",
               "paragraphs": [
                 [
-                  "Gestern haben wir eine wunderschöne [die Feier|Feier] für Marias [der Geburtstag|Geburtstag] organisiert.",
-                  "Im Winter wünschen sich alle Menschen [Frohe Weihnachten!|„Frohe Weihnachten!“] und ein gesundes neues Jahr.",
-                  "Jeder offizielle [der Feiertag|Feiertag] gibt uns Zeit, uns mit Freunden zu erholen.",
-                  "Eine romantische [die Hochzeit|Hochzeit] bringt zwei Familien festlich zusammen."
+                  "Letzte Woche hat Familie Hoffmann eine große Einladung für die [die Hochzeit|Hochzeit] ihrer Tochter verschickt.",
+                  "Alle Verwandten freuen sich auf dieses besondere [der Feiertag|Fest] im Sommer.",
+                  "Im Winter feiern sie immer gemeinsam das besinnliche Weihnachtsfest und wünschen einander: „[Frohe Weihnachten!|Frohe Weihnachten!]“.",
+                  "Kurz darauf folgt [Silvester|Silvester], wo man um Mitternacht mit bunten Raketen das neue Jahr begrüßt.",
+                  "Im Februar verwandeln sich viele Städte während der bunten Tage im [der Karneval / der Fasching|Karneval]."
+                ],
+                [
+                  "Im Herbst reist die Familie jedes Jahr nach München, um das weltberühmte [das Oktoberfest|Oktoberfest] zu erleben.",
+                  "Für die Großeltern ist die Pflege alter Familienbräuche eine bedeutsame [die Tradition|Tradition].",
+                  "Jeder festliche Anlass bietet die willkommene Gelegenheit, Zeit miteinander zu verbringen und das Leben zu genießen."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Brauchtum und Traditionen erleben",
-              "intro": "Ausführliche Schilderung traditioneller Feste (B1).",
+              "title": "Festtage und gelebte Bräuche im Wandel",
+              "intro": "Ausführliche Betrachtung über persönliche Jubiläen, religiöse Feste und Gemeinschaftsgefühl (B1).",
               "paragraphs": [
                 [
-                  "Im Februar verkleiden sich viele Menschen für [der Karneval / der Fasching|den Karneval], um ausgelassen auf den Straßen zu tanzen.",
-                  "In München zieht [das Oktoberfest|das berühmte Oktoberfest] jedes Jahr Millionen begeisterte Gäste aus aller Welt an.",
-                  "Jedes Fest bewahrt eine jahrhundertealte [die Tradition|Tradition], die von Generation zu Generation weitergegeben wird."
+                  "Feste und Feiertage strukturieren das Kalenderjahr und stiften ein starkes Gefühl von Gemeinschaft und Kontinuität.",
+                  "Während persönliche Anlässe wie ein runder [der Geburtstag|Geburtstag] oder eine glanzvolle [die Hochzeit|Hochzeit] im engsten Familienkreis zelebriert werden, verbinden Feiertage wie [Weihnachten|Weihnachten] und [Ostern|Ostern] ganze Gesellschaften über Generationen hinweg.",
+                  "Am Silvesterabend [Silvester|Silvester] blicken die Menschen auf das vergangene Jahr zurück und schmieden hoffnungsvolle Pläne für die Zukunft.",
+                  "Große Volksfeste wie das traditionsreiche [das Oktoberfest|Oktoberfest] ziehen jedes Jahr Millionen Besucher aus aller Welt an und feiern bayerische Gastlichkeit."
+                ],
+                [
+                  "Auch das närrische Treiben im rheinischen [der Karneval / der Fasching|Karneval] zeigt, wie lebendig regionale Kultur in Deutschland verwurzelt ist.",
+                  "Obwohl sich manche Bräuche im Laufe der Zeit modernisieren, bleibt der Kern jeder [die Feier|Feier] unverändert: das Teilen von Freude, Gemeinschaft und gegenseitiger Wertschätzung.",
+                  "Wenn wir Freunden mit den Worten „[Herzlichen Glückwunsch!|Herzlichen Glückwunsch!]“ gratulieren, stärken wir das emotionale Band zwischenmenschlicher Zuneigung."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Kulturelles Brauchtum und kollektive Identität",
-              "intro": "Analyse der soziokulturellen Bedeutung von Festkultur (B2).",
+              "title": "Kulturanthropologische Dimensionen der Festkultur",
+              "intro": "Nuancierte Reflexion über Rituale, kollektive Identitätsbildung und säkulare Feiertage (B2).",
               "paragraphs": [
                 [
-                  "Traditionelle Feste fungieren als essenzielle Ankerpunkte kollektiver Identitätsstiftung im Jahreskreis.",
-                  "Ob sakrale Festtage wie [Weihnachten|Weihnachten] oder säkulare Großereignisse wie [das Oktoberfest|das Oktoberfest] – sie strukturieren das gesellschaftliche Zeitbewusstsein.",
-                  "Die ritualisierte [die Tradition|Tradition] bietet im Zeitalter der Globalisierung emotionale Verortung und generationsübergreifende Kontinuität."
+                  "Aus kulturanthropologischer Perspektive erfüllen kollektive Feste eine unverzichtbare Ventil- und Integrationsfunktion im gesellschaftlichen Gefüge.",
+                  "Brauchtumsveranstaltungen wie der [der Karneval / der Fasching|Karneval] fungieren historisch als institutionalisierter Ausnahmezustand, in dem starre soziale Hierarchien temporär aufgehoben und kollektive Energien freigesetzt werden.",
+                  "Dahingegen zelebriert das Weihnachtsfest [Weihnachten|Weihnachten] in westlichen Gesellschaften den Rückzug ins familiäre Refugium und unterstreicht das universelle Bedürfnis nach Geborgenheit und Besinnung."
+                ],
+                [
+                  "Gleichzeitig unterliegt die überlieferte [die Tradition|Tradition] einem stetigen soziokulturellen Transformationsprozess, der zwischen kommerzieller Inszenierung und authentischer Sinnstiftung oszilliert.",
+                  "Ob säkularer Jahreswechsel zu [Silvester|Silvester] oder rituelle Meilensteine wie die [die Hochzeit|Hochzeit] – Feste markieren kollektive Übergänge und vermitteln Orientierung in einer sich beschleunigenden Gegenwart."
                 ]
               ]
             }
-          }
+          },
+          "description": "Feste, Feiertage, Bräuche und persönliche Jubiläen im Jahreslauf der deutschsprachigen Länder.",
+          "details": "Feste, Feiertage, Geburtstage und persönliche Feiern (A1–B2)",
+          "arabicDescription": "الأعياد والمناسبات والاحتفالات التقليدية والشخصية في الثقافة الألمانية على مدار العام."
         },
         {
           "id": "wendepunkte",
@@ -1044,59 +1127,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Große Tage im Leben",
-              "intro": "Wichtige Stationen von der Geburt bis zum Berufsstart (A1).",
+              "title": "Große Schritte im Leben",
+              "intro": "Einfache Sätze über wichtige Meilensteine und Lebensschritte (A1).",
               "paragraphs": [
                 [
-                  "Die [die Geburt|Geburt] eines Kindes bringt großes Glück in die Familie.",
-                  "Nach der Schule feiert man den erfolgreichen [der Schulabschluss|Schulabschluss].",
-                  "Danach beginnt eine spannende [die Ausbildung|Ausbildung] oder ein Studium.",
-                  "Der [der Berufseinstieg|Berufseinstieg] ist der erste Schritt in die Arbeitswelt."
+                  "Im Leben eines jeden Menschen gibt es besondere Tage voller Veränderung.",
+                  "Alles beginnt mit der freudigen [die Geburt|Geburt] eines neuen Erdenbürgers.",
+                  "Nach vielen Jahren in der Schule feiert man stolz seinen [der Schulabschluss|Schulabschluss].",
+                  "Danach beginnt eine spannende [die Ausbildung|Ausbildung] oder ein interessantes Studium.",
+                  "Oft folgt ein [der Umzug|Umzug] in eine eigene kleine Wohnung in einer neuen Stadt.",
+                  "Jeder dieser Schritte ist ein aufregender neuer Wegabschnitt."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Veränderungen im Lebenslauf",
-              "intro": "Wichtige Entscheidungen und neue Lebensabschnitte (A2).",
+              "title": "Ein neuer Lebensabschnitt beginnt",
+              "intro": "Alltägliche Erzählungen über Heirat, Berufseinstieg und Neuanfänge (A2).",
               "paragraphs": [
                 [
-                  "Ein [der Umzug|Umzug] in eine neue Stadt bringt viele frische Eindrücke.",
-                  "Eine glückliche [die Heirat|Heirat] verbindet zwei Menschen für die Zukunft.",
-                  "Wenn eine Ehe scheitert, kann eine [die Scheidung|Scheidung] jedoch sehr schmerzhaft sein.",
-                  "Jeder neue Lebensabschnitt erfordert Mut und Anpassungsbereitschaft."
+                  "Vor zwei Jahren feierten Markus und Elena ihre romantische [die Heirat|Heirat] im Kreise ihrer Liebsten.",
+                  "Nach dem Universitätsabschluss gelang Markus ein erfolgreicher [der Berufseinstieg|Berufseinstieg] in einem Softwareunternehmen.",
+                  "Für Elena bedeutete der Wechsel in eine andere Stadt einen mutigen [der Neuanfang|Neuanfang].",
+                  "Gemeinsam haben sie die anfänglichen Herausforderungen mit viel Zuversicht gemeistert.",
+                  "Wenn im Leben unerwartete Veränderungen auftreten, hilft gegenseitiger Rückhalt enorm."
+                ],
+                [
+                  "Markus' Vater hat vor wenigen Monaten seinen wohlverdienten [der Ruhestand|Ruhestand] angetreten.",
+                  "Leider erlebte die Familie auch traurige Tage, als die Großmutter verstarb und der schmerzliche [der Tod|Tod] sie zur gemeinsamen [die Beerdigung|Beerdigung] zusammenführte.",
+                  "Freud und Leid liegen im menschlichen Leben oft nah beieinander."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Neuanfänge und Abschiede",
-              "intro": "Krisen bewältigen und persönliche Meilensteine gestalten (B1).",
+              "title": "Herausforderungen und Neuanfänge im Lebenslauf",
+              "intro": "Ausführliche Betrachtung über Schicksalsschläge, Resilienz und biografische Wendepunkte (B1).",
               "paragraphs": [
                 [
-                  "Nach einer schwierigen Phase wagen viele Menschen einen mutigen [der Neuanfang|Neuanfang].",
-                  "Selbst wenn eine unerwartete [die Krise|Krise] das Leben erschüttert, wächst man an den Herausforderungen.",
-                  "Wenn ein geliebter Mensch stirbt, begleitet [die Beerdigung|die Beerdigung] den Abschied und ehrt das Andenken.",
-                  "Schließlich freuen sich ältere Arbeitnehmer auf einen ruhigen [der Ruhestand|Ruhestand] voller persönlicher Freiheit."
+                  "Biografische Wendepunkte sind Momente, in denen wir bisherige Gewohnheiten hinter uns lassen und neue Wege einschlagen.",
+                  "Während der erfolgreiche [der Schulabschluss|Schulabschluss] und die anschließende fundierte [die Ausbildung|Ausbildung] das Fundament für die berufliche Selbstverwirklichung legen, verlangt der spätere [der Berufseinstieg|Berufseinstieg] Anpassungsfähigkeit und Leistungsbereitschaft.",
+                  "Doch nicht jede Veränderung verläuft nach Plan; manche Menschen müssen eine schmerzhafte [die Scheidung|Scheidung] oder eine existenzielle berufliche [die Krise|Krise] überwinden.",
+                  "In solchen schwierigen Phasen erweist sich ein bewusster [der Neuanfang|Neuanfang] oft als Chance für persönliches Wachstum."
+                ],
+                [
+                  "Auch der Übergang in den [der Ruhestand|Ruhestand] erfordert eine mentale Neuausrichtung, wenn der Berufsalltag plötzlich wegfällt.",
+                  "Schließlich konfrontiert uns der unvermeidliche [der Tod|Tod] eines geliebten Menschen und die darauffolgende [die Beerdigung|Beerdigung] mit der Vergänglichkeit allen Seins.",
+                  "Wer in der Lage ist, Wendepunkte als gestaltbare Prozesse zu begreifen, gewinnt innere Stärke für künftige Lebenslagen."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Biographische Zäsuren und Resilienz",
-              "intro": "Tiefgründige Reflexion über existenzielle Wendepunkte (B2).",
+              "title": "Biografische Diskontinuitäten und individuelle Resilienz",
+              "intro": "Anspruchsvolle philosophische und soziologische Reflexion über Schwellenerfahrungen (B2).",
               "paragraphs": [
                 [
-                  "Existenzielle Wendepunkte wie [der Tod|der Tod] eines Angehörigen oder eine schmerzhafte [die Scheidung|Scheidung] erschüttern gewohnte Lebensentwürfe.",
-                  "Gleichwohl eröffnet die konstruktive Bewältigung einer tiefen [die Krise|Krise] oft das Potenzial für einen zukunftsweisenden [der Neuanfang|Neuanfang].",
-                  "Im wohlverdienten [der Ruhestand|Ruhestand] reflektieren viele Persönlichkeiten über den ganzheitlichen Bogen ihrer biographischen Meilensteine."
+                  "In der modernen Biografieforschung gelten Diskontinuitäten und Brüche längst nicht mehr als Anomalien, sondern als konstitutive Merkmale pluralistischer Lebensläufe.",
+                  "Der Übergang von der Bildungsphase in den [der Berufseinstieg|Berufseinstieg] markiert eine Statuspassage, die hohe Selbstwirksamkeitserwartungen voraussetzt.",
+                  "Widerfahren Individuen existenzielle Erschütterungen wie eine unvorhersehbare [die Krise|Krise] oder das Scheitern einer Ehe im Zuge einer [die Scheidung|Scheidung], entscheidet primär die personale Resilienz über das Gelingen eines emanzipatorischen [der Neuanfang|Neuanfangs]."
+                ],
+                [
+                  "Ebenso verlangt die Bewältigung finaler Lebensstationen – vom Abschied aus der Erwerbswelt in den [der Ruhestand|Ruhestand] bis hin zur existentiellen Konfrontation mit der Endlichkeit beim [der Tod|Tod] nahestehender Personen – eine gereifte Haltung.",
+                  "Die ritualisierte Verarbeitung im Rahmen einer feierlichen [die Beerdigung|Beerdigung] leistet dabei einen unschätzbaren Beitrag zur psychosozialen Trauerarbeit und gesellschaftlichen Reintegration der Hinterbliebenen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Einschneidende Lebensereignisse, biografische Schwellen, berufliche Neuanfänge und familiäre Veränderungen.",
+          "details": "Lebensentscheidungen, Meilensteine und biografische Wendepunkte (A1–B2)",
+          "arabicDescription": "المنعطفات الحاسمة في مسار الحياة: التخرج، الوظيفة، الزواج، الانتقال، والأزمات وبدايات جديدة."
         }
       ]
     },
@@ -1198,59 +1301,80 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Mein Gesicht",
-              "intro": "Einfache Bezeichnungen für Gesichtsteile (A1).",
+              "title": "Das menschliche Gesicht",
+              "intro": "Einfache Sätze über Augen, Nase, Mund und die Merkmale des Gesichts (A1).",
               "paragraphs": [
                 [
-                  "Ich sehe mit meinen [das Auge, -n|Augen] und rieche mit meiner [die Nase, -n|Nase].",
-                  "Mit dem [der Mund, -̈er|Mund] kann ich sprechen und lächeln.",
-                  "Ich höre Musik mit meinen [das Ohr, -en|Ohren].",
-                  "Mein Gesicht hat eine hohe [die Stirn|Stirn] und ein markantes [das Kinn|Kinn]."
+                  "Mit den Augen sehen wir die Welt, mit den Ohren hören wir Geräusche.",
+                  "Jeder Mensch hat zwei [das Auge, -n|Augen], eine [die Nase, -n|Nase] und einen freundlichen [der Mund, -̈er|Mund].",
+                  "Über den Augen schützt die [die Stirn|Stirn] das Gesicht, darunter liegt das markante [das Kinn|Kinn].",
+                  "Wenn Kinder sich freuen, strahlen ihre Wangen und zeigen kleine [die Sommersprossen (Pl.)|Sommersprossen].",
+                  "Über dem Mund formen die [die Lippe, -n|Lippen] ein herzliches Lächeln.",
+                  "Jedes Gesicht ist einzigartig und unverwechselbar schön."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Besondere Merkmale",
-              "intro": "Gesichtsmerkmale und Lächeln beschreiben (A2).",
+              "title": "Ein freundlicher Ausdruck",
+              "intro": "Alltägliche Beschreibungen von Gesichtsausdrücken, Merkmalen und Mimik (A2).",
               "paragraphs": [
                 [
-                  "Wenn sie sich freut, werden ihre [die Wange, -n|Wangen] ganz rot.",
-                  "Sie trägt roten Lippenstift auf den [die Lippe, -n|Lippen].",
-                  "Mein Vater trägt einen gepflegten [der Bart, -̈e|Bart].",
-                  "Über ihren freundlichen Augen sieht man dunkle [die Augenbraue, -n|Augenbrauen]."
+                  "Miriam schaut in den Spiegel und betrachtet aufmerksam ihr Spiegelbild.",
+                  "Ihre großen blauen [das Auge, -n|Augen] leuchten aufmerksam und wach.",
+                  "Über ihren Augen betont eine geschwungene [die Augenbraue, -n|Augenbraue] ihren offenen Gesichtsausdruck.",
+                  "Auf ihrer Nase und auf jeder zarten [die Wange, -n|Wange] tanzen im Sommer fröhliche [die Sommersprossen (Pl.)|Sommersprossen].",
+                  "Wenn sie lacht, umspielen feine kleine [die Falte, -n|Falten] ihre Augenwinkel."
+                ],
+                [
+                  "Ihr Großvater hat ein sehr ausdrucksstarkes Gesicht mit viel Charakter.",
+                  "Er trägt einen dichten grauen [der Bart, -̈e|Bart], der sein markantes [das Kinn|Kinn] sanft bedeckt.",
+                  "Wenn er spannende Geschichten erzählt, hört Miriam mit gespitztem [das Ohr, -en|Ohr] gebannt zu.",
+                  "Ein offenes Gesicht mit ehrlichem Lächeln öffnet die Herzen der Mitmenschen."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Ausstrahlung und Mimik",
-              "intro": "Ausführliche Beschreibung von Gesichtsausdrücken und Besonderheiten (B1).",
+              "title": "Die Sprache des Gesichts",
+              "intro": "Ausführliche Betrachtung über Mimik, Ausstrahlung und das Erkennen von Gefühlen (B1).",
               "paragraphs": [
                 [
-                  "Im Sommer bekommt Lisa viele goldene [die Sommersprossen (Pl.)|Sommersprossen] auf der Nase.",
-                  "Im Gesicht meiner Großmutter erzählt jede kleine [die Falte, -n|Falte] eine spannende Lebensgeschichte.",
-                  "Die menschliche Mimik drückt Emotionen oft schneller aus, als Worte es jemals könnten.",
-                  "Ein ehrlicher Blick aus wachen [das Auge, -n|Augen] weckt sofort Sympathie."
+                  "Das Gesicht ist der wichtigste Spiegel unserer inneren Gefühle und Gedanken.",
+                  "Oft genügt ein kurzer Blick in die [das Auge, -n|Augen] eines Menschen, um zu erkennen, ob er glücklich, besorgt oder nachdenklich gestimmt ist.",
+                  "Wenn sich die [die Stirn|Stirn] in tiefe Falten legt, deutet das meist auf angestrengte Konzentration oder Skepsis hin.",
+                  "Ein leichtes Zittern um die [die Lippe, -n|Lippen] kann verborgene Nervosität verraten, während ein aufrichtiges Lächeln Wärme und Sympathie vermittelt."
+                ],
+                [
+                  "Mit zunehmendem Lebensalter graben sich sanfte [die Falte, -n|Falten] in die Haut ein, die von Lachen, Sorgen und gesammelter Lebenserfahrung zeugen.",
+                  "Merkmale wie markante [die Sommersprossen (Pl.)|Sommersprossen] oder ein gepflegter [der Bart, -̈e|Bart] verleihen dem Äußeren eine unverwechselbare Note.",
+                  "Wer gelernt hat, die subtilen Signale um [die Nase, -n|Nase], [der Mund, -̈er|Mund] und Wangen richtig zu deuten, versteht andere Menschen auf einer tieferen Ebene."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Physiognomie und nonverbale Kommunikation",
-              "intro": "Anspruchsvolle Analyse von Mimik und Gesichtsästhetik (B2).",
+              "title": "Mimische Mikroexpressionen und physiognomische Wahrnehmung",
+              "intro": "Anspruchsvolle Analyse der nonverbalen Kommunikation und Gesichtsphysiognomie (B2).",
               "paragraphs": [
                 [
-                  "Die menschliche Physiognomie spiegelt den Charakter und emotionale Regungen auf faszinierende Weise wider.",
-                  "Feine [die Falte, -n|Falten] um die [die Lippe, -n|Lippen] und [das Auge, -n|Augen] zeugen von gelebter Heiterkeit und Lebenserfahrung.",
-                  "Charakteristische Merkmale wie ein dichter [der Bart, -̈e|Bart] oder zarte [die Sommersprossen (Pl.)|Sommersprossen] verleihen dem Antlitz unverwechselbare Individualität."
+                  "In der Kognitionspsychologie gilt das menschliche Antlitz als das komplexeste Kommunikationsmedium überhaupt.",
+                  "Flüchtige Mikroexpressionen der feinen Gesichtsmuskulatur um [das Auge, -n|Augen] und [die Lippe, -n|Lippen] vollziehen sich innerhalb von Millisekunden und entziehen sich weitgehend der willentlichen Kontrolle.",
+                  "Das Zusammenziehen einer [die Augenbraue, -n|Augenbraue] oder das unwillkürliche Verengen der [die Stirn|Stirn] signalisiert dem Gegenüber intuitive Dissonanz oder kognitive Beanspruchung."
+                ],
+                [
+                  "Zugleich spiegeln altersbedingte [die Falte, -n|Falten] und physiognomische Konturen an [das Kinn|Kinn] und Wange die biografische Prägung eines Individuums wider.",
+                  "Die Fähigkeit zur empathischen Entschlüsselung mimischer Nuancen erweist sich sowohl in professionellen Verhandlungskontexten als auch im therapeutischen Dialog als essenzielle Kernkompetenz."
                 ]
               ]
             }
-          }
+          },
+          "description": "Anatomie des Gesichts, Mimik, Sinnesorgane, Ausdruckskraft und physiognomische Merkmale.",
+          "details": "Gesichtszüge, Gesichtsausdrücke und Sinnesorgane (A1–B2)",
+          "arabicDescription": "أجزاء الوجه، ملامحه، تعابير الانفعال وحركات الوجه والتواصل غير اللفظي."
         },
         {
           "id": "haar",
@@ -1346,58 +1470,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Haarfarben und Längen",
-              "intro": "Grundlegende Adjektive zur Beschreibung von Haaren (A1).",
+              "title": "Haare und Farben",
+              "intro": "Einfache Sätze über verschiedene Haarfarben, Haarlängen und Frisuren (A1).",
               "paragraphs": [
                 [
-                  "Anna hat schönes, langes Haar.",
-                  "Ihre Haare sind [blond|blond] und glänzen in der Sonne.",
-                  "Paul hat [kurz|kurze], [schwarz|schwarze] Haare.",
-                  "Manche Menschen haben [braun|braune] oder leuchtend [rot|rote] Haare."
+                  "Jeder Mensch hat eine andere natürliche Haarfarbe.",
+                  "Manche Menschen sind [blond|blond], andere haben [braun|braunes] oder [schwarz|schwarzes] Haar.",
+                  "Einige Personen haben auch feuriges [rot|rotes] Haar, während ältere Leute oft [grau|graues] Haar tragen.",
+                  "Die Haare können ganz [glatt|glatt], sanft [wellig|wellig] oder lebendig [lockig|lockig] sein.",
+                  "Manche tragen ihre Haare [kurz|kurz] geschnitten, andere lieben [lang|langes] Haar.",
+                  "Eine schöne und gepflegte [die Frisur, -en|Frisur] passt zu jedem Menschen."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Beim Friseur",
-              "intro": "Haarstrukturen und Frisuren im Alltag (A2).",
+              "title": "Ein neuer Schnitt beim Friseur",
+              "intro": "Alltägliche Gespräche beim Friseur über Schnitt, Pflege und Veränderungen (A2).",
               "paragraphs": [
                 [
-                  "Gestern war David beim Friseur, um eine moderne [die Frisur, -en|Frisur] schneiden zu lassen.",
-                  "Marias Haare sind von Natur aus [wellig|wellig] und [lockig|lockig].",
-                  "Ihre Schwester bevorzugt dagegen ganz [glatt|glattes], [lang|langes] Haar.",
-                  "Mein Großvater trägt stolz sein volles, [grau|graues] Haar."
+                  "Gestern war David beim Friseur, um seinen Look für den Sommer zu verändern.",
+                  "Bisher trug er seine [braun|braunen] Haare immer ziemlich [lang|lang] und [wellig|wellig].",
+                  "Der Friseur beriet ihn freundlich: „Ein moderner Kurzhaarschnitt würde Ihre Gesichtszüge perfekt betonen.“",
+                  "Nach einer halben Stunde war die neue, sportliche [die Frisur, -en|Frisur] fertig geschnitten.",
+                  "David betrachtete sich zufrieden im Spiegel und fand das Ergebnis richtig klasse."
+                ],
+                [
+                  "Sein Onkel Robert hingegen hat schon seit einigen Jahren eine glänzende [die Glatze|Glatze].",
+                  "Er lacht oft darüber und sagt humorvoll: „So spare ich mir jeden Morgen das Kämmen und Föhnen!“",
+                  "Ob [blond|blond], [schwarz|schwarz], [lockig|lockig] oder kahl – Hauptsache, man fühlt sich wohl in seiner Haut."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Frisuren und persönlicher Stil",
-              "intro": "Typveränderungen und Styling-Entscheidungen (B1).",
+              "title": "Haarstyling als Ausdruck der Persönlichkeit",
+              "intro": "Ausführliche Betrachtung über Mode, Selbstbild und die Wirkung von Frisuren (B1).",
               "paragraphs": [
                 [
-                  "Die Wahl der passenden [die Frisur, -en|Frisur] unterstreicht die eigene Persönlichkeit maßgeblich.",
-                  "Nachdem er gemerkt hatte, dass sein Haar lichter wurde, entschied sich Thomas selbstbewusst für eine [die Glatze|Glatze].",
-                  "Egal ob die Haare [glatt|glatt], [lockig|lockig] oder [kurz|kurz] geschnitten sind: Gepflegtes Haar hinterlässt stets einen positiven Eindruck."
+                  "Die Haartracht ist weit mehr als nur ein körperliches Merkmal; sie spiegelt individuelle Stile und persönliche Stimmungen wider.",
+                  "Während manche Frauen ihr von Natur aus [glatt|glattes] Haar gerne mit einem Lockenstab in voluminöse [lockig|lockige] Wellen verwandeln, bevorzugen andere elegante Hochsteckfrisuren.",
+                  "Im Laufe des Lebens verändert sich das Haar spürbar: Wo früher dichtes [blond|blondes] oder dunkles Haar glänzte, schimmern mit den Jahren die ersten [grau|grauen] Strähnen hervor.",
+                  "Viele Menschen entscheiden sich daher bewusst für moderne Tönungen, während andere ihr natürliches Ergrauen mit Stolz und Würde tragen."
+                ],
+                [
+                  "Auch bei Männern spielt die Haarpflege eine immer zentralere Rolle.",
+                  "Selbst eine vollständige [die Glatze|Glatze] wird heute keineswegs als Makel wahrgenommen, sondern gezielt mit markanten Bärten als modisches Statement inszeniert.",
+                  "Eine harmonisch abgestimmte [die Frisur, -en|Frisur] verleiht jedem Auftreten Selbstvertrauen und Ausstrahlung."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Haartracht als kultureller Identitätsmarker",
-              "intro": "Kulturelle Dimensionen von Haartrachten und Ästhetik (B2).",
+              "title": "Kulturgeschichte und Identitätsstiftung der Haartracht",
+              "intro": "Nuancierte Betrachtung der symbolischen und gesellschaftlichen Bedeutung von Haaren (B2).",
               "paragraphs": [
                 [
-                  "Historisch wie gegenwärtig dient das Haar als markanter Spiegel ästhetischer und soziokultureller Strömungen.",
-                  "Vom eleganten [glatt|glatten] Look bis zur markanten [die Glatze|Glatze] artikulieren Individuen ihr Selbstverständnis über ihre Haartracht.",
-                  "Das würdevolle Tragen von [grau|grauem] Haar symbolisiert in vielen Kulturen Reife und Autorität."
+                  "Kulturgeschichtlich betrachtet dient die Frisur seit jeher als hochgradig codierter Zeichenträger für soziale Zugehörigkeit, Rebellion oder Konformismus.",
+                  "Ob kunstvoll arrangiertes [wellig|welliges] Haar in aristokratischen Epochen oder demonstrativ getragene [kurz|kurze] Schnitte als Ausdruck emanzipatorischer Bewegungen – Haare visualisieren gesellschaftliche Wandlungsprozesse.",
+                  "Der bewusste Verzicht auf künstliche Färbung bei [grau|grauem] Haar markiert in der Gegenwart einen Trend zu authentischer Altersakzeptanz in der Öffentlichkeit."
+                ],
+                [
+                  "Gleichzeitig operiert die Schönheitsindustrie mit subtilen Normierungen, die den Wunsch nach vollem, glänzendem Haar ökonomisch verwerten.",
+                  "Die bewusste Inszenierung einer extravaganten [die Frisur, -en|Frisur] oder einer markanten [die Glatze|Glatze] fungiert somit als individueller Emanzipationsakt gegenüber standardisierten Schönheitsidealen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Haarfarben, Haartypen, Schnitte und Frisuren zur präzisen Personenbeschreibung im Deutschen.",
+          "details": "Haarfarben, Haartypen und moderne Frisuren (A1–B2)",
+          "arabicDescription": "ألوان الشعر، أنواعه، تسريحاته وقصاته المستخدمة في الوصف الدقيق للأشخاص باللغة الألمانية."
         },
         {
           "id": "aeusseres",
@@ -1493,59 +1638,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Menschen ansehen",
-              "intro": "Einfache Wörter für das Aussehen von Personen (A1).",
+              "title": "Menschen beschreiben",
+              "intro": "Grundlegende Wörter zur Beschreibung von Größe, Statur und Aussehen (A1).",
               "paragraphs": [
                 [
-                  "Mein Bruder ist sehr [groß|groß], aber meine Schwester ist eher [klein|klein].",
-                  "Er ist noch [jung|jung] und geht zur Schule.",
-                  "Mein Großvater ist schon [alt|alt], aber sehr fit.",
-                  "Meine Freundin ist sehr [hübsch|hübsch] und lächelt gern."
+                  "Die Menschen sehen alle unterschiedlich und interessant aus.",
+                  "Mein Bruder ist sehr [groß|groß], aber seine Freundin ist eher [klein|klein].",
+                  "Mein Onkel treibt viel Sport und ist sehr [schlank|schlank] und fit.",
+                  "Mein Großvater ist kräftig gebaut und muss beim Lesen [eine Brille tragen|eine Brille tragen].",
+                  "Viele sagen, dass meine Schwester eine sehr [hübsch|hübsche] Frau ist.",
+                  "Jeder Mensch hat sein eigenes, sympathisches Aussehen."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Personen beschreiben",
-              "intro": "Detailliertere Beschreibungen von Statur und Merkmalen (A2).",
+              "title": "Ein Treffen am Bahnhof",
+              "intro": "Alltägliche Beschreibungen von Personen zur Orientierung und Wiedererkennung (A2).",
               "paragraphs": [
                 [
-                  "Marco ist ein sehr [gutaussehend|gutaussehender] Mann [mittleren Alters|mittleren Alters].",
-                  "Er ist [schlank|schlank] und achtet auf gesunde Ernährung.",
-                  "Weil er viel Sport treibt, wirkt sein Körper ausgesprochen [athletisch|athletisch] und [kräftig|kräftig].",
-                  "Beim Lesen muss er immer [eine Brille tragen|eine Brille tragen]."
+                  "Laura wartet am Hauptbahnhof auf ihren Bekannten Felix, den sie seit Jahren nicht gesehen hat.",
+                  "Am Telefon beschrieb er sich so: „Ich bin ziemlich [groß|groß], [athletisch|athletisch] gebaut und habe kurze dunkle Haare.“",
+                  "Laura schaute aufmerksam durch die Menschenmenge auf dem Bahnsteig.",
+                  "Da sah sie einen [gutaussehend|gutaussehenden] Mann [mittleren Alters|mittleren Alters], der suchend umherblickte.",
+                  "Er wirkte sehr [kräftig|kräftig], trug eine modische Jacke und schien [eine Brille tragen|eine elegante Brille zu tragen]."
+                ],
+                [
+                  "Als sich ihre Blicke trafen, winkten beide erleichtert und lachten.",
+                  "„Du hast dich kaum verändert, du siehst immer noch so [jung|jung] und vital aus!“, rief Felix begeistert.",
+                  "Ob jemand [groß|groß], [klein|klein] oder [schlank|schlank] ist – echte Sympathie erkennt man sofort an der Ausstrahlung."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Ausstrahlung und Selbstwahrnehmung",
-              "intro": "Umfassende Betrachtung von Haltung und Aussehen (B1).",
+              "title": "Erster Eindruck und Ausstrahlung",
+              "intro": "Ausführliche Betrachtung über äußere Wirkung, Körperbewusstsein und Selbstakzeptanz (B1).",
               "paragraphs": [
                 [
-                  "Ein sympathisches Auftreten hängt nicht nur davon ab, ob jemand [schlank|schlank] oder etwas [dick|dick] gebaut ist.",
-                  "Viel wichtiger ist eine aufrechte Haltung und die positive Ausstrahlung, die ein Mensch ausstrahlt.",
-                  "Selbst wenn jemand [eine Brille tragen|eine Brille tragen] muss, kann diese das Gesicht stilvoll akzentuieren.",
-                  "Wer mit sich selbst im Reinen ist, wirkt automatisch [gutaussehend|gutaussehend] und anziehend."
+                  "Wenn wir einer neuen Person zum ersten Mal begegnen, nehmen wir ihr äußeres Erscheinungsbild unwillkürlich in Sekundenschnelle wahr.",
+                  "Ein Mensch, der sich regelmäßig bewegt und [athletisch|athletisch] wirkt, strahlt oft eine natürliche Vitalität und Dynamik aus.",
+                  "Dennoch trügt der erste optische Schein häufig, denn ob jemand [schlank|schlank], [kräftig|kräftig] oder eher zierlich gebaut ist, sagt rein gar nichts über seinen Charakter aus.",
+                  "Auch modische Accessoires wie eine markante Sehhilfe – wenn Personen [eine Brille tragen|eine Brille tragen] – prägen das Profil und verleihen dem Gesicht eine intellektuelle Note."
+                ],
+                [
+                  "Mit dem Älterwerden verändert sich unsere Physis ganz natürlich: Der Körper reift von der [jung|jungen] Unbeschwertheit hin zu den Merkmalen [mittleren Alters|mittleren Alters] und des Reifegrads.",
+                  "Wahre Attraktivität speist sich nicht aus normierten Maßen, sondern aus innerer Zufriedenheit und einem [gutaussehend|gutaussehenden], selbstbewussten Auftreten.",
+                  "Wer gelernt hat, seinen eigenen Körper wertzuschätzen, wirkt auf seine Umwelt automatisch anziehend und [hübsch|hübsch]."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Wahrnehmungspsychologie und Körperideale",
-              "intro": "Kritische Reflexion gesellschaftlicher Schönheitsideale (B2).",
+              "title": "Körperdiskurse und gesellschaftliche Ästhetiknormen",
+              "intro": "Kritische Reflexion über Schönheitsideale, Body-Positivity und mediale Fremdbilder (B2).",
               "paragraphs": [
                 [
-                  "Die gesellschaftliche Rezeption des Phänotyps changiert zwischen normierten Schönheitsidealen und authentischer Individualität.",
-                  "Eine [athletisch|athletische], [kräftig|kräftige] Statur wird medial oft favorisiert, doch wahre Eleganz erwächst aus innerer Souveränität.",
-                  "Unabhängig davon, ob jemand [jung|jung] oder [mittleren Alters|mittleren Alters] ist: Charakterliche Tiefe überstrahlt jede rein oberflächliche Ästhetik."
+                  "Die Wahrnehmung des menschlichen Körpers unterliegt einem permanenten soziokulturellen Deutungswandel, der massiv durch mediale Leitbilder konditioniert wird.",
+                  "Während die Werbeindustrie über Jahrzehnte hinweg ein homogenes Ideal propagierte – bevorzugt [groß|groß], makellos [schlank|schlank] und scheinbar ewig [jung|jung] –, erstarkt in modernen Gesellschaften der Diskurs um Diversität und Inklusion.",
+                  "Die Etikettierung von Körpern als [kräftig|kräftig], [athletisch|athletisch] oder gar normabweichend wird zunehmend zugunsten eines integrativen Körperverständnisses dekonstruiert."
+                ],
+                [
+                  "Besonders in der Lebensphase [mittleren Alters|mittleren Alters] emanzipieren sich viele Persönlichkeiten von externen Schönheitsdiktaten und definieren Attraktivität über Ausstrahlung und Lebensleistung.",
+                  "Letztlich erweist sich die ästhetische Wertschätzung des Körpers als ein komplexer Aushandlungsprozess zwischen individueller Selbstbehauptung und kollektiven Erwartungshaltungen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Körperstatur, Erscheinungsbild, optische Merkmale und die ganzheitliche Personenbeschreibung.",
+          "details": "Körperbau, Statur und äußeres Erscheinungsbild (A1–B2)",
+          "arabicDescription": "المظهر الخارجي، بنية الجسم، الملامح الجسدية والوصف الشامل لهيئة الإنسان باللغة الألمانية."
         },
         {
           "id": "gefuehle",
@@ -1653,59 +1818,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Wie fühlst du dich?",
-              "intro": "Grundwortschatz zu Emotionen und Stimmungen (A1).",
+              "title": "Gefühle und Launen",
+              "intro": "Einfache Wörter für Gefühle, Stimmungen und Eigenschaften von Menschen (A1).",
               "paragraphs": [
                 [
-                  "Heute bin ich sehr [glücklich|glücklich], denn die Sonne scheint.",
-                  "Gestern war mein Freund [traurig|traurig], aber heute geht es ihm besser.",
-                  "Wenn etwas nicht klappt, wird er manchmal [wütend|wütend].",
-                  "Vor einer großen Prüfung bin ich oft ein bisschen [nervös|nervös] oder [ängstlich|ängstlich]."
+                  "Jeder Mensch fühlt jeden Tag viele verschiedene Gefühle.",
+                  "Wenn wir gute Nachrichten hören, sind wir sehr [glücklich|glücklich] und lachen.",
+                  "Manchmal ist das Leben schwer, und man fühlt sich einen Moment [traurig|traurig].",
+                  "Ein Kind wird [wütend|wütend], wenn sein Spielzeug kaputtgeht.",
+                  "Vor einer wichtigen Prüfung in der Schule ist man oft etwas [nervös|nervös].",
+                  "Ein [freundlich|freundlicher] und [ehrlich|ehrlicher] Mensch findet schnell gute Freunde."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Gefühle und Charakter",
-              "intro": "Persönlichkeitsmerkmale im Alltag beschreiben (A2).",
+              "title": "Gemeinsam den Tag meistern",
+              "intro": "Alltägliche Situationen über Emotionen, Geduld und gegenseitige Hilfsbereitschaft (A2).",
               "paragraphs": [
                 [
-                  "Die Lehrerin ist immer [freundlich|freundlich] und sehr [geduldig|geduldig] mit den Kindern.",
-                  "Man sollte stets [ehrlich|ehrlich] sein, um das Vertrauen anderer nicht zu verlieren.",
-                  "Er ist nicht [faul|faul], sondern lernt jeden Tag sehr [fleißig|fleißig] Deutsch.",
-                  "Nach der bestandenen Prüfung war seine ganze Familie unheimlich [stolz|stolz] auf ihn."
+                  "Vor ihrer mündlichen Deutschprüfung fühlte sich Nina ziemlich [ängstlich|ängstlich] und unruhig.",
+                  "Ihr Lehrer sprach ihr gut zu und war dabei sehr [geduldig|geduldig] und verständnisvoll.",
+                  "Nina atmete tief durch und sagte sich: „Ich habe fleißig gelernt, ich kann das schaffen!“",
+                  "Nach der erfolgreichen Prüfung war sie überglücklich und mächtig [stolz|stolz] auf ihr Ergebnis.",
+                  "Ihre beste Freundin gratulierte herzlich und schenkte ihr eine schöne Blume."
+                ],
+                [
+                  "In der Wohngemeinschaft schätzen alle ihren Mitbewohner Karim, weil er stets [ehrlich|ehrlich] und [großzügig|großzügig] ist.",
+                  "Wenn jemand viel zu tun hat, hilft er sofort und ist niemals [faul|faul], sondern packt [fleißig|fleißig] mit an.",
+                  "Früher war Karim oft [schüchtern|schüchtern], doch durch seine Freunde ist er heute [selbstbewusst|selbstbewusst] geworden."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Charakterstärken und Selbstvertrauen",
-              "intro": "Persönliche Weiterentwicklung und emotionale Balance (B1).",
+              "title": "Emotionale Reife und zwischenmenschliche Balance",
+              "intro": "Ausführliche Betrachtung über Empathie, Charakterbildung und den Umgang mit Gefühlen (B1).",
               "paragraphs": [
                 [
-                  "Als Kind war Jonas extrem [schüchtern|schüchtern], doch im Laufe der Jahre wurde er immer [selbstbewusst|selbstbewusster].",
-                  "Wer seinen Mitmenschen [großzügig|großzügig] hilft, erfährt oft tief empfundene Dankbarkeit zurück.",
-                  "Es erfordert Geduld und Selbstdisziplin, in stressigen Situationen ruhig und [freundlich|freundlich] zu bleiben.",
-                  "Eine harmonische Persönlichkeit zeichnet sich durch [ehrlich|ehrliche] Kommunikation und Empathie aus."
+                  "Unsere Gefühle sind wie ein innerer Kompass, der uns anzeigt, was für unser seelisches Wohlbefinden wichtig ist.",
+                  "Wer in schwierigen Situationen [geduldig|geduldig] bleibt und Frustrationen aushalten kann, beweist eine bemerkenswerte emotionale Reife.",
+                  "Während Menschen in Stressmomenten schnell [wütend|wütend] oder unüberlegt reagieren, bewahrt eine ausgeglichene Persönlichkeit die nötige Ruhe.",
+                  "Es ist völlig normal, vor neuen Lebensaufgaben [nervös|nervös] zu sein; entscheidend ist, wie wir mit diesen inneren Spannungen umgehen."
+                ],
+                [
+                  "Ein [selbstbewusst|selbstbewusstes] Auftreten schließt Feinfühligkeit keineswegs aus: Man kann resolut handeln und gleichzeitig [freundlich|freundlich] und warmherzig bleiben.",
+                  "Besonders in Freundschaften zählen Tugenden wie ein [ehrlich|ehrlicher] Umgang und ein [großzügig|großzügiges] Herz bei Meinungsverschiedenheiten.",
+                  "Wenn wir andere Menschen unterstützen, werden wir nicht nur von [stolz|Stolz] erfüllt, sondern machen auch uns selbst dauerhaft [glücklich|glücklich]."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Emotionale Intelligenz und Charakterdynamik",
-              "intro": "Analyse emotionaler Resilienz und Selbstwirksamkeit (B2).",
+              "title": "Persönlichkeitsstrukturen und emotionale Selbstregulation",
+              "intro": "Anspruchsvolle Analyse der Affektregulation, Resilienz und Charakterentwicklung (B2).",
               "paragraphs": [
                 [
-                  "Emotionale Reife manifestiert sich in der Fähigkeit, auch unter extremem Druck besonnen und [geduldig|geduldig] zu agieren.",
-                  "Ein [selbstbewusst|selbstbewusstes] Auftreten darf nicht mit Arroganz verwechselt werden; vielmehr speist es sich aus [ehrlich|ehrlicher] Selbsterkenntnis.",
-                  "Indem man [großzügig|großzügig] gegenüber den Schwächen anderer bleibt, schafft man ein von gegenseitigem Respekt geprägtes Arbeitsklima."
+                  "Die moderne Emotionspsychologie begreift Affekte nicht als rationale Störfeuer, sondern als evolutionär gewachsene Informationsverarbeitungssysteme.",
+                  "Die Fähigkeit zur differenzierten Introspektion ermöglicht es Individuen, auch ambivalente Zustände – wie das Nebeneinander von [stolz|Stolz] und verletzlicher Vorsicht – adäquat zu verarbeiten.",
+                  "Während pathologische Vermeidungsmuster dazu führen können, dass sich Menschen dauerhaft [ängstlich|ängstlich] zurückziehen, fördert gezieltes Resilienztraining ein [selbstbewusst|selbstbewusstes] Interaktionsverhalten."
+                ],
+                [
+                  "Im sozialen Kontext erweisen sich dispositionelle Eigenschaften wie [großzügig|Großzügigkeit], [geduldig|Geduld] und prosoziale Hilfsbereitschaft als essenzielle Schutzfaktoren gegen interpersonelle Entfremdung.",
+                  "Ein authentisch [ehrlich|ehrlicher] Kommunikationsstil bildet die Grundvoraussetzung für nachhaltiges Vertrauen und psychologisches Wohlbefinden in komplexen Beziehungsgefügen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Emotionen, Gemütszustände, Charaktereigenschaften und psychologische Persönlichkeitsmerkmale.",
+          "details": "Gefühle, Charaktereigenschaften und emotionale Zustände (A1–B2)",
+          "arabicDescription": "المشاعر، الحالات المزاجية، سمات الشخصية والذكاء العاطفي باللغة الألمانية."
         }
       ]
     },
@@ -1783,59 +1968,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Alles für das Baby",
-              "intro": "Einfache Wörter für Babysachen und Erstausstattung (A1).",
+              "title": "Die Erstausstattung fürs Baby",
+              "intro": "Einfache Wörter für Babykleidung und wichtige Dinge für Säuglinge (A1).",
               "paragraphs": [
                 [
-                  "Das Baby trägt einen weichen [der Strampler|Strampler].",
-                  "Beim Essen braucht es ein sauberes [das Lätzchen|Lätzchen].",
-                  "Die Mutter wechselt die frische [die Windel, -n|Windel].",
-                  "Draußen setzt sie dem Baby ein warmes [das Mützchen|Mützchen] auf."
+                  "Ein neugeborenes Baby braucht weiche und bequeme Kleidung.",
+                  "Sehr praktisch für den Tag ist ein warmer [der Strampler|Strampler] aus weicher Baumwolle.",
+                  "Darunter trägt das Baby einen bequemen [der Body|Body].",
+                  "Vor dem Trinken bekommt das Kind ein buntes [das Lätzchen|Lätzchen] umgebunden.",
+                  "Wenn das Baby draußen spazieren fährt, wärmt ein kleines [das Mützchen|Mützchen] den Kopf.",
+                  "Wichtig für jeden Tag ist auch eine frische [die Windel, -n|Windel]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Babyausstattung für jeden Tag",
-              "intro": "Praktische Kleidung und Fürsorge für Neugeborene (A2).",
+              "title": "Ein Besuch im Babyfachgeschäft",
+              "intro": "Alltägliche Einkäufe und Vorbereitungen für das neue Familienmitglied (A2).",
               "paragraphs": [
                 [
-                  "Für die kalten Tage zieht der Vater dem Kind kleine [die Söckchen (Pl.)|Söckchen] an.",
-                  "In der Nacht schläft das Baby sicher in einem kuscheligen [der Schlafsack|Schlafsack].",
-                  "Unter dem Strampler trägt es immer einen bequemen [der Body|Body] aus Baumwolle.",
-                  "Für den Spaziergang im Kinderwagen gibt es süße kleine [die Babyschuhe (Pl.)|Babyschuhe]."
+                  "Gestern waren Sarah und Lukas in einem großen Babyfachgeschäft einkaufen.",
+                  "Da ihr Sohn bald zur Welt kommt, brauchten sie noch einige wichtige Dinge für die Babyausstattung.",
+                  "Sie wählten zwei niedliche [der Strampler|Strampler] und passende kleine [die Söckchen (Pl.)|Söckchen] aus.",
+                  "Die Verkäuferin zeigte ihnen auch kuschelige [die Babyschuhe (Pl.)|Babyschuhe] für kalte Wintertage.",
+                  "„Für die Nacht empfehlen Kinderärzte einen sicheren [der Schlafsack|Schlafsack] ohne Decke“, erklärte die Fachberaterin."
+                ],
+                [
+                  "Sarah kaufte gleich ein Set mit praktischen [das Lätzchen|Lätzchen] und hautfreundlichen [die Windel, -n|Windeln].",
+                  "Außerdem legten sie drei weiche [der Body|Bodys] und ein niedliches [das Mützchen|Mützchen] in den Einkaufswagen.",
+                  "Voller Vorfreude packten sie zu Hause die neuen Sachen ordentlich in die Wickelkommode."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Die Erstausstattung vorbereiten",
-              "intro": "Wichtige Vorbereitungen für das Leben mit einem Neugeborenen (B1).",
+              "title": "Alltag mit dem Neugeborenen",
+              "intro": "Ausführliche Betrachtung über Pflege, Ausstattung und Organisation junger Eltern (B1).",
               "paragraphs": [
                 [
-                  "Bevor das Kind auf die Welt kommt, kaufen werdende Eltern praktische [die Windel, -n|Windeln] und mehrere [der Strampler|Strampler].",
-                  "Ein hochwertiger [der Schlafsack|Schlafsack] sorgt dafür, dass das Baby nachts ruhig schlafen kann, ohne zu frieren.",
-                  "Wenn man das Baby füttert, verhindert ein saugfähiges [das Lätzchen|Lätzchen], dass die Kleidung schmutzig wird.",
-                  "Weiche [die Babyschuhe (Pl.)|Babyschuhe] und warme [die Söckchen (Pl.)|Söckchen] schützen die empfindlichen Füße."
+                  "Die ersten Monate mit einem Säugling sind für junge Eltern eine intensive Zeit voller neuer Routinen und Überraschungen.",
+                  "Bereits vor der Entbindung stellen viele Paare eine durchdachte Erstausstattung zusammen, damit im Alltag alles griffbereit ist.",
+                  "Kleidungsstücke wie ein atmungsaktiver [der Body|Body] und ein leicht zu öffnender [der Strampler|Strampler] erleichtern das mehrmalige Wickeln am Tag erheblich.",
+                  "Weil Babys schnell auskühlen, sind wärmende [die Söckchen (Pl.)|Söckchen] und ein schützendes [das Mützchen|Mützchen] unverzichtbare Begleiter bei jedem Spaziergang."
+                ],
+                [
+                  "Beim Füttern schützt ein saugfähiges [das Lätzchen|Lätzchen] die zarte Kleidung vor Flecken.",
+                  "Für einen ruhigen und sicheren Schlaf schwören Hebammen auf den passenden [der Schlafsack|Schlafsack], der Überhitzung verhindert.",
+                  "Und weiche [die Babyschuhe (Pl.)|Babyschuhe] halten die winzigen Füßchen auch an kühlen Herbsttagen kuschelig warm."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Sicherheits- und Qualitätsstandards in der Säuglingspflege",
-              "intro": "Anspruchsvolle Kriterien für ergonomische und ökologische Babybekleidung (B2).",
+              "title": "Nachhaltigkeit und Konsumdiskurse in der Kleinkindpädagogik",
+              "intro": "Anspruchsvolle soziokulturelle Reflexion über ökologische Standards und Säuglingsausstattung (B2).",
               "paragraphs": [
                 [
-                  "Bei der Auswahl der Erstausstattung für Säuglinge stehen Schadstofffreiheit und funktionale Ergonomie an erster Stelle.",
-                  "Ein atmungsaktiver [der Body|Body] in Kombination mit einem temperaturausgleichenden [der Schlafsack|Schlafsack] minimiert das Risiko von Überhitzung im Säuglingsbett.",
-                  "Ökologisch zertifizierte Materialien für [die Windel, -n|Windeln] und [der Strampler|Strampler] gewährleisten den optimalen Schutz der hochsensiblen Hautbarriere."
+                  "Im Segment der frühkindlichen Ausstattung vollzieht sich gegenwärtig ein bemerkenswerter Paradigmenwechsel hin zu ökologischer Nachhaltigkeit und Schadstofffreiheit.",
+                  "Werdende Eltern hinterfragen zunehmend herkömmliche Einwegprodukte und setzen bei der Auswahl von [die Windel, -n|Windeln] und Textilien auf zertifizierte Naturmaterialien.",
+                  "Ob schadstofffreier [der Body|Body], GOTS-zertifizierter [der Strampler|Strampler] oder ergonomisch konzipierter [der Schlafsack|Schlafsack] – funktionale Aspekte verschmelzen mit einem ausgeprägten Umweltbewusstsein."
+                ],
+                [
+                  "Gleichzeitig boomt der Markt für hochwertige Second-Hand-Kleidung bei [die Babyschuhe (Pl.)|Babyschuhen] und Erstausstattungen, da Säuglinge den Größen innerhalb weniger Wochen entwachsen.",
+                  "Die bewusste Reduktion auf das Wesentliche entlastet nicht nur das familiäre Budget, sondern setzt frühzeitig ein Zeichen für ressourcenschonenden Konsum."
                 ]
               ]
             }
-          }
+          },
+          "description": "Kleidung, Ausstattung und Zubehör für Säuglinge und Kleinkinder im deutschsprachigen Raum.",
+          "details": "Babyausstattung, Kinderkleidung und Zubehör (A1–B2)",
+          "arabicDescription": "مستلزمات وملابس الأطفال الرضع، تجهيزات العناية وحديثي الولادة باللغة الألمانية."
         },
         {
           "id": "unisex",
@@ -1931,59 +2136,78 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Bequeme Kleidung",
-              "intro": "Einfache Wörter für Alltagskleidung (A1).",
+              "title": "Bequeme Kleidung für jeden Tag",
+              "intro": "Einfache Wörter für Alltagsgarderobe, Jeans, T-Shirts und Jacken (A1).",
               "paragraphs": [
                 [
-                  "Im Sommer trage ich gern ein weißes [das T-Shirt, -s|T-Shirt].",
-                  "Meine blaue [die Jeans|Jeans] und die bequeme [die Hose, -n|Hose] passen zu allem.",
-                  "Wenn es kühl wird, ziehe ich einen warmen [der Pullover, -|Pullover] oder eine [die Jacke, -n|Jacke] an.",
-                  "Jeden Morgen wasche ich frische [die Socken (Pl.)|Socken] und saubere [die Unterwäsche|Unterwäsche]."
+                  "Jeden Morgen wählen wir passende Kleidung für den Tag aus.",
+                  "Sehr beliebt und bequem ist ein einfaches [das T-Shirt, -s|T-Shirt] aus Baumwolle.",
+                  "Dazu tragen viele Menschen eine praktische [die Jeans|Jeans] oder eine lockere [die Hose, -n|Hose].",
+                  "Wenn es draußen kühler wird, zieht man einen warmen [der Pullover, -|Pullover] oder einen sportlichen [der Hoodie, -s|Hoodie] an.",
+                  "Vor dem Verlassen des Hauses nimmt man eine schützende [die Jacke, -n|Jacke] mit.",
+                  "Bequeme Kleidung sorgt dafür, dass man sich den ganzen Tag wohlfühlt."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Mein Alltagsoutfit",
-              "intro": "Alltägliche Kombinationen für Sport und Freizeit (A2).",
+              "title": "Das richtige Outfit für jedes Wetter",
+              "intro": "Alltägliche Entscheidungen über Kleidung je nach Jahreszeit und Anlass (A2).",
               "paragraphs": [
                 [
-                  "Im Winter hält mich ein dicker [der Mantel, -̈|Mantel] warm.",
-                  "Zu Hause trage ich am liebsten einen gemütlichen [der Hoodie, -s|Hoodie].",
-                  "An heißen Sommertagen ziehe ich eine luftige [die kurze Hose|kurze Hose] an.",
-                  "Zum Sport gehe ich im bequemen [der Trainingsanzug|Trainingsanzug] und schlafe nachts in einem weichen [der Schlafanzug|Schlafanzug]."
+                  "Heute Morgen schaute Julian aus dem Fenster und sah graue Regenwolken am Himmel.",
+                  "Er zog ein frisches [das T-Shirt, -s|T-Shirt] und seine dunkelblaue Lieblings-[die Jeans|Jeans] an.",
+                  "Da es im Herbst empfindlich kalt sein kann, wählte er einen dicken [der Pullover, -|Pullover] und darüber einen eleganten [der Mantel, -̈|Mantel].",
+                  "An den Füßen trug er warme [die Socken (Pl.)|Socken] und feste Schuhe für den Weg zur Arbeit.",
+                  "„Hoffentlich habe ich meine wetterfeste [die Jacke, -n|Jacke] nicht umsonst angezogen“, dachte er schmunzelnd."
+                ],
+                [
+                  "Im Sommer hingegen trägt Julian bei sonnigem Wetter am liebsten eine luftige [die kurze Hose|kurze Hose] und leichte T-Shirts.",
+                  "Nach Feierabend schlüpft er zu Hause gern in einen bequemen [der Trainingsanzug|Trainingsanzug], um auf dem Sofa zu entspannen.",
+                  "Und kurz vor dem Schlafen wechselt er in seinen gemütlichen [der Schlafanzug|Schlafanzug]."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Funktionalität und Tragekomfort",
-              "intro": "Ausführliche Beschreibung von alltagstauglicher Mode (B1).",
+              "title": "Funktionalität und modischer Ausdruck im Alltag",
+              "intro": "Ausführliche Betrachtung über Freizeitmode, Komfort und den Wandel von Kleidungsstilen (B1).",
               "paragraphs": [
                 [
-                  "Moderne Unisex-Kleidung kombiniert zeitlosen Stil mit maximalem Tragekomfort.",
-                  "Eine gut sitzende [die Jeans|Jeans] und ein schlichter [der Pullover, -|Pullover] eignen sich sowohl für die Uni als auch für die Freizeit.",
-                  "Wer regelmäßig trainiert, schätzt einen atmungsaktiven [der Trainingsanzug|Trainingsanzug], der bei kühlem Wetter durch eine funktionale [die Jacke, -n|Jacke] ergänzt wird.",
-                  "Für erholsamen Schlaf sorgt ein temperaturausgleichender [der Schlafanzug|Schlafanzug] aus Naturfasern."
+                  "In den vergangenen Jahrzehnten hat sich die Alltagskleidung im deutschen Sprachraum spürbar gewandelt.",
+                  "Wo früher starre Kleidungsvorschriften herrschten, dominieren heute bequeme Kleidungsstücke, die sowohl im Homeoffice als auch in der Freizeit getragen werden.",
+                  "Eine gut sitzende [die Jeans|Jeans] kombiniert mit einem schlichten [der Pullover, -|Pullover] oder einem lässigen [der Hoodie, -s|Hoodie] gilt mittlerweile auch in vielen modernen Büros als vollkommen salonfähig.",
+                  "Bei kühler Witterung greift man gern zu einem wärmenden [der Mantel, -̈|Mantel], während im Hochsommer die [die kurze Hose|kurze Hose] für willkommene Frische sorgt."
+                ],
+                [
+                  "Auch beim Sport oder bei Outdoor-Aktivitäten steht die funktionale Qualität im Mittelpunkt, etwa bei einem atmungsaktiven [der Trainingsanzug|Trainingsanzug].",
+                  "Gute Kleidung muss heute nicht nur ästhetisch ansprechend sein, sondern vor allem Bewegungsfreiheit und Komfort für den gesamten Tag garantieren."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Nachhaltigkeit und genderneutrale Modeströmungen",
-              "intro": "Analyse moderner minimalistischer Kleidungskonzepte (B2).",
+              "title": "Textilsoziologie und die Entgrenzung geschlechtsspezifischer Mode",
+              "intro": "Anspruchsvolle Analyse über Unisex-Trends, textile Identitäten und Casualisierung (B2).",
               "paragraphs": [
                 [
-                  "Die Etablierung genderneutraler Kollektionen spiegelt den gesellschaftlichen Wunsch nach zeitloser Funktionalität und Langlebigkeit wider.",
-                  "Ob ein klassischer Woll-[der Mantel, -̈|Mantel] oder ein reduzierter [der Hoodie, -s|Hoodie] – minimalistische Schnitte dominieren urbane Garderoben.",
-                  "Der Verzicht auf schnelllebige Trends zugunsten hochwertiger Basics wie [die Jeans|Jeans] und [das T-Shirt, -s|T-Shirts] leistet einen substanziellen Beitrag zur nachhaltigen Textilwirtschaft."
+                  "Die fortschreitende Casualisierung der Bekleidungskultur reflektiert tiefgreifende gesellschaftliche Demokratisierungsprozesse.",
+                  "Klassische Unisex-Elemente wie das universelle [das T-Shirt, -s|T-Shirt], die robuste [die Jeans|Jeans] oder der urbane [der Hoodie, -s|Hoodie] haben tradierte geschlechtsspezifische Dresscodes weitgehend dekonstruiert.",
+                  "Diese modische Nivellierung eröffnet Individuen die Freiheit, textile Identitäten jenseits heteronormativer Konventionen zu artikulieren."
+                ],
+                [
+                  "Gleichzeitig wird die Ästhetik scheinbar beiläufiger Freizeitkleidung – vom minimalistischen [der Mantel, -̈|Mantel] bis hin zum sportiven [der Trainingsanzug|Trainingsanzug] – von internationalen Modehäusern rekodiert und als Statussymbol reetabliert.",
+                  "Die Wahl des alltäglichen Ensembles erweist sich somit als subtiles Wechselspiel zwischen demonstrativer Lässigkeit und distinktivem Modebewusstsein."
                 ]
               ]
             }
-          }
+          },
+          "description": "Alltags- und Freizeitkleidung für alle Geschlechter: Hosen, Pullover, Jacken und bequeme Mode.",
+          "details": "Alltägliche Kleidung, Passformen und Unisex-Garderobe (A1–B2)",
+          "arabicDescription": "الملابس اليومية والمشتركة للجنسين: الجينز، السترات، المعاطف والأزياء المريحة باللغة الألمانية."
         },
         {
           "id": "herren",
@@ -2067,59 +2291,80 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Klassische Herrenkleidung",
-              "intro": "Grundbegriffe der Herrenmode (A1).",
+              "title": "Schicke Kleidung für Männer",
+              "intro": "Einfache Wörter für Hemden, Anzüge und Herrenkleidung (A1).",
               "paragraphs": [
                 [
-                  "Mein Vater trägt bei der Arbeit einen eleganten [der Anzug, -̈e|Anzug].",
-                  "Dazu zieht er ein weißes [das Hemd, -en|Hemd] und eine passende [die Krawatte, -n|Krawatte] an.",
-                  "Zu festlichen Anlässen wählt er manchmal auch eine feine [die Fliege, -n|Fliege].",
-                  "Unter dem Hemd trägt er ein leichtes [das Unterhemd, -en|Unterhemd]."
+                  "Für festliche Anlässe und die Arbeit kleiden sich Männer gerne schick.",
+                  "Ein eleganter dunkler [der Anzug, -̈e|Anzug] sieht immer sehr professionell aus.",
+                  "Dazu trägt man ein gebügeltes weißes [das Hemd, -en|Hemd] und eine passende [die Krawatte, -n|Krawatte].",
+                  "Bei manchen Festen wählt man statt einer Krawatte eine festliche [die Fliege, -n|Fliege].",
+                  "Ein moderner [der Blazer, -|Blazer] passt hervorragend zu einer bequemen Stoffhose.",
+                  "Gepflegte Kleidung hinterlässt überall einen guten Eindruck."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Schick und entspannt",
-              "intro": "Kombinationen für Beruf und Urlaub (A2).",
+              "title": "Vorbereitung auf das Bewerbungsgespräch",
+              "intro": "Alltägliche Vorbereitungen für ein Vorstellungsgespräch und die Wahl des Outfits (A2).",
               "paragraphs": [
                 [
-                  "Über dem Hemd trägt David gern eine elegante [die Weste, -n|Weste] oder einen sportlichen [der Blazer, -|Blazer].",
-                  "Am Morgen zieht er nach dem Aufstehen einen gemütlichen [der Bademantel, -̈|Bademantel] über.",
-                  "Im Sommerurlaub am Strand packt er seine bunte [die Badehose, -n|Badehose] ein.",
-                  "Für jeden Tag wählt er bequeme [die Boxershorts (Pl.)|Boxershorts] aus Baumwolle."
+                  "Morgen hat Tobias ein wichtiges Vorstellungsgespräch bei einer großen Bank in Frankfurt.",
+                  "Am Vorabend probierte er seinen dunkelblauen [der Anzug, -̈e|Anzug] vor dem Spiegel an.",
+                  "Er bügelte sorgfältig sein hellblaues [das Hemd, -en|Hemd] und band eine elegante [die Krawatte, -n|Krawatte] um.",
+                  "Unter dem Hemd trug er ein atmungsaktives weißes [das Unterhemd, -en|Unterhemd].",
+                  "„Zu diesem festlichen Termin passt auch eine feine [die Weste, -n|Weste] unter dem Sakko“, riet ihm sein Vater."
+                ],
+                [
+                  "Tobias prüfte noch, ob die Hose gut saß und die Schuhe frisch geputzt waren.",
+                  "Nach der anstrengenden Vorbereitung freute er sich auf den Feierabend.",
+                  "Er schlüpfte in seinen bequemen [der Bademantel, -̈|Bademantel] und trank entspannt eine Tasse Tee.",
+                  "Mit der richtigen Vorbereitung blickt er dem Gespräch morgen selbstbewusst entgegen."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Dresscodes und stilvolles Auftreten",
-              "intro": "Herrengarderobe für geschäftliche und private Anlässe (B1).",
+              "title": "Stilsicherheit im modernen Berufsleben",
+              "intro": "Ausführliche Betrachtung über Herrenmode, Business-Casual und Dresscodes (B1).",
               "paragraphs": [
                 [
-                  "Bei geschäftlichen Besprechungen ist ein perfekt sitzender [der Anzug, -̈e|Anzug] mit gebügelter [die Krawatte, -n|Krawatte] nach wie vor Standard.",
-                  "Im Smart-Casual-Bereich lässt sich ein edler [der Blazer, -|Blazer] hervorragend mit einer dunklen Hose und einem hellen [das Hemd, -en|Hemd] kombinieren.",
-                  "Zu feierlichen Abendveranstaltungen greifen stilbewusste Herren gern zur klassischen [die Fliege, -n|Fliege] und einer abgestimmten [die Weste, -n|Weste].",
-                  "Guter Stil beginnt bereits bei der Basis mit angenehmer Wäsche wie [die Boxershorts (Pl.)|Boxershorts] und [das Unterhemd, -en|Unterhemden]."
+                  "In der modernen Arbeitswelt erfordert die Wahl der Herrenkleidung ein gutes Gespür für den jeweiligen Kontext.",
+                  "Während bei traditionellen Banken und Kanzleien der klassische [der Anzug, -̈e|Anzug] mit Krawatte weiterhin als Standard gilt, setzt sich in kreativen Branchen zunehmend das Konzept des Business-Casual durch.",
+                  "Dabei kombiniert man ein gepflegtes [das Hemd, -en|Hemd] mit einem hochwertigen [der Blazer, -|Blazer] und einer modernen Chino-Hose.",
+                  "Bei formellen Abendveranstaltungen wie Galas oder Opernpremieren darf es gerne besonders festlich sein: Eine geschmackvolle [die Fliege, -n|Fliege] und eine edle [die Weste, -n|Weste] verleihen dem Outfit eine glamouröse Note."
+                ],
+                [
+                  "Entscheidend für ein überzeugendes Erscheinungsbild ist stets die einwandfreie Passform.",
+                  "Ein Hemd, das an den Schultern spannt, oder ein Sakko mit zu langen Ärmeln mindern die Eleganz empfindlich.",
+                  "Wer in zeitlose Qualitätsstoffe investiert, beweist nachhaltiges Stilbewusstsein und fühlt sich in jeder geschäftlichen Verhandlung sicher."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Sartoriale Tradition und moderne Maßkonfektion",
-              "intro": "Differenzierte Stilkunde in der gehobenen Herrenausstattung (B2).",
+              "title": "Die Semiotik maskuliner Repräsentationskleidung",
+              "intro": "Anspruchsvolle Analyse über Herrenschneiderei, Statussymbole und Identitätsentwürfe (B2).",
               "paragraphs": [
                 [
-                  "Die klassische Herrenmode zeichnet sich durch zeitlose Handwerkskunst und subtile Eleganz aus.",
-                  "Die präzise Passform eines maßgeschneiderten [der Anzug, -̈e|Anzugs] definiert die Silhouette und vermittelt unverwechselbare Souveränität.",
-                  "Das harmonische Zusammenspiel zwischen texturiertem [der Blazer, -|Blazer], edler Seiden-[die Krawatte, -n|Krawatte] und formvollendeter [die Weste, -n|Weste] zeugt von sartorialer Raffinesse."
+                  "Die Evolution der Herrenbekleidung ist eng an soziologische Machtdiskurse und bürgerliche Repräsentationsansprüche gekoppelt.",
+                  "Der moderne zweireihige oder einreihige [der Anzug, -̈e|Anzug] fungiert seit dem 19. Jahrhundert als normierte Rüstung des professionellen Mannes, die individuelle Eigenheiten zugunsten institutioneller Verlässlichkeit sublimiert.",
+                  "Elemente wie das exakt gestärkte [das Hemd, -en|Hemd], die feinseidene [die Krawatte, -n|Krawatte] oder die traditionelle [die Fliege, -n|Fliege] kodieren subtil Seriosität, Integrität und gesellschaftliche Positionierung."
+                ],
+                [
+                  "Gleichwohl durchbricht die zeitgenössische Männermode diese starre Monochromie durch avantgardistische Schnitte bei [der Blazer, -|Blazern] und unkonventionelle Materialkombinationen.",
+                  "Dieser Wandel reflektiert ein pluralisiertes Männlichkeitsbild, das souveräne Eleganz nicht länger als Uniform, sondern als individualisiertes Ausdrucksmittel begreift."
                 ]
               ]
             }
-          }
+          },
+          "description": "Herrenbekleidung, Business-Garderobe, festliche Anzüge und stilvolle Accessoires für Männer.",
+          "details": "Klassische Herrenmode, Schnitte und Herrenbekleidung (A1–B2)",
+          "arabicDescription": "ملابس الرجال، أزياء العمل الأنيقة، البدلات الرسمية والإكسسوارات الرجالية باللغة الألمانية."
         },
         {
           "id": "damen",
@@ -2203,59 +2448,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Schöne Damenkleidung",
-              "intro": "Grundwortschatz zu Kleidern, Röcken und Blusen (A1).",
+              "title": "Schöne Damenmode",
+              "intro": "Einfache Wörter für Kleider, Blusen, Röcke und Damenkleidung (A1).",
               "paragraphs": [
                 [
-                  "Maria trägt im Sommer ein leichtes, buntes [das Kleid, -er|Kleid].",
-                  "Für die Arbeit wählt sie eine elegante weiße [die Bluse, -n|Bluse].",
-                  "Dazu zieht sie einen modernen [der Rock, -̈e|Rock] an.",
-                  "Am Abend zieht sie eine wärmende [die Strickjacke, -n|Strickjacke] über."
+                  "Damenmode bietet viele verschiedene Farben und Schnitte.",
+                  "Im Sommer trägt Maria sehr gerne ein leichtes, buntes [das Kleid, -er|Kleid].",
+                  "Im Büro kombiniert sie eine elegante weiße [die Bluse, -n|Bluse] mit einem schicken [der Rock, -̈e|Rock].",
+                  "An kühleren Tagen zieht sie eine wärmende [die Strumpfhose, -n|Strumpfhose] und eine gemütliche [die Strickjacke, -n|Strickjacke] an.",
+                  "Zu Hause entspannt sie sich am Abend gern in einer bequemen [die Leggings|Leggings].",
+                  "Die passende Kleidung schenkt Selbstvertrauen und gute Laune."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Für jeden Anlass das richtige Outfit",
-              "intro": "Modische Ensembles für Tag und Nacht (A2).",
+              "title": "Vorbereitung auf den Theaterabend",
+              "intro": "Alltägliche Überlegungen zur Wahl eines eleganten Outfits für einen besonderen Abend (A2).",
               "paragraphs": [
                 [
-                  "Zu einem festlichen Ball trägt Sophie ein atemberaubendes [das Abendkleid, -er|Abendkleid].",
-                  "Wenn es draußen kühl ist, zieht sie unter dem Rock eine feine [die Strumpfhose, -n|Strumpfhose] an.",
-                  "Zu Hause entspannt sie sich gern in bequemen [die Leggings|Leggings].",
-                  "Im Schwimmbad trägt sie einen sportlichen [der Badeanzug, -̈e|Badeanzug] und schläft nachts in einem feinen [das Nachthemd, -en|Nachthemd]."
+                  "Heute Abend gehen Sophie und ihr Mann ins Theater, um eine berühmte Oper zu sehen.",
+                  "Schon am Nachmittag überlegte Sophie, was sie anziehen sollte.",
+                  "Zuerst probierte sie einen dunkelblauen [der Rock, -̈e|Rock] mit einer feinen Seiden-[die Bluse, -n|Bluse] an.",
+                  "Dann entschied sie sich jedoch für ihr langes, dunkelrotes [das Abendkleid, -er|Abendkleid], das wunderbar fiel.",
+                  "Dazu zog sie eine transparente [die Strumpfhose, -n|Strumpfhose] und passende Schuhe an."
+                ],
+                [
+                  "Weil es am Abend kühl werden konnte, nahm sie eine elegante [die Strickjacke, -n|Strickjacke] mit.",
+                  "Nach einem wunderschönen Abend kehrte Sophie glücklich nach Hause zurück.",
+                  "Vor dem Schlafen zog sie ihr weiches [das Nachthemd, -en|Nachthemd] an und dachte zufrieden an die Musik zurück."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Stilsicher durch die Jahreszeiten",
-              "intro": "Vielseitige Damenmode von Business bis Freizeit (B1).",
+              "title": "Stilvielfalt und Selbstbestimmung in der Damenmode",
+              "intro": "Ausführliche Betrachtung über modische Wandlungsfähigkeit und zeitlose Eleganz (B1).",
               "paragraphs": [
                 [
-                  "Eine hochwertige Seiden-[die Bluse, -n|Bluse] lässt sich sowohl mit einem klassischen [der Rock, -̈e|Rock] als auch mit einer Bundfaltenhose kombinieren.",
-                  "Für besondere Anlässe verleiht ein langes [das Abendkleid, -er|Abendkleid] jeder Trägerin eine glamouröse Ausstrahlung.",
-                  "Im Alltag bieten elastische [die Leggings|Leggings] und eine weiche [die Strickjacke, -n|Strickjacke] die perfekte Balance aus Chic und Bequemlichkeit.",
-                  "Ein passender [der BH (Büstenhalter)|BH] garantiert den ganzen Tag über optimalen Halt und Tragekomfort."
+                  "Moderne Damenmode zeichnet sich durch eine enorme stilistische Bandbreite aus, die individuellen Vorlieben Raum gibt.",
+                  "Während im professionellen Kontext eine gut geschnittene [die Bluse, -n|Bluse] oder ein zeitloses Kostüm Souveränität vermittelt, erlaubt die Freizeitmode unkomplizierte Kombinationen.",
+                  "Eine elastische [die Leggings|Leggings] kombiniert mit einem weiten Pullover ist zum Inbegriff moderner Gemütlichkeit geworden.",
+                  "Wenn feierliche Anlässe anstehen, verwandelt ein atemberaubendes [das Abendkleid, -er|Abendkleid] den Auftritt in ein glamouröses Erlebnis."
+                ],
+                [
+                  "Dabei kommt es nicht nur auf das äußere Kleidungsstück an: Hochwertige Unterwäsche wie ein perfekt sitzender [der BH (Büstenhalter)|BH] bildet die unsichtbare Grundlage für bequemen Halt und schöne Linien.",
+                  "Für den Sommerurlaub am Meer gehört natürlich auch der passende [der Badeanzug, -̈e|Badeanzug] unverzichtbar ins Reisegepäck.",
+                  "Stilbewusste Frauen definieren Mode heute nicht über kurzlebige Trends, sondern über Tragekomfort und Authentizität."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Emanzipation und Ästhetik der modernen Damenmode",
-              "intro": "Kulturgeschichtliche und ästhetische Betrachtung von Mode (B2).",
+              "title": "Feministische Modekritik und ästhetische Subjektivierung",
+              "intro": "Anspruchsvolle kulturwissenschaftliche Analyse über Weiblichkeitskonstruktionen in der Mode (B2).",
               "paragraphs": [
                 [
-                  "Die zeitgenössische Damenmode reflektiert den gesellschaftlichen Diskurs über Weiblichkeit, Selbstbestimmung und Funktionalität.",
-                  "Von der strukturierten Strenge der Business-[die Bluse, -n|Bluse] bis zum fließenden Fall eines [das Abendkleid, -er|Abendkleids] manifestiert sich textile Vielfalt.",
-                  "Die Verschmelzung von sportiven Elementen wie [die Leggings|Leggings] mit klassischer Strickkunst exemplifiziert den modernen Athleisure-Trend."
+                  "Die Geschichte der weiblichen Bekleidung spiegelt die gesellschaftlichen Emanzipationskämpfe der letzten Jahrhunderte in beispielloser Deutlichkeit wider.",
+                  "Die Befreiung von einengenden Korsetts und die Etablierung funktionaler Silhouetten – vom fließenden [das Kleid, -er|Kleid] bis hin zur Aneignung maskuliner Schnitte – markierten Meilensteine weiblicher Selbstbestimmung.",
+                  "Gleichzeitig operiert die zeitgenössische Ästhetik mit dem scheinbaren Paradoxon, dass traditionell feminine Kleidungsstücke wie der [der Rock, -̈e|Rock] oder das festliche [das Abendkleid, -er|Abendkleid] als bewusste Akte selbstgewählter Eleganz reinszeniert werden."
+                ],
+                [
+                  "Der Diskurs um Körperbilder und die Dekonstruktion von Zwangsvorstellungen zeigt sich auch im Wandel funktionaler Wäsche wie des modernen [der BH (Büstenhalter)|BHs] hin zu kompromisslosem Wohlbefinden.",
+                  "Kleidung fungiert somit nicht als passive Hülle, sondern als aktives, politisches Instrument individueller Identitätsstiftung."
                 ]
               ]
             }
-          }
+          },
+          "description": "Damenmode von klassischer Business-Kleidung über festliche Abendgarderobe bis zu bequemen Freizeit-Outfits.",
+          "details": "Damenmode, Kleider und vielseitige Damenbekleidung (A1–B2)",
+          "arabicDescription": "أزياء وملابس النساء: الفساتين، التنانير، القمصان النسائية والملابس الرسمية والمريحة باللغة الألمانية."
         },
         {
           "id": "accessoires",
@@ -2339,59 +2604,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Hüte, Schals und Schmuck",
-              "intro": "Grundlegende Accessoires für jeden Tag (A1).",
+              "title": "Praktische und schöne Accessoires",
+              "intro": "Einfache Wörter für Taschen, Schals, Uhren und Schmuck im Alltag (A1).",
               "paragraphs": [
                 [
-                  "Im Winter trage ich eine warme [die Mütze, -n|Mütze] und dicke [die Handschuhe (Pl.)|Handschuhe].",
-                  "Um den Hals binde ich einen weichen [der Schal, -s|Schal].",
-                  "Mein Vater trägt gern einen schicken [der Hut, -̈e|Hut] und einen ledernen [der Gürtel, -|Gürtel].",
-                  "Ich schaue auf meine [die Uhr, -en|Uhr], um pünktlich zu sein."
+                  "Kleine Details machen jedes Outfit besonders und praktisch.",
+                  "Ein stabiler [der Gürtel, -|Gürtel] hält die Hose sicher am richtigen Platz.",
+                  "Im Winter wärmt ein weicher [der Schal, -s|Schal] den Hals und eine warme [die Mütze, -n|Mütze] den Kopf.",
+                  "Gegen die Kälte schützen dicke [die Handschuhe (Pl.)|Handschuhe] an beiden Händen.",
+                  "Bei hellem Sonnenschein schützt eine dunkle [die Sonnenbrille, -n|Sonnenbrille] die Augen vor dem Licht.",
+                  "Auf die Minute genau zeigt die schöne [die Uhr, -en|Uhr] am Handgelenk die Zeit an."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Glänzende Details",
-              "intro": "Schmuck und praktische Begleiter (A2).",
+              "title": "Der letzte Schliff vor dem Ausgehen",
+              "intro": "Alltägliche Vorbereitungen mit modischen Accessoires und passendem Schmuck (A2).",
               "paragraphs": [
                 [
-                  "An sonnigen Sommertagen schützt mich eine dunkle [die Sonnenbrille, -n|Sonnenbrille].",
-                  "Zu ihrem Geburtstag bekam Anna eine funkelnde [die Halskette, -n|Halskette] und glänzende [die Ohrringe (Pl.)|Ohrringe].",
-                  "An seinem Finger funkelt ein goldener [der Ring, -e|Ring].",
-                  "Mit den passenden Accessoires wirkt jedes einfache Outfit sofort besonders."
+                  "Bevor Julia das Haus verlässt, wirft sie noch einen prüfenden Blick in den Ganzkörperspiegel.",
+                  "Ihr schlichtes schwarzes Kleid sieht gut aus, aber mit den passenden Details wirkt es noch schöner.",
+                  "Sie legt eine zarte silberne [die Halskette, -n|Halskette] um den Hals und steckt glänzende [die Ohrringe (Pl.)|Ohrringe] an.",
+                  "An ihrem Finger funkelt ein schöner [der Ring, -e|Ring], den sie von ihrer Großmutter zum Geburtstag geschenkt bekommen hat.",
+                  "Dazu bindet sie sich einen gemusterten Seiden-[der Schal, -s|Schal] locker um die Schultern."
+                ],
+                [
+                  "Draußen scheint die warme Nachmittagssonne, also setzt sie sofort ihre modische [die Sonnenbrille, -n|Sonnenbrille] auf.",
+                  "Ihr Begleiter Thomas trägt heute einen eleganten [der Hut, -̈e|Hut], der ihn vor der Sonne schützt.",
+                  "Mit den richtigen Accessoires wird aus einem einfachen Alltagslook ein echter Hingucker."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Akzente setzen mit Stil",
-              "intro": "Wie Accessoires ein Outfit harmonisch abrunden (B1).",
+              "title": "Die Macht der feinen Details",
+              "intro": "Ausführliche Betrachtung über Schmuck, Handwerkskunst und emotionale Erinnerungsstücke (B1).",
               "paragraphs": [
                 [
-                  "Oft sind es die kleinen Details, die ein schlichtes Outfit in einen echten Blickfang verwandeln.",
-                  "Ein edler [der Gürtel, -|Gürtel] betont die Taille, während eine filigrane [die Halskette, -n|Halskette] das Dekolleté stilvoll in Szene setzt.",
-                  "Eine elegante [die Uhr, -en|Uhr] ist nicht nur ein Zeitmesser, sondern ein Ausdruck von individuellem Geschmack und Zuverlässigkeit.",
-                  "Passend dazu können dezente [die Ohrringe (Pl.)|Ohrringe] das Gesamtbild harmonisch abrunden."
+                  "Accessoires sind oft die eigentlichen Hauptdarsteller eines gelungenen Erscheinungsbildes.",
+                  "Während Kleidung den Grundton angibt, erzählen Accessoires persönliche Geschichten und setzen individuelle Akzente.",
+                  "Eine edle mechanische [die Uhr, -en|Uhr] ist für viele Menschen nicht bloß ein praktischer Zeitmesser, sondern ein meisterhaftes Kunstwerk traditioneller Handwerkskunst.",
+                  "Besonders Schmuckstücke wie ein über Generationen vererbter [der Ring, -e|Ring] oder eine wertvolle [die Halskette, -n|Halskette] tragen eine tiefe emotionale Bedeutung in sich."
+                ],
+                [
+                  "Im Alltag beweisen Accessoires auch ihre unersetzliche Funktionalität: An eisigen Wintertagen sind warme [die Handschuhe (Pl.)|Handschuhe] und eine dichte [die Mütze, -n|Mütze] ein unverzichtbarer Kälteschutz.",
+                  "Ein passender Leder-[der Gürtel, -|Gürtel] und funkelnde [die Ohrringe (Pl.)|Ohrringe] runden das Gesamterscheinungsbild harmonisch ab.",
+                  "Wer gelernt hat, Accessoires gezielt einzusetzen, beweist ein feines Gespür für Ästhetik und Stil."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Die Semiotik modischer Accessoires",
-              "intro": "Symbolische Bedeutung von Schmuck und Statussymbolen (B2).",
+              "title": "Semiotik des Ornaments und materielle Statussymbole",
+              "intro": "Anspruchsvolle kulturwissenschaftliche Betrachtung über Schmuck als soziales Differenzierungsmerkmal (B2).",
               "paragraphs": [
                 [
-                  "Accessoires fungieren im gesellschaftlichen Kontext als feinsinnige Codes sozialer Repräsentanz und ästhetischer Raffinesse.",
-                  "Ein meisterhaft geschmiedeter [der Ring, -e|Ring] oder eine mechanische [die Uhr, -en|Uhr] transzendieren bloße Nützlichkeit und werden zu generationenübergreifenden Wertobjekten.",
-                  "Ob polarisierende [die Sonnenbrille, -n|Sonnenbrillen] oder handgefertigte [die Handschuhe (Pl.)|Handschuhe]: Sie verleihen dem Träger eine unverwechselbare stilistische Signatur."
+                  "In der Kultursoziologie fungieren persönliche Accessoires als hochgradig verdichtete Zeichen für sozialen Status, Distinktionsgewinn und ästhetische Verortung.",
+                  "Das Tragen einer exklusiven mechanischen [die Uhr, -en|Uhr] oder eines auffälligen [der Ring, -e|Rings] markiert im urbanen Raum subtil ökonomisches und kulturelles Kapital.",
+                  "Historische Kopfbedeckungen wie der traditionelle [der Hut, -̈e|Hut] wandelten sich von ständischen Pflichtattributen zu individuellen Stilikonen nonkonformer Modebewegungen."
+                ],
+                [
+                  "Gleichzeitig vollzieht sich bei Accessoires wie der [die Sonnenbrille, -n|Sonnenbrille] eine bemerkenswerte Funktionsüberlagerung: Ursprünglich als reiner Blend- und UV-Schutz konzipiert, fungiert sie heute primär als Schutzschild gegen visuelle Vereinnahmung und als Medium demonstrativer Distanz.",
+                  "Die bewusste Selektion minimalistischer oder extrovertierter Schmuckelemente an Hals und Handgelenk erweist sich somit als präzise Choreografie nonverbaler Selbstverortung."
                 ]
               ]
             }
-          }
+          },
+          "description": "Uhren, Schmuck, Taschen, Brillen und Accessoires, die jedes Outfit stilvoll abrunden.",
+          "details": "Schmuck, Handtaschen, Gürtel und modische Accessoires (A1–B2)",
+          "arabicDescription": "الإكسسوارات، الساعات، المجوهرات، النظارات الشمسية، الأحزمة والحقائب باللغة الألمانية."
         },
         {
           "id": "schuhe",
@@ -2475,59 +2760,79 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Schuhe für jeden Tag",
-              "intro": "Grundwortschatz zu Schuhen und Taschen (A1).",
+              "title": "Schuhe und Taschen für jeden Weg",
+              "intro": "Einfache Wörter für Schuhe, Stiefel, Rucksäcke und Koffer (A1).",
               "paragraphs": [
                 [
-                  "Ich ziehe meine bequemen [die Schuhe (Pl.)|Schuhe] an, bevor ich nach draußen gehe.",
-                  "Zum Spazierengehen trage ich sportliche [die Turnschuhe / die Sneakers|Sneakers].",
-                  "Zu Hause mag ich weiche, warme [die Hausschuhe (Pl.)|Hausschuhe].",
-                  "In meine [die Geldbörse, -n|Geldbörse] lege ich Geld und Ausweise."
+                  "Gute Schuhe tragen uns durch den ganzen Tag.",
+                  "Zum schnellen Gehen und beim Sport tragen wir bequeme [die Turnschuhe / die Sneakers|Sneakers].",
+                  "Im kalten Winter halten gefütterte [die Stiefel (Pl.)|Stiefel] die Füße warm und trocken.",
+                  "Im heißen Sommer sind leichte und offene [die Sandalen (Pl.)|Sandalen] besonders angenehm.",
+                  "In die Schule und an die Universität nimmt man einen praktischen [der Rucksack, -̈e|Rucksack] mit.",
+                  "Für wichtige Dinge wie Geld und Ausweis braucht man eine sichere [die Geldbörse, -n|Geldbörse]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Auf Reisen und im Sommer",
-              "intro": "Passendes Schuhwerk und Gepäck (A2).",
+              "title": "Vorbereitung für die Wochenendreise",
+              "intro": "Alltägliche Vorbereitungen für einen Städtetrip mit Koffer, Schuhen und Handtasche (A2).",
               "paragraphs": [
                 [
-                  "Im heißen Sommer trage ich luftige [die Sandalen (Pl.)|Sandalen].",
-                  "Wenn es regnet oder schneit, schützen mich wasserdichte [die Stiefel (Pl.)|Stiefel].",
-                  "Für die Reise packe ich einen großen [der Koffer, -|Koffer] und nehme einen praktischen [der Rucksack, -̈e|Rucksack] mit.",
-                  "Meine Mutter nimmt ihre elegante [die Handtasche, -n|Handtasche] mit in die Stadt."
+                  "Am Freitagabend packte Lisa voller Vorfreude ihr Gepäck für eine Wochenendreise nach Hamburg.",
+                  "Sie öffnete ihren großen [der Koffer, -|Koffer] und legte frische Kleidung sorgfältig hinein.",
+                  "Da sie viel zu Fuß durch die Stadt spazieren wollte, packte sie ihre bequemsten [die Turnschuhe / die Sneakers|Turnschuhe] ein.",
+                  "Für den feierlichen Restaurantbesuch am Samstagabend nahm sie ein Paar Schuhe mit [die hohen Absätze (Pl.)|hohen Absätzen] mit.",
+                  "Für das Hotelzimmer durften auch gemütliche [die Hausschuhe (Pl.)|Hausschuhe] nicht fehlen."
+                ],
+                [
+                  "In ihre elegante Leder-[die Handtasche, -n|Handtasche] steckte sie ihre [die Geldbörse, -n|Geldbörse], ihr Smartphone und die Fahrkarten.",
+                  "Ihr Freund Felix bevorzugte für die Reise einen praktischen, wasserdichten [der Rucksack, -̈e|Rucksack].",
+                  "Gut vorbereitet und mit passendem Schuhwerk ausgestattet, starteten die beiden am nächsten Morgen ihre Reise."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Qualität und Eleganz bei Lederwaren",
-              "intro": "Lederverarbeitung, Tragekomfort und Auftreten (B1).",
+              "title": "Schuhwerk und Lederwaren im Wechsel der Jahreszeiten",
+              "intro": "Ausführliche Betrachtung über Fußgesundheit, handwerkliche Qualität und langlebige Lederwaren (B1).",
               "paragraphs": [
                 [
-                  "Zu einer feierlichen Gala wählt Laura elegante Schuhe mit [die hohen Absätze (Pl.)|hohen Absätzen].",
-                  "Hochwertige Leder-[die Stiefel (Pl.)|Stiefel] bieten bei nasskaltem Wetter hervorragenden Halt und halten die Füße trocken.",
-                  "Ein ergonomischer [der Rucksack, -̈e|Rucksack] schont den Rücken auf langen Wanderungen oder beim Pendeln zur Arbeit.",
-                  "Eine handgefertigte [die Handtasche, -n|Handtasche] aus echtem Leder gewinnt mit den Jahren sogar noch an Charakter."
+                  "Schuhe und Lederwaren müssen im Alltag höchsten ergonomischen und qualitativen Ansprüchen genügen.",
+                  "Während im städtischen Alltag moderne [die Turnschuhe / die Sneakers|Sneakers] wegen ihres weichen Fußbetts und ihrer sportlichen Vielseitigkeit dominieren, verlangt nasskaltes Schmuddelwetter robuste [die Stiefel (Pl.)|Stiefel] mit rutschfester Profilsohle.",
+                  "Wer an langen Sommertagen auf atmungsaktive [die Sandalen (Pl.)|Sandalen] setzt, schützt seine Füße vor Überhitzung und Blasen.",
+                  "Bei glamourösen Festlichkeiten verleihen Schuhe mit [die hohen Absätze (Pl.)|hohen Absätzen] dem Gang eine grazile Eleganz, auch wenn sie nach einigen Stunden Durchhaltevermögen verlangen."
+                ],
+                [
+                  "Auch bei Taschen entscheidet der Zweck über die Wahl des Begleiters: Für Studierende und Pendler bietet ein ergonomischer [der Rucksack, -̈e|Rucksack] die gesündeste Gewichtsverteilung auf den Schultern.",
+                  "Im Berufsalltag schwören viele auf die repräsentative [die Handtasche, -n|Handtasche] aus feinem Leder, in der alle Dokumente und die [die Geldbörse, -n|Geldbörse] übersichtlich verstaut sind.",
+                  "Für Urlaubsreisen erweist sich ein leichter, rollbarer [der Koffer, -|Koffer] als wahrer Segen für entspanntes Reisen."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Orthopädische Funktionalität und Luxuslederwaren",
-              "intro": "Analyse ergonomischer Fußgesundheit und Luxusgüter (B2).",
+              "title": "Konsumsoziologie der Fortbewegung und Materialästhetik",
+              "intro": "Anspruchsvolle Analyse über Schuhkultur, Mobilität und die Symbolik von Lederwaren (B2).",
               "paragraphs": [
                 [
-                  "Die Balance zwischen orthopädischer Ergonomie und modischer Extravaganz stellt das Schuhhandwerk vor komplexe Herausforderungen.",
-                  "Während das permanente Tragen von [die hohen Absätze (Pl.)|hohen Absätzen] die Körperstatik belasten kann, bieten moderne [die Turnschuhe / die Sneakers|Sneakers] fortschrittlichste Dämpfungstechnologien.",
-                  "Im Segment exklusiver Reisebegleiter verkörpern strapazierfähige [der Koffer, -|Koffer] und edle Leder-[die Handtasche, -n|Handtaschen] die Symbiose aus Funktionalität und zeitloser Noblesse."
+                  "Schuhwerk und Transportbehältnisse sind funktionale Schnittstellen zwischen dem biologischen Körper und der gebauten Umwelt.",
+                  "Der globale Siegeszug des urbanen [die Turnschuhe / die Sneakers|Sneakers] – vom subkulturellen Sportschuh zum allgegenwärtigen Statussymbol quer durch alle Gesellschaftsschichten – verdeutlicht die radikale Entformalisierung moderner Lebenswelten.",
+                  "Demgegenüber behält klassisches Schuhwerk wie rahmengenähte Leder-[die Schuhe (Pl.)|Schuhe] oder elegante Modelle mit [die hohen Absätze (Pl.)|hohen Absätzen] seine Funktion als demonstratives Exklusions- und Eleganzmerkmal bei."
+                ],
+                [
+                  "Parallel dazu reflektiert die Transformation vom traditionellen Reisegepäck zum ultraleichten [der Koffer, -|Koffer] und funktionalen [der Rucksack, -̈e|Rucksack] die Beschleunigung globaler Mobilitätsströme.",
+                  "In Zeiten wachsenden Nachhaltigkeitsbewusstseins gewinnt zudem die handwerkliche Langlebigkeit hochwertiger [die Handtasche, -n|Handtaschen] und Geldbörsen wieder einen zentralen Stellenwert gegenüber kurzlebigen Fast-Fashion-Erzeugnissen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Schuharten, Lederwaren, Gepäckstücke und Taschen für Alltag, Business und Fernreisen.",
+          "details": "Schuharten, Größen, Materialien und Fußbekleidung (A1–B2)",
+          "arabicDescription": "الأحذية، المصنوعات الجلدية، الحقائب وحقائب السفر بمختلف أنواعها واستخداماتها باللغة الألمانية."
         }
       ]
     },
@@ -2629,59 +2934,80 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Körperpflege am Morgen",
-              "intro": "Einfache Wörter für Hygieneartikel im Bad (A1).",
+              "title": "Gute Pflege am Morgen",
+              "intro": "Einfache Wörter für Seife, Zahnbürste, Dusche und Körperpflege (A1).",
               "paragraphs": [
                 [
-                  "Ich wasche meine Hände gründlich mit [die Seife, -n|Seife].",
-                  "Unter der Dusche benutze ich gut duftendes [das Duschgel, -s|Duschgel].",
-                  "Jeden Morgen putze ich meine Zähne mit der [die Zahnbürste, -n|Zahnbürste] und frischer [die Zahnpasta|Zahnpasta].",
-                  "Danach trockne ich mich mit einem weichen [das Handtuch, -̈er|Handtuch] ab."
+                  "Jeden Morgen gehen wir ins Badezimmer, um uns frisch zu machen.",
+                  "Wir waschen die Hände gründlich mit milder [die Seife, -n|Seife] und warmem Wasser.",
+                  "Zweimal am Tag putzen wir die Zähne mit der [die Zahnbürste, -n|Zahnbürste] und guter [die Zahnpasta|Zahnpasta].",
+                  "Unter der warmen Dusche reinigt duftendes [das Duschgel, -s|Duschgel] den Körper und ein sanftes [das Shampoo, -s|Shampoo] die Haare.",
+                  "Nach dem Duschen trocknet man sich mit einem weichen [das Handtuch, -̈er|Handtuch] sorgfältig ab.",
+                  "Frische Körperpflege gibt Energie und ein wunderbares Gefühl für den ganzen Tag."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Frisch für den Tag",
-              "intro": "Haarpflege, Duft und Sonnenschutz (A2).",
+              "title": "Die morgendliche Routine im Badezimmer",
+              "intro": "Alltägliche Pflegegewohnheiten vor der Arbeit und Pflegeartikel im Bad (A2).",
               "paragraphs": [
                 [
-                  "Ich wasche meine Haare mit pflegendem [das Shampoo, -s|Shampoo] und föhne sie mit dem [der Föhn / der Haartrockner|Föhn] trocken.",
-                  "Mit dem [der Kamm, -̈e|Kamm] bringe ich meine Frisur schnell in Form.",
-                  "Ein zuverlässiges [das Deodorant, -s|Deodorant] sorgt den ganzen Tag für ein frisches Gefühl.",
-                  "Mein Vater benutzt einen scharfen [der Rasierer, -|Rasierer] für seine Bartpflege."
+                  "Um sieben Uhr klingelt der Wecker, und Tim geht direkt ins Badezimmer.",
+                  "Zuerst wäscht er sich das Gesicht und putzt drei Minuten lang gründlich seine Zähne mit der [die Zahnbürste, -n|Zahnbürste].",
+                  "Danach stellt er sich unter die erfrischende Dusche, wäscht sein Haar mit einem milden [das Shampoo, -s|Shampoo] und verwendet ein belebendes [das Duschgel, -s|Duschgel].",
+                  "Nachdem er sich mit dem großen [das Handtuch, -̈er|Handtuch] abgetrocknet hat, greift er zum [der Rasierer, -|Rasierer], um seinen Bart sauber zu stutzen.",
+                  "Mit einem kräftigen [der Föhn / der Haartrockner|Föhn] trocknet er seine Haare und bringt sie mit dem [der Kamm, -̈e|Kamm] in Form."
+                ],
+                [
+                  "Ein zuverlässiges [das Deodorant, -s|Deodorant] sorgt dafür, dass er auch an anstrengenden Tagen frisch bleibt.",
+                  "Vor dem Verlassen des Hauses sprüht er noch einen dezenten Hauch seines Lieblings-[das Parfüm, -s|Parfüms] auf den Hals.",
+                  "Im Sommer vergisst er natürlich nie die schützende [die Sonnencreme|Sonnencreme] gegen die UV-Strahlen.",
+                  "So beginnt jeder Tag frisch, gepflegt und voller Tatkraft."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Gepflegt und geschützt",
-              "intro": "Hautgesundheit und Sonnenschutz im Alltag (B1).",
+              "title": "Körperpflege als tägliches Wohlfühlritual",
+              "intro": "Ausführliche Betrachtung über Hautgesundheit, Achtsamkeit und moderne Körperhygiene (B1).",
               "paragraphs": [
                 [
-                  "Vor dem Aufenthalt in der starken Mittagssonne sollte man stets ausreichend [die Sonnencreme|Sonnencreme] auftragen, um die Haut vor UV-Strahlen zu schützen.",
-                  "Für besondere Abende wählt man ein dezentes, elegantes [das Parfüm, -s|Parfüm], das die eigene Ausstrahlung unterstreicht.",
-                  "Regelmäßige Zahnhygiene mit [die Zahnbürste, -n|Zahnbürste] und fluoridhaltiger [die Zahnpasta|Zahnpasta] beugt Karies effektiv vor.",
-                  "Sanftes [das Duschgel, -s|Duschgel] bewahrt den natürlichen Säureschutzmantel der Haut."
+                  "Eine bewusste Körperpflege ist weit mehr als nur notwendige Hygiene; sie ist ein täglicher Moment der Achtsamkeit und Entspannung.",
+                  "Die morgendliche Routine beginnt idealerweise mit gründlicher Zahnhygiene, bei der neben [die Zahnbürste, -n|Zahnbürste] und [die Zahnpasta|Zahnpasta] auch Zahnseide zum Einsatz kommt, um Karies wirksam vorzubeugen.",
+                  "Beim Duschen empfiehlt es sich, pH-neutrale Produkte wie rückfettendes [das Duschgel, -s|Duschgel] zu wählen, um die natürliche Schutzbarriere der Haut nicht anzugreifen.",
+                  "Wer empfindliches Haar hat, schützt die Kopfhaut, indem er nach dem Waschen mit speziellem [das Shampoo, -s|Shampoo] den [der Föhn / der Haartrockner|Haartrockner] auf eine schonende, lauwarme Temperatur einstellt."
+                ],
+                [
+                  "Bei sonnigem Wetter mahnen Dermatologen zu konsequentem Lichtschutz: Eine hochwertige [die Sonnencreme|Sonnencreme] mit hohem Lichtschutzfaktor schützt die Haut vor vorzeitiger Alterung.",
+                  "Für ein souveränes Auftreten im Berufsleben sorgen ein verlässliches [das Deodorant, -s|Deodorant] und ein feines, dezent dosiertes [das Parfüm, -s|Parfüm].",
+                  "Wer seinen Körper regelmäßig und sorgsam pflegt, stärkt nicht nur seine Gesundheit, sondern strahlt spürbares Selbstvertrauen aus."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Dermatologische Aspekte und moderne Kosmetikformulierungen",
-              "intro": "Wissenschaftliche Betrachtung von Hautpflege und Inhaltsstoffen (B2).",
+              "title": "Kulturgeschichte der Hygiene und der moderne Wellness-Diskurs",
+              "intro": "Anspruchsvolle Analyse über Reinheitskonzepte, Selbstfürsorge und Kosmetikökonomie (B2).",
               "paragraphs": [
                 [
-                  "Eine fundierte Pflegeroutine basiert auf dem Verständnis der physiologischen Schutzmechanismen der Epidermis.",
-                  "Die tägliche Applikation von Breitband-[die Sonnencreme|Sonnencreme] gilt in der Dermatologie als wirksamste Prävention gegen vorzeitige Hautalterung.",
-                  "Milde syndetbasierte Tenside statt aggressiver [die Seife, -n|Seifen] gewährleisten die Intaktheit des Mikrobioms und schützen vor Dehydration."
+                  "Die Wahrnehmung von Körperhygiene hat sich im Verlauf der Neuzeit von einer reinen Maßnahme der Seuchenprävention zu einem zentralen Träger individualistischer Selbstinszenierung entwickelt.",
+                  "Der alltägliche Griff zu hautschonender [die Seife, -n|Seife], dermatologisch fundierten Produkten und innovativen [das Deodorant, -s|Deodorants] markiert die Internalisierung moderner Reinheitsstandards.",
+                  "Gleichzeitig wird das Badezimmer zunehmend vom rein funktionalen Nassraum zu einem privaten Wellnesstempel aufgewertet, in dem Pflegerituale als entschleunigende Oasen im hektischen Alltag zelebriert werden."
+                ],
+                [
+                  "Kritische Stimmen verweisen jedoch auf die Verführungskraft der Kosmetikindustrie, die über Parfums und Anti-Aging-Präparate das Narrativ einer scheinbar endlosen Jugendlichkeit vermarktet.",
+                  "Ein emanzipierter Umgang mit Körperpflege balanciert daher zwischen gesundheitlicher Prävention – wie dem unverzichtbaren UV-Schutz durch [die Sonnencreme|Sonnencreme] – und der Gelassenheit gegenüber natürlichen Alterungsprozessen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Körperpflege, Badezimmer-Routinen, Hygieneartikel und das tägliche Wohlbefinden.",
+          "details": "Körperpflege, Hygieneartikel und tägliche Badezimmer-Routinen (A1–B2)",
+          "arabicDescription": "العناية بالجسم، النظافة الشخصية، أدوات الاستحمام ومستحضرات العناية اليومية باللغة الألمانية."
         }
       ]
     },
@@ -2771,61 +3097,82 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Make-up und Farben",
-              "intro": "Grundwortschatz zu Kosmetik und Farben (A1).",
+              "title": "Farben und Kosmetik",
+              "intro": "Einfache Wörter für Lippenstift, Puder, Mascara und Make-up (A1).",
               "paragraphs": [
                 [
-                  "Anna benutzt einen roten [der Lippenstift, -e|Lippenstift] für ihre Lippen.",
-                  "Sie lackiert ihre Fingernägel mit buntem [der Nagellack|Nagellack].",
-                  "Mit einem weichen [der Schminkpinsel, -|Schminkpinsel] trägt sie Puder auf.",
-                  "Das Gesicht strahlt frisch und schön."
+                  "Viele Frauen und Männer betonen ihre Gesichtszüge gern mit ein wenig Kosmetik.",
+                  "Ein dezenter roter oder rosa [der Lippenstift, -e|Lippenstift] verleiht den Lippen eine frische Farbe.",
+                  "Mit der dunklen [die Wimperntusche / die Mascara|Wimperntusche] wirken die Augen größer und strahlender.",
+                  "Eine leichte [die Foundation / die Grundierung|Foundation] sorgt für ein ebenmäßiges Hautbild im Gesicht.",
+                  "Ein feiner matter [der Puder|Puder] verhindert, dass die Haut im Licht glänzt.",
+                  "Gute Kosmetik betont die natürliche Schönheit auf dezente Weise."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Ein natürlicher Look",
-              "intro": "Schminken für Alltag und Beruf (A2).",
+              "title": "Ein frischer Look für den Abend",
+              "intro": "Alltägliche Schminkschritte vor dem Ausgehen und passende Kosmetikprodukte (A2).",
               "paragraphs": [
                 [
-                  "Am Morgen betont sie ihre Augen mit schwarzer [die Wimperntusche / die Mascara|Wimperntusche] und einem dezenten [der Lidschatten|Lidschatten].",
-                  "Ein feiner Hauch [der Puder|Puder] nimmt den Glanz von der Stirn.",
-                  "Mit dem schwarzen [der Eyeliner|Eyeliner] zieht sie einen sauberen Lidstrich.",
-                  "Ein wenig [das Rouge|Rouge] verleiht den Wangen eine gesunde Frische."
+                  "Vor dem Abendessen mit ihren Freunden nahm sich Vanessa eine halbe Stunde Zeit für ihr Styling.",
+                  "Zuerst trug sie eine feuchtigkeitsspendende Creme und eine leichte [die Foundation / die Grundierung|Foundation] auf ihr Gesicht auf.",
+                  "Kleine Müdigkeitsspuren unter den Augen deckte sie geschickt mit einem cremigen [der Concealer|Concealer] ab.",
+                  "Mit einem weichen [der Schminkpinsel, -|Schminkpinsel] verteilte sie einen Hauch von [der Puder|Puder] über Stirn und Nase.",
+                  "Auf die Wangenknochen tupfte sie etwas rosiges [das Rouge|Rouge], das ihr sofort einen frischen Teint verlieh."
+                ],
+                [
+                  "Mit ruhiger Hand zog sie am oberen Wimpernkranz einen präzisen Strich mit dem schwarzen [der Eyeliner|Eyeliner].",
+                  "Danach tuschte sie ihre Wimpern kräftig mit der [die Wimperntusche / die Mascara|Mascara] und wählte einen dezenten [der Lippenstift, -e|Lippenstift].",
+                  "Als festlicher Akzent passte der frisch lackierte [der Nagellack|Nagellack] perfekt zu ihrem Abendkleid.",
+                  "Zufrieden betrachtete sie das natürliche, strahlende Ergebnis im Spiegel."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Professionelles Styling für den Abend",
-              "intro": "Foundation, Concealer und Konturierung (B1).",
+              "title": "Die Kunst des typgerechten Stylings",
+              "intro": "Ausführliche Betrachtung über dekorative Kosmetik, Handwerk und Selbstausdruck (B1).",
               "paragraphs": [
                 [
-                  "Für ein ebenmäßiges Hautbild trägt man zunächst eine feuchtigkeitsspendende [die Foundation / die Grundierung|Foundation] auf.",
-                  "Dunkle Augenschatten oder kleine Rötungen lassen sich mühelos mit einem guten [der Concealer|Concealer] abdecken.",
-                  "Hochwertige [der Schminkpinsel, -|Schminkpinsel] erleichtern das Verblenden von [das Rouge|Rouge] und [der Lidschatten|Lidschatten] erheblich.",
-                  "Ein haltbarer [der Lippenstift, -e|Lippenstift] rundet das elegante Abend-Make-up perfekt ab."
+                  "Dekorative Kosmetik ist für viele Menschen ein kreatives Ausdrucksmittel, um die individuellen Vorzüge des eigenen Gesichts harmonisch hervorzuheben.",
+                  "Der Schlüssel zu einem professionellen Ergebnis liegt in der sorgfältigen Vorbereitung des Teints: Nach einer guten Feuchtigkeitspflege sorgt eine maßgeschneiderte [die Foundation / die Grundierung|Grundierung] in Verbindung mit gezielt gesetztem [der Concealer|Concealer] für eine makellose Leinwand.",
+                  "Ein weicher, hochwertiger [der Schminkpinsel, -|Schminkpinsel] ermöglicht das nahtlose Verblenden von pudrigen Texturen wie [das Rouge|Rouge] und [der Lidschatten|Lidschatten], ohne sichtbare Kanten zu hinterlassen.",
+                  "Für den perfekten Augenaufschlag kombiniert man einen geschwungenen Lidstrich mit dem [der Eyeliner|Eyeliner] und tiefschwarze [die Wimperntusche / die Mascara|Wimperntusche]."
+                ],
+                [
+                  "Dabei gilt in der modernen Ästhetik meist der Grundsatz „Weniger ist mehr“: Ein zu stark aufgetragener [der Puder|Puder] kann das Gesicht schnell maskenhaft wirken lassen, während ein sanfter Glanz Frische und Jugendlichkeit transportiert.",
+                  "Mit einem harmonischen [der Lippenstift, -e|Lippenstift] und passendem [der Nagellack|Nagellack] gelingt ein geschmackvolles Gesamtbild, das die Persönlichkeit unterstreicht, statt sie zu überdecken."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Visagistik und die Kunst der optischen Harmonisierung",
-              "intro": "Techniken der professionellen dekorativen Kosmetik (B2).",
+              "title": "Soziologie der Kosmetik und der Diskurs um Authentizität",
+              "intro": "Anspruchsvolle Reflexion über kosmetische Konventionen, Maskerade und Schönheitsideale (B2).",
               "paragraphs": [
                 [
-                  "Professionelle Visagistik versteht sich als nuancierte Akzentuierung individueller Gesichtsarchitektur.",
-                  "Die gezielte Abstimmung zwischen lichtreflektierendem [der Concealer|Concealer], matter [die Foundation / die Grundierung|Grundierung] und transparentem [der Puder|Puder] kreiert ein makelloses Finish für hochauflösende Kameras.",
-                  "Präzise gesetzte Linien mit [der Eyeliner|Eyeliner] sowie dramatisch akzentuierte Wimpern mittels [die Wimperntusche / die Mascara|Mascara] verleihen dem Blick Tiefe und Ausdruckskraft."
+                  "Die Praxis des Schminkens berührt fundamentale Fragen von Authentizität, Maskerade und gesellschaftlicher Normierung des Gesichts.",
+                  "Während dekorative Produkte wie der ikonische rote [der Lippenstift, -e|Lippenstift] oder expressiver [der Lidschatten|Lidschatten] historisch als Insignien weiblicher Selbstbehauptung oder theatraler Distinktion dienten, propagiert der gegenwärtige No-Make-up-Trend eine hochgradig artifizielle Natürlichkeit.",
+                  "Die scheinbar unsichtbare Perfektionierung des Teints mittels [die Foundation / die Grundierung|Foundation], [der Concealer|Concealer] und feinstem [der Puder|Puder] verlangt beträchtlichen zeitlichen und ökonomischen Aufwand, um den gesellschaftlichen Imperativ müheloser Frische zu erfüllen."
+                ],
+                [
+                  "Gleichzeitig wird Kosmetik zunehmend von geschlechtsspezifischen Zuschreibungen entkoppelt: Die wachsende Akzeptanz von Make-up und pflegenden Produkten bei Männern demonstriert die Pluralisierung zeitgenössischer Schönheitskonzepte.",
+                  "Das gekonnte Spiel mit [der Eyeliner|Eyeliner], [das Rouge|Rouge] und [der Nagellack|Nagellack] avanciert somit zu einer fluiden Kunstform persönlicher Selbstgestaltung im Spannungsfeld zwischen Konformität und emanzipatorischem Selbstausdruck."
                 ]
               ]
             }
-          }
+          },
+          "description": "Kosmetik, Make-up, dekorative Pflege und kreatives Styling für Alltag und Festlichkeiten.",
+          "details": "Kosmetik, Make-up-Produkte und Schönheitspflege (A1–B2)",
+          "arabicDescription": "مستحضرات التجميل، المكياج، أدوات التجميل وفنون التزيين الأنيق باللغة الألمانية."
         }
       ]
     }
-  ]
+  ],
+  "slug": "menschen"
 }

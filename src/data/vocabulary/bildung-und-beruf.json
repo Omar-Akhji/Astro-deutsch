@@ -16,44 +16,92 @@
               "german": "die Schule, -n",
               "arabic": "المدرسة",
               "english": "school",
-              "example": "Die Kinder gehen morgens in die Schule."
+              "example": "In Deutschland beginnt die Schule für Kinder im Alter von sechs Jahren."
             },
             {
               "german": "der Lehrer, -",
-              "arabic": "المعلم",
-              "english": "teacher",
-              "example": "Unser Lehrer erklärt alles sehr gut."
+              "arabic": "المعلم / الأستاذ",
+              "english": "teacher (male)",
+              "example": "Der geduldige Lehrer erklärt die schwierige Grammatikregel noch einmal."
             },
             {
               "german": "der Schüler, -",
-              "arabic": "التلميذ / الطالب",
-              "english": "student, pupil",
-              "example": "Die Schüler machen ihre Hausaufgaben."
+              "arabic": "التلميذ / الطالب المدرسي",
+              "english": "pupil, student",
+              "example": "Die fleißigen Schüler bereiten sich gewissenhaft auf die morgige Prüfung vor."
             },
             {
               "german": "der Unterricht",
-              "arabic": "الدرس / الحصة",
-              "english": "class, lesson",
-              "example": "Der Unterricht beginnt um 8 Uhr."
+              "arabic": "الدرس / الحصة الدراسية",
+              "english": "class, lesson, instruction",
+              "example": "Der Unterricht beginnt jeden Morgen pünktlich um acht Uhr."
             },
             {
               "german": "die Pause, -n",
               "arabic": "الاستراحة / الفسحة",
-              "english": "break",
-              "example": "In der Pause spielen die Kinder auf dem Hof."
+              "english": "break, recess",
+              "example": "In der großen Pause spielen die Kinder auf dem sonnigen Schulhof."
+            },
+            {
+              "german": "das Klassenzimmer, -",
+              "arabic": "غرفة الصف / الفصل الدراسي",
+              "english": "classroom",
+              "example": "Im Klassenzimmer hängen bunte Landkarten und eine digitale Tafel."
+            },
+            {
+              "german": "die Hausaufgabe, -n",
+              "arabic": "الواجب المدرسي / الفرض المنزلي",
+              "english": "homework",
+              "example": "Nach dem Mittagessen setze ich mich an den Schreibtisch und mache meine Hausaufgaben."
+            },
+            {
+              "german": "die Prüfung, -en",
+              "arabic": "الامتحان / الاختبار",
+              "english": "exam, test",
+              "example": "Sie hat die schwierige Prüfung in Mathematik mit Bestnote bestanden."
+            },
+            {
+              "german": "das Buch, -̈er",
+              "arabic": "الكتاب",
+              "english": "book",
+              "example": "Für den Deutschunterricht lesen wir ein spannendes Buch über deutsche Geschichte."
+            },
+            {
+              "german": "das Heft, -e",
+              "arabic": "الدفتر / الكراس",
+              "english": "notebook, exercise book",
+              "example": "In dieses linierte Heft schreibe ich alle neuen Vokabeln und Beispielsätze."
+            },
+            {
+              "german": "der Stift, -e",
+              "arabic": "القلم",
+              "english": "pen, pencil",
+              "example": "Mit einem blauen Stift notiere ich die wichtigsten Stichpunkte an den Rand."
+            },
+            {
+              "german": "die Note, -n",
+              "arabic": "العلامة / الدرجة المدرسية",
+              "english": "grade, mark",
+              "example": "In Deutschland ist eine Eins die beste Note und eine Sechs die schlechteste."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Mein Schultag",
-            "intro": "Grundwortschatz zu Schule und Unterricht (A1).",
+            "title": "Ein Tag in der Schule",
+            "intro": "Einfache Sätze über die Schule, den Unterricht und Schulsachen (A1).",
             "paragraphs": [
               [
-                "Die Kinder gehen gern in die [die Schule, -n|Schule].",
-                "Der freundliche [der Lehrer, -|Lehrer] erklärt die deutsche Grammatik.",
-                "Jeder fleißige [der Schüler, -|Schüler] hört aufmerksam zu.",
-                "Um acht Uhr beginnt der spannende [der Unterricht|Unterricht].",
-                "Auf dem Schulhof spielen alle fröhlich in der großen [die Pause, -n|Pause]."
+                "Ich gehe jeden Tag gern in die [die Schule, -n|Schule].",
+                "Um acht Uhr beginnt der deutsche [der Unterricht|Unterricht] im großen [das Klassenzimmer, -|Klassenzimmer].",
+                "Unser [der Lehrer, -|Lehrer] Herr Weber ist sehr nett und erklärt alles ruhig.",
+                "Jeder [der Schüler, -|Schüler] hört aufmerksam zu und lernt fleißig."
+              ],
+              [
+                "Ich öffne mein schweres [das Buch, -̈er|Buch] und schreibe mit dem [der Stift, -e|Stift] in mein [das Heft, -e|Heft].",
+                "Um zehn Uhr haben wir eine halbe Stunde [die Pause, -n|Pause] auf dem Schulhof.",
+                "Am Nachmittag mache ich zu Hause konzentriert meine [die Hausaufgabe, -n|Hausaufgaben].",
+                "Für den Test letzte Woche habe ich eine sehr gute [die Note, -n|Note] bekommen."
               ]
             ]
           },
@@ -61,60 +109,87 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Mein Schultag",
-              "intro": "Grundwortschatz zu Schule und Unterricht (A1).",
+              "title": "Ein Tag in der Schule",
+              "intro": "Einfache Sätze über die Schule, den Unterricht und Schulsachen (A1).",
               "paragraphs": [
                 [
-                  "Die Kinder gehen gern in die [die Schule, -n|Schule].",
-                  "Der freundliche [der Lehrer, -|Lehrer] erklärt die deutsche Grammatik.",
-                  "Jeder fleißige [der Schüler, -|Schüler] hört aufmerksam zu.",
-                  "Um acht Uhr beginnt der spannende [der Unterricht|Unterricht].",
-                  "Auf dem Schulhof spielen alle fröhlich in der großen [die Pause, -n|Pause]."
+                  "Ich gehe jeden Tag gern in die [die Schule, -n|Schule].",
+                  "Um acht Uhr beginnt der deutsche [der Unterricht|Unterricht] im großen [das Klassenzimmer, -|Klassenzimmer].",
+                  "Unser [der Lehrer, -|Lehrer] Herr Weber ist sehr nett und erklärt alles ruhig.",
+                  "Jeder [der Schüler, -|Schüler] hört aufmerksam zu und lernt fleißig."
+                ],
+                [
+                  "Ich öffne mein schweres [das Buch, -̈er|Buch] und schreibe mit dem [der Stift, -e|Stift] in mein [das Heft, -e|Heft].",
+                  "Um zehn Uhr haben wir eine halbe Stunde [die Pause, -n|Pause] auf dem Schulhof.",
+                  "Am Nachmittag mache ich zu Hause konzentriert meine [die Hausaufgabe, -n|Hausaufgaben].",
+                  "Für den Test letzte Woche habe ich eine sehr gute [die Note, -n|Note] bekommen."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Lernen im Klassenzimmer",
-              "intro": "Aktivitäten und Pausen in der Schule (A2).",
+              "title": "Vorbereitung auf die Klassenarbeit",
+              "intro": "Schulalltag, Motivation und Lernen für eine Prüfung (A2).",
               "paragraphs": [
                 [
-                  "In der [die Schule, -n|Schule] lernen wir viele interessante Schulfächer.",
-                  "Wenn ein [der Schüler, -|Schüler] eine Frage hat, hilft der [der Lehrer, -|Lehrer] sofort.",
-                  "Während des [der Unterricht|Unterrichts] schreiben wir wichtige Notizen in unsere Hefte.",
-                  "In der [die Pause, -n|Pause] essen wir ein gesundes Pausenbrot und unterhalten uns mit Freunden."
+                  "Nächsten Dienstag schreiben wir eine wichtige [die Prüfung, -en|Prüfung] im Fach Biologie.",
+                  "Deshalb treffen sich einige [der Schüler, -|Schüler] nachmittags, um den Stoff gemeinsam zu wiederholen.",
+                  "Unser [der Lehrer, -|Lehrer] hat uns im [der Unterricht|Unterricht] wertvolle Tipps zur Vorbereitung gegeben.",
+                  "Im hellen [das Klassenzimmer, -|Klassenzimmer] haben wir die Tafelbilder sorgfältig in unser [das Heft, -e|Heft] übertragen."
+                ],
+                [
+                  "„Hast du schon alle [die Hausaufgabe, -n|Hausaufgaben] für morgen fertig?“, fragt mich mein bester Schulfreund.",
+                  "„Ja, ich habe das ganze Kapitel im [das Buch, -̈er|Buch] durchgearbeitet und die Vokabeln mit einem [der Stift, -e|Stift] markiert“, antworte ich stolz.",
+                  "Wenn wir in der [die Pause, -n|Pause] über unsere Ziele sprechen, wollen alle eine hervorragende [die Note, -n|Note] erzielen.",
+                  "Gute schulische Leistungen eröffnen schließlich tolle Perspektiven für die berufliche Zukunft."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Schulbildung und Motivation",
-              "intro": "Lernmethoden und Gemeinschaft in der Schule (B1).",
+              "title": "Bildungswege und methodische Kompetenzen im Unterricht",
+              "intro": "Moderne Pädagogik, Schulentwicklung und selbstbestimmtes Lernen (B1).",
               "paragraphs": [
                 [
-                  "Eine moderne [die Schule, -n|Schule] vermittelt nicht nur Fachwissen, sondern fördert auch soziale Kompetenzen.",
-                  "Ein engagierter [der Lehrer, -|Lehrer] motiviert seine Klasse durch interaktive Methoden und abwechslungsreichen [der Unterricht|Unterricht].",
-                  "Wenn [der Schüler, -|Schüler] aktiv mitarbeiten, fällt das Lernen für anstehende Prüfungen wesentlich leichter.",
-                  "Gemeinsame Aktivitäten in der [die Pause, -n|Pause] stärken den Zusammenhalt unter den Mitschülern."
+                  "Die Anforderungen an zeitgemäße Bildungseinrichtungen haben sich grundlegend gewandelt.",
+                  "Eine zukunftsorientierte [die Schule, -n|Schule] vermittelt nicht mehr bloß starres Faktenwissen, sondern fördert kritisches Denken und Teamfähigkeit.",
+                  "Im interaktiven [der Unterricht|Unterricht] agiert der [der Lehrer, -|Lehrer] zunehmend als Lernbegleiter, der individuelle Stärken der [der Schüler, -|Schüler] gezielt unterstützt.",
+                  "Das traditionelle [das Klassenzimmer, -|Klassenzimmer] öffnet sich für digitale Medien, ohne dass analoge Kulturtechniken wie das Lesen im [das Buch, -̈er|Buch] an Wert verlieren."
+                ],
+                [
+                  "Das eigenständige Erarbeiten von Themen spiegelt sich in sorgfältig geführten Unterlagen im [das Heft, -e|Heft] wider, wo Kerninhalte mit dem [der Stift, -e|Stift] strukturiert werden.",
+                  "Sinnvoll dosierte [die Hausaufgabe, -n|Hausaufgaben] festigen das Erlernte nachhaltig, ohne die wohlverdiente [die Pause, -n|Pause] zur Regeneration zu beschneiden.",
+                  "Vor einer anspruchsvollen [die Prüfung, -en|Prüfung] steht heute das Verstehen von Zusammenhängen im Vordergrund, sodass die finale [die Note, -n|Note] die reale Methodenkompetenz widerspiegelt.",
+                  "Damit wird schulisches Lernen zu einem tragfähigen Fundament für lebenslange persönliche Weiterentwicklung."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Pädagogische Reformen und zukunftsorientierte Didaktik",
-              "intro": "Analyse moderner Bildungssysteme und Kompetenzvermittlung (B2).",
+              "title": "Bildungssoziologie, Leistungsgesellschaft und Bildungsgerechtigkeit",
+              "intro": "Kritische Analyse von Selektionsmechanismen und Didaktik im Schulsystem (B2).",
               "paragraphs": [
                 [
-                  "Die Transformation der [die Schule, -n|Schule] zu einem integrativen Lebens- und Lernort erfordert neuartige didaktische Ansätze.",
-                  "Die Rolle vom [der Lehrer, -|Lehrer] wandelt sich dabei vom reinen Wissensvermittler zum Lernbegleiter, der den [der Schüler, -|Schüler] individuell fördert.",
-                  "Ein differenzierter [der Unterricht|Unterricht] verknüpft kognitive Herausforderungen mit Entspannungsphasen in der [die Pause, -n|Pause], um nachhaltige Bildungserfolge zu sichern."
+                  "Das Bildungssystem fungiert in modernen Wissensgesellschaften als primärer Allokations- und Selektionsmechanismus für gesellschaftlichen Status.",
+                  "Bereits die frühzeitige Verteilung der [der Schüler, -|Schüler] auf segregierte Schultypen nach der Primarstufe steht im Zentrum bildungssoziologischer Debatten über Chancengerechtigkeit.",
+                  "Während die Institution [die Schule, -n|Schule] das Versprechen meritokratischen Aufstiegs postuliert, korreliert der Schulerfolg nach wie vor signifikant mit dem sozioökonomischen Hintergrund des Elternhauses.",
+                  "Ein emanzipatorischer [der Unterricht|Unterricht] erfordert daher von jedem [der Lehrer, -|Lehrer] ein hohes Maß an diagnostischer Kompetenz und binnendifferenzierender Didaktik."
+                ],
+                [
+                  "Die quantitative Bewertung schulischer Leistungen durch die klassische [die Note, -n|Note] reduziert komplexe Lernprozesse auf normierte Ziffern.",
+                  "Obschon eine standardisierte [die Prüfung, -en|Prüfung] Vergleichbarkeit suggeriert, plädieren Reformpädagogen für qualitative Portfolios und formative Rückmeldeformate.",
+                  "Die Transformation des physischen [das Klassenzimmer, -|Klassenzimmers] in flexible Lernlandschaften soll die Autonomie der Lernenden stärken und intrinsische Motivation freisetzen.",
+                  "Erst wenn Bildung als ganzheitliche Persönlichkeitsentfaltung jenseits bloßer Arbeitsmarkttauglichkeit begriffen wird, löst das Schulwesen seinen humanistischen Anspruch ein."
                 ]
               ]
             }
-          }
+          },
+          "description": "Schulsystem, Unterrichtsalltag, Schulfächer, Noten und Prüfungen.",
+          "details": "Unterricht, Schulfächer, Prüfungen und Noten (A1–B2)",
+          "arabicDescription": "النظام المدرسي والحياة الدراسية في ألمانيا. يتناول هذا الدرس مراحل التعليم (المدرسة الابتدائية، والمدرسة الثانوية، والجمنازيوم المؤهل للجامعة)، ونظام العلامات والدرجات في ألمانيا (من 1 ممتاز إلى 6 راسب)، ومفردات الفصول والامتحانات والواجبات المدرسية."
         },
         {
           "id": "buero_und_arbeit",
@@ -122,46 +197,94 @@
           "words": [
             {
               "german": "die Arbeit, -en",
-              "arabic": "العمل",
-              "english": "work",
-              "example": "Er geht jeden Tag zur Arbeit."
+              "arabic": "العمل / الشغل",
+              "english": "work, job",
+              "example": "Nach einem langen Tag im Büro gehe ich zufrieden nach Hause."
             },
             {
               "german": "der Beruf, -e",
-              "arabic": "المهنة",
-              "english": "profession, job",
-              "example": "Was sind Sie von Beruf?"
+              "arabic": "المهنة / المهنة التخصصية",
+              "english": "profession, occupation",
+              "example": "Mein Beruf als Software-Entwickler macht mir unheimlich viel Spaß."
             },
             {
               "german": "das Büro, -s",
-              "arabic": "المكتب",
+              "arabic": "المكتب (مكان العمل)",
               "english": "office",
-              "example": "Ich arbeite heute im Büro."
+              "example": "Unser modernes Großraumbüro ist mit höhenverstellbaren Schreibtischen ausgestattet."
             },
             {
               "german": "der Kollege, -n",
-              "arabic": "الزميل",
-              "english": "colleague",
-              "example": "Mein Kollege hilft mir bei dem Projekt."
+              "arabic": "الزميل في العمل",
+              "english": "colleague, coworker (male)",
+              "example": "Mit meinen hilfsbereiten Kollegen arbeite ich täglich vertrauensvoll zusammen."
             },
             {
               "german": "der Chef, -s",
-              "arabic": "المدير / الرئيس",
-              "english": "boss",
-              "example": "Der Chef hat heute Meeting."
+              "arabic": "المدير / المسؤول",
+              "english": "boss, supervisor",
+              "example": "Unser Chef legt großen Wert auf pünktliche Lieferung und offene Kommunikation."
+            },
+            {
+              "german": "das Meeting, -s",
+              "arabic": "الاجتماع / جلسة العمل",
+              "english": "meeting",
+              "example": "Um zehn Uhr treffen wir uns im Konferenzraum zu einem wichtigen Meeting."
+            },
+            {
+              "german": "die E-Mail, -s",
+              "arabic": "البريد الإلكتروني / الإيميل",
+              "english": "email",
+              "example": "Ich habe dem Kunden soeben eine ausführliche E-Mail mit dem Angebot geschickt."
+            },
+            {
+              "german": "der Schreibtisch, -e",
+              "arabic": "طاولة المكتب / المكتب",
+              "english": "desk",
+              "example": "Auf meinem aufgeräumten Schreibtisch stehen zwei Monitore und ein Notizblock."
+            },
+            {
+              "german": "der Feierabend",
+              "arabic": "وقت انتهاء الدوام والراحة المسائية",
+              "english": "quitting time, end of work day",
+              "example": "Um siebzehn Uhr machen wir den Laptop zu und genießen den Feierabend."
+            },
+            {
+              "german": "der Vertrag, -̈e",
+              "arabic": "العقد / اتفاقية العمل",
+              "english": "contract",
+              "example": "Vor Antritt der neuen Arbeitsstelle unterschreibt man den schriftlichen Vertrag."
+            },
+            {
+              "german": "das Gehalt, -̈er",
+              "arabic": "الراتب / المعاش الشهري",
+              "english": "salary, monthly earnings",
+              "example": "Das Gehalt wird am Monatsende pünktlich auf das Girokonto überwiesen."
+            },
+            {
+              "german": "das Projekt, -e",
+              "arabic": "المشروع",
+              "english": "project",
+              "example": "Wir haben das internationale Projekt dank hervorragender Teamarbeit erfolgreich abgeschlossen."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Die Arbeit im Büro",
-            "intro": "Einfache Wörter für Beruf und Arbeitsplatz (A1).",
+            "title": "Mein Arbeitstag im Büro",
+            "intro": "Einfache Sätze über die tägliche Arbeit und die Kollegen im Büro (A1).",
             "paragraphs": [
               [
-                "Ich fahre jeden Morgen pünktlich zur [die Arbeit, -en|Arbeit].",
-                "Mein [der Beruf, -e|Beruf] macht mir viel Freude.",
-                "Ich sitze an einem hellen Schreibtisch im [das Büro, -s|Büro].",
-                "Mein [der Kollege, -n|Kollege] unterstützt mich bei neuen Aufgaben.",
-                "Unser [der Chef, -s|Chef] leitet das Team sehr freundlich."
+                "Ich habe einen interessanten [der Beruf, -e|Beruf] in einem großen Unternehmen.",
+                "Jeden Morgen fahre ich zur [die Arbeit, -en|Arbeit] in unser modernes [das Büro, -s|Büro].",
+                "An meinem großen [der Schreibtisch, -e|Schreibtisch] starte ich den Computer und lese die erste [die E-Mail, -s|E-Mail].",
+                "Mein [der Kollege, -n|Kollege] Thomas trinkt mit mir einen Kaffee und wir sprechen über das neue [das Projekt, -e|Projekt]."
+              ],
+              [
+                "Um elf Uhr haben wir ein kurzes [das Meeting, -s|Meeting] mit unserem Team.",
+                "Unser [der Chef, -s|Chef] ist sehr freundlich und lobt unsere guten Ergebnisse.",
+                "Vor einem Jahr habe ich meinen unbefristeten [der Vertrag, -̈e|Vertrag] unterschrieben und bekomme ein gutes [das Gehalt, -̈er|Gehalt].",
+                "Um siebzehn Uhr mache ich Schluss und freue mich auf den wohlverdienten [der Feierabend|Feierabend]."
               ]
             ]
           },
@@ -169,62 +292,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Die Arbeit im Büro",
-              "intro": "Einfache Wörter für Beruf und Arbeitsplatz (A1).",
+              "title": "Mein Arbeitstag im Büro",
+              "intro": "Einfache Sätze über die tägliche Arbeit und die Kollegen im Büro (A1).",
               "paragraphs": [
                 [
-                  "Ich fahre jeden Morgen pünktlich zur [die Arbeit, -en|Arbeit].",
-                  "Mein [der Beruf, -e|Beruf] macht mir viel Freude.",
-                  "Ich sitze an einem hellen Schreibtisch im [das Büro, -s|Büro].",
-                  "Mein [der Kollege, -n|Kollege] unterstützt mich bei neuen Aufgaben.",
-                  "Unser [der Chef, -s|Chef] leitet das Team sehr freundlich."
+                  "Ich habe einen interessanten [der Beruf, -e|Beruf] in einem großen Unternehmen.",
+                  "Jeden Morgen fahre ich zur [die Arbeit, -en|Arbeit] in unser modernes [das Büro, -s|Büro].",
+                  "An meinem großen [der Schreibtisch, -e|Schreibtisch] starte ich den Computer und lese die erste [die E-Mail, -s|E-Mail].",
+                  "Mein [der Kollege, -n|Kollege] Thomas trinkt mit mir einen Kaffee und wir sprechen über das neue [das Projekt, -e|Projekt]."
+                ],
+                [
+                  "Um elf Uhr haben wir ein kurzes [das Meeting, -s|Meeting] mit unserem Team.",
+                  "Unser [der Chef, -s|Chef] ist sehr freundlich und lobt unsere guten Ergebnisse.",
+                  "Vor einem Jahr habe ich meinen unbefristeten [der Vertrag, -̈e|Vertrag] unterschrieben und bekomme ein gutes [das Gehalt, -̈er|Gehalt].",
+                  "Um siebzehn Uhr mache ich Schluss und freue mich auf den wohlverdienten [der Feierabend|Feierabend]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Ein Tag am Arbeitsplatz",
-              "intro": "Arbeitsalltag, E-Mails und Teamarbeit (A2).",
+              "title": "Erfolgreiche Teamarbeit und klare Absprachen",
+              "intro": "Zusammenarbeit im Büroalltag, Aufgabenverteilung und Feierabendkultur (A2).",
               "paragraphs": [
                 [
-                  "Im [das Büro, -s|Büro] beantworten wir wichtige E-Mails und führen Telefonate.",
-                  "Gemeinsam mit jedem netten [der Kollege, -n|Kollegen] bearbeiten wir spannende Projekte.",
-                  "Unser verständnisvoller [der Chef, -s|Chef] lobt gute Leistungen regelmäßig im Teammeeting.",
-                  "Ein interessanter [der Beruf, -e|Beruf] und eine faire [die Arbeit, -en|Arbeit] sind die Basis für berufliche Zufriedenheit."
+                  "Im Berufsalltag sind eine gute Organisation und freundliche Kommunikation der Schlüssel zum Erfolg.",
+                  "Sobald ich morgens mein [das Büro, -s|Büro] betrete, begrüße ich jeden [der Kollege, -n|Kollegen] herzlich.",
+                  "Ich setze mich an meinen ergonomischen [der Schreibtisch, -e|Schreibtisch] und beantworte dringende Kundenanfragen per [die E-Mail, -s|E-Mail].",
+                  "Im wöchentlichen [das Meeting, -s|Meeting] besprechen wir den Zeitplan für das laufende [das Projekt, -e|Projekt]."
+                ],
+                [
+                  "„Herr Müller, haben Sie die Unterlagen für den neuen [der Vertrag, -̈e|Vertrag] schon fertig vorbereitet?“, fragt mich der [der Chef, -s|Chef].",
+                  "„Ja, die Dokumente liegen druckfrisch in Ihrer Mappe“, antworte ich selbstbewusst.",
+                  "Wenn alle Aufgaben erledigt sind und die [die Arbeit, -en|Arbeit] reibungslos läuft, gehen wir zufrieden nach Hause.",
+                  "In Deutschland ist die Trennung von Beruf und Freizeit heilig: Nach dem [der Feierabend|Feierabend] schalten wir das Diensthandy bewusst aus."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Karriere und Teamzusammenhalt",
-              "intro": "Kommunikation und berufliche Weiterentwicklung (B1).",
+              "title": "New Work, Unternehmenskultur und Arbeitszufriedenheit",
+              "intro": "Wie hybride Arbeitsmodelle und Wertschätzung das moderne Berufsleben prägen (B1).",
               "paragraphs": [
                 [
-                  "In der modernen Arbeitswelt gewinnt die kollegiale Zusammenarbeit im [das Büro, -s|Büro] stetig an Bedeutung.",
-                  "Wer mit jedem [der Kollege, -n|Kollegen] respektvoll und konstruktiv kommuniziert, meistert auch anspruchsvolle Deadlines erfolgreich.",
-                  "Ein erfahrener [der Chef, -s|Chef] delegiert Aufgaben zielgerichtet und fördert die Stärken seiner Mitarbeiter.",
-                  "Wer Freude an seiner täglichen [die Arbeit, -en|Arbeit] hat, entwickelt sich in seinem [der Beruf, -e|Beruf] kontinuierlich weiter."
+                  "Die moderne Arbeitswelt durchlebt unter dem Schlagwort 'New Work' eine tiefgreifende Transformation hin zu mehr Flexibilität und Eigenverantwortung.",
+                  "Starre Anwesenheitspflichten weichen hybriden Modellen, bei denen der Mitarbeiter eigenständig entscheidet, ob er im [das Büro, -s|Büro] oder im Homeoffice tätig ist.",
+                  "Dennoch bleibt die persönliche Begegnung am höhenverstellbaren [der Schreibtisch, -e|Schreibtisch] unverzichtbar, um den Teamgeist unter jedem [der Kollege, -n|Kollegen] zu stärken.",
+                  "Effiziente Absprachen im interdisziplinären [das Meeting, -s|Meeting] ersetzen endlose Kommunikationsschleifen per [die E-Mail, -s|E-Mail]."
+                ],
+                [
+                  "Moderne Führungskräfte verstehen sich nicht mehr als autoritärer [der Chef, -s|Chef], sondern als empathische Coaches, die Potenziale entfalten.",
+                  "Ein motivierendes Arbeitsumfeld verlangt neben einem transparenten [der Vertrag, -̈e|Vertrag] auch ein faires, leistungsgerechtes [das Gehalt, -̈er|Gehalt].",
+                  "Wer in seinem gewählten [der Beruf, -e|Beruf] sinnstiftende Aufgaben in einem innovativen [das Projekt, -e|Projekt] übernimmt, leistet engagierte [die Arbeit, -en|Arbeit].",
+                  "Echtes Wohlbefinden entsteht jedoch erst dann, wenn nach getaner Pflicht der [der Feierabend|Feierabend] unbeschwert der Erholung und Familie gewidmet werden kann."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "New Work und die Transformation der Arbeitswelt",
-              "intro": "Führungskultur, Agilität und ergonomische Arbeitsplatzgestaltung (B2).",
+              "title": "Arbeitssoziologie im Zeitalter der Wissensökonomie",
+              "intro": "Kritische Analyse von Agilität, Entgrenzung und Arbeitsidentität (B2).",
               "paragraphs": [
                 [
-                  "Das Paradigma von New Work revolutioniert traditionelle Vorstellungen von Raum und Zeit in der täglichen [die Arbeit, -en|Arbeit].",
-                  "Das physische [das Büro, -s|Büro] transformiert sich von einer reinen Präsenzstätte zur kollaborativen Begegnungszone für jeden kreativen [der Kollege, -n|Kollegen].",
-                  "Erfolgreiche Führungskräfte wie ein moderner [der Chef, -s|Chef] agieren zunehmend als Enabler, um den Anforderungen in einem dynamischen [der Beruf, -e|Beruf] gerecht zu werden."
+                  "Die fortschreitende Digitalisierung und Tertiarisierung der Wertschöpfung haben das traditionelle Paradigma fordistischer Erwerbsarbeit nachhaltig dekonstruiert.",
+                  "In der postindustriellen Wissensökonomie wird der physische Ort [das Büro, -s|Büro] zu einem kollaborativen Resonanzraum umfunktioniert, während der individualisierte [der Schreibtisch, -e|Schreibtisch] an exklusiver Bedeutung verliert.",
+                  "Agile Arbeitsmethoden und flache Hierarchien transformieren das Verhältnis zwischen dem vormals allmächtigen [der Chef, -s|Chef] und seinen Mitarbeitern in ein partnerschaftliches Vertrauensverhältnis.",
+                  "Dennoch birgt die permanente Erreichbarkeit über asynchrone Kommunikationskanäle wie [die E-Mail, -s|E-Mail] das Risiko einer schleichenden Entgrenzung zwischen Privatsphäre und Erwerbstätigkeit."
+                ],
+                [
+                  "Der traditionelle, unbefristete [der Vertrag, -̈e|Vertrag] mit fixiertem [das Gehalt, -̈er|Gehalt] gerät im Zuge von Gig-Economy und befristeten Beschäftigungsverhältnissen zusehends unter Druck.",
+                  "Gleichzeitig streben Hochqualifizierte in ihrem [der Beruf, -e|Beruf] nach intrinsischer Selbstverwirklichung durch ein sinnstiftendes [das Projekt, -e|Projekt], in dem professionelle Kooperation mit jedem [der Kollege, -n|Kollegen] Synergien freisetzt.",
+                  "Die gesellschaftliche Debatte um die Vier-Tage-Woche unterstreicht schließlich, dass der sakrosankte [der Feierabend|Feierabend] eine unabdingbare Voraussetzung für nachhaltige geistige Produktivität und menschliche Würde darstellt."
                 ]
               ]
             }
-          }
+          },
+          "description": "Arbeitswelt, Büroalltag, Berufstätigkeit, Verträge und Karriere.",
+          "details": "Arbeitsplatz, Büroalltag, Kollegen und Karriere (A1–B2)",
+          "arabicDescription": "بيئة العمل والمكتب والمهن في ألمانيا. يتناول هذا الدرس مصطلحات الوظيفة وعقد العمل (Arbeitsvertrag)، والراتب، والزملاء، والإدارة، والاجتماعات، والمراسلات الرسمية عبر البريد الإلكتروني، وثقافة فصل الحياة المهنية عن الحياة الشخصية (Feierabend)."
         }
       ]
     }
-  ]
+  ],
+  "slug": "bildung-und-beruf"
 }

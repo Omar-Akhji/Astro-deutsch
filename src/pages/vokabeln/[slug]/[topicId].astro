@@ -1,6 +1,6 @@
 ---
 import { BookOpen, Headphones, Users } from "lucide-astro";
-import { TopicStory, VocabularyTable } from "@/features/vocabulary";
+import { getVocabularySlug, TopicStory, VocabularyTable } from "@/features/vocabulary";
 import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import BackButton from "@/shared/ui/BackButton.astro";
@@ -9,27 +9,27 @@ import { Hero } from "@/widgets/hero";
 
 export async function getStaticPaths() {
   const { data: vocabularyList } = await getVocabularyList();
-  const paths = [];
   const items = vocabularyList ?? [];
-  for (const item of items) {
-    if (item.sections) {
-      for (const section of item.sections) {
-        for (const topic of section.topics) {
-          paths.push({ params: { id: item.id.toString(), topicId: topic.id } });
-        }
-      }
-    }
-  }
-  return paths;
+  return items.flatMap((item) => {
+    const slug = getVocabularySlug(item);
+    return (item.sections ?? []).flatMap((section) =>
+      section.topics.map((topic) => ({
+        params: { slug, topicId: topic.id },
+        props: { item },
+      })),
+    );
+  });
 }
 
-const { id, topicId } = Astro.params;
+const { slug, topicId } = Astro.params;
 
-if (!id || !topicId) {
+if (!slug || !topicId) {
   throw new Error("Fehlende Vokabel-Parameter.");
 }
 
-const { data: item } = await getVocabularyById(Number(id));
+const { item: preloadedItem } = Astro.props;
+const vocabularyResponse = await getVocabularyById(slug);
+const item = preloadedItem ?? vocabularyResponse.data;
 
 const topicMap = new Map(
   item?.sections?.flatMap((s) => s.topics.map((t) => [t.id, { topic: t, section: s }] as const)),
@@ -55,6 +55,7 @@ const extraSchema =
       "@type": "LearningResource",
       name: `${topic.title} – Wortschatz ${item.german}`,
       description: `Deutsche Vokabeln und Ausdrücke für ${topic.title} (${item.german}) mit arabischer Bedeutung und Beispielsätzen.`,
+      url: `https://elite-regewelt.com/vokabeln/${slug}/${topic.id}/`,
       educationalLevel: item.category || "A1-B2",
       inLanguage: ["de", "ar"],
       learningResourceType: "Vocabulary List",

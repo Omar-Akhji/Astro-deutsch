@@ -16,44 +16,92 @@
               "german": "lesen",
               "arabic": "يقرأ",
               "english": "to read",
-              "example": "Sie liest gerne Bücher."
+              "example": "Ich lese am liebsten packende Kriminalromane und historische Biografien."
             },
             {
               "german": "Musik hören",
-              "arabic": "يستمع للموسيقى",
+              "arabic": "يستمع إلى الموسيقى",
               "english": "to listen to music",
-              "example": "Ich höre Musik beim Joggen."
+              "example": "Nach Feierabend entspanne ich mich auf dem Sofa und höre klassische Musik."
             },
             {
               "german": "der Sport",
               "arabic": "الرياضة",
-              "english": "sports",
-              "example": "Treibst du regelmäßig Sport?"
+              "english": "sport, sports",
+              "example": "Regelmäßiger Sport an der frischen Luft stärkt die Abwehrkräfte und hält fit."
             },
             {
               "german": "das Kino, -s",
-              "arabic": "السينما",
+              "arabic": "السينما / دار العرض",
               "english": "cinema, movie theater",
-              "example": "Gehen wir am Wochenende ins Kino?"
+              "example": "Am Samstagabend schauen wir uns den neuesten Blockbuster im Kino an."
             },
             {
               "german": "spielen",
-              "arabic": "يلعب",
-              "english": "to play",
-              "example": "Die Kinder spielen im Park."
+              "arabic": "يلعب / يعزف",
+              "english": "to play (game/instrument)",
+              "example": "Die Kinder spielen gern Fußball im Garten oder Brettspiele am Tisch."
+            },
+            {
+              "german": "reisen",
+              "arabic": "يسافر",
+              "english": "to travel",
+              "example": "In den Sommerferien reisen wir am liebsten an die Ostsee oder in die Berge."
+            },
+            {
+              "german": "kochen",
+              "arabic": "يطبخ / يطهو",
+              "english": "to cook",
+              "example": "Am Wochenende kochen wir gemeinsam mit Freunden ein dreigängiges Menü."
+            },
+            {
+              "german": "schwimmen",
+              "arabic": "يسبح",
+              "english": "to swim",
+              "example": "Im Hochsommer gehen wir jeden Nachmittag im kühlen See schwimmen."
+            },
+            {
+              "german": "fotografieren",
+              "arabic": "يلتقط الصور / يصور",
+              "english": "to take photos, photograph",
+              "example": "Auf Wanderungen liebe ich es, Tiere und Pflanzen in freier Natur zu fotografieren."
+            },
+            {
+              "german": "das Hobby, -s",
+              "arabic": "الهواية",
+              "english": "hobby",
+              "example": "Mein größtes Hobby ist das Wandern in den bayerischen Alpen."
+            },
+            {
+              "german": "spazieren gehen",
+              "arabic": "يتنزه / يمشي للمتعة",
+              "english": "to go for a walk",
+              "example": "Sonntags nach dem Mittagessen gehen wir im Stadtwald spazieren."
+            },
+            {
+              "german": "das Theater, -",
+              "arabic": "المسرح",
+              "english": "theater, playhouse",
+              "example": "Wir haben Karten für das klassische Theater in der Innenstadt gekauft."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Hobbys und Freizeit",
-            "intro": "Grundwortschatz zu beliebten Freizeitbeschäftigungen (A1).",
+            "title": "Meine liebsten Hobbys",
+            "intro": "Einfache Sätze über Freizeitaktivitäten, Musik und Sport (A1).",
             "paragraphs": [
               [
-                "In meiner Freizeit mag ich ein spannendes Buch [lesen|lesen].",
-                "Am liebsten möchte ich entspannte [Musik hören|Musik hören].",
-                "Am Wochenende treibe ich gern [der Sport|Sport] im Park.",
-                "Mit Freunden gehe ich ins [das Kino, -s|Kino] und schaue Filme.",
-                "Im Garten können die Kinder fröhlich [spielen|spielen]."
+                "In meiner Freizeit habe ich viele schöne Beschäftigungen.",
+                "Mein liebstes [das Hobby, -s|Hobby] ist das Lesen: Ich liebe es, abends spannende Bücher zu [lesen|lesen].",
+                "Oft setze ich meine Kopfhörer auf und möchte einfach nur schöne [Musik hören|Musik hören].",
+                "Zweimal in der Woche treibe ich viel [der Sport|Sport], um fit und gesund zu bleiben."
+              ],
+              [
+                "Am Freitagabend treffe ich meine Freunde und wir gehen zusammen ins [das Kino, -s|Kino].",
+                "Am Samstag [kochen|kochen] wir leckere Pasta und [spielen|spielen] lustige Kartenspiele.",
+                "Wenn die Sonne scheint, gehe ich im Park [spazieren gehen|spazieren] oder gehe im See [schwimmen|schwimmen].",
+                "Im Sommer möchte ich in andere Länder [reisen|reisen] und tolle Städte [fotografieren|fotografieren]."
               ]
             ]
           },
@@ -61,62 +109,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Hobbys und Freizeit",
-              "intro": "Grundwortschatz zu beliebten Freizeitbeschäftigungen (A1).",
+              "title": "Meine liebsten Hobbys",
+              "intro": "Einfache Sätze über Freizeitaktivitäten, Musik und Sport (A1).",
               "paragraphs": [
                 [
-                  "In meiner Freizeit mag ich ein spannendes Buch [lesen|lesen].",
-                  "Am liebsten möchte ich entspannte [Musik hören|Musik hören].",
-                  "Am Wochenende treibe ich gern [der Sport|Sport] im Park.",
-                  "Mit Freunden gehe ich ins [das Kino, -s|Kino] und schaue Filme.",
-                  "Im Garten können die Kinder fröhlich [spielen|spielen]."
+                  "In meiner Freizeit habe ich viele schöne Beschäftigungen.",
+                  "Mein liebstes [das Hobby, -s|Hobby] ist das Lesen: Ich liebe es, abends spannende Bücher zu [lesen|lesen].",
+                  "Oft setze ich meine Kopfhörer auf und möchte einfach nur schöne [Musik hören|Musik hören].",
+                  "Zweimal in der Woche treibe ich viel [der Sport|Sport], um fit und gesund zu bleiben."
+                ],
+                [
+                  "Am Freitagabend treffe ich meine Freunde und wir gehen zusammen ins [das Kino, -s|Kino].",
+                  "Am Samstag [kochen|kochen] wir leckere Pasta und [spielen|spielen] lustige Kartenspiele.",
+                  "Wenn die Sonne scheint, gehe ich im Park [spazieren gehen|spazieren] oder gehe im See [schwimmen|schwimmen].",
+                  "Im Sommer möchte ich in andere Länder [reisen|reisen] und tolle Städte [fotografieren|fotografieren]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Ein freier Nachmittag",
-              "intro": "Hobbys mit Freunden und Familie teilen (A2).",
+              "title": "Freizeitgestaltung am Wochenende",
+              "intro": "Aktivitäten im Freundeskreis, Kultur und Naturgenuss (A2).",
               "paragraphs": [
                 [
-                  "Nach der Schule haben wir viel Zeit für unsere liebsten Hobbys.",
-                  "Am Nachmittag wollen wir im Verein Fußball [spielen|spielen].",
-                  "Auf dem Sofa kann ich mich ausruhen und schöne [Musik hören|Musik hören].",
-                  "Am Samstagabend verabreden wir uns vor dem [das Kino, -s|Kino] für eine neue Komödie."
+                  "Nach einer arbeitsreichen Woche freuen sich die meisten Menschen auf ein abwechslungsreiches Wochenende.",
+                  "Samstagmorgens ziehe ich meine Laufschuhe an und mache eine Stunde [der Sport|Sport] im Park.",
+                  "Danach gehe ich mit dem Hund im Wald [spazieren gehen|spazieren], atme die frische Luft ein und genieße die Ruhe.",
+                  "Zu Hause nehme ich meine Kamera zur Hand, denn ich möchte die bunten Herbstblätter im Garten [fotografieren|fotografieren]."
+                ],
+                [
+                  "„Hast du heute Lust auf Kultur?“, fragt mich meine Partnerin beim Mittagessen.",
+                  "„Gern! Wir könnten ins [das Theater, -|Theater] gehen oder uns eine Komödie im [das Kino, -s|Kino] ansehen“, antworte ich begeistert.",
+                  "Am Sonntagabend bleiben wir gemütlich daheim: Wir [kochen|kochen] zusammen etwas Leckeres, [Musik hören|hören entspannte Musik] und [lesen|lesen] auf dem Sofa.",
+                  "Gemeinsame Zeit für das eigene [das Hobby, -s|Hobby] ist der beste Ausgleich zum Alltagsstress."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Ausgleich und aktive Erholung",
-              "intro": "Bewusste Freizeitgestaltung für Körper und Geist (B1).",
+              "title": "Vereinskultur, Entschleunigung und persönliche Leidenschaften",
+              "intro": "Wie Hobbys und ehrenamtliches Engagement das soziale Leben bereichern (B1).",
               "paragraphs": [
                 [
-                  "Ein aktiver Ausgleich zum oft bewegungsarmen Berufsalltag ist essenziell für die Gesundheit.",
-                  "Regelmäßiger [der Sport|Sport] baut Stresshormone ab und stärkt das körperliche Wohlbefinden nachhaltig.",
-                  "Wer gern liest, kann beim [lesen|Lesen] anspruchsvoller Literatur in fremde Gedankenwelten eintauchen.",
-                  "Gemeinsame Kulturerlebnisse im [das Kino, -s|Kino] oder Konzerte bieten eine wunderbare Gelegenheit, Freundschaften zu pflegen."
+                  "In einer von Termindruck geprägten Gesellschaft erfüllt die bewusste Gestaltung der Freizeit eine unverzichtbare regenerative Funktion.",
+                  "Ob man regelmäßig im Hallenbad [schwimmen|schwimmt], in den Bergen wandert oder sich im lokalen Verein engagiert – aktiver [der Sport|Sport] baut nachweislich Stresshormone ab.",
+                  "Für kreative Köpfe bietet die Fotografie faszinierende Möglichkeiten, flüchtige Augenblicke mit der Linse festzuhalten und Motive kunstvoll zu [fotografieren|fotografieren].",
+                  "Ein anspruchsvolles [das Hobby, -s|Hobby] stiftet Sinn und ermöglicht es, abseits beruflicher Zwänge neue Talente zu entfalten."
+                ],
+                [
+                  "Auch das kulturelle Angebot europäischer Städte lädt zur Bereicherung des Geistes ein.",
+                  "Ein bewegender Abend im traditionsreichen [das Theater, -|Theater] regt ebenso zu tiefsinnigen Diskussionen an wie ein Autorenfilm im Programmkino.",
+                  "Gleichzeitig gewinnt das gesellige Beisammensein an Bedeutung: Wenn Freunde zusammenkommen, um gemeinsam zu [kochen|kochen] und Musik zu hören, vertiefen sich zwischenmenschliche Bindungen.",
+                  "Schließlich eröffnet das [reisen|Reisen] in fremde Kulturräume ungeahnte Horizonte und schenkt unvergessliche Lebenserfahrungen."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Freizeitsoziologie und Work-Life-Balance",
-              "intro": "Reflexion über Entschleunigung und schöpferische Freizeit (B2).",
+              "title": "Soziologie der Muße: Freizeitkonsum und Selbstverwirklichung",
+              "intro": "Kritische Betrachtung der Freizeitindustrie im Spannungsfeld von Optimierungsdruck und Kontemplation (B2).",
               "paragraphs": [
                 [
-                  "In der modernen Leistungsgesellschaft gewinnt die bewusste Gestaltung von Muße und Rekreation zunehmend an strategischer Bedeutung.",
-                  "Ob man beim konzentrierten [lesen|Lesen], beim meditativen [Musik hören|Musikhören] oder bei anspruchsvollem [der Sport|Sport] Entlastung findet – entscheidend ist die intrinsische Motivation.",
-                  "Kulturelle Teilhabe durch das [das Kino, -s|Kino] und kreative Räume zum zweckfreien [spielen|Spielen] fördern die geistige Agilität und emotionale Resilienz."
+                  "Der Begriff der Muße ('Otium') hat sich von aristotelischer Kontemplation zu einer hyperaktiven Sphäre spätmodernen Konsums gewandelt.",
+                  "In der Erlebnisgesellschaft mutiert selbst das individuelle [das Hobby, -s|Hobby] oft zur Leistungsschau, bei der sportliche Betätigung und [der Sport|Sport] unter dem Diktat biometrischer Selbstoptimierung stehen.",
+                  "Das Bedürfnis, exotische Orte zu bereisen und jeden Schritt für Social Media zu [fotografieren|fotografieren], entlarvt die Ambivalenz des modernen Tourismus zwischen Weltoffenheit und ökologischer Destruktion.",
+                  "Demgegenüber fordern Kulturphilosophen die Wiederentdeckung analoger Entschleunigungspraktiken wie das unproduktive [spazieren gehen|Spazierengehen] im Sinne des Baudelaire'schen Flaneurs."
+                ],
+                [
+                  "Kulturelle Institutionen wie das klassische [das Theater, -|Theater] behaupten sich in diesem Kontext als letzte Bastionen kollektiver ästhetischer Erfahrung wider die Vereinzelung im Heimkino.",
+                  "Die Fähigkeit, sich kontemplativ in ein komplexes literarisches Werk zu vertiefen und konzentriert zu [lesen|lesen], avanciert zum Akt zivilisatorischer Resilienz gegen die mediale Reizüberflutung.",
+                  "Erst wenn Freizeit frei von instrumenteller Verwertbarkeit als reiner Selbstzweck zelebriert wird, erfüllt sie ihr humanes Emanzipationsversprechen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Hobbys, Erholung, Kulturveranstaltungen, Sport und Vereinsleben.",
+          "details": "Hobbys, Sport, Kino, Theater und Wochenendgestaltung (A1–B2)",
+          "arabicDescription": "الأنشطة الترفيهية والهوايات وقضاء أوقات الفراغ في ألمانيا. يتناول هذا الدرس ممارسة الرياضة، والنوادي والجمعيات الرياضية والثقافية (Vereine) ذات الشهرة العريقة في المجتمع الألماني، وحضور السينما والمسرح، والطهي، والسفر والاستجمام في الطبيعة."
         }
       ]
     }
-  ]
+  ],
+  "slug": "freizeit"
 }

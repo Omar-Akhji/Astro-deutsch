@@ -14,46 +14,94 @@
           "words": [
             {
               "german": "das Handy, -s",
-              "arabic": "الهاتف المحمول",
-              "english": "cell phone, mobile",
-              "example": "Mein Handy hat keinen Akku mehr."
+              "arabic": "الهاتف المحمول / الجوال",
+              "english": "mobile phone, cell phone",
+              "example": "Ich habe mein neues Handy immer griffbereit in der Jackentasche."
             },
             {
               "german": "die Nachricht, -en",
-              "arabic": "الرسالة",
-              "english": "message",
-              "example": "Ich habe dir eine Nachricht geschrieben."
+              "arabic": "الرسالة النصية",
+              "english": "message, text message",
+              "example": "Sie hat mir eine kurze Nachricht geschickt, dass sie etwas später kommt."
             },
             {
               "german": "anrufen",
-              "arabic": "يتصل (هاتفياً)",
-              "english": "to call (on phone)",
-              "example": "Ich werde dich später anrufen."
+              "arabic": "يتصل هاتفياً",
+              "english": "to call, phone",
+              "example": "Ich rufe meine Eltern jeden Sonntagabend um achtzehn Uhr an."
             },
             {
               "german": "das Internet",
               "arabic": "الإنترنت",
               "english": "internet",
-              "example": "Man findet alles im Internet."
+              "example": "Über das schnelle Internet können wir weltweit ohne Verzögerung recherchieren."
             },
             {
               "german": "der Computer, -",
               "arabic": "الحاسوب / الكمبيوتر",
               "english": "computer",
-              "example": "Ich arbeite am Computer."
+              "example": "Am leistungsfähigen Computer bearbeite ich hochauflösende Fotos und Videos."
+            },
+            {
+              "german": "die App, -s",
+              "arabic": "التطبيق الذكي",
+              "english": "app, application",
+              "example": "Mit dieser nützlichen App lerne ich täglich zwanzig neue deutsche Vokabeln."
+            },
+            {
+              "german": "die E-Mail, -s",
+              "arabic": "البريد الإلكتروني",
+              "english": "email",
+              "example": "Der Dozent hat die Präsentation per E-Mail an alle Kursteilnehmer verschickt."
+            },
+            {
+              "german": "das Foto, -s",
+              "arabic": "الصورة الفوتوغرافية",
+              "english": "photo, picture",
+              "example": "Im Urlaub haben wir wunderschöne Fotos von den Bergen gemacht."
+            },
+            {
+              "german": "das Passwort, -̈er",
+              "arabic": "كلمة المرور / كلمة السر",
+              "english": "password",
+              "example": "Verwenden Sie für Ihre Online-Konten stets ein sicheres, langes Passwort."
+            },
+            {
+              "german": "der Bildschirm, -e",
+              "arabic": "الشاشة",
+              "english": "screen, display",
+              "example": "Der hochauflösende Bildschirm zeigt lebendige Farben und gestochen scharfen Text."
+            },
+            {
+              "german": "der Akku, -s",
+              "arabic": "البطارية القابلة للشحن",
+              "english": "rechargeable battery",
+              "example": "Mein Akku ist fast leer, ich muss das Ladekabel dringend anstecken."
+            },
+            {
+              "german": "die Kamera, -s",
+              "arabic": "الكاميرا",
+              "english": "camera",
+              "example": "Die moderne Kamera des Smartphones macht selbst bei Nacht brillante Aufnahmen."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Mein Smartphone",
-            "intro": "Grundwortschatz zu digitalen Geräten (A1).",
+            "title": "Mein neues Smartphone",
+            "intro": "Einfache Sätze über Handys, Fotos und Nachrichten im Alltag (A1).",
             "paragraphs": [
               [
-                "Ich benutze mein neues [das Handy, -s|Handy] jeden Tag.",
-                "Ich schreibe eine kurze [die Nachricht, -en|Nachricht] an meine Familie.",
-                "Ich kann meine Freunde jederzeit [anrufen|anrufen].",
-                "Über das schnelle [das Internet|Internet] lese ich die Nachrichten.",
-                "Am Abend arbeite ich an meinem [der Computer, -|Computer]."
+                "Ich habe ein neues, modernes [das Handy, -s|Handy] zum Geburtstag bekommen.",
+                "Der große [der Bildschirm, -e|Bildschirm] ist sehr hell und reagiert schnell auf Berührungen.",
+                "Mit der scharfen [die Kamera, -s|Kamera] mache ich gern ein schönes [das Foto, -s|Foto] von Freunden.",
+                "Ich installiere eine neue [die App, -s|App] zum Sprachenlernen und tippe mein sicheres [das Passwort, -̈er|Passwort] ein."
+              ],
+              [
+                "Über das schnelle [das Internet|Internet] schicke ich eine kurze [die Nachricht, -en|Nachricht] an meine Mutter.",
+                "Später möchte ich meinen besten Freund [anrufen|anrufen] und mit ihm sprechen.",
+                "Wenn ich zu Hause bin, arbeite ich lieber am großen [der Computer, -|Computer] und schreibe eine [die E-Mail, -s|E-Mail].",
+                "Am Abend lade ich den [der Akku, -s|Akku] meines Handys wieder voll auf."
               ]
             ]
           },
@@ -61,62 +109,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Mein Smartphone",
-              "intro": "Grundwortschatz zu digitalen Geräten (A1).",
+              "title": "Mein neues Smartphone",
+              "intro": "Einfache Sätze über Handys, Fotos und Nachrichten im Alltag (A1).",
               "paragraphs": [
                 [
-                  "Ich benutze mein neues [das Handy, -s|Handy] jeden Tag.",
-                  "Ich schreibe eine kurze [die Nachricht, -en|Nachricht] an meine Familie.",
-                  "Ich kann meine Freunde jederzeit [anrufen|anrufen].",
-                  "Über das schnelle [das Internet|Internet] lese ich die Nachrichten.",
-                  "Am Abend arbeite ich an meinem [der Computer, -|Computer]."
+                  "Ich habe ein neues, modernes [das Handy, -s|Handy] zum Geburtstag bekommen.",
+                  "Der große [der Bildschirm, -e|Bildschirm] ist sehr hell und reagiert schnell auf Berührungen.",
+                  "Mit der scharfen [die Kamera, -s|Kamera] mache ich gern ein schönes [das Foto, -s|Foto] von Freunden.",
+                  "Ich installiere eine neue [die App, -s|App] zum Sprachenlernen und tippe mein sicheres [das Passwort, -̈er|Passwort] ein."
+                ],
+                [
+                  "Über das schnelle [das Internet|Internet] schicke ich eine kurze [die Nachricht, -en|Nachricht] an meine Mutter.",
+                  "Später möchte ich meinen besten Freund [anrufen|anrufen] und mit ihm sprechen.",
+                  "Wenn ich zu Hause bin, arbeite ich lieber am großen [der Computer, -|Computer] und schreibe eine [die E-Mail, -s|E-Mail].",
+                  "Am Abend lade ich den [der Akku, -s|Akku] meines Handys wieder voll auf."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Digitale Vernetzung",
-              "intro": "Smartphones und Computer im Alltag nutzen (A2).",
+              "title": "Digitale Vernetzung und mobile Erreichbarkeit",
+              "intro": "Praktische Nutzung von Apps, Fotos und Online-Diensten im Tagesablauf (A2).",
               "paragraphs": [
                 [
-                  "Mit dem modernen [das Handy, -s|Handy] kann man tolle Fotos machen und Musik hören.",
-                  "Über verschiedene Apps kann ich Verwandte im Ausland [anrufen|anrufen] und ihnen eine [die Nachricht, -en|Nachricht] schicken.",
-                  "Über das weltweite [das Internet|Internet] finden wir schnell alle benötigten Informationen.",
-                  "Für lange Texte und Tabellen benutze ich lieber den großen [der Computer, -|Computer]."
+                  "Das Smartphone begleitet uns heute durch fast alle Lebensbereiche, vom morgendlichen Wecksignal bis zur Navigation im Verkehr.",
+                  "Sobald ich aufwache, werfe ich einen Blick auf mein [das Handy, -s|Handy] und lese eine [die Nachricht, -en|Nachricht] in unserer Familiengruppe.",
+                  "Da mein [der Akku, -s|Akku] über Nacht geladen wurde, hält er den ganzen Tag zuverlässig durch.",
+                  "Auf dem Weg zur Haltestelle öffne ich eine Nahverkehrs-[die App, -s|App], um die aktuellen Fahrzeiten im [das Internet|Internet] zu prüfen."
+                ],
+                [
+                  "„Kannst du mich heute Nachmittag kurz [anrufen|anrufen]?“, fragt mich meine Kollegin per SMS.",
+                  "„Ja, sobald ich mein Meeting am [der Computer, -|Computer] beendet habe!“, antworte ich ihr schnell.",
+                  "Später schicke ich ihr per [die E-Mail, -s|E-Mail] ein wichtiges [das Foto, -s|Foto] unseres Whiteboards.",
+                  "Weil Datenschutz wichtig ist, ändere ich regelmäßig mein [das Passwort, -̈er|Passwort] und schütze so meine persönlichen Daten."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Chancen und Verantwortung im digitalen Raum",
-              "intro": "Digitale Medien, Datenschutz und Bildschirmzeit (B1).",
+              "title": "Zwischen ständiger Erreichbarkeit und digitalem Wohlbefinden",
+              "intro": "Wie wir digitale Werkzeuge reflektiert nutzen und Medienkompetenz aufbauen (B1).",
               "paragraphs": [
                 [
-                  "Mobile Endgeräte wie das [das Handy, -s|Handy] erleichtern unsere tägliche Organisation enorm.",
-                  "Innerhalb von Sekunden lässt sich eine wichtige [die Nachricht, -en|Nachricht] an mehrere Empfänger gleichzeitig versenden.",
-                  "Allerdings sollte man im [das Internet|Internet] vorsichtig mit persönlichen Daten umgehen und starke Passwörter wählen.",
-                  "Der nahtlose Datenaustausch zwischen [der Computer, -|Computer] und mobilen Geräten sorgt für maximale Flexibilität beim Lernen."
+                  "Die Omnipräsenz digitaler Kommunikationsgeräte hat unsere soziale Interaktion tiefgreifend transformiert.",
+                  "Während das moderne [das Handy, -s|Handy] mit seiner brillanten [die Kamera, -s|Kamera] die spontane Dokumentation unseres Alltags ermöglicht, wächst der Druck permanenter Erreichbarkeit.",
+                  "Jede eintreffende [die Nachricht, -en|Nachricht] und jede berufliche [die E-Mail, -s|E-Mail] erzeugt den Impuls, unverzüglich auf den leuchtenden [der Bildschirm, -e|Bildschirm] zu blicken.",
+                  "Dank mobiler Verbindungen ins weltweite [das Internet|Internet] lassen sich Bankgeschäfte und Recherchen sekundenschnell per [die App, -s|App] erledigen."
+                ],
+                [
+                  "Um jedoch nicht in digitale Abhängigkeit zu geraten, etablieren viele Menschen bewusste 'Digital-Detox'-Phasen.",
+                  "Statt stundenlang vor dem [der Computer, -|Computer] zu verharren, verabredet man sich zu realen Spaziergängen oder greift zum Hörer, um Freunde persönlich anzurufen.",
+                  "Gleichzeitig sensibilisieren IT-Experten für Cybersicherheit, weshalb ein komplexes [das Passwort, -̈er|Passwort] für sensible Profile unerlässlich ist.",
+                  "Wenn am Abend der [der Akku, -s|Akku] zur Neige geht, bleibt das Gerät oft bewusst im Nebenzimmer liegen, um ungestörte Nachtruhe zu sichern."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Medienökologie und digitale Achtsamkeit",
-              "intro": "Kritische Analyse von permanenter Konnektivität und Informationsflut (B2).",
+              "title": "Medienökologie, Algorithmen und die Psychologie digitaler Resonanz",
+              "intro": "Soziologische und medientheoretische Analyse der Plattformökonomie (B2).",
               "paragraphs": [
                 [
-                  "Die Allgegenwart ubiquitärer Kommunikationstechnologien via [das Handy, -s|Handy] und Hochleistungs-[der Computer, -|Computer] strukturiert soziale Interaktionen grundlegend neu.",
-                  "Die ständige Erreichbarkeit über jede eingehende [die Nachricht, -en|Nachricht] erfordert von Individuen ein hohes Maß an digitaler Selbstdisziplin und gezieltem Medienfasten.",
-                  "Zugleich eröffnet der freie Zugang zum [das Internet|Internet] beispiellose Bildungsressourcen, die kollaboratives Arbeiten über Ländergrenzen hinweg ermöglichen."
+                  "Das ubiquitäre [das Handy, -s|Handy] fungiert in spätmodernen Gesellschaften nicht mehr bloß als Fernsprechapparat, sondern als kybernetische Prothese menschlicher Kognition und Identität.",
+                  "Die miniaturisierte Hochleistungstechnik hinter dem kapazitiven [der Bildschirm, -e|Bildschirm] steuert über algorithmisch optimierte [die App, -s|Apps] die Aufmerksamkeitsökonomie von Milliarden Nutzern.",
+                  "Schnittstellen zum weltweiten [das Internet|Internet] verwandeln jeden Träger in einen permanenten Datengenerator, dessen digitaler Fußabdruck weit über die geschützte Sphäre von einem [das Passwort, -̈er|Passwort] hinausreicht.",
+                  "Die fotografische Selbstinszenierung durch die integrierte [die Kamera, -s|Kamera] erzeugt ein flüchtiges [das Foto, -s|Foto]-Universum, das soziale Validierung in Form von Likes monetarisiert."
+                ],
+                [
+                  "Diese synchrone Dauerschleife aus [die Nachricht, -en|Nachrichten] und asynchroner [die E-Mail, -s|E-Mail]-Flut führt zu kognitiver Fragmentierung und chronischem Aufmerksamkeitsdefizit.",
+                  "Obwohl stationäre Rechner wie der [der Computer, -|Computer] für komplexe analytische Arbeitsprozesse unverzichtbar bleiben, dominiert das Mobilgerät die private Lebenswelt.",
+                  "Die physische Begrenzung durch den lithumbasierten [der Akku, -s|Akku] markiert paradoxerweise die letzte materielle Schranke gegen die vollkommene Entgrenzung des digitalen Hyperkapitalismus."
                 ]
               ]
             }
-          }
+          },
+          "description": "Moderne digitale Kommunikation: Smartphones, Apps, Messengerdienste, Internet und Medienkonsum.",
+          "details": "Smartphone, Apps, Internet und mobile Kommunikation (A1–B2)",
+          "arabicDescription": "الهاتف الذكي ووسائل الاتصال الرقمي والإنترنت. يغطي هذا الدرس أجهزة الهاتف والإنترنت، والتطبيقات (Apps)، والرسائل النصية، والاتصال الصوتي والمرئي، والتقاط الصور، مع التركيز على خصوصية البيانات وحماية المعلومات الشخصية (Datenschutz) ذات الأهمية القصوى في ألمانيا."
         }
       ]
     }
-  ]
+  ],
+  "slug": "kommunikation"
 }

@@ -16,37 +16,92 @@
               "german": "der Kopf, -̈e",
               "arabic": "الرأس",
               "english": "head",
-              "example": "Mein Kopf tut weh."
+              "example": "Er schüttelt nachdenklich den Kopf und überlegt eine passende Lösung."
             },
             {
               "german": "der Arm, -e",
               "arabic": "الذراع",
               "english": "arm",
-              "example": "Sein linker Arm ist gebrochen."
+              "example": "Beim Krafttraining trainiert er regelmäßig die Muskeln in beiden Armen."
             },
             {
               "german": "das Bein, -e",
-              "arabic": "الساق",
+              "arabic": "الساق / الرِجل",
               "english": "leg",
-              "example": "Meine Beine sind müde vom Laufen."
+              "example": "Nach dem Marathonlauf taten mir die Beine noch tagelang weh."
             },
             {
               "german": "der Bauch, -̈e",
               "arabic": "البطن",
               "english": "stomach, belly",
-              "example": "Er hat Bauchschmerzen."
+              "example": "Nach dem üppigen Festessen fühlte sich sein Bauch kugelrund an."
+            },
+            {
+              "german": "die Hand, -̈e",
+              "arabic": "اليد",
+              "english": "hand",
+              "example": "Zur Begrüßung reichte der Arzt dem Patienten freundlich die Hand."
+            },
+            {
+              "german": "der Fuß, -̈e",
+              "arabic": "القدم",
+              "english": "foot",
+              "example": "Auf barfußem Fuß durch das feuchte Gras zu laufen, ist sehr gesund."
+            },
+            {
+              "german": "das Auge, -n",
+              "arabic": "العين",
+              "english": "eye",
+              "example": "Sie hat strahlende blaue Augen und einen warmen, offenen Blick."
+            },
+            {
+              "german": "das Ohr, -en",
+              "arabic": "الأذن",
+              "english": "ear",
+              "example": "Das menschliche Ohr nimmt Geräusche und Töne in feinsten Nuancen wahr."
+            },
+            {
+              "german": "der Mund, -̈er",
+              "arabic": "الفم",
+              "english": "mouth",
+              "example": "Öffnen Sie bitte den Mund und sagen Sie 'Ah', damit ich den Hals untersuchen kann."
+            },
+            {
+              "german": "die Nase, -n",
+              "arabic": "الأنف",
+              "english": "nose",
+              "example": "Mit der feinen Nase nehmen wir den Duft von frischem Gebäck sofort wahr."
+            },
+            {
+              "german": "der Rücken, -",
+              "arabic": "الظهر",
+              "english": "back (body)",
+              "example": "Viel Sitzen am Schreibtisch belastet auf Dauer den unteren Rücken."
+            },
+            {
+              "german": "das Herz, -en",
+              "arabic": "القلب",
+              "english": "heart",
+              "example": "Das Herz pumpt unaufhörlich sauerstoffreiches Blut durch unseren gesamten Organismus."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Der menschliche Körper",
-            "intro": "Grundlegende Bezeichnungen für Körperteile (A1).",
+            "title": "Unser wunderbarer Körper",
+            "intro": "Einfache Sätze über die wichtigsten Körperteile des Menschen (A1).",
             "paragraphs": [
               [
-                "Auf meinem [der Kopf, -̈e|Kopf] wachsen die Haare.",
-                "Ich hebe schwere Taschen mit meinem starken [der Arm, -e|Arm].",
-                "Beim Laufen bewege ich jedes [das Bein, -e|Bein].",
-                "Nach dem leckeren Essen ist mein [der Bauch, -̈e|Bauch] voll und zufrieden."
+                "Der menschliche Körper ist faszinierend und leistet jeden Tag Großes.",
+                "Oben ist [der Kopf, -̈e|Kopf] mit zwei [das Auge, -n|Augen] zum Sehen und einer feinen [die Nase, -n|Nase] zum Riechen.",
+                "Mit dem [der Mund, -̈er|Mund] sprechen und essen wir, und mit jedem [das Ohr, -en|Ohr] hören wir Geräusche.",
+                "Im Brustkorb schlägt Tag und Nacht unser gesundes [das Herz, -en|Herz]."
+              ],
+              [
+                "Wir haben zwei starke [der Arm, -e|Arme] und an jeder Seite eine geschickte [die Hand, -̈e|Hand].",
+                "Zum Gehen und Laufen brauchen wir unsere [das Bein, -e|Beine] und die [der Fuß, -̈e|Füße].",
+                "Wenn wir Sport machen, trainieren wir auch den [der Bauch, -̈e|Bauch] und den geraden [der Rücken, -|Rücken].",
+                "Wir müssen gut auf unseren Körper achten und uns gesund ernähren."
               ]
             ]
           },
@@ -54,59 +109,86 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Der menschliche Körper",
-              "intro": "Grundlegende Bezeichnungen für Körperteile (A1).",
+              "title": "Unser wunderbarer Körper",
+              "intro": "Einfache Sätze über die wichtigsten Körperteile des Menschen (A1).",
               "paragraphs": [
                 [
-                  "Auf meinem [der Kopf, -̈e|Kopf] wachsen die Haare.",
-                  "Ich hebe schwere Taschen mit meinem starken [der Arm, -e|Arm].",
-                  "Beim Laufen bewege ich jedes [das Bein, -e|Bein].",
-                  "Nach dem leckeren Essen ist mein [der Bauch, -̈e|Bauch] voll und zufrieden."
+                  "Der menschliche Körper ist faszinierend und leistet jeden Tag Großes.",
+                  "Oben ist [der Kopf, -̈e|Kopf] mit zwei [das Auge, -n|Augen] zum Sehen und einer feinen [die Nase, -n|Nase] zum Riechen.",
+                  "Mit dem [der Mund, -̈er|Mund] sprechen und essen wir, und mit jedem [das Ohr, -en|Ohr] hören wir Geräusche.",
+                  "Im Brustkorb schlägt Tag und Nacht unser gesundes [das Herz, -en|Herz]."
+                ],
+                [
+                  "Wir haben zwei starke [der Arm, -e|Arme] und an jeder Seite eine geschickte [die Hand, -̈e|Hand].",
+                  "Zum Gehen und Laufen brauchen wir unsere [das Bein, -e|Beine] und die [der Fuß, -̈e|Füße].",
+                  "Wenn wir Sport machen, trainieren wir auch den [der Bauch, -̈e|Bauch] und den geraden [der Rücken, -|Rücken].",
+                  "Wir müssen gut auf unseren Körper achten und uns gesund ernähren."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Bewegung und Fitness",
-              "intro": "Körperteile beim Sport und im Alltag (A2).",
+              "title": "Morgenfitness und Rückengesundheit",
+              "intro": "Körperbewusstsein, Gymnastikübungen und Ergonomie im Büroalltag (A2).",
               "paragraphs": [
                 [
-                  "Vor dem Sport dehne ich meine [der Arm, -e|Arme] und meine [der Bein, -e|Beine] gründlich.",
-                  "Wenn man zu viel Süßes isst, bekommt man manchmal Schmerzen im [der Bauch, -̈e|Bauch].",
-                  "Nach einem langen Arbeitstag am Computer tut mir oft der [der Kopf, -̈e|Kopf] weh.",
-                  "Ein Spaziergang an der frischen Luft tut dem ganzen Körper gut."
+                  "Wer den ganzen Tag im Büro sitzt, spürt abends oft Verspannungen im [der Rücken, -|Rücken] und in den Schultern.",
+                  "Deshalb beginne ich jeden Morgen mit zehn Minuten sanfter Gymnastik.",
+                  "Ich kreise die [der Arm, -e|Arme], strecke die [das Bein, -e|Beine] und lockere vorsichtig den Nacken.",
+                  "Dabei schüttle ich leicht den [der Kopf, -̈e|Kopf], um die Halsmuskulatur zu dehnen."
+                ],
+                [
+                  "Danach mache ich ein paar Kniebeugen auf festem [der Fuß, -̈e|Fuß] und stütze mich mit der [die Hand, -̈e|Hand] an der Wand ab.",
+                  "Diese Übungen stärken die Muskeln im [der Bauch, -̈e|Bauch] und bringen das [das Herz, -en|Herz] in Schwung.",
+                  "Ich wasche mein Gesicht mit kaltem Wasser, öffne die [das Auge, -n|Augen] und atme tief durch die [die Nase, -n|Nase] ein.",
+                  "So fühlt sich der ganze Körper voller Energie für die Herausforderungen des Tages an."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Körperbewusstsein und Ergonomie",
-              "intro": "Haltung, Muskelaufbau und Gesundheit (B1).",
+              "title": "Ganzheitliche Körperwahrnehmung und funktionelle Anatomie",
+              "intro": "Wie Muskeln, Sinnesorgane und Kreislauf harmonisch zusammenwirken (B1).",
               "paragraphs": [
                 [
-                  "Eine ergonomische Sitzhaltung am Schreibtisch entlastet Nacken, [der Kopf, -̈e|Kopf] und Schultern wirksam.",
-                  "Gezieltes Krafttraining stärkt die Muskeln in [der Arm, -e|Armen] und [das Bein, -e|Beinen], was Fehlhaltungen im Alltag vorbeugt.",
-                  "Die Verdauungsorgane im [der Bauch, -̈e|Bauch] reagieren hochsensibel auf psychischen Stress und ungesunde Nahrung.",
-                  "Wer auf die Signale seines Körpers achtet, bleibt langfristig vital und leistungsfähig."
+                  "Der menschliche Bewegungsapparat ist ein bio-mechanisches Wunderwerk höchster Präzision.",
+                  "Über die Sinnesorgane nehmen wir unsere Umwelt wahr: Das hochentwickelte [das Auge, -n|Auge] fängt optische Reize ein, während das empfindliche [das Ohr, -en|Ohr] akustische Wellen in Nervenimpulse übersetzt.",
+                  "Als zentraler Motor des Kreislaufs pumpt das vitale [das Herz, -en|Herz] unermüdlich Blut durch Gefäße bis in die Spitzen von [die Hand, -̈e|Hand] und [der Fuß, -̈e|Fuß].",
+                  "Gleichzeitig bildet eine stabile Rumpfmuskulatur rund um [der Bauch, -̈e|Bauch] und [der Rücken, -|Rücken] das schützende Korsett der Wirbelsäule."
+                ],
+                [
+                  "Fehlhaltungen durch Bewegungsmangel führen jedoch schnell zu chronischen Beschwerden, die vom Nacken bis in den [der Kopf, -̈e|Kopf] ausstrahlen können.",
+                  "Durch gezieltes Faszientraining und Dehnübungen für [der Arm, -e|Arm] und [das Bein, -e|Bein] lassen sich solche Blockaden effektiv lösen.",
+                  "Bewusstes Atmen durch die [die Nase, -n|Nase] mit geschlossenem [der Mund, -̈er|Mund] optimiert die Sauerstoffsättigung des Gehirns.",
+                  "Ein achtsamer Umgang mit den Körpersignalen ist das wirksamste Rezept für langanhaltende Vitalität."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Somatische Intelligenz und muskuloskelettale Funktionalität",
-              "intro": "Ganzheitliche Anatomie und psychosomatische Zusammenhänge (B2).",
+              "title": "Somatische Anthropologie: Körperdiskurse und Biopolitik",
+              "intro": "Philosophische und medizinsoziologische Reflexion über den Körper als Kulturträger (B2).",
               "paragraphs": [
                 [
-                  "Der menschliche Bewegungsapparat bildet ein hochkomplexes biomechanisches System kinetischer Ketten.",
-                  "Die koordinierte Kraftübertragung von den [das Bein, -e|Beinen] über das Becken bis in die [der Arm, -e|Arme] ermöglicht Höchstleistungen im Leistungssport.",
-                  "Psychosomatische Spannungen manifestieren sich häufig in Spannungskopfschmerzen im [der Kopf, -̈e|Kopf] oder in viszeralen Dysfunktionen im [der Bauch, -̈e|Bauch]."
+                  "In der postindustriellen Spätmoderne wird der menschliche Leib zunehmend als formbares Projekt und Repräsentationsfläche sozialer Distinktion interpretiert.",
+                  "Während die Physiologie das Zusammenspiel von Skelett, Sehnen und dem motorischen [der Arm, -e|Arm] beschreibt, konstruieren Fitness-Diskurse den gestählten [der Bauch, -̈e|Bauch] als Ausweis von Disziplin und Kontrollfähigkeit.",
+                  "Dabei geraten die basalen physiologischen Rhythmen, die durch das vegetative Nervensystem und das lebensnotwendige [das Herz, -en|Herz] gesteuert werden, oft in Konflikt mit ökonomischen Verwertungslogiken.",
+                  "Selbst die Sinneswahrnehmung durch [das Auge, -n|Auge] und [das Ohr, -en|Ohr] wird durch digitale Interfaces einer kontinuierlichen Reizüberflutung ausgesetzt."
+                ],
+                [
+                  "Die Somatisierung von Stress manifestiert sich symptomatisch in Zivilisationsleiden wie dem chronischen Schmerz im [der Rücken, -|Rücken] oder Spannungszuständen im [der Kopf, -̈e|Kopf].",
+                  "Demgegenüber plädieren phänomenologische Denker für eine Wiederaneignung des Leibes als primärem Modus unseres In-der-Welt-Seins, verankert durch den geerdeten [der Fuß, -̈e|Fuß] und die schöpferische [die Hand, -̈e|Hand].",
+                  "Erst die Synthese aus anatomischem Verständnis und somatischer Achtsamkeit befreit das Individuum aus der Falle rein mechanistischer Selbstoptimierung."
                 ]
               ]
             }
-          }
+          },
+          "description": "Anatomie des menschlichen Körpers: Gliedmaßen, Organe, Sinnesorgane und körperliche Fitness.",
+          "details": "Körperteile, Organe und menschliche Anatomie (A1–B2)",
+          "arabicDescription": "أجزاء الجسم البشري وتشريح الأعضاء والحواس في اللغة الألمانية. يتناول هذا الدرس الرأس، والأطراف (الذراعين، الساقين، اليدين، القدمين)، والبطن والظهر، والقلب، مع التركيز على أدوات التعريف والجمع الخاصة بكل عضو وكيفية التعبير عن اللياقة البدنية."
         },
         {
           "id": "krankheiten",
@@ -114,39 +196,94 @@
           "words": [
             {
               "german": "die Schmerzen (Pl.)",
-              "arabic": "الآلام",
-              "english": "pain, ache",
-              "example": "Haben Sie Schmerzen?"
+              "arabic": "الآلام / الأوجاع",
+              "english": "pain, aches",
+              "example": "Er klagte über starke Schmerzen im linken Knie nach dem Sturz."
             },
             {
               "german": "der Arzt, -̈e",
               "arabic": "الطبيب",
-              "english": "doctor",
-              "example": "Du musst zum Arzt gehen."
+              "english": "doctor, physician (male)",
+              "example": "Der erfahrene Arzt nimmt sich viel Zeit für die gründliche Untersuchung."
             },
             {
               "german": "das Medikament, -e",
-              "arabic": "الدواء",
-              "english": "medicine, medication",
-              "example": "Nimm deine Medikamente regelmäßig ein."
+              "arabic": "الدواء / العلاج",
+              "english": "medication, medicine",
+              "example": "Nehmen Sie dieses wirksame Medikament bitte dreimal täglich nach den Mahlzeiten ein."
             },
             {
               "german": "die Erkältung, -en",
-              "arabic": "نزلات البرد / الزكام",
-              "english": "cold",
-              "example": "Im Winter habe ich oft eine Erkältung."
+              "arabic": "نزلة البرد / الرشح",
+              "english": "cold, common cold",
+              "example": "Im nasskalten November fängt man sich leicht eine unangenehme Erkältung ein."
+            },
+            {
+              "german": "das Fieber",
+              "arabic": "الحمى / ارتفاع درجة الحرارة",
+              "english": "fever",
+              "example": "Das Thermometer zeigt 39 Grad Fieber, sie muss unbedingt im Bett bleiben."
+            },
+            {
+              "german": "der Husten",
+              "arabic": "السعال / الكحة",
+              "english": "cough",
+              "example": "Ein quälender trockener Husten hielt ihn die halbe Nacht wach."
+            },
+            {
+              "german": "der Schnupfen",
+              "arabic": "الزكام / سيلان الأنف",
+              "english": "runny nose, sniffles",
+              "example": "Bei starkem Schnupfen hilft das Inhalieren von heißem Kamillendampf."
+            },
+            {
+              "german": "die Praxis, Praxen",
+              "arabic": "العيادة الطبية",
+              "english": "doctor's office, medical practice",
+              "example": "Die moderne Praxis des Hausarztes liegt verkehrsgünstig am Marktplatz."
+            },
+            {
+              "german": "das Rezept, -e",
+              "arabic": "الوصفة الطبية / الروشتة",
+              "english": "prescription",
+              "example": "Der Arzt stellt mir ein Rezept für antibiotische Augentropfen aus."
+            },
+            {
+              "german": "die Tablette, -n",
+              "arabic": "الحبة / القرص الدوائي",
+              "english": "pill, tablet",
+              "example": "Schlucken Sie die weiße Tablette bitte mit einem großen Glas stillem Wasser."
+            },
+            {
+              "german": "die Gesundheit",
+              "arabic": "الصحة",
+              "english": "health",
+              "example": "Gesundheit ist das höchste Gut im menschlichen Leben."
+            },
+            {
+              "german": "untersuchen",
+              "arabic": "يفحص طبياً",
+              "english": "to examine (medically)",
+              "example": "Die Ärztin wird Ihre Lunge mit dem Stethoskop sorgfältig untersuchen."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Krank sein",
-            "intro": "Grundwortschatz zu Krankheit und Arztbesuch (A1).",
+            "title": "Beim Hausarzt in der Praxis",
+            "intro": "Einfache Sätze über Krankheit, Schmerzen und den Arztbesuch (A1).",
             "paragraphs": [
               [
-                "Wenn ich krank bin, spüre ich unangenehme [die Schmerzen (Pl.)|Schmerzen].",
-                "Ich gehe in die Praxis und spreche mit dem [der Arzt, -̈e|Arzt].",
-                "Der Arzt verschreibt mir ein wirksames [das Medikament, -e|Medikament].",
-                "Im kalten Winter habe ich manchmal eine starke [die Erkältung, -en|Erkältung] mit Husten."
+                "Ich fühle mich heute leider gar nicht gut.",
+                "Ich habe eine schwere [die Erkältung, -en|Erkältung] mit starkem [der Husten|Husten] und [der Schnupfen|Schnupfen].",
+                "Mein Kopf ist heiß und ich habe hohes [das Fieber|Fieber].",
+                "Im Hals habe ich schlimme [die Schmerzen (Pl.)|Schmerzen] beim Schlucken."
+              ],
+              [
+                "Ich gehe am Vormittag in die [die Praxis, Praxen|Praxis] von Dr. Schmidt.",
+                "Der freundliche [der Arzt, -̈e|Arzt] wird meinen Hals und die Lunge gründlich [untersuchen|untersuchen].",
+                "Er schreibt mir ein [das Rezept, -e|Rezept] für ein gutes [das Medikament, -e|Medikament] auf.",
+                "In der Apotheke kaufe ich die [die Tablette, -n|Tabletten], gehe ins Bett und schone meine [die Gesundheit|Gesundheit]."
               ]
             ]
           },
@@ -154,61 +291,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Krank sein",
-              "intro": "Grundwortschatz zu Krankheit und Arztbesuch (A1).",
+              "title": "Beim Hausarzt in der Praxis",
+              "intro": "Einfache Sätze über Krankheit, Schmerzen und den Arztbesuch (A1).",
               "paragraphs": [
                 [
-                  "Wenn ich krank bin, spüre ich unangenehme [die Schmerzen (Pl.)|Schmerzen].",
-                  "Ich gehe in die Praxis und spreche mit dem [der Arzt, -̈e|Arzt].",
-                  "Der Arzt verschreibt mir ein wirksames [das Medikament, -e|Medikament].",
-                  "Im kalten Winter habe ich manchmal eine starke [die Erkältung, -en|Erkältung] mit Husten."
+                  "Ich fühle mich heute leider gar nicht gut.",
+                  "Ich habe eine schwere [die Erkältung, -en|Erkältung] mit starkem [der Husten|Husten] und [der Schnupfen|Schnupfen].",
+                  "Mein Kopf ist heiß und ich habe hohes [das Fieber|Fieber].",
+                  "Im Hals habe ich schlimme [die Schmerzen (Pl.)|Schmerzen] beim Schlucken."
+                ],
+                [
+                  "Ich gehe am Vormittag in die [die Praxis, Praxen|Praxis] von Dr. Schmidt.",
+                  "Der freundliche [der Arzt, -̈e|Arzt] wird meinen Hals und die Lunge gründlich [untersuchen|untersuchen].",
+                  "Er schreibt mir ein [das Rezept, -e|Rezept] für ein gutes [das Medikament, -e|Medikament] auf.",
+                  "In der Apotheke kaufe ich die [die Tablette, -n|Tabletten], gehe ins Bett und schone meine [die Gesundheit|Gesundheit]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Ein Besuch beim Arzt",
-              "intro": "Symptome beschreiben und Medikamente einnehmen (A2).",
+              "title": "Ein Termin beim Arzt und der Weg zur Besserung",
+              "intro": "Symptome schildern, Anweisungen des Arztes befolgen und gesund werden (A2).",
               "paragraphs": [
                 [
-                  "Gestern fühlte sich Lisa schlapp und hatte hohes Fieber.",
-                  "Der freundliche [der Arzt, -̈e|Arzt] untersuchte ihren Hals und ihre Lunge gründlich.",
-                  "Gegen die [die Schmerzen (Pl.)|Schmerzen] und das Fieber gab er ihr ein gutes [das Medikament, -e|Medikament].",
-                  "Bei einer gewöhnlichen [die Erkältung, -en|Erkältung] sollte man viel warmen Tee trinken und im Bett bleiben."
+                  "Als ich gestern Morgen aufwachte, fühlte ich mich schlapp und hatte stechende [die Schmerzen (Pl.)|Schmerzen] im Brustkorb.",
+                  "Mein Thermometer zeigte über 38 Grad [das Fieber|Fieber], begleitet von trockenem [der Husten|Husten] und lästigem [der Schnupfen|Schnupfen].",
+                  "Ich rief sofort in der [die Praxis, Praxen|Praxis] meines Hausarztes an und bekam kurzfristig einen Notfalltermin.",
+                  "Im Wartezimmer saßen viele andere Patienten mit einer typischen winterlichen [die Erkältung, -en|Erkältung]."
+                ],
+                [
+                  "„Guten Tag! Wo genau tut es weh?“, fragte mich der [der Arzt, -̈e|Arzt] einfühlsam.",
+                  "Nachdem er mich gewissenhaft [untersuchen|untersucht] hatte, beruhigte er mich: „Es ist eine Virusinfektion, keine Lungenentzündung.“",
+                  "Er stellte mir ein rotes [das Rezept, -e|Rezept] aus und empfahl mir, morgens und abends je eine [die Tablette, -n|Tablette] einzunehmen.",
+                  "„Viel Tee trinken, fünf Tage Bettruhe und schonen Sie Ihre [die Gesundheit|Gesundheit]!“, lautete sein ärztlicher Rat."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Genesung und Gesundheitsvorsorge",
-              "intro": "Symptombehandlung, Medikation und Immunsystem (B1).",
+              "title": "Moderne Diagnostik, Therapie und Patientenautonomie",
+              "intro": "Kommunikation im Gesundheitswesen, Medikamentensicherheit und Prävention (B1).",
               "paragraphs": [
                 [
-                  "Bei ersten Anzeichen einer [die Erkältung, -en|Erkältung] kann man mit Ruhe und Vitaminen eine Verschlimmerung verhindern.",
-                  "Sollten anhaltende [die Schmerzen (Pl.)|Schmerzen] auftreten, ist der zeitnahe Gang zum [der Arzt, -̈e|Arzt] dringend ratsam.",
-                  "Verschreibungspflichtige [das Medikament, -e|Medikamente] müssen stets exakt nach ärztlicher Verordnung eingenommen werden.",
-                  "Ein starkes Immunsystem und regelmäßige Bewegung sind der beste Schutz vor vielen Infektionskrankheiten."
+                  "Das Vertrauensverhältnis zwischen Patient und Behandler bildet das Fundament jeder erfolgreichen medizinischen Therapie.",
+                  "Wenn unklare Symptome wie persistierendes [das Fieber|Fieber] oder chronische [die Schmerzen (Pl.)|Schmerzen] auftreten, ist der zeitnahe Gang in die hausärztliche [die Praxis, Praxen|Praxis] unabdingbar.",
+                  "Ein kompetenter [der Arzt, -̈e|Arzt] wird den Patienten nicht nur körperlich [untersuchen|untersuchen], sondern auch dessen Lebensumstände und Vorerkrankungen erfragen.",
+                  "Während eine banale [die Erkältung, -en|Erkältung] mit Schnupfen meist nach einer Woche Schonung abklingt, bedürfen bakterielle Infektionen spezifischer Intervention."
+                ],
+                [
+                  "Bei der Verordnung pharmazeutischer Präparate stellt der Mediziner ein verbindliches [das Rezept, -e|Rezept] aus.",
+                  "Der Patient muss darauf achten, jedes verschriebene [das Medikament, -e|Medikament] exakt nach Dosierungsanleitung einzunehmen, um Resistenzen oder Nebenwirkungen zu vermeiden.",
+                  "Häufig lindert bereits eine fiebersenkende [die Tablette, -n|Tablette] akute Beschwerden spürbar.",
+                  "Langfristig gewinnt jedoch die vorbeugende Stärkung des Immunsystems an Bedeutung, denn präventive Lebensführung ist der nachhaltigste Schutz für unsere [die Gesundheit|Gesundheit]."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Klinische Diagnostik und evidenzbasierte Pharmakotherapie",
-              "intro": "Medizinische Zusammenhänge, Prävention und Therapie (B2).",
+              "title": "Medizinsoziologie, Pharmakologie und der Wandel der Heilerrolle",
+              "intro": "Kritische Analyse von Evidenzbasierung, Medikalisierung und Gesundheitsökonomie (B2).",
               "paragraphs": [
                 [
-                  "Die moderne Allgemeinmedizin verfolgt einen ganzheitlichen Ansatz bei der Diagnose akuter und chronischer Erkrankungen.",
-                  "Ein erfahrener [der Arzt, -̈e|Arzt] differenziert präzise zwischen viralen Infekten wie einer banalen [die Erkältung, -en|Erkältung] und behandlungsbedürftigen bakteriellen Komplikationen.",
-                  "Die zielgerichtete Verordnung von [das Medikament, -e|Medikamenten] dient nicht allein der Linderung quälender [die Schmerzen (Pl.)|Schmerzen], sondern der kausalen Beseitigung pathologischer Ursachen."
+                  "Das zeitgenössische Gesundheitssystem operiert in einem permanenten Spannungsfeld zwischen evidenzbasierter Spitzenmedizin und ökonomischem Kostendruck.",
+                  "Die traditionelle Autorität vom klinischen [der Arzt, -̈e|Arzt] transformiert sich im Zeitalter digital informierter Patienten zum partnerschaftlichen 'Shared Decision Making'.",
+                  "Dennoch bleibt die klinische Urteilskraft unersetzlich, wenn es darum geht, komplexe somatische [die Schmerzen (Pl.)|Schmerzen] diagnostisch abzugrenzen und den Patienten fundiert zu [untersuchen|untersuchen].",
+                  "Die inflationäre Verschreibungspraxis, bei der jedes flüchtige Symptom wie [der Husten|Husten] unmittelbar über ein behördliches [das Rezept, -e|Rezept] medikalisiert wird, ruft zunehmend Kritik hervor."
+                ],
+                [
+                  "Eine rationale Pharmakotherapie wägt Nutzen und Risiken minutiös ab, bevor ein synthetisches [das Medikament, -e|Medikament] oder eine potente [die Tablette, -n|Tablette] verabreicht wird.",
+                  "Gleichzeitig belegen gesundheitsökonomische Studien, dass die ambulante Primärversorgung in der niedergelassenen [die Praxis, Praxen|Praxis] Krankenhauseinweisungen signifikant reduziert.",
+                  "Der Begriff [die Gesundheit|Gesundheit] wird gemäß der WHO-Definition nicht mehr bloß als Abwesenheit von Krankheit wie einer akuten [die Erkältung, -en|Erkältung] begriffen, sondern als Zustand vollkommenen körperlichen, mentalen und sozialen Wohlbefindens."
                 ]
               ]
             }
-          }
+          },
+          "description": "Symptome, Arztbesuch, Medikamente, Diagnosen und Genesung.",
+          "details": "Symptome, Arztpraxis, Medikamente und Genesung (A1–B2)",
+          "arabicDescription": "الأمراض والأعراض وزيارة الطبيب وتناول الأدوية في ألمانيا. يتناول هذا الدرس عبارات وصف الألم والشكوى المرضية، والفحص الطبي، والحصول على الوصفة الطبية (Rezept) من العيادة (Praxis) وصرفها من الصيدلية، إلى جانب عبارة التمني بالشفاء العاجل (Gute Besserung!)."
         }
       ]
     }
-  ]
+  ],
+  "slug": "koerper-und-gesundheit"
 }

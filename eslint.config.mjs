@@ -206,6 +206,8 @@ const eslintConfig = defineConfig(
       "@typescript-eslint/no-unsafe-assignment": "off",
       // Standard Astro props contract
       "unicorn/name-replacements": ["error", { allowList: { Props: true } }],
+      // Astro frontmatter scripts allow top-level returns (e.g. return Astro.redirect())
+      "unicorn/prefer-module": "off",
       // Security & CSP boundaries
       "astro/no-set-html-directive": "error",
       "astro/no-unsafe-inline-scripts": ["error", { allowModuleScripts: true }],

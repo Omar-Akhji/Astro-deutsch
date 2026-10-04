@@ -14,45 +14,94 @@
           "words": [
             {
               "german": "die Uhrzeit, -en",
-              "arabic": "الوقت / الساعة",
-              "english": "time (of day)",
-              "example": "Können Sie mir die Uhrzeit sagen?"
+              "arabic": "الوقت / الساعة المحددة",
+              "english": "time of day, clock time",
+              "example": "Können Sie mir bitte die genaue Uhrzeit sagen? Meine Uhr ist stehengeblieben."
             },
             {
               "german": "die Stunde, -n",
-              "arabic": "الساعة (مدة)",
+              "arabic": "الساعة (مدة 60 دقيقة)",
               "english": "hour",
-              "example": "Der Film dauert zwei Stunden."
+              "example": "Die Vorlesung an der Universität dauert genau eineinhalb Stunden."
             },
             {
               "german": "die Minute, -n",
               "arabic": "الدقيقة",
               "english": "minute",
-              "example": "Ich bin in fünf Minuten da."
+              "example": "Ich brauche noch fünf Minuten, dann bin ich abmarschbereit."
             },
             {
               "german": "der Tag, -e",
               "arabic": "اليوم",
               "english": "day",
-              "example": "Heute ist ein schöner Tag."
+              "example": "Jeder neue Tag bringt frische Chancen und spannende Begegnungen mit sich."
             },
             {
               "german": "die Woche, -n",
               "arabic": "الأسبوع",
               "english": "week",
-              "example": "Nächste Woche fahre ich in den Urlaub."
+              "example": "Eine Woche hat sieben Tage, und am Wochenende ruhen wir uns aus."
+            },
+            {
+              "german": "die Sekunde, -n",
+              "arabic": "الثانية",
+              "english": "second",
+              "example": "Der Sprinter verbesserte den Weltrekord um drei Hundertstelsekunden."
+            },
+            {
+              "german": "der Monat, -e",
+              "arabic": "الشهر",
+              "english": "month",
+              "example": "Der Monat Mai verzaubert uns mit blühenden Wiesen und angenehmen Temperaturen."
+            },
+            {
+              "german": "das Jahr, -e",
+              "arabic": "العام / السنة",
+              "english": "year",
+              "example": "Ein Schaltjahr hat 366 Tage statt der üblichen 365."
+            },
+            {
+              "german": "der Morgen",
+              "arabic": "الصباح",
+              "english": "morning",
+              "example": "Am frühen Morgen ist die Luft im Wald besonders klar und belebend."
+            },
+            {
+              "german": "der Mittag",
+              "arabic": "الظهر / وقت الظهيرة",
+              "english": "noon, midday",
+              "example": "Am Mittag essen wir in der Mensa zu Mittag und tauschen uns aus."
+            },
+            {
+              "german": "der Abend",
+              "arabic": "المساء",
+              "english": "evening",
+              "example": "Am gemütlichen Abend entspanne ich mit einem guten Buch im Sessel."
+            },
+            {
+              "german": "pünktlich",
+              "arabic": "منضبط في الموعد / في الوقت المحدد",
+              "english": "punctual, on time",
+              "example": "In Deutschland wird erwartet, dass man stets pünktlich zum Termin erscheint."
             }
           ],
           "story": {
+            "level": "A1",
             "badge": "A1 – Grundstufe",
-            "title": "Uhrzeit und Tage",
-            "intro": "Grundwortschatz zu Stunden, Minuten und Tagen (A1).",
+            "title": "Wie spät ist es?",
+            "intro": "Einfache Sätze über die Uhrzeit, Tageszeiten und Pünktlichkeit (A1).",
             "paragraphs": [
               [
-                "Wie viel Uhr ist es? Ich prüfe die [die Uhrzeit, -en|Uhrzeit].",
-                "Ein [der Tag, -e|Tag] hat vierundzwanzig Stunden.",
-                "Sieben Tage bilden eine ganze [die Woche, -n|Woche].",
-                "Eine [die Stunde, -n|Stunde] vergeht oft sehr schnell."
+                "Die Zeit vergeht jeden Tag sehr schnell.",
+                "Ein [das Jahr, -e|Jahr] hat zwölf [der Monat, -e|Monate], und eine [die Woche, -n|Woche] hat sieben [der Tag, -e|Tage].",
+                "Am frühen [der Morgen|Morgen] stehe ich um sieben Uhr auf und frühstücke.",
+                "Um zwölf Uhr ist [der Mittag|Mittag] und ich mache eine kurze Pause."
+              ],
+              [
+                "Am [der Abend|Abend] komme ich nach Hause und esse zu Abend.",
+                "Ich schaue auf meine Armbanduhr und prüfe die genaue [die Uhrzeit, -en|Uhrzeit].",
+                "Eine [die Stunde, -n|Stunde] hat sechzig [die Minute, -n|Minuten], und jede Minute hat sechzig [die Sekunde, -n|Sekunden].",
+                "Mein Deutschkurs beginnt um vierzehn Uhr, und ich bin immer sehr [pünktlich|pünktlich]."
               ]
             ]
           },
@@ -60,61 +109,89 @@
             "A1": {
               "level": "A1",
               "badge": "A1 – Grundstufe",
-              "title": "Uhrzeit und Tage",
-              "intro": "Grundwortschatz zu Stunden, Minuten und Tagen (A1).",
+              "title": "Wie spät ist es?",
+              "intro": "Einfache Sätze über die Uhrzeit, Tageszeiten und Pünktlichkeit (A1).",
               "paragraphs": [
                 [
-                  "Wie viel Uhr ist es? Ich prüfe die [die Uhrzeit, -en|Uhrzeit].",
-                  "Ein [der Tag, -e|Tag] hat vierundzwanzig Stunden.",
-                  "Sieben Tage bilden eine ganze [die Woche, -n|Woche].",
-                  "Eine [die Stunde, -n|Stunde] vergeht oft sehr schnell."
+                  "Die Zeit vergeht jeden Tag sehr schnell.",
+                  "Ein [das Jahr, -e|Jahr] hat zwölf [der Monat, -e|Monate], und eine [die Woche, -n|Woche] hat sieben [der Tag, -e|Tage].",
+                  "Am frühen [der Morgen|Morgen] stehe ich um sieben Uhr auf und frühstücke.",
+                  "Um zwölf Uhr ist [der Mittag|Mittag] und ich mache eine kurze Pause."
+                ],
+                [
+                  "Am [der Abend|Abend] komme ich nach Hause und esse zu Abend.",
+                  "Ich schaue auf meine Armbanduhr und prüfe die genaue [die Uhrzeit, -en|Uhrzeit].",
+                  "Eine [die Stunde, -n|Stunde] hat sechzig [die Minute, -n|Minuten], und jede Minute hat sechzig [die Sekunde, -n|Sekunden].",
+                  "Mein Deutschkurs beginnt um vierzehn Uhr, und ich bin immer sehr [pünktlich|pünktlich]."
                 ]
               ]
             },
             "A2": {
               "level": "A2",
               "badge": "A2 – Alltag & Praxis",
-              "title": "Pünktlich durch den Tag",
-              "intro": "Termine planen und Zeitspannen berechnen (A2).",
+              "title": "Termine planen und Pünktlichkeit im Alltag",
+              "intro": "Uhrzeiten verabreden, Fristen einhalten und den Tag strukturieren (A2).",
               "paragraphs": [
                 [
-                  "Sechzig [die Minute, -n|Minuten] ergeben genau eine [die Stunde, -n|Stunde].",
-                  "Wir haben uns für eine feste [die Uhrzeit, -en|Uhrzeit] zum Kaffee verabredet.",
-                  "Jeder [der Tag, -e|Tag] bringt neue spannende Aufgaben mit sich.",
-                  "Am Ende der arbeitsreichen [die Woche, -n|Woche] freuen wir uns auf das Wochenende."
+                  "In Mitteleuropa ist Pünktlichkeit eine der wichtigsten gesellschaftlichen Umgangsformen im Berufs- und Privatleben.",
+                  "Wer zu einer Verabredung geht, sollte immer [pünktlich|pünktlich] erscheinen oder rechtzeitig Bescheid geben, wenn er sich um wenige [die Minute, -n|Minuten] verspätet.",
+                  "Jeder [der Tag, -e|Tag] ist bei mir gut strukturiert: Am [der Morgen|Morgen] erledige ich dringende Telefonate.",
+                  "Gegen [der Mittag|Mittag] treffe ich mich mit Kollegen, und am [der Abend|Abend] gehe ich zum Sport."
+                ],
+                [
+                  "„Zu welcher [die Uhrzeit, -en|Uhrzeit] beginnt unser Meeting am Donnerstag?“, fragt mich ein Teamkollege.",
+                  "„Genau um zehn Uhr, bitte sei fünf Minuten früher da!“, antworte ich ihm freundlich.",
+                  "Für dieses Projekt haben wir eine ganze [die Woche, -n|Woche] intensiv gearbeitet.",
+                  "Am Ende vom [der Monat, -e|Monat] ziehen wir Bilanz und planen die Meilensteine für das nächste [das Jahr, -e|Jahr]."
                 ]
               ]
             },
             "B1": {
               "level": "B1",
               "badge": "B1 – Ausführliche Erzählung",
-              "title": "Effektives Zeitmanagement",
-              "intro": "Planung, Prioritäten und bewusste Lebenszeit (B1).",
+              "title": "Chronobiologie, Zeitkultur und der Wert des Augenblicks",
+              "intro": "Wie wir mit Zeit umgehen, Prioritäten setzen und Entschleunigung finden (B1).",
               "paragraphs": [
                 [
-                  "Wer seine Termine strukturiert plant, spart jeden [der Tag, -e|Tag] wertvolle [die Minute, -n|Minuten].",
-                  "Eine bewusste Zeiteinteilung über die gesamte [die Woche, -n|Woche] hinweg reduziert Stress und erhöht die Produktivität.",
-                  "Pünktlichkeit gilt im deutschen Sprachraum als Zeichen von Zuverlässigkeit und Respekt gegenüber der vereinbarten [die Uhrzeit, -en|Uhrzeit].",
-                  "Man sollte sich jedoch jeden Tag mindestens eine [die Stunde, -n|Stunde] für Sport und Erholung reservieren."
+                  "Die Wahrnehmung von Zeit ist ein zutiefst subjektives Phänomen, das eng mit unserer inneren Verfassung verknüpft ist.",
+                  "Während eine einzelne [die Stunde, -n|Stunde] bei langweiliger Routine endlos scheinen kann, verfliegt ein erfüllter [der Tag, -e|Tag] wie im Flug.",
+                  "Die moderne Gesellschaft hat das Verstreichen jeder einzelnen [die Sekunde, -n|Sekunde] durch digitale Uhren exakt messbar gemacht.",
+                  "Vom ersten Sonnenstrahl am [der Morgen|Morgen] bis zur Dämmerung am [der Abend|Abend] taktet die offizielle [die Uhrzeit, -en|Uhrzeit] unsere beruflichen Verpflichtungen."
+                ],
+                [
+                  "In der deutschsprachigen Arbeitskultur gilt es als Zeichen von Professionalität und Respekt, stets verlässlich und [pünktlich|pünktlich] zu agieren.",
+                  "Gleichzeitig erfordert gesunde Lebensführung, sich im Laufe einer anstrengenden [die Woche, -n|Woche] bewusste Oasen der Ruhe zu reservieren.",
+                  "Wenn ein ganzer [der Monat, -e|Monat] im Zeitraffer vergeht, hilft der Blick auf das große Ganze, um den eigenen Lebensweg für das kommende [das Jahr, -e|Jahr] neu zu justieren.",
+                  "Denn letztlich ist Zeit die wertvollste Ressource, die wir besitzen – man kann sie weder kaufen noch anhalten, sondern nur mit Sinn erfüllen."
                 ]
               ]
             },
             "B2": {
               "level": "B2",
               "badge": "B2 – Differenziert & Komplex",
-              "title": "Chronobiologie und die Beschleunigung der Moderne",
-              "intro": "Philosophische und soziologische Dimensionen von Zeit (B2).",
+              "title": "Chronopolitik, Beschleunigung und die Philosophie der Temporalität",
+              "intro": "Philosophische und soziologische Dekonstruktion von Zeitregimen in der Spätmoderne (B2).",
               "paragraphs": [
                 [
-                  "Die moderne Gesellschaft ist geprägt von einer fortschreitenden Verdichtung von Zeit, in der jede [die Minute, -n|Minute] ökonomisch verwertet wird.",
-                  "Chronobiologische Erkenntnisse unterstreichen jedoch, dass der menschliche Biorhythmus nicht starr nach der [die Uhrzeit, -en|Uhrzeit] getaktet werden kann.",
-                  "Ein souveräner Umgang mit dem Faktor Zeit erfordert die Fähigkeit, inmitten einer hektischen [die Woche, -n|Woche] Phasen kontemplativer Entschleunigung zu etablieren."
+                  "Der Soziologe Hartmut Rosa analysiert die Moderne prägnant als Epoche einer allumfassenden gesellschaftlichen Beschleunigung.",
+                  "Die technische Beschleunigung von Transport und Kommunikation hat paradoxerweise nicht zu einem Zeitgewinn geführt, sondern das Gefühl chronischer Zeitknappheit dramatisch verschärft.",
+                  "Der lineare Zeitstrahl, eingeteilt in atomgenaue [die Sekunde, -n|Sekunden] und standardisierte [die Minute, -n|Minuten], fungiert als disziplinierendes Herrschaftsinstrument industrieller Taktung.",
+                  "Das Diktat, zu jeder [die Uhrzeit, -en|Uhrzeit] unfehlbar [pünktlich|pünktlich] zu funktionieren, verdrängt die zirkulären Rhythmen der Natur von [der Tag, -e|Tag] und Nacht."
+                ],
+                [
+                  "Während die traditionelle Chronobiologie die hormonelle Steuerung vom [der Morgen|Morgen] bis zum [der Abend|Abend] erforscht, erzwingt die globale 24/7-Ökonomie eine Entkoppelung vom natürlichen Hell-Dunkel-Zyklus.",
+                  "Individuen erfahren die Verflüchtigung ganzer Dekaden, in denen ein [der Monat, -e|Monat] in den nächsten übergeht und ein [das Jahr, -e|Jahr] das andere jagt, ohne nachhaltige Resonanzerfahrungen zu hinterlassen.",
+                  "Echte Souveränität im 21. Jahrhundert manifestiert sich daher in der Fähigkeit zur reflexiven Entschleunigung und dem Mut, sich dem totalitären Zeitregime spätkapitalistischer Verwertbarkeit punktuell zu entziehen."
                 ]
               ]
             }
-          }
+          },
+          "description": "Uhrzeiten, Zeitbegriffe, Zeiteinteilung, Wochentage, Monate und Zeitmanagement.",
+          "details": "Uhrzeiten, Kalender, Zeitbegriffe und Pünktlichkeit (A1–B2)",
+          "arabicDescription": "الوقت والزمن وتحديد الساعات في ألمانيا. يتناول هذا الدرس نظامي قراءة الساعة في ألمانيا (النظام الرسمي الرقمي 24 ساعة، والنظام الشعبي العام مع استخدام vor و nach و halb)، ومفردات اليوم، والأسبوع، والشهر، والسنة، وأهمية الدقة والالتزام بالمواعيد (Pünktlichkeit) في الثقافة الألمانية."
         }
       ]
     }
-  ]
+  ],
+  "slug": "zahlen-und-masse"
 }
