@@ -1,68 +1,174 @@
 ---
 import { Lightbulb } from "lucide-astro";
-import type { GrammarSectionContent } from "../model/types.ts";
+import { parseGrammarItem } from "../lib/grammar-parser.ts";
+import type { GrammarThemePalette } from "../lib/theme.ts";
+import type { GrammarCell, GrammarSectionContent } from "../model/types.ts";
 import ContentItem from "./ContentItem.astro";
+import FormattedText from "./FormattedText.astro";
 
 interface Props {
   blocks: GrammarSectionContent[];
   usage?: { speaker: string; text: string }[] | undefined;
   tips?: string[] | undefined;
+  theme?: GrammarThemePalette | undefined;
 }
 
-const { blocks, usage, tips } = Astro.props;
+const { blocks, usage, tips, theme } = Astro.props;
+
+function getCellRawText(cell: GrammarCell): string {
+  if (typeof cell === "string") return cell;
+  return cell.text;
+}
+
+const badgeStyle = theme?.badgeClass ?? "border-yellow/30 bg-yellow/10 text-yellow";
+
+const isPerfektPlusquamperfektGrid =
+  blocks.length === 2 &&
+  blocks.some((b) => b.title === "Perfekt") &&
+  blocks.some((b) => b.title === "Plusquamperfekt");
 ---
 
-<div class="flex flex-col gap-8">
-  {usage && (
-    <div data-animate="fade-up">
-      <div class="space-y-4">
-        <h3 class="text-lg font-semibold text-yellow tablet:text-xl">Gebrauch</h3>
-        <div class="space-y-4 rounded-3xl border-[1.5px] border-yellow/10 bg-white/3 p-6 backdrop-blur-md">
-          {usage.map((dialogue) => (
-            <div class="flex gap-4">
-              <div class="flex size-8 shrink-0 items-center justify-center rounded-full bg-yellow/20 text-xs font-bold text-yellow tablet:size-10 tablet:text-sm">
-                {dialogue.speaker}
-              </div>
-              <div class="rounded-2xl rounded-ss-none bg-white/5 px-4 py-2 text-white/90">
+<div class="space-y-6">
+  <!-- Dialogues & Usage (Gebrauch) -->
+  {usage && usage.length > 0 && (
+    <div
+      class="overflow-hidden rounded-2xl border-2 border-sky-500/30 bg-card/60 p-5 shadow-lg shadow-sky-500/5 backdrop-blur-(--glass-blur) tablet:p-6"
+      data-animate="fade-up"
+    >
+      <div class="mb-4 flex items-center justify-between border-b border-sky-500/20 pb-3">
+        <h4 class="text-sm font-bold tracking-tight text-white tablet:text-base">
+          Gebrauch im Dialog
+        </h4>
+        <span class="rounded-full border-[1.5px] border-sky-500/20 bg-sky-500/5 px-2.5 py-0.5 text-xs font-medium text-sky-300">
+          Praxisdialog
+        </span>
+      </div>
+
+      <div class="space-y-3">
+        {usage.map((dialogue) => (
+          <div class="flex items-start gap-3 rounded-xl border-[1.5px] border-white/5 bg-white/3 p-3.5 transition-colors hover:bg-white/6">
+            <div class="flex size-8 shrink-0 items-center justify-center rounded-full border-[1.5px] border-sky-400/30 bg-sky-500/15 text-xs font-bold text-sky-300 shadow-sm tablet:size-9 tablet:text-sm">
+              {dialogue.speaker}
+            </div>
+
+            <div class="min-w-0 flex-1 pt-0.5">
+              <div class="text-sm font-medium leading-relaxed text-white/95 tablet:text-base">
                 <ContentItem content={dialogue.text} />
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   )}
 
-  {blocks.map((block) => (
-    <div data-animate="fade-up">
-      <div class="space-y-4">
-        <h3 class="text-lg font-semibold text-yellow tablet:text-xl">{block.title}</h3>
-        <div class="grid gap-3">
-          {block.items.map((item) => (
-            <div
-              class="rounded-e-xl border-s-[6px] border-yellow bg-white/5 p-4 text-white/90 backdrop-blur-sm transition-[translate,background-color] duration-200 hover:translate-x-1 hover:bg-white/8"
-              style="border-start-start-radius: 0; border-end-start-radius: 0"
-            >
-              <ContentItem content={item} />
+  <!-- Grammar Rule Blocks (Grid ONLY for Perfekt & Plusquamperfekt) -->
+  <div class:list={[isPerfektPlusquamperfektGrid ? "grid grid-cols-1 gap-6 tablet:grid-cols-2" : "space-y-6"]}>
+    {blocks.map((block) => (
+      <div
+        class:list={[
+          "overflow-hidden rounded-2xl border-2 bg-card/60 shadow-md backdrop-blur-(--glass-blur) transition-all duration-200",
+          theme?.cardBorderClass ?? "border-white/10 hover:border-white/20",
+        ]}
+        data-animate="fade-up"
+      >
+      <!-- Block Header Bar (No decorative icon beside title) -->
+      <div
+        class:list={[
+          "flex items-center justify-between border-b px-4 py-3 tablet:px-6",
+          theme?.headerBorderClass ?? "border-white/10",
+          theme?.headerBgClass ?? "bg-white/5",
+        ]}
+      >
+        <h4 class="text-sm font-bold tracking-tight text-white tablet:text-base">{block.title}</h4>
+        <span class="rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-0.5 text-xs font-medium text-mist-400">
+          {block.items.length} {block.items.length === 1 ? "Eintrag" : "Einträge"}
+        </span>
+      </div>
+
+      <!-- Compact Rows inside ONE frame -->
+      <div class="divide-y divide-white/5">
+        {block.items.map((item) => {
+          const rawText = getCellRawText(item);
+          const parsed = parseGrammarItem(rawText);
+
+          return (
+            <div class="group/item p-4 transition-colors hover:bg-white/3 tablet:p-5">
+              {parsed.badge ?
+                <div class="space-y-2.5">
+                  <!-- Header: Badge & Explanation side-by-side with dot -->
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span
+                      class:list={[
+                        "inline-flex items-center rounded-lg border-[1.5px] px-2.5 py-0.5 text-xs font-bold tracking-wide",
+                        badgeStyle,
+                      ]}
+                    >
+                      {parsed.badge}
+                    </span>
+
+                    {parsed.explanation && (
+                      <span class="inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-semibold text-mist-200 tablet:text-sm">
+                        <span class="font-bold text-mist-500">·</span>
+                        <FormattedText text={parsed.explanation} />
+                      </span>
+                    )}
+                  </div>
+
+                  <!-- Text (Examples) directly below -->
+                  {parsed.examples.length > 0 && (
+                    <div class="space-y-1.5 pl-0.5">
+                      {parsed.examples.map((example) => (
+                        <p class="text-sm font-medium leading-relaxed text-white/95 tablet:text-base">
+                          <FormattedText text={example} />
+                        </p>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              : <div class="text-sm font-medium leading-relaxed text-white/90 tablet:text-base">
+                  <ContentItem content={item} />
+                </div>
+              }
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </div>
   ))}
+  </div>
 
+  <!-- Tips & Exam Advice (Tipps) -->
   {tips && tips.length > 0 && (
-    <div data-animate="zoom-in">
-      <div class="space-y-4">
-        <h3 class="text-lg font-semibold text-orange tablet:text-xl">Tipps</h3>
-        <div class="grid gap-4 sm:grid-cols-2">
-          {tips.map((tip) => (
-            <div class="flex items-start gap-2 rounded-xl border-[1.5px] border-orange/20 bg-orange/5 p-4 text-orange brightness-125">
-              <Lightbulb class="size-4 shrink-0 tablet:size-5" />
-              <ContentItem content={tip} />
-            </div>
-          ))}
+    <div
+      class="overflow-hidden rounded-2xl border-2 border-amber-500/30 bg-amber-500/5 p-5 shadow-lg shadow-amber-500/5 backdrop-blur-(--glass-blur) tablet:p-6"
+      data-animate="zoom-in"
+    >
+      <div class="mb-4 flex items-center justify-between border-b border-amber-500/20 pb-3">
+        <div class="flex items-center gap-2.5">
+          <span class="flex size-7 items-center justify-center rounded-lg border-[1.5px] border-amber-500/30 bg-amber-500/15 text-amber-400">
+            <Lightbulb class="size-4" />
+          </span>
+          <h4 class="text-sm font-bold tracking-tight text-amber-200 tablet:text-base">
+            Wichtige Tipps & Prüfungsfallen
+          </h4>
         </div>
+        <span class="rounded-full border-[1.5px] border-amber-500/20 bg-amber-500/10 px-2.5 py-0.5 text-xs font-semibold text-amber-300">
+          Goethe & ÖSD
+        </span>
+      </div>
+
+      <div class="grid gap-3 sm:grid-cols-2">
+        {tips.map((tip) => (
+          <div class="flex items-start gap-3 rounded-xl border-[1.5px] border-amber-500/20 bg-amber-500/5 p-3.5 text-sm leading-relaxed text-amber-100/90 transition-colors hover:bg-amber-500/10 tablet:text-base">
+            <span class="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-amber-400/20 text-xs font-bold text-amber-300">
+              ✓
+            </span>
+            <div class="min-w-0 flex-1">
+              <FormattedText text={tip} />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )}

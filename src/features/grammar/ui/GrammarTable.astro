@@ -1,52 +1,91 @@
 ---
-import GlassCard from "@/shared/ui/GlassCard.astro";
+import type { GrammarThemePalette } from "../lib/theme.ts";
 import type { GrammarTableData } from "../model/types.ts";
 import ContentItem from "./ContentItem.astro";
 
 interface Props {
   data: GrammarTableData;
+  theme?: GrammarThemePalette | undefined;
 }
 
-const { data } = Astro.props;
+const { data, theme } = Astro.props;
 ---
 
-<div data-animate="fade-up">
-  <GlassCard>
-    {data.caption && (
-      <div class="border-be border-white/10 bg-white/5 px-6 py-4">
-        <h3 class="text-base font-medium text-yellow text-shadow-sm tablet:text-lg">
-          {data.caption}
-        </h3>
-      </div>
-    )}
-    <div class="overflow-x-auto">
-      <table class="w-full text-left text-sm tablet:text-base">
-        <thead class="bg-white/5 text-[10px] text-white/60 uppercase tablet:text-xs">
-          <tr>
-            {data.headers.map((header) => (
-              <th class="px-3 py-2.5 font-semibold tracking-wider text-orange/80 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4">
-                {header}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-white/5">
-          {data.rows.map((row) => (
-            <tr class="transition-colors hover:bg-white/5">
-              {row.map((cell, index) => (
+<div
+  class:list={[
+    "overflow-hidden rounded-2xl border-2 bg-card/60 shadow-lg backdrop-blur-(--glass-blur) transition-all duration-200",
+    theme?.cardBorderClass ?? "border-white/10 hover:border-white/20",
+  ]}
+  data-animate="fade-up"
+>
+  <!-- Table Header Bar -->
+  <div
+    class:list={[
+      "flex flex-wrap items-center justify-between gap-3 border-b px-4 py-3.5 tablet:px-6",
+      theme?.headerBorderClass ?? "border-white/10",
+      theme?.headerBgClass ?? "bg-white/5",
+    ]}
+  >
+    <div class="flex items-center gap-2.5">
+      <h4 class="text-sm font-bold tracking-tight text-white tablet:text-base">
+        {data.caption ?? "Grammatik-Übersichtstabelle"}
+      </h4>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <span class="rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-0.5 text-xs font-medium text-mist-400">
+        {data.rows.length} {data.rows.length === 1 ? "Form" : "Formen"}
+      </span>
+    </div>
+  </div>
+
+  <!-- Scrollable Table Container -->
+  <div class="scrollbar-thin overflow-x-auto">
+    <table class="w-full border-collapse text-left text-sm tablet:text-base">
+      <thead class="border-b border-white/10 bg-white/5 text-[11px] font-bold uppercase tracking-wider text-mist-300 tablet:text-xs">
+        <tr>
+          {data.headers.map((header, colIndex) => (
+            <th
+              scope="col"
+              class:list={[
+                "px-4 py-3.5 tablet:px-6 tablet:py-4",
+                colIndex === 0 ? "text-amber-400 font-bold" : "text-mist-200 font-semibold",
+              ]}
+            >
+              {header}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-white/5">
+        {data.rows.map((row) => (
+          <tr class="group/row transition-colors hover:bg-white/4">
+            {row.map((cell, colIndex) => {
+              const isPerson = colIndex === 0;
+
+              return (
                 <td
                   class:list={[
-                    "px-3 py-2.5 mobile:px-4 mobile:py-3 tablet:px-6 tablet:py-4",
-                    { "font-medium text-orange": index === 0, "text-white/90": index !== 0 },
+                    "px-4 py-3 tablet:px-6 tablet:py-3.5",
+                    isPerson ?
+                      "font-semibold text-amber-300/90 whitespace-nowrap"
+                    : "text-white/90",
                   ]}
                 >
-                  <ContentItem content={cell} />
+                  <div class="leading-relaxed">
+                    <ContentItem content={cell} />
+                  </div>
                 </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  </GlassCard>
+              );
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Table Mobile Hint -->
+  <div class="flex items-center justify-between border-t border-white/5 px-4 py-2 text-[11px] text-mist-500 tablet:hidden">
+    <span>Horizontal scrollen für alle Spalten</span>
+  </div>
 </div>

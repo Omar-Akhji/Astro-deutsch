@@ -181,9 +181,9 @@ watch(activeTab, () => {
         <li
           v-for="point in props.thema.pro"
           :key="point"
-          class="flex gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
+          class="flex items-start gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
         >
-          <span class="mt-1 size-1.5 shrink-0 rounded-full bg-emerald-500" />
+          <span class="mt-[0.45em] size-1.5 shrink-0 rounded-full bg-emerald-500" />
           {{ point }}
         </li>
       </ul>
@@ -194,9 +194,9 @@ watch(activeTab, () => {
         <li
           v-for="point in props.thema.con"
           :key="point"
-          class="flex gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
+          class="flex items-start gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
         >
-          <span class="mt-1 size-1.5 shrink-0 rounded-full bg-red-500" />
+          <span class="mt-[0.45em] size-1.5 shrink-0 rounded-full bg-red-500" />
           {{ point }}
         </li>
       </ul>

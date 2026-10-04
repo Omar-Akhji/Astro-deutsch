@@ -1,16 +1,19 @@
 ---
+import {
+  Languages,
+  Layers,
+  TableProperties,
+} from "lucide-astro";
 import { GrammarContentBlocks, GrammarTable } from "@/features/grammar";
+import { getGrammarTheme } from "@/features/grammar/lib/theme.ts";
 import {
   getGrammarSection,
   getGrammarSections,
   getGrammarTopic,
 } from "@/features/grammar/server.ts";
 import Layout from "@/layouts/Layout.astro";
-import { getGradient } from "@/shared/lib";
 import BackButton from "@/shared/ui/BackButton.astro";
-import GlassCard from "@/shared/ui/GlassCard.astro";
 import { Hero } from "@/widgets/hero";
-import { BookOpen, Languages } from "lucide-astro";
 
 export async function getStaticPaths() {
   const { data: grammarSections } = await getGrammarSections();
@@ -55,6 +58,38 @@ const extraSchema =
       about: { "@type": "Thing", name: currentTopic.title, description: currentTopic.category },
     }
   : undefined;
+
+const subtopicsCount = currentTopic?.subtopics?.length ?? (currentTopic?.content ? 1 : 0);
+const tablesCount =
+  (currentTopic?.hasTable ? 1 : 0) +
+  (currentTopic?.subtopics?.filter((s) => s.hasTable).length ?? 0);
+const rulesCount =
+  (currentTopic?.content?.length ?? 0) +
+  (currentTopic?.subtopics?.reduce((accumulator, s) => accumulator + (s.content?.length ?? 0), 0) ?? 0);
+
+const heroStats = [
+  {
+    label: "Schwerpunkte",
+    value: `${subtopicsCount} ${subtopicsCount === 1 ? "Schwerpunkt" : "Schwerpunkte"}`,
+    icon: Layers,
+  },
+  {
+    label: "Struktur",
+    value: `${tablesCount} ${tablesCount === 1 ? "Tabelle" : "Tabellen"} · ${rulesCount} Regeln`,
+    icon: TableProperties,
+  },
+  {
+    label: "Niveau",
+    value: "A1 · A2 · B1 · B2",
+    icon: Languages,
+  },
+];
+
+const heroExample =
+  currentTopic?.example ??
+  (currentTopic?.subtopics && currentTopic.subtopics.length > 0 ?
+    currentTopic.subtopics.map((s) => s.title).join(" · ")
+  : "Regeln, Tabellen & Beispielsätze (A1–B2)");
 ---
 
 <Layout
@@ -62,95 +97,168 @@ const extraSchema =
   extraSchema={extraSchema}
   title={pageTitle}
 >
-  {!currentTopic || !currentSection ?
+  {!currentTopic || !currentSection ? (
     <div class="px-8 py-16 text-center text-white">
       <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
       <p class="mb-8 text-zinc-400">Das gewünschte Grammatikthema existiert nicht.</p>
       <BackButton />
     </div>
-  : <div class="relative min-h-dvh py-6 tablet:py-10">
-      <div class="animate-fade-in">
+  ) : (
+    <div class="relative min-h-dvh py-8">
+      <div class="animate-fade-in space-y-8">
+        <!-- Compact Hero Header -->
         <Hero
-          category={currentTopic.category}
+          category={currentSection.title}
           description={currentTopic.description}
-          stats={[
-            { label: "Thema", value: currentTopic.number },
-            { label: "Niveau", value: "B1", icon: Languages },
-          ]}
+          example={heroExample}
+          stats={heroStats}
           title={currentTopic.title}
+          variant="compact"
         />
 
-        {currentTopic.hasTable && currentTopic.tableData ?
-          <section class="mb-12 tablet:mb-16">
-            <GrammarTable data={currentTopic.tableData} />
-          </section>
-        : null}
+        <!-- Overview Navigation Bar -->
+        {currentTopic.subtopics && currentTopic.subtopics.length > 0 && (
+          <div
+            class="flex flex-wrap items-center justify-between gap-3 rounded-2xl border-[1.5px] border-white/10 bg-white/2 p-4 shadow-sm backdrop-blur-md"
+            data-animate="fade-up"
+          >
+            <div>
+              <h2 class="text-base font-bold tracking-tight text-white tablet:text-lg">
+                Themenübersicht & Schnellnavigation
+              </h2>
+              <p class="text-xs text-mist-400">
+                Wähle ein Unterthema, um direkt zur Erklärung, Konjugation und den Beispielen zu springen
+              </p>
+            </div>
 
-        {currentTopic.content || currentTopic.usage ?
-          <section class="mb-12 tablet:mb-16">
+            <nav class="flex flex-wrap items-center gap-2" aria-label="Unterthemen Navigation">
+              {currentTopic.subtopics.map((subtopic, index) => {
+                const theme = getGrammarTheme(index);
+                return (
+                  <a
+                    href={`#subtopic-${subtopic.id}`}
+                    class:list={[
+                      "inline-flex items-center gap-1.5 rounded-full border-[1.5px] px-3 py-1 text-xs font-semibold tracking-wide transition-all duration-150 hover:brightness-125 hover:shadow-sm active:scale-95",
+                      theme.badgeClass,
+                    ]}
+                  >
+                    <span class="font-bold opacity-80">{subtopic.number}</span>
+                    <span>{subtopic.title}</span>
+                  </a>
+                );
+              })}
+            </nav>
+          </div>
+        )}
+
+        <!-- Root Topic Tables & Content (if present at top level) -->
+        {currentTopic.hasTable && currentTopic.tableData && (
+          <section class="space-y-4">
+            <GrammarTable data={currentTopic.tableData} theme={getGrammarTheme(0)} />
+          </section>
+        )}
+
+        {(currentTopic.content || currentTopic.usage) && (
+          <section class="space-y-4">
             <GrammarContentBlocks
               blocks={currentTopic.content ?? []}
               usage={currentTopic.usage}
+              theme={getGrammarTheme(0)}
             />
           </section>
-        : null}
+        )}
 
-        {currentTopic.subtopics ?
-          <section class="mb-12 text-white tablet:mb-16">
-            <h2 class="mb-6 flex items-center gap-3 text-xl font-semibold text-text tablet:mb-8 tablet:gap-4 tablet:text-2xl">
-              <span class="flex size-10 shrink-0 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
-                <BookOpen class="size-5 tablet:size-6" />
-              </span>
-              Unterthemen
-            </h2>
-            <div class="grid gap-8 tablet:gap-10">
-              {currentTopic.subtopics.map((subtopic, index) => (
-                <article>
-                  <GlassCard rounded="2xl">
+        <!-- Subtopics Sections -->
+        {currentTopic.subtopics && currentTopic.subtopics.length > 0 && (
+          <section class="space-y-8">
+            <div class="space-y-8">
+              {currentTopic.subtopics.map((subtopic, index) => {
+                const theme = getGrammarTheme(index);
+                return (
+                  <article
+                    id={`subtopic-${subtopic.id}`}
+                    class:list={[
+                      "scroll-mt-24 overflow-hidden rounded-3xl border-2 bg-card/60 shadow-xl backdrop-blur-(--glass-blur) transition-all duration-300 hover:border-white/15",
+                      theme.cardBorderClass,
+                    ]}
+                  >
+                    <!-- Subtopic Header Banner -->
                     <header
-                      class="flex flex-row items-center gap-4 p-4 tablet:p-5"
-                      style={{ background: getGradient(index + 1, currentSection.gradients) }}
+                      class:list={[
+                        "flex flex-wrap items-center justify-between gap-3 border-b px-5 py-4 tablet:px-7",
+                        theme.headerBorderClass,
+                        theme.headerBgClass,
+                      ]}
                     >
-                      <span class="rounded-md bg-white/20 px-2.5 py-1 text-xs font-bold text-white">
-                        {subtopic.number}
-                      </span>
-                      <h3 class="m-0 text-lg font-semibold text-white tablet:text-xl">
-                        {subtopic.title}
-                      </h3>
+                      <div class="flex items-center gap-3">
+                        <span
+                          class:list={[
+                            "inline-flex items-center rounded-lg border-[1.5px] px-2.5 py-1 text-xs font-bold tracking-wide uppercase",
+                            theme.badgeClass,
+                          ]}
+                        >
+                          {subtopic.number}
+                        </span>
+                        <h3 class="m-0 text-lg font-bold text-white tablet:text-xl">
+                          {subtopic.title}
+                        </h3>
+                      </div>
+
+                      <div class="flex items-center gap-2">
+                        {subtopic.hasTable && (
+                          <span class="rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-0.5 text-xs font-medium text-mist-300">
+                            Tabelle
+                          </span>
+                        )}
+                        {subtopic.content && subtopic.content.length > 0 && (
+                          <span class="rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-0.5 text-xs font-medium text-mist-300">
+                            {subtopic.content.length} {subtopic.content.length === 1 ? "Regel" : "Regeln"}
+                          </span>
+                        )}
+                      </div>
                     </header>
-                    <div class="p-5 tablet:p-6">
-                      <p class="m-0 mb-5 leading-relaxed text-zinc-400 tablet:mb-6">
+
+                    <!-- Subtopic Content Body -->
+                    <div class="space-y-6 p-5 tablet:p-7">
+                      <p class="text-sm leading-relaxed text-mist-300 tablet:text-base">
                         {subtopic.description}
                       </p>
-                      {subtopic.hasTable && subtopic.tableData ?
-                        <div class="mb-6 tablet:mb-8">
-                          <GrammarTable data={subtopic.tableData} />
+
+                      {subtopic.hasTable && subtopic.tableData && (
+                        <div class="space-y-3">
+                          <GrammarTable data={subtopic.tableData} theme={theme} />
                         </div>
-                      : null}
-                      {subtopic.content || subtopic.usage || subtopic.tips ?
-                        <GrammarContentBlocks
-                          blocks={subtopic.content ?? []}
-                          tips={subtopic.tips}
-                          usage={subtopic.usage}
-                        />
-                      : null}
+                      )}
+
+                      {(subtopic.content || subtopic.usage || subtopic.tips) && (
+                        <div class="space-y-4">
+                          <GrammarContentBlocks
+                            blocks={subtopic.content ?? []}
+                            tips={subtopic.tips}
+                            usage={subtopic.usage}
+                            theme={theme}
+                          />
+                        </div>
+                      )}
                     </div>
-                  </GlassCard>
-                </article>
-              ))}
+                  </article>
+                );
+              })}
             </div>
           </section>
-        : null}
+        )}
 
-        {currentTopic.tips ?
-          <section class="mb-16">
+        <!-- Root Topic Tips (if any) -->
+        {currentTopic.tips && currentTopic.tips.length > 0 && (
+          <section class="mt-8">
             <GrammarContentBlocks
               blocks={[]}
               tips={currentTopic.tips}
+              theme={getGrammarTheme(2)}
             />
           </section>
-        : null}
+        )}
       </div>
     </div>
-  }
+  )}
 </Layout>
