@@ -5,6 +5,7 @@ export { default as Card } from "./Card.astro";
 export { default as CardSkeleton } from "./CardSkeleton.astro";
 export { default as GlassCard } from "./GlassCard.astro";
 export { default as PageHeader } from "./PageHeader.astro";
+export { default as PageHeaderSkeleton } from "./PageHeaderSkeleton.astro";
 export { default as Skeleton } from "./Skeleton.astro";
 export { default as SkeletonLayouts } from "./SkeletonLayouts.astro";
 export { default as TextAudioPlayer } from "./TextAudioPlayer.vue";

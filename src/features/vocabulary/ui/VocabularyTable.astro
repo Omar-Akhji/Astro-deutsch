@@ -1,6 +1,10 @@
 ---
 import { Volume2 } from "lucide-astro";
-import { parseNounGender, type GenderInfo } from "@/shared/lib";
+import {
+  groupWordsByClassification,
+  type EnrichedWord,
+  type PartOfSpeechCategory,
+} from "../lib/word-classification.ts";
 import type { Word } from "../model/types";
 
 interface Props {
@@ -10,112 +14,7 @@ interface Props {
 
 const { words, englishLabel = "English" } = Astro.props;
 
-interface EnrichedWord extends Word {
-  genderInfo: GenderInfo;
-}
-
-type PartOfSpeechCategory = "noun" | "verb" | "adjective";
-
-const KNOWN_ADJECTIVES = new Set([
-  "ledig",
-  "verheiratet",
-  "geschieden",
-  "verlobt",
-  "verwitwet",
-  "verwandt",
-  "jung",
-  "alt",
-  "groß",
-  "klein",
-  "schön",
-  "hässlich",
-  "gut",
-  "schlecht",
-  "glücklich",
-  "traurig",
-  "müde",
-  "gesund",
-  "krank",
-  "freundlich",
-  "unfreundlich",
-  "reich",
-  "arm",
-  "teuer",
-  "billig",
-  "schnell",
-  "langsam",
-  "neu",
-  "wichtig",
-]);
-
-function classifyWord(word: Word): PartOfSpeechCategory {
-  if (word.partOfSpeech) {
-    return word.partOfSpeech;
-  }
-
-  const text = word.german.trim();
-  const lower = text.toLowerCase();
-
-  if (KNOWN_ADJECTIVES.has(lower)) {
-    return "adjective";
-  }
-
-  if (
-    lower.startsWith("der ")
-    || lower.startsWith("die ")
-    || lower.startsWith("das ")
-    || lower.startsWith("der/die ")
-    || lower.startsWith("das/der ")
-    || lower.startsWith("die/der ")
-  ) {
-    return "noun";
-  }
-
-  if (lower.startsWith("sich ")) {
-    return "verb";
-  }
-
-  const firstChar = text.charAt(0);
-  if (firstChar === firstChar.toUpperCase() && firstChar !== firstChar.toLowerCase()) {
-    return "noun";
-  }
-
-  if (
-    lower.endsWith("ig")
-    || lower.endsWith("lich")
-    || lower.endsWith("isch")
-    || lower.endsWith("bar")
-    || lower.endsWith("haft")
-    || lower.endsWith("los")
-    || lower.endsWith("voll")
-    || lower.endsWith("sam")
-  ) {
-    return "adjective";
-  }
-
-  if (lower.endsWith("en") || lower.endsWith("eln") || lower.endsWith("ern")) {
-    return "verb";
-  }
-
-  return "adjective";
-}
-
-const nouns: EnrichedWord[] = [];
-const verbs: EnrichedWord[] = [];
-const adjectives: EnrichedWord[] = [];
-
-for (const word of words) {
-  const genderInfo = parseNounGender(word.german);
-  const enriched: EnrichedWord = { ...word, genderInfo };
-  const category = classifyWord(word);
-  if (category === "noun") {
-    nouns.push(enriched);
-  } else if (category === "verb") {
-    verbs.push(enriched);
-  } else {
-    adjectives.push(enriched);
-  }
-}
+const { nouns, verbs, adjectives } = groupWordsByClassification(words);
 
 interface CategoryConfig {
   key: PartOfSpeechCategory;
@@ -251,7 +150,7 @@ const sections: CategoryConfig[] = [
           </div>
 
           <!-- Direct Word List Table (No nested box, no visible inner Deutsch/English/Arabic header) -->
-          <div class="scrollbar-thin overflow-x-auto">
+          <div class="has-scrollbar overflow-x-auto">
             <table class="inline-full border-collapse text-left">
               <caption class="sr-only">{section.title} Vokabelliste</caption>
               <thead class="sr-only">

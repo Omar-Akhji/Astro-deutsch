@@ -1,5 +1,8 @@
 ---
+import CardSkeleton from "@/shared/ui/CardSkeleton.astro";
+import PageHeaderSkeleton from "@/shared/ui/PageHeaderSkeleton.astro";
 import Skeleton from "@/shared/ui/Skeleton.astro";
+import VocabularyTableSkeleton from "./VocabularyTableSkeleton.astro";
 
 interface Props {
   variant?: "overview" | "level" | "detail" | "family-tree";
@@ -10,36 +13,12 @@ const { variant = "overview" } = Astro.props;
 
 {variant === "overview" && (
   <div class="animate-fade-in">
-    <header class="mb-10 text-center tablet:mb-12 laptop:mb-14">
-      <div class="mb-3 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
-        <Skeleton class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14" />
-        <Skeleton class="h-9 w-64 rounded-md bg-white/15 tablet:h-10 tablet:w-80" />
-      </div>
-      <div class="mx-auto mb-5 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
-      <div class="flex justify-center px-2">
-        <Skeleton class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-2xl rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5" />
-      </div>
-    </header>
+    <PageHeaderSkeleton />
 
     <section class="py-4">
       <div class="grid grid-cols-1 gap-6 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
         {["v1", "v2", "v3", "v4", "v5", "v6"].map(() => (
-          <div class="h-full">
-            <div class="relative z-1 flex h-full w-full flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-4 text-left shadow-xl backdrop-blur-(--glass-blur) tablet:p-5">
-              <div class="aspect-video w-full overflow-hidden rounded-2xl">
-                <Skeleton class="h-full w-full rounded-2xl bg-white/5" />
-              </div>
-              <div class="flex flex-1 flex-col px-1 pt-4 pb-1">
-                <div class="mbe-2.5 flex items-center gap-2">
-                  <Skeleton class="h-6 w-16 rounded-full bg-white/10" />
-                  <Skeleton class="h-4 w-20 rounded-full bg-white/5" />
-                </div>
-                <Skeleton class="mb-2 h-7 w-3/4 rounded-md bg-white/10" />
-                <Skeleton class="mbe-1 h-4 w-full rounded-md bg-white/5" />
-                <Skeleton class="mbe-4 h-4 w-2/3 rounded-md bg-white/5" />
-              </div>
-            </div>
-          </div>
+          <CardSkeleton />
         ))}
       </div>
     </section>
@@ -112,27 +91,7 @@ const { variant = "overview" } = Astro.props;
 
       <!-- Vocabulary Table Skeleton -->
       <section class="mt-8">
-        <div class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
-          <div class="scrollbar-thin overflow-x-auto px-4 pb-4">
-            <div class="w-full">
-              <div class="flex border-b border-(--glass-border) px-3 pbs-3 text-xs uppercase @md:px-4 @md:pbs-4 @md:text-sm">
-                <Skeleton class="h-4 flex-1 rounded-md bg-white/10" />
-                <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
-                <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
-              </div>
-              {["r1", "r2", "r3", "r4", "r5", "r6"].map(() => (
-                <div class="flex items-center border-b border-white/5 px-3 py-3 @md:px-4 @md:py-3.5">
-                  <div class="flex flex-1 items-center gap-2.5">
-                    <Skeleton class="size-7 shrink-0 rounded-lg bg-white/10" />
-                    <Skeleton class="h-5 w-24 rounded-md bg-white/10" />
-                  </div>
-                  <Skeleton class="ml-4 h-5 flex-1 rounded-md bg-white/5" />
-                  <Skeleton class="ml-4 h-5 flex-1 rounded-md bg-white/5" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <VocabularyTableSkeleton />
       </section>
     </div>
   </div>
@@ -201,27 +160,7 @@ const { variant = "overview" } = Astro.props;
 
       <!-- Vocabulary Table Below Family Tree -->
       <section class="mt-8">
-        <div class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
-          <div class="scrollbar-thin overflow-x-auto px-4 pb-4">
-            <div class="w-full">
-              <div class="flex border-b border-(--glass-border) px-3 pbs-3 text-xs uppercase @md:px-4 @md:pbs-4 @md:text-sm">
-                <Skeleton class="h-4 flex-1 rounded-md bg-white/10" />
-                <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
-                <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
-              </div>
-              {["r1", "r2", "r3", "r4", "r5"].map(() => (
-                <div class="flex items-center border-b border-white/5 px-3 py-3 @md:px-4 @md:py-3.5">
-                  <div class="flex flex-1 items-center gap-2.5">
-                    <Skeleton class="size-7 shrink-0 rounded-lg bg-white/10" />
-                    <Skeleton class="h-5 w-24 rounded-md bg-white/10" />
-                  </div>
-                  <Skeleton class="ml-4 h-5 flex-1 rounded-md bg-white/5" />
-                  <Skeleton class="ml-4 h-5 flex-1 rounded-md bg-white/5" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <VocabularyTableSkeleton rows={5} />
       </section>
     </div>
   </div>

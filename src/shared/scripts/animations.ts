@@ -1,6 +1,9 @@
 import { gsap, ScrollTrigger } from "@/shared/lib";
 
 let pageMatchMedia: gsap.MatchMedia | null = null;
+const SCROLL_REVEAL_START = "top 90%";
+const SCROLL_REVEAL_DURATION = 0.65;
+const SCROLL_REVEAL_STAGGER = 0.1;
 
 function initializeGsapUtilityAnimations(root: ParentNode) {
   const elements = [
@@ -140,20 +143,21 @@ export function initPageAnimations() {
 
     if (batchedElements.length > 0) {
       // Set initial state without causing layout recalculation
-      gsap.set(batchedElements, { autoAlpha: 0, y: 28 });
+      gsap.set(batchedElements, { autoAlpha: 0, y: 20, force3D: true });
 
       ScrollTrigger.batch(batchedElements, {
-        interval: 0.1,
-        batchMax: 6,
-        start: "top 92%",
+        interval: 0.08,
+        batchMax: 4,
+        start: SCROLL_REVEAL_START,
         once: true,
         onEnter: (batch) => {
           gsap.to(batch, {
             autoAlpha: 1,
             y: 0,
-            stagger: 0.08,
-            duration: 0.55,
-            ease: "power2.out",
+            stagger: SCROLL_REVEAL_STAGGER,
+            duration: SCROLL_REVEAL_DURATION,
+            ease: "power3.out",
+            force3D: true,
             overwrite: "auto",
             onStart: () => {
               gsap.set(batch, { willChange: "transform, opacity" });
@@ -169,19 +173,20 @@ export function initPageAnimations() {
     // 2. Zoom-in animations (e.g. badges, decorative dividers, stat boxes)
     const zoomElements = gsap.utils.toArray<HTMLElement>('[data-animate="zoom-in"]');
     if (zoomElements.length > 0) {
-      gsap.set(zoomElements, { autoAlpha: 0, scale: 0.94 });
+      gsap.set(zoomElements, { autoAlpha: 0, scale: 0.97, y: 8, force3D: true });
 
       ScrollTrigger.batch(zoomElements, {
-        interval: 0.1,
-        start: "top 92%",
+        interval: 0.08,
+        start: SCROLL_REVEAL_START,
         once: true,
         onEnter: (batch) => {
           gsap.to(batch, {
             autoAlpha: 1,
             scale: 1,
-            stagger: 0.06,
-            duration: 0.5,
-            ease: "power2.out",
+            stagger: 0.08,
+            duration: 0.55,
+            ease: "power3.out",
+            force3D: true,
             overwrite: "auto",
           });
         },
@@ -194,15 +199,15 @@ export function initPageAnimations() {
       gsap.set(fadeInElements, { autoAlpha: 0 });
 
       ScrollTrigger.batch(fadeInElements, {
-        interval: 0.1,
+        interval: 0.08,
         start: "top 94%",
         once: true,
         onEnter: (batch) => {
           gsap.to(batch, {
             autoAlpha: 1,
-            stagger: 0.06,
-            duration: 0.6,
-            ease: "power2.out",
+            stagger: 0.08,
+            duration: SCROLL_REVEAL_DURATION,
+            ease: "power3.out",
             overwrite: "auto",
           });
         },
@@ -212,16 +217,18 @@ export function initPageAnimations() {
     // 4. Directional slide animations (fade-left, fade-right)
     const fadeLeftElements = gsap.utils.toArray<HTMLElement>('[data-animate="fade-left"]');
     if (fadeLeftElements.length > 0) {
-      gsap.set(fadeLeftElements, { autoAlpha: 0, x: 30 });
+      gsap.set(fadeLeftElements, { autoAlpha: 0, x: 24, force3D: true });
       ScrollTrigger.batch(fadeLeftElements, {
-        start: "top 92%",
+        interval: 0.08,
+        start: SCROLL_REVEAL_START,
         once: true,
         onEnter: (batch) => {
           gsap.to(batch, {
             autoAlpha: 1,
             x: 0,
-            duration: 0.55,
-            ease: "power2.out",
+            duration: SCROLL_REVEAL_DURATION,
+            ease: "power3.out",
+            force3D: true,
             overwrite: "auto",
           });
         },
@@ -230,16 +237,18 @@ export function initPageAnimations() {
 
     const fadeRightElements = gsap.utils.toArray<HTMLElement>('[data-animate="fade-right"]');
     if (fadeRightElements.length > 0) {
-      gsap.set(fadeRightElements, { autoAlpha: 0, x: -30 });
+      gsap.set(fadeRightElements, { autoAlpha: 0, x: -24, force3D: true });
       ScrollTrigger.batch(fadeRightElements, {
-        start: "top 92%",
+        interval: 0.08,
+        start: SCROLL_REVEAL_START,
         once: true,
         onEnter: (batch) => {
           gsap.to(batch, {
             autoAlpha: 1,
             x: 0,
-            duration: 0.55,
-            ease: "power2.out",
+            duration: SCROLL_REVEAL_DURATION,
+            ease: "power3.out",
+            force3D: true,
             overwrite: "auto",
           });
         },

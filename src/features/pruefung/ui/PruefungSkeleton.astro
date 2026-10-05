@@ -1,4 +1,7 @@
 ---
+import { ThemaCardSkeleton } from "@/features/themen";
+import CardSkeleton from "@/shared/ui/CardSkeleton.astro";
+import PageHeaderSkeleton from "@/shared/ui/PageHeaderSkeleton.astro";
 import Skeleton from "@/shared/ui/Skeleton.astro";
 
 interface Props {
@@ -10,46 +13,12 @@ const { variant = "overview" } = Astro.props;
 
 {variant === "overview" && (
   <div class="animate-fade-in">
-    <header class="mb-10 text-center tablet:mb-12 laptop:mb-14">
-      <div class="mb-3 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet:gap-4">
-        <Skeleton class="size-12 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-14" />
-        <Skeleton class="h-9 w-64 rounded-md bg-white/15 tablet:h-10 tablet:w-80" />
-      </div>
-      <div class="mx-auto mb-5 h-1 w-24 overflow-hidden rounded-full bg-white/10" />
-      <div class="flex justify-center px-2">
-        <Skeleton class="h-9 min-[480px]:h-8 tablet:h-10 w-full max-w-[320px] min-[480px]:max-w-2xl rounded-2xl min-[480px]:rounded-full border-2 border-white/10 bg-white/5" />
-      </div>
-    </header>
+    <PageHeaderSkeleton />
 
     <section class="py-4">
       <div class="grid grid-cols-1 gap-6 py-4 tablet:grid-cols-2 tablet:gap-8">
         {["po1", "po2"].map(() => (
-          <div class="h-full">
-            <div class="relative z-1 flex h-full w-full flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-4 text-left shadow-xl backdrop-blur-(--glass-blur) tablet:p-5">
-              <div class="aspect-video w-full overflow-hidden rounded-2xl">
-                <Skeleton class="h-full w-full rounded-2xl bg-white/5" />
-              </div>
-              <div class="flex flex-1 flex-col px-1 pt-4 pb-1">
-                <div class="mbe-2.5 flex items-center gap-2">
-                  <Skeleton class="h-6 w-28 rounded-full bg-white/10" />
-                  <Skeleton class="h-4 w-24 rounded-full bg-white/5" />
-                </div>
-                <Skeleton class="mb-2 h-7 w-4/5 rounded-md bg-white/10 tablet:h-8" />
-                <Skeleton class="mbe-1 h-4 w-full rounded-md bg-white/5" />
-                <Skeleton class="mbe-4 h-4 w-2/3 rounded-md bg-white/5" />
-                <div class="mbs-auto flex gap-4 border-bs border-white/10 pbs-4 tablet:gap-6">
-                  <div class="flex flex-col gap-1">
-                    <Skeleton class="h-7 w-8 rounded-md bg-white/10" />
-                    <Skeleton class="h-3 w-12 rounded-md bg-white/5" />
-                  </div>
-                  <div class="flex flex-col gap-1">
-                    <Skeleton class="h-7 w-12 rounded-md bg-white/10" />
-                    <Skeleton class="h-3 w-14 rounded-md bg-white/5" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <CardSkeleton variant="large" />
         ))}
       </div>
     </section>
@@ -178,21 +147,7 @@ const { variant = "overview" } = Astro.props;
             </div>
             <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
               {["mt1", "mt2", "mt3"].map(() => (
-                <div class="h-full">
-                  <div class="relative z-1 flex h-full w-full flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-4 text-left shadow-xl backdrop-blur-(--glass-blur) tablet:p-5">
-                    <div class="aspect-video w-full overflow-hidden rounded-2xl">
-                      <Skeleton class="h-full w-full rounded-2xl bg-white/5" />
-                    </div>
-                    <div class="flex flex-1 flex-col px-1 pt-4 pb-1">
-                      <div class="mbe-2.5 flex items-center gap-2">
-                        <Skeleton class="h-4 w-16 rounded-full bg-white/10" />
-                      </div>
-                      <Skeleton class="mb-2 h-7 w-3/4 rounded-md bg-white/10" />
-                      <Skeleton class="mbe-1 h-4 w-full rounded-md bg-white/5" />
-                      <Skeleton class="mbe-4 h-4 w-2/3 rounded-md bg-white/5" />
-                    </div>
-                  </div>
-                </div>
+                <CardSkeleton />
               ))}
             </div>
           </section>
@@ -315,28 +270,7 @@ const { variant = "overview" } = Astro.props;
       </div>
       <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
         {["tc1", "tc2", "tc3"].map(() => (
-          <div class="relative overflow-hidden rounded-2xl border-2 border-white/10 bg-white/5 p-6 backdrop-blur-sm">
-            <div class="mbe-4 flex items-start justify-between">
-              <div class="w-full space-y-2">
-                <Skeleton class="h-5 w-20 rounded-full bg-white/10" />
-                <Skeleton class="h-5 w-3/4 rounded-md bg-white/10" />
-              </div>
-            </div>
-            <div class="relative mb-4 flex gap-1 rounded-full bg-black/20 p-1">
-              <Skeleton class="h-7 flex-1 rounded-full bg-white/10" />
-              <Skeleton class="h-7 flex-1 rounded-full bg-white/5" />
-            </div>
-            <div class="min-h-30 space-y-3">
-              <div class="flex gap-3">
-                <Skeleton class="mt-1 size-1.5 shrink-0 rounded-full bg-white/10" />
-                <Skeleton class="h-4 w-full rounded-md bg-white/5" />
-              </div>
-              <div class="flex gap-3">
-                <Skeleton class="mt-1 size-1.5 shrink-0 rounded-full bg-white/10" />
-                <Skeleton class="h-4 w-5/6 rounded-md bg-white/5" />
-              </div>
-            </div>
-          </div>
+          <ThemaCardSkeleton />
         ))}
       </div>
     </section>
