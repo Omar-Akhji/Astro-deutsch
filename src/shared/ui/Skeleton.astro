@@ -4,7 +4,7 @@ import { cn } from "../lib/utilities.ts";
 interface Props {
   class?: string;
   className?: string;
-  style?: Record<string, string | number>;
+  style?: string | Record<string, string | number>;
 }
 
 const { class: classProperty, className: classNameProperty, style } = Astro.props;

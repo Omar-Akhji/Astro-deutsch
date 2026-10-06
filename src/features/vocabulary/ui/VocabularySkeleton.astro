@@ -2,6 +2,8 @@
 import CardSkeleton from "@/shared/ui/CardSkeleton.astro";
 import PageHeaderSkeleton from "@/shared/ui/PageHeaderSkeleton.astro";
 import Skeleton from "@/shared/ui/Skeleton.astro";
+import { HeroSkeleton } from "@/widgets/hero";
+import TopicStorySkeleton from "./TopicStorySkeleton.astro";
 import VocabularyTableSkeleton from "./VocabularyTableSkeleton.astro";
 
 interface Props {
@@ -12,7 +14,7 @@ const { variant = "overview" } = Astro.props;
 ---
 
 {variant === "overview" && (
-  <div class="animate-fade-in">
+  <div class="animate-fade-in py-4 mobile:py-8">
     <PageHeaderSkeleton />
 
     <section class="py-4">
@@ -27,39 +29,21 @@ const { variant = "overview" } = Astro.props;
 
 {variant === "level" && (
   <div class="relative min-h-dvh py-6 tablet:py-10">
-    <div>
-      <!-- Hero section (compact variant) -->
-      <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mbe-6 mobile:p-6 tablet:p-8">
-        <div class="flex flex-col items-center text-center">
-          <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
-            <Skeleton class="h-7 w-28 rounded-full bg-white/10" />
-          </div>
-          <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15" />
-          <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
-          <div class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8">
-            <div class="flex items-center gap-2">
-              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-              <Skeleton class="h-5 w-24 rounded-md bg-white/10 tablet:h-6 tablet:w-28" />
-            </div>
-            <div class="flex items-center gap-2">
-              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-              <Skeleton class="h-5 w-20 rounded-md bg-white/10 tablet:h-6 tablet:w-24" />
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="space-y-10 tablet:space-y-12">
+      <!-- Compact Hero header -->
+      <HeroSkeleton variant="compact" statsCount={2} />
 
       <!-- Sections with headers and cards -->
-      <div class="grid gap-12">
+      <div class="grid gap-10 tablet:gap-12">
         {["sec1", "sec2"].map(() => (
           <section>
             <div class="mb-6 flex flex-col items-start gap-4 rounded-2xl bg-white/10 p-5 md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6">
               <Skeleton class="h-7 w-48 rounded-md bg-white/15" />
               <Skeleton class="h-6 w-24 rounded-full bg-white/20" />
             </div>
-            <div class="grid gap-4 tablet:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid gap-4 sm:grid-cols-2 tablet:gap-5 lg:grid-cols-3">
               {["c1", "c2", "c3"].map(() => (
-                <div class="rounded-2xl border-2 border-(--glass-border) bg-card/75 p-4 shadow-sm backdrop-blur-(--glass-blur) tablet:p-5">
+                <div class="rounded-2xl border-2 border-(--glass-border) bg-card/75 p-5 shadow-sm backdrop-blur-(--glass-blur)">
                   <Skeleton class="mb-2 h-6 w-3/4 rounded-md bg-white/10" />
                   <div class="flex items-center gap-2 text-sm">
                     <Skeleton class="size-3.5 rounded-full bg-white/10" />
@@ -75,92 +59,20 @@ const { variant = "overview" } = Astro.props;
   </div>
 )}
 
-{variant === "detail" && (
+{(variant === "detail" || variant === "family-tree") && (
   <div class="relative min-h-dvh py-8">
-    <div>
-      <!-- Hero section (compact variant) -->
-      <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mbe-6 mobile:p-6 tablet:p-8">
-        <div class="flex flex-col items-center text-center">
-          <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
-            <Skeleton class="h-7 w-24 rounded-full bg-white/10" />
-          </div>
-          <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15" />
-          <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
-        </div>
-      </div>
+    <div class="space-y-8">
+      <!-- Compact Hero Header -->
+      <HeroSkeleton variant="compact" statsCount={3} hasExample={true} />
 
-      <!-- Vocabulary Table Skeleton -->
+      <!-- Topic Story with CEFR Level Cards and Audio Companion Island -->
+      <section class="mt-8">
+        <TopicStorySkeleton />
+      </section>
+
+      <!-- Vocabulary Tables Classified by Word Classes -->
       <section class="mt-8">
         <VocabularyTableSkeleton />
-      </section>
-    </div>
-  </div>
-)}
-
-{variant === "family-tree" && (
-  <div class="relative min-h-dvh py-8">
-    <div>
-      <!-- Hero section (compact variant) -->
-      <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) mbe-6 mobile:p-6 tablet:p-8">
-        <div class="flex flex-col items-center text-center">
-          <div class="mbe-4 flex flex-wrap items-center justify-center gap-3">
-            <Skeleton class="h-7 w-24 rounded-full bg-white/10" />
-          </div>
-          <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-2xl rounded-md bg-white/15" />
-          <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:w-2/3" />
-        </div>
-      </div>
-
-      <!-- Family Tree GlassCard -->
-      <section class="mt-8">
-        <div class="flex flex-col items-center gap-4 overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-8 shadow-sm backdrop-blur-(--glass-blur)">
-          <!-- Generation 1 -->
-          <div class="flex flex-col items-center gap-3">
-            <Skeleton class="h-4 w-28 rounded-md bg-white/10" />
-            <div class="flex items-center gap-2">
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/10 bg-white/5 @md:h-28 @md:w-36" />
-              <Skeleton class="size-4 rounded-full bg-white/10" />
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/10 bg-white/5 @md:h-28 @md:w-36" />
-            </div>
-          </div>
-          <div class="h-10 w-px bg-white/10" />
-
-          <!-- Generation 2 -->
-          <div class="flex flex-col items-center gap-3">
-            <Skeleton class="h-4 w-24 rounded-md bg-white/10" />
-            <div class="flex items-center gap-2">
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/10 bg-white/5 @md:h-28 @md:w-36" />
-              <Skeleton class="size-4 rounded-full bg-white/10" />
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/10 bg-white/5 @md:h-28 @md:w-36" />
-            </div>
-          </div>
-          <div class="h-10 w-px bg-white/10" />
-
-          <!-- Generation 3 -->
-          <div class="flex flex-col items-center gap-3">
-            <Skeleton class="h-4 w-24 rounded-md bg-white/10" />
-            <div class="flex items-center gap-2">
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/20 bg-white/10 @md:h-28 @md:w-36" />
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/20 bg-white/10 @md:h-28 @md:w-36" />
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/10 bg-white/5 @md:h-28 @md:w-36" />
-            </div>
-          </div>
-          <div class="h-10 w-px bg-white/10" />
-
-          <!-- Generation 4 -->
-          <div class="flex flex-col items-center gap-3">
-            <Skeleton class="h-4 w-24 rounded-md bg-white/10" />
-            <div class="flex items-center gap-2">
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/10 bg-white/5 @md:h-28 @md:w-36" />
-              <Skeleton class="h-24 w-28 rounded-xl border-2 border-white/10 bg-white/5 @md:h-28 @md:w-36" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Vocabulary Table Below Family Tree -->
-      <section class="mt-8">
-        <VocabularyTableSkeleton rows={5} />
       </section>
     </div>
   </div>

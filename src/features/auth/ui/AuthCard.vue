@@ -201,6 +201,10 @@ onMounted(() => {
       <div
         class="relative flex min-w-0 flex-1 flex-col justify-start px-4 py-6 mobile:px-6 mobile:py-7 tablet:p-8 laptop:p-10"
       >
+        <h1 class="sr-only">
+          {{ view === "signin" ? "Anmelden" : "Registrieren" }} bei Elite Regewelt
+        </h1>
+
         <!-- Mobile header (visible below tablet) -->
         <div class="mb-6 flex flex-col items-center text-center tablet:hidden">
           <div class="relative mb-3 size-12 transition-transform duration-500 hover:rotate-12">
@@ -210,7 +214,9 @@ onMounted(() => {
               class="size-full object-contain"
             />
           </div>
-          <h1 class="font-display text-xl font-bold text-white">Elite Regewelt</h1>
+          <div class="font-display text-xl font-bold text-white" aria-hidden="true">
+            Elite Regewelt
+          </div>
           <p class="mt-1 text-xs text-text-muted">Deine umfassende Deutsch-Lernplattform.</p>
 
           <!-- Pill switcher -->

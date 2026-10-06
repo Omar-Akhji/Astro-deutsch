@@ -142,7 +142,8 @@ const heroExample =
         />
 
         <!-- Quick Navigation & Simulation CTA -->
-        <div
+        <nav
+          aria-label="Prüfungsmodule Schnellübersicht"
           class="rounded-2xl border-2 border-white/10 bg-card/60 p-5 shadow-lg backdrop-blur-(--glass-blur) tablet:p-6"
           data-animate="fade-up"
         >
@@ -150,9 +151,9 @@ const heroExample =
             <div class="space-y-1.5">
               <div class="flex items-center justify-center gap-2">
                 <span class="inline-flex size-2 rounded-full bg-yellow" data-gsap-pulse></span>
-                <h3 class="text-sm font-bold tracking-tight text-white tablet:text-base">
+                <h2 class="text-sm font-bold tracking-tight text-white tablet:text-base">
                   Prüfungsmodule Schnellübersicht
-                </h3>
+                </h2>
               </div>
               <p class="mx-auto max-w-xl text-xs text-mist-400">
                 Wähle ein Modul, um direkt zu Aufgabenformaten, Zeitlimits, Punkten und Strategien
@@ -186,10 +187,11 @@ const heroExample =
               </a>
             </div>
           </div>
-        </div>
+        </nav>
 
         <!-- 4 Exam Module Sections (Single Frame per Module) -->
-        <section class="space-y-8 tablet:space-y-10">
+        <section aria-labelledby="exam-modules-heading" class="space-y-8 tablet:space-y-10">
+          <h2 id="exam-modules-heading" class="sr-only">Prüfungsmodule Details</h2>
           {currentExam.sections.map((section) => {
             const theme = getExamModuleTheme(section.id);
             const isSpeakingOrWriting =
@@ -197,11 +199,14 @@ const heroExample =
             const moduleSlug = section.id.split("-", 2)[1] ?? section.id;
 
             return (
-              <div
+              <article
+                aria-labelledby={`module-heading-${section.id}`}
                 class:list={[
                   "overflow-hidden rounded-2xl border-2 bg-card/60 shadow-lg backdrop-blur-(--glass-blur) transition-all duration-200 scroll-mt-24",
                   theme.cardBorderClass,
-                ]}                 data-animate="fade-up"                 id={`section-${section.id}`}
+                ]}
+                data-animate="fade-up"
+                id={`section-${section.id}`}
               >
                 <!-- Module Header Bar -->
                 <div
@@ -212,14 +217,15 @@ const heroExample =
                   ]}
                 >
                   <div class="flex flex-wrap items-center gap-3">
-                    <span
+                    <h3
+                      id={`module-heading-${section.id}`}
                       class:list={[
                         "inline-flex items-center rounded-lg border-[1.5px] px-2.5 py-1 text-xs font-bold tracking-wide uppercase",
                         theme.badgeClass,
                       ]}
                     >
                       Modul {section.title}
-                    </span>
+                    </h3>
                     <span class="text-xs font-medium text-mist-300 tablet:text-sm">
                       {section.description}
                     </span>
@@ -244,22 +250,26 @@ const heroExample =
                     <thead class="border-b border-white/10 bg-white/4 text-[11px] font-bold uppercase tracking-wider text-mist-300 tablet:text-xs">
                       <tr>
                         <th
-                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"                           scope="col"
+                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"
+                          scope="col"
                         >
                           Teil
                         </th>
                         <th
-                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"                           scope="col"
+                          class="px-4 py-3.5 tablet:px-6 tablet:py-4"
+                          scope="col"
                         >
                           Aufgabentyp & Struktur
                         </th>
                         <th
-                          class="px-4 py-3.5 text-center tablet:px-6 tablet:py-4"                           scope="col"
+                          class="px-4 py-3.5 text-center tablet:px-6 tablet:py-4"
+                          scope="col"
                         >
                           Aufgaben
                         </th>
                         <th
-                          class="px-4 py-3.5 text-right tablet:px-6 tablet:py-4"                           scope="col"
+                          class="px-4 py-3.5 text-right tablet:px-6 tablet:py-4"
+                          scope="col"
                         >
                           Punkte
                         </th>
@@ -269,11 +279,11 @@ const heroExample =
                       {section.parts.map((part) => (
                         <tr class="group/row transition-colors hover:bg-white/4">
                           <!-- Part Name -->
-                          <td class="px-4 py-4 align-top tablet:px-6">
+                          <th scope="row" class="px-4 py-4 text-left align-top tablet:px-6">
                             <span class="inline-flex items-center rounded-lg border-[1.5px] border-white/15 bg-white/5 px-2.5 py-1 text-xs font-bold text-amber-300 whitespace-nowrap">
                               {part.name}
                             </span>
-                          </td>
+                          </th>
 
                           <!-- Task Type & Details -->
                           <td class="px-4 py-4 align-top tablet:px-6">
@@ -375,7 +385,7 @@ const heroExample =
                     <span class="text-xs text-mist-500">Bestehen: mind. 60 von 100 Punkten</span>
                   </div>
                 </div>
-              </div>
+              </article>
             );
           })}
         </section>

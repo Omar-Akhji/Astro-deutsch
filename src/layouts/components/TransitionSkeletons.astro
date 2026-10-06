@@ -96,12 +96,18 @@ import SkeletonLayouts from "@/shared/ui/SkeletonLayouts.astro";
     <PruefungSkeleton variant="study" />
   </div>
 
-  <!-- Quiz Feature Skeleton -->
+  <!-- Quiz Feature Skeletons -->
   <div
     class="hidden"
     data-skeleton="/quiz"
   >
-    <QuizSkeleton />
+    <QuizSkeleton variant="overview" />
+  </div>
+  <div
+    class="hidden"
+    data-skeleton="/quiz/test"
+  >
+    <QuizSkeleton variant="test" />
   </div>
 
   <!-- Auth Feature Skeletons -->

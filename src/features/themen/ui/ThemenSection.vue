@@ -123,11 +123,11 @@ const handleScrollToTop = () => {
       class="mx-auto max-w-2xl space-y-4 text-center"
     >
       <AnimateOnScroll animation="fade-up">
-        <h2
+        <h1
           class="bg-linear-to-r from-amber-400 to-orange-500 bg-clip-text text-3xl font-semibold text-transparent tablet:text-4xl"
         >
           Sprechen & Schreiben Themen
-        </h2>
+        </h1>
       </AnimateOnScroll>
       <AnimateOnScroll
         animation="fade-up"
@@ -148,6 +148,7 @@ const handleScrollToTop = () => {
       <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-2">
         <button
           type="button"
+          :aria-pressed="activeCategory === null"
           :class="[
             'flex cursor-pointer items-center gap-2 rounded-full border-none px-4 pbs-2 pbe-2 text-sm font-medium transition-all',
             activeCategory === null ?
@@ -171,6 +172,7 @@ const handleScrollToTop = () => {
           v-for="(config, id) in categoryConfig"
           :key="id"
           type="button"
+          :aria-pressed="activeCategory === id"
           :class="[
             'flex cursor-pointer items-center gap-2 rounded-full border-none px-4 pbs-2 pbe-2 text-sm font-medium transition-all',
             activeCategory === id ?
@@ -205,6 +207,7 @@ const handleScrollToTop = () => {
         v-for="group in filteredGroups"
         :id="group.categoryId"
         :key="group.categoryId"
+        :aria-labelledby="`group-heading-${group.categoryId}`"
         class="scroll-mbs-32"
       >
         <div class="mb-6 flex items-center gap-3.5 tablet:mb-8 tablet:gap-4">
@@ -223,9 +226,12 @@ const handleScrollToTop = () => {
             </span>
           </div>
           <div>
-            <h3 class="text-xl font-semibold text-white capitalize tablet:text-2xl">
+            <h2
+              :id="`group-heading-${group.categoryId}`"
+              class="text-xl font-semibold text-white capitalize tablet:text-2xl"
+            >
               {{ group.label }}
-            </h3>
+            </h2>
             <p class="text-xs text-zinc-400 tablet:text-sm">
               {{ group.themes.length }} Themen zur Vorbereitung
             </p>
@@ -250,17 +256,21 @@ const handleScrollToTop = () => {
       :delay="200"
     >
       <aside
+        aria-labelledby="exam-tips-heading"
         class="mt-20 rounded-3xl border-[1.5px] border-amber-500/20 bg-linear-to-br from-yellow/20 to-orange/20 p-8 backdrop-blur-sm"
       >
-        <h3 class="mb-4 flex items-center gap-3 text-xl font-semibold text-white tablet:text-2xl">
+        <h2
+          id="exam-tips-heading"
+          class="mb-4 flex items-center gap-3 text-xl font-semibold text-white tablet:text-2xl"
+        >
           <span
             class="flex size-9 shrink-0 items-center justify-center rounded-full border-3 border-amber-400 text-amber-400 tablet:size-10"
           >
             <Lightbulb class="size-5 tablet:size-6" />
           </span>
           Prüfungstipp für Sprechen Teil 2
-        </h3>
-        <ul class="m-0 grid list-none gap-4 p-0 text-zinc-300 md:grid-cols-2">
+        </h2>
+        <ol class="m-0 grid list-none gap-4 p-0 text-zinc-300 md:grid-cols-2">
           <li class="flex gap-3">
             <span class="font-bold text-amber-400">1.</span>
             Stell das Thema kurz vor und begründe deine Wahl.
@@ -285,7 +295,7 @@ const handleScrollToTop = () => {
             <span class="font-bold text-amber-400">6.</span>
             Bedanke dich am Ende und bitte um Fragen.
           </li>
-        </ul>
+        </ol>
       </aside>
     </AnimateOnScroll>
 

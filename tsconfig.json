@@ -18,9 +18,9 @@
 
   "compilerOptions": {
     // ─── Target & ECMAScript Baseline ──────────────────────────────────────────
-    // Modern 2026 runtime target: explicit ES2025/ESNext alignment
-    "target": "ES2025",
-    "lib": ["ES2025", "DOM", "DOM.Iterable"],
+    // Modern 2026 runtime target: explicit ES2022+ / ESNext alignment
+    "target": "ESNext",
+    "lib": ["ES2025", "ESNext", "DOM", "DOM.Iterable"],
     "ignoreDeprecations": "6.0",
 
     // ─── Module Resolution & Bundler Architecture ──────────────────────────────

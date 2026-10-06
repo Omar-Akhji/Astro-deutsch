@@ -56,9 +56,12 @@ const stats = [
       {skills.map((skill) => {
         const SkillIcon = skill.icon;
         return (
-          <section>
+          <section aria-labelledby={`skill-heading-${skill.id}`}>
             <div data-animate="fade-right">
-              <h2 class="mb-6 flex items-center gap-3 text-xl font-semibold text-white tablet:gap-4 tablet:text-2xl">
+              <h2
+                class="mb-6 flex items-center gap-3 text-xl font-semibold text-white tablet:gap-4 tablet:text-2xl"
+                id={`skill-heading-${skill.id}`}
+              >
                 <span class="flex size-10 items-center justify-center rounded-full border-[3px] border-solid border-yellow bg-mist-900/50 text-yellow shadow-sm tablet:size-12">
                   <SkillIcon
                     class="size-5 tablet:size-6"
@@ -69,23 +72,27 @@ const stats = [
               </h2>
             </div>
 
-            <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
+            <ul
+              class="m-0 grid list-none grid-cols-1 gap-6 p-0 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3"
+              role="list"
+            >
               {initialModelTests.map((testId) => (
-                <div
+                <li
                   class="h-full"
                   data-animate="fade-up"
                 >
                   <Card
                     description={`Vollständiger ${skill.title}-Teil für das ${level.toUpperCase()}-Zertifikat.`}
                     gradient={SKILL_GRADIENTS[skill.id] ?? SKILL_GRADIENTS["lesen"] ?? ""}
+                    headingLevel="h3"
                     href={`/quiz/${level}/${skill.id}/${testId}/`}
                     subtitle="Übung"
                     title={`Modelltest ${testId}`}
                     variant="default"
                   />
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         );
       })}

@@ -1,39 +1,110 @@
 ---
+import PageHeaderSkeleton from "@/shared/ui/PageHeaderSkeleton.astro";
 import Skeleton from "@/shared/ui/Skeleton.astro";
+
+interface Props {
+  variant?: "overview" | "test";
+}
+
+const { variant = "overview" } = Astro.props;
 ---
 
-<div class="relative min-h-dvh py-4">
-  <article class="relative z-10 flex w-full flex-col rounded-2xl border-[1.5px] border-white/10 bg-card px-4 py-6 shadow-2xl backdrop-blur-xl">
-    <header class="mb-4 flex items-center justify-between border-b border-white/10 pb-2 text-white">
-      <Skeleton class="h-5 w-48 rounded-md bg-white/15" />
-      <Skeleton class="h-4 w-20 rounded-md bg-white/10" />
-    </header>
+{
+  variant === "overview" && (
+    <div class="animate-fade-in py-4 mobile:py-8">
+      <PageHeaderSkeleton />
 
-    <!-- QuizStart Initial View -->
-    <section class="mx-auto w-full max-w-lg p-8 text-center">
-      <!-- Exam badge -->
-      <Skeleton class="mx-auto mbe-6 h-8 w-48 rounded-full border-[1.5px] border-white/10 bg-white/10" />
-
-      <!-- Title -->
-      <Skeleton class="mx-auto mbe-3 h-9 w-3/4 max-w-md rounded-md bg-white/15" />
-
-      <!-- Description -->
-      <Skeleton class="mx-auto mbe-8 h-5 w-full max-w-lg rounded-md bg-white/5" />
-
-      <!-- Exam info cards -->
-      <div class="mbe-8 grid grid-cols-2 gap-4">
-        <div class="h-full space-y-2 rounded-xl border-[1.5px] border-white/10 bg-mist-900/50 p-4 shadow-sm">
-          <Skeleton class="mx-auto h-8 w-12 rounded-md bg-white/15" />
-          <Skeleton class="mx-auto h-3 w-20 rounded-md bg-white/5" />
-        </div>
-        <div class="h-full space-y-2 rounded-xl border-[1.5px] border-white/10 bg-mist-900/50 p-4 shadow-sm">
-          <Skeleton class="mx-auto h-8 w-12 rounded-md bg-white/15" />
-          <Skeleton class="mx-auto h-3 w-24 rounded-md bg-white/5" />
-        </div>
+      {/* Quick Stats */}
+      <div class="mb-10 grid grid-cols-2 gap-4 tablet:mb-12 tablet:grid-cols-4 tablet:gap-6">
+        {["qs1", "qs2", "qs3", "qs4"].map(() => (
+          <div class="rounded-2xl border-[1.5px] border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
+            <Skeleton class="mx-auto mb-2 size-6 rounded-md bg-white/15" />
+            <Skeleton class="mx-auto mb-1 h-7 w-12 rounded-md bg-white/20" />
+            <Skeleton class="mx-auto h-3 w-16 rounded-md bg-white/10" />
+          </div>
+        ))}
       </div>
 
-      <!-- Start Button -->
-      <Skeleton class="h-14 w-full rounded-full bg-white/10 shadow-xl" />
-    </section>
-  </article>
-</div>
+      {/* Levels & Skills Directory */}
+      <div class="space-y-14 tablet:space-y-16">
+        {["B1", "B2"].map(() => (
+          <section class="space-y-8">
+            <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+              <Skeleton class="h-7 w-14 rounded-full bg-white/20" />
+              <Skeleton class="h-6 w-60 rounded-md bg-white/15 tablet:h-7" />
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 laptop:grid-cols-2">
+              {["s1", "s2", "s3", "s4"].map(() => (
+                <article class="overflow-hidden rounded-2xl border-[1.5px] border-white/10 bg-card/75 shadow-lg backdrop-blur-md">
+                  <header class="flex items-center justify-between border-b border-white/10 bg-white/10 p-4 tablet:p-5">
+                    <div class="flex items-center gap-3">
+                      <Skeleton class="size-10 rounded-xl bg-white/20" />
+                      <div class="space-y-1.5">
+                        <Skeleton class="h-5 w-32 rounded-md bg-white/20" />
+                        <Skeleton class="h-3 w-20 rounded-md bg-white/10" />
+                      </div>
+                    </div>
+                  </header>
+
+                  <div class="p-4 tablet:p-5">
+                    <Skeleton class="mb-4 h-3 w-48 rounded-md bg-white/10" />
+                    <div class="grid grid-cols-3 gap-2 mobile:grid-cols-4 tablet:grid-cols-3 laptop:grid-cols-4">
+                      {["t1", "t2", "t3", "t4", "t5"].map(() => (
+                        <div class="flex flex-col items-center justify-center rounded-xl border-[1.5px] border-white/10 bg-white/5 p-3 text-center">
+                          <Skeleton class="mb-1 h-2.5 w-6 rounded-sm bg-white/10" />
+                          <Skeleton class="mb-1 h-6 w-5 rounded-md bg-white/20" />
+                          <Skeleton class="h-2 w-10 rounded-sm bg-white/10" />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+{
+  variant === "test" && (
+    <div class="relative min-h-dvh py-4">
+      <article class="relative z-10 flex w-full flex-col rounded-2xl border-[1.5px] border-white/10 bg-card px-4 py-6 shadow-2xl backdrop-blur-xl">
+        <header class="mb-4 flex items-center justify-between border-b border-white/10 pb-2 text-white">
+          <Skeleton class="h-5 w-48 rounded-md bg-white/15" />
+          <Skeleton class="h-4 w-20 rounded-md bg-white/10" />
+        </header>
+
+        {/* QuizStart Initial View */}
+        <section class="mx-auto w-full max-w-lg p-8 text-center">
+          {/* Exam badge */}
+          <Skeleton class="mbe-6 mx-auto h-8 w-48 rounded-full border-[1.5px] border-white/10 bg-white/10" />
+
+          {/* Title */}
+          <Skeleton class="mbe-3 mx-auto h-9 w-3/4 max-w-md rounded-md bg-white/15" />
+
+          {/* Description */}
+          <Skeleton class="mbe-8 mx-auto h-5 w-full max-w-lg rounded-md bg-white/5" />
+
+          {/* Exam info cards */}
+          <div class="mbe-8 grid grid-cols-2 gap-4">
+            <div class="h-full space-y-2 rounded-xl border-[1.5px] border-white/10 bg-mist-900/50 p-4 shadow-sm">
+              <Skeleton class="mx-auto h-8 w-12 rounded-md bg-white/15" />
+              <Skeleton class="mx-auto h-3 w-20 rounded-md bg-white/5" />
+            </div>
+            <div class="h-full space-y-2 rounded-xl border-[1.5px] border-white/10 bg-mist-900/50 p-4 shadow-sm">
+              <Skeleton class="mx-auto h-8 w-12 rounded-md bg-white/15" />
+              <Skeleton class="mx-auto h-3 w-24 rounded-md bg-white/5" />
+            </div>
+          </div>
+
+          {/* Start Button */}
+          <Skeleton class="h-14 w-full rounded-full bg-white/10 shadow-xl" />
+        </section>
+      </article>
+    </div>
+  )
+}

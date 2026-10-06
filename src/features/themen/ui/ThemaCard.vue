@@ -14,7 +14,7 @@ const categoryClass = computed(() => getCategoryClasses(props.thema.category));
 
 const activeTab = ref<"pro" | "con" | "text">(props.thema.isTextOnly ? "text" : "pro");
 
-const cardRootRef = ref<HTMLDivElement | null>(null);
+const cardRootRef = ref<HTMLElement | null>(null);
 const tabsRef = ref<HTMLDivElement | null>(null);
 const indicatorRef = ref<HTMLDivElement | null>(null);
 const contentRef = ref<HTMLDivElement | null>(null);
@@ -104,7 +104,7 @@ watch(activeTab, () => {
 </script>
 
 <template>
-  <div
+  <article
     ref="cardRootRef"
     class="group relative overflow-hidden rounded-2xl border-2 border-white/10 bg-white/5 p-5 backdrop-blur-sm transition-[background-color,box-shadow] hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5 tablet:p-6"
   >
@@ -128,6 +128,8 @@ watch(activeTab, () => {
 
     <div
       ref="tabsRef"
+      role="tablist"
+      :aria-label="`Optionen für ${props.thema.label}`"
       class="relative mb-3.5 flex gap-1 rounded-full bg-black/20 p-1"
     >
       <template v-if="!props.thema.isTextOnly">
@@ -139,7 +141,11 @@ watch(activeTab, () => {
         />
 
         <button
+          :id="`tab-pro-${props.thema.id}`"
           type="button"
+          role="tab"
+          :aria-selected="activeTab === 'pro'"
+          :aria-controls="`tabpanel-pro-${props.thema.id}`"
           :data-active="activeTab === 'pro'"
           :class="[
             'relative z-10 flex-1 cursor-pointer rounded-full border-none bg-transparent px-3 py-1.5 text-xs font-medium transition-colors duration-300 tablet:text-sm',
@@ -150,7 +156,11 @@ watch(activeTab, () => {
           Vorteile
         </button>
         <button
+          :id="`tab-con-${props.thema.id}`"
           type="button"
+          role="tab"
+          :aria-selected="activeTab === 'con'"
+          :aria-controls="`tabpanel-con-${props.thema.id}`"
           :data-active="activeTab === 'con'"
           :class="[
             'relative z-10 flex-1 cursor-pointer rounded-full border-none bg-transparent px-3 py-1.5 text-xs font-medium transition-colors duration-300 tablet:text-sm',
@@ -174,38 +184,46 @@ watch(activeTab, () => {
       ref="contentRef"
       class="min-h-30"
     >
-      <ul
+      <div
         v-if="activeTab === 'pro' && props.thema.pro"
-        class="m-0 list-none space-y-2.5 p-0"
+        :id="`tabpanel-pro-${props.thema.id}`"
+        role="tabpanel"
+        :aria-labelledby="`tab-pro-${props.thema.id}`"
       >
-        <li
-          v-for="point in props.thema.pro"
-          :key="point"
-          class="flex items-start gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
-        >
-          <span class="mt-[0.45em] size-1.5 shrink-0 rounded-full bg-emerald-500" />
-          {{ point }}
-        </li>
-      </ul>
-      <ul
+        <ul class="m-0 list-none space-y-2.5 p-0">
+          <li
+            v-for="point in props.thema.pro"
+            :key="point"
+            class="flex items-start gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
+          >
+            <span class="mt-[0.45em] size-1.5 shrink-0 rounded-full bg-emerald-500" />
+            {{ point }}
+          </li>
+        </ul>
+      </div>
+      <div
         v-if="activeTab === 'con' && props.thema.con"
-        class="m-0 list-none space-y-2.5 p-0"
+        :id="`tabpanel-con-${props.thema.id}`"
+        role="tabpanel"
+        :aria-labelledby="`tab-con-${props.thema.id}`"
       >
-        <li
-          v-for="point in props.thema.con"
-          :key="point"
-          class="flex items-start gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
-        >
-          <span class="mt-[0.45em] size-1.5 shrink-0 rounded-full bg-red-500" />
-          {{ point }}
-        </li>
-      </ul>
-      <p
+        <ul class="m-0 list-none space-y-2.5 p-0">
+          <li
+            v-for="point in props.thema.con"
+            :key="point"
+            class="flex items-start gap-2.5 text-xs leading-relaxed text-zinc-300 tablet:text-sm"
+          >
+            <span class="mt-[0.45em] size-1.5 shrink-0 rounded-full bg-red-500" />
+            {{ point }}
+          </li>
+        </ul>
+      </div>
+      <blockquote
         v-if="(activeTab === 'text' || props.thema.isTextOnly) && props.thema.text"
-        class="border-l-2 border-amber-500/30 py-1 pl-4 text-xs leading-relaxed text-zinc-300 italic tablet:text-sm"
+        class="m-0 border-l-2 border-amber-500/30 py-1 pl-4 text-xs leading-relaxed text-zinc-300 italic tablet:text-sm"
       >
-        &quot;{{ props.thema.text }}&quot;
-      </p>
+        <p class="m-0">&quot;{{ props.thema.text }}&quot;</p>
+      </blockquote>
     </div>
 
     <div
@@ -215,5 +233,5 @@ watch(activeTab, () => {
         Zertifikat B1 Topic #{{ props.thema.id }}
       </span>
     </div>
-  </div>
+  </article>
 </template>

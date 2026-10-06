@@ -119,34 +119,40 @@ const heroExample =
         <!-- Overview Navigation Bar -->
         {currentTopic.subtopics && currentTopic.subtopics.length > 0 && (
           <div
-            class="flex flex-wrap items-center justify-between gap-3 rounded-2xl border-[1.5px] border-white/10 bg-white/2 p-4 shadow-sm backdrop-blur-md"
+            class="rounded-2xl border-2 border-white/10 bg-card/60 p-5 shadow-lg backdrop-blur-(--glass-blur) tablet:p-6"
             data-animate="fade-up"
           >
-            <div>
-              <h2 class="text-base font-bold tracking-tight text-white tablet:text-lg">
-                Themenübersicht & Schnellnavigation
-              </h2>
-              <p class="text-xs text-mist-400">
-                Wähle ein Unterthema, um direkt zur Erklärung, Konjugation und den Beispielen zu springen
-              </p>
-            </div>
+            <div class="flex flex-col items-center gap-4 text-center">
+              <div class="space-y-1.5">
+                <div class="flex items-center justify-center gap-2">
+                  <span class="inline-flex size-2 rounded-full bg-yellow" data-gsap-pulse></span>
+                  <h2 class="text-sm font-bold tracking-tight text-white tablet:text-base">
+                    Themenübersicht & Schnellnavigation
+                  </h2>
+                </div>
+                <p class="mx-auto max-w-xl text-xs text-mist-400">
+                  Wähle ein Unterthema, um direkt zur Erklärung, Konjugation und den Beispielen zu springen
+                </p>
+              </div>
 
-            <nav aria-label="Unterthemen Navigation" class="flex flex-wrap items-center gap-2">
-              {currentTopic.subtopics.map((subtopic, index) => {
-                const theme = getGrammarTheme(index);
-                return (
-                  <a
-                    class:list={[
-                      "inline-flex items-center gap-1.5 rounded-full border-[1.5px] px-3 py-1 text-xs font-semibold tracking-wide transition-all duration-150 hover:brightness-125 hover:shadow-sm active:scale-95",
-                      theme.badgeClass,
-                    ]}                     href={`#subtopic-${subtopic.id}`}
-                  >
-                    <span class="font-bold opacity-80">{subtopic.number}</span>
-                    <span>{subtopic.title}</span>
-                  </a>
-                );
-              })}
-            </nav>
+              <nav aria-label="Unterthemen Navigation" class="flex flex-wrap items-center justify-center gap-2.5">
+                {currentTopic.subtopics.map((subtopic, index) => {
+                  const theme = getGrammarTheme(index);
+                  return (
+                    <a
+                      class:list={[
+                        "inline-flex items-center gap-1.5 rounded-full border-[1.5px] px-3 py-1 text-xs font-semibold tracking-wide transition-all duration-150 hover:brightness-125 hover:shadow-sm active:scale-95",
+                        theme.badgeClass,
+                      ]}
+                      href={`#subtopic-${subtopic.id}`}
+                    >
+                      <span class="font-bold opacity-80">{subtopic.number}</span>
+                      <span>{subtopic.title}</span>
+                    </a>
+                  );
+                })}
+              </nav>
+            </div>
           </div>
         )}
 

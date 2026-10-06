@@ -55,7 +55,11 @@ const handleDemoLogin = async () => {
     class="flex h-125 flex-col justify-between md:h-118.75"
     @submit.prevent="handleSignIn"
   >
-    <div class="flex flex-col gap-4">
+    <fieldset
+      class="m-0 flex flex-col gap-4 border-0 p-0"
+      :disabled="isPending"
+    >
+      <legend class="sr-only">Anmeldedaten</legend>
       <div class="hidden flex-col md:flex">
         <h3 class="font-display text-lg font-bold tracking-tight text-white">Anmelden</h3>
         <p class="mt-1 text-[12px] text-text-muted">
@@ -116,7 +120,6 @@ const handleDemoLogin = async () => {
           </label>
           <button
             type="button"
-            tabindex="-1"
             class="cursor-pointer border-none bg-transparent p-0 text-xs font-bold text-orange/80 transition-colors hover:text-orange focus:outline-hidden"
             @click="handleNotConfigured('Passwort zurücksetzen')"
           >
@@ -137,8 +140,8 @@ const handleDemoLogin = async () => {
           />
           <button
             type="button"
-            tabindex="-1"
             :disabled="isPending"
+            :aria-pressed="showPassword"
             :aria-label="showPassword ? 'Passwort verbergen' : 'Passwort anzeigen'"
             class="absolute top-1/2 right-3.5 -translate-y-1/2 cursor-pointer border-none bg-transparent p-0 text-text-muted transition-colors duration-300 hover:text-orange focus:outline-hidden"
             @click="showPassword = !showPassword"
@@ -183,7 +186,7 @@ const handleDemoLogin = async () => {
           Demo testen
         </button>
       </div>
-    </div>
+    </fieldset>
 
     <!-- Bottom: submit + divider + social -->
     <div class="mt-4 flex flex-col gap-3">
@@ -200,7 +203,7 @@ const handleDemoLogin = async () => {
           class="absolute inset-0 flex items-center"
           aria-hidden="true"
         >
-          <div class="w-full border-t border-slate-800/60" />
+          <hr class="m-0 w-full border-t border-slate-800/60" />
         </div>
         <span
           class="relative bg-[#1a1c29] px-3 text-[10px] font-bold tracking-widest text-text-muted/70 uppercase select-none"

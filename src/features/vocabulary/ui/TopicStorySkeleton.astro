@@ -1,0 +1,85 @@
+---
+import Skeleton from "@/shared/ui/Skeleton.astro";
+
+interface Props {
+  cardCount?: number;
+}
+
+const { cardCount = 2 } = Astro.props;
+const cards = Array.from({ length: cardCount }, (_, index) => `card-${index}`);
+---
+
+<div class="space-y-4">
+  <!-- Section Title -->
+  <div class="mb-4 flex flex-wrap items-end justify-between gap-3 px-1">
+    <div>
+      <Skeleton class="h-4 w-52 rounded-md bg-white/10" />
+    </div>
+    <Skeleton class="h-3.5 w-72 max-w-full rounded-md bg-white/5" />
+  </div>
+
+  <!-- CEFR Level Cards Stack -->
+  <div class="space-y-6">
+    {cards.map((_, _index) => (
+      <article class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-xl backdrop-blur-(--glass-blur) tablet:p-7">
+        <header class="mb-5 border-b border-white/8 pb-4">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+              <Skeleton class="h-6 w-14 rounded-full border-[1.5px] border-white/15 bg-white/10" />
+              <Skeleton class="h-4 w-28 rounded-md bg-white/10" />
+            </div>
+
+            <Skeleton class="h-5 w-18 rounded-full border-[1.5px] border-white/8 bg-white/5" />
+          </div>
+
+          <Skeleton class="mt-3.5 h-7 w-60 rounded-md bg-white/15 tablet:w-80" />
+          <Skeleton class="mt-2 h-4 w-full max-w-lg rounded-md bg-white/5" />
+        </header>
+
+        <!-- Story Content Sentences -->
+        <div class="space-y-3 py-2">
+          <Skeleton class="h-5 w-full rounded-md bg-white/5" />
+          <Skeleton class="h-5 w-11/12 rounded-md bg-white/5" />
+          <Skeleton class="h-5 w-4/5 rounded-md bg-white/5" />
+        </div>
+
+        <!-- Audio Player Island Skeleton -->
+        <div class="mt-6 rounded-2xl border-[1.5px] border-white/10 bg-zinc-950/40 p-4">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <Skeleton class="size-10 rounded-full bg-white/15" />
+              <div class="space-y-1.5">
+                <Skeleton class="h-4 w-28 rounded-md bg-white/10" />
+                <Skeleton class="h-3 w-44 rounded-md bg-white/5" />
+              </div>
+            </div>
+
+            <!-- Waveform / Equalizer Bars -->
+            <div class="hidden items-center gap-1 sm:flex">
+              {Array.from({ length: 8 }, (_, index) => (
+                <Skeleton
+                  class="w-1 rounded-full bg-white/10"
+                  style={{ height: `${12 + (index % 4) * 6}px` }}
+                />
+              ))}
+            </div>
+
+            <div class="flex items-center gap-2">
+              <Skeleton class="h-8 w-20 rounded-full bg-white/10" />
+              <Skeleton class="size-8 rounded-full bg-white/10" />
+            </div>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <!-- Footer Help Tip & Legend -->
+  <div class="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-white/8 px-1 pt-5">
+    <div class="flex items-center gap-2">
+      <div class="h-0.5 w-6 rounded bg-white/20"></div>
+      <Skeleton class="h-3.5 w-72 rounded-md bg-white/10" />
+    </div>
+    <Skeleton class="h-3 w-48 rounded-md bg-white/5" />
+  </div>
+</div>

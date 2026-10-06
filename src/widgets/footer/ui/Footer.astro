@@ -21,7 +21,6 @@ const currentYear = new Date().getFullYear();
 <footer
   aria-labelledby="footer-heading"
   class="relative mt-10 mb-8 overflow-hidden rounded-3xl border-2 border-white/10 bg-card/75 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) mobile:mt-12 mobile:mb-10 mobile:p-6 tablet:mt-14 tablet:mb-12 tablet:p-7 laptop:mb-14 laptop:p-8"
-  role="contentinfo"
 >
   <h2
     class="sr-only"
@@ -102,7 +101,10 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <!-- TIER 2: Main Navigation Grid (Compact Senior Spacing & Fast Scanning) -->
-    <div class="grid grid-cols-2 gap-x-4 gap-y-6 mobile:gap-x-6 mobile:gap-y-6 tablet:grid-cols-4 tablet:gap-x-6 tablet:gap-y-0 laptop:gap-x-8">
+    <nav
+      aria-label="Fußzeilennavigation"
+      class="grid grid-cols-2 gap-x-4 gap-y-6 mobile:gap-x-6 mobile:gap-y-6 tablet:grid-cols-4 tablet:gap-x-6 tablet:gap-y-0 laptop:gap-x-8"
+    >
       <!-- Column 1: Wortschatz -->
       <div>
         <h3 class="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white text-shadow-sm">
@@ -324,11 +326,11 @@ const currentYear = new Date().getFullYear();
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
 
     <!-- TIER 3: Bottom Bar / Legal, Standards & Smooth Back-to-Top (Compact 8pt Spacing) -->
     <div class="mt-6 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-4 text-[11px] text-mist-500 sm:flex-row tablet:mt-7 tablet:pt-5">
-      <div class="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-center sm:justify-start sm:text-left">
+      <small class="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-center text-[11px] text-mist-500 sm:justify-start sm:text-left">
         <span>&copy; {currentYear} Elite Regewelt. Alle Rechte vorbehalten.</span>
         <span
           aria-hidden="true"
@@ -340,7 +342,7 @@ const currentYear = new Date().getFullYear();
           <ShieldCheck class="size-3.5 text-yellow/80" />
           Offizielle GER-Standards
         </span>
-      </div>
+      </small>
 
       <div class="flex items-center gap-3">
         <!-- Back-to-top button -->

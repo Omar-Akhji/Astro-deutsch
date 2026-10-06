@@ -83,7 +83,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
 {layout === "home" && (
   <div class="py-6 tablet:py-10 laptop:py-14">
     <header class="mbe-10 tablet:mbe-14 laptop:mbe-16">
-      <HeroSkeleton />
+      <HeroSkeleton variant="glass" hasCategory={true} statsCount={3} />
     </header>
     <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
       <CardSkeleton />
@@ -91,7 +91,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
       <CardSkeleton />
     </div>
     <section class="mbs-16 tablet:mbs-20 laptop:mbs-24">
-      <HeroSkeleton />
+      <HeroSkeleton variant="glass" hasCategory={false} statsCount={3} />
     </section>
     <section class="mbs-16 pb-8 text-center tablet:mbs-20 laptop:mbs-24">
       <Skeleton class="mx-auto mbe-4 h-9 w-2/3 max-w-md rounded-md bg-white/10 tablet:mbe-5 tablet:h-10" />
@@ -120,7 +120,7 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
 {layout === "pruefung-module-study" && <PruefungSkeleton variant="study" />}
 
 <!-- 18. Quiz Feature Skeleton -->
-{layout === "quiz" && <QuizSkeleton />}
+{layout === "quiz" && <QuizSkeleton variant={variant === "compact" ? "test" : "overview"} />}
 
 <!-- 19. Table Skeleton -->
 {layout === "table" && (

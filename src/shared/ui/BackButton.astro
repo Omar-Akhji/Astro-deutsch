@@ -1,13 +1,37 @@
 ---
 import { ArrowLeft } from "lucide-astro";
+
+interface Props {
+  href?: string;
+  label?: string;
+  class?: string;
+}
+
+const { href, label = "Zurück", class: className = "" } = Astro.props;
+
+const baseStyles =
+  "inline-flex size-10 cursor-pointer items-center justify-center rounded-full border-[1.5px] border-(--glass-border) bg-card text-sm font-semibold text-text transition-[translate,background-color] duration-200 hover:-translate-x-1 hover:bg-white/10 tablet:h-auto tablet:w-auto tablet:px-6 tablet:py-2 tablet:text-base";
 ---
 
-<button
-  aria-label="Zurück"
-  class="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border-[1.5px] border-(--glass-border) bg-card text-sm font-semibold text-text transition-[translate,background-color] duration-200 hover:-translate-x-1 hover:bg-white/10 tablet:h-auto tablet:w-auto tablet:px-6 tablet:py-2 tablet:text-base"
-  onclick="history.back()"
-  type="button"
->
-  <ArrowLeft class="size-5" />
-  <span class="mis-1 mbs-0.5 hidden tablet:inline">Zurück</span>
-</button>
+{
+  href ? (
+    <a
+      aria-label={label}
+      class:list={[baseStyles, className]}
+      href={href}
+    >
+      <ArrowLeft class="size-5" />
+      <span class="mis-1 mbs-0.5 hidden tablet:inline">{label}</span>
+    </a>
+  ) : (
+    <button
+      aria-label={label}
+      class:list={[baseStyles, className]}
+      onclick="history.back()"
+      type="button"
+    >
+      <ArrowLeft class="size-5" />
+      <span class="mis-1 mbs-0.5 hidden tablet:inline">{label}</span>
+    </button>
+  )
+}

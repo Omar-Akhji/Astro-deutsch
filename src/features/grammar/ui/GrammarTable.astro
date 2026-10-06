@@ -42,6 +42,7 @@ const { data, theme } = Astro.props;
   <!-- Scrollable Table Container -->
   <div class="has-scrollbar overflow-x-auto">
     <table class="w-full border-collapse text-left text-sm tablet:text-base">
+      <caption class="sr-only">{data.caption ?? "Grammatik-Übersichtstabelle"}</caption>
       <thead class="border-b border-white/10 bg-white/5 text-[11px] font-bold uppercase tracking-wider text-mist-300 tablet:text-xs">
         <tr>
           {data.headers.map((header, colIndex) => (
@@ -50,7 +51,8 @@ const { data, theme } = Astro.props;
                 "px-4 py-3.5 tablet:px-6 tablet:py-4": true,
                 "text-amber-400 font-bold": colIndex === 0,
                 "text-mist-200 font-semibold": colIndex !== 0,
-              }}               scope="col"
+              }}
+              scope="col"
             >
               {header}
             </th>
@@ -63,14 +65,17 @@ const { data, theme } = Astro.props;
             {row.map((cell, colIndex) => {
               const isPerson = colIndex === 0;
 
-              return (
-                <td
-                  class:list={{
-                    "px-4 py-3 tablet:px-6 tablet:py-3.5": true,
-                    "font-semibold text-amber-300/90 whitespace-nowrap": isPerson,
-                    "text-white/90": !isPerson,
-                  }}
+              return isPerson ? (
+                <th
+                  class="whitespace-nowrap px-4 py-3 text-left font-semibold text-amber-300/90 tablet:px-6 tablet:py-3.5"
+                  scope="row"
                 >
+                  <div class="leading-relaxed">
+                    <ContentItem content={cell} />
+                  </div>
+                </th>
+              ) : (
+                <td class="px-4 py-3 text-white/90 tablet:px-6 tablet:py-3.5">
                   <div class="leading-relaxed">
                     <ContentItem content={cell} />
                   </div>

@@ -15,7 +15,10 @@ export function resolveSkeletonRoute(pathname: string): string {
   const target = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
   const lower = target.toLowerCase();
 
-  if (lower.startsWith("/quiz")) return "/quiz";
+  if (lower.startsWith("/quiz")) {
+    const parts = lower.split("/").filter(Boolean);
+    return parts.length >= 4 ? "/quiz/test" : "/quiz";
+  }
   if (lower.startsWith("/themen")) return "/themen";
   if (lower.startsWith("/login")) return "/login";
   if (lower.startsWith("/register")) return "/register";

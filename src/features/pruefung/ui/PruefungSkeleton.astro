@@ -3,6 +3,7 @@ import { ThemaCardSkeleton } from "@/features/themen";
 import CardSkeleton from "@/shared/ui/CardSkeleton.astro";
 import PageHeaderSkeleton from "@/shared/ui/PageHeaderSkeleton.astro";
 import Skeleton from "@/shared/ui/Skeleton.astro";
+import { HeroSkeleton } from "@/widgets/hero";
 
 interface Props {
   variant?: "overview" | "level" | "modelltests" | "study";
@@ -12,7 +13,7 @@ const { variant = "overview" } = Astro.props;
 ---
 
 {variant === "overview" && (
-  <div class="animate-fade-in">
+  <div class="animate-fade-in py-4 mobile:py-8">
     <PageHeaderSkeleton />
 
     <section class="py-4">
@@ -27,87 +28,160 @@ const { variant = "overview" } = Astro.props;
 
 {variant === "level" && (
   <div class="relative min-h-dvh py-6 tablet:py-10">
-    <div>
-      <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12">
-        <div class="flex flex-col items-center text-center">
-          <Skeleton class="mbe-4 h-10 w-20 rounded-full bg-white/15 tablet:h-11 tablet:w-24" />
-          <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-xl rounded-md bg-white/15" />
-          <Skeleton class="mx-auto h-6 w-full max-w-2xl rounded-md bg-white/5 tablet:h-7" />
-          <div class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8">
-            <div class="flex items-center gap-2">
-              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-              <Skeleton class="h-5 w-28 rounded-md bg-white/10 tablet:h-6 tablet:w-32" />
+    <div class="animate-fade-in space-y-8 tablet:space-y-10">
+      <!-- Compact Hero Header -->
+      <HeroSkeleton
+        variant="compact"
+        statsCount={2}
+        hasExample={true}
+      />
+
+      <!-- Quick Navigation & Simulation CTA -->
+      <div class="rounded-2xl border-2 border-white/10 bg-card/60 p-5 shadow-lg backdrop-blur-(--glass-blur) tablet:p-6">
+        <div class="flex flex-col items-center gap-4 text-center">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-center gap-2">
+              <span class="size-2 rounded-full bg-white/40"></span>
+              <Skeleton class="h-4.5 w-56 rounded-md bg-white/15 tablet:h-5 tablet:w-64" />
             </div>
-            <div class="flex items-center gap-2">
-              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-              <Skeleton class="h-5 w-60 rounded-md bg-white/10 tablet:h-6 tablet:w-68" />
+            <Skeleton class="mx-auto h-3.5 w-full max-w-xl rounded-md bg-white/5" />
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-2.5">
+            <!-- 1. Lesen (65 Minuten) (Live width: 175px) -->
+            <div class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5" style="width: 175px;">
+              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
+              <Skeleton class="h-3.5 rounded-md bg-white/15" style="width: 45px;" />
+              <Skeleton class="h-3.5 flex-1 rounded-md bg-white/10" style="width: 80px;" />
+            </div>
+
+            <!-- 2. Hören (40 Minuten) (Live width: 180px) -->
+            <div class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5" style="width: 180px;">
+              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
+              <Skeleton class="h-3.5 rounded-md bg-white/15" style="width: 49px;" />
+              <Skeleton class="h-3.5 flex-1 rounded-md bg-white/10" style="width: 80px;" />
+            </div>
+
+            <!-- 3. Schreiben (60 Minuten) (Live width: 205px) -->
+            <div class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5" style="width: 205px;">
+              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
+              <Skeleton class="h-3.5 rounded-md bg-white/15" style="width: 75px;" />
+              <Skeleton class="h-3.5 flex-1 rounded-md bg-white/10" style="width: 80px;" />
+            </div>
+
+            <!-- 4. Sprechen (15 Minuten (+ 15 Min. Vorbereitung)) (Live width: 348px) -->
+            <div class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5 max-w-full" style="width: 348px;">
+              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
+              <Skeleton class="h-3.5 shrink-0 rounded-md bg-white/15" style="width: 72px;" />
+              <Skeleton class="h-3.5 flex-1 rounded-md bg-white/10" style="width: 226px;" />
+            </div>
+
+            <!-- Modelltests CTA Button (Live width: 124px) -->
+            <div class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3.5 py-1.5 shadow-sm" style="width: 124px;">
+              <Skeleton class="size-3.5 shrink-0 rounded-sm bg-white/15" />
+              <Skeleton class="h-3.5 flex-1 rounded-md bg-white/15" style="width: 72px;" />
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Modelltests Starten CTA Button -->
-      <div class="mb-10 flex justify-center tablet:mb-12">
-        <Skeleton class="h-15 w-72 rounded-full border-[1.5px] border-white/10 bg-white/5 tablet:h-16 tablet:w-80" />
-      </div>
-
-      <!-- Prüfungsstruktur Section -->
-      <section class="mb-12 text-white tablet:mb-16">
-        <div class="mb-6 flex items-center gap-3 tablet:mb-8 tablet:gap-4">
-          <Skeleton class="size-10 shrink-0 rounded-full border-[3px] border-white/10 bg-white/5 tablet:size-12" />
-          <Skeleton class="h-7 w-48 rounded-md bg-white/10 tablet:h-8 tablet:w-56" />
-        </div>
-        <div class="grid gap-6">
-          {["Lesen", "Hören", "Schreiben", "Sprechen"].map((module_) => (
-            <div class="overflow-hidden rounded-2xl border-[1.5px] border-white/5 bg-card">
-              <!-- Section Card Header -->
-              <div class="flex flex-col items-start gap-4 bg-white/10 p-4.5 md:flex-row md:items-center md:justify-between tablet:p-5">
-                <Skeleton class="h-7 w-28 rounded-md bg-white/15" />
-                <div class="flex gap-4">
-                  <Skeleton class="h-5 w-20 rounded-md bg-white/10" />
-                  <Skeleton class="h-5 w-20 rounded-md bg-white/10" />
-                </div>
+      <!-- 4 Exam Module Sections -->
+      <section class="space-y-8 tablet:space-y-10">
+        {["Lesen", "Hören", "Schreiben", "Sprechen"].map(() => (
+          <div class="overflow-hidden rounded-2xl border-2 border-white/10 bg-card/60 shadow-lg backdrop-blur-(--glass-blur)">
+            <!-- Module Header Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 bg-white/5 px-5 py-4 tablet:px-6 tablet:py-5">
+              <div class="flex flex-wrap items-center gap-3">
+                <Skeleton class="h-6 w-28 rounded-lg border-[1.5px] border-white/10 bg-white/10" />
+                <Skeleton class="h-4 w-48 rounded-md bg-white/10" />
               </div>
-              <!-- Section Card Body -->
-              <div class="p-5 tablet:p-6">
-                <Skeleton class="mb-4 h-5 w-3/4 rounded-md bg-white/5" />
-                <!-- Table Skeleton -->
-                <div class="mb-5 w-full">
-                  <div class="flex border-b border-white/10 p-2 md:p-3">
-                    <Skeleton class="h-4 w-12 rounded-md bg-white/10" />
-                    <Skeleton class="ml-8 h-4 w-28 rounded-md bg-white/10" />
-                    <Skeleton class="ml-auto h-4 w-12 rounded-md bg-white/10" />
-                    <Skeleton class="ml-8 h-4 w-16 rounded-md bg-white/10" />
-                  </div>
-                  {["r1", "r2", "r3", "r4"].map(() => (
-                    <div class="flex border-b border-white/5 p-2 md:p-3">
-                      <Skeleton class="h-4 w-14 rounded-md bg-white/5" />
-                      <Skeleton class="ml-8 h-4 w-36 rounded-md bg-white/5" />
-                      <Skeleton class="ml-auto h-4 w-8 rounded-md bg-white/5" />
-                      <Skeleton class="ml-8 h-4 w-12 rounded-md bg-white/5" />
-                    </div>
-                  ))}
-                </div>
-                <!-- Tips Box Skeleton -->
-                <div class="mt-5 flex flex-col gap-5 tablet:gap-6">
-                  <div class="rounded-xl border-[1.5px] border-white/10 bg-white/5 p-4 tablet:p-5">
-                    <div class="mb-2.5 flex items-center gap-2">
-                      <Skeleton class="size-4 rounded-full bg-white/10" />
-                      <Skeleton class="h-4 w-16 rounded-md bg-white/10" />
-                    </div>
-                    <div class="space-y-1.5 pl-5">
-                      <Skeleton class="h-4 w-full rounded-md bg-white/5" />
-                      <Skeleton class="h-4 w-4/5 rounded-md bg-white/5" />
-                    </div>
-                  </div>
-                  {(module_ === "Schreiben" || module_ === "Sprechen") && (
-                    <Skeleton class="h-12 w-52 rounded-full bg-white/10 md:self-start" />
-                  )}
-                </div>
+
+              <div class="flex flex-wrap items-center gap-2.5">
+                <Skeleton class="h-6 w-24 rounded-full border-[1.5px] border-white/10 bg-white/5" />
+                <Skeleton class="h-6 w-24 rounded-full border-[1.5px] border-white/10 bg-white/5" />
               </div>
             </div>
-          ))}
-        </div>
+
+            <!-- Module Structure Table (Exact 4 columns: Teil, Aufgabentyp & Struktur, Aufgaben, Punkte) -->
+            <div class="has-scrollbar overflow-x-auto">
+              <table class="w-full border-collapse text-left text-sm tablet:text-base">
+                <thead class="border-b border-white/10 bg-white/4 text-[11px] font-bold uppercase tracking-wider text-mist-300 tablet:text-xs">
+                  <tr>
+                    <th class="w-24 px-4 py-3.5 whitespace-nowrap tablet:w-28 tablet:px-6 tablet:py-4">
+                      <Skeleton class="h-3.5 w-12 rounded-md bg-white/10" />
+                    </th>
+                    <th class="px-4 py-3.5 tablet:px-6 tablet:py-4">
+                      <Skeleton class="h-3.5 w-44 rounded-md bg-white/10" />
+                    </th>
+                    <th class="w-32 px-4 py-3.5 text-center whitespace-nowrap tablet:w-36 tablet:px-6 tablet:py-4">
+                      <Skeleton class="mx-auto h-3.5 w-16 rounded-md bg-white/10" />
+                    </th>
+                    <th class="w-24 px-4 py-3.5 text-right whitespace-nowrap tablet:w-28 tablet:px-6 tablet:py-4">
+                      <Skeleton class="ml-auto h-3.5 w-12 rounded-md bg-white/10" />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                  {["p1", "p2", "p3", "p4"].map(() => (
+                    <tr>
+                      <!-- Part Pill -->
+                      <td class="w-24 px-4 py-4 align-top whitespace-nowrap tablet:w-28 tablet:px-6">
+                        <Skeleton class="h-6 w-16 rounded-lg border-[1.5px] border-white/15 bg-white/5" />
+                      </td>
+                      <!-- Task Type & Details -->
+                      <td class="px-4 py-4 align-top tablet:px-6">
+                        <div class="space-y-1.5">
+                          <Skeleton class="h-4 w-44 rounded-md bg-white/15" />
+                          <Skeleton class="h-3.5 w-full max-w-md rounded-md bg-white/5" />
+                        </div>
+                      </td>
+                      <!-- Tasks Count Pill -->
+                      <td class="w-32 px-4 py-4 text-center align-top whitespace-nowrap tablet:w-36 tablet:px-6">
+                        <Skeleton class="mx-auto h-5 w-22 rounded-full border-[1.5px] border-white/10 bg-white/5" />
+                      </td>
+                      <!-- Points -->
+                      <td class="w-24 px-4 py-4 text-right align-top whitespace-nowrap tablet:w-28 tablet:px-6">
+                        <Skeleton class="ml-auto h-5 w-12 rounded-md bg-white/15" />
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Tips & Strategy Box with Bottom Actions -->
+            <div class="space-y-5 border-t border-white/10 bg-white/2 p-5 tablet:p-6">
+              <div class="overflow-hidden rounded-xl border-[1.5px] border-white/10 bg-white/5 p-4 tablet:p-5">
+                <div class="mb-3 flex items-center justify-between border-b border-white/10 pb-2.5">
+                  <div class="flex items-center gap-2">
+                    <Skeleton class="size-4 rounded-full bg-white/20" />
+                    <Skeleton class="h-4 w-48 rounded-md bg-white/15" />
+                  </div>
+                  <Skeleton class="h-5 w-32 rounded-full border-[1.5px] border-white/10 bg-white/5" />
+                </div>
+                <div class="space-y-2.5">
+                  <div class="flex items-start gap-2.5">
+                    <span class="mt-1.5 size-1.5 shrink-0 rounded-full bg-white/20"></span>
+                    <Skeleton class="h-3.5 w-full rounded-md bg-white/5" />
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="mt-1.5 size-1.5 shrink-0 rounded-full bg-white/20"></span>
+                    <Skeleton class="h-3.5 w-4/5 rounded-md bg-white/5" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Actions & Passing Score -->
+              <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                <div class="flex flex-wrap items-center gap-3">
+                  <Skeleton class="h-10 w-40 rounded-xl border-[1.5px] border-white/10 bg-white/5" />
+                  <Skeleton class="h-10 w-32 rounded-xl border-[1.5px] border-white/10 bg-white/5" />
+                </div>
+                <Skeleton class="h-4 w-48 rounded-md bg-white/5" />
+              </div>
+            </div>
+          </div>
+        ))}
       </section>
     </div>
   </div>
@@ -115,24 +189,12 @@ const { variant = "overview" } = Astro.props;
 
 {variant === "modelltests" && (
   <div class="relative min-h-dvh py-8">
-    <div>
-      <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12">
-        <div class="flex flex-col items-center text-center">
-          <Skeleton class="mbe-4 h-10 w-44 rounded-full bg-white/15 tablet:h-11 tablet:w-48" />
-          <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-lg rounded-md bg-white/15" />
-          <Skeleton class="mx-auto h-6 w-full max-w-xl rounded-md bg-white/5 tablet:h-7" />
-          <div class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8">
-            <div class="flex items-center gap-2">
-              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-              <Skeleton class="h-5 w-16 rounded-md bg-white/10 tablet:h-6 tablet:w-20" />
-            </div>
-            <div class="flex items-center gap-2">
-              <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-              <Skeleton class="h-5 w-16 rounded-md bg-white/10 tablet:h-6 tablet:w-20" />
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="space-y-8">
+      <!-- Glass Hero Header -->
+      <HeroSkeleton
+        variant="glass"
+        statsCount={2}
+      />
 
       <div class="mt-8 mb-12 flex justify-center">
         <Skeleton class="h-10 w-48 rounded-full border-[1.5px] border-white/20 bg-white/5" />
@@ -159,24 +221,11 @@ const { variant = "overview" } = Astro.props;
 
 {variant === "study" && (
   <div class="space-y-12 pbe-20">
-    <!-- Hero section -->
-    <div class="relative overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-5 shadow-2xl backdrop-blur-(--glass-blur) mbe-8 mobile:mbe-12 mobile:p-8 tablet:p-10 laptop:p-12">
-      <div class="flex flex-col items-center text-center">
-        <Skeleton class="mbe-4 h-10 w-24 rounded-full bg-white/15 tablet:h-11 tablet:w-28" />
-        <Skeleton class="mx-auto mbe-4 h-9 mobile:h-10 tablet:h-12 laptop:h-14 w-3/4 max-w-lg rounded-md bg-white/15" />
-        <Skeleton class="mx-auto h-6 w-full max-w-2xl rounded-md bg-white/5 tablet:h-7" />
-        <div class="mbs-6 flex flex-wrap justify-center gap-4 mobile:mbs-8 mobile:gap-6 tablet:gap-8">
-          <div class="flex items-center gap-2">
-            <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-            <Skeleton class="h-5 w-28 rounded-md bg-white/10 tablet:h-6 tablet:w-32" />
-          </div>
-          <div class="flex items-center gap-2">
-            <Skeleton class="size-5 shrink-0 rounded-full bg-white/10 tablet:size-6" />
-            <Skeleton class="h-5 w-20 rounded-md bg-white/10 tablet:h-6 tablet:w-24" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Compact Hero Header -->
+    <HeroSkeleton
+      variant="compact"
+      statsCount={2}
+    />
 
     <!-- Parts List -->
     <div class="space-y-16">
@@ -268,6 +317,16 @@ const { variant = "overview" } = Astro.props;
         <Skeleton class="h-8 w-64 rounded-md bg-white/15" />
         <Skeleton class="h-5 w-full max-w-2xl rounded-md bg-white/5" />
       </div>
+
+      <!-- Embedded Themen Navigation Bar -->
+      <nav class="mb-8 rounded-2xl border-[1.5px] border-white/5 bg-zinc-950/50 p-4 shadow-xl backdrop-blur-md">
+        <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-2">
+          {["n1", "n2", "n3", "n4", "n5", "n6"].map(() => (
+            <Skeleton class="h-8 w-24 rounded-full bg-white/10" />
+          ))}
+        </div>
+      </nav>
+
       <div class="grid grid-cols-1 gap-6 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
         {["tc1", "tc2", "tc3"].map(() => (
           <ThemaCardSkeleton />

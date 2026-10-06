@@ -42,7 +42,11 @@ const handleSignUp = async () => {
     class="flex h-125 flex-col justify-between md:h-118.75"
     @submit.prevent="handleSignUp"
   >
-    <div class="flex flex-col gap-4">
+    <fieldset
+      class="m-0 flex flex-col gap-4 border-0 p-0"
+      :disabled="isPending"
+    >
+      <legend class="sr-only">Registrierungsdaten</legend>
       <div class="hidden flex-col md:flex">
         <h3 class="font-display text-lg font-bold tracking-tight text-white">Registrieren</h3>
         <p class="mt-1 text-[12px] text-text-muted">
@@ -115,8 +119,8 @@ const handleSignUp = async () => {
           />
           <button
             type="button"
-            tabindex="-1"
             :disabled="isPending"
+            :aria-pressed="showPassword"
             :aria-label="showPassword ? 'Passwort verbergen' : 'Passwort anzeigen'"
             class="absolute top-1/2 right-3.5 -translate-y-1/2 cursor-pointer border-none bg-transparent p-0 text-text-muted transition-colors duration-300 hover:text-orange focus:outline-hidden"
             @click="showPassword = !showPassword"
@@ -159,7 +163,7 @@ const handleSignUp = async () => {
           />
         </div>
       </div>
-    </div>
+    </fieldset>
 
     <!-- Bottom: submit + divider + social -->
     <div class="mt-4 flex flex-col gap-3">
@@ -176,7 +180,7 @@ const handleSignUp = async () => {
           class="absolute inset-0 flex items-center"
           aria-hidden="true"
         >
-          <div class="w-full border-t border-slate-800/60" />
+          <hr class="m-0 w-full border-t border-slate-800/60" />
         </div>
         <span
           class="relative bg-[#1a1c29] px-3 text-[10px] font-bold tracking-widest text-text-muted/70 uppercase select-none"

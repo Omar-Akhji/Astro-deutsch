@@ -539,10 +539,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div
+  <section
     class="w-full rounded-2xl border-[1.5px] bg-linear-to-b from-white/5 to-white/2 p-4 shadow-xl backdrop-blur-xl transition-colors duration-300 tablet:p-5"
     :class="isPlaying ? 'border-yellow/30 shadow-yellow/5' : 'border-white/15'"
-    role="region"
     :aria-label="title"
   >
     <!-- Header Row: Title, Live Status, Equalizer, Counter -->
@@ -695,6 +694,7 @@ onBeforeUnmount(() => {
             :key="rate.value"
             :ref="(el) => setSpeedButtonRef(rate.value, el)"
             type="button"
+            :aria-pressed="currentRate === rate.value"
             class="relative z-10 rounded-full px-3 py-1 text-xs font-semibold transition-colors duration-200 outline-none focus:outline-none focus-visible:outline-none"
             :class="
               currentRate === rate.value ? 'font-bold text-black' : 'text-mist-400 hover:text-white'
@@ -710,6 +710,17 @@ onBeforeUnmount(() => {
 
     <!-- Progress Track & Live Sentence Preview -->
     <div class="mt-3.5 space-y-1.5">
+      <label :for="`audio-progress-${instanceId}`" class="sr-only">
+        Wiedergabefortschritt
+      </label>
+      <progress
+        :id="`audio-progress-${instanceId}`"
+        class="sr-only"
+        max="100"
+        :value="progressPercent"
+      >
+        {{ progressPercent }}%
+      </progress>
       <button
         type="button"
         class="relative block h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 p-0 transition-colors hover:bg-white/15 outline-none focus:outline-none focus-visible:outline-none ring-0 focus:ring-0"
@@ -733,5 +744,5 @@ onBeforeUnmount(() => {
         <span class="shrink-0 font-mono font-medium text-yellow/90">{{ progressPercent }}%</span>
       </div>
     </div>
-  </div>
+  </section>
 </template>

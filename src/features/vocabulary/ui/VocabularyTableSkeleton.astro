@@ -2,31 +2,84 @@
 import Skeleton from "@/shared/ui/Skeleton.astro";
 
 interface Props {
-  rows?: number;
+  sectionsCount?: number;
+  rowsPerSection?: number;
 }
 
-const { rows = 6 } = Astro.props;
-const rowList = Array.from({ length: rows }, (_, index) => `row-${index}`);
+const { sectionsCount = 2, rowsPerSection = 4 } = Astro.props;
+const sections = Array.from({ length: sectionsCount }, (_, index) => `sec-${index}`);
+const rows = Array.from({ length: rowsPerSection }, (_, index) => `row-${index}`);
 ---
 
-<div class="overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card shadow-sm backdrop-blur-(--glass-blur)">
-  <div class="has-scrollbar overflow-x-auto px-4 pb-4">
-    <div class="w-full">
-      <div class="flex border-b border-(--glass-border) px-3 pbs-3 text-xs uppercase @md:px-4 @md:pbs-4 @md:text-sm">
-        <Skeleton class="h-4 flex-1 rounded-md bg-white/10" />
-        <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
-        <Skeleton class="ml-4 h-4 flex-1 rounded-md bg-white/10" />
-      </div>
-      {rowList.map(() => (
-        <div class="flex items-center border-b border-white/5 px-3 py-3 @md:px-4 @md:py-3.5">
-          <div class="flex flex-1 items-center gap-2.5">
-            <Skeleton class="size-7 shrink-0 rounded-lg bg-white/10" />
-            <Skeleton class="h-5 w-24 rounded-md bg-white/10" />
-          </div>
-          <Skeleton class="ml-4 h-5 flex-1 rounded-md bg-white/5" />
-          <Skeleton class="ml-4 h-5 flex-1 rounded-md bg-white/5" />
-        </div>
-      ))}
+<div class="space-y-6">
+  <!-- Category Overview Bar with Border -->
+  <div class="flex flex-wrap items-center justify-between gap-3 rounded-2xl border-[1.5px] border-white/10 bg-white/2 p-4 shadow-sm backdrop-blur-md">
+    <div>
+      <Skeleton class="h-5 w-48 rounded-md bg-white/15 @md:h-6 @md:w-56" />
+      <Skeleton class="mt-1 h-3.5 w-64 max-w-full rounded-md bg-white/5 @md:w-80" />
     </div>
+
+    <div class="flex flex-wrap items-center gap-2">
+      <Skeleton class="h-6 w-24 rounded-full border-[1.5px] border-white/10 bg-white/5" />
+      <Skeleton class="h-6 w-22 rounded-full border-[1.5px] border-white/10 bg-white/5" />
+      <Skeleton class="h-6 w-24 rounded-full border-[1.5px] border-white/10 bg-white/5" />
+    </div>
+  </div>
+
+  <!-- Category Sections with Header Banners & Word Rows -->
+  <div class="space-y-6">
+    {sections.map(() => (
+      <div class="overflow-hidden rounded-2xl border-2 border-white/10 bg-card/60 shadow-lg backdrop-blur-(--glass-blur)">
+        <!-- Section Header Banner with bottom border -->
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 bg-white/5 px-4 py-3.5 @md:px-6">
+          <div class="flex items-center gap-3">
+            <Skeleton class="h-6 w-20 rounded-lg border-[1.5px] border-white/10 bg-white/10" />
+            <Skeleton class="h-4 w-32 rounded-md bg-white/10" />
+          </div>
+
+          <div class="flex items-center gap-3">
+            <Skeleton class="h-5 w-16 rounded-md bg-white/10" />
+            <Skeleton class="h-5 w-20 rounded-full border-[1.5px] border-white/10 bg-white/5" />
+          </div>
+        </div>
+
+        <!-- Direct Word List Table matching live table classes exactly -->
+        <div class="has-scrollbar overflow-x-auto">
+          <table class="inline-full border-collapse text-left">
+            <tbody class="divide-y divide-white/5">
+              {rows.map(() => (
+                <tr>
+                  <!-- German Word Column -->
+                  <td class="px-4 py-3.5 font-medium @md:px-6">
+                    <div class="flex items-start gap-3">
+                      <!-- Audio Pronunciation Button -->
+                      <Skeleton class="mt-0.5 size-7 shrink-0 rounded-full border-[1.5px] border-white/15 bg-white/5" />
+
+                      <div class="min-w-0">
+                        <div class="flex flex-wrap items-baseline gap-2">
+                          <Skeleton class="h-5 w-10 rounded-md border-[1.5px] border-white/15 bg-white/10" />
+                          <Skeleton class="h-5 w-32 rounded-md bg-white/15" />
+                        </div>
+                        <Skeleton class="mt-1 h-3.5 w-56 rounded-md bg-white/5" />
+                      </div>
+                    </div>
+                  </td>
+
+                  <!-- English Column -->
+                  <td class="px-4 py-3.5 @md:px-6">
+                    <Skeleton class="h-4 w-28 rounded-md bg-white/10" />
+                  </td>
+
+                  <!-- Arabic Column -->
+                  <td class="px-4 py-3.5 text-right @md:px-6">
+                    <Skeleton class="ml-auto h-5 w-24 rounded-md bg-white/10" />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    ))}
   </div>
 </div>

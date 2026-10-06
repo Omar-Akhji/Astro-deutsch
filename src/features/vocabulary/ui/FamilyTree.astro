@@ -55,7 +55,13 @@ const getCardClasses = (member: FamilyMember) => {
 };
 ---
 
-<div class="@container flex flex-col items-center gap-2 p-2 @md:p-4">
+<figure
+  class="@container flex flex-col items-center gap-2 p-2 @md:p-4"
+  role="group"
+>
+  <figcaption class="sr-only">
+    Stammbaum der Verwandtschaftsverhältnisse auf Deutsch und Arabisch
+  </figcaption>
   {levels.map((levelMembers, levelIndex) => (
     <div
       class="flex w-full flex-col items-center"
@@ -87,6 +93,7 @@ const getCardClasses = (member: FamilyMember) => {
                 <div
                   class="font-arabic text-sm font-medium text-white/80 @md:text-base"
                   dir="rtl"
+                  lang="ar"
                 >
                   {group[0].arabic}
                 </div>
@@ -112,6 +119,7 @@ const getCardClasses = (member: FamilyMember) => {
                 <div
                   class="font-arabic text-sm font-medium text-white/80 @md:text-base"
                   dir="rtl"
+                  lang="ar"
                 >
                   {group[1].arabic}
                 </div>
@@ -132,6 +140,7 @@ const getCardClasses = (member: FamilyMember) => {
               <div
                 class="font-arabic text-sm font-medium text-white/80 @md:text-base"
                 dir="rtl"
+                lang="ar"
               >
                 {group.arabic}
               </div>
@@ -146,4 +155,4 @@ const getCardClasses = (member: FamilyMember) => {
       )}
     </div>
   ))}
-</div>
+</figure>

@@ -52,9 +52,17 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="p-8 text-center">
+  <section
+    aria-labelledby="quiz-result-heading"
+    class="p-8 text-center"
+  >
     <AnimateOnScroll animation="fade-up">
-      <h2 class="mb-2 text-3xl font-semibold text-white text-shadow-sm">Ergebnis</h2>
+      <h2
+        id="quiz-result-heading"
+        class="mb-2 text-3xl font-semibold text-white text-shadow-sm"
+      >
+        Ergebnis
+      </h2>
     </AnimateOnScroll>
 
     <AnimateOnScroll
@@ -96,7 +104,20 @@ onUnmounted(() => {
       :delay="200"
     >
       <div class="relative mx-auto mb-8 flex size-40 items-center justify-center">
-        <svg class="h-full w-full -rotate-90 transform">
+        <label for="quiz-score-meter" class="sr-only">Testergebnis</label>
+        <meter
+          id="quiz-score-meter"
+          class="sr-only"
+          min="0"
+          :max="props.total"
+          :value="props.score"
+          :low="props.total * 0.6"
+          :high="props.total * 0.8"
+          :optimum="props.total"
+        >
+          {{ displayedPercent }}%
+        </meter>
+        <svg class="h-full w-full -rotate-90 transform" aria-hidden="true">
           <circle
             cx="80"
             cy="80"

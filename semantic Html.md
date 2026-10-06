@@ -1,4 +1,4 @@
-# The Complete HTML Cheat Sheet — June 2026 Edition
+# The Complete HTML Cheat Sheet — October 2026 Edition
 
 > **What is Semantic HTML?** Semantic HTML uses markup to reinforce the _meaning_ of content, not
 > just its appearance. Example: `<article>` defines self-contained content. `<div>` has no meaning —
@@ -6,20 +6,31 @@
 > 2026, it increasingly **replaces JavaScript** for interactivity that used to require a library
 > (dropdowns, tooltips, dialogs, popovers, declarative buttons).
 
+<!-- ----------------------------------------- -->
+
 > **What is Baseline?** "Baseline" (defined by the WebDX Community Group, surfaced on MDN and
-> web.dev) has two stages:
+> web.dev) has two official stages. This cheat sheet adds two informal labels for features that
+> haven't reached either one yet:
 >
 > - 🆕 **Newly available** — works in the current stable release of Chrome, Edge, Firefox, **and**
 >   Safari. Safe to ship today for users on up-to-date browsers.
 > - ✅ **Widely available** — 30 months have passed since "newly available." Safe to use without a
 >   second thought, even for legacy device support.
-> - 🟡 **Limited availability** — shipped in at least one major engine but not yet interoperable.
->   Treat as progressive enhancement, behind `@supports`, with a fallback.
-> - ⚗️ **Experimental** — behind a flag or only in a preview/nightly channel. Not production-safe.
+> - 🟡 **Limited availability** _(informal label)_ — shipped in at least one major engine but not
+>   yet interoperable. Treat as progressive enhancement, behind `@supports` or feature detection,
+>   with a fallback.
+> - ⚗️ **Experimental** _(informal label)_ — behind a flag, in an origin trial, or only in a
+>   beta/preview channel. Not production-safe.
 >
-> This edition reflects the state of the web platform as of **June 27, 2026**. Several features that
-> were "Newly available" or "🟡 Limited" in the April 2026 edition have since shipped further (or,
-> in a couple of cases, the recommended syntax changed — see the callouts marked ⚠️ **Correction**).
+> **Edition snapshot — October 5, 2026.** As of web.dev's September 2026 round-up (published October
+> 2), the latest stable engines are **Chrome 154**, **Firefox 157**, and **Safari 27** (released
+> September 14, 2026). Chrome and Firefox moved to a **two-week release cadence** in September 2026,
+> so "current stable" now changes faster than it used to. Betas in flight: Chrome 155/156, Firefox
+> 158, Safari 27.2.
+>
+> This edition supersedes the June 27, 2026 one. Several features changed status (Safari 27 alone
+> closed a handful of gaps), and a few claims in the June edition were wrong or have been overtaken
+> — see the callouts marked ⚠️ **Correction** and the _What's New_ tables at the end.
 
 ---
 
@@ -57,7 +68,7 @@
 | `<body> … </body>`           | Container for all visible page content.                                                                           |
 | `<title> … </title>`         | **Mandatory.** Sets the tab name, browser history label, and search engine headline. Keep it under 60 characters. |
 
-> **Minimal HTML5 Boilerplate (June 2026)**
+> **Minimal HTML5 Boilerplate (October 2026)**
 >
 > ```html
 > <!DOCTYPE html>
@@ -120,18 +131,18 @@
 
 ### `<script>` Key Attributes
 
-| Attribute                                  | Description                                                                                                                                           |
-| :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `src="url"`                                | Path to an external JS file.                                                                                                                          |
-| `defer`                                    | Downloads in parallel; executes **after** HTML is fully parsed. **Preferred for most scripts.** Preserves execution order.                            |
-| `async`                                    | Downloads in parallel; executes **immediately** when ready. Order is not guaranteed. Best for independent analytics-type scripts.                     |
-| `type="module"`                            | Treats the script as an ES module. Automatically deferred. Enables `import`/`export` syntax.                                                          |
-| `type="speculationrules"`                  | 🟡 **Chromium-only, not Baseline.** Holds a JSON ruleset for the Speculation Rules API (prefetch/prerender future navigations). See §17.              |
-| `crossorigin="anonymous\|use-credentials"` | Enables CORS requests for scripts from a different origin (required for `integrity` checking).                                                        |
-| `integrity="sha384-…"`                     | Subresource Integrity (SRI) hash. Browser refuses to execute the script if the hash doesn't match.                                                    |
-| `fetchpriority="high\|low\|auto"`          | Hints the browser to prioritize or deprioritize fetching this script. ✅ **Baseline.**                                                                |
-| `blocking="render"`                        | Blocks rendering until the script executes. Use only for critical render-blocking scripts — measure the impact on Core Web Vitals before shipping it. |
-| `nomodule`                                 | Script is only loaded by browsers that do **not** support ES modules. Used for legacy fallbacks.                                                      |
+| Attribute                                  | Description                                                                                                                                                                                                                                       |
+| :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `src="url"`                                | Path to an external JS file.                                                                                                                                                                                                                      |
+| `defer`                                    | Downloads in parallel; executes **after** HTML is fully parsed. **Preferred for most scripts.** Preserves execution order.                                                                                                                        |
+| `async`                                    | Downloads in parallel; executes **immediately** when ready. Order is not guaranteed. Best for independent analytics-type scripts.                                                                                                                 |
+| `type="module"`                            | Treats the script as an ES module. Automatically deferred. Enables `import`/`export` syntax.                                                                                                                                                      |
+| `type="speculationrules"`                  | ⚗️ **Chromium-only, not Baseline** (Safari ships an implementation that is off by default; Firefox hasn\'t shipped it). Holds a JSON ruleset for the Speculation Rules API (prefetch/prerender future navigations). See §17.                      |
+| `crossorigin="anonymous\|use-credentials"` | Enables CORS requests for scripts from a different origin (required for `integrity` checking).                                                                                                                                                    |
+| `integrity="sha384-…"`                     | Subresource Integrity (SRI) hash. Browser refuses to execute the script if the hash doesn't match.                                                                                                                                                |
+| `fetchpriority="high\|low\|auto"`          | Hints the browser to prioritize or deprioritize fetching this script. ✅ **Baseline.**                                                                                                                                                            |
+| `blocking="render"`                        | Blocks rendering until the script executes. Use only for critical render-blocking scripts — measure the impact on Core Web Vitals before shipping it. Also valid on `<link>` and `<style>`; part of the Interop 2026 view-transitions focus area. |
+| `nomodule`                                 | Script is only loaded by browsers that do **not** support ES modules. Used for legacy fallbacks.                                                                                                                                                  |
 
 ### `<link>` Key Attributes & `rel` Values
 
@@ -301,26 +312,26 @@ Used by Facebook, LinkedIn, Slack, and most social platforms to generate link pr
 
 ## 6. Links
 
-| Tag / Attribute                     | Description                                                                                                                                                                            |
-| :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<a href="url"> … </a>`             | Anchor — creates a hyperlink. The `href` can be a URL, `#id`, `mailto:`, `tel:`, or a relative path.                                                                                   |
-| `href="#element-id"`                | Navigates to an element with that `id` on the same page (in-page anchor link).                                                                                                         |
-| `href="mailto:email@example.com"`   | Opens the user's mail client with a new message addressed to the given email.                                                                                                          |
-| `href="tel:+212600000000"`          | Creates a clickable phone number. Essential for mobile users.                                                                                                                          |
-| `href="sms:+212600000000"`          | Opens the SMS app on mobile devices.                                                                                                                                                   |
-| `target="_blank"`                   | Opens link in a **new tab**. Always combine with `rel="noopener noreferrer"`.                                                                                                          |
-| `target="_self"`                    | Opens in the same tab (default).                                                                                                                                                       |
-| `target="_parent"`                  | Opens in the parent browsing context (iframes).                                                                                                                                        |
-| `target="_top"`                     | Opens in the full body of the window, breaking out of all iframes.                                                                                                                     |
-| `rel="noopener noreferrer"`         | **Security requirement** for `target="_blank"`. Prevents the opened page from accessing `window.opener`.                                                                               |
-| `rel="nofollow"`                    | Tells search engines not to pass SEO authority ("link juice") to the target.                                                                                                           |
-| `rel="sponsored"`                   | Marks a paid or advertising link (Google guideline).                                                                                                                                   |
-| `rel="ugc"`                         | Marks user-generated content links (comments, forums).                                                                                                                                 |
-| `download` or `download="filename"` | Prompts browser to download the target resource rather than navigate to it.                                                                                                            |
-| `hreflang="lang-code"`              | Indicates the language of the linked document (e.g., `fr`, `ar`, `zh-Hans`).                                                                                                           |
-| `referrerpolicy=""`                 | Controls how much referrer information is sent. Values: `no-referrer`, `origin`, `strict-origin-when-cross-origin`.                                                                    |
-| `ping="url"`                        | Space-separated list of URLs notified (via POST) when the link is followed. Used for analytics.                                                                                        |
-| `interestfor="id"`                  | 🟡 **Emerging — see §13.** Turns an `<a>` (or `<button>`) into an "interest invoker": hovering or focusing it can reveal a linked `popover="hint"` element, declaratively, without JS. |
+| Tag / Attribute                     | Description                                                                                                                                                                                                                                                                                            |
+| :---------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<a href="url"> … </a>`             | Anchor — creates a hyperlink. The `href` can be a URL, `#id`, `mailto:`, `tel:`, or a relative path.                                                                                                                                                                                                   |
+| `href="#element-id"`                | Navigates to an element with that `id` on the same page (in-page anchor link).                                                                                                                                                                                                                         |
+| `href="mailto:email@example.com"`   | Opens the user's mail client with a new message addressed to the given email.                                                                                                                                                                                                                          |
+| `href="tel:+212600000000"`          | Creates a clickable phone number. Essential for mobile users.                                                                                                                                                                                                                                          |
+| `href="sms:+212600000000"`          | Opens the SMS app on mobile devices.                                                                                                                                                                                                                                                                   |
+| `target="_blank"`                   | Opens link in a **new tab**. Always combine with `rel="noopener noreferrer"`.                                                                                                                                                                                                                          |
+| `target="_self"`                    | Opens in the same tab (default).                                                                                                                                                                                                                                                                       |
+| `target="_parent"`                  | Opens in the parent browsing context (iframes).                                                                                                                                                                                                                                                        |
+| `target="_top"`                     | Opens in the full body of the window, breaking out of all iframes.                                                                                                                                                                                                                                     |
+| `rel="noopener noreferrer"`         | **Security requirement** for `target="_blank"`. Prevents the opened page from accessing `window.opener`.                                                                                                                                                                                               |
+| `rel="nofollow"`                    | Tells search engines not to pass SEO authority ("link juice") to the target.                                                                                                                                                                                                                           |
+| `rel="sponsored"`                   | Marks a paid or advertising link (Google guideline).                                                                                                                                                                                                                                                   |
+| `rel="ugc"`                         | Marks user-generated content links (comments, forums).                                                                                                                                                                                                                                                 |
+| `download` or `download="filename"` | Prompts browser to download the target resource rather than navigate to it.                                                                                                                                                                                                                            |
+| `hreflang="lang-code"`              | Indicates the language of the linked document (e.g., `fr`, `ar`, `zh-Hans`).                                                                                                                                                                                                                           |
+| `referrerpolicy=""`                 | Controls how much referrer information is sent. Values: `no-referrer`, `origin`, `strict-origin-when-cross-origin`.                                                                                                                                                                                    |
+| `ping="url"`                        | Space-separated list of URLs notified (via POST) when the link is followed. Used for analytics.                                                                                                                                                                                                        |
+| `interestfor="id"`                  | 🟡 **Chromium-only (Chrome/Edge 142+) — see §13.** Turns an `<a>` (or `<button>`) into an "interest invoker": hovering or focusing it can reveal a linked `popover="hint"` element, declaratively, without JS. Firefox and Safari have not shipped it, so keep a click-based path to the same content. |
 
 > **Modern security pattern for external links:**
 >
@@ -339,25 +350,27 @@ Used by Facebook, LinkedIn, Slack, and most social platforms to generate link pr
 
 ### `<img>` Attributes
 
-| Attribute                         | Description                                                                                                             |
-| :-------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| `src="url"`                       | **Required.** Path to the image file.                                                                                   |
-| `alt="text"`                      | **Required.** Alternative text for screen readers and when the image fails to load. Use `alt=""` for decorative images. |
-| `width=""` / `height=""`          | Intrinsic dimensions in pixels. **Always set these** — prevents Cumulative Layout Shift (CLS).                          |
-| `loading="lazy\|eager"`           | `lazy` defers loading until near the viewport. ✅ **Baseline.** Never lazy-load the LCP (hero) image.                   |
-| `decoding="async\|sync\|auto"`    | Hints whether image decoding can happen off the main thread.                                                            |
-| `srcset="" sizes=""`              | Provides multiple resolutions/widths for the browser to choose from responsively.                                       |
-| `referrerpolicy=""`               | Controls the `Referer` header sent when fetching the image.                                                             |
-| `ismap`                           | Marks the image as a server-side image map.                                                                             |
-| `usemap="#mapname"`               | Associates the image with a client-side image map.                                                                      |
-| `elementtiming="label"`           | Registers the image for the Element Timing API (performance observability).                                             |
-| `fetchpriority="high\|low\|auto"` | Prioritizes the LCP candidate image above other resources. ✅ **Baseline.**                                             |
+| Attribute                         | Description                                                                                                                                                                                                                                                                                                                                   |
+| :-------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src="url"`                       | **Required.** Path to the image file.                                                                                                                                                                                                                                                                                                         |
+| `alt="text"`                      | **Required.** Alternative text for screen readers and when the image fails to load. Use `alt=""` for decorative images.                                                                                                                                                                                                                       |
+| `width=""` / `height=""`          | Intrinsic dimensions in pixels. **Always set these** — prevents Cumulative Layout Shift (CLS).                                                                                                                                                                                                                                                |
+| `loading="lazy\|eager"`           | `lazy` defers loading until near the viewport. ✅ **Baseline.** Never lazy-load the LCP (hero) image.                                                                                                                                                                                                                                         |
+| `decoding="async\|sync\|auto"`    | Hints whether image decoding can happen off the main thread.                                                                                                                                                                                                                                                                                  |
+| `srcset="" sizes=""`              | Provides multiple resolutions/widths for the browser to choose from responsively.                                                                                                                                                                                                                                                             |
+| `sizes="auto"`                    | 🆕 **Baseline newly available (September 2026, when Safari 27 joined Chrome/Edge 126 and Firefox 150).** On an `<img loading="lazy">`, `sizes="auto"` (or a `sizes` list that _starts_ with `auto`) lets the browser pick the `srcset` candidate from the image\'s rendered layout width instead of a hand-written `sizes` string. See below. |
+| `referrerpolicy=""`               | Controls the `Referer` header sent when fetching the image.                                                                                                                                                                                                                                                                                   |
+| `ismap`                           | Marks the image as a server-side image map.                                                                                                                                                                                                                                                                                                   |
+| `usemap="#mapname"`               | Associates the image with a client-side image map.                                                                                                                                                                                                                                                                                            |
+| `elementtiming="label"`           | Registers the image for the Element Timing API (performance observability).                                                                                                                                                                                                                                                                   |
+| `fetchpriority="high\|low\|auto"` | Prioritizes the LCP candidate image above other resources. ✅ **Baseline.**                                                                                                                                                                                                                                                                   |
 
 > 🟡 **Emerging:** Chrome 148 (May 2026) introduced **native lazy loading for `<video>` and
 > `<audio>`** via the same `loading="lazy"` attribute already used on `<img>`/`<iframe>`. This
 > delays fetching the media resource until it nears the viewport. It is Chromium-only for now — not
 > yet Baseline — so treat it as a free progressive enhancement rather than something to rely on
-> cross-browser.
+> cross-browser. The Chrome 153–154, Firefox 155–157, and Safari 27 release highlights don't list
+> it, so it is still Chromium-only as far as I can tell.
 
 ### Responsive Images with `<picture>`
 
@@ -397,6 +410,31 @@ Used by Facebook, LinkedIn, Slack, and most social platforms to generate link pr
 >   `imagesrcset`/`imagesizes` so the browser doesn't have to wait for CSS/layout to know which size
 >   to fetch:
 >   `<link rel="preload" as="image" href="hero-960.jpg" imagesrcset="hero-480.jpg 480w, hero-960.jpg 960w, hero-1920.jpg 1920w" imagesizes="100vw" fetchpriority="high">`
+
+### `sizes="auto"` — let layout choose the image (🆕 Baseline, September 2026)
+
+For lazy-loaded images the browser can now choose the `srcset` candidate from the image's real
+rendered width, so you no longer maintain a `sizes` string that drifts out of sync with your CSS.
+
+```html
+<img
+  src="card-800.jpg"
+  srcset="card-400.jpg 400w, card-800.jpg 800w, card-1600.jpg 1600w"
+  sizes="auto"
+  width="800"
+  height="450"
+  loading="lazy"
+  decoding="async"
+  alt="Descriptive alt text here"
+/>
+```
+
+> - `auto` only applies together with `loading="lazy"`. An eager image is fetched before layout is
+>   known, so the browser can't use its rendered width — keep an explicit `sizes` value on your
+>   above-the-fold hero image.
+> - Always keep `width`/`height` so the layout box is stable before the image loads.
+> - A `sizes` list may start with `auto` and carry a fallback after it, e.g.
+>   `sizes="auto, (max-width: 600px) 100vw, 800px"`, for engines that don't understand `auto`.
 
 ### Image Maps
 
@@ -539,12 +577,22 @@ select,
 }
 ```
 
-**Status as of June 2026:** Chrome 135 shipped full stable support. Safari has it documented in
-Technology Preview. Firefox is actively prototyping it behind a flag. This is **not Baseline** —
-ship it as a progressive enhancement with `@supports(appearance: base-select)`, and keep your
-existing JS-driven or native `<select>` as the fallback. It retains native accessibility mappings
-(keyboard navigation, `aria-selected`) automatically, which is the main reason it's worth the wait
-over a from-scratch ARIA combobox.
+**Status as of October 2026:** 🟡 **Two of three engines.** Chrome/Edge 135 shipped it first, and
+**Safari 27 (September 14, 2026) added `appearance: base-select` and `<selectedcontent>`**. Firefox
+still has it behind a flag, so it is **not Baseline** — ship it as a progressive enhancement with
+`@supports (appearance: base-select)`, and keep your existing JS-driven or native `<select>` as the
+fallback. It retains native accessibility mappings (keyboard navigation, `aria-selected`)
+automatically, which is the main reason it's worth the wait over a from-scratch ARIA combobox.
+
+- **Rich `<option>` content** (icons, two-line labels) is allowed once you opt in with
+  `appearance: base-select`.
+- **Several `<selectedcontent>` elements** all stay in sync with the chosen option as of Chrome/Edge
+  150 (before that, only the first one in DOM order updated).
+- **Inside a tooltip-style popover:** Chrome/Edge 150 made it safe to nest a customizable `<select>`
+  inside a `popover="hint"` element (details in §13).
+- **Expect small cross-engine differences** in the default theme. Safari 27 shipped fixes for hover
+  repainting, anchor-positioned picker placement, and default `optgroup`/picker styles — style the
+  control explicitly instead of leaning on the UA stylesheet.
 
 ### Submit Button Override Attributes
 
@@ -564,6 +612,23 @@ vs. "Publish").
 > - Use `fieldset` + `legend` for groups of related controls (radio buttons, checkboxes)
 > - Use `autocomplete` attributes to help users and password managers
 > - Never rely solely on `placeholder` text as a label
+
+### Auto-growing controls — `field-sizing`
+
+🆕 **Baseline newly available (June 2026).** `field-sizing: content` (CSS) makes `<textarea>`,
+`<input>`, and `<select>` size themselves to their content instead of a fixed `cols`/`rows`/`size`
+box — the "auto-growing textarea" that used to need a `scrollHeight` JavaScript hack.
+
+```css
+textarea {
+  field-sizing: content;
+  min-height: 3lh; /* never collapse below ~3 lines */
+  max-height: 12lh; /* then scroll instead of growing forever */
+}
+```
+
+> Always pair it with `min-*`/`max-*` limits. Safari support arrived in 26.2, which is what made
+> this Baseline.
 
 ---
 
@@ -611,6 +676,12 @@ Tables are for **tabular data only** — not for page layout.
 | `loading="lazy"`                 | 🟡 **Chromium-only (Chrome 148+), not Baseline.** Defers fetching the media resource until it nears the viewport — the same hint already standard on `<img>`/`<iframe>`. |
 | `width=""` / `height=""`         | Dimensions in pixels. Specify to prevent layout shift.                                                                                                                   |
 | `crossorigin`                    | Enables CORS for the video. Required for use in `<canvas>`.                                                                                                              |
+
+> 🆕 **Media-state pseudo-classes:** `:paused` became Baseline newly available in August 2026 — it
+> matches an `<audio>`/`<video>` that is paused _or_ loaded but not yet playing, so player UI can
+> react in pure CSS. The rest of the family (`:playing`, `:seeking`, `:buffering`, `:stalled`,
+> `:muted`, `:volume-locked`) is an Interop 2026 focus area and shows up in the Chrome 156 beta;
+> treat those as 🟡 until they appear in a Baseline digest.
 
 ### Audio
 
@@ -672,29 +743,29 @@ Shares most attributes with `<video>` but without `poster`, `playsinline`, and `
 > **Why use semantic tags?** Browsers, search engines, and assistive technologies all understand the
 > page structure without extra ARIA annotations when you use the right semantic element.
 
-| Tag                                               | Description                                                                                                                                                                                                                                                                                 |
-| :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `<header> … </header>`                            | Introductory content for a page or section (logo, site name, main nav, hero). ≠ `<head>`.                                                                                                                                                                                                   |
-| `<footer> … </footer>`                            | Footer of the page or a section (copyright, secondary nav, contact info).                                                                                                                                                                                                                   |
-| `<main> … </main>`                                | The dominant, unique content of the `<body>`. **Use only one `<main>` per page.** Landmark for screen readers.                                                                                                                                                                              |
-| `<nav> … </nav>`                                  | A section with navigation links. A page can have multiple `<nav>` elements (primary, breadcrumb, footer nav).                                                                                                                                                                               |
-| `<section> … </section>`                          | A standalone thematic section. Should include a heading (`<h2>`–`<h6>`).                                                                                                                                                                                                                    |
-| `<article> … </article>`                          | Self-contained, independently distributable content (blog post, comment, product card, news item).                                                                                                                                                                                          |
-| `<aside> … </aside>`                              | Content tangentially related to the surrounding content — sidebar, pull quote, related links, ad.                                                                                                                                                                                           |
-| `<figure> … </figure>`                            | Self-contained content referenced from the main flow (image, chart, diagram, code block).                                                                                                                                                                                                   |
-| `<figcaption> … </figcaption>`                    | Caption or description for the parent `<figure>`.                                                                                                                                                                                                                                           |
-| `<search> … </search>`                            | ✅ **Baseline widely available (as of April 2026).** An explicit landmark wrapping a search form, filter UI, or any combination of submission controls representing a search experience. The browser assigns the element an implicit `role="search"` automatically — no manual ARIA needed. |
-| `<details> … </details>`                          | Disclosure widget — content is hidden by default; toggles open on click. No JavaScript required. Add `name="group-name"` (✅ Baseline) to multiple `<details>` elements to make them an **exclusive accordion** — opening one closes the others sharing the same name.                      |
-| `<summary> … </summary>`                          | The visible clickable heading for a `<details>` element. Clicking it toggles the rest of `<details>`.                                                                                                                                                                                       |
-| `<dialog> … </dialog>`                            | A native dialog or modal. Open with `.show()` (non-modal), `.showModal()` (modal with backdrop), or declaratively via `command="show-modal"`. See §13 for the full 2026 pattern, including `closedby`.                                                                                      |
-| `<menu> … </menu>`                                | An unordered list of interactive items (toolbar, context menu).                                                                                                                                                                                                                             |
-| `<mark> … </mark>`                                | Highlighted text — used for search result highlights, relevant passages.                                                                                                                                                                                                                    |
-| `<time datetime="2026-06-27T14:00"> … </time>`    | Human-readable date/time. `datetime` provides ISO 8601 machine-readable value.                                                                                                                                                                                                              |
-| `<address> … </address>`                          | Contact information for the author/owner of the nearest `<article>` or the document body.                                                                                                                                                                                                   |
-| `<progress max="100" value="70"> … </progress>`   | Completion progress bar. Omit `value` for indeterminate (loading animation).                                                                                                                                                                                                                |
-| `<meter min="0" max="100" value="70"> … </meter>` | Scalar gauge within a known range. Not for progress — use for storage, ratings, scores.                                                                                                                                                                                                     |
-| `<template> … </template>`                        | Inert HTML not rendered until cloned with JavaScript (`content.cloneNode(true)`). Core to Web Components.                                                                                                                                                                                   |
-| `<slot name="…"> … </slot>`                       | Placeholder in a Web Component shadow DOM. Lets users inject their own markup at that position.                                                                                                                                                                                             |
+| Tag                                               | Description                                                                                                                                                                                                                                                                                              |
+| :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<header> … </header>`                            | Introductory content for a page or section (logo, site name, main nav, hero). ≠ `<head>`.                                                                                                                                                                                                                |
+| `<footer> … </footer>`                            | Footer of the page or a section (copyright, secondary nav, contact info).                                                                                                                                                                                                                                |
+| `<main> … </main>`                                | The dominant, unique content of the `<body>`. **Use only one `<main>` per page.** Landmark for screen readers.                                                                                                                                                                                           |
+| `<nav> … </nav>`                                  | A section with navigation links. A page can have multiple `<nav>` elements (primary, breadcrumb, footer nav).                                                                                                                                                                                            |
+| `<section> … </section>`                          | A standalone thematic section. Should include a heading (`<h2>`–`<h6>`).                                                                                                                                                                                                                                 |
+| `<article> … </article>`                          | Self-contained, independently distributable content (blog post, comment, product card, news item).                                                                                                                                                                                                       |
+| `<aside> … </aside>`                              | Content tangentially related to the surrounding content — sidebar, pull quote, related links, ad.                                                                                                                                                                                                        |
+| `<figure> … </figure>`                            | Self-contained content referenced from the main flow (image, chart, diagram, code block).                                                                                                                                                                                                                |
+| `<figcaption> … </figcaption>`                    | Caption or description for the parent `<figure>`.                                                                                                                                                                                                                                                        |
+| `<search> … </search>`                            | ✅ **Baseline widely available (as of April 2026).** An explicit landmark wrapping a search form, filter UI, or any combination of submission controls representing a search experience. The browser assigns the element an implicit `role="search"` automatically — no manual ARIA needed.              |
+| `<details> … </details>`                          | Disclosure widget — content is hidden by default; toggles open on click. No JavaScript required. Add `name="group-name"` (✅ Baseline) to multiple `<details>` elements to make them an **exclusive accordion** — opening one closes the others sharing the same name.                                   |
+| `<summary> … </summary>`                          | The visible clickable heading for a `<details>` element. Clicking it toggles the rest of `<details>`.                                                                                                                                                                                                    |
+| `<dialog> … </dialog>`                            | A native dialog or modal. Open with `.show()` (non-modal), `.showModal()` (modal with backdrop), or declaratively via `command="show-modal"`. See §13 for the full 2026 pattern, including `closedby`.                                                                                                   |
+| `<menu> … </menu>`                                | An unordered list of interactive items (toolbar, context menu).                                                                                                                                                                                                                                          |
+| `<mark> … </mark>`                                | Highlighted text — used for search result highlights, relevant passages.                                                                                                                                                                                                                                 |
+| `<time datetime="2026-10-05T14:00"> … </time>`    | Human-readable date/time. `datetime` provides ISO 8601 machine-readable value.                                                                                                                                                                                                                           |
+| `<address> … </address>`                          | Contact information for the author/owner of the nearest `<article>` or the document body.                                                                                                                                                                                                                |
+| `<progress max="100" value="70"> … </progress>`   | Completion progress bar. Omit `value` for indeterminate (loading animation).                                                                                                                                                                                                                             |
+| `<meter min="0" max="100" value="70"> … </meter>` | Scalar gauge within a known range. Not for progress — use for storage, ratings, scores.                                                                                                                                                                                                                  |
+| `<template> … </template>`                        | Inert HTML not rendered until cloned with JavaScript (`content.cloneNode(true)`). Core to Web Components. With `shadowrootmode` it becomes a declarative shadow root (below); with `for` (⚗️ Chrome/Edge 150) it patches already-parsed parts of the document — see _Declarative partial updates_ below. |
+| `<slot name="…"> … </slot>`                       | Placeholder in a Web Component shadow DOM. Lets users inject their own markup at that position.                                                                                                                                                                                                          |
 
 ```html
 <header>
@@ -719,11 +790,11 @@ Shares most attributes with `<video>` but without `poster`, `playsinline`, and `
 
 ### Declarative Shadow DOM — Web Components without JavaScript
 
-🆕 **Baseline newly available since February 2024; expected to reach Widely available August 2026.**
-Normally a Shadow DOM tree can only be attached with the JavaScript `attachShadow()` method, which
-means a server-rendered Web Component has no encapsulated styling until JS runs — causing layout
-shift or a flash of unstyled content. A `<template>` with a `shadowrootmode` attribute fixes this by
-letting the HTML parser attach the shadow root directly, with zero JavaScript needed for the static
+✅ **Baseline widely available (August 2026)** — newly available since February 2024. Normally a
+Shadow DOM tree can only be attached with the JavaScript `attachShadow()` method, which means a
+server-rendered Web Component has no encapsulated styling until JS runs — causing layout shift or a
+flash of unstyled content. A `<template>` with a `shadowrootmode` attribute fixes this by letting
+the HTML parser attach the shadow root directly, with zero JavaScript needed for the static
 structure:
 
 ```html
@@ -739,17 +810,45 @@ structure:
 </user-card>
 ```
 
-| Attribute                       | Description                                                                                                                                  |
-| :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| `shadowrootmode="open\|closed"` | **Required to opt in.** Same meaning as the `mode` option of `attachShadow()`: `open` exposes `element.shadowRoot` to JS; `closed` hides it. |
-| `shadowrootclonable`            | If present, cloning the host element with `cloneNode()`/`importNode()` also clones its shadow root.                                          |
-| `shadowrootdelegatesfocus`      | If present, focusing the host delegates focus to the first focusable element inside the shadow tree.                                         |
-| `shadowrootserializable`        | If present, the shadow root is included when the page is serialized (e.g., via `getHTML()`).                                                 |
+| Attribute                                  | Description                                                                                                                                                                                   |
+| :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `shadowrootmode="open\|closed"`            | **Required to opt in.** Same meaning as the `mode` option of `attachShadow()`: `open` exposes `element.shadowRoot` to JS; `closed` hides it.                                                  |
+| `shadowrootclonable`                       | If present, cloning the host element with `cloneNode()`/`importNode()` also clones its shadow root.                                                                                           |
+| `shadowrootdelegatesfocus`                 | If present, focusing the host delegates focus to the first focusable element inside the shadow tree.                                                                                          |
+| `shadowrootserializable`                   | If present, the shadow root is included when the page is serialized (e.g., via `getHTML()`).                                                                                                  |
+| `shadowrootslotassignment="named\|manual"` | Sets the shadow root\'s slot-assignment mode: `named` (default) matches `slot` names; `manual` lets script assign nodes to slots. Safari 27 added support for it on declarative shadow roots. |
 
 > Calling `attachShadow()` later from JavaScript on an element that already has a
 > declaratively-created shadow root does not throw — it clears and reuses it. This is what lets a
 > Custom Element be upgraded for interactivity after its static markup has already rendered from the
 > server.
+
+### Declarative partial updates — `<template for>` and streaming out-of-order HTML
+
+⚗️ **Chromium-only (Chrome/Edge 150, July 2026); not in Firefox or Safari.** Part of a larger
+"same-document updates without JavaScript" effort (the WICG _declarative partial updates_ /
+_interleaved HTML streaming_ explainer). A `<template for>` element, together with `<?start>` and
+`<?end>` processing-instruction ranges in the existing document, lets later-arriving HTML patch a
+region that was already parsed — so a server can send a page shell immediately and fill in slow
+sections out of order, with no client-side script.
+
+- Treat it as a progressive enhancement for streamed, server-rendered pages. An engine that doesn't
+  understand it won't apply the patch, so the shell must be usable on its own (or you need a
+  script-based fallback).
+- The syntax and surrounding APIs are still evolving — check the explainer and MDN's `<template>`
+  page before relying on specifics.
+
+### Emerging elements to watch (October 2026 — not production-safe unless noted)
+
+| Element / feature             | Status                                                     | What it's for                                                                                                                                                                              |
+| :---------------------------- | :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<camera>`, `<microphone>`    | ⚗️ Chrome/Edge 153; not in Firefox or Safari               | User-activated, declarative controls for requesting a _single_ capability (video **or** audio capture) without a script-initiated permission prompt on page load. Builds on `<usermedia>`. |
+| `<usermedia>`                 | ⚗️ Origin trial (Edge)                                     | Browser-controlled element for requesting camera and/or microphone access, replacing JavaScript-driven permission requests.                                                                |
+| `<install>` + Web Install API | ⚗️ Chrome 156 beta; origin trial in Edge                   | Declaratively install another website as a web app (`navigator.install()` is the script equivalent).                                                                                       |
+| `<model>`                     | 🟡 Safari 27 on iOS, iPadOS, and macOS (not other engines) | Embeds an interactive 3D model in the page.                                                                                                                                                |
+| HTML in canvas                | ⚗️ Origin trial (Edge)                                     | Render HTML into a `<canvas>` via new drawing methods and a `paint` event.                                                                                                                 |
+| WebMCP                        | ⚗️ Origin trial (Edge)                                     | Lets a page register tools an in-browser agent can call on a user's behalf.                                                                                                                |
+| `focusgroup`                  | 🟡 Chrome/Edge 150                                         | Declarative arrow-key navigation for toolbars, tabs, and menus — see §13.                                                                                                                  |
 
 ---
 
@@ -761,22 +860,23 @@ longer require any JavaScript at all.**
 
 ### Status legend for this section
 
-| Marker | Meaning                                                                  |
-| :----- | :----------------------------------------------------------------------- |
-| ✅     | Baseline — works in current Chrome, Edge, Firefox, and Safari            |
-| 🆕     | Recently reached Baseline (within the last ~12 months)                   |
-| 🟡     | Shipped in 2+ engines but not yet interoperable — ship behind a fallback |
+| Marker | Meaning                                                                                 |
+| :----- | :-------------------------------------------------------------------------------------- |
+| ✅     | Baseline — works in current Chrome, Edge, Firefox, and Safari                           |
+| 🆕     | Recently reached Baseline (within the last ~12 months)                                  |
+| 🟡     | Shipped in at least one major engine but not yet interoperable — ship behind a fallback |
+| ⚗️     | Experimental — flag, origin trial, or beta channel only; not production-safe            |
 
 ### `popover` — the foundational attribute
 
-| Attribute / Value                               | Description                                                                                                                                                                                                                                                    |
-| :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `popover` / `popover=""` / `popover="auto"`     | ✅ **Baseline (Newly available Jan 2025).** Promotes the element to the top layer. `auto` popovers light-dismiss (Esc, click-outside) and close other open `auto` popovers when one opens.                                                                     |
-| `popover="manual"`                              | ✅ Must be explicitly shown/hidden via script or invoker. Doesn't light-dismiss. Multiple manual popovers can be open at once — good for toast notifications.                                                                                                  |
-| `popover="hint"`                                | 🟡 **Shipped in Chrome/Edge; Safari and Firefox catching up via the Interop 2026 effort.** A third category designed for tooltips: it light-dismisses and closes other `hint` popovers, but does **not** close `auto` popovers. Pair with `interestfor` below. |
-| `popovertarget="id"` / `popovertargetaction=""` | ✅ The original declarative attributes for `<button>`/`<input>` to show/hide/toggle a popover. Still valid; superseded in capability by `command`/`commandfor`.                                                                                                |
-| `::backdrop`                                    | ✅ CSS pseudo-element for styling the dimmed layer behind a modal `<dialog>` or popover.                                                                                                                                                                       |
-| `:popover-open`                                 | ✅ CSS pseudo-class matching an open popover (a `<dialog>` uses the `open` attribute/`:open` instead — see below).                                                                                                                                             |
+| Attribute / Value                               | Description                                                                                                                                                                                                                                                                                                                                                                                          |
+| :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `popover` / `popover=""` / `popover="auto"`     | ✅ **Baseline (Newly available Jan 2025).** Promotes the element to the top layer. `auto` popovers light-dismiss (Esc, click-outside) and close other open `auto` popovers when one opens.                                                                                                                                                                                                           |
+| `popover="manual"`                              | ✅ Must be explicitly shown/hidden via script or invoker. Doesn't light-dismiss. Multiple manual popovers can be open at once — good for toast notifications.                                                                                                                                                                                                                                        |
+| `popover="hint"`                                | 🟡 **Fully shipped in Chrome/Edge 151+ and Firefox 153+ (partial in Chrome 133–150 and Firefox 149–152). Safari: not in 27.** A third category designed for tooltips: it light-dismisses and closes other `hint` popovers, but does **not** close `auto` popovers. Pair with `interestfor` below. Part of the Interop 2026 dialogs-and-popovers focus area; Baseline is currently blocked on Safari. |
+| `popovertarget="id"` / `popovertargetaction=""` | ✅ The original declarative attributes for `<button>`/`<input>` to show/hide/toggle a popover. Still valid; superseded in capability by `command`/`commandfor`.                                                                                                                                                                                                                                      |
+| `::backdrop`                                    | ✅ CSS pseudo-element for styling the dimmed layer behind a modal `<dialog>` or popover.                                                                                                                                                                                                                                                                                                             |
+| `:popover-open`                                 | ✅ CSS pseudo-class matching an open popover (a `<dialog>` uses the `open` attribute/`:open` instead — see below).                                                                                                                                                                                                                                                                                   |
 
 ```html
 <button popovertarget="menu">Open Menu</button>
@@ -788,6 +888,15 @@ longer require any JavaScript at all.**
   <a href="/settings">Settings</a>
 </div>
 ```
+
+> **Hint-popover behavior change (Chrome/Edge 150):** opening a `popover="hint"` no longer closes
+> unrelated `auto` popovers. A hint now closes only when its ancestor `auto` popover closes or a
+> new, unrelated `auto` popover opens. You can also nest an `auto` popover _inside_ a hint — it then
+> behaves like a hint — which is what makes a customizable `<select>` inside a tooltip-style popover
+> workable.
+>
+> **`ToggleEvent.source`** (✅ Baseline newly available, 2026): the `toggle`/`beforetoggle` event
+> now tells you which invoker element triggered the open or close.
 
 ### Invoker Commands API — `command` / `commandfor`
 
@@ -875,12 +984,12 @@ wins, and the older pair is not being removed, so existing code keeps working.
 
 ### `<dialog>` and `closedby`
 
-| Feature                                    | Description                                                                                                                                                                                                                                                                                              |
-| :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `dialog.showModal()`                       | ✅ Opens as a modal: traps focus, makes the rest of the page `inert`, and is promoted to the top layer.                                                                                                                                                                                                  |
-| `dialog.show()`                            | ✅ Opens non-modally — the rest of the page stays interactive.                                                                                                                                                                                                                                           |
-| `dialog.close()` / `dialog.requestClose()` | ✅ `close()` closes immediately. `requestClose()` (Baseline May 2025) fires a cancelable `cancel` event first, so you can intercept and block the close (e.g., "unsaved changes" prompts).                                                                                                               |
-| `closedby="any\|closerequest\|none"`       | 🟡 **Shipped in Chrome, Edge, Firefox; Safari support expected via Interop 2026.** Declares, in HTML, which user actions can dismiss the dialog: `any` allows light-dismiss (click outside) + Esc; `closerequest` allows only Esc/back-gesture; `none` requires a script or invoker command to close it. |
+| Feature                                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dialog.showModal()`                       | ✅ Opens as a modal: traps focus, makes the rest of the page `inert`, and is promoted to the top layer.                                                                                                                                                                                                                                                                                                                                                               |
+| `dialog.show()`                            | ✅ Opens non-modally — the rest of the page stays interactive.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `dialog.close()` / `dialog.requestClose()` | ✅ `close()` closes immediately. `requestClose()` (Baseline May 2025) fires a cancelable `cancel` event first, so you can intercept and block the close (e.g., "unsaved changes" prompts).                                                                                                                                                                                                                                                                            |
+| `closedby="any\|closerequest\|none"`       | 🟡 **Chrome/Edge 134+ and Firefox 141+. Not in Safari 27 stable — it is only in Safari Technology Preview.** Declares, in HTML, which user actions can dismiss the dialog: `any` allows light-dismiss (click outside) + Esc; `closerequest` allows only Esc/back-gesture; `none` requires a script or invoker command to close it. It is an Interop 2026 focus area, so expect Safari to close the gap; until then, back it with the fallback below or use `popover`. |
 
 ```html
 <button
@@ -908,11 +1017,33 @@ wins, and the older pair is not being removed, so existing code keeps working.
 > (`<dialog popover>`), `closedby` does not currently apply — use `popover="auto"` (≈
 > `closedby="any"`) or `popover="manual"` (≈ `closedby="none"`) instead for that combination.
 
+**Fallback for engines without `closedby` (Safari 27 stable):**
+
+```js
+if (!("closedBy" in HTMLDialogElement.prototype)) {
+  document.addEventListener("click", (e) => {
+    const d = e.target; // a click on ::backdrop reports the <dialog> itself as the target
+    if (!(d instanceof HTMLDialogElement) || d.getAttribute("closedby") !== "any") return;
+    const r = d.getBoundingClientRect();
+    const inside =
+      e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+    if (!inside) d.close();
+  });
+}
+```
+
 ### Interest Invoker API — `interestfor`
 
-🟡 **Newest of the bunch — emerging, not Baseline.** Solves declarative hover/focus-triggered
-tooltips and hovercards, the one popover interaction `command`/`commandfor` doesn't cover (those
-only fire on click).
+🟡 **Chromium-only: Chrome/Edge 142+ (shipped October 2025). Firefox and Safari have not shipped
+it.** Mozilla's standards position is neutral, and WebKit's is waiting on a fresh evaluation after
+spec changes. Solves declarative hover/focus-triggered tooltips and hovercards, the one popover
+interaction `command`/`commandfor` doesn't cover (those only fire on click).
+
+> ⚠️ **Correction:** the June edition said Safari and Firefox would get this "via Interop 2026."
+> That was wrong — `interestfor` is **not** an Interop 2026 focus area (the `popover="hint"`,
+> `closedby`, and `:open` work is). A proposal to add it to Interop 2027 was opened on September
+> 4, 2026. Ship it as pure progressive enhancement: the content behind a tooltip must also be
+> reachable by a regular click-based control.
 
 ```html
 <button interestfor="callout">ℹ️</button>
@@ -930,6 +1061,36 @@ only fire on click).
   a navigation menu).
 - Tune timing with the `interest-delay`, `interest-delay-start`, and `interest-delay-end` CSS
   properties.
+- Styling hooks: `:interest-source` on the invoker and `:interest-target` on the target.
+- JavaScript: `interest` and `loseinterest` events fire on the target (an `InterestEvent` whose
+  `source` is the invoker), and `button.interestForElement` reflects the attribute.
+- Feature-detect with `'interestForElement' in HTMLButtonElement.prototype`. A
+  progressive-enhancement polyfill exists at `github.com/mfreed7/interestfor`.
+
+### `focusgroup` — declarative arrow-key navigation
+
+🟡 **Chromium-only (Chrome/Edge 150, July 2026).** Composite widgets — toolbars, tab lists, menus,
+radio-style groups — need the "roving tabindex" pattern: one Tab stop for the whole group, arrow
+keys to move within it, and focus restored to the last-used item when you tab back in. `focusgroup`
+provides all three from markup:
+
+```html
+<div
+  focusgroup="toolbar wrap"
+  aria-label="Formatting"
+>
+  <button>Bold</button>
+  <button>Italic</button>
+  <button>Underline</button>
+</div>
+```
+
+- It handles roving tabindex, arrow-key navigation, and focus memory — **but not semantics.** You
+  still supply the right role/labelling (here, an `aria-label`). In `"toolbar wrap"`, `toolbar` is
+  the group's behavior type and `wrap` makes arrow navigation wrap around at the ends.
+- Don't also hand-manage `tabindex` on the children; let the attribute own focus behavior.
+- Where it isn't supported the attribute is ignored and the buttons keep ordinary Tab stops —
+  usable, just less convenient — so it is safe as an enhancement.
 
 ### `:open` — one pseudo-class for every disclosure widget
 
@@ -990,41 +1151,47 @@ Tippy.js exist to do.
 
 ---
 
+> **Safari 27 anchor-positioning additions:** `position-anchor: normal | none`, transform-aware
+> anchoring, and `anchor-valid` / `anchor-visible` as shorter aliases in `position-visibility`.
+
+---
+
 ## 14. Global Attributes
 
 Global attributes can be applied to **any** HTML element.
 
-| Attribute                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `id="unique-name"`                                                  | Unique identifier. Used for CSS targeting, JS queries (`#id`), and in-page anchor links. Must be unique per page.                                                                                                                                                                                                                                                                                                                                                            |
-| `class="name1 name2"`                                               | One or more space-separated class names. The primary hook for CSS and JS targeting.                                                                                                                                                                                                                                                                                                                                                                                          |
-| `style="property: value"`                                           | Inline CSS. Use sparingly — prefer classes and external stylesheets.                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `title="text"`                                                      | Advisory tooltip text shown on hover. Not a substitute for `aria-label`.                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `lang="en"`                                                         | Language of the element's content. Overrides `<html lang="">` for that subtree.                                                                                                                                                                                                                                                                                                                                                                                              |
-| `dir="ltr\|rtl\|auto"`                                              | Text direction. `auto` detects from content — useful for user-submitted multilingual text.                                                                                                                                                                                                                                                                                                                                                                                   |
-| `tabindex="0\|-1\|N"`                                               | Controls keyboard focus order. `0` = natural order; `-1` = JS-focusable only; positive integers set explicit order (avoid).                                                                                                                                                                                                                                                                                                                                                  |
-| `hidden` / `hidden="until-found"`                                   | Hides the element from all output modes. Plain `hidden` is stronger than CSS `display: none` semantically. `hidden="until-found"` (🆕 shipped in Chrome and Firefox; Safari catching up) keeps content out of normal display but still searchable by the browser's find-in-page and text-fragment links — the section auto-reveals on a match, firing `beforematch` first. Great for making accordion/FAQ content SEO- and search-friendly while still collapsed by default. |
-| `writingsuggestions="true\|false"`                                  | 🟡 **Not Baseline.** Toggles the browser's inline, ghosted-text writing suggestions in editable fields — useful to turn off when you provide your own site-specific suggestions.                                                                                                                                                                                                                                                                                             |
-| `autocorrect="on\|off"`                                             | 🟡 **Not Baseline (Safari-originated, widely mirrored on mobile).** Controls device-level autocorrection in editable text. Not part of every implementation's default text inputs (e.g. `password`/`email`/`url` never autocorrect).                                                                                                                                                                                                                                         |
-| `inert`                                                             | ✅ **Baseline (2023).** Makes the element and **all descendants** non-interactive, non-focusable, and invisible to the accessibility tree. Ideal for inactive modal layers and multi-step flows.                                                                                                                                                                                                                                                                             |
-| `data-*="value"`                                                    | Custom data attributes. Access via `element.dataset.*` in JavaScript. Name: `data-` + lowercase letters, no uppercase.                                                                                                                                                                                                                                                                                                                                                       |
-| `contenteditable="true\|false\|plaintext-only"`                     | Makes the element editable. `plaintext-only` strips formatting on paste. ✅ **`plaintext-only` is Baseline 2025.**                                                                                                                                                                                                                                                                                                                                                           |
-| `draggable="true\|false"`                                           | Makes the element draggable via the HTML Drag and Drop API.                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| `spellcheck="true\|false"`                                          | Enables/disables spell checking on editable content.                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `translate="yes\|no"`                                               | Hints whether the text should be translated by browser translation tools.                                                                                                                                                                                                                                                                                                                                                                                                    |
-| `accesskey="char"`                                                  | A keyboard shortcut to focus/activate the element. Browser-dependent — use cautiously.                                                                                                                                                                                                                                                                                                                                                                                       |
-| `autocapitalize="off\|sentences\|words\|characters"`                | Controls text capitalization on virtual keyboards (touch devices).                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `enterkeyhint="done\|go\|next\|previous\|search\|send"`             | Customizes the Enter key label on virtual keyboards.                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `inputmode="text\|numeric\|decimal\|email\|tel\|url\|search\|none"` | Hints which virtual keyboard to display. Works on any focusable element, not just `<input>`.                                                                                                                                                                                                                                                                                                                                                                                 |
-| `is="custom-element-name"`                                          | Extends a native HTML element with a registered custom element.                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `nonce="…"`                                                         | A cryptographic nonce for Content Security Policy (CSP).                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `popover="auto\|manual\|hint"`                                      | ✅/🟡 — see §13 for current per-value support.                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| `popovertarget="id"` / `popovertargetaction=""`                     | ✅ On `<button>`/`<input>`: points to a popover element to control. Superseded by `commandfor`/`command` but still valid — see §13.                                                                                                                                                                                                                                                                                                                                          |
-| `commandfor="id"` / `command="…"`                                   | ✅ **Baseline.** On `<button>`: declarative control of any element by ID — see §13 for the full reference.                                                                                                                                                                                                                                                                                                                                                                   |
-| `interestfor="id"`                                                  | 🟡 On `<button>` or `<a>`: declarative hover/focus reveal of a `popover="hint"` element — see §13.                                                                                                                                                                                                                                                                                                                                                                           |
-| `exportparts="…"`                                                   | Exposes shadow DOM parts for styling from outside the Web Component.                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `part="name"`                                                       | Marks the element as a stylable part of a Web Component (targetable with `::part(name)`).                                                                                                                                                                                                                                                                                                                                                                                    |
-| `slot="name"`                                                       | Assigns the element to a named slot inside a Web Component.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Attribute                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| :------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id="unique-name"`                                                  | Unique identifier. Used for CSS targeting, JS queries (`#id`), and in-page anchor links. Must be unique per page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `class="name1 name2"`                                               | One or more space-separated class names. The primary hook for CSS and JS targeting.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `style="property: value"`                                           | Inline CSS. Use sparingly — prefer classes and external stylesheets.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `title="text"`                                                      | Advisory tooltip text shown on hover. Not a substitute for `aria-label`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `lang="en"`                                                         | Language of the element's content. Overrides `<html lang="">` for that subtree.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `dir="ltr\|rtl\|auto"`                                              | Text direction. `auto` detects from content — useful for user-submitted multilingual text.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `tabindex="0\|-1\|N"`                                               | Controls keyboard focus order. `0` = natural order; `-1` = JS-focusable only; positive integers set explicit order (avoid).                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `hidden` / `hidden="until-found"`                                   | Hides the element from all output modes. Plain `hidden` is stronger than CSS `display: none` semantically. `hidden="until-found"` (🟡 Chrome 102+, Firefox 148+, **Safari 26.2+ with partial support**, so not yet Baseline) keeps content out of normal display but still searchable by the browser's find-in-page and text-fragment links — the section auto-reveals on a match, firing `beforematch` first. Great for making accordion/FAQ content SEO- and search-friendly while still collapsed by default. Safari 27 fixed VoiceOver navigation to content revealed this way. |
+| `writingsuggestions="true\|false"`                                  | 🟡 **Not Baseline.** Toggles the browser's inline, ghosted-text writing suggestions in editable fields — useful to turn off when you provide your own site-specific suggestions.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `autocorrect="on\|off"`                                             | 🟡 **Not Baseline (Safari-originated; Chrome exposes the attribute from Chrome 152, August 2026).** Controls device-level autocorrection in editable text. Not part of every implementation\'s default text inputs (e.g. `password`/`email`/`url` never autocorrect).                                                                                                                                                                                                                                                                                                               |
+| `inert`                                                             | ✅ **Baseline (2023).** Makes the element and **all descendants** non-interactive, non-focusable, and invisible to the accessibility tree. Ideal for inactive modal layers and multi-step flows.                                                                                                                                                                                                                                                                                                                                                                                    |
+| `data-*="value"`                                                    | Custom data attributes. Access via `element.dataset.*` in JavaScript. Name: `data-` + lowercase letters, no uppercase.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `contenteditable="true\|false\|plaintext-only"`                     | Makes the element editable. `plaintext-only` strips formatting on paste. ✅ **`plaintext-only` is Baseline 2025.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `draggable="true\|false"`                                           | Makes the element draggable via the HTML Drag and Drop API.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `spellcheck="true\|false"`                                          | Enables/disables spell checking on editable content.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `translate="yes\|no"`                                               | Hints whether the text should be translated by browser translation tools.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `accesskey="char"`                                                  | A keyboard shortcut to focus/activate the element. Browser-dependent — use cautiously.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `autocapitalize="off\|sentences\|words\|characters"`                | Controls text capitalization on virtual keyboards (touch devices).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `enterkeyhint="done\|go\|next\|previous\|search\|send"`             | Customizes the Enter key label on virtual keyboards.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `inputmode="text\|numeric\|decimal\|email\|tel\|url\|search\|none"` | Hints which virtual keyboard to display. Works on any focusable element, not just `<input>`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `is="custom-element-name"`                                          | Extends a native HTML element with a registered custom element.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `nonce="…"`                                                         | A cryptographic nonce for Content Security Policy (CSP).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `popover="auto\|manual\|hint"`                                      | ✅/🟡 — see §13 for current per-value support.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `popovertarget="id"` / `popovertargetaction=""`                     | ✅ On `<button>`/`<input>`: points to a popover element to control. Superseded by `commandfor`/`command` but still valid — see §13.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `commandfor="id"` / `command="…"`                                   | ✅ **Baseline.** On `<button>`: declarative control of any element by ID — see §13 for the full reference.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `focusgroup="…"`                                                    | 🟡 **Chromium-only (Chrome/Edge 150).** Declarative roving-tabindex and arrow-key navigation for toolbars, tabs, and menus — see §13.                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `interestfor="id"`                                                  | 🟡 **Chromium-only (Chrome/Edge 142+).** On `<button>` or `<a>`: declarative hover/focus reveal of a `popover="hint"` element — see §13.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `exportparts="…"`                                                   | Exposes shadow DOM parts for styling from outside the Web Component.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `part="name"`                                                       | Marks the element as a stylable part of a Web Component (targetable with `::part(name)`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `slot="name"`                                                       | Assigns the element to a named slot inside a Web Component.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 ---
 
@@ -1087,6 +1254,7 @@ equivalents.**
 | `aria-autocomplete="none\|inline\|list\|both"`                    | Describes autocomplete behavior of comboboxes.                                                                                                                                                             |
 | `aria-setsize=""` / `aria-posinset=""`                            | Total items in a set / position of this item. Used in virtual-scroll lists.                                                                                                                                |
 | `aria-rowcount=""` / `aria-colcount=""`                           | Total rows/columns in a grid when not all are rendered.                                                                                                                                                    |
+| `aria-colindextext="text"` / `aria-rowindextext="text"`           | Human-readable alternatives to `aria-colindex`/`aria-rowindex` (for example, a spreadsheet column announced by its letter rather than its number). Safari added support in 26.2.                           |
 | `aria-invalid="true\|false\|grammar\|spelling"`                   | **Don't skip this one.** Marks a form field as failing validation, for custom widgets the native `:invalid` pseudo-class doesn't reach. Pair with `aria-describedby` pointing at the error message.        |
 | `aria-required="true\|false"`                                     | Equivalent of the native `required` attribute, for custom widgets that aren't real `<input>`/`<select>` elements.                                                                                          |
 | `aria-errormessage="id"`                                          | Points to the element containing a validation error message — more specific than `aria-describedby`, intended to be announced when `aria-invalid` is true.                                                 |
@@ -1099,11 +1267,37 @@ equivalents.**
 > threaded comments, and highlighted ranges in collaborative editing UIs (think Google Docs-style
 > suggested changes) without resorting to a `<div>` soup of custom `data-*` attributes.
 
-> **Platform direction worth knowing:** most ARIA attributes are now also exposed as reflected IDL
-> properties on the DOM element (e.g., `element.ariaExpanded`), letting frameworks read/write them
-> as JS properties instead of string attributes. This mainly matters to library authors, but it's a
-> sign of where the platform is heading — ARIA state management is converging with ordinary JS
-> property access rather than living solely in string attributes.
+> **Platform direction worth knowing (✅ Baseline widely available since April 2026):** most ARIA
+> attributes are now also exposed as reflected IDL properties on the DOM element (e.g.,
+> `element.ariaExpanded`), letting frameworks read/write them as JS properties instead of string
+> attributes. This mainly matters to library authors, but it's a sign of where the platform is
+> heading — ARIA state management is converging with ordinary JS property access rather than living
+> solely in string attributes.
+
+### `ariaNotify()` — tell the screen reader what to say (now in all three engines)
+
+🆕 **Shipped in Chrome (141), Firefox (150), and Safari (27, September 2026).** A JavaScript method
+on `Element` and `Document` (specified in the WAI-ARIA 1.3 draft) that asks assistive technology, if
+it's running, to announce a message — without a live-region element in the DOM and without the
+fragility of "did the DOM change in a way the screen reader will notice" that `aria-live` depends
+on.
+
+```js
+// An announcement that isn't tied to a DOM update (an export finished, a drag-and-drop move landed)
+document.ariaNotify("Report exported — 3 files");
+
+// Associated with a specific element on the page
+resultsList.ariaNotify("3 results");
+```
+
+- **Use sparingly.** It's a precision tool for events that have no natural DOM representation; keep
+  `aria-live` for content that legitimately lives on the page and should be re-readable.
+- **Iframes:** embedded documents are governed by the `aria-notify` Permissions Policy.
+- **Test with your target screen readers.** At least one accessibility team has reported that JAWS
+  did not speak the native method while a polyfill worked. The method also accepts an options object
+  for priority/interrupt behavior — check MDN for the current shape before relying on it.
+- Mobile coverage trailed desktop in Chrome, which may delay the Baseline label even though all
+  three desktop engines have shipped it.
 
 ---
 
@@ -1113,44 +1307,44 @@ equivalents.**
 > are valid but harder to maintain, cannot be removed with `removeEventListener`, and violate
 > Content Security Policy (CSP) in many setups.
 
-| Attribute                                               | Fires When                                                                                                                                                       |
-| :------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `onclick`                                               | Element is clicked (left mouse button).                                                                                                                          |
-| `ondblclick`                                            | Element is double-clicked.                                                                                                                                       |
-| `oncontextmenu`                                         | Right-click context menu is triggered.                                                                                                                           |
-| `onmousedown` / `onmouseup`                             | Mouse button is pressed / released.                                                                                                                              |
-| `onmouseover` / `onmouseout`                            | Pointer moves over / exits element (bubbles).                                                                                                                    |
-| `onmouseenter` / `onmouseleave`                         | Pointer enters / exits element (does not bubble).                                                                                                                |
-| `onmousemove`                                           | Pointer moves within the element.                                                                                                                                |
-| `onkeydown` / `onkeyup`                                 | Key is pressed / released.                                                                                                                                       |
-| `onkeypress`                                            | Key is pressed (deprecated — use `onkeydown`).                                                                                                                   |
-| `onfocus` / `onblur`                                    | Element gains / loses focus (does not bubble).                                                                                                                   |
-| `onfocusin` / `onfocusout`                              | Focus gained / lost (bubbles — useful for event delegation).                                                                                                     |
-| `oninput`                                               | Value changes in real-time (`<input>`, `<textarea>`, `contenteditable`).                                                                                         |
-| `onchange`                                              | Value is committed (fires on blur for text; fires immediately for checkboxes/selects).                                                                           |
-| `onsubmit`                                              | Form is submitted.                                                                                                                                               |
-| `onreset`                                               | Form is reset.                                                                                                                                                   |
-| `onselect`                                              | Text is selected inside `<input>` or `<textarea>`.                                                                                                               |
-| `onload`                                                | Resource (page, `<img>`, `<iframe>`, `<script>`) finishes loading.                                                                                               |
-| `onunload`                                              | Page is unloaded.                                                                                                                                                |
-| `onbeforeunload`                                        | Page is about to unload (can prompt user to confirm).                                                                                                            |
-| `onresize`                                              | Browser window is resized (`window` only).                                                                                                                       |
-| `onscroll`                                              | Element or page is scrolled.                                                                                                                                     |
-| `onscrollend`                                           | ✅ **Baseline 2025.** Scroll has come to rest. Preferred over throttled `onscroll` for post-scroll logic.                                                        |
-| `onerror`                                               | A resource fails to load or a script error occurs.                                                                                                               |
-| `onabort`                                               | A resource load is aborted.                                                                                                                                      |
-| `onplay` / `onpause` / `onended`                        | Media starts / pauses / reaches the end.                                                                                                                         |
-| `onvolumechange`                                        | Volume or mute state changes on `<audio>` / `<video>`.                                                                                                           |
-| `ontimeupdate`                                          | Playback position changes (`<audio>`, `<video>`).                                                                                                                |
-| `oncanplay` / `oncanplaythrough`                        | Media is ready to play / can play to end without buffering.                                                                                                      |
-| `ondragstart` / `ondrag` / `ondragend`                  | Drag starts / is in progress / ends on the dragged element.                                                                                                      |
-| `ondragenter` / `ondragover` / `ondragleave` / `ondrop` | Drag-and-drop target events. `ondragover` must call `preventDefault()` to allow drops.                                                                           |
-| `ontoggle`                                              | A `<details>`, `<dialog>`, or popover element is opened or closed.                                                                                               |
-| `onbeforetoggle`                                        | ✅ **Baseline 2025.** A `<details>`, `<dialog>`, or popover is about to open or close. Fires before the visual change — useful for coordinating exit animations. |
-| `onbeforematch`                                         | 🆕 Fires on a `hidden="until-found"` element right before the browser reveals it for a find-in-page or text-fragment match — see §14.                            |
-| `onpageswap`                                            | 🟡 Fires on the outgoing document just before a cross-document navigation/View Transition swaps it out — see §17.                                                |
-| `onpagereveal`                                          | 🟡 Fires on the incoming document right after it's activated but before its first render — see §17.                                                              |
-| `oncontextlost` / `oncontextrestored`                   | Fires on a `<canvas>` when its GPU/2D rendering context is lost (e.g., driver reset) or subsequently restored.                                                   |
+| Attribute                                               | Fires When                                                                                                                                                                                                                                                     |
+| :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `onclick`                                               | Element is clicked (left mouse button).                                                                                                                                                                                                                        |
+| `ondblclick`                                            | Element is double-clicked.                                                                                                                                                                                                                                     |
+| `oncontextmenu`                                         | Right-click context menu is triggered.                                                                                                                                                                                                                         |
+| `onmousedown` / `onmouseup`                             | Mouse button is pressed / released.                                                                                                                                                                                                                            |
+| `onmouseover` / `onmouseout`                            | Pointer moves over / exits element (bubbles).                                                                                                                                                                                                                  |
+| `onmouseenter` / `onmouseleave`                         | Pointer enters / exits element (does not bubble).                                                                                                                                                                                                              |
+| `onmousemove`                                           | Pointer moves within the element.                                                                                                                                                                                                                              |
+| `onkeydown` / `onkeyup`                                 | Key is pressed / released.                                                                                                                                                                                                                                     |
+| `onkeypress`                                            | Key is pressed (deprecated — use `onkeydown`).                                                                                                                                                                                                                 |
+| `onfocus` / `onblur`                                    | Element gains / loses focus (does not bubble).                                                                                                                                                                                                                 |
+| `onfocusin` / `onfocusout`                              | Focus gained / lost (bubbles — useful for event delegation).                                                                                                                                                                                                   |
+| `oninput`                                               | Value changes in real-time (`<input>`, `<textarea>`, `contenteditable`).                                                                                                                                                                                       |
+| `onchange`                                              | Value is committed (fires on blur for text; fires immediately for checkboxes/selects).                                                                                                                                                                         |
+| `onsubmit`                                              | Form is submitted.                                                                                                                                                                                                                                             |
+| `onreset`                                               | Form is reset.                                                                                                                                                                                                                                                 |
+| `onselect`                                              | Text is selected inside `<input>` or `<textarea>`.                                                                                                                                                                                                             |
+| `onload`                                                | Resource (page, `<img>`, `<iframe>`, `<script>`) finishes loading.                                                                                                                                                                                             |
+| `onunload`                                              | ⚠️ Page is unloaded. **Avoid:** unreliable (especially on mobile) and it blocks the back/forward cache; browsers are changing its default behavior and the long-term direction is removal. Use `pagehide`/`visibilitychange` via `addEventListener` — see §19. |
+| `onbeforeunload`                                        | Page is about to unload (can prompt user to confirm). Register it only while there is genuinely unsaved work, and remove it afterwards.                                                                                                                        |
+| `onresize`                                              | Browser window is resized (`window` only).                                                                                                                                                                                                                     |
+| `onscroll`                                              | Element or page is scrolled.                                                                                                                                                                                                                                   |
+| `onscrollend`                                           | ✅ **Baseline 2025.** Scroll has come to rest. Preferred over throttled `onscroll` for post-scroll logic.                                                                                                                                                      |
+| `onerror`                                               | A resource fails to load or a script error occurs.                                                                                                                                                                                                             |
+| `onabort`                                               | A resource load is aborted.                                                                                                                                                                                                                                    |
+| `onplay` / `onpause` / `onended`                        | Media starts / pauses / reaches the end.                                                                                                                                                                                                                       |
+| `onvolumechange`                                        | Volume or mute state changes on `<audio>` / `<video>`.                                                                                                                                                                                                         |
+| `ontimeupdate`                                          | Playback position changes (`<audio>`, `<video>`).                                                                                                                                                                                                              |
+| `oncanplay` / `oncanplaythrough`                        | Media is ready to play / can play to end without buffering.                                                                                                                                                                                                    |
+| `ondragstart` / `ondrag` / `ondragend`                  | Drag starts / is in progress / ends on the dragged element.                                                                                                                                                                                                    |
+| `ondragenter` / `ondragover` / `ondragleave` / `ondrop` | Drag-and-drop target events. `ondragover` must call `preventDefault()` to allow drops.                                                                                                                                                                         |
+| `ontoggle`                                              | A `<details>`, `<dialog>`, or popover element is opened or closed.                                                                                                                                                                                             |
+| `onbeforetoggle`                                        | ✅ **Baseline 2025.** A `<details>`, `<dialog>`, or popover is about to open or close. Fires before the visual change — useful for coordinating exit animations.                                                                                               |
+| `onbeforematch`                                         | 🆕 Fires on a `hidden="until-found"` element right before the browser reveals it for a find-in-page or text-fragment match — see §14.                                                                                                                          |
+| `onpageswap`                                            | 🟡 Fires on the outgoing document just before a cross-document navigation/View Transition swaps it out — see §17.                                                                                                                                              |
+| `onpagereveal`                                          | 🟡 Fires on the incoming document right after it's activated but before its first render — see §17.                                                                                                                                                            |
+| `oncontextlost` / `oncontextrestored`                   | Fires on a `<canvas>` when its GPU/2D rendering context is lost (e.g., driver reset) or subsequently restored.                                                                                                                                                 |
 
 > JavaScript handlers (added via `addEventListener`, not necessarily inline attributes) can also
 > listen for the `command` event fired by Invoker Commands custom commands (see §13).
@@ -1171,9 +1365,10 @@ equivalents.**
 
 ### Speculation Rules API — the successor to `<link rel="prerender">`
 
-⚗️ **Experimental, Chromium-only (Chrome/Edge). Not Baseline.** Firefox and Safari have not
-implemented it. Use it as a Chromium-only enhancement, never as something the rest of your
-navigation flow depends on.
+⚗️ **Experimental, Chromium-only in practice (Chrome/Edge/Opera). Not Baseline.** Firefox hasn't
+shipped it; Safari has had an implementation since 26.2 but it is off by default, and Safari 27's
+release notes don't change that. Use it as a Chromium-only enhancement, never as something the rest
+of your navigation flow depends on — browsers without support simply ignore the `<script>` block.
 
 ```html
 <script type="speculationrules">
@@ -1205,11 +1400,22 @@ navigation flow depends on.
   the transition itself feel instant, since there's no network/render wait once the user actually
   navigates.
 
+- **CSP:** an inline `<script type="speculationrules">` needs `'inline-speculation-rules'` (or a
+  nonce/hash) in `script-src`. Alternatively, deliver the same JSON through a `Speculation-Rules`
+  response header that points at a JSON file.
+- **Chromium origin trials (July 2026):** a `prerender_until_script` action (prerender, but fall
+  back to prefetch once a script is about to run), prerender activation by form submission, and
+  opt-in prerendering of cross-origin iframes. Experimental — don't build on them.
+
 ### Cross-document View Transitions
 
-✅ **Same-document view transitions are Baseline.** Cross-document (multi-page app) transitions
-currently work in Chromium only; Firefox and Safari have not shipped them, and bringing this to
-interoperability is an explicit Interop 2026 focus area.
+✅ **Same-document view transitions are Baseline** (Chrome 111, Safari 18, Firefox 144). 🟡
+**Cross-document (multi-page app) transitions work in Chrome/Edge 126+ and Safari 18.2+; Firefox
+hasn't shipped them**, so they are not Baseline — treat them as progressive enhancement. Making them
+interoperable is an explicit Interop 2026 focus area.
+
+> ⚠️ **Correction:** the June edition said cross-document transitions were Chromium-only. Safari has
+> supported them since 18.2; Firefox is the engine still missing.
 
 > ⚠️ **Correction:** Older tutorials (and the prior edition of this cheat sheet) showed
 > `<meta name="view-transition" content="same-origin">` as the opt-in. **That meta tag never shipped
@@ -1323,51 +1529,93 @@ Modern CSS handles everything they once did.
 | `<rb>`                                           | Removed from spec                          | Use `<ruby>` + `<rt>` directly                  |
 | `<keygen>`                                       | Removed                                    | Web Crypto API                                  |
 | `<menuitem>`                                     | Removed                                    | No standard replacement                         |
+| `href=""` on MathML elements other than `<a>`    | Deprecated (Safari 27 release notes)       | Use the MathML `<a>` element for links          |
 
 ### Outdated _techniques_ (still valid HTML, but no longer best practice)
 
-| Old technique                                                                                         | Why to avoid it now                                                                                              | Use instead                                                         |
-| :---------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------ |
-| `<meta name="view-transition" content="same-origin">`                                                 | Never the final shipped API; was a temporary flag-gated stand-in and no longer does anything.                    | `@view-transition { navigation: auto; }` in CSS — see §17.          |
-| `<link rel="prerender" href="…">`                                                                     | Chrome-only legacy hint, internally downgraded to NoState Prefetch and headed for removal.                       | Speculation Rules API `<script type="speculationrules">` — see §17. |
-| Hand-rolled `role="button"`/`role="dialog"`/`role="search"` `<div>`s for things HTML now has natively | Reinventing keyboard handling, focus management, and ARIA state by hand is fragile and easy to get subtly wrong. | `<button>`, `<dialog>` (+ `closedby`), `<search>` — see §12–§13.    |
-| JS positioning libraries (Floating UI, Popper.js, Tippy.js) for simple tooltips/dropdowns             | An entire dependency and runtime cost for something the layout engine now does natively.                         | CSS Anchor Positioning + `popover` — see §13.                       |
-| Manually wiring `aria-expanded`/focus on a custom dropdown button                                     | Re-implements what the platform now does for you on click.                                                       | `command`/`commandfor` Invoker Commands — see §13.                  |
+| Old technique                                                                                         | Why to avoid it now                                                                                                                                                                                                                                                                                                          | Use instead                                                                                                                               |
+| :---------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| `<meta name="view-transition" content="same-origin">`                                                 | Never the final shipped API; was a temporary flag-gated stand-in and no longer does anything.                                                                                                                                                                                                                                | `@view-transition { navigation: auto; }` in CSS — see §17.                                                                                |
+| `<link rel="prerender" href="…">`                                                                     | Chrome-only legacy hint, internally downgraded to NoState Prefetch and headed for removal.                                                                                                                                                                                                                                   | Speculation Rules API `<script type="speculationrules">` — see §17.                                                                       |
+| Hand-rolled `role="button"`/`role="dialog"`/`role="search"` `<div>`s for things HTML now has natively | Reinventing keyboard handling, focus management, and ARIA state by hand is fragile and easy to get subtly wrong.                                                                                                                                                                                                             | `<button>`, `<dialog>` (+ `closedby`), `<search>` — see §12–§13.                                                                          |
+| JS positioning libraries (Floating UI, Popper.js, Tippy.js) for simple tooltips/dropdowns             | An entire dependency and runtime cost for something the layout engine now does natively.                                                                                                                                                                                                                                     | CSS Anchor Positioning + `popover` — see §13.                                                                                             |
+| Manually wiring `aria-expanded`/focus on a custom dropdown button                                     | Re-implements what the platform now does for you on click.                                                                                                                                                                                                                                                                   | `command`/`commandfor` Invoker Commands — see §13.                                                                                        |
+| `unload` event / `onunload` (and `beforeunload` for anything but real unsaved-work prompts)           | Unreliable, especially on mobile, and it makes pages ineligible for the back/forward cache. Browsers are changing its default behavior (Edge has announced it) and the long-term direction is removal. Chrome 149 also made pages with open WebSockets bfcache-eligible, so don\'t throw that away with an `unload` handler. | `pagehide` and `visibilitychange` via `addEventListener`; `navigator.sendBeacon()` or `fetch(…, { keepalive: true })` for last-gasp data. |
+| Client-side XSLT (`<?xml-stylesheet type="text/xsl">`, `XSLTProcessor`)                               | Chrome has deprecated it and, per the Chrome 152 beta notes, is getting close to removing it (Chrome 158).                                                                                                                                                                                                                   | Transform on the server or at build time, or render with the DOM/templating in JavaScript.                                                |
 
 ---
 
-## Quick Reference — What's New Since the April 2026 Edition
+## Quick Reference — What's New Since the June 2026 Edition
 
-| Feature                                                                                 | Status as of June 27, 2026                                                   | Where    |
-| :-------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- | :------- |
-| `<search>` element                                                                      | ✅ Promoted to Baseline **widely available**                                 | §12      |
-| Invoker Commands (`command`/`commandfor`)                                               | ✅ Confirmed Baseline across **all major engines**                           | §13      |
-| `interestfor` attribute + `popover="hint"`                                              | 🟡 Chrome/Edge shipped; Safari/Firefox via Interop 2026                      | §13      |
-| `<dialog closedby="…">`                                                                 | 🟡 Chrome, Edge, Firefox shipped; Safari via Interop 2026                    | §13      |
-| `:open` CSS pseudo-class                                                                | 🆕 Newly available — Safari 26.5 joined Chrome/Firefox                       | §13      |
-| Customizable `<select>` / `<selectedcontent>` / `appearance: base-select`               | 🟡 Chrome 135 stable; Safari TP; Firefox behind a flag — still not Baseline  | §9       |
-| CSS Anchor Positioning (`anchor-name`, `position-anchor`, `anchor()`)                   | ✅ Reached Baseline 2026                                                     | §13      |
-| Native `loading="lazy"` on `<video>`/`<audio>`                                          | 🟡 Chrome 148 only — not Baseline                                            | §7, §11  |
-| `@view-transition` CSS at-rule (cross-document)                                         | ⚠️ **Correction**: replaces the obsolete `<meta name="view-transition">` tag | §17      |
-| Speculation Rules API                                                                   | ⚗️ Still Chromium-only, still experimental                                   | §17      |
-| `<link rel="expect">`                                                                   | 🟡 New, part of the Interop 2026 focus list                                  | §2       |
-| `contenteditable="plaintext-only"`                                                      | ✅ Baseline 2025 (unchanged)                                                 | §14      |
-| `onscrollend` / `onbeforetoggle`                                                        | ✅ Baseline 2025 (unchanged)                                                 | §16      |
-| Declarative Shadow DOM (`shadowrootmode`)                                               | 🆕 Newly available since Feb 2024 — widely available expected **Aug 2026**   | §12      |
-| `<details name="…">` exclusive accordions                                               | ✅ Baseline (Chrome, Safari, Firefox 130+ all shipped)                       | §12      |
-| `hidden="until-found"` + `beforematch`                                                  | 🆕 Chrome + Firefox shipped; Safari implementation merged, rolling out       | §14, §16 |
-| `<iframe allow="…">` (Permissions Policy)                                               | ✅ Long-standing — added here for completeness                               | §11      |
-| `formaction`/`formnovalidate`/`formmethod`/`formtarget`/`formenctype`                   | ✅ Long-standing — added here for completeness                               | §9       |
-| `aria-invalid`, `aria-required`, `aria-errormessage`                                    | ✅ Long-standing — added here, were missing from earlier editions            | §15      |
-| ARIA 1.3 (`aria-description`, `aria-braillelabel`, roles `suggestion`/`comment`/`mark`) | 🆕 New in the ARIA 1.3 draft, validator support landed 2026                  | §15      |
-| `writingsuggestions` / `autocorrect` global attributes                                  | 🟡 Not Baseline — Safari/Chrome-originated, not in Firefox                   | §14      |
+Status as of **October 5, 2026**. Engines in play: Chrome 154 · Firefox 157 · Safari 27 stable;
+Chrome 155/156, Firefox 158, and Safari 27.2 in beta.
+
+### New or changed since June 27, 2026
+
+| Feature                                                                  | Status as of October 5, 2026                                                                        | Where    |
+| :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- | :------- |
+| Customizable `<select>` (`appearance: base-select`, `<selectedcontent>`) | 🟡 Chrome/Edge 135+ and **Safari 27**; Firefox behind a flag — one engine short of Baseline         | §9       |
+| `sizes="auto"` on lazy `<img>`                                           | 🆕 Baseline newly available (Safari 27 completed it)                                                | §7       |
+| Declarative Shadow DOM (`shadowrootmode`)                                | ✅ Baseline **widely available** (August 2026)                                                      | §12      |
+| `ariaNotify()`                                                           | 🆕 Shipped in Chrome 141, Firefox 150, **Safari 27** — all three engines                            | §15      |
+| `popover="hint"`                                                         | 🟡 Complete in Chrome/Edge 151 and Firefox 153; **not in Safari**; Chrome 150 changed nesting rules | §13      |
+| `interestfor` (Interest Invokers)                                        | 🟡 Chrome/Edge only. ⚠️ **Correction:** not in Interop 2026; proposed for Interop 2027              | §13      |
+| `<dialog closedby="…">`                                                  | 🟡 Chrome/Edge 134+, Firefox 141+; Safari only in Technology Preview (not in 27)                    | §13      |
+| `focusgroup` attribute                                                   | 🟡 Chrome/Edge 150 only                                                                             | §13      |
+| `<template for>` / streaming out-of-order HTML                           | ⚗️ Chrome/Edge 150 only                                                                             | §12      |
+| `<camera>` / `<microphone>` elements                                     | ⚗️ Chrome/Edge 153 only (`<usermedia>` still an origin trial)                                       | §12      |
+| `<install>` element + Web Install API                                    | ⚗️ Chrome 156 beta; origin trial in Edge                                                            | §12      |
+| `<model>` element                                                        | 🟡 Safari 27 (iOS, iPadOS, macOS) only                                                              | §12      |
+| `autocorrect` global attribute                                           | 🟡 Safari-originated; Chrome exposes it from 152                                                    | §14      |
+| `hidden="until-found"`                                                   | 🟡 Chrome 102+, Firefox 148+, Safari 26.2+ (partial) — Baseline blocked on Safari                   | §14, §16 |
+| `field-sizing: content`                                                  | 🆕 Baseline newly available (June 2026)                                                             | §9       |
+| `:paused` media pseudo-class                                             | 🆕 Baseline newly available (August 2026); the rest of the family is Interop 2026 / 🟡              | §11      |
+| `ToggleEvent.source`                                                     | 🆕 Baseline 2026                                                                                    | §13      |
+| Cross-document View Transitions                                          | ⚠️ **Correction:** Chrome/Edge 126+ **and Safari 18.2+**; Firefox is the missing engine             | §17      |
+| Speculation Rules API                                                    | ⚗️ Chromium-only; Safari implementation off by default; new origin trials in Chromium               | §17      |
+| `unload` event                                                           | ⚠️ Moving toward removal — use `pagehide` / `visibilitychange`                                      | §16, §19 |
+| Client-side XSLT                                                         | ⚠️ Deprecated in Chrome; removal targeted for Chrome 158                                            | §19      |
+| Release cadence                                                          | Chrome and Firefox now ship every two weeks (since September 2026)                                  | top      |
+| Tooling: Lighthouse **Baseline Features** audit; **Baseline Alerts**     | New in mid-2026 — audit which Baseline features a site uses; subscribe to status changes            | —        |
+
+### Carried over from earlier editions (status re-checked)
+
+| Feature                                                                                 | Status as of October 2026                                    | Where   |
+| :-------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------ |
+| `<search>` element                                                                      | ✅ Baseline **widely available**                             | §12     |
+| Invoker Commands (`command`/`commandfor`)                                               | ✅ Baseline across **all major engines**                     | §13     |
+| `:open` CSS pseudo-class                                                                | 🆕 Baseline newly available (2026)                           | §13     |
+| CSS Anchor Positioning (`anchor-name`, `position-anchor`, `anchor()`)                   | ✅ Baseline 2026; Safari 27 adds refinements                 | §13     |
+| Native `loading="lazy"` on `<video>`/`<audio>`                                          | 🟡 Chrome 148+ only — not Baseline                           | §7, §11 |
+| `@view-transition` CSS at-rule                                                          | ⚠️ Replaces the obsolete `<meta name="view-transition">` tag | §17     |
+| `<link rel="expect">`, `blocking="render"`                                              | 🟡 Interop 2026 focus area                                   | §2      |
+| `contenteditable="plaintext-only"`                                                      | ✅ Baseline 2025                                             | §14     |
+| `onscrollend` / `onbeforetoggle`                                                        | ✅ Baseline 2025                                             | §16     |
+| `<details name="…">` exclusive accordions                                               | ✅ Baseline                                                  | §12     |
+| `<iframe allow="…">` (Permissions Policy)                                               | ✅ Long-standing                                             | §11     |
+| `formaction`/`formnovalidate`/`formmethod`/`formtarget`/`formenctype`                   | ✅ Long-standing                                             | §9      |
+| `aria-invalid`, `aria-required`, `aria-errormessage`                                    | ✅ Long-standing                                             | §15     |
+| ARIA attribute reflection (`element.ariaExpanded`)                                      | ✅ Baseline widely available (April 2026)                    | §15     |
+| ARIA 1.3 (`aria-description`, `aria-braillelabel`, roles `suggestion`/`comment`/`mark`) | 🆕 In the ARIA 1.3 draft; validator support landed 2026      | §15     |
+| `writingsuggestions` global attribute                                                   | 🟡 Not Baseline                                              | §14     |
+
+### On the horizon (beta channels, October 2026)
+
+- **Chrome 155 beta:** JPEG XL (`image/jxl`) decoding — relevant to
+  `<picture><source type="image/jxl">` — plus text module imports and Digital Credentials issuance.
+- **Chrome 156 beta:** the `<install>` element and Web Install API, and the media-state
+  pseudo-classes (`:playing`, `:seeking`, `:buffering`, …).
+- **Safari 27.2 beta:** alignment refinements (`safe`/`unsafe` with `normal`, `::picker(select)`).
+- **Interop 2027:** the call for proposals opened in early September 2026; `interestfor` already has
+  a proposal filed.
 
 ---
 
-_Last updated: June 27, 2026_ _Sources consulted: WHATWG HTML Living Standard; MDN Web Docs
-(including pages updated as recently as May 2026); web.dev Baseline monthly digests (January, April,
-and May 2026 editions) and the Baseline 2026 / web-features tracker; the web.dev Interop 2026
-roadmap post; Chrome for Developers blog (Invoker Commands, Speculation Rules, View Transitions,
-hidden=until-found, Declarative Shadow DOM); WebKit blog; InfoQ coverage of the Invoker Commands
-API; CSS-Tricks coverage of the Interest Invoker API and cross-document View Transitions; MDN blog
-post on exclusive `<details>` accordions._
+_Last updated: October 5, 2026_ _Sources consulted: web.dev "New to the web platform in September"
+(published October 2, 2026) and the June, July, and August 2026 Baseline monthly digests; the
+web.dev Baseline 2026 feature list and Interop 2026 announcement; Apple's Safari 27 release notes;
+Microsoft Edge 150 web platform release notes; Chrome 152 beta notes; Baseline/web-features and
+caniuse/MDN compatibility data for `popover="hint"`, `<dialog closedby>`, Interest Invokers, and
+`hidden="until-found"`; Chrome for Developers documentation on View Transitions; the WebKit blog
+(Safari 26.2 features); plus the WHATWG HTML Living Standard and the sources behind the June 2026
+edition._

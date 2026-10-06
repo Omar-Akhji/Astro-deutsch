@@ -82,9 +82,9 @@ const sections: CategoryConfig[] = [
     <!-- Category Overview Bar with Border -->
     <div class="flex flex-wrap items-center justify-between gap-3 rounded-2xl border-[1.5px] border-white/10 bg-white/2 p-4 shadow-sm backdrop-blur-md">
       <div>
-        <h3 class="text-base font-bold tracking-tight text-white @md:text-lg">
+        <h2 class="text-base font-bold tracking-tight text-white @md:text-lg">
           Wortschatz nach Wortarten
-        </h3>
+        </h2>
         <p class="text-xs text-mist-400">
           Strukturiert in Nomen, Verben und Adjektive für ein gezieltes Lernen
         </p>
@@ -108,12 +108,16 @@ const sections: CategoryConfig[] = [
     <!-- 3 Distinct Category Sections, Each Wrapped With Its Own Defined Border -->
     <div class="space-y-6">
       {sections.map((section) => (
-        <div
+        <section
+          aria-labelledby={`category-title-${section.key}`}
           class:list={[
             "overflow-hidden rounded-2xl border-2 bg-card/60 shadow-lg backdrop-blur-(--glass-blur) transition-all duration-200",
             section.cardBorderClass,
           ]}
         >
+          <h3 id={`category-title-${section.key}`} class="sr-only">
+            {section.title} ({section.germanType})
+          </h3>
           <!-- Section Header Banner with bottom border -->
           <div
             class:list={[
@@ -140,6 +144,7 @@ const sections: CategoryConfig[] = [
               <span
                 class="font-arabic text-sm font-semibold text-mist-300 @md:text-base"
                 dir="rtl"
+                lang="ar"
               >
                 {section.arabicType}
               </span>
@@ -164,7 +169,7 @@ const sections: CategoryConfig[] = [
                 {section.words.map((word) => (
                   <tr class="group/row transition-colors hover:bg-white/4">
                     <!-- German Word Column with Pronunciation, Badge & Example -->
-                    <td class="px-4 py-3.5 font-medium @md:px-6">
+                    <th scope="row" class="px-4 py-3.5 text-left font-medium @md:px-6">
                       <div class="flex items-start gap-3">
                         <!-- Audio Pronunciation Button -->
                         <button
@@ -215,15 +220,15 @@ const sections: CategoryConfig[] = [
                           <!-- Context Example Sentence -->
                           {word.example && (
                             <p class="mt-1 text-xs text-mist-400/85 italic">
-                              „{word.example}“
+                              <q>{word.example}</q>
                             </p>
                           )}
                         </div>
                       </div>
-                    </td>
+                    </th>
 
                     <!-- English Column -->
-                    <td class="px-4 py-3.5 text-sm text-mist-200 @md:px-6 @md:text-base">
+                    <td class="px-4 py-3.5 text-sm text-mist-200 @md:px-6 @md:text-base" lang="en">
                       <span>{word.english ?? word.example}</span>
                     </td>
 
@@ -231,6 +236,7 @@ const sections: CategoryConfig[] = [
                     <td
                       class="px-4 py-3.5 text-right font-arabic text-base font-medium text-mist-300 @md:px-6 @md:text-lg"
                       dir="rtl"
+                      lang="ar"
                     >
                       {word.arabic}
                     </td>
@@ -239,7 +245,7 @@ const sections: CategoryConfig[] = [
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
       ))}
     </div>
   </div>
