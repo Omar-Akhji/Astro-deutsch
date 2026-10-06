@@ -11,6 +11,9 @@ export default defineConfig({
   adapter: node({ mode: "standalone" }),
   trailingSlash: "always",
   build: { inlineStylesheets: "always" },
+  security: {
+    checkOrigin: true,
+  },
   env: {
     schema: {
       PUBLIC_GA_MEASUREMENT_ID: envField.string({
@@ -19,6 +22,7 @@ export default defineConfig({
         optional: true,
       }),
     },
+    validateSecrets: true,
   },
   integrations: [
     vue(),

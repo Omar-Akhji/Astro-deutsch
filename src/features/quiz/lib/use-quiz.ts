@@ -1,7 +1,21 @@
-import { ref, computed } from "vue";
+import { ref, computed, type ComputedRef, type Ref } from "vue";
 import type { Question } from "../model/types.ts";
 
-export function useQuiz(questions: Question[]) {
+export interface UseQuizReturn {
+  currentQuestionIndex: Ref<number>;
+  score: ComputedRef<number>;
+  isFinished: Ref<boolean>;
+  isStarted: Ref<boolean>;
+  currentQuestion: ComputedRef<Question | undefined>;
+  progress: ComputedRef<number>;
+  userAnswers: Ref<(string | string[] | null)[]>;
+  startQuiz: () => void;
+  handleAnswer: (answer: string | string[], index?: number) => void;
+  jumpToQuestion: (index: number) => void;
+  handleFinishQuiz: () => void;
+}
+
+export function useQuiz(questions: Question[]): UseQuizReturn {
   const isStarted = ref(false);
   const isFinished = ref(false);
   const userAnswers = ref<(string | string[] | null)[]>(

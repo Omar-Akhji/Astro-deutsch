@@ -10,6 +10,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
+    "lint:md": "markdownlint-cli2",
+    "lint:md:fix": "markdownlint-cli2 --fix",
     "preview": "bun --bun astro preview"
   },
   "dependencies": {
@@ -48,6 +50,7 @@
     "eslint-plugin-vue": "^10.11.1",
     "eslint-plugin-vuejs-accessibility": "^2.6.0",
     "globals": "^17.13.0",
+    "markdownlint-cli2": "^0.23.3",
     "prettier": "^3.9.9",
     "prettier-plugin-astro": "1.1.0",
     "prettier-plugin-astro-organize-imports": "^0.4.14",

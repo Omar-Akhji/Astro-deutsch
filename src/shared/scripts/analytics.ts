@@ -1,21 +1,22 @@
 import { PUBLIC_GA_MEASUREMENT_ID } from "astro:env/client";
 
-interface CustomGlobalScope {
-  dataLayer?: unknown[];
+declare global {
+  var dataLayer: unknown[] | undefined;
 }
 
 const gaId = PUBLIC_GA_MEASUREMENT_ID;
 
-if (gaId && typeof window !== "undefined") {
+if (gaId && typeof document !== "undefined") {
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
   document.head.append(script);
 
-  const globalScope = globalThis as typeof globalThis & CustomGlobalScope;
-  globalScope.dataLayer ??= [];
-  const dataLayer = globalScope.dataLayer;
-  const gtag = (...args: unknown[]) => {
+  // Google Tag Manager standard protocol requires mounting dataLayer onto globalThis
+  // eslint-disable-next-line unicorn/no-global-object-property-assignment
+  globalThis.dataLayer ??= [];
+  const dataLayer = globalThis.dataLayer;
+  const gtag = (...args: unknown[]): void => {
     dataLayer.push(args);
   };
 

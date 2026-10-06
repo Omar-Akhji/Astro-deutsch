@@ -1,7 +1,7 @@
 import { speakGerman } from "@/shared/lib";
 import gsap from "@/shared/lib/gsap.ts";
 
-export function initVocabularyAudio() {
+export function initVocabularyAudio(): void {
   const buttons = document.querySelectorAll<HTMLButtonElement>("button[data-speak]");
   buttons.forEach((btn) => {
     if (btn.dataset["audioBound"]) return;

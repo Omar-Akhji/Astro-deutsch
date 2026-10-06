@@ -37,7 +37,7 @@ export function speakGerman(text: string, rate = 0.9): boolean {
 
     globalThis.speechSynthesis.speak(utterance);
     return true;
-  } catch (error) {
+  } catch (error: unknown) {
     console.warn("Speech synthesis error:", error);
     return false;
   }

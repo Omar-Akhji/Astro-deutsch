@@ -9,13 +9,13 @@ Strictly use **Bun** for all commands, scripts, package installations, and execu
 
 When starting the dev server, use background mode:
 
-```
+```bash
 bun run dev
 ```
 
 Or using the astro CLI with bun:
 
-```
+```bash
 bun x astro dev --background
 ```
 

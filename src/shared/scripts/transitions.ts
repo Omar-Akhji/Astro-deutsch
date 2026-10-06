@@ -54,7 +54,7 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
   // In development mode, delay page loader so skeleton transition is visible
   if (import.meta.env.DEV) {
     const originalLoader = e.loader;
-    e.loader = async () => {
+    e.loader = async (): Promise<void> => {
       await Promise.all([originalLoader(), wait(SKELETON_DEV_DELAY_MS)]);
     };
   }

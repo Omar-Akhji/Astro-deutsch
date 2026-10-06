@@ -1,6 +1,6 @@
 import { gsap } from "@/shared/lib";
 
-export function setupDesktopNav() {
+export function setupDesktopNav(): void {
   const nav = document.querySelector<HTMLElement>("#desktop-nav");
   const indicator = document.querySelector<HTMLElement>("#desktop-nav-indicator");
   if (!nav || !indicator || nav.offsetParent === null) return;

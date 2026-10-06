@@ -92,7 +92,7 @@ function initializeGsapUtilityAnimations(root: ParentNode) {
  * Initializes global GSAP animations for static and server-rendered Astro content. Integrates with
  * ScrollTrigger.batch() for maximum performance and 60fps compositor smoothness.
  */
-export function initPageAnimations() {
+export function initPageAnimations(): void {
   if (typeof document === "undefined") return;
 
   // Clean up previous matchMedia contexts to prevent stale triggers
@@ -270,7 +270,7 @@ export function initPageAnimations() {
  * Clean up all ScrollTriggers on View Transition exit to eliminate memory leaks and prevent
  * triggers from referencing detached nodes.
  */
-export function cleanupPageAnimations() {
+export function cleanupPageAnimations(): void {
   if (pageMatchMedia) {
     pageMatchMedia.revert();
     pageMatchMedia = null;

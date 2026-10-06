@@ -9,19 +9,19 @@ Strictly use **Bun** for all commands, scripts, package installations, and execu
 
 When starting the dev server, use background mode:
 
-```
+```bash
 bun run dev
 ```
 
 Or using the astro CLI with bun:
 
-```
+```bash
 bun x astro dev --background
 ```
 
 ## Documentation
 
-Full documentation: https://docs.astro.build
+Full documentation: <https://docs.astro.build>
 
 Consult these guides before working on related tasks:
 

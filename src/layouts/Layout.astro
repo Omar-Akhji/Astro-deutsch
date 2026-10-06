@@ -305,17 +305,23 @@ const schemaJson = {
     </noscript>
   </head>
   <body class="antialiased">
+    <a
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-emerald-600 focus:px-4 focus:py-2 focus:text-white focus:shadow-xl focus:ring-2 focus:ring-emerald-400 focus:outline-none"
+      href="#page-content"
+    >
+      Zum Hauptinhalt springen
+    </a>
     <script src="@/shared/scripts/init.ts"></script>
     <script src="@/shared/scripts/analytics.ts"></script>
     <div class="mx-auto w-full max-w-7xl px-2">
       <Navigation pathname={pathname} />
       <div class="px-4 mobile:px-6 tablet:px-8 pb-24 tablet:pb-28 laptop:pb-0">
-        <main>
+        <main id="main-content">
           <!-- Skeleton container: hidden by default, shown during navigation -->
           <TransitionSkeletons />
 
           <!-- Page Content -->
-          <div id="page-content">
+          <div id="page-content" tabindex="-1">
             <slot />
           </div>
         </main>

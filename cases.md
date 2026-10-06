@@ -93,7 +93,7 @@ Also used: **SCREAMING_SNAKE_CASE** (all caps with `_`) for constants, e.g. `MAX
 Data changes case as it crosses layers. Convert **once, at the boundary**, not scattered through the
 code:
 
-```
+```text
 Database (snake_case)  →  Hono API layer  →  JSON (camelCase)  →  React / Astro (camelCase)
 ```
 

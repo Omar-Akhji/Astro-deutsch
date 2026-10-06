@@ -46,7 +46,7 @@ const handleCopyText = async (text: string) => {
         if (copiedPhrase.value === text) copiedPhrase.value = null;
       }, 1500);
     }
-  } catch (error) {
+  } catch (error: unknown) {
     console.warn("Clipboard copy failed", error);
   }
 };

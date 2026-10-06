@@ -1,3 +1,5 @@
+import { z } from "astro/zod";
+import { storiesRecordSchema } from "../model/schema.ts";
 import type {
   CefrLevel,
   StoryDefinition,
@@ -12,11 +14,14 @@ export type {
   TopicStoriesRecord,
 } from "../model/types.ts";
 
+const topicStoriesCatalogSchema = z.record(z.string(), storiesRecordSchema);
+const parsedTopicStories = topicStoriesCatalogSchema.parse(topicStoriesJson);
+
 /**
  * All curated story contents loaded directly from topic-stories.json.
  */
 export const TOPIC_STORIES = new Map<string, TopicStoriesRecord>(
-  Object.entries(topicStoriesJson as unknown as Record<string, TopicStoriesRecord>),
+  Object.entries(parsedTopicStories),
 );
 
 export interface StoryToken {

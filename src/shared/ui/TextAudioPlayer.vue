@@ -283,7 +283,7 @@ const speakCurrentSentence = async () => {
 
   try {
     await audio.play();
-  } catch (error) {
+  } catch (error: unknown) {
     console.warn("Audio play() was prevented, attempting Web Speech fallback:", error);
     currentAudio = null;
     playViaWebSpeech(clean);
@@ -414,8 +414,8 @@ const setRate = (rate: number) => {
 };
 
 const seekByClick = (event: MouseEvent) => {
-  const target = event.currentTarget as HTMLElement;
-  if (!target || totalCount.value === 0) return;
+  const target = event.currentTarget;
+  if (!(target instanceof HTMLElement) || totalCount.value === 0) return;
   const rect = target.getBoundingClientRect();
   const ratio = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
   const targetIndex = Math.min(totalCount.value - 1, Math.floor(ratio * totalCount.value));
@@ -479,8 +479,15 @@ const handleBeforeSwap = () => {
 };
 
 const handleOtherPlayerPlay = (event: Event) => {
-  const customEvent = event as CustomEvent<{ id: string }>;
-  if (customEvent.detail?.id !== instanceId && (isPlaying.value || isPaused.value)) {
+  if (!(event instanceof CustomEvent)) return;
+  const detail: unknown = event.detail;
+  if (
+    typeof detail === "object"
+    && detail !== null
+    && "id" in detail
+    && detail.id !== instanceId
+    && (isPlaying.value || isPaused.value)
+  ) {
     pause();
   }
 };

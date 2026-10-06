@@ -8,7 +8,23 @@ interface GlossaryEntry {
   example: string;
 }
 
-export function initFamilyStoryTooltips() {
+function isGlossaryEntry(item: unknown): item is GlossaryEntry {
+  if (typeof item !== "object" || item === null) return false;
+  return (
+    "german" in item
+    && typeof item.german === "string"
+    && "arabic" in item
+    && typeof item.arabic === "string"
+    && "translation" in item
+    && typeof item.translation === "string"
+    && "explanation" in item
+    && typeof item.explanation === "string"
+    && "example" in item
+    && typeof item.example === "string"
+  );
+}
+
+export function initFamilyStoryTooltips(): void {
   const stories = document.querySelectorAll<HTMLElement>(".family-story, .topic-story");
   for (const story of stories) {
     if (story.dataset["tooltipBound"]) continue;
@@ -29,7 +45,7 @@ export function initFamilyStoryTooltips() {
     try {
       const parsed: unknown = JSON.parse(rawGlossary);
       if (Array.isArray(parsed)) {
-        parsedList = parsed as GlossaryEntry[];
+        parsedList = parsed.filter(isGlossaryEntry);
       }
     } catch {
       continue;

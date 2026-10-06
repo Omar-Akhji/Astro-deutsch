@@ -1,0 +1,34 @@
+{
+  "config": {
+    "default": true,
+    "MD001": false, // Heading level increment
+    "MD003": false, // Heading style (setext vs atx)
+    "MD005": false, // List indentation
+    "MD012": false, // Multiple blank lines
+    "MD013": false, // Line length
+    "MD024": false, // Duplicate headings
+    "MD025": false, // Multiple top-level headings
+    "MD028": false, // Blank line inside blockquote
+    "MD033": false, // Inline HTML
+    "MD036": false, // Emphasis as heading
+    "MD040": false, // Fenced code language
+    "MD041": false, // First line heading
+    "MD042": false, // Empty links (placeholder links in templates)
+    "MD045": false, // Alt text for images
+    "MD046": false, // Code block style (indented vs fenced)
+    "MD051": false, // Link fragments
+    "MD055": false, // Table pipe style
+    "MD056": false, // Table column count
+    "MD059": false, // Descriptive link text
+    "MD060": false  // Table column style
+  },
+  "globs": [
+    "**/*.md"
+  ],
+  "ignores": [
+    "node_modules/**",
+    ".astro/**",
+    "dist/**",
+    ".git/**"
+  ]
+}

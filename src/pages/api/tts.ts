@@ -84,10 +84,11 @@ export const GET: APIRoute = async ({ request }) => {
         "X-Cache": "MISS",
       },
     });
-  } catch (error) {
+  } catch (error: unknown) {
     console.error("TTS generation error:", error);
+    const details = error instanceof Error ? error.message : String(error);
     return Response.json(
-      { error: "Failed to generate speech", details: String(error) },
+      { error: "Failed to generate speech", details },
       { status: 500 },
     );
   }

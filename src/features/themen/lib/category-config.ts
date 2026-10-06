@@ -85,15 +85,56 @@ export const THEMEN_CATEGORY_COLORS: Record<string, string> = Object.fromEntries
   Object.entries(THEMEN_CATEGORY_CONFIG).map(([k, v]) => [k, v.color]),
 );
 
+const THEMA_CATEGORIES = new Set<string>([
+  "essen",
+  "tech",
+  "gesellschaft",
+  "bildung",
+  "gesundheit",
+  "freizeit",
+  "umwelt",
+  "arbeit",
+]);
+
+/** Type guard for ThemaCategory keys */
+export function isThemaCategory(category: string): category is ThemaCategory {
+  return THEMA_CATEGORIES.has(category);
+}
+
 /**
  * Returns pre-split structured styling tokens for a category. Prevents runtime string parsing and
  * split operations in components.
  */
 export function getCategoryStyle(category: string): CategoryThemeStyle {
-  if (Object.hasOwn(THEMEN_CATEGORY_CONFIG, category)) {
-    return THEMEN_CATEGORY_CONFIG[category as ThemaCategory];
+  switch (category) {
+    case "essen": {
+      return THEMEN_CATEGORY_CONFIG.essen;
+    }
+    case "tech": {
+      return THEMEN_CATEGORY_CONFIG.tech;
+    }
+    case "gesellschaft": {
+      return THEMEN_CATEGORY_CONFIG.gesellschaft;
+    }
+    case "bildung": {
+      return THEMEN_CATEGORY_CONFIG.bildung;
+    }
+    case "gesundheit": {
+      return THEMEN_CATEGORY_CONFIG.gesundheit;
+    }
+    case "freizeit": {
+      return THEMEN_CATEGORY_CONFIG.freizeit;
+    }
+    case "umwelt": {
+      return THEMEN_CATEGORY_CONFIG.umwelt;
+    }
+    case "arbeit": {
+      return THEMEN_CATEGORY_CONFIG.arbeit;
+    }
+    default: {
+      return DEFAULT_CATEGORY_STYLE;
+    }
   }
-  return DEFAULT_CATEGORY_STYLE;
 }
 
 /** Returns full tailwind classes for a category badge. */
