@@ -607,12 +607,14 @@ onBeforeUnmount(() => {
         </span>
         <button
           type="button"
-          class="flex items-center gap-1.5 rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-1 text-xs text-mist-300 transition-colors hover:border-yellow/30 hover:bg-white/10 hover:text-white outline-none focus:outline-none focus-visible:outline-none"
+          class="flex items-center gap-1.5 rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-1 text-xs text-mist-300 transition-colors outline-none hover:border-yellow/30 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:outline-none"
           title="Klicken zum Umschalten zwischen Conrad (Männlich) und Katja (Weiblich)"
           @click="toggleVoice"
         >
           <Volume2 class="size-3.5 text-yellow" />
-          <span>{{ selectedVoice === "de-DE-ConradNeural" ? "Conrad (Studio)" : "Katja (Studio)" }}</span>
+          <span>{{
+            selectedVoice === "de-DE-ConradNeural" ? "Conrad (Studio)" : "Katja (Studio)"
+          }}</span>
         </button>
       </div>
     </div>
@@ -624,7 +626,7 @@ onBeforeUnmount(() => {
         <!-- Prev Sentence Button -->
         <button
           type="button"
-          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white outline-none focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
+          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all outline-none hover:border-white/20 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
           :disabled="currentIndex <= 0 || !isSupported"
           aria-label="Vorheriger Satz"
           title="Vorheriger Satz"
@@ -659,7 +661,7 @@ onBeforeUnmount(() => {
         <!-- Next Sentence Button -->
         <button
           type="button"
-          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white outline-none focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
+          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all outline-none hover:border-white/20 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
           :disabled="currentIndex >= totalCount - 1 || !isSupported"
           aria-label="Nächster Satz"
           title="Nächster Satz"
@@ -671,7 +673,7 @@ onBeforeUnmount(() => {
         <!-- Stop Button -->
         <button
           type="button"
-          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all hover:border-rose-400/40 hover:bg-rose-400/10 hover:text-rose-300 outline-none focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
+          class="flex size-9 items-center justify-center rounded-full border-[1.5px] border-white/10 bg-white/5 text-mist-300 transition-all outline-none hover:border-rose-400/40 hover:bg-rose-400/10 hover:text-rose-300 focus:outline-none focus-visible:outline-none active:scale-95 disabled:pointer-events-none disabled:opacity-30"
           :disabled="!isPlaying && !isPaused"
           aria-label="Wiedergabe stoppen"
           title="Zurücksetzen & Stoppen"
@@ -717,7 +719,10 @@ onBeforeUnmount(() => {
 
     <!-- Progress Track & Live Sentence Preview -->
     <div class="mt-3.5 space-y-1.5">
-      <label :for="`audio-progress-${instanceId}`" class="sr-only">
+      <label
+        :for="`audio-progress-${instanceId}`"
+        class="sr-only"
+      >
         Wiedergabefortschritt
       </label>
       <progress
@@ -730,7 +735,7 @@ onBeforeUnmount(() => {
       </progress>
       <button
         type="button"
-        class="relative block h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 p-0 transition-colors hover:bg-white/15 outline-none focus:outline-none focus-visible:outline-none ring-0 focus:ring-0"
+        class="relative block h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 p-0 ring-0 transition-colors outline-none hover:bg-white/15 focus:ring-0 focus:outline-none focus-visible:outline-none"
         aria-label="Wiedergabefortschritt"
         title="Klicken zum Springen im Text"
         @click="seekByClick"

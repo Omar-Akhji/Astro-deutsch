@@ -1,6 +1,6 @@
 ---
 import { getGradient, VOCABULARY_GRADIENTS } from "@/shared/lib";
-import Card from "@/shared/ui/Card.astro";
+import CardWithModal from "@/shared/ui/CardWithModal.astro";
 import type { VocabularyItem } from "../model/types.ts";
 import { getVocabularySlug } from "../utils/slug.ts";
 
@@ -22,20 +22,30 @@ const { vocabularyList } = Astro.props;
     Wortschatz-Themen
   </h2>
   <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 py-4 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
-    {vocabularyList.map((item, index) => (
-      <li
-        class="h-full"
-        data-animate="fade-up"
-      >
-        <Card
-          category={item.category}
-          description={item.description}
-          gradient={getGradient(index, VOCABULARY_GRADIENTS)}
-          href={`/vokabeln/${getVocabularySlug(item)}/`}
-          subtitle="Wortschatz"
-          title={item.german}
-        />
-      </li>
-    ))}
+    {vocabularyList.map((item, index) => {
+      // Extract section/topic titles for modal preview
+      const previewTitles =
+        item.sections?.flatMap((section) => section.topics.map((topic) => topic.title)) ?? [];
+
+      return (
+        <li
+          class="h-full"
+          data-animate="fade-up"
+        >
+          <CardWithModal
+            category={item.category}
+            description={item.description}
+            gradient={getGradient(index, VOCABULARY_GRADIENTS)}
+            href={`/vokabeln/${getVocabularySlug(item)}/`}
+            itemType="Kapitel"
+            levelBadge="Deutsch A1"
+            modalId={`vocab-modal-${item.id}`}
+            previewTitles={previewTitles}
+            subtitle="Wortschatz"
+            title={item.german}
+          />
+        </li>
+      );
+    })}
   </ul>
 </section>

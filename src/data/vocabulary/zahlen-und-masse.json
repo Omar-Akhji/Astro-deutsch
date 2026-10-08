@@ -5,12 +5,747 @@
   "description": "Mathematische Grundbegriffe, Gewichte, Maße und Zeitangaben.",
   "sections": [
     {
-      "id": "zeit_und_zahlen",
-      "title": "Zeit und Zahlen",
+      "id": "zahlen",
+      "title": "DIE ZAHLEN",
+      "topics": [
+        {
+          "id": "die_kardinalzahlen",
+          "title": "Die Kardinalzahlen",
+          "words": [
+            {
+              "german": "die Zahl, -en",
+              "arabic": "العدد / الرقم",
+              "english": "number",
+              "example": "Die Zahl Zehn ist das grundlegende Fundament unseres vertrauten Dezimalsystems."
+            },
+            {
+              "german": "die Ziffer, -n",
+              "arabic": "الخانة / الرقم المكتوب",
+              "english": "digit",
+              "example": "Jede PIN-Nummer setzt sich aus mindestens vier individuellen Ziffern zusammen."
+            },
+            {
+              "german": "die Null, -en",
+              "arabic": "الصفر",
+              "english": "zero",
+              "example": "Die mathematische Entdeckung der Null revolutionierte die Wissenschaft nachhaltig."
+            },
+            {
+              "german": "eins",
+              "arabic": "واحد",
+              "english": "one",
+              "example": "Eins und eins ergibt nach den logischen Gesetzen der Arithmetik zwei."
+            },
+            {
+              "german": "zehn",
+              "arabic": "عشرة",
+              "english": "ten",
+              "example": "Ein volles Jahrzehnt umfasst ohne jede Ausnahme genau zehn Kalenderjahre."
+            },
+            {
+              "german": "hundert",
+              "arabic": "مائة",
+              "english": "hundred",
+              "example": "Ein Prozent bezeichnet rechnerisch exakt einen Teil von hundert Einheiten."
+            },
+            {
+              "german": "tausend",
+              "arabic": "ألف",
+              "english": "thousand",
+              "example": "Ein metrischer Kilometer entspricht der Distanz von exakt eintausend Metern."
+            },
+            {
+              "german": "die Million, -en",
+              "arabic": "المليون",
+              "english": "million",
+              "example": "In der lebendigen Metropole leben heute bereits über drei Millionen Bürger."
+            },
+            {
+              "german": "die Milliarde, -n",
+              "arabic": "المليار",
+              "english": "billion",
+              "example": "Die gesamte Weltbevölkerung zählt gegenwärtig mehr als acht Milliarden Menschen."
+            },
+            {
+              "german": "zählen",
+              "arabic": "عَدّ / يحسب",
+              "english": "to count",
+              "example": "Kinder lernen bereits in der Vorschule spielerisch bis zwanzig zu zählen."
+            },
+            {
+              "german": "rechnen",
+              "arabic": "حسب / يجري عملية حسابية",
+              "english": "to calculate",
+              "example": "Mit einem modernen Taschenrechner kann man selbst komplexe Gleichungen rasch rechnen."
+            },
+            {
+              "german": "die Summe, -n",
+              "arabic": "المجموع / الحاصل",
+              "english": "sum, total",
+              "example": "Die endgültige Summe aller Einkäufe stand übersichtlich auf der Rechnung."
+            }
+          ],
+          "description": "Grundzahlen, Ziffern, Rechnen und Mengen von null bis zu Milliarden.",
+          "details": "Kardinalzahlen, mathematische Ziffern und Grundrechenarten (A1–B2)",
+          "arabicDescription": "الأعداد الأصلية (Kardinalzahlen) في اللغة الألمانية من الصفر وحتى المليار، مع قواعد تكوين الأعداد المركبة (قراءة الآحاد قبل العشرات مع und مثل einundzwanzig)، والعمليات الحسابية البسيطة والتعامل مع الأرقام الإحصائية.",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Zahlen lernen und zählen im Alltag",
+            "intro": "Einfache Sätze über Zahlen von null bis hundert und leichtes Rechnen (A1).",
+            "paragraphs": [
+              [
+                "In der Schule lernen die Kinder jeden Tag neue Dinge.",
+                "Zuerst lernen sie [die Zahl, -en|Zahlen] von [die Null, -en|Null] bis [zehn|zehn].",
+                "[eins|Eins] und eins ist zwei, und zwei plus zwei ist vier.",
+                "Sie üben laut im Chor zu [zählen|zählen]."
+              ],
+              [
+                "Später lernen sie größere Zahlen bis [hundert|hundert] und [tausend|tausend].",
+                "Im Supermarkt muss man die Preise addieren und genau [rechnen|rechnen].",
+                "An der Kasse bezahlt man [die Summe, -n|die Summe] in bar oder mit Karte.",
+                "Jede Telefonnummer besteht aus vielen kleinen [die Ziffer, -n|Ziffern]."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Zahlen lernen und zählen im Alltag",
+              "intro": "Einfache Sätze über Zahlen von null bis hundert und leichtes Rechnen (A1).",
+              "paragraphs": [
+                [
+                  "In der Schule lernen die Kinder jeden Tag neue Dinge.",
+                  "Zuerst lernen sie [die Zahl, -en|Zahlen] von [die Null, -en|Null] bis [zehn|zehn].",
+                  "[eins|Eins] und eins ist zwei, und zwei plus zwei ist vier.",
+                  "Sie üben laut im Chor zu [zählen|zählen]."
+                ],
+                [
+                  "Später lernen sie größere Zahlen bis [hundert|hundert] und [tausend|tausend].",
+                  "Im Supermarkt muss man die Preise addieren und genau [rechnen|rechnen].",
+                  "An der Kasse bezahlt man [die Summe, -n|die Summe] in bar oder mit Karte.",
+                  "Jede Telefonnummer besteht aus vielen kleinen [die Ziffer, -n|Ziffern]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Einkaufen, Haushaltsbuch und große Zahlen",
+              "intro": "Umgang mit Geldbeträgen, Rechnungen und Telefonnummern in Beruf und Alltag (A2).",
+              "paragraphs": [
+                [
+                  "Wer in Deutschland einen eigenen Haushalt führt, muss seine monatlichen Ausgaben sorgfältig planen.",
+                  "Man setzt sich an den Schreibtisch und beginnt gewissenhaft zu [rechnen|rechnen].",
+                  "Miete, Strom, Lebensmittel und Fahrkarten ergeben zusammen eine beachtliche [die Summe, -n|Summe].",
+                  "Um Fehler zu vermeiden, sollte man alle Belege einzeln [zählen|zählen] und ordnen."
+                ],
+                [
+                  "In den Nachrichten hört man oft gigantische Zahlen über Wirtschaft und Finanzen.",
+                  "Da geht es nicht nur um [tausend|tausend] Euro, sondern um viele [die Million, -en|Millionen] oder gar eine [die Milliarde, -n|Milliarde].",
+                  "Besonders wichtig ist es, die [die Ziffer, -n|Ziffern] auf Überweisungen fehlerfrei einzugeben.",
+                  "Schon eine einzige vergessene [die Null, -en|Null] verändert [die Zahl, -en|die Zahl] auf dem Überweisungsformular dramatisch."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Das Dezimalsystem und die Macht der Statistik",
+              "intro": "Wie Zahlen unsere Wahrnehmung formen und komplexe Sachverhalte quantifizieren (B1).",
+              "paragraphs": [
+                [
+                  "Zahlen sind die universelle Sprache der menschlichen Zivilisation und ermöglichen globalen Handel.",
+                  "Ohne das Konzept, Dinge präzise zu [zählen|zählen] und mathematisch zu erfassen, gäbe es weder Wissenschaft noch moderne Technologie.",
+                  "Ausgehend von den Ziffern von [die Null, -en|Null] bis [zehn|zehn] konstruiert das Dezimalsystem ein unendliches Kontinuum.",
+                  "Jede wissenschaftliche Erhebung stützt sich auf empirische Daten, aus denen Forscher verlässliche Durchschnitte [rechnen|rechnen]."
+                ],
+                [
+                  "Wenn globale Organisationen über Demografie debattieren, bewegen sich die Schätzungen im Bereich von vielen [die Milliarde, -n|Milliarden] Menschen.",
+                  "Nationale Budgets verteilen etliche [die Million, -en|Millionen] für Bildung, Infrastruktur und Umweltschutz.",
+                  "Am Ende entscheidet stets [die Summe, -n|die Summe] aller Einzelentscheidungen über Erfolg oder Misserfolg eines Projekts.",
+                  "Hinter jeder abstrakten [die Zahl, -en|Zahl] stehen reale menschliche Schicksale und greifbare wirtschaftliche Realitäten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Mathematische Abstraktion, Quantifizierung und Big Data",
+              "intro": "Philosophische und erkenntnistheoretische Dimensionen von Zahlenwelten und Algorithmen (B2).",
+              "paragraphs": [
+                [
+                  "Die fortschreitende Digitalisierung hat die Quantifizierung aller Lebensbereiche auf eine beispiellose Spitze getrieben.",
+                  "Algorithmen reduzieren komplexe menschliche Verhaltensmuster auf Ketten binärer [die Ziffer, -n|Ziffern], bestehend aus [eins|Eins] und [die Null, -en|Null].",
+                  "Während die Antike in mathematischen Proportionen noch kosmische Harmonien vermutete, operiert die Moderne mit gigantischen Datenmengen.",
+                  "Rechenzentren verarbeiten im Sekundentakt Abermillionen Operationen und [rechnen|rechnen] Wahrscheinlichkeiten für globale Finanzmärkte aus."
+                ],
+                [
+                  "In makroökonomischen Modellierungen entscheidet oft ein Bruchteil eines Prozentpunkts über Investitionsströme in Höhe von mehreren [die Milliarde, -n|Milliarden].",
+                  "Kritische Denker warnen davor, die Qualität sozialer Beziehungen rein numerisch erfassen zu wollen, denn Vertrauen lässt sich nicht [zählen|zählen].",
+                  "Letztlich bleibt [die Zahl, -en|die Zahl] ein mächtiges epistemisches Werkzeug, das der Menschheit zwar Erkenntnisgewinn schenkt, aber niemals moralische Urteilskraft ersetzen kann."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_ordinalzahlen",
+          "title": "Die Ordinalzahlen",
+          "words": [
+            {
+              "german": "der erste / die erste / das erste",
+              "arabic": "الأول / الأولى",
+              "english": "first",
+              "example": "Der erste Eindruck entscheidet oft über Sympathie und Vertrauen im Gespräch."
+            },
+            {
+              "german": "der zweite",
+              "arabic": "الثاني",
+              "english": "second",
+              "example": "Im zweiten Obergeschoss liegen die Konferenzräume des Unternehmens."
+            },
+            {
+              "german": "der dritte",
+              "arabic": "الثالث",
+              "english": "third",
+              "example": "Aller guten Dinge sind drei, deshalb probierte sie es ein drittes Mal."
+            },
+            {
+              "german": "der vierte",
+              "arabic": "الرابع",
+              "english": "fourth",
+              "example": "Das vierte Quartal eines Geschäftsjahres ist für den Einzelhandel besonders umsatzstark."
+            },
+            {
+              "german": "der zehnte",
+              "arabic": "العاشر",
+              "english": "tenth",
+              "example": "Am zehnten Oktober feiern die Nachbarn ihr gemeinsames Straßenfest."
+            },
+            {
+              "german": "der zwanzigste",
+              "arabic": "العشرون",
+              "english": "twentieth",
+              "example": "Heute ist bereits der zwanzigste Tag unseres intensiven Sprachkurses."
+            },
+            {
+              "german": "der letzte",
+              "arabic": "الأخير",
+              "english": "last",
+              "example": "Der letzte Bus des Tages verlässt die Haltestelle um dreiundzwanzig Uhr."
+            },
+            {
+              "german": "der vorletzte",
+              "arabic": "قبل الأخير",
+              "english": "penultimate, second to last",
+              "example": "In der vorletzten Reihe des Kinosaals hatte man die beste Sicht auf die Leinwand."
+            },
+            {
+              "german": "die Reihenfolge, -n",
+              "arabic": "الترتيب / التسلسل",
+              "english": "order, sequence",
+              "example": "Bitte beachten Sie bei der Montage die vorgeschriebene Reihenfolge der Arbeitsschritte."
+            },
+            {
+              "german": "der Rang, ⸚e",
+              "arabic": "المرتبة / الرتبة",
+              "english": "rank",
+              "example": "Mit herausragender Kondition sicherte sich die Läuferin den ersten Rang auf dem Podium."
+            },
+            {
+              "german": "zweitens",
+              "arabic": "ثانياً",
+              "english": "secondly",
+              "example": "Erstens ist die Aufgabe zu komplex, und zweitens reicht unser Budget nicht aus."
+            },
+            {
+              "german": "anfangs",
+              "arabic": "في البداية / بادئ ذي بدء",
+              "english": "initially, at first",
+              "example": "Anfangs wirkte die fremde Stadt einschüchternd, doch bald fühlte er sich heimisch."
+            }
+          ],
+          "description": "Ordnungszahlen, Rangfolgen, Datumsangaben und chronologische Sequenzen.",
+          "details": "Ordinalzahlen, Ränge, Reihenfolgen und Datumsstrukturen (A1–B2)",
+          "arabicDescription": "الأعداد الترتيبية (Ordinalzahlen) واستخداماتها الأساسية في تحديد الترتيب، وتواريخ الأيام (مثل am ersten Mai مع إضافة النهاية -ten)، والطبقات السكنية، والمراكز الرياضية، والكلمات المساعدة للتسلسل المنطقي مثل erstens و zweitens.",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Der Wettlauf und die Reihenfolge",
+            "intro": "Einfache Sätze mit Ordinalzahlen, Datumsangaben und Reihenfolgen (A1).",
+            "paragraphs": [
+              [
+                "Heute ist ein sonniger Schultag und die Kinder haben Sportfest.",
+                "Beim kurzen Wettlauf rennen alle Schüler so schnell sie können.",
+                "Paul läuft am schnellsten und ist [der erste / die erste / das erste|der erste] im Ziel.",
+                "Lukas kommt kurz nach ihm an und wird [der zweite|der zweite]."
+              ],
+              [
+                "Maria belegt den [der dritte|dritten] Platz und freut sich über ihre Medaille.",
+                "Alle warten geduldig auf [der letzte|den letzten] Läufer der Gruppe.",
+                "Der Lehrer notiert die genaue [die Reihenfolge, -n|Reihenfolge] der Kinder auf einer Liste.",
+                "Am [der zehnte|zehnten] Juli gibt es für alle Teilnehmer eine feierliche Urkunde."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Der Wettlauf und die Reihenfolge",
+              "intro": "Einfache Sätze mit Ordinalzahlen, Datumsangaben und Reihenfolgen (A1).",
+              "paragraphs": [
+                [
+                  "Heute ist ein sonniger Schultag und die Kinder haben Sportfest.",
+                  "Beim kurzen Wettlauf rennen alle Schüler so schnell sie können.",
+                  "Paul läuft am schnellsten und ist [der erste / die erste / das erste|der erste] im Ziel.",
+                  "Lukas kommt kurz nach ihm an und wird [der zweite|der zweite]."
+                ],
+                [
+                  "Maria belegt den [der dritte|dritten] Platz und freut sich über ihre Medaille.",
+                  "Alle warten geduldig auf [der letzte|den letzten] Läufer der Gruppe.",
+                  "Der Lehrer notiert die genaue [die Reihenfolge, -n|Reihenfolge] der Kinder auf einer Liste.",
+                  "Am [der zehnte|zehnten] Juli gibt es für alle Teilnehmer eine feierliche Urkunde."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Termine vereinbaren und Pläne strukturieren",
+              "intro": "Datumsangaben, Stockwerke und schrittweise Argumentation im Alltag (A2).",
+              "paragraphs": [
+                [
+                  "Wenn man in Deutschland offizielle Termine vereinbart, braucht man genaue Ordnungszahlen.",
+                  "„Ich hätte gerne einen Termin am [der zehnte|zehnten] oder am [der zwanzigste|zwanzigsten] Mai“, erklärt die Kundin am Telefon.",
+                  "Die Praxis der Ärztin liegt im [der zweite|zweiten] Stockwerk eines Altbaus.",
+                  "Sie nimmt den Aufzug, weil die Treppe bis in die [der vierte|vierte] Etage sehr steil ist."
+                ],
+                [
+                  "Bei einer Präsentation strukturiert man seine Gedanken klar und verständlich.",
+                  "[anfangs|Anfangs] begrüßt man die Zuhörer und nennt das Hauptthema.",
+                  "Erstens stellt man das Konzept vor, und [zweitens|zweitens] diskutiert man die Kosten.",
+                  "In der [die Reihenfolge, -n|Reihenfolge] der Planung kommt die Budgetprüfung immer vor der Umsetzung."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Wettbewerb, Ranglisten und Prioritätensetzung",
+              "intro": "Wie Ordnungszahlen hierarchische Strukturen und sportliche Leistungen beschreiben (B1).",
+              "paragraphs": [
+                [
+                  "In Sport und Wirtschaft entscheiden feine Nuancen über den Erfolg.",
+                  "Wer bei internationalen Meisterschaften [der erste / die erste / das erste|den ersten] [der Rang, ⸚e|Rang] erobert, schreibt Geschichte.",
+                  "Doch auch wer als [der zweite|Zweiter] oder [der dritte|Dritter] durchs Ziel geht, erbringt eine bewundernswerte Höchstleistung.",
+                  "Häufig entscheidet der [der vorletzte|vorletzte] Kilometer eines Marathons über Sieg oder Niederlage."
+                ],
+                [
+                  "Im beruflichen Projektmanagement muss das Team eine strenge [die Reihenfolge, -n|Reihenfolge] einhalten.",
+                  "Nicht alle Aufgaben können simultan bearbeitet werden; manche müssen zwingend vor anderen abgeschlossen sein.",
+                  "Erst wenn [der letzte|der letzte] Meilenstein erfolgreich validiert ist, gilt das Gesamtvorhaben als abgeschlossen.",
+                  "Dabei zeigt sich oft: Was [anfangs|anfangs] nebensächlich schien, entpuppt sich später als entscheidender Erfolgsfaktor."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Sequenzielle Logik, Rangordnungen und historische Epochen",
+              "intro": "Strukturierung von Komplexität durch chronologische und hierarchische Ordnungssysteme (B2).",
+              "paragraphs": [
+                [
+                  "Ordnungszahlen bilden das linguistische Rückgrat jeder analytischen Argumentation und historischen Periodisierung.",
+                  "Die Geschichtsschreibung gliedert Epochen in Phasen: das [der erste / die erste / das erste|erste], [der zweite|zweite] und [der dritte|dritte] Reich oder die Wandlungen des zwanzigsten Jahrhunderts.",
+                  "Wer eine überzeugende wissenschaftliche These formuliert, gliedert dialektisch: erstens die These, [zweitens|zweitens] die Antithese und drittens die Synthese.",
+                  "Ohne eine verbindliche [die Reihenfolge, -n|Reihenfolge] zerfällt jede rationale Argumentationskette in beliebige Fragmente."
+                ],
+                [
+                  "Auch in soziologischen Analysen von Status und Prestige fungiert [der Rang, ⸚e|der Rang] als Indikator gesellschaftlicher Distinktion.",
+                  "Ob im akademischen Betrieb oder in Unternehmenshierarchien – die Differenzierung zwischen [der vorletzte|vorletzten] und [der letzte|letzten] Positionen reflektiert subtile Machtverhältnisse.",
+                  "Die Fähigkeit, temporale und hierarchische Sequenzen präzise zu artikulieren, zeichnet differenzierten Sprachgebrauch auf höchstem Niveau aus."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_bruchzahlen",
+          "title": "Die Bruchzahlen",
+          "words": [
+            {
+              "german": "die Hälfte, -n",
+              "arabic": "النصف",
+              "english": "half",
+              "example": "Mehr als die Hälfte der anwesenden Gäste entschied sich für das vegetarische Menü."
+            },
+            {
+              "german": "das Drittel, -",
+              "arabic": "الثلث",
+              "english": "third",
+              "example": "Etwa ein Drittel des gesamten Monatseinkommens fließt direkt in die Wohnungsmiete."
+            },
+            {
+              "german": "das Viertel, -",
+              "arabic": "الربع",
+              "english": "quarter",
+              "example": "In genau einer Viertelstunde beginnt die wichtige Teambesprechung im Saal."
+            },
+            {
+              "german": "das Zehntel, -",
+              "arabic": "العُشر",
+              "english": "tenth",
+              "example": "Nur ein winziges Zehntel aller eingereichten Entwürfe schaffte es in die Endauswahl."
+            },
+            {
+              "german": "das Prozent, -e",
+              "arabic": "النسبة المئوية / بالمائة",
+              "english": "percent",
+              "example": "Die jährliche Inflationsrate ging überraschend um zwei Prozent zurück."
+            },
+            {
+              "german": "der Bruch, ⸚e",
+              "arabic": "الكسر (الحسابي)",
+              "english": "fraction",
+              "example": "Im Mathematikunterricht lernen Schüler, wie man Brüche fachgerecht erweitert."
+            },
+            {
+              "german": "der Zähler, -",
+              "arabic": "البسط (في الكسر)",
+              "english": "numerator",
+              "example": "Der Zähler steht oberhalb des Bruchstrichs und beziffert die gezählten Anteile."
+            },
+            {
+              "german": "der Nenner, -",
+              "arabic": "المقام (في الكسر)",
+              "english": "denominator",
+              "example": "Wenn der Nenner größer wird, verkleinert sich der Gesamtwert der einzelnen Bruchteile."
+            },
+            {
+              "german": "halb",
+              "arabic": "نصف (صفة)",
+              "english": "half",
+              "example": "Es ist bereits halb vier nachmittags, wir sollten uns auf den Rückweg machen."
+            },
+            {
+              "german": "anderthalb",
+              "arabic": "واحد ونصف",
+              "english": "one and a half",
+              "example": "Die Zugfahrt mit dem ICE nach Hamburg dauerte anderthalb entspannte Stunden."
+            },
+            {
+              "german": "zweieinhalb",
+              "arabic": "اثنان ونصف",
+              "english": "two and a half",
+              "example": "Für den Kuchenteig benötigen wir zweieinhalb Kilogramm frisches Bio-Mehl."
+            },
+            {
+              "german": "der Anteil, -e",
+              "arabic": "الحصة / النسبة / النصيب",
+              "english": "share, proportion",
+              "example": "Der Anteil erneuerbarer Energien an der Stromerzeugung steigt kontinuierlich an."
+            }
+          ],
+          "description": "Brüche, Prozentangaben, Anteile und mathematische Teilmengen.",
+          "details": "Bruchzahlen, Anteile, Prozentrechnung und Mengenteilung (A1–B2)",
+          "arabicDescription": "الأعداد الكسرية (Bruchzahlen) والنسب المئوية (Prozent) في اللغة الألمانية. يتضمن الدرس أسماء الكسور مثل die Hälfte و das Drittel و das Viertel، ومصطلحي البسط (der Zähler) والمقام (der Nenner)، والصفات المركبة مثل anderthalb و zweieinhalb، وقواعد كتابة الكسور كأعداد أو كأسماء محايدة.",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Kuchen teilen und Zeit messen",
+            "intro": "Einfache Bruchteile wie halb, Drittel und Viertel im Alltag (A1).",
+            "paragraphs": [
+              [
+                "Zum Geburtstag backt Oma einen großen, leckeren Apfelkuchen.",
+                "Sie schneidet den Kuchen genau in zwei Teile: Jedes Kind bekommt [die Hälfte, -n|die Hälfte].",
+                "Wenn drei Freunde da sind, bekommt jeder [das Drittel, -|ein Drittel].",
+                "Bei vier Gästen schneidet sie den Kuchen in vier Stücke: Jedes Stück ist [das Viertel, -|ein Viertel]."
+              ],
+              [
+                "Wir schauen auf die Uhr im Wohnzimmer.",
+                "Es ist schon [halb|halb] drei, und der Besuch kommt gleich.",
+                "Wir warten noch [anderthalb|anderthalb] Stunden, bis die Feier richtig beginnt.",
+                "Beim Einkaufen haben wir [zweieinhalb|zweieinhalb] Kilo Äpfel mitgebracht."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Kuchen teilen und Zeit messen",
+              "intro": "Einfache Bruchteile wie halb, Drittel und Viertel im Alltag (A1).",
+              "paragraphs": [
+                [
+                  "Zum Geburtstag backt Oma einen großen, leckeren Apfelkuchen.",
+                  "Sie schneidet den Kuchen genau in zwei Teile: Jedes Kind bekommt [die Hälfte, -n|die Hälfte].",
+                  "Wenn drei Freunde da sind, bekommt jeder [das Drittel, -|ein Drittel].",
+                  "Bei vier Gästen schneidet sie den Kuchen in vier Stücke: Jedes Stück ist [das Viertel, -|ein Viertel]."
+                ],
+                [
+                  "Wir schauen auf die Uhr im Wohnzimmer.",
+                  "Es ist schon [halb|halb] drei, und der Besuch kommt gleich.",
+                  "Wir warten noch [anderthalb|anderthalb] Stunden, bis die Feier richtig beginnt.",
+                  "Beim Einkaufen haben wir [zweieinhalb|zweieinhalb] Kilo Äpfel mitgebracht."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Kochen nach Rezept und Sonderangebote im Supermarkt",
+              "intro": "Mengenteile, Gewichtsangaben und Prozente beim Einkaufen (A2).",
+              "paragraphs": [
+                [
+                  "Beim Kochen nach Rezept muss man Bruchteile genau abmessen.",
+                  "Für die Soße benötigt man [anderthalb|anderthalb] Becher Sahne und [die Hälfte, -n|die Hälfte] einer Zitrone.",
+                  "Wer für eine größere Feier kocht, nimmt [zweieinhalb|zweieinhalb] Liter Gemüsebrühe.",
+                  "Ein gutes Rezept gelingt nur, wenn das Mengenverhältnis stimmt."
+                ],
+                [
+                  "Im Supermarkt werben die Schilder mit verlockenden Rabatten.",
+                  "„Heute zwanzig [das Prozent, -e|Prozent] Nachlass auf alle Bio-Molkereiprodukte!“, verkündet der Aushang.",
+                  "Fast [das Drittel, -|ein Drittel] aller Kunden greift begeistert zu den reduzierten Waren.",
+                  "So spart man bares Geld und hält die Haushaltsausgaben in vernünftigen Grenzen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Statistiken verstehen und Quoten analysieren",
+              "intro": "Wie prozentuale Verteilungen und Bruchteile gesellschaftliche Trends abbilden (B1).",
+              "paragraphs": [
+                [
+                  "Grafiken und Tabellen in den Medien vermitteln wichtige Informationen durch Bruchteile.",
+                  "Man liest, dass [der Anteil, -e|der Anteil] der Beschäftigten im Dienstleistungssektor stetig wächst.",
+                  "Mehr als [die Hälfte, -n|die Hälfte] der Bevölkerung nutzt regelmäßig öffentliche Verkehrsmittel.",
+                  "Gleichzeitig monieren Kritiker, dass nur ein knappes [das Zehntel, -|Zehntel] der Investitionen in den Schienenausbau fließt."
+                ],
+                [
+                  "In der Schule bildet die Bruchrechnung die Brücke zu höherer Mathematik.",
+                  "Jeder mathematische [der Bruch, ⸚e|Bruch] verdeutlicht das Zusammenspiel zwischen Teilen und dem Ganzen.",
+                  "Der Schüler muss begreifen, wie [der Zähler, -|der Zähler] und [der Nenner, -|der Nenner] zueinander in Relation stehen.",
+                  "Wer dieses mathematische Prinzip meistert, versteht auch Zinseszinsen und prozentuale Veränderungen im Wirtschaftsleben."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Proportionale Modelle, Verteilungsquoten und fraktionale Arithmetik",
+              "intro": "Theoretische Analyse quantitativer Relationen und sozioökonomischer Ungleichheiten (B2).",
+              "paragraphs": [
+                [
+                  "In der soziologischen Ungleichheitsforschung spielen Fraktionen und Quoten eine fundamentale Rolle.",
+                  "Empirische Studien belegen, dass das oberste [das Zehntel, -|Zehntel] der Vermögenspyramide über mehr als [die Hälfte, -n|die Hälfte] des gesamten Nettovermögens verfügt.",
+                  "Solche Verteilungsrelationen lassen sich präzise durch Gini-Koeffizienten und prozentuale Kennziffern modellieren.",
+                  "Der prozentuale [der Anteil, -e|Anteil] vulnerabler Gruppen an den Gesamtausgaben entscheidet über die soziale Kohärenz einer Demokratie."
+                ],
+                [
+                  "Auf mikroökonomischer Ebene erfordern Unternehmensfusionen eine penible Aufteilung der Eigentumsrechte.",
+                  "Jeder Gesellschafter beansprucht [das Drittel, -|ein Drittel] oder [das Viertel, -|ein Viertel] der Stimmrechte im Aufsichtsrat.",
+                  "Mathematisch abstrahiert fungiert der [der Bruch, ⸚e|Bruch] als Verhältnis zweier ganzer Zahlen, wobei [der Nenner, -|der Nenner] die Basisskalierung definiert und [der Zähler, -|der Zähler] die Frequenz abbildet.",
+                  "Die Beherrschung dieses mathematischen Vokabulars ist unabdingbar für wissenschaftliche und ökonomische Diskurse."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "weitere_zahlwoerter",
+          "title": "Weitere Zahlwörter",
+          "words": [
+            {
+              "german": "einfach",
+              "arabic": "بسيط / أحادي / مفرد",
+              "english": "single, simple",
+              "example": "Die Lösung für dieses knifflige Rätsel war verblüffend einfach."
+            },
+            {
+              "german": "doppelt",
+              "arabic": "مزدوج / مضاعف",
+              "english": "double",
+              "example": "Sie bestellte einen doppelten Espresso, um während der Nachtschicht wach zu bleiben."
+            },
+            {
+              "german": "dreifach",
+              "arabic": "ثلاثي / ثلاثة أضعاف",
+              "english": "triple",
+              "example": "Die Nachfrage nach Wärmepumpen stieg in diesem Jahr um das Dreifache an."
+            },
+            {
+              "german": "mehrfach",
+              "arabic": "متعدد / مراراً وتكراراً",
+              "english": "multiple, repeatedly",
+              "example": "Der Rauchmelder schlug im Laufe des Vormittags mehrfach falschen Alarm."
+            },
+            {
+              "german": "beide",
+              "arabic": "كلاهما / الاثنان معاً",
+              "english": "both",
+              "example": "Beide Kandidaten überzeugten die Kommission durch herausragende Fachkompetenz."
+            },
+            {
+              "german": "alle",
+              "arabic": "كل / جميع",
+              "english": "all",
+              "example": "Alle Kursteilnehmer bestanden die anspruchsvolle Sprachprüfung mit Bestnoten."
+            },
+            {
+              "german": "einige",
+              "arabic": "بعض / بضعة",
+              "english": "some, several",
+              "example": "Im Kühlschrank befinden sich noch einige frische Tomaten aus dem Garten."
+            },
+            {
+              "german": "manche",
+              "arabic": "بعض / فئة معينة",
+              "english": "some, certain",
+              "example": "Manche Menschen benötigen morgens viel Ruhe, um den Tag entspannt zu beginnen."
+            },
+            {
+              "german": "mehrere",
+              "arabic": "عدّة",
+              "english": "several",
+              "example": "Die Forschergruppe veröffentlichte zu diesem Thema mehrere Fachaufsätze."
+            },
+            {
+              "german": "wenige",
+              "arabic": "قليل / قلة",
+              "english": "few",
+              "example": "Nur sehr wenige Passanten waren zu dieser späten Stunde noch auf den Straßen."
+            },
+            {
+              "german": "viel",
+              "arabic": "كثير / قدر كبير",
+              "english": "much, a lot",
+              "example": "Um fließend Deutsch zu sprechen, braucht man viel praktische Sprechübung."
+            },
+            {
+              "german": "das Dutzend, -e",
+              "arabic": "الدرزن (اثنا عشر شيئاً)",
+              "english": "dozen",
+              "example": "Auf dem Markt kaufte der Bäcker ein Dutzend frische Eier für den Teig."
+            }
+          ],
+          "description": "Indefinitpronomen, Multiplikativa, Mengenangaben und Zahlbegriffe.",
+          "details": "Vervielfältigungszahlen, unbestimmte Zahladjektive und Mengenausdrücke (A1–B2)",
+          "arabicDescription": "ألفاظ الأعداد الأخرى وأسماء الكميات (Weitere Zahlwörter) في الألمانية: أعداد المضاعفة مثل einfach و doppelt و dreifach، والضمائر غير المحددة للكمية مثل alle و einige و manche و mehrere و wenige و viel، بالإضافة إلى الوحدات التقليدية مثل das Dutzend و das Paar.",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Mengen beschreiben und einkaufen",
+            "intro": "Einfache Wörter für Mengen und Vervielfältigungen im Alltag (A1).",
+            "paragraphs": [
+              [
+                "Heute gehen wir zusammen auf den großen Wochenmarkt in der Stadt.",
+                "Dort gibt es [viel|viel] frisches Obst und gesundes Gemüse zu kaufen.",
+                "Ich kaufe [das Dutzend, -e|ein Dutzend] Eier und zwei Körbe Erdbeeren.",
+                "[alle|Alle] Verkäufer sind sehr freundlich und grüßen die Kunden."
+              ],
+              [
+                "Ich habe zwei Freunde dabei, und [beide|beide] möchten einen Kaffee trinken.",
+                "Wir bestellen einen einfachen Kaffee und einen [doppelt|doppelten] Espresso.",
+                "[einige|Einige] Tische im Café sind frei, aber [manche|manche] Plätze sind reserviert.",
+                "Die Bestellung ist wirklich [einfach|einfach] und schnell gemacht."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mengen beschreiben und einkaufen",
+              "intro": "Einfache Wörter für Mengen und Vervielfältigungen im Alltag (A1).",
+              "paragraphs": [
+                [
+                  "Heute gehen wir zusammen auf den großen Wochenmarkt in der Stadt.",
+                  "Dort gibt es [viel|viel] frisches Obst und gesundes Gemüse zu kaufen.",
+                  "Ich kaufe [das Dutzend, -e|ein Dutzend] Eier und zwei Körbe Erdbeeren.",
+                  "[alle|Alle] Verkäufer sind sehr freundlich und grüßen die Kunden."
+                ],
+                [
+                  "Ich habe zwei Freunde dabei, und [beide|beide] möchten einen Kaffee trinken.",
+                  "Wir bestellen einen einfachen Kaffee und einen [doppelt|doppelten] Espresso.",
+                  "[einige|Einige] Tische im Café sind frei, aber [manche|manche] Plätze sind reserviert.",
+                  "Die Bestellung ist wirklich [einfach|einfach] und schnell gemacht."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Alltägliche Mengen und Arbeitsorganisation",
+              "intro": "Mengenvergleiche, mehrfache Aufgaben und Teamentscheidungen (A2).",
+              "paragraphs": [
+                [
+                  "Im Büroalltag muss man oft [mehrere|mehrere] Termine an einem einzigen Tag koordinieren.",
+                  "[manche|Manche] Aufgaben sind schnell erledigt, während andere [viel|viel] Geduld erfordern.",
+                  "Die Projektleiterin bat [alle|alle] Mitarbeiter, pünktlich zum Meeting zu erscheinen.",
+                  "[beide|Beide] Teams haben [mehrfach|mehrfach] miteinander telefoniert, um die Details zu klären."
+                ],
+                [
+                  "Für den neuen Kunden haben wir ein [doppelt|doppeltes] Kontingent an Beratungssitzungen gebucht.",
+                  "Es gab zwar [einige|einige] technische Rückfragen, doch [wenige|wenige] Minuten später war alles geklärt.",
+                  "Der Ablauf der Software ist denkbar [einfach|einfach] gestaltet.",
+                  "So sparen [alle|alle] Beteiligten wertvolle Arbeitszeit."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Differenzierte Mengenangaben und gesellschaftliche Tendenzen",
+              "intro": "Wie Indefinitpronomina und Multiplikatoren Nuancen in Diskussionen ausdrücken (B1).",
+              "paragraphs": [
+                [
+                  "In gesellschaftlichen Debatten ist es essenziell, Verallgemeinerungen zu vermeiden.",
+                  "Aussagen, die behaupten, dass [alle|alle] Bürger einer Meinung seien, halten einer kritischen Prüfung selten stand.",
+                  "In Wahrheit teilen [manche|manche] Gruppen bestimmte Ansichten, während [andere|andere] diametral entgegengesetzte Haltungen vertreten.",
+                  "Nur [wenige|wenige] Experten wagten es, die Risiken frühzeitig und [mehrfach|mehrfach] öffentlich anzusprechen."
+                ],
+                [
+                  "Unternehmen sehen sich heute einer [dreifach|dreifachen] Herausforderung gegenüber: Digitalisierung, Fachkräftemangel und Klimawandel.",
+                  "Wer in diesen Zeiten die Produktivität [doppelt|doppelt] so schnell steigern will, muss innovative Wege beschreiten.",
+                  "Dabei zeigt sich oft, dass [einfach|einfache] Lösungen zwar verlockend wirken, aber selten nachhaltig greifen.",
+                  "[beide|Beide] Seiten eines Kompromisses müssen Kompromissbereitschaft signalisieren."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Quantoren, Indefinitheit und epistemische Exaktheit",
+              "intro": "Linguistische und philosophische Betrachtung von Allquantoren und unbestimmten Zahlwörtern (B2).",
+              "paragraphs": [
+                [
+                  "In der formalen Logik und der Sprachphilosophie markieren Quantoren fundamentale Kategorien der Erkenntnis.",
+                  "Der Übergang vom Allquantor, der ausnahmslos [alle|alle] Entitäten umfasst, zum Existenzquantor bedarf präziser Differenzierung.",
+                  "Unbestimmte Zahlausdrücke wie [einige|einige], [manche|manche] oder [mehrere|mehrere] modifizieren den Gültigkeitsanspruch empirischer Hypothesen.",
+                  "Wissenschaftliche Redlichkeit verlangt, Phänomene weder unzulässig zu verallgemeinern noch durch vage Mengenangaben zu verschleiern."
+                ],
+                [
+                  "Multiplikative Determinanten wie [doppelt|doppelt], [dreifach|dreifach] oder potenziell [mehrfach|mehrfach] gestaffelte Parameter modellieren exponentielles Wachstum.",
+                  "In kybernetischen Regelkreisen führt schon eine scheinbar [einfach|einfache] Ursache häufig zu multiplen Resonanzeffekten.",
+                  "Die präzise sprachliche Beherrschung dieser quantitativen Abstufungen schärft das analytische Urteilsvermögen in akademischen Diskursen beträchtlich."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "zeit",
+      "title": "DIE ZEIT",
       "topics": [
         {
           "id": "die_zeit",
-          "title": "Die Zeit",
+          "title": "Die Uhrzeit",
           "words": [
             {
               "german": "die Uhrzeit, -en",
@@ -189,6 +924,935 @@
           "description": "Uhrzeiten, Zeitbegriffe, Zeiteinteilung, Wochentage, Monate und Zeitmanagement.",
           "details": "Uhrzeiten, Kalender, Zeitbegriffe und Pünktlichkeit (A1–B2)",
           "arabicDescription": "الوقت والزمن وتحديد الساعات في ألمانيا. يتناول هذا الدرس نظامي قراءة الساعة في ألمانيا (النظام الرسمي الرقمي 24 ساعة، والنظام الشعبي العام مع استخدام vor و nach و halb)، ومفردات اليوم، والأسبوع، والشهر، والسنة، وأهمية الدقة والالتزام بالمواعيد (Pünktlichkeit) في الثقافة الألمانية."
+        },
+        {
+          "id": "tag_und_nacht",
+          "title": "Tag und Nacht",
+          "words": [
+            {
+              "german": "der Sonnenaufgang, ⸚e",
+              "arabic": "شروق الشمس",
+              "english": "sunrise",
+              "example": "Der malerische Sonnenaufgang über den Bergen färbte den Himmel in zartes Rosa."
+            },
+            {
+              "german": "der Sonnenuntergang, ⸚e",
+              "arabic": "غروب الشمس",
+              "english": "sunset",
+              "example": "Viele Spaziergänger bewunderten den friedlichen Sonnenuntergang am Meeresufer."
+            },
+            {
+              "german": "die Morgendämmerung",
+              "arabic": "غسق الصباح / الفجر",
+              "english": "dawn, morning twilight",
+              "example": "In der kühlen Morgendämmerung stimmen die Amseln ihren melodischen Gesang an."
+            },
+            {
+              "german": "die Abenddämmerung",
+              "arabic": "الغسق / شفق المساء",
+              "english": "dusk, evening twilight",
+              "example": "Sobald die Abenddämmerung einsetzt, schalten sich die Straßenlaternen automatisch ein."
+            },
+            {
+              "german": "die Mitternacht",
+              "arabic": "منتصف الليل",
+              "english": "midnight",
+              "example": "Um Schlag Mitternacht läuteten feierlich die schweren Glocken des alten Doms."
+            },
+            {
+              "german": "das Tageslicht",
+              "arabic": "ضوء النهار",
+              "english": "daylight",
+              "example": "Helles Tageslicht durchflutet das moderne Großraumbüro dank riesiger Glasfenster."
+            },
+            {
+              "german": "die Dunkelheit",
+              "arabic": "الظلام / العتمة",
+              "english": "darkness",
+              "example": "Die tiefe Dunkelheit im Wald wich erst mit den ersten morgendlichen Sonnenstrahlen."
+            },
+            {
+              "german": "tagsüber",
+              "arabic": "خلال النهار / نهاراً",
+              "english": "during the day",
+              "example": "Tagsüber arbeitet er fleißig in der Kanzlei, während er abends Spanisch lernt."
+            },
+            {
+              "german": "nachts",
+              "arabic": "ليلاً / في الليل",
+              "english": "at night",
+              "example": "Nachts sinken die Temperaturen im Hochgebirge empfindlich unter den Gefrierpunkt."
+            },
+            {
+              "german": "morgens",
+              "arabic": "صباحاً / كل صباح",
+              "english": "in the morning",
+              "example": "Morgens genießt sie stets eine heiße Tasse Grüntee vor dem Verlassen des Hauses."
+            },
+            {
+              "german": "mittags",
+              "arabic": "ظهراً / في وقت الظهيرة",
+              "english": "at noon, at midday",
+              "example": "Mittags treffen sich die Kollegen in der Betriebskantine zu einer warmen Mahlzeit."
+            },
+            {
+              "german": "der Biorhythmus, -men",
+              "arabic": "الإيقاع الحيوي",
+              "english": "biorhythm, circadian rhythm",
+              "example": "Häufige Schichtarbeit bringt den natürlichen Biorhythmus des menschlichen Körpers durcheinander."
+            }
+          ],
+          "description": "Tageszeiten, Dämmerung, astronomischer Rhythmus und Biorhythmus.",
+          "details": "Tagesabschnitte, Sonnenzyklen, Dunkelheit und Biorhythmus (A1–B2)",
+          "arabicDescription": "الليل والنهار (Tag und Nacht) ومصطلحات الدورة اليومية: شروق وغروب الشمس (Sonnenaufgang / Sonnenuntergang)، وغسق الصباح والمساء (Morgendämmerung / Abenddämmerung)، ومنتصف الليل (Mitternacht)، وظروف الزمان مثل tagsüber و nachts و morgens و abends، ومفهوم الإيقاع الحيوي (Biorhythmus).",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Ein Tag vom Morgen bis zur Nacht",
+            "intro": "Tageszeiten, Sonne und Dunkelheit in einfachen Hauptsätzen (A1).",
+            "paragraphs": [
+              [
+                "[morgens|Morgens] stehe ich um sechs Uhr auf und öffne das Fenster.",
+                "Ich sehe [der Sonnenaufgang, ⸚e|den Sonnenaufgang] am Himmel: Die Sonne scheint warm und gelb.",
+                "Es gibt wieder helles [das Tageslicht|Tageslicht] im Zimmer.",
+                "[tagsüber|Tagsüber] gehe ich zur Sprachschule und lerne fleißig Deutsch."
+              ],
+              [
+                "[mittags|Mittags] esse ich eine Suppe und treffe Freunde im Park.",
+                "Am Abend geht die Sonne unter und wir beobachten [der Sonnenuntergang, ⸚e|den Sonnenuntergang].",
+                "Dann kommt [die Dunkelheit|die Dunkelheit] und die Sterne leuchten am Himmel.",
+                "Um [die Mitternacht|Mitternacht] gehe ich ins Bett und schlafe tief und fest [nachts|nachts]."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein Tag vom Morgen bis zur Nacht",
+              "intro": "Tageszeiten, Sonne und Dunkelheit in einfachen Hauptsätzen (A1).",
+              "paragraphs": [
+                [
+                  "[morgens|Morgens] stehe ich um sechs Uhr auf und öffne das Fenster.",
+                  "Ich sehe [der Sonnenaufgang, ⸚e|den Sonnenaufgang] am Himmel: Die Sonne scheint warm und gelb.",
+                  "Es gibt wieder helles [das Tageslicht|Tageslicht] im Zimmer.",
+                  "[tagsüber|Tagsüber] gehe ich zur Sprachschule und lerne fleißig Deutsch."
+                ],
+                [
+                  "[mittags|Mittags] esse ich eine Suppe und treffe Freunde im Park.",
+                  "Am Abend geht die Sonne unter und wir beobachten [der Sonnenuntergang, ⸚e|den Sonnenuntergang].",
+                  "Dann kommt [die Dunkelheit|die Dunkelheit] und die Sterne leuchten am Himmel.",
+                  "Um [die Mitternacht|Mitternacht] gehe ich ins Bett und schlafe tief und fest [nachts|nachts]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Tagesrhythmus und Lichtwechsel im Alltag",
+              "intro": "Dämmerung, Tagesaktivitäten und gesunder Schlaf (A2).",
+              "paragraphs": [
+                [
+                  "Unser Körper reagiert empfindlich auf den Wechsel von Licht und Schatten.",
+                  "Bereits in der frühen [die Morgendämmerung|Morgendämmerung] erwacht die Natur zu neuem Leben.",
+                  "Wer [morgens|morgens] früh aufsteht, kann den beeindruckenden [der Sonnenaufgang, ⸚e|Sonnenaufgang] genießen.",
+                  "[tagsüber|Tagsüber] verbringen viele Menschen die meiste Zeit in geschlossenen Räumen."
+                ],
+                [
+                  "Wenn in der [die Abenddämmerung|Abenddämmerung] der Tag langsam ausklingt, schaltet der Körper auf Entspannung um.",
+                  "Wir bewundern den farbenprächtigen [der Sonnenuntergang, ⸚e|Sonnenuntergang] über den Dächern der Stadt.",
+                  "Man sollte vermeiden, bis kurz vor [die Mitternacht|Mitternacht] auf Bildschirme zu starren.",
+                  "Denn völlige [die Dunkelheit|Dunkelheit] im Schlafzimmer garantiert einen erholsamen Schlaf [nachts|nachts]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Der Einfluss des Lichts auf Wohlbefinden und Produktivität",
+              "intro": "Wie der natürliche Wechsel von Tag und Nacht unsere Gesundheit steuert (B1).",
+              "paragraphs": [
+                [
+                  "Die Evolution hat den Menschen an einen verlässlichen 24-Stunden-Zyklus angepasst.",
+                  "Ausreichend natürliches [das Tageslicht|Tageslicht] [tagsüber|tagsüber] kurbelt die Serotoninproduktion an und steigert die Wachheit.",
+                  "Wer in den Wintermonaten den ganzen Tag bei künstlichem Licht verbringt, riskiert depressive Verstimmungen.",
+                  "Deshalb empfehlen Mediziner, zumindest [mittags|mittags] einen ausgedehnten Spaziergang an der frischen Luft einzulegen."
+                ],
+                [
+                  "Sobald in der [die Abenddämmerung|Abenddämmerung] das Umgebungslicht schwindet, beginnt die Zirbeldrüse mit der Melatoninausschüttung.",
+                  "Wer jedoch [nachts|nachts] lange wach bleibt, stört seinen sensiblen [der Biorhythmus, -men|Biorhythmus] nachhaltig.",
+                  "Ein unregelmäßiger Schlaf-Wach-Rhythmus führt auf Dauer zu chronischer Erschöpfung und Konzentrationsschwächen.",
+                  "Die Rückbesinnung auf den Rhythmus von [der Sonnenaufgang, ⸚e|Sonnenaufgang] und [die Dunkelheit|Dunkelheit] ist daher die beste Gesundheitsvorsorge."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Zirkadiane Biologie, Lichtverschmutzung und Chronomedizin",
+              "intro": "Wissenschaftliche Dekonstruktion des Tag-Nacht-Rhythmus in postindustriellen Gesellschaften (B2).",
+              "paragraphs": [
+                [
+                  "Die Chronobiologie erforscht die molekularen Mechanismen, die unseren endogenen Schrittmacher steuern.",
+                  "Über spezifische Photorezeptoren in der Netzhaut synchronisiert [das Tageslicht|Tageslicht] die Master-Uhr im suprachiasmatischen Nukleus.",
+                  "In der modernen 24/7-Dienstleistungsgesellschaft führt die Omnipräsenz künstlicher Lichtquellen jedoch zur sogenannten Lichtverschmutzung.",
+                  "Die Grenze zwischen [die Morgendämmerung|Morgendämmerung], Arbeitsphase [tagsüber|tagsüber] und Ruhephase [nachts|nachts] verwischt zunehmend."
+                ],
+                [
+                  "Schichtarbeiter, die gegen ihren genetisch determinierten [der Biorhythmus, -men|Biorhythmus] leben, tragen signifikant höhere kardiovaskuläre Risiken.",
+                  "Die künstliche Erhellung der Umwelt eliminiert die für das Immunsystem regenerative [die Dunkelheit|Dunkelheit].",
+                  "Chronomediziner plädieren daher für eine Neujustierung städtischer Beleuchtungskonzepte und flexiblere Arbeitszeiten, die den natürlichen Sonnenzyklen von [der Sonnenaufgang, ⸚e|Sonnenaufgang] bis [der Sonnenuntergang, ⸚e|Sonnenuntergang] Rechnung tragen."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "der_kalender",
+          "title": "Der Kalender",
+          "words": [
+            {
+              "german": "der Kalender, -",
+              "arabic": "التقويم / الرزنامة",
+              "english": "calendar",
+              "example": "Ich trage alle wichtigen Geburtstage und Ferientermine sorgfältig in meinen Kalender ein."
+            },
+            {
+              "german": "das Datum, Daten",
+              "arabic": "التاريخ (اليوم والشهر والسنة)",
+              "english": "date",
+              "example": "Welches Datum haben wir heute? Heute ist der siebte Oktober."
+            },
+            {
+              "german": "der Wochentag, -e",
+              "arabic": "يوم من أيام الأسبوع",
+              "english": "day of the week",
+              "example": "Montag ist für viele Berufstätige der hektischste Wochentag der ganzen Woche."
+            },
+            {
+              "german": "der Werktag, -e",
+              "arabic": "يوم عمل (رسمي)",
+              "english": "working day, business day",
+              "example": "Behörden und Ämter sind montags bis freitags an jedem regulären Werktag geöffnet."
+            },
+            {
+              "german": "das Wochenende, -n",
+              "arabic": "عطلة نهاية الأسبوع",
+              "english": "weekend",
+              "example": "Am erholsamen Wochenende unternehmen wir lange Spaziergänge im Grünen."
+            },
+            {
+              "german": "der Feiertag, -e",
+              "arabic": "يوم عطلة رسمية / عيد",
+              "english": "public holiday",
+              "example": "Der dritte Oktober ist als Tag der Deutschen Einheit ein bundesweiter Feiertag."
+            },
+            {
+              "german": "das Quartal, -e",
+              "arabic": "الربع السنوي (فصل مالي)",
+              "english": "quarter (of a year)",
+              "example": "Im vierten Quartal verzeichnen die meisten Einzelhändler die stärksten Umsätze."
+            },
+            {
+              "german": "das Jahrzehnt, -e",
+              "arabic": "العقد (عشر سنوات)",
+              "english": "decade",
+              "example": "In den letzten beiden Jahrzehnten hat das Internet die gesamte Gesellschaft geprägt."
+            },
+            {
+              "german": "das Jahrhundert, -e",
+              "arabic": "القرن (مائة عام)",
+              "english": "century",
+              "example": "Wir leben heute im einundzwanzigsten Jahrhundert, einem Zeitalter rasanter Technologie."
+            },
+            {
+              "german": "das Schaltjahr, -e",
+              "arabic": "السنة الكبيسة",
+              "english": "leap year",
+              "example": "In einem Schaltjahr zählt der Monat Februar ausnahmsweise neunundzwanzig Tage."
+            },
+            {
+              "german": "die Frist, -en",
+              "arabic": "المهلة / الأجل القانوني",
+              "english": "deadline, time limit",
+              "example": "Bitte reichen Sie Ihren Antrag unbedingt vor Ablauf der vorgegebenen Frist ein."
+            },
+            {
+              "german": "der Termin, -e",
+              "arabic": "الموعد المحدد",
+              "english": "appointment",
+              "example": "Morgen Vormittag habe ich einen festen Termin zur Routineuntersuchung beim Arzt."
+            }
+          ],
+          "description": "Kalender, Datum, Fristen, Wochentage, Feiertage und Zeitabschnitte.",
+          "details": "Kalenderstrukturen, Termine, Fristen und Epochen (A1–B2)",
+          "arabicDescription": "التقويم (Der Kalender) وتحديد المواعيد والتواريخ في ألمانيا: أيام الأسبوع (Wochentage)، وأيام العمل (Werktage)، والعطلات الرسمية (Feiertage)، والشهور والسنوات الكبيسة (Schaltjahr)، ومفهوم المهل القانونية (Fristen) وكيفية تنظيم المواعيد الشخصية والمهنية بدقة.",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Mein Kalender und meine Woche",
+            "intro": "Einfache Sätze über Tage, Kalender und Termine (A1).",
+            "paragraphs": [
+              [
+                "In meiner Küche hängt ein bunter [der Kalender, -|Kalender] an der Wand.",
+                "Jeden Morgen schaue ich darauf und lese [das Datum, Daten|das Datum].",
+                "Heute ist Mittwoch, ein ganz normaler [der Wochentag, -e|Wochentag].",
+                "Von Montag bis Freitag arbeite ich im Büro."
+              ],
+              [
+                "Am [das Wochenende, -n|Wochenende] habe ich frei und treffe meine Freunde.",
+                "Nächste Woche habe ich am Dienstag [der Termin, -e|einen Termin] beim Arzt.",
+                "Ich freue mich schon auf den nächsten [der Feiertag, -e|Feiertag], denn da muss niemand arbeiten.",
+                "Ich notiere alle Pläne mit einem roten Stift."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mein Kalender und meine Woche",
+              "intro": "Einfache Sätze über Tage, Kalender und Termine (A1).",
+              "paragraphs": [
+                [
+                  "In meiner Küche hängt ein bunter [der Kalender, -|Kalender] an der Wand.",
+                  "Jeden Morgen schaue ich darauf und lese [das Datum, Daten|das Datum].",
+                  "Heute ist Mittwoch, ein ganz normaler [der Wochentag, -e|Wochentag].",
+                  "Von Montag bis Freitag arbeite ich im Büro."
+                ],
+                [
+                  "Am [das Wochenende, -n|Wochenende] habe ich frei und treffe meine Freunde.",
+                  "Nächste Woche habe ich am Dienstag [der Termin, -e|einen Termin] beim Arzt.",
+                  "Ich freue mich schon auf den nächsten [der Feiertag, -e|Feiertag], denn da muss niemand arbeiten.",
+                  "Ich notiere alle Pläne mit einem roten Stift."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Terminplanung, Fristen und Werktage im Berufsalltag",
+              "intro": "Fristen einhalten, Feiertage planen und Terminkalender führen (A2).",
+              "paragraphs": [
+                [
+                  "Ein strukturierter Arbeitsalltag erfordert verlässliche Kalenderführung.",
+                  "Wichtige Briefe und Rechnungen müssen oft innerhalb von vierzehn Tagen beantwortet werden, sonst verpasst man [die Frist, -en|die Frist].",
+                  "In Deutschland unterscheidet das Gesetz genau zwischen Sonn- und Feiertagen sowie einem regulären [der Werktag, -e|Werktag].",
+                  "Vor jedem offiziellen [der Feiertag, -e|Feiertag] kaufen viele Menschen Vorräte ein, da die Geschäfte geschlossen bleiben."
+                ],
+                [
+                  "Wer beruflich viel unterwegs ist, synchronisiert seinen digitalen [der Kalender, -|Kalender] mit dem Smartphone.",
+                  "Für jedes Quartalsgespräch wird rechtzeitig [der Termin, -e|ein Termin] vereinbart.",
+                  "Am Freitagabend verabschieden sich die Kollegen freundlich ins wohlverdiente [das Wochenende, -n|Wochenende].",
+                  "So behält man auch bei hoher Arbeitsbelastung stets die Übersicht über alle Verpflichtungen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Die Kulturgeschichte des Kalenders und globale Zeitrechnung",
+              "intro": "Wie Kalenderreformen, Schaltjahre und Quartale unser gesellschaftliches Leben takten (B1).",
+              "paragraphs": [
+                [
+                  "Der heute weltweit gebräuchliche gregorianische [der Kalender, -|Kalender] ist das Ergebnis jahrhundertelanger astronomischer Beobachtungen.",
+                  "Da ein Sonnenjahr knapp 365,24 Tage dauert, benötigt unser System alle vier Jahre [das Schaltjahr, -e|ein Schaltjahr].",
+                  "Ohne diesen zusätzlichen Februartag würde sich [das Datum, Daten|das Datum] der Jahreszeiten über Jahrhunderte hinweg drastisch verschieben.",
+                  "In der modernen Wirtschaftswelt wird das Jahr zudem in vier gleichmäßige Abschnitte unterteilt; jedes [das Quartal, -e|Quartal] schließt mit einer Bilanz ab."
+                ],
+                [
+                  "Blickt man auf das vergangene [das Jahrzehnt, -e|Jahrzehnt] zurück, erkennt man fundamentale gesellschaftliche Transformationen.",
+                  "Historiker betrachten oft ein ganzes [das Jahrhundert, -e|Jahrhundert], um tiefgreifende Epochenwechsel zu verstehen.",
+                  "Im privaten Bereich hingegen sind es oft die kleinen Dinge – ein gelungener [der Termin, -e|Termin] oder ein entspanntes [das Wochenende, -n|Wochenende] –, die unser Lebensgefühl prägen.",
+                  "Wer die Gesetze der Zeit achtet, lernt Vergangenheit und Zukunft harmonisch zu verbinden."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Temporale Ordnungsstrukturen, Zeitregime und Epochenbewusstsein",
+              "intro": "Soziologische Dekonstruktion von Kalendersystemen, Fristenregimen und historischer Kontinuität (B2).",
+              "paragraphs": [
+                [
+                  "Kalender sind keineswegs neutrale astronomische Register, sondern mächtige soziopolitische Steuerungsinstrumente.",
+                  "Die Institutionalisierung von Feiertagen wie [der Feiertag, -e|einem Feiertag] und die normative Trennung zwischen profanem [der Werktag, -e|Werktag] und sakraler Rast spiegeln kulturelle Werthierarchien wider.",
+                  "Die strikte Festlegung juristischer [die Frist, -en|Fristen] garantiert Rechtssicherheit in komplexen bürokratischen Staatsapparaten.",
+                  "Verwaltungsakte knüpfen elementare Rechtsfolgen an [das Datum, Daten|ein bestimmtes Datum], dessen Fristversäumnis irreparable Konsequenzen nach sich zieht."
+                ],
+                [
+                  "Im historischen Längsschnitt erweist sich das einundzwanzigste [das Jahrhundert, -e|Jahrhundert] als Ära permanenter Beschleunigungskrisen.",
+                  "Während frühere Generationen ein [das Jahrzehnt, -e|Jahrzehnt] als überschaubare Wandlungseinheit erlebten, komprimieren digitale Innovationszyklen Entwicklungsprozesse auf ein einziges [das Quartal, -e|Quartal].",
+                  "Die scheinbare mathematische Perfektion, die selbst das astronomische [das Schaltjahr, -e|Schaltjahr] absorbiert, kontrastiert scharf mit der menschlichen Sehnsucht nach zeitlicher Entschleunigung."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mabe",
+      "title": "MABE",
+      "topics": [
+        {
+          "id": "masse",
+          "title": "Maße",
+          "words": [
+            {
+              "german": "das Maß, -e",
+              "arabic": "المقياس / البُعد / المقاس",
+              "english": "measure, dimension",
+              "example": "Der Schreiner nimmt vor dem Zuschnitt der Holzbretter ganz genau Maß."
+            },
+            {
+              "german": "die Länge, -n",
+              "arabic": "الطول",
+              "english": "length",
+              "example": "Die Länge des Schwimmbeckens beträgt olympische fünfzig Meter."
+            },
+            {
+              "german": "die Breite, -n",
+              "arabic": "العرض",
+              "english": "width",
+              "example": "Die Breite der Eingangstür ermöglicht auch Rollstuhlfahrern bequemen Zugang."
+            },
+            {
+              "german": "die Höhe, -n",
+              "arabic": "الارتفاع",
+              "english": "height",
+              "example": "Aufgrund seiner enormen Höhe ist der Fernsehturm von weitem sichtbar."
+            },
+            {
+              "german": "die Tiefe, -n",
+              "arabic": "العمق",
+              "english": "depth",
+              "example": "Die Tiefe des Bergsees beträgt an der tiefsten Stelle über zweihundert Meter."
+            },
+            {
+              "german": "der Abstand, ⸚e",
+              "arabic": "المسافة الفاصلة / البُعد",
+              "english": "distance, gap",
+              "example": "Halten Sie beim Autofahren auf der Autobahn immer ausreichenden Abstand!"
+            },
+            {
+              "german": "die Entfernung, -en",
+              "arabic": "المسافة / البُعد الجغرافي",
+              "english": "distance, remoteness",
+              "example": "Die Entfernung zwischen Berlin und Hamburg beträgt knapp dreihundert Kilometer."
+            },
+            {
+              "german": "der Meter, -",
+              "arabic": "المتر",
+              "english": "meter",
+              "example": "Ein Meter ist die fundamentale Basiseinheit für Längenmessungen im Alltag."
+            },
+            {
+              "german": "der Zentimeter, -",
+              "arabic": "السنتيمتر",
+              "english": "centimeter",
+              "example": "Ein Schullineal ist gewöhnlich dreißig Zentimeter lang und sehr praktisch."
+            },
+            {
+              "german": "der Millimeter, -",
+              "arabic": "المليمتر",
+              "english": "millimeter",
+              "example": "Die Feinmechanik verlangt eine Präzision von wenigen Bruchteilen eines Millimeters."
+            },
+            {
+              "german": "der Kilometer, -",
+              "arabic": "الكيلومتر",
+              "english": "kilometer",
+              "example": "Jeden Samstag joggt er ausdauernd eine Strecke von zehn Kilometern durch den Wald."
+            },
+            {
+              "german": "messen",
+              "arabic": "قاس / يكيل",
+              "english": "to measure",
+              "example": "Mit einem flexiblen Maßband kann man den Umfang eines Baumes leicht messen."
+            }
+          ],
+          "description": "Längen, Breiten, Höhen, Tiefen, Entfernungen und metrische Einheiten.",
+          "details": "Maßangaben, Raumdimensionen, Distanzen und das metrische System (A1–B2)",
+          "arabicDescription": "المقاييس والأبعاد (Maße) في اللغة الألمانية: الأبعاد المكانية الثلاثية الطول (die Länge) والعرض (die Breite) والارتفاع (die Höhe) والعمق (die Tiefe)، ووحدات القياس المترية مثل المتر والسنتيمتر والمليمتر والكيلومتر، والمسافة الفاصلة (der Abstand) والبعد المكاني (die Entfernung).",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Möbel kaufen und das Zimmer messen",
+            "intro": "Längen, Breiten und Meter beim Einrichten einer Wohnung (A1).",
+            "paragraphs": [
+              [
+                "Ich ziehe in eine neue Wohnung und brauche einen Schreibtisch.",
+                "Zuerst nehme ich ein langes Maßband und beginne zu [messen|messen].",
+                "[die Länge, -n|Die Länge] der Wand beträgt genau drei [der Meter, -|Meter].",
+                "[die Breite, -n|Die Breite] für den Tisch ist ein Meter und zwanzig [der Zentimeter, -|Zentimeter]."
+              ],
+              [
+                "Auch [die Höhe, -n|die Höhe] des Stuhls muss gut zum Tisch passen.",
+                "Im Möbelgeschäft prüfe ich das genaue [das Maß, -e|Maß] auf dem Schild.",
+                "[die Entfernung, -en|Die Entfernung] vom Geschäft nach Hause ist nicht weit: nur zwei [der Kilometer, -|Kilometer].",
+                "Der neue Schreibtisch passt perfekt in mein schönes Zimmer!"
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Möbel kaufen und das Zimmer messen",
+              "intro": "Längen, Breiten und Meter beim Einrichten einer Wohnung (A1).",
+              "paragraphs": [
+                [
+                  "Ich ziehe in eine neue Wohnung und brauche einen Schreibtisch.",
+                  "Zuerst nehme ich ein langes Maßband und beginne zu [messen|messen].",
+                  "[die Länge, -n|Die Länge] der Wand beträgt genau drei [der Meter, -|Meter].",
+                  "[die Breite, -n|Die Breite] für den Tisch ist ein Meter und zwanzig [der Zentimeter, -|Zentimeter]."
+                ],
+                [
+                  "Auch [die Höhe, -n|die Höhe] des Stuhls muss gut zum Tisch passen.",
+                  "Im Möbelgeschäft prüfe ich das genaue [das Maß, -e|Maß] auf dem Schild.",
+                  "[die Entfernung, -en|Die Entfernung] vom Geschäft nach Hause ist nicht weit: nur zwei [der Kilometer, -|Kilometer].",
+                  "Der neue Schreibtisch passt perfekt in mein schönes Zimmer!"
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Renovieren, Handwerken und Distanzen im Alltag",
+              "intro": "Zimmermaße ermitteln, Sicherheitsabstände einhalten und Entfernungen planen (A2).",
+              "paragraphs": [
+                [
+                  "Beim Renovieren eines Hauses kommt es auf exaktes Arbeiten an.",
+                  "Der Handwerker muss [die Länge, -n|Länge], [die Breite, -n|Breite] und [die Höhe, -n|Höhe] jedes Raumes sorgfältig [messen|messen].",
+                  "Selbst ein kleiner Fehler von wenigen [der Millimeter, -|Millimetern] kann dazu führen, dass Einbauschränke klemmen.",
+                  "Auch [die Tiefe, -n|die Tiefe] der Regalböden muss genau auf die Aktenordner abgestimmt sein."
+                ],
+                [
+                  "Unterwegs im Straßenverkehr gelten verbindliche Sicherheitsregeln.",
+                  "Auf der Landstraße muss man stets den nötigen [der Abstand, ⸚e|Abstand] zum vorausfahrenden Fahrzeug wahren.",
+                  "[die Entfernung, -en|Die Entfernung] zum nächsten Rastplatz wird auf den Schildern in [der Kilometer, -|Kilometern] angezeigt.",
+                  "Gute Vorbereitung und verlässliche Maßangaben erleichtern jedes Projekt spürbar."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Das metrische System und industrielle Maßgenauigkeit",
+              "intro": "Wie weltweite Normen und das metrische Einheitensystem den Fortschritt sichern (B1).",
+              "paragraphs": [
+                [
+                  "Die Einführung des metrischen Einheitensystems im späten achtzehnten Jahrhundert war ein meilenweiter Meilenstein für Wissenschaft und Handel.",
+                  "Zuvor variierte [das Maß, -e|das Maß] einer Elle oder eines Fußes von Stadt zu Stadt beträchtlich.",
+                  "Die Definition des [der Meter, -|Meters] als universeller Längeneinheit schuf weltweite Vergleichbarkeit.",
+                  "Heute sind [der Zentimeter, -|Zentimeter] und [der Millimeter, -|Millimeter] unverzichtbare Basiseinheiten im Ingenieurwesen."
+                ],
+                [
+                  "Im modernen Maschinenbau und in der Luftfahrttechnik entscheiden minimale Toleranzen über die Sicherheit.",
+                  "Ingenieure [messen|messen] Werkstücke mit hochsensiblen Laserscannern, um jeden unerwünschten [der Abstand, ⸚e|Abstand] auszuschließen.",
+                  "Gleichzeitig vermessen Navigationssatelliten [die Entfernung, -en|die Entfernung] über Kontinente hinweg bis auf wenige Dezimeter genau.",
+                  "Präzise Raumdimensionen bilden somit das stabile Fundament unserer hochtechnisierten Welt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Metrologie, geometrische Abstraktion und physikalische Raumzeit",
+              "intro": "Erkenntnistheoretische und physikalische Dimensionen von Raum, Skalierung und Messgenauigkeit (B2).",
+              "paragraphs": [
+                [
+                  "Die moderne Metrologie begreift [das Maß, -e|das Maß] nicht länger als bloßes Abbild materieller Körper, sondern als fundamentalen Naturkonstantenbezug.",
+                  "Seit der Neudefinition des Internationalen Einheitensystems leitet sich [der Meter, -|der Meter] direkt von der Lichtgeschwindigkeit im Vakuum ab.",
+                  "Geometrische Parameter wie [die Länge, -n|Länge], [die Breite, -n|Breite] und [die Höhe, -n|Höhe] bilden in der euklidischen Geometrie einen dreidimensionalen Vektorraum.",
+                  "In der allgemeinen Relativitätstheorie hingegen verschmelzen räumliche [die Entfernung, -en|Entfernung] und zeitliche Intervalle zur vierdimensionalen Raumzeit."
+                ],
+                [
+                  "In der Nanotechnologie operieren Forscher jenseits des klassischen [der Millimeter, -|Millimeters] im Bereich atomarer Dimensionen.",
+                  "Dort relativiert die Quantenmechanik das Konzept von exaktem [messen|Messen] durch die heisenbergsche Unschärferelation.",
+                  "Dennoch bleibt die Fähigkeit, räumliche Relationen und [der Abstand, ⸚e|Abstände] differenziert zu sprachlichen Repräsentationen zu formen, das Kennzeichen wissenschaftlicher Exaktheit."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "gewicht",
+      "title": "DAS GEWICHT",
+      "topics": [
+        {
+          "id": "das_gewicht",
+          "title": "Das Gewicht",
+          "words": [
+            {
+              "german": "das Gewicht, -e",
+              "arabic": "الوزن",
+              "english": "weight",
+              "example": "Das zulässige Gesamtgewicht des Fahrzeugs darf bei voller Beladung nicht überschritten werden."
+            },
+            {
+              "german": "das Gramm, -e",
+              "arabic": "الجرام",
+              "english": "gram",
+              "example": "Für dieses feine Backrezept benötigt man genau zweihundert Gramm Puderzucker."
+            },
+            {
+              "german": "das Kilogramm, -e",
+              "arabic": "الكيلوجرام",
+              "english": "kilogram",
+              "example": "Ein Kilogramm frisches Bio-Obst liefert reichlich Vitamine für die ganze Familie."
+            },
+            {
+              "german": "das Pfund, -e",
+              "arabic": "الرطل (نصف كيلو / 500 جرام)",
+              "english": "pound (500g in Germany)",
+              "example": "Auf dem Wochenmarkt bestellte sie traditionell ein Pfund süße Kirschen."
+            },
+            {
+              "german": "die Tonne, -n",
+              "arabic": "الطن (ألف كيلوجرام)",
+              "english": "metric ton",
+              "example": "Der schwere Frachter transportiert über fünftausend Tonnen Weizen über das Meer."
+            },
+            {
+              "german": "wiegen",
+              "arabic": "وزن / يزن",
+              "english": "to weigh",
+              "example": "Vor dem langen Flug muss man den Koffer am Schalter gewissenhaft wiegen."
+            },
+            {
+              "german": "die Waage, -n",
+              "arabic": "الميزان",
+              "english": "scale",
+              "example": "Die moderne Digitalwaage in der Küche zeigt selbst minimale Mengen präzise an."
+            },
+            {
+              "german": "schwer",
+              "arabic": "ثقيل (وزناً)",
+              "english": "heavy",
+              "example": "Der schwere Umzugskarton voller Fachbücher ließ sich nur zu zweit anheben."
+            },
+            {
+              "german": "leicht",
+              "arabic": "خفيف (وزناً)",
+              "english": "light",
+              "example": "Die neue Daunenjacke ist erstaunlich leicht und wärmt dennoch hervorragend."
+            },
+            {
+              "german": "das Übergewicht",
+              "arabic": "الوزن الزائد",
+              "english": "overweight, excess weight",
+              "example": "Wegen des Übergewichts des Gepäcks musste der Reisende eine Zusatzgebühr entrichten."
+            },
+            {
+              "german": "das Untergewicht",
+              "arabic": "نقص الوزن / النحافة الزائدة",
+              "english": "underweight",
+              "example": "Ausgeprägtes Untergewicht kann die Abwehrkräfte des Immunsystems schwächen."
+            },
+            {
+              "german": "die Masse, -n",
+              "arabic": "الكتلة (الفيزيائية)",
+              "english": "mass",
+              "example": "In der klassischen Physik beschreibt die Masse den Widerstand gegen Beschleunigung."
+            }
+          ],
+          "description": "Gramm, Kilogramm, Tonne, Waage, Wiegen und physikalische Masse.",
+          "details": "Gewichtseinheiten, Messungen, Waagen und Massebegriffe (A1–B2)",
+          "arabicDescription": "الوزن والكتلة (Das Gewicht) في الألمانية: وحدات الوزن الأساسية مثل الجرام (das Gramm) والكيلوجرام (das Kilogramm) والرطل التقليدي (das Pfund = 500g) والطن (die Tonne)، ومفاهيم الميزان (die Waage) والوزن الزائد (das Übergewicht) والوزن الناقص (das Untergewicht)، وفعل الوزن (wiegen).",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Kochen mit der Küchenwaage",
+            "intro": "Gramm, Kilo und Wiegen beim Kochen und Einkaufen (A1).",
+            "paragraphs": [
+              [
+                "Heute koche ich eine leckere Suppe für meine Familie.",
+                "Ich stelle eine kleine [die Waage, -n|Waage] auf den Küchentisch.",
+                "Ich möchte das Gemüse genau [wiegen|wiegen].",
+                "Ich brauche fünfhundert [das Gramm, -e|Gramm] Karotten und ein [das Kilogramm, -e|Kilogramm] Kartoffeln."
+              ],
+              [
+                "Auf dem Markt kaufe ich auch [das Pfund, -e|ein Pfund] Butter.",
+                "Die Einkaufstasche ist nicht zu [schwer|schwer], sie ist angenehm [leicht|leicht].",
+                "Ich prüfe [das Gewicht, -e|das Gewicht] aller Zutaten vor dem Kochen.",
+                "Das Essen schmeckt allen wunderbar!"
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Kochen mit der Küchenwaage",
+              "intro": "Gramm, Kilo und Wiegen beim Kochen und Einkaufen (A1).",
+              "paragraphs": [
+                [
+                  "Heute koche ich eine leckere Suppe für meine Familie.",
+                  "Ich stelle eine kleine [die Waage, -n|Waage] auf den Küchentisch.",
+                  "Ich möchte das Gemüse genau [wiegen|wiegen].",
+                  "Ich brauche fünfhundert [das Gramm, -e|Gramm] Karotten und ein [das Kilogramm, -e|Kilogramm] Kartoffeln."
+                ],
+                [
+                  "Auf dem Markt kaufe ich auch [das Pfund, -e|ein Pfund] Butter.",
+                  "Die Einkaufstasche ist nicht zu [schwer|schwer], sie ist angenehm [leicht|leicht].",
+                  "Ich prüfe [das Gewicht, -e|das Gewicht] aller Zutaten vor dem Kochen.",
+                  "Das Essen schmeckt allen wunderbar!"
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Koffer packen, Flugreisen und gesunde Ernährung",
+              "intro": "Gepäckbeschränkungen am Flughafen, Übergewicht und Waagen (A2).",
+              "paragraphs": [
+                [
+                  "Vor einer Urlaubsreise packen viele Menschen zu viele Kleidungsstücke ein.",
+                  "Am Check-in-Schalter des Flughafens muss man das Reisegepäck auf [die Waage, -n|die Waage] stellen und [wiegen|wiegen].",
+                  "Die meisten Fluggesellschaften erlauben maximal dreiundzwanzig [das Kilogramm, -e|Kilogramm] pro Person.",
+                  "Wer dieses Limit überschreitet, hat [das Übergewicht|Übergewicht] und muss teure Zusatzkosten bezahlen."
+                ],
+                [
+                  "Auch für die eigene Gesundheit spielt [das Gewicht, -e|das Gewicht] eine wesentliche Rolle.",
+                  "Weder extremes [das Übergewicht|Übergewicht] noch bedenkliches [das Untergewicht|Untergewicht] sind ideal für das Wohlbefinden.",
+                  "Mit ausgewogener Ernährung und Sport fühlt man sich fit und vital.",
+                  "Eine gesunde Lebensweise hält Körper und Geist in perfekter Balance."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Logistik, Schwerlasttransporte und physikalische Masse",
+              "intro": "Wie Güterverkehr, Tonnagen und physikalische Masseverteilungen geregelt sind (B1).",
+              "paragraphs": [
+                [
+                  "Im internationalen Warenverkehr spielen Gewichtsangaben eine fundamentale Rolle für Effizienz und Sicherheit.",
+                  "Schwere Güterzüge transportieren tausende [die Tonne, -n|Tonnen] Stahl, Kohle und Getreide quer durch Europa.",
+                  "Jeder LKW-Fahrer muss darauf achten, dass [das Gewicht, -e|das Gewicht] seiner Ladung die gesetzlichen Grenzwerte nicht übersteigt.",
+                  "Spezielle Achslastwaagen an Autobahnen kontrollieren verdächtig [schwer|schwere] Fahrzeuge vollautomatisch."
+                ],
+                [
+                  "In der Physik wird begrifflich streng zwischen Gewichtskraft und [die Masse, -n|Masse] unterschieden.",
+                  "Während die Masse eines Körpers auf der Erde und auf dem Mond identisch bleibt, ändert sich das Gewicht mit der Gravitation.",
+                  "Im Laboralltag arbeiten Chemiker mit Bruchteilen von einem [das Gramm, -e|Gramm], um empfindliche Reaktionen auszulösen.",
+                  "Die Beherrschung dieser quantitativen Parameter garantiert Zuverlässigkeit in Forschung und Industrie."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Gravitationstheorie, Trägheit und Äquivalenzprinzip",
+              "intro": "Physikalische und philosophische Durchdringung von Schwere, Masse und Gravitationskräften (B2).",
+              "paragraphs": [
+                [
+                  "Das fundamentale Rätsel der klassischen Mechanik bestand in der exakten Übereinstimmung von träger und schwerer [die Masse, -n|Masse].",
+                  "Albert Einstein erhob diese empirische Beobachtung im Äquivalenzprinzip zum Grundpfeiler der Allgemeinen Relativitätstheorie.",
+                  "Dort ist [das Gewicht, -e|das Gewicht] kein statisches Merkmal eines Objekts mehr, sondern der Ausdruck der Raumzeitkrümmung.",
+                  "Große Massen, gemessen in Millionen von [die Tonne, -n|Tonnen], verformen das kosmische Gefüge derart, dass selbst Lichtstrahlen abgelenkt werden."
+                ],
+                [
+                  "In der modernen Teilchenphysik verleiht das Higgs-Feld elementaren Partikeln ihre Trägheit.",
+                  "Ohne diesen Mechanismus besäßen Teilchen keine Ruhemasse und würden sich lichtschnell durch das Universum bewegen.",
+                  "Von der feinsten Präzisionsmessung auf einer atomaren [die Waage, -n|Waage] bis zur kosmologischen Massenbilanz spannt sich der Bogen der Gravitationsforschung.",
+                  "Das Vokabular der Massen- und Gewichtsbestimmung erweist sich somit als Schlüssel zur fundamentalen Naturerkenntnis."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "waehrung",
+      "title": "DIE WÄHRUNG",
+      "topics": [
+        {
+          "id": "die_waehrung",
+          "title": "Die Währung",
+          "words": [
+            {
+              "german": "die Währung, -en",
+              "arabic": "العملة النقدية",
+              "english": "currency",
+              "example": "Der Euro ist die offizielle Währung in zwanzig Mitgliedsstaaten der Europäischen Union."
+            },
+            {
+              "german": "der Euro, -s",
+              "arabic": "اليورو",
+              "english": "euro",
+              "example": "Ein traditionelles Brot beim Handwerksbäcker kostet durchschnittlich vier Euro."
+            },
+            {
+              "german": "der Cent, -s",
+              "arabic": "السنت",
+              "english": "cent",
+              "example": "Hundert Cent ergeben den exakten Gegenwert von genau einem Euro."
+            },
+            {
+              "german": "der Schein, -e",
+              "arabic": "الورقة النقدية",
+              "english": "banknote, bill",
+              "example": "Er nahm einen druckfrischen Fünfzig-Euro-Schein aus seinem ledernen Portemonnaie."
+            },
+            {
+              "german": "die Münze, -n",
+              "arabic": "القطعة النقدية المعدنية",
+              "english": "coin",
+              "example": "Für den Einkaufswagen vor dem Supermarkt benötigt man meist eine Ein-Euro-Münze."
+            },
+            {
+              "german": "das Bargeld",
+              "arabic": "النقود السائلة (كاش)",
+              "english": "cash",
+              "example": "In vielen kleineren Cafés und Bäckereien bevorzugen die Betreiber weiterhin Bargeld."
+            },
+            {
+              "german": "das Wechselgeld",
+              "arabic": "الفكّة / باقي النقود",
+              "english": "change (money returned)",
+              "example": "Zählen Sie Ihr Wechselgeld bitte stets direkt an der Kasse sorgfältig nach!"
+            },
+            {
+              "german": "der Wechselkurs, -e",
+              "arabic": "سعر الصرف",
+              "english": "exchange rate",
+              "example": "Vor einer Fernreise lohnt es sich, den aktuellen Wechselkurs der Fremdwährung zu vergleichen."
+            },
+            {
+              "german": "überweisen",
+              "arabic": "حوّل مالياً (عبر البنك)",
+              "english": "to transfer money",
+              "example": "Die monatliche Miete lässt sich am bequemsten per automatischem Dauerauftrag überweisen."
+            },
+            {
+              "german": "das Konto, Konten",
+              "arabic": "الحساب المصرفي / البنكي",
+              "english": "bank account",
+              "example": "Für das Berufsleben in Deutschland benötigt man zwingend ein eigenes Girokonto."
+            },
+            {
+              "german": "der Betrag, ⸚e",
+              "arabic": "المبلغ المالي",
+              "english": "amount, sum",
+              "example": "Der offene Betrag der Handwerkerrechnung muss innerhalb von zwei Wochen beglichen werden."
+            },
+            {
+              "german": "die Inflation",
+              "arabic": "التضخم المالي",
+              "english": "inflation",
+              "example": "Eine anhaltend hohe Inflation schmälert spürbar die reale Kaufkraft der Bürger."
+            }
+          ],
+          "description": "Euro, Cent, Bargeld, Münzen, Scheine, Wechselkurse und Bankkonten.",
+          "details": "Währungen, Zahlungsmittel, Banküberweisungen und Geldpolitik (A1–B2)",
+          "arabicDescription": "العملات النقدية والتعاملات المالية (Die Währung) في ألمانيا: اليورو (der Euro) والسنت (der Cent)، والنقود الورقية (Scheine) والمعدنية (Münzen)، ومفهوم الدفع نقداً (Bargeld) والفكّة (das Wechselgeld)، والتحويل البنكي (überweisen)، وأسعار الصرف (Wechselkurs)، ومفهوم التضخم (die Inflation).",
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Bezahlen an der Kasse im Supermarkt",
+            "intro": "Euro, Cent und Bargeld im täglichen Leben (A1).",
+            "paragraphs": [
+              [
+                "Ich gehe in den Supermarkt und kaufe Milch, Brot und Obst ein.",
+                "An der Kasse nennt die Kassiererin [der Betrag, ⸚e|den Betrag]: „Das macht zwölf [der Euro, -s|Euro] und fünfzig [der Cent, -s|Cent].“",
+                "Ich öffne meine Geldbörse und bezahle mit [das Bargeld|Bargeld].",
+                "Ich gebe ihr einen Zwanzig-Euro-[der Schein, -e|Schein]."
+              ],
+              [
+                "Die Kassiererin gibt mir [das Wechselgeld|das Wechselgeld] zurück.",
+                "Es sind ein paar [die Münze, -n|Münzen] und ein Fünf-Euro-Schein.",
+                "Ich bedanke mich freundlich und packe meine Einkäufe in die Tasche.",
+                "In Deutschland ist [der Euro, -s|der Euro] die gemeinsame [die Währung, -en|Währung]."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Bezahlen an der Kasse im Supermarkt",
+              "intro": "Euro, Cent und Bargeld im täglichen Leben (A1).",
+              "paragraphs": [
+                [
+                  "Ich gehe in den Supermarkt und kaufe Milch, Brot und Obst ein.",
+                  "An der Kasse nennt die Kassiererin [der Betrag, ⸚e|den Betrag]: „Das macht zwölf [der Euro, -s|Euro] und fünfzig [der Cent, -s|Cent].“",
+                  "Ich öffne meine Geldbörse und bezahle mit [das Bargeld|Bargeld].",
+                  "Ich gebe ihr einen Zwanzig-Euro-[der Schein, -e|Schein]."
+                ],
+                [
+                  "Die Kassiererin gibt mir [das Wechselgeld|das Wechselgeld] zurück.",
+                  "Es sind ein paar [die Münze, -n|Münzen] und ein Fünf-Euro-Schein.",
+                  "Ich bedanke mich freundlich und packe meine Einkäufe in die Tasche.",
+                  "In Deutschland ist [der Euro, -s|der Euro] die gemeinsame [die Währung, -en|Währung]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Bankgeschäfte, Überweisungen und bargeldloses Zahlen",
+              "intro": "Girokonto eröffnen, Geld überweisen und Reisekasse planen (A2).",
+              "paragraphs": [
+                [
+                  "Wer in Deutschland arbeitet oder studiert, benötigt ein deutsches [das Konto, Konten|Girokonto].",
+                  "Auf dieses Konto überweist der Arbeitgeber das monatliche Gehalt.",
+                  "Man kann Rechnungen bequem per Online-Banking [überweisen|überweisen], indem man die IBAN eingibt.",
+                  "Auch die Miete und Stromkosten werden pünktlich abgebucht."
+                ],
+                [
+                  "Wenn man eine Reise in ein Land außerhalb der Eurozone plant, sollte man sich über [der Wechselkurs, -e|den Wechselkurs] informieren.",
+                  "Dort tauscht man [das Bargeld|Bargeld] oder zahlt mit der Kreditkarte.",
+                  "Man muss stets darauf achten, dass [der Betrag, ⸚e|der Betrag] auf der Quittung korrekt vermerkt ist.",
+                  "So vermeidet man böse Überraschungen beim Blick auf den Kontoauszug."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Währungsunion, Geldpolitik und der Wandel des Zahlungsverkehrs",
+              "intro": "Bargeldkultur, digitale Bezahlmethoden und Währungsstabilität (B1).",
+              "paragraphs": [
+                [
+                  "Die Einführung des Euro als gemeinsame europäische [die Währung, -en|Währung] vor über zwei Jahrzehnten vereinfachte das Reisen und den Handel enorm.",
+                  "Früher musste man bei jedem Grenzübertritt Geld wechseln und [der Wechselkurs, -e|den Wechselkurs] berücksichtigen.",
+                  "Dennoch schätzen viele Menschen im deutschsprachigen Raum nach wie vor [das Bargeld|Bargeld] als Garant für Privatsphäre und finanzielle Selbstbestimmung.",
+                  "Viele Konsumenten spüren intuitiv mehr Kontrolle, wenn sie echte [der Schein, -e|Scheine] und klimpernde [die Münze, -n|Münzen] in den Händen halten."
+                ],
+                [
+                  "Auf der anderen Seite beschleunigt die Digitalisierung bargeldlose Transaktionen im Sekundentakt.",
+                  "Gleichzeitig stellt [die Inflation|die Inflation] die Zentralbanken vor erhebliche Herausforderungen.",
+                  "Steigen die Verbraucherpreise, sinkt der reale Wert der Ersparnisse auf dem [das Konto, Konten|Konto].",
+                  "Eine stabile Währungspolitik ist daher der unverzichtbare Anker für Wohlstand und sozialen Frieden."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Geldtheorie, makroökonomische Steuerung und monetäre Souveränität",
+              "intro": "Finanzwissenschaftliche Analyse von Zentralbankpolitik, Inflation und Kryptoökonomie (B2).",
+              "paragraphs": [
+                [
+                  "Geld ist in modernen Volkswirtschaften weit mehr als ein reines Tauschmittel; es fungiert als gesellschaftliches Vertrauensgut und Recheneinheit.",
+                  "Die Europäische Zentralbank steuert durch Zinsentscheidungen die Geldmenge, um [die Inflation|die Inflation] in der Eurozone bei zwei Prozent zu stabilisieren.",
+                  "Ein schwankender [der Wechselkurs, -e|Wechselkurs] beeinflusst unmittelbar die Importpreise für Energie und Rohstoffe.",
+                  "Dabei markiert [der Betrag, ⸚e|der Betrag] an Liquidität im Bankensystem den Grad konjunktureller Dynamik."
+                ],
+                [
+                  "In der aktuellen geldtheoretischen Debatte konkurriert staatliches Fiatgeld zunehmend mit dezentralen Krypto-Assets und digitalen Zentralbankwährungen.",
+                  "Während Kritiker den schleichenden Abschied vom anonymen [das Bargeld|Bargeld] als Wegbereiter des gläsernen Bürgers anprangern, betonen Befürworter die Effizienz programmierbarer Zahlungen.",
+                  "Die Transformation der [die Währung, -en|Währung] berührt somit fundamentale Fragen staatlicher Souveränität und individueller Freiheit im digitalen Zeitalter."
+                ]
+              ]
+            }
+          }
         }
       ]
     }

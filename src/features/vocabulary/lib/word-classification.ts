@@ -39,9 +39,7 @@ export const KNOWN_ADJECTIVES = new Set([
   "wichtig",
 ]);
 
-/**
- * Classifies a vocabulary word into a grammatical part of speech category.
- */
+/** Classifies a vocabulary word into a grammatical part of speech category. */
 export function classifyWord(word: Word): PartOfSpeechCategory {
   if (word.partOfSpeech) {
     return word.partOfSpeech;
@@ -100,9 +98,7 @@ export interface ClassifiedWords {
   adjectives: EnrichedWord[];
 }
 
-/**
- * Enriches vocabulary words with gender information and groups them by grammatical category.
- */
+/** Enriches vocabulary words with gender information and groups them by grammatical category. */
 export function groupWordsByClassification(words: Word[]): ClassifiedWords {
   const nouns: EnrichedWord[] = [];
   const verbs: EnrichedWord[] = [];

@@ -39,8 +39,7 @@ export const GRAMMAR_THEME_PALETTES: GrammarThemePalette[] = [
   },
   {
     badgeClass: "border-purple-500/30 bg-purple-500/10 text-purple-400",
-    cardBorderClass:
-      "border-2 border-purple-500/30 hover:border-purple-500/50 shadow-purple-500/5",
+    cardBorderClass: "border-2 border-purple-500/30 hover:border-purple-500/50 shadow-purple-500/5",
     headerBorderClass: "border-purple-500/20",
     headerBgClass: "bg-purple-500/[0.04]",
     accentText: "text-purple-300",

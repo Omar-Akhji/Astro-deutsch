@@ -1,10 +1,6 @@
 import { z } from "astro/zod";
 import { storiesRecordSchema } from "../model/schema.ts";
-import type {
-  CefrLevel,
-  StoryDefinition,
-  TopicStoriesRecord,
-} from "../model/types.ts";
+import type { CefrLevel, StoryDefinition, TopicStoriesRecord } from "../model/types.ts";
 import topicStoriesJson from "./topic-stories.json";
 
 export type {
@@ -17,9 +13,7 @@ export type {
 const topicStoriesCatalogSchema = z.record(z.string(), storiesRecordSchema);
 const parsedTopicStories = topicStoriesCatalogSchema.parse(topicStoriesJson);
 
-/**
- * All curated story contents loaded directly from topic-stories.json.
- */
+/** All curated story contents loaded directly from topic-stories.json. */
 export const TOPIC_STORIES = new Map<string, TopicStoriesRecord>(
   Object.entries(parsedTopicStories),
 );
@@ -32,8 +26,8 @@ export interface StoryToken {
 }
 
 /**
- * Removes markup tokens like [baseWord|displayText] or [baseWord]
- * and cleans punctuation for German text-to-speech audio.
+ * Removes markup tokens like [baseWord|displayText] or [baseWord] and cleans punctuation for German
+ * text-to-speech audio.
  */
 export function cleanTextForSpeech(text: string): string {
   return text
@@ -46,8 +40,8 @@ export function cleanTextForSpeech(text: string): string {
 }
 
 /**
- * Parses sentences containing [baseWord|displayText] or [baseWord] tokens
- * into structured chunks for Astro rendering with interactive tooltips.
+ * Parses sentences containing [baseWord|displayText] or [baseWord] tokens into structured chunks
+ * for Astro rendering with interactive tooltips.
  */
 export function parseSentenceTokens(sentence: string): StoryToken[] {
   const tokens: StoryToken[] = [];
@@ -57,10 +51,7 @@ export function parseSentenceTokens(sentence: string): StoryToken[] {
   for (const match of sentence.matchAll(regex)) {
     const matchIndex = match.index;
     if (matchIndex > lastIndex) {
-      tokens.push({
-        type: "text",
-        content: sentence.slice(lastIndex, matchIndex),
-      });
+      tokens.push({ type: "text", content: sentence.slice(lastIndex, matchIndex) });
     }
 
     const inner = match[1]?.trim() ?? "";
@@ -68,28 +59,21 @@ export function parseSentenceTokens(sentence: string): StoryToken[] {
     const baseWord = pipeIndex === -1 ? inner : inner.slice(0, pipeIndex).trim();
     const display = pipeIndex === -1 ? inner : inner.slice(pipeIndex + 1).trim();
 
-    tokens.push({
-      type: "word",
-      baseWord,
-      display,
-    });
+    tokens.push({ type: "word", baseWord, display });
 
     lastIndex = matchIndex + match[0].length;
   }
 
   if (lastIndex < sentence.length) {
-    tokens.push({
-      type: "text",
-      content: sentence.slice(lastIndex),
-    });
+    tokens.push({ type: "text", content: sentence.slice(lastIndex) });
   }
 
   return tokens;
 }
 
 /**
- * Retrieves the curated 4-level CEFR stories (A1, A2, B1, B2) for a topic,
- * or synthesizes fallback stories from the word list if not yet defined.
+ * Retrieves the curated 4-level CEFR stories (A1, A2, B1, B2) for a topic, or synthesizes fallback
+ * stories from the word list if not yet defined.
  */
 export function getTopicStories(
   topicId: string,
@@ -137,9 +121,7 @@ export function getTopicStories(
   };
 }
 
-/**
- * Retrieves a single story definition for a topic and CEFR level.
- */
+/** Retrieves a single story definition for a topic and CEFR level. */
 export function getTopicStory(
   topicId: string,
   fallbackTopic?: {
@@ -150,7 +132,8 @@ export function getTopicStory(
   level: CefrLevel = "A1",
 ): StoryDefinition {
   const existingGroup = TOPIC_STORIES.get(topicId);
-  const levelStory = existingGroup && Object.entries(existingGroup).find(([key]) => key === level)?.[1];
+  const levelStory =
+    existingGroup && Object.entries(existingGroup).find(([key]) => key === level)?.[1];
   if (levelStory !== undefined) {
     return levelStory;
   }
@@ -180,9 +163,5 @@ export function getTopicStory(
     paragraphs.push([`In dieser Lektion lernen wir die zentralen Vokabeln zu ${topicTitle}.`]);
   }
 
-  return {
-    badge,
-    title: topicTitle,
-    paragraphs,
-  };
+  return { badge, title: topicTitle, paragraphs };
 }

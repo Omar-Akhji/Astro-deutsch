@@ -87,9 +87,6 @@ export const GET: APIRoute = async ({ request }) => {
   } catch (error: unknown) {
     console.error("TTS generation error:", error);
     const details = error instanceof Error ? error.message : String(error);
-    return Response.json(
-      { error: "Failed to generate speech", details },
-      { status: 500 },
-    );
+    return Response.json({ error: "Failed to generate speech", details }, { status: 500 });
   }
 };

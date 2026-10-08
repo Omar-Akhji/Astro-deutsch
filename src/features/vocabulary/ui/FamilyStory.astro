@@ -95,7 +95,8 @@ const storySentences = [
 ---
 
 <article
-  aria-labelledby="story-heading"   class="family-story relative w-full overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) transition-all mobile:p-6 tablet:p-8 [&_.story-word]:cursor-help [&_.story-word]:font-semibold [&_.story-word]:text-amber-300 [&_.story-word]:underline [&_.story-word]:decoration-amber-300/70 [&_.story-word]:decoration-[1.5px] [&_.story-word]:underline-offset-4 [&_.story-word]:transition-colors [&_.story-word]:duration-150 [&_.story-word:hover]:rounded [&_.story-word:hover]:bg-amber-300/25 [&_.story-word:hover]:text-white [&_.story-word:hover]:decoration-2 [&_.story-word:focus-visible]:rounded [&_.story-word:focus-visible]:bg-amber-300/25 [&_.story-word:focus-visible]:text-white [&_.story-word:focus-visible]:decoration-2 [&_.story-word:focus-visible]:outline-none [&_.story-sentence:focus]:outline-none [&_.story-sentence:focus-visible]:outline-none [&_.story-sentence.is-active]:bg-white/15 [&_.story-sentence.is-active]:text-white"
+  aria-labelledby="story-heading"
+  class="family-story relative w-full overflow-hidden rounded-3xl border-2 border-(--glass-border) bg-card p-4 shadow-2xl backdrop-blur-(--glass-blur) transition-all mobile:p-6 tablet:p-8 [&_.story-word]:cursor-help [&_.story-word]:font-semibold [&_.story-word]:text-amber-300 [&_.story-word]:underline [&_.story-word]:decoration-amber-300/70 [&_.story-word]:decoration-[1.5px] [&_.story-word]:underline-offset-4 [&_.story-word]:transition-colors [&_.story-word]:duration-150 [&_.story-word:hover]:rounded [&_.story-word:hover]:bg-amber-300/25 [&_.story-word:hover]:text-white [&_.story-word:hover]:decoration-2 [&_.story-word:focus-visible]:rounded [&_.story-word:focus-visible]:bg-amber-300/25 [&_.story-word:focus-visible]:text-white [&_.story-word:focus-visible]:decoration-2 [&_.story-word:focus-visible]:outline-none [&_.story-sentence:focus]:outline-none [&_.story-sentence:focus-visible]:outline-none [&_.story-sentence.is-active]:bg-white/15 [&_.story-sentence.is-active]:text-white"
   data-glossary={JSON.stringify(glossary)}
 >
   <!-- Header -->
@@ -105,7 +106,8 @@ const storySentences = [
         Eine Familiengeschichte
       </p>
       <h2
-        class="text-2xl font-bold text-white @md:text-3xl"         id="story-heading"
+        class="text-2xl font-bold text-white @md:text-3xl"
+        id="story-heading"
       >
         Ein Foto erzählt
       </h2>
@@ -119,85 +121,116 @@ const storySentences = [
   <div class="family-story-content space-y-5 text-base leading-8 text-mist-200 @md:text-lg @md:leading-9">
     <p>
       <span
-        aria-label="Satz 1 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white focus-visible:bg-white/15 focus-visible:text-white"         data-sentence-index="0"         role="button"         tabindex="0"
+        aria-label="Satz 1 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white focus-visible:bg-white/15 focus-visible:text-white"
+        data-sentence-index="0"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Am Sonntag besucht Amir seine{" "}
         <span
           class="story-word cursor-help font-semibold text-amber-300 underline decoration-amber-300/70 decoration-[1.5px] underline-offset-4 transition-colors duration-150 hover:rounded hover:bg-amber-300/25 hover:text-white hover:decoration-2 focus-visible:rounded focus-visible:bg-amber-300/25 focus-visible:text-white focus-visible:decoration-2 focus-visible:outline-none"
-          data-word="die Großmutter"           tabindex="0"
+          data-word="die Großmutter"
+          tabindex="0"
         >
           Großmutter
         </span>{" "}
         und seinen{" "}
         <span
           class="story-word cursor-help font-semibold text-amber-300 underline decoration-amber-300/70 decoration-[1.5px] underline-offset-4 transition-colors duration-150 hover:rounded hover:bg-amber-300/25 hover:text-white hover:decoration-2 focus-visible:rounded focus-visible:bg-amber-300/25 focus-visible:text-white focus-visible:decoration-2 focus-visible:outline-none"
-          data-word="der Großvater"           tabindex="0"
+          data-word="der Großvater"
+          tabindex="0"
         >
           Großvater
         </span>
         .
       </span>
       <span
-        aria-label="Satz 2 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="1"         role="button"         tabindex="0"
+        aria-label="Satz 2 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="1"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Sie sitzen zusammen und schauen sich ein altes Familienfoto an.
       </span>
       <span
-        aria-label="Satz 3 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="2"         role="button"         tabindex="0"
+        aria-label="Satz 3 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="2"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         „Das sind meine{" "}
         <span
           class="story-word"
-          data-word="die Großeltern"           tabindex="0"
+          data-word="die Großeltern"
+          tabindex="0"
         >
           Großeltern
         </span>
         “, sagt Amir.
       </span>
       <span
-        aria-label="Satz 4 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="3"         role="button"         tabindex="0"
+        aria-label="Satz 4 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="3"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         „Sie sind die{" "}
         <span
           class="story-word"
-          data-word="der Vorfahre"           tabindex="0"
+          data-word="der Vorfahre"
+          tabindex="0"
         >
           Vorfahren
         </span>{" "}
         unserer Familie.“
       </span>
       <span
-        aria-label="Satz 5 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="4"         role="button"         tabindex="0"
+        aria-label="Satz 5 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="4"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Auf dem Foto sieht man auch seine{" "}
         <span
           class="story-word"
-          data-word="die Mutter"           tabindex="0"
+          data-word="die Mutter"
+          tabindex="0"
         >
           Mutter
         </span>{" "}
         und seinen{" "}
         <span
           class="story-word"
-          data-word="der Vater"           tabindex="0"
+          data-word="der Vater"
+          tabindex="0"
         >
           Vater
         </span>
         .
       </span>
       <span
-        aria-label="Satz 6 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="5"         role="button"         tabindex="0"
+        aria-label="Satz 6 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="5"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Zusammen sind sie Amirs{" "}
         <span
           class="story-word"
-          data-word="die Eltern"           tabindex="0"
+          data-word="die Eltern"
+          tabindex="0"
         >
           Eltern
         </span>
@@ -207,79 +240,106 @@ const storySentences = [
 
     <p>
       <span
-        aria-label="Satz 7 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="6"         role="button"         tabindex="0"
+        aria-label="Satz 7 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="6"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Amirs Mutter hat eine Schwester: seine{" "}
         <span
           class="story-word"
-          data-word="die Tante"           tabindex="0"
+          data-word="die Tante"
+          tabindex="0"
         >
           Tante
         </span>
         .
       </span>
       <span
-        aria-label="Satz 8 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="7"         role="button"         tabindex="0"
+        aria-label="Satz 8 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="7"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Der Mann neben ihr ist sein{" "}
         <span
           class="story-word"
-          data-word="der Onkel"           tabindex="0"
+          data-word="der Onkel"
+          tabindex="0"
         >
           Onkel
         </span>
         .
       </span>
       <span
-        aria-label="Satz 9 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="8"         role="button"         tabindex="0"
+        aria-label="Satz 9 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="8"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Die beiden sind ein{" "}
         <span
           class="story-word"
-          data-word="das Ehepaar"           tabindex="0"
+          data-word="das Ehepaar"
+          tabindex="0"
         >
           Ehepaar
         </span>
         .
       </span>
       <span
-        aria-label="Satz 10 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="9"         role="button"         tabindex="0"
+        aria-label="Satz 10 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="9"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Amirs Tante ist{" "}
         <span
           class="story-word"
-          data-word="verheiratet"           tabindex="0"
+          data-word="verheiratet"
+          tabindex="0"
         >
           verheiratet
         </span>
         , aber sein Onkel war früher{" "}
         <span
           class="story-word"
-          data-word="geschieden"           tabindex="0"
+          data-word="geschieden"
+          tabindex="0"
         >
           geschieden
         </span>
         .
       </span>
       <span
-        aria-label="Satz 11 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="10"         role="button"         tabindex="0"
+        aria-label="Satz 11 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="10"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Amirs Cousin ist noch{" "}
         <span
           class="story-word"
-          data-word="ledig"           tabindex="0"
+          data-word="ledig"
+          tabindex="0"
         >
           ledig
         </span>
         , und seine Cousine ist seit Kurzem{" "}
         <span
           class="story-word"
-          data-word="verlobt"           tabindex="0"
+          data-word="verlobt"
+          tabindex="0"
         >
           verlobt
         </span>
@@ -289,73 +349,96 @@ const storySentences = [
 
     <p>
       <span
-        aria-label="Satz 12 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="11"         role="button"         tabindex="0"
+        aria-label="Satz 12 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="11"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Auf dem Bild steht Amir als kleiner{" "}
         <span
           class="story-word"
-          data-word="der Sohn"           tabindex="0"
+          data-word="der Sohn"
+          tabindex="0"
         >
           Sohn
         </span>{" "}
         neben seinem{" "}
         <span
           class="story-word"
-          data-word="der Bruder"           tabindex="0"
+          data-word="der Bruder"
+          tabindex="0"
         >
           Bruder
         </span>{" "}
         und seiner{" "}
         <span
           class="story-word"
-          data-word="die Schwester"           tabindex="0"
+          data-word="die Schwester"
+          tabindex="0"
         >
           Schwester
         </span>
         .
       </span>
       <span
-        aria-label="Satz 13 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="12"         role="button"         tabindex="0"
+        aria-label="Satz 13 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="12"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Heute hat seine Schwester einen Mann, Amirs{" "}
         <span
           class="story-word"
-          data-word="der Schwager"           tabindex="0"
+          data-word="der Schwager"
+          tabindex="0"
         >
           Schwager
         </span>
         .
       </span>
       <span
-        aria-label="Satz 14 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="13"         role="button"         tabindex="0"
+        aria-label="Satz 14 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="13"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Amirs Bruder ist mit einer Frau verheiratet; sie ist seine{" "}
         <span
           class="story-word"
-          data-word="die Schwägerin"           tabindex="0"
+          data-word="die Schwägerin"
+          tabindex="0"
         >
           Schwägerin
         </span>
         .
       </span>
       <span
-        aria-label="Satz 15 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="14"         role="button"         tabindex="0"
+        aria-label="Satz 15 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="14"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Der Mann seiner Cousine ist ihr{" "}
         <span
           class="story-word"
-          data-word="der Schwiegersohn"           tabindex="0"
+          data-word="der Schwiegersohn"
+          tabindex="0"
         >
           Schwiegersohn
         </span>{" "}
         in der Familie, und die Frau seines Cousins ist die{" "}
         <span
           class="story-word"
-          data-word="die Schwiegertochter"           tabindex="0"
+          data-word="die Schwiegertochter"
+          tabindex="0"
         >
           Schwiegertochter
         </span>{" "}
@@ -365,72 +448,101 @@ const storySentences = [
 
     <p>
       <span
-        aria-label="Satz 16 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="15"         role="button"         tabindex="0"
+        aria-label="Satz 16 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="15"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Inzwischen hat Amirs Schwester zwei Kinder: einen{" "}
         <span
           class="story-word"
-          data-word="der Enkel"           tabindex="0"
+          data-word="der Enkel"
+          tabindex="0"
         >
           Enkel
         </span>{" "}
         und eine{" "}
         <span
           class="story-word"
-          data-word="die Enkelin"           tabindex="0"
+          data-word="die Enkelin"
+          tabindex="0"
         >
           Enkelin
         </span>{" "}
         für die Großeltern.
       </span>
       <span
-        aria-label="Satz 17 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="16"         role="button"         tabindex="0"
+        aria-label="Satz 17 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="16"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Alle diese Menschen sind{" "}
         <span
           class="story-word"
-          data-word="der/die Verwandte"           tabindex="0"
+          data-word="der/die Verwandte"
+          tabindex="0"
         >
           Verwandte
         </span>{" "}
         und miteinander{" "}
         <span
           class="story-word"
-          data-word="verwandt"           tabindex="0"
+          data-word="verwandt"
+          tabindex="0"
         >
           verwandt
         </span>
         .
       </span>
       <span
-        aria-label="Satz 18 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="17"         role="button"         tabindex="0"
+        aria-label="Satz 18 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="17"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Amirs Nachbar ist dagegen nicht mit ihnen verwandt.
       </span>
       <span
-        aria-label="Satz 19 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="18"         role="button"         tabindex="0"
+        aria-label="Satz 19 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="18"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         Er ist seit einem Jahr{" "}
         <span
           class="story-word"
-          data-word="verwitwet"           tabindex="0"
+          data-word="verwitwet"
+          tabindex="0"
         >
           verwitwet
         </span>
         .
       </span>
       <span
-        aria-label="Satz 20 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="19"         role="button"         tabindex="0"
+        aria-label="Satz 20 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="19"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         „Eine Familie kann viele Geschichten haben“, sagt Amir.
       </span>
       <span
-        aria-label="Satz 21 vorlesen"         class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"         data-sentence-index="20"         role="button"         tabindex="0"
+        aria-label="Satz 21 vorlesen"
+        class="story-sentence inline cursor-pointer rounded-sm px-1 py-0.5 transition-all duration-200 hover:bg-white/8 hover:text-white"
+        data-sentence-index="20"
+        role="button"
+        tabindex="0"
         title="Klicken zum Vorlesen ab diesem Satz"
       >
         „Und jede Generation gehört zu unserem Stammbaum.“
@@ -443,7 +555,9 @@ const storySentences = [
     <TextAudioPlayer
       client:load
       sentences={storySentences}
-      subtitle="Höre dir die Geschichte Satz für Satz an oder klicke auf einen Satz im Text"       targetSelector=".family-story-content"       title="Audio-Begleiter"
+      subtitle="Höre dir die Geschichte Satz für Satz an oder klicke auf einen Satz im Text"
+      targetSelector=".family-story-content"
+      title="Audio-Begleiter"
     />
   </div>
 
@@ -461,13 +575,31 @@ const storySentences = [
   <!-- Tooltip Modal for Word Explanations -->
   <div
     class="story-tooltip fixed top-(--tooltip-top) left-(--tooltip-left) z-9999 w-[min(22rem,calc(100vw-2rem))] rounded-[0.85rem] border border-white/20 bg-[#171923] px-4 py-[0.9rem] text-sm leading-normal text-zinc-100 shadow-[0_16px_48px_rgba(0,0,0,0.6),0_0_0_1px_rgba(252,211,77,0.15)] pointer-events-none backdrop-blur-xl"
-    hidden     role="tooltip"
+    hidden
+    role="tooltip"
   >
-    <strong class="mb-1 block text-[1.05rem] text-amber-300" data-tooltip-german></strong>
-    <div class="text-[0.9rem] font-medium text-zinc-200" data-tooltip-translation></div>
-    <div class="mt-1 font-arabic text-[1.1rem] text-yellow-200" data-tooltip-arabic dir="rtl"></div>
-    <div class="mt-2 border-t border-white/10 pt-2 text-zinc-300" data-tooltip-explanation></div>
-    <div class="mt-2 rounded-md bg-white/5 px-2 py-1.5 text-zinc-400 italic" data-tooltip-example hidden></div>
+    <strong
+      class="mb-1 block text-[1.05rem] text-amber-300"
+      data-tooltip-german
+    ></strong>
+    <div
+      class="text-[0.9rem] font-medium text-zinc-200"
+      data-tooltip-translation
+    ></div>
+    <div
+      class="mt-1 font-arabic text-[1.1rem] text-yellow-200"
+      data-tooltip-arabic
+      dir="rtl"
+    ></div>
+    <div
+      class="mt-2 border-t border-white/10 pt-2 text-zinc-300"
+      data-tooltip-explanation
+    ></div>
+    <div
+      class="mt-2 rounded-md bg-white/5 px-2 py-1.5 text-zinc-400 italic"
+      data-tooltip-example
+      hidden
+    ></div>
   </div>
 </article>
 

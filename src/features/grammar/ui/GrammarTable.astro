@@ -65,22 +65,20 @@ const { data, theme } = Astro.props;
             {row.map((cell, colIndex) => {
               const isPerson = colIndex === 0;
 
-              return isPerson ? (
-                <th
-                  class="whitespace-nowrap px-4 py-3 text-left font-semibold text-amber-300/90 tablet:px-6 tablet:py-3.5"
-                  scope="row"
-                >
-                  <div class="leading-relaxed">
-                    <ContentItem content={cell} />
-                  </div>
-                </th>
-              ) : (
-                <td class="px-4 py-3 text-white/90 tablet:px-6 tablet:py-3.5">
-                  <div class="leading-relaxed">
-                    <ContentItem content={cell} />
-                  </div>
-                </td>
-              );
+              return isPerson ?
+                  <th
+                    class="whitespace-nowrap px-4 py-3 text-left font-semibold text-amber-300/90 tablet:px-6 tablet:py-3.5"
+                    scope="row"
+                  >
+                    <div class="leading-relaxed">
+                      <ContentItem content={cell} />
+                    </div>
+                  </th>
+                : <td class="px-4 py-3 text-white/90 tablet:px-6 tablet:py-3.5">
+                    <div class="leading-relaxed">
+                      <ContentItem content={cell} />
+                    </div>
+                  </td>;
             })}
           </tr>
         ))}

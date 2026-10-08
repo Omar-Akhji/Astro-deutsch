@@ -5,8 +5,1562 @@
   "description": "Umwelt, Wetter und die Vielfalt der Natur auf unserem Planeten.",
   "sections": [
     {
-      "id": "wetter_und_natur",
-      "title": "Wetter und Natur",
+      "id": "weltraum",
+      "title": "DER WELTRAUM",
+      "topics": [
+        {
+          "id": "der_weltraum",
+          "title": "Der Weltraum",
+          "words": [
+            {
+              "german": "der Weltraum (Sg.)",
+              "arabic": "الفضاء الخارجي الشاسع",
+              "english": "outer space, space",
+              "example": "Im unendlichen Weltraum kreisen unzählige Galaxien und Planeten."
+            },
+            {
+              "german": "der Planet, -en",
+              "arabic": "الكوكب السيّار",
+              "english": "planet",
+              "example": "Die Erde ist der dritte Planet von der Sonne aus gezählt."
+            },
+            {
+              "german": "der Stern, -e",
+              "arabic": "النجم المضيء في السماء",
+              "english": "star",
+              "example": "In einer klaren Sommernacht funkeln Millionen Sterne am Himmel."
+            },
+            {
+              "german": "die Galaxie, -n",
+              "arabic": "المجرة الكونية (مثل درب التبانة)",
+              "english": "galaxy",
+              "example": "Unsere Heimatgalaxie, die Milchstraße, umfasst Milliarden von Sternsystemen."
+            },
+            {
+              "german": "das Sonnensystem, -e",
+              "arabic": "المجموعة والنظام الشمسي",
+              "english": "solar system",
+              "example": "Acht Planeten umkreisen die Sonne in unserem Sonnensystem."
+            },
+            {
+              "german": "die Raumstation, -en",
+              "arabic": "المحطة الفضائية المدارية (ISS)",
+              "english": "space station",
+              "example": "Auf der Internationalen Raumstation forschen Astronauten aus vielen Nationen."
+            },
+            {
+              "german": "der Astronaut, -en",
+              "arabic": "رائد الفضاء",
+              "english": "astronaut, cosmonaut",
+              "example": "Der Astronaut führte einen mehrstündigen Außeneinsatz im All durch."
+            },
+            {
+              "german": "die Rakete, -n",
+              "arabic": "الصاروخ الفضائي للإطلاق",
+              "english": "rocket, space rocket",
+              "example": "Mit lautem Getöse hob die mächtige Rakete von der Startrampe ab."
+            },
+            {
+              "german": "das Weltraumteleskop, -e",
+              "arabic": "التلسكوب الفضائي لرصد النجوم",
+              "english": "space telescope",
+              "example": "Das Weltraumteleskop sendet gestochen scharfe Bilder ferner Galaxien zur Erde."
+            },
+            {
+              "german": "die Schwerelosigkeit (Sg.)",
+              "arabic": "انعدام الوزن والجاذبية في الفضاء",
+              "english": "weightlessness, zero gravity",
+              "example": "In der Schwerelosigkeit schweben Wassertropfen als perfekte Kugeln im Raum."
+            },
+            {
+              "german": "der Asteroid, -en",
+              "arabic": "الكويكب الصخري الفضائي",
+              "english": "asteroid",
+              "example": "Zwischen Mars und Jupiter befindet sich ein dichter Gürtel aus Asteroiden."
+            },
+            {
+              "german": "die Umlaufbahn, -en",
+              "arabic": "المدار الفلكي حول الكوكب (الأوربت)",
+              "english": "orbit (astronomical)",
+              "example": "Der Satellit schwenkte nach dem Start exakt in die geplante Umlaufbahn ein."
+            }
+          ],
+          "description": "Planeten, Sterne, Sonnensystem, Galaxien, Astronauten, Raumstationen und Raketen.",
+          "details": "Astronomie, Raumfahrt, Himmelskörper, Schwerelosigkeit und Kosmologie (A1–B2)",
+          "arabicDescription": "الفضاء الخارجي والكون (Der Weltraum): الفضاء (Weltraum)، الكواكب (Planet)، النجوم (Stern)، الشمس، القمر (Mond)، المجرات (Galaxie)، النظام الشمسي (Sonnensystem)، محطة الفضاء الدولية (Raumstation)، رائد الفضاء (Astronaut)، الصاروخ، التلسكوب، وانعدام الجاذبية (Schwerelosigkeit).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Blick in die Sterne",
+              "intro": "Einfache Sätze über Sterne, Planeten und Raumfahrer (A1).",
+              "paragraphs": [
+                [
+                  "In der Nacht schaue ich nach oben in [der Weltraum (Sg.)|den Weltraum].",
+                  "Dort oben leuchtet [der Stern, -e|ein heller Stern] neben dem Mond.",
+                  "Unsere Erde ist ein schöner blauer [der Planet, -en|Planet]."
+                ],
+                [
+                  "Mit [die Rakete, -n|einer Rakete] fliegen Menschen ins All.",
+                  "[der Astronaut, -en|Ein mutiger Astronaut] arbeitet auf [die Raumstation, -en|einer Raumstation].",
+                  "In der Raumstation fliegt alles durch [die Schwerelosigkeit (Sg.)|die Schwerelosigkeit]."
+                ],
+                ["Das Weltall ist riesig und voller Geheimnisse."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Reise durch unser Sonnensystem",
+              "intro": "Die Planeten der Sonne, Raumstationen und Teleskope (A2).",
+              "paragraphs": [
+                [
+                  "In der Schule haben wir gelernt, wie [das Sonnensystem, -e|unser Sonnensystem] aufgebaut ist.",
+                  "Im Zentrum steht die heiße Sonne, um die alle acht Planeten kreisen."
+                ],
+                [
+                  "Mit [das Weltraumteleskop, -e|einem modernen Weltraumteleskop] können Astronomen sogar ferne [die Galaxie, -n|Galaxien] beobachten.",
+                  "Um die Erde zieht die Raumstation ihre feste [die Umlaufbahn, -en|Umlaufbahn].",
+                  "Wissenschaftler hoffen, in den nächsten Jahrzehnten Astronauten zum roten Planeten Mars zu schicken."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die friedliche Erforschung des Kosmos",
+              "intro": "Internationale Kooperation im All und astrophysikalische Entdeckungen (B1).",
+              "paragraphs": [
+                [
+                  "Die Erkundung von [der Weltraum (Sg.)|dem Weltraum] gehört zu den größten wissenschaftlichen Herausforderungen der Menschheit.",
+                  "Internationale Kooperationen haben bewiesen, dass Nationen im All friedlich zusammenarbeiten können, um auf [die Raumstation, -en|Raumstationen] bahnbrechende Experimente unter [die Schwerelosigkeit (Sg.)|Schwerelosigkeit] durchzuführen."
+                ],
+                [
+                  "Gleichzeitig überwachen Hochleistungssensoren den Himmel, um frühzeitig die Flugbahn potenziell gefährlicher [der Asteroid, -en|Asteroiden] zu berechnen."
+                ],
+                [
+                  "Bilder aus den Tiefen des Universums erinnern uns daran, wie kostbar und verletzlich unser Heimatplanet im endlosen Kosmos ist."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Astrophysik, Raumfahrtökonomie und die Suche nach Exoplaneten",
+              "intro": "Kosmologische Modelle, Spektroskopie und kommerzielle Raumfahrt (B2).",
+              "paragraphs": [
+                [
+                  "Die Entdeckung tausender extrasolarer [der Planet, -en|Planeten] durch spektroskopische Messungen hat die Astrobiologie revolutioniert.",
+                  "Moderne Infrarot-[das Weltraumteleskop, -e|Weltraumteleskope] analysieren die Atmosphärenzusammensetzung ferner Himmelskörper auf chemische Biosignaturen."
+                ],
+                [
+                  "Parallel dazu vollzieht sich ein Paradigmenwechsel in der Raumfahrtökonomie ('New Space'): Wiederverwendbare Trägersysteme senken die Startkosten für Nutzlasten in [die Umlaufbahn, -en|die niedrige Erdumlaufbahn] drastisch."
+                ],
+                [
+                  "Die bemannte Exploration des Mondes und des Mars im Rahmen des Artemis-Programms markiert den Übergang von reiner Forschung zur permanenten menschlichen Präsenz im interplanetaren Raum."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "erde",
+      "title": "DIE ERDE",
+      "topics": [
+        {
+          "id": "die_erde",
+          "title": "Die Erde",
+          "words": [
+            {
+              "german": "die Erde (Sg.)",
+              "arabic": "كوكب الأرض واليابسة",
+              "english": "Earth (planet)",
+              "example": "Die Erde ist der einzige uns bekannte Planet, auf dem Leben existiert."
+            },
+            {
+              "german": "der Kontinent, -e",
+              "arabic": "القارة الجغرافية الكبرى",
+              "english": "continent",
+              "example": "Auf unserem Planeten gibt es sieben geographische Kontinente."
+            },
+            {
+              "german": "der Ozean, -e",
+              "arabic": "المحيط المائي الشاسع",
+              "english": "ocean",
+              "example": "Der Pazifische Ozean ist das größte und tiefste Gewässer der Erde."
+            },
+            {
+              "german": "der Äquator (Sg.)",
+              "arabic": "خط الاستواء الوهمي",
+              "english": "equator",
+              "example": "Am Äquator steht die Sonne das ganze Jahr über steil am Himmel."
+            },
+            {
+              "german": "die Erdatmosphäre, -n",
+              "arabic": "الغلاف الجوي المحيط بالأرض",
+              "english": "atmosphere (Earth's)",
+              "example": "Die Erdatmosphäre schützt uns vor tödlicher kosmischer Strahlung."
+            },
+            {
+              "german": "die Erdkruste (Sg.)",
+              "arabic": "القشرة الأرضية الصخرية الخارجية",
+              "english": "Earth's crust",
+              "example": "Die Erdkruste besteht aus tektonischen Platten, die sich langsam verschieben."
+            },
+            {
+              "german": "die Erdachse, -n",
+              "arabic": "محور دوران الأرض المائل",
+              "english": "Earth's axis",
+              "example": "Die Neigung der Erdachse ist der Grund für die Entstehung der vier Jahreszeiten."
+            },
+            {
+              "german": "die Schwerkraft (Sg.)",
+              "arabic": "الجاذبية الأرضية وقوة الثقالة",
+              "english": "gravity (Earth's)",
+              "example": "Durch die Schwerkraft fallen Gegenstände immer nach unten auf den Boden."
+            },
+            {
+              "german": "der Nordpol (Sg.)",
+              "arabic": "القطب الشمالي المتجمد",
+              "english": "North Pole",
+              "example": "Am eisigen Nordpol leben Eisbären auf dem arktischen Meereis."
+            },
+            {
+              "german": "der Südpol (Sg.)",
+              "arabic": "القطب الجنوبي وقارة أنتاركتيكا",
+              "english": "South Pole",
+              "example": "Der Südpol liegt mitten auf dem schneebedeckten antarktischen Kontinent."
+            },
+            {
+              "german": "die Hemisphäre, -n",
+              "arabic": "نصف الكرة الأرضية (الشمالي أو الجنوبي)",
+              "english": "hemisphere",
+              "example": "Wenn auf der nördlichen Hemisphäre Sommer ist, herrscht im Süden Winter."
+            },
+            {
+              "german": "das Erdmagnetfeld, -er",
+              "arabic": "المجال المغناطيسي للأرض",
+              "english": "Earth's magnetic field",
+              "example": "Das unsichtbare Erdmagnetfeld lenkt die Nadel eines Kompasses nach Norden."
+            }
+          ],
+          "description": "Erde, Kontinente, Ozeane, Erdkruste, Atmosphäre, Pole, Erdachse und Schwerkraft.",
+          "details": "Geowissenschaften, Erdaufbau, Geodynamik, Magnetfeld und Biosphäre (A1–B2)",
+          "arabicDescription": "كوكب الأرض (Die Erde): كوكب الأرض، القارات (Kontinent)، المحيطات (Ozean)، خط الاستواء (Äquator)، الغلاف الجوي (Atmosphäre)، القشرة الأرضية (Erdkruste)، محور الأرض (Erdachse)، الجاذبية الأرضية (Schwerkraft)، القطب الشمالي والجنوبي، والمناخ.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Unser Heimatplanet Erde",
+              "intro": "Einfache Sätze über die Erde, Meere und Kontinente (A1).",
+              "paragraphs": [
+                [
+                  "Wir leben alle auf [die Erde (Sg.)|der Erde].",
+                  "Aus dem Weltall sieht sie blau und weiß aus.",
+                  "Auf der Erde gibt es riesige [der Kontinent, -e|Kontinente] und blaues Wasser in [der Ozean, -e|den Ozeanen]."
+                ],
+                [
+                  "In der Mitte verläuft [der Äquator (Sg.)|der warme Äquator].",
+                  "Ganz oben liegt [der Nordpol (Sg.)|der Nordpol] und unten [der Südpol (Sg.)|der Südpol].",
+                  "Dort ist es sehr kalt und überall liegt dickes Eis."
+                ],
+                [
+                  "[die Schwerkraft (Sg.)|Die Schwerkraft] hält uns sicher auf dem Boden fest."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Warum gibt es Sommer und Winter?",
+              "intro": "Die Neigung der Erdachse, Jahreszeiten und Nord- und Südpol (A2).",
+              "paragraphs": [
+                [
+                  "Hast du dich jemals gefragt, warum wir Frühling, Sommer, Herbst und Winter haben?",
+                  "Der Grund dafür ist die schräge [die Erdachse, -n|Erdachse]."
+                ],
+                [
+                  "Weil die Erde leicht geneigt um die Sonne kreist, bekommt jede [die Hemisphäre, -n|Hemisphäre] zu verschiedenen Zeiten mehr Sonnenlicht.",
+                  "Wenn wir in Deutschland im Juli schwitzen, frieren die Menschen in Australien im kalten Winter.",
+                  "Umgeben ist unser Planet von [die Erdatmosphäre, -n|einer schützenden Erdatmosphäre] mit lebenswichtigem Sauerstoff."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Geodynamische Prozesse und planetare Schutzschilde",
+              "intro": "Plattentektonik, Erdkruste und das irdische Magnetfeld (B1).",
+              "paragraphs": [
+                [
+                  "Die feste Oberfläche unseres Planeten, [die Erdkruste (Sg.)|die Erdkruste], befindet sich in ständiger, unmerklicher Bewegung.",
+                  "Große Kontinentalplatten driften auf dem zähflüssigen Erdmantel, kollidieren miteinander und türmen mächtige Gebirge auf."
+                ],
+                [
+                  "Im flüssigen äußeren Erdkern erzeugt ein natürlicher Geodynamo [das Erdmagnetfeld, -er|das Erdmagnetfeld].",
+                  "Dieser unsichtbare Schutzschild schirmt die Biosphäre vor den hochenergetischen Partikeln des Sonnenwinds ab und ermöglicht so dauerhaftes biologisches Leben."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Erdsystemforschung, Biogeochemie und planetare Grenzen",
+              "intro": "Tipping Points, Erdsystemdynamik und das Anthropozän (B2).",
+              "paragraphs": [
+                [
+                  "Die moderne Erdsystemwissenschaft analysiert die Interdependenzen zwischen Lithosphäre, Hydrosphäre, Kryosphäre und Atmosphäre.",
+                  "Anthropogene Treibhausgasemissionen verändern den Strahlungsantrieb in [die Erdatmosphäre, -n|der Atmosphäre], was zu beschleunigtem Eismassenschwund an [der Nordpol (Sg.)|dem Nordpol] und in der Antarktis führt."
+                ],
+                [
+                  "Die thermohaline Zirkulation in [der Ozean, -e|den Ozeanen] koppelt den Wärmetransport zwischen den Tropen am [der Äquator (Sg.)|Äquator] und den polaren Breiten."
+                ],
+                [
+                  "Das Überschreiten planetarer Belastungsgrenzen birgt die Gefahr irreversibler Kippelemente im globalen Klimasystem."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "un_mitgliedsstaaten",
+      "title": "UN-MITGLIEDSSTAATEN",
+      "topics": [
+        {
+          "id": "un_mitgliedsstaaten",
+          "title": "UN-Mitgliedsstaaten",
+          "words": [
+            {
+              "german": "der Staat, -en",
+              "arabic": "الدولة المستقلة ذات السيادة",
+              "english": "state, sovereign country",
+              "example": "Fast zweihundert souveräne Staaten sind heute vollberechtigte Mitglieder der UNO."
+            },
+            {
+              "german": "die Nation, -en",
+              "arabic": "الأمة والشعب",
+              "english": "nation",
+              "example": "Die Vereinten Nationen setzen sich weltweit für Frieden und Menschenrechte ein."
+            },
+            {
+              "german": "die Vereinten Nationen (UN) (Pl.)",
+              "arabic": "منظمة الأمم المتحدة",
+              "english": "United Nations (UN)",
+              "example": "Der Hauptsitz der Vereinten Nationen befindet sich in New York am East River."
+            },
+            {
+              "german": "die Hauptstadt, -̈e",
+              "arabic": "العاصمة السياسية للبلاد",
+              "english": "capital city, capital",
+              "example": "Berlin ist die Hauptstadt und der Regierungssitz der Bundesrepublik Deutschland."
+            },
+            {
+              "german": "die Staatsgrenze, -n",
+              "arabic": "الحدود الدولية بين الدول",
+              "english": "national border, frontier",
+              "example": "Innerhalb des Schengen-Raums wurden die Kontrollen an den Staatsgrenzen abgebaut."
+            },
+            {
+              "german": "die Souveränität (Sg.)",
+              "arabic": "السيادة الوطنية والاستقلال السياسي",
+              "english": "sovereignty",
+              "example": "Die territoriale Souveränität jedes Landes muss völkerrechtlich respektiert werden."
+            },
+            {
+              "german": "die Staatsbürgerschaft, -en",
+              "arabic": "الجنسية والمواطنة الرسمية",
+              "english": "citizenship, nationality",
+              "example": "Mit der Einbürgerung erhält man die deutsche Staatsbürgerschaft und einen Pass."
+            },
+            {
+              "german": "der Staatsvertrag, -̈e",
+              "arabic": "المعاهدة والاتفاقية الدولية الرسمية",
+              "english": "state treaty, international treaty",
+              "example": "Beide Regierungen unterzeichneten einen historischen Staatsvertrag über den Frieden."
+            },
+            {
+              "german": "die Diplomatie (Sg.)",
+              "arabic": "الدبلوماسية والعلاقات الدبلوماسية",
+              "english": "diplomacy",
+              "example": "Kluge Diplomatie verhindert kriegerische Konflikte durch geduldiges Verhandeln."
+            },
+            {
+              "german": "die UN-Charta (Sg.)",
+              "arabic": "ميثاق الأمم المتحدة التأسيسي",
+              "english": "UN Charter",
+              "example": "Die UN-Charta verbietet Angriffskriege und verpflichtet zum friedlichen Interessenausgleich."
+            },
+            {
+              "german": "die Generalversammlung, -en",
+              "arabic": "الجمعية العامة للأمم المتحدة",
+              "english": "General Assembly (UN)",
+              "example": "In der Generalversammlung hat jeder Mitgliedsstaat unabhängig von seiner Größe eine Stimme."
+            },
+            {
+              "german": "das Völkerrecht (Sg.)",
+              "arabic": "القانون الدولي العام",
+              "english": "international law",
+              "example": "Das Völkerrecht regelt die rechtlichen Beziehungen zwischen den Staaten der Welt."
+            }
+          ],
+          "description": "Staaten, Nationen, Vereinte Nationen, Hauptstädte, Grenzen, Souveränität und Diplomatie.",
+          "details": "Völkerrecht, UN-Charta, Generalversammlung, Diplomatie und internationale Verträge (A1–B2)",
+          "arabicDescription": "الدول الأعضاء في الأمم المتحدة (UN-Mitgliedsstaaten): الدول المستقلة (Staat)، الأمم والشعوب (Nation)، منظمة الأمم المتحدة (UN)، العواصم (Hauptstadt)، الحدود الدولية (Grenze)، السيادة الوطنية (Souveränität)، الجنسية (Staatsbürgerschaft)، المعاهدات والاتفاقيات الدولية (Vertrag)، والدبلوماسية والجمعية العامة.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Länder und Hauptstädte",
+              "intro": "Einfache Sätze über Länder, Hauptstädte und Grenzen (A1).",
+              "paragraphs": [
+                [
+                  "Auf der Welt gibt es viele Länder.",
+                  "Deutschland ist [der Staat, -en|ein Staat] in Europa.",
+                  "Die schöne [die Hauptstadt, -̈e|Hauptstadt] von Deutschland heißt Berlin."
+                ],
+                [
+                  "Jedes Land hat eine Fahne und [die Staatsgrenze, -n|eine Grenze] zu den Nachbarn.",
+                  "Ich habe einen Reisepass und [die Staatsbürgerschaft, -en|eine Staatsbürgerschaft].",
+                  "Alle Staaten zusammen bilden die Welt."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Gemeinsam für den Weltfrieden",
+              "intro": "Die Vereinten Nationen in New York und internationale Zusammenarbeit (A2).",
+              "paragraphs": [
+                [
+                  "Nach dem Zweiten Weltkrieg gründeten die Länder [die Vereinten Nationen (UN) (Pl.)|die Vereinten Nationen].",
+                  "Das Ziel der Organisation ist es, Kriege zu verhindern und den Hunger zu bekämpfen."
+                ],
+                [
+                  "Jedes Jahr im September treffen sich die Staatschefs in New York.",
+                  "In [die Generalversammlung, -en|der großen Generalversammlung] hält jeder Präsident eine Rede.",
+                  "Durch friedliche [die Diplomatie (Sg.)|Diplomatie] versuchen die Politiker, Streitigkeiten mit Worten statt mit Waffen zu lösen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Völkerrecht und multilaterale Verträge",
+              "intro": "UN-Charta, Souveränität der Staaten und völkerrechtliche Pflichten (B1).",
+              "paragraphs": [
+                [
+                  "Das Fundament der gegenwärtigen internationalen Ordnung ist [das Völkerrecht (Sg.)|das universelle Völkerrecht].",
+                  "Die historische [die UN-Charta (Sg.)|UN-Charta] verankert das strikte Gewaltverbot in zwischenstaatlichen Beziehungen."
+                ],
+                [
+                  "Jeder souveräne [der Staat, -en|Staat] besitzt das Recht auf territoriale Integrität und politische [die Souveränität (Sg.)|Souveränität]."
+                ],
+                [
+                  "Durch völkerrechtlich bindende [der Staatsvertrag, -̈e|Staatsverträge] verpflichten sich Regierungen zum Klimaschutz, zur Rüstungskontrolle und zur Wahrung fundamentaler Menschenrechte."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Multilateralismus in der Krise: Sicherheitsrat, Souveränitätsprinzip und Global Governance",
+              "intro": "Veto-Mächte, Schutzverantwortung (R2P) und die Reform der UN-Institutionen (B2).",
+              "paragraphs": [
+                [
+                  "Die multilaterale Weltordnung sieht sich durch geopolitische Blockkonfrontationen und revisionistische Bestrebungen existentiell herausgefordert.",
+                  "Das strukturelle Veto der fünf ständigen Mitglieder im Sicherheitsrat lähmt [die Vereinten Nationen (UN) (Pl.)|die Vereinten Nationen] wiederholt bei humanitären Krisen."
+                ],
+                [
+                  "Gleichzeitig kollidiert das traditionelle Westfälische Prinzip absoluter [die Souveränität (Sg.)|Staatssouveränität] zunehmend mit dem völkerrechtlichen Konzept der 'Schutzverantwortung' (Responsibility to Protect)."
+                ],
+                [
+                  "Eine umfassende Reform der Institutionen und die Stärkung von [die Generalversammlung, -en|der Generalversammlung] sind unabdingbar, um die Handlungsfähigkeit globaler Governance im 21. Jahrhundert zu sichern."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "weltkarte",
+      "title": "DIE WELTKARTE",
+      "topics": [
+        {
+          "id": "europa",
+          "title": "Europa",
+          "words": [
+            {
+              "german": "Europa (Sg.)",
+              "arabic": "قارة أوروبا",
+              "english": "Europe",
+              "example": "Europa ist geprägt von einer reichen Geschichte und faszinierenden Kulturvielfalt."
+            },
+            {
+              "german": "die Europäische Union (EU) (Sg.)",
+              "arabic": "الاتحاد الأوروبي",
+              "english": "European Union (EU)",
+              "example": "Die Europäische Union verbindet siebenundzwanzig Mitgliedstaaten in Frieden und Wohlstand."
+            },
+            {
+              "german": "die Alpen (Pl.)",
+              "arabic": "سلسلة جبال الألب الشاهقة",
+              "english": "the Alps",
+              "example": "Die schneebedeckten Alpen sind das höchste Gebirge im Herzen Europas."
+            },
+            {
+              "german": "das Mittelmeer (Sg.)",
+              "arabic": "البحر الأبيض المتوسط",
+              "english": "Mediterranean Sea",
+              "example": "Am sonnigen Mittelmeer herrscht ein mildes Klima mit warmen Sommern."
+            },
+            {
+              "german": "der Rhein (Sg.)",
+              "arabic": "نهر الراين الشهير",
+              "english": "Rhine (river)",
+              "example": "Der Rhein ist eine der verkehrsreichsten Wasserstraßen für die Binnenschifffahrt."
+            },
+            {
+              "german": "der Euro, -s",
+              "arabic": "اليورو (العملة الأوروبية الموحدة)",
+              "english": "Euro (currency)",
+              "example": "In zwanzig europäischen Ländern bezahlt man bequem mit derselben Währung, dem Euro."
+            },
+            {
+              "german": "die Reisefreiheit (Sg.)",
+              "arabic": "حرية السفر والتنقل دون تأشيرة أو حدود (شنغن)",
+              "english": "freedom of travel",
+              "example": "Dank des Schengener Abkommens genießen europäische Bürger uneingeschränkte Reisefreiheit."
+            },
+            {
+              "german": "die Kulturlandschaft, -en",
+              "arabic": "المشهد والبيئة الثقافية والحضارية",
+              "english": "cultural landscape",
+              "example": "Die Weinberge am Mittelrhein gehören zum UNESCO-Welterbe der europäischen Kulturlandschaft."
+            },
+            {
+              "german": "die Sprachenvielfalt (Sg.)",
+              "arabic": "التنوع اللغوي وتعدد اللغات",
+              "english": "linguistic diversity",
+              "example": "In Europa werden dutzende verschiedene Amtssprachen und Regionalsprachen gesprochen."
+            },
+            {
+              "german": "die Ostsee (Sg.)",
+              "arabic": "بحر البلطيق في شمال شرق أوروبا",
+              "english": "Baltic Sea",
+              "example": "An den flachen Stränden der Ostsee findet man nach Stürmen oft glänzenden Bernstein."
+            },
+            {
+              "german": "die Nordsee (Sg.)",
+              "arabic": "بحر الشمال",
+              "english": "North Sea",
+              "example": "Die Nordsee ist bekannt für stürmisches Wetter, Gezeiten und das weite Wattenmeer."
+            },
+            {
+              "german": "der europäische Binnenmarkt, -̈e",
+              "arabic": "السوق الأوروبية المشتركة الموحدة",
+              "english": "European single market",
+              "example": "Der europäische Binnenmarkt garantiert den freien Verkehr von Waren, Dienstleistungen und Kapital."
+            }
+          ],
+          "description": "Europa, Europäische Union, Alpen, Euro, Reisefreiheit, Mittelmeer und Kulturvielfalt.",
+          "details": "Europäische Geographie, Binnenmarkt, Schengen-Raum, Flüsse und Nachbarstaaten (A1–B2)",
+          "arabicDescription": "قارة أوروبا (Europa): قارة أوروبا، الاتحاد الأوروبي (EU)، جبال الألب (Alpen)، البحر الأبيض المتوسط (Mittelmeer)، نهر الراين، العملة الموحدة اليورو (Euro)، حرية التنقل والسفر (Reisefreiheit)، التنوع الثقافي، بحر البلطيق، وبحر الشمال.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Reisen durch Europa",
+              "intro": "Einfache Sätze über Europa, Länder und den Euro (A1).",
+              "paragraphs": [
+                [
+                  "Ich lebe in [Europa (Sg.)|Europa].",
+                  "Hier gibt es viele schöne Länder wie Frankreich, Spanien und Italien.",
+                  "In den meisten Ländern bezahlen wir mit [der Euro, -s|dem Euro]."
+                ],
+                [
+                  "Im Süden liegt das warme [das Mittelmeer (Sg.)|Mittelmeer].",
+                  "In der Mitte ragen [die Alpen (Pl.)|die hohen Alpen] in den Himmel.",
+                  "Durch Deutschland fließt [der Rhein (Sg.)|der lange Rhein]."
+                ],
+                ["Reisen in Europa ist einfach und macht Spaß."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Urlaub ohne Passkontrollen",
+              "intro": "Schengen-Raum, Nordsee und Sprachenvielfalt (A2).",
+              "paragraphs": [
+                [
+                  "Letzten Sommer fuhr ich mit dem Zug von Berlin über die Niederlande bis nach Frankreich.",
+                  "Früher musste man an jeder Grenze anhalten und den Pass vorzeigen."
+                ],
+                [
+                  "Dank der europäischen Verträge genießen wir heute grenzenlose [die Reisefreiheit (Sg.)|Reisefreiheit].",
+                  "Im Norden besuchten wir die windige [die Nordsee (Sg.)|Nordsee] und aßen frischen Fisch.",
+                  "Obwohl jedes Land seine eigene Sprache spricht, bildet [die Europäische Union (EU) (Sg.)|die Europäische Union] eine friedliche Gemeinschaft."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Kulturelle Identität und wirtschaftliche Einheit",
+              "intro": "Vier Freiheiten der EU, Regionalkulturen und Binnenmarkt (B1).",
+              "paragraphs": [
+                [
+                  "Der europäische Kontinent vereint jahrhundertealte Traditionen mit einem beispiellosen Integrationsprojekt.",
+                  "Mit der Schaffung von [der europäische Binnenmarkt, -̈e|dem europäischen Binnenmarkt] entstand der größte gemeinsame Wirtschaftsraum der Welt."
+                ],
+                [
+                  "Trotz der wirtschaftlichen Konvergenz bleibt [die Sprachenvielfalt (Sg.)|die beeindruckende Sprachenvielfalt] erhalten: Vom Baltikum an [die Ostsee (Sg.)|der Ostsee] bis zur iberischen Halbinsel prägen regionale Besonderheiten [die Kulturlandschaft, -en|die vielfältige Kulturlandschaft]."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Supranationalität, Subsidiaritätsprinzip und europäische Souveränität",
+              "intro": "Vertrag von Lissabon, Binnenmarkt und geopolitische Resilienz der EU (B2).",
+              "paragraphs": [
+                [
+                  "[die Europäische Union (EU) (Sg.)|Die Europäische Union] stellt ein sui-generis-Konstrukt dar, das Elemente zwischenstaatlicher Kooperation mit supranationaler Rechtsetzung verbindet.",
+                  "Das Subsidiaritätsprinzip garantiert, dass Entscheidungen möglichst bürgernah auf mitgliedstaatlicher Ebene getroffen werden, sofern keine unionsweite Regelung zwingend geboten ist."
+                ],
+                [
+                  "In einer multipolaren Weltordnung forciert die Union strategische Autonomie in Technologie, Energie und Verteidigung, um [Europa (Sg.)|Europas] demokratische Werteordnung und wirtschaftliche Wettbewerbsfähigkeit global zu behaupten."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "nord_und_mittelamerika",
+          "title": "Nord- und Mittelamerika",
+          "words": [
+            {
+              "german": "Nordamerika (Sg.)",
+              "arabic": "قارة أمريكا الشمالية",
+              "english": "North America",
+              "example": "Nordamerika erstreckt sich von der arktischen Tundra bis zu den Wüsten Mexikos."
+            },
+            {
+              "german": "Mittelamerika (Sg.)",
+              "arabic": "أمريكا الوسطى (البرزخ الواصل)",
+              "english": "Central America",
+              "example": "Mittelamerika bildet eine schmale Landbrücke mit tropischen Regenwäldern."
+            },
+            {
+              "german": "die Vereinigten Staaten (USA) (Pl.)",
+              "arabic": "الولايات المتحدة الأمريكية",
+              "english": "United States (USA)",
+              "example": "In den Vereinigten Staaten leben über dreihundertdreißig Millionen Menschen."
+            },
+            {
+              "german": "Kanada (Sg.)",
+              "arabic": "دولة كندا",
+              "english": "Canada",
+              "example": "Kanada ist berühmt für endlose Wälder, glasklare Seen und wilde Bären."
+            },
+            {
+              "german": "Mexiko (Sg.)",
+              "arabic": "دولة المكسيك",
+              "english": "Mexico",
+              "example": "In Mexiko zeugen historische Pyramiden von den Hochkulturen der Maya und Azteken."
+            },
+            {
+              "german": "die Karibik (Sg.)",
+              "arabic": "منطقة البحر الكاريبي والجزر الاستوائية",
+              "english": "the Caribbean",
+              "example": "Türkisfarbenes Wasser und weiße Palmenstrände locken Urlauber in die Karibik."
+            },
+            {
+              "german": "die Rocky Mountains (Pl.)",
+              "arabic": "سلسلة جبال روكي الشاهقة",
+              "english": "the Rocky Mountains",
+              "example": "Die gewaltigen Rocky Mountains durchziehen den Westen des nordamerikanischen Kontinents."
+            },
+            {
+              "german": "der Panamakanal, -̈e",
+              "arabic": "قناة بنما الملاحية الرابطة بين المحيطين",
+              "english": "Panama Canal",
+              "example": "Der Panamakanal verkürzt die Schifffahrtsroute zwischen Atlantik und Pazifik enorm."
+            },
+            {
+              "german": "die Prärie, -n",
+              "arabic": "سهول البراري العشبية الواسعة",
+              "english": "prairie",
+              "example": "Einst durchstreiften riesige Bisonherden die weite nordamerikanische Prärie."
+            },
+            {
+              "german": "die Metropole, -n",
+              "arabic": "المدينة الكبرى العصرية (الميتروبول)",
+              "english": "metropolis, major city",
+              "example": "New York ist eine pulsierende Metropole der globalen Kunst- und Finanzwelt."
+            },
+            {
+              "german": "der Nationalpark, -s",
+              "arabic": "المحمية والمتنزه الوطني الطبيعي",
+              "english": "national park",
+              "example": "Im Yellowstone-Nationalpark sprudeln heiße Geysire aus dem vulkanischen Boden."
+            },
+            {
+              "german": "der Pazifische Ozean (Pazifik) (Sg.)",
+              "arabic": "المحيط الهادئ (الباسيفيك)",
+              "english": "Pacific Ocean",
+              "example": "An der Westküste Kaliforniens rollen die Wellen aus dem Pazifischen Ozean heran."
+            }
+          ],
+          "description": "Nord- und Mittelamerika, USA, Kanada, Mexiko, Karibik, Rocky Mountains und Panamakanal.",
+          "details": "Kontinentalgeographie, Großlandschaften, Megastädte, Nationalparks und Seewege (A1–B2)",
+          "arabicDescription": "أمريكا الشمالية والوسطى (Nord- und Mittelamerika): أمريكا الشمالية، أمريكا الوسطى، الولايات المتحدة (USA)، كندا، المكسيك، جزر الكاريبي، جبال روكي (Rocky Mountains)، قناة بنما (Panamakanal)، السهول العظمى، والحدائق الوطنية والمحيط الهادئ.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Reise nach Nordamerika",
+              "intro": "Einfache Sätze über Amerika, Berge und Großstädte (A1).",
+              "paragraphs": [
+                [
+                  "[Nordamerika (Sg.)|Nordamerika] ist ein riesiger Kontinent.",
+                  "Hier liegen [die Vereinigten Staaten (USA) (Pl.)|die USA], [Kanada (Sg.)|Kanada] und [Mexiko (Sg.)|Mexiko].",
+                  "Im Westen stehen [die Rocky Mountains (Pl.)|die Rocky Mountains], sehr hohe Berge."
+                ],
+                [
+                  "New York ist eine weltberühmte [die Metropole, -n|Metropole] mit vielen Hochhäusern.",
+                  "Im Süden liegt das warme Meer in [die Karibik (Sg.)|der Karibik].",
+                  "Dort wachsen Kokosnüsse an grünen Palmen."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Naturwunder im Westen",
+              "intro": "Nationalparks, Geysire und die Weite der Prärie (A2).",
+              "paragraphs": [
+                [
+                  "Letztes Jahr machten wir einen Roadtrip durch den Westen der USA.",
+                  "Wir fuhren tagelang durch [die Prärie, -n|die weite Prärie], bevor die schneebedeckten Gipfel am Horizont auftauchten."
+                ],
+                [
+                  "Im ältesten [der Nationalpark, -s|Nationalpark] der Welt, Yellowstone, bestaunten wir gigantische Geysire und wilde Bisons.",
+                  "An der Westküste erreichten wir schließlich [der Pazifische Ozean (Pazifik) (Sg.)|den Pazifischen Ozean].",
+                  "Die unberührte Wildnis Kanadas und die Strände Mexikos sind atemberaubende Reiseziele."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Kontrastreiche Geographie und strategische Handelswege",
+              "intro": "Klimazonen, Pazifikanbindung und der Panamakanal (B1).",
+              "paragraphs": [
+                [
+                  "Der nord- und mittelamerikanische Raum zeichnet sich durch extreme klimatische und topographische Kontraste aus.",
+                  "Während im arktischen Norden Kanadas Permafrostböden vorherrschen, verbindet [Mittelamerika (Sg.)|Mittelamerika] als schmale Landbrücke die Hemisphären mit tropischen Ökosystemen."
+                ],
+                [
+                  "Eine weltwirtschaftliche Schlüsselrolle nimmt [der Panamakanal, -̈e|der Panamakanal] ein: Die künstliche Wasserstraße erspart Frachtschiffen die gefährliche Umrundung von Kap Hoorn und beschleunigt den Warenaustausch zwischen Asien, Europa und den Amerikas."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Transkontinentale Wirtschaftsräume, Freihandel und ökologische Herausforderungen",
+              "intro": "USMCA-Abkommen, Megalopolen und Ressourcenmanagement (B2).",
+              "paragraphs": [
+                [
+                  "Der nordamerikanische Kontinent bildet durch das Freihandelsabkommen USMCA einen hochgradig integrierten Wirtschafts- und Wertschöpfungsraum.",
+                  "Städtische Agglomerationen wie die Megalopolis Boswash generieren eine Wirtschaftskraft, die mit führenden Industrienationen konkurriert."
+                ],
+                [
+                  "Gleichzeitig verschärfen Dürreperioden im Südwesten der USA und im nördlichen [Mexiko (Sg.)|Mexiko] die wasserwirtschaftlichen Spannungen entlang des Colorado River."
+                ],
+                [
+                  "Die Bewahrung alpiner Biodiversität in [die Rocky Mountains (Pl.)|den Rocky Mountains] bei simultanem Ausbau erneuerbarer Energien stellt das kontinentale Umweltmanagement vor komplexe Zielkonflikte."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "suedamerika",
+          "title": "Südamerika",
+          "words": [
+            {
+              "german": "Südamerika (Sg.)",
+              "arabic": "قارة أمريكا الجنوبية",
+              "english": "South America",
+              "example": "Südamerika beheimatet die artenreichsten Tropenwälder und längsten Gebirgsketten."
+            },
+            {
+              "german": "der Amazonas (Sg.)",
+              "arabic": "نهر الأمازون (أعظم أنهار الأرض تدفقاً)",
+              "english": "Amazon (river)",
+              "example": "Der mächtige Amazonas führt mehr Wasser als die nächsten sieben Flüsse zusammen."
+            },
+            {
+              "german": "der Regenwald, -̈er",
+              "arabic": "الغابة الاستوائية المطيرة",
+              "english": "rainforest, tropical rainforest",
+              "example": "Der Amazonas-Regenwald produziert gigantische Mengen Sauerstoff und bindet CO2."
+            },
+            {
+              "german": "die Anden (Pl.)",
+              "arabic": "سلسلة جبال الأنديز (أطول سلسلة جبلية قارية)",
+              "english": "the Andes",
+              "example": "Die Anden erstrecken sich über siebentausend Kilometer entlang der Westküste."
+            },
+            {
+              "german": "Brasilien (Sg.)",
+              "arabic": "دولة البرازيل",
+              "english": "Brazil",
+              "example": "Brasilien ist das flächenmäßig größte und bevölkerungsreichste Land Südamerikas."
+            },
+            {
+              "german": "Argentinien (Sg.)",
+              "arabic": "دولة الأرجنتين",
+              "english": "Argentina",
+              "example": "In Argentinien liegen die weiten Rinderweiden der Pampa und der Tango hat dort seine Wurzeln."
+            },
+            {
+              "german": "die Artenvielfalt (Biodiversität) (Sg.)",
+              "arabic": "التنوع البيولوجي والحيوي الغني",
+              "english": "biodiversity, species richness",
+              "example": "Nirgendwo auf der Welt ist die Artenvielfalt höher als im tropischen Urwald."
+            },
+            {
+              "german": "die Atacama-Wüste (Sg.)",
+              "arabic": "صحراء أتاكاما (أكثر صحاري العالم جفافاً)",
+              "english": "Atacama Desert",
+              "example": "In der chilenischen Atacama-Wüste hat es an manchen Orten seit Jahrzehnten nicht geregnet."
+            },
+            {
+              "german": "der Wasserfall, -̈e",
+              "arabic": "الشلال المائي المتدفق",
+              "english": "waterfall",
+              "example": "Die tosenden Iguazú-Wasserfälle an der Grenze zwischen Brasilien und Argentinien bieten ein Naturschauspiel."
+            },
+            {
+              "german": "das Indigene Volk, -̈er",
+              "arabic": "الشعب الأصلي / السكان الأصليون",
+              "english": "indigenous people",
+              "example": "Viele Indigene Völker leben seit Generationen im Einklang mit dem Regenwald."
+            },
+            {
+              "german": "das Hochland, -̈er",
+              "arabic": "الهضبة المرتفعة / المرتفعات الجبلية",
+              "english": "highlands, plateau",
+              "example": "Auf dem bolivianischen Hochland Altiplano weiden Lamas und Alpakas."
+            },
+            {
+              "german": "die Pampa (Sg.)",
+              "arabic": "سهول البامبا العشبية الخصبة",
+              "english": "pampas (fertile South American lowlands)",
+              "example": "Auf den saftigen Wiesen der Pampa grasen Millionen Fleischrinder unter freiem Himmel."
+            }
+          ],
+          "description": "Südamerika, Amazonas, Regenwald, Anden, Brasilien, Argentinien, Atacama und Biodiversität.",
+          "details": "Tropenwald, Gebirgszüge, indigene Territorien, Wasserfälle und Klimaregulation (A1–B2)",
+          "arabicDescription": "قارة أمريكا الجنوبية (Südamerika): قارة أمريكا الجنوبية، نهر الأمازون (Amazonas)، الغابات المطيرة الاستوائية (Regenwald)، سلسلة جبال الأنديز (Anden)، البرازيل، الأرجنتين، التنوع الحيوي والبيولوجي (Artenvielfalt)، صحراء أتاكاما، الشلالات (Wasserfall)، والشعوب الأصلية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Im grünen Dschungel",
+              "intro": "Einfache Sätze über Südamerika, Dschungel und Fluss (A1).",
+              "paragraphs": [
+                [
+                  "[Südamerika (Sg.)|Südamerika] ist ein faszinierender Erdteil.",
+                  "Hier fließt [der Amazonas (Sg.)|der riesige Amazonas] durch das grüne Land.",
+                  "Rund um den Fluss wächst [der Regenwald, -̈er|ein dichter Regenwald]."
+                ],
+                [
+                  "Dort leben bunte Papageien, Affen und Jaguare.",
+                  "Im Westen stehen [die Anden (Pl.)|die Anden], sehr hohe Berge mit Schnee.",
+                  "In [Brasilien (Sg.)|Brasilien] sprechen die Menschen Portugiesisch und in [Argentinien (Sg.)|Argentinien] Spanisch."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Vom Wasserfall in die Wüste",
+              "intro": "Iguazú-Wasserfälle, Trockenheit in der Atacama und Anden-Hochland (A2).",
+              "paragraphs": [
+                [
+                  "Während meiner Reise durch Südamerika erlebte ich unglaubliche Gegensätze.",
+                  "Zuerst besuchte ich den gewaltigen [der Wasserfall, -̈e|Iguazú-Wasserfall], wo gigantische Wassermassen in die Tiefe stürzen."
+                ],
+                [
+                  "Wenige Tage später stand ich in [die Atacama-Wüste (Sg.)|der Atacama-Wüste] in Chile.",
+                  "Dort ist der Boden so trocken, dass fast keine Pflanzen wachsen können.",
+                  "Auf [das Hochland, -̈er|dem Hochland] der Anden sah ich Lamas mit bunter Wolle.",
+                  "Die Natur in Südamerika hat mich tief beeindruckt."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die grüne Lunge der Erde in Gefahr",
+              "intro": "Schutz des Regenwaldes, Artenvielfalt und Rechte indigener Völker (B1).",
+              "paragraphs": [
+                [
+                  "Das Amazonas-Becken beherbergt die weltweit größte [die Artenvielfalt (Biodiversität) (Sg.)|Artenvielfalt] und spielt eine Schlüsselrolle für das globale Wettergeschehen.",
+                  "Tausende Heilpflanzen, die in der modernen Medizin Anwendung finden, stammen aus diesem einzigartigen Ökosystem."
+                ],
+                [
+                  "Doch Brandrodung für Sojaanbau und Rinderweiden bedrohen den Fortbestand des Waldes.",
+                  "Gemeinsam mit Umweltorganisationen kämpft manches [das Indigene Volk, -̈er|Indigene Volk] für den Erhalt seiner traditionellen Lebensräume und den Schutz der verbliebenen Urwälder."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Klimatische Kipppunkte, Extraktivismus und planetare Biosphärenintegrität",
+              "intro": "Evapotranspiration ('fliegende Flüsse'), Lithiumabbau und Rohstoffgeopolitik (B2).",
+              "paragraphs": [
+                [
+                  "Der Amazonas-Regenwald fungiert über 'fliegende Flüsse' (atmosphärische Wasserdampfströme) als hydrologische Pumpe für den gesamten Kontinent.",
+                  "Klimaforscher warnen vor einem drohenden Kipppunkt: Schreitet die Entwaldung fort, droht die irreversible Savannisierung weiter Teile des Amazonasbeckens."
+                ],
+                [
+                  "Gleichzeitig forciert der globale Übergang zur Elektromobilität den Lithium-Extraktivismus im 'Lithium-Dreieck' der Salare in [die Atacama-Wüste (Sg.)|der Atacama-Wüste], was gravierende Grundwasserkonflikte mit indigenen Gemeinschaften provoziert."
+                ],
+                [
+                  "Eine zukunftsfähige Bioökonomie in Südamerika erfordert die Entkopplung von Wirtschaftswachstum und Naturzerstörung."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "afrika",
+          "title": "Afrika",
+          "words": [
+            {
+              "german": "Afrika (Sg.)",
+              "arabic": "قارة أفريقيا (القارة السمراء)",
+              "english": "Africa",
+              "example": "Afrika ist die Wiege der Menschheit und ein Kontinent voller Dynamik."
+            },
+            {
+              "german": "die Sahara (Sg.)",
+              "arabic": "الصحراء الكبرى الإفريقية (أكبر صحراء حارة)",
+              "english": "the Sahara",
+              "example": "Die Sahara bedeckt fast ein Drittel der gesamten Fläche des afrikanischen Kontinents."
+            },
+            {
+              "german": "der Nil (Sg.)",
+              "arabic": "نهر النيل (أطول أنهار العالم)",
+              "english": "Nile (river)",
+              "example": "Seit Jahrtausenden schenkt das fruchtbare Wasser von dem Nil Ägypten das Leben."
+            },
+            {
+              "german": "die Savanne, -n",
+              "arabic": "السافانا العشبية المفتوحة ذات الأشجار المتفرقة",
+              "english": "savanna",
+              "example": "In der weiten Savanne Ostafrikas ziehen zehntausende Zebras und Gnus umher."
+            },
+            {
+              "german": "der Kilimandscharo (Sg.)",
+              "arabic": "جبل كليمنجارو (أعلى قمة في إفريقيا)",
+              "english": "Kilimanjaro",
+              "example": "Der schneebedeckte Gipfel des Kilimandscharo ragt majestätisch über Tansania auf."
+            },
+            {
+              "german": "die afrikanische Tierwelt (Sg.)",
+              "arabic": "الحياة البرية والحيوانية الإفريقية الشهيرة",
+              "english": "African wildlife",
+              "example": "Elefanten, Löwen, Giraffen und Nashörner prägen die einzigartige afrikanische Tierwelt."
+            },
+            {
+              "german": "die Safari, -s",
+              "arabic": "رحلة السفاري الاستكشافية لمشاهدة الحيوانات البرية",
+              "english": "safari",
+              "example": "Auf einer geführten Foto-Safari konnten wir Leoparden beim Jagen beobachten."
+            },
+            {
+              "german": "die Oase, -n",
+              "arabic": "الواحة الخضراء وسط الصحراء",
+              "english": "oasis",
+              "example": "Mitten im Sandmeer der Wüste spendet eine grüne Oase mit Dattelpalmen frisches Wasser."
+            },
+            {
+              "german": "das Kap der Guten Hoffnung (Sg.)",
+              "arabic": "رأس الرجاء الصالح في جنوب إفريقيا",
+              "english": "Cape of Good Hope",
+              "example": "Am Kap der Guten Hoffnung treffen Atlantischer und Indischer Ozean aufeinander."
+            },
+            {
+              "german": "der Tropenwald, -̈er",
+              "arabic": "الغابة الاستوائية المطيرة (حوض الكونغو)",
+              "english": "tropical rainforest (Congo basin)",
+              "example": "Im dichten Tropenwald des Kongo-Beckens finden bedrohte Berggorillas Schutz."
+            },
+            {
+              "german": "der Grabenbruch, -̈e",
+              "arabic": "الوادي المتصدع الكبير (الأخدود الإفريقي العظيم)",
+              "english": "rift valley, East African Rift",
+              "example": "Der Ostafrikanische Grabenbruch spaltet den Kontinent durch tektonische Plattenbewegungen."
+            },
+            {
+              "german": "die Dürre, -n",
+              "arabic": "الجفاف وانحباس الأمطار",
+              "english": "drought",
+              "example": "Anhaltende Dürre in der Sahelzone bedroht die Ernten und das Vieh der Nomaden."
+            }
+          ],
+          "description": "Afrika, Sahara, Nil, Savanne, Tierwelt, Kilimandscharo, Safaris und Oasen.",
+          "details": "Afrikanische Kontinentalgeographie, Wüstenökologie, Megafauna, Rift Valley und Kulturen (A1–B2)",
+          "arabicDescription": "قارة أفريقيا (Afrika): قارة أفريقيا، الصحراء الكبرى (Sahara)، نهر النيل (Nil)، السافانا العشبية (Savanne)، رأس الرجاء الصالح، جبل كليمنجارو (Kilimandscharo)، خط الاستواء، الحياة البرية والحيوانية (Tierwelt)، رحلات السفاري (Safari)، والواحات الخضراء (Oase).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Tiere in Afrika",
+              "intro": "Einfache Sätze über Löwen, Elefanten und die Wüste (A1).",
+              "paragraphs": [
+                [
+                  "[Afrika (Sg.)|Afrika] ist ein großer und sonniger Kontinent.",
+                  "Im Norden liegt [die Sahara (Sg.)|die riesige Sahara] mit viel gelbem Sand.",
+                  "Mitten im Sand gibt es manchmal Wasser in [die Oase, -n|einer Oase]."
+                ],
+                [
+                  "In [die Savanne, -n|der Savanne] leben viele wilde Tiere.",
+                  "Dort staunen wir über [die afrikanische Tierwelt (Sg.)|die afrikanische Tierwelt]: Elefanten, Giraffen und starke Löwen.",
+                  "Touristen machen gern [die Safari, -s|eine Safari] und fotografieren die Tiere."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Vom Nil zum Kilimandscharo",
+              "intro": "Pyramiden am Nil, hohe Berge und Safariparks (A2).",
+              "paragraphs": [
+                [
+                  "Letztes Jahr begann unsere Traumreise in Ägypten.",
+                  "Wir machten eine Flussfahrt auf [der Nil (Sg.)|dem langen Nil] und sahen uralte Tempel."
+                ],
+                [
+                  "Danach flogen wir weiter nach Tansania, wo [der Kilimandscharo (Sg.)|der schneebedeckte Kilimandscharo] in den blauen Himmel ragt.",
+                  "Im Nationalpark Serengeti erlebten wir die Wanderung von Millionen Tieren über die Grassteppe.",
+                  "Ganz im Süden erreichten wir das berühmte [das Kap der Guten Hoffnung (Sg.)|Kap der Guten Hoffnung]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Geographische Vielfalt und ökologische Herausforderungen",
+              "intro": "Klimazonen, Sahelzone, Regenwald des Kongo und Dürreperioden (B1).",
+              "paragraphs": [
+                [
+                  "Der afrikanische Kontinent reicht von den mediterranen Küsten im Norden bis zu den gemäßigten Breiten Südafrikas.",
+                  "Zwischen [die Sahara (Sg.)|der Sahara] und den Savannengürteln liegt die ökologisch fragile Sahelzone, die regelmäßig unter extremer [die Dürre, -n|Dürre] leidet."
+                ],
+                [
+                  "Im Herzen des Kontinents erstreckt sich [der Tropenwald, -̈er|der äquatoriale Tropenwald] des Kongo-Beckens als zweitgrößte CO2-Senke der Erde."
+                ],
+                [
+                  "Geologisch formt [der Grabenbruch, -̈e|der Ostafrikanische Grabenbruch] tiefe Seen und aktive Vulkane, die Zeugnis von der Dynamik unseres Planeten ablegen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Demografischer Wandel, Green Energy und kontinentale Zukunftsperspektiven",
+              "intro": "Afrikanische Freihandelszone (AfCFTA), Solarenergie und Megacities (B2).",
+              "paragraphs": [
+                [
+                  "Afrika steht an der Schwelle zu einer tiefgreifenden sozioökonomischen Transformation.",
+                  "Mit der jüngsten Bevölkerung aller Kontinente wachsen Metropolen wie Lagos, Kairo und Nairobi zu globalen Innovationszentren heran."
+                ],
+                [
+                  "Die Realisierung der afrikanischen Kontinentalen Freihandelszone (AfCFTA) zielt darauf ab, den intra-afrikanischen Handel zu dynamisieren und Abhängigkeiten von Rohstoffexporten zu reduzieren."
+                ],
+                [
+                  "Gleichzeitig prädestiniert die solare Einstrahlung in [die Sahara (Sg.)|der Sahara] und in den Trockenzonen den Kontinent zum globalen Vorreiter für grünen Wasserstoff und photovoltaische Energieerzeugung."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "asien",
+          "title": "Asien",
+          "words": [
+            {
+              "german": "Asien (Sg.)",
+              "arabic": "قارة آسيا (أكبر قارات العالم مساحة وسكاناً)",
+              "english": "Asia",
+              "example": "Asien ist der größte und bevölkerungsreichste Erdteil unseres Planeten."
+            },
+            {
+              "german": "der Himalaja (Sg.)",
+              "arabic": "سلسلة جبال الهيمالايا الشاهقة",
+              "english": "the Himalayas",
+              "example": "Der Himalaja beherbergt die höchsten Berggipfel der gesamten Erde."
+            },
+            {
+              "german": "der Mount Everest (Sg.)",
+              "arabic": "قمة جبل إيفرست (أعلى قمة في العالم)",
+              "english": "Mount Everest",
+              "example": "Der Mount Everest ragt 8848 Meter über den Meeresspiegel in den Himmel."
+            },
+            {
+              "german": "China (Sg.)",
+              "arabic": "جمهورية الصين الشعبية",
+              "english": "China",
+              "example": "China blickt auf eine jahrtausendealte Philosophie- und Schrifttradition zurück."
+            },
+            {
+              "german": "Indien (Sg.)",
+              "arabic": "دولة الهند",
+              "english": "India",
+              "example": "Indien ist die bevölkerungsreichste Demokratie der Welt mit enormer kultureller Vielfalt."
+            },
+            {
+              "german": "Japan (Sg.)",
+              "arabic": "دولة اليابان (كوكب اليابان)",
+              "english": "Japan",
+              "example": "Japan verbindet uralte Shinto-Traditionen mit modernster Hochtechnologie."
+            },
+            {
+              "german": "der Monsun, -e",
+              "arabic": "الرياح الموسمية الاستوائية وأمطارها الغزيرة",
+              "english": "monsoon",
+              "example": "Der sommerliche Monsun bringt lebenswichtigen Regen für die Reisfelder Südasiens."
+            },
+            {
+              "german": "die Seidenstraße (Sg.)",
+              "arabic": "طريق الحرير التجاري التاريخي",
+              "english": "Silk Road",
+              "example": "Über die historische Seidenstraße gelangten Seide, Gewürze und Wissen nach Europa."
+            },
+            {
+              "german": "die Megastadt, -̈e",
+              "arabic": "المدينة العملاقة (فوق 10 ملايين نسمة)",
+              "english": "megacity",
+              "example": "Tokio ist eine der größten Megastädte der Welt mit über dreißig Millionen Einwohnern."
+            },
+            {
+              "german": "die Bevölkerungsdichte, -n",
+              "arabic": "الكثافة السكانية في الكيلومتر المربع",
+              "english": "population density",
+              "example": "In den Flussdeltas Asiens herrscht eine extrem hohe Bevölkerungsdichte."
+            },
+            {
+              "german": "das Reisfeld, -er",
+              "arabic": "حقل زراعة الأرز المغمور بالماء",
+              "english": "rice field, paddy field",
+              "example": "Grüne terrassierte Reisfelder prägen die hügelige Landschaft vieler asiatischer Länder."
+            },
+            {
+              "german": "der Jangtsekiang (Sg.)",
+              "arabic": "نهر يانغتسي في الصين (أطول أنهار آسيا)",
+              "english": "Yangtze (river)",
+              "example": "Der Jangtsekiang ist die wichtigste Binnenwasserstraße Chinas."
+            }
+          ],
+          "description": "Asien, Himalaja, Mount Everest, China, Indien, Japan, Monsun und Seidenstraße.",
+          "details": "Kontinentalgeographie, Megastädte, Hochkulturen, Monsunklima und Flusssysteme (A1–B2)",
+          "arabicDescription": "قارة آسيا (Asien): أكبر قارات الأرض، جبال الهيمالايا (Himalaja)، قمة إيفرست (Mount Everest)، الصين، الهند، اليابان، الرياح الموسمية (Monsun)، نهر يانغتسي، طريق الحرير التاريخي (Seidenstraße)، الكثافة السكانية، والنمو الاقتصادي.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Reise nach Asien",
+              "intro": "Einfache Sätze über Asien, Berge und Reis (A1).",
+              "paragraphs": [
+                [
+                  "[Asien (Sg.)|Asien] ist der größte Kontinent der Erde.",
+                  "Hier gibt es sehr große Länder wie [China (Sg.)|China], [Indien (Sg.)|Indien] und [Japan (Sg.)|Japan].",
+                  "Überall auf dem Land wächst Reis auf [das Reisfeld, -er|den grünen Reisfeldern]."
+                ],
+                [
+                  "In [der Himalaja (Sg.)|dem Himalaja] steht [der Mount Everest (Sg.)|der Mount Everest].",
+                  "Er ist der höchste Berg der ganzen Welt.",
+                  "Millionen Menschen leben in riesigen, modernen Städten."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Regen und Kultur im Sommer",
+              "intro": "Der Monsunregen, alte Seidenstraße und Tokio (A2).",
+              "paragraphs": [
+                [
+                  "Im Sommer reiste ich durch Südasien und erlebte [der Monsun, -e|den Monsun].",
+                  "Tagelang goss es wie aus Kübeln, was die Felder wieder grün machte."
+                ],
+                [
+                  "In den Museen erfuhr ich viel über [die Seidenstraße (Sg.)|die alte Seidenstraße], auf der Händler schon vor zweitausend Jahren kostbare Waren transportierten.",
+                  "Am Ende besuchte ich Tokio: [die Megastadt, -̈e|Die Megastadt] faszinierte mich mit ihren schnellen Zügen und leuchtenden Lichtern."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Wirtschaftskraft und ökologische Herausforderungen",
+              "intro": "Urbanisierung, demografischer Wandel und asiatische Flusssysteme (B1).",
+              "paragraphs": [
+                [
+                  "Asien ist das wirtschaftliche Kraftzentrum des 21. Jahrhunderts.",
+                  "In Metropolregionen konzentriert sich eine enorme [die Bevölkerungsdichte, -n|Bevölkerungsdichte], die enorme Anforderungen an Infrastruktur und Umweltschutz stellt."
+                ],
+                [
+                  "Lebensadern wie [der Jangtsekiang (Sg.)|der Jangtsekiang] sichern die Wasserversorgung für hunderte Millionen Menschen, sind aber zugleich durch Industrieabwässer belastet."
+                ],
+                [
+                  "Gleichzeitig treibt die Region die globale Energiewende durch massive Investitionen in Solarenergie und Elektromobilität voran."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Geopolitik des Indo-Pazifik, Konnektivität und das Asiatische Jahrhundert",
+              "intro": "Neue Seidenstraße (Belt and Road), Lieferketten und globale Machtverschiebungen (B2).",
+              "paragraphs": [
+                [
+                  "Die Verschiebung des weltpolitischen Gravitationszentrums in den Indo-Pazifik prägt die internationale Staatenwelt.",
+                  "Chinas geoökonomische Initiative der Neuen [die Seidenstraße (Sg.)|Seidenstraße] rekonfiguriert eurasische Handelskorridore und maritime Knotenpunkte."
+                ],
+                [
+                  "Parallel dazu etabliert sich [Indien (Sg.)|Indien] als digitaler Technologie- und Dienstleistungshub mit dynamischer Binnennachfrage."
+                ],
+                [
+                  "Die Beherrschung der Monsundynamik und der Schutz der Gletscherspeicher in [der Himalaja (Sg.)|dem Himalaja] ('Dritter Pol') sind für die Ernährungssicherheit von über zwei Milliarden Menschen von existenzieller Bedeutung."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "ozeanien",
+          "title": "Ozeanien",
+          "words": [
+            {
+              "german": "Ozeanien (Sg.)",
+              "arabic": "قارة أوقيانوسيا وجزر المحيط الهادئ",
+              "english": "Oceania",
+              "example": "Ozeanien umfasst Australien, Neuseeland und tausende paradiesische Südseeinseln."
+            },
+            {
+              "german": "Australien (Sg.)",
+              "arabic": "دولة وقارة أستراليا",
+              "english": "Australia",
+              "example": "Australien ist der flächenmäßig kleinste Kontinent, aber das sechstgrößte Land der Welt."
+            },
+            {
+              "german": "Neuseeland (Sg.)",
+              "arabic": "دولة نيوزيلندا (أوتياروا)",
+              "english": "New Zealand",
+              "example": "Neuseeland bezaubert Reisende mit Fjorden, Geysiren und grünen Weidelandschaften."
+            },
+            {
+              "german": "das Great Barrier Reef (Sg.)",
+              "arabic": "الحيد المرجاني العظيم بأستراليا",
+              "english": "Great Barrier Reef",
+              "example": "Das Great Barrier Reef ist das größte lebende Korallenriff unseres Planeten."
+            },
+            {
+              "german": "das Outback (Sg.)",
+              "arabic": "المناطق النائية القاحلة في الداخل الأسترالي",
+              "english": "the Outback",
+              "example": "Im roten Outback Australiens herrscht sengende Hitze und faszinierende Stille."
+            },
+            {
+              "german": "der Beutelsäuger, -",
+              "arabic": "الحيوان الثديي الجرابي (مثل الكنغر والكوالا)",
+              "english": "marsupial",
+              "example": "Kängurus und Koalas gehören zu den typisch australischen Beutelsäugern."
+            },
+            {
+              "german": "das Känguru, -s",
+              "arabic": "حيوان الكنغر",
+              "english": "kangaroo",
+              "example": "Mit kraftvollen Sprüngen hüpft das Känguru über den trockenen roten Wüstenboden."
+            },
+            {
+              "german": "das Korallenatoll, -e",
+              "arabic": "الجزيرة المرجانية الحلقية (الأتول)",
+              "english": "coral atoll",
+              "example": "Ein flaches Korallenatoll umschließt eine türkisfarbene Meereslagune."
+            },
+            {
+              "german": "die Aborigines (Pl.)",
+              "arabic": "السكان الأصليون لقارة أستراليا",
+              "english": "Aborigines, Australian Indigenous peoples",
+              "example": "Die Kultur der Aborigines reicht über sechzigtausend Jahre ununterbrochen zurück."
+            },
+            {
+              "german": "die Maori-Kultur (Sg.)",
+              "arabic": "ثقافة وتقاليد شعب الماوري الأصلي بنيوزيلندا",
+              "english": "Maori culture",
+              "example": "Der traditionelle Haka-Tanz ist ein weltberühmtes Element der lebendigen Maori-Kultur."
+            },
+            {
+              "german": "der Südpazifik (Sg.)",
+              "arabic": "جنوب المحيط الهادئ الاستوائي",
+              "english": "South Pacific",
+              "example": "Kleine Inselstaaten wie Fidschi und Samoa liegen verstreut im weiten Südpazifik."
+            },
+            {
+              "german": "das Meeresökosystem, -e",
+              "arabic": "النظام البيئي البحري",
+              "english": "marine ecosystem",
+              "example": "Die Erwärmung der Ozeane bedroht das empfindliche Meeresökosystem der Korallenriffe."
+            }
+          ],
+          "description": "Ozeanien, Australien, Neuseeland, Great Barrier Reef, Outback, Kängurus und Korallenatolle.",
+          "details": "Pazifische Inselwelt, Aborigines, Maori, Beuteltiere, Atolle und Meeresschutz (A1–B2)",
+          "arabicDescription": "قارة أوقيانوسيا (Ozeanien): قارة أوقيانوسيا، أستراليا (Australien)، نيوزيلندا (Neuseeland)، الحيد المرجاني العظيم (Great Barrier Reef)، المناطق البرية النائية (Outback)، الجرابيات والكنغر (Känguru)، الجزر المرجانية، ثقافة السكان الأصليين الأستراليين، وثقافة الماوري.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Tiere in Ozeanien",
+              "intro": "Einfache Sätze über Kängurus, Koalas und Inseln (A1).",
+              "paragraphs": [
+                [
+                  "[Ozeanien (Sg.)|Ozeanien] liegt weit weg im blauen Meer.",
+                  "Hier liegt das große Land [Australien (Sg.)|Australien].",
+                  "Dort lebt [das Känguru, -s|das lustige Känguru]. Es trägt sein Baby im Beutel."
+                ],
+                [
+                  "In der Mitte des Landes ist [das Outback (Sg.)|das rote Outback] sehr trocken.",
+                  "Im Meer schwimmen bunte Fische an [das Great Barrier Reef (Sg.)|dem Great Barrier Reef].",
+                  "Nebenan liegt das grüne [Neuseeland (Sg.)|Neuseeland] mit hohen Bergen."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Kulturen und Riffe der Südsee",
+              "intro": "Aborigines, Maori und Korallenriffe (A2).",
+              "paragraphs": [
+                [
+                  "Auf meiner Reise nach Ozeanien lernte ich faszinierende Ureinwohnerkulturen kennen.",
+                  "In Australien erfuhr ich viel über die Traumzeit-Erzählungen von [die Aborigines (Pl.)|den Aborigines]."
+                ],
+                [
+                  "In Neuseeland beeindruckte mich [die Maori-Kultur (Sg.)|die lebendige Maori-Kultur] mit ihren Holzschnitzereien und Tänzen.",
+                  "Beim Tauchen im warmen [der Südpazifik (Sg.)|Südpazifik] sah ich Meeresschildkröten an einem [das Korallenatoll, -e|Korallenatoll].",
+                  "Diese Inselwelt ist ein wahres Naturparadies."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Evolutionäre Isolation und Schutz bedrohter Riffe",
+              "intro": "Beutelsäuger, Endemismus und Korallenbleiche (B1).",
+              "paragraphs": [
+                [
+                  "Durch die Jahrmillionen dauernde geographische Isolation entwickelte sich in Australasien eine weltweit einzigartige Tierwelt.",
+                  "Einheimische [der Beutelsäuger, -|Beutelsäuger] wie Kängurus, Wombats und Schnabeltiere besetzten ökologische Nischen, die andernorts von Plazentatieren dominiert werden."
+                ],
+                [
+                  "Doch die globale Erwärmung bedroht [das Meeresökosystem, -e|das fragile Meeresökosystem].",
+                  "Am [das Great Barrier Reef (Sg.)|Great Barrier Reef] führt anhaltender Hitzestress zu wiederkehrender Korallenbleiche, die das Überleben tausender Meeresarten gefährdet."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Klimawandel-Vulnerabilität, Völkerrecht der Ozeane und indigene Selbstbestimmung",
+              "intro": "Meeresspiegelanstieg, Staatenlosigkeit kleiner Inselstaaten und Seerechtsübereinkommen (B2).",
+              "paragraphs": [
+                [
+                  "Die flachen Inselstaaten in [der Südpazifik (Sg.)|dem Südpazifik] (Tuvalu, Kiribati) stehen an der vordersten Front der Klimakrise.",
+                  "Der eustatische Meeresspiegelanstieg bedroht die physische Existenz ganzer [das Korallenatoll, -e|Korallenatolle], was völkerrechtliche Grundsatzfragen bezüglich Staatsbürgerschaft und Seerechtszonen (AWZ) bei territorialem Verlust aufwirft."
+                ],
+                [
+                  "Gleichzeitig vollzieht sich in [Australien (Sg.)|Australien] und [Neuseeland (Sg.)|Neuseeland] eine tiefgehende juristische Debatte über indigene Verfassungsrechte und den Schutz von Kulturgütern von [die Aborigines (Pl.)|den indigenen Völkern]."
+                ],
+                [
+                  "In Neuseeland wurde dem Whanganui River der Status einer juristischen Person zuerkannt — ein visionäres Modell für den ökologischen Rechtsschutz weltweit."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "internationale_organisationen",
+          "title": "Internationale Organisationen",
+          "words": [
+            {
+              "german": "die internationale Organisation, -en",
+              "arabic": "المنظمة الدولية / الهيئة متعددة الأطراف",
+              "english": "international organization",
+              "example": "Eine internationale Organisation fördert die weltweite Zusammenarbeit bei Krisen."
+            },
+            {
+              "german": "die NATO (Sg.)",
+              "arabic": "حلف شمال الأطلسي (الناتو)",
+              "english": "NATO (North Atlantic Treaty Organization)",
+              "example": "Die NATO ist ein Verteidigungsbündnis nordamerikanischer und europäischer Staaten."
+            },
+            {
+              "german": "die Weltgesundheitsorganisation (WHO) (Sg.)",
+              "arabic": "منظمة الصحة العالمية (WHO)",
+              "english": "World Health Organization (WHO)",
+              "example": "Die WHO koordiniert globale Maßnahmen zur Bekämpfung gefährlicher Pandemien."
+            },
+            {
+              "german": "die UNESCO (Sg.)",
+              "arabic": "منظمة اليونسكو للتربية والعلم والثقافة",
+              "english": "UNESCO",
+              "example": "Die UNESCO ernennt historische Bauwerke und Naturlandschaften zum schützenswerten Welterbe."
+            },
+            {
+              "german": "die Welthandelsorganisation (WTO) (Sg.)",
+              "arabic": "منظمة التجارة العالمية (WTO)",
+              "english": "World Trade Organization (WTO)",
+              "example": "Die WTO überwacht verbindliche Regeln für fairen und offenen Welthandel."
+            },
+            {
+              "german": "das Rote Kreuz (Sg.)",
+              "arabic": "منظمة الصليب الأحمر / الهلال الأحمر الدولي",
+              "english": "Red Cross (ICRC)",
+              "example": "Das Rote Kreuz leistet unparteiische humanitäre Hilfe in Kriegsgebieten."
+            },
+            {
+              "german": "die Nichtregierungsorganisation (NGO), -s",
+              "arabic": "المنظمة غير الحكومية المستقلة (NGO)",
+              "english": "non-governmental organization (NGO)",
+              "example": "Viele NGOs engagieren sich unabhängig für Umweltschutz und Menschenrechte."
+            },
+            {
+              "german": "das Hauptquartier, -e",
+              "arabic": "المقر الرئيسي / المركز العام للمنظمة",
+              "english": "headquarters (HQ)",
+              "example": "Das Hauptquartier der Vereinten Nationen in Genf ist ein Zentrum diplomatischer Konferenzen."
+            },
+            {
+              "german": "der Generalsekretär, -e",
+              "arabic": "الأمين العام للمنظمة",
+              "english": "Secretary-General",
+              "example": "Der Generalsekretär appellierte an die Staatschefs, den Klimaschutzvertrag einzuhalten."
+            },
+            {
+              "german": "die Friedenssicherung, -en",
+              "arabic": "حفظ السلام ومنع النزاعات الدولية",
+              "english": "peacekeeping, maintenance of peace",
+              "example": "UN-Blauhelme werden zur Friedenssicherung in instabilen Krisenregionen stationiert."
+            },
+            {
+              "german": "die humanitäre Hilfe (Sg.)",
+              "arabic": "المساعدات والإغاثة الإنسانية العاجلة",
+              "english": "humanitarian aid",
+              "example": "Nach dem verheerenden Erdbeben traf sofort internationale humanitäre Hilfe ein."
+            },
+            {
+              "german": "das Völkerrechtsabkommen, -",
+              "arabic": "اتفاقية القانون الدولي الملزمة",
+              "english": "international treaty, convention",
+              "example": "Die Genfer Konventionen bilden ein grundlegendes Völkerrechtsabkommen im Kriegsvölkerrecht."
+            }
+          ],
+          "description": "NATO, WHO, UNESCO, WTO, Rotes Kreuz, NGOs, Generalsekretär und humanitäre Hilfe.",
+          "details": "Multilateralismus, Weltgesundheit, Welterbe, Friedenssicherung und Völkergemeinschaft (A1–B2)",
+          "arabicDescription": "المنظمات الدولية (Internationale Organisationen): المنظمات الدولية، حلف شمال الأطلسي (NATO)، منظمة الصحة العالمية (WHO)، منظمة اليونسكو (UNESCO)، منظمة التجارة العالمية (WTO)، الصليب الأحمر والهلال الأحمر (Rotes Kreuz)، المنظمات غير الحكومية (NGO)، الأمين العام، حفظ السلام، والمساعدات الإنسانية والإغاثية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Organisationen, die helfen",
+              "intro": "Einfache Sätze über Helfer, Rotes Kreuz und Frieden (A1).",
+              "paragraphs": [
+                [
+                  "Wenn auf der Welt Not herrscht, helfen viele Menschen.",
+                  "[das Rote Kreuz (Sg.)|Das Rote Kreuz] bringt Decken, Wasser und Medizin zu Kranken.",
+                  "Auch [die Weltgesundheitsorganisation (WHO) (Sg.)|die WHO] hilft bei Krankheiten."
+                ],
+                [
+                  "[die UNESCO (Sg.)|Die UNESCO] schützt alte Schlösser, Schulen und die Kultur.",
+                  "Jede [die internationale Organisation, -en|internationale Organisation] arbeitet für das Wohl der Menschen.",
+                  "Zusammen sind wir stärker als allein."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Schutz für das Welterbe und humanitäre Einsätze",
+              "intro": "UNESCO-Welterbestätten, Generalsekretär und NGOs (A2).",
+              "paragraphs": [
+                [
+                  "In vielen Städten sieht man Schilder mit dem blau-weißen Symbol von [die UNESCO (Sg.)|der UNESCO].",
+                  "Diese Plakette zeigt, dass ein Gebäude als Weltkulturerbe besonders geschützt wird."
+                ],
+                [
+                  "Bei schweren Krisen reist [der Generalsekretär, -e|der Generalsekretär] in das Land, um Hilfe zu koordinieren.",
+                  "Gleichzeitig leisten unabhängige [die Nichtregierungsorganisation (NGO), -s|NGOs] tatkräftige [die humanitäre Hilfe (Sg.)|humanitäre Hilfe] vor Ort.",
+                  "Sie verteilen Zelte und Nahrung an Notleidende."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Multilaterale Zusammenarbeit und kollektive Sicherheit",
+              "intro": "Verteidigungsbündnisse, WTO-Handelsregeln und UN-Blauhelme (B1).",
+              "paragraphs": [
+                [
+                  "Die Bewältigung globaler Krisen — von Pandemien bis zu kriegerischen Auseinandersetzungen — übersteigt die Kräfte einzelner Nationalstaaten.",
+                  "Institutionen wie [die NATO (Sg.)|die NATO] basieren auf dem Prinzip kollektiver Bündnisverteidigung zur militärischen Abschreckung."
+                ],
+                [
+                  "Auf wirtschaftlicher Ebene reguliert [die Welthandelsorganisation (WTO) (Sg.)|die Welthandelsorganisation] Zollschranken und schlichtet Handelskonflikte."
+                ],
+                [
+                  "Für [die Friedenssicherung, -en|die militärische Friedenssicherung] entsenden die Vereinten Nationen Blauhelmtruppen, um Waffenstillstandsabkommen nach [das Völkerrechtsabkommen, -|völkerrechtlichen Abkommen] zu überwachen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Global Governance, Völkergewohnheitsrecht und multilaterale Institutionalisierung",
+              "intro": "Internationale Regime, Genfer Konventionen und die Rolle von Nichtregierungsorganisationen (B2).",
+              "paragraphs": [
+                [
+                  "Die Architektur globaler Institutionen repräsentiert den institutionalisierten Versuch, anarchische internationale Beziehungen durch rechtliche Normen einzuhegen.",
+                  "Das Internationale Komitee vom Roten Kreuz wacht über die Einhaltung der Genfer Konventionen als Eckpfeiler des humanitären Völkerrechts."
+                ],
+                [
+                  "Gleichzeitig agieren zivilgesellschaftliche [die Nichtregierungsorganisation (NGO), -s|NGOs] als unverzichtbare Transparenzorgane und Impulsgeber für neue völkerrechtliche Verträge (z. B. Ottawa-Konvention gegen Landminen)."
+                ],
+                [
+                  "In einer zunehmend fragmentierten Geopolitik müssen [die internationale Organisation, -en|internationale Organisationen] ihre Legitimität durch institutionelle Transparenz und inklusive Entscheidungsprozesse verteidigen."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wetter",
+      "title": "DAS WETTER",
       "topics": [
         {
           "id": "das_wetter",
@@ -189,6 +1743,1890 @@
           "description": "Meteorologie, Jahreszeiten, Wetterphänomene, Klimazonen und Wetterbericht.",
           "details": "Wetterphänomene, Jahreszeiten und Wettervorhersage (A1–B2)",
           "arabicDescription": "الطقس والأحوال الجوية والظواهر المناخية في ألمانيا وأوروبا. يتناول هذا الدرس الفصول الأربعة، والمطر، والثلج، والرياح، والعواصف، والضباب، واستخدام الضمير غير الشخصي (es) في التعبير عن الطقس (es regnet, es schneit)، وقراءة النشرات الجوية والتحدث عن درجات الحرارة."
+        },
+        {
+          "id": "naturkatastrophen",
+          "title": "Naturkatastrophen",
+          "words": [
+            {
+              "german": "die Naturkatastrophe, -n",
+              "arabic": "الكارثة الطبيعية",
+              "english": "natural disaster",
+              "example": "Naturkatastrophen richten weltweit verheerende Zerstörungen an."
+            },
+            {
+              "german": "das Erdbeben, -",
+              "arabic": "الهزة الأرضية / الزلزال",
+              "english": "earthquake",
+              "example": "Das schwere Erdbeben der Stärke 7,2 brachte dutzende Altbauten zum Einsturz."
+            },
+            {
+              "german": "der Tsunami, -s",
+              "arabic": "تسونامي (الموجة الزلزالية البحرية العملاقة)",
+              "english": "tsunami",
+              "example": "Nach dem Seebeben raste ein gewaltiger Tsunami auf die Küste zu."
+            },
+            {
+              "german": "der Vulkanausbruch, -̈e",
+              "arabic": "ثوران وانفجار البركان",
+              "english": "volcanic eruption",
+              "example": "Beim Vulkanausbruch schleuderte der Berg glühende Lava und Aschewolken in die Luft."
+            },
+            {
+              "german": "der Hurrikan, -e",
+              "arabic": "الإعصار المداري القمعي (الأعاصير البحرية)",
+              "english": "hurricane",
+              "example": "Der zerstörerische Hurrikan deckte Dächer ab und entwurzelte jahrhundertealte Bäume."
+            },
+            {
+              "german": "der Waldbrand, -̈e",
+              "arabic": "حريق الغابات العنيف",
+              "english": "wildfire, forest fire",
+              "example": "Hitze und Trockenheit im Sommer begünstigten den rasend schnellen Waldbrand."
+            },
+            {
+              "german": "die Dürrekatastrophe, -n",
+              "arabic": "كارثة الجفاف الحاد وتصحر الأراضي",
+              "english": "drought catastrophe",
+              "example": "Die anhaltende Dürrekatastrophe führte zu akutem Trinkwassermangel und Ernteausfällen."
+            },
+            {
+              "german": "der Erdrutsch, -e",
+              "arabic": "الانهيار والانزلاق الطيني والترابي",
+              "english": "landslide, mudslide",
+              "example": "Nach heftigen Regenfällen begrub ein gewaltiger Erdrutsch die Passstraße unter Schlamm."
+            },
+            {
+              "german": "das Frühwarnsystem, -e",
+              "arabic": "نظام الرصد والإنذار المبكر بالكوارث",
+              "english": "early warning system",
+              "example": "Ein akustisches Frühwarnsystem warnte die Bewohner rechtzeitig vor der Flutwelle."
+            },
+            {
+              "german": "die Zerstörung, -en",
+              "arabic": "الدمار والخراب الناجم عن الكارثة",
+              "english": "destruction, devastation",
+              "example": "Das Ausmaß der Zerstörung nach dem Wirbelsturm war unbeschreiblich."
+            },
+            {
+              "german": "die Katastrophenhilfe, -n",
+              "arabic": "أعمال الإغاثة والمعونة للمنكوبين",
+              "english": "disaster relief, disaster aid",
+              "example": "Spezialkräfte der Katastrophenhilfe suchten mit Rettungshunden nach Überlebenden."
+            },
+            {
+              "german": "die Evakuierungsmaßnahme, -n",
+              "arabic": "إجراءات إخلاء السكان ونقلهم لمكان آمن",
+              "english": "evacuation measure",
+              "example": "Schnelle Evakuierungsmaßnahmen retteten tausenden Anwohnern vor dem Feuer das Leben."
+            }
+          ],
+          "description": "Erdbeben, Tsunamis, Vulkanausbrüche, Wirbelstürme, Dürren, Waldbrände und Frühwarnsysteme.",
+          "details": "Extremwetterereignisse, Seismologie, Katastrophenmanagement, Tsunami-Bojen und Wiederaufbau (A1–B2)",
+          "arabicDescription": "الكوارث الطبيعية (Naturkatastrophen): الكوارث الطبيعية، الزلازل (Erdbeben)، أمواج التسونامي البحرية (Tsunami)، الثوران البركاني (Vulkanausbruch)، الأعاصير العاتية (Hurrikan/Taifun)، موجات الجفاف القاحلة (Dürre)، حرائق الغابات (Waldbrand)، أنظمة الإنذار المبكر، الدمار، وأعمال الإغاثة وإعادة الإعمار.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Gefährliche Stürme",
+              "intro": "Einfache Sätze über Sturm, Feuer und Erdbeben (A1).",
+              "paragraphs": [
+                [
+                  "Die Natur kann sehr wild und stark sein.",
+                  "Manchmal gibt es [die Naturkatastrophe, -n|eine Naturkatastrophe].",
+                  "Bei [das Erdbeben, -|einem Erdbeben] wackelt der ganze Boden unter den Füßen."
+                ],
+                [
+                  "[der Hurrikan, -e|Ein starker Hurrikan] bringt gefährlichen Wind und viel Regen.",
+                  "Im heißen Sommer brennt der Wald: [der Waldbrand, -̈e|ein großer Waldbrand].",
+                  "Mutige Helfer retten die Menschen und Tiere vor der Gefahr."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Frühwarnung rettet Menschenleben",
+              "intro": "Tsunami-Bojen, Sirenen und Evakuierungen (A2).",
+              "paragraphs": [
+                [
+                  "Letztes Jahr bebte das Meer vor der Küste Indonesiens.",
+                  "Sensoren im Ozean schlugen sofort an: [das Frühwarnsystem, -e|Das moderne Frühwarnsystem] funktionierte perfekt."
+                ],
+                [
+                  "Per SMS und Sirenen wurden alle Menschen vor [der Tsunami, -s|einem Tsunami] gewarnt.",
+                  "Dank der schnellen [die Evakuierungsmaßnahme, -n|Evakuierungsmaßnahmen] flohen die Bewohner auf sichere Hügel.",
+                  "Obwohl die Flutwelle an den Stränden [die Zerstörung, -en|große Zerstörung] anrichtete, starben keine Menschen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Seismologie, Vulkanismus und Notfallmanagement",
+              "intro": "Plattengrenzen, Erdbebenzonen und internationale Katastrophenhilfe (B1).",
+              "paragraphs": [
+                [
+                  "Die meisten geologischen Katastrophen ereignen sich entlang der Ränder tektonischer Platten, dem sogenannten Pazifischen Feuerring.",
+                  "Dort kündigt sich [der Vulkanausbruch, -̈e|ein Vulkanausbruch] oft durch Mikrobeben und Gasausstöße an."
+                ],
+                [
+                  "Kommt es dennoch zu einer Katastrophe, leistet [die Katastrophenhilfe, -n|die internationale Katastrophenhilfe] lebensrettende Erstversorgung mit Trinkwasseraufbereitungsanlagen und mobilen Notlazaretten."
+                ],
+                [
+                  "Erdbebensicheres Bauen und strenge Bauvorschriften minimieren das Einsturzrisiko von Gebäuden nachhaltig."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Anthropogene Klimafolgen, Attributionsforschung und Katastrophenresilienz",
+              "intro": "Extremwetterattribution, Sendai-Rahmenwerk und Sendai-Katastrophenvorsorge (B2).",
+              "paragraphs": [
+                [
+                  "Die moderne Attributionsforschung belegt den kausalen Zusammenhang zwischen globaler Erwärmung und der erhöhten Frequenz und Intensität meteorologischer Extremereignisse.",
+                  "Anhaltende Hitzewellen verschärfen die [die Dürrekatastrophe, -n|Dürrekatastrophen] in vulnerablen Agrarregionen und begünstigen verheerende Waldbrände."
+                ],
+                [
+                  "Das UN-Sendai-Rahmenwerk für Katastrophenvorsorge fordert einen Paradigmenwechsel von reaktiver Schadensbewältigung hin zu proaktivem Risikomanagement."
+                ],
+                [
+                  "Klimaresiliente Raumplanung, Renaturierung von Überschwemmungsauen und satellitegestützte [das Frühwarnsystem, -e|Frühwarnsysteme] bilden fundamentale Säulen der Schadensminderung."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "landschaft",
+      "title": "DIE LANDSCHAFT",
+      "topics": [
+        {
+          "id": "die_landschaft",
+          "title": "Die Landschaft",
+          "words": [
+            {
+              "german": "die Landschaft, -en",
+              "arabic": "المشهد الطبيعي والتضاريس العامة",
+              "english": "landscape, scenery",
+              "example": "Die hügelige Landschaft des Schwarzwaldes lädt zu ausgedehnten Wanderungen ein."
+            },
+            {
+              "german": "das Gebirge, -",
+              "arabic": "السلسلة الجبلية / الجبال",
+              "english": "mountains, mountain range",
+              "example": "Im schneebedeckten Gebirge ragen schroffe Felsgipfel steil in den Himmel."
+            },
+            {
+              "german": "das Tal, -̈er",
+              "arabic": "الوادي المنخفض بين الجبال",
+              "english": "valley",
+              "example": "Tief unten im grünen Tal schlängelt sich ein klarer Gebirgsbach."
+            },
+            {
+              "german": "der Hügel, -",
+              "arabic": "التل المرتفع",
+              "english": "hill",
+              "example": "Vom Gipfel des sanften Hügels hat man eine herrliche Aussicht auf die Felder."
+            },
+            {
+              "german": "der dichte Wald, -̈er",
+              "arabic": "الغابة الكثيفة المتشابكة الأشجار",
+              "english": "dense forest",
+              "example": "Im dichten Wald spenden die Baumkronen an heißen Sommertagen kühlen Schatten."
+            },
+            {
+              "german": "die blühende Wiese, -n",
+              "arabic": "المرج والروضة المزهرة",
+              "english": "blooming meadow",
+              "example": "Bunte Schmetterlinge fliegen über die blühende Wiese voller Glockenblumen."
+            },
+            {
+              "german": "der Fluss, -̈e",
+              "arabic": "النهر الجاري",
+              "english": "river",
+              "example": "Entlang des breiten Flusses verläuft ein beliebter Radweg für Ausflügler."
+            },
+            {
+              "german": "der See, -n",
+              "arabic": "البحيرة العذبة",
+              "english": "lake",
+              "example": "Im Sommer baden wir im sauberen See und mieten ein kleines Ruderboot."
+            },
+            {
+              "german": "das Moor, -e",
+              "arabic": "المستنقع والسبخة الطبيعية الرطبة",
+              "english": "moor, bog, fen",
+              "example": "Das feuchte Moor speichert riesige Mengen Kohlenstoff im Torfboden."
+            },
+            {
+              "german": "die Schlucht, -en",
+              "arabic": "الخانق / الأخدود الجبلي الضيق والعميق",
+              "english": "gorge, canyon, ravine",
+              "example": "Auf einem schmalen Holzsteg wanderten wir durch die tosende Schlucht."
+            },
+            {
+              "german": "die Hochebene, -n",
+              "arabic": "الهضبة المرتفعة المنبسطة",
+              "english": "plateau, tableland",
+              "example": "Auf der weiten Hochebene weht ein stetiger, kräftiger Wind."
+            },
+            {
+              "german": "das Relief, -s",
+              "arabic": "تضاريس سطح الأرض وارتفاعاتها",
+              "english": "relief (topography)",
+              "example": "Das abwechslungsreiche Relief dieser Region entstand während der letzten Eiszeit."
+            }
+          ],
+          "description": "Landschaft, Gebirge, Tal, Hügel, Wald, Wiese, Fluss, See, Moor und Schluchten.",
+          "details": "Geomorphologie, mitteleuropäische Landschaften, Gewässer, Hochebenen und Relief (A1–B2)",
+          "arabicDescription": "المشهد الطبيعي والتضاريس (Die Landschaft): التضاريس والمشهد الطبيعي (Landschaft)، السلسلة الجبلية (Gebirge)، الوادي المنخفض (Tal)، التلال (Hügel)، الغابات، المروج الخضراء (Wiese)، الأنهار، البحيرات (See)، المستنقعات والمراعي، المضايق والخوانق الجبلية (Schlucht)، والهضاب المرتفعة.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Wandern in der Natur",
+              "intro": "Einfache Sätze über Berge, Wälder, Seen und Wiesen (A1).",
+              "paragraphs": [
+                [
+                  "Ich ziehe meine Wanderschuhe an und gehe hinaus.",
+                  "Vor mir liegt [die Landschaft, -en|eine wunderschöne Landschaft].",
+                  "In der Ferne sehe ich [das Gebirge, -|ein hohes Gebirge]."
+                ],
+                [
+                  "Ich laufe hinab in [das Tal, -̈er|das grüne Tal].",
+                  "Dort fließt [der Fluss, -̈e|ein klarer Fluss] mit kühlem Wasser.",
+                  "Hinter dem Fluss liegt [der See, -n|ein ruhiger See] und [die blühende Wiese, -n|eine blühende Wiese]."
+                ],
+                [
+                  "Vögel singen in [der dichte Wald, -̈er|dem dichten Wald]. Es ist herrlich hier."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Ausflug auf den Aussichtsberg",
+              "intro": "Vom Hügel ins Tal blicken, Moore und Schluchten (A2).",
+              "paragraphs": [
+                [
+                  "Am Sonntag unternahmen wir eine Radtour durch das Mittelgebirge.",
+                  "Wir radelten an sanften [der Hügel, -|Hügeln] vorbei und erreichten eine spektakuläre [die Schlucht, -en|Schlucht]."
+                ],
+                [
+                  "Auf der anderen Seite des Berges lag [das Moor, -e|ein altes Moor], über das ein Holzweg führte.",
+                  "Dort erfuhren wir auf Informationstafeln, wie wichtig Feuchtgebiete für seltene Pflanzen sind.",
+                  "Vom Aussichtspunkt auf [die Hochebene, -n|der Hochebene] genossen wir den weiten Panoramablick."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Glaziale Formung und mitteleuropäische Kulturlandschaften",
+              "intro": "Eiszeitliche Prägung, Geomorphologie und Gewässerstrukturen (B1).",
+              "paragraphs": [
+                [
+                  "Das gegenwärtige Erscheinungsbild der europäischen Landschaft ist das Produkt eiszeitlicher Gletscher und jahrhundertelanger menschlicher Bewirtschaftung.",
+                  "Moränenwälle und Zungenbecken formten die zahlreichen [der See, -n|Seen] im Alpenvorland und in Mecklenburg."
+                ],
+                [
+                  "Während Hänge im Mittelgebirge meist mit dichtem Wald bestanden sind, wurden fruchtbare Ebenen in Kulturland umgewandelt."
+                ],
+                [
+                  "Ökologen fordern heute die Renaturierung begradigter Flüsse und den Schutz intakter [das Moor, -e|Moore], um Hochwasserrisiken zu senken und die Biodiversität zu sichern."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Geomorphologie, Ökosystemdienstleistungen und Landschaftsresilienz",
+              "intro": "Reliefformen, fluviale Dynamik und anthropogene Landschaftstransformation (B2).",
+              "paragraphs": [
+                [
+                  "Die geomorphologische Struktur einer Region determiniert deren biotische Tragfähigkeit und Wasserretentionskapazitäten.",
+                  "Das tektonische [das Relief, -s|Relief] steuert zusammen mit dem geologischen Untergrund fluviale Erosions- und Sedimentationsprozesse in [das Tal, -̈er|Tälern] und Erosionsrinnen."
+                ],
+                [
+                  "Naturnahe [die Landschaft, -en|Landschaften] erbringen fundamentale Ökosystemdienstleistungen: Feuchtbiotope wie [das Moor, -e|Niedermoore] binden Treibhausgase hochgradig, während Bergwälder Siedlungen vor Lawinen und Steinschlag schützen."
+                ],
+                [
+                  "Eine integrative Raumplanung muss Zersiedelung und Landschaftsfragmentierung stoppen, um ökologische Korridore zu bewahren."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "steine_und_mineralien",
+      "title": "STEINE UND MINERALIEN",
+      "topics": [
+        {
+          "id": "edel_und_halbedelsteine",
+          "title": "Edel- und Halbedelsteine",
+          "words": [
+            {
+              "german": "der Edelstein, -e",
+              "arabic": "الحجر الكريم النادر والثمين",
+              "english": "gemstone, precious stone",
+              "example": "Diamanten, Rubine und Smaragde gehören zu den wertvollsten Edelsteinen."
+            },
+            {
+              "german": "der Diamant, -en",
+              "arabic": "الماس (أصلب المواد الطبيعية)",
+              "english": "diamond",
+              "example": "Der funkelnde Diamant ist so hart, dass er sogar Glas schneiden kann."
+            },
+            {
+              "german": "der Rubin, -e",
+              "arabic": "الياقوت الأحمر القاني",
+              "english": "ruby",
+              "example": "Das tiefe Rot von dem Rubin entsteht durch winzige Chromspuren im Kristall."
+            },
+            {
+              "german": "der Saphir, -e",
+              "arabic": "الياقوت الأزرق (الزفير)",
+              "english": "sapphire",
+              "example": "Der Ring war mit einem tiefblauen Saphir und kleinen Perlen besetzt."
+            },
+            {
+              "german": "der Smaragd, -e",
+              "arabic": "الزمرد الأخضر النادر",
+              "english": "emerald",
+              "example": "Das leuchtende Grün von dem Smaragd fasziniert Menschen seit dem Altertum."
+            },
+            {
+              "german": "der Bernstein, -e",
+              "arabic": "الكهرمان (العنبر المتحجر من صمغ الأشجار)",
+              "english": "amber",
+              "example": "An der Ostseeküste fanden wir ein Stück Bernstein mit einem eingeschlossenen Insekt."
+            },
+            {
+              "german": "der Kristall, -e",
+              "arabic": "البلورة والكرستال ذو الشكل الهندسي المنتظم",
+              "english": "crystal",
+              "example": "In der Höhle wuchsen riesige weiße Bergkristalle aus dem nackten Fels."
+            },
+            {
+              "german": "das Mineral, -ien",
+              "arabic": "المعدن الطبيعي الصلب في القشرة الأرضية",
+              "english": "mineral",
+              "example": "Granit ist ein Gestein, das aus drei verschiedenen Mineralien besteht."
+            },
+            {
+              "german": "der Schliff, -e",
+              "arabic": "صقل وقص وقطع الحجر الكريم (البريليانت)",
+              "english": "cut (gemstone cut, polish)",
+              "example": "Erst durch einen präzisen Brillantschliff entfaltet der Stein sein volles Feuer."
+            },
+            {
+              "german": "der Halbedelstein, -e",
+              "arabic": "الحجر شبه الكريم (عقيق، فيروز، لازورد)",
+              "english": "semi-precious stone",
+              "example": "Amethyst und Türkis sind beliebte Halbedelsteine für modischen Schmuck."
+            },
+            {
+              "german": "die Mohs-Härte (Sg.)",
+              "arabic": "مقياس موهس لصلابة المعادن والأحجار",
+              "english": "Mohs hardness",
+              "example": "Auf der Mohs-Härteskala von eins bis zehn erreicht der Diamant die Höchststufe zehn."
+            },
+            {
+              "german": "das Schmuckstück, -e",
+              "arabic": "قطعة المجوهرات والحلي",
+              "english": "piece of jewelry, jewel",
+              "example": "Das goldene Schmuckstück mit Rubin wurde von Generation zu Generation vererbt."
+            }
+          ],
+          "description": "Edelsteine, Diamanten, Rubine, Saphire, Smaragde, Bernstein, Kristalle und Schliff.",
+          "details": "Mineralogie, Gemmologie, Mohs-Härte, Kristallgitter, Schmucksteine und Geologie (A1–B2)",
+          "arabicDescription": "الأحجار الكريمة والمعادن (Edel- und Halbedelsteine): الأحجار الكريمة (Edelstein)، الألماس (Diamant)، الياقوت الأحمر (Rubin)، الياقوت الأزرق (Saphir)، الزمرد الأخضر (Smaragd)، الأحجار شبه الكريمة، الكهرمان (Bernstein)، البلورات (Kristall)، المعادن الطبيعية، قطع وصقل الأحجار، ومقياس الصلابة.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Funkelnde Steine",
+              "intro": "Einfache Sätze über Diamanten, Schmuck und bunte Steine (A1).",
+              "paragraphs": [
+                [
+                  "In der Erde schlafen wunderschöne Schätze.",
+                  "Hier finden wir [der Edelstein, -e|einen wertvollen Edelstein].",
+                  "[der Diamant, -en|Der Diamant] funkelt hell im Licht und ist sehr hart."
+                ],
+                [
+                  "[der Rubin, -e|Der rote Rubin] und [der Saphir, -e|der blaue Saphir] leuchten prächtig.",
+                  "Ein Goldschmied baut sie in [das Schmuckstück, -e|ein schönes Schmuckstück] ein.",
+                  "Am Strand an der Ostsee suche ich nach gelbem [der Bernstein, -e|Bernstein]."
+                ],
+                ["Steine aus der Natur sind faszinierend."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Mineralien in der Höhle",
+              "intro": "Bergkristalle, Smaragde und Mohs-Härte (A2).",
+              "paragraphs": [
+                [
+                  "Im Urlaub besuchten wir eine alte Silbermine in den Bergen.",
+                  "Tief unter der Erde zeigte uns der Bergführer glänzende [der Kristall, -e|Kristalle] im Gestein."
+                ],
+                [
+                  "Wir lernten, dass [der Smaragd, -e|der grüne Smaragd] seine Farbe durch Chrom erhält.",
+                  "Auf der Skala für [die Mohs-Härte (Sg.)|die Mohs-Härte] ist Talk der weichste und der Diamant der härteste Stein.",
+                  "Im Museumsshop kaufte ich mir [der Halbedelstein, -e|einen violetten Halbedelstein] für meinen Schreibtisch."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Kristallzüchtung, Gemmologie und die Kunst des Schleifens",
+              "intro": "Lichtbrechung, Facettenschliff und fossiles Harz (B1).",
+              "paragraphs": [
+                [
+                  "Rohsteine aus den Tiefen der Erdkruste wirken oft unscheinbar, bis sie in den Händen eines Meisters ihren Zauber entfalten.",
+                  "Erst ein hochkomplexer geometrischer [der Schliff, -e|Schliff] bricht das einfallende Licht so, dass das charakteristische Funkeln entsteht."
+                ],
+                [
+                  "Ein faszinierender Sonderfall ist [der Bernstein, -e|der Bernstein]: Er ist kein anorganisches [das Mineral, -ien|Mineral], sondern versteinertes Harz uralter Nadelbäume."
+                ],
+                [
+                  "Die Gemmologie prüft Reinheit, Karatgewicht und Herkunft, um wertvolle Originale von synthetischen Nachbildungen zu unterscheiden."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Kristallographie, Gitterstrukturen und geochemische Genese",
+              "intro": "Diamantbildung im Erdmantel, Beryll-Varietäten und optische Anisotropie (B2).",
+              "paragraphs": [
+                [
+                  "Die geochemische Entstehung von Edelsteinen verlangt extreme Drücke und Temperaturen im oberen Erdmantel.",
+                  "Bei [der Diamant, -en|Diamanten] kristallisiert reiner Kohlenstoff im kubischen Kristallsystem, was die herausragende [die Mohs-Härte (Sg.)|Mohs-Härte] von 10 und extreme thermische Leitfähigkeit begründet."
+                ],
+                [
+                  "Korunde wie [der Rubin, -e|Rubin] und [der Saphir, -e|Saphir] verdanken ihre Farben selektiver Lichtabsorption durch Spurenelemente in der trigonalen Kristallmatrix."
+                ],
+                [
+                  "In der Hochtechnologie finden synthetische Einkristalle breite Anwendung in Lasersystemen, Hochfrequenz-Halbleitern und optischen Präzisionsinstrumenten."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "pflanzen",
+      "title": "PFLANZEN",
+      "topics": [
+        {
+          "id": "baeume",
+          "title": "Bäume",
+          "words": [
+            {
+              "german": "der Baum, -̈e",
+              "arabic": "الشجرة",
+              "english": "tree",
+              "example": "Die mächtige alte Eiche ist ein Baum, der schon mehrere Jahrhunderte alt ist."
+            },
+            {
+              "german": "der Baumstamm, -̈e",
+              "arabic": "جذع الشجرة الخشبي الرئيسي",
+              "english": "tree trunk",
+              "example": "Um den dicken Baumstamm der Kastanie können drei Kinder herumfassen."
+            },
+            {
+              "german": "der Ast, -̈e",
+              "arabic": "الغصن والفرع الكبير من الشجرة",
+              "english": "branch, bough",
+              "example": "Auf dem starken Ast baut eine Amsel im Frühling ihr Nest."
+            },
+            {
+              "german": "das Laubblatt, -̈er",
+              "arabic": "ورقة الشجرة الخضراء",
+              "english": "leaf (deciduous)",
+              "example": "Im Herbst verfärbt sich jedes Laubblatt rot und goldgelb."
+            },
+            {
+              "german": "die Baumwurzel, -n",
+              "arabic": "جذر الشجرة الممتد في التربة",
+              "english": "tree root",
+              "example": "Tiefe Baumwurzeln verankern die Fichte fest im Boden und saugen Wasser auf."
+            },
+            {
+              "german": "die Baumrinde, -n",
+              "arabic": "لحاء وقشرة جذع الشجرة",
+              "english": "tree bark",
+              "example": "Die raue Baumrinde schützt das innere Holz vor Kälte, Schädlingen und Feuer."
+            },
+            {
+              "german": "der Nadelbaum, -̈e",
+              "arabic": "الشجرة الإبرية والمخروطية (صنوبر، تنوب)",
+              "english": "conifer, needle tree",
+              "example": "Ein Nadelbaum wie die Tanne behält seine grünen Nadeln auch im eisigen Winter."
+            },
+            {
+              "german": "der Laubbaum, -̈e",
+              "arabic": "الشجرة النفضية عريضة الأوراق (بلوط، زان)",
+              "english": "deciduous tree, broadleaf tree",
+              "example": "Im Winter wirft der Laubbaum alle Blätter ab, um Wasser zu sparen."
+            },
+            {
+              "german": "der Tannenzapfen, -",
+              "arabic": "كوز ومخروط شجرة الصنوبر أو التنوب",
+              "english": "pine cone, fir cone",
+              "example": "Auf dem Waldweg sammelten die Kinder herabgefallene Tannenzapfen zum Basteln."
+            },
+            {
+              "german": "die Fotosynthese (Sg.)",
+              "arabic": "عملية التمثيل الضوئي (البناء الضوئي)",
+              "english": "photosynthesis",
+              "example": "Durch Fotosynthese wandeln Blätter Sonnenlicht und Kohlendioxid in lebenswichtigen Sauerstoff um."
+            },
+            {
+              "german": "der Jahresring, -e",
+              "arabic": "حلقة النمو السنوية داخل جذع الشجرة",
+              "english": "annual ring, growth ring",
+              "example": "An den feinen Jahresringen eines gefällten Baumes lässt sich sein genaues Alter ablesen."
+            },
+            {
+              "german": "das Totholz (Sg.)",
+              "arabic": "الخشب الميت المتحلل في الغابة",
+              "english": "deadwood",
+              "example": "Vermoderndes Totholz bietet wertvollen Lebensraum für seltene Käfer und Pilze."
+            }
+          ],
+          "description": "Bäume, Stämme, Äste, Blätter, Wurzeln, Rinde, Nadel- und Laubbäume und Fotosynthese.",
+          "details": "Dendrologie, Waldökosysteme, Baumarten, Mykorrhiza, Jahresringe und Holz (A1–B2)",
+          "arabicDescription": "الأشجار وعلم النبات (Bäume): الأشجار (Baum)، جذع الشجرة (Stamm)، الفروع والأغصان (Ast/Zweig)، الأوراق (Blatt)، الجذور الممتدة (Wurzel)، لحاء الشجرة (Rinde)، الأشجار المخروطية دائمة الخضرة (Nadelbaum)، الأشجار النفضية عريضة الأوراق (Laubbaum)، الغابة، الخشب، والمخاريط والتمثيل الضوئي (Fotosynthese).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Der alte Baum im Park",
+              "intro": "Einfache Sätze über Baum, Stamm, Blätter und Wurzeln (A1).",
+              "paragraphs": [
+                [
+                  "Vor meinem Fenster steht [der Baum, -̈e|ein großer Baum].",
+                  "Er hat einen dicken braunen [der Baumstamm, -̈e|Baumstamm].",
+                  "Unten im Boden halten [die Baumwurzel, -n|die starken Baumwurzeln] den Baum fest."
+                ],
+                [
+                  "Oben wachsen viele [der Ast, -̈e|große Äste].",
+                  "Im Sommer trägt er grünes [das Laubblatt, -̈er|Laubblatt an Laubblatt].",
+                  "Die Vögel sitzen auf den Zweigen und singen fröhliche Lieder."
+                ],
+                ["Bäume schenken uns Schatten und frische Luft."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Spaziergang durch den Mischwald",
+              "intro": "Nadelbäume, Laubbäume und Zapfen im Herbst (A2).",
+              "paragraphs": [
+                [
+                  "Am Sonntagnachmittag spazierten wir durch den herbstlichen Wald.",
+                  "Dort wachsen verschiedene Baumarten nebeneinander."
+                ],
+                [
+                  "Während [der Laubbaum, -̈e|die Laubbäume] ihre bunten Blätter abwarfen, blieb [der Nadelbaum, -̈e|jeder Nadelbaum] tiefgrün.",
+                  "Unter den hohen Kiefern lag mancher harzige [der Tannenzapfen, -|Tannenzapfen] auf dem Moos.",
+                  "Ich strich mit der Hand über [die Baumrinde, -n|die raue Baumrinde] einer uralten Buche.",
+                  "Bäume sind wahre Meisterwerke der Natur."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die Lunge des Planeten und das Geheimnis der Fotosynthese",
+              "intro": "Sauerstoffproduktion, Kohlenstoffbindung und Dendrochronologie (B1).",
+              "paragraphs": [
+                [
+                  "Wälder sind die unverzichtbare grüne Lunge unserer Erde.",
+                  "Über die biochemische [die Fotosynthese (Sg.)|Fotosynthese] absorbieren Chlorophyll-Moleküle Sonnenlicht, spalten Wasser und fixieren atmosphärisches CO2 in Biomasse."
+                ],
+                [
+                  "Schneidet man einen Stamm quer durch, dokumentiert jeder einzelne [der Jahresring, -e|Jahresring] vergangene Dürren oder feuchte Sommerjahre."
+                ],
+                [
+                  "Für ein intaktes Waldökosystem ist belassenes [das Totholz (Sg.)|Totholz] unverzichtbar: Es reichert den Humus an und nährt das unterirdische Pilzgeflecht."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Dendrologie, Mykorrhiza-Netzwerke und Waldumbau im Klimawandel",
+              "intro": "Wood Wide Web, Xylem-Hydraulik und Waldanpassungsstrategien (B2).",
+              "paragraphs": [
+                [
+                  "Die Dendrologie offenbart die faszinierende Komplexität holziger Gefäßpflanzen.",
+                  "Über unterirdische Mykorrhiza-Symbiosen kommunizieren [die Baumwurzel, -n|Baumwurzeln] verschiedener Baumarten und tauschen Kohlenhydrate und Warnsignale gegen Schädlinge aus ('Wood Wide Web')."
+                ],
+                [
+                  "Zunehmende Sommertrockenheit und Borkenkäferkalamitäten erzwingen den Abschied von Fichten-Monokulturen und fordern den forstlichen Umbau hin zu klimaresilienten Mischwäldern."
+                ],
+                [
+                  "Tiefwurzelnde Eichen und trockenheitstolerante Baumarten sichern die Resilienz mitteleuropäischer Waldökosysteme gegen hydraulische Embolien im Xylem."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "wildpflanzen",
+          "title": "Wildpflanzen",
+          "words": [
+            {
+              "german": "die Wildpflanze, -n",
+              "arabic": "النبتة البرية الطبيعية (غير المزروعة)",
+              "english": "wild plant",
+              "example": "Auf der naturbelassenen Wiese wachsen zahlreiche seltene Wildpflanzen."
+            },
+            {
+              "german": "der Löwenzahn (Sg.)",
+              "arabic": "نبات الهندباء البرية ذو الزهرة الصفراء",
+              "english": "dandelion",
+              "example": "Wenn die gelbe Blüte des Löwenzahns verblüht, wird sie zur Pusteblume."
+            },
+            {
+              "german": "die Brennnessel, -n",
+              "arabic": "نبات القراص الحارق (الحرّيق)",
+              "english": "stinging nettle",
+              "example": "Die Brennnessel brennt auf der Haut, ergibt aber einen sehr gesunden Tee."
+            },
+            {
+              "german": "das Gänseblümchen, -",
+              "arabic": "زهرة اللؤلؤية الصغيرة في المروج",
+              "english": "daisy",
+              "example": "Kleine Mädchen flechten gern bunte Kränze aus frischen Gänseblümchen."
+            },
+            {
+              "german": "der Klee (Sg.)",
+              "arabic": "نبات النفل أو البرسيم (خاصة ذو الأربع ورقات)",
+              "english": "clover",
+              "example": "Wer auf der Wiese ein vierblättriges Blatt vom Klee findet, soll Glück haben."
+            },
+            {
+              "german": "das Moos, -e",
+              "arabic": "الحزاز والطحلب الأخضر الرطب",
+              "english": "moss",
+              "example": "Weiches grünes Moos überzieht die feuchten Steine am schattigen Waldrand."
+            },
+            {
+              "german": "der Farn, -e",
+              "arabic": "نبات السرخس ذو الأوراق الريشية",
+              "english": "fern",
+              "example": "Im Schatten alter Buchen breiten große Farne ihre wedelartigen Blätter aus."
+            },
+            {
+              "german": "die Heilpflanze, -n",
+              "arabic": "النبتة العشبية الطبية الشافية",
+              "english": "medicinal plant, medicinal herb",
+              "example": "Kamille und Ringelblume sind bewährte Heilpflanzen der traditionellen Klostermedizin."
+            },
+            {
+              "german": "das Wildkraut, -̈er",
+              "arabic": "العشبة البرية التلقائية في الطبيعة",
+              "english": "wild herb",
+              "example": "Spitzwegerich ist ein nützliches Wildkraut, das den Juckreiz von Insektenstichen lindert."
+            },
+            {
+              "german": "die Kamille (Sg.)",
+              "arabic": "نبات البابونج الطبي",
+              "english": "chamomile",
+              "example": "Ein Dampfbad mit echter Kamille befreit verstopfte Nasen bei Erkältung."
+            },
+            {
+              "german": "der Waldpilz, -e",
+              "arabic": "فطر الغابة البري (المشروم)",
+              "english": "wild mushroom",
+              "example": "Im Herbst sammeln erfahrene Sammler schmackhafte Waldpilze wie Steinpilze und Pfifferlinge."
+            },
+            {
+              "german": "die Heidelbeere, -n",
+              "arabic": "حبات التوت الأزرق البري",
+              "english": "blueberry, bilberry",
+              "example": "An niedrigen Waldsträuchern pflückten wir dunkle, süße Heidelbeeren."
+            }
+          ],
+          "description": "Wildkräuter, Löwenzahn, Brennnessel, Farne, Moose, Pilze und Heilkräuter.",
+          "details": "Botanik, Wiesenflora, essbare Wildpflanzen, Waldunterholz und Heilkraft (A1–B2)",
+          "arabicDescription": "النباتات البرية والأعشاب (Wildpflanzen): النباتات البرية (Wildpflanze)، الهندباء البرية (Löwenzahn)، نبات القراص (Brennnessel)، زهرة اللؤلؤية (Gänseblümchen)، نبات النفل (Klee)، الحزازيات والطحالب (Moos)، السرخس (Farn)، النباتات الطبية، الفطر، والأعشاب البرية الشافية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Blumen auf der Wiese",
+              "intro": "Einfache Sätze über Löwenzahn, Klee und Gänseblümchen (A1).",
+              "paragraphs": [
+                [
+                  "Im Frühling blüht die grüne Wiese bunt auf.",
+                  "Überall wächst die gelbe Blüte von [der Löwenzahn (Sg.)|dem Löwenzahn].",
+                  "Im weichen Gras suche ich nach [der Klee (Sg.)|einem vierblättrigen Klee]."
+                ],
+                [
+                  "Dazwischen blüht [das Gänseblümchen, -|ein kleines weißes Gänseblümchen].",
+                  "Vorsicht vor [die Brennnessel, -n|der Brennnessel]: Sie brennt an den Beinen!",
+                  "Im Wald wächst weiches [das Moos, -e|Moos] auf den Steinen."
+                ],
+                [
+                  "Jede [die Wildpflanze, -n|Wildpflanze] hat ihren eigenen Platz in der Natur."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Kräutersuche im Wald",
+              "intro": "Heilpflanzen sammeln, Kamille und Farne (A2).",
+              "paragraphs": [
+                [
+                  "Am Wochenende nahm mich meine Großmutter mit auf einen Kräuterspaziergang.",
+                  "Sie zeigte mir, wie man [die Heilpflanze, -n|wertvolle Heilpflanzen] am Wegesrand erkennt."
+                ],
+                [
+                  "Wir pflückten duftende [die Kamille (Sg.)|Kamille] und getrocknete Blätter für Tee.",
+                  "Im tiefen Schatten alter Tannen bewunderten wir [der Farn, -e|den Farn] und sammelten süße [die Heidelbeere, -n|Heidelbeeren].",
+                  "Oma erklärte mir, dass viele Pflanzen, die manche als Unkraut bezeichnen, in Wahrheit nützliche Kräuter sind."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Wildkräuter-Renaissance und Wiesenökologie",
+              "intro": "Ethnobotanik, essbare Wildkräuter und Artenschutz (B1).",
+              "paragraphs": [
+                [
+                  "In Zeiten industrieller Landwirtschaft erleben traditionelle [die Wildpflanze, -n|Wildpflanzen] eine kulinarische und ökologische Renaissance.",
+                  "Spitzengastronomen verfeinern Salate mit aromatischen [das Wildkraut, -̈er|Wildkräutern] wie Schafgarbe, Giersch und Gundermann."
+                ],
+                [
+                  "Entscheidend für die Natur ist ihre Rolle als Futterquelle für spezialisierte Wildbienen.",
+                  "Das dichte Wurzelgeflecht von [das Moos, -e|Moosen] und Farnen im Wald speichert Niederschläge und schützt Waldböden vor Austrocknung."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Phytochemie, Biodiversitätsverlust und Ruderalvegetation",
+              "intro": "Sekundäre Pflanzenstoffe, Ruderalflora und Sukzessionsdynamik (B2).",
+              "paragraphs": [
+                [
+                  "Die Phytochemie von Wildpflanzen liefert unverzichtbare Leitstrukturen für die pharmazeutische Wirkstoffforschung.",
+                  "Die Flavonoide und Sesquiterpene in [die Kamille (Sg.)|Kamillenblüten] oder die Kieselsäure in Schachtelhalmen entfalten antiphlogistische Wirkungen."
+                ],
+                [
+                  "Gleichzeitig verändert der diffuse Stickstoffeintrag aus Verkehr und Landwirtschaft die Zusammensetzung der Ruderalflora: Eutrophierungszeiger wie [die Brennnessel, -n|die Brennnessel] überwuchern magere Standorte."
+                ],
+                [
+                  "Der Erhalt extensiver Magerrasen und Moore ist essenziell für die genetische Diversität der Flora."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "zierblumen",
+          "title": "Zierblumen",
+          "words": [
+            {
+              "german": "die Zierblume, -n",
+              "arabic": "زهرة ونبتة الزينة التجميلية",
+              "english": "ornamental flower, ornamental plant",
+              "example": "Im Blumenladen duftet es herrlich nach verschiedenen Zierblumen."
+            },
+            {
+              "german": "die Rose, -n",
+              "arabic": "الوردة الجورية (ملكة الزهور)",
+              "english": "rose",
+              "example": "Eine rote Rose ist seit Jahrhunderten das klassische Symbol für die Liebe."
+            },
+            {
+              "german": "die Tulpe, -n",
+              "arabic": "زهرة التوليب (الخزامى)",
+              "english": "tulip",
+              "example": "Im Frühling verwandeln Millionen bunter Tulpen die Gärten in ein Farbenmeer."
+            },
+            {
+              "german": "die Sonnenblume, -n",
+              "arabic": "زهرة دوار / عباد الشمس",
+              "english": "sunflower",
+              "example": "Die riesige gelbe Sonnenblume dreht ihren Kopf tagsüber immer zur Sonne."
+            },
+            {
+              "german": "die Orchidee, -n",
+              "arabic": "زهرة الأوركيد الاستوائية الأنيقة",
+              "english": "orchid",
+              "example": "Die weiße Orchidee auf der Fensterbank blüht schon seit mehreren Wochen."
+            },
+            {
+              "german": "die Nelke, -n",
+              "arabic": "زهرة القرنفل",
+              "english": "carnation",
+              "example": "Rote Nelken haben einen würzigen Duft und halten sich lange in der Vase."
+            },
+            {
+              "german": "die Lilie, -n",
+              "arabic": "زهرة الزنبق / السوسن",
+              "english": "lily",
+              "example": "Die weiße Lilie gilt in vielen Kulturen als Zeichen von Reinheit und Frieden."
+            },
+            {
+              "german": "das Veilchen, -",
+              "arabic": "زهرة البنفسج الصغيرة العطرة",
+              "english": "violet",
+              "example": "Das kleine blaue Veilchen versteckt sich schüchtern im Frühjahrsgras."
+            },
+            {
+              "german": "die Narzisse, -n",
+              "arabic": "زهرة النرجس الصفراء (أبواق الربيع)",
+              "english": "daffodil, narcissus",
+              "example": "Pünktlich zum Osterfest öffnen gelbe Narzissen ihre leuchtenden Glocken."
+            },
+            {
+              "german": "der Blumenstrauß, -̈e",
+              "arabic": "باقة / بوكيه الزهور المنسقة",
+              "english": "bouquet of flowers, flower bouquet",
+              "example": "Zum Geburtstag schenkte er seiner Mutter einen prächtigen Blumenstrauß."
+            },
+            {
+              "german": "das Blütenblatt, -̈er",
+              "arabic": "بتلة الزهرة الملونة",
+              "english": "petal",
+              "example": "Der Wind wehte die zarten rosa Blütenblätter vom Kirschbaum auf den Weg."
+            },
+            {
+              "german": "der Blütenstaub (Sg.)",
+              "arabic": "حبوب اللقاح / غبار الطلع النباتي (البولين)",
+              "english": "pollen",
+              "example": "Fleißige Bienen transportieren gelben Blütenstaub von Blüte zu Blüte."
+            }
+          ],
+          "description": "Rosen, Tulpen, Sonnenblumen, Orchideen, Nelken, Blumensträuße und Blütenstaub.",
+          "details": "Floristik, Zierpflanzenbau, Blütenanatomie, Bestäubung und Schnittblumen (A1–B2)",
+          "arabicDescription": "زهور ونباتات الزينة (Zierblumen): زهور الزينة (Zierblume)، الورد الجوري (Rose)، أزهار التوليب (Tulpe)، دوار الشمس (Sonnenblume)، زهرة الأوركيد (Orchidee)، القرنفل (Nelke)، الزنبق (Lilie)، البنفسج (Veilchen)، النرجس (Narzisse)، باقة الورد (Blumenstrauß)، والبتلات وحبوب اللقاح (Pollen).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein schöner Blumenstrauß",
+              "intro": "Einfache Sätze über Rosen, Tulpen und Blumen im Zimmer (A1).",
+              "paragraphs": [
+                [
+                  "Ich gehe in den Blumenladen an der Ecke.",
+                  "Dort gibt es viele bunte [die Zierblume, -n|Zierblumen].",
+                  "Ich kaufe [die Rose, -n|eine rote Rose] und drei gelbe [die Tulpe, -n|Tulpen]."
+                ],
+                [
+                  "Die Verkäuferin bindet [der Blumenstrauß, -̈e|einen wunderschönen Blumenstrauß].",
+                  "Jedes [das Blütenblatt, -̈er|Blütenblatt] riecht herrlich süß.",
+                  "Zu Hause stelle ich die Blumen in eine Glasvase mit frischem Wasser."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Blütenzauber im Frühling und Sommer",
+              "intro": "Narzissen zu Ostern, Sonnenblumen und Bienen (A2).",
+              "paragraphs": [
+                [
+                  "Schon im März beginnt das Gartenjahr mit den ersten Frühlingsblumen.",
+                  "Gelbe [die Narzisse, -n|Narzissen] und zarte [das Veilchen, -|Veilchen] kündigen das Ende des Winters an."
+                ],
+                [
+                  "Im Hochsommer blüht auf dem Feld [die Sonnenblume, -n|die große Sonnenblume].",
+                  "Hummeln und Schmetterlinge fliegen um die Blüten und sammeln [der Blütenstaub (Sg.)|den klebrigen Blütenstaub].",
+                  "Auf meiner Fensterbank pflege ich eine elegante [die Orchidee, -n|Orchidee], die wenig Wasser braucht."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Floristik, Züchtung und Symbolik der Blumen",
+              "intro": "Kulturelle Bedeutung von Blumen, Schnittblumenmarkt und Haltbarkeit (B1).",
+              "paragraphs": [
+                [
+                  "Seit der Antike nutzen Menschen Blumen als Ausdrucksmittel für Gefühle und festliche Anlässe.",
+                  "Während [die Rose, -n|die Rose] für Zuneigung steht, symbolisiert [die Lilie, -n|die Lilie] oft Würde und Trauer."
+                ],
+                [
+                  "Moderne Floristen kombinieren saisonale Blüten mit Ziergräsern zu kunstvollen Arrangements.",
+                  "Um die Haltbarkeit in der Vase zu maximieren, sollten die Stiele schräg angeschnitten und das Wasser täglich gewechselt werden."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Zierpflanzenphysiologie, Hybridisierung und globale Schnittblumenmärkte",
+              "intro": "Photoperiodismus, Phytohormone und ökologische Zertifizierung (B2).",
+              "paragraphs": [
+                [
+                  "Der erwerbsmäßige Gartenbau steuert die Blühinduktion von [die Zierblume, -n|Zierblumen] über präzise Lichtregime (Photoperiodismus) und thermische Reize.",
+                  "Hochentwickelte Hybridisierungstechniken züchten Sorten mit verlängerter Vasenlebensdauer und schädlingsresistenten Petalen."
+                ],
+                [
+                  "Der globale Schnittblumenmarkt (z. B. Blumenbörse Aalsmeer) erfordert jedoch temperaturgeführte Kühlketten und Lufttransporte aus Äquatorregionen."
+                ],
+                [
+                  "Umweltzertifikate (wie Fairtrade) gewinnen an Bedeutung, um den Pestizideinsatz und den Wasserverbrauch in den Anbauländern sozial und ökologisch verträglich zu gestalten."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "gartenpflanzen",
+          "title": "Gartenpflanzen",
+          "words": [
+            {
+              "german": "die Gartenpflanze, -n",
+              "arabic": "نبات الحديقة المنزلية (للزينة أو الطعام)",
+              "english": "garden plant",
+              "example": "Im Frühjahr pflanzen wir neue Gartenpflanzen in die vorbereiteten Beete."
+            },
+            {
+              "german": "das Gemüsebeet, -e",
+              "arabic": "حوض ومشتل زراعة الخضروات",
+              "english": "vegetable patch, vegetable bed",
+              "example": "Im sonnigen Gemüsebeet wachsen Karotten, Zucchini und Zwiebeln."
+            },
+            {
+              "german": "die Tomatenpflanze, -n",
+              "arabic": "شتلة وشجرة الطماطم",
+              "english": "tomato plant",
+              "example": "Ich binde die schwere Tomatenpflanze an einem Holzstab fest, damit sie nicht abbricht."
+            },
+            {
+              "german": "der Salat, -e",
+              "arabic": "الخس المزروع في الحديقة",
+              "english": "lettuce, salad greens",
+              "example": "Knackiger grüner Salat gedeiht besonders gut im feuchten Frühbeet."
+            },
+            {
+              "german": "das Kräuterbeet, -e",
+              "arabic": "حوض زراعة الأعشاب العطرية والمطبخية",
+              "english": "herb bed, herb garden",
+              "example": "Im Kräuterbeet duftet es nach frischem Basilikum, Rosmarin und Thymian."
+            },
+            {
+              "german": "die Hecke, -n",
+              "arabic": "سياج الحديقة النباتي (السياج الشجري)",
+              "english": "hedge",
+              "example": "Eine dichte grüne Hecke schützt den Garten vor neugierigen Blicken."
+            },
+            {
+              "german": "der Rasen, -",
+              "arabic": "المسطح الأخضر وعشب الحديقة",
+              "english": "lawn",
+              "example": "Am Samstagnachmittag mäht der Nachbar den kurz gewachsenen Rasen."
+            },
+            {
+              "german": "der Obstbaum, -̈e",
+              "arabic": "شجرة الفاكهة المثمرة (تفاح، كرز، إجاص)",
+              "english": "fruit tree",
+              "example": "Im Herbst hängen an unserem Obstbaum hunderte saftige rote Äpfel."
+            },
+            {
+              "german": "das Unkraut jäten",
+              "arabic": "ينقّي ويقلع الأعشاب الضارة من التربة",
+              "english": "to weed, to pull weeds",
+              "example": "Einmal pro Woche muss man bücken und sorgfältig das Unkraut jäten."
+            },
+            {
+              "german": "gießen",
+              "arabic": "يسقي ويروي النباتات بالماء",
+              "english": "to water (plants)",
+              "example": "Vergessen Sie an heißen Sommertagen nicht, die Beete abends reichlich zu gießen."
+            },
+            {
+              "german": "die Blumenerde, -n",
+              "arabic": "تربة الزراعة الخصبة (البيتموس / الطمي)",
+              "english": "potting soil, compost soil",
+              "example": "Wir füllten frische nährstoffreiche Blumenerde in die Blumenkästen auf dem Balkon."
+            },
+            {
+              "german": "der Kompost (Sg.)",
+              "arabic": "السماد العضوي الطبيعي المتحلل",
+              "english": "compost, compost heap",
+              "example": "Küchenabfälle und Rasenschnitt verwandeln sich auf dem Kompost in besten Dünger."
+            }
+          ],
+          "description": "Gemüsebeete, Tomaten, Salat, Kräuterbeete, Hecken, Rasen, Obstbäume und Kompost.",
+          "details": "Nutzgarten, Ziergarten, Urban Gardening, Düngung, Bodenpflege und Permakultur (A1–B2)",
+          "arabicDescription": "نباتات وزراعة الحديقة (Gartenpflanzen): نباتات الحديقة المنزلية (Gartenpflanze)، حوض الخضروات (Gemüsebeet)، نبتة الطماطم (Tomate)، الخس (Salat)، حوض الأعشاب العطرية، سياج الشجيرات (Hecke)، المسطح الأخضر (Rasen)، أشجار الفاكهة (Obstbaum)، إزالة الأعشاب الضارة، سقي المزروعات، والسماد العضوي (Kompost).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Arbeit im Garten",
+              "intro": "Einfache Sätze über Garten, Gießen und Tomaten (A1).",
+              "paragraphs": [
+                [
+                  "Ich habe einen kleinen Garten hinter dem Haus.",
+                  "Hier wächst grüner [der Rasen, -|Rasen] und [der Obstbaum, -̈e|ein großer Obstbaum].",
+                  "Im Frühling grabe ich [das Gemüsebeet, -e|das Gemüsebeet] um."
+                ],
+                [
+                  "Ich pflanze [die Tomatenpflanze, -n|eine Tomatenpflanze] und säe [der Salat, -e|Salat].",
+                  "Jeden Abend nehme ich die Kanne und muss die Pflanzen [gießen|gießen].",
+                  "Frisches Gemüse aus dem eigenen Garten schmeckt am besten."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Vom Kompost zur reichen Ernte",
+              "intro": "Unkraut jäten, Kräuterbeete und Hecken schneiden (A2).",
+              "paragraphs": [
+                [
+                  "Gartenarbeit macht zwar Mühe, ist aber wunderbar entspannend.",
+                  "Letzten Samstag musste ich zwei Stunden lang [das Unkraut jäten|das Unkraut jäten]."
+                ],
+                [
+                  "In [das Kräuterbeet, -e|unserem Kräuterbeet] wachsen Rosmarin, Minze und Petersilie für die Küche.",
+                  "Die welke Pflanzenteile warf ich auf [der Kompost (Sg.)|den Kompost], wo wertvoller Humus entsteht.",
+                  "Entlang der Grundstücksgrenze schnitt ich [die Hecke, -n|die Hecke] mit einer elektrischen Schere zurück."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Selbstversorgung und ökologisches Gärtnern",
+              "intro": "Mischkultur, Schädlinge biologisch regulieren und Bodenfruchtbarkeit (B1).",
+              "paragraphs": [
+                [
+                  "Urban Gardening und private Nutzgartenbewirtschaftung erfreuen sich wachsender Beliebtheit.",
+                  "Statt chemischer Pestizide setzen ökologische Gärtner auf Mischkulturen in [das Gemüsebeet, -e|dem Gemüsebeet], bei denen sich Nachbarpflanzen gegenseitig vor Schädlingen schützen."
+                ],
+                [
+                  "Reifer Humus aus [der Kompost (Sg.)|dem eigenen Kompost] verbessert die Bodenbelüftung und speichert Feuchtigkeit auch bei sommerlicher Hitze."
+                ],
+                [
+                  "So verwandelt sich der eigene Garten in ein blühendes, nachhaltiges Biotop für Insekten und Vögel."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Permakultur, Bodenmikrobiologie und regenerative Agrikultur",
+              "intro": "Mulchsysteme, Bodengefüge und Kreislaufwirtschaft im Garten (B2).",
+              "paragraphs": [
+                [
+                  "Die Prinzipien der Permakultur zielen auf geschlossene Stoffkreisläufe und naturnahe Selbstregulation in anthropogenen Habitaten ab.",
+                  "Der gezielte Aufbau mikrobieller Bodengemeinschaften durch Mykorrhizaimpfung und organische Mulchschichten schützt [die Gartenpflanze, -n|Gartenpflanzen] vor osmotischem Trockenstress."
+                ],
+                [
+                  "Statt mineralischer Dünger liefert thermophil fermentierter [der Kompost (Sg.)|Kompost] bioverfügbaren Stickstoff und stabilen Kohlenstoff für den Boden."
+                ],
+                [
+                  "Tragfähige Gehölzstrukturen mit [der Obstbaum, -̈e|Obstbäumen] und schattenspendenden Hecken etablieren ein vorteilhaftes Mikroklima für ertragreiche Ernten."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tiere",
+      "title": "TIERE",
+      "topics": [
+        {
+          "id": "saeugetiere",
+          "title": "Säugetiere",
+          "words": [
+            {
+              "german": "das Säugetier, -e",
+              "arabic": "الحيوان الثديي (من ذوات الدم الحار)",
+              "english": "mammal",
+              "example": "Säugetiere bringen lebende Junge zur Welt und ernähren sie mit Muttermilch."
+            },
+            {
+              "german": "der Hund, -e",
+              "arabic": "الكلب (أوفى أصدقاء الإنسان)",
+              "english": "dog",
+              "example": "Der treue Hund wedelt fröhlich mit dem Schwanz, wenn sein Herrchen nach Hause kommt."
+            },
+            {
+              "german": "die Katze, -n",
+              "arabic": "القطة الأليفة",
+              "english": "cat",
+              "example": "Die schnurrende Katze schläft zusammengerollt auf dem warmen Sofa."
+            },
+            {
+              "german": "das Pferd, -e",
+              "arabic": "الحصان والفرس",
+              "english": "horse",
+              "example": "Auf dem Reiterhof galoppiert das stolze braune Pferd über die Koppel."
+            },
+            {
+              "german": "die Kuh, -̈e",
+              "arabic": "البقرة الحلوب",
+              "english": "cow",
+              "example": "Auf der grünen Almwiese grasen schwarz-weiße Kühe und kauen friedlich."
+            },
+            {
+              "german": "das Schaf, -e",
+              "arabic": "الخروف والنعجة",
+              "english": "sheep",
+              "example": "Aus der dichten weichen Wolle der Schafe wird warme Kleidung gestrickt."
+            },
+            {
+              "german": "der Hirsch, -e",
+              "arabic": "الأيل والوعل البري ذو القرون المتشعبة",
+              "english": "deer, stag",
+              "example": "Der mächtige Hirsch trägt ein imposantes Geweih und lebt scheu im Wald."
+            },
+            {
+              "german": "der Wolf, -̈e",
+              "arabic": "الذئب البري المفترس",
+              "english": "wolf",
+              "example": "Im Rudel durchstreift der scheue Wolf die weiten Wälder Europas."
+            },
+            {
+              "german": "der Bär, -en",
+              "arabic": "الدب الكبير",
+              "english": "bear",
+              "example": "Vor dem kalten Winter frisst sich der Braunbär eine dicke Fettschicht für den Winterschlaf an."
+            },
+            {
+              "german": "das Fell, -e",
+              "arabic": "فرو وجلد الحيوان الكثيف",
+              "english": "fur, coat (animal)",
+              "example": "Ein dickes, wasserabweisendes Fell schützt den Fischotter im eiskalten Fluss."
+            },
+            {
+              "german": "säugen",
+              "arabic": "ترضع صغيرها بالحليب الطبيعي",
+              "english": "to suckle, to nurse (animals)",
+              "example": "Die Bärin wird ihre neugeborenen Jungen in der warmen Höhle monatelang säugen."
+            },
+            {
+              "german": "das Raubtier, -e",
+              "arabic": "الحيوان المفترس واللاحم",
+              "english": "predator, beast of prey",
+              "example": "Löwen und Wölfe sind spezialisierte Raubtiere an der Spitze der Nahrungskette."
+            }
+          ],
+          "description": "Säugetiere, Fell, Haustiere, Wildtiere, Wölfe, Bären, Hirsche, Kühe und lebendgebärend.",
+          "details": "Mammalogie, Säugetierphysiologie, Warmblüter, Raubtiere, Paarhufer und Brutpflege (A1–B2)",
+          "arabicDescription": "الثدييات (Säugetiere): طائفة الثدييات (Säugetier)، الحيوانات الأليفة كالكلب (Hund) والقطة (Katze)، الحصان (Pferd)، البقرة (Kuh)، الخروف (Schaf)، الخنزير (Schwein)، الحيوانات البرية كالغزال والوعل (Hirsch)، الذئب (Wolf)، الدب (Bär)، الفراء والشعر (Fell)، وإرضاع الصغار بالحليب (säugen).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Tiere mit warmem Fell",
+              "intro": "Einfache Sätze über Hunde, Katzen und Bauernhoftiere (A1).",
+              "paragraphs": [
+                [
+                  "Viele Tiere haben weiches [das Fell, -e|Fell].",
+                  "[der Hund, -e|Der Hund] bellt und [die Katze, -n|die Katze] miaut leise.",
+                  "Sie leben oft als Haustiere bei uns Menschen."
+                ],
+                [
+                  "Auf dem Bauernhof sehen wir [die Kuh, -̈e|eine große Kuh] und [das Schaf, -e|ein weißes Schaf].",
+                  "Die Mutter kann ihr Baby mit Milch [säugen|säugen].",
+                  "Deshalb heißt diese Gruppe [das Säugetier, -e|Säugetier]."
+                ],
+                ["Sie haben warmes Blut und lieben ihre Kinder."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Wilde Tiere im Nationalpark",
+              "intro": "Hirsche im Wald, Wölfe im Rudel und Bären (A2).",
+              "paragraphs": [
+                [
+                  "Letzten Herbst wanderten wir durch einen großen Naturpark in den Bergen.",
+                  "Früh am Morgen hörten wir [der Hirsch, -e|einen stolzen Hirsch] im Nebel röhren."
+                ],
+                [
+                  "Der Parkranger erzählte uns, dass in dieser Region auch wieder [der Wolf, -̈e|der Wolf] heimisch geworden ist.",
+                  "Als intelligentes [das Raubtier, -e|Raubtier] jagt er im Rudel und meidet Menschen.",
+                  "In den Bergen schläft [der Bär, -en|der Bär] im Winter viele Monate lang in seiner Höhle."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Evolutionäre Erfolgsgeschichte der Säugetiere",
+              "intro": "Endothermie, Brutpflege und ökologische Nischen (B1).",
+              "paragraphs": [
+                [
+                  "Nach dem Aussterben der Dinosaurier vor 66 Millionen Jahren eroberten [das Säugetier, -e|Säugetiere] nahezu alle Lebensräume der Erde.",
+                  "Ihre biologischen Schlüsselinnovationen — gleichwarme Körpertemperatur (Endothermie), isolierendes Fell und hochentwickelte Gehirne — sicherten ihnen einen Selektionsvorteil."
+                ],
+                [
+                  "Die intensive Fürsorge für die Nachkommen, die Mütter monatelang [säugen|säugen] und anlernen, ermöglicht komplexe soziale Verhaltensweisen."
+                ],
+                [
+                  "Heute stehen viele wilde Säugerarten durch Lebensraumverlust und Wilderei weltweit unter strengem Naturschutz."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Mammalogie, Trophiekaskaden und die Rückkehr der Spitzenprädatoren",
+              "intro": "Apex-Predatoren, Habitatzerschneidung und Koexistenzkonflikte (B2).",
+              "paragraphs": [
+                [
+                  "Die Wiederansiedlung von Großkarnivoren wie [der Wolf, -̈e|dem Wolf] und Luchs in mitteleuropäischen Kulturlandschaften initiiert ökologische Trophiekaskaden.",
+                  "Als [das Raubtier, -e|Apex-Prädatoren] regulieren sie überhöhte Schalenwildbestände (Rehe und [der Hirsch, -e|Hirsche]), was den Verbiss reduziert und die natürliche Waldverjüngung begünstigt."
+                ],
+                [
+                  "Diese ökologische Restitution kollidiert jedoch mit den Interessen der Weidetierhaltung von [das Schaf, -e|Schafen] und Rindern."
+                ],
+                [
+                  "Ein wissenschaftlich fundiertes Wolfsmanagement kombiniert Herdenschutzhunde mit Elektrozäunen, um die Koexistenz zwischen Weidewirtschaft und Artenschutz zu moderieren."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "voegel",
+          "title": "Vögel",
+          "words": [
+            {
+              "german": "der Vogel, -̈",
+              "arabic": "الطائر / العصفور",
+              "english": "bird",
+              "example": "Am frühen Frühlingsmorgen weckt uns der melodische Gesang der Vögel."
+            },
+            {
+              "german": "der Flügel, -",
+              "arabic": "جناح الطائر للطيران",
+              "english": "wing",
+              "example": "Mit weit ausgebreiteten Flügeln gleitet der Storch majestätisch durch die Lüfte."
+            },
+            {
+              "german": "der Schnabel, -̈",
+              "arabic": "منقار الطائر",
+              "english": "beak, bill",
+              "example": "Mit seinem spitzen Schnabel pickt der Specht Insekten aus der Baumrinde."
+            },
+            {
+              "german": "die Vogelfeder, -n",
+              "arabic": "ريشة الطائر الخفيفة",
+              "english": "feather",
+              "example": "Die bunte Vogelfeder glänzt im Sonnenlicht in schillernden Farben."
+            },
+            {
+              "german": "das Vogelnest, -er",
+              "arabic": "عش الطيور لتربية الصغار",
+              "english": "bird's nest",
+              "example": "Hoch oben in der Baumkrone haben die Schwalben ein rundes Vogelnest gebaut."
+            },
+            {
+              "german": "der Adler, -",
+              "arabic": "النسر / العقاب الجارح (ملك الطيور)",
+              "english": "eagle",
+              "example": "Der Steinadler kreist hoch über den Alpengipfeln auf der Suche nach Beute."
+            },
+            {
+              "german": "die Taube, -n",
+              "arabic": "الحمامة (رمز السلام)",
+              "english": "pigeon, dove",
+              "example": "Eine weiße Taube gilt weltweit als universelles Symbol für Frieden."
+            },
+            {
+              "german": "die Schwalbe, -n",
+              "arabic": "طائر السنونو والخطاف",
+              "english": "swallow (bird)",
+              "example": "Eine Schwalbe macht noch keinen Sommer, sagt ein bekanntes deutsches Sprichwort."
+            },
+            {
+              "german": "die Amsel, -n",
+              "arabic": "طائر الشحرور الأسود ذو المنقار الأصفر",
+              "english": "blackbird",
+              "example": "Die schwarze Amsel sitzt auf dem Dachfirst und schlägt flötende Töne an."
+            },
+            {
+              "german": "die Eule, -n",
+              "arabic": "البومة ذات الرؤية الليلية الحادة",
+              "english": "owl",
+              "example": "Lautlos fliegt die Eule in der dunklen Nacht und jagt Mäuse auf dem Feld."
+            },
+            {
+              "german": "der Zugvogel, -̈",
+              "arabic": "الطائر المهاجر فصلياً",
+              "english": "migratory bird",
+              "example": "Im Herbst formiert sich mancher Zugvogel wie der Kranich zur Reise nach Süden."
+            },
+            {
+              "german": "fliegen",
+              "arabic": "يطير ويحلّق في الجو",
+              "english": "to fly",
+              "example": "Könnten Menschen fliegen, würden sie die Welt aus einer ganz neuen Perspektive sehen."
+            }
+          ],
+          "description": "Vögel, Flügel, Schnäbel, Federn, Nester, Adler, Tauben, Schwalben, Eulen und Zugvögel.",
+          "details": "Ornithologie, Flugmechanik, Vogelzug, Brutbiologie, Gesang und Greifvögel (A1–B2)",
+          "arabicDescription": "الطيور وعالم الطيران (Vögel): فصيلة الطيور (Vogel)، الأجنحة (Flügel)، المنقار (Schnabel)، الريش (Feder)، عش الطائر (Vogelnest)، النسر والعقاب (Adler)، الحمام (Taube)، طائر الخطاف والسنونو (Schwalbe)، الشحرور (Amsel)، البومة (Eule)، والطيور المهاجرة (Zugvogel).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Vögel im Garten",
+              "intro": "Einfache Sätze über Flügel, Federn und Nester (A1).",
+              "paragraphs": [
+                [
+                  "Schau in den blauen Himmel!",
+                  "Dort oben kann [der Vogel, -̈|ein kleiner Vogel] frei [fliegen|fliegen].",
+                  "Er breitet seine [der Flügel, -|zwei Flügel] aus und gleitet im Wind."
+                ],
+                [
+                  "Sein Körper ist bedeckt mit [die Vogelfeder, -n|weichen Federn].",
+                  "Mit [der Schnabel, -̈|dem Schnabel] holt er Würmer aus der Erde.",
+                  "Im Baum baut er [das Vogelnest, -er|ein Nest] für seine Eier."
+                ],
+                [
+                  "Am Morgen singt [die Amsel, -n|die schwarze Amsel] ein wunderschönes Lied."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Reise in den Süden",
+              "intro": "Zugvögel, Eulen in der Nacht und Schwalben (A2).",
+              "paragraphs": [
+                [
+                  "Wenn die Tage im Oktober kürzer werden, machen sich viele Vögel auf den Weg.",
+                  "Als [der Zugvogel, -̈|Zugvögel] fliegen Schwalben und Störche tausende Kilometer bis nach Afrika."
+                ],
+                [
+                  "In einer V-Formation sparen sie Energie beim langen Flug.",
+                  "Im Wald bleibt [die Eule, -n|die kluge Eule] auch im Winter aktiv.",
+                  "Mit ihren großen Augen sieht sie nachts perfekt und fängt Mäuse im Schnee.",
+                  "Hoch in den Bergen kreist [der Adler, -|ein stolzer Adler] über den Klippen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Ornithologie und die Faszination des Vogelzugs",
+              "intro": "Navigation der Zugvögel, Magnetkompass und Vogelschutz (B1).",
+              "paragraphs": [
+                [
+                  "Die Navigationsleistungen von Vögeln grenzen an ein biologisches Wunder.",
+                  "Ein reisender [der Zugvogel, -̈|Zugvogel] orientiert sich am Sternenhimmel, dem Sonnenstand und einem körpereigenen Magnetsinn im Auge."
+                ],
+                [
+                  "Im städtischen Raum haben sich Kulturfolger wie [die Taube, -n|die Taube] und [die Amsel, -n|die Amsel] perfekt an menschliche Bauten angepasst."
+                ],
+                [
+                  "Gleichzeitig bedrohen Lichtverschmutzung und Glasscheiben an Hochhäusern alljährlich Millionen Vögel, weshalb Vogelschutzorganisationen reflektierende Markierungen fordern."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Aerodynamik, Knochenpneumatisierung und aviäre Bioakustik",
+              "intro": "Hohlknochen, Luftsacksysteme und bioakustische Territorialgesänge (B2).",
+              "paragraphs": [
+                [
+                  "Die anatomische Architektur der Vögel ist kompromisslos auf Gewichtsreduktion und aerodynamische Effizienz optimiert.",
+                  "Pneumatisierte Röhrenknochen und ein hochentwickeltes Luftsacksystem ermöglichen selbst unter extremen Flugbelastungen einen unidirektionalen, hocheffizienten Gasaustausch."
+                ],
+                [
+                  "Greifvögel wie [der Adler, -|der Steinadler] nutzen thermische Aufwinde, um mit minimalem metabolischem Aufwand stundenlang über ihrem Revier zu segeln."
+                ],
+                [
+                  "Die bioakustische Analyse von Vogelstimmen (Syrinx-Modulation) offenbart komplexe Dialekte und dient in der modernen Ökologie als Indikator für Habitatqualität."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "reptilien_und_amphibien",
+          "title": "Reptilien und Amphibien",
+          "words": [
+            {
+              "german": "das Kriechtier (Reptil), -e",
+              "arabic": "الحيوان الزاحف (ذو الحراشف)",
+              "english": "reptile",
+              "example": "Reptilien legen meist Eier mit lederartiger Schale an sonnigen Plätzen ab."
+            },
+            {
+              "german": "die Amphibie, -n",
+              "arabic": "الحيوان البرمائي (يعيش في الماء واليابسة)",
+              "english": "amphibian",
+              "example": "Amphibien wie Frösche und Molche benötigen feuchte Gewässer zur Fortpflanzung."
+            },
+            {
+              "german": "die Schlange, -n",
+              "arabic": "الثعبان / الأفعى / الحية",
+              "english": "snake",
+              "example": "Die ungiftige Ringelnatter ist eine scheue Schlange, die gerne im Wasser schwimmt."
+            },
+            {
+              "german": "die Eidechse, -n",
+              "arabic": "السحلية الرشيقة",
+              "english": "lizard",
+              "example": "Auf der warmen Steinmauer sonnt sich eine flinke grüne Eidechse."
+            },
+            {
+              "german": "die Schildkröte, -n",
+              "arabic": "السلحفاة ذات الدرع الواقي",
+              "english": "turtle, tortoise",
+              "example": "Die uralte Schildkröte zieht bei Gefahr ihren Kopf in den harten Panzer zurück."
+            },
+            {
+              "german": "das Krokodil, -e",
+              "arabic": "التمساح المفترس",
+              "english": "crocodile",
+              "example": "Im schlammigen Fluss lauert das Krokodil regungslos auf Beute."
+            },
+            {
+              "german": "der Frosch, -̈e",
+              "arabic": "الضفدع",
+              "english": "frog",
+              "example": "Im Gartenteich quaken die grünen Frösche im Sommer ein lautes Konzert."
+            },
+            {
+              "german": "die Kröte, -n",
+              "arabic": "العلجوم (ضفدع الطين ذو الجلد الثؤلولي)",
+              "english": "toad",
+              "example": "Im Frühjahr wandern tausende Erdkröten über Straßen zu ihren Laichgewässern."
+            },
+            {
+              "german": "der Feuersalamander, -",
+              "arabic": "السمندل الناري الأسود ذو البقع الصفراء",
+              "english": "fire salamander",
+              "example": "Der auffällig gelb-schwarz gefleckte Feuersalamander lebt im feuchten Laubwald."
+            },
+            {
+              "german": "die Kaulquappe, -n",
+              "arabic": "الشرغوف (يرقة الضفدع المائية ذات الذيل)",
+              "english": "tadpole",
+              "example": "Aus dem Froschlaich schlüpfen kleine Kaulquappen, die mit Kiemen atmen."
+            },
+            {
+              "german": "wechselwarm (Adj.)",
+              "arabic": "من ذوات الدم البارد (تتغير حرارتها مع البيئة)",
+              "english": "cold-blooded, poikilothermic",
+              "example": "Da Reptilien wechselwarm sind, müssen sie sich morgens in der Sonne aufwärmen."
+            },
+            {
+              "german": "die Schuppenhaut (Sg.)",
+              "arabic": "الجلد الحرشفي القرني الواقي",
+              "english": "scaly skin",
+              "example": "Die trockene Schuppenhaut schützt Schlangen vor dem Austrocknen an Land."
+            }
+          ],
+          "description": "Reptilien, Amphibien, Schlangen, Eidechsen, Schildkröten, Frösche, Kaulquappen und Kröten.",
+          "details": "Herpetologie, Wechselwärme, Häutung, Metamorphose, Laich und Schuppen (A1–B2)",
+          "arabicDescription": "الزواحف والبرمائيات (Reptilien und Amphibien): طائفة الزواحف (Reptil)، البرمائيات (Amphibie)، الثعبان والأفعى (Schlange)، السحلية (Eidechse)، السلحفاة (Schildkröte)، التمساح (Krokodil)، الضفدع (Frosch)، العلجوم (Kröte)، السمندل، الشراغف (Kaulquappe)، والجلد الحرشفي وذوات الدم البارد (wechselwarm).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Tiere am Teich",
+              "intro": "Einfache Sätze über Frösche, Schildkröten und Echsen (A1).",
+              "paragraphs": [
+                [
+                  "Am kleinen Teich im Garten sitzt [der Frosch, -̈e|ein grüner Frosch].",
+                  "Er springt mit weiten Sätzen ins kühle Wasser.",
+                  "Im Wasser schwimmt [die Kaulquappe, -n|eine winzige Kaulquappe]."
+                ],
+                [
+                  "Auf einem Stein sonnt sich [die Schildkröte, -n|eine Schildkröte].",
+                  "Sie hat einen festen Panzer auf dem Rücken.",
+                  "An der Mauer läuft [die Eidechse, -n|eine schnelle Eidechse]."
+                ],
+                ["Diese Tiere lieben die warme Sonne."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Krötenwanderung im Frühling",
+              "intro": "Wechselwarme Tiere, Krötenzäune und Feuersalamander (A2).",
+              "paragraphs": [
+                [
+                  "Sobald die Nächte im März milder werden, erwachen die Amphibien aus der Winterstarre.",
+                  "Weil sie [wechselwarm (Adj.)|wechselwarm] sind, können sie ihre Körpertemperatur nicht selbst regeln."
+                ],
+                [
+                  "Tausende Tiere wandern zu Teichen: Vor allem [die Kröte, -n|die dicke Kröte] muss oft gefährliche Straßen überqueren.",
+                  "Freiwillige Helfer bauen Schutzzäune und tragen die Tiere in Eimern sicher über den Asphalt.",
+                  "Im schattigen Bergwald entdeckte ich gestern [der Feuersalamander, -|einen seltenen Feuersalamander] mit gelben Punkten."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Metamorphose und biologische Anpassung",
+              "intro": "Vom Wasser ans Land, Häutung und Schuppen (B1).",
+              "paragraphs": [
+                [
+                  "Die Metamorphose der Amphibien veranschaulicht den evolutionären Schritt vom Wasserbewohner zum Landwirbeltier im Zeitraffer.",
+                  "Aus [die Kaulquappe, -n|einer fischähnlichen Kaulquappe] mit Kiemen und Ruderschwanz entwickelt sich durch hormonelle Steuerung ein lungenatmender [der Frosch, -̈e|Frosch]."
+                ],
+                [
+                  "Reptilien hingegen haben sich durch ihre wasserundurchlässige [die Schuppenhaut (Sg.)|Schuppenhaut] vollständig vom Wasser emanzipiert."
+                ],
+                [
+                  "Um wachsen zu können, streift manche [die Schlange, -n|Schlange] regelmäßig ihre alte Hornschicht bei der Häutung als 'Natternhemd' ab."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Herpetologie, Amphibiensterben und ektotherme Thermoregulation",
+              "intro": "Chytridpilz (Bd/Bsal), Poikilothermie und Amnioten-Evolution (B2).",
+              "paragraphs": [
+                [
+                  "In der Herpetologie stellt das globale Amphibiensterben durch den anthropogen verschleppten Chytridpilz (Batrachochytrium dendrobatidis) eine katastrophale Krise dar.",
+                  "Da Amphibien über ihre hochpermeable Haut atmen und osmoregulieren, zerstört der Pilzbefall vitale Elektrolythaushalte."
+                ],
+                [
+                  "Ektotherme Organismen steuern ihren Stoffwechsel über Verhaltensweisen (Heliothermie bei [die Eidechse, -n|Eidechsen]), was sie vulnerabel für Temperaturverschiebungen macht."
+                ],
+                [
+                  "Die Entstehung des Amnioten-Eies bei [das Kriechtier (Reptil), -e|Reptilien] vor über dreihundert Millionen Jahren bildete die Voraussetzung für die Besiedlung arider Kontinentalräume."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "fische",
+          "title": "Fische",
+          "words": [
+            {
+              "german": "der Fisch, -e",
+              "arabic": "السمكة",
+              "english": "fish",
+              "example": "Im klaren Bergsee schwimmt ein kleiner Fisch blitzschnell am Ufer entlang."
+            },
+            {
+              "german": "die Flosse, -n",
+              "arabic": "زعنفة السمكة للسباحة والتوجيه",
+              "english": "fin (fish)",
+              "example": "Mit kräftigen Schlägen der Schwanzflosse schießt der Fisch durch das Wasser."
+            },
+            {
+              "german": "die Kieme, -n",
+              "arabic": "الخيشوم لاستخلاص الأكسجين من الماء",
+              "english": "gill (fish)",
+              "example": "Durch die seitlichen Kiemen filtern Fische gelösten Sauerstoff aus dem Wasser."
+            },
+            {
+              "german": "die Fischschuppe, -n",
+              "arabic": "قشرة وحرشفة جلد السمكة",
+              "english": "fish scale",
+              "example": "Die glatten Fischschuppen reflektieren das Licht silbern wie Metall."
+            },
+            {
+              "german": "die Fischgräte, -n",
+              "arabic": "حسكة وعظمة السمك الرفيعة",
+              "english": "fishbone",
+              "example": "Vorsicht beim Essen von gebratenem Fisch vor spitzen Fischgräten."
+            },
+            {
+              "german": "der Lachs, -e",
+              "arabic": "سمك السلمون الوردي",
+              "english": "salmon",
+              "example": "Lachse wandern tausende Kilometer flussaufwärts, um an ihren Geburtsorten zu laichen."
+            },
+            {
+              "german": "die Forelle, -n",
+              "arabic": "سمك التراوت (السلمون المرقط في الجداول)",
+              "english": "trout",
+              "example": "In sauberen, sauerstoffreichen Bächen fängt der Angler eine Bachforelle."
+            },
+            {
+              "german": "der Hai, -e",
+              "arabic": "سمك القرش المفترس",
+              "english": "shark",
+              "example": "Der weiße Hai besitzt ein Revolvergebiss mit rasiermesserscharfen Zähnen."
+            },
+            {
+              "german": "der Hering, -e",
+              "arabic": "سمك الرنجة في بحر الشمال",
+              "english": "herring",
+              "example": "Heringe schwimmen in riesigen Schwärmen durch die kühlen Gewässer der Nordsee."
+            },
+            {
+              "german": "das Aquarium, Aquarien",
+              "arabic": "حوض تربية الأسماك الزجاجي",
+              "english": "aquarium",
+              "example": "Im beleuchteten Aquarium schwimmen bunte Guppys zwischen grünen Wasserpflanzen."
+            },
+            {
+              "german": "der Süßwasserfisch, -e",
+              "arabic": "سمك المياه العذبة (في الأنهار والبحيرات)",
+              "english": "freshwater fish",
+              "example": "Karpfen und Hechte sind typische Süßwasserfische mitteleuropäischer Flüsse."
+            },
+            {
+              "german": "der Salzwasserfisch, -e",
+              "arabic": "سمك المياه المالحة (في البحار والمحيطات)",
+              "english": "saltwater fish, marine fish",
+              "example": "Thunfische und Makrelen sind schnelle Salzwasserfische des offenen Ozeans."
+            }
+          ],
+          "description": "Fische, Flossen, Kiemen, Schuppen, Lachse, Forellen, Haie und Süß- und Salzwasserfische.",
+          "details": "Ichthyologie, Unterwasseratmung, Schwimmblase, Meeresfauna und Fischwanderung (A1–B2)",
+          "arabicDescription": "الأسماك وعالم البحار (Fische): طائفة الأسماك (Fisch)، الزعانف (Flosse)، الخياشيم للتنفس (Kieme)، الحراشف والقشور (Schuppe)، حسك وعظام السمك (Gräte)، سمك السلمون (Lachs)، سمك التراوت المرقط (Forelle)، سمك القرش (Hai)، الرنجة، أحواض السمك (Aquarium)، أسماك المياه العذبة، وأسماك المياه المالحة.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Fische im Wasser",
+              "intro": "Einfache Sätze über Fische, Flossen und Schwimmen (A1).",
+              "paragraphs": [
+                [
+                  "Im blauen See schwimmt [der Fisch, -e|ein schöner Fisch].",
+                  "Er hat keine Beine, aber bewegliche [die Flosse, -n|Flossen].",
+                  "Unter Wasser atmet er mit [die Kieme, -n|den Kiemen]."
+                ],
+                [
+                  "Sein Körper glänzt mit [die Fischschuppe, -n|silbernen Fischschuppen].",
+                  "In meinem Zimmer habe ich [das Aquarium, Aquarien|ein kleines Aquarium] mit bunten Fischen.",
+                  "Ich gebe ihnen jeden Tag etwas Futter."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Vom Fluss ins offene Meer",
+              "intro": "Forellen im Bergbach, Lachswanderung und Haie (A2).",
+              "paragraphs": [
+                [
+                  "Letzten Sommer machten wir Urlaub an einem Gebirgsfluss in Bayern.",
+                  "Im kristallklaren Wasser beobachtete ich [die Forelle, -n|eine gepunktete Forelle], die geduldig gegen die Strömung schwamm."
+                ],
+                [
+                  "Später besuchten wir ein Meeresmuseum: Dort lernten wir den Unterschied zwischen [der Süßwasserfisch, -e|einem Süßwasserfisch] und [der Salzwasserfisch, -e|einem Salzwasserfisch].",
+                  "Besonders spektakulär war das Becken, in dem [der Hai, -e|ein großer Hai] ruhig seine Runden zog.",
+                  "Auch die faszinierende Reise, die [der Lachs, -e|der Lachs] vom Ozean zurück in die Heimatflüsse macht, begeisterte mich."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Ichthyologie und der Schutz mariner Lebensräume",
+              "intro": "Knorpelfische, Schwarmverhalten und Überfischung der Meere (B1).",
+              "paragraphs": [
+                [
+                  "Fische stellen die artenreichste Wirbeltiergruppe unseres Planeten dar und besiedeln nahezu alle aquatischen Nischen.",
+                  "Während Knochenfische eine gasgefüllte Schwimmblase zur Tarierung nutzen, müssen Knorpelfische wie [der Hai, -e|Haie] ständig in Bewegung bleiben."
+                ],
+                [
+                  "Im offenen Meer schließen sich Fische wie [der Hering, -e|der Hering] zu gigantischen Schwärmen zusammen, um Fressfeinde durch koordinierte Ausweichmanöver zu verwirren."
+                ],
+                [
+                  "Die weltweite Überfischung und zerstörerische Grundschleppnetze gefährden jedoch die biologische Regeneration mariner Populationen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Osmoregulation, Katadromie und marine Nahrungsketten",
+              "intro": "Anadrome Wanderungen, Gegenstromprinzip der Kiemen und Meeresökologie (B2).",
+              "paragraphs": [
+                [
+                  "Die physiologische Osmoregulation unterscheidet Süß- von Salzwasserfischen fundamental.",
+                  "Während marine Fische kontinuierlich Meerwasser trinken und Salze aktiv über [die Kieme, -n|die Kiemenepithelien] ausscheiden, müssen limnische Arten Wasseransammlungen über hypotonen Harn eliminieren."
+                ],
+                [
+                  "Anadrome Wanderfische wie [der Lachs, -e|Lachse] vollziehen während ihrer Migration eine biochemische Umprogrammierung ihrer Kiemenchloride."
+                ],
+                [
+                  "Anthropogene Querbauwerke (Wasserkraftwerke, Wehre) zerschneiden diese Laichwanderrouten, weshalb der Rückbau von Barrieren und Fischtreppen für den Artenschutz unumgänglich ist."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "insekten_und_spinnen",
+          "title": "Insekten und Spinnen",
+          "words": [
+            {
+              "german": "das Insekt, -en",
+              "arabic": "الحشرة سداسية الأرجل",
+              "english": "insect",
+              "example": "Insekten sind die artenreichste Tierklasse auf unserem Planeten."
+            },
+            {
+              "german": "die Spinne, -n",
+              "arabic": "العنكبوت ثماني الأرجل",
+              "english": "spider",
+              "example": "Die Spinne webt im Tau des Morgens ein kunstvolles geometrisches Netz."
+            },
+            {
+              "german": "das Spinnennetz, -e",
+              "arabic": "شبكة وخيوط بيت العنكبوت الحريرية",
+              "english": "spiderweb, spider web",
+              "example": "Kleine Tautropfen glitzerten wie Perlen im feinen Spinnennetz."
+            },
+            {
+              "german": "die Biene, -n",
+              "arabic": "النحلة المنتجة للعسل والملقحة للزهور",
+              "english": "bee, honeybee",
+              "example": "Ohne die fleißige Biene gäbe es im Sommer kaum Äpfel oder Kirschen."
+            },
+            {
+              "german": "die Ameise, -n",
+              "arabic": "النملة النشيطة",
+              "english": "ant",
+              "example": "Eine winzige Ameise kann das Vielfache ihres eigenen Körpergewichts tragen."
+            },
+            {
+              "german": "der Schmetterling, -e",
+              "arabic": "الفراشة الزاهية الألوان",
+              "english": "butterfly",
+              "example": "Ein bunter Schmetterling flatterte lautlos von einer Blüte zur nächsten."
+            },
+            {
+              "german": "die Mücke, -n",
+              "arabic": "البعوضة والناموسة",
+              "english": "mosquito, gnat",
+              "example": "In lauen Sommernächten am See sticht manche lästige Mücke in die Haut."
+            },
+            {
+              "german": "die Stubenfliege, -n",
+              "arabic": "الذبابة المنزلية",
+              "english": "housefly, fly",
+              "example": "Die Stubenfliege surrte unruhig vor der geschlossenen Fensterscheibe."
+            },
+            {
+              "german": "der Marienkäfer, -",
+              "arabic": "الدعسوقة (أم علي) الحمراء المنقطة",
+              "english": "ladybug, ladybird",
+              "example": "Der rote Marienkäfer mit sieben schwarzen Punkten gilt als Glücksbringer."
+            },
+            {
+              "german": "die Wespe, -n",
+              "arabic": "الدبور والنحلة الصفراء المخططة",
+              "english": "wasp",
+              "example": "Im Spätsommer naschen hungrige Wespen gern am süßen Pflaumenkuchen."
+            },
+            {
+              "german": "der Fühler, -",
+              "arabic": "قرن الاستشعار لدى الحشرات",
+              "english": "antenna, feeler",
+              "example": "Mit zwei langen Fühlern auf dem Kopf tastet und riecht das Insekt seine Umgebung."
+            },
+            {
+              "german": "bestäuben",
+              "arabic": "يلقّح الزهور والأشجار المثمرة",
+              "english": "to pollinate",
+              "example": "Hummeln und Wildbienen bestäuben Nutzpflanzen und sichern die weltweite Ernte."
+            }
+          ],
+          "description": "Insekten, Spinnen, Bienen, Ameisen, Schmetterlinge, Spinnennetze, Fühler und Bestäubung.",
+          "details": "Entomologie, Arachnologie, Exoskelett, Metamorphose, Honigbienen und Insektensterben (A1–B2)",
+          "arabicDescription": "الحشرات والعناكب (Insekten und Spinnen): فصيلة الحشرات (Insekt)، العناكب (Spinne)، خيوط وشبكة العنكبوت (Spinnennetz)، النحلة (Biene)، النمل (Ameise)، الفراشة (Schmetterling)، البعوض (Mücke)، الذباب (Fliege)، الدعسوقة (Marienkäfer)، الدبور (Wespe)، قرون الاستشعار (Fühler)، وتلقيح الأزهار (bestäuben).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Kleine Tiere auf der Wiese",
+              "intro": "Einfache Sätze über Bienen, Ameisen und Schmetterlinge (A1).",
+              "paragraphs": [
+                [
+                  "Auf der Wiese krabbeln viele kleine Tiere.",
+                  "Hier fliegt [die Biene, -n|eine gelbe Biene] von Blume zu Blume.",
+                  "Ein bunter [der Schmetterling, -e|Schmetterling] tanzt in der warmen Luft."
+                ],
+                [
+                  "Am Boden marschiert [die Ameise, -n|eine fleißige Ameise] mit einem kleinen Blatt.",
+                  "In der Ecke baut [die Spinne, -n|eine Spinne] [das Spinnennetz, -e|ein Spinnennetz].",
+                  "Auf meinem Finger sitzt [der Marienkäfer, -|ein roter Marienkäfer] mit sieben Punkten."
+                ],
+                ["Auch kleine Tiere sind sehr nützlich."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Fleißige Helfer im Apfelgarten",
+              "intro": "Bestäubung von Blüten, Insektenfühler und Ameisenhaufen (A2).",
+              "paragraphs": [
+                [
+                  "Im Frühling blühten die Apfelbäume in unserem Obstgarten wunderschön weiß.",
+                  "Überall summten Honigbienen und Wildbienen, um die Blüten zu [bestäuben|bestäuben]."
+                ],
+                [
+                  "Jedes [das Insekt, -en|Insekt] besitzt sechs Beine und zwei feine [der Fühler, -|Fühler] am Kopf zum Riechen.",
+                  "Im Wald entdeckten wir einen riesigen Ameisenhaufen, in dem hunderttausende Ameisen zusammenlebten.",
+                  "Ohne Insekten gäbe es im Herbst keine Äpfel auf den Bäumen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Ökologische Schlüsselfunktion und das Insektensterben",
+              "intro": "Bestäubungsleistung, Nahrungsketten und Artenschutzmaßnahmen (B1).",
+              "paragraphs": [
+                [
+                  "Insekten bilden das unersetzliche Fundament terrestrischer Nahrungsnetze.",
+                  "Als Bestäuber sichern Honigbienen, Hummeln und Schwebfliegen über siebzig Prozent der landwirtschaftlichen Nutzpflanzenerträge weltweit."
+                ],
+                [
+                  "Der dramatische Rückgang der Insektenbiomasse durch Pestizideinsatz und Monokulturen alarmiert die Wissenschaft."
+                ],
+                [
+                  "Auch [die Spinne, -n|Spinnen] leisten einen unverzichtbaren Beitrag: Mit ihren elastischen [das Spinnennetz, -e|Spinnennetzen] halten sie Schädlinge wie Mücken und Fliegen auf natürliche Weise in Schach."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Entomologie, Eusozialität und Chitin-Exoskelette",
+              "intro": "Superorganismen, Chitinstrukturen und biozönotische Gleichgewichte (B2).",
+              "paragraphs": [
+                [
+                  "Die strukturelle Stabilität von [das Insekt, -en|Insekten] basiert auf einem leichten, aber extrem widerstandsfähigen Chitin-Exoskelett.",
+                  "In der Entomologie fasziniert besonders das Phänomen der Eusozialität bei Hautflüglern: Ameisen- und Bienenkolonien operieren als hochentwickelte Superorganismen mit arbeitsteiliger Kastenordnung und Pheromon-Kommunikation."
+                ],
+                [
+                  "Spinnenseide, aus der [die Spinne, -n|Arachniden] ihr [das Spinnennetz, -e|Spinnennetz] konstruieren, übertrifft synthetischen Stahl an Reißfestigkeit und Dehnbarkeit um ein Vielfaches."
+                ],
+                [
+                  "Der Schutz von Insektenhabitaten über Blühstreifen und Pestizidreduktion ist eine conditio sine qua non für die Stabilität globaler Agrarökosysteme."
+                ]
+              ]
+            }
+          }
         }
       ]
     }

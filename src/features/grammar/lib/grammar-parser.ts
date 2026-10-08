@@ -26,11 +26,11 @@ export function parseGrammarItem(text: string): ParsedGrammarItem {
   if (explanation && exampleStr) {
     // Check if the content inside parens is just a grammatical note rather than an example sentence
     const isNote =
-      exampleStr.startsWith("stilistisch besser") ||
-      exampleStr.startsWith("Konj. II") ||
-      exampleStr.startsWith("Ausnahme:") ||
-      exampleStr.startsWith("Ausnahmen:") ||
-      exampleStr.startsWith("Diminutiv");
+      exampleStr.startsWith("stilistisch besser")
+      || exampleStr.startsWith("Konj. II")
+      || exampleStr.startsWith("Ausnahme:")
+      || exampleStr.startsWith("Ausnahmen:")
+      || exampleStr.startsWith("Diminutiv");
 
     if (isNote) {
       return {
@@ -41,32 +41,15 @@ export function parseGrammarItem(text: string): ParsedGrammarItem {
       };
     }
 
-    return {
-      badge,
-      explanation,
-      examples: [exampleStr],
-      rawText: trimmed,
-    };
+    return { badge, explanation, examples: [exampleStr], rawText: trimmed };
   }
 
   // Check if rest is directly an example sentence (has quotes, or starts with capital and ends with . ? !)
-  const isDirectExample =
-    rest.includes("„") ||
-    rest.includes('"') ||
-    /[.?!]$/.test(rest);
+  const isDirectExample = rest.includes("„") || rest.includes('"') || /[.?!]$/.test(rest);
 
   if (isDirectExample) {
-    return {
-      badge,
-      examples: [rest],
-      rawText: trimmed,
-    };
+    return { badge, examples: [rest], rawText: trimmed };
   }
 
-  return {
-    badge,
-    explanation: rest,
-    examples: [],
-    rawText: trimmed,
-  };
+  return { badge, explanation: rest, examples: [], rawText: trimmed };
 }

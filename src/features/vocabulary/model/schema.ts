@@ -53,7 +53,6 @@ export const vocabularyTopicSchema = z.object({
   stories: storiesRecordSchema.optional(),
 });
 
-
 export const vocabularySectionSchema = z.object({
   id: z.string(),
   title: z.string(),

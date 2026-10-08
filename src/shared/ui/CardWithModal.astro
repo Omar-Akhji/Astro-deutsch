@@ -1,0 +1,84 @@
+---
+import CardBody from "./CardBody.astro";
+import CardModal from "./CardModal.astro";
+
+interface Props {
+  href: string;
+  title: string;
+  subtitle?: string | undefined;
+  description?: string | undefined;
+  category?: string | undefined;
+  badge?: string | undefined;
+  gradient: string;
+  icon?: string | undefined;
+  stats?: Array<{ label: string; value: string }> | undefined;
+  variant?: "default" | "large" | undefined;
+  headingLevel?: "h2" | "h3" | undefined;
+  previewTitles?: string[] | undefined;
+  levelBadge?: string | undefined;
+  itemType?: string | undefined;
+  modalId?: string | undefined;
+}
+
+const {
+  href,
+  title,
+  subtitle,
+  description,
+  category,
+  badge,
+  gradient,
+  icon,
+  stats,
+  variant = "default",
+  headingLevel = "h2",
+  previewTitles = [],
+  levelBadge,
+  itemType,
+  modalId: customModalId,
+} = Astro.props;
+
+// Generate a deterministic and URL-safe modal ID
+const safeTitleSlug = title
+  .toLowerCase()
+  .replaceAll(/[^a-z0-9]+/g, "-")
+  .replaceAll(/(^-|-$)/g, "");
+const fallbackId = `modal-${safeTitleSlug || Math.random().toString(36).slice(2, 8)}`;
+const modalId = customModalId ?? fallbackId;
+---
+
+<div class="card-with-modal-container h-full">
+  <button
+    aria-controls={modalId}
+    aria-haspopup="dialog"
+    aria-label={`${title} öffnen`}
+    class="card-modal-trigger block h-full w-full cursor-pointer border-none bg-transparent p-0 text-left"
+    data-card-modal-open={modalId}
+    type="button"
+  >
+    <CardBody
+      badge={badge}
+      category={category}
+      description={description}
+      gradient={gradient}
+      headingLevel={headingLevel}
+      icon={icon}
+      stats={stats}
+      subtitle={subtitle}
+      title={title}
+      variant={variant}
+    />
+  </button>
+
+  <CardModal
+    description={description}
+    href={href}
+    id={modalId}
+    itemType={itemType}
+    levelBadge={levelBadge ?? (subtitle ? subtitle : "Deutsch A1")}
+    previewTitles={previewTitles}
+    subtitle={category}
+    title={title}
+  />
+</div>
+<script src="./card-modal.ts"></script>

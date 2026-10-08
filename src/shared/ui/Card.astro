@@ -1,5 +1,6 @@
 ---
-import { getFirstLetter } from "@/shared/lib";
+import CardBody from "./CardBody.astro";
+import CardWithModal from "./CardWithModal.astro";
 
 interface Props {
   href: string;
@@ -13,101 +14,25 @@ interface Props {
   stats?: Array<{ label: string; value: string }> | undefined;
   variant?: "default" | "large" | undefined;
   headingLevel?: "h2" | "h3" | undefined;
+  withModal?: boolean | undefined;
+  previewTitles?: string[] | undefined;
+  levelBadge?: string | undefined;
+  itemType?: string | undefined;
+  modalId?: string | undefined;
 }
 
-const {
-  href,
-  title,
-  subtitle,
-  description,
-  category,
-  badge,
-  gradient,
-  icon,
-  stats,
-  variant = "default",
-  headingLevel = "h2",
-} = Astro.props;
-
-const HeadingTag = headingLevel;
-const iconText = icon ?? getFirstLetter(title);
+const { href, withModal, ...restProps } = Astro.props;
 ---
 
-<a
-  class="block h-full no-underline"
-  href={href}
->
-  <article class="h-full">
-    <div
-      class="group relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-[oklch(18%_0.012_245deg/75%)] p-4 text-left no-underline shadow-[0_4px_20px_-2px_rgba(0,0,0,0.3)] backdrop-blur-(--glass-blur) transition-all duration-250 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:border-yellow/35 hover:bg-[oklch(21%_0.015_245deg/90%)] hover:shadow-[0_16px_36px_-8px_rgba(0,0,0,0.5),0_0_24px_-2px_rgba(255,220,0,0.15)] tablet:p-5"
-      data-card-link
-    >
-      <figure class="m-0 aspect-video w-full overflow-hidden rounded-2xl">
-        <div
-          aria-hidden="true"
-          class="flex h-full w-full items-center justify-center transition-transform duration-500 group-hover:scale-110"
-          style={{ background: gradient }}
-        >
-          <span
-            class:list={[
-              {
-                "text-4xl tablet:text-6xl": variant === "large",
-                "text-3xl tablet:text-5xl": variant !== "large",
-              },
-              "font-bold text-white/40 drop-shadow-md drop-shadow-white/20 transition-transform duration-500 group-hover:scale-110",
-            ]}
-          >
-            {iconText}
-          </span>
-        </div>
-      </figure>
-      <div class="flex flex-1 flex-col px-1 pt-4 pb-1">
-        {(category || badge || subtitle) && (
-          <div class="m-0 mbe-2.5 flex items-center gap-2 text-mist-500">
-            {category && (
-              <span class="rounded-full border-[1.5px] border-yellow/30 bg-yellow/20 px-3 py-1 font-bold text-yellow">
-                {category}
-              </span>
-            )}
-            {badge && (
-              <span class="rounded-full border-[1.5px] border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-mist-500">
-                {badge}
-              </span>
-            )}
-            {subtitle && <span class="font-medium">• {subtitle}</span>}
-          </div>
-        )}
-
-        <HeadingTag
-          class:list={[
-            {
-              "text-xl tablet:text-2xl": variant === "large",
-              "text-lg tablet:text-xl": variant !== "large",
-            },
-            "m-0 mbe-2 font-bold leading-snug text-white transition-colors duration-300 text-shadow-sm group-hover:text-yellow",
-          ]}
-        >
-          {title}
-        </HeadingTag>
-        {description && (
-          <p class="m-0 mbe-4 text-xs leading-relaxed text-mist-500 tablet:text-sm">
-            {description}
-          </p>
-        )}
-
-        {stats && stats.length > 0 && (
-          <dl class="mbs-auto flex gap-4 border-bs border-(--glass-border) pbs-4 tablet:gap-6">
-            {stats.map((stat) => (
-              <div class="flex flex-col">
-                <dd class="stat-value m-0 text-xl font-bold text-orange tablet:text-2xl">
-                  {stat.value}
-                </dd>
-                <dt class="text-xs text-text-muted">{stat.label}</dt>
-              </div>
-            ))}
-          </dl>
-        )}
-      </div>
-    </div>
-  </article>
-</a>
+{withModal ?
+  <CardWithModal
+    href={href}
+    {...restProps}
+  />
+: <a
+    class="block h-full no-underline"
+    href={href}
+  >
+    <CardBody {...restProps} />
+  </a>
+}

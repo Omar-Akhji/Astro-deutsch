@@ -5,12 +5,12 @@
   "description": "Gebäude, Orte und Dienstleistungen, die man in einer Stadt findet.",
   "sections": [
     {
-      "id": "stadtleben",
-      "title": "STADTLEBEN",
+      "id": "innenstadt",
+      "title": "DIE INNENSTADT",
       "topics": [
         {
           "id": "gebaeude_und_orte",
-          "title": "Gebäude und Orte",
+          "title": "Gebäude in der Innenstadt",
           "words": [
             {
               "german": "die Stadt, -̈e",
@@ -191,8 +191,498 @@
           "arabicDescription": "المباني العامة والمؤسسات الحيوية في المدينة الألمانية. يشمل هذا الدرس مبنى البلدية (Rathaus)، والمستشفى، والصيدلية، والبنك، ومركز الشرطة، ومكتب البريد، والمكتبة، مع شرح حروف الجر الدالة على التوجه إلى هذه الأماكن أو التواجد فيها."
         },
         {
+          "id": "auf_der_strasse",
+          "title": "Auf der Straße",
+          "words": [
+            {
+              "german": "die Straße, -n",
+              "arabic": "الشارع / الطريق الإسفلتي",
+              "english": "street, road",
+              "example": "Die breite Straße führt direkt zum Marktplatz und ist von alten Bäumen gesäumt."
+            },
+            {
+              "german": "der Bürgersteig, -e",
+              "arabic": "رصيف المشاة بجانب الطريق",
+              "english": "sidewalk, pavement",
+              "example": "Auf dem gepflasterten Bürgersteig gehen die Fußgänger geschützt vor dem Autoverkehr."
+            },
+            {
+              "german": "die Kreuzung, -en",
+              "arabic": "تقاطع الطرق المتلاقية",
+              "english": "intersection, crossroads",
+              "example": "An der großen Kreuzung treffen vier verkehrsreiche Straßen aufeinander."
+            },
+            {
+              "german": "die Ampel, -n",
+              "arabic": "إشارة المرور الضوئية",
+              "english": "traffic light",
+              "example": "Wenn die Fußgängerampel auf Rot schaltet, muss man geduldig am Bordstein warten."
+            },
+            {
+              "german": "der Zebrastreifen, -",
+              "arabic": "ممر المشاة المخطط (خطوط الحمار الوحشي)",
+              "english": "zebra crossing, pedestrian crossing",
+              "example": "Am Zebrastreifen müssen Autos anhalten, sobald ein Fußgänger die Fahrbahn queren möchte."
+            },
+            {
+              "german": "der Fußgänger, -",
+              "arabic": "عابر السبيل والماشي على قدميه",
+              "english": "pedestrian",
+              "example": "In der Fußgängerzone haben Fußgänger absoluten Vorrang vor allen Fahrzeugen."
+            },
+            {
+              "german": "die Straßenlaterne, -n",
+              "arabic": "عمود إنارة الشارع ليلاً",
+              "english": "street lamp, streetlight",
+              "example": "Sobald es dämmert, schalten sich die hellen Straßenlaternen automatisch ein."
+            },
+            {
+              "german": "der Mülleimer, -",
+              "arabic": "سلة المهملات العامة في الشارع",
+              "english": "trash can, public litter bin",
+              "example": "Er wirft die leere Papiertüte in den orangenen Mülleimer an der Bushaltestelle."
+            },
+            {
+              "german": "die Baustelle, -n",
+              "arabic": "ورشة وموقع أعمال الطريق والبناء",
+              "english": "construction site, roadworks",
+              "example": "Wegen einer Baustelle ist die rechte Fahrspur für mehrere Wochen gesperrt."
+            },
+            {
+              "german": "der Parkscheinautomat, -en",
+              "arabic": "آلة بيع تذاكر وقوف السيارات",
+              "english": "parking ticket machine",
+              "example": "Vor dem Parken wirft man Münzen in den Parkscheinautomaten und legt das Ticket ins Auto."
+            },
+            {
+              "german": "überqueren (überquerte, hat überquert)",
+              "arabic": "يعبر الشارع من جهة إلى أخرى",
+              "english": "to cross (street)",
+              "example": "Kinder lernen in der Verkehrserziehung, wie man eine Straße sicher überqueren kann."
+            },
+            {
+              "german": "belebt",
+              "arabic": "نابض بالحياة ومليء بالحركة والمشاة",
+              "english": "busy, lively",
+              "example": "Am Samstagnachmittag ist die Einkaufsstraße besonders belebt und voller Menschen."
+            }
+          ],
+          "description": "Straße, Bürgersteig, Kreuzung, Ampel, Zebrastreifen, Fußgänger, Laterne und Baustelle.",
+          "details": "Straßenverkehrsregeln, Fußgängerzonen, Straßenüberquerung und Stadtmobiliar (A1–B2)",
+          "arabicDescription": "في الشارع (Auf der Straße): مفردات الشارع (Straße)، رصيف المشاة (Bürgersteig)، تقاطع الطرق (Kreuzung)، إشارة المرور (Ampel)، ممر المشاة (Zebrastreifen)، وعمود الإنارة وسلة المهملات، مع قواعد السلامة والعبور الآمن.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Zu Fuß durch die Stadt",
+              "intro": "Einfache Sätze über Straße, Ampel, Zebrastreifen und sicheres Gehen (A1).",
+              "paragraphs": [
+                [
+                  "Ich gehe heute zu Fuß in die Stadt.",
+                  "Ich laufe sicher auf dem breiten [der Bürgersteig, -e|Bürgersteig].",
+                  "Vor mir ist eine große [die Kreuzung, -en|Kreuzung] mit vielen Autos.",
+                  "An der Ecke steht [die Ampel, -n|die Ampel] und zeigt ein rotes Licht."
+                ],
+                [
+                  "Ich warte kurz, bis das Licht grün wird.",
+                  "An einem [der Zebrastreifen, -|Zebrastreifen] darf ich die [die Straße, -n|Straße] sicher [überqueren (überquerte, hat überquert)|überqueren].",
+                  "Jeder [der Fußgänger, -|Fußgänger] passt gut auf den Verkehr auf.",
+                  "So komme ich sicher und fröhlich am Ziel an."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Spaziergang am Abend",
+              "intro": "Orientierung bei Dunkelheit, Straßenlaternen und Baustellen in der Stadt (A2).",
+              "paragraphs": [
+                [
+                  "Wenn die Sonne untergeht, wird die Innenstadt wunderschön beleuchtet.",
+                  "Jede einzelne [die Straßenlaterne, -n|Straßenlaterne] spendet warmes Licht für die Passanten auf dem Gehweg.",
+                  "Die Fußgängerzone ist am Freitagabend sehr [belebt|belebt], weil viele Menschen bummeln gehen.",
+                  "Ich werfe meinen Kaugummistreifen ordentlich in den nächsten [der Mülleimer, -|Mülleimer]."
+                ],
+                [
+                  "An der Hauptstraße müssen Autofahrer einen Parkschein am [der Parkscheinautomat, -en|Parkscheinautomaten] ziehen.",
+                  "Wegen einer großen [die Baustelle, -n|Baustelle] müssen Fußgänger auf die andere Straßenseite wechseln.",
+                  "Gelbe Warnschilder leiten den Verkehr sicher um das Hindernis herum.",
+                  "In der Stadt gibt es an jeder Ecke etwas Neues zu entdecken."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Verkehrserziehung und Fußgängerfreundlichkeit im Städtebau",
+              "intro": "Deutsche Verkehrserziehung, Fußgängerzonen und Stadtmöblierung (B1).",
+              "paragraphs": [
+                [
+                  "Die Gestaltung des öffentlichen Straßenraums reflektiert das gesellschaftliche Ringen um Sicherheit und Lebensqualität.",
+                  "In Deutschland durchlaufen bereits Grundschulkinder die obligatorische schulische Verkehrserziehung: Sie lernen, wie man den [der Zebrastreifen, -|Zebrastreifen] nutzt und worauf beim Blick nach links, rechts und wieder links zu achten ist, bevor sie eine Straße [überqueren (überquerte, hat überquert)|überqueren]."
+                ],
+                [
+                  "Historisch wandelte sich das Bild der Innenstädte ab den 1970er-Jahren radikal: Vom Konzept der 'autogerechten Stadt' wandte man sich ab und schuf weitläufige Fußgängerzonen.",
+                  "Dort prägen modernes Stadtmobiliar, schattenspendende Alleen und eine lückenlose Beleuchtung durch energieeffiziente [die Straßenlaterne, -n|Straßenlaternen] das urbane Ambiente."
+                ],
+                [
+                  "Gleichzeitig erfordern temporäre Baumaßnahmen strikte Auflagen: Eine [die Baustelle, -n|Baustelle] muss für mobilitätseingeschränkte Personen mit taktilen Leitstreifen abgesichert sein."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Verkehrsraumaufteilung, Shared Space und multimodale Knotenpunkte",
+              "intro": "Urbane Mikromobilität, Shared-Space-Philosophie und Lichtsignalanlagen-Steuerung (B2).",
+              "paragraphs": [
+                [
+                  "Im zeitgenössischen Städtebau durchläuft die klassische Trennung zwischen Fahrbahn und [der Bürgersteig, -e|Bürgersteig] einen Paradigmenwechsel zugunsten integrierter 'Shared Space'-Konzepte.",
+                  "Indem bauliche Barrieren, Schilderwälder und traditionelle Lichtsignalanlagen zurückgebaut werden, zwingt der egalitäre Straßenraum alle Verkehrsteilnehmer zu Blickkontakt und adaptiver Geschwindigkeitsreduktion."
+                ],
+                [
+                  "An hochbelasteten Kreuzungen steuern adaptive Verkehrsrechner [die Ampel, -n|die Ampeln] mittels Induktionsschleifen und Wärmebildkameras in Echtzeit, um Fußgängerströme ohne lange Wartezeiten abzuwickeln."
+                ],
+                [
+                  "Gleichzeitig wird der Parksuchverkehr durch dynamische Leitsysteme minimiert, die freie Stellplätze am [der Parkscheinautomat, -en|Parkscheinautomaten] per Sensorik an Navigations-Apps übermitteln.",
+                  "Diese Digitalisierung des Straßenraums optimiert urbane Verkehrsflüsse und rekonfiguriert die Straße als multifunktionalen Lebensraum."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_hotel",
+          "title": "Das Hotel",
+          "words": [
+            {
+              "german": "das Hotel, -s",
+              "arabic": "الفندق",
+              "english": "hotel",
+              "example": "Das gemütliche Hotel liegt ruhig im Zentrum und hat moderne, saubere Zimmer."
+            },
+            {
+              "german": "die Rezeption, -en",
+              "arabic": "مكتب الاستقبال بالفندق",
+              "english": "reception, front desk",
+              "example": "An der Rezeption meldet sich der Reisende mit seinem Ausweis an."
+            },
+            {
+              "german": "das Hotelzimmer, -",
+              "arabic": "غرفة الفندق",
+              "english": "hotel room",
+              "example": "Das helle Hotelzimmer verfügt über ein eigenes Bad, einen Fernseher und WLAN."
+            },
+            {
+              "german": "das Einzelzimmer, -",
+              "arabic": "غرفة لشخص واحد (مفردة)",
+              "english": "single room",
+              "example": "Geschäftsreisende buchen für eine Übernachtung meistens ein praktisches Einzelzimmer."
+            },
+            {
+              "german": "das Doppelzimmer, -",
+              "arabic": "غرفة لشخصين (مزدوجة)",
+              "english": "double room",
+              "example": "Das Ehepaar reserviert ein komfortables Doppelzimmer mit großem Kingsize-Bett."
+            },
+            {
+              "german": "die Schlüsselkarte, -n",
+              "arabic": "بطاقة المفتاح الإلكترونية الممغنطة",
+              "english": "keycard, electronic room key",
+              "example": "Mit der digitalen Schlüsselkarte öffnet man die Zimmertür und aktiviert den Strom."
+            },
+            {
+              "german": "einchecken (checkte ein, hat eingecheckt)",
+              "arabic": "يسجل الوصول ويستلم الغرفة",
+              "english": "to check in",
+              "example": "Ab vierzehn Uhr können die Gäste an der Rezeption bequem einchecken."
+            },
+            {
+              "german": "auschecken (checkte aus, hat ausgecheckt)",
+              "arabic": "يسجل المغادرة ويسلم المفتاح",
+              "english": "to check out",
+              "example": "Vor der Abreise muss man bis elf Uhr vormittags an der Kasse auschecken."
+            },
+            {
+              "german": "das Frühstücksbuffet, -s",
+              "arabic": "بوفيه الإفطار المفتوح",
+              "english": "breakfast buffet",
+              "example": "Am reichhaltigen Frühstücksbuffet bedient man sich mit Brötchen, Obst und Kaffee."
+            },
+            {
+              "german": "der Aufzug, -̈e",
+              "arabic": "المصعد الكهربائي",
+              "english": "elevator, lift",
+              "example": "Mit dem gläsernen Aufzug fahren wir bequem in den vierten Stock hinauf."
+            },
+            {
+              "german": "die Übernachtung, -en",
+              "arabic": "المبيت / الإقامة لليلة واحدة",
+              "english": "overnight stay",
+              "example": "Der Preis für eine Übernachtung beinhaltet ein leckeres Frühstück."
+            },
+            {
+              "german": "die Reservierung, -en",
+              "arabic": "الحجز الفندقي المسبق",
+              "english": "reservation, booking",
+              "example": "Ich zeige der Angestellten meine Reservierung auf dem Smartphone vor."
+            }
+          ],
+          "description": "Rezeption, Einzelzimmer, Doppelzimmer, Schlüsselkarte, Einchecken, Auschecken und Buffet.",
+          "details": "Hotellerie, Buchungssysteme, Gästeservice, Sterneklassifizierung und Zimmerausstattung (A1–B2)",
+          "arabicDescription": "الفندق والإقامة (Das Hotel): مفردات الفندق (Hotel)، الاستقبال (Rezeption)، الغرفة الفردية والمزدوجة (Einzelzimmer/Doppelzimmer)، تسجيل الوصول والمغادرة (einchecken/auschecken)، بطاقة الغرفة (Schlüsselkarte)، وبوفيه الإفطار، مع تصنيف النجوم والخدمات الفندقية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Ankunft im Hotel",
+              "intro": "Einfache Sätze über Hotel, Rezeption, Schlüsselkarte und Zimmer (A1).",
+              "paragraphs": [
+                [
+                  "Wir reisen nach Hamburg und übernachten in einem schönen [das Hotel, -s|Hotel].",
+                  "Wir betreten die große Halle und gehen direkt an [die Rezeption, -en|die Rezeption].",
+                  "Der Portier hilft uns freundlich, damit wir schnell [einchecken (checkte ein, hat eingecheckt)|einchecken].",
+                  "Er gibt mir [die Schlüsselkarte, -n|die Schlüsselkarte] für Zimmer Nummer dreihundert."
+                ],
+                [
+                  "Mit den Koffern steigen wir in [der Aufzug, -̈e|den Aufzug] und fahren in den dritten Stock.",
+                  "Unser [das Hotelzimmer, -|Hotelzimmer] ist groß, hell und hat bequeme Betten.",
+                  "Am nächsten Morgen wartet unten ein großes [das Frühstücksbuffet, -s|Frühstücksbuffet].",
+                  "Wir schlafen gut und genießen den Urlaub in der Stadt."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Wochenende in den Bergen",
+              "intro": "Buchung, Einzel- und Doppelzimmer sowie Auschecken am Abreisetag (A2).",
+              "paragraphs": [
+                [
+                  "Vor zwei Wochen habe ich im Internet [die Reservierung, -en|die Reservierung] für ein Familienhotel abgeschlossen.",
+                  "Für meine Eltern buchte ich ein ruhiges [das Doppelzimmer, -|Doppelzimmer] mit Balkon und Bergblick.",
+                  "Mein Bruder nahm ein kleineres [das Einzelzimmer, -|Einzelzimmer] auf der gleichen Etage.",
+                  "Der Preis für jede [die Übernachtung, -en|Übernachtung] war fair und bezahlbar."
+                ],
+                [
+                  "Morgens gab es frischen Kaffee, Rührei und knusprige Brötchen am Buffet.",
+                  "Am Sonntag mussten wir leider schon um elf Uhr vormittags an der Rezeption [auschecken (checkte aus, hat ausgecheckt)|auschecken].",
+                  "Wir bezahlten die Rechnung mit Kreditkarte und bedankten uns für den freundlichen Service.",
+                  "Wir werden dieses Hotel bestimmt bald wieder besuchen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die deutsche Hotellandschaft und die Deutsche Hotelklassifizierung",
+              "intro": "Das Sterne-System der DEHOGA, Garni-Hotels und Qualitätsstandards (B1).",
+              "paragraphs": [
+                [
+                  "Das Beherbergungsgewerbe in Deutschland zeichnet sich durch eine bemerkenswerte Vielfalt aus, die vom familiengeführten Landgasthof bis zum mondänen Luxushotel reicht.",
+                  "Um Transparenz für nationale und internationale Gäste zu gewährleisten, führte der Deutsche Hotel- und Gaststättenverband (DEHOGA) die Deutsche Hotelklassifizierung mit ein bis fünf Sternen ein.",
+                  "Diese Einstufung basiert auf objektiven Prüfkriterien: Ein Drei-Sterne-Haus garantiert beispielsweise eine 14-stündig besetzte [die Rezeption, -en|Rezeption], Haartrockner im Bad und zweisprachige Mitarbeiter."
+                ],
+                [
+                  "Großer Beliebtheit erfreuen sich sogenannte Hotel-Garni-Betriebe, die Übernachtungen mit einem vollwertigen [das Frühstücksbuffet, -s|Frühstücksbuffet] anbieten, jedoch auf ein eigenes Abendrestaurant verzichten.",
+                  "Beim [einchecken (checkte ein, hat eingecheckt)|Einchecken] setzt sich der Trend zu digitalen Self-Check-in-Terminals durch, an denen Reisende ihre [die Schlüsselkarte, -n|Schlüsselkarte] autonom kodieren oder das Smartphone direkt als Bluetooth-Türöffner einsetzen."
+                ],
+                [
+                  "Dennoch schätzen viele Gäste den persönlichen Kontakt und die individuelle Beratung durch aufmerksame Concierges."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Yield Management, Property-Management-Systeme (PMS) und RevPAR-Ökonomie",
+              "intro": "Dynamische Preisbildung, Property Management Systeme und Kennzahlen der Hospitality-Industrie (B2).",
+              "paragraphs": [
+                [
+                  "In der modernen Hospitality-Industrie unterliegt das Belegungsmanagement hochgradig algorithmisierten Yield-Management- und Dynamic-Pricing-Strategien.",
+                  "Property-Management-Systeme (PMS) justieren den Zimmerpreis für jede [die Übernachtung, -en|Übernachtung] sekündlich auf Basis von Buchungsvorlaufzeiten, lokaler Messeauslastung und Konkurrenztarifen.",
+                  "Zentrale betriebswirtschaftliche Steuerungsgrößen sind der Erlös pro verfügbarem Zimmer (RevPAR) sowie die durchschnittliche Tagesrate (ADR), um den Deckungsbeitrag bei volatilen Fixkosten zu maximieren."
+                ],
+                [
+                  "Auf technischer Ebene revolutionieren vernetzte IoT-Infrastrukturen das Kundenerlebnis im [das Hotelzimmer, -|Hotelzimmer]: Sobald der Gast an der Rezeption eingecheckt hat, regeln intelligente Gebäudeleitsysteme Heizung, Klimatisierung und Ambientebeleuchtung automatisch auf Wohlfühltemperatur."
+                ],
+                [
+                  "Gleichzeitig forciert die Hotellerie ambitionierte Nachhaltigkeitszertifikate (wie GreenSign): Von der Eliminierung von Einwegplastik am Buffet bis hin zu wassersparenden Duschköpfen wandelt sich das Hotel zum Vorreiter ressourceneffizienter Dienstleistungsökonomie."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_bank",
+          "title": "Die Bank",
+          "words": [
+            {
+              "german": "die Bank, -en",
+              "arabic": "البنك / المصرف المالي",
+              "english": "bank",
+              "example": "Bei der Bank eröffnet er ein neues Girokonto für sein monatliches Gehalt."
+            },
+            {
+              "german": "der Geldautomat, -en",
+              "arabic": "جهاز الصراف الآلي (ATM)",
+              "english": "ATM, cash machine",
+              "example": "Am Geldautomaten kann man rund um die Uhr frische Geldscheine abheben."
+            },
+            {
+              "german": "das Girokonto, -konten",
+              "arabic": "الحساب البنكي الجاري للرواتب والمعاملات",
+              "english": "checking account, current account",
+              "example": "Miete, Strom und Telefon werden monatlich automatisch vom Girokonto abgebucht."
+            },
+            {
+              "german": "die Debitkarte, -n",
+              "arabic": "بطاقة الخصم المباشر (EC-Karte)",
+              "english": "debit card",
+              "example": "Mit der Debitkarte zahlt sie bequem und bargeldlos an der Supermarktkasse."
+            },
+            {
+              "german": "die Kreditkarte, -n",
+              "arabic": "البطاقة الائتمانية",
+              "english": "credit card",
+              "example": "Für Auslandsreisen und Online-Einkäufe benötigt man oft eine gültige Kreditkarte."
+            },
+            {
+              "german": "Bargeld abheben (hob ab, hat abgehoben)",
+              "arabic": "يسحب نقوداً كاش من الحساب",
+              "english": "to withdraw cash",
+              "example": "Vor dem Wochenmarkt muss ich noch schnell Bargeld am Automaten abheben."
+            },
+            {
+              "german": "die Geheimzahl, -en",
+              "arabic": "الرقم السري للبطاقة البنكية (PIN)",
+              "english": "PIN, secret code",
+              "example": "Man darf seine vierstellige Geheimzahl niemals laut aussprechen oder auf die Karte schreiben."
+            },
+            {
+              "german": "überweisen (überwies, hat überwiesen)",
+              "arabic": "يحول مبالغ مالية لحساب آخر",
+              "english": "to transfer (money)",
+              "example": "Ich werde den Rechnungsbetrag heute Abend bequem per Online-Banking überweisen."
+            },
+            {
+              "german": "der Kontoauszug, -̈e",
+              "arabic": "كشف الحساب البنكي الدوري",
+              "english": "bank statement",
+              "example": "Auf dem monatlichen Kontoauszug kontrolliert er alle Einnahmen und Ausgaben."
+            },
+            {
+              "german": "der Bankschalter, -",
+              "arabic": "شباك خدمة العملاء في البنك",
+              "english": "bank counter",
+              "example": "Für eine persönliche Beratung meldet sich der Kunde am Bankschalter."
+            },
+            {
+              "german": "die Kontoführungsgebühr, -en",
+              "arabic": "رسوم إدارة وتشغيل الحساب البنكي",
+              "english": "account maintenance fee",
+              "example": "Einige Direktbanken verzichten komplett auf eine monatliche Kontoführungsgebühr."
+            },
+            {
+              "german": "der Zinssatz, -̈e",
+              "arabic": "معدل سعر الفائدة المصرفية",
+              "english": "interest rate",
+              "example": "Wenn die Zinsen steigen, lohnt sich das Sparen auf dem Festgeldkonto wieder."
+            }
+          ],
+          "description": "Bank, Geldautomat, Girokonto, EC-Karte, Kreditkarte, Bargeld abheben, PIN, Überweisung und Gebühren.",
+          "details": "Kreditinstitute, bargeldloser Zahlungsverkehr, Online-Banking und Zinsen (A1–B2)",
+          "arabicDescription": "المصرف والخدمات البنكية (Die Bank): مفردات البنك (Bank)، الصراف الآلي (Geldautomat)، الحساب الجاري (Girokonto)، بطاقة الدفع (EC-Karte)، البطاقة الائتمانية (Kreditkarte)، سحب النقود (abheben)، الرقم السري (PIN)، والتحويل البنكي (Überweisung).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Geld holen am Automaten",
+              "intro": "Einfache Sätze über Bank, Karte, Geldautomat und PIN (A1).",
+              "paragraphs": [
+                [
+                  "Ich habe kein Geld mehr in meiner Brieftasche.",
+                  "Ich gehe zu Fuß in die nächste [die Bank, -en|Bank] an der Ecke.",
+                  "In der Vorhalle steht ein moderner [der Geldautomat, -en|Geldautomat].",
+                  "Ich stecke meine blaue [die Debitkarte, -n|Debitkarte] in den Schlitz."
+                ],
+                [
+                  "Auf der Tastatur tippe ich vorsichtig meine vierstellige [die Geheimzahl, -en|Geheimzahl] ein.",
+                  "Ich wähle fünfzig Euro und möchte das [Bargeld abheben (hob ab, hat abgehoben)|Bargeld abheben].",
+                  "Der Automat zählt die Scheine und gibt mir das Geld.",
+                  "Jetzt kann ich einkaufen gehen und meine Einkäufe bezahlen."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Finanzen im Alltag: Überweisungen und Konten",
+              "intro": "Girokonto verwalten, Rechnungen überweisen und Kontoauszüge prüfen (A2).",
+              "paragraphs": [
+                [
+                  "Als ich meine erste Arbeitsstelle begann, eröffnete ich bei einer Sparkasse ein [das Girokonto, -konten|Girokonto].",
+                  "Auf dieses Konto überweist mein Arbeitgeber jeden Monat pünktlich mein Gehalt.",
+                  "Wenn die Miete für die Wohnung fällig ist, kann ich das Geld per Dauerauftrag automatisch [überweisen (überwies, hat überwiesen)|überweisen].",
+                  "Am Monatsende drucke ich mir [der Kontoauszug, -̈e|den Kontoauszug] aus, um meine Ausgaben zu prüfen."
+                ],
+                [
+                  "Für Reisen ins Ausland habe ich zusätzlich eine goldene [die Kreditkarte, -n|Kreditkarte] bestellt.",
+                  "Manche Banken verlangen für die Kontoführung eine monatliche [die Kontoführungsgebühr, -en|Kontoführungsgebühr].",
+                  "Wenn ich Fragen habe, hilft mir ein freundlicher Mitarbeiter am [der Bankschalter, -|Bankschalter].",
+                  "Mit gutem Überblick über die eigenen Finanzen lebt man viel entspannter."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Das deutsche Drei-Säulen-Bankensystem und die Bargeldliebe",
+              "intro": "Sparkassen, Genossenschaftsbanken, Privatbanken und die kulturelle Bindung an Scheine (B1).",
+              "paragraphs": [
+                [
+                  "Der deutsche Bankensektor ruht traditionell auf dem weltweit einzigartigen 'Drei-Säulen-Modell': den öffentlich-rechtlichen Sparkassen mit kommunalem Träger, den genossenschaftlichen Volks- und Raiffeisenbanken und den privaten Geschäftsbanken.",
+                  "Diese dezentrale Struktur sollte historisch die flächendeckende Kreditversorgung des Mittelstandes und den Zugang aller Bürger zu einem [das Girokonto, -konten|Girokonto] garantieren."
+                ],
+                [
+                  "Ein bemerkenswertes kulturelles Phänomen bleibt die ausgeprägte deutsche Vorliebe für physische Münzen und Scheine: 'Nur Bares ist Wahres', lautet ein populäres Sprichwort.",
+                  "Während in Skandinavien selbst Kleinstbeträge digital beglichen werden, nutzen viele Deutsche weiterhin den Gang zum Schalter, um [Bargeld abheben (hob ab, hat abgehoben)|Bargeld abzuheben]."
+                ],
+                [
+                  "Dennoch beschleunigt kontaktloses Bezahlen per Smartphone und Debitkarte den Wandel zum bargeldarmen Bezahlen auch in Bäckereien und Wochenmärkten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "SEPA-Clearing, PSD2-Schnittstellen und Geldpolitik der Europäischen Zentralbank",
+              "intro": "SEPA-Zahlungsprotokolle, Zweifaktor-Authentifizierung (2FA), Zinsstrukturkurven und Basel III (B2).",
+              "paragraphs": [
+                [
+                  "Der europäische Zahlungsverkehr operiert im Rahmen des SEPA-Standards (Single Euro Payments Area), welcher grenzüberschreitende Transaktionen via IBAN und BIC innerhalb des Euro-Raums harmonisiert.",
+                  "Mit der Umsetzung der Zahlungsdiensterichtlinie PSD2 wurden Kreditinstitute verpflichtet, Drittanbietern via Open-Banking-APIs sicheren Zugriff auf Kontodaten zu gewähren, flankiert durch die strikte Verpflichtung zur starken Kundenauthentifizierung (SCA / 2FA) bei jeder Transaktion."
+                ],
+                [
+                  "Im makroökonomischen Kontext determinieren die Leitzinsentscheidungen des EZB-Rates über den Hauptrefinanzierungssatz unmittelbar den interbankären Geldmarkt und [der Zinssatz, -̈e|den Zinssatz] für Spar- und Kreditprodukte."
+                ],
+                [
+                  "Banken müssen gemäß Basel-III-Regularien strenge Kernkapitalquoten (Tier 1) und Liquiditätsdeckungskennzahlen (LCR) vorhalten, um systemische Risiken zu mitigieren.",
+                  "Diese regulatorische Dichte schützt Einlagen bis zu 100.000 Euro gesetzlich und garantiert die Stabilität des Finanzkreislaufs."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "einkaufen",
+      "title": "EINKAUFEN",
+      "topics": [
+        {
           "id": "einkaufen",
-          "title": "Einkaufen",
+          "title": "Läden und Geschäfte",
           "words": [
             {
               "german": "das Geschäft, -e",
@@ -371,6 +861,1326 @@
           "description": "Einzelhandel, Supermärkte, Wochenmärkte, Bezahlvorgänge und Konsumgewohnheiten.",
           "details": "Geschäfte, Supermarkt, Kasse und Bezahlvorgänge (A1–B2)",
           "arabicDescription": "التسوق والمتاجر وعمليات الدفع في ألمانيا. يغطي هذا الدرس السوبرماركت والمخابز والأسواق، ومفردات الأسعار (غالي، رخيص، مناسب)، وطرق الدفع (نقداً أو بالبطاقة المصرفية)، وقوانين إغلاق المتاجر يوم الأحد في ألمانيا وعادات حمل حقائب التسوق الصديقة للبيئة."
+        },
+        {
+          "id": "das_einkaufszentrum",
+          "title": "Das Einkaufszentrum",
+          "words": [
+            {
+              "german": "das Einkaufszentrum, -zentren",
+              "arabic": "مركز التسوق التجاري الكبير (المول)",
+              "english": "shopping center, shopping mall",
+              "example": "Bei Regenwetter verbringen viele Jugendliche den Samstagnachmittag im überdachten Einkaufszentrum."
+            },
+            {
+              "german": "die Rolltreppe, -n",
+              "arabic": "السلم الكهربائي المتحرك",
+              "english": "escalator",
+              "example": "Mit der steilen Rolltreppe gelangt man schnell vom Erdgeschoss in den zweiten Stock."
+            },
+            {
+              "german": "das Modegeschäft, -e",
+              "arabic": "متجر الأزياء والملابس العصرية",
+              "english": "fashion boutique, clothing store",
+              "example": "In dem exklusiven Modegeschäft hängen die neuesten Kollektionen bekannter Designer."
+            },
+            {
+              "german": "die Tiefgarage, -n",
+              "arabic": "المرآب ومواقف السيارات تحت الأرض",
+              "english": "underground car park",
+              "example": "Das Parken in der hell beleuchteten Tiefgarage des Centers ist für Kunden zwei Stunden kostenlos."
+            },
+            {
+              "german": "der Food-Court, -s",
+              "arabic": "ساحة وردهة المطاعم المتنوعة",
+              "english": "food court",
+              "example": "Im großen Food-Court kann jeder zwischen asiatischen Nudeln, Burger oder Pizza wählen."
+            },
+            {
+              "german": "schlendern (schlenderte, ist geschlendert)",
+              "arabic": "يتجول ويتنزه بتمهل واستمتاع",
+              "english": "to stroll, saunter",
+              "example": "Wir schlendern entspannt an den bunten Schaufenstern vorbei und schauen uns die Auslagen an."
+            },
+            {
+              "german": "das Schaufenster, -",
+              "arabic": "واجهة العرض الزجاجية للمحل",
+              "english": "shop window, display window",
+              "example": "Hinter dem gläsernen Schaufenster sind elegante Kleider auf Schaufensterpuppen drapiert."
+            },
+            {
+              "german": "die Umkleidekabine, -n",
+              "arabic": "غرفة قياس وتبديل الملابس",
+              "english": "fitting room, changing cubicle",
+              "example": "Vor der Umkleidekabine steht eine kleine Schlange von Kunden mit Hosen in der Hand."
+            },
+            {
+              "german": "anprobieren (probierte an, hat anprobiert)",
+              "arabic": "يقيس ويجرب مقاس الملابس",
+              "english": "to try on (clothes)",
+              "example": "Ich möchte diese blaue Jeansjacke in Größe M unbedingt einmal anprobieren."
+            },
+            {
+              "german": "der Rabatt, -e",
+              "arabic": "الخصم والتخفيض في السعر",
+              "english": "discount",
+              "example": "Zum Saisonende gibt es auf viele Winterjacken einen Rabatt von bis zu fünfzig Prozent."
+            },
+            {
+              "german": "die Öffnungszeiten (Pl.)",
+              "arabic": "ساعات ومواعيد فتح المتجر",
+              "english": "opening hours",
+              "example": "Die Öffnungszeiten sind wochentags durchgehend von zehn bis zwanzig Uhr."
+            },
+            {
+              "german": "das Schnäppchen, -",
+              "arabic": "الصفقة الرابحة والسلعة رخيصة الثمن",
+              "english": "bargain",
+              "example": "Auf dem Wühltisch hat sie ein echtes Schnäppchen für nur zehn Euro ergattert."
+            }
+          ],
+          "description": "Einkaufszentrum, Rolltreppe, Modegeschäft, Tiefgarage, Food-Court, Schlendern und Schaufenster.",
+          "details": "Shopping-Malls, Einzelhandel, Bummeln, Rabatte und Freizeitshopping (A1–B2)",
+          "arabicDescription": "مركز التسوق والمول (Das Einkaufszentrum): مفردات المركز التجاري (Einkaufszentrum)، السلم المتحرك (Rolltreppe)، متجر الأزياء (Modegeschäft)، المواقف السفلية (Tiefgarage)، ساحة المطاعم (Food-Court)، التجول والتنزه (schlendern)، وغرفة القياس (Umkleidekabine).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Ein Einkaufstag in der Mall",
+              "intro": "Einfache Sätze über Einkaufszentrum, Kleidung anprobieren und Rolltreppe (A1).",
+              "paragraphs": [
+                [
+                  "Am Samstag fahre ich mit meiner Schwester in [das Einkaufszentrum, -zentren|das Einkaufszentrum].",
+                  "Wir parken unser Auto unten in der großen [die Tiefgarage, -n|Tiefgarage].",
+                  "Mit der langen [die Rolltreppe, -n|Rolltreppe] fahren wir nach oben in den ersten Stock.",
+                  "Dort gibt es viele Geschäfte für Schuhe, Bücher und Kleidung."
+                ],
+                [
+                  "Wir betreten ein schönes [das Modegeschäft, -e|Modegeschäft].",
+                  "Ich möchte einen warmen Pullover [anprobieren (probierte an, hat anprobiert)|anprobieren] und gehe in [die Umkleidekabine, -n|die Umkleidekabine].",
+                  "Der Pullover passt perfekt und hat einen tollen [der Rabatt, -e|Rabatt].",
+                  "Nach dem Einkaufen essen wir ein Eis im Restaurant."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Bummeln und Schlemmen im Center",
+              "intro": "Schaufensterbummel, Schnäppchenjagd und Mittagessen im Food-Court (A2).",
+              "paragraphs": [
+                [
+                  "Wenn draußen schlechtes Wetter herrscht, ist die überdachte Shopping-Mall ein beliebtes Ausflugsziel.",
+                  "Wir lieben es, ohne Hektik durch die breiten Gänge zu [schlendern (schlenderte, ist geschlendert)|schlendern].",
+                  "In jedem beleuchteten [das Schaufenster, -|Schaufenster] sieht man die aktuellen Modetrends für die neue Saison.",
+                  "Zum Winterschlussverkauf findet man oft ein unglaubliches [das Schnäppchen, -|Schnäppchen] zu halbem Preis."
+                ],
+                [
+                  "Mittags treffen sich alle im [der Food-Court, -s|Food-Court], wo es Spezialitäten aus aller Welt gibt.",
+                  "Bevor man losgeht, sollte man die [die Öffnungszeiten (Pl.)|Öffnungszeiten] im Internet prüfen, da sonntags fast alle Läden geschlossen sind.",
+                  "Ein Einkaufsbummel verbindet praktische Besorgungen mit Spaß und Freizeit."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Konsumtempel vs. Innenstadt: Der Strukturwandel der Einkaufswelten",
+              "intro": "Entwicklung der Shopping-Center, Sonntagsöffnungsverbote und Erlebniskonsum (B1).",
+              "paragraphs": [
+                [
+                  "Das Konzept moderner Shopping-Malls nach US-amerikanischem Vorbild von Victor Gruen revolutionierte ab den 1960er-Jahren auch den mitteleuropäischen Einzelhandel.",
+                  "Riesige Einkaufswelten auf der 'grünen Wiese' boten wetterunabhängigen Komfort, Tausende kostenlose Parkplätze und eine konzentrierte Konsumvielfalt unter einem Dach.",
+                  "Dies führte mancherorts jedoch zum Ausbluten traditioneller Einkaufsstraßen in kleineren Städten."
+                ],
+                [
+                  "Ein deutsches Spezifikum ist der gesetzliche Schutz der Sonn- und Feiertage: Während in vielen Nachbarländern sieben Tage die Woche geshoppt werden kann, verbietet das deutsche Ladenschlussgesetz reguläre Öffnungen am Sonntag."
+                ],
+                [
+                  "Um gegen den wachsenden Druck des Online-Handels zu bestehen, transformieren sich zeitgenössische Center verstärkt zu Erlebnis- und Begegnungsorten mit Kinos, Fitnessstudios und gastronomischen Food-Courts."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Handelsgeografie, Anchor Tenants und retailpsychologische Wegeführung",
+              "intro": "Zentralitätsindizes, Magnetmieter (Anchor Tenants) und Neuromarketing in Malls (B2).",
+              "paragraphs": [
+                [
+                  "In der Handelsgeografie und Standortanalyse gehorcht das Layout von Großprojekten wie [das Einkaufszentrum, -zentren|Einkaufszentren] minutiösen retailpsychologischen Algorithmen.",
+                  "Sogenannte 'Magnetmieter' (Anchor Tenants) - typischerweise große Warenhäuser, Elektronikmärkte oder Lebensmittelfilialisten - werden gezielt an den extremen Endpunkten des Gebäudes positioniert.",
+                  "Dies erzeugt künstliche Kundenlaufströme, die das Publikum zwingen, an kleineren Boutiquen und Spontankauf-Präsentationen vorbei zu [schlendern (schlenderte, ist geschlendert)|schlendern]."
+                ],
+                [
+                  "Durch das gezielte Fehlen natürlicher Uhren und Tageslichtöffnungen im Kernbereich wird das Phänomen des 'Gruen-Effekts' induziert: Konsumenten verlieren ihr Zeitbewusstsein und treten in eine tranceartige Kaufbereitschaft ein."
+                ],
+                [
+                  "Angesichts veränderter postpandemischer Konsummuster steht die Branche jedoch vor tiefgreifenden Revitalisierungsaufgaben: Die Umnutzung von Leerständen zu Coworking-Spaces, Ärztehäusern und Bildungseinrichtungen markiert den Übergang vom monofunktionalen Konsumtempel zum hybriden Stadtbaustein."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_kaufhaus",
+          "title": "Das Kaufhaus",
+          "words": [
+            {
+              "german": "das Kaufhaus, -̈er",
+              "arabic": "المتجر الكبير متعدد الأقسام (الوارهوس)",
+              "english": "department store",
+              "example": "Das historische Kaufhaus erstreckt sich über sechs Etagen und bietet Waren aus aller Welt."
+            },
+            {
+              "german": "die Etage, -n",
+              "arabic": "الطابق / الدور في المبنى",
+              "english": "floor, storey",
+              "example": "Auf jeder Etage des Gebäudes gibt es eine andere Fachabteilung für die Kunden."
+            },
+            {
+              "german": "das Erdgeschoss, -e",
+              "arabic": "الطابق الأرضي (EG)",
+              "english": "ground floor",
+              "example": "Im Erdgeschoss empfängt den Kunden der Duft von edlem Parfüm und Kosmetik."
+            },
+            {
+              "german": "das Untergeschoss, -e",
+              "arabic": "الطابق السفلي تحت الأرض (UG)",
+              "english": "basement, lower level",
+              "example": "Im Untergeschoss befindet sich die Gourmet-Abteilung mit internationalen Delikatessen."
+            },
+            {
+              "german": "die Damenabteilung, -en",
+              "arabic": "قسم الملابس والأزياء النسائية",
+              "english": "women's clothing department",
+              "example": "In der Damenabteilung probiert sie einen eleganten Wollmantel an."
+            },
+            {
+              "german": "die Herrenabteilung, -en",
+              "arabic": "قسم الملابس والأزياء الرجالية",
+              "english": "men's clothing department",
+              "example": "In der zweiten Etage berät der Schneider Herren über den passenden Anzug."
+            },
+            {
+              "german": "die Spielwarenabteilung, -en",
+              "arabic": "قسم ألعاب الأطفال",
+              "english": "toy department",
+              "example": "Kinderaugen strahlen vor Begeisterung beim Betreten der riesigen Spielwarenabteilung."
+            },
+            {
+              "german": "der Verkäufer, -",
+              "arabic": "البائع / موظف المبيعات",
+              "english": "salesperson, shop assistant",
+              "example": "Der kompetente Verkäufer erklärt die technischen Details des Kaffeevollautomaten."
+            },
+            {
+              "german": "der Kassenbon, -s",
+              "arabic": "إيصال وفاتورة الشراء الورقية",
+              "english": "receipt, sales slip",
+              "example": "Man sollte den Kassenbon gut aufbewahren, falls man das Kleidungsstück reklamieren möchte."
+            },
+            {
+              "german": "umtauschen (tauschte um, hat umgetauscht)",
+              "arabic": "يستبدل السلعة أو يرجعها للمحل",
+              "english": "to exchange, return",
+              "example": "Wenn die Größe nicht passt, kann man die Hose innerhalb von vierzehn Tagen umtauschen."
+            },
+            {
+              "german": "die Auswahl (Sg.)",
+              "arabic": "التشكيلة الواسعة وتنوع البضائع",
+              "english": "selection, choice, range",
+              "example": "Das Kaufhaus besticht durch eine riesige Auswahl an Marken und Qualitätsprodukten."
+            },
+            {
+              "german": "die Rolltreppe, -n",
+              "arabic": "السلم الكهربائي الداخلي",
+              "english": "escalator",
+              "example": "Die Rolltreppen im Atrium verbinden alle Etagen elegant miteinander."
+            }
+          ],
+          "description": "Kaufhaus, Etagen, Erdgeschoss, Abteilungen, Verkäufer, Kassenbon und Umtausch.",
+          "details": "Traditionelle Warenhäuser (KaDeWe), Etagenstruktur, Beratung und Kundenservice (A1–B2)",
+          "arabicDescription": "المتجر الكبير متعدد الأقسام (Das Kaufhaus): مفردات المتجر الشامل (Kaufhaus)، الطوابق (Etagen)، الطابق الأرضي (Erdgeschoss)، أقسام الملابس والألعاب، البائعين (Verkäufer)، إيصال الشراء (Kassenbon)، واستبدال البضائع (umtauschen).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Im großen Kaufhaus",
+              "intro": "Einfache Sätze über Kaufhaus, Etagen, Geschenke und Kassenbon (A1).",
+              "paragraphs": [
+                [
+                  "Ich gehe in [das Kaufhaus, -̈er|das Kaufhaus] in der Mitte der Stadt.",
+                  "Das Gebäude ist sehr groß und hat fünf [die Etage, -n|Etagen].",
+                  "Unten in [das Erdgeschoss, -e|dem Erdgeschoss] gibt es Taschen und Parfüm.",
+                  "In der vierten Etage besuchen wir [die Spielwarenabteilung, -en|die Spielwarenabteilung] für meinen kleinen Bruder."
+                ],
+                [
+                  "Ein freundlicher [der Verkäufer, -|Verkäufer] hilft mir, ein schönes Spiel auszusuchen.",
+                  "Ich bezahle an der Kasse und nehme [der Kassenbon, -s|den Kassenbon] mit.",
+                  "Die [die Auswahl (Sg.)|Auswahl] an schönen Dingen ist riesig.",
+                  "Einkaufen im Kaufhaus macht viel Freude."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Kleidung kaufen und umtauschen",
+              "intro": "Herrenabteilung, Beratung und problemloser Umtausch mit Kassenbon (A2).",
+              "paragraphs": [
+                [
+                  "Gestern wollte mein Vater einen neuen warmen Wintermantel kaufen.",
+                  "Wir fuhren mit dem Aufzug direkt in [die Herrenabteilung, -en|die Herrenabteilung] im dritten Stock.",
+                  "Meine Mutter schaute sich währenddessen modische Kleider in [die Damenabteilung, -en|der Damenabteilung] an.",
+                  "Der Verkäufer beriet uns sehr geduldig und half bei der richtigen Größe."
+                ],
+                [
+                  "Zu Hause stellten wir leider fest, dass die Ärmel etwas zu lang waren.",
+                  "Am nächsten Tag ging mein Vater zurück, um den Mantel problemlos [umtauschen (tauschte um, hat umgetauscht)|umzutauschen].",
+                  "Mit dem Kaufbeleg war die Rückgabe innerhalb weniger Minuten erledigt.",
+                  "Guter Kundenservice ist das Markenzeichen traditioneller Kaufhäuser."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Mythos KaDeWe und die Krise des mitteleuropäischen Warenhauses",
+              "intro": "Kaufhaus des Westens, bürgerliche Konsumgeschichte und die Galeria-Krise (B1).",
+              "paragraphs": [
+                [
+                  "Das traditionelle Warenhaus war im späten 19. und frühen 20. Jahrhundert die spektakuläre Bühne der bürgerlichen Moderne.",
+                  "Ikonen wie das Berliner KaDeWe (Kaufhaus des Westens) mit seiner weltberühmten Feinschmeckeretage im sechsten Stockwerk demonstrierten luxuriöse Fülle und urbanen Glanz.",
+                  "Erstmals konnte das Bürgertum unter einem einzigen Dach von Möbeln über Kleidung bis hin zu exotischen Delikatessen alles erwerben."
+                ],
+                [
+                  "In den vergangenen Jahren geriet die traditionelle Warenhausbranche in Deutschland, personifiziert durch Ketten wie Karstadt und Kaufhof, in eine existenzielle Dauerkrise.",
+                  "Verändertes Konsumverhalten, die Konkurrenz durch spezialisierte Filialisten und der Siegeszug des Online-Handels führten zu massenhaften Filialschließungen und Insolvenzverfahren."
+                ],
+                [
+                  "Überlebensfähig erweisen sich primär Premiumhäuser, die das Einkaufen als sinnliches Erlebnis mit persönlicher Beratung und gastronomischer Exzellenz inszenieren."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Flächenproduktivität, Kuratierungsökonomie und urbane Nachnutzungskonzepte",
+              "intro": "Betriebswirtschaftliche Warenhausanalysen, Omnichannel-Retailing und Repositionierung (B2).",
+              "paragraphs": [
+                [
+                  "Die ökonomische Erosion klassischer Warenhäuser resultiert aus einer kontinuierlich sinkenden Flächenproduktivität (Umsatz pro Quadratmeter Verkaufsfläche).",
+                  "Das monolithische Modell, auf mehreren tausend Quadratmetern ein unspezifisches Vollsortiment anzubieten, ist im Zeitalter digitaler Preistransparenz und hyperspezialisierter Nischenanbieter obsolet geworden."
+                ],
+                [
+                  "Erfolgreiche Häuser substituieren daher den reinen Warenverkauf durch eine radikale 'Kuratierungsökonomie':",
+                  "Flächen werden an innovative Pop-up-Konzepte und exklusive Marken vermietet (Shop-in-Shop-Prinzip), während die Customer Journey durch kuratierte Erlebniswelten angereichert wird."
+                ],
+                [
+                  "Auf städtebaulicher Ebene erfordert die Schließung historischer Kaufhaus-Immobilien kreative Nachnutzungskonzepte:",
+                  "Die Transformation in gemischt genutzte Quartiere mit Wohnungen, Kulturzentren und universitären Räumen soll verhindern, dass verwaiste Konsumkathedralen städtische Zentren in die Abwärtsspirale reißen."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "der_supermarkt",
+          "title": "Der Supermarkt",
+          "words": [
+            {
+              "german": "der Supermarkt, -̈e",
+              "arabic": "السوبرماركت / متجر البقالة الكبير",
+              "english": "supermarket",
+              "example": "Zweimal in der Woche erledigen wir den großen Wocheneinkauf im Supermarkt."
+            },
+            {
+              "german": "der Einkaufswagen, -",
+              "arabic": "عربة التسوق ذات العجلات",
+              "english": "shopping cart, trolley",
+              "example": "Er schiebt eine Ein-Euro-Münze in den Schlitz, um den Einkaufswagen zu entriegeln."
+            },
+            {
+              "german": "der Einkaufskorb, -̈e",
+              "arabic": "سلة التسوق المحمولة باليد",
+              "english": "shopping basket",
+              "example": "Für wenige Kleinigkeiten nimmt sie lieber einen leichten Einkaufskorb am Eingang."
+            },
+            {
+              "german": "das Regal, -e",
+              "arabic": "الرف المليء بالبضائع",
+              "english": "shelf",
+              "example": "Ein Mitarbeiter räumt frische Konservendosen und Gläser in das hohe Regal ein."
+            },
+            {
+              "german": "die Kasse, -n",
+              "arabic": "صندوق الدفع والخزينة",
+              "english": "checkout, cash desk",
+              "example": "An Kasse drei öffnet eine freundliche Mitarbeiterin einen neuen Schalter."
+            },
+            {
+              "german": "das Kassenband, -̈er",
+              "arabic": "شريط المحاسبة المتحرك عند الكاشير",
+              "english": "conveyor belt (checkout)",
+              "example": "Er legt alle Lebensmittel nacheinander sorgfältig auf das laufende Kassenband."
+            },
+            {
+              "german": "die Kassiererin, -nen",
+              "arabic": "موظفة وأمينة الصندوق (الكاشيرة)",
+              "english": "cashier (female)",
+              "example": "Die flinke Kassiererin scannt die Barcodes der Waren mit beeindruckender Geschwindigkeit."
+            },
+            {
+              "german": "die Pfandflasche, -n",
+              "arabic": "زجاجة التأمين المرتجعة المستردة",
+              "english": "deposit bottle, returnable bottle",
+              "example": "In Deutschland zahlt man 25 Cent Pfand auf jede Einweg-Plastikflasche."
+            },
+            {
+              "german": "der Pfandautomat, -en",
+              "arabic": "آلة استرجاع زجاجات وعلب التأمين",
+              "english": "reverse vending machine, bottle return machine",
+              "example": "Am Eingang schiebt sie die leeren Pfandflaschen in den ratternden Pfandautomaten."
+            },
+            {
+              "german": "das Mindesthaltbarkeitsdatum (MHD), -daten",
+              "arabic": "تاريخ الصلاحية الأدنى الموصى به",
+              "english": "best-before date",
+              "example": "Das Mindesthaltbarkeitsdatum garantiert Qualität, bedeutet aber nicht, dass die Ware danach schlecht ist."
+            },
+            {
+              "german": "der Barcode, -s",
+              "arabic": "الرمز الشريطي والباركود",
+              "english": "barcode",
+              "example": "Der Laserscanner an der Kasse erfasst den Barcode mit einem kurzen Piepton."
+            },
+            {
+              "german": "kontaktlos bezahlen",
+              "arabic": "يدفع دون تلامس عبر البطاقة أو الهاتف",
+              "english": "to pay contactless",
+              "example": "Man kann an der Kasse bequem kontaktlos mit der Bankkarte oder der Smartwatch bezahlen."
+            }
+          ],
+          "description": "Supermarkt, Einkaufswagen, Korb, Regal, Kasse, Kassenband, Pfandflasche, Pfandautomat und MHD.",
+          "details": "Lebensmitteleinzelhandel, Discounter, Mehrwegpfand, Barcodes und Bezahlarten (A1–B2)",
+          "arabicDescription": "السوبرماركت والبقالة (Der Supermarkt): مفردات السوبرماركت (Supermarkt)، عربة التسوق (Einkaufswagen)، الرفوف (Regal)، الخزينة والمحاسب (Kasse/Kassierer)، شريط المحاسبة (Kassenband)، زجاجات التأمين المرتجعة (Pfandflasche)، آلة إرجاع القناني (Pfandautomat)، وتاريخ الصلاحية (MHD).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Der wöchentliche Lebensmitteleinkauf",
+              "intro": "Einfache Sätze über Supermarkt, Wagen, Regal und Kasse (A1).",
+              "paragraphs": [
+                [
+                  "Heute gehe ich mit meinem Vater in [der Supermarkt, -̈e|den Supermarkt].",
+                  "Draußen nehme ich einen großen [der Einkaufswagen, -|Einkaufswagen] mit einer Münze.",
+                  "Wir gehen durch die Gänge und suchen die Lebensmittel.",
+                  "Im [das Regal, -e|Regal] stehen Milch, Nudeln, Reis und Tomatensoße."
+                ],
+                [
+                  "Am Ende stellen wir uns an [die Kasse, -n|die Kasse] an.",
+                  "Ich lege alle Sachen vorsichtig auf [das Kassenband, -̈er|das Kassenband].",
+                  "[die Kassiererin, -nen|Die Kassiererin] scannt die Produkte schnell ein.",
+                  "Mein Vater wird [kontaktlos bezahlen|kontaktlos bezahlen] und wir packen die Taschen voll."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Pfandflaschen und Haltbarkeit",
+              "intro": "Pfandsystem in Deutschland, MHD und bewusster Einkauf (A2).",
+              "paragraphs": [
+                [
+                  "Bevor ich mit dem Einkaufen beginne, bringe ich leere Flaschen zurück.",
+                  "In Deutschland gibt es ein tolles System für jede [die Pfandflasche, -n|Pfandflasche].",
+                  "Ich schiebe die Flaschen einzeln in [der Pfandautomat, -en|den Pfandautomaten] und drücke auf den grünen Knopf.",
+                  "Der Automat druckt einen Zettel aus, den ich an der Kasse verrechnen lassen kann."
+                ],
+                [
+                  "Beim Kaufen von Joghurt und Käse schaue ich immer auf [das Mindesthaltbarkeitsdatum (MHD), -daten|das Mindesthaltbarkeitsdatum].",
+                  "Oft sind Lebensmittel auch nach Ablauf des Datums noch vollkommen genießbar.",
+                  "Die Kassiererin scannt jeden [der Barcode, -s|Barcode] an der Scannerkasse.",
+                  "Ein gut organisierter Supermarkt macht den Alltag einfach und praktisch."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Discounterkultur, Pfandsystem und Lebensmittelverschwendung",
+              "intro": "Die weltweite Vorreiterrolle der Discounter (Aldi/Lidl) und das Einwegpfand (B1).",
+              "paragraphs": [
+                [
+                  "Deutschland ist das Mutterland des modernen Lebensmittel-Discountprinzips, begründet durch die Brüder Albrecht mit Aldi in der Nachkriegszeit.",
+                  "Das Konzept minimaler Betriebskosten, standardisierter Sortimente und hoher Umschlaggeschwindigkeit prägte den globalen Lebensmitteleinzelhandel nachhaltig.",
+                  "Heute konkurrieren Discounter und Vollsortiment-[der Supermarkt, -̈e|Supermärkte] mit breiten Bio-Eigenmarken und regionalen Erzeugnissen um preisbewusste und qualitätsorientierte Kunden."
+                ],
+                [
+                  "Ein Meilenstein des deutschen Umweltschutzes war die Einführung des gesetzlichen Dosenpfands im Jahr 2003.",
+                  "Dank bundesweiter Rücknahmepflicht über [der Pfandautomat, -en|den Pfandautomaten] erzielt Deutschland bei Einweg-PET-Flaschen und Getränkedosen Rücklaufquoten von über 98 Prozent, was einen nahezu geschlossenen Wertstoffkreislauf sichert."
+                ],
+                [
+                  "Zugleich wächst die Sensibilisierung gegen Lebensmittelverschwendung: Verbraucherinitiativen fordern die Abschaffung starrer Fristen beim [das Mindesthaltbarkeitsdatum (MHD), -daten|Mindesthaltbarkeitsdatum], um genießbare Nahrungsmittel vor der Mülltonne zu retten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Kassenscannerrheologie, RFID/Computer-Vision und zirkuläre Kreislaufwirtschaft",
+              "intro": "Self-Checkout-Technologie, Grab-and-Go-Konzepte und logistische Warenflusssteuerung (B2).",
+              "paragraphs": [
+                [
+                  "Der Point of Sale (POS) im modernen Lebensmitteleinzelhandel durchläuft eine technologische Disruption durch fortschreitende Automatisierung.",
+                  "Traditionelle Kassen mit mechanischem [das Kassenband, -̈er|Kassenband] werden zunehmend durch Self-Checkout-Terminals (SCO) oder autonome 'Grab-and-Go'-Konzepte substituiert.",
+                  "Hierbei erfassen Deckenkameras mit Computer Vision und Gewichtssensoren im [das Regal, -e|Regal] autonom, welche Artikel der Kunde entnimmt, sodass der Bezahlvorgang vollkommen unsichtbar im Hintergrund abgewickelt wird."
+                ],
+                [
+                  "Logistisch stützt sich das Category Management auf Just-in-Time-Lieferungen via GS1-Standard und 2D-DataMatrix-Codes, die über den simplen [der Barcode, -s|Barcode] hinaus Chargennummern und dynamische Verfallsdaten kodieren."
+                ],
+                [
+                  "Im Kontext der europäischen Kreislaufwirtschaft demonstriert das deutsche Pfandsystem die Wirksamkeit ökonomischer Lenkungsinstrumente:",
+                  "Das hochgradig sortenreine Bottle-to-Bottle-Recycling eliminiert Downcycling-Verluste und fungiert als internationales Benchmark für ressourceneffizientes Plastikmanagement."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "der_kiosk",
+          "title": "Der Kiosk",
+          "words": [
+            {
+              "german": "der Kiosk, -e",
+              "arabic": "الكشك / كشك بيع الصحف والمشروبات",
+              "english": "kiosk, newsstand, corner shop",
+              "example": "An der Straßenecke versorgt der kleine Kiosk die Nachbarschaft mit Zeitungen und Kaffee."
+            },
+            {
+              "german": "die Trinkhalle, -n",
+              "arabic": "كشك المشروبات التراثي (في حوض الرور)",
+              "english": "beverage kiosk, traditional pavilion",
+              "example": "Im Ruhrgebiet gehört der Besuch an der Trinkhalle fest zur traditionellen Alltagskultur."
+            },
+            {
+              "german": "das Büdchen, -",
+              "arabic": "الكشك الشعبي الصغير (في كولونيا والراين)",
+              "english": "small corner kiosk (Rhineland)",
+              "example": "In Köln trifft man sich nach der Arbeit am Büdchen für ein kühles Kölsch."
+            },
+            {
+              "german": "die Tageszeitung, -en",
+              "arabic": "الجريدة اليومية الصباحية",
+              "english": "daily newspaper",
+              "example": "Mein Großvater kauft sich jeden Morgen seine gewohnte Tageszeitung am Kiosk."
+            },
+            {
+              "german": "die Zeitschrift, -en",
+              "arabic": "المجلة الدورية الملونة",
+              "english": "magazine, periodical",
+              "example": "Am Zeitungsständer hängt eine große Auswahl an Zeitschriften über Mode und Technik."
+            },
+            {
+              "german": "die gemischte Tüte, -n",
+              "arabic": "كيس الحلوى المشكل حسب الطلب",
+              "english": "mixed bag of sweets/candy",
+              "example": "Kinder bestellen am Fensterschalter glücklich eine gemischte Tüte für zwei Euro."
+            },
+            {
+              "german": "der Kaugummi, -s",
+              "arabic": "العلكة / اللبان",
+              "english": "chewing gum",
+              "example": "Vor dem Kiosk steht ein mechanischer Automat für bunte Kaugummis."
+            },
+            {
+              "german": "das Feierabendbier, -e",
+              "arabic": "بيرة ما بعد انتهاء الدوام والعمل",
+              "english": "after-work beer",
+              "example": "Die Bauarbeiter trinken vor dem Kiosk gemeinsam ihr wohlverdientes Feierabendbier."
+            },
+            {
+              "german": "der Treffpunkt, -e",
+              "arabic": "نقطة ومكان اللقاء في الحي",
+              "english": "meeting point, hangout",
+              "example": "Der Kiosk fungiert im Quartier als zentraler sozialer Treffpunkt für Jung und Alt."
+            },
+            {
+              "german": "das Kleingeld (Sg.)",
+              "arabic": "الفكة والنقود المعدنية الصغيرة",
+              "english": "small change, coins",
+              "example": "Haben Sie das Geld passend oder soll ich Ihnen das Kleingeld herausgeben?"
+            },
+            {
+              "german": "der Kioskbesitzer, -",
+              "arabic": "صاحب ومدير الكشك",
+              "english": "kiosk owner",
+              "example": "Der freundliche Kioskbesitzer kennt fast alle Stammkunden beim Vornamen."
+            },
+            {
+              "german": "der Kiez, -e",
+              "arabic": "الحي الشعبي التقليدي (خاصة في برلين)",
+              "english": "neighborhood, local quarter",
+              "example": "Im lebendigen Berliner Kiez hat der Spätkauf rund um die Uhr geöffnet."
+            }
+          ],
+          "description": "Kiosk, Trinkhalle, Büdchen, Zeitungen, Süßigkeiten, Feierabendbier und Veedel-Kultur.",
+          "details": "Kioskkultur im Ruhrgebiet und Rheinland, Treffpunkt, Späti in Berlin (A1–B2)",
+          "arabicDescription": "الكشك وثقافة الحي (Der Kiosk): مفردات الكشك (Kiosk/Trinkhalle/Büdchen)، الجرائد اليومية (Tageszeitung)، المجلات، كيس الحلوى المشكل (gemischte Tüte)، بيرة نهاية الدوام (Feierabendbier)، وثقافة 'الشباتي' (Späti) في برلين وكولونيا كنقطة التقاء لأهل الحي.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Am Kiosk an der Ecke",
+              "intro": "Einfache Sätze über Kiosk, Zeitungen, Süßigkeiten und Kleingeld (A1).",
+              "paragraphs": [
+                [
+                  "An der Ecke unserer Straße steht ein kleiner [der Kiosk, -e|Kiosk].",
+                  "Dort kaufe ich mir einen fruchtigen [der Kaugummi, -s|Kaugummi] und eine Flasche Wasser.",
+                  "Mein Vater kauft morgens die frische [die Tageszeitung, -en|Tageszeitung].",
+                  "Der Verkäufer nimmt mein [das Kleingeld (Sg.)|Kleingeld] und lächelt freundlich."
+                ],
+                [
+                  "Für meine kleine Schwester gibt es [die gemischte Tüte, -n|eine gemischte Tüte] mit bunten Bonbons.",
+                  "Vor dem Kiosk stehen oft Nachbarn und sprechen über das Wetter.",
+                  "Der Kiosk ist immer nah und hat fast alles, was man schnell braucht.",
+                  "Es ist schön, so einen kleinen Laden im Viertel zu haben."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Büdchen und Spätis: Das Herz der Nachbarschaft",
+              "intro": "Rheinische Büdchenkultur und Berliner Spätis nach Feierabend (A2).",
+              "paragraphs": [
+                [
+                  "In Städten wie Köln, Düsseldorf oder Dortmund hat der Kiosk eine ganz besondere Bedeutung.",
+                  "Im Rheinland nennt man den kleinen Laden liebevoll [das Büdchen, -|Büdchen], im Ruhrgebiet heißt er [die Trinkhalle, -n|Trinkhalle].",
+                  "Nach einem anstrengenden Arbeitstag trinken viele Kollegen vor dem Fenster ein kühles [das Feierabendbier, -e|Feierabendbier].",
+                  "In Berlin heißen diese Läden 'Spätis' und haben oft bis tief in die Nacht geöffnet."
+                ],
+                [
+                  "Jeder [der Kioskbesitzer, -|Kioskbesitzer] weiß genau, was in seiner Nachbarschaft passiert.",
+                  "Der kleine Kiosk ist ein unverzichtbarer [der Treffpunkt, -e|Treffpunkt] für alle Menschen im ganzen [der Kiez, -e|Kiez].",
+                  "Man holt sich noch schnell eine Illustrierte oder [die Zeitschrift, -en|Zeitschrift] für das Wochenende.",
+                  "Diese kleinen Verkaufsstellen halten das soziale Leben im Stadtteil lebendig."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Kioskkultur als immaterielles Kulturgut der Metropolregionen",
+              "intro": "Vom Trinkhallen-Ursprung im Bergbau zum Berliner Späti-Kult (B1).",
+              "paragraphs": [
+                [
+                  "Die Geschichte der deutschen Kioskkultur ist eng mit der industriellen Revolution des 19. Jahrhunderts verknüpft.",
+                  "Ursprünglich wurden Trinkhallen im Ruhrgebiet von Städten und Zechenbetreibern gefördert, um den Bergarbeitern sauberes, kohlensäurehaltiges Mineralwasser als gesunde Alternative zum billigen Branntwein anzubieten.",
+                  "Im Laufe der Jahrzehnte wandelte sich [die Trinkhalle, -n|die Trinkhalle] zum pulsierenden Mikrokosmos des Reviers, an dem Schichtarbeiter Neuigkeiten austauschten."
+                ],
+                [
+                  "In Köln wurde [das Büdchen, -|das Büdchen] zum identitätsstiftenden Element der Veedelskultur erklärt und 2020 sogar in das Landesinventar des immateriellen Kulturerbes von Nordrhein-Westfalen aufgenommen.",
+                  "In Berlin wiederum etablierte sich der 'Spätkauf' als urbane Oase für Nachtschwärmer, wo man rund um die Uhr [das Feierabendbier, -e|Feierabendbier] und Snacks erstehen kann."
+                ],
+                [
+                  "Trotz rechtlicher Auseinandersetzungen über das sonntägliche Verkaufsverbot behaupten diese Institutionen ihren Platz als unverzichtbarer sozialer [der Treffpunkt, -e|Treffpunkt]."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Urbane Soziologie des 'Dritten Ortes': Mikroökonomie des Kiosks",
+              "intro": "Soziologie nach Ray Oldenburg, Ladenöffnungsgesetze und Quartiersresilienz (B2).",
+              "paragraphs": [
+                [
+                  "In der Stadtsoziologie fungiert [der Kiosk, -e|der Kiosk] par excellence als das, was Ray Oldenburg als 'Third Place' (Dritten Ort) jenseits von privatem Wohnraum und Erwerbsarbeit definierte.",
+                  "Er zeichnet sich durch Niederschwelligkeit, soziale Nivellierung und spontane, zwanglose Kommunikation aus, die soziale Kohäsion im heterogenen [der Kiez, -e|Kiez] stiftet."
+                ],
+                [
+                  "Mikroökonomisch operiert der Betreiber in einer extrem fragilen Nische:",
+                  "Durch die Konkurrenz von Supermärkten mit ausgedehnten Öffnungszeiten basiert die Marge primär auf Convenience-Aufschlägen für Tabak, Alkoholika und Spontankäufe außerhalb regulärer Handelszeiten."
+                ],
+                [
+                  "Rechtlich kollidiert diese Praxis permanent mit den rigiden Vorgaben der Landesladenschlussgesetze und des Feiertagsrechts.",
+                  "Juristische Auseinandersetzungen um Sonntagsöffnungen illustrieren das Spannungsverhältnis zwischen historischem Arbeitnehmerschutz und den flexiblen Versorgungsbedürfnissen einer postindustriellen 24-Stunden-Metropole."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "caf_s_und_bars",
+      "title": "CAFÉS UND BARS",
+      "topics": [
+        {
+          "id": "cafes_und_bars",
+          "title": "Cafés und Bars",
+          "words": [
+            {
+              "german": "das Straßencafé, -s",
+              "arabic": "مقهى الرصيف في الهواء الطلق",
+              "english": "sidewalk cafe, pavement cafe",
+              "example": "Bei sonnigem Wetter sind alle Tische vor dem Straßencafé schnell besetzt."
+            },
+            {
+              "german": "die Kneipe, -n",
+              "arabic": "الحانة الشعبية التقليدية",
+              "english": "pub, tavern, local bar",
+              "example": "Die urige Kneipe an der Ecke hat Holzvertäfelung und serviert frisch gezapftes Bier."
+            },
+            {
+              "german": "die Bar, -s",
+              "arabic": "البار العصري للمشروبات والكوكتيلات",
+              "english": "bar, cocktail bar",
+              "example": "In der schicken Cocktail-Bar mixt der Barkeeper Drinks zu entspannter Jazzmusik."
+            },
+            {
+              "german": "die Theke, -n",
+              "arabic": "طاولة تقديم المشروبات (البار/الكونتوار)",
+              "english": "bar counter",
+              "example": "Einige Gäste trinken ihr Bier am liebsten direkt an der Theke im Stehen."
+            },
+            {
+              "german": "der Kellner, -",
+              "arabic": "النادل / الجرسون في المطعم والمقهى",
+              "english": "waiter",
+              "example": "Der aufmerksame Kellner bringt die Speisekarte und nimmt die Getränkebestellung auf."
+            },
+            {
+              "german": "der Stammgast, -̈e",
+              "arabic": "الزبون الدائم المعتاد على المكان",
+              "english": "regular customer, regular patron",
+              "example": "Der Wirt weiß genau, was sein treuer Stammgast trinken möchte, ohne zu fragen."
+            },
+            {
+              "german": "die Happy Hour, -s",
+              "arabic": "ساعة التخفيضات والعروض الخاصة",
+              "english": "happy hour",
+              "example": "Während der Happy Hour von achtzehn bis zwanzig Uhr kosten alle Cocktails die Hälfte."
+            },
+            {
+              "german": "das Trinkgeld, -er",
+              "arabic": "الإكرامية / البقشيش تقديراً للخدمة",
+              "english": "tip, gratuity",
+              "example": "In Deutschland gibt man bei gutem Service etwa fünf bis zehn Prozent Trinkgeld."
+            },
+            {
+              "german": "die Bestellung, -en",
+              "arabic": "الطلب المأخوذ من الزبون",
+              "english": "order (restaurant/bar)",
+              "example": "Die Kellnerin tippt die Bestellung zügig in ihr mobiles Kassengerät ein."
+            },
+            {
+              "german": "die Atmosphäre, -n",
+              "arabic": "الأجواء والمزاج العام للمكان",
+              "english": "atmosphere, ambiance",
+              "example": "Kerzenlicht und leise Musik schaffen eine wunderbar gemütliche Atmosphäre."
+            },
+            {
+              "german": "gesellig",
+              "arabic": "مؤنس واجتماعي وممتع",
+              "english": "sociable, convivial",
+              "example": "Wir haben einen herrlich geselligen Abend mit Freunden im Gasthaus verbracht."
+            },
+            {
+              "german": "aufrunden (rundete auf, hat aufgerundet)",
+              "arabic": "يجبر المبلغ لأقرب رقم صحيح عند دفع البقشيش",
+              "english": "to round up (the bill)",
+              "example": "Die Rechnung lautet auf 18,20 Euro und der Gast sagt: 'Machen Sie bitte zwanzig Euro!'"
+            }
+          ],
+          "description": "Straßencafé, Kneipe, Bar, Theke, Kellner, Stammgast, Happy Hour, Trinkgeld und gesellige Abende.",
+          "details": "Gastronomiekultur, Biergärten, Kneipensterben, Bartresen und Trinkgeld-Knigge (A1–B2)",
+          "arabicDescription": "المقاهي والحانات (Cafés und Bars): مفردات مقهى الرصيف (Straßencafé)، الحانة التقليدية (Kneipe)، البار (Bar)، طاولة المشروبات (Theke/Tresen)، النادل (Kellner)، الزبون الدائم (Stammgast)، الإكرامية (Trinkgeld)، وساعة العروض (Happy Hour).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Ein sonniger Tag im Café",
+              "intro": "Einfache Sätze über Café, Kellner, Kaffee trinken und Trinkgeld (A1).",
+              "paragraphs": [
+                [
+                  "Die Sonne scheint warm und ich sitze draußen vor [das Straßencafé, -s|dem Straßencafé].",
+                  "Ein freundlicher [der Kellner, -|Kellner] kommt an unseren Tisch.",
+                  "Ich bestelle einen Cappuccino und meine Freundin möchte einen Eistee.",
+                  "Er bringt die Getränke schnell und wünscht uns einen schönen Tag."
+                ],
+                [
+                  "Die Musik ist leise und [die Atmosphäre, -n|die Atmosphäre] ist sehr angenehm.",
+                  "Beim Bezahlen gebe ich dem Kellner zwei Euro [das Trinkgeld, -er|Trinkgeld].",
+                  "Wir sitzen zwei Stunden dort und unterhalten uns fröhlich.",
+                  "Ein Besuch im Café bringt Entspannung und Freude."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Treffen in der Kneipe",
+              "intro": "Traditionelle deutsche Kneipenkultur, Theke, Stammgäste und Aufrunden (A2).",
+              "paragraphs": [
+                [
+                  "Am Freitagabend verabreden wir uns gern in einer gemütlichen [die Kneipe, -n|Kneipe] in der Altstadt.",
+                  "Dort trifft man viele Nachbarn und [der Stammgast, -̈e|Stammgäste], die seit Jahrzehnten herkommen.",
+                  "Manche Leute sitzen lieber direkt an [die Theke, -n|der Theke] und unterhalten sich mit dem Wirt.",
+                  "Die Runde ist immer sehr [gesellig|gesellig] und es wird viel gelacht."
+                ],
+                [
+                  "In einer modernen [die Bar, -s|Bar] gibt es am frühen Abend oft [die Happy Hour, -s|eine Happy Hour] für günstige Drinks.",
+                  "Wenn wir die Rechnung bekommen, pflegen wir die Summe höflich mit Trinkgeld zu [aufrunden (rundete auf, hat aufgerundet)|aufrunden].",
+                  "Es gehört in Deutschland zum guten Ton, guten Service angemessen zu belohnen.",
+                  "Gemeinsame Abende in Lokalen stärken Freundschaften und bringen Menschen zusammen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Trinkgeldkultur und das Phänomen des Kneipensterbens",
+              "intro": "Der deutsche Trinkgeld-Knigge 'Stimmt so!' und der soziokulturelle Wandel der Schankwirtschaften (B1).",
+              "paragraphs": [
+                [
+                  "Die Trinkgeldpraxis im deutschsprachigen Raum folgt ungeschriebenen, aber fest etablierten gesellschaftlichen Ritualen.",
+                  "Anders als in den USA, wo Trinkgelder als 'Tip' das Haupteinkommen der Servicekräfte ausmachen, ist die Bedienung im deutschen Endpreis per Gesetz bereits inkludiert.",
+                  "Gleichwohl gilt es als unhöflich, auf das [das Trinkgeld, -er|Trinkgeld] komplett zu verzichten: Üblich sind fünf bis zehn Prozent des Rechnungsbetrages, signalisiert durch die lapidare Formulierung 'Stimmt so!' oder gezieltes [aufrunden (rundete auf, hat aufgerundet)|Aufrunden]."
+                ],
+                [
+                  "Gleichzeitig blickt die traditionelle Schankwirtschaft auf eine dramatische Krise zurück: Das sogenannte 'Kneipensterben' hat in den letzten zwei Jahrzehnten Zehntausende Betriebe ausgelöscht.",
+                  "Verändertes Freizeitverhalten jüngerer Generationen, das Nichtraucherschutzgesetz und steigende Betriebskosten führten zum Verschwinden der klassischen Eck-[die Kneipe, -n|Kneipe]."
+                ],
+                [
+                  "An ihre Stelle treten trendige Craft-Beer-Bars, Shisha-Lounges und spezialisierte Cafés, die sich an ein urbanes, lifestyle-orientiertes Publikum richten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Gastrosophie der Geselligkeit, Habitusformen und Gaststättenrecht",
+              "intro": "Soziologie nach Bourdieu, Sperrstundenregelung und die Gaststättenverordnung (B2).",
+              "paragraphs": [
+                [
+                  "Aus kultursoziologischer Perspektive nach Pierre Bourdieu spiegeln gastronomische Räume wie [die Kneipe, -n|Kneipen], [die Bar, -s|Bars] oder mondäne [das Straßencafé, -s|Straßencafés] feinste Distinktionsmechanismen sozialen und kulturellen Kapitals wider.",
+                  "Während die traditionelle Arbeiterkneipe egalitäre Solidarität und informelle Kommunikation über die [die Theke, -n|Theke] zelebrierte, dienen moderne Szene-Bars als Arenen visueller Selbstdarstellung und des geschmacklichen Habitus."
+                ],
+                [
+                  "Gewerberechtlich unterliegt der Betrieb von Schankwirtschaften strengen Vorgaben des Gaststättengesetzes (GastG) bezüglich Konzessionierung, Lärmschutz und sanitärer Infrastruktur."
+                ],
+                [
+                  "Die sukzessive Liberalisierung oder gar Abschaffung der traditionellen Sperrstunde in Großstädten ermöglichte erst die Entstehung pulsierender Nachtökonomien, löst jedoch permanente Nutzungskonflikte zwischen Gastronomen und lärmempfindlichen Anwohnern in verdichteten Wohnquartieren aus."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sehenswuerdigkeiten",
+      "title": "SEHENSWÜRDIGKEITEN",
+      "topics": [
+        {
+          "id": "sehenswuerdigkeiten",
+          "title": "Sehenswürdigkeiten",
+          "words": [
+            {
+              "german": "die Sehenswürdigkeit, -en",
+              "arabic": "المعلم السياحي الجدير بالمشاهدة",
+              "english": "sight, tourist attraction",
+              "example": "Das Brandenburger Tor in Berlin ist die berühmteste Sehenswürdigkeit ganz Deutschlands."
+            },
+            {
+              "german": "das Denkmal, -̈er",
+              "arabic": "النصب والتمثال التذكاري التاريخي",
+              "english": "monument, memorial",
+              "example": "Auf dem Marktplatz steht ein bronzenes Denkmal für Johann Wolfgang von Goethe."
+            },
+            {
+              "german": "das Schloss, -̈er",
+              "arabic": "القصر الملكي الفاخر",
+              "english": "palace, stately home",
+              "example": "Das Schloss Neuschwanstein in Bayern diente als Vorbild für das Disney-Märchenschloss."
+            },
+            {
+              "german": "die Burg, -en",
+              "arabic": "القلعة والحصن التاريخي العسكري",
+              "english": "castle, fortress",
+              "example": "Die mittelalterliche Burg thront uneinnehmbar auf dem steilen Felsen über dem Fluss."
+            },
+            {
+              "german": "der Dom, -e",
+              "arabic": "الكاتدرائية الكبرى الشاهقة",
+              "english": "cathedral",
+              "example": "Der Kölner Dom mit seinen zwei mächtigen Türmen lockt jährlich Millionen Besucher an."
+            },
+            {
+              "german": "das Rathaus, -̈er",
+              "arabic": "دار ومبنى البلدية التاريخي",
+              "english": "town hall, city hall",
+              "example": "Im historischen Rathaus tagt der Stadtrat und empfängt internationale Ehrengäste."
+            },
+            {
+              "german": "das Museum, Museen",
+              "arabic": "المتحف الفني والتاريخي",
+              "english": "museum",
+              "example": "Auf der Museumsinsel in Berlin kann man weltberühmte antike Schätze bewundern."
+            },
+            {
+              "german": "die Stadtführung, -en",
+              "arabic": "الجولة الإرشادية السياحية في المدينة",
+              "english": "guided city tour",
+              "example": "Während der Stadtführung erfahren die Touristen spannende Geschichten aus dem Mittelalter."
+            },
+            {
+              "german": "der Reiseleiter, -",
+              "arabic": "المرشد السياحي ومرافق الرحلة",
+              "english": "tour guide",
+              "example": "Der sachkundige Reiseleiter erklärt die Architektur des barocken Bauwerks ausführlich."
+            },
+            {
+              "german": "das UNESCO-Welterbe (Sg.)",
+              "arabic": "موقع التراث العالمي لمنظمة اليونسكو",
+              "english": "UNESCO World Heritage site",
+              "example": "Die historische Altstadt von Bamberg gehört seit 1993 zum anerkannten UNESCO-Welterbe."
+            },
+            {
+              "german": "besichtigen (besichtigte, hat besichtigt)",
+              "arabic": "يزور ويتفقد المعالم الأثرية",
+              "english": "to visit, tour, sightsee",
+              "example": "Morgen wollen wir die prächtigen Säle der königlichen Residenz besichtigen."
+            },
+            {
+              "german": "historisch",
+              "arabic": "تاريخي وأثري قديم",
+              "english": "historic, historical",
+              "example": "Der historische Stadtkern verzaubert mit engen Gassen und Kopfsteinpflaster."
+            }
+          ],
+          "description": "Sehenswürdigkeit, Denkmal, Schloss, Burg, Dom, Rathaus, Museum, Stadtführung und UNESCO-Welterbe.",
+          "details": "Kulturtourismus, historische Baudenkmäler, Welterbestätten und Museumspässe (A1–B2)",
+          "arabicDescription": "المعالم السياحية والتاريخية (Sehenswürdigkeiten): مفردات المعلم السياحي (Sehenswürdigkeit)، النصب التذكاري (Denkmal)، القصر والقلعة (Schloss/Burg)، الكاتدرائية (Dom)، دار البلدية التاريخي (Rathaus)، المتحف (Museum)، الجولة الإرشادية (Stadtführung)، ومواقع التراث العالمي لليونسكو (UNESCO-Welterbe).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Touristen in Berlin",
+              "intro": "Einfache Sätze über Sehenswürdigkeiten, Schloss, Dom und Museum (A1).",
+              "paragraphs": [
+                [
+                  "Ich mache Urlaub in Deutschland und besuche viele schöne Orte.",
+                  "In der Stadt gibt es fast an jeder Ecke eine tolle [die Sehenswürdigkeit, -en|Sehenswürdigkeit].",
+                  "Wir stehen vor der Kirche und bewundern den großen [der Dom, -e|Dom].",
+                  "Mitten auf dem Platz steht ein altes [das Denkmal, -̈er|Denkmal] aus Stein."
+                ],
+                [
+                  "Am Nachmittag besuchen wir ein berühmtes [das Museum, Museen|Museum] mit bunten Bildern.",
+                  "Morgen fahren wir mit dem Bus und möchten ein altes [das Schloss, -̈er|Schloss] [besichtigen (besichtigte, hat besichtigt)|besichtigen].",
+                  "Deutschland hat viele [historisch|historische] Gebäude.",
+                  "Die Reise ist sehr interessant und ich mache viele Fotos."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Eine Stadtführung durch die Altstadt",
+              "intro": "Rathaus, Stadtführer und Burgen am Flussufer erleben (A2).",
+              "paragraphs": [
+                [
+                  "Gestern haben wir an einer geführten [die Stadtführung, -en|Stadtführung] durch Heidelberg teilgenommen.",
+                  "Unser erfahrener [der Reiseleiter, -|Reiseleiter] führte uns zuerst zum gotischen [das Rathaus, -̈er|Rathaus].",
+                  "Er erzählte uns von den Bürgern, die im Mittelalter hier Handel trieben.",
+                  "Hoch über den Dächern sahen wir die berühmte alte [die Burg, -en|Burg] mit ihren dicken Mauern."
+                ],
+                [
+                  "Der Reiseleiter erklärte uns stolz, dass viele deutsche Bauwerke zum geschützten [das UNESCO-Welterbe (Sg.)|UNESCO-Welterbe] gehören.",
+                  "Wir hatten zwei Stunden Zeit, um die alte Brücke und die Universität zu besichtigen.",
+                  "Geschichte wird lebendig, wenn man vor den echten Monumenten der Vergangenheit steht.",
+                  "Es war ein lehrreicher und unvergesslicher Nachmittag."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Kulturtourismus und Erinnerungskultur in Deutschland",
+              "intro": "Vom Kölner Dom zur Straße der Romanik: Denkmalschutz und historische Verantwortung (B1).",
+              "paragraphs": [
+                [
+                  "Deutschland rangiert mit über fünfzig eingetragenen Stätten unter den Ländern mit den meisten Eintragungen auf der Liste des [das UNESCO-Welterbe (Sg.)|UNESCO-Welterbes].",
+                  "Das Spektrum reicht von monumentalen Sakralbauten wie dem Aachener oder Kölner [der Dom, -e|Dom] über die Schlösserlandschaft von Potsdam bis hin zum industriellen Erbe der Zeche Zollverein im Ruhrgebiet.",
+                  "Für den Kulturtourismus bilden diese Monumente die ökonomische Lebensader ganzer Regionen."
+                ],
+                [
+                  "Zugleich ist die Betrachtung historischer Monumente in Deutschland untrennbar mit einer tiefgreifenden Erinnerungskultur verwoben.",
+                  "Ein [das Denkmal, -̈er|Denkmal] fungiert im öffentlichen Raum selten als unkritische Heldenverehrung, sondern als Mahnmal für Frieden, Demokratie und die Aufarbeitung totalitärer Diktaturen."
+                ],
+                [
+                  "Wer ein [historisch|historisches] Ensemble besucht, erlebt daher stets die dialektische Versöhnung von architektonischer Schönheit und kritischer historischer Reflexion."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Overtourism, Heritage Management und touristische Tragfähigkeit",
+              "intro": "Belastungsgrenzen historischer Stätten, Denkmalpflege und visitor guidance (B2).",
+              "paragraphs": [
+                [
+                  "Das zeitgenössische Heritage Management historischer Zentren balanciert permanent auf dem schmalen Grat zwischen denkmalpflegerischer Konservierung und touristischer Inwertsetzung.",
+                  "Ikonische Monumente wie das [das Schloss, -̈er|Schloss] Neuschwanstein oder das historische [das Rathaus, -̈er|Rathaus] in Rothenburg ob der Tauber stoßen regelmäßig an die Grenzen ihrer physischen und ökologischen Tragfähigkeit (Carrying Capacity)."
+                ],
+                [
+                  "Das Phänomen des 'Overtourism' erfordert innovative Visitor-Guidance-Strategien: Mittels digitaler Zeitfenstertickets, dynamischer Besucherlenkung und Virtual-Reality-Inszenierungen wird der Andrang entzerrt, um irreversible Abnutzungen an historischer Bausubstanz zu unterbinden."
+                ],
+                [
+                  "Gleichzeitig stipuliert die ICOMOS-Charta die Authentizität und Integrität als fundamentale Kriterien für jedes [das UNESCO-Welterbe (Sg.)|UNESCO-Welterbe].",
+                  "Dies untersagt historisierende Rekonstruktionen ohne stichhaltige archäologische Evidenz und etabliert das professionelle [besichtigen (besichtigte, hat besichtigt)|Besichtigen] als differenzierten Bildungsakt in einer globalisierten Erlebnisgesellschaft."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "architektur",
+      "title": "DIE ARCHITEKTUR",
+      "topics": [
+        {
+          "id": "die_architektur",
+          "title": "Die Architektur",
+          "words": [
+            {
+              "german": "die Architektur, -en",
+              "arabic": "الهندسة المعمارية وفن تصميم المباني",
+              "english": "architecture",
+              "example": "Die deutsche Architektur spiegelt die Epochen vom Mittelalter bis zur Moderne wider."
+            },
+            {
+              "german": "die Fassade, -n",
+              "arabic": "الواجهة الخارجية للمبنى",
+              "english": "facade",
+              "example": "Die reich verzierte Fassade des Renaissance-Gebäudes wurde aufwendig restauriert."
+            },
+            {
+              "german": "der Wolkenkratzer, -",
+              "arabic": "ناطحة السحاب الشاهقة",
+              "english": "skyscraper",
+              "example": "In der Finanzmetropole Frankfurt ragen gläserne Wolkenkratzer in den Himmel."
+            },
+            {
+              "german": "das Fachwerkhaus, -̈er",
+              "arabic": "البيت الخشبي التراثي الألماني (فاشفيرك)",
+              "english": "half-timbered house",
+              "example": "Ein historisches Fachwerkhaus mit sichtbaren Holzbalken prägt das Bild vieler Altstädte."
+            },
+            {
+              "german": "die Gotik (Sg.)",
+              "arabic": "الطراز القوطي المعماري بأقواسه المدببة",
+              "english": "Gothic style",
+              "example": "Die Gotik zeichnet sich durch spitzbogige Fenster, hohe Gewölbe und filigrane Pfeiler aus."
+            },
+            {
+              "german": "der Barock (Sg.)",
+              "arabic": "طراز الباروك المعماري الفخم",
+              "english": "Baroque style",
+              "example": "Im Barock gestalteten Fürsten prunkvolle Schlösser mit goldenem Stuck und riesigen Gärten."
+            },
+            {
+              "german": "das Bauhaus (Sg.)",
+              "arabic": "طراز ومدرسة الباوهاوس الشهيرة",
+              "english": "Bauhaus style",
+              "example": "Das Bauhaus revolutionierte das Design durch schlichte Formen und funktionale Klarheit."
+            },
+            {
+              "german": "der Denkmalschutz (Sg.)",
+              "arabic": "قانون وهيئة حماية التراث والآثار المعمارية",
+              "english": "historic preservation, monument protection",
+              "example": "Das alte Gebäude steht unter strengem Denkmalschutz und darf nicht abgerissen werden."
+            },
+            {
+              "german": "der Grundriss, -e",
+              "arabic": "المخطط الهندسي الأفقي للمبنى",
+              "english": "floor plan, layout",
+              "example": "Der Architekt zeichnet den Grundriss der neuen Wohnung mit exakten Maßangaben."
+            },
+            {
+              "german": "die Kuppel, -n",
+              "arabic": "القبة المعمارية المستديرة",
+              "english": "dome, cupola",
+              "example": "Die gläserne Kuppel auf dem Berliner Reichstagsgebäude ist ein Meisterwerk der Statik."
+            },
+            {
+              "german": "der Torbogen, -̈",
+              "arabic": "القوس الحجري للبوابة",
+              "english": "archway, arch",
+              "example": "Durch den massiven Torbogen aus Sandstein gelangt man in den ruhigen Innenhof."
+            },
+            {
+              "german": "zeitgenössisch",
+              "arabic": "معاصر وحديث الطراز",
+              "english": "contemporary",
+              "example": "Zeitgenössische Architektur kombiniert nachhaltige Baumaterialien wie Holz mit Solartechnik."
+            }
+          ],
+          "description": "Architektur, Fassade, Wolkenkratzer, Fachwerkhaus, Gotik, Barock, Bauhaus, Kuppel und Denkmalschutz.",
+          "details": "Architekturstile, Baugeschichte, Walter Gropius, Statik und Stadtentwicklung (A1–B2)",
+          "arabicDescription": "الهندسة المعمارية وفن البناء (Die Architektur): مفردات الهندسة المعمارية (Architektur)، الواجهة (Fassade)، ناطحة السحاب (Wolkenkratzer)، البيوت الخشبية التراثية (Fachwerkhaus)، الطراز القوطي (Gotik)، الباروك (Barock)، مدرسة الباوهاوس (Bauhaus)، وحماية التراث المعماري (Denkmalschutz).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Alte und neue Häuser",
+              "intro": "Einfache Sätze über alte Holzhäuser, hohe Türme und Fenster (A1).",
+              "paragraphs": [
+                [
+                  "In der Stadt sehe ich viele verschiedene Häuser.",
+                  "In der Altstadt steht ein altes [das Fachwerkhaus, -̈er|Fachwerkhaus] aus dunklem Holz.",
+                  "Die [die Fassade, -n|Fassade] ist bunt bemalt und hat kleine Fenster.",
+                  "Daneben steht eine alte Kirche mit spitzem Dach."
+                ],
+                [
+                  "Am Hauptbahnhof sieht die Stadt ganz anders aus.",
+                  "Dort steht ein riesiger [der Wolkenkratzer, -|Wolkenkratzer] aus Glas und Stahl.",
+                  "Oben auf dem Regierungsgebäude glänzt eine runde [die Kuppel, -n|Kuppel].",
+                  "Jedes Gebäude zeigt eine andere [die Architektur, -en|Architektur]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Spaziergang durch die Baustile",
+              "intro": "Gotik, Barock und die moderne Bauhaus-Architektur in Deutschland (A2).",
+              "paragraphs": [
+                [
+                  "Wer mit offenen Augen durch deutsche Städte geht, kann eine Reise durch die Geschichte erleben.",
+                  "Die Kathedralen aus der Epoche [die Gotik (Sg.)|der Gotik] haben schmale, hohe Fenster und mächtige Türme.",
+                  "Später baute man im prachtvollen [der Barock (Sg.)|Barock] festliche Schlösser mit prunkvollen Gärten.",
+                  "Durch einen großen [der Torbogen, -̈|Torbogen] betritt man oft den herrschaftlichen Schlosshof."
+                ],
+                [
+                  "Im zwanzigsten Jahrhundert erfand Walter Gropius [das Bauhaus (Sg.)|das Bauhaus] in Weimar und Dessau.",
+                  "Dieser moderne Stil verzichtet auf allen Schnickschnack und setzt auf gerade Linien und viel Licht.",
+                  "Heute stehen viele historische Häuser unter [der Denkmalschutz (Sg.)|Denkmalschutz], damit sie für immer erhalten bleiben.",
+                  "Die Mischung aus Tradition und Moderne macht deutsche Städte so reizvoll."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Vom Fachwerk zur Bauhaus-Moderne: Deutschlands baukulturelles Erbe",
+              "intro": "Baukunst im Wandel: Regionales Fachwerk, Backsteingotik und die Dessauer Moderne (B1).",
+              "paragraphs": [
+                [
+                  "Die Baukultur in Deutschland ist geprägt durch ein faszinierendes Spannungsfeld regionaler Bautraditionen und avantgardistischer Umbrüche.",
+                  "In mitteldeutschen Kleinstädten wie Quedlinburg oder Rothenburg zeugen Tausende dicht aneinandergereihte [das Fachwerkhaus, -̈er|Fachwerkhäuser] von mittelalterlicher Zimmermannskunst, bei der tragende Holzskelette mit Lehm-Stroh-Gemischen ausgefacht wurden.",
+                  "Im Norden dominierte hingegen die monumentale Backsteingotik mit ihren roten Ziegelkirchen."
+                ],
+                [
+                  "Im Jahr 1919 leitete die Gründung der Kunstschule [das Bauhaus (Sg.)|des Bauhauses] durch Walter Gropius eine weltweite Revolution ein.",
+                  "Nach dem radikalen Leitsatz 'Form follows function' (Die Form folgt der Funktion) wurden ornamentale Fassadendekorationen verworfen zugunsten kubischer Klarheit, industrieller Vorfertigung und transparenter Glasvorhangfassaden."
+                ],
+                [
+                  "Heute stehen Architekten vor der Herausforderung, [zeitgenössisch|zeitgenössische] Neubauten harmonisch mit geschützten Bestandsbauten unter [der Denkmalschutz (Sg.)|Denkmalschutz] in Einklang zu bringen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Tektonik, Dekonstruktivismus und energetische Bestandstransformation",
+              "intro": "Tragwerkslehre, thermische Hüllenoptimierung und die Philosophie von Norman Foster (B2).",
+              "paragraphs": [
+                [
+                  "Die Tektonik zeitgenössischer Architektur vollzieht eine dialektische Synthese aus statischer Tragwerksoptimierung und skulpturaler Ästhetik.",
+                  "Ein paradigmatisches Beispiel stellt die von Sir Norman Foster entworfene begehbare gläserne [die Kuppel, -n|Kuppel] des Berliner Reichstagsgebäudes dar:",
+                  "Sie fungiert nicht bloß als semiotisches Monument demokratischer Transparenz, sondern agiert als thermodynamisches Belüftungs- und Tageslichtumlenkungssystem für das darunterliegende Plenarsaalplenum."
+                ],
+                [
+                  "Im urbanen Diskurs erfordert der Klimawandel eine radikale Abkehr vom primären Neubau hin zur zirkulären Bestandstransformation (Cradle-to-Cradle).",
+                  "Architekten optimieren die thermische Hülle denkmalgeschützter [die Fassade, -n|Fassaden] mittels diffusionsoffener Innendämmungen, um bauphysikalische Tauwasserschäden zu vermeiden."
+                ],
+                [
+                  "Gleichzeitig ersetzt computergestütztes Building Information Modeling (BIM) den zweidimensionalen [der Grundriss, -e|Grundriss] durch multidimensionale Datenmodelle, welche den gesamten Lebenszyklus und Rückbaupotenziale von Baumaterialien prädiktiv abbilden."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "park_und_spielplatz",
+      "title": "PARK UND SPIELPLATZ",
+      "topics": [
+        {
+          "id": "park_und_spielplatz",
+          "title": "Park und Spielplatz",
+          "words": [
+            {
+              "german": "der Stadtpark, -s",
+              "arabic": "حديقة المدينة العامة والمسطح الأخضر",
+              "english": "city park, public park",
+              "example": "Der weitläufige Stadtpark ist die grüne Lunge der dicht besiedelten Großstadt."
+            },
+            {
+              "german": "der Spielplatz, -̈e",
+              "arabic": "ملعب وساحة ألعاب الأطفال",
+              "english": "playground",
+              "example": "Nachmittags toben die glücklichen Kinder ausgelassen auf dem Spielplatz im Park."
+            },
+            {
+              "german": "die Parkbank, -̈e",
+              "arabic": "مقعد الحديقة الخشبي للجلوس",
+              "english": "park bench",
+              "example": "Ein älteres Ehepaar sitzt auf der sonnigen Parkbank und füttert die Vögel."
+            },
+            {
+              "german": "die Schaukel, -n",
+              "arabic": "الأرجوحة المعلقة (المرجوحة)",
+              "english": "swing",
+              "example": "Das kleine Mädchen schaukelt auf der Schaukel hoch hinauf in den blauen Himmel."
+            },
+            {
+              "german": "die Rutsche, -n",
+              "arabic": "الزحليقة / الزلاقة",
+              "english": "slide",
+              "example": "Die Kinder sausen mit großem Gelächter die geschwungene Rutsche hinab."
+            },
+            {
+              "german": "der Sandkasten, -̈",
+              "arabic": "صندوق الرمل للعب الصغار",
+              "english": "sandbox, sandpit",
+              "example": "Mit Eimerchen und Schaufel bauen die Kleinkinder riesige Sandburgen im Sandkasten."
+            },
+            {
+              "german": "die Wippe, -n",
+              "arabic": "لعبة الميزان التوازنية (السيسو)",
+              "english": "seesaw",
+              "example": "Zwei Freunde sitzen sich auf der bunten hölzernen Wippe gegenüber und wippen auf und ab."
+            },
+            {
+              "german": "die Liegewiese, -n",
+              "arabic": "مرج العشب الأخضر للاستلقاء والتشميس",
+              "english": "sunbathing lawn, open grass area",
+              "example": "Im Sommer breiten die Studenten bunte Decken auf der gepflegten Liegewiese aus."
+            },
+            {
+              "german": "der Ententeich, -e",
+              "arabic": "بركة البط المائية في الحديقة",
+              "english": "duck pond",
+              "example": "Am ruhigen Ententeich schwimmen Enten und Schwäne friedlich zwischen den Seerosen."
+            },
+            {
+              "german": "spazieren gehen (ging spazieren, ist spazieren gegangen)",
+              "arabic": "يتنزه ويمشي بهدوء للاستجمام",
+              "english": "to go for a walk, stroll",
+              "example": "Nach dem Mittagessen wollen wir eine halbe Stunde im Grünen spazieren gehen."
+            },
+            {
+              "german": "das Klettergerüst, -e",
+              "arabic": "هيكل وإطار التسلق للأطفال",
+              "english": "climbing frame, jungle gym",
+              "example": "Mutige Kinder klettern geschickt bis zur Spitze auf das hohe Klettergerüst aus Seilen."
+            },
+            {
+              "german": "die Erholung (Sg.)",
+              "arabic": "الراحة والاستجمام واستعادة الطاقة",
+              "english": "recreation, relaxation",
+              "example": "Spaziergänge in der Natur schenken Körper und Geist wohltuende Erholung."
+            }
+          ],
+          "description": "Stadtpark, Grünanlage, Spielplatz, Parkbank, Schaukel, Rutsche, Sandkasten, Wippe und Erholung.",
+          "details": "Urbane Naherholung, Spielplatzgeräte, Biodiversität und Freizeitgestaltung (A1–B2)",
+          "arabicDescription": "الحديقة وملعب الأطفال (Park und Spielplatz): مفردات حديقة المدينة (Stadtpark)، ملعب الأطفال (Spielplatz)، مقعد الحديقة (Parkbank)، الأرجوحة (Schaukel)، الزحليقة (Rutsche)، صندوق الرمل (Sandkasten)، لعبة الميزان (Wippe)، مروج التشميس (Liegewiese)، والاستجمام (Erholung).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Ein Nachmittag auf dem Spielplatz",
+              "intro": "Einfache Sätze über Park, Spielplatz, Schaukel und Sandkasten (A1).",
+              "paragraphs": [
+                [
+                  "Die Sonne scheint und wir gehen in den großen [der Stadtpark, -s|Stadtpark].",
+                  "Im Park gibt es einen tollen [der Spielplatz, -̈e|Spielplatz] für alle Kinder.",
+                  "Ich laufe schnell zu der [die Schaukel, -n|Schaukel] und schaukele ganz hoch.",
+                  "Mein kleiner Bruder sitzt im [der Sandkasten, -̈|Sandkasten] und baut eine Burg aus Sand."
+                ],
+                [
+                  "Danach klettern wir die Treppe hoch und rutschen auf der [die Rutsche, -n|Rutsche].",
+                  "Meine Großeltern sitzen auf einer bequemen [die Parkbank, -̈e|Parkbank] und schauen uns zu.",
+                  "Dort drüben schwimmen Enten auf dem kleinen [der Ententeich, -e|Ententeich].",
+                  "Der Nachmittag im Park macht der ganzen Familie viel Spaß."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Frühling im Stadtpark",
+              "intro": "Spaziergänge im Grünen, Liegewiese und Klettern auf dem Spielplatz (A2).",
+              "paragraphs": [
+                [
+                  "Wenn der Frühling beginnt, zieht es alle Menschen ins Grüne.",
+                  "Nach einem langen Tag im Büro gehe ich gern im Stadtpark [spazieren gehen (ging spazieren, ist spazieren gegangen)|spazieren].",
+                  "Auf der weiten [die Liegewiese, -n|Liegewiese] liegen Jugendliche auf Decken, lesen Bücher oder spielen Frisbee.",
+                  "Zwei Kinder lachen laut auf der [die Wippe, -n|Wippe], während andere das Seil-[das Klettergerüst, -e|Klettergerüst] erklimmen."
+                ],
+                [
+                  "Grüne Parks sind unverzichtbar für die tägliche [die Erholung (Sg.)|Erholung] in einer lauten Metropole.",
+                  "Bäume und Blumen spenden Schatten und filtern die schmutzige Luft der Straßen.",
+                  "Hier kann man tief durchatmen und neue Energie für die Woche tanken."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Volksgarten-Tradition und der Englische Garten in München",
+              "intro": "Geschichte öffentlicher Parkanlagen und TÜV-geprüfte Spielplatzsicherheit (B1).",
+              "paragraphs": [
+                [
+                  "Parkanlagen in Deutschland blicken auf eine bedeutende sozialhistorische Entwicklung zurück.",
+                  "Waren herrschaftliche Gärten im Absolutismus dem Adel vorbehalten, öffnete Kurfürst Karl Theodor 1789 den Englischen Garten in München als einen der ersten Volksparks Europas für die Allgemeinheit.",
+                  "Bis heute strömen im Sommer Hunderttausende auf die legendäre [die Liegewiese, -n|Liegewiese] oder beobachten Surfer auf der Eisbachwelle."
+                ],
+                [
+                  "In deutschen Städten gelten zudem weltweit einmalige Sicherheitsstandards für den [der Spielplatz, -̈e|Spielplatz]: Gemäß der europäischen Norm DIN EN 1176 müssen Spielgeräte wie [die Schaukel, -n|Schaukel], [die Rutsche, -n|Rutsche] und [das Klettergerüst, -e|Klettergerüst] regelmäßig durch den TÜV auf Fallhöhen, Dämpfungsböden und Fangstellen inspiziert werden."
+                ],
+                [
+                  "Als grüne Oasen garantieren Parks nicht nur Kinderspaß, sondern leisten als Kaltluftschneisen einen unverzichtbaren Beitrag zum urbanen Mikroklima."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Urbane Ökosystemdienstleistungen, Mikroklima und Biophilie-Hypothese",
+              "intro": "Kaltluftentstehung, Evapotranspiration von Grünflächen und psychoneuroimmunologische Erholung (B2).",
+              "paragraphs": [
+                [
+                  "Im Zeitalter fortschreitender Versiegelung fungiert [der Stadtpark, -s|der Stadtpark] als lebenswichtiger Erbringer urbaner Ökosystemdienstleistungen (Urban Ecosystem Services).",
+                  "Durch die Evapotranspiration von Großbäumen und Rasenflächen kühlen städtische Grünzüge die Umgebungstemperatur gegenüber aufgeheizten Asphaltflächen um bis zu fünf Grad Celsius ab und unterdrücken den 'Urban Heat Island'-Effekt."
+                ],
+                [
+                  "Psychoneuroimmunologische Studien bestätigen die von Edward O. Wilson postulierte Biophilie-Hypothese:",
+                  "Bereits ein zwanzigminütiger Aufenthalt im naturnahen Raum senkt den Speichelcortisolspiegel, normalisiert den Blutdruck und forciert zerebrale Erholungsprozesse (Attention Restoration Theory)."
+                ],
+                [
+                  "Gleichzeitig fordern moderne Freiraumplaner die Überwindung normierter Monofunktionalität zugunsten inklusiver Mehrgenerationenparks:",
+                  "Taktile Barrierefreiheit, naturnahe Matsch- und Wildniszonen im [der Sandkasten, -̈|Sandkasten] sowie Biodiversitätskorridore am [der Ententeich, -e|Ententeich] harmonisieren menschliche [die Erholung (Sg.)|Erholung] mit artenschützender Stadtökologie."
+                ]
+              ]
+            }
+          }
         }
       ]
     }

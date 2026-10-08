@@ -20,15 +20,8 @@
     "MD055": false, // Table pipe style
     "MD056": false, // Table column count
     "MD059": false, // Descriptive link text
-    "MD060": false  // Table column style
+    "MD060": false, // Table column style
   },
-  "globs": [
-    "**/*.md"
-  ],
-  "ignores": [
-    "node_modules/**",
-    ".astro/**",
-    "dist/**",
-    ".git/**"
-  ]
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**", ".astro/**", "dist/**", ".git/**"],
 }

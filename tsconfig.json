@@ -13,7 +13,8 @@
     ".agents",
     ".gemini",
     ".kiro",
-    "scratch"
+    "scratch",
+    "scripts"
   ],
 
   "compilerOptions": {

@@ -1,6 +1,6 @@
 ---
 import { getGradient } from "@/shared/lib";
-import Card from "@/shared/ui/Card.astro";
+import CardWithModal from "@/shared/ui/CardWithModal.astro";
 import { BookOpen, Clock, FileText, LayoutList, Link, MessageCircle } from "lucide-astro";
 import type { GrammarSection } from "../model/types";
 
@@ -21,7 +21,8 @@ const ICON_MAP: Record<string, LucideComponent> = {
   MessageCircle,
 };
 
-const SectionIcon = (Object.hasOwn(ICON_MAP, section.icon) ? ICON_MAP[section.icon] : undefined) ?? BookOpen;
+const SectionIcon =
+  (Object.hasOwn(ICON_MAP, section.icon) ? ICON_MAP[section.icon] : undefined) ?? BookOpen;
 ---
 
 <section
@@ -44,20 +45,29 @@ const SectionIcon = (Object.hasOwn(ICON_MAP, section.icon) ? ICON_MAP[section.ic
   </div>
 
   <ul class="m-0 grid list-none grid-cols-1 gap-6 p-0 mobile:grid-cols-2 mobile:gap-8 laptop:grid-cols-3">
-    {section.topics.map((topic, index) => (
-      <li
-        class="h-full"
-        data-animate="fade-up"
-      >
-        <Card
-          category={topic.number}
-          description={topic.description}
-          gradient={getGradient(index, section.gradients)}
-          href={`/grammatik/${section.id}/${topic.id}/`}
-          subtitle={topic.category}
-          title={topic.title}
-        />
-      </li>
-    ))}
+    {section.topics.map((topic, index) => {
+      const previewTitles =
+        topic.subtopics?.map((sub) => sub.title) ?? topic.content?.map((c) => c.title) ?? [];
+
+      return (
+        <li
+          class="h-full"
+          data-animate="fade-up"
+        >
+          <CardWithModal
+            category={topic.number}
+            description={topic.description}
+            gradient={getGradient(index, section.gradients)}
+            href={`/grammatik/${section.id}/${topic.id}/`}
+            itemType="Kapitel"
+            levelBadge={`Grammatik • ${section.title}`}
+            modalId={`grammar-modal-${section.id}-${topic.id}`}
+            previewTitles={previewTitles}
+            subtitle={topic.category}
+            title={topic.title}
+          />
+        </li>
+      );
+    })}
   </ul>
 </section>

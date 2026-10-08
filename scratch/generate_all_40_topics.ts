@@ -20,7 +20,7 @@ function createStory(
     A2: { title: string; intro: string; paragraphs: string[][] };
     B1: { title: string; intro: string; paragraphs: string[][] };
     B2: { title: string; intro: string; paragraphs: string[][] };
-  }
+  },
 ) {
   stories[topicId] = {
     A1: {
@@ -28,29 +28,29 @@ function createStory(
       badge: "A1 – Grundstufe",
       title: data.A1.title,
       intro: data.A1.intro,
-      paragraphs: data.A1.paragraphs
+      paragraphs: data.A1.paragraphs,
     },
     A2: {
       level: "A2",
       badge: "A2 – Alltag & Praxis",
       title: data.A2.title,
       intro: data.A2.intro,
-      paragraphs: data.A2.paragraphs
+      paragraphs: data.A2.paragraphs,
     },
     B1: {
       level: "B1",
       badge: "B1 – Ausführliche Erzählung",
       title: data.B1.title,
       intro: data.B1.intro,
-      paragraphs: data.B1.paragraphs
+      paragraphs: data.B1.paragraphs,
     },
     B2: {
       level: "B2",
       badge: "B2 – Differenziert & Komplex",
       title: data.B2.title,
       intro: data.B2.intro,
-      paragraphs: data.B2.paragraphs
-    }
+      paragraphs: data.B2.paragraphs,
+    },
   };
 }
 
@@ -66,9 +66,9 @@ createStory("stammbaum", {
         "Zusammen sind sie meine [die Eltern|Eltern].",
         "Ich habe einen [der Bruder|Bruder] und eine [die Schwester|Schwester].",
         "Meine [die Großmutter|Großmutter] und mein [der Großvater|Großvater] wohnen in Berlin.",
-        "Zusammen sind sie meine [die Großeltern|Großeltern]."
-      ]
-    ]
+        "Zusammen sind sie meine [die Großeltern|Großeltern].",
+      ],
+    ],
   },
   A2: {
     title: "Ein Besuch bei den Großeltern",
@@ -79,16 +79,16 @@ createStory("stammbaum", {
         "Sie sitzen zusammen und schauen sich ein altes Familienfoto an.",
         "„Das sind meine [die Großeltern|Großeltern]“, sagt Amir.",
         "Auf dem Foto sieht man auch seine [die Mutter|Mutter] und seinen [der Vater|Vater].",
-        "Zusammen sind sie Amirs [die Eltern|Eltern]."
+        "Zusammen sind sie Amirs [die Eltern|Eltern].",
       ],
       [
         "Amirs Mutter hat eine Schwester: seine [die Tante|Tante].",
         "Der Mann neben ihr ist sein [der Onkel|Onkel].",
         "Die beiden sind ein glückliches [das Ehepaar|Ehepaar].",
         "Amirs Tante ist seit vielen Jahren [verheiratet|verheiratet], aber sein Onkel war früher [geschieden|geschieden].",
-        "Auf dem Bild steht Amir als kleiner [der Sohn|Sohn] neben seinem [der Bruder|Bruder]."
-      ]
-    ]
+        "Auf dem Bild steht Amir als kleiner [der Sohn|Sohn] neben seinem [der Bruder|Bruder].",
+      ],
+    ],
   },
   B1: {
     title: "Erinnerungen und Familientraditionen",
@@ -98,14 +98,14 @@ createStory("stammbaum", {
         "Für Amir ist die Familie der wichtigste Rückhalt im Leben.",
         "Heute hat seine Schwester einen Mann geheiratet, der Amirs [der Schwager|Schwager] geworden ist.",
         "Auch sein Bruder hat geheiratet; seine Frau ist nun Amirs [die Schwägerin|Schwägerin].",
-        "Der Mann seiner Cousine ist der [der Schwiegersohn|Schwiegersohn] in der Familie, und die Frau seines Cousins ist die [die Schwiegertochter|Schwiegertochter] seiner Tante."
+        "Der Mann seiner Cousine ist der [der Schwiegersohn|Schwiegersohn] in der Familie, und die Frau seines Cousins ist die [die Schwiegertochter|Schwiegertochter] seiner Tante.",
       ],
       [
         "Inzwischen hat Amirs Schwester zwei kleine Kinder: einen [der Enkel|Enkel] und eine [die Enkelin|Enkelin] für die Großeltern.",
         "Obwohl manche Verwandte in einer anderen Stadt wohnen, treffen sich alle [der/die Verwandte|Verwandten] regelmäßig.",
-        "Alle diese Menschen sind eng miteinander [verwandt|verwandt] und helfen sich in jeder Lebenslage."
-      ]
-    ]
+        "Alle diese Menschen sind eng miteinander [verwandt|verwandt] und helfen sich in jeder Lebenslage.",
+      ],
+    ],
   },
   B2: {
     title: "Generationen im gesellschaftlichen Wandel",
@@ -114,14 +114,14 @@ createStory("stammbaum", {
       [
         "Der Begriff der Familie unterliegt im Laufe der Jahrzehnte einem stetigen soziokulturellen Wandel.",
         "Wenn wir unseren Stammbaum betrachten, erkennen wir die tiefe Verbundenheit mit unseren [der Vorfahre|Vorfahren], deren Lebensentscheidungen unsere Identität prägen.",
-        "Ob jemand [ledig|ledig], [verlobt|verlobt], glücklich [verheiratet|verheiratet] oder nach einem schweren Schicksalsschlag [verwitwet|verwitwet] ist – jede Biografie bereichert das familiäre Gefüge."
+        "Ob jemand [ledig|ledig], [verlobt|verlobt], glücklich [verheiratet|verheiratet] oder nach einem schweren Schicksalsschlag [verwitwet|verwitwet] ist – jede Biografie bereichert das familiäre Gefüge.",
       ],
       [
         "Die generationenübergreifende Weitergabe von Werten festigt das Vertrauen zwischen Großeltern, Eltern und Enkeln.",
-        "In einer dynamischen Gesellschaft bietet der bewusste Rückgriff auf die familiären Wurzeln Orientierung und emotionale Stabilität."
-      ]
-    ]
-  }
+        "In einer dynamischen Gesellschaft bietet der bewusste Rückgriff auf die familiären Wurzeln Orientierung und emotionale Stabilität.",
+      ],
+    ],
+  },
 });
 
 // 2. beziehungen
@@ -135,9 +135,9 @@ createStory("beziehungen", {
         "Ihre [die Freundschaft|Freundschaft] ist sehr eng.",
         "Sie sprechen über ihre Gefühle und [vertrauen|vertrauen] einander.",
         "Leon ist ein treuer [der Kumpel|Kumpel] und hilft Maya immer gern.",
-        "An der Universität haben sie auch viele neue [der/die Bekannte|Bekannte] kennengelernt."
-      ]
-    ]
+        "An der Universität haben sie auch viele neue [der/die Bekannte|Bekannte] kennengelernt.",
+      ],
+    ],
   },
   A2: {
     title: "Ein Abend im Freundeskreis",
@@ -147,9 +147,9 @@ createStory("beziehungen", {
         "Gestern haben sich Leon und Maya im Café getroffen.",
         "Sie führten ein langes Gespräch über die [die Beziehung|Beziehung] zwischen Menschen.",
         "Wenn es einmal zu einem kleinen [der Streit|Streit] kommt, finden sie schnell einen Kompromiss.",
-        "Sie [sich verstehen|verstehen sich] wunderbar und schätzen den gegenseitigen Austausch."
-      ]
-    ]
+        "Sie [sich verstehen|verstehen sich] wunderbar und schätzen den gegenseitigen Austausch.",
+      ],
+    ],
   },
   B1: {
     title: "Partnerschaft und Vertrauen",
@@ -159,9 +159,9 @@ createStory("beziehungen", {
         "Nachdem sich Sophie und Jonas kennenlernten, hat es nicht lange gedauert, bis sie [sich verlieben|sich ineinander verliebten].",
         "Für Jonas ist Sophie die perfekte [der Partner / die Partnerin|Partnerin], weil sie gemeinsame Werte teilen.",
         "In ihrer Beziehung spüren beide eine tiefe [die Zuneigung|Zuneigung] und gegenseitigen Respekt.",
-        "Weil alles so harmonisch verlief, haben sie beschlossen, in eine gemeinsame Wohnung [zusammenziehen|zusammenzuziehen]."
-      ]
-    ]
+        "Weil alles so harmonisch verlief, haben sie beschlossen, in eine gemeinsame Wohnung [zusammenziehen|zusammenzuziehen].",
+      ],
+    ],
   },
   B2: {
     title: "Die Psychologie zwischenmenschlicher Bindungen",
@@ -170,10 +170,10 @@ createStory("beziehungen", {
       [
         "Zwischenmenschliche Beziehungen bewegen sich im Spannungsfeld zwischen individueller Autonomie und emotionaler Nähe.",
         "Eine tragfähige [die Beziehung|Beziehung] erfordert kontinuierliche Reflexionsbereitschaft sowie eine konstruktive Bewältigung von jedem aufkeimenden [der Streit|Streit].",
-        "Wahre [die Zuneigung|Zuneigung] und tief empfundene [die Liebe|Liebe] erweisen sich vor allem in Krisenzeiten, in denen gegenseitiges Verständnis den Ausschlag gibt."
-      ]
-    ]
-  }
+        "Wahre [die Zuneigung|Zuneigung] und tief empfundene [die Liebe|Liebe] erweisen sich vor allem in Krisenzeiten, in denen gegenseitiges Verständnis den Ausschlag gibt.",
+      ],
+    ],
+  },
 });
 
 // 3. lebensphasen
@@ -187,9 +187,9 @@ createStory("lebensphasen", {
         "Zuerst ist man ein kleines [das Baby|Baby] oder ein neugeborener [der Säugling|Säugling].",
         "Danach wird man ein neugieriges [das Kind|Kind] und spielt viel.",
         "Später ist man ein [der Jugendliche / die Jugendliche|Jugendlicher] und geht zur Schule.",
-        "Als [der Erwachsene / die Erwachsene|Erwachsener] arbeitet man jeden Tag."
-      ]
-    ]
+        "Als [der Erwachsene / die Erwachsene|Erwachsener] arbeitet man jeden Tag.",
+      ],
+    ],
   },
   A2: {
     title: "Erinnerungen an das Aufwachsen",
@@ -199,9 +199,9 @@ createStory("lebensphasen", {
         "Eine glückliche [die Kindheit|Kindheit] schenkt einem viele schöne Erinnerungen.",
         "In der [die Jugend|Jugend] verändert sich der Körper und man sucht seinen eigenen Weg.",
         "Die [die Pubertät|Pubertät] ist oft eine anstrengende, aber auch spannende Zeit für die ganze Familie.",
-        "Gestern haben die Eltern Fotos von der [die Geburt|Geburt] ihres Sohnes angeschaut."
-      ]
-    ]
+        "Gestern haben die Eltern Fotos von der [die Geburt|Geburt] ihres Sohnes angeschaut.",
+      ],
+    ],
   },
   B1: {
     title: "Meilensteine und Familienplanung",
@@ -211,9 +211,9 @@ createStory("lebensphasen", {
         "Wenn ein Paar die Nachricht von einer [die Schwangerschaft|Schwangerschaft] erhält, beginnt ein völlig neues Kapitel.",
         "Die Vorbereitung auf die [die Geburt|Geburt] bringt viele Emotionen und praktische Veränderungen mit sich.",
         "Gleichzeitig blicken die Großeltern dankbar auf ihr erfülltes [das Alter|Alter] zurück.",
-        "Seit mein Großvater in [die Rente|Rente] gegangen ist, genießt er seinen Garten und verbringt viel Zeit mit den Enkeln."
-      ]
-    ]
+        "Seit mein Großvater in [die Rente|Rente] gegangen ist, genießt er seinen Garten und verbringt viel Zeit mit den Enkeln.",
+      ],
+    ],
   },
   B2: {
     title: "Demografischer Wandel und biographische Dynamik",
@@ -222,10 +222,10 @@ createStory("lebensphasen", {
       [
         "In modernen Industriegesellschaften verschieben sich die klassischen Grenzen biographischer Übergänge signifikant.",
         "Der Eintritt in die [die Rente|Rente] wird heute keineswegs mehr als Rückzug betrachtet, sondern eröffnet aktive Entfaltungsmöglichkeiten im [das Alter|Alter].",
-        "Gleichzeitig erfordert die Begleitung junger Menschen durch die [die Pubertät|Pubertät] fundierte pädagogische Sensibilität seitens der [der Erwachsene / die Erwachsene|Erwachsenen]."
-      ]
-    ]
-  }
+        "Gleichzeitig erfordert die Begleitung junger Menschen durch die [die Pubertät|Pubertät] fundierte pädagogische Sensibilität seitens der [der Erwachsene / die Erwachsene|Erwachsenen].",
+      ],
+    ],
+  },
 });
 
 // 4. begruessen
@@ -238,9 +238,9 @@ createStory("begruessen", {
         "Am Morgen sagt man freundlich [Guten Morgen!|„Guten Morgen!“].",
         "Tagsüber begrüßen wir Freunde mit [Hallo!|„Hallo!“] oder Kollegen mit [Guten Tag!|„Guten Tag!“].",
         "Am Abend wünschen wir allen einen [Guten Abend!|„Guten Abend!“].",
-        "Wenn wir gehen, sagen wir [Tschüss!|„Tschüss!“] oder formell [Auf Wiedersehen!|„Auf Wiedersehen!“]."
-      ]
-    ]
+        "Wenn wir gehen, sagen wir [Tschüss!|„Tschüss!“] oder formell [Auf Wiedersehen!|„Auf Wiedersehen!“].",
+      ],
+    ],
   },
   A2: {
     title: "Höflichkeit im Gespräch",
@@ -250,9 +250,9 @@ createStory("begruessen", {
         "Wenn man eine bekannte Person trifft, fragt man: [Wie geht's?|„Wie geht's?“].",
         "Im Büro fragt man höflich: [Wie geht es Ihnen?|„Wie geht es Ihnen?“].",
         "Vor dem Schlafengehen wünscht man der Familie eine [Gute Nacht!|„Gute Nacht!“].",
-        "Beim Abschied freut man sich auf das nächste Treffen und sagt [Bis bald!|„Bis bald!“]."
-      ]
-    ]
+        "Beim Abschied freut man sich auf das nächste Treffen und sagt [Bis bald!|„Bis bald!“].",
+      ],
+    ],
   },
   B1: {
     title: "Begegnungen und regionale Besonderheiten",
@@ -262,9 +262,9 @@ createStory("begruessen", {
         "Beim ersten Kennenlernen sagt man höflich [Freut mich!|„Freut mich sehr, Sie kennenzulernen“].",
         "In Süddeutschland und Österreich hört man oft das traditionelle [Grüß Gott!|„Grüß Gott!“].",
         "Eine freundliche Begrüßung öffnet Türen und schafft sofort eine angenehme Atmosphäre zwischen Gesprächspartnern.",
-        "Wer die richtigen Höflichkeitsregeln beherrscht, fühlt sich in jedem deutschsprachigen Umfeld sicher."
-      ]
-    ]
+        "Wer die richtigen Höflichkeitsregeln beherrscht, fühlt sich in jedem deutschsprachigen Umfeld sicher.",
+      ],
+    ],
   },
   B2: {
     title: "Soziolinguistische Höflichkeitskonventionen",
@@ -273,10 +273,10 @@ createStory("begruessen", {
       [
         "Die Wahl der adäquaten Grußformel signalisiert sozialen Respekt und situatives Fingerspitzengefühl.",
         "Während im beruflichen Kontext die formelle Distanz mit [Wie geht es Ihnen?|„Wie geht es Ihnen?“] gewahrt wird, dominiert privat oft ein herzliches [Hallo!|„Hallo!“].",
-        "Regionale Idiome wie [Grüß Gott!|„Grüß Gott!“] spiegeln zudem die lebendige kulturelle Vielfalt des deutschen Sprachraums wider."
-      ]
-    ]
-  }
+        "Regionale Idiome wie [Grüß Gott!|„Grüß Gott!“] spiegeln zudem die lebendige kulturelle Vielfalt des deutschen Sprachraums wider.",
+      ],
+    ],
+  },
 });
 
 // 5. feste
@@ -289,9 +289,9 @@ createStory("feste", {
         "Im Dezember feiern viele Menschen [Weihnachten|Weihnachten] mit der Familie.",
         "Im Frühling freuen sich die Kinder auf [Ostern|Ostern] und bunte Eier.",
         "Am 31. Dezember begrüßen wir das neue Jahr an [Silvester|Silvester].",
-        "Zu jedem Geburtstag rufen wir fröhlich: [Herzlichen Glückwunsch!|„Herzlichen Glückwunsch!“]."
-      ]
-    ]
+        "Zu jedem Geburtstag rufen wir fröhlich: [Herzlichen Glückwunsch!|„Herzlichen Glückwunsch!“].",
+      ],
+    ],
   },
   A2: {
     title: "Eine fröhliche Feier",
@@ -301,9 +301,9 @@ createStory("feste", {
         "Gestern haben wir eine wunderschöne [die Feier|Feier] für Marias [der Geburtstag|Geburtstag] organisiert.",
         "Im Winter wünschen sich alle Menschen [Frohe Weihnachten!|„Frohe Weihnachten!“] und ein gesundes neues Jahr.",
         "Jeder offizielle [der Feiertag|Feiertag] gibt uns Zeit, uns mit Freunden zu erholen.",
-        "Eine romantische [die Hochzeit|Hochzeit] bringt zwei Familien festlich zusammen."
-      ]
-    ]
+        "Eine romantische [die Hochzeit|Hochzeit] bringt zwei Familien festlich zusammen.",
+      ],
+    ],
   },
   B1: {
     title: "Brauchtum und Traditionen erleben",
@@ -312,9 +312,9 @@ createStory("feste", {
       [
         "Im Februar verkleiden sich viele Menschen für [der Karneval / der Fasching|den Karneval], um ausgelassen auf den Straßen zu tanzen.",
         "In München zieht [das Oktoberfest|das berühmte Oktoberfest] jedes Jahr Millionen begeisterte Gäste aus aller Welt an.",
-        "Jedes Fest bewahrt eine jahrhundertealte [die Tradition|Tradition], die von Generation zu Generation weitergegeben wird."
-      ]
-    ]
+        "Jedes Fest bewahrt eine jahrhundertealte [die Tradition|Tradition], die von Generation zu Generation weitergegeben wird.",
+      ],
+    ],
   },
   B2: {
     title: "Kulturelles Brauchtum und kollektive Identität",
@@ -323,10 +323,10 @@ createStory("feste", {
       [
         "Traditionelle Feste fungieren als essenzielle Ankerpunkte kollektiver Identitätsstiftung im Jahreskreis.",
         "Ob sakrale Festtage wie [Weihnachten|Weihnachten] oder säkulare Großereignisse wie [das Oktoberfest|das Oktoberfest] – sie strukturieren das gesellschaftliche Zeitbewusstsein.",
-        "Die ritualisierte [die Tradition|Tradition] bietet im Zeitalter der Globalisierung emotionale Verortung und generationsübergreifende Kontinuität."
-      ]
-    ]
-  }
+        "Die ritualisierte [die Tradition|Tradition] bietet im Zeitalter der Globalisierung emotionale Verortung und generationsübergreifende Kontinuität.",
+      ],
+    ],
+  },
 });
 
 // 6. wendepunkte
@@ -339,9 +339,9 @@ createStory("wendepunkte", {
         "Die [die Geburt|Geburt] eines Kindes bringt großes Glück in die Familie.",
         "Nach der Schule feiert man den erfolgreichen [der Schulabschluss|Schulabschluss].",
         "Danach beginnt eine spannende [die Ausbildung|Ausbildung] oder ein Studium.",
-        "Der [der Berufseinstieg|Berufseinstieg] ist der erste Schritt in die Arbeitswelt."
-      ]
-    ]
+        "Der [der Berufseinstieg|Berufseinstieg] ist der erste Schritt in die Arbeitswelt.",
+      ],
+    ],
   },
   A2: {
     title: "Veränderungen im Lebenslauf",
@@ -351,9 +351,9 @@ createStory("wendepunkte", {
         "Ein [der Umzug|Umzug] in eine neue Stadt bringt viele frische Eindrücke.",
         "Eine glückliche [die Heirat|Heirat] verbindet zwei Menschen für die Zukunft.",
         "Wenn eine Ehe scheitert, kann eine [die Scheidung|Scheidung] jedoch sehr schmerzhaft sein.",
-        "Jeder neue Lebensabschnitt erfordert Mut und Anpassungsbereitschaft."
-      ]
-    ]
+        "Jeder neue Lebensabschnitt erfordert Mut und Anpassungsbereitschaft.",
+      ],
+    ],
   },
   B1: {
     title: "Neuanfänge und Abschiede",
@@ -363,9 +363,9 @@ createStory("wendepunkte", {
         "Nach einer schwierigen Phase wagen viele Menschen einen mutigen [der Neuanfang|Neuanfang].",
         "Selbst wenn eine unerwartete [die Krise|Krise] das Leben erschüttert, wächst man an den Herausforderungen.",
         "Wenn ein geliebter Mensch stirbt, begleitet [die Beerdigung|die Beerdigung] den Abschied und ehrt das Andenken.",
-        "Schließlich freuen sich ältere Arbeitnehmer auf einen ruhigen [der Ruhestand|Ruhestand] voller persönlicher Freiheit."
-      ]
-    ]
+        "Schließlich freuen sich ältere Arbeitnehmer auf einen ruhigen [der Ruhestand|Ruhestand] voller persönlicher Freiheit.",
+      ],
+    ],
   },
   B2: {
     title: "Biographische Zäsuren und Resilienz",
@@ -374,10 +374,10 @@ createStory("wendepunkte", {
       [
         "Existenzielle Wendepunkte wie [der Tod|der Tod] eines Angehörigen oder eine schmerzhafte [die Scheidung|Scheidung] erschüttern gewohnte Lebensentwürfe.",
         "Gleichwohl eröffnet die konstruktive Bewältigung einer tiefen [die Krise|Krise] oft das Potenzial für einen zukunftsweisenden [der Neuanfang|Neuanfang].",
-        "Im wohlverdienten [der Ruhestand|Ruhestand] reflektieren viele Persönlichkeiten über den ganzheitlichen Bogen ihrer biographischen Meilensteine."
-      ]
-    ]
-  }
+        "Im wohlverdienten [der Ruhestand|Ruhestand] reflektieren viele Persönlichkeiten über den ganzheitlichen Bogen ihrer biographischen Meilensteine.",
+      ],
+    ],
+  },
 });
 
 // 7. gesicht
@@ -390,9 +390,9 @@ createStory("gesicht", {
         "Ich sehe mit meinen [das Auge, -n|Augen] und rieche mit meiner [die Nase, -n|Nase].",
         "Mit dem [der Mund, -̈er|Mund] kann ich sprechen und lächeln.",
         "Ich höre Musik mit meinen [das Ohr, -en|Ohren].",
-        "Mein Gesicht hat eine hohe [die Stirn|Stirn] und ein markantes [das Kinn|Kinn]."
-      ]
-    ]
+        "Mein Gesicht hat eine hohe [die Stirn|Stirn] und ein markantes [das Kinn|Kinn].",
+      ],
+    ],
   },
   A2: {
     title: "Besondere Merkmale",
@@ -402,9 +402,9 @@ createStory("gesicht", {
         "Wenn sie sich freut, werden ihre [die Wange, -n|Wangen] ganz rot.",
         "Sie trägt roten Lippenstift auf den [die Lippe, -n|Lippen].",
         "Mein Vater trägt einen gepflegten [der Bart, -̈e|Bart].",
-        "Über ihren freundlichen Augen sieht man dunkle [die Augenbraue, -n|Augenbrauen]."
-      ]
-    ]
+        "Über ihren freundlichen Augen sieht man dunkle [die Augenbraue, -n|Augenbrauen].",
+      ],
+    ],
   },
   B1: {
     title: "Ausstrahlung und Mimik",
@@ -414,9 +414,9 @@ createStory("gesicht", {
         "Im Sommer bekommt Lisa viele goldene [die Sommersprossen (Pl.)|Sommersprossen] auf der Nase.",
         "Im Gesicht meiner Großmutter erzählt jede kleine [die Falte, -n|Falte] eine spannende Lebensgeschichte.",
         "Die menschliche Mimik drückt Emotionen oft schneller aus, als Worte es jemals könnten.",
-        "Ein ehrlicher Blick aus wachen [das Auge, -n|Augen] weckt sofort Sympathie."
-      ]
-    ]
+        "Ein ehrlicher Blick aus wachen [das Auge, -n|Augen] weckt sofort Sympathie.",
+      ],
+    ],
   },
   B2: {
     title: "Physiognomie und nonverbale Kommunikation",
@@ -425,10 +425,10 @@ createStory("gesicht", {
       [
         "Die menschliche Physiognomie spiegelt den Charakter und emotionale Regungen auf faszinierende Weise wider.",
         "Feine [die Falte, -n|Falten] um die [die Lippe, -n|Lippen] und [das Auge, -n|Augen] zeugen von gelebter Heiterkeit und Lebenserfahrung.",
-        "Charakteristische Merkmale wie ein dichter [der Bart, -̈e|Bart] oder zarte [die Sommersprossen (Pl.)|Sommersprossen] verleihen dem Antlitz unverwechselbare Individualität."
-      ]
-    ]
-  }
+        "Charakteristische Merkmale wie ein dichter [der Bart, -̈e|Bart] oder zarte [die Sommersprossen (Pl.)|Sommersprossen] verleihen dem Antlitz unverwechselbare Individualität.",
+      ],
+    ],
+  },
 });
 
 // 8. haar
@@ -441,9 +441,9 @@ createStory("haar", {
         "Anna hat schönes, langes Haar.",
         "Ihre Haare sind [blond|blond] und glänzen in der Sonne.",
         "Paul hat [kurz|kurze], [schwarz|schwarze] Haare.",
-        "Manche Menschen haben [braun|braune] oder leuchtend [rot|rote] Haare."
-      ]
-    ]
+        "Manche Menschen haben [braun|braune] oder leuchtend [rot|rote] Haare.",
+      ],
+    ],
   },
   A2: {
     title: "Beim Friseur",
@@ -453,9 +453,9 @@ createStory("haar", {
         "Gestern war David beim Friseur, um eine moderne [die Frisur, -en|Frisur] schneiden zu lassen.",
         "Marias Haare sind von Natur aus [wellig|wellig] und [lockig|lockig].",
         "Ihre Schwester bevorzugt dagegen ganz [glatt|glattes], [lang|langes] Haar.",
-        "Mein Großvater trägt stolz sein volles, [grau|graues] Haar."
-      ]
-    ]
+        "Mein Großvater trägt stolz sein volles, [grau|graues] Haar.",
+      ],
+    ],
   },
   B1: {
     title: "Frisuren und persönlicher Stil",
@@ -464,9 +464,9 @@ createStory("haar", {
       [
         "Die Wahl der passenden [die Frisur, -en|Frisur] unterstreicht die eigene Persönlichkeit maßgeblich.",
         "Nachdem er gemerkt hatte, dass sein Haar lichter wurde, entschied sich Thomas selbstbewusst für eine [die Glatze|Glatze].",
-        "Egal ob die Haare [glatt|glatt], [lockig|lockig] oder [kurz|kurz] geschnitten sind: Gepflegtes Haar hinterlässt stets einen positiven Eindruck."
-      ]
-    ]
+        "Egal ob die Haare [glatt|glatt], [lockig|lockig] oder [kurz|kurz] geschnitten sind: Gepflegtes Haar hinterlässt stets einen positiven Eindruck.",
+      ],
+    ],
   },
   B2: {
     title: "Haartracht als kultureller Identitätsmarker",
@@ -475,10 +475,10 @@ createStory("haar", {
       [
         "Historisch wie gegenwärtig dient das Haar als markanter Spiegel ästhetischer und soziokultureller Strömungen.",
         "Vom eleganten [glatt|glatten] Look bis zur markanten [die Glatze|Glatze] artikulieren Individuen ihr Selbstverständnis über ihre Haartracht.",
-        "Das würdevolle Tragen von [grau|grauem] Haar symbolisiert in vielen Kulturen Reife und Autorität."
-      ]
-    ]
-  }
+        "Das würdevolle Tragen von [grau|grauem] Haar symbolisiert in vielen Kulturen Reife und Autorität.",
+      ],
+    ],
+  },
 });
 
 // 9. aeusseres
@@ -491,9 +491,9 @@ createStory("aeusseres", {
         "Mein Bruder ist sehr [groß|groß], aber meine Schwester ist eher [klein|klein].",
         "Er ist noch [jung|jung] und geht zur Schule.",
         "Mein Großvater ist schon [alt|alt], aber sehr fit.",
-        "Meine Freundin ist sehr [hübsch|hübsch] und lächelt gern."
-      ]
-    ]
+        "Meine Freundin ist sehr [hübsch|hübsch] und lächelt gern.",
+      ],
+    ],
   },
   A2: {
     title: "Personen beschreiben",
@@ -503,9 +503,9 @@ createStory("aeusseres", {
         "Marco ist ein sehr [gutaussehend|gutaussehender] Mann [mittleren Alters|mittleren Alters].",
         "Er ist [schlank|schlank] und achtet auf gesunde Ernährung.",
         "Weil er viel Sport treibt, wirkt sein Körper ausgesprochen [athletisch|athletisch] und [kräftig|kräftig].",
-        "Beim Lesen muss er immer [eine Brille tragen|eine Brille tragen]."
-      ]
-    ]
+        "Beim Lesen muss er immer [eine Brille tragen|eine Brille tragen].",
+      ],
+    ],
   },
   B1: {
     title: "Ausstrahlung und Selbstwahrnehmung",
@@ -515,9 +515,9 @@ createStory("aeusseres", {
         "Ein sympathisches Auftreten hängt nicht nur davon ab, ob jemand [schlank|schlank] oder etwas [dick|dick] gebaut ist.",
         "Viel wichtiger ist eine aufrechte Haltung und die positive Ausstrahlung, die ein Mensch ausstrahlt.",
         "Selbst wenn jemand [eine Brille tragen|eine Brille tragen] muss, kann diese das Gesicht stilvoll akzentuieren.",
-        "Wer mit sich selbst im Reinen ist, wirkt automatisch [gutaussehend|gutaussehend] und anziehend."
-      ]
-    ]
+        "Wer mit sich selbst im Reinen ist, wirkt automatisch [gutaussehend|gutaussehend] und anziehend.",
+      ],
+    ],
   },
   B2: {
     title: "Wahrnehmungspsychologie und Körperideale",
@@ -526,10 +526,10 @@ createStory("aeusseres", {
       [
         "Die gesellschaftliche Rezeption des Phänotyps changiert zwischen normierten Schönheitsidealen und authentischer Individualität.",
         "Eine [athletisch|athletische], [kräftig|kräftige] Statur wird medial oft favorisiert, doch wahre Eleganz erwächst aus innerer Souveränität.",
-        "Unabhängig davon, ob jemand [jung|jung] oder [mittleren Alters|mittleren Alters] ist: Charakterliche Tiefe überstrahlt jede rein oberflächliche Ästhetik."
-      ]
-    ]
-  }
+        "Unabhängig davon, ob jemand [jung|jung] oder [mittleren Alters|mittleren Alters] ist: Charakterliche Tiefe überstrahlt jede rein oberflächliche Ästhetik.",
+      ],
+    ],
+  },
 });
 
 // 10. gefuehle
@@ -542,9 +542,9 @@ createStory("gefuehle", {
         "Heute bin ich sehr [glücklich|glücklich], denn die Sonne scheint.",
         "Gestern war mein Freund [traurig|traurig], aber heute geht es ihm besser.",
         "Wenn etwas nicht klappt, wird er manchmal [wütend|wütend].",
-        "Vor einer großen Prüfung bin ich oft ein bisschen [nervös|nervös] oder [ängstlich|ängstlich]."
-      ]
-    ]
+        "Vor einer großen Prüfung bin ich oft ein bisschen [nervös|nervös] oder [ängstlich|ängstlich].",
+      ],
+    ],
   },
   A2: {
     title: "Gefühle und Charakter",
@@ -554,9 +554,9 @@ createStory("gefuehle", {
         "Die Lehrerin ist immer [freundlich|freundlich] und sehr [geduldig|geduldig] mit den Kindern.",
         "Man sollte stets [ehrlich|ehrlich] sein, um das Vertrauen anderer nicht zu verlieren.",
         "Er ist nicht [faul|faul], sondern lernt jeden Tag sehr [fleißig|fleißig] Deutsch.",
-        "Nach der bestandenen Prüfung war seine ganze Familie unheimlich [stolz|stolz] auf ihn."
-      ]
-    ]
+        "Nach der bestandenen Prüfung war seine ganze Familie unheimlich [stolz|stolz] auf ihn.",
+      ],
+    ],
   },
   B1: {
     title: "Charakterstärken und Selbstvertrauen",
@@ -566,9 +566,9 @@ createStory("gefuehle", {
         "Als Kind war Jonas extrem [schüchtern|schüchtern], doch im Laufe der Jahre wurde er immer [selbstbewusst|selbstbewusster].",
         "Wer seinen Mitmenschen [großzügig|großzügig] hilft, erfährt oft tief empfundene Dankbarkeit zurück.",
         "Es erfordert Geduld und Selbstdisziplin, in stressigen Situationen ruhig und [freundlich|freundlich] zu bleiben.",
-        "Eine harmonische Persönlichkeit zeichnet sich durch [ehrlich|ehrliche] Kommunikation und Empathie aus."
-      ]
-    ]
+        "Eine harmonische Persönlichkeit zeichnet sich durch [ehrlich|ehrliche] Kommunikation und Empathie aus.",
+      ],
+    ],
   },
   B2: {
     title: "Emotionale Intelligenz und Charakterdynamik",
@@ -577,10 +577,10 @@ createStory("gefuehle", {
       [
         "Emotionale Reife manifestiert sich in der Fähigkeit, auch unter extremem Druck besonnen und [geduldig|geduldig] zu agieren.",
         "Ein [selbstbewusst|selbstbewusstes] Auftreten darf nicht mit Arroganz verwechselt werden; vielmehr speist es sich aus [ehrlich|ehrlicher] Selbsterkenntnis.",
-        "Indem man [großzügig|großzügig] gegenüber den Schwächen anderer bleibt, schafft man ein von gegenseitigem Respekt geprägtes Arbeitsklima."
-      ]
-    ]
-  }
+        "Indem man [großzügig|großzügig] gegenüber den Schwächen anderer bleibt, schafft man ein von gegenseitigem Respekt geprägtes Arbeitsklima.",
+      ],
+    ],
+  },
 });
 
 // 11. babysachen
@@ -593,9 +593,9 @@ createStory("babysachen", {
         "Das Baby trägt einen weichen [der Strampler|Strampler].",
         "Beim Essen braucht es ein sauberes [das Lätzchen|Lätzchen].",
         "Die Mutter wechselt die frische [die Windel, -n|Windel].",
-        "Draußen setzt sie dem Baby ein warmes [das Mützchen|Mützchen] auf."
-      ]
-    ]
+        "Draußen setzt sie dem Baby ein warmes [das Mützchen|Mützchen] auf.",
+      ],
+    ],
   },
   A2: {
     title: "Babyausstattung für jeden Tag",
@@ -605,9 +605,9 @@ createStory("babysachen", {
         "Für die kalten Tage zieht der Vater dem Kind kleine [die Söckchen (Pl.)|Söckchen] an.",
         "In der Nacht schläft das Baby sicher in einem kuscheligen [der Schlafsack|Schlafsack].",
         "Unter dem Strampler trägt es immer einen bequemen [der Body|Body] aus Baumwolle.",
-        "Für den Spaziergang im Kinderwagen gibt es süße kleine [die Babyschuhe (Pl.)|Babyschuhe]."
-      ]
-    ]
+        "Für den Spaziergang im Kinderwagen gibt es süße kleine [die Babyschuhe (Pl.)|Babyschuhe].",
+      ],
+    ],
   },
   B1: {
     title: "Die Erstausstattung vorbereiten",
@@ -617,9 +617,9 @@ createStory("babysachen", {
         "Bevor das Kind auf die Welt kommt, kaufen werdende Eltern praktische [die Windel, -n|Windeln] und mehrere [der Strampler|Strampler].",
         "Ein hochwertiger [der Schlafsack|Schlafsack] sorgt dafür, dass das Baby nachts ruhig schlafen kann, ohne zu frieren.",
         "Wenn man das Baby füttert, verhindert ein saugfähiges [das Lätzchen|Lätzchen], dass die Kleidung schmutzig wird.",
-        "Weiche [die Babyschuhe (Pl.)|Babyschuhe] und warme [die Söckchen (Pl.)|Söckchen] schützen die empfindlichen Füße."
-      ]
-    ]
+        "Weiche [die Babyschuhe (Pl.)|Babyschuhe] und warme [die Söckchen (Pl.)|Söckchen] schützen die empfindlichen Füße.",
+      ],
+    ],
   },
   B2: {
     title: "Sicherheits- und Qualitätsstandards in der Säuglingspflege",
@@ -628,10 +628,10 @@ createStory("babysachen", {
       [
         "Bei der Auswahl der Erstausstattung für Säuglinge stehen Schadstofffreiheit und funktionale Ergonomie an erster Stelle.",
         "Ein atmungsaktiver [der Body|Body] in Kombination mit einem temperaturausgleichenden [der Schlafsack|Schlafsack] minimiert das Risiko von Überhitzung im Säuglingsbett.",
-        "Ökologisch zertifizierte Materialien für [die Windel, -n|Windeln] und [der Strampler|Strampler] gewährleisten den optimalen Schutz der hochsensiblen Hautbarriere."
-      ]
-    ]
-  }
+        "Ökologisch zertifizierte Materialien für [die Windel, -n|Windeln] und [der Strampler|Strampler] gewährleisten den optimalen Schutz der hochsensiblen Hautbarriere.",
+      ],
+    ],
+  },
 });
 
 // 12. unisex
@@ -644,9 +644,9 @@ createStory("unisex", {
         "Im Sommer trage ich gern ein weißes [das T-Shirt, -s|T-Shirt].",
         "Meine blaue [die Jeans|Jeans] und die bequeme [die Hose, -n|Hose] passen zu allem.",
         "Wenn es kühl wird, ziehe ich einen warmen [der Pullover, -|Pullover] oder eine [die Jacke, -n|Jacke] an.",
-        "Jeden Morgen wasche ich frische [die Socken (Pl.)|Socken] und saubere [die Unterwäsche|Unterwäsche]."
-      ]
-    ]
+        "Jeden Morgen wasche ich frische [die Socken (Pl.)|Socken] und saubere [die Unterwäsche|Unterwäsche].",
+      ],
+    ],
   },
   A2: {
     title: "Mein Alltagsoutfit",
@@ -656,9 +656,9 @@ createStory("unisex", {
         "Im Winter hält mich ein dicker [der Mantel, -̈|Mantel] warm.",
         "Zu Hause trage ich am liebsten einen gemütlichen [der Hoodie, -s|Hoodie].",
         "An heißen Sommertagen ziehe ich eine luftige [die kurze Hose|kurze Hose] an.",
-        "Zum Sport gehe ich im bequemen [der Trainingsanzug|Trainingsanzug] und schlafe nachts in einem weichen [der Schlafanzug|Schlafanzug]."
-      ]
-    ]
+        "Zum Sport gehe ich im bequemen [der Trainingsanzug|Trainingsanzug] und schlafe nachts in einem weichen [der Schlafanzug|Schlafanzug].",
+      ],
+    ],
   },
   B1: {
     title: "Funktionalität und Tragekomfort",
@@ -668,9 +668,9 @@ createStory("unisex", {
         "Moderne Unisex-Kleidung kombiniert zeitlosen Stil mit maximalem Tragekomfort.",
         "Eine gut sitzende [die Jeans|Jeans] und ein schlichter [der Pullover, -|Pullover] eignen sich sowohl für die Uni als auch für die Freizeit.",
         "Wer regelmäßig trainiert, schätzt einen atmungsaktiven [der Trainingsanzug|Trainingsanzug], der bei kühlem Wetter durch eine funktionale [die Jacke, -n|Jacke] ergänzt wird.",
-        "Für erholsamen Schlaf sorgt ein temperaturausgleichender [der Schlafanzug|Schlafanzug] aus Naturfasern."
-      ]
-    ]
+        "Für erholsamen Schlaf sorgt ein temperaturausgleichender [der Schlafanzug|Schlafanzug] aus Naturfasern.",
+      ],
+    ],
   },
   B2: {
     title: "Nachhaltigkeit und genderneutrale Modeströmungen",
@@ -679,10 +679,10 @@ createStory("unisex", {
       [
         "Die Etablierung genderneutraler Kollektionen spiegelt den gesellschaftlichen Wunsch nach zeitloser Funktionalität und Langlebigkeit wider.",
         "Ob ein klassischer Woll-[der Mantel, -̈|Mantel] oder ein reduzierter [der Hoodie, -s|Hoodie] – minimalistische Schnitte dominieren urbane Garderoben.",
-        "Der Verzicht auf schnelllebige Trends zugunsten hochwertiger Basics wie [die Jeans|Jeans] und [das T-Shirt, -s|T-Shirts] leistet einen substanziellen Beitrag zur nachhaltigen Textilwirtschaft."
-      ]
-    ]
-  }
+        "Der Verzicht auf schnelllebige Trends zugunsten hochwertiger Basics wie [die Jeans|Jeans] und [das T-Shirt, -s|T-Shirts] leistet einen substanziellen Beitrag zur nachhaltigen Textilwirtschaft.",
+      ],
+    ],
+  },
 });
 
 // 13. herren
@@ -695,9 +695,9 @@ createStory("herren", {
         "Mein Vater trägt bei der Arbeit einen eleganten [der Anzug, -̈e|Anzug].",
         "Dazu zieht er ein weißes [das Hemd, -en|Hemd] und eine passende [die Krawatte, -n|Krawatte] an.",
         "Zu festlichen Anlässen wählt er manchmal auch eine feine [die Fliege, -n|Fliege].",
-        "Unter dem Hemd trägt er ein leichtes [das Unterhemd, -en|Unterhemd]."
-      ]
-    ]
+        "Unter dem Hemd trägt er ein leichtes [das Unterhemd, -en|Unterhemd].",
+      ],
+    ],
   },
   A2: {
     title: "Schick und entspannt",
@@ -707,9 +707,9 @@ createStory("herren", {
         "Über dem Hemd trägt David gern eine elegante [die Weste, -n|Weste] oder einen sportlichen [der Blazer, -|Blazer].",
         "Am Morgen zieht er nach dem Aufstehen einen gemütlichen [der Bademantel, -̈|Bademantel] über.",
         "Im Sommerurlaub am Strand packt er seine bunte [die Badehose, -n|Badehose] ein.",
-        "Für jeden Tag wählt er bequeme [die Boxershorts (Pl.)|Boxershorts] aus Baumwolle."
-      ]
-    ]
+        "Für jeden Tag wählt er bequeme [die Boxershorts (Pl.)|Boxershorts] aus Baumwolle.",
+      ],
+    ],
   },
   B1: {
     title: "Dresscodes und stilvolles Auftreten",
@@ -719,9 +719,9 @@ createStory("herren", {
         "Bei geschäftlichen Besprechungen ist ein perfekt sitzender [der Anzug, -̈e|Anzug] mit gebügelter [die Krawatte, -n|Krawatte] nach wie vor Standard.",
         "Im Smart-Casual-Bereich lässt sich ein edler [der Blazer, -|Blazer] hervorragend mit einer dunklen Hose und einem hellen [das Hemd, -en|Hemd] kombinieren.",
         "Zu feierlichen Abendveranstaltungen greifen stilbewusste Herren gern zur klassischen [die Fliege, -n|Fliege] und einer abgestimmten [die Weste, -n|Weste].",
-        "Guter Stil beginnt bereits bei der Basis mit angenehmer Wäsche wie [die Boxershorts (Pl.)|Boxershorts] und [das Unterhemd, -en|Unterhemden]."
-      ]
-    ]
+        "Guter Stil beginnt bereits bei der Basis mit angenehmer Wäsche wie [die Boxershorts (Pl.)|Boxershorts] und [das Unterhemd, -en|Unterhemden].",
+      ],
+    ],
   },
   B2: {
     title: "Sartoriale Tradition und moderne Maßkonfektion",
@@ -730,10 +730,10 @@ createStory("herren", {
       [
         "Die klassische Herrenmode zeichnet sich durch zeitlose Handwerkskunst und subtile Eleganz aus.",
         "Die präzise Passform eines maßgeschneiderten [der Anzug, -̈e|Anzugs] definiert die Silhouette und vermittelt unverwechselbare Souveränität.",
-        "Das harmonische Zusammenspiel zwischen texturiertem [der Blazer, -|Blazer], edler Seiden-[die Krawatte, -n|Krawatte] und formvollendeter [die Weste, -n|Weste] zeugt von sartorialer Raffinesse."
-      ]
-    ]
-  }
+        "Das harmonische Zusammenspiel zwischen texturiertem [der Blazer, -|Blazer], edler Seiden-[die Krawatte, -n|Krawatte] und formvollendeter [die Weste, -n|Weste] zeugt von sartorialer Raffinesse.",
+      ],
+    ],
+  },
 });
 
 // 14. damen
@@ -746,9 +746,9 @@ createStory("damen", {
         "Maria trägt im Sommer ein leichtes, buntes [das Kleid, -er|Kleid].",
         "Für die Arbeit wählt sie eine elegante weiße [die Bluse, -n|Bluse].",
         "Dazu zieht sie einen modernen [der Rock, -̈e|Rock] an.",
-        "Am Abend zieht sie eine wärmende [die Strickjacke, -n|Strickjacke] über."
-      ]
-    ]
+        "Am Abend zieht sie eine wärmende [die Strickjacke, -n|Strickjacke] über.",
+      ],
+    ],
   },
   A2: {
     title: "Für jeden Anlass das richtige Outfit",
@@ -758,9 +758,9 @@ createStory("damen", {
         "Zu einem festlichen Ball trägt Sophie ein atemberaubendes [das Abendkleid, -er|Abendkleid].",
         "Wenn es draußen kühl ist, zieht sie unter dem Rock eine feine [die Strumpfhose, -n|Strumpfhose] an.",
         "Zu Hause entspannt sie sich gern in bequemen [die Leggings|Leggings].",
-        "Im Schwimmbad trägt sie einen sportlichen [der Badeanzug, -̈e|Badeanzug] und schläft nachts in einem feinen [das Nachthemd, -en|Nachthemd]."
-      ]
-    ]
+        "Im Schwimmbad trägt sie einen sportlichen [der Badeanzug, -̈e|Badeanzug] und schläft nachts in einem feinen [das Nachthemd, -en|Nachthemd].",
+      ],
+    ],
   },
   B1: {
     title: "Stilsicher durch die Jahreszeiten",
@@ -770,9 +770,9 @@ createStory("damen", {
         "Eine hochwertige Seiden-[die Bluse, -n|Bluse] lässt sich sowohl mit einem klassischen [der Rock, -̈e|Rock] als auch mit einer Bundfaltenhose kombinieren.",
         "Für besondere Anlässe verleiht ein langes [das Abendkleid, -er|Abendkleid] jeder Trägerin eine glamouröse Ausstrahlung.",
         "Im Alltag bieten elastische [die Leggings|Leggings] und eine weiche [die Strickjacke, -n|Strickjacke] die perfekte Balance aus Chic und Bequemlichkeit.",
-        "Ein passender [der BH (Büstenhalter)|BH] garantiert den ganzen Tag über optimalen Halt und Tragekomfort."
-      ]
-    ]
+        "Ein passender [der BH (Büstenhalter)|BH] garantiert den ganzen Tag über optimalen Halt und Tragekomfort.",
+      ],
+    ],
   },
   B2: {
     title: "Emanzipation und Ästhetik der modernen Damenmode",
@@ -781,10 +781,10 @@ createStory("damen", {
       [
         "Die zeitgenössische Damenmode reflektiert den gesellschaftlichen Diskurs über Weiblichkeit, Selbstbestimmung und Funktionalität.",
         "Von der strukturierten Strenge der Business-[die Bluse, -n|Bluse] bis zum fließenden Fall eines [das Abendkleid, -er|Abendkleids] manifestiert sich textile Vielfalt.",
-        "Die Verschmelzung von sportiven Elementen wie [die Leggings|Leggings] mit klassischer Strickkunst exemplifiziert den modernen Athleisure-Trend."
-      ]
-    ]
-  }
+        "Die Verschmelzung von sportiven Elementen wie [die Leggings|Leggings] mit klassischer Strickkunst exemplifiziert den modernen Athleisure-Trend.",
+      ],
+    ],
+  },
 });
 
 // 15. accessoires
@@ -797,9 +797,9 @@ createStory("accessoires", {
         "Im Winter trage ich eine warme [die Mütze, -n|Mütze] und dicke [die Handschuhe (Pl.)|Handschuhe].",
         "Um den Hals binde ich einen weichen [der Schal, -s|Schal].",
         "Mein Vater trägt gern einen schicken [der Hut, -̈e|Hut] und einen ledernen [der Gürtel, -|Gürtel].",
-        "Ich schaue auf meine [die Uhr, -en|Uhr], um pünktlich zu sein."
-      ]
-    ]
+        "Ich schaue auf meine [die Uhr, -en|Uhr], um pünktlich zu sein.",
+      ],
+    ],
   },
   A2: {
     title: "Glänzende Details",
@@ -809,9 +809,9 @@ createStory("accessoires", {
         "An sonnigen Sommertagen schützt mich eine dunkle [die Sonnenbrille, -n|Sonnenbrille].",
         "Zu ihrem Geburtstag bekam Anna eine funkelnde [die Halskette, -n|Halskette] und glänzende [die Ohrringe (Pl.)|Ohrringe].",
         "An seinem Finger funkelt ein goldener [der Ring, -e|Ring].",
-        "Mit den passenden Accessoires wirkt jedes einfache Outfit sofort besonders."
-      ]
-    ]
+        "Mit den passenden Accessoires wirkt jedes einfache Outfit sofort besonders.",
+      ],
+    ],
   },
   B1: {
     title: "Akzente setzen mit Stil",
@@ -821,9 +821,9 @@ createStory("accessoires", {
         "Oft sind es die kleinen Details, die ein schlichtes Outfit in einen echten Blickfang verwandeln.",
         "Ein edler [der Gürtel, -|Gürtel] betont die Taille, während eine filigrane [die Halskette, -n|Halskette] das Dekolleté stilvoll in Szene setzt.",
         "Eine elegante [die Uhr, -en|Uhr] ist nicht nur ein Zeitmesser, sondern ein Ausdruck von individuellem Geschmack und Zuverlässigkeit.",
-        "Passend dazu können dezente [die Ohrringe (Pl.)|Ohrringe] das Gesamtbild harmonisch abrunden."
-      ]
-    ]
+        "Passend dazu können dezente [die Ohrringe (Pl.)|Ohrringe] das Gesamtbild harmonisch abrunden.",
+      ],
+    ],
   },
   B2: {
     title: "Die Semiotik modischer Accessoires",
@@ -832,10 +832,10 @@ createStory("accessoires", {
       [
         "Accessoires fungieren im gesellschaftlichen Kontext als feinsinnige Codes sozialer Repräsentanz und ästhetischer Raffinesse.",
         "Ein meisterhaft geschmiedeter [der Ring, -e|Ring] oder eine mechanische [die Uhr, -en|Uhr] transzendieren bloße Nützlichkeit und werden zu generationenübergreifenden Wertobjekten.",
-        "Ob polarisierende [die Sonnenbrille, -n|Sonnenbrillen] oder handgefertigte [die Handschuhe (Pl.)|Handschuhe]: Sie verleihen dem Träger eine unverwechselbare stilistische Signatur."
-      ]
-    ]
-  }
+        "Ob polarisierende [die Sonnenbrille, -n|Sonnenbrillen] oder handgefertigte [die Handschuhe (Pl.)|Handschuhe]: Sie verleihen dem Träger eine unverwechselbare stilistische Signatur.",
+      ],
+    ],
+  },
 });
 
 // 16. schuhe
@@ -848,9 +848,9 @@ createStory("schuhe", {
         "Ich ziehe meine bequemen [die Schuhe (Pl.)|Schuhe] an, bevor ich nach draußen gehe.",
         "Zum Spazierengehen trage ich sportliche [die Turnschuhe / die Sneakers|Sneakers].",
         "Zu Hause mag ich weiche, warme [die Hausschuhe (Pl.)|Hausschuhe].",
-        "In meine [die Geldbörse, -n|Geldbörse] lege ich Geld und Ausweise."
-      ]
-    ]
+        "In meine [die Geldbörse, -n|Geldbörse] lege ich Geld und Ausweise.",
+      ],
+    ],
   },
   A2: {
     title: "Auf Reisen und im Sommer",
@@ -860,9 +860,9 @@ createStory("schuhe", {
         "Im heißen Sommer trage ich luftige [die Sandalen (Pl.)|Sandalen].",
         "Wenn es regnet oder schneit, schützen mich wasserdichte [die Stiefel (Pl.)|Stiefel].",
         "Für die Reise packe ich einen großen [der Koffer, -|Koffer] und nehme einen praktischen [der Rucksack, -̈e|Rucksack] mit.",
-        "Meine Mutter nimmt ihre elegante [die Handtasche, -n|Handtasche] mit in die Stadt."
-      ]
-    ]
+        "Meine Mutter nimmt ihre elegante [die Handtasche, -n|Handtasche] mit in die Stadt.",
+      ],
+    ],
   },
   B1: {
     title: "Qualität und Eleganz bei Lederwaren",
@@ -872,9 +872,9 @@ createStory("schuhe", {
         "Zu einer feierlichen Gala wählt Laura elegante Schuhe mit [die hohen Absätze (Pl.)|hohen Absätzen].",
         "Hochwertige Leder-[die Stiefel (Pl.)|Stiefel] bieten bei nasskaltem Wetter hervorragenden Halt und halten die Füße trocken.",
         "Ein ergonomischer [der Rucksack, -̈e|Rucksack] schont den Rücken auf langen Wanderungen oder beim Pendeln zur Arbeit.",
-        "Eine handgefertigte [die Handtasche, -n|Handtasche] aus echtem Leder gewinnt mit den Jahren sogar noch an Charakter."
-      ]
-    ]
+        "Eine handgefertigte [die Handtasche, -n|Handtasche] aus echtem Leder gewinnt mit den Jahren sogar noch an Charakter.",
+      ],
+    ],
   },
   B2: {
     title: "Orthopädische Funktionalität und Luxuslederwaren",
@@ -883,10 +883,10 @@ createStory("schuhe", {
       [
         "Die Balance zwischen orthopädischer Ergonomie und modischer Extravaganz stellt das Schuhhandwerk vor komplexe Herausforderungen.",
         "Während das permanente Tragen von [die hohen Absätze (Pl.)|hohen Absätzen] die Körperstatik belasten kann, bieten moderne [die Turnschuhe / die Sneakers|Sneakers] fortschrittlichste Dämpfungstechnologien.",
-        "Im Segment exklusiver Reisebegleiter verkörpern strapazierfähige [der Koffer, -|Koffer] und edle Leder-[die Handtasche, -n|Handtaschen] die Symbiose aus Funktionalität und zeitloser Noblesse."
-      ]
-    ]
-  }
+        "Im Segment exklusiver Reisebegleiter verkörpern strapazierfähige [der Koffer, -|Koffer] und edle Leder-[die Handtasche, -n|Handtaschen] die Symbiose aus Funktionalität und zeitloser Noblesse.",
+      ],
+    ],
+  },
 });
 
 // 17. pflege
@@ -899,9 +899,9 @@ createStory("pflege", {
         "Ich wasche meine Hände gründlich mit [die Seife, -n|Seife].",
         "Unter der Dusche benutze ich gut duftendes [das Duschgel, -s|Duschgel].",
         "Jeden Morgen putze ich meine Zähne mit der [die Zahnbürste, -n|Zahnbürste] und frischer [die Zahnpasta|Zahnpasta].",
-        "Danach trockne ich mich mit einem weichen [das Handtuch, -̈er|Handtuch] ab."
-      ]
-    ]
+        "Danach trockne ich mich mit einem weichen [das Handtuch, -̈er|Handtuch] ab.",
+      ],
+    ],
   },
   A2: {
     title: "Frisch für den Tag",
@@ -911,9 +911,9 @@ createStory("pflege", {
         "Ich wasche meine Haare mit pflegendem [das Shampoo, -s|Shampoo] und föhne sie mit dem [der Föhn / der Haartrockner|Föhn] trocken.",
         "Mit dem [der Kamm, -̈e|Kamm] bringe ich meine Frisur schnell in Form.",
         "Ein zuverlässiges [das Deodorant, -s|Deodorant] sorgt den ganzen Tag für ein frisches Gefühl.",
-        "Mein Vater benutzt einen scharfen [der Rasierer, -|Rasierer] für seine Bartpflege."
-      ]
-    ]
+        "Mein Vater benutzt einen scharfen [der Rasierer, -|Rasierer] für seine Bartpflege.",
+      ],
+    ],
   },
   B1: {
     title: "Gepflegt und geschützt",
@@ -923,9 +923,9 @@ createStory("pflege", {
         "Vor dem Aufenthalt in der starken Mittagssonne sollte man stets ausreichend [die Sonnencreme|Sonnencreme] auftragen, um die Haut vor UV-Strahlen zu schützen.",
         "Für besondere Abende wählt man ein dezentes, elegantes [das Parfüm, -s|Parfüm], das die eigene Ausstrahlung unterstreicht.",
         "Regelmäßige Zahnhygiene mit [die Zahnbürste, -n|Zahnbürste] und fluoridhaltiger [die Zahnpasta|Zahnpasta] beugt Karies effektiv vor.",
-        "Sanftes [das Duschgel, -s|Duschgel] bewahrt den natürlichen Säureschutzmantel der Haut."
-      ]
-    ]
+        "Sanftes [das Duschgel, -s|Duschgel] bewahrt den natürlichen Säureschutzmantel der Haut.",
+      ],
+    ],
   },
   B2: {
     title: "Dermatologische Aspekte und moderne Kosmetikformulierungen",
@@ -934,10 +934,10 @@ createStory("pflege", {
       [
         "Eine fundierte Pflegeroutine basiert auf dem Verständnis der physiologischen Schutzmechanismen der Epidermis.",
         "Die tägliche Applikation von Breitband-[die Sonnencreme|Sonnencreme] gilt in der Dermatologie als wirksamste Prävention gegen vorzeitige Hautalterung.",
-        "Milde syndetbasierte Tenside statt aggressiver [die Seife, -n|Seifen] gewährleisten die Intaktheit des Mikrobioms und schützen vor Dehydration."
-      ]
-    ]
-  }
+        "Milde syndetbasierte Tenside statt aggressiver [die Seife, -n|Seifen] gewährleisten die Intaktheit des Mikrobioms und schützen vor Dehydration.",
+      ],
+    ],
+  },
 });
 
 // 18. makeup
@@ -950,9 +950,9 @@ createStory("makeup", {
         "Anna benutzt einen roten [der Lippenstift, -e|Lippenstift] für ihre Lippen.",
         "Sie lackiert ihre Fingernägel mit buntem [der Nagellack|Nagellack].",
         "Mit einem weichen [der Schminkpinsel, -|Schminkpinsel] trägt sie Puder auf.",
-        "Das Gesicht strahlt frisch und schön."
-      ]
-    ]
+        "Das Gesicht strahlt frisch und schön.",
+      ],
+    ],
   },
   A2: {
     title: "Ein natürlicher Look",
@@ -962,9 +962,9 @@ createStory("makeup", {
         "Am Morgen betont sie ihre Augen mit schwarzer [die Wimperntusche / die Mascara|Wimperntusche] und einem dezenten [der Lidschatten|Lidschatten].",
         "Ein feiner Hauch [der Puder|Puder] nimmt den Glanz von der Stirn.",
         "Mit dem schwarzen [der Eyeliner|Eyeliner] zieht sie einen sauberen Lidstrich.",
-        "Ein wenig [das Rouge|Rouge] verleiht den Wangen eine gesunde Frische."
-      ]
-    ]
+        "Ein wenig [das Rouge|Rouge] verleiht den Wangen eine gesunde Frische.",
+      ],
+    ],
   },
   B1: {
     title: "Professionelles Styling für den Abend",
@@ -974,9 +974,9 @@ createStory("makeup", {
         "Für ein ebenmäßiges Hautbild trägt man zunächst eine feuchtigkeitsspendende [die Foundation / die Grundierung|Foundation] auf.",
         "Dunkle Augenschatten oder kleine Rötungen lassen sich mühelos mit einem guten [der Concealer|Concealer] abdecken.",
         "Hochwertige [der Schminkpinsel, -|Schminkpinsel] erleichtern das Verblenden von [das Rouge|Rouge] und [der Lidschatten|Lidschatten] erheblich.",
-        "Ein haltbarer [der Lippenstift, -e|Lippenstift] rundet das elegante Abend-Make-up perfekt ab."
-      ]
-    ]
+        "Ein haltbarer [der Lippenstift, -e|Lippenstift] rundet das elegante Abend-Make-up perfekt ab.",
+      ],
+    ],
   },
   B2: {
     title: "Visagistik und die Kunst der optischen Harmonisierung",
@@ -985,10 +985,10 @@ createStory("makeup", {
       [
         "Professionelle Visagistik versteht sich als nuancierte Akzentuierung individueller Gesichtsarchitektur.",
         "Die gezielte Abstimmung zwischen lichtreflektierendem [der Concealer|Concealer], matter [die Foundation / die Grundierung|Grundierung] und transparentem [der Puder|Puder] kreiert ein makelloses Finish für hochauflösende Kameras.",
-        "Präzise gesetzte Linien mit [der Eyeliner|Eyeliner] sowie dramatisch akzentuierte Wimpern mittels [die Wimperntusche / die Mascara|Mascara] verleihen dem Blick Tiefe und Ausdruckskraft."
-      ]
-    ]
-  }
+        "Präzise gesetzte Linien mit [der Eyeliner|Eyeliner] sowie dramatisch akzentuierte Wimpern mittels [die Wimperntusche / die Mascara|Mascara] verleihen dem Blick Tiefe und Ausdruckskraft.",
+      ],
+    ],
+  },
 });
 
 // 19. notruf
@@ -1001,9 +1001,9 @@ createStory("notruf", {
         "Wenn Gefahr droht, rufen die Menschen laut: [Hilfe!|„Hilfe!“].",
         "Bei einem [der Notfall, -̈e|Notfall] wählen wir sofort die Nummer 112.",
         "Der schnelle [der Krankenwagen, -|Krankenwagen] bringt verletzte Personen ins Spital.",
-        "Die mutige [die Feuerwehr|Feuerwehr] löscht gefährliche Brände."
-      ]
-    ]
+        "Die mutige [die Feuerwehr|Feuerwehr] löscht gefährliche Brände.",
+      ],
+    ],
   },
   A2: {
     title: "Ein Unfall auf der Kreuzung",
@@ -1013,9 +1013,9 @@ createStory("notruf", {
         "Gestern gab es auf der Hauptstraße einen schweren [der Unfall, -̈e|Unfall].",
         "Zwei Autos sind zusammengestoßen, und die Fahrer brauchten sofort Hilfe.",
         "Binnen weniger Minuten traf der [der Krankenwagen, -|Krankenwagen] mit Sanitätern ein.",
-        "Auch [die Feuerwehr|die Feuerwehr] sicherte die Unfallstelle schnell ab."
-      ]
-    ]
+        "Auch [die Feuerwehr|die Feuerwehr] sicherte die Unfallstelle schnell ab.",
+      ],
+    ],
   },
   B1: {
     title: "Die Rettungskette und Erste Hilfe",
@@ -1025,9 +1025,9 @@ createStory("notruf", {
         "Im Falle eines schweren [der Notfall, -̈e|Notfalls] kommt es auf jede einzelne Sekunde an.",
         "Beim Absetzen des Notrufs muss man ruhig bleiben und erklären, wo der [der Unfall, -̈e|Unfall] passiert ist und wie viele Verletzte Hilfe benötigen.",
         "Während die Disponenten den [der Krankenwagen, -|Krankenwagen] alarmieren, können Ersthelfer bereits lebensrettende Sofortmaßnahmen durchführen.",
-        "Gleichzeitig kümmert sich [die Feuerwehr|die Feuerwehr] um die Bergung eingeklemmter Insassen."
-      ]
-    ]
+        "Gleichzeitig kümmert sich [die Feuerwehr|die Feuerwehr] um die Bergung eingeklemmter Insassen.",
+      ],
+    ],
   },
   B2: {
     title: "Notfalllogistik und integrierte Leitstellen",
@@ -1036,10 +1036,10 @@ createStory("notruf", {
       [
         "Die Effizienz des Rettungswesens basiert auf einer lückenlosen Verzahnung von Rettungsleitstelle, Notarztversorgung und Spezialkliniken.",
         "Bei einem unübersichtlichen [der Notfall, -̈e|Notfall] koordinieren Einsatzleiter das simultane Ausrücken von [die Feuerwehr|Feuerwehr] und mehreren [der Krankenwagen, -|Krankenwagen].",
-        "Eine rasche Absicherung der Unfallstelle bei einem schweren [der Unfall, -̈e|Unfall] verhindert folgenschwere Kettenreaktionen im dichten Straßenverkehr."
-      ]
-    ]
-  }
+        "Eine rasche Absicherung der Unfallstelle bei einem schweren [der Unfall, -̈e|Unfall] verhindert folgenschwere Kettenreaktionen im dichten Straßenverkehr.",
+      ],
+    ],
+  },
 });
 
 // 20. das_wetter
@@ -1052,9 +1052,9 @@ createStory("das_wetter", {
         "Heute scheint die helle [die Sonne|Sonne] vom blauen Himmel.",
         "Gestern fiel kalter [der Regen|Regen] und alle nahmen Schirme mit.",
         "Im Winter freuen sich die Kinder über weißen [der Schnee|Schnee].",
-        "Der kühle [der Wind|Wind] bewegt die Blätter an den Bäumen."
-      ]
-    ]
+        "Der kühle [der Wind|Wind] bewegt die Blätter an den Bäumen.",
+      ],
+    ],
   },
   A2: {
     title: "Wetterbericht für die Woche",
@@ -1064,9 +1064,9 @@ createStory("das_wetter", {
         "Am Himmel sieht man heute viele dunkle [die Wolke, -n|Wolken].",
         "Der Wetterbericht kündigt starken [der Wind|Wind] und kräftigen [der Regen|Regen] an.",
         "Wenn die [die Sonne|Sonne] wieder herauskommt, wird es angenehm warm.",
-        "In den Bergen liegt bereits der erste [der Schnee|Schnee] der Saison."
-      ]
-    ]
+        "In den Bergen liegt bereits der erste [der Schnee|Schnee] der Saison.",
+      ],
+    ],
   },
   B1: {
     title: "Jahreszeiten und Wetterkapriolen",
@@ -1075,9 +1075,9 @@ createStory("das_wetter", {
       [
         "Im mitteleuropäischen Frühling wechselt das Wetter oft innerhalb weniger Stunden von strahlender [die Sonne|Sonne] zu peitschendem [der Regen|Regen].",
         "Wenn eine dichte [die Wolke, -n|Wolke] die Sicht verdeckt und böiger [der Wind|Wind] aufzieht, sollte man auf Bergtouren besonders vorsichtig sein.",
-        "Für Wintersportler bedeutet frischer [der Schnee|Schnee] in den Alpen ideale Bedingungen auf den Skipisten."
-      ]
-    ]
+        "Für Wintersportler bedeutet frischer [der Schnee|Schnee] in den Alpen ideale Bedingungen auf den Skipisten.",
+      ],
+    ],
   },
   B2: {
     title: "Meteorologische Dynamik und Klimatologie",
@@ -1086,10 +1086,10 @@ createStory("das_wetter", {
       [
         "Tiefdruckgebiete transportieren feuchte Luftmassen, die zur Entstehung mächtiger [die Wolke, -n|Wolken] und intensiver Niederschläge führen.",
         "Das komplexe Wechselspiel zwischen solarer Einstrahlung durch [die Sonne|die Sonne] und globalen Windsystemen wie dem [der Wind|Wind] bestimmt das regionale Klima.",
-        "Veränderte Niederschlagsmuster führen dazu, dass sowohl langanhaltender [der Regen|Regen] als auch das Ausbleiben von [der Schnee|Schnee] erhebliche ökologische Folgen nach sich ziehen."
-      ]
-    ]
-  }
+        "Veränderte Niederschlagsmuster führen dazu, dass sowohl langanhaltender [der Regen|Regen] als auch das Ausbleiben von [der Schnee|Schnee] erhebliche ökologische Folgen nach sich ziehen.",
+      ],
+    ],
+  },
 });
 
 // 21. die_zeit
@@ -1102,9 +1102,9 @@ createStory("die_zeit", {
         "Wie viel Uhr ist es? Ich prüfe die [die Uhrzeit, -en|Uhrzeit].",
         "Ein [der Tag, -e|Tag] hat vierundzwanzig Stunden.",
         "Sieben Tage bilden eine ganze [die Woche, -n|Woche].",
-        "Eine [die Stunde, -n|Stunde] vergeht oft sehr schnell."
-      ]
-    ]
+        "Eine [die Stunde, -n|Stunde] vergeht oft sehr schnell.",
+      ],
+    ],
   },
   A2: {
     title: "Pünktlich durch den Tag",
@@ -1114,9 +1114,9 @@ createStory("die_zeit", {
         "Sechzig [die Minute, -n|Minuten] ergeben genau eine [die Stunde, -n|Stunde].",
         "Wir haben uns für eine feste [die Uhrzeit, -en|Uhrzeit] zum Kaffee verabredet.",
         "Jeder [der Tag, -e|Tag] bringt neue spannende Aufgaben mit sich.",
-        "Am Ende der arbeitsreichen [die Woche, -n|Woche] freuen wir uns auf das Wochenende."
-      ]
-    ]
+        "Am Ende der arbeitsreichen [die Woche, -n|Woche] freuen wir uns auf das Wochenende.",
+      ],
+    ],
   },
   B1: {
     title: "Effektives Zeitmanagement",
@@ -1126,9 +1126,9 @@ createStory("die_zeit", {
         "Wer seine Termine strukturiert plant, spart jeden [der Tag, -e|Tag] wertvolle [die Minute, -n|Minuten].",
         "Eine bewusste Zeiteinteilung über die gesamte [die Woche, -n|Woche] hinweg reduziert Stress und erhöht die Produktivität.",
         "Pünktlichkeit gilt im deutschen Sprachraum als Zeichen von Zuverlässigkeit und Respekt gegenüber der vereinbarten [die Uhrzeit, -en|Uhrzeit].",
-        "Man sollte sich jedoch jeden Tag mindestens eine [die Stunde, -n|Stunde] für Sport und Erholung reservieren."
-      ]
-    ]
+        "Man sollte sich jedoch jeden Tag mindestens eine [die Stunde, -n|Stunde] für Sport und Erholung reservieren.",
+      ],
+    ],
   },
   B2: {
     title: "Chronobiologie und die Beschleunigung der Moderne",
@@ -1137,10 +1137,10 @@ createStory("die_zeit", {
       [
         "Die moderne Gesellschaft ist geprägt von einer fortschreitenden Verdichtung von Zeit, in der jede [die Minute, -n|Minute] ökonomisch verwertet wird.",
         "Chronobiologische Erkenntnisse unterstreichen jedoch, dass der menschliche Biorhythmus nicht starr nach der [die Uhrzeit, -en|Uhrzeit] getaktet werden kann.",
-        "Ein souveräner Umgang mit dem Faktor Zeit erfordert die Fähigkeit, inmitten einer hektischen [die Woche, -n|Woche] Phasen kontemplativer Entschleunigung zu etablieren."
-      ]
-    ]
-  }
+        "Ein souveräner Umgang mit dem Faktor Zeit erfordert die Fähigkeit, inmitten einer hektischen [die Woche, -n|Woche] Phasen kontemplativer Entschleunigung zu etablieren.",
+      ],
+    ],
+  },
 });
 
 // 22. wohnzimmer
@@ -1154,9 +1154,9 @@ createStory("wohnzimmer", {
         "Daneben steht ein bequemer [der Sessel, -|Sessel] zum Lesen.",
         "Am Abend schalten wir den [der Fernseher, -|Fernseher] ein.",
         "Auf dem Boden liegt ein schöner, bunter [der Teppich, -e|Teppich].",
-        "Unsere Lieblingsbücher stehen ordentlich im [das Regal, -e|Regal]."
-      ]
-    ]
+        "Unsere Lieblingsbücher stehen ordentlich im [das Regal, -e|Regal].",
+      ],
+    ],
   },
   A2: {
     title: "Ein Abend zu Hause",
@@ -1167,9 +1167,9 @@ createStory("wohnzimmer", {
         "Mein Vater liest im ledernen [der Sessel, -|Sessel] die Zeitung.",
         "Der flache [der Fernseher, -|Fernseher] hängt direkt über dem Holzboard.",
         "Ein warmer [der Teppich, -e|Teppich] sorgt für warme Füße im Winter.",
-        "Im neuen [das Regal, -e|Regal] haben wir viele Fotos und Souvenirs aufgestellt."
-      ]
-    ]
+        "Im neuen [das Regal, -e|Regal] haben wir viele Fotos und Souvenirs aufgestellt.",
+      ],
+    ],
   },
   B1: {
     title: "Wohnkultur und Wohlfühlambiente",
@@ -1179,9 +1179,9 @@ createStory("wohnzimmer", {
         "Das Wohnzimmer bildet das kommunikative Herzstück jeder Wohnung.",
         "Durch die geschickte Platzierung von [das Sofa, -s|Sofa] und [der Sessel, -|Sesseln] entsteht eine einladende Sitzecke für angeregte Gespräche.",
         "Ein handgewebter [der Teppich, -e|Teppich] dämpft die Akustik und verleiht dem Raum zusammen mit einem modernen [das Regal, -e|Regal] optische Wärme.",
-        "Der [der Fernseher, -|Fernseher] tritt dabei dezent in den Hintergrund, um die Behaglichkeit nicht zu stören."
-      ]
-    ]
+        "Der [der Fernseher, -|Fernseher] tritt dabei dezent in den Hintergrund, um die Behaglichkeit nicht zu stören.",
+      ],
+    ],
   },
   B2: {
     title: "Innenarchitektur und räumliche Anthropologie",
@@ -1190,10 +1190,10 @@ createStory("wohnzimmer", {
       [
         "Zeitgenössische Wohnkonzepte betonen die multifunktionale Nutzung des Wohnzimmers als Rückzugsort und Repräsentationsfläche.",
         "Die sorgfältige Symbiose aus modularem [das Sofa, -s|Sofa], skandinavischem [der Sessel, -|Sessel] und raumhohem [das Regal, -e|Regal] schafft architektonische Balance.",
-        "Haptische Textilien wie ein exklusiver [der Teppich, -e|Teppich] kontrastieren reizvoll mit minimalistischer Medientechnik wie dem smarten [der Fernseher, -|Fernseher]."
-      ]
-    ]
-  }
+        "Haptische Textilien wie ein exklusiver [der Teppich, -e|Teppich] kontrastieren reizvoll mit minimalistischer Medientechnik wie dem smarten [der Fernseher, -|Fernseher].",
+      ],
+    ],
+  },
 });
 
 // 23. kueche
@@ -1207,9 +1207,9 @@ createStory("kueche", {
         "Die Milch und der Käse stehen im kühlen [der Kühlschrank, -̈e|Kühlschrank].",
         "Auf dem [der Herd, -e|Herd] kocht das heiße Wasser.",
         "Der Kuchen backt im warmen [der Backofen, -̈|Backofen].",
-        "Nach dem Essen wäscht die [die Spülmaschine, -n|Spülmaschine] alle Teller ab."
-      ]
-    ]
+        "Nach dem Essen wäscht die [die Spülmaschine, -n|Spülmaschine] alle Teller ab.",
+      ],
+    ],
   },
   A2: {
     title: "Zusammen kochen",
@@ -1220,9 +1220,9 @@ createStory("kueche", {
         "Wir holen das frische Gemüse aus dem großen [der Kühlschrank, -̈e|Kühlschrank].",
         "Die Suppe wärmen wir schnell in der [die Mikrowelle, -n|Mikrowelle] auf.",
         "Auf dem modernen Induktions-[der Herd, -e|Herd] braten wir die Zutaten an.",
-        "Danach kommt die Auflaufform für dreißig Minuten in den heißen [der Backofen, -̈|Backofen]."
-      ]
-    ]
+        "Danach kommt die Auflaufform für dreißig Minuten in den heißen [der Backofen, -̈|Backofen].",
+      ],
+    ],
   },
   B1: {
     title: "Kulinarische Leidenschaft und Küchengeräte",
@@ -1232,9 +1232,9 @@ createStory("kueche", {
         "Eine gut ausgestattete Küche erleichtert die Zubereitung vollwertiger Gerichte ungemein.",
         "Ein energieeffizienter [der Kühlschrank, -̈e|Kühlschrank] mit Frischezonen hält Salate und Kräuter tagelang knackig.",
         "Präzise Hitzeeinstellungen auf dem [der Herd, -e|Herd] und im [der Backofen, -̈|Backofen] garantieren perfekte Garergebnisse.",
-        "Während die [die Spülmaschine, -n|Spülmaschine] das schmutzige Geschirr reinigt, bleibt mehr Zeit, um das Essen mit den Gästen zu genießen."
-      ]
-    ]
+        "Während die [die Spülmaschine, -n|Spülmaschine] das schmutzige Geschirr reinigt, bleibt mehr Zeit, um das Essen mit den Gästen zu genießen.",
+      ],
+    ],
   },
   B2: {
     title: "Die Küche als sozialer Treffpunkt und Technologiezentrum",
@@ -1243,10 +1243,10 @@ createStory("kueche", {
       [
         "Die Metamorphose der Küche vom funktionalen Arbeitsraum zum kommunikativen Lebensraum prägt die moderne Wohnkultur.",
         "Vernetzte Großgeräte wie der smarte [der Kühlschrank, -̈e|Kühlschrank] und der sensorunterstützte [der Backofen, -̈|Backofen] revolutionieren das Kocherlebnis.",
-        "Die Integration leiser [die Spülmaschine, -n|Spülmaschinen] und hocheffizienter [der Herd, -e|Herde] ermöglicht offene Wohnküchenkonzepte von bestechender Eleganz."
-      ]
-    ]
-  }
+        "Die Integration leiser [die Spülmaschine, -n|Spülmaschinen] und hocheffizienter [der Herd, -e|Herde] ermöglicht offene Wohnküchenkonzepte von bestechender Eleganz.",
+      ],
+    ],
+  },
 });
 
 // 24. schlafzimmer
@@ -1260,9 +1260,9 @@ createStory("schlafzimmer", {
         "Meine Kleidung hängt ordentlich im großen [der Kleiderschrank, -̈e|Kleiderschrank].",
         "Neben dem Bett steht ein kleiner [der Nachttisch, -e|Nachttisch].",
         "Mein Kopf liegt auf einem weichen [das Kissen, -|Kissen].",
-        "Im Winter wärmt mich eine dicke [die Decke, -n|Decke]."
-      ]
-    ]
+        "Im Winter wärmt mich eine dicke [die Decke, -n|Decke].",
+      ],
+    ],
   },
   A2: {
     title: "Erholung und Ordnung",
@@ -1272,9 +1272,9 @@ createStory("schlafzimmer", {
         "Am Abend schalte ich die kleine Lampe auf dem [der Nachttisch, -e|Nachttisch] an.",
         "Ich schüttle das weiche [das Kissen, -|Kissen] auf und ziehe die warme [die Decke, -n|Decke] über.",
         "Im geräumigen [der Kleiderschrank, -̈e|Kleiderschrank] ist viel Platz für Pullover und Hosen.",
-        "Ein bequemes [das Bett, -en|Bett] garantiert erholsamen Schlaf für den nächsten Tag."
-      ]
-    ]
+        "Ein bequemes [das Bett, -en|Bett] garantiert erholsamen Schlaf für den nächsten Tag.",
+      ],
+    ],
   },
   B1: {
     title: "Guter Schlaf für mehr Wohlbefinden",
@@ -1284,9 +1284,9 @@ createStory("schlafzimmer", {
         "Gesunder Schlaf ist die Grundvoraussetzung für geistige und körperliche Leistungsfähigkeit.",
         "Eine hochwertige Matratze im [das Bett, -en|Bett] entlastet die Wirbelsäule, während ein ergonomisches [das Kissen, -|Kissen] den Nacken stützt.",
         "Für ein aufgeräumtes Ambiente sorgt ein wandbündiger [der Kleiderschrank, -̈e|Kleiderschrank], in dem alle Kleidungsstücke ihren festen Platz finden.",
-        "Auf dem [der Nachttisch, -e|Nachttisch] sollte man nachts auf Bildschirme verzichten, um zur Ruhe zu kommen."
-      ]
-    ]
+        "Auf dem [der Nachttisch, -e|Nachttisch] sollte man nachts auf Bildschirme verzichten, um zur Ruhe zu kommen.",
+      ],
+    ],
   },
   B2: {
     title: "Schlafforschung und somatische Regeneration",
@@ -1295,10 +1295,10 @@ createStory("schlafzimmer", {
       [
         "Die Architektur des Schlafzimmers übt einen direkten Einfluss auf die Schlafarchitektur und die Ausschüttung von Melatonin aus.",
         "Naturmaterialien für [die Decke, -n|Decke] und [das Kissen, -|Kissen] fördern die Thermoregulation und verhindern nächtliches Erwachen.",
-        "Das [das Bett, -en|Bett] sollte als ausschließlicher Erholungsort fungieren, während großzügige [der Kleiderschrank, -̈e|Kleiderschränke] visuelle Ruhe im Schlafraum garantieren."
-      ]
-    ]
-  }
+        "Das [das Bett, -en|Bett] sollte als ausschließlicher Erholungsort fungieren, während großzügige [der Kleiderschrank, -̈e|Kleiderschränke] visuelle Ruhe im Schlafraum garantieren.",
+      ],
+    ],
+  },
 });
 
 // 25. badezimmer
@@ -1312,9 +1312,9 @@ createStory("badezimmer", {
         "Ich schaue in den großen [der Spiegel, -|Spiegel] und kämme mein Haar.",
         "Am Abend nehme ich eine warme [die Dusche, -n|Dusche].",
         "Am Wochenende bade ich gern in der [die Badewanne, -n|Badewanne].",
-        "Die [die Toilette, -n|Toilette] wird stets hygienisch sauber gehalten."
-      ]
-    ]
+        "Die [die Toilette, -n|Toilette] wird stets hygienisch sauber gehalten.",
+      ],
+    ],
   },
   A2: {
     title: "Ein entspannendes Bad",
@@ -1324,9 +1324,9 @@ createStory("badezimmer", {
         "Nach dem Sport tut eine heiße [die Dusche, -n|Dusche] besonders gut.",
         "Am Sonntag lasse ich warmes Schaumwasser in die [die Badewanne, -n|Badewanne] ein.",
         "Am breiten [das Waschbecken, -|Waschbecken] putzen sich die Kinder gründlich die Zähne.",
-        "Im hell beleuchteten [der Spiegel, -|Spiegel] kontrolliere ich meine Rasur."
-      ]
-    ]
+        "Im hell beleuchteten [der Spiegel, -|Spiegel] kontrolliere ich meine Rasur.",
+      ],
+    ],
   },
   B1: {
     title: "Das Bad als private Wellness-Oase",
@@ -1336,9 +1336,9 @@ createStory("badezimmer", {
         "Moderne Badezimmer vereinen Funktionalität mit dem Komfort eines privaten Spas.",
         "Eine bodengleiche [die Dusche, -n|Dusche] mit Regenduschkopf erfreut sich wachsender Beliebtheit in der modernen Architektur.",
         "Wer nach einem langen Arbeitstag abschalten möchte, findet in einer ergonomischen [die Badewanne, -n|Badewanne] pure Erholung.",
-        "Ein großzügiger [der Spiegel, -|Spiegel] über dem Doppel-[das Waschbecken, -|Waschbecken] lässt auch kleinere Bäder optisch weit wirken."
-      ]
-    ]
+        "Ein großzügiger [der Spiegel, -|Spiegel] über dem Doppel-[das Waschbecken, -|Waschbecken] lässt auch kleinere Bäder optisch weit wirken.",
+      ],
+    ],
   },
   B2: {
     title: "Sanitärarchitektur und Hydrotherapie",
@@ -1347,10 +1347,10 @@ createStory("badezimmer", {
       [
         "Die Konzeption moderner Nassräume reflektiert den Wandel von der simplen Waschzelle zum ganzheitlichen Rückzugsort für Hydrotherapie.",
         "Wassersparende Armaturen am [das Waschbecken, -|Waschbecken] und in der [die Dusche, -n|Dusche] schonen Ressourcen, ohne den Nutzungskomfort zu mindern.",
-        "Die Integration fugenloser Oberflächen, freistehender [die Badewanne, -n|Badewannen] und beschlagfreier [der Spiegel, -|Spiegel] setzt architektonische Maßstäbe."
-      ]
-    ]
-  }
+        "Die Integration fugenloser Oberflächen, freistehender [die Badewanne, -n|Badewannen] und beschlagfreier [der Spiegel, -|Spiegel] setzt architektonische Maßstäbe.",
+      ],
+    ],
+  },
 });
 
 // 26. obst_und_gemuese
@@ -1363,9 +1363,9 @@ createStory("obst_und_gemuese", {
         "Ich esse jeden Tag einen roten [der Apfel, -̈|Apfel] und eine gelbe [die Banane, -n|Banane].",
         "Im Salat schmeckt die rote [die Tomate, -n|Tomate] besonders frisch.",
         "In Deutschland kocht man viele leckere [die Kartoffel, -n|Kartoffeln].",
-        "Zum Braten schneide ich eine scharfe [die Zwiebel, -n|Zwiebel] klein."
-      ]
-    ]
+        "Zum Braten schneide ich eine scharfe [die Zwiebel, -n|Zwiebel] klein.",
+      ],
+    ],
   },
   A2: {
     title: "Einkauf auf dem Wochenmarkt",
@@ -1375,9 +1375,9 @@ createStory("obst_und_gemuese", {
         "Samstags kaufe ich frisches Obst und Gemüse auf dem Markt.",
         "Die süßen [die Banane, -n|Bananen] und saftigen [der Apfel, -̈|Äpfel] schmecken den Kindern wunderbar.",
         "Für die Gemüsesuppe schäle ich drei [die Kartoffel, -n|Kartoffeln] und schneide zwei [die Zwiebel, -n|Zwiebeln].",
-        "Reife [die Tomate, -n|Tomaten] verarbeite ich zu einer aromatischen Nudelsauce."
-      ]
-    ]
+        "Reife [die Tomate, -n|Tomaten] verarbeite ich zu einer aromatischen Nudelsauce.",
+      ],
+    ],
   },
   B1: {
     title: "Ausgewogene Ernährung und Vitalstoffe",
@@ -1387,9 +1387,9 @@ createStory("obst_und_gemuese", {
         "Eine pflanzenbasierte Ernährung liefert essenzielle Vitamine und Ballaststoffe für das Immunsystem.",
         "Ein knackiger [der Apfel, -̈|Apfel] oder eine energiereiche [die Banane, -n|Banane] dient als idealer Snack für Zwischendurch.",
         "In der traditionellen Küche bildet die [die Kartoffel, -n|Kartoffel] die sättigende Basis zahlreicher beliebter Gerichte.",
-        "Frisch angebratene [die Zwiebel, -n|Zwiebeln] und sonnengereifte [die Tomate, -n|Tomaten] verleihen jeder Mahlzeit ein volles Aroma."
-      ]
-    ]
+        "Frisch angebratene [die Zwiebel, -n|Zwiebeln] und sonnengereifte [die Tomate, -n|Tomaten] verleihen jeder Mahlzeit ein volles Aroma.",
+      ],
+    ],
   },
   B2: {
     title: "Agrarökologie und Nährstoffdichte frischer Erzeugnisse",
@@ -1398,10 +1398,10 @@ createStory("obst_und_gemuese", {
       [
         "Der Nährstoffgehalt von Kulturpflanzen wie der [die Kartoffel, -n|Kartoffel] oder der [die Tomate, -n|Tomate] korreliert maßgeblich mit Bodengesundheit und Reifegrad.",
         "Während der globale Import von [die Banane, -n|Bananen] faire Handelsketten erfordert, punktet der heimische [der Apfel, -̈|Apfel] durch eine hervorragende Ökobilanz.",
-        "Sulfide in der [die Zwiebel, -n|Zwiebel] entfalten nachweislich antioxidative Wirkungen im menschlichen Organismus."
-      ]
-    ]
-  }
+        "Sulfide in der [die Zwiebel, -n|Zwiebel] entfalten nachweislich antioxidative Wirkungen im menschlichen Organismus.",
+      ],
+    ],
+  },
 });
 
 // 27. fleisch_und_fisch
@@ -1415,9 +1415,9 @@ createStory("fleisch_und_fisch", {
         "Am Sonntag gibt es knuspriges [das Hähnchen, -|Hähnchen] aus dem Ofen.",
         "Zum Fest kochen wir zartes [das Rindfleisch|Rindfleisch].",
         "Im Urlaub an der Nordsee essen wir frischen [der Fisch, -e|Fisch].",
-        "Zum Frühstück gehört oft eine leckere [die Wurst, -̈e|Wurst]."
-      ]
-    ]
+        "Zum Frühstück gehört oft eine leckere [die Wurst, -̈e|Wurst].",
+      ],
+    ],
   },
   A2: {
     title: "Zubereitung in der Pfanne",
@@ -1427,9 +1427,9 @@ createStory("fleisch_und_fisch", {
         "Gestern haben wir zartes [das Hähnchen, -|Hähnchen] mit Reis serviert.",
         "Mein Vater kauft hochwertiges [das Rindfleisch|Rindfleisch] direkt beim Metzger im Dorf.",
         "Am Freitag braten wir frischen [der Fisch, -e|Fisch] mit Zitrone und Kräutern.",
-        "Zur Brotzeit am Abend gibt es verschiedene Sorten geräucherte [die Wurst, -̈e|Wurst]."
-      ]
-    ]
+        "Zur Brotzeit am Abend gibt es verschiedene Sorten geräucherte [die Wurst, -̈e|Wurst].",
+      ],
+    ],
   },
   B1: {
     title: "Bewusster Konsum und Herkunft",
@@ -1439,9 +1439,9 @@ createStory("fleisch_und_fisch", {
         "Immer mehr Verbraucher achten beim Kauf von [das Fleisch|Fleisch] auf regionale Herkunft und artgerechte Haltung.",
         "Bio-[das Rindfleisch|Rindfleisch] und Freiland-[das Hähnchen, -|Hähnchen] zeichnen sich durch einen intensiveren Geschmack und bessere Nährwerte aus.",
         "Beim Kauf von [der Fisch, -e|Fisch] sollte man auf Nachhaltigkeitssiegel achten, um die Überfischung der Ozeane nicht zu unterstützen.",
-        "Traditionell hergestellte [die Wurst, -̈e|Wurst] ohne künstliche Zusätze erfreut sich bei Feinschmeckern großer Beliebtheit."
-      ]
-    ]
+        "Traditionell hergestellte [die Wurst, -̈e|Wurst] ohne künstliche Zusätze erfreut sich bei Feinschmeckern großer Beliebtheit.",
+      ],
+    ],
   },
   B2: {
     title: "Ernährungsethik und marine Ökosysteme",
@@ -1450,10 +1450,10 @@ createStory("fleisch_und_fisch", {
       [
         "Die ökologischen Folgen der intensiven Viehwirtschaft für [das Rindfleisch|Rindfleisch] treiben die gesellschaftliche Debatte über Fleischkonsum voran.",
         "Zugleich erfordert die Schonung mariner Bestände den Verzehr von [der Fisch, -e|Fisch] aus zertifizierter Aquakultur oder selektivem Wildfang.",
-        "Das Verständnis für die Wertschöpfungskette von [das Fleisch|Fleisch] und handwerklicher [die Wurst, -̈e|Wurst] fördert den bewussten Respekt vor Ressourcen."
-      ]
-    ]
-  }
+        "Das Verständnis für die Wertschöpfungskette von [das Fleisch|Fleisch] und handwerklicher [die Wurst, -̈e|Wurst] fördert den bewussten Respekt vor Ressourcen.",
+      ],
+    ],
+  },
 });
 
 // 28. getraenke
@@ -1466,9 +1466,9 @@ createStory("getraenke", {
         "Klares [das Wasser|Wasser] ist das wichtigste Getränk für den Körper.",
         "Am Morgen trinke ich gern eine heiße Tasse [der Kaffee, -s|Kaffee].",
         "Am Nachmittag genieße ich einen beruhigenden [der Tee, -s|Tee].",
-        "Die Kinder trinken süßen [der Saft, -̈e|Saft] oder frische [die Milch|Milch]."
-      ]
-    ]
+        "Die Kinder trinken süßen [der Saft, -̈e|Saft] oder frische [die Milch|Milch].",
+      ],
+    ],
   },
   A2: {
     title: "Getränke für Gäste",
@@ -1478,9 +1478,9 @@ createStory("getraenke", {
         "Wenn Freunde zu Besuch kommen, koche ich frischen [der Kaffee, -s|Kaffee] mit warmer [die Milch|Milch].",
         "An heißen Sommertagen servieren wir kühles [das Wasser|Wasser] mit Zitrone und Minze.",
         "Frisch gepresster [der Saft, -̈e|Saft] liefert wertvolle Vitamine.",
-        "Im Winter wärmt ein aromatischer schwarzer oder grüner [der Tee, -s|Tee]."
-      ]
-    ]
+        "Im Winter wärmt ein aromatischer schwarzer oder grüner [der Tee, -s|Tee].",
+      ],
+    ],
   },
   B1: {
     title: "Getränkekultur und Genuss",
@@ -1490,9 +1490,9 @@ createStory("getraenke", {
         "Ausreichend mineralstoffreiches [das Wasser|Wasser] über den Tag verteilt zu trinken, fördert die Konzentration und körperliche Fitness.",
         "Die Zubereitung von Spezialitäten-[der Kaffee, -s|Kaffee] mit aufgeschäumter [die Milch|Milch] hat sich zu einer echten Kunstform entwickelt.",
         "In vielen Kulturen ist die traditionelle Zeremonie um erlesenen [der Tee, -s|Tee] ein Symbol gelebter Gastfreundschaft.",
-        "Wer auf Zucker verzichten möchte, verdünnt naturtrüben [der Saft, -̈e|Saft] zu einer erfrischenden Schorle."
-      ]
-    ]
+        "Wer auf Zucker verzichten möchte, verdünnt naturtrüben [der Saft, -̈e|Saft] zu einer erfrischenden Schorle.",
+      ],
+    ],
   },
   B2: {
     title: "Hydrogeologie und sensorische Getränkekunde",
@@ -1501,10 +1501,10 @@ createStory("getraenke", {
       [
         "Die sensorische Qualität von aufgebrühtem [der Kaffee, -s|Kaffee] und feinstem [der Tee, -s|Tee] wird maßgeblich durch den Härtegrad des verwendeten [das Wasser|Wassers] determiniert.",
         "Pflanzliche Alternativen fordern die traditionelle Vormachtstellung von tierischer [die Milch|Milch] in Barista-Kreisen heraus.",
-        "Kaltgepresster, unfiltrierter [der Saft, -̈e|Saft] bewahrt hitzeempfindliche sekundäre Pflanzenstoffe und bietet ein facettenreiches Geschmacksprofil."
-      ]
-    ]
-  }
+        "Kaltgepresster, unfiltrierter [der Saft, -̈e|Saft] bewahrt hitzeempfindliche sekundäre Pflanzenstoffe und bietet ein facettenreiches Geschmacksprofil.",
+      ],
+    ],
+  },
 });
 
 // 29. mahlzeiten
@@ -1517,9 +1517,9 @@ createStory("mahlzeiten", {
         "Am Morgen essen wir ein gesundes [das Frühstück, -e|Frühstück].",
         "Um zwölf Uhr machen wir Pause für das [das Mittagessen, -|Mittagessen].",
         "Am Abend sitzt die Familie beim gemütlichen [das Abendessen, -|Abendessen] zusammen.",
-        "Im Restaurant lese ich die [die Speisekarte, -n|Speisekarte] und bezahle am Ende die [die Rechnung, -en|Rechnung]."
-      ]
-    ]
+        "Im Restaurant lese ich die [die Speisekarte, -n|Speisekarte] und bezahle am Ende die [die Rechnung, -en|Rechnung].",
+      ],
+    ],
   },
   A2: {
     title: "Ein Besuch im Restaurant",
@@ -1529,9 +1529,9 @@ createStory("mahlzeiten", {
         "Gestern haben wir im Restaurant einen Tisch für vier Personen reserviert.",
         "Der Kellner brachte uns sofort die reichhaltige [die Speisekarte, -n|Speisekarte].",
         "Das [das Abendessen, -|Abendessen] war köstlich und frisch zubereitet.",
-        "Zum Schluss bat mein Vater höflich um die [die Rechnung, -en|Rechnung] und gab ein Trinkgeld."
-      ]
-    ]
+        "Zum Schluss bat mein Vater höflich um die [die Rechnung, -en|Rechnung] und gab ein Trinkgeld.",
+      ],
+    ],
   },
   B1: {
     title: "Esskultur und gemeinsame Mahlzeiten",
@@ -1541,9 +1541,9 @@ createStory("mahlzeiten", {
         "Ein ausgewogenes [das Frühstück, -e|Frühstück] liefert die nötige Energie für einen produktiven Arbeitstag.",
         "In der Mittagspause bietet ein leichtes [das Mittagessen, -|Mittagessen] die Gelegenheit, sich mit Kollegen auszutauschen.",
         "Beim Studium der [die Speisekarte, -n|Speisekarte] im Restaurant achten immer mehr Gäste auf saisonale und vegetarische Optionen.",
-        "Nach einem gelungenen Abend wird die [die Rechnung, -en|Rechnung] oft freundschaftlich geteilt."
-      ]
-    ]
+        "Nach einem gelungenen Abend wird die [die Rechnung, -en|Rechnung] oft freundschaftlich geteilt.",
+      ],
+    ],
   },
   B2: {
     title: "Soziologie der Kommensalität und Gastrosophie",
@@ -1552,10 +1552,10 @@ createStory("mahlzeiten", {
       [
         "Die gemeinschaftliche Mahlzeit transzendiert die reine Kalorienaufnahme und fungiert als primäres Ritual sozialer Kohäsion.",
         "Vom kontemplativen [das Frühstück, -e|Frühstück] bis zum mehrgängigen [das Abendessen, -|Abendessen] artikuliert sich die kulinarische Identität einer Gesellschaft.",
-        "Eine anspruchsvoll kuratierte [die Speisekarte, -n|Speisekarte] zeugt von gastronomischer Exzellenz und Transparenz gegenüber dem Gast."
-      ]
-    ]
-  }
+        "Eine anspruchsvoll kuratierte [die Speisekarte, -n|Speisekarte] zeugt von gastronomischer Exzellenz und Transparenz gegenüber dem Gast.",
+      ],
+    ],
+  },
 });
 
 // 30. verkehrsmittel
@@ -1568,9 +1568,9 @@ createStory("verkehrsmittel", {
         "Ich fahre jeden Tag mit dem [das Fahrrad, -̈er|Fahrrad] zur Arbeit.",
         "Bei Regen nehme ich lieber den [der Bus, -se|Bus] oder das [das Auto, -s|Auto].",
         "Der schnelle [der Zug, -̈e|Zug] fährt pünktlich von der Stadt ab.",
-        "Unter der Erde fährt die moderne [die U-Bahn, -en|U-Bahn]."
-      ]
-    ]
+        "Unter der Erde fährt die moderne [die U-Bahn, -en|U-Bahn].",
+      ],
+    ],
   },
   A2: {
     title: "Mobil im Alltag",
@@ -1580,9 +1580,9 @@ createStory("verkehrsmittel", {
         "In Großstädten ist die [die U-Bahn, -en|U-Bahn] oft viel schneller als das [das Auto, -s|Auto].",
         "Am Wochenende machen wir eine Radtour mit dem [das Fahrrad, -̈er|Fahrrad] am Fluss entlang.",
         "Der [der Bus, -se|Bus] hält direkt vor meiner Haustür.",
-        "Mit dem bequemen [der Zug, -̈e|Zug] reisen wir entspannt in andere Städte."
-      ]
-    ]
+        "Mit dem bequemen [der Zug, -̈e|Zug] reisen wir entspannt in andere Städte.",
+      ],
+    ],
   },
   B1: {
     title: "Moderne Mobilität und Klimaschutz",
@@ -1592,9 +1592,9 @@ createStory("verkehrsmittel", {
         "Immer mehr Berufspendler verzichten bewusst auf das eigene [das Auto, -s|Auto] und steigen auf öffentliche Verkehrsmittel um.",
         "Ein gut ausgebautes Netz von [der Bus, -se|Bussen] und [die U-Bahn, -en|U-Bahnen] reduziert Staus und schont das Klima.",
         "Für mittlere Strecken ist der moderne [der Zug, -̈e|Zug] eine komfortable und umweltfreundliche Alternative.",
-        "Dank neuer Radwege wird das [das Fahrrad, -̈er|Fahrrad] zum beliebtesten Verkehrsmittel für die täglichen Wege."
-      ]
-    ]
+        "Dank neuer Radwege wird das [das Fahrrad, -̈er|Fahrrad] zum beliebtesten Verkehrsmittel für die täglichen Wege.",
+      ],
+    ],
   },
   B2: {
     title: "Urbane Verkehrswende und intermodale Mobilität",
@@ -1603,10 +1603,10 @@ createStory("verkehrsmittel", {
       [
         "Die Dekarbonisierung des Verkehrssektors erfordert einen Paradigmenwechsel weg von der autozentrierten Stadtplanung.",
         "Die intelligente Verknüpfung von Hochgeschwindigkeits-[der Zug, -̈e|Zügen], getakteter [die U-Bahn, -en|U-Bahn] und emissionsfreiem [das Fahrrad, -̈er|Fahrrad] definiert zukunftsfähige Mobilitätskonzepte.",
-        "Elektrifizierte [der Bus, -se|Busse] und Car-Sharing-Modelle ergänzen den öffentlichen Nahverkehr effektiv."
-      ]
-    ]
-  }
+        "Elektrifizierte [der Bus, -se|Busse] und Car-Sharing-Modelle ergänzen den öffentlichen Nahverkehr effektiv.",
+      ],
+    ],
+  },
 });
 
 // 31. flughafen_bahnhof
@@ -1620,9 +1620,9 @@ createStory("flughafen_bahnhof", {
         "Unser Zug fährt heute von [das Gleis, -e|Gleis] 4 ab.",
         "Ich kaufe eine [die Fahrkarte, -n|Fahrkarte] am Automaten.",
         "Danach fahren wir zum internationalen [der Flughafen, -̈|Flughafen].",
-        "Dort wartet das große [das Flugzeug, -e|Flugzeug] auf die Passagiere."
-      ]
-    ]
+        "Dort wartet das große [das Flugzeug, -e|Flugzeug] auf die Passagiere.",
+      ],
+    ],
   },
   A2: {
     title: "Die Urlaubsreise beginnt",
@@ -1632,9 +1632,9 @@ createStory("flughafen_bahnhof", {
         "Am [der Bahnhof, -̈e|Bahnhof] zeigen wir dem Schaffner unsere gültige [die Fahrkarte, -n|Fahrkarte].",
         "Der Zug rollt pünktlich an [das Gleis, -e|Gleis] 7 ein.",
         "Am modernen [der Flughafen, -̈|Flughafen] geben wir unsere Koffer am Schalter auf.",
-        "Das silberne [das Flugzeug, -e|Flugzeug] startet pünktlich in Richtung Süden."
-      ]
-    ]
+        "Das silberne [das Flugzeug, -e|Flugzeug] startet pünktlich in Richtung Süden.",
+      ],
+    ],
   },
   B1: {
     title: "Reiseorganisation und Anschlüsse",
@@ -1644,9 +1644,9 @@ createStory("flughafen_bahnhof", {
         "Wer mit der Bahn reist, sollte bei knappen Umstiegszeiten genau auf die Anzeigetafeln an [das Gleis, -e|Gleisen] achten.",
         "Dank digitaler Buchung lässt sich die [die Fahrkarte, -n|Fahrkarte] bequem auf dem Smartphone vorzeigen.",
         "Internationale Passagiere müssen am [der Flughafen, -̈|Flughafen] rechtzeitig die Sicherheitskontrolle passieren, bevor das [das Flugzeug, -e|Flugzeug] zum Boarding bereitsteht.",
-        "Ein zentral gelegener [der Bahnhof, -̈e|Bahnhof] bietet dabei optimale Anbindungen an den Nah- und Fernverkehr."
-      ]
-    ]
+        "Ein zentral gelegener [der Bahnhof, -̈e|Bahnhof] bietet dabei optimale Anbindungen an den Nah- und Fernverkehr.",
+      ],
+    ],
   },
   B2: {
     title: "Globale Verkehrsknotenpunkte und Intermodalität",
@@ -1655,10 +1655,10 @@ createStory("flughafen_bahnhof", {
       [
         "Großflughäfen und Hauptbahnhöfe fungieren als hochkomplexe Schnittstellen des weltweiten Personen- und Güterverkehrs.",
         "Die nahtlose Anbindung von [der Flughafen, -̈|Flughafen] und Hochgeschwindigkeits-[das Gleis, -e|Gleisen] am [der Bahnhof, -̈e|Bahnhof] minimiert Umsteigezeiten und CO2-Emissionen.",
-        "Automatisierte Ticketingsysteme für jede [die Fahrkarte, -n|Fahrkarte] sowie modernste Avionik im [das Flugzeug, -e|Flugzeug] gewährleisten höchste Sicherheits- und Kapazitätsstandards."
-      ]
-    ]
-  }
+        "Automatisierte Ticketingsysteme für jede [die Fahrkarte, -n|Fahrkarte] sowie modernste Avionik im [das Flugzeug, -e|Flugzeug] gewährleisten höchste Sicherheits- und Kapazitätsstandards.",
+      ],
+    ],
+  },
 });
 
 // 32. orientierung
@@ -1671,9 +1671,9 @@ createStory("orientierung", {
         "Wir gehen geradeaus die lange [die Straße, -n|Straße] entlang.",
         "An der großen [die Kreuzung, -en|Kreuzung] biegen wir [rechts|rechts] ab.",
         "An der nächsten Ecke gehen wir nach [links|links].",
-        "Vor dem Überqueren warten wir, bis die [die Ampel, -n|Ampel] grün wird."
-      ]
-    ]
+        "Vor dem Überqueren warten wir, bis die [die Ampel, -n|Ampel] grün wird.",
+      ],
+    ],
   },
   A2: {
     title: "Nach dem Weg fragen",
@@ -1683,9 +1683,9 @@ createStory("orientierung", {
         "Entschuldigung, wie komme ich zum Rathaus?",
         "Gehen Sie diese [die Straße, -n|Straße] etwa zweihundert Meter geradeaus.",
         "An der [die Kreuzung, -en|Kreuzung] biegen Sie bitte [links|links] ab.",
-        "An der roten [die Ampel, -n|Ampel] halten Sie an und sehen das Gebäude gleich auf der [rechts|rechten] Seite."
-      ]
-    ]
+        "An der roten [die Ampel, -n|Ampel] halten Sie an und sehen das Gebäude gleich auf der [rechts|rechten] Seite.",
+      ],
+    ],
   },
   B1: {
     title: "Sichere Orientierung in der Großstadt",
@@ -1695,9 +1695,9 @@ createStory("orientierung", {
         "In einer unbekannten Stadt hilft ein genauer Blick auf die Straßenschilder, um sich nicht zu verlaufen.",
         "An einer unübersichtlichen [die Kreuzung, -en|Kreuzung] sollte man aufmerksam auf den Abbiegeverkehr achten.",
         "Sobald die [die Ampel, -n|Ampel] auf Grün umschaltet, überquert man zügig die [die Straße, -n|Straße].",
-        "Wer nach [rechts|rechts] oder [links|links] schaut, behält stets die Orientierung."
-      ]
-    ]
+        "Wer nach [rechts|rechts] oder [links|links] schaut, behält stets die Orientierung.",
+      ],
+    ],
   },
   B2: {
     title: "Urbane Topografie und kognitive Kartierung",
@@ -1706,10 +1706,10 @@ createStory("orientierung", {
       [
         "Die menschliche Raumorientierung stützt sich auf markante Landmarken und das orthogonale Raster historischer [die Straße, -n|Straßen].",
         "Komplexe [die Kreuzung, -en|Kreuzungen] erfordern intelligente Lichtsignalanlagen wie adaptive [die Ampel, -n|Ampeln], um Verkehrsflüsse dynamisch zu steuern.",
-        "Die intuitive Wahrnehmung von [rechts|rechts] und [links|links] wird in modernen Smart Cities durch barrierefreie taktile Leitsysteme ergänzt."
-      ]
-    ]
-  }
+        "Die intuitive Wahrnehmung von [rechts|rechts] und [links|links] wird in modernen Smart Cities durch barrierefreie taktile Leitsysteme ergänzt.",
+      ],
+    ],
+  },
 });
 
 // 33. gebaeude_und_orte
@@ -1723,9 +1723,9 @@ createStory("gebaeude_und_orte", {
         "Im lebendigen [das Zentrum|Zentrum] steht das historische [das Rathaus, -̈er|Rathaus].",
         "Ich bringe ein Paket zur [die Post|Post] und hebe Geld bei der [die Bank, -en|Bank] ab.",
         "Medikamente kaufe ich in der [die Apotheke, -n|Apotheke].",
-        "Kranke Menschen werden im [das Krankenhaus, -̈er|Krankenhaus] behandelt, und die [die Polizei|Polizei] sorgt für Sicherheit."
-      ]
-    ]
+        "Kranke Menschen werden im [das Krankenhaus, -̈er|Krankenhaus] behandelt, und die [die Polizei|Polizei] sorgt für Sicherheit.",
+      ],
+    ],
   },
   A2: {
     title: "Erledigungen in der Nachbarschaft",
@@ -1735,9 +1735,9 @@ createStory("gebaeude_und_orte", {
         "Gestern hatte ich viele Erledigungen in der [die Stadt, -̈e|Stadt].",
         "Zuerst ging ich zur [die Bank, -en|Bank], um ein neues Konto zu eröffnen.",
         "Danach holte ich ein Rezept in der [die Apotheke, -n|Apotheke] ab.",
-        "Im [das Zentrum|Zentrum] der Stadt patrouilliert [die Polizei|die Polizei] regelmäßig für die Sicherheit aller Bürger."
-      ]
-    ]
+        "Im [das Zentrum|Zentrum] der Stadt patrouilliert [die Polizei|die Polizei] regelmäßig für die Sicherheit aller Bürger.",
+      ],
+    ],
   },
   B1: {
     title: "Öffentliche Infrastruktur und Bürgerdienste",
@@ -1747,9 +1747,9 @@ createStory("gebaeude_und_orte", {
         "Eine bürgernahe [die Stadt, -̈e|Stadt] zeichnet sich durch kurze Wege zu allen lebenswichtigen Institutionen aus.",
         "Im [das Rathaus, -̈er|Rathaus] können Einwohner ihren Wohnsitz anmelden und Ausweisdokumente beantragen.",
         "Das moderne [das Krankenhaus, -̈er|Krankenhaus] gewährleistet zusammen mit Notfallapotheken eine lückenlose medizinische Versorgung rund um die Uhr.",
-        "Sowohl [die Post|die Post] als auch Bankfilialen sichern die tägliche Nahversorgung im städtischen [das Zentrum|Zentrum]."
-      ]
-    ]
+        "Sowohl [die Post|die Post] als auch Bankfilialen sichern die tägliche Nahversorgung im städtischen [das Zentrum|Zentrum].",
+      ],
+    ],
   },
   B2: {
     title: "Kommunale Daseinsvorsorge und Stadtentwicklung",
@@ -1758,10 +1758,10 @@ createStory("gebaeude_und_orte", {
       [
         "Die institutionelle Daseinsvorsorge bildet das unverzichtbare Fundament florierender Kommunen.",
         "Die Konzentration zentraler Einrichtungen wie [das Rathaus, -̈er|Rathaus], Haupt-[die Post|Post] und administrativer Zentren im historischen [das Zentrum|Zentrum] stärkt die urbane Identität.",
-        "Gleichzeitig bildet die enge Kooperation von [das Krankenhaus, -̈er|Krankenhaus] und [die Polizei|Polizei] das Rückgrat ziviler Resilienz und öffentlicher Sicherheit."
-      ]
-    ]
-  }
+        "Gleichzeitig bildet die enge Kooperation von [das Krankenhaus, -̈er|Krankenhaus] und [die Polizei|Polizei] das Rückgrat ziviler Resilienz und öffentlicher Sicherheit.",
+      ],
+    ],
+  },
 });
 
 // 34. einkaufen
@@ -1775,9 +1775,9 @@ createStory("einkaufen", {
         "Frisches Brot kaufe ich morgens in der [die Bäckerei, -en|Bäckerei].",
         "Am Samstag besuche ich den bunten [der Markt, -̈e|Markt] auf dem Platz.",
         "Ich bezahle an der Kasse mit [das Geld|Geld].",
-        "Manche Produkte sind [billig / günstig|günstig], aber andere sind sehr [teuer|teuer]."
-      ]
-    ]
+        "Manche Produkte sind [billig / günstig|günstig], aber andere sind sehr [teuer|teuer].",
+      ],
+    ],
   },
   A2: {
     title: "Angebote vergleichen",
@@ -1787,9 +1787,9 @@ createStory("einkaufen", {
         "In der Fußgängerzone gibt es viele schöne [das Geschäft, -e|Geschäfte].",
         "In der [die Bäckerei, -en|Bäckerei] duftet es herrlich nach warmen Brötchen.",
         "Im [der Supermarkt, -̈e|Supermarkt] vergleiche ich die Preise, um [das Geld|Geld] zu sparen.",
-        "Frisches Gemüse auf dem [der Markt, -̈e|Markt] ist oft von besserer Qualität als die [billig / günstig|billige] Ware im Discounter."
-      ]
-    ]
+        "Frisches Gemüse auf dem [der Markt, -̈e|Markt] ist oft von besserer Qualität als die [billig / günstig|billige] Ware im Discounter.",
+      ],
+    ],
   },
   B1: {
     title: "Preisbewusstes und nachhaltiges Einkaufen",
@@ -1799,9 +1799,9 @@ createStory("einkaufen", {
         "Ein durchdachter Einkaufszettel hilft dabei, im [der Supermarkt, -̈e|Supermarkt] keine unnötigen Dinge zu kaufen.",
         "Wer lokale [das Geschäft, -e|Geschäfte] und inhabergeführte [die Bäckerei, -en|Bäckereien] unterstützt, stärkt die Wirtschaft im eigenen Viertel.",
         "Auf dem regionalen [der Markt, -̈e|Markt] bekommt man saisonale Produkte direkt vom Erzeuger, was oft gar nicht [teuer|teurer] als im Supermarkt ist.",
-        "Ein bewusster Umgang mit [das Geld|Geld] ermöglicht es, auf [billig / günstig|günstige] Sonderangebote zurückzugreifen, ohne auf Qualität zu verzichten."
-      ]
-    ]
+        "Ein bewusster Umgang mit [das Geld|Geld] ermöglicht es, auf [billig / günstig|günstige] Sonderangebote zurückzugreifen, ohne auf Qualität zu verzichten.",
+      ],
+    ],
   },
   B2: {
     title: "Konsumsoziologie und Strukturwandel des Einzelhandels",
@@ -1810,10 +1810,10 @@ createStory("einkaufen", {
       [
         "Der stationäre Einzelhandel steht im Zuge der Digitalisierung vor tiefgreifenden ökonomischen Umbrüchen.",
         "Traditionsreiche Fach-[das Geschäft, -e|Geschäfte] müssen ihr Profil schärfen, um gegen großflächige [der Supermarkt, -̈e|Supermärkte] und Online-Plattformen zu bestehen.",
-        "Verbraucher reflektieren zunehmend die Wertschöpfung hinter scheinbar [billig / günstig|billigen] Preisen und sind bereit, für ethisch erzeugte Produkte angemessenes [das Geld|Geld] zu investieren."
-      ]
-    ]
-  }
+        "Verbraucher reflektieren zunehmend die Wertschöpfung hinter scheinbar [billig / günstig|billigen] Preisen und sind bereit, für ethisch erzeugte Produkte angemessenes [das Geld|Geld] zu investieren.",
+      ],
+    ],
+  },
 });
 
 // 35. in_der_schule
@@ -1827,9 +1827,9 @@ createStory("in_der_schule", {
         "Der freundliche [der Lehrer, -|Lehrer] erklärt die deutsche Grammatik.",
         "Jeder fleißige [der Schüler, -|Schüler] hört aufmerksam zu.",
         "Um acht Uhr beginnt der spannende [der Unterricht|Unterricht].",
-        "Auf dem Schulhof spielen alle fröhlich in der großen [die Pause, -n|Pause]."
-      ]
-    ]
+        "Auf dem Schulhof spielen alle fröhlich in der großen [die Pause, -n|Pause].",
+      ],
+    ],
   },
   A2: {
     title: "Lernen im Klassenzimmer",
@@ -1839,9 +1839,9 @@ createStory("in_der_schule", {
         "In der [die Schule, -n|Schule] lernen wir viele interessante Schulfächer.",
         "Wenn ein [der Schüler, -|Schüler] eine Frage hat, hilft der [der Lehrer, -|Lehrer] sofort.",
         "Während des [der Unterricht|Unterrichts] schreiben wir wichtige Notizen in unsere Hefte.",
-        "In der [die Pause, -n|Pause] essen wir ein gesundes Pausenbrot und unterhalten uns mit Freunden."
-      ]
-    ]
+        "In der [die Pause, -n|Pause] essen wir ein gesundes Pausenbrot und unterhalten uns mit Freunden.",
+      ],
+    ],
   },
   B1: {
     title: "Schulbildung und Motivation",
@@ -1851,9 +1851,9 @@ createStory("in_der_schule", {
         "Eine moderne [die Schule, -n|Schule] vermittelt nicht nur Fachwissen, sondern fördert auch soziale Kompetenzen.",
         "Ein engagierter [der Lehrer, -|Lehrer] motiviert seine Klasse durch interaktive Methoden und abwechslungsreichen [der Unterricht|Unterricht].",
         "Wenn [der Schüler, -|Schüler] aktiv mitarbeiten, fällt das Lernen für anstehende Prüfungen wesentlich leichter.",
-        "Gemeinsame Aktivitäten in der [die Pause, -n|Pause] stärken den Zusammenhalt unter den Mitschülern."
-      ]
-    ]
+        "Gemeinsame Aktivitäten in der [die Pause, -n|Pause] stärken den Zusammenhalt unter den Mitschülern.",
+      ],
+    ],
   },
   B2: {
     title: "Pädagogische Reformen und zukunftsorientierte Didaktik",
@@ -1862,10 +1862,10 @@ createStory("in_der_schule", {
       [
         "Die Transformation der [die Schule, -n|Schule] zu einem integrativen Lebens- und Lernort erfordert neuartige didaktische Ansätze.",
         "Die Rolle vom [der Lehrer, -|Lehrer] wandelt sich dabei vom reinen Wissensvermittler zum Lernbegleiter, der den [der Schüler, -|Schüler] individuell fördert.",
-        "Ein differenzierter [der Unterricht|Unterricht] verknüpft kognitive Herausforderungen mit Entspannungsphasen in der [die Pause, -n|Pause], um nachhaltige Bildungserfolge zu sichern."
-      ]
-    ]
-  }
+        "Ein differenzierter [der Unterricht|Unterricht] verknüpft kognitive Herausforderungen mit Entspannungsphasen in der [die Pause, -n|Pause], um nachhaltige Bildungserfolge zu sichern.",
+      ],
+    ],
+  },
 });
 
 // 36. buero_und_arbeit
@@ -1879,9 +1879,9 @@ createStory("buero_und_arbeit", {
         "Mein [der Beruf, -e|Beruf] macht mir viel Freude.",
         "Ich sitze an einem hellen Schreibtisch im [das Büro, -s|Büro].",
         "Mein [der Kollege, -n|Kollege] unterstützt mich bei neuen Aufgaben.",
-        "Unser [der Chef, -s|Chef] leitet das Team sehr freundlich."
-      ]
-    ]
+        "Unser [der Chef, -s|Chef] leitet das Team sehr freundlich.",
+      ],
+    ],
   },
   A2: {
     title: "Ein Tag am Arbeitsplatz",
@@ -1891,9 +1891,9 @@ createStory("buero_und_arbeit", {
         "Im [das Büro, -s|Büro] beantworten wir wichtige E-Mails und führen Telefonate.",
         "Gemeinsam mit jedem netten [der Kollege, -n|Kollegen] bearbeiten wir spannende Projekte.",
         "Unser verständnisvoller [der Chef, -s|Chef] lobt gute Leistungen regelmäßig im Teammeeting.",
-        "Ein interessanter [der Beruf, -e|Beruf] und eine faire [die Arbeit, -en|Arbeit] sind die Basis für berufliche Zufriedenheit."
-      ]
-    ]
+        "Ein interessanter [der Beruf, -e|Beruf] und eine faire [die Arbeit, -en|Arbeit] sind die Basis für berufliche Zufriedenheit.",
+      ],
+    ],
   },
   B1: {
     title: "Karriere und Teamzusammenhalt",
@@ -1903,9 +1903,9 @@ createStory("buero_und_arbeit", {
         "In der modernen Arbeitswelt gewinnt die kollegiale Zusammenarbeit im [das Büro, -s|Büro] stetig an Bedeutung.",
         "Wer mit jedem [der Kollege, -n|Kollegen] respektvoll und konstruktiv kommuniziert, meistert auch anspruchsvolle Deadlines erfolgreich.",
         "Ein erfahrener [der Chef, -s|Chef] delegiert Aufgaben zielgerichtet und fördert die Stärken seiner Mitarbeiter.",
-        "Wer Freude an seiner täglichen [die Arbeit, -en|Arbeit] hat, entwickelt sich in seinem [der Beruf, -e|Beruf] kontinuierlich weiter."
-      ]
-    ]
+        "Wer Freude an seiner täglichen [die Arbeit, -en|Arbeit] hat, entwickelt sich in seinem [der Beruf, -e|Beruf] kontinuierlich weiter.",
+      ],
+    ],
   },
   B2: {
     title: "New Work und die Transformation der Arbeitswelt",
@@ -1914,10 +1914,10 @@ createStory("buero_und_arbeit", {
       [
         "Das Paradigma von New Work revolutioniert traditionelle Vorstellungen von Raum und Zeit in der täglichen [die Arbeit, -en|Arbeit].",
         "Das physische [das Büro, -s|Büro] transformiert sich von einer reinen Präsenzstätte zur kollaborativen Begegnungszone für jeden kreativen [der Kollege, -n|Kollegen].",
-        "Erfolgreiche Führungskräfte wie ein moderner [der Chef, -s|Chef] agieren zunehmend als Enabler, um den Anforderungen in einem dynamischen [der Beruf, -e|Beruf] gerecht zu werden."
-      ]
-    ]
-  }
+        "Erfolgreiche Führungskräfte wie ein moderner [der Chef, -s|Chef] agieren zunehmend als Enabler, um den Anforderungen in einem dynamischen [der Beruf, -e|Beruf] gerecht zu werden.",
+      ],
+    ],
+  },
 });
 
 // 37. smartphone
@@ -1931,9 +1931,9 @@ createStory("smartphone", {
         "Ich schreibe eine kurze [die Nachricht, -en|Nachricht] an meine Familie.",
         "Ich kann meine Freunde jederzeit [anrufen|anrufen].",
         "Über das schnelle [das Internet|Internet] lese ich die Nachrichten.",
-        "Am Abend arbeite ich an meinem [der Computer, -|Computer]."
-      ]
-    ]
+        "Am Abend arbeite ich an meinem [der Computer, -|Computer].",
+      ],
+    ],
   },
   A2: {
     title: "Digitale Vernetzung",
@@ -1943,9 +1943,9 @@ createStory("smartphone", {
         "Mit dem modernen [das Handy, -s|Handy] kann man tolle Fotos machen und Musik hören.",
         "Über verschiedene Apps kann ich Verwandte im Ausland [anrufen|anrufen] und ihnen eine [die Nachricht, -en|Nachricht] schicken.",
         "Über das weltweite [das Internet|Internet] finden wir schnell alle benötigten Informationen.",
-        "Für lange Texte und Tabellen benutze ich lieber den großen [der Computer, -|Computer]."
-      ]
-    ]
+        "Für lange Texte und Tabellen benutze ich lieber den großen [der Computer, -|Computer].",
+      ],
+    ],
   },
   B1: {
     title: "Chancen und Verantwortung im digitalen Raum",
@@ -1955,9 +1955,9 @@ createStory("smartphone", {
         "Mobile Endgeräte wie das [das Handy, -s|Handy] erleichtern unsere tägliche Organisation enorm.",
         "Innerhalb von Sekunden lässt sich eine wichtige [die Nachricht, -en|Nachricht] an mehrere Empfänger gleichzeitig versenden.",
         "Allerdings sollte man im [das Internet|Internet] vorsichtig mit persönlichen Daten umgehen und starke Passwörter wählen.",
-        "Der nahtlose Datenaustausch zwischen [der Computer, -|Computer] und mobilen Geräten sorgt für maximale Flexibilität beim Lernen."
-      ]
-    ]
+        "Der nahtlose Datenaustausch zwischen [der Computer, -|Computer] und mobilen Geräten sorgt für maximale Flexibilität beim Lernen.",
+      ],
+    ],
   },
   B2: {
     title: "Medienökologie und digitale Achtsamkeit",
@@ -1966,10 +1966,10 @@ createStory("smartphone", {
       [
         "Die Allgegenwart ubiquitärer Kommunikationstechnologien via [das Handy, -s|Handy] und Hochleistungs-[der Computer, -|Computer] strukturiert soziale Interaktionen grundlegend neu.",
         "Die ständige Erreichbarkeit über jede eingehende [die Nachricht, -en|Nachricht] erfordert von Individuen ein hohes Maß an digitaler Selbstdisziplin und gezieltem Medienfasten.",
-        "Zugleich eröffnet der freie Zugang zum [das Internet|Internet] beispiellose Bildungsressourcen, die kollaboratives Arbeiten über Ländergrenzen hinweg ermöglichen."
-      ]
-    ]
-  }
+        "Zugleich eröffnet der freie Zugang zum [das Internet|Internet] beispiellose Bildungsressourcen, die kollaboratives Arbeiten über Ländergrenzen hinweg ermöglichen.",
+      ],
+    ],
+  },
 });
 
 // 38. freizeitaktivitaeten
@@ -1983,9 +1983,9 @@ createStory("freizeitaktivitaeten", {
         "Am liebsten möchte ich entspannte [Musik hören|Musik hören].",
         "Am Wochenende treibe ich gern [der Sport|Sport] im Park.",
         "Mit Freunden gehe ich ins [das Kino, -s|Kino] und schaue Filme.",
-        "Im Garten können die Kinder fröhlich [spielen|spielen]."
-      ]
-    ]
+        "Im Garten können die Kinder fröhlich [spielen|spielen].",
+      ],
+    ],
   },
   A2: {
     title: "Ein freier Nachmittag",
@@ -1995,9 +1995,9 @@ createStory("freizeitaktivitaeten", {
         "Nach der Schule haben wir viel Zeit für unsere liebsten Hobbys.",
         "Am Nachmittag wollen wir im Verein Fußball [spielen|spielen].",
         "Auf dem Sofa kann ich mich ausruhen und schöne [Musik hören|Musik hören].",
-        "Am Samstagabend verabreden wir uns vor dem [das Kino, -s|Kino] für eine neue Komödie."
-      ]
-    ]
+        "Am Samstagabend verabreden wir uns vor dem [das Kino, -s|Kino] für eine neue Komödie.",
+      ],
+    ],
   },
   B1: {
     title: "Ausgleich und aktive Erholung",
@@ -2007,9 +2007,9 @@ createStory("freizeitaktivitaeten", {
         "Ein aktiver Ausgleich zum oft bewegungsarmen Berufsalltag ist essenziell für die Gesundheit.",
         "Regelmäßiger [der Sport|Sport] baut Stresshormone ab und stärkt das körperliche Wohlbefinden nachhaltig.",
         "Wer gern liest, kann beim [lesen|Lesen] anspruchsvoller Literatur in fremde Gedankenwelten eintauchen.",
-        "Gemeinsame Kulturerlebnisse im [das Kino, -s|Kino] oder Konzerte bieten eine wunderbare Gelegenheit, Freundschaften zu pflegen."
-      ]
-    ]
+        "Gemeinsame Kulturerlebnisse im [das Kino, -s|Kino] oder Konzerte bieten eine wunderbare Gelegenheit, Freundschaften zu pflegen.",
+      ],
+    ],
   },
   B2: {
     title: "Freizeitsoziologie und Work-Life-Balance",
@@ -2018,10 +2018,10 @@ createStory("freizeitaktivitaeten", {
       [
         "In der modernen Leistungsgesellschaft gewinnt die bewusste Gestaltung von Muße und Rekreation zunehmend an strategischer Bedeutung.",
         "Ob man beim konzentrierten [lesen|Lesen], beim meditativen [Musik hören|Musikhören] oder bei anspruchsvollem [der Sport|Sport] Entlastung findet – entscheidend ist die intrinsische Motivation.",
-        "Kulturelle Teilhabe durch das [das Kino, -s|Kino] und kreative Räume zum zweckfreien [spielen|Spielen] fördern die geistige Agilität und emotionale Resilienz."
-      ]
-    ]
-  }
+        "Kulturelle Teilhabe durch das [das Kino, -s|Kino] und kreative Räume zum zweckfreien [spielen|Spielen] fördern die geistige Agilität und emotionale Resilienz.",
+      ],
+    ],
+  },
 });
 
 // 39. der_koerper
@@ -2034,9 +2034,9 @@ createStory("der_koerper", {
         "Auf meinem [der Kopf, -̈e|Kopf] wachsen die Haare.",
         "Ich hebe schwere Taschen mit meinem starken [der Arm, -e|Arm].",
         "Beim Laufen bewege ich jedes [das Bein, -e|Bein].",
-        "Nach dem leckeren Essen ist mein [der Bauch, -̈e|Bauch] voll und zufrieden."
-      ]
-    ]
+        "Nach dem leckeren Essen ist mein [der Bauch, -̈e|Bauch] voll und zufrieden.",
+      ],
+    ],
   },
   A2: {
     title: "Bewegung und Fitness",
@@ -2046,9 +2046,9 @@ createStory("der_koerper", {
         "Vor dem Sport dehne ich meine [der Arm, -e|Arme] und meine [der Bein, -e|Beine] gründlich.",
         "Wenn man zu viel Süßes isst, bekommt man manchmal Schmerzen im [der Bauch, -̈e|Bauch].",
         "Nach einem langen Arbeitstag am Computer tut mir oft der [der Kopf, -̈e|Kopf] weh.",
-        "Ein Spaziergang an der frischen Luft tut dem ganzen Körper gut."
-      ]
-    ]
+        "Ein Spaziergang an der frischen Luft tut dem ganzen Körper gut.",
+      ],
+    ],
   },
   B1: {
     title: "Körperbewusstsein und Ergonomie",
@@ -2058,9 +2058,9 @@ createStory("der_koerper", {
         "Eine ergonomische Sitzhaltung am Schreibtisch entlastet Nacken, [der Kopf, -̈e|Kopf] und Schultern wirksam.",
         "Gezieltes Krafttraining stärkt die Muskeln in [der Arm, -e|Armen] und [das Bein, -e|Beinen], was Fehlhaltungen im Alltag vorbeugt.",
         "Die Verdauungsorgane im [der Bauch, -̈e|Bauch] reagieren hochsensibel auf psychischen Stress und ungesunde Nahrung.",
-        "Wer auf die Signale seines Körpers achtet, bleibt langfristig vital und leistungsfähig."
-      ]
-    ]
+        "Wer auf die Signale seines Körpers achtet, bleibt langfristig vital und leistungsfähig.",
+      ],
+    ],
   },
   B2: {
     title: "Somatische Intelligenz und muskuloskelettale Funktionalität",
@@ -2069,10 +2069,10 @@ createStory("der_koerper", {
       [
         "Der menschliche Bewegungsapparat bildet ein hochkomplexes biomechanisches System kinetischer Ketten.",
         "Die koordinierte Kraftübertragung von den [das Bein, -e|Beinen] über das Becken bis in die [der Arm, -e|Arme] ermöglicht Höchstleistungen im Leistungssport.",
-        "Psychosomatische Spannungen manifestieren sich häufig in Spannungskopfschmerzen im [der Kopf, -̈e|Kopf] oder in viszeralen Dysfunktionen im [der Bauch, -̈e|Bauch]."
-      ]
-    ]
-  }
+        "Psychosomatische Spannungen manifestieren sich häufig in Spannungskopfschmerzen im [der Kopf, -̈e|Kopf] oder in viszeralen Dysfunktionen im [der Bauch, -̈e|Bauch].",
+      ],
+    ],
+  },
 });
 
 // 40. krankheiten
@@ -2085,9 +2085,9 @@ createStory("krankheiten", {
         "Wenn ich krank bin, spüre ich unangenehme [die Schmerzen (Pl.)|Schmerzen].",
         "Ich gehe in die Praxis und spreche mit dem [der Arzt, -̈e|Arzt].",
         "Der Arzt verschreibt mir ein wirksames [das Medikament, -e|Medikament].",
-        "Im kalten Winter habe ich manchmal eine starke [die Erkältung, -en|Erkältung] mit Husten."
-      ]
-    ]
+        "Im kalten Winter habe ich manchmal eine starke [die Erkältung, -en|Erkältung] mit Husten.",
+      ],
+    ],
   },
   A2: {
     title: "Ein Besuch beim Arzt",
@@ -2097,9 +2097,9 @@ createStory("krankheiten", {
         "Gestern fühlte sich Lisa schlapp und hatte hohes Fieber.",
         "Der freundliche [der Arzt, -̈e|Arzt] untersuchte ihren Hals und ihre Lunge gründlich.",
         "Gegen die [die Schmerzen (Pl.)|Schmerzen] und das Fieber gab er ihr ein gutes [das Medikament, -e|Medikament].",
-        "Bei einer gewöhnlichen [die Erkältung, -en|Erkältung] sollte man viel warmen Tee trinken und im Bett bleiben."
-      ]
-    ]
+        "Bei einer gewöhnlichen [die Erkältung, -en|Erkältung] sollte man viel warmen Tee trinken und im Bett bleiben.",
+      ],
+    ],
   },
   B1: {
     title: "Genesung und Gesundheitsvorsorge",
@@ -2109,9 +2109,9 @@ createStory("krankheiten", {
         "Bei ersten Anzeichen einer [die Erkältung, -en|Erkältung] kann man mit Ruhe und Vitaminen eine Verschlimmerung verhindern.",
         "Sollten anhaltende [die Schmerzen (Pl.)|Schmerzen] auftreten, ist der zeitnahe Gang zum [der Arzt, -̈e|Arzt] dringend ratsam.",
         "Verschreibungspflichtige [das Medikament, -e|Medikamente] müssen stets exakt nach ärztlicher Verordnung eingenommen werden.",
-        "Ein starkes Immunsystem und regelmäßige Bewegung sind der beste Schutz vor vielen Infektionskrankheiten."
-      ]
-    ]
+        "Ein starkes Immunsystem und regelmäßige Bewegung sind der beste Schutz vor vielen Infektionskrankheiten.",
+      ],
+    ],
   },
   B2: {
     title: "Klinische Diagnostik und evidenzbasierte Pharmakotherapie",
@@ -2120,20 +2120,22 @@ createStory("krankheiten", {
       [
         "Die moderne Allgemeinmedizin verfolgt einen ganzheitlichen Ansatz bei der Diagnose akuter und chronischer Erkrankungen.",
         "Ein erfahrener [der Arzt, -̈e|Arzt] differenziert präzise zwischen viralen Infekten wie einer banalen [die Erkältung, -en|Erkältung] und behandlungsbedürftigen bakteriellen Komplikationen.",
-        "Die zielgerichtete Verordnung von [das Medikament, -e|Medikamenten] dient nicht allein der Linderung quälender [die Schmerzen (Pl.)|Schmerzen], sondern der kausalen Beseitigung pathologischer Ursachen."
-      ]
-    ]
-  }
+        "Die zielgerichtete Verordnung von [das Medikament, -e|Medikamenten] dient nicht allein der Linderung quälender [die Schmerzen (Pl.)|Schmerzen], sondern der kausalen Beseitigung pathologischer Ursachen.",
+      ],
+    ],
+  },
 });
 
 // Write to topic-stories.json
 const targetStoriesPath = path.resolve("./src/features/vocabulary/data/topic-stories.json");
 fs.writeFileSync(targetStoriesPath, JSON.stringify(stories, null, 2), "utf8");
-console.log(`Successfully written 4-level CEFR stories for all ${Object.keys(stories).length} topics to ${targetStoriesPath}`);
+console.log(
+  `Successfully written 4-level CEFR stories for all ${Object.keys(stories).length} topics to ${targetStoriesPath}`,
+);
 
 // Update all 12 vocabulary JSON files in src/data/vocabulary/
 const vocabDir = path.resolve("./src/data/vocabulary");
-const vocabFiles = fs.readdirSync(vocabDir).filter(f => f.endsWith(".json"));
+const vocabFiles = fs.readdirSync(vocabDir).filter((f) => f.endsWith(".json"));
 
 for (const file of vocabFiles) {
   const filePath = path.join(vocabDir, file);
@@ -2150,7 +2152,7 @@ for (const file of vocabFiles) {
           badge: topicStories.A1.badge,
           title: topicStories.A1.title,
           intro: topicStories.A1.intro,
-          paragraphs: topicStories.A1.paragraphs
+          paragraphs: topicStories.A1.paragraphs,
         };
         updatedCount++;
       }

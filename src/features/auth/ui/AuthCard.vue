@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative flex w-full min-w-0 animate-fade-in items-center justify-center">
+  <div class="animate-fade-in relative flex w-full min-w-0 items-center justify-center">
     <!-- Decorative ambient glows using theme colors -->
     <div
       aria-hidden="true"
@@ -49,7 +49,7 @@ onMounted(() => {
     </div>
 
     <div
-      class="relative flex w-full min-w-0 animate-scale-in flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
+      class="animate-scale-in relative flex w-full min-w-0 flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-card shadow-2xl shadow-orange/5 backdrop-blur-(--glass-blur) tablet:max-w-2xl tablet:flex-row laptop:max-w-4xl desktop:max-w-5xl"
     >
       <!-- PANEL 1: Left navigation menu (desktop/tablet) -->
       <nav
@@ -214,7 +214,10 @@ onMounted(() => {
               class="size-full object-contain"
             />
           </div>
-          <div class="font-display text-xl font-bold text-white" aria-hidden="true">
+          <div
+            class="font-display text-xl font-bold text-white"
+            aria-hidden="true"
+          >
             Elite Regewelt
           </div>
           <p class="mt-1 text-xs text-text-muted">Deine umfassende Deutsch-Lernplattform.</p>

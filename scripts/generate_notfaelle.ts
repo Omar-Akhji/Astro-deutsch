@@ -1,0 +1,854 @@
+import fs from "node:fs";
+import { vocabularyCollectionSchema } from "../src/features/vocabulary/model/schema.ts";
+
+const batchData: Record<string, any> = {
+  die_polizei: {
+    description: "Polizei, Notruf 110, Streifenwagen, Anzeige erstatten, Zeugen und Diebstahl.",
+    details: "Polizeiarbeit, Verkehrskontrolle, Straftaten, Kriminalpolizei und Sicherheit (A1–B2)",
+    arabicDescription:
+      "الشرطة والأمن (Die Polizei): جهاز الشرطة (Polizei)، رجل الشرطة (Polizist)، رقم طوارئ الشرطة 110 (Notruf 110)، سيارة الدورية (Streifenwagen)، الأصفاد (Handschellen)، تقديم بلاغ وشكوى رسمية (Anzeige erstatten)، السرقة (Diebstahl)، الشاهد (Zeuge)، قسم ومخفر الشرطة (Polizeiwache)، وإلقاء القبض (festnehmen).",
+    words: [
+      {
+        german: "die Polizei (Sg.)",
+        arabic: "الشرطة والأمن العام",
+        english: "police",
+        example: "Bei einem Unfall oder Einbruch verständigen wir sofort die Polizei.",
+      },
+      {
+        german: "der Polizist, -en",
+        arabic: "ضابط / شرطي الأمن",
+        english: "police officer",
+        example: "Der freundliche Polizist half dem verirrten Kind, seine Eltern wiederzufinden.",
+      },
+      {
+        german: "der Notruf 110 (Sg.)",
+        arabic: "رقم طوارئ الشرطة الألماني (110)",
+        english: "police emergency number 110",
+        example: "Wählen Sie in akuten Gefahrensituationen sofort den Notruf 110.",
+      },
+      {
+        german: "der Streifenwagen, -",
+        arabic: "سيارة دورية الشرطة",
+        english: "patrol car, police car",
+        example: "Ein blau-silberner Streifenwagen hielt am Straßenrand für eine Kontrolle.",
+      },
+      {
+        german: "die Handschellen (Pl.)",
+        arabic: "الكلبشات والأصفاد الحديدية",
+        english: "handcuffs",
+        example: "Der Beamte legte dem flüchtigen Täter Handschellen an.",
+      },
+      {
+        german: "die Strafanzeige, -n",
+        arabic: "البلاغ الجنائي والشكوى الرسمية",
+        english: "criminal complaint, police report",
+        example:
+          "Nach dem Diebstahl meines Fahrrads erstattete ich eine Strafanzeige auf der Wache.",
+      },
+      {
+        german: "der Diebstahl, -̈e",
+        arabic: "جريمة السرقة",
+        english: "theft, burglary",
+        example: "Die Kriminalpolizei ermittelt wegen schweren Diebstahls im Juweliergeschäft.",
+      },
+      {
+        german: "der Zeuge, -n",
+        arabic: "الشاهد على الحادث أو الجريمة",
+        english: "witness",
+        example: "Ein aufmerksamer Zeuge konnte das Kennzeichen des Fluchtwagens notieren.",
+      },
+      {
+        german: "die Polizeiwache, -n",
+        arabic: "مخفر / قسم الشرطة",
+        english: "police station",
+        example: "Auf der zentralen Polizeiwache gab der Geschädigte seine Aussage zu Protokoll.",
+      },
+      {
+        german: "der Personalausweis, -e",
+        arabic: "بطاقة إثبات الهوية الشخصية",
+        english: "identity card, ID card",
+        example:
+          "Bitte zeigen Sie bei der Verkehrskontrolle Ihren Führerschein und Personalausweis.",
+      },
+      {
+        german: "festnehmen",
+        arabic: "يعتقل ويقبض على المشتبه به",
+        english: "to arrest, to detain",
+        example: "Die Beamten konnten den mutmaßlichen Einbrecher auf frischer Tat festnehmen.",
+      },
+      {
+        german: "die Zeugenaussage, -n",
+        arabic: "شهادة وإفادة الشاهد أمام الشرطة",
+        english: "witness testimony, statement",
+        example:
+          "Ihre präzise Zeugenaussage half dabei, den Unfallhergang exakt zu rekonstruieren.",
+      },
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Hilfe von der Polizei",
+        intro: "Einfache Sätze über Polizei, Ausweis und Notruf 110 (A1).",
+        paragraphs: [
+          [
+            "In Deutschland ist [die Polizei (Sg.)|die Polizei] für unsere Sicherheit da.",
+            "Wenn etwas Schlimmes passiert, wähle ich [der Notruf 110 (Sg.)|den Notruf 110].",
+            "Kurz darauf kommt [der Streifenwagen, -|ein Streifenwagen] mit zwei Polizisten.",
+          ],
+          [
+            "[der Polizist, -en|Der Polizist] fragt: 'Haben Sie Ihren [der Personalausweis, -e|Personalausweis] dabei?'",
+            "Ich zeige meine Karte.",
+            "Die Beamten helfen freundlich und schützen die Bürger.",
+          ],
+        ],
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Erweiterte Grundlagen",
+        title: "Mein Fahrrad wurde gestohlen",
+        intro: "Diebstahl melden, Anzeige erstatten und Zeugen finden (A2).",
+        paragraphs: [
+          [
+            "Gestern kam ich vom Einkaufen zurück und mein Fahrrad war weg.",
+            "Jemand hatte das Schloss geknackt: Es war [der Diebstahl, -̈e|ein Diebstahl].",
+          ],
+          [
+            "Ich ging direkt zu [die Polizeiwache, -n|der nächsten Polizeiwache] am Bahnhof.",
+            "Dort erstattete ich [die Strafanzeige, -n|eine offizielle Strafanzeige] gegen Unbekannt.",
+            "Ein Nachbar war [der Zeuge, -n|Zeuge] gewesen und hatte einen Mann mit Werkzeug gesehen.",
+            "Mit der Bescheinigung der Polizei konnte ich den Schaden bei meiner Versicherung einreichen.",
+          ],
+        ],
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Selbstständige Sprachverwendung",
+        title: "Polizeiarbeit und Bürgerrechte im Rechtsstaat",
+        intro: "Verkehrskontrollen, Ermittlungsverfahren und Zeugenaussagen (B1).",
+        paragraphs: [
+          [
+            "In einem demokratischen Rechtsstaat agiert [die Polizei (Sg.)|die Polizei] streng auf dem Fundament der verfassungsmäßigen Gesetze.",
+            "Bei einer routinemäßigen Verkehrskontrolle überprüfen Beamte Fahrzeugpapiere und Fahrtauglichkeit, um Gefahren für Unbeteiligte abzuwenden.",
+          ],
+          [
+            "Wird eine Straftat beobachtet, ist [die Zeugenaussage, -n|eine detaillierte Zeugenaussage] für die Kriminalbeamten von unschätzbarem Wert.",
+          ],
+          [
+            "Erst wenn begründeter Tatverdacht besteht, dürfen Ermittler Verdächtige vorläufig [festnehmen|festnehmen] und dem Haftrichter vorführen.",
+          ],
+        ],
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Vertiefte Fachkompetenz",
+        title: "Gefahrenabwehr, Strafprozessrecht und Gewaltmonopol",
+        intro: "Polizeigesetze der Länder, Verhältnismäßigkeitsgrundsatz und Kriminalistik (B2).",
+        paragraphs: [
+          [
+            "Das staatliche Gewaltmonopol legitimiert die Exekutive zur Durchsetzung von Recht und Ordnung, bindet sie jedoch zugleich an den strikten Verhältnismäßigkeitsgrundsatz.",
+            "Eingriffe in Grundrechte (wie Identitätsfeststellung oder Festnahme) erfordern präzise gesetzliche Ermächtigungsgrundlagen im Polizeiaufgabengesetz (PAG) oder der Strafprozessordnung (StPO).",
+          ],
+          [
+            "Wird nach einer [die Strafanzeige, -n|Strafanzeige] ein Ermittlungsverfahren eingeleitet, arbeiten Schutzpolizei und Spurensicherung der Kriminalpolizei eng mit der Staatsanwaltschaft als Herrin des Verfahrens zusammen.",
+          ],
+          [
+            "Moderne Polizeiarbeit setzt verstärkt auf Deeskalationstechniken, Bodycams und bürgernahe Präventionsprogramme zur Kriminalitätsbekämpfung.",
+          ],
+        ],
+      },
+    },
+  },
+
+  die_feuerwehr: {
+    description:
+      "Feuerwehr, Notruf 112, Brandbekämpfung, Löschfahrzeuge, Rauchmelder und Drehleitern.",
+    details:
+      "Feuerwehreinsatz, Brandursachen, Atemschutz, Evakuierung und Rettungstechniken (A1–B2)",
+    arabicDescription:
+      "الدفاع المدني والإطفاء (Die Feuerwehr): فرقة الإطفاء (Feuerwehr)، رجل الإطفاء (Feuerwehrmann)، رقم طوارئ الإطفاء 112 (Notruf 112)، سيارة الإطفاء (Löschfahrzeug)، الحريق والنيران (Brand/Feuer)، خرطوم الإطفاء (Feuerwehrschlauch)، سلم الإطفاء الهيدروليكي (Drehleiter)، كاشف الدخان (Rauchmelder)، مطفأة الحريق (Feuerlöscher)، إخماد الحريق، والإخلاء السريع.",
+    words: [
+      {
+        german: "die Feuerwehr, -en",
+        arabic: "فرقة / جهاز الإطفاء والدفاع المدني",
+        english: "fire department, fire brigade",
+        example:
+          "Die Feuerwehr rettet Menschen aus brennenden Häusern und pumpt vollgelaufene Keller aus.",
+      },
+      {
+        german: "der Feuerwehrmann, -̈er",
+        arabic: "رجل الإطفاء / الإطفائي",
+        english: "firefighter, fireman",
+        example: "Der mutige Feuerwehrmann trug die verängstigte Katze vom Dach herunter.",
+      },
+      {
+        german: "der Notruf 112 (Sg.)",
+        arabic: "رقم طوارئ الإسعاف والإطفاء الأوروبي الموحد (112)",
+        english: "emergency number 112",
+        example: "Wenn Rauch aus dem Fenster dringt, wählen Sie ohne Zögern den Notruf 112.",
+      },
+      {
+        german: "das Löschfahrzeug, -e",
+        arabic: "سيارة إطفاء الحرائق المجهزة بالماء والمعدات",
+        english: "fire engine, fire truck",
+        example: "Zwei große Löschfahrzeuge trafen mit heulenden Sirenen am Brandort ein.",
+      },
+      {
+        german: "der Brand, -̈e",
+        arabic: "الحريق والنار المشتعلة",
+        english: "fire, blaze, conflagration",
+        example: "Durch eine brennende Kerze entstand ein gefährlicher Brand im Wohnzimmer.",
+      },
+      {
+        german: "der Feuerwehrschlauch, -̈e",
+        arabic: "خرطوم مياه الإطفاء عالي الضغط",
+        english: "fire hose",
+        example:
+          "Die Einsatzkräfte rollten den dicken Feuerwehrschlauch bis zum nächsten Hydranten aus.",
+      },
+      {
+        german: "die Drehleiter, -n",
+        arabic: "سلم الإطفاء الآلي الدوار للإنقاذ من الطوابق العليا",
+        english: "aerial ladder, turntable ladder",
+        example:
+          "Über die dreißig Meter lange Drehleiter retteten sie die Bewohner aus dem vierten Stock.",
+      },
+      {
+        german: "der Rauchmelder, -",
+        arabic: "جهاز كشف وإنذار الدخان المنزلي",
+        english: "smoke detector, smoke alarm",
+        example:
+          "In deutschen Wohnungen sind optische Rauchmelder im Schlafzimmer gesetzlich vorgeschrieben.",
+      },
+      {
+        german: "der Feuerlöscher, -",
+        arabic: "مطفأة الحريق اليدوية",
+        english: "fire extinguisher",
+        example:
+          "Mit einem Hand-Feuerlöscher konnte der Entstehungsbrand in der Küche sofort gelöscht werden.",
+      },
+      {
+        german: "löschen",
+        arabic: "يطفئ ويخمد النار",
+        english: "to extinguish, to put out (fire)",
+        example: "Mit reichlich Löschschaum gelang es ihnen, die lodernden Flammen zu löschen.",
+      },
+      {
+        german: "die Evakuierung, -en",
+        arabic: "الإخلاء وإجلاء السكان لمكان آمن",
+        english: "evacuation",
+        example:
+          "Wegen starker Rauchentwicklung ordnete die Einsatzleitung die Evakuierung des Gebäudes an.",
+      },
+      {
+        german: "die Atemschutzmaske, -n",
+        arabic: "قناع التنفس الواقي من الغازات والدخان",
+        english: "respiratory mask, breathing apparatus",
+        example:
+          "Mit schwerer Atemschutzmaske und Sauerstoffflasche drangen die Retter ins Gebäude vor.",
+      },
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Feuer! Wir rufen die 112",
+        intro: "Einfache Sätze über Feuerwehr, Feuer und Löschen (A1).",
+        paragraphs: [
+          [
+            "Es brennt im Nachbarhaus!",
+            "Ich sehe dicken Rauch und wähle sofort [der Notruf 112 (Sg.)|den Notruf 112].",
+            "Ganz schnell kommt [die Feuerwehr, -en|die Feuerwehr] mit großen roten Autos.",
+          ],
+          [
+            "[das Löschfahrzeug, -e|Das Löschfahrzeug] hält vor der Tür.",
+            "[der Feuerwehrmann, -̈er|Ein Feuerwehrmann] nimmt [der Feuerwehrschlauch, -̈e|den langen Feuerwehrschlauch].",
+            "Er spritzt viel Wasser auf [der Brand, -̈e|den Brand], um das Feuer zu [löschen|löschen].",
+          ],
+          ["Alle Menschen sind in Sicherheit und das Feuer ist aus."],
+        ],
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Erweiterte Grundlagen",
+        title: "Der Rauchmelder rettet Leben",
+        intro: "Brandmelder im Schlafzimmer, Feuerlöscher und Rettungsleitern (A2).",
+        paragraphs: [
+          [
+            "Mitten in der Nacht schrillte plötzlich [der Rauchmelder, -|der Rauchmelder] im Flur los.",
+            "Wegen eines Kurzschlusses im Toaster brannte es in der Küche.",
+          ],
+          [
+            "Mein Vater nahm sofort [der Feuerlöscher, -|den Feuerlöscher] aus dem Flur und sprühte Pulver auf die Flammen.",
+            "Gleichzeitig alarmierten wir die Feuerwehr.",
+            "Als die Feuerwehr eintraf, fuhr die Mannschaft [die Drehleiter, -n|die Drehleiter] bis zum Balkon aus, um nach weiteren Personen zu schauen.",
+          ],
+          ["Dank des schnellen Alarms kamen alle Bewohner mit dem Schrecken davon."],
+        ],
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Selbstständige Sprachverwendung",
+        title: "Freiwillige Feuerwehren und technischer Katastrophenschutz",
+        intro: "Ehrenamt in Deutschland, Atemschutzeinsätze und Evakuierung (B1).",
+        paragraphs: [
+          [
+            "Das Feuerwehrwesen in Deutschland basiert zu über neunzig Prozent auf ehrenamtlichem Engagement in Freiwilligen Feuerwehren.",
+            "Neben der klassischen Brandbekämpfung bewältigen die Retter schwere Verkehrsunfälle und Unwetterschäden.",
+          ],
+          [
+            "Bei giftigem Brandrauch betreten die Einsatzkräfte brennende Gebäude nur unter schwerem Atemschutz mit [die Atemschutzmaske, -n|einer Atemschutzmaske].",
+          ],
+          [
+            "Droht ein Übergreifen der Flammen auf Nachbargebäude, leitet die Einsatzleitung unverzüglich [die Evakuierung, -en|eine koordinierte Evakuierung] des Wohngebiets ein.",
+          ],
+        ],
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Vertiefte Fachkompetenz",
+        title: "Taktische Brandbekämpfung, Flashover-Prävention und Gefahrenmatrix",
+        intro: "Einsatzleitung, hydraulische Ventilation und thermische Phänomene (B2).",
+        paragraphs: [
+          [
+            "Im modernen Innenangriff steht die Beherrschung thermischer Dynamiken wie Flashover oder Backdraft im Zentrum taktischer Ausbildungsstandards.",
+            "Angriffstrupps nutzen Hohlstrahlrohre zur Rauchgaskühlung, um die Pyrolyse im Brandraum kontrolliert zu unterbrechen.",
+          ],
+          [
+            "Die Einsatzleitung gliedert komplexe Großschadenslagen nach der bundeseinheitlichen Feuerwehr-Dienstvorschrift (FwDV 100) in funktionale Einsatzabschnitte.",
+          ],
+          [
+            "Spezialisierte Gerätewagen für Gefahrgut (GW-G) und computergestützte Atemschutzüberwachungen gewährleisten maximale Eigensicherheit der eingesetzten Kräfte.",
+          ],
+        ],
+      },
+    },
+  },
+
+  in_den_bergen: {
+    description:
+      "Bergrettung, Lawinen, Rettungshubschrauber, Bergsteiger, Kletterseile und alpine Notfälle.",
+    details:
+      "Alpinunfälle, LVS-Geräte, Unterkühlung, Steinschlag, Schutzhütten und Flugrettung (A1–B2)",
+    arabicDescription:
+      "طوارئ وحوادث الجبال (In den Bergen): الإنقاذ الجبلي (Bergrettung)، المروحية الإسعافية (Rettungshubschrauber)، الانهيارات الثلجية (Lawine)، متسلق الجبال (Bergsteiger)، تساقط الصخور، جهاز تحديد موقع المنكوبين بالثلج (Lawinenpiepser/LVS)، حبال التسلق، الأكواخ الجبلية للاحتماء (Schutzhütte)، وانخفاض حرارة الجسم (Unterkühlung).",
+    words: [
+      {
+        german: "die Bergrettung (Sg.)",
+        arabic: "فرقة الإنقاذ الجبلي في المرتفعات",
+        english: "mountain rescue service",
+        example:
+          "Die Bergwacht und die Bergrettung rückten aus, um verunglückte Wanderer zu bergen.",
+      },
+      {
+        german: "der Rettungshubschrauber, -",
+        arabic: "طائرة الهليكوبتر الإسعافية للإنقاذ الجوي",
+        english: "rescue helicopter",
+        example:
+          "Der Rettungshubschrauber landete auf einem winzigen Felsvorsprung im Hochgebirge.",
+      },
+      {
+        german: "die Lawine, -n",
+        arabic: "الانهيار الثلجي الجبلي",
+        english: "avalanche",
+        example: "Nach heftigem Neuschnee löste sich eine gewaltige Lawine am Steilhang.",
+      },
+      {
+        german: "der Bergsteiger, -",
+        arabic: "متسلق الجبال والمرتفعات",
+        english: "mountaineer, mountain climber",
+        example:
+          "Ein erfahrener Bergsteiger prüft vor jeder Gipfeltour den Wetterbericht ganz genau.",
+      },
+      {
+        german: "der Steinschlag, -̈e",
+        arabic: "تساقط وانهيار الصخور والحصى",
+        english: "rockfall, falling rocks",
+        example: "Helme sind in felsigen Passagen Pflicht, um sich vor Steinschlag zu schützen.",
+      },
+      {
+        german: "das LVS-Gerät, -e",
+        arabic: "جهاز البحث وتحديد موقع المدفونين بالثلج",
+        english: "avalanche transceiver, beacon",
+        example:
+          "Auf Skitouren muss jeder Wintersportler ein eingeschaltetes LVS-Gerät am Körper tragen.",
+      },
+      {
+        german: "das Kletterseil, -e",
+        arabic: "حبل التسلق الديناميكي للأمان",
+        english: "climbing rope",
+        example: "Das reißfeste Kletterseil fing den stürzenden Alpinisten zuverlässig auf.",
+      },
+      {
+        german: "die Schutzhütte, -n",
+        arabic: "كوخ / ملجأ الحماية الجبلي للاحتماء من العواصف",
+        english: "mountain hut, alpine shelter",
+        example:
+          "Beim plötzlichen Gewitter fanden die Wanderer Zuflucht in einer urigen Schutzhütte.",
+      },
+      {
+        german: "der Absturz, -̈e",
+        arabic: "السقوط والانهيار من المرتفعات والهاوية",
+        english: "fall, plunge (from a height)",
+        example: "Eine solide Selbstsicherung am Klettersteig verhindert einen tödlichen Absturz.",
+      },
+      {
+        german: "die Unterkühlung, -en",
+        arabic: "انخفاض حرارة الجسم الحاد (هيبوثيرميا)",
+        english: "hypothermia",
+        example:
+          "Nach stundenlangem Ausharren im Schneesturm drohte den Eingeschlossenen eine schwere Unterkühlung.",
+      },
+      {
+        german: "das alpine Notsignal (Sg.)",
+        arabic: "إشارة الاستغاثة الجبلية المتعارف عليها (6 إشارات بالدقيقة)",
+        english: "alpine distress signal",
+        example: "Mit Trillerpfeife und Taschenlampe sendeten sie das alpine Notsignal ins Tal.",
+      },
+      {
+        german: "die Rettungswinde, -n",
+        arabic: "رافعة ونش الإنقاذ المعلقة بالطائرة المروحية",
+        english: "rescue winch, hoist",
+        example:
+          "Der Notarzt wurde mit der Rettungswinde direkt zum Verletzten in die Felswand abgeseilt.",
+      },
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Gefahr in den Bergen",
+        intro: "Einfache Sätze über Berge, Klettern und Hubschrauber (A1).",
+        paragraphs: [
+          [
+            "In den Bergen ist die Natur wunderschön, aber manchmal gefährlich.",
+            "[der Bergsteiger, -|Ein Bergsteiger] wandert auf einen hohen Felsen.",
+            "Er sichert sich mit [das Kletterseil, -e|einem starken Kletterseil].",
+          ],
+          [
+            "Plötzlich stürzt er und verletzt sich am Bein.",
+            "Er ruft laut um Hilfe.",
+            "Ganz schnell fliegt [der Rettungshubschrauber, -|ein gelber Rettungshubschrauber] herbei.",
+          ],
+          ["Die Retter fliegen ihn sicher ins Krankenhaus."],
+        ],
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Erweiterte Grundlagen",
+        title: "Schutz vor dem Schneesturm",
+        intro: "Wetterumschwung in den Alpen, Lawinengefahr und Schutzhütten (A2).",
+        paragraphs: [
+          [
+            "Bei unserer Wanderung in den Alpen schlug das Wetter plötzlich um.",
+            "Dichter Nebel zog auf und es begann heftig zu schneien.",
+          ],
+          [
+            "Wegen der Neuschneemengen bestand akute Gefahr für [die Lawine, -n|eine Lawine].",
+            "Glücklicherweise erreichten wir vor Einbruch der Dunkelheit [die Schutzhütte, -n|eine warme Schutzhütte].",
+            "Dort bekamen wir heißen Tee, um [die Unterkühlung, -en|eine gefährliche Unterkühlung] zu verhindern.",
+          ],
+          [
+            "Am nächsten Morgen holte uns [die Bergrettung (Sg.)|die Bergrettung] sicher ins Tal zurück.",
+          ],
+        ],
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Selbstständige Sprachverwendung",
+        title: "Alpine Sicherheit und Lawinennotfallausrüstung",
+        intro: "Risikomanagement auf Skitouren, LVS-Suche und Bergrettung (B1).",
+        paragraphs: [
+          [
+            "Touren im Hochgebirge verlangen fundierte alpines Wissen und disziplinierte Vorbereitung.",
+            "Auf Skitouren gehört die 'Notfallausrüstung Lawine' — bestehend aus Schaufel, Sonde und [das LVS-Gerät, -e|LVS-Gerät] — zwingend in jeden Rucksack.",
+          ],
+          [
+            "Wird ein Skifahrer verschüttet, sinken die Überlebenschancen nach fünfzehn Minuten drastisch; Kameradenhilfe vor Ort ist daher entscheidend.",
+          ],
+          [
+            "Über Mobilfunk oder [das alpine Notsignal (Sg.)|das alpine Notsignal] wird parallel [die Bergrettung (Sg.)|die Bergrettung] alarmiert, die mit [der Rettungshubschrauber, -|dem Hubschrauber] anrückt.",
+          ],
+        ],
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Vertiefte Fachkompetenz",
+        title: "Gebirgsphysiologie, Windenrettung und Lawinenkunde",
+        intro: "Schneedeckenstabilität, Hypothermie-Management und Taubergung (B2).",
+        paragraphs: [
+          [
+            "Die präklinische Notfallmedizin im alpinen Gelände stellt Retter vor extreme logistische und meteorologische Barrieren.",
+            "Bei Lawinenverschüttungen droht neben der Asphyxie ein rascher Temperaturabfall; eine akzidentelle [die Unterkühlung, -en|Unterkühlung] verlangt besonders schonende Umlagerung zur Vermeidung des berüchtigten Bergungstodes.",
+          ],
+          [
+            "In unwegsamem Felsgelände erfolgt der Einsatz über [die Rettungswinde, -n|eine Rettungswinde] im Schwebeflug (Tau- oder Windenrettung), was höchste fliegerische Präzision voraussetzt.",
+          ],
+          [
+            "Professionelle Alpinisten analysieren Schneeprofile und Gefahrenstufen des Lawinenlageberichts, um Lawinenauslösungen an Steilhängen präventiv zu vermeiden.",
+          ],
+        ],
+      },
+    },
+  },
+
+  das_meer: {
+    description:
+      "Seenotrettung, Rettungswesten, Rettungskreuzer, Ertrinken, Unterströmungen und SOS-Signale.",
+    details:
+      "Maritime Notfälle, DGzRS, Rettungsringe, Kentern, Unterkühlung im Wasser und Leuchtfeuer (A1–B2)",
+    arabicDescription:
+      "طوارئ وحوادث البحر (Das Meer): الإنقاذ البحري (Seenotrettung)، سفينة الإنقاذ السريعة (Seenotrettungskreuzer)، سترة النجاة (Rettungsweste)، قارب النجاة (Rettungsboot)، طوق النجاة (Rettungsring)، شعلة الاستغاثة الضوئية، غرق وانقلاب القارب (Kentern)، الغريق، التيارات البحرية السفلية الساحبة (Unterströmung)، وإشارة الاستغاثة (SOS-Signal).",
+    words: [
+      {
+        german: "die Seenotrettung (Sg.)",
+        arabic: "هيئة وفرق الإنقاذ البحري (DGzRS في ألمانيا)",
+        english: "maritime search and rescue (SAR)",
+        example:
+          "Die Deutsche Gesellschaft zur Rettung Schiffbrüchiger (DGzRS) leistet freiwillige Seenotrettung.",
+      },
+      {
+        german: "der Seenotrettungskreuzer, -",
+        arabic: "سفينة / طراد الإنقاذ البحري السريع في العواصف",
+        english: "rescue cruiser, lifeboat cruiser",
+        example:
+          "Der moderne Seenotrettungskreuzer trotzt selbst meterhohen Wellen in der tosenden Nordsee.",
+      },
+      {
+        german: "die Rettungsweste, -n",
+        arabic: "سترة النجاة والطفو المائية",
+        english: "life jacket, life vest",
+        example: "An Bord kleiner Boote ist das Anlegen der Rettungsweste lebenswichtig.",
+      },
+      {
+        german: "das Rettungsboot, -e",
+        arabic: "قارب وزورق النجاة",
+        english: "lifeboat",
+        example:
+          "Auf großen Passagierschiffen stehen motorisierte Rettungsboote für den Notfall bereit.",
+      },
+      {
+        german: "der Rettungsring, -e",
+        arabic: "طوق النجاة الدائري",
+        english: "lifebuoy, life ring",
+        example: "Werfen Sie dem Menschen im Wasser sofort den roten Rettungsring zu!",
+      },
+      {
+        german: "die Notsignalfackel, -n",
+        arabic: "شعلة الاستغاثة البحرية الضوئية الحمراء",
+        english: "distress flare, emergency flare",
+        example:
+          "Die Besatzung zündete eine rote Notsignalfackel, um ihre Position im Dunkeln zu markieren.",
+      },
+      {
+        german: "das Kentern (Sg.)",
+        arabic: "انقلاب القارب أو السفينة في الماء",
+        english: "capsizing (of a boat)",
+        example: "Starke Böen führten zum plötzlichen Kentern des kleinen Segelboots.",
+      },
+      {
+        german: "der Ertrinkende, -n",
+        arabic: "الشخص الغريق المشرف على الغرق",
+        english: "drowning person",
+        example:
+          "Der aufmerksame Rettungsschwimmer sprang ins Wasser und rettete den Ertrinkenden.",
+      },
+      {
+        german: "die Unterströmung, -en",
+        arabic: "التيار المائي السفلي الساحب في البحر",
+        english: "undertow, rip current",
+        example:
+          "Tückische Unterströmungen an der Sandbank ziehen selbst geübte Schwimmer aufs offene Meer.",
+      },
+      {
+        german: "das SOS-Signal, -e",
+        arabic: "إشارة الاستغاثة البحرية الدولية (SOS)",
+        english: "SOS signal, distress call",
+        example: "Der Kapitän funkten über Kanal 16 das weltweite SOS-Signal ab.",
+      },
+      {
+        german: "über Bord gehen",
+        arabic: "يسقط في البحر من على متن السفينة",
+        english: "to go overboard, to fall overboard",
+        example: "Ein Passagier ist bei schwerem Seegang über Bord gegangen.",
+      },
+      {
+        german: "der Leuchtturm, -̈e",
+        arabic: "المنارة البحرية لإرشاد السفن",
+        english: "lighthouse",
+        example:
+          "Der rot-weiße Leuchtturm warnt Schiffe vor den gefährlichen Klippen und Untiefen.",
+      },
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Sicherheit auf dem Schiff",
+        intro: "Einfache Sätze über Meer, Boot und Rettungsweste (A1).",
+        paragraphs: [
+          [
+            "Ich fahre mit einem Schiff auf dem großen Meer.",
+            "Auf dem Wasser muss man vorsichtig sein.",
+            "Ich ziehe [die Rettungsweste, -n|eine orange Rettungsweste] an.",
+          ],
+          [
+            "An der Wand hängt [der Rettungsring, -e|ein runder Rettungsring].",
+            "In der Ferne leuchtet [der Leuchtturm, -̈e|ein großer Leuchtturm].",
+            "Er zeigt den Schiffen den sicheren Weg nach Hause.",
+          ],
+          ["Auf dem Schiff fühle ich mich sicher."],
+        ],
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Erweiterte Grundlagen",
+        title: "Gefahr durch Strömung am Strand",
+        intro: "Tückische Unterströmungen, Rettungsschwimmer und Notrufe (A2).",
+        paragraphs: [
+          [
+            "Letzten Sommer verbrachten wir sonnige Tage an der Nordsee.",
+            "Obwohl das Wasser friedlich aussah, herrschte an einer Sandbank [die Unterströmung, -en|eine tückische Unterströmung].",
+          ],
+          [
+            "Ein Schwimmer geriet in Panik und drohte zu ertrinken.",
+            "Die Rettungsschwimmer der DLRG bemerkten [der Ertrinkende, -n|den Ertrinkenden] sofort.",
+            "Sie sprangen mit einem Rettungsbrett ins Meer und brachten ihn sicher ans Ufer zurück.",
+          ],
+          ["Baden im offenen Meer erfordert immer Respekt vor den Naturgewalten."],
+        ],
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Selbstständige Sprachverwendung",
+        title: "Die Helden der Seenotrettung auf Nord- und Ostsee",
+        intro: "Freiwillige Retter der DGzRS, Havarien und Notfunk (B1).",
+        paragraphs: [
+          [
+            "Wenn Stürme über die Nordsee peitschen, rückt [die Seenotrettung (Sg.)|die deutsche Seenotrettung] aus, um Menschen in Lebensgefahr zu retten.",
+            "Finanziert ausschließlich durch Spenden, fahren die Retter mit [der Seenotrettungskreuzer, -|Seenotrettungskreuzern] bei jedem Wetter hinaus.",
+          ],
+          [
+            "Bei einem plötzlichen [das Kentern (Sg.)|Kentern] einer Segelyacht sendet die Crew [das SOS-Signal, -e|ein SOS-Signal] über Seefunk aus.",
+          ],
+          [
+            "Nachts weist [die Notsignalfackel, -n|eine rote Notsignalfackel] den Suchflugzeugen den Weg zu den Schiffbrüchigen.",
+          ],
+        ],
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Vertiefte Fachkompetenz",
+        title: "GMDSS, Maritime SAR-Operationen und maritime Überlebensphysiologie",
+        intro:
+          "Global Maritime Distress and Safety System, Unterkühlung im Meerwasser und Havariekommando (B2).",
+        paragraphs: [
+          [
+            "Das Global Maritime Distress and Safety System (GMDSS) vernetzt satellitengestützte EPIRB-Bojen und UKW-DSC-Notfunk zu einem weltweiten Sicherheitsnetz.",
+            "Sobald ein Seemann im Eiswasser [über Bord gehen|über Bord geht], tickt die physiologische Überlebensuhr: Nach dem Kälteschock droht binnen Minuten die Schwimmunfähigkeit.",
+          ],
+          [
+            "Havarieräte leiten Suchmuster (Expanding Square, Sector Search) ein, bei denen modernste FLIR-Wärmebildkameras auf Rettungsschiffen treibende Personen aufspüren.",
+          ],
+          [
+            "Das reibungslose Zusammenspiel von Seenotleitung (MRCC Bremen) und Küstenwache sichert den maritimen Verkehr auf den am dichtesten befahrenen Schifffahrtsstraßen der Welt.",
+          ],
+        ],
+      },
+    },
+  },
+
+  weitere_notsituationen: {
+    description:
+      "Katastrophenschutz, Stromausfall, Hochwasser, Gasgeruch, Warn-Apps, Vorräte und Notfallpläne.",
+    details:
+      "Zivilschutz, Blackout, Hochwasserschutz, Sandsäcke, Notstrom und Bundesamt BBK (A1–B2)",
+    arabicDescription:
+      "حالات الطوارئ والكوارث الأخرى (Weitere Notsituationen): الحماية المدنية وإدارة الكوارث (Katastrophenschutz)، انقطاع الكهرباء الشامل (Stromausfall/Blackout)، الفيضانات والسيول (Hochwasser)، رائحة تسرب الغاز (Gasgeruch)، المخزون والاحتياطي المنزلي للطوارئ، تطبيقات التحذير والإنذار (Warn-App NINA)، أكياس الرمل، مولدات الكهرباء الاحتياطية، والزلازل وخطط الإخلاء.",
+    words: [
+      {
+        german: "der Katastrophenschutz (Sg.)",
+        arabic: "الحماية المدنية وإدارة الكوارث الطبيعية",
+        english: "disaster relief, civil protection",
+        example:
+          "Das THW und der Katastrophenschutz leisten bei schweren Unwettern unermüdliche Hilfe.",
+      },
+      {
+        german: "der Stromausfall, -̈e",
+        arabic: "انقطاع التيار الكهربائي (البلاك آوت)",
+        english: "power outage, blackout",
+        example:
+          "Nach einem Blitzeinschlag führte der Stromausfall dazu, dass die ganze Stadt dunkel blieb.",
+      },
+      {
+        german: "das Hochwasser, -",
+        arabic: "الفيضان والسيول وارتفاع منسوب الأنهار",
+        english: "flood, high water",
+        example:
+          "Nach tagelangem Dauerregen trat der Fluss über die Ufer und verursachte schweres Hochwasser.",
+      },
+      {
+        german: "der Gasgeruch (Sg.)",
+        arabic: "رائحة تسرب الغاز في المبنى",
+        english: "smell of gas, gas leak",
+        example:
+          "Bei auffälligem Gasgeruch darf man keine Lichtschalter betätigen und kein Feuer entzünden.",
+      },
+      {
+        german: "der Notvorrat, -̈e",
+        arabic: "المخزون الاحتياطي للطوارئ (الماء والمعلبات)",
+        english: "emergency supplies, emergency stock",
+        example:
+          "Experten raten jedem Haushalt zu einem Notvorrat an Trinkwasser für mindestens zehn Tage.",
+      },
+      {
+        german: "die Warn-App, -s",
+        arabic: "تطبيق التنبيه والإنذار بالهاتف (مثل تطبيق NINA)",
+        english: "emergency warning app (NINA / Katwarn)",
+        example: "Die offizielle Warn-App NINA schlägt bei drohenden Unwettern lautstark Alarm.",
+      },
+      {
+        german: "der Sandsack, -̈e",
+        arabic: "كيس الرمل لصد مياه الفيضانات",
+        english: "sandbag",
+        example:
+          "Hunderte Helfer stapelten Sandsäcke entlang des Deiches, um die Häuser zu schützen.",
+      },
+      {
+        german: "das Notstromaggregat, -e",
+        arabic: "مولد الكهرباء الاحتياطي للطوارئ",
+        english: "emergency generator, backup power generator",
+        example:
+          "Im Krankenhaus versorgt das Notstromaggregat die lebenserhaltenden Apparate bei Netzausfall.",
+      },
+      {
+        german: "das Erdbeben, -",
+        arabic: "الزلزال والهزة الأرضية",
+        english: "earthquake",
+        example: "Das schwere Erdbeben ließ Wände wackeln und zerstörte Brücken.",
+      },
+      {
+        german: "die Warnsirene, -n",
+        arabic: "صفارة الإنذار العامة في المدينة",
+        english: "warning siren, air raid siren",
+        example: "Beim bundesweiten Warntag heulen alle Warnsirenen pünktlich um elf Uhr.",
+      },
+      {
+        german: "die Notunterkunft, -̈e",
+        arabic: "المأوى ومركز الإيواء المؤقت للمنكوبين",
+        english: "emergency shelter",
+        example:
+          "In der Turnhalle richtete das Rote Kreuz eine Notunterkunft für die Evakuierten ein.",
+      },
+      {
+        german: "der Notfallplan, -̈e",
+        arabic: "خطة الطوارئ والإجراءات الاحترازية",
+        english: "emergency plan, contingency plan",
+        example:
+          "Jede Schule verfügt über einen verbindlichen Notfallplan für unvorhergesehene Krisen.",
+      },
+    ],
+    stories: {
+      A1: {
+        level: "A1",
+        badge: "A1 – Grundstufe",
+        title: "Es gibt keinen Strom!",
+        intro: "Einfache Sätze über Stromausfall, Kerzen und Wasser (A1).",
+        paragraphs: [
+          [
+            "Plötzlich geht im ganzen Haus das Licht aus.",
+            "Der Kühlschrank stoppt: Wir haben [der Stromausfall, -̈e|einen Stromausfall].",
+            "Ich hole [der Notvorrat, -̈e|meinen Notvorrat]: Kerzen, Streichhölzer und Wasserflaschen.",
+          ],
+          [
+            "Mein Handy zeigt eine Meldung auf [die Warn-App, -s|der Warn-App].",
+            "Dort steht: 'Die Techniker reparieren das Netz.'",
+            "Nach einer Stunde brennt das Licht wieder hell.",
+          ],
+        ],
+      },
+      A2: {
+        level: "A2",
+        badge: "A2 – Erweiterte Grundlagen",
+        title: "Hochwasser an unserem Fluss",
+        intro: "Starkregen, Sandsäcke und Nachbarschaftshilfe (A2).",
+        paragraphs: [
+          [
+            "Letzten Sommer regnete es drei Tage lang ohne Pause.",
+            "Der kleine Bach im Dorf schwoll an und verwandelte sich in gefährliches [das Hochwasser, -|Hochwasser].",
+          ],
+          [
+            "Das Technische Hilfswerk brachte tausende [der Sandsack, -̈e|Sandsäcke], um die Keller abzudichten.",
+            "Gemeinsam schaufelten wir Sand und bauten eine Schutzmauer am Ufer.",
+            "Viele Familien übernachteten vorübergehend in [die Notunterkunft, -̈e|einer Notunterkunft] in der Schulturnhalle.",
+          ],
+          ["Dank der großen Hilfsbereitschaft konnte Schlimmeres verhindert werden."],
+        ],
+      },
+      B1: {
+        level: "B1",
+        badge: "B1 – Selbstständige Sprachverwendung",
+        title: "Zivilschutz und Eigenvorsorge im Alltag",
+        intro: "Vorsorgeempfehlungen des BBK, Gasgeruch und Sirenensignale (B1).",
+        paragraphs: [
+          [
+            "Naturkatastrophen und Infrastrukturausfälle führen uns vor Augen, wie verwundbar moderne Zivilisationen sind.",
+            "Das Bundesamt für Bevölkerungsschutz und [der Katastrophenschutz (Sg.)|Katastrophenschutz] (BBK) empfiehlt daher jedem Bürger, einen individuellen [der Notvorrat, -̈e|Notvorrat] an haltbaren Lebensmitteln und Trinkwasser anzulegen.",
+          ],
+          [
+            "Bemerkt man im Treppenhaus stechenden [der Gasgeruch (Sg.)|Gasgeruch], gilt: Keine Schalter betätigen, Fenster aufreißen, Haus verlassen und Feuerwehr außerhalb alarmieren.",
+          ],
+          [
+            "Beim Ertönen [die Warnsirene, -n|einer Warnsirene] sollte man das Radio einschalten und behördliche Anweisungen befolgen.",
+          ],
+        ],
+      },
+      B2: {
+        level: "B2",
+        badge: "B2 – Vertiefte Fachkompetenz",
+        title: "Kritische Infrastrukturen (KRITIS), Resilienzstrategien und Krisenstäbe",
+        intro: "Blackout-Szenarien, Zivilschutzkonzepte und behördliche Notfallpläne (B2).",
+        paragraphs: [
+          [
+            "Der Schutz Kritischer Infrastrukturen (KRITIS) — wie Energieversorgungsnetze, Telekommunikation und Wasserversorgung — besitzt oberste sicherheitspolitische Priorität.",
+            "Ein überregionaler, mehrtägiger [der Stromausfall, -̈e|Blackout] würde Lieferketten und Abwassersysteme lahmlegen, weshalb Krankenhäuser und Rechenzentren durch redundante [das Notstromaggregat, -e|Notstromaggregate] abgesichert sind.",
+          ],
+          [
+            "Im Krisenfall aktiviert der Verwaltungsstab den behördlichen [der Notfallplan, -̈e|Notfallplan], koordiniert Hilfsorganisationen (THW, DRK, DLRG) und steuert gezielte Warnungen über Cell Broadcast und [die Warn-App, -s|Warn-Apps].",
+          ],
+          [
+            "Resilienz entsteht aus dem Zusammenwirken staatlicher Kapazitäten und informierter zivilgesellschaftlicher Vorsorge.",
+          ],
+        ],
+      },
+    },
+  },
+};
+
+const nfPath = "src/data/vocabulary/notfaelle.json";
+const nfData = JSON.parse(fs.readFileSync(nfPath, "utf8"));
+
+for (const sec of nfData.sections) {
+  for (const t of sec.topics) {
+    if (!batchData[t.id]) {
+      continue;
+    }
+
+    const src = batchData[t.id];
+    t.description = src.description;
+    t.details = src.details;
+    t.arabicDescription = src.arabicDescription;
+    t.words = src.words;
+    t.stories = src.stories;
+    console.log("Applied to topic:", t.id, "(", t.title, ") -> words:", t.words.length);
+  }
+}
+
+const res = vocabularyCollectionSchema.safeParse(nfData);
+if (!res.success) {
+  console.error("Validation failed:", res.error);
+  process.exit(1);
+}
+
+fs.writeFileSync(nfPath, JSON.stringify(nfData, null, 2) + "\n", "utf8");
+console.log("Batch successfully saved to notfaelle.json!");

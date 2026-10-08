@@ -17,7 +17,7 @@ const SLUG_MAP: Record<number, string> = {
 };
 
 const vocabDir = path.resolve("src/data/vocabulary");
-const files = fs.readdirSync(vocabDir).filter(f => f.endsWith(".json"));
+const files = fs.readdirSync(vocabDir).filter((f) => f.endsWith(".json"));
 
 for (const file of files) {
   const filePath = path.join(vocabDir, file);

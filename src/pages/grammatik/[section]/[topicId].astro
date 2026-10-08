@@ -1,9 +1,5 @@
 ---
-import {
-  Languages,
-  Layers,
-  TableProperties,
-} from "lucide-astro";
+import { Languages, Layers, TableProperties } from "lucide-astro";
 import { GrammarContentBlocks, GrammarTable } from "@/features/grammar";
 import { getGrammarTheme } from "@/features/grammar/lib/theme.ts";
 import {
@@ -61,11 +57,12 @@ const extraSchema =
 
 const subtopicsCount = currentTopic?.subtopics?.length ?? (currentTopic?.content ? 1 : 0);
 const tablesCount =
-  (currentTopic?.hasTable ? 1 : 0) +
-  (currentTopic?.subtopics?.filter((s) => s.hasTable).length ?? 0);
+  (currentTopic?.hasTable ? 1 : 0)
+  + (currentTopic?.subtopics?.filter((s) => s.hasTable).length ?? 0);
 const rulesCount =
-  (currentTopic?.content?.length ?? 0) +
-  (currentTopic?.subtopics?.reduce((accumulator, s) => accumulator + (s.content?.length ?? 0), 0) ?? 0);
+  (currentTopic?.content?.length ?? 0)
+  + (currentTopic?.subtopics?.reduce((accumulator, s) => accumulator + (s.content?.length ?? 0), 0)
+    ?? 0);
 
 const heroStats = [
   {
@@ -78,16 +75,12 @@ const heroStats = [
     value: `${tablesCount} ${tablesCount === 1 ? "Tabelle" : "Tabellen"} · ${rulesCount} Regeln`,
     icon: TableProperties,
   },
-  {
-    label: "Niveau",
-    value: "A1 · A2 · B1 · B2",
-    icon: Languages,
-  },
+  { label: "Niveau", value: "A1 · A2 · B1 · B2", icon: Languages },
 ];
 
 const heroExample =
-  currentTopic?.example ??
-  (currentTopic?.subtopics && currentTopic.subtopics.length > 0 ?
+  currentTopic?.example
+  ?? (currentTopic?.subtopics && currentTopic.subtopics.length > 0 ?
     currentTopic.subtopics.map((s) => s.title).join(" · ")
   : "Regeln, Tabellen & Beispielsätze (A1–B2)");
 ---
@@ -97,14 +90,13 @@ const heroExample =
   extraSchema={extraSchema}
   title={pageTitle}
 >
-  {!currentTopic || !currentSection ? (
+  {!currentTopic || !currentSection ?
     <div class="px-8 py-16 text-center text-white">
       <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
       <p class="mb-8 text-zinc-400">Das gewünschte Grammatikthema existiert nicht.</p>
       <BackButton />
     </div>
-  ) : (
-    <div class="relative min-h-dvh py-8">
+  : <div class="relative min-h-dvh py-8">
       <div class="animate-fade-in space-y-8">
         <!-- Compact Hero Header -->
         <Hero
@@ -125,17 +117,24 @@ const heroExample =
             <div class="flex flex-col items-center gap-4 text-center">
               <div class="space-y-1.5">
                 <div class="flex items-center justify-center gap-2">
-                  <span class="inline-flex size-2 rounded-full bg-yellow" data-gsap-pulse></span>
+                  <span
+                    class="inline-flex size-2 rounded-full bg-yellow"
+                    data-gsap-pulse
+                  ></span>
                   <h2 class="text-sm font-bold tracking-tight text-white tablet:text-base">
                     Themenübersicht & Schnellnavigation
                   </h2>
                 </div>
                 <p class="mx-auto max-w-xl text-xs text-mist-400">
-                  Wähle ein Unterthema, um direkt zur Erklärung, Konjugation und den Beispielen zu springen
+                  Wähle ein Unterthema, um direkt zur Erklärung, Konjugation und den Beispielen zu
+                  springen
                 </p>
               </div>
 
-              <nav aria-label="Unterthemen Navigation" class="flex flex-wrap items-center justify-center gap-2.5">
+              <nav
+                aria-label="Unterthemen Navigation"
+                class="flex flex-wrap items-center justify-center gap-2.5"
+              >
                 {currentTopic.subtopics.map((subtopic, index) => {
                   const theme = getGrammarTheme(index);
                   return (
@@ -159,7 +158,10 @@ const heroExample =
         <!-- Root Topic Tables & Content (if present at top level) -->
         {currentTopic.hasTable && currentTopic.tableData && (
           <section class="space-y-4">
-            <GrammarTable data={currentTopic.tableData} theme={getGrammarTheme(0)} />
+            <GrammarTable
+              data={currentTopic.tableData}
+              theme={getGrammarTheme(0)}
+            />
           </section>
         )}
 
@@ -167,7 +169,8 @@ const heroExample =
           <section class="space-y-4">
             <GrammarContentBlocks
               blocks={currentTopic.content ?? []}
-              theme={getGrammarTheme(0)}               usage={currentTopic.usage}
+              theme={getGrammarTheme(0)}
+              usage={currentTopic.usage}
             />
           </section>
         )}
@@ -183,7 +186,8 @@ const heroExample =
                     class:list={[
                       "scroll-mt-24 overflow-hidden rounded-3xl border-2 bg-card/60 shadow-xl backdrop-blur-(--glass-blur) transition-all duration-300 hover:border-white/15",
                       theme.cardBorderClass,
-                    ]}                     id={`subtopic-${subtopic.id}`}
+                    ]}
+                    id={`subtopic-${subtopic.id}`}
                   >
                     <!-- Subtopic Header Banner -->
                     <header
@@ -215,7 +219,8 @@ const heroExample =
                         )}
                         {subtopic.content && subtopic.content.length > 0 && (
                           <span class="rounded-full border-[1.5px] border-white/10 bg-white/5 px-2.5 py-0.5 text-xs font-medium text-mist-300">
-                            {subtopic.content.length} {subtopic.content.length === 1 ? "Regel" : "Regeln"}
+                            {subtopic.content.length}{" "}
+                            {subtopic.content.length === 1 ? "Regel" : "Regeln"}
                           </span>
                         )}
                       </div>
@@ -229,7 +234,10 @@ const heroExample =
 
                       {subtopic.hasTable && subtopic.tableData && (
                         <div class="space-y-3">
-                          <GrammarTable data={subtopic.tableData} theme={theme} />
+                          <GrammarTable
+                            data={subtopic.tableData}
+                            theme={theme}
+                          />
                         </div>
                       )}
 
@@ -237,7 +245,9 @@ const heroExample =
                         <div class="space-y-4">
                           <GrammarContentBlocks
                             blocks={subtopic.content ?? []}
-                            theme={theme}                             tips={subtopic.tips}                             usage={subtopic.usage}
+                            theme={theme}
+                            tips={subtopic.tips}
+                            usage={subtopic.usage}
                           />
                         </div>
                       )}
@@ -254,11 +264,12 @@ const heroExample =
           <section class="mt-8">
             <GrammarContentBlocks
               blocks={[]}
-              theme={getGrammarTheme(2)}               tips={currentTopic.tips}
+              theme={getGrammarTheme(2)}
+              tips={currentTopic.tips}
             />
           </section>
         )}
       </div>
     </div>
-  )}
+  }
 </Layout>

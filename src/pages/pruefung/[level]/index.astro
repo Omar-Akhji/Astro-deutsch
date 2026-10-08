@@ -3,15 +3,7 @@ import { getExamLevel } from "@/features/pruefung/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import BackButton from "@/shared/ui/BackButton.astro";
 import { Hero } from "@/widgets/hero";
-import {
-  Award,
-  Check,
-  Clock,
-  FileEdit,
-  Layers,
-  Lightbulb,
-  MessageSquare,
-} from "lucide-astro";
+import { Award, Check, Clock, FileEdit, Layers, Lightbulb, MessageSquare } from "lucide-astro";
 
 export async function getStaticPaths() {
   return [{ params: { level: "b1" } }, { params: { level: "b2" } }];
@@ -150,7 +142,10 @@ const heroExample =
           <div class="flex flex-col items-center gap-4 text-center">
             <div class="space-y-1.5">
               <div class="flex items-center justify-center gap-2">
-                <span class="inline-flex size-2 rounded-full bg-yellow" data-gsap-pulse></span>
+                <span
+                  class="inline-flex size-2 rounded-full bg-yellow"
+                  data-gsap-pulse
+                ></span>
                 <h2 class="text-sm font-bold tracking-tight text-white tablet:text-base">
                   Prüfungsmodule Schnellübersicht
                 </h2>
@@ -190,8 +185,16 @@ const heroExample =
         </nav>
 
         <!-- 4 Exam Module Sections (Single Frame per Module) -->
-        <section aria-labelledby="exam-modules-heading" class="space-y-8 tablet:space-y-10">
-          <h2 id="exam-modules-heading" class="sr-only">Prüfungsmodule Details</h2>
+        <section
+          aria-labelledby="exam-modules-heading"
+          class="space-y-8 tablet:space-y-10"
+        >
+          <h2
+            id="exam-modules-heading"
+            class="sr-only"
+          >
+            Prüfungsmodule Details
+          </h2>
           {currentExam.sections.map((section) => {
             const theme = getExamModuleTheme(section.id);
             const isSpeakingOrWriting =
@@ -279,7 +282,10 @@ const heroExample =
                       {section.parts.map((part) => (
                         <tr class="group/row transition-colors hover:bg-white/4">
                           <!-- Part Name -->
-                          <th scope="row" class="px-4 py-4 text-left align-top tablet:px-6">
+                          <th
+                            scope="row"
+                            class="px-4 py-4 text-left align-top tablet:px-6"
+                          >
                             <span class="inline-flex items-center rounded-lg border-[1.5px] border-white/15 bg-white/5 px-2.5 py-1 text-xs font-bold text-amber-300 whitespace-nowrap">
                               {part.name}
                             </span>

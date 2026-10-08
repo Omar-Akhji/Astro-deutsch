@@ -31,7 +31,10 @@ const { variant = "overview" } = Astro.props;
   <div class="relative min-h-dvh py-6 tablet:py-10">
     <div class="space-y-10 tablet:space-y-12">
       <!-- Compact Hero header -->
-      <HeroSkeleton variant="compact" statsCount={2} />
+      <HeroSkeleton
+        variant="compact"
+        statsCount={2}
+      />
 
       <!-- Sections with headers and cards -->
       <div class="grid gap-10 tablet:gap-12">
@@ -63,7 +66,11 @@ const { variant = "overview" } = Astro.props;
   <div class="relative min-h-dvh py-8">
     <div class="space-y-8">
       <!-- Compact Hero Header -->
-      <HeroSkeleton variant="compact" statsCount={3} hasExample={true} />
+      <HeroSkeleton
+        variant="compact"
+        statsCount={3}
+        hasExample={true}
+      />
 
       <!-- Topic Story with CEFR Level Cards and Audio Companion Island -->
       <section class="mt-8">

@@ -41,6 +41,7 @@ const eslintConfig = defineConfig(
       "*.json",
       "*.lock",
       "tsconfig.tsbuildinfo",
+      "scripts/**",
     ],
   },
 
@@ -248,17 +249,14 @@ const eslintConfig = defineConfig(
   {
     name: "jsonld-allowlist",
     files: ["src/shared/ui/JsonLd.astro", "src/layouts/Layout.astro"],
-    rules: {
-      "astro/no-set-html-directive": "off",
-    },
+    rules: { "astro/no-set-html-directive": "off" },
   },
 
   // ─── Server Actions / API Routes ──────────────────────────────────────────
   {
     name: "server-api-allowlist",
     files: ["src/actions/**/*.ts", "src/pages/api/**/*.ts"],
-    rules: {
-    },
+    rules: {},
   },
 
   // ─── Prettier Compatibility (MUST be last) ────────────────────────────────

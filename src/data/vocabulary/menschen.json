@@ -348,178 +348,13 @@
               ]
             }
           }
-        },
-        {
-          "id": "beziehungen",
-          "title": "BEZIEHUNGEN",
-          "words": [
-            {
-              "german": "die Beziehung",
-              "english": "relationship",
-              "arabic": "العلاقة",
-              "example": "Sie haben eine gute Beziehung."
-            },
-            {
-              "german": "die Freundschaft",
-              "english": "friendship",
-              "arabic": "الصداقة",
-              "example": "Unsere Freundschaft ist sehr wichtig."
-            },
-            {
-              "german": "die Liebe",
-              "english": "love",
-              "arabic": "الحب",
-              "example": "Die Liebe ist das Wichtigste im Leben."
-            },
-            {
-              "german": "der Partner / die Partnerin",
-              "english": "partner",
-              "arabic": "الشريك / الشريكة",
-              "example": "Mein Partner kommt aus Österreich."
-            },
-            {
-              "german": "sich verlieben",
-              "english": "to fall in love",
-              "arabic": "يقع في الحب",
-              "example": "Er hat sich sofort in sie verliebt."
-            },
-            {
-              "german": "sich verstehen",
-              "english": "to get along",
-              "arabic": "يتفاهم",
-              "example": "Wir verstehen uns sehr gut."
-            },
-            {
-              "german": "vertrauen",
-              "english": "to trust",
-              "arabic": "يثق",
-              "example": "Ich vertraue meinem besten Freund."
-            },
-            {
-              "german": "der Streit",
-              "english": "argument, fight",
-              "arabic": "الخلاف / الشجار",
-              "example": "Nach dem Streit haben sie sich versöhnt."
-            },
-            {
-              "german": "der Kumpel",
-              "english": "buddy, pal",
-              "arabic": "الصاحب / الرفيق",
-              "example": "Er ist mein bester Kumpel."
-            },
-            {
-              "german": "der/die Bekannte",
-              "english": "acquaintance",
-              "arabic": "المعارف",
-              "example": "Sie ist eine Bekannte von mir."
-            },
-            {
-              "german": "zusammenziehen",
-              "english": "to move in together",
-              "arabic": "ينتقل للعيش معاً",
-              "example": "Nächsten Monat ziehen wir zusammen."
-            },
-            {
-              "german": "die Zuneigung",
-              "english": "affection",
-              "arabic": "المودة / العاطفة",
-              "example": "Er zeigt seine Zuneigung selten."
-            }
-          ],
-          "story": {
-            "badge": "A1 – Grundstufe",
-            "title": "Freunde fürs Leben",
-            "intro": "Grundwortschatz zu Freundschaft und gegenseitigem Vertrauen (A1).",
-            "paragraphs": [
-              [
-                "Leon und Maya sind seit der Schulzeit beste Freunde.",
-                "Ihre [die Freundschaft|Freundschaft] ist sehr eng.",
-                "Sie sprechen über ihre Gefühle und [vertrauen|vertrauen] einander.",
-                "Leon ist ein treuer [der Kumpel|Kumpel] und hilft Maya immer gern.",
-                "An der Universität haben sie auch viele neue [der/die Bekannte|Bekannte] kennengelernt."
-              ]
-            ]
-          },
-          "stories": {
-            "A1": {
-              "level": "A1",
-              "badge": "A1 – Grundstufe",
-              "title": "Gute Freunde im Alltag",
-              "intro": "Grundwortschatz zu Freundschaft, Unterstützung und gegenseitigem Vertrauen (A1).",
-              "paragraphs": [
-                [
-                  "Leon und Maya sind seit vielen Jahren beste Freunde.",
-                  "Ihre [die Freundschaft|Freundschaft] ist sehr eng und wichtig für beide.",
-                  "Leon ist ein treuer [der Kumpel|Kumpel] und hilft immer, wenn jemand Hilfe braucht.",
-                  "Sie sprechen offen über ihre Gefühle und [vertrauen|vertrauen] einander in jeder Situation.",
-                  "An der Universität haben sie auch viele neue [der/die Bekannte|Bekannte] kennengelernt.",
-                  "Echte Freunde sind ein großes und wertvolles Geschenk im Leben."
-                ]
-              ]
-            },
-            "A2": {
-              "level": "A2",
-              "badge": "A2 – Alltag & Praxis",
-              "title": "Ein Abend im Freundeskreis",
-              "intro": "Gespräche über Alltagserlebnisse, Beziehungsfragen und gemeinsame Kompromisse (A2).",
-              "paragraphs": [
-                [
-                  "Gestern Abend haben sich Leon und Maya in einem gemütlichen Café in der Stadt getroffen.",
-                  "Sie führten ein langes Gespräch über die [die Beziehung|Beziehung] zwischen Freunden und Lebenspartnern.",
-                  "„Wir [sich verstehen|verstehen uns] einfach ohne viele Worte“, lachte Maya beim Kaffee.",
-                  "Wenn es einmal zu einem kleinen [der Streit|Streit] kommt, finden sie schnell einen fairen Kompromiss.",
-                  "Beide hören immer aufmerksam zu und respektieren die Meinung des anderen."
-                ],
-                [
-                  "Später kam noch ein alter [der Kumpel|Kumpel] aus ihrer Schulzeit vorbei.",
-                  "Gemeinsam schauten sie alte Fotos an und erinnerten sich an lustige Schulerlebnisse.",
-                  "Solche Abende vertiefen das gegenseitige [vertrauen|Vertrauen] noch weiter.",
-                  "Maya sagte zum Abschied: „Ich bin froh, dass wir so gute Freunde geblieben sind.“"
-                ]
-              ]
-            },
-            "B1": {
-              "level": "B1",
-              "badge": "B1 – Ausführliche Erzählung",
-              "title": "Partnerschaft, Liebe und Zusammenleben",
-              "intro": "Ausführliche Betrachtung von Liebe, Partnerschaft und gemeinsamen Lebensentscheidungen (B1).",
-              "paragraphs": [
-                [
-                  "Als Sophie und Jonas sich vor zwei Jahren kennenlernten, hat es nicht lange gedauert, bis sie [sich verlieben|sich ineinander verliebten].",
-                  "Für Jonas ist Sophie die ideale [der Partner / die Partnerin|Partnerin], weil sie gemeinsame Werte und Zukunftspläne teilen.",
-                  "In ihrer harmonischen [die Beziehung|Beziehung] spüren beide eine aufrichtige [die Zuneigung|Zuneigung] und tiefen gegenseitigen Respekt.",
-                  "Weil alles so positiv verlief, haben sie vor kurzem beschlossen, in eine gemeinsame Wohnung [zusammenziehen|zusammenzuziehen]."
-                ],
-                [
-                  "Natürlich bringt das Zusammenleben im Alltag auch neue Verantwortungen mit sich.",
-                  "Wenn Meinungsverschiedenheiten über den Haushalt auftreten, vermeiden sie verletzenden [der Streit|Streit] und suchen das ruhige Gespräch.",
-                  "Ihre [die Liebe|Liebe] basiert auf gegenseitiger Rücksichtnahme und der Bereitschaft, Kompromisse einzugehen.",
-                  "Eine langfristig gelingende Partnerschaft verlangt von beiden Seiten ständige Aufmerksamkeit und ehrlichen Austausch."
-                ]
-              ]
-            },
-            "B2": {
-              "level": "B2",
-              "badge": "B2 – Differenziert & Komplex",
-              "title": "Die Psychologie zwischenmenschlicher Bindungen",
-              "intro": "Anspruchsvolle Analyse von Bindungsmustern, Autonomie und Konfliktkultur (B2).",
-              "paragraphs": [
-                [
-                  "Zwischenmenschliche Beziehungen bewegen sich in einem kontinuierlichen Spannungsfeld zwischen individueller Autonomie und emotionaler Verbundenheit.",
-                  "Eine stabile [die Beziehung|Beziehung] verlangt von beiden Partnern ein hohes Maß an Selbstreflexion sowie die Fähigkeit, in Konfliktsituationen aufkeimenden [der Streit|Streit] konstruktiv zu deeskalieren.",
-                  "Echtes [vertrauen|Vertrauen] entsteht nicht spontan, sondern wächst durch kontinuierliche Verlässlichkeit und geteilte Verantwortung im Alltag."
-                ],
-                [
-                  "Während flüchtige [der/die Bekannte|Bekannte] im Laufe des Lebens häufig wechseln, zeichnet sich eine tief verwurzelte [die Freundschaft|Freundschaft] durch emotionale Beständigkeit über räumliche Distanzen hinweg aus.",
-                  "Letztlich bilden aufrichtige [die Zuneigung|Zuneigung] und gelebte [die Liebe|Liebe] das tragfähige Fundament, auf dem Menschen gemeinsam Krisen überstehen und aneinander reifen."
-                ]
-              ]
-            }
-          },
-          "description": "Wichtige Ausdrücke rund um Partnerschaft, Freundschaft, Vertrauen und das Lösen von Konflikten im Alltag.",
-          "details": "Freundschaft, Partnerschaft und zwischenmenschliche Beziehungen (A1–B2)",
-          "arabicDescription": "المفردات الأساسية والتعابير المتقدمة حول العلاقات، الصداقة، الثقة والتعامل مع الخلافات في الحياة اليومية."
-        },
+        }
+      ]
+    },
+    {
+      "id": "beziehungen",
+      "title": "BEZIEHUNGEN",
+      "topics": [
         {
           "id": "lebensphasen",
           "title": "Familie und Lebensphasen",
@@ -1949,6 +1784,30 @@
               "english": "baby shoes",
               "arabic": "أحذية الرضيع",
               "example": "Die Babyschuhe sind wirklich winzig."
+            },
+            {
+              "german": "der Schnuller, -",
+              "english": "pacifier, dummy",
+              "arabic": "اللهاية / المصاصة",
+              "example": "Der Schnuller beruhigt das weinende Baby sofort."
+            },
+            {
+              "german": "das Babyfläschchen, -",
+              "english": "baby bottle",
+              "arabic": "رضّاعة الحليب للطفل",
+              "example": "Er gibt dem Neugeborenen warme Milch aus dem Babyfläschchen."
+            },
+            {
+              "german": "der Kinderwagen, -",
+              "english": "stroller, pram",
+              "arabic": "عربة الأطفال للرضيع",
+              "example": "Die Eltern schieben den bequemen Kinderwagen durch den Park."
+            },
+            {
+              "german": "die Rassel, -n",
+              "english": "baby rattle",
+              "arabic": "خشخيشة الطفل",
+              "example": "Das Baby greift neugierig nach der bunten Rassel."
             }
           ],
           "story": {

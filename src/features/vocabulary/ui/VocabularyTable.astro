@@ -115,7 +115,10 @@ const sections: CategoryConfig[] = [
             section.cardBorderClass,
           ]}
         >
-          <h3 id={`category-title-${section.key}`} class="sr-only">
+          <h3
+            id={`category-title-${section.key}`}
+            class="sr-only"
+          >
             {section.title} ({section.germanType})
           </h3>
           <!-- Section Header Banner with bottom border -->
@@ -169,7 +172,10 @@ const sections: CategoryConfig[] = [
                 {section.words.map((word) => (
                   <tr class="group/row transition-colors hover:bg-white/4">
                     <!-- German Word Column with Pronunciation, Badge & Example -->
-                    <th scope="row" class="px-4 py-3.5 text-left font-medium @md:px-6">
+                    <th
+                      scope="row"
+                      class="px-4 py-3.5 text-left font-medium @md:px-6"
+                    >
                       <div class="flex items-start gap-3">
                         <!-- Audio Pronunciation Button -->
                         <button
@@ -208,9 +214,17 @@ const sections: CategoryConfig[] = [
                             <span
                               class:list={[
                                 "font-semibold",
-                                word.genderInfo.article ? word.genderInfo.textClass : "text-white/95",
-                                { "text-emerald-300": !word.genderInfo.article && section.key === "verb" },
-                                { "text-amber-300": !word.genderInfo.article && section.key === "adjective" },
+                                word.genderInfo.article ?
+                                  word.genderInfo.textClass
+                                : "text-white/95",
+                                {
+                                  "text-emerald-300":
+                                    !word.genderInfo.article && section.key === "verb",
+                                },
+                                {
+                                  "text-amber-300":
+                                    !word.genderInfo.article && section.key === "adjective",
+                                },
                               ]}
                             >
                               {word.genderInfo.baseWord}
@@ -228,7 +242,10 @@ const sections: CategoryConfig[] = [
                     </th>
 
                     <!-- English Column -->
-                    <td class="px-4 py-3.5 text-sm text-mist-200 @md:px-6 @md:text-base" lang="en">
+                    <td
+                      class="px-4 py-3.5 text-sm text-mist-200 @md:px-6 @md:text-base"
+                      lang="en"
+                    >
                       <span>{word.english ?? word.example}</span>
                     </td>
 

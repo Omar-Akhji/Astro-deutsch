@@ -5,373 +5,9 @@
   "description": "Reisen, Verkehrsmittel und Orientierung in einer neuen Umgebung.",
   "sections": [
     {
-      "id": "verkehr",
-      "title": "VERKEHR",
+      "id": "straben_und_verkehr",
+      "title": "STRABEN UND VERKEHR",
       "topics": [
-        {
-          "id": "verkehrsmittel",
-          "title": "Verkehrsmittel",
-          "words": [
-            {
-              "german": "das Auto, -s",
-              "arabic": "السيارة",
-              "english": "car, automobile",
-              "example": "Viele Pendler fahren morgens mit dem Auto zur Arbeit."
-            },
-            {
-              "german": "der Bus, -se",
-              "arabic": "الحافلة / الباص",
-              "english": "bus",
-              "example": "Der gelbe Bus hält pünktlich an der Haltestelle vor dem Rathaus."
-            },
-            {
-              "german": "der Zug, -̈e",
-              "arabic": "القطار",
-              "english": "train",
-              "example": "Der schnelle Zug nach München fährt auf Gleis 4 ein."
-            },
-            {
-              "german": "die U-Bahn, -en",
-              "arabic": "مترو الأنفاق",
-              "english": "subway, underground train",
-              "example": "Mit der U-Bahn kommt man in Großstädten am schnellsten voran."
-            },
-            {
-              "german": "das Fahrrad, -̈er",
-              "arabic": "الدراجة الهوائية",
-              "english": "bicycle, bike",
-              "example": "Im Frühling fahre ich jeden Tag mit dem Fahrrad durch den Stadtpark."
-            },
-            {
-              "german": "die Straßenbahn, -en",
-              "arabic": "الترام / ترامواي",
-              "english": "tram, streetcar",
-              "example": "Die moderne Straßenbahn gleitet leise durch die belebte Fußgängerzone."
-            },
-            {
-              "german": "das Taxi, -s",
-              "arabic": "سيارة الأجرة / التاكسي",
-              "english": "taxi, cab",
-              "example": "Wenn es nachts spät wird, nehme ich mir ein sicheres Taxi nach Hause."
-            },
-            {
-              "german": "das Schiff, -e",
-              "arabic": "السفينة / الباخرة",
-              "english": "ship, boat",
-              "example": "Am Wochenende unternehmen wir eine Rundfahrt mit dem Schiff auf dem Fluss."
-            },
-            {
-              "german": "der Roller, -",
-              "arabic": "السكوتر",
-              "english": "scooter",
-              "example": "Im Stadtzentrum leihen sich viele Jugendliche einen elektrischen Roller aus."
-            },
-            {
-              "german": "die Haltestelle, -n",
-              "arabic": "موقف الحافلة أو الترام",
-              "english": "stop, bus stop",
-              "example": "An der nächsten Haltestelle müssen wir in den Bus umsteigen."
-            },
-            {
-              "german": "der Stau, -s",
-              "arabic": "الازدحام المروري / الأزمة",
-              "english": "traffic jam",
-              "example": "Im Berufsverkehr stehen die Autos oft stundenlang im Stau."
-            },
-            {
-              "german": "der Helm, -e",
-              "arabic": "الخوذة",
-              "english": "helmet",
-              "example": "Zur eigenen Sicherheit sollte man beim Radfahren immer einen Helm tragen."
-            }
-          ],
-          "story": {
-            "level": "A1",
-            "badge": "A1 – Grundstufe",
-            "title": "Unterwegs in der Großstadt",
-            "intro": "Einfache Sätze über verschiedene Verkehrsmittel und Wege im Alltag (A1).",
-            "paragraphs": [
-              [
-                "In unserer Stadt gibt es viele praktische Verkehrsmittel.",
-                "Ich fahre jeden Morgen mit dem [das Fahrrad, -̈er|Fahrrad] zur Sprachschule und trage immer einen [der Helm, -e|Helm].",
-                "Wenn es stark regnet, nehme ich lieber den [der Bus, -se|Bus] oder die [die U-Bahn, -en|U-Bahn].",
-                "An der großen [die Haltestelle, -n|Haltestelle] am Marktplatz steigen viele Menschen ein und aus."
-              ],
-              [
-                "Mein Vater fährt meistens mit dem [das Auto, -s|Auto] ins Büro, aber oft gibt es einen langen [der Stau, -s|Stau].",
-                "Am Wochenende fahren wir mit dem schnellen [der Zug, -̈e|Zug] zu den Großeltern.",
-                "In der Innenstadt fährt auch eine bequeme [die Straßenbahn, -en|Straßenbahn].",
-                "Wenn wir spät am Abend nach Hause wollen, rufen wir ein [das Taxi, -s|Taxi]."
-              ]
-            ]
-          },
-          "stories": {
-            "A1": {
-              "level": "A1",
-              "badge": "A1 – Grundstufe",
-              "title": "Unterwegs in der Großstadt",
-              "intro": "Einfache Sätze über verschiedene Verkehrsmittel und Wege im Alltag (A1).",
-              "paragraphs": [
-                [
-                  "In unserer Stadt gibt es viele praktische Verkehrsmittel.",
-                  "Ich fahre jeden Morgen mit dem [das Fahrrad, -̈er|Fahrrad] zur Sprachschule und trage immer einen [der Helm, -e|Helm].",
-                  "Wenn es stark regnet, nehme ich lieber den [der Bus, -se|Bus] oder die [die U-Bahn, -en|U-Bahn].",
-                  "An der großen [die Haltestelle, -n|Haltestelle] am Marktplatz steigen viele Menschen ein und aus."
-                ],
-                [
-                  "Mein Vater fährt meistens mit dem [das Auto, -s|Auto] ins Büro, aber oft gibt es einen langen [der Stau, -s|Stau].",
-                  "Am Wochenende fahren wir mit dem schnellen [der Zug, -̈e|Zug] zu den Großeltern.",
-                  "In der Innenstadt fährt auch eine bequeme [die Straßenbahn, -en|Straßenbahn].",
-                  "Wenn wir spät am Abend nach Hause wollen, rufen wir ein [das Taxi, -s|Taxi]."
-                ]
-              ]
-            },
-            "A2": {
-              "level": "A2",
-              "badge": "A2 – Alltag & Praxis",
-              "title": "Pünktlich zur Arbeit ohne Auto",
-              "intro": "Öffentlicher Nahverkehr und umweltfreundliche Alternativen im Berufsverkehr (A2).",
-              "paragraphs": [
-                [
-                  "Viele Berufstätige in Großstädten lassen ihr [das Auto, -s|Auto] bewusst in der Garage stehen, um nicht im nervigen [der Stau, -s|Stau] zu stecken.",
-                  "Stattdessen nutzen sie den dichten Takt von [der Bus, -se|Bus] und Straßenbahn.",
-                  "Ich laufe fünf Minuten zur nächsten [die Haltestelle, -n|Haltestelle] und steige in die [die Straßenbahn, -en|Straßenbahn] der Linie 3 ein.",
-                  "Am Hauptbahnhof wechsle ich zügig in die unterirdische [die U-Bahn, -en|U-Bahn], die mich ohne Verzögerung direkt ans Ziel bringt."
-                ],
-                [
-                  "„Fährst du im Sommer eigentlich wieder mit dem [das Fahrrad, -̈er|Fahrrad]?“, fragt mich mein Kollege beim Mittagessen.",
-                  "„Ja, absolut! Mit sicherem [der Helm, -e|Helm] auf dem Kopf bin ich auf zwei Rädern oft schneller als der gesamte Autoverkehr“, antworte ich fröhlich.",
-                  "Für längere Dienstreisen buchen wir immer ein Ticket für den [der Zug, -̈e|Zug], da man dort im Abteil entspannt am Laptop arbeiten kann.",
-                  "Und falls die Bahn einmal ausfällt, teilen wir uns spontan ein [das Taxi, -s|Taxi] mit anderen Fahrgästen."
-                ]
-              ]
-            },
-            "B1": {
-              "level": "B1",
-              "badge": "B1 – Ausführliche Erzählung",
-              "title": "Die Mobilitätswende im urbanen Lebensraum",
-              "intro": "Kombination verschiedener Verkehrsträger für eine lebenswerte und umweltfreundliche Stadt (B1).",
-              "paragraphs": [
-                [
-                  "Die moderne Verkehrspolitik steht vor der gewaltigen Herausforderung, individuelle Mobilitätsbedürfnisse mit wirksamem Klimaschutz zu harmonisieren.",
-                  "Während das eigene [das Auto, -s|Auto] in der Vergangenheit als Statussymbol galt, empfinden viele Stadtbewohner den täglichen [der Stau, -s|Stau] zunehmend als zeitraubende Belastung.",
-                  "In modernen Metropolen ergänzen sich die hochfrequente [die U-Bahn, -en|U-Bahn], der emissionsarme [der Bus, -se|Bus] und ein wendiger elektrischer [der Roller, -|Roller] zu einem flexiblen Mobilitätsmix.",
-                  "Wer täglich pendelt, schätzt den Komfort, den ein moderner [der Zug, -̈e|Zug] auf interurbanen Strecken bietet."
-                ],
-                [
-                  "Gleichzeitig erleben Städte eine Renaissance des Radverkehrs, weshalb breite Radschnellwege ausgebaut werden.",
-                  "Dort radeln Pendler mit schützendem [der Helm, -e|Helm] auf dem [das Fahrrad, -̈er|Fahrrad], vorbei an überfüllten Straßen.",
-                  "An multimodalen Knotenpunkten ist jede [die Haltestelle, -n|Haltestelle] so konzipiert, dass der Übergang zur barrierefreien [die Straßenbahn, -en|Straßenbahn] reibungslos gelingt.",
-                  "Auf diese Weise wandeln sich Verkehrsräume in lebenswerte Begegnungszonen, in denen Lärm und Schadstoffe spürbar zurückgehen."
-                ]
-              ]
-            },
-            "B2": {
-              "level": "B2",
-              "badge": "B2 – Differenziert & Komplex",
-              "title": "Intermodale Verkehrskonzepte und urbane Resilienz",
-              "intro": "Verkehrsökonomische und stadtplanerische Analyse zukunftsfähiger Mobilitätsinfrastrukturen (B2).",
-              "paragraphs": [
-                [
-                  "Die Dekarbonisierung des Transportsektors erfordert eine radikale Neukonzeption urbaner Verkehrsströme jenseits der automobilen Fixierung des 20. Jahrhunderts.",
-                  "Obwohl das autonome [das Auto, -s|Auto] neue Potenziale verspricht, bleibt der chronische [der Stau, -s|Stau] auf Einfallstraßen ein strukturelles Symptom ineffizienter Flächennutzung.",
-                  "Ein leistungsfähiger Umweltverbund basiert daher auf massenleistungsfähigen Schienensystemen: Ein dicht getakteter [der Zug, -̈e|Zug] und eine unterirdische [die U-Bahn, -en|U-Bahn] bilden das unverzichtbare Rückgrat metropolitaner Erreichbarkeit.",
-                  "Ergänzt durch emissionsfreie Flotten wie die moderne [die Straßenbahn, -en|Straßenbahn] wird eine flächendeckende Grundversorgung gewährleistet."
-                ],
-                [
-                  "Auf der sogenannten 'letzten Meile' revolutionieren Mikromobilitätsangebote wie das smarte [das Fahrrad, -̈er|Fahrrad] und der agile [der Roller, -|Roller] das individuelle Fortbewegungsverhalten.",
-                  "Gleichzeitig erfordern Sicherheitsstandards wie die Nutzung vom [der Helm, -e|Helm] sowie separate Radtrassen klare regulatorische Leitplanken.",
-                  "Wenn hochmoderne [die Haltestelle, -n|Haltestellen] zu vernetzten Mobilitätshubs transformiert werden, an denen auch autonome [das Taxi, -s|Taxis] andocken können, entsteht ein zukunftsfähiges, resilientes Verkehrssystem."
-                ]
-              ]
-            }
-          },
-          "description": "Öffentlicher Nahverkehr und Individualverkehr: Bus, Bahn, Fahrrad und nachhaltige Mobilität.",
-          "details": "Öffentlicher Nahverkehr, Fahrrad und Verkehrsmittel (A1–B2)",
-          "arabicDescription": "وسائل المواصلات العامة والفردية في ألمانيا. يركز هذا الدرس على وسائل النقل المختلفة (الحافلة، القطار، المترو، الدراجة الهوائية)، وحرف الجر (mit + Dativ) المستخدم دائماً مع وسائل المواصلات، بالإضافة إلى أفعال الحركة الأساسية مثل الركوب والنزول والتبديل (einsteigen, aussteigen, umsteigen)."
-        },
-        {
-          "id": "flughafen_bahnhof",
-          "title": "Am Flughafen und Bahnhof",
-          "words": [
-            {
-              "german": "der Flughafen, -̈",
-              "arabic": "المطار",
-              "english": "airport",
-              "example": "Der internationale Flughafen von Frankfurt zählt zu den größten Drehkreuzen Europas."
-            },
-            {
-              "german": "das Flugzeug, -e",
-              "arabic": "الطائرة",
-              "english": "airplane, plane",
-              "example": "Das riesige Flugzeug hebt pünktlich von der Startbahn ab."
-            },
-            {
-              "german": "der Bahnhof, -̈e",
-              "arabic": "محطة القطار",
-              "english": "train station",
-              "example": "Wir treffen uns um zehn Uhr vor dem Haupteingang am Bahnhof."
-            },
-            {
-              "german": "das Gleis, -e",
-              "arabic": "السكة / رصيف القطار",
-              "english": "track, platform track",
-              "example": "Der ICE nach Berlin steht auf Gleis 7 zur Abfahrt bereit."
-            },
-            {
-              "german": "die Fahrkarte, -n",
-              "arabic": "تذكرة السفر",
-              "english": "ticket (train/bus)",
-              "example": "Ich habe meine Fahrkarte online über die App der Bahn gebucht."
-            },
-            {
-              "german": "der Bahnsteig, -e",
-              "arabic": "رصيف المحطة",
-              "english": "platform",
-              "example": "Auf dem überdachten Bahnsteig warten Dutzende Reisende auf den Regionalzug."
-            },
-            {
-              "german": "die Verspätung, -en",
-              "arabic": "التأخير",
-              "english": "delay",
-              "example": "Wegen einer Weichenstörung hat der Zug leider zwanzig Minuten Verspätung."
-            },
-            {
-              "german": "das Gepäck",
-              "arabic": "الأمتعة / العفش",
-              "english": "luggage, baggage",
-              "example": "Bitte lassen Sie Ihr Gepäck auf dem Bahnsteig zu keinem Zeitpunkt unbeaufsichtigt."
-            },
-            {
-              "german": "der Koffer, -",
-              "arabic": "حقيبة السفر",
-              "english": "suitcase",
-              "example": "Ich packe meinen schweren Koffer am Vorabend der großen Reise."
-            },
-            {
-              "german": "der Ausgang, -̈e",
-              "arabic": "المخرج",
-              "english": "exit",
-              "example": "Folgen Sie den grünen Hinweisschildern zum Ausgang in Richtung Innenstadt."
-            },
-            {
-              "german": "der Flug, -̈e",
-              "arabic": "الرحلة الجوية / الطيران",
-              "english": "flight",
-              "example": "Unser direkter Flug nach Wien dauert knapp eineinhalb Stunden."
-            },
-            {
-              "german": "die Durchsage, -n",
-              "arabic": "الإعلان الصوتي / النداء عبر مكبر الصوت",
-              "english": "announcement (loudspeaker)",
-              "example": "Die Lautsprecherdurchsage informierte über den spontanen Gleiswechsel."
-            }
-          ],
-          "story": {
-            "level": "A1",
-            "badge": "A1 – Grundstufe",
-            "title": "Reisen mit Zug und Flugzeug",
-            "intro": "Einfache Sätze für den Bahnhof und den Flughafen (A1).",
-            "paragraphs": [
-              [
-                "Heute mache ich eine Urlaubsreise nach Berlin.",
-                "Ich packe meinen großen [der Koffer, -|Koffer] und fahre früh am Morgen zum [der Bahnhof, -̈e|Bahnhof].",
-                "Am Schalter kaufe ich eine [die Fahrkarte, -n|Fahrkarte] für die 2. Klasse.",
-                "Mein Zug fährt heute auf [das Gleis, -e|Gleis] 3 ab, und ich gehe die Treppe hoch."
-              ],
-              [
-                "Aus dem Lautsprecher höre ich eine [die Durchsage, -n|Durchsage]: Der Zug kommt pünktlich.",
-                "Später fahre ich weiter zum großen [der Flughafen, -̈|Flughafen].",
-                "Dort gebe ich mein [das Gepäck|Gepäck] auf und steige in das moderne [das Flugzeug, -e|Flugzeug].",
-                "Der [der Flug, -̈e|Flug] startet bei strahlendem Sonnenschein, und ich freue mich auf die Reise."
-              ]
-            ]
-          },
-          "stories": {
-            "A1": {
-              "level": "A1",
-              "badge": "A1 – Grundstufe",
-              "title": "Reisen mit Zug und Flugzeug",
-              "intro": "Einfache Sätze für den Bahnhof und den Flughafen (A1).",
-              "paragraphs": [
-                [
-                  "Heute mache ich eine Urlaubsreise nach Berlin.",
-                  "Ich packe meinen großen [der Koffer, -|Koffer] und fahre früh am Morgen zum [der Bahnhof, -̈e|Bahnhof].",
-                  "Am Schalter kaufe ich eine [die Fahrkarte, -n|Fahrkarte] für die 2. Klasse.",
-                  "Mein Zug fährt heute auf [das Gleis, -e|Gleis] 3 ab, und ich gehe die Treppe hoch."
-                ],
-                [
-                  "Aus dem Lautsprecher höre ich eine [die Durchsage, -n|Durchsage]: Der Zug kommt pünktlich.",
-                  "Später fahre ich weiter zum großen [der Flughafen, -̈|Flughafen].",
-                  "Dort gebe ich mein [das Gepäck|Gepäck] auf und steige in das moderne [das Flugzeug, -e|Flugzeug].",
-                  "Der [der Flug, -̈e|Flug] startet bei strahlendem Sonnenschein, und ich freue mich auf die Reise."
-                ]
-              ]
-            },
-            "A2": {
-              "level": "A2",
-              "badge": "A2 – Alltag & Praxis",
-              "title": "Reiseerlebnisse und unerwartete Verspätungen",
-              "intro": "Abläufe am Gleis und an den Terminals bei Fernreisen (A2).",
-              "paragraphs": [
-                [
-                  "Vergangenen Freitag war ich beruflich unterwegs und stand bereits um sieben Uhr am belebten [der Bahnhof, -̈e|Bahnhof].",
-                  "Auf der Anzeigetafel stand, dass mein Zug auf [das Gleis, -e|Gleis] 5 einfährt.",
-                  "Doch plötzlich ertönte eine akustische [die Durchsage, -n|Durchsage]: „Achtung! Der Intercity hat heute fünfzehn Minuten [die Verspätung, -en|Verspätung].“",
-                  "Viele Reisende auf dem [der Bahnsteig, -e|Bahnsteig] schüttelten den Kopf und zückten nervös ihre Smartphones."
-                ],
-                [
-                  "Ich suchte mir eine Bank, stellte meinen schweren [der Koffer, -|Koffer] ab und kontrollierte meine digitale [die Fahrkarte, -n|Fahrkarte].",
-                  "Zum Glück erreichte ich meinen Anschlusszug noch rechtzeitig und kam pünktlich am [der Flughafen, -̈|Flughafen] an.",
-                  "Dort passierte ich zügig die Sicherheitskontrolle, um mein Gate für den [der Flug, -̈e|Flug] nicht zu verpassen.",
-                  "Als ich endlich im bequemen [das Flugzeug, -e|Flugzeug] saß und aus dem Fenster schaute, fiel die Anspannung von mir ab."
-                ]
-              ]
-            },
-            "B1": {
-              "level": "B1",
-              "badge": "B1 – Ausführliche Erzählung",
-              "title": "Moderne Reiseknotenpunkte zwischen Präzision und Unwägbarkeiten",
-              "intro": "Wie Großbahnhöfe und Flughäfen logistische Meisterleistungen im Reisealltag vollbringen (B1).",
-              "paragraphs": [
-                [
-                  "Internationale Verkehrsknotenpunkte wie ein pulsierender Haupt-[der Bahnhof, -̈e|Bahnhof] oder ein interkontinentaler [der Flughafen, -̈|Flughafen] sind faszinierende Mikrokosmen der Globalisierung.",
-                  "Täglich durchqueren Hunderttausende Passagiere mit schwerem [das Gepäck|Gepäck] die Hallen, stets den Blick auf Abflugmonitore und Fahrpläne gerichtet.",
-                  "Wer sicher reisen möchte, bucht seine [die Fahrkarte, -n|Fahrkarte] frühzeitig mit Sitzplatzreservierung, um am überfüllten [der Bahnsteig, -e|Bahnsteig] Stress zu vermeiden.",
-                  "Kommt es dennoch zu einer unvorhergesehenen [die Verspätung, -en|Verspätung], informiert das Servicepersonal per Lautsprecher-[die Durchsage, -n|Durchsage] über Ausweichmöglichkeiten."
-                ],
-                [
-                  "Beim Wechsel vom Schienen- zum Luftverkehr beeindruckt die nahtlose logistische Verzahnung.",
-                  "Vom Fernbahn-[das Gleis, -e|Gleis] gelangt man über Rolltreppen direkt zum Check-in-Schalter, wo der robuste [der Koffer, -|Koffer] gewogen und verladen wird.",
-                  "Sobald das Boarding für den [der Flug, -̈e|Flug] abgeschlossen ist, rollt das gewaltige [das Flugzeug, -e|Flugzeug] zur Startbahn.",
-                  "Erst nach der Landung am fernen Zielort führt der Weg durch den gut ausgeschilderten [der Ausgang, -̈e|Ausgang] in ein neues Abenteuer."
-                ]
-              ]
-            },
-            "B2": {
-              "level": "B2",
-              "badge": "B2 – Differenziert & Komplex",
-              "title": "Logistische Anthropologie: Transitzonen der Spätmoderne",
-              "intro": "Kritische Analyse von Nicht-Orten, Pünktlichkeitsmythen und vernetzten Verkehrshubs (B2).",
-              "paragraphs": [
-                [
-                  "Der Soziologe Marc Augé definierte Transiträume wie den modernen [der Flughafen, -̈|Flughafen] treffend als 'Nicht-Orte' – standardisierte Nicht-Räume der Durchreise, in denen Identität auf Bordkarten und Barcodes reduziert wird.",
-                  "Dennoch spiegeln der historische [der Bahnhof, -̈e|Bahnhof] und moderne Terminals den technologischen Entwicklungsstand einer Industrienation wider.",
-                  "Während jede [die Verspätung, -en|Verspätung] im dicht getakteten Schienennetz komplexe Kaskadeneffekte auslöst, symbolisiert der strukturierte [der Bahnsteig, -e|Bahnsteig] das preußische Ideal kalkulierbarer Ordnung.",
-                  "Eine präzise formulierte [die Durchsage, -n|Durchsage] balanciert in Krisenmomenten die kollektive Frustration hunderter wartender Fahrgäste an einem überfüllten [das Gleis, -e|Gleis] aus."
-                ],
-                [
-                  "Die Symbiose aus digitaler [die Fahrkarte, -n|Fahrkarte], biometrischer Passkontrolle und vollautomatisiertem [das Gepäck|Gepäck]-Routing demonstriert die fortschreitende Kybernetik des Reisens.",
-                  "Gleichzeitig offenbart die Ökobilanz beim [das Flugzeug, -e|Flugzeug] die Notwendigkeit, intermodale Verknüpfungen so auszubauen, dass Kurzstrecken-[der Flug, -̈e|Flüge] obsolet werden.",
-                  "Passagiere, die ihren Roll-[der Koffer, -|Koffer] durch den finalen [der Ausgang, -̈e|Ausgang] manövrieren, erfahren Transit daher stets als Spannungsfeld zwischen technologischer Perfektion und individueller Entfremdung."
-                ]
-              ]
-            }
-          },
-          "description": "Reisezentren, Fernverkehr, Ticketkauf, Gepäckaufgabe und Flugabfertigung.",
-          "details": "Reisen mit Bahn und Flugzeug, Gleise und Gepäck (A1–B2)",
-          "arabicDescription": "السفر والتنقل عبر المطارات ومحطات القطار في ألمانيا. يتناول هذا الدرس مصطلحات حجز التذاكر، ورصيف القطار، ومعرفة مواعيد الإقلاع والوصول، والتعامل مع التأخيرات (Verspätung)، والإعلانات الصوتية (Durchsage)، وإجراءات التفتيش الأمني وشحن الحقائب."
-        },
         {
           "id": "orientierung",
           "title": "Orientierung",
@@ -553,6 +189,2529 @@
           "description": "Wegbeschreibungen, Straßenverkehr, Richtungsangaben und Orientierung in fremden Städten.",
           "details": "Wegbeschreibungen, Straßenverkehr und Richtungsangaben (A1–B2)",
           "arabicDescription": "تحديد الاتجاهات ووصف الطريق في المدن الألمانية. يتناول هذا الدرس عبارات السؤال عن الطريق بأدب، واستخدام الكلمات الاتجاهية (يمين، يسار، إلى الأمام مباشرة)، والإشارات الضوئية والتقاطعات والميادين وكيفية قراءة الخريطة واستخدام تطبيقات الملاحة."
+        },
+        {
+          "id": "verkehrsmittel",
+          "title": "Verkehrsschilder",
+          "words": [
+            {
+              "german": "das Auto, -s",
+              "arabic": "السيارة",
+              "english": "car, automobile",
+              "example": "Viele Pendler fahren morgens mit dem Auto zur Arbeit."
+            },
+            {
+              "german": "der Bus, -se",
+              "arabic": "الحافلة / الباص",
+              "english": "bus",
+              "example": "Der gelbe Bus hält pünktlich an der Haltestelle vor dem Rathaus."
+            },
+            {
+              "german": "der Zug, -̈e",
+              "arabic": "القطار",
+              "english": "train",
+              "example": "Der schnelle Zug nach München fährt auf Gleis 4 ein."
+            },
+            {
+              "german": "die U-Bahn, -en",
+              "arabic": "مترو الأنفاق",
+              "english": "subway, underground train",
+              "example": "Mit der U-Bahn kommt man in Großstädten am schnellsten voran."
+            },
+            {
+              "german": "das Fahrrad, -̈er",
+              "arabic": "الدراجة الهوائية",
+              "english": "bicycle, bike",
+              "example": "Im Frühling fahre ich jeden Tag mit dem Fahrrad durch den Stadtpark."
+            },
+            {
+              "german": "die Straßenbahn, -en",
+              "arabic": "الترام / ترامواي",
+              "english": "tram, streetcar",
+              "example": "Die moderne Straßenbahn gleitet leise durch die belebte Fußgängerzone."
+            },
+            {
+              "german": "das Taxi, -s",
+              "arabic": "سيارة الأجرة / التاكسي",
+              "english": "taxi, cab",
+              "example": "Wenn es nachts spät wird, nehme ich mir ein sicheres Taxi nach Hause."
+            },
+            {
+              "german": "das Schiff, -e",
+              "arabic": "السفينة / الباخرة",
+              "english": "ship, boat",
+              "example": "Am Wochenende unternehmen wir eine Rundfahrt mit dem Schiff auf dem Fluss."
+            },
+            {
+              "german": "der Roller, -",
+              "arabic": "السكوتر",
+              "english": "scooter",
+              "example": "Im Stadtzentrum leihen sich viele Jugendliche einen elektrischen Roller aus."
+            },
+            {
+              "german": "die Haltestelle, -n",
+              "arabic": "موقف الحافلة أو الترام",
+              "english": "stop, bus stop",
+              "example": "An der nächsten Haltestelle müssen wir in den Bus umsteigen."
+            },
+            {
+              "german": "der Stau, -s",
+              "arabic": "الازدحام المروري / الأزمة",
+              "english": "traffic jam",
+              "example": "Im Berufsverkehr stehen die Autos oft stundenlang im Stau."
+            },
+            {
+              "german": "der Helm, -e",
+              "arabic": "الخوذة",
+              "english": "helmet",
+              "example": "Zur eigenen Sicherheit sollte man beim Radfahren immer einen Helm tragen."
+            }
+          ],
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Unterwegs in der Großstadt",
+            "intro": "Einfache Sätze über verschiedene Verkehrsmittel und Wege im Alltag (A1).",
+            "paragraphs": [
+              [
+                "In unserer Stadt gibt es viele praktische Verkehrsmittel.",
+                "Ich fahre jeden Morgen mit dem [das Fahrrad, -̈er|Fahrrad] zur Sprachschule und trage immer einen [der Helm, -e|Helm].",
+                "Wenn es stark regnet, nehme ich lieber den [der Bus, -se|Bus] oder die [die U-Bahn, -en|U-Bahn].",
+                "An der großen [die Haltestelle, -n|Haltestelle] am Marktplatz steigen viele Menschen ein und aus."
+              ],
+              [
+                "Mein Vater fährt meistens mit dem [das Auto, -s|Auto] ins Büro, aber oft gibt es einen langen [der Stau, -s|Stau].",
+                "Am Wochenende fahren wir mit dem schnellen [der Zug, -̈e|Zug] zu den Großeltern.",
+                "In der Innenstadt fährt auch eine bequeme [die Straßenbahn, -en|Straßenbahn].",
+                "Wenn wir spät am Abend nach Hause wollen, rufen wir ein [das Taxi, -s|Taxi]."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Unterwegs in der Großstadt",
+              "intro": "Einfache Sätze über verschiedene Verkehrsmittel und Wege im Alltag (A1).",
+              "paragraphs": [
+                [
+                  "In unserer Stadt gibt es viele praktische Verkehrsmittel.",
+                  "Ich fahre jeden Morgen mit dem [das Fahrrad, -̈er|Fahrrad] zur Sprachschule und trage immer einen [der Helm, -e|Helm].",
+                  "Wenn es stark regnet, nehme ich lieber den [der Bus, -se|Bus] oder die [die U-Bahn, -en|U-Bahn].",
+                  "An der großen [die Haltestelle, -n|Haltestelle] am Marktplatz steigen viele Menschen ein und aus."
+                ],
+                [
+                  "Mein Vater fährt meistens mit dem [das Auto, -s|Auto] ins Büro, aber oft gibt es einen langen [der Stau, -s|Stau].",
+                  "Am Wochenende fahren wir mit dem schnellen [der Zug, -̈e|Zug] zu den Großeltern.",
+                  "In der Innenstadt fährt auch eine bequeme [die Straßenbahn, -en|Straßenbahn].",
+                  "Wenn wir spät am Abend nach Hause wollen, rufen wir ein [das Taxi, -s|Taxi]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Pünktlich zur Arbeit ohne Auto",
+              "intro": "Öffentlicher Nahverkehr und umweltfreundliche Alternativen im Berufsverkehr (A2).",
+              "paragraphs": [
+                [
+                  "Viele Berufstätige in Großstädten lassen ihr [das Auto, -s|Auto] bewusst in der Garage stehen, um nicht im nervigen [der Stau, -s|Stau] zu stecken.",
+                  "Stattdessen nutzen sie den dichten Takt von [der Bus, -se|Bus] und Straßenbahn.",
+                  "Ich laufe fünf Minuten zur nächsten [die Haltestelle, -n|Haltestelle] und steige in die [die Straßenbahn, -en|Straßenbahn] der Linie 3 ein.",
+                  "Am Hauptbahnhof wechsle ich zügig in die unterirdische [die U-Bahn, -en|U-Bahn], die mich ohne Verzögerung direkt ans Ziel bringt."
+                ],
+                [
+                  "„Fährst du im Sommer eigentlich wieder mit dem [das Fahrrad, -̈er|Fahrrad]?“, fragt mich mein Kollege beim Mittagessen.",
+                  "„Ja, absolut! Mit sicherem [der Helm, -e|Helm] auf dem Kopf bin ich auf zwei Rädern oft schneller als der gesamte Autoverkehr“, antworte ich fröhlich.",
+                  "Für längere Dienstreisen buchen wir immer ein Ticket für den [der Zug, -̈e|Zug], da man dort im Abteil entspannt am Laptop arbeiten kann.",
+                  "Und falls die Bahn einmal ausfällt, teilen wir uns spontan ein [das Taxi, -s|Taxi] mit anderen Fahrgästen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Die Mobilitätswende im urbanen Lebensraum",
+              "intro": "Kombination verschiedener Verkehrsträger für eine lebenswerte und umweltfreundliche Stadt (B1).",
+              "paragraphs": [
+                [
+                  "Die moderne Verkehrspolitik steht vor der gewaltigen Herausforderung, individuelle Mobilitätsbedürfnisse mit wirksamem Klimaschutz zu harmonisieren.",
+                  "Während das eigene [das Auto, -s|Auto] in der Vergangenheit als Statussymbol galt, empfinden viele Stadtbewohner den täglichen [der Stau, -s|Stau] zunehmend als zeitraubende Belastung.",
+                  "In modernen Metropolen ergänzen sich die hochfrequente [die U-Bahn, -en|U-Bahn], der emissionsarme [der Bus, -se|Bus] und ein wendiger elektrischer [der Roller, -|Roller] zu einem flexiblen Mobilitätsmix.",
+                  "Wer täglich pendelt, schätzt den Komfort, den ein moderner [der Zug, -̈e|Zug] auf interurbanen Strecken bietet."
+                ],
+                [
+                  "Gleichzeitig erleben Städte eine Renaissance des Radverkehrs, weshalb breite Radschnellwege ausgebaut werden.",
+                  "Dort radeln Pendler mit schützendem [der Helm, -e|Helm] auf dem [das Fahrrad, -̈er|Fahrrad], vorbei an überfüllten Straßen.",
+                  "An multimodalen Knotenpunkten ist jede [die Haltestelle, -n|Haltestelle] so konzipiert, dass der Übergang zur barrierefreien [die Straßenbahn, -en|Straßenbahn] reibungslos gelingt.",
+                  "Auf diese Weise wandeln sich Verkehrsräume in lebenswerte Begegnungszonen, in denen Lärm und Schadstoffe spürbar zurückgehen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Intermodale Verkehrskonzepte und urbane Resilienz",
+              "intro": "Verkehrsökonomische und stadtplanerische Analyse zukunftsfähiger Mobilitätsinfrastrukturen (B2).",
+              "paragraphs": [
+                [
+                  "Die Dekarbonisierung des Transportsektors erfordert eine radikale Neukonzeption urbaner Verkehrsströme jenseits der automobilen Fixierung des 20. Jahrhunderts.",
+                  "Obwohl das autonome [das Auto, -s|Auto] neue Potenziale verspricht, bleibt der chronische [der Stau, -s|Stau] auf Einfallstraßen ein strukturelles Symptom ineffizienter Flächennutzung.",
+                  "Ein leistungsfähiger Umweltverbund basiert daher auf massenleistungsfähigen Schienensystemen: Ein dicht getakteter [der Zug, -̈e|Zug] und eine unterirdische [die U-Bahn, -en|U-Bahn] bilden das unverzichtbare Rückgrat metropolitaner Erreichbarkeit.",
+                  "Ergänzt durch emissionsfreie Flotten wie die moderne [die Straßenbahn, -en|Straßenbahn] wird eine flächendeckende Grundversorgung gewährleistet."
+                ],
+                [
+                  "Auf der sogenannten 'letzten Meile' revolutionieren Mikromobilitätsangebote wie das smarte [das Fahrrad, -̈er|Fahrrad] und der agile [der Roller, -|Roller] das individuelle Fortbewegungsverhalten.",
+                  "Gleichzeitig erfordern Sicherheitsstandards wie die Nutzung vom [der Helm, -e|Helm] sowie separate Radtrassen klare regulatorische Leitplanken.",
+                  "Wenn hochmoderne [die Haltestelle, -n|Haltestellen] zu vernetzten Mobilitätshubs transformiert werden, an denen auch autonome [das Taxi, -s|Taxis] andocken können, entsteht ein zukunftsfähiges, resilientes Verkehrssystem."
+                ]
+              ]
+            }
+          },
+          "description": "Öffentlicher Nahverkehr und Individualverkehr: Bus, Bahn, Fahrrad und nachhaltige Mobilität.",
+          "details": "Öffentlicher Nahverkehr, Fahrrad und Verkehrsmittel (A1–B2)",
+          "arabicDescription": "وسائل المواصلات العامة والفردية في ألمانيا. يركز هذا الدرس على وسائل النقل المختلفة (الحافلة، القطار، المترو، الدراجة الهوائية)، وحرف الجر (mit + Dativ) المستخدم دائماً مع وسائل المواصلات، بالإضافة إلى أفعال الحركة الأساسية مثل الركوب والنزول والتبديل (einsteigen, aussteigen, umsteigen)."
+        }
+      ]
+    },
+    {
+      "id": "auto",
+      "title": "DAS AUTO",
+      "topics": [
+        {
+          "id": "autotypen",
+          "title": "Autotypen",
+          "words": [
+            {
+              "german": "der Autotyp, -en",
+              "arabic": "طراز ونوع السيارة",
+              "english": "car model, vehicle type",
+              "example": "Je nach Bedarf wählt man einen passenden Autotyp für Familie, Stadt oder Gelände."
+            },
+            {
+              "german": "die Limousine, -n",
+              "arabic": "سيارة الصالون الكلاسيكية (السيدان)",
+              "english": "sedan, saloon",
+              "example": "Die viertürige Limousine bietet hohen Reisekomfort auf langen Autobahnfahrten."
+            },
+            {
+              "german": "der Kombi, -s",
+              "arabic": "السيارة العائلية الممتدة (ستيشن)",
+              "english": "station wagon, estate car",
+              "example": "Familien schätzen den praktischen Kombi wegen seines riesigen Ladevolumens."
+            },
+            {
+              "german": "der Kleinwagen, -",
+              "arabic": "سيارة المدينة الصغيرة الاقتصادية",
+              "english": "subcompact car, city car",
+              "example": "Mit einem wendigen Kleinwagen findet man selbst in der engsten Innenstadt einen Parkplatz."
+            },
+            {
+              "german": "das Cabriolet, -s",
+              "arabic": "السيارة المكشوفة بسقف قابل للطي",
+              "english": "convertible, cabriolet",
+              "example": "Im sonnigen Frühling klappt er das Stoffdach vom Cabriolet auf und genießt den Fahrtwind."
+            },
+            {
+              "german": "der Sportwagen, -",
+              "arabic": "السيارة الرياضية السريعة",
+              "english": "sports car",
+              "example": "Der flache Sportwagen beschleunigt in unter vier Sekunden von null auf hundert."
+            },
+            {
+              "german": "der Geländewagen, -",
+              "arabic": "سيارة الطرق الوعرة / الدفع الرباعي",
+              "english": "off-road vehicle, SUV",
+              "example": "Mit Allradantrieb fährt der robuste Geländewagen sicher über Schlamm und Steine."
+            },
+            {
+              "german": "das Elektroauto, -s",
+              "arabic": "السيارة الكهربائية الصامتة",
+              "english": "electric car",
+              "example": "Das moderne Elektroauto fährt lokal emissionsfrei und tankt Strom aus der Steckdose."
+            },
+            {
+              "german": "das Hybridfahrzeug, -e",
+              "arabic": "السيارة الهجينة (بنزين وكهرباء)",
+              "english": "hybrid vehicle",
+              "example": "Ein Hybridfahrzeug kombiniert einen Verbrennungsmotor mit einer elektrischen Batterie."
+            },
+            {
+              "german": "der Lieferwagen, -",
+              "arabic": "شاحنة التوصيل المغلقة (الفان)",
+              "english": "delivery van",
+              "example": "Der weiße Lieferwagen des Paketdienstes hält kurz vor der Haustür an."
+            },
+            {
+              "german": "der Kraftstoffverbrauch (Sg.)",
+              "arabic": "معدل استهلاك الوقود لكل 100 كم",
+              "english": "fuel consumption",
+              "example": "Moderne Motoren zeichnen sich durch einen niedrigen Kraftstoffverbrauch aus."
+            },
+            {
+              "german": "die Reichweite, -n",
+              "arabic": "مدى السير بالشحنة الواحدة",
+              "english": "range (electric/fuel)",
+              "example": "Die Reichweite der neuen Batterie reicht für über fünfhundert Kilometer Fahrt."
+            }
+          ],
+          "description": "Limousine, Kombi, Kleinwagen, Cabriolet, SUV, Elektroauto und Transporter.",
+          "details": "Karosserieformen, Antriebsarten, Reichweite und E-Mobilität (A1–B2)",
+          "arabicDescription": "طرازات وأنواع السيارات (Autotypen): مفردات سيارة السيدان (Limousine)، الكومبي العائلية (Kombi)، سيارة المدينة (Kleinwagen)، المكشوفة (Cabriolet)، الدفع الرباعي (SUV)، والسيارة الكهربائية (Elektroauto)، مع مدى السير واستهلاك الطاقة.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Welches Auto passt zu uns?",
+              "intro": "Einfache Sätze über verschiedene Autos, Kleinwagen und Familienautos (A1).",
+              "paragraphs": [
+                [
+                  "Auf den Straßen in Deutschland fahren viele verschiedene Autos.",
+                  "Mein Vater fährt einen geräumigen [der Kombi, -s|Kombi], weil wir drei Kinder haben.",
+                  "Im Kofferraum ist viel Platz für Koffer und Einkäufe.",
+                  "Meine Tante in der Stadt fährt lieber einen kleinen [der Kleinwagen, -|Kleinwagen]."
+                ],
+                [
+                  "Mit dem kleinen Auto kann sie überall leicht parken.",
+                  "Im Sommer sehe ich oft ein rotes [das Cabriolet, -s|Cabriolet] ohne Dach auf der Straße.",
+                  "Mein Nachbar hat sich ein neues [das Elektroauto, -s|Elektroauto] gekauft, das fast lautlos fährt.",
+                  "Jeder Mensch wählt den Wagen, den er im Alltag braucht."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Moderne Antriebe und Autokauf",
+              "intro": "Elektromobilität, Reichweite und Hybridtechnologie im Vergleich (A2).",
+              "paragraphs": [
+                [
+                  "Wenn man heute ein neues Auto kaufen möchte, muss man sich gut informieren.",
+                  "Früher kauften die meisten Leute eine klassische [die Limousine, -n|Limousine] mit Benzin- oder Dieselmotor.",
+                  "Heute achten viele Käufer besonders auf den niedrigen [der Kraftstoffverbrauch (Sg.)|Kraftstoffverbrauch] und den Klimaschutz.",
+                  "Deshalb entscheiden sich immer mehr Autofahrer für ein sparsames [das Hybridfahrzeug, -e|Hybridfahrzeug]."
+                ],
+                [
+                  "Bei reinen Elektrofahrzeugen ist [die Reichweite, -n|die Reichweite] der Batterie das wichtigste Kriterium.",
+                  "Wer oft in den Bergen oder auf dem Land unterwegs ist, braucht manchmal einen kräftigen [der Geländewagen, -|Geländewagen] mit Allradantrieb.",
+                  "Für Handwerker und Botendienste ist der geräumige [der Lieferwagen, -|Lieferwagen] das wichtigste Werkzeug.",
+                  "Jeder [der Autotyp, -en|Autotyp] hat seine spezifischen Vor- und Nachteile."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Das Automobilland Deutschland und die Verkehrswende",
+              "intro": "Tradition der Automobilindustrie und der Übergang zur Elektromobilität (B1).",
+              "paragraphs": [
+                [
+                  "Deutschland gilt weltweit als Wiege des Automobils, begründet durch Carl Benz und Gottlieb Daimler im späten 19. Jahrhundert.",
+                  "Über Generationen hinweg galt das eigene Fahrzeug - von der eleganten [die Limousine, -n|Limousine] bis zum praktischen [der Kombi, -s|Kombi] - nicht allein als reines Fortbewegungsmittel, sondern als zentrales Statussymbol der Mittelschicht.",
+                  "Berühmte Premiumhersteller dominierten den Weltmarkt mit ingenieurtechnischer Präzision und kraftvollen Verbrennungsmotoren."
+                ],
+                [
+                  "Gegenwärtig befindet sich die Branche jedoch im tiefgreifendsten Transformationsprozess ihrer Historie.",
+                  "Angetrieben durch strenge europäische Emissionsvorgaben investieren die Konzerne massiv in die Elektrifizierung: [das Elektroauto, -s|Das Elektroauto] hat die Nische längst verlassen."
+                ],
+                [
+                  "Dennoch debattieren Konsumenten weiterhin über praktische Herausforderungen: Insbesondere [die Reichweite, -n|die Reichweite] im Winter und die lückenlose Verfügbarkeit von Schnellladesäulen auf Langstrecken beeinflussen Kaufentscheidungen nachhaltig."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Lebenszyklusanalysen, Traktionsbatterien und Antriebstopologien",
+              "intro": "Well-to-Wheel-Analysen, Batteriezellchemie und struktureller Wandel der Fahrzeugarchitektur (B2).",
+              "paragraphs": [
+                [
+                  "Die vergleichende Bewertung automobiler Antriebsstränge erfordert eine ganzheitliche Lebenszyklusanalyse (Life Cycle Assessment, LCA) vom Rohstoffabbau bis zum Recycling.",
+                  "Während konventionelle Verbrenner bei hohem [der Kraftstoffverbrauch (Sg.)|Kraftstoffverbrauch] kontinuierlich CO2 emittieren, verlagert sich die Umweltlast beim [das Elektroauto, -s|Elektroauto] primär in die energieintensive Vorkette der Kathodenfertigung (NMC- oder LFP-Zellen).",
+                  "Erst nach einer Amortisationsstrecke von ca. 50.000 bis 80.000 Kilometern unter Nutzung des europäischen Strommixes erzielt der elektrische Antriebstrang einen signifikanten ökologischen Nettonutzen."
+                ],
+                [
+                  "Gleichzeitig verändert der Wegfall sperriger Verbrennungsmotoren die Karosseriekonstruktion grundlegend: Sogenannte 'Skateboard-Plattformen' mit tief im Unterboden platziertem Akkupaket optimieren den Schwerpunkt und maximieren das Raumangebot selbst bei kompakten Karosserien."
+                ],
+                [
+                  "Diese disruptive Neudefinition von Fahrzeugarchitektur zwingt traditionelle OEMs zu radikaler Software- und Plattformstandardisierung, um im globalen Wettbewerb zu bestehen."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_auto_aussenansicht",
+          "title": "Das Auto - Außenansicht",
+          "words": [
+            {
+              "german": "die Motorhaube, -n",
+              "arabic": "غطاء المحرك (الكابوت)",
+              "english": "hood, bonnet",
+              "example": "Der Mechaniker öffnet die Motorhaube, um das Motoröl und das Kühlwasser zu kontrollieren."
+            },
+            {
+              "german": "der Kofferraum, -̈e",
+              "arabic": "صندوق الأمتعة الخلفي (الشنطة)",
+              "english": "trunk, boot",
+              "example": "Vor der Urlaubsfahrt verstauen wir vier schwere Koffer sicher im geräumigen Kofferraum."
+            },
+            {
+              "german": "die Windschutzscheibe, -n",
+              "arabic": "الزجاج الأمامي للسيارة",
+              "english": "windshield, windscreen",
+              "example": "Ein kleiner Steinschlag auf der Autobahn hat einen Riss in der Windschutzscheibe verursacht."
+            },
+            {
+              "german": "der Scheibenwischer, -",
+              "arabic": "مساحة الزجاج الأمامي",
+              "english": "windshield wiper",
+              "example": "Bei starkem Gewitterregen läuft der Scheibenwischer auf höchster Stufe."
+            },
+            {
+              "german": "der Scheinwerfer, -",
+              "arabic": "المصباح الأمامي للسيارة",
+              "english": "headlight",
+              "example": "Helle LED-Scheinwerfer leuchten die dunkle Landstraße nachts optimal aus."
+            },
+            {
+              "german": "das Rücklicht, -er",
+              "arabic": "المصباح الخلفي الأحمر",
+              "english": "tail light, rear light",
+              "example": "Wenn der Fahrer auf die Bremse tritt, leuchtet das rote Rücklicht hell auf."
+            },
+            {
+              "german": "der Außenspiegel, -",
+              "arabic": "المرآة الجانبية الخارجية",
+              "english": "side mirror, wing mirror",
+              "example": "Vor dem Spurwechsel muss man kurz in den Außenspiegel blicken und den Schulterblick machen."
+            },
+            {
+              "german": "der Autoreifen, -",
+              "arabic": "إطار السيارة (الكاوتشوك)",
+              "english": "car tire, tyre",
+              "example": "Im Oktober wechselt man in Deutschland von Sommerreifen auf winterfeste Autoreifen."
+            },
+            {
+              "german": "die Felge, -n",
+              "arabic": "جنط العجلة المعدني",
+              "english": "wheel rim",
+              "example": "Silbern glänzende Alufelgen verleihen dem Wagen ein sportliches Erscheinungsbild."
+            },
+            {
+              "german": "die Stoßstange, -n",
+              "arabic": "ممتص الصدمات (الإكصدام)",
+              "english": "bumper",
+              "example": "Beim Einparken hat er versehentlich mit der Stoßstange einen kleinen Pfosten berührt."
+            },
+            {
+              "german": "das Kennzeichen, -",
+              "arabic": "لوحة أرقام تسجيل السيارة",
+              "english": "license plate, number plate",
+              "example": "An den ersten Buchstaben auf dem Kennzeichen erkennt man die Stadt der Zulassung."
+            },
+            {
+              "german": "der Blinker, -",
+              "arabic": "غماز ومؤشر تغيير الاتجاه",
+              "english": "indicator, turn signal",
+              "example": "Vor dem Abbiegen nach rechts muss man rechtzeitig den Blinker setzen."
+            }
+          ],
+          "description": "Motorhaube, Kofferraum, Windschutzscheibe, Scheinwerfer, Reifen, Felgen und Blinker.",
+          "details": "Karosserieteile, Beleuchtung, Sicherheitsglas und Fahrzeuginspektion (A1–B2)",
+          "arabicDescription": "المظهر الخارجي للسيارة (Das Auto - Außenansicht): مفردات غطاء المحرك (Motorhaube)، صندوق الأمتعة (Kofferraum)، الزجاج الأمامي (Windschutzscheibe)، مساحات الزجاج (Scheibenwischer)، المصابيح (Scheinwerfer)، الإطارات (Reifen)، لوحة الأرقام (Kennzeichen)، والغمازات (Blinker).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Unser Auto von außen",
+              "intro": "Einfache Sätze über Reifen, Kofferraum, Lampen und Scheibenwischer (A1).",
+              "paragraphs": [
+                [
+                  "Unser Auto steht draußen vor dem Haus.",
+                  "Vor der Fahrt packe ich zwei große Taschen in [der Kofferraum, -̈e|den Kofferraum].",
+                  "Mein Vater prüft, ob die vier [der Autoreifen, -|Autoreifen] genug Luft haben.",
+                  "Die schwarzen Reifen sitzen fest auf einer silbernen [die Felge, -n|Felge]."
+                ],
+                [
+                  "Vorne am Auto leuchtet ein heller [der Scheinwerfer, -|Scheinwerfer].",
+                  "Wenn es regnet, schalte ich [der Scheibenwischer, -|den Scheibenwischer] an, um gut durch [die Windschutzscheibe, -n|die Windschutzscheibe] zu sehen.",
+                  "Bevor mein Vater abbiegt, setzt er immer [der Blinker, -|den Blinker].",
+                  "So fahren wir sicher und kommen gut an."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Fahrzeugcheck vor der Reise",
+              "intro": "Kontrolle von Beleuchtung, Außenspiegeln und Kennzeichen vor der Fahrt (A2).",
+              "paragraphs": [
+                [
+                  "Vor einer langen Urlaubsfahrt machen wir immer eine gründliche Inspektion rund um das Auto.",
+                  "Mein Vater öffnet [die Motorhaube, -n|die Motorhaube], um den Ölstand und das Wischwasser nachzufüllen.",
+                  "Danach prüfen wir alle Lampen: Vorne die Scheinwerfer und hinten das rote [das Rücklicht, -er|Rücklicht].",
+                  "Beide Seiten müssen einwandfrei leuchten, damit andere Autofahrer uns im Dunkeln rechtzeitig erkennen."
+                ],
+                [
+                  "Ich stelle [der Außenspiegel, -|den Außenspiegel] auf der Beifahrerseite so ein, dass ich den toten Winkel gut sehen kann.",
+                  "Vorne und hinten an der [die Stoßstange, -n|Stoßstange] kontrollieren wir, ob das amtliche [das Kennzeichen, -|Kennzeichen] sauber und lesbar ist.",
+                  "Wenn alle Teile der Karosserie in Ordnung sind, kann die Fahrt entspannt beginnen.",
+                  "Sicherheit hat im Straßenverkehr immer oberste Priorität."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Fahrzeugsicherheit und die Hauptuntersuchung beim TÜV",
+              "intro": "Kriterien der Verkehrssicherheit, Reifenwechsel nach Faustformel 'O bis O' (B1).",
+              "paragraphs": [
+                [
+                  "In Deutschland unterliegt jedes Kraftfahrzeug regelmäßigen strengen Sicherheitsprüfungen durch Prüforganisationen wie den TÜV oder die DEKRA.",
+                  "Bei der Hauptuntersuchung wird die gesamte Außenhaut des Wagens akribisch inspiziert: Die Prüfer achten darauf, dass [die Windschutzscheibe, -n|die Windschutzscheibe] frei von Rissen im Sichtfeld ist und dass [der Scheibenwischer, -|die Scheibenwischer] schlierenfrei wischen."
+                ],
+                [
+                  "Besondere Relevanz besitzt der Zustand der Bereifung: In Deutschland gilt die gesetzliche Mindestprofiltiefe von 1,6 Millimetern, wenngleich Experten mindestens 4 Millimeter für Winterreifen empfehlen.",
+                  "Viele Autofahrer orientieren sich an der bekannten Faustformel 'von O bis O' - von Oktober bis Ostern - für den jahreszeitlichen Wechsel auf wintertaugliche [der Autoreifen, -|Autoreifen]."
+                ],
+                [
+                  "Auch moderne Beleuchtungssysteme wie Matrix-LED-[der Scheinwerfer, -|Scheinwerfer], die Gegenverkehr automatisch ausblenden, müssen exakt justiert sein, um Blendeffekte auszuschließen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Aerodynamischer cw-Wert, Verbundsicherheitsglas und Crash-Strukturen",
+              "intro": "Aerodynamische Strömungsmechanik, Fußgängerschutz an Stoßstangen und Scheibentechnologie (B2).",
+              "paragraphs": [
+                [
+                  "Das Exterieur-Design moderner Fahrzeuge ist das Ergebnis eines hochkomplexen Kompromisses zwischen Aerodynamik, Fußgängerschutzrichtlinien und gesetzlichen Beleuchtungsvorgaben.",
+                  "Der Luftwiderstandsbeiwert (cw-Wert) wird durch die Neigung der [die Windschutzscheibe, -n|Windschutzscheibe], bündig abschließende Fugen und strömungsgünstig geformte [der Außenspiegel, -|Außenspiegel] minimiert, um den Energieverbrauch bei Autobahngeschwindigkeiten signifikant zu senken."
+                ],
+                [
+                  "Aus passiver Sicherheitsperspektive fungiert [die Stoßstange, -n|die Stoßstange] gemeinsam mit der gezielt deformierbaren [die Motorhaube, -n|Motorhaube] als energieabsorbierende Knautschzone.",
+                  "Pyrotechnische Haubenaktivatoren heben bei einer Fußgängerkollision die Haube binnen Millisekunden um mehrere Zentimeter an, um einen harten Aufprall auf den starren Motorblock zu verhindern."
+                ],
+                [
+                  "Die Scheiben wiederum bestehen aus Verbundsicherheitsglas (VSG) mit einer reißfesten Polyvinylbutyral-Folie (PVB), welche verhindert, dass Glasfragmente bei einem Steinschlag den Fahrgastraum penetrieren."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_auto_innenausstattung",
+          "title": "Das Auto - Innenausstattung",
+          "words": [
+            {
+              "german": "das Lenkrad, -̈er",
+              "arabic": "عجلة القيادة (المقود/الدركسيون)",
+              "english": "steering wheel",
+              "example": "Mit beiden Händen am Lenkrad steuert die Fahrerin den Wagen sicher durch die Kurve."
+            },
+            {
+              "german": "das Armaturenbrett, -er",
+              "arabic": "لوحة العدادات والتابلوه في قمرة القيادة",
+              "english": "dashboard",
+              "example": "Auf dem digitalen Armaturenbrett sieht man Geschwindigkeit, Drehzahl und Navigation."
+            },
+            {
+              "german": "der Sicherheitsgurt, -e",
+              "arabic": "حزام الأمان الواقي",
+              "english": "seat belt",
+              "example": "Der Sicherheitsgurt rettet bei einem Verkehrsunfall nachweislich Menschenleben."
+            },
+            {
+              "german": "der Airbag, -s",
+              "arabic": "الوسادة الهوائية للأمان",
+              "english": "airbag",
+              "example": "Bei einem Frontalaufprall öffnet sich der Airbag im Lenkrad in wenigen Millisekunden."
+            },
+            {
+              "german": "das Gaspedal, -e",
+              "arabic": "دواسة الوقود (البنزين)",
+              "english": "accelerator, gas pedal",
+              "example": "Wenn man das Gaspedal sanft durchtritt, beschleunigt der Motor gleichmäßig."
+            },
+            {
+              "german": "die Bremse, -n",
+              "arabic": "المكابح / الفرامل",
+              "english": "brake",
+              "example": "Vor der roten Ampel tritt der Fahrer rechtzeitig kräftig auf die Bremse."
+            },
+            {
+              "german": "die Kupplung, -en",
+              "arabic": "القابض (الدبرياج) في سيارات الغيار اليدوي",
+              "english": "clutch",
+              "example": "Beim manuellen Schalten tritt man mit dem linken Fuß ganz auf die Kupplung."
+            },
+            {
+              "german": "die Gangschaltung, -en",
+              "arabic": "ناقل الحركة ومبدل السرعات (الفتيس)",
+              "english": "gear shift, transmission",
+              "example": "Moderne Autos haben entweder eine manuelle Gangschaltung oder ein Automatikgetriebe."
+            },
+            {
+              "german": "die Handbremse, -n",
+              "arabic": "فرامل اليد للتوقف",
+              "english": "handbrake, parking brake",
+              "example": "Am steilen Hang zieht man nach dem Parken die Handbremse fest an."
+            },
+            {
+              "german": "der Rückspiegel, -",
+              "arabic": "المرآة الداخلية للرؤية الخلفية",
+              "english": "rearview mirror",
+              "example": "Im Rückspiegel beobachtet der Fahrer den nachfolgenden Verkehr hinter sich."
+            },
+            {
+              "german": "anschnallen (schnallte an, hat angeschnallt)",
+              "arabic": "يربط حزام الأمان",
+              "english": "to buckle up, fasten seatbelt",
+              "example": "Bitte alle einsteigen und sich sofort vorschriftsmäßig anschnallen!"
+            },
+            {
+              "german": "der Fahrersitz, -e",
+              "arabic": "مقعد السائق المريح",
+              "english": "driver's seat",
+              "example": "Der ergonomische Fahrersitz lässt sich elektrisch in Höhe und Neigung verstellen."
+            }
+          ],
+          "description": "Lenkrad, Armaturenbrett, Sicherheitsgurt, Airbag, Pedale, Gangschaltung und Handbremse.",
+          "details": "Cockpit, Bedienelemente, Fahrerassistenzsysteme und passive Sicherheit (A1–B2)",
+          "arabicDescription": "المقصورة والتجهيزات الداخلية للسيارة (Das Auto - Innenausstattung): مفردات المقود (Lenkrad)، التابلوه (Armaturenbrett)، حزام الأمان (Sicherheitsgurt)، الوسادة الهوائية (Airbag)، الدواسات (Pedale)، ناقل الحركة (Gangschaltung)، وفرامل اليد، مع قواعد الأمان والربط الإلزامي للحزام.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Im Auto sitzen und losfahren",
+              "intro": "Einfache Sätze über Lenkrad, Anschnallen, Gas und Bremse (A1).",
+              "paragraphs": [
+                [
+                  "Ich steige ins Auto ein und setze mich auf [der Fahrersitz, -e|den Fahrersitz].",
+                  "Zuerst muss ich mich mit dem Gurt sicher [anschnallen (schnallte an, hat angeschnallt)|anschnallen].",
+                  "Jeder Passagier braucht einen festen [der Sicherheitsgurt, -e|Sicherheitsgurt].",
+                  "Ich nehme [das Lenkrad, -̈er|das Lenkrad] mit beiden Händen fest in den Griff."
+                ],
+                [
+                  "Vor mir leuchten bunte Lampen auf dem [das Armaturenbrett, -er|Armaturenbrett].",
+                  "Mit dem rechten Fuß drücke ich vorsichtig auf [das Gaspedal, -e|das Gaspedal].",
+                  "Wenn ein Kind über die Straße geht, trete ich sofort auf [die Bremse, -n|die Bremse].",
+                  "Ich schaue in den [der Rückspiegel, -|Rückspiegel] und fahre vorsichtig los."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Fahrstunde: Schalten und Parken",
+              "intro": "Fahrschulerfahrungen mit Kupplung, Gangschaltung und Handbremse (A2).",
+              "paragraphs": [
+                [
+                  "Heute habe ich meine fünfte Fahrstunde in der Fahrschule.",
+                  "Mein Fahrlehrer erklärt mir die Pedale: Links ist [die Kupplung, -en|die Kupplung], in der Mitte die Bremse und rechts das Gas.",
+                  "Wenn ich den Gang wechseln will, muss ich die Kupplung ganz durchdrücken und [die Gangschaltung, -en|die Gangschaltung] bedienen.",
+                  "Am Anfang war das Schalten gar nicht so einfach, aber jetzt klappt es schon viel besser."
+                ],
+                [
+                  "Am Ende der Stunde üben wir das Parken an einer steilen Bergstraße.",
+                  "Wenn der Wagen steht, schalte ich in den Leerlauf und ziehe [die Handbremse, -n|die Handbremse] fest an.",
+                  "Für den Ernstfall schützt uns ein moderner [der Airbag, -s|Airbag] im Lenkrad und in den Türen.",
+                  "Mit guter Konzentration fühle ich mich hinter dem Steuer von Tag zu Tag sicherer."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Cockpit-Ergonomie und die Evolution der passiven Fahrzeugsicherheit",
+              "intro": "Einführung der Gurtpflicht in Deutschland und moderne Cockpit-Displays (B1).",
+              "paragraphs": [
+                [
+                  "Die historische Durchsetzung der Anschnallpflicht in der Bundesrepublik Deutschland im Jahr 1976 löste seinerzeit hitzige gesellschaftliche Debatten über bürgerliche Freiheitsrechte aus.",
+                  "Heute bezweifelt niemand mehr den lebensrettenden Effekt: Der Dreipunkt-[der Sicherheitsgurt, -e|Sicherheitsgurt] in Kombination mit dem pyrotechnischen Gurtstraffer und dem [der Airbag, -s|Airbag] senkte die Zahl der Verkehrstoten drastisch.",
+                  "Es ist heute zur unbewussten Selbstverständlichkeit geworden, sich vor jeder Fahrt diszipliniert [anschnallen (schnallte an, hat angeschnallt)|anzuschnallen]."
+                ],
+                [
+                  "Parallel dazu hat das Cockpit eine futuristische Verwandlung vollzogen.",
+                  "Wo früher analoge Rundinstrumente dominierten, erstreckt sich heute über das gesamte [das Armaturenbrett, -er|Armaturenbrett] eine digitale Displaylandschaft mit Touchscreens und Head-up-Projektion."
+                ],
+                [
+                  "Dennoch bleiben haptische Bedienelemente am [das Lenkrad, -̈er|Lenkrad] unerlässlich, damit der Fahrer die Augen auf der Straße halten kann und nicht durch verschachtelte Menüs abgelenkt wird."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Sensordatenfusion, Human-Machine-Interface (HMI) und autonome Rückhaltesysteme",
+              "intro": "Informatik der Innenraumkameras, CAN-Bus-Architektur und kognitive Fahrerentlastung (B2).",
+              "paragraphs": [
+                [
+                  "Das zeitgenössische Human-Machine-Interface (HMI) im automobilen Innenraum basiert auf biomechanischen und kognitionspsychologischen Paradigmen.",
+                  "Auf dem [das Armaturenbrett, -er|Armaturenbrett] fusionieren hochauflösende OLED-Panels Echtzeitinformationen aus Kameras, Lidar- und Radarsensoren zu einem kohärenten Umgebungsmodell.",
+                  "Infrarotkameras an der Lenksäule überwachen dabei kontinuierlich den Lidschlag und die Kopfhaltung des Fahrers auf dem [der Fahrersitz, -e|Fahrersitz], um Mikroschlaf und kognitive Überlastung frühzeitig zu detektieren."
+                ],
+                [
+                  "Die Auslösung passiver Sicherheitssysteme gehorcht hochgradig deterministischen Echtzeitprotokollen.",
+                  "Beschleunigungssensoren im Fahrzeugtunnel analysieren den Crash-Impuls: Binnen 15 Millisekunden zündet das Steuergerät die pyrotechnischen Treibsätze, um den [der Airbag, -s|Airbag] mit Stickstoffgas zu expandieren, während adaptive Gurtkraftbegrenzer die Thoraxbelastung des Insassen auf verträgliche Werte drosseln."
+                ],
+                [
+                  "Diese nahtlose Symbiose aus Sensorik, Aktuatorik und Ergonomie repräsentiert den State of the Art intelligenter Fahrzeugarchitekturen."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_tankstelle",
+          "title": "Die Tankstelle",
+          "words": [
+            {
+              "german": "die Tankstelle, -n",
+              "arabic": "محطة الوقود / محطة البنزين",
+              "english": "gas station, petrol station",
+              "example": "An der Autobahn-Tankstelle halten viele Reisende für eine kurze Kaffeepause an."
+            },
+            {
+              "german": "tanken (tankte, hat getankt)",
+              "arabic": "يعبئ وقوداً في خزان السيارة",
+              "english": "to refuel, get gas",
+              "example": "Bevor wir in die Ferien aufbrechen, müssen wir den Wagen noch voll tanken."
+            },
+            {
+              "german": "die Zapfsäule, -n",
+              "arabic": "مضخة تزويد الوقود",
+              "english": "fuel pump, gas pump",
+              "example": "Er fährt langsam an die freie Zapfsäule Nummer vier heran und stellt den Motor ab."
+            },
+            {
+              "german": "der Kraftstoff, -e",
+              "arabic": "الوقود / المحروقات",
+              "english": "fuel",
+              "example": "Die Preise für fossilen Kraftstoff schwanken im Tagesverlauf erheblich."
+            },
+            {
+              "german": "das Benzin (Sg.)",
+              "arabic": "البنزين",
+              "english": "petrol, gasoline",
+              "example": "Super 95 ist das am häufigsten getankte bleifreie Benzin in Deutschland."
+            },
+            {
+              "german": "der Diesel (Sg.)",
+              "arabic": "وقود الديزل (السولار)",
+              "english": "diesel",
+              "example": "Für Langstreckenfahrten wählen Vielfahrer oft ein Auto, das mit Diesel fährt."
+            },
+            {
+              "german": "die Ladesäule, -n",
+              "arabic": "عمود ومحطة شحن السيارات الكهربائية",
+              "english": "charging station, charging point",
+              "example": "An der Schnellladesäule lädt der Akku des Elektroautos in dreißig Minuten auf achtzig Prozent."
+            },
+            {
+              "german": "aufladen (lud auf, hat aufgeladen)",
+              "arabic": "يشحن البطارية بالكهرباء",
+              "english": "to charge, recharge",
+              "example": "Über Nacht kann man die Batterie bequem an der heimischen Wallbox aufladen."
+            },
+            {
+              "german": "der Reifendruck (Sg.)",
+              "arabic": "ضغط هواء الإطارات",
+              "english": "tire pressure",
+              "example": "An der Servicestation prüft sie mit dem Manometer den richtigen Reifendruck."
+            },
+            {
+              "german": "die Waschanlage, -n",
+              "arabic": "مغسلة السيارات الآلية",
+              "english": "car wash",
+              "example": "Nach dem Winter befreit die automatische Waschanlage das Auto von Salz und Schmutz."
+            },
+            {
+              "german": "der Tankdeckel, -",
+              "arabic": "غطاء فتحة خزان الوقود",
+              "english": "fuel cap, gas cap",
+              "example": "Nach dem Betanken dreht man den Tankdeckel zu, bis er hörbar einrastet."
+            },
+            {
+              "german": "der Literpreis, -e",
+              "arabic": "سعر اللتر الواحد",
+              "english": "price per liter",
+              "example": "Auf der großen Anzeigetafel wird der aktuelle Literpreis für jede Sorte angezeigt."
+            }
+          ],
+          "description": "Tanken, Zapfsäule, Benzin, Diesel, Ladesäule, Reifendruck, Waschanlage und Kraftstoff.",
+          "details": "Treibstoffe, Elektroladesäulen, Bezahlvorgänge und Tankstellen-Shops (A1–B2)",
+          "arabicDescription": "محطة الوقود (Die Tankstelle): مفردات التزود بالوقود (tanken)، مضخة الوقود (Zapfsäule)، البنزين (Benzin)، الديزل (Diesel)، محطة شحن السيارات الكهربائية (Ladesäule)، ضغط الإطارات (Reifendruck)، ومغسلة السيارات (Waschanlage).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "An der Tankstelle anhalten",
+              "intro": "Einfache Sätze über Tanken, Benzin, Bezahlen und Waschanlage (A1).",
+              "paragraphs": [
+                [
+                  "Die rote Lampe im Auto leuchtet: Der Tank ist fast leer.",
+                  "Mein Vater fährt zur nächsten [die Tankstelle, -n|Tankstelle].",
+                  "Er hält an einer freien [die Zapfsäule, -n|Zapfsäule] an und öffnet [der Tankdeckel, -|den Tankdeckel].",
+                  "Er nimmt den grünen Schlauch, um [das Benzin (Sg.)|Benzin] in das Auto zu füllen."
+                ],
+                [
+                  "Wir müssen zwanzig Liter [tanken (tankte, hat getankt)|tanken].",
+                  "Danach geht mein Vater in den Laden und bezahlt an der Kasse.",
+                  "Draußen fahren wir noch durch [die Waschanlage, -n|die Waschanlage], damit das Auto sauber wird.",
+                  "Jetzt ist das Auto vollgetankt und sauber für die Weiterfahrt."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Strom laden oder Benzin tanken?",
+              "intro": "Moderne Tankstellen mit Schnellladestationen und Reifendruckprüfung (A2).",
+              "paragraphs": [
+                [
+                  "Früher gab es an Tankstellen nur Benzin und [der Diesel (Sg.)|Diesel].",
+                  "Heute sieht man an modernen Raststätten immer mehr Parkplätze mit einer leistungsstarken [die Ladesäule, -n|Ladesäule].",
+                  "Dort kann man sein Elektroauto mit einem dicken Ladekabel in kurzer Zeit [aufladen (lud auf, hat aufgeladen)|aufladen].",
+                  "Während das Auto lädt, trinken die Fahrer im Bistro einen Kaffee oder essen einen Snack."
+                ],
+                [
+                  "Auf der Anzeigetafel prüft mein Onkel immer genau [der Literpreis, -e|den Literpreis], der abends meist günstiger ist als morgens.",
+                  "Vor der Weiterfahrt kontrollieren wir auch gleich [der Reifendruck (Sg.)|den Reifendruck] an der Luftstation.",
+                  "Jeder [der Kraftstoff, -e|Kraftstoff] erfordert Aufmerksamkeit beim richtigen Einfüllen.",
+                  "Gepflegte Fahrzeuge verbrauchen weniger Energie und fahren sicherer."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Vom reinen Spritverkauf zum modernen Mobilitäts- und Nahversorgungszentrum",
+              "intro": "Wandel der Tankstellenbranche und dynamische Preisgestaltung über Markttransparenzstellen (B1).",
+              "paragraphs": [
+                [
+                  "Die Tankstelle hat in den vergangenen Jahrzehnten eine fundamentale Wandlung vom reinen Kraftstoffumschlagplatz zum multifunktionalen Nahversorgungszentrum durchlaufen.",
+                  "Da die Margen beim reinen Verkauf von [das Benzin (Sg.)|Benzin] und [der Diesel (Sg.)|Diesel] im Centbereich liegen, erwirtschaften Tankstellenbetreiber den Großteil ihres Gewinns im angeschlossenen Bistro- und Shopgeschäft.",
+                  "Für viele Berufstätige ist die 24-Stunden-[die Tankstelle, -n|Tankstelle] am Sonntag der Retter in der Not für frische Brötchen und Snacks."
+                ],
+                [
+                  "Zugleich unterliegt der deutsche Kraftstoffmarkt einer hochdynamischen Preispolitik.",
+                  "Dank der staatlichen Markttransparenzstelle für Kraftstoffe können Autofahrer per Smartphone-App sekundengenau vergleichen, welche [die Zapfsäule, -n|Zapfsäule] im Umkreis den günstigsten [der Literpreis, -e|Literpreis] offeriert."
+                ],
+                [
+                  "Im Zuge der Mobilitätswende rüsten Mineralölkonzerne ihre Stationen massiv mit High-Power-Chargern auf, an denen Nutzer ihre Elektrofahrzeuge mit bis zu 350 Kilowatt Ladeleistung [aufladen (lud auf, hat aufgeladen)|aufladen] können."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Thermische Ladeleistung, Ladekurven (CCS) und E-Fuels im Energiesystem",
+              "intro": "Thermodynamik der Schnellladung, Combined Charging System (CCS) und Defossilierung (B2).",
+              "paragraphs": [
+                [
+                  "Die infrastrukturelle Transformation an modernen Energiehubs manifestiert sich im Übergang von chemischen Energieträgern zu hocheffizienten Gleichstrom-Schnellladungen (DC).",
+                  "An einer modernen [die Ladesäule, -n|Ladesäule] nach dem europäischen CCS-Standard (Combined Charging System) fließen bei 800-Volt-Architekturen Ströme von bis zu 500 Ampere.",
+                  "Dies erfordert flüssigkeitsgekühlte Ladekabel und ein hochkomplexes Thermomanagement im Akkupack des Fahrzeugs, um Dendritenbildung an den Graphitanoden beim schnellen [aufladen (lud auf, hat aufgeladen)|Aufladen] zu verhindern."
+                ],
+                [
+                  "Im Bereich fossiler Brennstoffe wiederum wird intensiv an synthetischen E-Fuels und Biokraftstoffen der zweiten Generation geforscht.",
+                  "Diese klimaneutralen Kohlenwasserstoffe könnten es ermöglichen, konventionelle Verbrenner ohne Modifikation der bestehenden Zapfinfrastruktur weiterzubetreiben."
+                ],
+                [
+                  "Damit avanciert die Station der Zukunft zum komplexen Schnittstellenknotenpunkt zwischen Stromnetzstabilität, Pufferbatteriespeichern und alternativer Kraftstoffdistribution."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "bus",
+      "title": "DER BUS",
+      "topics": [
+        {
+          "id": "der_bus",
+          "title": "Der Bus",
+          "words": [
+            {
+              "german": "der Linienbus, -se",
+              "arabic": "حافلة النقل الداخلي المنتظمة",
+              "english": "city bus, scheduled bus",
+              "example": "Der Linienbus fährt im Zehn-Minuten-Takt direkt vom Marktplatz zum Hauptbahnhof."
+            },
+            {
+              "german": "der Reisebus, -se",
+              "arabic": "حافلة السفر الطويل المريحة",
+              "english": "tour coach, long-distance bus",
+              "example": "Mit einem modernen Reisebus fährt die Reisegruppe über Nacht nach Italien."
+            },
+            {
+              "german": "die Bushaltestelle, -n",
+              "arabic": "موقف ومحطة الحافلة",
+              "english": "bus stop",
+              "example": "An der überdachten Bushaltestelle warten die Schulkinder im Regen auf den Bus."
+            },
+            {
+              "german": "der Busfahrer, -",
+              "arabic": "سائق الحافلة",
+              "english": "bus driver",
+              "example": "Die freundliche Busfahrerin steuert den langen Gelenkbus souverän durch den Berufsverkehr."
+            },
+            {
+              "german": "die Fahrkarte, -n",
+              "arabic": "تذكرة الركوب",
+              "english": "bus ticket, transit ticket",
+              "example": "Mit dem Deutschlandticket kann man alle Linienbusse im ganzen Land flexibel nutzen."
+            },
+            {
+              "german": "einsteigen (stieg ein, ist eingestiegen)",
+              "arabic": "يركب في الحافلة أو القطار",
+              "english": "to get on, board",
+              "example": "Bitte lassen Sie zuerst die Fahrgäste aussteigen, bevor Sie vorne einsteigen!"
+            },
+            {
+              "german": "aussteigen (stieg aus, ist ausgestiegen)",
+              "arabic": "ينزل من الحافلة",
+              "english": "to get off, alight",
+              "example": "An der nächsten Station müssen wir aussteigen und den Weg zu Fuß fortsetzen."
+            },
+            {
+              "german": "umsteigen (stieg um, ist umgestiegen)",
+              "arabic": "يبدل الحافلة ويغير خط السير",
+              "english": "to transfer, change lines",
+              "example": "Am zentralen Busbahnhof muss man in die Linie 5 umsteigen."
+            },
+            {
+              "german": "der Fahrplan, -̈e",
+              "arabic": "جدول المواعيد ومخطط الرحلات",
+              "english": "timetable, schedule",
+              "example": "Auf dem digitalen Fahrplan am Display sieht man die genaue Abfahrtszeit auf die Minute."
+            },
+            {
+              "german": "entwerten (entwertete, hat entwertet)",
+              "arabic": "يختم ويثقب التذكرة في جهاز التحقق",
+              "english": "to validate, stamp (ticket)",
+              "example": "Man muss Einzelfahrscheine im Bus am Stempelautomaten sofort entwerten."
+            },
+            {
+              "german": "der Fahrgast, -̈e",
+              "arabic": "الراكب / المسافر في وسائل النقل",
+              "english": "passenger",
+              "example": "Älteren Menschen und Schwangeren bietet jeder höfliche Fahrgast seinen Sitzplatz an."
+            },
+            {
+              "german": "die Verspätung, -en",
+              "arabic": "التأخير عن موعد الوصول",
+              "english": "delay",
+              "example": "Wegen einer großen Baustelle hatte der Bus heute fünfzehn Minuten Verspätung."
+            }
+          ],
+          "description": "Linienbus, Reisebus, Bushaltestelle, Busfahrer, Fahrkarte, Fahrplan und Umsteigen.",
+          "details": "Öffentlicher Nahverkehr (ÖPNV), Taktung, Ticketentwertung und Barrierefreiheit (A1–B2)",
+          "arabicDescription": "الحافلة والنقل العام (Der Bus): مفردات حافلة المدينة (Linienbus)، حافلة السفر (Reisebus)، موقف الحافلة (Bushaltestelle)، سائق الحافلة (Busfahrer)، تذكرة الركوب (Fahrkarte)، جدول المواعيد (Fahrplan)، ركوب ونزول وتبديل الحافلة (umsteigen).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Mit dem Bus zur Schule",
+              "intro": "Einfache Sätze über Bushaltestelle, Ticket, Einsteigen und Aussteigen (A1).",
+              "paragraphs": [
+                [
+                  "Jeden Morgen gehe ich um halb acht zu Fuß zur [die Bushaltestelle, -n|Bushaltestelle].",
+                  "Dort warte ich fünf Minuten, bis der große [der Linienbus, -se|Linienbus] kommt.",
+                  "Ich habe meine [die Fahrkarte, -n|Fahrkarte] schon in der Hand.",
+                  "Wenn die Tür aufgeht, darf ich vorne [einsteigen (stieg ein, ist eingestiegen)|einsteigen]."
+                ],
+                [
+                  "Ich grüße [der Busfahrer, -|den Busfahrer] freundlich und suche mir einen freien Platz.",
+                  "Im Bus sitzen viele Schüler und andere [der Fahrgast, -̈e|Fahrgäste].",
+                  "Nach vier Stationen drücke ich den roten Knopf und werde [aussteigen (stieg aus, ist ausgestiegen)|aussteigen].",
+                  "Der Bus ist pünktlich und bringt mich sicher zur Schule."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Unterwegs im öffentlichen Nahverkehr",
+              "intro": "Fahrplan lesen, Ticket entwerten und Buswechsel am Hauptbahnhof (A2).",
+              "paragraphs": [
+                [
+                  "Wenn ich in einer fremden Stadt unterwegs bin, nutze ich am liebsten den Bus.",
+                  "An der Station schaue ich zuerst auf [der Fahrplan, -̈e|den Fahrplan], um die richtige Linie zu finden.",
+                  "Wenn man eine Papierfahrkarte kauft, muss man sie direkt nach dem Einstieg im Gerät [entwerten (entwertete, hat entwertet)|entwerten].",
+                  "Wer ohne gültiges Ticket fährt, muss eine empfindliche Strafe bezahlen."
+                ],
+                [
+                  "Am zentralen Busbahnhof muss ich heute in die Linie 12 [umsteigen (stieg um, ist umgestiegen)|umsteigen].",
+                  "Wegen des starken Berufsverkehrs hat mein Bus leider fünf Minuten [die Verspätung, -en|Verspätung].",
+                  "Für weite Reisen über das Wochenende buchen wir gern einen günstigen [der Reisebus, -se|Reisebus] mit bequemen Sitzen.",
+                  "Busfahren schont die Umwelt und spart teure Parkgebühren in der Innenstadt."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Das Deutschlandticket und die Renaissance des Busverkehrs",
+              "intro": "ÖPNV-Strukturen, Taktfahrpläne und die Reform des Tarifdschungels (B1).",
+              "paragraphs": [
+                [
+                  "Der öffentliche Personennahverkehr (ÖPNV) in Deutschland hat durch die Einführung des bundesweiten Deutschlandtickets eine historische Vereinfachung erfahren.",
+                  "Früher scheiterten viele Reisende am unübersichtlichen Tarifdschungel der regionalen Verkehrsverbünde, wo jede einzelne [die Fahrkarte, -n|Fahrkarte] minutiös auf Waben und Zonen abgestimmt sein musste.",
+                  "Heute genügt ein digitales Monatsticket auf dem Smartphone, um bundesweit in jeden [der Linienbus, -se|Linienbus], jede Straßenbahn und jeden Regionalzug einzusteigen."
+                ],
+                [
+                  "Dennoch steht der Busverkehr vor infrastrukturellen Herausforderungen: Insbesondere im ländlichen Raum ist die Taktung oft lückenhaft, sodass Verbindungen nach Schulschluss drastisch abnehmen.",
+                  "In den Metropolen wiederum sorgen eigene Busspuren dafür, dass [der Fahrgast, -̈e|Fahrgäste] trotz Staus zügig vorankommen."
+                ],
+                [
+                  "Zusätzlich treiben Städte die Umflottung auf batterieelektrische und Wasserstoff-Busse voran, um den innerstädtischen Nahverkehr komplett emissionsfrei zu gestalten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Netzwerktheorie im ÖPNV, Taktknoten und automatisierte Flottenleitsysteme",
+              "intro": "Integraler Taktfahrplan (ITF), Fahrgastwechselzeiten und intermodale Mobilitätsketten (B2).",
+              "paragraphs": [
+                [
+                  "Die mathematische Optimierung städtischer Busnetze basiert auf den Prinzipien des Integralen Taktfahrplans (ITF).",
+                  "Hierbei werden Buslinien so an zentralen Rendezvous-Punkten synchronisiert, dass minimale Umsteigezeiten für jeden [der Fahrgast, -̈e|Fahrgast] gewährleistet sind, ohne dass Überlastungen an der [die Bushaltestelle, -n|Bushaltestelle] entstehen.",
+                  "Telematikgestützte Rechnergesteuerte Betriebsleitsysteme (RBL) erfassen die GPS-Koordinaten in Echtzeit und beeinflussen Lichtsignalanlagen dynamisch ('ÖPNV-Priorisierung'), um eine unvorhergesehene [die Verspätung, -en|Verspätung] proaktiv abzubauen."
+                ],
+                [
+                  "Ein kritischer Engpassfaktor in der Umlaufplanung ist die Fahrgastwechselzeit: Niederflurfahrzeuge mit stufenlosem Einstieg und breiten Doppeltüren minimieren die Haltestellenaufenthaltszeiten signifikant und garantieren Barrierefreiheit für mobilitätseingeschränkte Personen."
+                ],
+                [
+                  "In Pilotprojekten agieren autonom operierende Minibusse bereits als 'On-Demand'-Zubringer für die 'erste und letzte Meile', was die Grenze zwischen individuellem Taxi und kollektivem Linienverkehr zusehends auflöst."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "motorrad",
+      "title": "DAS MOTORRAD",
+      "topics": [
+        {
+          "id": "das_motorrad",
+          "title": "Das Motorrad",
+          "words": [
+            {
+              "german": "das Motorrad, -̈er",
+              "arabic": "الدراجة النارية (الموتوسيكل)",
+              "english": "motorcycle, motorbike",
+              "example": "Im Frühling holt er sein gepflegtes Motorrad aus der Garage für die erste Ausfahrt."
+            },
+            {
+              "german": "der Motorroller, -",
+              "arabic": "السكوتر الصغير الحركي",
+              "english": "scooter, motor scooter",
+              "example": "Mit einem wendigen Motorroller flitzt man geschmeidig durch den dichten Stadtverkehr."
+            },
+            {
+              "german": "der Motorradhelm, -e",
+              "arabic": "خوذة الرأس الواقية للدراجة النارية",
+              "english": "motorcycle helmet",
+              "example": "Ein stabiler Motorradhelm mit ECE-Prüfsiegel ist gesetzlich vorgeschrieben und schützt den Kopf."
+            },
+            {
+              "german": "die Schutzkleidung (Sg.)",
+              "arabic": "الملابس الواقية من الجلد والمقاومة للتآكل",
+              "english": "protective gear, leathers",
+              "example": "Zur Schutzkleidung gehören Lederkombi, verstärkte Stiefel und abriebfeste Handschuhe."
+            },
+            {
+              "german": "der Auspuff, -e",
+              "arabic": "أنبوب العادم (الشكمان)",
+              "english": "exhaust, tailpipe",
+              "example": "Der Auspuff filtert Schadstoffe und dämpft den lauten Knall der Verbrennung."
+            },
+            {
+              "german": "der Gasgriff, -e",
+              "arabic": "مقبض التحكم بالسرعة في المقود",
+              "english": "throttle, twist grip",
+              "example": "Wenn der Biker am rechten Gasgriff dreht, beschleunigt die Maschine kraftvoll."
+            },
+            {
+              "german": "die Kurve, -n",
+              "arabic": "المنعطف / المنحنى في الطريق",
+              "english": "curve, bend",
+              "example": "Motorradfahrer lieben kurvenreiche Bergstraßen mit engen Kurven im Gebirge."
+            },
+            {
+              "german": "das Visier, -e",
+              "arabic": "واقي الوجه الشفاف في الخوذة",
+              "english": "visor (helmet)",
+              "example": "Er klappt das getönte Visier herunter, um die Augen vor Wind und Blendung zu schützen."
+            },
+            {
+              "german": "die Motorradkette, -n",
+              "arabic": "جنزير وسلسلة نقل الحركة بالدراجة",
+              "english": "drive chain",
+              "example": "Man muss die Motorradkette regelmäßig reinigen und mit speziellem Kettenspray fetten."
+            },
+            {
+              "german": "beschleunigen (beschleunigte, hat beschleunigt)",
+              "arabic": "يتسارع ويزيد من السرعة",
+              "english": "to accelerate",
+              "example": "Auf der freien Landstraße kann die schwere Maschine mühelos beschleunigen."
+            },
+            {
+              "german": "die Schräglage, -n",
+              "arabic": "زاوية الميلان والانحناء في المنعطف",
+              "english": "lean angle",
+              "example": "In der Kurve geht der Fahrer in eine kontrollierte Schräglage, um die Fliehkraft auszugleichen."
+            },
+            {
+              "german": "die Bremsscheibe, -n",
+              "arabic": "قرص الفرامل المعدني",
+              "english": "brake disc",
+              "example": "Gelochte Bremsscheiben sorgen für hervorragende Verzögerung selbst bei Nässe."
+            }
+          ],
+          "description": "Motorrad, Motorroller, Helm, Schutzkleidung, Auspuff, Kurven, Visier und Schräglage.",
+          "details": "Zweiradmechanik, Fahrphysik, Kurventechnik und passive Schutzbekleidung (A1–B2)",
+          "arabicDescription": "الدراجة النارية (Das Motorrad): مفردات الدراجة النارية (Motorrad)، السكوتر (Motorroller)، الخوذة (Helm)، الملابس الواقية (Schutzkleidung)، العادم (Auspuff)، واقي الوجه (Visier)، وزاوية الميلان في المنعطفات (Schräglage).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Eine Motorradfahrt am Wochenende",
+              "intro": "Einfache Sätze über Motorrad, Helm, Jacke und schnelles Fahren (A1).",
+              "paragraphs": [
+                [
+                  "Mein Onkel liebt sein schnelles [das Motorrad, -̈er|Motorrad].",
+                  "Bevor er losfährt, zieht er eine feste Lederjacke und feste Stiefel an.",
+                  "Er setzt [der Motorradhelm, -e|den Motorradhelm] auf und schließt den Verschluss.",
+                  "Vor den Augen klappt er das klare [das Visier, -e|Visier] herunter."
+                ],
+                [
+                  "Am Lenker dreht er vorsichtig am [der Gasgriff, -e|Gasgriff] und der Motor startet mit einem tiefen Geräusch.",
+                  "Die Maschine fährt schnell und kann stark [beschleunigen (beschleunigte, hat beschleunigt)|beschleunigen].",
+                  "In der Stadt fährt mein Cousin lieber einen kleinen [der Motorroller, -|Motorroller].",
+                  "Zweiradfahren macht Spaß, aber man muss immer vorsichtig sein."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Sicherheit auf kurvigen Straßen",
+              "intro": "Kurven fahren, Schutzkleidung und Kettenpflege vor der Tour (A2).",
+              "paragraphs": [
+                [
+                  "Im Sommer planen mein Bruder und seine Freunde eine Tour durch die Alpen.",
+                  "Auf den kurvigen Bergstraßen gibt es unzählige enge [die Kurve, -n|Kurven], die man mit Respekt fahren muss.",
+                  "Beim Motorradfahren gleicht man die Fliehkräfte aus, indem man in eine kontrollierte [die Schräglage, -n|Schräglage] geht.",
+                  "Wer ohne geprüfte [die Schutzkleidung (Sg.)|Schutzkleidung] fährt, riskiert bei einem Sturz schwerste Verletzungen."
+                ],
+                [
+                  "Vor jeder Tour muss man die Technik überprüfen: Greift die Bremse gut und ist [die Motorradkette, -n|die Motorradkette] sauber gefettet?",
+                  "Der Auspuff darf nicht manipuliert sein, damit die Maschine die Anwohner nicht durch Lärm belästigt.",
+                  "Mit guter Vorbereitung und vorausschauender Fahrweise wird jede Tour zu einem unvergesslichen Naturerlebnis."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Faszination Zweirad: Freiheit, Fahrphysik und Sicherheitsbewusstsein",
+              "intro": "Kultur des Motorradtourismus in Mittelgebirgen und Sicherheitstrainings (B1).",
+              "paragraphs": [
+                [
+                  "Für viele Biker in Mitteleuropa verkörpert das Fahren auf zwei Rädern das ultimative Gefühl von Freiheit und unmittelbarer Naturverbundenheit.",
+                  "Beliebte Routen im Schwarzwald, im Harz oder in den Alpen ziehen an sonnigen Wochenenden Tausende Zweirad-Enthusiasten an.",
+                  "Anders als beim Autofahren ist der Fahrer auf dem [das Motorrad, -̈er|Motorrad] Wind und Wetter direkt ausgesetzt, was eine vollkommene mentale Präsenz erfordert."
+                ],
+                [
+                  "Da Zweiräder über keine schützende Knautschzone verfügen, ist die Investition in zertifizierte [die Schutzkleidung (Sg.)|Schutzkleidung] mit integrierten Protektoren und Airbag-Westen überlebenswichtig.",
+                  "Ein moderner [der Motorradhelm, -e|Motorradhelm] absorbiert Aufprallenergie und schützt die Halswirbelsäule."
+                ],
+                [
+                  "Immer mehr Motorradfahrer absolvieren zu Saisonbeginn freiwillige Fahrsicherheitstrainings: Dort trainiert man Notbremsungen bei hoher Geschwindigkeit und das richtige Einlenken in unübersichtliche [die Kurve, -n|Kurven], um gefährliche Fahrfehler zu vermeiden."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Kreiselkräfte, Kammscher Kreis und Schräglagendynamik",
+              "intro": "Physik der Lenkimpulse, Reibungskoeffizienten und Gyroskop-Stabilisierung (B2).",
+              "paragraphs": [
+                [
+                  "Die Fahrphysik eines einspurigen Kraftfahrzeugs gehorcht den dynamischen Gleichungen starrer Mehrkörpersysteme unter dem Einfluss von Kreiselkräften.",
+                  "Zur Initiierung einer Kurvenfahrt wendet der Fahrer kontraintuitiv den sogenannten 'Lenkimpuls' an: Ein kurzer Druck am kurveninneren [der Gasgriff, -e|Lenkerende] lenkt das Vorderrad kurzzeitig aus der Kurve heraus, wodurch die Massenträgheit das Fahrzeug in die gewünschte [die Schräglage, -n|Schräglage] kippt."
+                ],
+                [
+                  "Im Schräglagenzustand balancieren die Schwerkraft und die Zentrifugalkraft einander exakt aus.",
+                  "Die übertragbaren Kräfte an den Reifenaufstandsflächen werden durch den Kammschen Kreis limitiert: Nutzt der Fahrer maximale Seitenführungskraft in der Kurve, verbleibt kein Reibwertpotenzial für abrupte Brems- oder Beschleunigungskräfte."
+                ],
+                [
+                  "Moderne Schräglagen-ABS-Systeme (Cornering ABS) erfassen über 6-Achsen-Inertialsensoren (IMU) permanent Roll-, Nick- und Gierraten und modulieren den Bremsdruck an der [die Bremsscheibe, -n|Bremsscheibe] mikrosekundengenau, um ein Aufstellen des Fahrzeugs und Traktionsverlust zuverlässig zu verhindern."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fahrrad",
+      "title": "DAS FAHRRAD",
+      "topics": [
+        {
+          "id": "das_fahrrad",
+          "title": "Das Fahrrad",
+          "words": [
+            {
+              "german": "das Fahrrad, -̈er",
+              "arabic": "الدراجة الهوائية (البسكليت)",
+              "english": "bicycle, bike",
+              "example": "In Münster und Freiburg fahren die meisten Bürger mit dem Fahrrad zur Arbeit."
+            },
+            {
+              "german": "das E-Bike, -s",
+              "arabic": "الدراجة الكهربائية المساعدة (بيديليك)",
+              "english": "e-bike, electric bicycle",
+              "example": "Mit einem modernen E-Bike meistert man steile Anstiege ohne jede Anstrengung."
+            },
+            {
+              "german": "der Fahrradhelm, -e",
+              "arabic": "خوذة راكب الدراجة الهوائية",
+              "english": "bicycle helmet",
+              "example": "Ein gutsitzender Fahrradhelm schützt den Kopf bei einem unglücklichen Sturz."
+            },
+            {
+              "german": "der Lenker, -",
+              "arabic": "مقود الدراجة الهوائية",
+              "english": "handlebars",
+              "example": "Mit beiden Händen am Lenker hat man das Rad auch auf unebenem Pflaster sicher im Griff."
+            },
+            {
+              "german": "der Sattel, -̈",
+              "arabic": "سرج ومقعد الدراجة",
+              "english": "bicycle saddle, seat",
+              "example": "Der ergonomische Sattel muss auf die richtige Körpergröße eingestellt werden."
+            },
+            {
+              "german": "das Pedal, -e",
+              "arabic": "دواسة الدراجة الهوائية",
+              "english": "pedal",
+              "example": "Er tritt kräftig in das Pedal, um schnell über die grüne Ampel zu kommen."
+            },
+            {
+              "german": "die Fahrradkette, -n",
+              "arabic": "سلسلة وجنزير الدراجة",
+              "english": "bicycle chain",
+              "example": "Wenn die Fahrradkette abspringt, muss man sie vorsichtig wieder auf das Zahnrad heben."
+            },
+            {
+              "german": "die Klingel, -n",
+              "arabic": "جرس التنبيه الصوتي بالدراجة",
+              "english": "bicycle bell",
+              "example": "Mit der lauten Klingel warnt die Radfahrerin Fußgänger rechtzeitig auf dem Gehweg."
+            },
+            {
+              "german": "der Radweg, -e",
+              "arabic": "مسار الدراجات الهوائية المخصص",
+              "english": "bike path, cycle lane",
+              "example": "Ein baulich getrennter Radweg schützt Radler vor dem schnellen Autoverkehr."
+            },
+            {
+              "german": "die Fahrradpumpe, -n",
+              "arabic": "منفاخ هواء إطارات الدراجة",
+              "english": "bicycle pump",
+              "example": "Mit der handlichen Fahrradpumpe pumpt er den Reifen auf den richtigen Druck auf."
+            },
+            {
+              "german": "der platte Reifen, -",
+              "arabic": "الإطار المثقوب الفارغ من الهواء",
+              "english": "flat tire, puncture",
+              "example": "Wegen einer Glasscherbe auf der Straße hatte er plötzlich einen platten Reifen."
+            },
+            {
+              "german": "in die Pedale treten",
+              "arabic": "يدوس بقوة على الدواسات ويقود",
+              "english": "to pedal",
+              "example": "Wer fit bleiben will, sollte jeden Tag kräftig in die Pedale treten."
+            }
+          ],
+          "description": "Fahrrad, E-Bike, Fahrradhelm, Lenker, Sattel, Pedale, Kette, Klingel, Radweg und Luftpumpe.",
+          "details": "Fahrradkultur, Pedelecs, Radverkehrsinfrastruktur und Fahrradwartung (A1–B2)",
+          "arabicDescription": "الدراجة الهوائية والكهربائية (Das Fahrrad): مفردات الدراجة الهوائية (Fahrrad)، الدراجة الكهربائية (E-Bike)، خوذة الدراجة (Fahrradhelm)، المقود (Lenker)، السرج (Sattel)، الدواسات (Pedale)، الجنزير (Fahrradkette)، جرس التنبيه (Klingel)، مسار الدراجات (Radweg)، ومنفاخ الهواء (Fahrradpumpe).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Mein neues Fahrrad",
+              "intro": "Einfache Sätze über Fahrrad, Helm, Sattel, Klingel und Radweg (A1).",
+              "paragraphs": [
+                [
+                  "Ich habe zum Geburtstag ein schönes blaues [das Fahrrad, -̈er|Fahrrad] bekommen.",
+                  "Ich setze meinen bunten [der Fahrradhelm, -e|Fahrradhelm] auf den Kopf.",
+                  "Ich setze mich auf den weichen [der Sattel, -̈|Sattel] und halte [der Lenker, -|den Lenker] mit beiden Händen fest.",
+                  "Mit den Füßen beginne ich fest [in die Pedale treten|in die Pedale zu treten]."
+                ],
+                [
+                  "In meiner Stadt fahre ich sicher auf dem grünen [der Radweg, -e|Radweg].",
+                  "Wenn Fußgänger im Weg stehen, benutze ich meine kleine [die Klingel, -n|Klingel].",
+                  "Mein Großvater fährt ein modernes [das E-Bike, -s|E-Bike] mit Motor.",
+                  "Radfahren hält mich gesund und macht jeden Tag Spaß."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Fahrradreparatur am Wochenende",
+              "intro": "Kette ölen, Platten flicken und Luft aufpumpen (A2).",
+              "paragraphs": [
+                [
+                  "Gestern wollte ich mit Freunden eine Radtour machen, aber ich hatte [der platte Reifen, -|einen platten Reifen].",
+                  "Eine kleine Glasscherbe hatte den Schlauch im Vorderrad beschädigt.",
+                  "Zusammen mit meinem Vater habe ich das Rad auf den Kopf gestellt und den Schlauch geflickt.",
+                  "Mit der großen [die Fahrradpumpe, -n|Fahrradpumpe] pumpten wir den Reifen wieder stramm auf."
+                ],
+                [
+                  "Danach haben wir [die Fahrradkette, -n|die Fahrradkette] gereinigt und mit speziellem Kettenöl gepflegt.",
+                  "Damit das Rad im Straßenverkehr verkehrssicher ist, müssen auch die Scheinwerfer und die Reflektoren funktionieren.",
+                  "Auf dem neu gebauten [der Radweg, -e|Radweg] fuhren wir schließlich zwanzig Kilometer durch den Wald.",
+                  "Ein gut gewartetes Fahrrad rollt leicht und bringt einen überall hin."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die Fahrradstadt und der Boom des E-Bikes",
+              "intro": "Fahrradkultur in Deutschland, Kopenhagener Modell und die Mobilitätswende (B1).",
+              "paragraphs": [
+                [
+                  "In vielen deutschen Städten vollzieht sich ein grundlegender Wandel in der urbanen Mobilitätsplanung.",
+                  "Städte wie Münster, Karlsruhe oder Bremen beweisen seit Langem, dass [das Fahrrad, -̈er|das Fahrrad] im Berufsverkehr auf Strecken bis zu fünf Kilometern jedes andere Verkehrsmittel an Schnelligkeit und Flexibilität übertrifft.",
+                  "Immer mehr Kommunen orientieren sich am dänischen oder niederländischen Vorbild und investieren in breite, geschützte [der Radweg, -e|Radwege] (Protected Bike Lanes), um den Radverkehr vom motorisierten Verkehr zu entkoppeln."
+                ],
+                [
+                  "Einen beispiellosen Schub erfuhr diese Entwicklung durch den Siegeszug vom [das E-Bike, -s|E-Bike].",
+                  "Dank batterieelektrischer Tretunterstützung bis 25 km/h haben auch Senioren, Pendler aus Vororten und Menschen in topografisch anspruchsvollen Regionen das Radfahren für sich neu entdeckt."
+                ],
+                [
+                  "Dennoch mahnen Verkehrsexperten: Höhere Geschwindigkeiten erfordern mehr gegenseitige Rücksichtnahme und machen das Tragen von einem [der Fahrradhelm, -e|Fahrradhelm] dringlicher denn je."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Biomechanik der Kraftübertragung, Drehmomentsensorik und urbane Infrastruktur",
+              "intro": "Kurbeldynamik, bürstenlose Mittelmotoren und Modal-Split-Transformation (B2).",
+              "paragraphs": [
+                [
+                  "Die Fortbewegung auf dem Fahrrad stellt ein biomechanisches Meisterwerk effizienter Energiekonversion dar: Über 95 Prozent der vom Menschen an [das Pedal, -e|den Pedalen] aufgewandten Muskelkraft werden über [die Fahrradkette, -n|die Fahrradkette] oder Zahnriemen in Vortrieb transformiert.",
+                  "Die ergonomische Justierung von [der Sattel, -̈|Sattel] und Vorbau steuert den effektiven Kniewinkel zur Vermeidung patellofemoraler Überlastungen."
+                ],
+                [
+                  "Beim modernen [das E-Bike, -s|E-Bike] (Pedelec) wiederum erfassen Dehnmessstreifen im Tretlager permanent das aufgebrachte Drehmoment und die Trittfrequenz.",
+                  "Mikrocontroller steuern den bürstenlosen Mittelmotor so harmonisch an, dass die Motorunterstützung proportional zur Eigenleistung erfolgt und ein natürliches Fahrgefühl simuliert wird."
+                ],
+                [
+                  "Verkehrsplanerisch fungiert die Fahrradinfrastruktur als zentraler Hebel zur Reduktion verkehrsbedingter Lärm- und Treibhausgasemissionen.",
+                  "Die Erhöhung des Modal-Split-Anteils des Radverkehrs entlastet überlastete Verkehrsknotenpunkte und transformiert den öffentlichen Raum zurück zu lebenswerten urbanen Begegnungszonen."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "lastkraft_fahrzeug",
+      "title": "DAS LASTKRAFT-FAHRZEUG",
+      "topics": [
+        {
+          "id": "das_lastkraft_fahrzeug",
+          "title": "Das Lastkraft-Fahrzeug",
+          "words": [
+            {
+              "german": "der Lastkraftwagen (Lkw), -",
+              "arabic": "شاحنة نقل البضائع الكبيرة (اللوري)",
+              "english": "truck, lorry, heavy goods vehicle (HGV)",
+              "example": "Auf der rechten Spur der Autobahn fährt ein langer Lastkraftwagen hinter dem anderen."
+            },
+            {
+              "german": "der Sattelzug, -̈e",
+              "arabic": "الشاحنة المفصلية الكبيرة (تريلا)",
+              "english": "semi-trailer truck, articulated lorry",
+              "example": "Ein schwerer Sattelzug transportiert bis zu vierzig Tonnen gekühlte Lebensmittel."
+            },
+            {
+              "german": "der Anhänger, -",
+              "arabic": "المقطورة الإضافية الخلفية",
+              "english": "trailer",
+              "example": "Der Fahrer kuppelt den großen Anhänger an der Laderampe des Lagers vorsichtig an."
+            },
+            {
+              "german": "das Fahrerhaus, -̈er",
+              "arabic": "كابينة قيادة الشاحنة",
+              "english": "driver's cab, truck cabin",
+              "example": "Im modernen Fahrerhaus gibt es für den Fernfahrer ein bequemes Bett zum Schlafen."
+            },
+            {
+              "german": "die Ladefläche, -n",
+              "arabic": "منصة وسطح تحميل البضائع",
+              "english": "loading area, truck bed",
+              "example": "Mit einem Gabelstapler werden schwere Holzpaletten auf die Ladefläche gehoben."
+            },
+            {
+              "german": "die Fracht, -en",
+              "arabic": "الحمولة / شحنة البضائع المنقولة",
+              "english": "freight, cargo",
+              "example": "Die wertvolle Fracht ist gegen Transportschäden und Verrutschen versichert."
+            },
+            {
+              "german": "beladen (belud, hat beladen)",
+              "arabic": "يحمّل الشاحنة بالبضائع",
+              "english": "to load",
+              "example": "Die Logistikarbeiter beladen den Lkw zügig mit Paketen für den Expressversand."
+            },
+            {
+              "german": "entladen (entlud, hat entladen)",
+              "arabic": "يفرغ حمولة الشاحنة",
+              "english": "to unload",
+              "example": "Am Supermarkt muss der Lkw am frühen Morgen seine Waren entladen."
+            },
+            {
+              "german": "der Fahrtenschreiber, -",
+              "arabic": "جهاز تسجيل سرعة وساعات القيادة (التاكوغراف)",
+              "english": "tachograph",
+              "example": "Die Polizei kontrolliert am Fahrtenschreiber, ob der Fahrer seine Ruhezeiten eingehalten hat."
+            },
+            {
+              "german": "der Autohof, -̈e",
+              "arabic": "محطة واستراحة الشاحنات الكبرى بجانب الأوتوبان",
+              "english": "truck stop",
+              "example": "Nachts stehen Dutzende Lkw nebeneinander auf dem beleuchteten Autohof."
+            },
+            {
+              "german": "der Güterverkehr (Sg.)",
+              "arabic": "حركة شحن البضائع والنقل البري",
+              "english": "freight traffic, goods transport",
+              "example": "Deutschland ist aufgrund seiner geografischen Lage die wichtigste Drehscheibe für den europäischen Güterverkehr."
+            },
+            {
+              "german": "die Maut, -en",
+              "arabic": "رسوم المرور على الطرق السريعة للشاحنات",
+              "english": "toll (road toll)",
+              "example": "Auf allen deutschen Autobahnen und Bundesstraßen müssen Lkw eine entfernungsabhängige Maut bezahlen."
+            }
+          ],
+          "description": "Lkw, Sattelzug, Anhänger, Fahrerhaus, Fracht, Ladung, Logistik und Güterverkehr.",
+          "details": "Schwerlastverkehr, Maut, Lenkzeiten und europäische Lieferketten (A1–B2)",
+          "arabicDescription": "شاحنات نقل البضائع (Das Lastkraft-Fahrzeug): مفردات الشاحنة (Lkw)، الشاحنة المفصلية (Sattelzug)، المقطورة (Anhänger)، كابينة القيادة (Fahrerhaus)، الحمولة والشحن (Fracht)، جهاز تسجيل السرعة (Fahrtenschreiber)، وحركة الشحن البري واللوجستيات.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Große Lkws auf der Autobahn",
+              "intro": "Einfache Sätze über schwere Lastwagen, Fahrer und Ladung (A1).",
+              "paragraphs": [
+                [
+                  "Wenn wir auf der Autobahn fahren, sehen wir viele schwere Fahrzeuge.",
+                  "Dort fährt ein riesiger [der Lastkraftwagen (Lkw), -|Lastkraftwagen] mit blauer Plane.",
+                  "Der Fahrer sitzt hoch oben in [das Fahrerhaus, -̈er|dem Fahrerhaus] und steuert den Wagen.",
+                  "Hinten an der Zugmaschine hängt ein langer [der Anhänger, -|Anhänger]."
+                ],
+                [
+                  "Am großen Lagerhaus werden Männer die Kisten auf die [die Ladefläche, -n|Ladefläche] laden.",
+                  "Der Lkw bringt [die Fracht, -en|die Fracht] in den Supermarkt in unserer Stadt.",
+                  "Abends hält der Fahrer an einem Rastplatz, um zu schlafen.",
+                  "Lkws bringen jeden Tag wichtige Dinge in unsere Geschäfte."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Tag im Fernverkehr",
+              "intro": "Logistik, Lkw beladen, Maut und Rast auf dem Autohof (A2).",
+              "paragraphs": [
+                [
+                  "Mein Onkel arbeitet seit fünfzehn Jahren als Berufskraftfahrer im internationalen Fernverkehr.",
+                  "Er fährt einen modernen [der Sattelzug, -̈e|Sattelzug], der Waren von Deutschland bis nach Spanien transportiert.",
+                  "Jeden Morgen muss er am Logistikzentrum pünktlich ankommen, um seinen Wagen zu [beladen (belud, hat beladen)|beladen].",
+                  "An der Grenze muss das Transportunternehmen elektronisch [die Maut, -en|die Maut] für die genutzten Kilometer entrichten."
+                ],
+                [
+                  "Gesetzlich ist genau geregelt, wie viele Stunden er hinter dem Lenkrad sitzen darf.",
+                  "Ein digitaler [der Fahrtenschreiber, -|Fahrtenschreiber] zeichnet jede Sekunde Fahrzeit und jede Pause auf.",
+                  "Wenn seine Schicht endet, fährt er auf einen großen [der Autohof, -̈e|Autohof], isst zu Abend und schläft in der Koje.",
+                  "Ohne die Lkw-Fahrer wären die Regale in ganz Europa schnell leer."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Logistikdrehscheibe Deutschland: Zwischen Lieferketten und Infrastrukturdruck",
+              "intro": "Bedeutung des Schwerlastverkehrs, Mautsysteme und das Ringen um die Schiene (B1).",
+              "paragraphs": [
+                [
+                  "Als geographisches Herzstück der Europäischen Union bewältigt die deutsche Verkehrsinfrastruktur ein beispielloses Volumen an Warentransporten.",
+                  "[der Güterverkehr (Sg.)|Der Güterverkehr] auf der Straße wächst kontinuierlich, angetrieben durch just-in-time-Produktionsketten und den boomenden globalen E-Commerce.",
+                  "Auf den Hauptverkehrsachsen wie der A1, A2 oder A7 rollt rund um die Uhr [der Lastkraftwagen (Lkw), -|Lastkraftwagen] an Lastkraftwagen."
+                ],
+                [
+                  "Zur Finanzierung maroder Autobahnbrücken führte Deutschland vor über zwei Jahrzehnten das weltweit modernste satellitengestützte Mautsystem ein.",
+                  "Jeder schwere [der Sattelzug, -̈e|Sattelzug] registriert via On-Board-Unit automatisch die passierten Streckenabschnitte und entrichtet die streckenbezogene [die Maut, -en|Maut], welche inzwischen auch nach CO2-Emissionsklassen gestaffelt ist."
+                ],
+                [
+                  "Dennoch verschärfen chronischer Parkplatzmangel auf Autobahnraststätten und der akute Mangel an Berufskraftfahrern die Lage.",
+                  "Verkehrspolitiker fordern daher seit Jahren, standardisierte Containerfrachten von der Straße auf die umweltfreundlichere Güterbahn zu verlagern."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Intermodale Logistiknetzwerke, Telematik und Dekarbonisierung des Schwerlastverkehrs",
+              "intro": "Kombinierter Verkehr (KV), Wasserstoff-Brennstoffzellen und automatisierte Flottensteuerung (B2).",
+              "paragraphs": [
+                [
+                  "Die ökonomische Effizienz kontinentaler Lieferketten stützt sich auf hochgradig integrierte intermodale Logistiknetzwerke, bei denen [der Güterverkehr (Sg.)|der Güterverkehr] Straße, Schiene und Wasserstraße nahtlos verknüpft.",
+                  "Der kombinierte Ladungsverkehr (KLV) ermöglicht es, standardisierte ISO-Container und kranbare Sattelauflieger ohne Zwischenumladung der Ware von der Laderampe auf Güterzüge umzuschlagen."
+                ],
+                [
+                  "Gleichzeitig forciert der europäische Green Deal eine radikale technologische Wende zur Dekarbonisierung schwerer Nutzfahrzeuge.",
+                  "Da Batteriegewichte bei einem [der Lastkraftwagen (Lkw), -|Lastkraftwagen] mit 40 Tonnen zulässigem Gesamtgewicht die Nutzlast empfindlich reduzieren, konkurrieren batterieelektrische Megawatt-Ladesysteme (MCS) mit Wasserstoff-Brennstoffzellenantrieben um die Vorherrschaft auf der Langstrecke."
+                ],
+                [
+                  "Parallel dazu revolutionieren telematikbasierte Platooning-Konzepte den Autobahnverkehr: Durch elektronische Deichseln per Vehicle-to-Vehicle-Kommunikation (V2V) formieren sich Lkws zu aerodynamisch optimierten Konvois mit minimalem Sicherheitsabstand, was den Windschatteneffekt maximiert und den Flottenverbrauch drastisch deprimiert."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "weitere_fahrzeuge",
+      "title": "WEITERE FAHRZEUGE",
+      "topics": [
+        {
+          "id": "weitere_fahrzeuge",
+          "title": "Weitere Fahrzeuge",
+          "words": [
+            {
+              "german": "die Straßenbahn, -en",
+              "arabic": "ترام الشارع (الترامواي)",
+              "english": "tram, streetcar",
+              "example": "In vielen deutschen Städten fährt die Straßenbahn auf Schienen mitten durch die Fußgängerzone."
+            },
+            {
+              "german": "die U-Bahn, -en",
+              "arabic": "قطار الأنفاق (المترو تحت الأرض)",
+              "english": "subway, underground",
+              "example": "Mit der U-Bahn fährt man schnell unter den verstopften Straßen der Metropole hindurch."
+            },
+            {
+              "german": "die S-Bahn, -en",
+              "arabic": "قطار الضواحي السريع للمدن الكبرى",
+              "english": "suburban train, commuter rail",
+              "example": "Tausende Pendler nutzen täglich die S-Bahn, um aus dem Umland ins Zentrum zu gelangen."
+            },
+            {
+              "german": "das Taxi, -s",
+              "arabic": "سيارة الأجرة (التاكسي)",
+              "english": "taxi, cab",
+              "example": "Spät in der Nacht nehmen wir uns am Taxistand ein beiges Taxi nach Hause."
+            },
+            {
+              "german": "der Traktor, -en",
+              "arabic": "الجرار الزراعي (التراكتور)",
+              "english": "tractor",
+              "example": "Der Bauer pflügt mit seinem schweren grünen Traktor das weite Feld."
+            },
+            {
+              "german": "der Bagger, -",
+              "arabic": "الحفار الآلي في موقع البناء",
+              "english": "excavator, digger",
+              "example": "Auf der Baustelle schaufelt der große gelbe Bagger eine tiefe Baugrube aus."
+            },
+            {
+              "german": "das Feuerwehrauto, -s",
+              "arabic": "سيارة الإطفاء الحمراء",
+              "english": "fire engine, fire truck",
+              "example": "Mit Blaulicht und lautem Martinshorn rast das rote Feuerwehrauto zum Einsatz."
+            },
+            {
+              "german": "der Krankenwagen, -",
+              "arabic": "سيارة الإسعاف ونقل المرضى",
+              "english": "ambulance",
+              "example": "Der Notarzt eilt mit dem Krankenwagen schnell zum verunglückten Patienten."
+            },
+            {
+              "german": "das Polizeiauto, -s",
+              "arabic": "سيارة دورية الشرطة",
+              "english": "police car",
+              "example": "Das blau-silberne Polizeiauto patrouilliert nachts durch die Straßen der Stadt."
+            },
+            {
+              "german": "die Seilbahn, -en",
+              "arabic": "التلفريك / القطار المعلق الجبلي",
+              "english": "cable car, aerial tramway",
+              "example": "Die Panorama-Seilbahn befördert die Touristen hoch hinauf zum schneebedeckten Berggipfel."
+            },
+            {
+              "german": "das Blaulicht (Sg.)",
+              "arabic": "الضوء الأزرق الدوار لمركبات الطوارئ",
+              "english": "flashing blue light (emergency)",
+              "example": "Wenn Einsatzfahrzeuge mit Blaulicht nahen, müssen alle Verkehrsteilnehmer sofort Platz machen."
+            },
+            {
+              "german": "Vorfahrt gewähren",
+              "arabic": "يمنح حق الأولوية في المرور",
+              "english": "to give way, yield right of way",
+              "example": "An der Kreuzung ohne Ampel muss man dem von rechts kommenden Fahrzeug Vorfahrt gewähren."
+            }
+          ],
+          "description": "Straßenbahn, U-Bahn, S-Bahn, Taxi, Traktor, Bagger, Einsatzfahrzeuge und Seilbahn.",
+          "details": "Öffentlicher Schienenverkehr, Bau- und Landmaschinen sowie Rettungsdienst (A1–B2)",
+          "arabicDescription": "مركبات ووسائل نقل أخرى (Weitere Fahrzeuge): مفردات الترام (Straßenbahn)، قطار الأنفاق المترو (U-Bahn)، قطار الضواحي (S-Bahn)، التاكسي (Taxi)، الجرار الزراعي (Traktor)، الحفار (Bagger)، سيارة الإسعاف والإطفاء والشرطة (Einsatzfahrzeuge)، والتلفريك.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Bunte Fahrzeuge in der Stadt",
+              "intro": "Einfache Sätze über Straßenbahn, U-Bahn, Bagger und Polizei (A1).",
+              "paragraphs": [
+                [
+                  "In der großen Stadt fahren viele interessante Fahrzeuge.",
+                  "Ich fahre mit meiner Mutter oft mit der [die Straßenbahn, -en|Straßenbahn] durch das Zentrum.",
+                  "Unter der Erde fährt die schnelle [die U-Bahn, -en|U-Bahn] von einer Station zur nächsten.",
+                  "Wenn es eilig ist, rufen wir ein beiges [das Taxi, -s|Taxi] mit dem Telefon."
+                ],
+                [
+                  "Auf der Baustelle arbeitet ein großer gelber [der Bagger, -|Bagger].",
+                  "Plötzlich hören wir eine laute Sirene: Ein blau-weißes [das Polizeiauto, -s|Polizeiauto] fährt vorbei.",
+                  "Das Auto hat ein helles [das Blaulicht (Sg.)|Blaulicht] auf dem Dach.",
+                  "Alle Autos stoppen und lassen den Wagen schnell durch."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Fahrzeuge für Stadt, Land und Berge",
+              "intro": "S-Bahn für Pendler, Traktor auf dem Land und Seilbahn in den Alpen (A2).",
+              "paragraphs": [
+                [
+                  "Je nachdem, wo man lebt, nutzt man ganz unterschiedliche Fahrzeuge.",
+                  "Mein Vater wohnt außerhalb der Stadt und fährt jeden Tag mit der [die S-Bahn, -en|S-Bahn] zum Büro.",
+                  "Wenn wir meine Großeltern auf dem Dorf besuchen, sehen wir den Bauern auf seinem kräftigen [der Traktor, -en|Traktor].",
+                  "Im Winterurlaub in den Bergen steigen wir in eine gläserne [die Seilbahn, -en|Seilbahn], die uns auf den Gipfel bringt."
+                ],
+                [
+                  "Im Straßenverkehr gelten strenge Regeln für Einsatzfahrzeuge.",
+                  "Wenn ein [der Krankenwagen, -|Krankenwagen] oder ein [das Feuerwehrauto, -s|Feuerwehrauto] mit Sirene kommt, muss jeder Fahrer sofort Platz machen und [Vorfahrt gewähren|Vorfahrt gewähren].",
+                  "Auf diese Weise können Rettungskräfte schnell Menschenleben retten.",
+                  "Jedes Fahrzeug erfüllt eine wichtige Aufgabe für unsere Gesellschaft."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Schienennetze, Sonderrechte und Rettungsgassen in Deutschland",
+              "intro": "Verkehrsrechtliche Sonderrechte bei Blaulicht und das Prinzip der Rettungsgasse (B1).",
+              "paragraphs": [
+                [
+                  "Das Zusammenspiel unterschiedlichster Verkehrsträger erfordert im dicht besiedelten Deutschland ein hohes Maß an rechtlicher Disziplin.",
+                  "In Ballungsräumen wie Berlin, München oder Frankfurt bilden U-Bahn und [die S-Bahn, -en|S-Bahn] das hochfrequente Rückgrat des Nahverkehrs, während in historischen Städten wie Dresden oder Leipzig [die Straßenbahn, -en|die Straßenbahn] die Passagiere direkt vor die Haustür bringt."
+                ],
+                [
+                  "Eine existenzielle Bedeutung kommt den Sonder- und Wegerechten nach § 35 und § 38 der Straßenverkehrsordnung (StVO) zu.",
+                  "Nähert sich ein Einsatzfahrzeug mit blauem Blinklicht und Folgetonhorn, sind alle Verkehrsteilnehmer verpflichtet, unverzüglich freie Bahn zu schaffen.",
+                  "Auf Autobahnen und mehrspurigen Straßen gilt daher die eiserne Pflicht: Bereits bei stockendem Verkehr muss zwischen der linken und den übrigen Spuren eine Rettungsgasse gebildet werden, damit [der Krankenwagen, -|der Krankenwagen] ungehindert zur Unfallstelle gelangt."
+                ],
+                [
+                  "Wer diese lebensrettende Gasse blockiert, muss mit drakonischen Bußgeldern und Fahrverboten rechnen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Spurführungsdynamik, Tunnelbautechnik und telematische Notfallkorridore",
+              "intro": "Rad-Schiene-Kinematik, urbaner Tiefbau und adaptive Vorrangschaltungen für Einsatzfahrzeuge (B2).",
+              "paragraphs": [
+                [
+                  "Die Systemintegration spurgeführter Schienenfahrzeuge im Straßenraum verlangt ein tiefgehendes Verständnis der Rad-Schiene-Tribologie.",
+                  "Bei der [die Straßenbahn, -en|Straßenbahn] führt die Verlegung von Rillenschienen im niveaugleichen Straßenkörper zu spezifischen Reibwertveränderungen bei Nässe und Laubfall, was durch gezielte Sandstreueinrichtungen an den Triebdrehgestellen kompensiert wird."
+                ],
+                [
+                  "Der unterirdische Ausbau der [die U-Bahn, -en|U-Bahn] wiederum repräsentiert Höchstleistungen des Tunnelbaus: Mittels Hydroschild-Tunnelvortriebsmaschinen werden metertiefe Röhren unter gewachsener historischer Bausubstanz vorgetrieben, ohne Setzungen an Fundamenten zu induzieren."
+                ],
+                [
+                  "In modernen Smart-City-Architekturen wird zudem das Wegerecht von Rettungskräften automatisiert unterstützt: V2X-Funkmodule (Vehicle-to-Infrastructure) in [das Feuerwehrauto, -s|Feuerwehrautos] schalten Ampelanlagen entlang der Einsatzroute grün, sodass die Fahrzeuge ohne kinetische Bremsverluste sicher navigieren können, während Querverkehren automatisch Rot signalisiert wird."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "zug",
+      "title": "DER ZUG",
+      "topics": [
+        {
+          "id": "am_bahnhof",
+          "title": "Am Bahnhof",
+          "words": [
+            {
+              "german": "der Hauptbahnhof, -̈e",
+              "arabic": "محطة القطارات المركزية الكبرى",
+              "english": "central railway station",
+              "example": "Am Hauptbahnhof herrscht reges Treiben von Pendlern, Reisenden und Touristen."
+            },
+            {
+              "german": "das Gleis, -e",
+              "arabic": "رصيف / مسار سكة الحديد (البلاتفورم)",
+              "english": "track, platform",
+              "example": "Der Schnellzug nach München fährt heute von Gleis 7 anstelle von Gleis 4 ab."
+            },
+            {
+              "german": "der Bahnsteig, -e",
+              "arabic": "رصيف المحطة للركاب",
+              "english": "platform",
+              "example": "Die Reisenden warten geduldig auf dem Bahnsteig hinter der weißen Sicherheitslinie."
+            },
+            {
+              "german": "der Zug, -̈e",
+              "arabic": "القطار",
+              "english": "train",
+              "example": "Der Zug rollt leise und pünktlich an die Bahnsteigkante heran."
+            },
+            {
+              "german": "der ICE (Intercity-Express), -s",
+              "arabic": "قطار الإنترسيتي إكسبريس الألماني فائق السرعة",
+              "english": "high-speed train (ICE)",
+              "example": "Mit bis zu dreihundert Kilometern pro Stunde rast der ICE über die Neubaustrecke."
+            },
+            {
+              "german": "der Regionalexpress, -e",
+              "arabic": "قطار الأقاليم السريع للمسافات المتوسطة",
+              "english": "regional express train",
+              "example": "Der Regionalexpress verbindet kleinere Städte schnell mit den großen Metropolen."
+            },
+            {
+              "german": "die Anzeigetafel, -n",
+              "arabic": "لوحة العرض الرقمية لمواعيد القطارات",
+              "english": "departure board, display board",
+              "example": "Auf der großen Anzeigetafel in der Bahnhofshalle liest sie die Abfahrtszeiten ab."
+            },
+            {
+              "german": "die Durchsage, -n",
+              "arabic": "الإعلان الصوتي عبر مكبرات الصوت",
+              "english": "announcement (station)",
+              "example": "Eine Durchsage am Lautsprecher informiert die Passagiere über einen Gleiswechsel."
+            },
+            {
+              "german": "die Schiene, -n",
+              "arabic": "قضبان وسكة الحديد الفولاذية",
+              "english": "rail, track",
+              "example": "Zwei parallele Schienen aus gehärtetem Stahl führen quer durch die Landschaft."
+            },
+            {
+              "german": "der Waggon, -s",
+              "arabic": "عربة القطار",
+              "english": "carriage, railway car",
+              "example": "Wir haben unsere Sitzplätze im zweiten Waggon der ersten Klasse reserviert."
+            },
+            {
+              "german": "abfahren (fuhr ab, ist abgefahren)",
+              "arabic": "يغادر وينطلق من المحطة",
+              "english": "to depart, pull out",
+              "example": "Der Zug wird in exakt zwei Minuten in Richtung Frankfurt abfahren."
+            },
+            {
+              "german": "ankommen (kam an, ist angekommen)",
+              "arabic": "يصل إلى المحطة النهائية",
+              "english": "to arrive",
+              "example": "Nach dreistündiger Fahrt werden wir pünktlich um siebzehn Uhr ankommen."
+            }
+          ],
+          "description": "Bahnhof, Hauptbahnhof, Gleis, Bahnsteig, Zug, ICE, Regionalbahn, Verspätung und Durchsagen.",
+          "details": "Deutsche Bahn, Hochgeschwindigkeitsverkehr, Fahrgastrechte und Bahnsteiglogistik (A1–B2)",
+          "arabicDescription": "في محطة القطارات (Am Bahnhof): مفردات محطة القطارات (Bahnhof)، المحطة المركزية (Hauptbahnhof)، الرصيف (Bahnsteig)، مسار السكة (Gleis)، قطار الإنترسيتي إكسبريس السريع (ICE)، قطار الأقاليم (Regionalbahn)، الشاشة الإلكترونية (Anzeigetafel)، والإعلانات الصوتية بالمكبرات (Durchsage).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Eine Reise mit dem Zug",
+              "intro": "Einfache Sätze über Hauptbahnhof, Gleis, Ticket und Abfahrt (A1).",
+              "paragraphs": [
+                [
+                  "Heute fahre ich mit meiner Familie nach Berlin.",
+                  "Wir gehen früh am Morgen in den großen [der Hauptbahnhof, -̈e|Hauptbahnhof].",
+                  "In der Halle schauen wir auf [die Anzeigetafel, -n|die Anzeigetafel] mit den Abfahrtszeiten.",
+                  "Unser Zug nach Berlin steht auf [das Gleis, -e|Gleis] drei."
+                ],
+                [
+                  "Wir gehen die Treppe hoch und warten auf dem [der Bahnsteig, -e|Bahnsteig].",
+                  "Dort kommt ein weißer, moderner [der ICE (Intercity-Express), -s|ICE] angerollt.",
+                  "Wir steigen in den dritten [der Waggon, -s|Waggon] ein und suchen unsere Sitze.",
+                  "Um neun Uhr wird der Zug pünktlich [abfahren (fuhr ab, ist abgefahren)|abfahren]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Umsteigen und Durchsagen am Bahnhof",
+              "intro": "Gleiswechsel, Durchsagen und Fahrgastrechte bei Zugreisen (A2).",
+              "paragraphs": [
+                [
+                  "Bahnfahren in Deutschland ist bequem, aber manchmal gibt es kleine Überraschungen.",
+                  "Gestern wollte ich mit einem [der Regionalexpress, -e|Regionalexpress] nach Köln fahren.",
+                  "Plötzlich ertönte eine laute [die Durchsage, -n|Durchsage] aus den Lautsprechern am Bahnhof.",
+                  "Die Stimme informierte uns über einen Gleiswechsel von Gleis 5 auf Gleis 9."
+                ],
+                [
+                  "Alle Reisenden nahmen ihre Koffer und eilten schnell durch die Unterführung zum neuen Bahnsteig.",
+                  "Der Zug hatte zehn Minuten Verspätung, konnte aber sicher auf [die Schiene, -n|den Schienen] einfahren.",
+                  "Im Zug gibt es kostenloses WLAN und Steckdosen an fast jedem Sitzplatz.",
+                  "Trotz der Hektik bin ich am Ende gut an meinem Ziel [ankommen (kam an, ist angekommen)|angekommen]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die Deutsche Bahn: Meilensteine, ICE-Netz und Pünktlichkeitsdebatten",
+              "intro": "Vom Adler-Zug zur Hochgeschwindigkeitsstrecke: Die Rolle der Bahn in Deutschland (B1).",
+              "paragraphs": [
+                [
+                  "Das deutsche Schienennetz blickt auf eine fast 200-jährige Geschichte zurück, die 1835 mit der legendären Fahrt der Lokomotive 'Adler' zwischen Nürnberg und Fürth ihren Anfang nahm.",
+                  "Heute betreibt die Deutsche Bahn eines der dichtesten Eisenbahnnetze weltweit mit über 33.000 Kilometern Streckenlänge.",
+                  "Aushängeschild des Fernverkehrs ist [der ICE (Intercity-Express), -s|der ICE], der Metropolen mit Spitzengeschwindigkeiten von über 300 km/h verbindet und eine echte Alternative zum Inlandsflug darstellt."
+                ],
+                [
+                  "Dennoch steht das System vor gewaltigen operativen Herausforderungen.",
+                  "Ein chronisch überlastetes Schienennetz, sanierungsbedürftige Stellwerke und unzählige Baustellen führen häufig zu Zugausfällen und Verspätungen.",
+                  "Wenn eine automatische [die Durchsage, -n|Durchsage] am Bahnsteig eine Verzögerung verkündet, berufen sich aufgeklärte Fahrgäste auf europäische Fahrgastrechte, die ab 60 Minuten Verspätung Erstattungen garantieren."
+                ],
+                [
+                  "Trotz dieser Mängel bleibt die Bahn der klimafreundlichste Massenverkehrsträger für die Mobilitätswende des 21. Jahrhunderts."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "ETCS-Signaltechnik, Linienförmige Zugbeeinflussung und Fahrplantrassen-Management",
+              "intro": "Digitales Eisenbahnwesen, ETCS Level 2, Fahrdynamik und Kapazitätsengpässe (B2).",
+              "paragraphs": [
+                [
+                  "Die moderne Betriebsführung im Hochgeschwindigkeitsverkehr erfordert die Substitution ortsfester Lichtsignale durch funkbasierte Leit- und Sicherungssysteme.",
+                  "Auf ICE-Neubaustrecken überwacht das European Train Control System (ETCS Level 2) via GSM-R bzw. FRMCS kontinuierlich Bremskurven und Gleisfreimeldungen.",
+                  "Bricht ein Fahrzeug den zugewiesenen Fahrwegkorridor, initiiert das On-Board-Steuergerät autonom eine Zwangsbremsung, wodurch Zugfolgen auf wenige Minuten verdichtet werden können."
+                ],
+                [
+                  "Die Fahrdynamik eines [der Zug, -̈e|Zuges] bei über 250 km/h wird durch das komplexe Sinuslauf-Verhalten der konischen Radprofile auf [die Schiene, -n|den Schienen] determiniert.",
+                  "Hydraulische Schlingerdämpfer an den Drehgestellen unterdrücken kritische Schwingungsmoden, um Entgleisungssicherheit bei maximaler Spurgüte zu gewährleisten."
+                ],
+                [
+                  "Infrastrukturell limitiert der Mischverkehr aus schnellem Fernverkehr, getaktetem Nahverkehr und schwerem Güterverkehr die Streckenkapazität an Engpässen wie dem Frankfurter oder Kölner [der Hauptbahnhof, -̈e|Hauptbahnhof].",
+                  "Dies erfordert algorithmische Trassenkonfliktlösungen in Echtzeit, um kaskadierende Sekundärverspätungen zu minimieren."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "flugzeug",
+      "title": "DAS FLUGZEUG",
+      "topics": [
+        {
+          "id": "im_flugzeug",
+          "title": "Im Flugzeug",
+          "words": [
+            {
+              "german": "das Flugzeug, -e",
+              "arabic": "الطائرة",
+              "english": "airplane, plane",
+              "example": "Das große Flugzeug hebt pünktlich von der Startbahn in den blauen Himmel ab."
+            },
+            {
+              "german": "der Flug, -̈e",
+              "arabic": "الرحلة الجوية المسافرة",
+              "english": "flight",
+              "example": "Unser direkter Flug nach New York dauert knapp acht Stunden."
+            },
+            {
+              "german": "das Cockpit, -s",
+              "arabic": "قمرة قيادة الطيارين في مقدمة الطائرة",
+              "english": "cockpit",
+              "example": "Im Cockpit überwachen die beiden Piloten Hunderte digitale Instrumente und Bildschirme."
+            },
+            {
+              "german": "der Pilot, -en",
+              "arabic": "الطيار / قائد الطائرة",
+              "english": "pilot",
+              "example": "Der erfahrene Pilot steuert den Airbus sicher durch turbulente Wetterzonen."
+            },
+            {
+              "german": "die Flugbegleiterin, -nen",
+              "arabic": "مضيفة الطيران الجوية",
+              "english": "flight attendant, stewardess",
+              "example": "Die freundliche Flugbegleiterin erklärt vor dem Start die wichtigsten Sicherheitsregeln."
+            },
+            {
+              "german": "der Fensterplatz, -̈e",
+              "arabic": "مقعد النافذة المطل على الخارج",
+              "english": "window seat",
+              "example": "Ich reserviere mir immer einen Fensterplatz, um beim Start die Landschaft von oben zu sehen."
+            },
+            {
+              "german": "der Gangplatz, -̈e",
+              "arabic": "مقعد الممر الداخلي",
+              "english": "aisle seat",
+              "example": "Auf einem langen Flug bevorzuge ich den Gangplatz, weil man leichter aufstehen kann."
+            },
+            {
+              "german": "das Handgepäck (Sg.)",
+              "arabic": "حقيبة اليد المحمولة داخل المقصورة",
+              "english": "carry-on baggage, hand luggage",
+              "example": "Das Handgepäck darf ein Gewicht von acht Kilogramm nicht überschreiten."
+            },
+            {
+              "german": "das Gepäckfach, -̈er",
+              "arabic": "الخزانة العلوية لحفظ حقائب اليد",
+              "english": "overhead bin, overhead compartment",
+              "example": "Er verstaut seinen Rucksack vorsichtig im Gepäckfach über seinem Sitz."
+            },
+            {
+              "german": "starten (startete, ist gestartet)",
+              "arabic": "تقلع الطائرة وتنطلق في الهواء",
+              "english": "to take off",
+              "example": "Nachdem die Turbinen aufheulen, wird die Maschine in wenigen Sekunden starten."
+            },
+            {
+              "german": "landen (landete, ist gelandet)",
+              "arabic": "تهبط الطائرة بسلام على المدرج",
+              "english": "to land",
+              "example": "Das Flugzeug setzt sanft mit den Rädern auf der Piste auf und bremst ab."
+            },
+            {
+              "german": "die Flugangst (Sg.)",
+              "arabic": "الخوف والرهاب من الطيران",
+              "english": "fear of flying",
+              "example": "Spezielle Atemübungen und Seminare helfen Reisenden gegen quälende Flugangst."
+            }
+          ],
+          "description": "Flugzeug, Flug, Cockpit, Pilot, Flugbegleiterin, Gangplatz, Fensterplatz, Handgepäck und Landung.",
+          "details": "Passagierluftfahrt, Bordservice, Sicherheitsunterweisung und Flugangst (A1–B2)",
+          "arabicDescription": "في الطائرة (Im Flugzeug): مفردات الطائرة (Flugzeug)، الرحلة الجوية (Flug)، قمرة القيادة (Cockpit)، الطيار (Pilot)، مضيفة الطيران (Flugbegleiterin)، مقعد النافذة والممر (Fensterplatz/Gangplatz)، حقيبة اليد (Handgepäck)، الإقلاع والهبوط (landen).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Mein erster Flug",
+              "intro": "Einfache Sätze über Flugzeug, Sitzplatz, Handgepäck und Fliegen (A1).",
+              "paragraphs": [
+                [
+                  "Heute fliege ich zum ersten Mal in den Urlaub.",
+                  "Ich gehe durch den Tunnel in das große [das Flugzeug, -e|Flugzeug].",
+                  "Ich trage meinen kleinen Rucksack als [das Handgepäck (Sg.)|Handgepäck] bei mir.",
+                  "Ich lege die Tasche oben in [das Gepäckfach, -̈er|das Gepäckfach] über meinem Kopf."
+                ],
+                [
+                  "Ich habe Glück und sitze am Fenster auf dem [der Fensterplatz, -̈e|Fensterplatz].",
+                  "[die Flugbegleiterin, -nen|Die Flugbegleiterin] lächelt freundlich und bringt ein Glas Wasser.",
+                  "Die Motoren werden laut und das Flugzeug wird gleich [starten (startete, ist gestartet)|starten].",
+                  "Durch das Fenster sehe ich die Häuser und Straßen ganz klein werden."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Über den Wolken",
+              "intro": "Bordservice, Cockpit-Ansagen und sanfte Landung am Urlaubsort (A2).",
+              "paragraphs": [
+                [
+                  "Unser [der Flug, -̈e|Flug] nach Mallorca dauert etwas mehr als zwei Stunden.",
+                  "Mein Freund sitzt auf dem [der Gangplatz, -̈e|Gangplatz], weil er lange Beine hat und mehr Platz braucht.",
+                  "Nach einer halben Stunde schaltet sich [der Pilot, -en|der Pilot] aus [das Cockpit, -s|dem Cockpit] über die Lautsprecher ein.",
+                  "Er berichtet über unsere Flughöhe von zehntausend Metern und das sonnige Wetter am Zielort."
+                ],
+                [
+                  "Manche Passagiere leiden vor dem Abflug unter starker [die Flugangst (Sg.)|Flugangst], beruhigen sich aber schnell.",
+                  "Während des Fluges serviert die Crew Kaffee, Tee und ein kleines Sandwich.",
+                  "Pünktlich am Mittag setzt die Maschine zur Landung an, um sanft auf der Piste zu [landen (landete, ist gelandet)|landen].",
+                  "Alle klatschen erleichtert und freuen sich auf den wohlverdienten Strandurlaub."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Sicherheit über den Wolken: Von der Notfalleinweisung zum Kabinenalltag",
+              "intro": "Sicherheitsstandards der Zivilluftfahrt, Kabinendruck und Flugangstbewältigung (B1).",
+              "paragraphs": [
+                [
+                  "Die kommerzielle Luftfahrt gilt statistisch als das mit Abstand sicherste Verkehrsmittel der Welt.",
+                  "Bevor ein modernes Verkehrs-[das Flugzeug, -e|Flugzeug] die Startfreigabe erhält, absolviert die Besatzung im [das Cockpit, -s|Cockpit] eine minutiöse Checkliste aller hydraulischen und elektronischen Systeme.",
+                  "In der Passagierkabine demonstriert [die Flugbegleiterin, -nen|die Flugbegleiterin] vorschriftsmäßig das Anlegen der Schwimmwesten und das Herabfallen der Sauerstoffmasken bei plötzlichem Druckabfall."
+                ],
+                [
+                  "Für viele Reisende ist das Fliegen dennoch mit erheblichem Stress verbunden: Schätzungen zufolge leidet rund jeder fünfte Passagier unter latenter oder akuter [die Flugangst (Sg.)|Flugangst].",
+                  "Fluggesellschaften bieten daher spezialisierte Trainings an, in denen Psychologen und Piloten über aerodynamische Zusammenhänge aufklären, um irrationale Ängste vor normalen Turbulenzen abzubauen."
+                ],
+                [
+                  "Sobald das Flugzeug nach stundenlanger Reise sanft auf der Landebahn aufsetzt, weicht die Anspannung der Vorfreude auf das Reiseziel."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Aerodynamischer Auftrieb, Kabinendruck-Physiologie und Fly-by-Wire-Avionik",
+              "intro": "Bernoulli-Prinzip, Kármán-Grenzschichten, Barotrauma-Prophylaxe und Avionik (B2).",
+              "paragraphs": [
+                [
+                  "Die Physik des aerodynamischen Fluges basiert auf der Umströmung asymmetrischer Tragflächenprofile gemäß den Prinzipien von Bernoulli und der Impulserhaltung nach Newton.",
+                  "Durch die Zirkulation entsteht eine Druckdifferenz zwischen Unter- und Oberseite der Tragfläche, welche den nötigen dynamischen Auftrieb generiert, um ein Flugzeug mit über 300 Tonnen Abfluggewicht in die Stratosphäre zu heben.",
+                  "Moderne Verkehrsflugzeuge werden über fehlertolerante Fly-by-Wire-Systeme gesteuert, bei denen Steuereingaben des Piloten digital gefiltert und innerhalb der Flight Envelope Protection ausgeführt werden."
+                ],
+                [
+                  "Auf physiologischer Ebene erfordert der Reiseflug in 11.000 Metern Höhe eine künstliche Kabinendruckbeaufschlagung auf ein Äquivalent von ca. 2.400 Metern über Normalnull.",
+                  "Dieser barometrische Druckabfall führt zu einer physikalischen Expansion eingeschlossener Körpergase (Gesetz von Boyle-Mariotte), weshalb Passagiere beim Steig- und Sinkflug aktiv den Druckausgleich über die Eustachische Röhre herbeiführen müssen."
+                ],
+                [
+                  "Diese feine Abstimmung aus Flugzeugbau, Atmosphärenphysik und Humanbiologie ermöglicht sicheres interkontinentales Reisen über Zeitzonen hinweg."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "flughafen_bahnhof",
+          "title": "Am Flughafen",
+          "words": [
+            {
+              "german": "der Flughafen, -̈",
+              "arabic": "المطار",
+              "english": "airport",
+              "example": "Der internationale Flughafen von Frankfurt zählt zu den größten Drehkreuzen Europas."
+            },
+            {
+              "german": "das Flugzeug, -e",
+              "arabic": "الطائرة",
+              "english": "airplane, plane",
+              "example": "Das riesige Flugzeug hebt pünktlich von der Startbahn ab."
+            },
+            {
+              "german": "der Bahnhof, -̈e",
+              "arabic": "محطة القطار",
+              "english": "train station",
+              "example": "Wir treffen uns um zehn Uhr vor dem Haupteingang am Bahnhof."
+            },
+            {
+              "german": "das Gleis, -e",
+              "arabic": "السكة / رصيف القطار",
+              "english": "track, platform track",
+              "example": "Der ICE nach Berlin steht auf Gleis 7 zur Abfahrt bereit."
+            },
+            {
+              "german": "die Fahrkarte, -n",
+              "arabic": "تذكرة السفر",
+              "english": "ticket (train/bus)",
+              "example": "Ich habe meine Fahrkarte online über die App der Bahn gebucht."
+            },
+            {
+              "german": "der Bahnsteig, -e",
+              "arabic": "رصيف المحطة",
+              "english": "platform",
+              "example": "Auf dem überdachten Bahnsteig warten Dutzende Reisende auf den Regionalzug."
+            },
+            {
+              "german": "die Verspätung, -en",
+              "arabic": "التأخير",
+              "english": "delay",
+              "example": "Wegen einer Weichenstörung hat der Zug leider zwanzig Minuten Verspätung."
+            },
+            {
+              "german": "das Gepäck",
+              "arabic": "الأمتعة / العفش",
+              "english": "luggage, baggage",
+              "example": "Bitte lassen Sie Ihr Gepäck auf dem Bahnsteig zu keinem Zeitpunkt unbeaufsichtigt."
+            },
+            {
+              "german": "der Koffer, -",
+              "arabic": "حقيبة السفر",
+              "english": "suitcase",
+              "example": "Ich packe meinen schweren Koffer am Vorabend der großen Reise."
+            },
+            {
+              "german": "der Ausgang, -̈e",
+              "arabic": "المخرج",
+              "english": "exit",
+              "example": "Folgen Sie den grünen Hinweisschildern zum Ausgang in Richtung Innenstadt."
+            },
+            {
+              "german": "der Flug, -̈e",
+              "arabic": "الرحلة الجوية / الطيران",
+              "english": "flight",
+              "example": "Unser direkter Flug nach Wien dauert knapp eineinhalb Stunden."
+            },
+            {
+              "german": "die Durchsage, -n",
+              "arabic": "الإعلان الصوتي / النداء عبر مكبر الصوت",
+              "english": "announcement (loudspeaker)",
+              "example": "Die Lautsprecherdurchsage informierte über den spontanen Gleiswechsel."
+            }
+          ],
+          "story": {
+            "level": "A1",
+            "badge": "A1 – Grundstufe",
+            "title": "Reisen mit Zug und Flugzeug",
+            "intro": "Einfache Sätze für den Bahnhof und den Flughafen (A1).",
+            "paragraphs": [
+              [
+                "Heute mache ich eine Urlaubsreise nach Berlin.",
+                "Ich packe meinen großen [der Koffer, -|Koffer] und fahre früh am Morgen zum [der Bahnhof, -̈e|Bahnhof].",
+                "Am Schalter kaufe ich eine [die Fahrkarte, -n|Fahrkarte] für die 2. Klasse.",
+                "Mein Zug fährt heute auf [das Gleis, -e|Gleis] 3 ab, und ich gehe die Treppe hoch."
+              ],
+              [
+                "Aus dem Lautsprecher höre ich eine [die Durchsage, -n|Durchsage]: Der Zug kommt pünktlich.",
+                "Später fahre ich weiter zum großen [der Flughafen, -̈|Flughafen].",
+                "Dort gebe ich mein [das Gepäck|Gepäck] auf und steige in das moderne [das Flugzeug, -e|Flugzeug].",
+                "Der [der Flug, -̈e|Flug] startet bei strahlendem Sonnenschein, und ich freue mich auf die Reise."
+              ]
+            ]
+          },
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Reisen mit Zug und Flugzeug",
+              "intro": "Einfache Sätze für den Bahnhof und den Flughafen (A1).",
+              "paragraphs": [
+                [
+                  "Heute mache ich eine Urlaubsreise nach Berlin.",
+                  "Ich packe meinen großen [der Koffer, -|Koffer] und fahre früh am Morgen zum [der Bahnhof, -̈e|Bahnhof].",
+                  "Am Schalter kaufe ich eine [die Fahrkarte, -n|Fahrkarte] für die 2. Klasse.",
+                  "Mein Zug fährt heute auf [das Gleis, -e|Gleis] 3 ab, und ich gehe die Treppe hoch."
+                ],
+                [
+                  "Aus dem Lautsprecher höre ich eine [die Durchsage, -n|Durchsage]: Der Zug kommt pünktlich.",
+                  "Später fahre ich weiter zum großen [der Flughafen, -̈|Flughafen].",
+                  "Dort gebe ich mein [das Gepäck|Gepäck] auf und steige in das moderne [das Flugzeug, -e|Flugzeug].",
+                  "Der [der Flug, -̈e|Flug] startet bei strahlendem Sonnenschein, und ich freue mich auf die Reise."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Alltag & Praxis",
+              "title": "Reiseerlebnisse und unerwartete Verspätungen",
+              "intro": "Abläufe am Gleis und an den Terminals bei Fernreisen (A2).",
+              "paragraphs": [
+                [
+                  "Vergangenen Freitag war ich beruflich unterwegs und stand bereits um sieben Uhr am belebten [der Bahnhof, -̈e|Bahnhof].",
+                  "Auf der Anzeigetafel stand, dass mein Zug auf [das Gleis, -e|Gleis] 5 einfährt.",
+                  "Doch plötzlich ertönte eine akustische [die Durchsage, -n|Durchsage]: „Achtung! Der Intercity hat heute fünfzehn Minuten [die Verspätung, -en|Verspätung].“",
+                  "Viele Reisende auf dem [der Bahnsteig, -e|Bahnsteig] schüttelten den Kopf und zückten nervös ihre Smartphones."
+                ],
+                [
+                  "Ich suchte mir eine Bank, stellte meinen schweren [der Koffer, -|Koffer] ab und kontrollierte meine digitale [die Fahrkarte, -n|Fahrkarte].",
+                  "Zum Glück erreichte ich meinen Anschlusszug noch rechtzeitig und kam pünktlich am [der Flughafen, -̈|Flughafen] an.",
+                  "Dort passierte ich zügig die Sicherheitskontrolle, um mein Gate für den [der Flug, -̈e|Flug] nicht zu verpassen.",
+                  "Als ich endlich im bequemen [das Flugzeug, -e|Flugzeug] saß und aus dem Fenster schaute, fiel die Anspannung von mir ab."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Ausführliche Erzählung",
+              "title": "Moderne Reiseknotenpunkte zwischen Präzision und Unwägbarkeiten",
+              "intro": "Wie Großbahnhöfe und Flughäfen logistische Meisterleistungen im Reisealltag vollbringen (B1).",
+              "paragraphs": [
+                [
+                  "Internationale Verkehrsknotenpunkte wie ein pulsierender Haupt-[der Bahnhof, -̈e|Bahnhof] oder ein interkontinentaler [der Flughafen, -̈|Flughafen] sind faszinierende Mikrokosmen der Globalisierung.",
+                  "Täglich durchqueren Hunderttausende Passagiere mit schwerem [das Gepäck|Gepäck] die Hallen, stets den Blick auf Abflugmonitore und Fahrpläne gerichtet.",
+                  "Wer sicher reisen möchte, bucht seine [die Fahrkarte, -n|Fahrkarte] frühzeitig mit Sitzplatzreservierung, um am überfüllten [der Bahnsteig, -e|Bahnsteig] Stress zu vermeiden.",
+                  "Kommt es dennoch zu einer unvorhergesehenen [die Verspätung, -en|Verspätung], informiert das Servicepersonal per Lautsprecher-[die Durchsage, -n|Durchsage] über Ausweichmöglichkeiten."
+                ],
+                [
+                  "Beim Wechsel vom Schienen- zum Luftverkehr beeindruckt die nahtlose logistische Verzahnung.",
+                  "Vom Fernbahn-[das Gleis, -e|Gleis] gelangt man über Rolltreppen direkt zum Check-in-Schalter, wo der robuste [der Koffer, -|Koffer] gewogen und verladen wird.",
+                  "Sobald das Boarding für den [der Flug, -̈e|Flug] abgeschlossen ist, rollt das gewaltige [das Flugzeug, -e|Flugzeug] zur Startbahn.",
+                  "Erst nach der Landung am fernen Zielort führt der Weg durch den gut ausgeschilderten [der Ausgang, -̈e|Ausgang] in ein neues Abenteuer."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Logistische Anthropologie: Transitzonen der Spätmoderne",
+              "intro": "Kritische Analyse von Nicht-Orten, Pünktlichkeitsmythen und vernetzten Verkehrshubs (B2).",
+              "paragraphs": [
+                [
+                  "Der Soziologe Marc Augé definierte Transiträume wie den modernen [der Flughafen, -̈|Flughafen] treffend als 'Nicht-Orte' – standardisierte Nicht-Räume der Durchreise, in denen Identität auf Bordkarten und Barcodes reduziert wird.",
+                  "Dennoch spiegeln der historische [der Bahnhof, -̈e|Bahnhof] und moderne Terminals den technologischen Entwicklungsstand einer Industrienation wider.",
+                  "Während jede [die Verspätung, -en|Verspätung] im dicht getakteten Schienennetz komplexe Kaskadeneffekte auslöst, symbolisiert der strukturierte [der Bahnsteig, -e|Bahnsteig] das preußische Ideal kalkulierbarer Ordnung.",
+                  "Eine präzise formulierte [die Durchsage, -n|Durchsage] balanciert in Krisenmomenten die kollektive Frustration hunderter wartender Fahrgäste an einem überfüllten [das Gleis, -e|Gleis] aus."
+                ],
+                [
+                  "Die Symbiose aus digitaler [die Fahrkarte, -n|Fahrkarte], biometrischer Passkontrolle und vollautomatisiertem [das Gepäck|Gepäck]-Routing demonstriert die fortschreitende Kybernetik des Reisens.",
+                  "Gleichzeitig offenbart die Ökobilanz beim [das Flugzeug, -e|Flugzeug] die Notwendigkeit, intermodale Verknüpfungen so auszubauen, dass Kurzstrecken-[der Flug, -̈e|Flüge] obsolet werden.",
+                  "Passagiere, die ihren Roll-[der Koffer, -|Koffer] durch den finalen [der Ausgang, -̈e|Ausgang] manövrieren, erfahren Transit daher stets als Spannungsfeld zwischen technologischer Perfektion und individueller Entfremdung."
+                ]
+              ]
+            }
+          },
+          "description": "Reisezentren, Fernverkehr, Ticketkauf, Gepäckaufgabe und Flugabfertigung.",
+          "details": "Reisen mit Bahn und Flugzeug, Gleise und Gepäck (A1–B2)",
+          "arabicDescription": "السفر والتنقل عبر المطارات ومحطات القطار في ألمانيا. يتناول هذا الدرس مصطلحات حجز التذاكر، ورصيف القطار، ومعرفة مواعيد الإقلاع والوصول، والتعامل مع التأخيرات (Verspätung)، والإعلانات الصوتية (Durchsage)، وإجراءات التفتيش الأمني وشحن الحقائب."
+        },
+        {
+          "id": "das_schiff",
+          "title": "Das Schiff",
+          "words": [
+            {
+              "german": "das Schiff, -e",
+              "arabic": "السفينة الكبيرة",
+              "english": "ship, vessel",
+              "example": "Das riesige Schiff gleitet majestätisch über die glatte Wasseroberfläche des Meeres."
+            },
+            {
+              "german": "das Boot, -e",
+              "arabic": "القارب الصغير / الزورق",
+              "english": "boat",
+              "example": "Auf dem ruhigen See rudern wir am Nachmittag mit einem kleinen Holzboot."
+            },
+            {
+              "german": "die Fähre, -n",
+              "arabic": "العبارة / معدية الركاب والسيارات",
+              "english": "ferry",
+              "example": "Die Autofähre verbindet das Festland im Stundentakt mit der Nordseeinsel."
+            },
+            {
+              "german": "das Kreuzfahrtschiff, -e",
+              "arabic": "السفينة السياحية الفاخرة العائمة",
+              "english": "cruise ship",
+              "example": "Auf dem modernen Kreuzfahrtschiff gibt es Restaurants, Theater und Pools für Tausende Urlauber."
+            },
+            {
+              "german": "das Segelboot, -e",
+              "arabic": "قارب الشراع الهوائي",
+              "english": "sailboat, sailing boat",
+              "example": "Bei auffrischendem Wind setzt die Crew die weißen Segel auf dem Segelboot."
+            },
+            {
+              "german": "das Deck, -s",
+              "arabic": "سطح السفينة (الديك)",
+              "english": "deck (ship)",
+              "example": "Die Passagiere stehen oben auf dem Sonnendeck und genießen den weiten Ausblick."
+            },
+            {
+              "german": "der Kapitän, -e",
+              "arabic": "القبطان / ربان السفينة",
+              "english": "captain, skipper",
+              "example": "Der Kapitän trägt die oberste nautische Verantwortung für Mannschaft, Schiff und Passagiere."
+            },
+            {
+              "german": "die Schwimmweste, -n",
+              "arabic": "سترة النجاة الطافية على الماء",
+              "english": "life jacket, life vest",
+              "example": "Vor Antritt der Segeltour legt jedes Kind eine orangefarbene Schwimmweste an."
+            },
+            {
+              "german": "der Rettungsring, -e",
+              "arabic": "طوق النجاة البحري",
+              "english": "lifebuoy, life ring",
+              "example": "An der Reling hängt ein rot-weißer Rettungsring mit einer langen Wurfleine griffbereit."
+            },
+            {
+              "german": "der Anker, -",
+              "arabic": "مرساة السفينة (الهلب الحديدي)",
+              "english": "anchor",
+              "example": "In der geschützten Bucht wirft das Schiff den schweren eisernen Anker ins Wasser."
+            },
+            {
+              "german": "die Seekrankheit (Sg.)",
+              "arabic": "دوار البحر الناتج عن تموج الأمواج",
+              "english": "seasickness",
+              "example": "Bei hohem Wellengang leiden viele Passagiere unter Übelkeit und Seekrankheit."
+            },
+            {
+              "german": "kentern (kenterte, ist gekentert)",
+              "arabic": "تنقلب السفينة أو القارب في الماء",
+              "english": "to capsize",
+              "example": "Durch eine unvorhergesehene Sturmböe drohte die kleine Jolle zu kentern."
+            }
+          ],
+          "description": "Schiff, Boot, Fähre, Kreuzfahrtschiff, Segelboot, Deck, Kapitän, Schwimmweste und Anker.",
+          "details": "Nautik, Seefahrt, Rettungsmittel, maritime Bräuche und Schiffssicherheit (A1–B2)",
+          "arabicDescription": "السفينة والملاحة البحرية (Das Schiff): مفردات السفينة (Schiff)، القارب (Boot)، العبارة (Fähre)، السفينة السياحية (Kreuzfahrtschiff)، قارب الشراع (Segelboot)، سطح السفينة (Deck)، القبطان (Kapitän)، سترة النجاة (Schwimmweste)، المرساة (Anker)، ودوار البحر (Seekrankheit).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Eine Bootsfahrt auf dem See",
+              "intro": "Einfache Sätze über Schiff, Boot, Wasser und Rettungsweste (A1).",
+              "paragraphs": [
+                [
+                  "Im Sommer sind wir am See und machen einen Ausflug auf dem Wasser.",
+                  "Mein Vater mietet ein kleines [das Boot, -e|Boot] für uns alle.",
+                  "Bevor wir einsteigen, zieht jeder eine sichere [die Schwimmweste, -n|Schwimmweste] an.",
+                  "Das Wasser ist blau und die Sonne scheint warm vom Himmel."
+                ],
+                [
+                  "In der Ferne fährt ein großes weißes [das Schiff, -e|Schiff] vorbei.",
+                  "Auf dem Schiff steht [der Kapitän, -e|der Kapitän] und winkt den Leuten zu.",
+                  "Die Menschen stehen oben auf dem [das Deck, -s|Deck] in der frischen Luft.",
+                  "Eine Fahrt auf dem Wasser ist herrlich und entspannend."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Mit der Fähre zur Insel",
+              "intro": "Autofähre nutzen, Segelboote beobachten und Seegang erleben (A2).",
+              "paragraphs": [
+                [
+                  "Für unseren Urlaub auf der Insel Rügen fahren wir mit dem Auto auf [die Fähre, -n|die Fähre].",
+                  "Nachdem wir geparkt haben, steigen wir die Treppen hinauf auf das Aussichtsdeck.",
+                  "Vom Schiff aus sehen wir viele weiße Segel von einem schnittigen [das Segelboot, -e|Segelboot].",
+                  "Der Wind weht kräftig und das Schiff schaukelt sanft auf den Wellen."
+                ],
+                [
+                  "Wenn die Wellen zu hoch werden, spüren manche Urlauber die unangenehme [die Seekrankheit (Sg.)|Seekrankheit].",
+                  "Überall an Bord hängen rot-weiße Rettungsmittel wie [der Rettungsring, -e|der Rettungsring] für Notfälle.",
+                  "Kurz vor dem Hafen wirft das Schiff den schweren [der Anker, -|Anker] noch nicht, sondern legt direkt an der Pier an.",
+                  "Die Seereise ist ein wunderbarer Start in die Ferien."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Tradition der Seefahrt und die Sicherheitskultur an Bord",
+              "intro": "Internationale SOLAS-Konvention, Seemannsbräuche und Notfallübungen (B1).",
+              "paragraphs": [
+                [
+                  "Die Seefahrt prägte über Jahrtausende den Austausch von Kulturen, Gütern und Ideen über alle Weltmeere hinweg.",
+                  "Ob ein wendiges [das Segelboot, -e|Segelboot] auf den Binnengewässern oder ein gewaltiges [das Kreuzfahrtschiff, -e|Kreuzfahrtschiff] mit über fünftausend Passagieren auf hoher See: Auf jedem Gewässer gelten unumstößliche maritime Gesetze.",
+                  "Die internationale SOLAS-Konvention (Safety of Life at Sea) schreibt rigide Sicherheitsstandards vor, die nach dem Untergang historischer Ozeanliner institutionalisiert wurden."
+                ],
+                [
+                  "Binnen 24 Stunden nach dem Auslaufen muss auf Passagierschiffen eine obligatorische Seenotrettungsübung absolviert werden.",
+                  "Jeder Gast muss wissen, wo seine [die Schwimmweste, -n|Schwimmweste] liegt und welche Musterstation im Brand- oder Wassereinbruchsfall aufzusuchen ist."
+                ],
+                [
+                  "Auf der Kommandobrücke trägt [der Kapitän, -e|der Kapitän] die uneingeschränkte juristische und navigatorische Letztverantwortung, um das Schiff selbst durch orkanartige Stürme zu steuern, ohne dass das Fahrzeug Gefahr läuft zu [kentern (kenterte, ist gekentert)|kentern]."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Hydrodynamische Stabilität, Metazentrum und maritime Umweltstandards",
+              "intro": "Schiffbauphysik, Metazentrische Höhe (GM), MARPOL-Richtlinien und Ballastwassermanagement (B2).",
+              "paragraphs": [
+                [
+                  "Die Schwimmfähigkeit und Intaktstabilität eines Schiffskörpers unterliegen den physikalischen Gesetzmäßigkeiten der Hydrostatik nach Archimedes.",
+                  "Entscheidend für die Kenterstabilität ist die metazentrische Höhe (GM), welche die relative Lage zwischen Massenschwerpunkt und Metazentrum definiert.",
+                  "Weist ein hoch aufragendes [das Kreuzfahrtschiff, -e|Kreuzfahrtschiff] durch falsche Ballastierung eine negative metazentrische Höhe auf, entsteht bei Krängung kein aufrichtendes Hebelarmmoment mehr, wodurch das Schiff unweigerlich zu [kentern (kenterte, ist gekentert)|kentern] droht."
+                ],
+                [
+                  "Moderne Schiffe verfügen über aktive Flossenstabilisatoren, die elektrohydraulisch aus dem Rumpf ausgefahren werden, um die Rollbewegung bei Seegang um bis zu 85 Prozent zu dämpfen und [die Seekrankheit (Sg.)|Seekrankheit] bei Passagieren zu minimieren."
+                ],
+                [
+                  "Gleichzeitig zwingen internationale MARPOL-Konventionen die globale Schifffahrt zu drastischen Emissionssenkungen: Schweröl wird durch verflüssigtes Erdgas (LNG), Methanol oder Rotorsegel substituiert, während UV-gestützte Ballastwasseraufbereitungsanlagen die Einschleppung invasiver Neobiota in marine Ökosysteme verhindern."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "der_hafen",
+          "title": "Der Hafen",
+          "words": [
+            {
+              "german": "der Hafen, -̈",
+              "arabic": "الميناء / المرفأ البحري",
+              "english": "harbor, port",
+              "example": "Der Hamburger Hafen wird oft als das stolze 'Tor zur Welt' bezeichnet."
+            },
+            {
+              "german": "der Seehafen, -̈",
+              "arabic": "الميناء البحري المطل على البحر",
+              "english": "seaport",
+              "example": "Im großen Seehafen von Bremerhaven werden Millionen Neuwagen weltweit verschifft."
+            },
+            {
+              "german": "der Container, -",
+              "arabic": "حاوية الشحن البحرية الحديدية القياسية",
+              "english": "shipping container",
+              "example": "In einem standardisierten ISO-Container reisen Güter sicher rund um den Globus."
+            },
+            {
+              "german": "der Containerhafen, -̈",
+              "arabic": "ميناء شحن وتفريغ الحاويات",
+              "english": "container terminal, container port",
+              "example": "Im Containerhafen arbeiten gigantische Brückenkräne vollautomatisch Tag und Nacht."
+            },
+            {
+              "german": "der Kran, -̈e",
+              "arabic": "رافعة الميناء الضخمة (الونش)",
+              "english": "harbor crane, gantry crane",
+              "example": "Der riesige Kran hebt den vierzig Fuß langen Container zentimetergenau vom Deck."
+            },
+            {
+              "german": "anlegen (legte an, hat angelegt)",
+              "arabic": "ترسو السفينة بمحاذاة الرصيف",
+              "english": "to dock, berth",
+              "example": "Mit Hilfe zweier wendiger Schlepper kann der Ozeanriese sicher an der Kaimauer anlegen."
+            },
+            {
+              "german": "ablegen (legte ab, hat abgelegt)",
+              "arabic": "تغادر وتبحر السفينة بعيداً عن الرصيف",
+              "english": "to cast off, depart (ship)",
+              "example": "Um Punkt achtzehn Uhr lässt das Kreuzfahrtschiff das Horn ertönen und wird ablegen."
+            },
+            {
+              "german": "die Pier, -s",
+              "arabic": "رصيف الميناء الممتد للرسو",
+              "english": "pier, jetty",
+              "example": "Touristen spazieren auf der hölzernen Pier und beobachten die einlaufenden Boote."
+            },
+            {
+              "german": "der Leuchtturm, -̈e",
+              "arabic": "المنارة البحرية لإرشاد السفن",
+              "english": "lighthouse",
+              "example": "Bei dichtem Nebel weist der rot-weiße Leuchtturm den Schiffen den sicheren Weg."
+            },
+            {
+              "german": "die Reederei, -en",
+              "arabic": "شركة الملاحة والنقل البحري",
+              "english": "shipping company",
+              "example": "Die traditionsreiche Reederei besitzt eine moderne Flotte von fünfzig Frachtschiffen."
+            },
+            {
+              "german": "der Zoll (Sg.)",
+              "arabic": "الجمارك والتفتيش الجمركي للبضائع",
+              "english": "customs",
+              "example": "Die Beamten vom Zoll überprüfen verdächtige Frachtstücke mit riesigen Röntgenanlagen."
+            },
+            {
+              "german": "die Schleuse, -n",
+              "arabic": "هويس القناة المائية لتعديل منسوب المياه",
+              "english": "lock (canal lock)",
+              "example": "In der Schleuse wird der Wasserstand angehoben, damit das Binnenschiff weiterfahren kann."
+            }
+          ],
+          "description": "Hafen, Seehafen, Container, Containerhafen, Kran, Anlegen, Ablegen, Pier, Leuchtturm und Reederei.",
+          "details": "Hafenlogistik, Umschlagskran, Welthandel, Tide und Hafeninfrastruktur (A1–B2)",
+          "arabicDescription": "الميناء والمرفأ البحري (Der Hafen): مفردات الميناء (Hafen)، حاوية الشحن (Container)، ميناء الحاويات (Containerhafen)، رافعة الميناء (Kran)، رسو السفينة (anlegen)، مغادرة الرصيف (ablegen)، الرصيف (Pier)، المنارة (Leuchtturm)، وشركات الملاحة البحرية (Reederei).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Ein Spaziergang am Hafen",
+              "intro": "Einfache Sätze über Schiffe, Leuchtturm, Hafen und Kräne (A1).",
+              "paragraphs": [
+                [
+                  "Heute machen wir einen schönen Ausflug in [der Hafen, -̈|den Hafen].",
+                  "Wir stehen an dem Wasser und schauen auf [die Pier, -s|die Pier].",
+                  "Dort steht ein hoher, rot-weißer [der Leuchtturm, -̈e|Leuchtturm].",
+                  "Das Licht des Leuchtturms hilft den Schiffen in der Nacht."
+                ],
+                [
+                  "Ein großes Schiff möchte langsam an der Kaimauer [anlegen (legte an, hat angelegt)|anlegen].",
+                  "Große Maschinen und ein riesiger [der Kran, -̈e|Kran] bewegen bunte Kisten.",
+                  "Ein anderes Boot wird gleich von der Mauer [ablegen (legte ab, hat abgelegt)|ablegen] und ins Meer fahren.",
+                  "Die Möwen fliegen über dem Wasser und es riecht nach Salz."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Im Hamburger Containerhafen",
+              "intro": "Gigantische Frachter, Containerterminals und Zollabwicklung am Seehafen (A2).",
+              "paragraphs": [
+                [
+                  "Letzte Woche habe ich eine Hafenrundfahrt durch den berühmten Hamburger Hafen gemacht.",
+                  "Dort befindet sich ein gigantischer [der Containerhafen, -̈|Containerhafen], wo Schiffe aus Asien und Amerika ankommen.",
+                  "Ein moderner [der Seehafen, -̈|Seehafen] schläft nie: Tausende Kisten werden rund um die Uhr verladen.",
+                  "Jeder bunte [der Container, -|Container] aus Stahl hat eine eigene Nummer für die weltweite Verfolgung."
+                ],
+                [
+                  "Bevor Waren nach Deutschland eingeführt werden dürfen, kontrolliert [der Zoll (Sg.)|der Zoll] die Frachtpapiere.",
+                  "Große internationale [die Reederei, -en|Reedereien] betreiben Schiffe, die bis zu zwanzigtausend Container transportieren können.",
+                  "Wenn Schiffe durch Kanäle fahren, müssen sie oft durch eine wasserregulierte [die Schleuse, -n|Schleuse].",
+                  "Der Hafen ist das pulsierende Herz des weltweiten Handels."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Tor zur Welt: Welthandel und die Elbvertiefung",
+              "intro": "Historische Speicherstadt, moderne Containerlogistik und ökologische Debatten (B1).",
+              "paragraphs": [
+                [
+                  "Der Hamburger Hafen, gegründet im Jahr 1189 durch einen kaiserlichen Freibrief von Friedrich Barbarossa, symbolisiert seit Jahrhunderten das hanseatische Selbstverständnis als Welthandelsmetropole.",
+                  "Während die historische Speicherstadt mit ihren neugotischen Backsteinbauten einst Kaffee, Tee und Gewürze lagerte, dominiert heute hochautomatisierte Umschlagtechnik den [der Seehafen, -̈|Seehafen].",
+                  "An modernen Terminals wie Altenwerder bewegen fahrerlose Transportfahrzeuge jeden [der Container, -|Container] mit millimetergenauer Präzision."
+                ],
+                [
+                  "Die Anpassung an immer gigantischere Containerschiffe mit über 400 Metern Länge entfacht jedoch anhaltende Kontroversen.",
+                  "Wiederholte Vertiefungen der Unterelbe zur Gewährleistung des Tiefgangs bei Ebbe und Flut lösen schwere ökologische Bedenken hinsichtlich Versalzung und Ufererosion aus."
+                ],
+                [
+                  "Dennoch bleibt die logistische Leistungsfähigkeit der Kaimauern und das reibungslose [anlegen (legte an, hat angelegt)|Anlegen] der Frachter der wirtschaftliche Pulsschlag für Zehntausende Arbeitsplätze in ganz Norddeutschland."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Automatisierte Hafenterminals, Tidenhubdynamik und globale Seeverkehrsökonomie",
+              "intro": "AGV-Navigation, Hub-and-Spoke-Systeme der Allianzen und maritime Landstromversorgung (B2).",
+              "paragraphs": [
+                [
+                  "In der maritimen Makrologistik agieren Mega-Häfen als hochgradig determinierte Schnittstellen globaler Hub-and-Spoke-Netzwerke.",
+                  "Im [der Containerhafen, -̈|Containerhafen] dirigieren terminale Betriebssysteme (Terminal Operating Systems, TOS) vollautomatisierte Portalkräne und fahrerlose Automated Guided Vehicles (AGV), die über Transponder im Bodenbelag navigieren und Durchlaufzeiten minimieren."
+                ],
+                [
+                  "Ein wesentlicher hydrologischer Standortfaktor für Flussmündungshäfen ist der Tidenhub: Die Gezeitendynamik diktiert die Zeitfenster für das [anlegen (legte an, hat angelegt)|Anlegen] und [ablegen (legte ab, hat abgelegt)|Ablegen] von Ultra Large Container Vessels (ULCV) mit maximalem Abladetiefgang."
+                ],
+                [
+                  "Zur Eliminierung lokaler Schadstoffemissionen während der Liegezeit an [die Pier, -s|der Pier] implementieren europäische Seehäfen flächendeckend Landstromanlagen.",
+                  "Dadurch können Hilfsdieselmotoren an Bord abgeschaltet werden, während das Schiff mit zertifiziertem Ökostrom aus dem Verbundnetz versorgt wird, was die urbane Umweltbelastung drastisch reduziert."
+                ]
+              ]
+            }
+          }
         }
       ]
     }

@@ -23,5 +23,3 @@ export type VocabularyTopic = z.infer<typeof vocabularyTopicSchema>;
 export type Topic = VocabularyTopic;
 export type VocabularySection = z.infer<typeof vocabularySectionSchema>;
 export type VocabularyItem = z.infer<typeof vocabularyCollectionSchema>;
-
-

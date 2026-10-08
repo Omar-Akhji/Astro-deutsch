@@ -1,11 +1,15 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 
-function getAllFiles(dir: string, exts: string[] = [".astro", ".vue", ".ts", ".tsx", ".html"]): string[] {
+function getAllFiles(
+  dir: string,
+  exts: string[] = [".astro", ".vue", ".ts", ".tsx", ".html"],
+): string[] {
   let results: string[] = [];
   const list = fs.readdirSync(dir);
   for (const file of list) {
-    if (file === "node_modules" || file === ".astro" || file === "dist" || file === ".git") continue;
+    if (file === "node_modules" || file === ".astro" || file === "dist" || file === ".git")
+      continue;
     const fullPath = path.join(dir, file);
     const stat = fs.statSync(fullPath);
     if (stat && stat.isDirectory()) {
@@ -29,11 +33,20 @@ for (const f of files) {
   const newLines = lines.map((line) => {
     const trimmed = line.trim();
     // Skip comments
-    if (trimmed.startsWith("//") || trimmed.startsWith("/*") || trimmed.startsWith("*") || trimmed.startsWith("<!--")) {
+    if (
+      trimmed.startsWith("//")
+      || trimmed.startsWith("/*")
+      || trimmed.startsWith("*")
+      || trimmed.startsWith("<!--")
+    ) {
       return line;
     }
     // Skip CSS property declarations
-    if (line.includes("border:") || line.includes("border-radius:") || line.includes("border-collapse:")) {
+    if (
+      line.includes("border:")
+      || line.includes("border-radius:")
+      || line.includes("border-collapse:")
+    ) {
       return line;
     }
     if (tokenRegex.test(line)) {

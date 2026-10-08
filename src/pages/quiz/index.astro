@@ -14,26 +14,32 @@ import {
 
 const quizEntries = await getCollection("quiz");
 
-const skillIcons = new Map(Object.entries({
-  lesen: BookOpen,
-  hoeren: Headphones,
-  schreiben: PenTool,
-  sprechen: MessageCircle,
-} as const));
+const skillIcons = new Map(
+  Object.entries({
+    lesen: BookOpen,
+    hoeren: Headphones,
+    schreiben: PenTool,
+    sprechen: MessageCircle,
+  } as const),
+);
 
-const skillLabels = new Map(Object.entries({
-  lesen: "Leseverstehen",
-  hoeren: "Hörverstehen",
-  schreiben: "Schriftlicher Ausdruck",
-  sprechen: "Mündlicher Ausdruck",
-}));
+const skillLabels = new Map(
+  Object.entries({
+    lesen: "Leseverstehen",
+    hoeren: "Hörverstehen",
+    schreiben: "Schriftlicher Ausdruck",
+    sprechen: "Mündlicher Ausdruck",
+  }),
+);
 
-const skillGradients = new Map(Object.entries({
-  lesen: "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
-  hoeren: "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
-  schreiben: "linear-gradient(135deg, #e67e22 0%, #d35400 100%)",
-  sprechen: "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
-}));
+const skillGradients = new Map(
+  Object.entries({
+    lesen: "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+    hoeren: "linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%)",
+    schreiben: "linear-gradient(135deg, #e67e22 0%, #d35400 100%)",
+    sprechen: "linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)",
+  }),
+);
 
 interface QuizGroupItem {
   testId: string | number;
@@ -107,22 +113,34 @@ const quizSchema = {
       data-animate="fade-up"
     >
       <div class="rounded-2xl border-[1.5px] border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
-        <Trophy aria-hidden="true" class="mx-auto mb-2 size-6 text-yellow" />
+        <Trophy
+          aria-hidden="true"
+          class="mx-auto mb-2 size-6 text-yellow"
+        />
         <dd class="m-0 text-2xl font-bold text-white">38</dd>
         <dt class="text-xs text-mist-400">Übungstests</dt>
       </div>
       <div class="rounded-2xl border-[1.5px] border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
-        <BookOpen aria-hidden="true" class="mx-auto mb-2 size-6 text-yellow" />
+        <BookOpen
+          aria-hidden="true"
+          class="mx-auto mb-2 size-6 text-yellow"
+        />
         <dd class="m-0 text-2xl font-bold text-white">4</dd>
         <dt class="text-xs text-mist-400">Fertigkeiten</dt>
       </div>
       <div class="rounded-2xl border-[1.5px] border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
-        <CheckCircle2 aria-hidden="true" class="mx-auto mb-2 size-6 text-yellow" />
+        <CheckCircle2
+          aria-hidden="true"
+          class="mx-auto mb-2 size-6 text-yellow"
+        />
         <dd class="m-0 text-2xl font-bold text-white">B1 & B2</dd>
         <dt class="text-xs text-mist-400">Prüfungsniveaus</dt>
       </div>
       <div class="rounded-2xl border-[1.5px] border-white/10 bg-card/60 p-4 text-center backdrop-blur-md">
-        <HelpCircle aria-hidden="true" class="mx-auto mb-2 size-6 text-yellow" />
+        <HelpCircle
+          aria-hidden="true"
+          class="mx-auto mb-2 size-6 text-yellow"
+        />
         <dd class="m-0 text-2xl font-bold text-white">100%</dd>
         <dt class="text-xs text-mist-400">Kostenlos</dt>
       </div>
@@ -147,64 +165,70 @@ const quizSchema = {
             </h2>
           </div>
 
-          <ul class="m-0 grid list-none gap-6 p-0 sm:grid-cols-2 laptop:grid-cols-2" role="list">
+          <ul
+            class="m-0 grid list-none gap-6 p-0 sm:grid-cols-2 laptop:grid-cols-2"
+            role="list"
+          >
             {[...(grouped.get(level)?.entries() ?? [])].map(([skill, tests]) => {
-                const SkillIcon = skillIcons.get(skill) ?? HelpCircle;
-                const gradient =
-                  skillGradients.get(skill) ?? "linear-gradient(135deg, #4b6cb7 0%, #182848 100%)";
+              const SkillIcon = skillIcons.get(skill) ?? HelpCircle;
+              const gradient =
+                skillGradients.get(skill) ?? "linear-gradient(135deg, #4b6cb7 0%, #182848 100%)";
 
-                return (
-                  <li>
-                    <article class="h-full overflow-hidden rounded-2xl border-[1.5px] border-white/10 bg-card/75 shadow-lg backdrop-blur-md">
-                      <header
-                        class="flex items-center justify-between p-4 tablet:p-5"
-                        style={{ background: gradient }}
-                      >
-                        <div class="flex items-center gap-3">
-                          <span class="flex size-10 items-center justify-center rounded-xl bg-black/20 text-white backdrop-blur-sm">
-                            <SkillIcon size={20} />
-                          </span>
-                          <div>
-                            <h3 class="m-0 text-lg font-bold text-white">
-                              {skillLabels.get(skill) ?? skill}
-                            </h3>
-                            <p class="m-0 text-xs text-white/80">
-                              {tests.length} {tests.length === 1 ? "Test" : "Tests"} verfügbar
-                            </p>
-                          </div>
+              return (
+                <li>
+                  <article class="h-full overflow-hidden rounded-2xl border-[1.5px] border-white/10 bg-card/75 shadow-lg backdrop-blur-md">
+                    <header
+                      class="flex items-center justify-between p-4 tablet:p-5"
+                      style={{ background: gradient }}
+                    >
+                      <div class="flex items-center gap-3">
+                        <span class="flex size-10 items-center justify-center rounded-xl bg-black/20 text-white backdrop-blur-sm">
+                          <SkillIcon size={20} />
+                        </span>
+                        <div>
+                          <h3 class="m-0 text-lg font-bold text-white">
+                            {skillLabels.get(skill) ?? skill}
+                          </h3>
+                          <p class="m-0 text-xs text-white/80">
+                            {tests.length} {tests.length === 1 ? "Test" : "Tests"} verfügbar
+                          </p>
                         </div>
-                      </header>
-
-                      <div class="p-4 tablet:p-5">
-                        <p class="mb-4 text-xs text-mist-400">
-                          Wähle einen Test zur interaktiven Bearbeitung:
-                        </p>
-                        <ul class="m-0 grid list-none grid-cols-3 gap-2 p-0 mobile:grid-cols-4 tablet:grid-cols-3 laptop:grid-cols-4" role="list">
-                          {tests.map((test) => (
-                            <li>
-                              <a
-                                class="group flex flex-col items-center justify-center rounded-xl border-[1.5px] border-white/10 bg-white/5 p-3 text-center transition-all duration-200 hover:-translate-y-0.5 hover:border-yellow/50 hover:bg-yellow/10 active:scale-95"
-                                href={`/quiz/${level}/${skill}/${test.testId}/`}
-                                title={`Starte ${skillLabels.get(skill) ?? skill} Test ${test.testId}`}
-                              >
-                                <span class="text-xs font-semibold text-mist-400 group-hover:text-yellow">
-                                  Test
-                                </span>
-                                <span class="text-lg font-bold text-white group-hover:text-yellow">
-                                  {test.testId}
-                                </span>
-                                <span class="text-[10px] text-zinc-400">
-                                  {test.questionCount} {test.questionCount === 1 ? "Frage" : "Fragen"}
-                                </span>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
                       </div>
-                    </article>
-                  </li>
-                );
-              })}
+                    </header>
+
+                    <div class="p-4 tablet:p-5">
+                      <p class="mb-4 text-xs text-mist-400">
+                        Wähle einen Test zur interaktiven Bearbeitung:
+                      </p>
+                      <ul
+                        class="m-0 grid list-none grid-cols-3 gap-2 p-0 mobile:grid-cols-4 tablet:grid-cols-3 laptop:grid-cols-4"
+                        role="list"
+                      >
+                        {tests.map((test) => (
+                          <li>
+                            <a
+                              class="group flex flex-col items-center justify-center rounded-xl border-[1.5px] border-white/10 bg-white/5 p-3 text-center transition-all duration-200 hover:-translate-y-0.5 hover:border-yellow/50 hover:bg-yellow/10 active:scale-95"
+                              href={`/quiz/${level}/${skill}/${test.testId}/`}
+                              title={`Starte ${skillLabels.get(skill) ?? skill} Test ${test.testId}`}
+                            >
+                              <span class="text-xs font-semibold text-mist-400 group-hover:text-yellow">
+                                Test
+                              </span>
+                              <span class="text-lg font-bold text-white group-hover:text-yellow">
+                                {test.testId}
+                              </span>
+                              <span class="text-[10px] text-zinc-400">
+                                {test.questionCount} {test.questionCount === 1 ? "Frage" : "Fragen"}
+                              </span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </article>
+                </li>
+              );
+            })}
           </ul>
         </section>
       ))}

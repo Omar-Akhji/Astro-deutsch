@@ -104,7 +104,11 @@ onUnmounted(() => {
       :delay="200"
     >
       <div class="relative mx-auto mb-8 flex size-40 items-center justify-center">
-        <label for="quiz-score-meter" class="sr-only">Testergebnis</label>
+        <label
+          for="quiz-score-meter"
+          class="sr-only"
+          >Testergebnis</label
+        >
         <meter
           id="quiz-score-meter"
           class="sr-only"
@@ -117,7 +121,10 @@ onUnmounted(() => {
         >
           {{ displayedPercent }}%
         </meter>
-        <svg class="h-full w-full -rotate-90 transform" aria-hidden="true">
+        <svg
+          class="h-full w-full -rotate-90 transform"
+          aria-hidden="true"
+        >
           <circle
             cx="80"
             cy="80"

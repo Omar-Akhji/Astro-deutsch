@@ -5,8 +5,8 @@
   "description": "Körperteile, Krankheiten und nützliche Ausdrücke für den Arztbesuch.",
   "sections": [
     {
-      "id": "beim_arzt",
-      "title": "Beim Arzt und der Körper",
+      "id": "koerper",
+      "title": "DER KÖRPER",
       "topics": [
         {
           "id": "der_koerper",
@@ -191,6 +191,1432 @@
           "arabicDescription": "أجزاء الجسم البشري وتشريح الأعضاء والحواس في اللغة الألمانية. يتناول هذا الدرس الرأس، والأطراف (الذراعين، الساقين، اليدين، القدمين)، والبطن والظهر، والقلب، مع التركيز على أدوات التعريف والجمع الخاصة بكل عضو وكيفية التعبير عن اللياقة البدنية."
         },
         {
+          "id": "die_hand_und_der_fuss",
+          "title": "Die Hand und der Fuß",
+          "words": [
+            {
+              "german": "die Hand, -̈e",
+              "arabic": "اليد والكف",
+              "english": "hand",
+              "example": "Ich gebe ihm zur Begrüßung herzlich die rechte Hand."
+            },
+            {
+              "german": "der Finger, -",
+              "arabic": "إصبع اليد",
+              "english": "finger",
+              "example": "An jeder Hand hat der Mensch fünf bewegliche Finger."
+            },
+            {
+              "german": "der Daumen, -",
+              "arabic": "الإبهام",
+              "english": "thumb",
+              "example": "Er zeigte mit dem Daumen nach oben als Zeichen der Zustimmung."
+            },
+            {
+              "german": "der Fingernagel, -̈",
+              "arabic": "ظفر الإصبع",
+              "english": "fingernail",
+              "example": "Gepflegte Fingernägel hinterlassen einen guten Eindruck."
+            },
+            {
+              "german": "das Handgelenk, -e",
+              "arabic": "معصم ورسغ اليد",
+              "english": "wrist",
+              "example": "Am linken Handgelenk trage ich eine klassische Armbanduhr."
+            },
+            {
+              "german": "die Handfläche, -n",
+              "arabic": "راحة الكف وباطن اليد",
+              "english": "palm (hand)",
+              "example": "Auf der offenen Handfläche hielt er eine glänzende Münze."
+            },
+            {
+              "german": "der Fuß, -̈e",
+              "arabic": "القدم",
+              "english": "foot",
+              "example": "Nach der langen Wanderung taten mir beide Füße weh."
+            },
+            {
+              "german": "die Zehe, -n",
+              "arabic": "إصبع القدم",
+              "english": "toe",
+              "example": "Er hat sich die kleine Zehe schmerzhaft am Tischbein gestoßen."
+            },
+            {
+              "german": "die Ferse, -n",
+              "arabic": "كعب القدم (العقب)",
+              "english": "heel (foot)",
+              "example": "Die neuen Lederschuhe drückten an der Ferse und verursachten Blasen."
+            },
+            {
+              "german": "die Fußsohle, -n",
+              "arabic": "باطن وأسفل القدم",
+              "english": "sole (foot)",
+              "example": "Ein warmes Fußbad entspannt die beanspruchte Fußsohle nach dem Sport."
+            },
+            {
+              "german": "das Fußgelenk, -e",
+              "arabic": "مفصل الكاحل (الكعب المفصلي)",
+              "english": "ankle joint, ankle",
+              "example": "Beim Joggen ist er umgeknickt und hat sich das Fußgelenk verstaucht."
+            },
+            {
+              "german": "greifen",
+              "arabic": "يمسك ويقبض باليد",
+              "english": "to grasp, to grip, to reach for",
+              "example": "Das kleine Baby kann schon gezielt nach einer bunten Rassel greifen."
+            }
+          ],
+          "description": "Finger, Daumen, Handgelenk, Fuß, Zehen, Ferse und Feinmotorik.",
+          "details": "Anatomie der Extremitäten, Greifreflexe, Gangbild und Fußpflege (A1–B2)",
+          "arabicDescription": "اليد والقدم (Die Hand und der Fuß): مفردات اليد (Hand)، الأصابع (Finger)، الإبهام (Daumen)، أظافر اليد، معصم اليد (Handgelenk)، راحة الكف، القدم (Fuß)، أصابع القدم (Zehe)، الكعب (Ferse)، باطن القدم (Fußsohle)، ومفصل الكاحل.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Meine Hände und meine Füße",
+              "intro": "Einfache Sätze über Finger, Hände, Füße und Gehen (A1).",
+              "paragraphs": [
+                [
+                  "Ich schaue auf [die Hand, -̈e|meine Hände].",
+                  "Jede Hand hat fünf [der Finger, -|Finger].",
+                  "Der stärkste Finger ist [der Daumen, -|der Daumen].",
+                  "Mit der Hand kann ich Dinge festhalten und [greifen|greifen]."
+                ],
+                [
+                  "Unten habe ich zwei [der Fuß, -̈e|Füße].",
+                  "An jedem Fuß sitzen fünf kleine [die Zehe, -n|Zehen].",
+                  "Auf [die Ferse, -n|den Fersen] und [die Fußsohle, -n|den Fußsohlen] laufe ich jeden Tag viele Schritte."
+                ],
+                ["Hände und Füße sind sehr wichtig für unseren Körper."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Vorsicht beim Sport: Ein verstauchtes Gelenk",
+              "intro": "Sportverletzungen, Bandagen und Entlastung für Knöchel und Handgelenk (A2).",
+              "paragraphs": [
+                [
+                  "Letzte Woche habe ich beim Fußballspielen nicht aufgepasst.",
+                  "Auf dem nassen Rasen bin ich ausgerutscht und unglücklich auf [das Fußgelenk, -e|mein Fußgelenk] gefallen.",
+                  "Auch mit [das Handgelenk, -e|dem Handgelenk] habe ich mich auf dem Boden abgefangen."
+                ],
+                [
+                  "Der Arzt untersuchte meinen Knöchel und legte einen kühlenden Verband an.",
+                  "Zum Glück war kein Knochen gebrochen, aber ich musste [der Fuß, -̈e|den Fuß] einige Tage hochlegen.",
+                  "Jetzt laufe ich wieder vorsichtig und massiere sanft [die Fußsohle, -n|die Fußsohle]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Biomechanik der Extremitäten und feinmotorische Meisterleistungen",
+              "intro": "Evolution des aufrechten Gangs, Greifhand und Fußgewölbe (B1).",
+              "paragraphs": [
+                [
+                  "Die menschliche [die Hand, -̈e|Hand] ist ein evolutionäres Meisterwerk.",
+                  "Erst die Opposition von [der Daumen, -|dem Daumen] zu den übrigen [der Finger, -|Fingern] ermöglichte das präzise Führen von Werkzeugen und die Entwicklung menschlicher Kultur."
+                ],
+                [
+                  "Gleichzeitig trägt [der Fuß, -̈e|der Fuß] mit seinem ausgeklügelten Längs- und Quergewölbe das gesamte Körpergewicht bei jedem Schritt.",
+                  "Vom stabilen [das Fußgelenk, -e|Fußgelenk] über die gedämpfte [die Ferse, -n|Ferse] bis zu [die Zehe, -n|den Zehen] sorgt ein komplexer Muskel- und Sehnenapparat für elastisches Abfedern."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Sensomotorik, Karpaltunnelsyndrom und podologische Prävention",
+              "intro": "Neuromuskuläre Ansteuerung, repetitive Belastungen und Haltungsphysiologie (B2).",
+              "paragraphs": [
+                [
+                  "Die dichte Innervation von [die Handfläche, -n|der Handfläche] und Fingerbeeren macht die oberen Extremitäten zu hochempfindlichen Tastorganen.",
+                  "Chronische repetitive Belastungen bei Büroarbeit können jedoch das empfindliche [das Handgelenk, -e|Handgelenk] schädigen (Karpaltunnelsyndrom)."
+                ],
+                [
+                  "Ebenso manifestieren sich Fehlstellungen der Wirbelsäule häufig primär an [die Fußsohle, -n|den Fußsohlen] durch Senk-, Spreiz- oder Knickfüße.",
+                  "Orthopädische Einlagen und gezieltes Barfußlaufen stärken die intrinsische Fußmuskulatur und restituieren physiologische Bewegungsmuster."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "der_kopf",
+          "title": "Der Kopf",
+          "words": [
+            {
+              "german": "das Gesicht, -er",
+              "arabic": "الوجه وملامحه",
+              "english": "face",
+              "example": "Sie wäscht sich morgens das Gesicht mit kaltem, erfrischendem Wasser."
+            },
+            {
+              "german": "das Auge, -n",
+              "arabic": "العين (عضو الرؤية)",
+              "english": "eye",
+              "example": "Er hat wunderschöne braune Augen, die freundlich leuchten."
+            },
+            {
+              "german": "die Nase, -n",
+              "arabic": "الأنف (عضو الشم)",
+              "english": "nose",
+              "example": "Mit der Nase riechen wir den süßen Duft frischer Rosen."
+            },
+            {
+              "german": "das Ohr, -en",
+              "arabic": "الأذن (عضو السمع)",
+              "english": "ear",
+              "example": "Hunde spitzen aufmerksam die Ohren, wenn sie ein leises Geräusch hören."
+            },
+            {
+              "german": "der Mund, -̈er",
+              "arabic": "الفم",
+              "english": "mouth",
+              "example": "Öffnen Sie bitte den Mund weit für die ärztliche Untersuchung."
+            },
+            {
+              "german": "die Lippe, -n",
+              "arabic": "الشفة",
+              "english": "lip",
+              "example": "Im kalten Winter schützt ein Fettstift die spröden Lippen vor Rissen."
+            },
+            {
+              "german": "die Stirn, -en",
+              "arabic": "الجبين / الجبهة",
+              "english": "forehead, brow",
+              "example": "Die Mutter legte die Hand sanft auf die heiße Stirn des fiebernden Kinds."
+            },
+            {
+              "german": "die Wange, -n",
+              "arabic": "الخد / الوجنة",
+              "english": "cheek",
+              "example": "Nach dem Waldspaziergang hatte sie rosige, warme Wangen."
+            },
+            {
+              "german": "das Kinn, -e",
+              "arabic": "الذقن",
+              "english": "chin",
+              "example": "Er strich sich nachdenklich mit der Hand über das glatte Kinn."
+            },
+            {
+              "german": "die Augenbraue, -n",
+              "arabic": "الحاجب (حاجب العين)",
+              "english": "eyebrow",
+              "example": "Überrascht zog sie die linke Augenbraue nach oben."
+            },
+            {
+              "german": "die Wimper, -n",
+              "arabic": "الرمش (رموش العين)",
+              "english": "eyelash",
+              "example": "Lange Wimpern schützen das Auge vor Staubpartikeln und Sonnenlicht."
+            },
+            {
+              "german": "das Haar, -e",
+              "arabic": "الشعر (شعر الرأس)",
+              "english": "hair",
+              "example": "Sie kämmt ihr langes blondes Haar vor dem Spiegel."
+            }
+          ],
+          "description": "Gesicht, Augen, Ohren, Nase, Mund, Stirn, Wangen, Kinn und Sinnesorgane.",
+          "details": "Kopfanatomie, Sinneswahrnehmung, Mimik, Gesichtsausdrücke und Augenbrauen (A1–B2)",
+          "arabicDescription": "الرأس والوجه (Der Kopf): ملامح الوجه (Gesicht)، العينان (Auge)، الأنف (Nase)، الأذنان (Ohr)، الفم (Mund)، الشفاه (Lippe)، الجبين (Stirn)، الخدود (Wange)، الذقن (Kinn)، الحواجب (Augenbraue)، والرموش والشعر.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mein Kopf und mein Gesicht",
+              "intro": "Einfache Sätze über Augen, Nase, Mund und Ohren (A1).",
+              "paragraphs": [
+                [
+                  "Ich schaue in den Spiegel und sehe [das Gesicht, -er|mein Gesicht].",
+                  "Oben auf dem Kopf wächst [das Haar, -e|mein dunkles Haar].",
+                  "Darunter liegt [die Stirn, -en|die glatte Stirn]."
+                ],
+                [
+                  "Mit zwei [das Auge, -n|Augen] kann ich gut sehen.",
+                  "Über den Augen sitzen [die Augenbraue, -n|die Augenbrauen].",
+                  "In der Mitte ist [die Nase, -n|die Nase] zum Riechen.",
+                  "Ich habe zwei [das Ohr, -en|Ohren] zum Hören und [der Mund, -̈er|einen Mund] zum Sprechen."
+                ],
+                [
+                  "Ich lächle mit [die Lippe, -n|meinen Lippen] und meine [die Wange, -n|Wangen] werden rot."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Mimik und Gefühle im Gesicht",
+              "intro": "Gefühlsausdrücke, Lächeln, Stirnrunzeln und Sinnesorgane (A2).",
+              "paragraphs": [
+                [
+                  "Unser Gesicht verrät oft mehr über unsere Gefühle als gesprochene Worte.",
+                  "Wenn wir traurig sind, hängen die Mundwinkel nach unten und Tränen treten in [das Auge, -n|die Augen]."
+                ],
+                [
+                  "Wenn wir überrascht sind, heben wir automatisch [die Augenbraue, -n|die Augenbrauen] und öffnen [der Mund, -̈er|den Mund].",
+                  "Wer konzentriert nachdenkt, legt [die Stirn, -en|die Stirn] in tiefe Falten und stützt [das Kinn, -e|das Kinn] mit der Hand ab."
+                ],
+                [
+                  "Ein ehrliches Lächeln bringt die Augen zum Strahlen und zaubert Grübchen in [die Wange, -n|die Wangen]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die Sinnesorgane des Kopfes und nonverbale Kommunikation",
+              "intro": "Zentralisierung der Fernsinne und mimische Signalübertragung (B1).",
+              "paragraphs": [
+                [
+                  "Im menschlichen Kopf sind die wichtigsten Sinnesorgane auf engstem Raum konzentriert.",
+                  "Über [das Auge, -n|die Augen] und [das Ohr, -en|die Ohren] nehmen wir optische und akustische Reize der Umwelt simultan auf."
+                ],
+                [
+                  "Gleichzeitig ist [das Gesicht, -er|das Gesicht] das primäre Kommunikationsmedium des Menschen.",
+                  "Über vierzig mimische Muskeln formen unzählige Nuancen zwischen [die Lippe, -n|den Lippen], [die Wange, -n|den Wangen] und [die Stirn, -en|der Stirn], die weltweit kulturübergreifend verstanden werden."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Kraniofaziale Anatomie, Hirnnerven und sensorische Integration",
+              "intro": "Trigeminus- und Fazialisnerv, sensorische Bahnen und Gesichtsästhetik (B2).",
+              "paragraphs": [
+                [
+                  "Die kraniofaziale Architektur beherbergt vitale Schutzstrukturen für das Zentralnervensystem.",
+                  "Der Nervus facialis steuert die differenzierte Mimik, während der Nervus trigeminus sensorische Impulse von [die Stirn, -en|der Stirn], den Wangen und [das Kinn, -e|dem Kinn] zum Kortex leitet."
+                ],
+                [
+                  "Strukturen wie [die Augenbraue, -n|Augenbrauen] und [die Wimper, -n|Wimpern] fungieren primär als physische Barrieren gegen Schweiß und Fremdkörper, bilden jedoch zugleich markante ästhetische Orientierungspunkte."
+                ],
+                [
+                  "Die synchrone Verarbeitung olfaktorischer, gustatorischer und audiovisueller Reize im Gehirn ermöglicht ein kohärentes mentales Abbild unserer Realität."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_muskeln",
+          "title": "Die Muskeln",
+          "words": [
+            {
+              "german": "der Muskel, -n",
+              "arabic": "العضلة",
+              "english": "muscle",
+              "example": "Regelmäßiges Schwimmen stärkt fast jeden Muskel im gesamten Körper."
+            },
+            {
+              "german": "die Sehne, -n",
+              "arabic": "الوتر العضلي (الرابط بين العضلة والعظم)",
+              "english": "tendon",
+              "example": "Die Achillessehne ist die stärkste und dickste Sehne des Menschen."
+            },
+            {
+              "german": "die Muskelkraft (Sg.)",
+              "arabic": "القوة العضلية",
+              "english": "muscle strength, muscular strength",
+              "example": "Mit beachtlicher Muskelkraft hob der Gewichtheber die schwere Hantel nach oben."
+            },
+            {
+              "german": "der Bizeps, -e",
+              "arabic": "عضلة البايسبس (العضلة ذات الرأسين العضدية)",
+              "english": "biceps",
+              "example": "Er beugt den Arm im rechten Winkel, um seinen trainierten Bizeps zu zeigen."
+            },
+            {
+              "german": "die Muskelzerrung, -en",
+              "arabic": "التمزق أو الشد العضلي الحاد",
+              "english": "muscle strain, pulled muscle",
+              "example": "Beim schnellen Sprint zog er sich eine schmerzhafte Muskelzerrung im Oberschenkel zu."
+            },
+            {
+              "german": "der Muskelkater, -",
+              "arabic": "ألم وتيبس العضلات المتأخر بعد ممارسة الرياضة",
+              "english": "muscle soreness, DOMS",
+              "example": "Am Tag nach dem intensiven Fitnesstraining quälte mich ein heftiger Muskelkater."
+            },
+            {
+              "german": "anspannen",
+              "arabic": "يشد ويقبض العضلة",
+              "english": "to tense, to flex (muscle)",
+              "example": "Atmen Sie tief ein und versuchen Sie, die Bauchmuskeln fest anzuspannen."
+            },
+            {
+              "german": "entspannen",
+              "arabic": "يرخي العضلة",
+              "english": "to relax (muscle)",
+              "example": "In der Sauna können sich verkrampfte Muskeln endlich wieder entspannen."
+            },
+            {
+              "german": "das Krafttraining, -s",
+              "arabic": "تمارين رفع الأثقال وبناء القوة البدنية",
+              "english": "strength training, weight training",
+              "example": "Ein ausgewogenes Krafttraining schützt vor Rückenbeschwerden im Alter."
+            },
+            {
+              "german": "die Dehnung, -en",
+              "arabic": "تمارين الإطالة والتمدد العضلي",
+              "english": "stretching",
+              "example": "Regelmäßige Dehnung verbessert die Beweglichkeit und Geschmeidigkeit der Gelenke."
+            },
+            {
+              "german": "der Muskelkrampf, -̈e",
+              "arabic": "التشنج والتقلص العضلي المفاجئ",
+              "english": "muscle cramp",
+              "example": "Mitten in der Nacht weckte ihn ein plötzlicher Muskelkrampf in der Wade auf."
+            },
+            {
+              "german": "das Muskelgewebe, -",
+              "arabic": "النسيج العضلي الحيوي",
+              "english": "muscle tissue",
+              "example": "Ausreichend Eiweiß in der Nahrung unterstützt die Reparatur von Muskelgewebe."
+            }
+          ],
+          "description": "Muskulatur, Sehnen, Muskelkraft, Bizeps, Zerrungen, Muskelkater und Krafttraining.",
+          "details": "Muskelphysiologie, Kontraktion, Dehnen, Krämpfe, Regeneration und Sportbiologie (A1–B2)",
+          "arabicDescription": "العضلات والجهاز العضلي (Die Muskeln): العضلات (Muskel)، الأوتار (Sehne)، القوة العضلية، عضلة البايسبس، الشد العضلي (Muskelzerrung)، ألم العضلات بعد التمرين (Muskelkater)، شد وإرخاء العضلات، تمارين القوة والشد، والتقلص العضلي (Krampf).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Starke Muskeln durch Sport",
+              "intro": "Einfache Sätze über Muskeln, Kraft und Bewegung (A1).",
+              "paragraphs": [
+                [
+                  "Unser Körper hat über sechshundert [der Muskel, -n|Muskeln].",
+                  "Wenn ich den Arm beuge, wird [der Bizeps, -e|mein Bizeps] hart.",
+                  "Ich kann die Muskeln [anspannen|anspannen] und wieder [entspannen|entspannen]."
+                ],
+                [
+                  "Mit viel [die Muskelkraft (Sg.)|Muskelkraft] kann ich schwere Kisten heben.",
+                  "Ich mache gern Sport und laufe im Park.",
+                  "Aber wenn ich zu viel trainiere, habe ich am nächsten Morgen [der Muskelkater, -|Muskelkater]."
+                ],
+                ["Ein heißes Bad hilft gegen die Schmerzen."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Im Fitnessstudio: Richtig trainieren",
+              "intro": "Krafttraining, Aufwärmen, Dehnung und Muskelkrämpfe (A2).",
+              "paragraphs": [
+                [
+                  "Zweimal pro Woche gehe ich ins Sportzentrum, um gezieltes [das Krafttraining, -s|Krafttraining] zu machen.",
+                  "Vor dem Heben schwerer Gewichte wärme ich mich immer auf dem Laufband auf."
+                ],
+                [
+                  "Nach den Übungen mache ich sanfte [die Dehnung, -en|Dehnungen], um Verletzungen vorzubeugen.",
+                  "Früher hatte ich oft [der Muskelkrampf, -̈e|einen schmerzhaften Muskelkrampf] beim Schlafen.",
+                  "Seitdem ich mehr Magnesium nehme und [die Sehne, -n|die Sehnen] regelmäßig dehne, geht es mir viel besser."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Funktionelle Muskelphysiologie und Verletzungsprävention",
+              "intro": "Zusammenspiel von Agonisten und Antagonisten, Zerrungen und Mikrotraumata (B1).",
+              "paragraphs": [
+                [
+                  "Jede gezielte Körperbewegung basiert auf dem antagonistischen Prinzip der Muskulatur.",
+                  "Während sich ein Beugemuskel wie [der Bizeps, -e|der Bizeps] zusammenzieht, muss der Gegenspieler nachgeben und sich [entspannen|entspannen]."
+                ],
+                [
+                  "Plötzliche Überlastungen bei unzureichendem Aufwärmen führen leicht zu [die Muskelzerrung, -en|einer schmerzhaften Muskelzerrung].",
+                  "Der berüchtigte [der Muskelkater, -|Muskelkater] resultiert hingegen nicht aus Milchsäure, sondern aus mikroskopisch kleinen Rissen in [das Muskelgewebe, -|dem Muskelgewebe], die während der Regenerationsphase heilen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Myofibrilläre Kontraktion, Hypertrophie und Sehnenbiomechanik",
+              "intro": "Aktin-Myosin-Filamente, Sarkomere und Sehnenelastizität (B2).",
+              "paragraphs": [
+                [
+                  "Auf zellulärer Ebene vollzieht sich die Kontraktion von [der Muskel, -n|Muskeln] durch das Ineinandergleiten von Aktin- und Myosinfilamenten unter Spaltung von Adenosintriphosphat (ATP).",
+                  "Gezieltes progressives [das Krafttraining, -s|Krafttraining] setzt mechanische Spannungsreize, die über Proteinsynthese zur Hypertrophie der Muskelfasern führen."
+                ],
+                [
+                  "Kollagene [die Sehne, -n|Sehnen] besitzen zwar hohe Zugfestigkeit, adaptieren jedoch aufgrund geringerer Vaskularisierung deutlich langsamer an Belastungssteigerungen als vaskularisiertes Gewebe."
+                ],
+                [
+                  "Präventives Stabitraining und gezielte Mobilitätsroutinen erhalten die neuromuskuläre Balance und minimieren das Risiko chronischer Überlastungssyndrome."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_skelett",
+          "title": "Das Skelett",
+          "words": [
+            {
+              "german": "das Skelett, -e",
+              "arabic": "الهيكل العظمي الكامل",
+              "english": "skeleton",
+              "example": "Das menschliche Skelett besteht bei Erwachsenen aus über zweihundert Knochen."
+            },
+            {
+              "german": "der Knochen, -",
+              "arabic": "العظم",
+              "english": "bone",
+              "example": "Kalzium und Vitamin D sind unentbehrlich für harte, gesunde Knochen."
+            },
+            {
+              "german": "die Wirbelsäule, -n",
+              "arabic": "العمود الفقري",
+              "english": "spine, vertebral column",
+              "example": "Die doppel-s-förmige Wirbelsäule federt Stöße beim Laufen elastisch ab."
+            },
+            {
+              "german": "der Schädel, -",
+              "arabic": "الجمجمة (عظام الرأس)",
+              "english": "skull, cranium",
+              "example": "Der massive knöcherne Schädel schützt das empfindliche Gehirn vor Verletzungen."
+            },
+            {
+              "german": "die Rippe, -n",
+              "arabic": "الضلع في القفص الصدري",
+              "english": "rib",
+              "example": "Zwölf Rippenpaare umschließen das Herz und die Lungenflügel im Brustkorb."
+            },
+            {
+              "german": "das Becken, -",
+              "arabic": "عظام الحوض",
+              "english": "pelvis",
+              "example": "Das breite Becken verbindet den Rumpf stabil mit den Beinen."
+            },
+            {
+              "german": "das Gelenk, -e",
+              "arabic": "المفصل العظمي الحركي",
+              "english": "joint (anatomy)",
+              "example": "Das Kniegelenk ist das größte und am stärksten belastete Gelenk des Menschen."
+            },
+            {
+              "german": "der Knorpel, -",
+              "arabic": "الغضروف المفصلي العازل",
+              "english": "cartilage",
+              "example": "Der glatte Knorpel verhindert, dass die Knochenenden schmerzhaft aneinander reiben."
+            },
+            {
+              "german": "das Knochenmark (Sg.)",
+              "arabic": "نخاع العظم (مصنع خلايا الدم)",
+              "english": "bone marrow",
+              "example": "Im roten Knochenmark werden täglich Milliarden neuer Blutzellen gebildet."
+            },
+            {
+              "german": "der Knochenbruch, -̈e",
+              "arabic": "كسر العظم (الشرخ أو الكسر الكامل)",
+              "english": "bone fracture, broken bone",
+              "example": "Nach dem Skiunfall musste der Knochenbruch mit einer Schiene ruhiggestellt werden."
+            },
+            {
+              "german": "die Körperhaltung, -en",
+              "arabic": "وضعية وقامة الجسم",
+              "english": "posture, body posture",
+              "example": "Eine aufrechte Körperhaltung beugt Nackenschmerzen und Bandscheibenvorfällen vor."
+            },
+            {
+              "german": "die Knochendichte, -n",
+              "arabic": "كثافة وصلابة العظام",
+              "english": "bone density",
+              "example": "Mit zunehmendem Alter sollte man die Knochendichte zur Osteoporose-Vorsorge messen lassen."
+            }
+          ],
+          "description": "Knochen, Wirbelsäule, Schädel, Rippen, Becken, Gelenke, Knorpel und Knochenbrüche.",
+          "details": "Osteologie, Skelettsystem, Gelenkmechanik, Knochendichte und Haltung (A1–B2)",
+          "arabicDescription": "الهيكل العظمي (Das Skelett): الهيكل العظمي، العظام (Knochen)، العمود الفقري (Wirbelsäule)، الجمجمة (Schädel)، الأضلاع (Rippe)، الحوض (Becken)، المفاصل (Gelenk)، الغضاريف (Knorpel)، نخاع العظم، كسور العظام (Knochenbruch)، واستقامة القامة.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Das Skelett hält uns aufrecht",
+              "intro": "Einfache Sätze über Knochen, Kopf und Wirbelsäule (A1).",
+              "paragraphs": [
+                [
+                  "Ohne [das Skelett, -e|unser Skelett] könnten wir nicht stehen.",
+                  "Im Körper gibt es viele harte [der Knochen, -|Knochen].",
+                  "Oben schützt [der Schädel, -|der Schädel] unser Gehirn."
+                ],
+                [
+                  "Im Rücken verläuft [die Wirbelsäule, -n|die lange Wirbelsäule].",
+                  "Im Brustkorb liegen [die Rippe, -n|die Rippen] wie ein Käfig um das Herz.",
+                  "Zwei Knochen treffen sich in [das Gelenk, -e|einem Gelenk], damit wir uns bewegen können."
+                ],
+                [
+                  "Milch und Sonnenlicht machen unsere Knochen stark und gesund."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Röntgenbild nach dem Fahrradunfall",
+              "intro": "Knochenbrüche, Gipsverbände und gesunde Haltung (A2).",
+              "paragraphs": [
+                [
+                  "Vor zwei Monaten stürzte mein Kollege Jonas unglücklich mit dem Fahrrad.",
+                  "Sein Arm schwoll sofort an und er hatte große Schmerzen.",
+                  "Im Krankenhaus machte der Arzt ein Röntgenbild und stellte [der Knochenbruch, -̈e|einen Knochenbruch] an der Speiche fest."
+                ],
+                [
+                  "Der Arm wurde für sechs Wochen eingegipst, damit der Knochen wieder zusammenwachsen konnte.",
+                  "Heute achtet Jonas viel mehr auf seine [die Körperhaltung, -en|Körperhaltung] und stärkt seinen Rücken durch Schwimmen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Das Achsenskelett und die Belastbarkeit des Bewegungsapparats",
+              "intro": "Bandscheiben, Gelenkknorpel und Knochenumbauprozesse (B1).",
+              "paragraphs": [
+                [
+                  "Das menschliche [das Skelett, -e|Skelett] erfüllt eine doppelte Funktion: Es gewährleistet biomechanische Stabilität und schützt lebenswichtige Organe.",
+                  "Die geschwungene Form von [die Wirbelsäule, -n|der Wirbelsäule] dämpft zusammen mit den Bandscheiben axiale Druckkräfte effektiv ab."
+                ],
+                [
+                  "Im Gelenkspalt überzieht elastischer [der Knorpel, -|Knorpel] die Knochenenden und minimiert Reibungswiderstände.",
+                  "Wird diese Knorpelschicht durch Fehlbelastungen abgenutzt, entsteht schmerzhafte Arthrose in [das Gelenk, -e|den Gelenken]."
+                ],
+                [
+                  "Ein oft verkannter Aspekt: Im Inneren der Röhrenknochen produziert [das Knochenmark (Sg.)|das Knochenmark] lebenswichtige Erythrozyten und Leukozyten."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Osteozytäre Remodellierung, Gelenkarthrosen und Osteoporose",
+              "intro": "Osteoklasten, Osteoblasten, Mineralisation und biomechanische Kraftübertragung (B2).",
+              "paragraphs": [
+                [
+                  "Knochengewebe ist kein starres Kalziumgerüst, sondern ein dynamisch aktives Stoffwechselorgan.",
+                  "Das Gleichgewicht zwischen Knochenaufbau durch Osteoblasten und Knochenresorption durch Osteoklasten determiniert [die Knochendichte, -n|die Knochendichte] eines Individuums."
+                ],
+                [
+                  "Hormonelle Umstellungen im Senium können diese Balance stören und zu systemischer Osteoporose führen, was das Risiko für pathologische [der Knochenbruch, -̈e|Knochenbrüche] drastisch erhöht."
+                ],
+                [
+                  "Im Bereich von [das Becken, -|Becken] und Hüftgelenken wirken gigantische Hebelkräfte, deren physiologische Verteilung von einer intakten Rumpfmuskulatur und einer ergonomischen [die Körperhaltung, -en|Körperhaltung] abhängt."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_inneren_organe",
+          "title": "Die inneren Organe",
+          "words": [
+            {
+              "german": "das innere Organ, -e",
+              "arabic": "العضو الداخلي في جسم الإنسان",
+              "english": "internal organ",
+              "example": "Jedes innere Organ erfüllt eine hochspezialisierte Aufgabe im Organismus."
+            },
+            {
+              "german": "das Herz, -en",
+              "arabic": "القلب (مضخة الدم الحيوية)",
+              "english": "heart",
+              "example": "Das gesunde Herz schlägt im Ruhezustand etwa sechzig bis achtzig Mal pro Minute."
+            },
+            {
+              "german": "die Lunge, -n",
+              "arabic": "الرئة (عضو التنفس)",
+              "english": "lung",
+              "example": "Die Lunge nimmt frischen Sauerstoff aus der Luft auf und gibt Kohlendioxid ab."
+            },
+            {
+              "german": "der Magen, -̈",
+              "arabic": "المعدة (عضو هضم الطعام)",
+              "english": "stomach",
+              "example": "Nach dem üppigen Festmahl lag das schwere Essen wie ein Stein im Magen."
+            },
+            {
+              "german": "die Leber, -n",
+              "arabic": "الكبد (عضو إزالة السموم والتمثيل)",
+              "english": "liver",
+              "example": "Die Leber ist das größte Entgiftungsorgan unseres Körpers und speichert Nährstoffe."
+            },
+            {
+              "german": "die Niere, -n",
+              "arabic": "الكلية (عضو تنقية وتصفية الدم)",
+              "english": "kidney",
+              "example": "Zwei gesunde Nieren filtern Abfallstoffe aus dem Blut und scheiden Urin aus."
+            },
+            {
+              "german": "der Darm, -̈e",
+              "arabic": "الأمعاء (الدقيقة والغليظة)",
+              "english": "intestine, bowel, gut",
+              "example": "Ein großer Teil unseres Immunsystems ist im Darm angesiedelt."
+            },
+            {
+              "german": "das Gehirn, -e",
+              "arabic": "الدماغ والمخ",
+              "english": "brain",
+              "example": "Das Gehirn steuert alle Gedanken, Bewegungen und lebenswichtigen Reflexe."
+            },
+            {
+              "german": "die Bauchspeicheldrüse, -n",
+              "arabic": "البنكرياس (غدة إفراز الإنسولين)",
+              "english": "pancreas",
+              "example": "Die Bauchspeicheldrüse produziert wichtiges Insulin zur Regulierung des Blutzuckers."
+            },
+            {
+              "german": "die Gallenblase, -n",
+              "arabic": "المرارة / كيس الصفراء",
+              "english": "gallbladder",
+              "example": "In der Gallenblase wird Verdauungssaft für die Fettspaltung gespeichert."
+            },
+            {
+              "german": "die Milz, -en",
+              "arabic": "الطحال",
+              "english": "spleen",
+              "example": "Die Milz baut überalterte rote Blutkörperchen ab und unterstützt die Immunabwehr."
+            },
+            {
+              "german": "die Harnblase, -n",
+              "arabic": "المثانة البولية",
+              "english": "urinary bladder",
+              "example": "Wenn die Harnblase voll ist, signalisieren Nervenimpulse Harndrang."
+            }
+          ],
+          "description": "Herz, Lunge, Magen, Leber, Nieren, Darm, Gehirn und Bauchspeicheldrüse.",
+          "details": "Innere Anatomie, Organfunktionen, Vitalwerte, Entgiftung und Sauerstoffversorgung (A1–B2)",
+          "arabicDescription": "الأعضاء الداخلية (Die inneren Organe): الأعضاء الحيوية، القلب (Herz)، الرئتان (Lunge)، المعدة (Magen)، الكبد (Leber)، الكلى (Niere)، الأمعاء (Darm)، الدماغ (Gehirn)، والبنكرياس (Bauchspeicheldrüse) والمرارة والطحال.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Was arbeitet in unserem Bauch?",
+              "intro": "Einfache Sätze über Herz, Magen, Lunge und Gehirn (A1).",
+              "paragraphs": [
+                [
+                  "In unserem Körper schlägt [das Herz, -en|das Herz].",
+                  "Es pumpt Tag und Nacht Blut durch den Körper.",
+                  "Mit [die Lunge, -n|der Lunge] atmen wir frische Luft ein."
+                ],
+                [
+                  "Wenn wir essen, kommt das Essen zuerst in [der Magen, -̈|den Magen].",
+                  "Danach geht die Nahrung weiter in [der Darm, -̈e|den Darm].",
+                  "Oben im Kopf denkt [das Gehirn, -e|das Gehirn]."
+                ],
+                [
+                  "Jedes [das innere Organ, -e|innere Organ] ist ein echtes Wunder der Natur."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Gesunde Organe durch gute Ernährung",
+              "intro": "Leber, Nieren, Wasser trinken und Blutzuckerspiegel (A2).",
+              "paragraphs": [
+                [
+                  "Um unsere Organe fit zu halten, müssen wir auf einen gesunden Lebensstil achten.",
+                  "Wer täglich zwei Liter Wasser trinkt, hilft [die Niere, -n|den beiden Nieren], Schadstoffe aus dem Körper zu spülen."
+                ],
+                [
+                  "Auf fettiges Essen und Alkohol reagiert [die Leber, -n|die Leber] empfindlich, weil sie schwer arbeiten muss.",
+                  "Auch [die Bauchspeicheldrüse, -n|die Bauchspeicheldrüse] braucht Pausen von zu viel Zucker, um den Blutzuckerspiegel stabil zu halten."
+                ],
+                [
+                  "Mit viel Gemüse und Bewegung fühlen sich alle Organe rundum wohl."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Das komplexe Zusammenspiel der inneren Organe",
+              "intro": "Kreislauf, Gasaustausch, Filterfunktionen und Darm-Hirn-Achse (B1).",
+              "paragraphs": [
+                [
+                  "Der menschliche Organismus gleicht einem hochentwickelten Chemiewerk, in dem jedes [das innere Organ, -e|innere Organ] mit den anderen vernetzt ist.",
+                  "Während [das Herz, -en|das Herz] als unermüdlicher Muskel das Blut durch den Körper treibt, garantiert [die Lunge, -n|die Lunge] die kontinuierliche Oxygenierung."
+                ],
+                [
+                  "Gleichzeitig arbeiten [die Leber, -n|die Leber] und [die Niere, -n|die Nieren] rund um die Uhr als körpereigene Kläranlagen.",
+                  "Die moderne Forschung betont zudem die faszinierende 'Darm-Hirn-Achse': Das Mikrobiom in [der Darm, -̈e|dem Darm] kommuniziert über neuronale Botenstoffe direkt mit [das Gehirn, -e|dem Gehirn] und beeinflusst sogar unsere seelische Verfassung."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Viszerale Homöostase, Endokrinologie und Organinsuffizienzen",
+              "intro": "Kardiopulmonale Kopplung, hepatische Clearance und Glukose-Homöostase (B2).",
+              "paragraphs": [
+                [
+                  "Die viszerale Homöostase stützt sich auf hochkomplexe Rückkopplungsschleifen zwischen ZNS, Vegetativum und Organsystemen.",
+                  "Ein partieller Funktionsverlust der [die Bauchspeicheldrüse, -n|Bauchspeicheldrüse] (Insulinsekretionsdefizit) induziert systemische Stoffwechselentgleisungen (Diabetes mellitus)."
+                ],
+                [
+                  "Ebenso führt eine kardiale Dekompensation von [das Herz, -en|dem Herzen] sekundär zu venösen Rückstauungen in [die Leber, -n|der Leber] und pulmonalen Ödemen in [die Lunge, -n|den Lungen]."
+                ],
+                [
+                  "Die Entschlüsselung dieser interdependenten pathophysiologischen Kaskaden ist die Grundlage moderner innerer Medizin und Intensivtherapie."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_koerpersysteme",
+          "title": "Die Körpersysteme",
+          "words": [
+            {
+              "german": "das Körpersystem, -e",
+              "arabic": "الجهاز الحيوي في الجسم (العصبي، الدوري، إلخ)",
+              "english": "body system, organ system",
+              "example": "Jedes Körpersystem arbeitet harmonisch mit den anderen Systemen zusammen."
+            },
+            {
+              "german": "der Blutkreislauf, -̈e",
+              "arabic": "الدورة الدموية",
+              "english": "blood circulation, circulatory system",
+              "example": "Körperliche Aktivität bringt den Blutkreislauf in Schwung und stärkt die Gefäße."
+            },
+            {
+              "german": "das Nervensystem, -e",
+              "arabic": "الجهاز العصبي المركزي والمحيطي",
+              "english": "nervous system",
+              "example": "Das Nervensystem leitet Sinnesreize in Millisekundenschnelle an das Rückenmark weiter."
+            },
+            {
+              "german": "das Immunsystem, -e",
+              "arabic": "جهاز المناعة والدفاع الحيوي",
+              "english": "immune system",
+              "example": "Ein starkes Immunsystem wehrt Viren und bakterielle Erreger erfolgreich ab."
+            },
+            {
+              "german": "die Verdauung (Sg.)",
+              "arabic": "عملية الهضم",
+              "english": "digestion",
+              "example": "Ballaststoffreiche Vollkornprodukte fördern eine gesunde und regelmäßige Verdauung."
+            },
+            {
+              "german": "die Atmung (Sg.)",
+              "arabic": "عملية التنفس والشهيق والزفير",
+              "english": "respiration, breathing",
+              "example": "Bei Panikattacken hilft eine bewusste, langsame Atmung in den Bauchraum."
+            },
+            {
+              "german": "das Hormonsystem, -e",
+              "arabic": "جهاز الغدد الصماء والهرمونات",
+              "english": "endocrine system, hormone system",
+              "example": "Das Hormonsystem steuert Wachstum, Schlaf-Wach-Rhythmus und Fortpflanzung."
+            },
+            {
+              "german": "das Lymphsystem, -e",
+              "arabic": "الجهاز اللمفاوي ونقل السوائل",
+              "english": "lymphatic system",
+              "example": "Das Lymphsystem transportiert Gewebeflüssigkeit ab und filtert Krankheitserreger in den Knoten."
+            },
+            {
+              "german": "der Stoffwechsel, -",
+              "arabic": "التمثيل الغذائي والأيض (الميتابوليزم)",
+              "english": "metabolism",
+              "example": "Ein aktiver Stoffwechsel verbrennt Kalorien effizient und spendet Energie."
+            },
+            {
+              "german": "die Abwehrkraft, -̈e",
+              "arabic": "قوة الدفاع والمقاومة المناعية",
+              "english": "immune defenses, resistance",
+              "example": "Ausreichender Schlaf und Vitamine stärken die natürlichen Abwehrkräfte."
+            },
+            {
+              "german": "die Blutgefäße (Pl.)",
+              "arabic": "الأوعية الدموية (شرايين وأوردة)",
+              "english": "blood vessels",
+              "example": "Durch elastische Blutgefäße fließt das sauerstoffreiche Blut in jeden Muskel."
+            },
+            {
+              "german": "die Regulierung, -en",
+              "arabic": "التنظيم والضبط الذاتي الداخلي",
+              "english": "regulation (biological)",
+              "example": "Die automatische Regulierung der Körperkerntemperatur schützt vor Überhitzung."
+            }
+          ],
+          "description": "Blutkreislauf, Nervensystem, Immunsystem, Verdauung, Atmung und Stoffwechsel.",
+          "details": "Systemische Physiologie, Hormone, Lymphe, Vitalfunktionen und Bio-Regulierung (A1–B2)",
+          "arabicDescription": "أجهزة الجسم الحيوية (Die Körpersysteme): أجهزة الجسم، الدورة الدموية (Blutkreislauf)، الجهاز العصبي (Nervensystem)، جهاز المناعة (Immunsystem)، الجهاز الهضمي (Verdauung)، الجهاز التنفسي (Atmung)، جهاز الغدد الصماء (Hormonsystem)، الجهاز اللمفاوي، وعملية التمثيل الغذائي (Stoffwechsel).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Wie arbeitet unser Körper?",
+              "intro": "Einfache Sätze über Blut, Atmung und Essen (A1).",
+              "paragraphs": [
+                [
+                  "Unser Körper hat tolle Systeme.",
+                  "[der Blutkreislauf, -̈e|Der Blutkreislauf] bringt Blut in jeden Finger und Fuß.",
+                  "Mit [die Atmung (Sg.)|der Atmung] holen wir Sauerstoff in die Lungen."
+                ],
+                [
+                  "Wenn wir essen, startet [die Verdauung (Sg.)|die Verdauung] im Bauch.",
+                  "Gegen Schnupfen und Husten schützt uns [das Immunsystem, -e|das Immunsystem].",
+                  "Viele Nerven melden Schmerzen an den Kopf."
+                ],
+                [
+                  "Alle [das Körpersystem, -e|Körpersysteme] arbeiten zusammen wie ein großes Team."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Fit durch die kalte Jahreszeit",
+              "intro": "Immunsystem stärken, Abwehrkräfte und gesunder Stoffwechsel (A2).",
+              "paragraphs": [
+                [
+                  "Im nasskalten Herbst werden viele Menschen krank und bekommen Erkältungen.",
+                  "Um meine [die Abwehrkraft, -̈e|Abwehrkräfte] zu stärken, gehe ich jeden Tag an der frischen Luft spazieren.",
+                  "Die Kälte regt [der Blutkreislauf, -̈e|den Blutkreislauf] und [der Stoffwechsel, -|den Stoffwechsel] an."
+                ],
+                [
+                  "Mit frischem Obst und warmem Ingwertee unterstützen wir [das Immunsystem, -e|das Immunsystem].",
+                  "Wer sich regelmäßig bewegt, verbessert auch [die Atmung (Sg.)|seine Atmung] und schläft nachts tiefer."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Ganzheitliche Vernetzung der biologischen Regelsysteme",
+              "intro": "Neuro-endokrine Achsen, Lymphe und Homöostase (B1).",
+              "paragraphs": [
+                [
+                  "Der Erhalt des Lebens beruht auf der permanenten Abstimmung spezialisierter Körpersysteme.",
+                  "Während [das Nervensystem, -e|das Nervensystem] über elektrische Potenziale blitzschnell auf akute Reize reagiert, übernimmt [das Hormonsystem, -e|das Hormonsystem] die langfristige hormonelle Steuerung."
+                ],
+                [
+                  "Parallel dazu sorgt [das Lymphsystem, -e|das Lymphsystem] für den Flüssigkeitsausgleich im Gewebe und unterstützt die Immunüberwachung.",
+                  "Erst die perfekte [die Regulierung, -en|Regulierung] von Blutdruck, pH-Wert und Blutzuckerspiegel sichert das physiologische Gleichgewicht unseres Körpers."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Systembiologie, Neuroimmunologie und kardiovaskuläre Hämodynamik",
+              "intro": "Psychoneuroimmunologie, Endothelfunktion und zelluläre Signaltransduktion (B2).",
+              "paragraphs": [
+                [
+                  "Die Systembiologie bricht mit dem mechanistischen Organparadigma und begreift den Menschen als vernetztes kybernetisches Gefüge.",
+                  "Über die Interaktion von Zytokinen, Neuropeptiden und Hormonen beeinflussen psychische Stressoren unmittelbar [das Immunsystem, -e|das Immunsystem] und die Gefäßgesundheit in [die Blutgefäße (Pl.)|den Blutgefäßen]."
+                ],
+                [
+                  "Störungen im zellulären [der Stoffwechsel, -|Stoffwechsel] (metabolisches Syndrom) schädigen das Endothel und beeinträchtigen [der Blutkreislauf, -̈e|den Blutkreislauf] systemisch."
+                ],
+                [
+                  "Moderne integrative Medizin zielt darauf ab, diese multi-organischen Regelkreise präventiv zu modulieren und adaptive Selbstheilungskräfte zu stärken."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_geschlechtsorgane",
+          "title": "Die Geschlechtsorgane",
+          "words": [
+            {
+              "german": "die Fortpflanzung (Sg.)",
+              "arabic": "التكاثر والإنجاب البشري",
+              "english": "reproduction, procreation",
+              "example": "Die biologische Fortpflanzung sichert das Überleben der menschlichen Art."
+            },
+            {
+              "german": "die Geschlechtsorgane (Pl.)",
+              "arabic": "الأعضاء التناسلية (الذكرية والأنثوية)",
+              "english": "reproductive organs, genitals",
+              "example": "Die inneren und äußeren Geschlechtsorgane unterliegen hormoneller Steuerung."
+            },
+            {
+              "german": "die Gebärmutter, -̈",
+              "arabic": "الرحم",
+              "english": "uterus, womb",
+              "example": "In der Gebärmutter wächst das ungeborene Kind während der Schwangerschaft heran."
+            },
+            {
+              "german": "der Eierstock, -̈e",
+              "arabic": "المبيض لدى الأنثى",
+              "english": "ovary",
+              "example": "In den beiden Eierstöcken reifen monatlich fruchtbare Eizellen heran."
+            },
+            {
+              "german": "die Eizelle, -n",
+              "arabic": "البويضة الأنثوية",
+              "english": "egg cell, ovum",
+              "example": "Bei der Befruchtung verschmilzt ein Spermium mit der reifen Eizelle."
+            },
+            {
+              "german": "der Hoden, -",
+              "arabic": "الخصية لدى الذكر",
+              "english": "testicle, testis",
+              "example": "In den Hoden werden täglich Millionen beweglicher Samenzellen gebildet."
+            },
+            {
+              "german": "das Spermium, Spermien",
+              "arabic": "الحيوان المنوي",
+              "english": "sperm cell, spermatozoon",
+              "example": "Das Spermium transportiert das väterliche Erbgut zur Eizelle."
+            },
+            {
+              "german": "die Prostata (Sg.)",
+              "arabic": "غدة البروستاتا لدى الذكر",
+              "english": "prostate gland",
+              "example": "Männer ab fünfundvierzig Jahren sollten die Prostata regelmäßig untersuchen lassen."
+            },
+            {
+              "german": "der Hormonhaushalt, -e",
+              "arabic": "التوازن الهرموني في الجسم",
+              "english": "hormonal balance, hormone levels",
+              "example": "Östrogen und Testosteron prägen den individuellen Hormonhaushalt."
+            },
+            {
+              "german": "die Gynäkologie (Sg.)",
+              "arabic": "طب النساء والتوليد",
+              "english": "gynecology",
+              "example": "Die Gynäkologie befasst sich mit der Gesundheit des weiblichen Fortpflanzungssystems."
+            },
+            {
+              "german": "die Urologie (Sg.)",
+              "arabic": "طب المسالك البولية والتناسلية",
+              "english": "urology",
+              "example": "Der Facharzt für Urologie behandelt Erkrankungen der ableitenden Harnwege."
+            },
+            {
+              "german": "die Vorsorgeuntersuchung, -en",
+              "arabic": "الفحص الطبي الوقائي الدوري",
+              "english": "preventive check-up, screening",
+              "example": "Regelmäßige Vorsorgeuntersuchungen ermöglichen eine frühzeitige Erkennung von Tumoren."
+            }
+          ],
+          "description": "Geschlechtsorgane, Fortpflanzung, Gynäkologie, Urologie und Vorsorgeuntersuchungen.",
+          "details": "Medizinische Anatomie, Reproduktionsbiologie, Hormone und Krebsfrüherkennung (A1–B2)",
+          "arabicDescription": "الأجهزة التناسلية والتناسل (Die Geschlechtsorgane): المصطلحات التشريحية الطبية، التكاثر والإنجاب (Fortpflanzung)، الرحم (Gebärmutter)، المبيض، البويضة، الخصية، الحيوانات المنوية، البروستاتا، الهرمونات، طب النساء (Gynäkologie)، طب المسالك البولية والذكورة (Urologie)، والفحوصات الدورية الوقائية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Gesundheit und der Körper",
+              "intro": "Einfache Sätze über Fachärzte, Gesundheit und Vorsorge (A1).",
+              "paragraphs": [
+                [
+                  "Jeder Mensch hat einen einzigartigen Körper.",
+                  "Frauen und Männer haben unterschiedliche [die Geschlechtsorgane (Pl.)|Geschlechtsorgane].",
+                  "Diese Organe sind wichtig für das Leben und [die Fortpflanzung (Sg.)|die Fortpflanzung]."
+                ],
+                [
+                  "Für Frauen gibt es eine eigene Fachärztin in [die Gynäkologie (Sg.)|der Gynäkologie].",
+                  "Männer gehen bei Beschwerden in [die Urologie (Sg.)|die Urologie].",
+                  "Einmal im Jahr sollte man eine [die Vorsorgeuntersuchung, -en|Vorsorgeuntersuchung] machen lassen."
+                ],
+                ["Gesundheit ist das Wichtigste im Leben."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Der Gang zum Facharzt",
+              "intro": "Vorsorge, Aufklärung und gesundheitliche Achtsamkeit (A2).",
+              "paragraphs": [
+                [
+                  "In Deutschland legen Ärzte großen Wert auf präventive Untersuchungen.",
+                  "Frauenärzte untersuchen [die Gebärmutter, -̈|die Gebärmutter] und die Brust, um Krankheiten früh zu erkennen."
+                ],
+                [
+                  "Auch Männer sollten ab einem bestimmten Alter zur Vorsorge gehen und [die Prostata (Sg.)|die Prostata] prüfen lassen.",
+                  "Wenn [der Hormonhaushalt, -e|der Hormonhaushalt] aus dem Gleichgewicht gerät, kann das zu Müdigkeit oder Stimmungsschwankungen führen."
+                ],
+                [
+                  "Ein offenes Gespräch mit dem Arzt hilft, Ängste abzubauen und gesund zu bleiben."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Biologische Fortpflanzung und moderne Präventionsmedizin",
+              "intro": "Reproduktionsorgane, Zellbiologie und Screening-Programme (B1).",
+              "paragraphs": [
+                [
+                  "Die menschliche [die Fortpflanzung (Sg.)|Fortpflanzung] beruht auf einem hochpräzisen Zusammenspiel mikroskopischer Prozesse.",
+                  "In [der Eierstock, -̈e|den Eierstöcken] reift [die Eizelle, -n|die Eizelle] heran, während in [der Hoden, -|den Hoden] kontinuierlich [das Spermium, Spermien|Spermien] produziert werden."
+                ],
+                [
+                  "Zur Gesunderhaltung des Urogenitaltrakts bieten die Krankenkassen strukturierte [die Vorsorgeuntersuchung, -en|Vorsorgeuntersuchungen] an.",
+                  "Sowohl in [die Gynäkologie (Sg.)|der Gynäkologie] als auch in [die Urologie (Sg.)|der Urologie] können Krebserkrankungen durch zytologische Abstriche und Ultraschall bereits in symptomfreien Frühstadien geheilt werden."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Endokrine Regelkreise, Reproduktionsmedizin und Onkologie",
+              "intro": "Hypothalamus-Hypophysen-Gonaden-Achse, Gametogenese und Fertilitätstherapie (B2).",
+              "paragraphs": [
+                [
+                  "Die funktionelle Reifung der Gameten wird über die Hypothalamus-Hypophysen-Gonaden-Achse durch GnRH, LH und FSH orchestriert.",
+                  "Störungen im hormonellen Feedback können [der Hormonhaushalt, -e|den Hormonhaushalt] destabilisieren und Infertilität auslösen, die heute im Rahmen reproduktionsmedizinischer Verfahren (IVF, ICSI) therapiert werden kann."
+                ],
+                [
+                  "Onkologisch stehen hormonabhängige Tumore wie das Prostatakarzinom in [die Prostata (Sg.)|der Prostata] oder das Zervixkarzinom in [die Gebärmutter, -̈|der Gebärmutter] im Fokus evidenzbasierter Screening-Leitlinien."
+                ],
+                [
+                  "Die Kombination aus HPV-Impfung und molekularer Diagnostik markiert einen Meilenstein in der Primärprävention malignitärer Erkrankungen."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "schwangerschaft_und_geburt",
+      "title": "SCHWANGERSCHAFT UND GEBURT",
+      "topics": [
+        {
+          "id": "schwangerschaft_und_geburt",
+          "title": "Schwangerschaft und Geburt",
+          "words": [
+            {
+              "german": "die Schwangerschaft, -en",
+              "arabic": "فترة الحمل (تسعة أشهر)",
+              "english": "pregnancy",
+              "example": "Während der Schwangerschaft ernährt sich die werdende Mutter besonders gesund."
+            },
+            {
+              "german": "die Geburt, -en",
+              "arabic": "الولادة / وضع الجنين",
+              "english": "birth, childbirth",
+              "example": "Die Geburt des ersten Kindes war für die Eltern ein zutiefst bewegender Moment."
+            },
+            {
+              "german": "das Neugeborene, -n",
+              "arabic": "الطفل حديث الولادة (الرضيع)",
+              "english": "newborn baby, neonate",
+              "example": "Das Neugeborene schlief friedlich in den Armen seiner erschöpften Mutter."
+            },
+            {
+              "german": "die Hebamme, -n",
+              "arabic": "القابلة القانونية / الداية المرخّصة",
+              "english": "midwife",
+              "example": "Die erfahrene Hebamme betreut die Familie vor, während und nach der Entbindung."
+            },
+            {
+              "german": "der Ultraschall, -e",
+              "arabic": "التصوير بالموجات فوق الصوتية (السونار)",
+              "english": "ultrasound, sonogram",
+              "example": "Auf dem Ultraschall konnte der Arzt die winzigen Hände des Babys deutlich erkennen."
+            },
+            {
+              "german": "der Kreißsaal, -̈e",
+              "arabic": "صالة وغرفة التوليد بالمستشفى",
+              "english": "delivery room, labor room",
+              "example": "Mitten in der Nacht fuhr das Paar ins Krankenhaus direkt in den Kreißsaal."
+            },
+            {
+              "german": "die Wehen (Pl.)",
+              "arabic": "آلام وتقلصات المخاض والطلق",
+              "english": "labor contractions, labor pains",
+              "example": "Als die Wehen alle fünf Minuten einsetzten, wussten sie, dass es bald losgeht."
+            },
+            {
+              "german": "der Kaiserschnitt, -e",
+              "arabic": "العملية القيصرية لإخراج الجنين",
+              "english": "Caesarean section, C-section",
+              "example": "Wegen Komplikationen entschieden sich die Ärzte für einen sicheren Kaiserschnitt."
+            },
+            {
+              "german": "die Nabelschnur, -̈e",
+              "arabic": "الحبل السري الرابط بين الأم والجنين",
+              "english": "umbilical cord",
+              "example": "Der stolze Vater durfte nach der Entbindung vorsichtig die Nabelschnur durchtrennen."
+            },
+            {
+              "german": "stillen",
+              "arabic": "ترضع الطفل طبيعياً من الثدي",
+              "english": "to breastfeed, to nurse",
+              "example": "Muttermilch schützt vor Infektionen, wenn Mütter ihr Neugeborenes stillen."
+            },
+            {
+              "german": "der Mutterschutz (Sg.)",
+              "arabic": "فترة حماية الأمومة وإجازة الوضع القانونية المأجورة",
+              "english": "maternity protection period, maternity leave",
+              "example": "In Deutschland beginnt der gesetzliche Mutterschutz sechs Wochen vor dem errechneten Termin."
+            },
+            {
+              "german": "die Elternzeit, -en",
+              "arabic": "إجازة رعاية الطفل للوالدين (مدفوعة ومحمية وظيفياً)",
+              "english": "parental leave",
+              "example": "Beide Elternteile nahmen gemeinsam sechs Monate bezahlte Elternzeit."
+            }
+          ],
+          "description": "Schwangerschaft, Geburt, Hebammen, Ultraschall, Wehen, Kreißsaal und Elternzeit.",
+          "details": "Pränatale Diagnostik, Geburtsphasen, Kaiserschnitt, Stillen und Mutterschutz (A1–B2)",
+          "arabicDescription": "الحمل والولادة (Schwangerschaft und Geburt): فترة الحمل (Schwangerschaft)، الولادة (Geburt)، المولود الجديد (Neugeborenes)، القابلة والمولّدة (Hebamme)، فحص السونار والموجات فوق الصوتية (Ultraschall)، غرفة الولادة (Kreißsaal)، آلام المخاض والطلق (Wehen)، الولادة القيصرية (Kaiserschnitt)، الحبل السري، الرضاعة الطبيعية، وإجازة الأمومة (Mutterschutz/Elternzeit).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein Baby kommt zur Welt",
+              "intro": "Einfache Sätze über Schwangerschaft, Baby und Geburt (A1).",
+              "paragraphs": [
+                [
+                  "Meine Schwester hat ein großes Geheimnis: Sie erwartet ein Baby!",
+                  "Jetzt ist sie in [die Schwangerschaft, -en|der Schwangerschaft].",
+                  "Beim Arzt sieht sie das kleine Kind auf [der Ultraschall, -e|dem Ultraschall]."
+                ],
+                [
+                  "Gestern ging es plötzlich los und sie fuhr in [der Kreißsaal, -̈e|den Kreißsaal].",
+                  "[die Hebamme, -n|Eine liebe Hebamme] half bei [die Geburt, -en|der Geburt].",
+                  "Jetzt liegt [das Neugeborene, -n|das Neugeborene] glücklich im Bettchen."
+                ],
+                [
+                  "Die Mutter kann das kleine Mädchen liebevoll [stillen|stillen]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Vorbereitung auf den neuen Lebensabschnitt",
+              "intro": "Geburtsvorbereitung, Wehen und gesetzlicher Mutterschutz (A2).",
+              "paragraphs": [
+                [
+                  "Vor der Entbindung besuchten Lisa und ihr Mann einen Geburtsvorbereitungskurs.",
+                  "Dort lernten sie Atemtechniken, wenn [die Wehen (Pl.)|die Wehen] einsetzen."
+                ],
+                [
+                  "Sechs Wochen vor dem Termin begann für Lisa [der Mutterschutz (Sg.)|der gesetzliche Mutterschutz], sodass sie nicht mehr arbeiten musste.",
+                  "Als das Baby im Krankenhaus ankam, schnitt der Vater [die Nabelschnur, -̈e|die Nabelschnur] durch.",
+                  "Nach der Geburt beantragte der Vater drei Monate [die Elternzeit, -en|Elternzeit], um viel Zeit mit seiner Familie zu verbringen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Perinatale Betreuung und familienpolitische Leistungen",
+              "intro": "Hebammenversorgung, Kaiserschnitt und Elternzeitmodelle in Deutschland (B1).",
+              "paragraphs": [
+                [
+                  "Das deutsche Gesundheitssystem garantiert werdenden Müttern eine umfassende Vorsorge während [die Schwangerschaft, -en|der Schwangerschaft].",
+                  "Im Mutterpass werden alle Vitalparameter und regelmäßige Befunde aus [der Ultraschall, -e|dem Ultraschall] lückenlos dokumentiert."
+                ],
+                [
+                  "Im modernen [der Kreißsaal, -̈e|Kreißsaal] stehen individuelle Gebärpositionen im Vordergrund; bei medizinischer Notwendigkeit garantiert [der Kaiserschnitt, -e|ein Kaiserschnitt] maximale Sicherheit für Mutter und Kind."
+                ],
+                [
+                  "Nach der Entbindung ist die Nachsorge durch [die Hebamme, -n|eine Hebamme] für [das Neugeborene, -n|das Neugeborene] von unschätzbarem Wert.",
+                  "Gleichzeitig schaffen [der Mutterschutz (Sg.)|Mutterschutz] und das Elterngeld verlässliche finanzielle Rahmenbedingungen für junge Familien."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Perinatologie, Pränataldiagnostik und soziologische Elternschaft",
+              "intro": "Fetomaternale Physiologie, Plazentafunktion und Vereinbarkeit von Beruf und Familie (B2).",
+              "paragraphs": [
+                [
+                  "Die perinatale Medizin verbindet hochentwickelte fetomaternale Diagnostik mit einer personenzentrierten Geburtshilfe.",
+                  "Die Überwachung der fetoplazentaren Einheit über Doppler-Sonografie ermöglicht die frühzeitige Intervention bei intrauterinen Wachstumsretardierungen."
+                ],
+                [
+                  "Während die Physiologie von [die Wehen (Pl.)|Uteruskontraktionen] hormonell durch Oxytocin gesteuert wird, verlangt das Stillmanagement nach der Durchtrennung von [die Nabelschnur, -̈e|der Nabelschnur] fundierte Laktationsberatung."
+                ],
+                [
+                  "Gesellschaftspolitisch stellt die Inanspruchnahme von [die Elternzeit, -en|Elternzeit] durch Väter einen Kulturwandel dar, der traditionelle Rollenmuster aufbricht und partnerschaftliche Fürsorgearbeit etabliert."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "arztbesuch",
+      "title": "DER ARZTBESUCH",
+      "topics": [
+        {
+          "id": "der_arztbesuch",
+          "title": "Der Arztbesuch",
+          "words": [
+            {
+              "german": "der Arztbesuch, -e",
+              "arabic": "زيارة الطبيب والمراجعة الطبية",
+              "english": "doctor's appointment, visit to the doctor",
+              "example": "Wegen meiner anhaltenden Halsschmerzen war ein Arztbesuch unumgänglich."
+            },
+            {
+              "german": "die Arztpraxis, Arztpraxen",
+              "arabic": "عيادة الطبيب الخاصة",
+              "english": "doctor's office, practice",
+              "example": "Die Arztpraxis meines Hausarztes liegt direkt am Marktplatz."
+            },
+            {
+              "german": "das Wartezimmer, -",
+              "arabic": "غرفة واستراحة الانتظار للمرضى",
+              "english": "waiting room",
+              "example": "Im voll besetzten Wartezimmer lasen die Patienten geduldig Zeitschriften."
+            },
+            {
+              "german": "die Versichertenkarte, -n",
+              "arabic": "بطاقة التأمين الصحي الإلكترونية (eGK)",
+              "english": "health insurance card",
+              "example": "Legen Sie bitte Ihre Versichertenkarte am Empfangstresen vor."
+            },
+            {
+              "german": "das Rezept, -e",
+              "arabic": "الوصفة والروشتة الطبية للأدوية",
+              "english": "prescription (medical)",
+              "example": "Der Arzt stellte mir ein Rezept für antibiotische Tabletten aus."
+            },
+            {
+              "german": "die Krankschreibung, -en",
+              "arabic": "الإجازة المرضية الرسمية للعمل (الشهادة الطبية)",
+              "english": "sick note, certificate of incapacity for work",
+              "example": "Ich erhielt eine dreitägige Krankschreibung für meinen Arbeitgeber."
+            },
+            {
+              "german": "die Diagnose, -n",
+              "arabic": "التشخيص الطبي للحالة المرضية",
+              "english": "diagnosis",
+              "example": "Nach gründlicher Untersuchung lautete die Diagnose akute Bronchitis."
+            },
+            {
+              "german": "das Stethoskop, -e",
+              "arabic": "السماعة الطبية لفحص الصدر والقلب",
+              "english": "stethoscope",
+              "example": "Mit dem kalten Stethoskop hörte der Internist die Lunge des Patienten ab."
+            },
+            {
+              "german": "der Blutdruck (Sg.)",
+              "arabic": "ضغط الدم في الشرايين",
+              "english": "blood pressure",
+              "example": "Die Krankenschwester maß meinen Blutdruck und notierte die Werte in der Akte."
+            },
+            {
+              "german": "das Fieberthermometer, -",
+              "arabic": "ميزان قياس حرارة الجسم (الترمومتر)",
+              "english": "clinical thermometer, fever thermometer",
+              "example": "Das digitale Fieberthermometer zeigte eine erhöhte Temperatur von 38,5 Grad an."
+            },
+            {
+              "german": "die Behandlung, -en",
+              "arabic": "العلاج الطبي والرعاية الصحية",
+              "english": "treatment, medical care",
+              "example": "Die medikamentöse Behandlung schlug bereits nach wenigen Tagen gut an."
+            },
+            {
+              "german": "untersuchen",
+              "arabic": "يفحص طبياً ويعاين المريض",
+              "english": "to examine (medically)",
+              "example": "Der Arzt wird Ihren schmerzenden Hals vorsichtig mit einer Lampe untersuchen."
+            }
+          ],
+          "description": "Arztpraxis, Wartezimmer, Versichertenkarte, Rezept, Krankschreibung, Diagnose und Untersuchung.",
+          "details": "Allgemeinmedizin, Anamnese, Vitalwerte, Stethoskop und Behandlungsplan (A1–B2)",
+          "arabicDescription": "زيارة الطبيب (Der Arztbesuch): عيادة الطبيب (Arztpraxis)، غرفة الانتظار (Wartezimmer)، بطاقة التأمين الصحي (Versichertenkarte)، الوصفة الطبية (Rezept)، التقرير والإجازة المرضية (Krankschreibung/AU)، التشخيص (Diagnose)، السماعة الطبية (Stethoskop)، ضغط الدم، وميزان الحرارة وفحص المريض.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ich gehe heute zum Arzt",
+              "intro": "Einfache Sätze über Praxis, Karte, Arzt und Untersuchung (A1).",
+              "paragraphs": [
+                [
+                  "Ich fühle mich nicht gut und habe Kopfschmerzen.",
+                  "Heute mache ich [der Arztbesuch, -e|einen Arztbesuch].",
+                  "Ich gehe in [die Arztpraxis, Arztpraxen|die Arztpraxis] und gebe [die Versichertenkarte, -n|meine Versichertenkarte] ab."
+                ],
+                [
+                  "Ich nehme im [das Wartezimmer, -|Wartezimmer] Platz und warte kurz.",
+                  "Der Arzt ruft meinen Namen und wird mich [untersuchen|untersuchen].",
+                  "Er hört meinen Rücken mit [das Stethoskop, -e|dem Stethoskop] ab."
+                ],
+                [
+                  "Er schreibt [das Rezept, -e|ein Rezept] für Tabletten und wünscht mir gute Besserung."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Krankgeschrieben mit einer Grippe",
+              "intro": "Fieber messen, Krankschreibung einreichen und Medikamente holen (A2).",
+              "paragraphs": [
+                [
+                  "Gestern wachte ich mit Schüttelfrost und Gliederschmerzen auf.",
+                  "[das Fieberthermometer, -|Das Fieberthermometer] zeigte 39 Grad Fieber an.",
+                  "Ich rief bei meinem Hausarzt an und bekam sofort einen Notfalltermin."
+                ],
+                [
+                  "In der Praxis maß die Assistentin zuerst meinen [der Blutdruck (Sg.)|Blutdruck].",
+                  "Nach einem Blick in meinen Hals stellte der Arzt [die Diagnose, -n|die Diagnose]: ein grippaler Infekt.",
+                  "Er stellte mir [die Krankschreibung, -en|eine Krankschreibung] für die ganze Woche aus, die digital an meine Krankenkasse geschickt wurde."
+                ],
+                [
+                  "Mit viel Ruhe und Tee begann [die Behandlung, -en|meine Behandlung] zu Hause im Bett."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Das Hausarztprinzip und die elektronische Patientenakte",
+              "intro": "Anamnese, Facharztüberweisungen und digitale Gesundheitsversorgung (B1).",
+              "paragraphs": [
+                [
+                  "In Deutschland bildet der Hausarzt die erste Anlaufstelle für Patienten im primärärztlichen Versorgungssystem.",
+                  "Durch eine ausführliche Anamnese und körperliche Untersuchung grenzt der Mediziner Symptome ein und formuliert eine fundierte [die Diagnose, -n|Diagnose]."
+                ],
+                [
+                  "Mit der Einführung des E-Rezepts können Patienten [das Rezept, -e|ihr Rezept] direkt über [die Versichertenkarte, -n|ihre elektronische Versichertenkarte] in jeder beliebigen Apotheke einlösen."
+                ],
+                [
+                  "Auch [die Krankschreibung, -en|die elektronische Arbeitsunfähigkeitsbescheinigung (eAU)] wird mittlerweile automatisiert an den Arbeitgeber übermittelt, was bürokratische Hürden für Kranke spürbar reduziert."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Evidenzbasierte Medizin, Differenzialdiagnostik und Arzt-Patienten-Allianz",
+              "intro": "Klinische Leitlinien, Shared Decision Making und ambulante Versorgungsstrukturen (B2).",
+              "paragraphs": [
+                [
+                  "Ein professionell geführter [der Arztbesuch, -e|Arztbesuch] beruht auf dem Modell der partizipativen Entscheidungsfindung ('Shared Decision Making').",
+                  "Der Arzt kombiniert klinische Erfahrung und diagnostische Befunde (Auskultation mittels [das Stethoskop, -e|Stethoskop], Laborparameter) zu einer differenzialdiagnostischen Synthese."
+                ],
+                [
+                  "Anschließend vereinbaren Arzt und Patient einen evidenzbasierten Plan für [die Behandlung, -en|die Behandlung], der patientenindividuelle Präferenzen und pharmakologische Risikoprofile berücksichtigt."
+                ],
+                [
+                  "Die Digitalisierung des Gesundheitswesens (Telemedizin, ePA) transformiert die traditionelle Konsultation und steigert die Transparenz ambulanter Therapiepfade."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "symptome_und_krankheiten",
+      "title": "SYMPTOME UND KRANKHEITEN",
+      "topics": [
+        {
           "id": "krankheiten",
           "title": "Krankheiten",
           "words": [
@@ -371,6 +1797,1471 @@
           "description": "Symptome, Arztbesuch, Medikamente, Diagnosen und Genesung.",
           "details": "Symptome, Arztpraxis, Medikamente und Genesung (A1–B2)",
           "arabicDescription": "الأمراض والأعراض وزيارة الطبيب وتناول الأدوية في ألمانيا. يتناول هذا الدرس عبارات وصف الألم والشكوى المرضية، والفحص الطبي، والحصول على الوصفة الطبية (Rezept) من العيادة (Praxis) وصرفها من الصيدلية، إلى جانب عبارة التمني بالشفاء العاجل (Gute Besserung!)."
+        }
+      ]
+    },
+    {
+      "id": "behinderungen",
+      "title": "BEHINDERUNGEN",
+      "topics": [
+        {
+          "id": "behinderungen",
+          "title": "Behinderungen",
+          "words": [
+            {
+              "german": "die Behinderung, -en",
+              "arabic": "الإعاقة الجسدية أو الحسية أو الذهنية",
+              "english": "disability, impairment",
+              "example": "Menschen mit einer Behinderung haben ein Recht auf gleichberechtigte Teilhabe."
+            },
+            {
+              "german": "der Rollstuhl, -̈e",
+              "arabic": "الكرسي المتحرك لذوي الاحتياجات الخاصة",
+              "english": "wheelchair",
+              "example": "Mit einem elektrischen Rollstuhl kann er sich selbstständig in der Wohnung bewegen."
+            },
+            {
+              "german": "die Barrierefreiheit (Sg.)",
+              "arabic": "إمكانية الوصول الشامل وسهولة الحركة دون عوائق",
+              "english": "accessibility, barrier-free access",
+              "example": "Öffentliche Gebäude müssen gesetzlich auf vollständige Barrierefreiheit achten."
+            },
+            {
+              "german": "die Rampe, -n",
+              "arabic": "المنحدر المائل للكراسي المتحركة",
+              "english": "ramp, wheelchair ramp",
+              "example": "Über die flache Rampe am Eingang gelangt man problemlos in das Rathaus."
+            },
+            {
+              "german": "der Blindenstock, -̈e",
+              "arabic": "العصا البيضاء للمكفوفين",
+              "english": "white cane (for the blind)",
+              "example": "Mit dem weißen Blindenstock ertastet die blinde Frau Bodenkanten und Stufen."
+            },
+            {
+              "german": "die Blindenschrift (Sg.)",
+              "arabic": "طريقة برايل للقراءة باللمس للمكفوفين",
+              "english": "Braille, braille script",
+              "example": "Auf Medikamentenpackungen sind wichtige Angaben zusätzlich in Blindenschrift geprägt."
+            },
+            {
+              "german": "die Gebärdensprache (Sg.)",
+              "arabic": "لغة الإشارة للصم والبكم",
+              "english": "sign language",
+              "example": "Gehörlose Menschen verständigen sich fließend und ausdrucksstark in Gebärdensprache."
+            },
+            {
+              "german": "das Hörgerät, -e",
+              "arabic": "السماعة الطبية لتقوية السمع",
+              "english": "hearing aid",
+              "example": "Ein modernes, winziges Hörgerät im Ohr filtert störende Nebengeräusche heraus."
+            },
+            {
+              "german": "die Prothese, -n",
+              "arabic": "الطرف الصناعي التعويضي",
+              "english": "prosthesis, prosthetic limb",
+              "example": "Dank einer hochentwickelten Prothese aus Karbon kann der Athlet wieder joggen."
+            },
+            {
+              "german": "die Inklusion (Sg.)",
+              "arabic": "الدمج والاشتمال الاجتماعي الشامل",
+              "english": "inclusion",
+              "example": "Echte Inklusion bedeutet, dass niemand wegen seiner Einschränkungen ausgeschlossen wird."
+            },
+            {
+              "german": "der Schwerbehindertenausweis, -e",
+              "arabic": "بطاقة / هوية إثبات الإعاقة الشديدة",
+              "english": "severely disabled person's pass",
+              "example": "Mit dem Schwerbehindertenausweis kann man vergünstigt den öffentlichen Nahverkehr nutzen."
+            },
+            {
+              "german": "der Blindenführhund, -e",
+              "arabic": "كلب إرشاد وتوجيه المكفوفين",
+              "english": "guide dog, seeing-eye dog",
+              "example": "Der treue Blindenführhund führt sein Herrchen sicher über jede verkehrsreiche Kreuzung."
+            }
+          ],
+          "description": "Behinderungen, Barrierefreiheit, Rollstuhl, Blindenstock, Gebärdensprache und Inklusion.",
+          "details": "Inklusion, Barrierefreies Bauen, Brailleschrift, Hörgeräte, Prothesen und Assistenz (A1–B2)",
+          "arabicDescription": "الإعاقة وإمكانية الوصول الشامل (Behinderungen): أنواع الإعاقة، الكرسي المتحرك (Rollstuhl)، سهولة الوصول والبيئة الخالية من العوائق (Barrierefreiheit)، المنحدرات (Rampe)، عصا المكفوفين، لغة برايل (Blindenschrift)، لغة الإشارة (Gebärdensprache)، السماعة الطبية لضعاف السمع (Hörgerät)، الأطراف الصناعية (Prothese)، والدمج المجتمعي الشامل (Inklusion).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Zusammen leben ohne Grenzen",
+              "intro": "Einfache Sätze über Rollstühle, Rampen und Hilfe im Alltag (A1).",
+              "paragraphs": [
+                [
+                  "Nicht alle Menschen können sehen, hören oder laufen.",
+                  "Mein Nachbar sitzt in [der Rollstuhl, -̈e|einem Rollstuhl].",
+                  "Vor unserem Haus gibt es [die Rampe, -n|eine breite Rampe] ohne Stufen."
+                ],
+                [
+                  "Eine Freundin hört schlecht und trägt [das Hörgerät, -e|ein kleines Hörgerät] im Ohr.",
+                  "Andere Menschen sprechen mit den Händen in [die Gebärdensprache (Sg.)|Gebärdensprache].",
+                  "Wir helfen einander und leben gemeinsam in der Stadt."
+                ],
+                ["Jeder Mensch ist wertvoll und gehört dazu."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Unterwegs in der barrierefreien Stadt",
+              "intro": "Aufzüge, Blindenstöcke, Brailleschrift und taktile Leitsysteme (A2).",
+              "paragraphs": [
+                [
+                  "Gestern begleitete ich meine Tante, die sehbehindert ist, zum Bahnhof.",
+                  "Auf dem Bahnsteig orientierte sie sich mit [der Blindenstock, -̈e|ihrem Blindenstock] an den geriffelten Bodenfliesen."
+                ],
+                [
+                  "Im Fahrstuhl waren die Stockwerke tastbar in [die Blindenschrift (Sg.)|Blindenschrift] beschriftet.",
+                  "Moderne Bahnhöfe achten heute streng auf [die Barrierefreiheit (Sg.)|Barrierefreiheit], damit auch Reisende mit [der Rollstuhl, -̈e|einem Rollstuhl] überall hinkommen."
+                ],
+                [
+                  "So gelingt gelebte [die Inklusion (Sg.)|Inklusion] im öffentlichen Raum."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Selbstbestimmtes Leben und gesellschaftliche Barrierefreiheit",
+              "intro": "Beseitigung physischer Barrieren, Hilfsmitteltechnik und Nachteilsausgleiche (B1).",
+              "paragraphs": [
+                [
+                  "Eine körperliche oder sensorische [die Behinderung, -en|Behinderung] darf nicht zum Ausschluss aus dem gesellschaftlichen Leben führen.",
+                  "Moderne Medizintechnik — von bionischen [die Prothese, -n|Prothesen] bis zu digitalen Hörhilfen — ermöglicht ein hohes Maß an Autonomie."
+                ],
+                [
+                  "Entscheidend bleibt jedoch der Abbau von Barrieren in der Umwelt: Stufenlose Zugänge, Aufzüge und akustische Ampelsignale schaffen [die Barrierefreiheit (Sg.)|Barrierefreiheit]."
+                ],
+                [
+                  "Mit einem amtlichen [der Schwerbehindertenausweis, -e|Schwerbehindertenausweis] erhalten Betroffene Nachteilsausgleiche im Beruf und Steuerrecht."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "UN-Behindertenrechtskonvention, Universal Design und Inklusionspolitik",
+              "intro": "Paradigmenwechsel vom medizinischen zum menschenrechtlichen Modell der Behinderung (B2).",
+              "paragraphs": [
+                [
+                  "Die Ratifizierung der UN-Behindertenrechtskonvention markiert einen normativen Meilenstein in der Gesetzgebung.",
+                  "Behinderung wird nicht länger als individuelles Defizit verstanden, sondern als Resultat der Interaktion zwischen einer Beeinträchtigung und einstellungs- sowie umweltbedingten Barrieren."
+                ],
+                [
+                  "Das Leitbild des 'Universal Design' fordert, dass Infrastrukturen, digitale Schnittstellen und Bildungseinrichtungen von Beginn an ohne nachträgliche Sonderlösungen barrierefrei konzipiert werden."
+                ],
+                [
+                  "Echte [die Inklusion (Sg.)|Inklusion] realisiert sich erst dann, wenn Menschen unabhängig von sensorischen oder physischen Voraussetzungen selbstbestimmt am Arbeitsmarkt und im kulturellen Diskurs partizipieren können."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "verletzungen",
+      "title": "VERLETZUNGEN",
+      "topics": [
+        {
+          "id": "verletzungen",
+          "title": "Verletzungen",
+          "words": [
+            {
+              "german": "die Verletzung, -en",
+              "arabic": "الإصابة / الأذى الجسدي",
+              "english": "injury",
+              "example": "Zum Glück zog er sich bei dem Sturz keine schwere Verletzung zu."
+            },
+            {
+              "german": "die Wunde, -n",
+              "arabic": "الجرح المفتوح في الجلد",
+              "english": "wound",
+              "example": "Die offene Wunde am Knie muss gründlich gereinigt werden."
+            },
+            {
+              "german": "das Pflaster, -",
+              "arabic": "لاصق الجروح الطبي (البلاستر)",
+              "english": "plaster, band-aid, adhesive bandage",
+              "example": "Ich klebe ein wasserfestes Pflaster auf den kleinen Schnitt am Zeigefinger."
+            },
+            {
+              "german": "der Verband, -̈e",
+              "arabic": "الضمادة الطبية / الشاش الضاغط",
+              "english": "bandage, dressing",
+              "example": "Die Krankenschwester wickelte einen sterilen Verband um das Handgelenk."
+            },
+            {
+              "german": "die Blutung, -en",
+              "arabic": "النزيف وسيلان الدم",
+              "english": "bleeding, hemorrhage",
+              "example": "Mit einer sterilen Kompresse drückte er fest auf die Wunde, um die Blutung zu stoppen."
+            },
+            {
+              "german": "die Schürfwunde, -n",
+              "arabic": "السحجة / الخدش السطحي للجلد",
+              "english": "scrape, graze, abrasion",
+              "example": "Nach dem Sturz mit dem Skateboard hatte er eine Schürfwunde am Ellbogen."
+            },
+            {
+              "german": "die Verbrennung, -en",
+              "arabic": "الحرق الحراري للجلد",
+              "english": "burn (injury)",
+              "example": "Er fasste an das heiße Backblech und erlitt eine schmerzhafte Verbrennung."
+            },
+            {
+              "german": "der Verbandkasten, -̈",
+              "arabic": "صندوق وحقيبة الإسعافات الأولية",
+              "english": "first aid kit",
+              "example": "In jedem Auto muss laut Gesetz ein vollständiger Verbandkasten vorhanden sein."
+            },
+            {
+              "german": "die Erste Hilfe (Sg.)",
+              "arabic": "الإسعافات الأولية الفورية للمصابين",
+              "english": "first aid",
+              "example": "Im Erste-Hilfe-Kurs üben wir die stabile Seitenlage und die Herzdruckmassage."
+            },
+            {
+              "german": "desinfizieren",
+              "arabic": "يطهر ويعقم الجرح من الجراثيم",
+              "english": "to disinfect, to sanitize",
+              "example": "Vor dem Verbinden sollten Sie die Haut sorgfältig desinfizieren."
+            },
+            {
+              "german": "kühlen",
+              "arabic": "يبرّد الإصابة بالثلج أو الماء البارد",
+              "english": "to cool, to ice (an injury)",
+              "example": "Bei Prellungen und Schwellungen sollte man die betroffene Stelle sofort mit Eis kühlen."
+            },
+            {
+              "german": "die Narbe, -n",
+              "arabic": "الندبة / أثر الجرح الملتئم",
+              "english": "scar",
+              "example": "Nach der Operation blieb nur eine feine, helle Narbe am Bauch zurück."
+            }
+          ],
+          "description": "Verletzungen, Wunden, Pflaster, Verbände, Blutungen, Schürfwunden, Erste Hilfe und Desinfektion.",
+          "details": "Traumatologie, Wundversorgung, Notfallmaßnahmen, Kühlen, Narben und Verbandkasten (A1–B2)",
+          "arabicDescription": "الإصابات والجروح والإسعافات الأولية (Verletzungen): أنواع الإصابات، الجروح (Wunde)، لاصق الجروح (Pflaster)، الضمادة والشاش (Verband)، النزيف (Blutung)، الخدوش والسطوح (Schürfwunde)، الحروق (Verbrennung)، حقيبة الإسعافات (Verbandkasten)، الإسعاف الأولي (Erste Hilfe)، والتعقيم (desinfizieren).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein Pflaster für die Wunde",
+              "intro": "Einfache Sätze über kleine Wunden, Pflaster und Verband (A1).",
+              "paragraphs": [
+                [
+                  "Beim Kochen passe ich kurz nicht auf und schneide mich in den Finger.",
+                  "Aus der Haut kommt etwas Blut: [die Blutung, -en|eine kleine Blutung].",
+                  "Zuerst muss ich die Stelle sauber waschen und [desinfizieren|desinfizieren]."
+                ],
+                [
+                  "Ich hole [das Pflaster, -|ein Pflaster] aus der Schachtel und klebe es auf [die Wunde, -n|die Wunde].",
+                  "Wenn die Verletzung größer ist, braucht man [der Verband, -̈e|einen Verband].",
+                  "Nach ein paar Tagen ist alles wieder verheilt."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Erste Hilfe auf dem Spielplatz",
+              "intro": "Schürfwunden versorgen, kühlen und der Verbandkasten (A2).",
+              "paragraphs": [
+                [
+                  "Gestern fiel mein kleiner Sohn auf dem Spielplatz vom Klettergerüst.",
+                  "Er hatte eine tiefe [die Schürfwunde, -n|Schürfwunde] am Knie und weinte bitterlich."
+                ],
+                [
+                  "Ich holte sofort den [der Verbandkasten, -̈|Verbandkasten] aus dem Auto.",
+                  "Zuerst haben wir das Knie mit kaltem Wasser gereinigt und vorsichtig angefangen zu [kühlen|kühlen].",
+                  "Danach sprühte ich Antiseptikum auf die Haut, um sie zu [desinfizieren|desinfizieren], und legte eine sterile Binde an."
+                ],
+                [
+                  "Zum Glück war es keine gefährliche [die Verletzung, -en|Verletzung]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Wundversorgung und Sofortmaßnahmen am Unfallort",
+              "intro": "Druckverband, Verbrennungen kühlen und Erste-Hilfe-Regeln (B1).",
+              "paragraphs": [
+                [
+                  "Jeder Bürger sollte in der Lage sein, in Notsituationen kompetent [die Erste Hilfe (Sg.)|Erste Hilfe] zu leisten.",
+                  "Bei starken Blutungen hat das Stillen des Blutverlusts oberste Priorität: Ein straffer Druckverband verhindert einen lebensbedrohlichen Kreislaufschock."
+                ],
+                [
+                  "Bei einer thermischen Schädigung wie [die Verbrennung, -en|einer Verbrennung] muss die verletzte Stelle sofort etwa zehn Minuten mit handwarmem Wasser gekühlt werden."
+                ],
+                [
+                  "Sachgemäße Wundhygiene verhindert bakterielle Infektionen und sorgt dafür, dass [die Wunde, -n|die Wunde] komplikationslos heilt und nur eine minimale [die Narbe, -n|Narbe] hinterlässt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Traumatologische Wundheilungskaskade und Notfallprotokolle",
+              "intro": "Hämostase, Exsudation, Proliferation, Wundsekundärheilung und Sepsisprävention (B2).",
+              "paragraphs": [
+                [
+                  "Die physiologische Wundheilung gliedert sich in eine vaskuläre Exsudationsphase, gefolgt von Granulation und Epithelisierung.",
+                  "Bei klaffenden Schnittwunden oder Gewebedefekten entscheidet die chirurgische Wundrandadaption (Naht oder Klammerung) innerhalb des Sechs-Stunden-Fensters über eine primäre Heilung ohne hypertrophe [die Narbe, -n|Narbenbildung]."
+                ],
+                [
+                  "Im Rettungsdienst greifen standardisierte Algorithmen nach dem cABCDE-Schema, bei dem kritische [die Blutung, -en|Blutungen] noch vor der Atemwegssicherung mittels Tourniquet abgebunden werden."
+                ],
+                [
+                  "Lückenlose Dokumentation und Auffrischung des Tetanus-Impfschutzes sind obligatorische Bestandteile moderner Traumatologie."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "beim_zahnarzt",
+      "title": "BEIM ZAHNARZT",
+      "topics": [
+        {
+          "id": "beim_zahnarzt",
+          "title": "Beim Zahnarzt",
+          "words": [
+            {
+              "german": "der Zahnarzt, -̈e",
+              "arabic": "طبيب الأسنان",
+              "english": "dentist",
+              "example": "Ich gehe zweimal im Jahr zur regelmäßigen Kontrolle zum Zahnarzt."
+            },
+            {
+              "german": "der Zahn, -̈e",
+              "arabic": "السن / الضرس",
+              "english": "tooth",
+              "example": "Der hintere Backenzahn reagiert empfindlich auf kalte und heiße Speisen."
+            },
+            {
+              "german": "die Karies (Sg.)",
+              "arabic": "تسوس وتآكل الأسنان",
+              "english": "tooth decay, caries, cavities",
+              "example": "Zu viel Zucker fördert schädliche Bakterien, die Karies verursachen."
+            },
+            {
+              "german": "die Zahnfüllung, -en",
+              "arabic": "حشوة السن (الكمبوزيت أو الخزف)",
+              "english": "dental filling",
+              "example": "Der Zahnarzt setzte eine zahnfarbene Füllung aus Kunststoff in das Loch ein."
+            },
+            {
+              "german": "der Bohrer, -",
+              "arabic": "مثقاب حفر وتنظيف الأسنان الطبي",
+              "english": "dental drill",
+              "example": "Das sirrende Geräusch von dem Bohrer jagt vielen Patienten einen Schreck ein."
+            },
+            {
+              "german": "die Betäubung, -en",
+              "arabic": "التخدير الموضعي (إبرة البنج)",
+              "english": "local anesthesia, numbing",
+              "example": "Dank der örtlichen Betäubung spürte ich während des Eingriffs überhaupt keine Schmerzen."
+            },
+            {
+              "german": "die Zahnseide (Sg.)",
+              "arabic": "خيط تنظيف ما بين الأسنان",
+              "english": "dental floss",
+              "example": "Mit der Zahnseide reinigt man die engen Zwischenräume gründlich nach dem Putzen."
+            },
+            {
+              "german": "die Zahnbürste, -n",
+              "arabic": "فرشاة تنظيف الأسنان",
+              "english": "toothbrush",
+              "example": "Zahnärzte empfehlen eine elektrische Zahnbürste mit weichen Borsten."
+            },
+            {
+              "german": "das Zahnfleisch (Sg.)",
+              "arabic": "اللثة (النسيج المحيط بالأسنان)",
+              "english": "gums, gingiva",
+              "example": "Entzündetes Zahnfleisch neigt beim Zähneputzen schnell zu Blutungen."
+            },
+            {
+              "german": "die Zahnspange, -n",
+              "arabic": "تقويم الأسنان لتعديل الاصطفاف",
+              "english": "braces (dental)",
+              "example": "Als Jugendliche trug sie zwei Jahre lang eine feste Zahnspange."
+            },
+            {
+              "german": "die Zahnreinigung, -en",
+              "arabic": "تنظيف الأسنان الطبي الاحترافي (PZR)",
+              "english": "professional dental cleaning",
+              "example": "Eine professionelle Zahnreinigung entfernt hartnäckigen Zahnstein und Beläge."
+            },
+            {
+              "german": "der Weisheitszahn, -̈e",
+              "arabic": "ضرس العقل (الرحى الثالثة)",
+              "english": "wisdom tooth",
+              "example": "Weil im Kiefer zu wenig Platz war, mussten alle vier Weisheitszähne gezogen werden."
+            }
+          ],
+          "description": "Zähne, Karies, Bohrer, Zahnfüllung, Betäubungsspritze, Zahnseide und professionelle Zahnreinigung.",
+          "details": "Zahngesundheit, Parodontose, Prophylaxe, Zahnspangen, Weisheitszähne und Dentalhygiene (A1–B2)",
+          "arabicDescription": "عند طبيب الأسنان (Beim Zahnarzt): طبيب الأسنان، الأسنان (Zahn)، تسوس الأسنان (Karies)، حشوة الأسنان (Zahnfüllung)، مثقاب الأسنان (Bohrer)، حقيبة التخدير الموضعي (Betäubung)، خيط الأسنان (Zahnseide)، فرشاة الأسنان، اللثة (Zahnfleisch)، تقويم الأسنان (Zahnspange)، تنظيف الأسنان الاحترافي (PZR)، وضرس العقل.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ich putze meine Zähne",
+              "intro": "Einfache Sätze über Zahnbürste, Zahnarzt und saubere Zähne (A1).",
+              "paragraphs": [
+                [
+                  "Zweimal am Tag putze ich gründlich [der Zahn, -̈e|meine Zähne].",
+                  "Ich nehme [die Zahnbürste, -n|meine neue Zahnbürste] und Zahnpasta.",
+                  "Für die Zwischenräume benutze ich [die Zahnseide (Sg.)|Zahnseide]."
+                ],
+                [
+                  "Heute habe ich einen Termin bei [der Zahnarzt, -̈e|dem Zahnarzt].",
+                  "Er schaut in meinen Mund und prüft [das Zahnfleisch (Sg.)|das Zahnfleisch].",
+                  "Zum Glück habe ich keine Löcher und keine [die Karies (Sg.)|Karies]!"
+                ],
+                ["Saubere Zähne machen ein strahlendes Lächeln."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Eine Füllung ohne Schmerzen",
+              "intro": "Betäubungsspritzen, Zahnfüllungen und professionelle Reinigung (A2).",
+              "paragraphs": [
+                [
+                  "Letzte Woche hatte ich Zahnschmerzen, wenn ich eiskaltes Wasser trank.",
+                  "Mein Zahnarzt entdeckte ein kleines Kariesloch an einem Backenzahn."
+                ],
+                [
+                  "Vor dem Bohren gab er mir [die Betäubung, -en|eine sanfte Betäubung], sodass meine Wange taub wurde.",
+                  "Mit [der Bohrer, -|dem feinen Bohrer] entfernte er den Schaden in wenigen Minuten.",
+                  "Danach füllte er das Loch mit einer weißen [die Zahnfüllung, -en|Zahnfüllung] auf."
+                ],
+                [
+                  "Im nächsten Monat mache ich noch eine professionelle [die Zahnreinigung, -en|Zahnreinigung], um Zahnstein vorzubeugen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Moderne Prophylaxe und Zahnerhaltung",
+              "intro": "Parodontitis-Prävention, Weisheitszähne und Dentalhygiene (B1).",
+              "paragraphs": [
+                [
+                  "In der modernen Zahnmedizin steht die Zahnerhaltung durch konsequente Prophylaxe an erster Stelle.",
+                  "Schonende Ultraschallgeräte entfernen bei [die Zahnreinigung, -en|der professionellen Zahnreinigung] bakterielle Biofilme, die zu Entzündungen von [das Zahnfleisch (Sg.)|dem Zahnfleisch] führen."
+                ],
+                [
+                  "Bleiben Plaquebakterien unbehandelt, droht Parodontitis mit irreversiblem Knochenabbau im Kiefer.",
+                  "Bei Jugendlichen werden Engstände oft durch [die Zahnspange, -n|eine kieferorthopädische Zahnspange] korrigiert, während im jungen Erwachsenenalter häufig [der Weisheitszahn, -̈e|die Weisheitszähne] chirurgisch entfernt werden müssen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Restaurative Odontologie, Parodontaltherapie und Implantologie",
+              "intro": "Schmelzadhäsivtechnik, Kompositrestaurationen und Knochenaugmentation (B2).",
+              "paragraphs": [
+                [
+                  "Die restaurative Zahnheilkunde hat sich durch mikroinvasive Adhäsivtechniken grundlegend gewandelt.",
+                  "Statt makromechanischer Kavitätenpräparationen ermöglicht moderne Schmelz-Dentin-Ätzung den defektorientierten Einsatz zahnfarbener [die Zahnfüllung, -en|Kompositfüllungen]."
+                ],
+                [
+                  "Verliert ein [der Zahn, -̈e|Zahn] durch tiefgreifende [die Karies (Sg.)|Karies] seine Vitalität, bildet die endodontische Wurzelkanalbehandlung unter Kofferdam die letzte Möglichkeit des Zahnerhalts."
+                ],
+                [
+                  "Bei Zahnverlust bietet die dentale Implantologie mit Osseointegration von Reintitan-Schrauben eine funktionell und ästhetisch vollwertige Rekonstruktion ohne Beschleifung gesunder Nachbarzähne."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "beim_augenoptiker",
+      "title": "BEIM AUGENOPTIKER",
+      "topics": [
+        {
+          "id": "beim_augenoptiker",
+          "title": "Beim Augenoptiker",
+          "words": [
+            {
+              "german": "der Augenoptiker, -",
+              "arabic": "أخصائي وفني البصريات وصانع النظارات",
+              "english": "optician",
+              "example": "Der freundliche Augenoptiker misst meine Sehstärke mit modernen Geräten."
+            },
+            {
+              "german": "die Brille, -n",
+              "arabic": "النظارة الطبية أو الشمسية",
+              "english": "glasses, eyeglasses",
+              "example": "Ohne meine Brille kann ich die kleinen Buchstaben auf dem Schild nicht lesen."
+            },
+            {
+              "german": "die Kontaktlinse, -n",
+              "arabic": "العدسة اللاصقة للعين",
+              "english": "contact lens",
+              "example": "Beim Sport trage ich lieber weiche Kontaktlinsen statt einer Brille."
+            },
+            {
+              "german": "die Sehstärke (Dioptrie), -n",
+              "arabic": "قوة الإبصار ودرجة النظر (الديوبتر)",
+              "english": "visual acuity, prescription (diopters)",
+              "example": "Auf dem linken Auge hat sich meine Sehstärke um eine halbe Dioptrie verändert."
+            },
+            {
+              "german": "der Sehtest, -s",
+              "arabic": "فحص واختبار حدة البصر",
+              "english": "eye test, vision test",
+              "example": "Für den Führerschein musste ich einen amtlichen Sehtest beim Optiker absolvieren."
+            },
+            {
+              "german": "das Brillengestell, -e",
+              "arabic": "إطار / شناشيل النظارة (الفريم)",
+              "english": "eyeglass frame",
+              "example": "Sie probierte mehrere modische Brillengestelle aus Titan vor dem Spiegel an."
+            },
+            {
+              "german": "die Kurzsichtigkeit (Sg.)",
+              "arabic": "قصر النظر (رؤية القريب بوضوح والبعيد بتشوش)",
+              "english": "nearsightedness, myopia",
+              "example": "Bei Kurzsichtigkeit braucht man eine Minus-Korrektur für die Ferne."
+            },
+            {
+              "german": "die Weitsichtigkeit (Sg.)",
+              "arabic": "طول النظر (صعوبة رؤية الأشياء القريبة)",
+              "english": "farsightedness, hyperopia",
+              "example": "Im Alter macht sich oft eine beginnende Weitsichtigkeit beim Lesen bemerkbar."
+            },
+            {
+              "german": "das Brillenetui, -s",
+              "arabic": "حافظة / علبة النظارة الصلبة",
+              "english": "glasses case",
+              "example": "Stecken Sie die Brille immer in das gepolsterte Brillenetui, um Kratzer zu vermeiden."
+            },
+            {
+              "german": "die Hornhaut, -̈e",
+              "arabic": "قرنية العين الشفافة",
+              "english": "cornea",
+              "example": "Die Kontaktlinse schwimmt direkt auf dem dünnen Tränenfilm über der Hornhaut."
+            },
+            {
+              "german": "das Brillenglas, -̈er",
+              "arabic": "عدسة النظارة الزجاجية أو البلاستيكية",
+              "english": "eyeglass lens",
+              "example": "Entspiegelte Brillengläser verhindern störende Lichtreflexe beim Autofahren in der Nacht."
+            },
+            {
+              "german": "scharf sehen",
+              "arabic": "يرى بوضوح ودقة عالية",
+              "english": "to see sharply, to see clearly",
+              "example": "Mit der neuen Brille kann ich Straßenschilder in der Ferne endlich wieder scharf sehen."
+            }
+          ],
+          "description": "Brillen, Kontaktlinsen, Sehtest, Dioptrien, Gestelle, Kurzsichtigkeit und Weitsichtigkeit.",
+          "details": "Optik, Sehstärkenbestimmung, Brillengläser, Hornhaut und Augenprüfung (A1–B2)",
+          "arabicDescription": "عند أخصائي البصريات (Beim Augenoptiker): أخصائي البصريات والعيون، النظارات الطبية (Brille)، العدسات اللاصقة (Kontaktlinse)، قوة الإبصار والديوبتر (Sehstärke)، فحص النظر (Sehtest)، إطار النظارة (Brillengestell)، قصر النظر (Kurzsichtigkeit)، طول النظر (Weitsichtigkeit)، وقرنية العين والعدسات الزجاجية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ich brauche eine neue Brille",
+              "intro": "Einfache Sätze über Brille, Optiker und Augenprüfung (A1).",
+              "paragraphs": [
+                [
+                  "In letzter Zeit sehe ich die Tafel nicht mehr gut.",
+                  "Ich gehe zu [der Augenoptiker, -|dem Augenoptiker] im Einkaufszentrum.",
+                  "Dort mache ich [der Sehtest, -s|einen Sehtest]."
+                ],
+                [
+                  "Ich schaue durch ein Gerät und lese kleine Buchstaben vor.",
+                  "Der Optiker sagt: 'Sie brauchen [die Brille, -n|eine Brille].'",
+                  "Ich suche [das Brillengestell, -e|ein schönes Brillengestell] aus."
+                ],
+                [
+                  "Mit der neuen Brille kann ich alles wieder [scharf sehen|scharf sehen]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Brille oder Kontaktlinsen?",
+              "intro": "Dioptrien, Linsen einsetzen und Etuis (A2).",
+              "paragraphs": [
+                [
+                  "Weil ich unter leichter [die Kurzsichtigkeit (Sg.)|Kurzsichtigkeit] leide, trage ich seit meiner Jugend eine Sehhilfe.",
+                  "Letzte Woche ließ ich [die Sehstärke (Dioptrie), -n|meine Sehstärke] erneut überprüfen."
+                ],
+                [
+                  "Der Optiker empfahl mir entspiegelte [das Brillenglas, -̈er|Brillengläser] mit Blaulichtfilter für die Computerarbeit.",
+                  "Für den Sommerurlaub kaufte ich mir außerdem [die Kontaktlinse, -n|Kontaktlinsen], damit ich beim Schwimmen keine Brille brauche."
+                ],
+                [
+                  "Zu Hause liegt meine Brille sicher im gepolsterten [das Brillenetui, -s|Brillenetui] auf dem Nachttisch."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Refraktive Optik und moderner Sehkomfort",
+              "intro": "Astigmatismus, Hornhautkrümmung und Gleitsichtgläser (B1).",
+              "paragraphs": [
+                [
+                  "Gutes Sehen ist eine fundamentale Voraussetzung für Lebensqualität und Verkehrssicherheit.",
+                  "Wenn sich mit den Jahren [die Weitsichtigkeit (Sg.)|eine Weitsichtigkeit] oder eine unregelmäßige Krümmung von [die Hornhaut, -̈e|der Hornhaut] einstellt, ist fachkundige Beratung unverzichtbar."
+                ],
+                [
+                  "Moderne [der Augenoptiker, -|Augenoptiker] nutzen computergestützte Wellenfront-Analysen, um maßgeschneiderte Gleitsichtgläser anzufertigen."
+                ],
+                [
+                  "So wird stufenloses Scharfsehen im Nah-, Zwischen- und Fernbereich gewährleistet."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Ophthalmologische Messtechnik, Akkommodation und refraktive Chirurgie",
+              "intro": "Dioptrien-Korrektur, Presbyopie und Lasertherapien (Femto-LASIK) (B2).",
+              "paragraphs": [
+                [
+                  "Die optische Korrektur von Refraktionsfehlern beruht auf der präzisen Verschiebung des Fokalpunkts auf die Retina.",
+                  "Bei [die Kurzsichtigkeit (Sg.)|axialer Myopie] verlängert sich der Bulbus, sodass Zerstreuungslinsen mit negativen Dioptriewerten die Brechkraft kompensieren müssen."
+                ],
+                [
+                  "Fortschritte in der Materialwissenschaft ermöglichen ultra-dünne hochbrechende [das Brillenglas, -̈er|Kunststoffgläser], die selbst bei ausgeprägten Ametropien geringes Gewicht und minimale Randverzerrungen aufweisen."
+                ],
+                [
+                  "Parallel dazu bieten laserrefraktive Verfahren (LASIK, SMILE) durch gezielte Ablation von [die Hornhaut, -̈e|Hornhautgewebe] dauerhafte Alternativen zu [die Brille, -n|Brillen] und Kontaktlinsen."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "im_krankenhaus",
+      "title": "IM KRANKENHAUS",
+      "topics": [
+        {
+          "id": "die_chirurgie",
+          "title": "Die Chirurgie",
+          "words": [
+            {
+              "german": "die Chirurgie (Sg.)",
+              "arabic": "علم وجراحة الطب البشري",
+              "english": "surgery (medical specialty)",
+              "example": "Die Chirurgie hat durch minimalinvasive Methoden enorme Fortschritte gemacht."
+            },
+            {
+              "german": "der Chirurg, -en",
+              "arabic": "الطبيب الجراح",
+              "english": "surgeon",
+              "example": "Der erfahrene Chirurg operierte den Patienten mit ruhiger, präziser Hand."
+            },
+            {
+              "german": "die Operation, -en",
+              "arabic": "العملية الجراحية (OP)",
+              "english": "operation, surgical procedure, surgery",
+              "example": "Die dreistündige Operation verlief ohne unvorhergesehene Zwischenfälle."
+            },
+            {
+              "german": "der Operationssaal, -̈e",
+              "arabic": "غرفة / قاعة العمليات الجراحية المعقمة",
+              "english": "operating room, OR",
+              "example": "Im sterilen Operationssaal herrschen strengste Hygienevorschriften."
+            },
+            {
+              "german": "die Narkose, -n",
+              "arabic": "التخدير العام والبنج الكامل",
+              "english": "anesthesia, general anesthesia",
+              "example": "Vor dem Eingriff klärte der Anästhesist den Patienten über die Narkose auf."
+            },
+            {
+              "german": "das Skalpell, -e",
+              "arabic": "المشرط الجراحي الحاد",
+              "english": "scalpel",
+              "example": "Mit einem feinen Skalpell setzte der Operateur einen kleinen, präzisen Schnitt."
+            },
+            {
+              "german": "die chirurgische Naht, -̈e",
+              "arabic": "الغرزة والخياطة الجراحية للجرح",
+              "english": "surgical suture, stitch",
+              "example": "Nach zehn Tagen werden die Fäden der chirurgischen Naht gezogen."
+            },
+            {
+              "german": "die Desinfektion, -en",
+              "arabic": "التطهير والتعقيم الطبي",
+              "english": "disinfection",
+              "example": "Vor jedem Schnitt erfolgt eine gründliche Desinfektion des OP-Feldes."
+            },
+            {
+              "german": "operieren",
+              "arabic": "يجري عملية جراحية",
+              "english": "to operate on, to perform surgery",
+              "example": "Das Ärzteteam wird den gebrochenen Oberschenkelknochen morgen früh operieren."
+            },
+            {
+              "german": "die Intensivstation, -en",
+              "arabic": "وحدة العناية المركزة والمشددة (ICU)",
+              "english": "intensive care unit (ICU)",
+              "example": "Nach der schweren Herz-OP wurde der Patient zur Überwachung auf die Intensivstation verlegt."
+            },
+            {
+              "german": "die Nachsorge (Sg.)",
+              "arabic": "الرعاية والمتابعة الطبية اللاحقة بعد العملية",
+              "english": "aftercare, follow-up care",
+              "example": "Eine lückenlose Nachsorge fördert die Wundheilung und beugt Thrombosen vor."
+            },
+            {
+              "german": "steril (Adj.)",
+              "arabic": "معقم تماماً وخالٍ من الجراثيم",
+              "english": "sterile, aseptic",
+              "example": "Alle Instrumente und Handschuhe im OP müssen absolut steril sein."
+            }
+          ],
+          "description": "Chirurgie, Chirurgen, OP-Saal, Narkose, Skalpell, Operationen und Nachsorge.",
+          "details": "Operative Medizin, Vollnarkose, Wundverschluss, Asepsis und Intensivüberwachung (A1–B2)",
+          "arabicDescription": "الجراحة والعمليات الجراحية (Die Chirurgie): علم الجراحة، الجرّاح (Chirurg)، العملية الجراحية (Operation/OP)، غرفة العمليات (OP-Saal)، التخدير العام والبنج (Narkose)، المشرط الجراحي (Skalpell)، الخياطة الجراحية (chirurgische Naht)، التعقيم، غرفة العناية المركزة (Intensivstation)، ومرحلة ما بعد الجراحة (Nachsorge).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Im Krankenhaus: Die Operation",
+              "intro": "Einfache Sätze über Ärzte, Operation und Schlafen im OP (A1).",
+              "paragraphs": [
+                [
+                  "Mein Onkel ist im Krankenhaus.",
+                  "Heute hat er [die Operation, -en|eine wichtige Operation] am Knie.",
+                  "[der Chirurg, -en|Ein freundlicher Chirurg] wird ihn [operieren|operieren]."
+                ],
+                [
+                  "Im [der Operationssaal, -̈e|Operationssaal] ist alles sauber und weiß.",
+                  "Vor dem Start bekommt er [die Narkose, -n|eine Narkose] und schläft tief ein.",
+                  "Er spürt überhaupt keine Schmerzen."
+                ],
+                ["Nach zwei Stunden wacht er glücklich auf seinem Zimmer auf."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Gut versorgt nach dem Eingriff",
+              "intro": "Vollnarkose, Wundnähte und postoperative Nachsorge (A2).",
+              "paragraphs": [
+                [
+                  "Vor der Operation hatte ich verständlicherweise etwas Angst.",
+                  "Doch das OP-Team erklärte mir jeden Schritt ganz ruhig."
+                ],
+                [
+                  "Nachdem das OP-Feld sorgfältig vorbereitet war, begann die Behandlung.",
+                  "Als ich aufwachte, war die Wunde bereits mit einer sauberen [die chirurgische Naht, -̈e|chirurgischen Naht] verschlossen."
+                ],
+                [
+                  "Die ersten Stunden verbrachte ich zur Sicherheit im Aufwachraum.",
+                  "In den nächsten Wochen kümmert sich mein Hausarzt um die weitere [die Nachsorge (Sg.)|Nachsorge] und den Verbandswechsel."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Moderne Chirurgie und Patientensicherheit",
+              "intro": "Schlüsselloch-Chirurgie, Sterilität und Anästhesie-Monitoring (B1).",
+              "paragraphs": [
+                [
+                  "Die moderne [die Chirurgie (Sg.)|Chirurgie] hat sich von großen, invasiven Eingriffen weitgehend zu schonenden minimalinvasiven Techniken weiterentwickelt.",
+                  "Im [der Operationssaal, -̈e|Operationssaal] müssen sämtliche Instrumente absolut [steril (Adj.)|steril] sein, um postoperative Infektionen im Keim zu ersticken."
+                ],
+                [
+                  "Während der Operateur mit mikrochirurgischem Besteck oder [das Skalpell, -e|dem Skalpell] arbeitet, überwacht der Narkosearzt alle Vitalfunktionen unter [die Narkose, -n|der Vollnarkose]."
+                ],
+                [
+                  "Bei schweren Eingriffen erfolgt die temporäre Weiterbehandlung auf [die Intensivstation, -en|der Intensivstation], bevor der Patient auf die Normalstation verlegt wird."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Robotikassistenz, perioperatives Risikomanagement und Geweberegeneration",
+              "intro": "Da-Vinci-Operationssysteme, Fast-Track-Rehabilitation und Asepsis (B2).",
+              "paragraphs": [
+                [
+                  "In universitären Zentren hat die roboterassistierte Hochpräzisionschirurgie die Grenzen manueller Schnittführung neu definiert.",
+                  "Hochauflösende 3D-Kamerasysteme und Instrumente mit sieben Freiheitsgraden ermöglichen dem [der Chirurg, -en|Chirurgen] die millimetergenaue Schonung vulnerabler Nervenbahnen im kleinen Becken."
+                ],
+                [
+                  "Das perioperative Konzept der 'Fast-Track-Rehabilitation' forciert eine frühzeitige Mobilisation und enterale Ernährung, wodurch Liegezeiten verkürzt werden."
+                ],
+                [
+                  "Ein multimodales Schmerzmanagement in Verbindung mit strukturierter [die Nachsorge (Sg.)|Nachsorge] senkt die Morbiditätsrate signifikant und optimiert funktionelle Behandlungsergebnisse."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_unfallstation",
+          "title": "Die Unfallstation",
+          "words": [
+            {
+              "german": "die Notaufnahme, -n",
+              "arabic": "قسم الطوارئ والاستقبال العاجل بالمستشفى",
+              "english": "emergency room (ER), emergency department",
+              "example": "Schwer verletzte Personen werden direkt in die Notaufnahme des Krankenhauses gebracht."
+            },
+            {
+              "german": "der Notarzt, -̈e",
+              "arabic": "طبيب الطوارئ والإسعاف المتنقل",
+              "english": "emergency doctor, emergency physician",
+              "example": "Der Notarzt traf innerhalb von acht Minuten am Unfallort ein und stabilisierte den Patienten."
+            },
+            {
+              "german": "der Rettungswagen, -",
+              "arabic": "سيارة الإسعاف المجهزة طبياً",
+              "english": "ambulance",
+              "example": "Mit Blaulicht und Martinshorn bahnte sich der Rettungswagen einen Weg durch den dichten Verkehr."
+            },
+            {
+              "german": "das Blaulicht, -er",
+              "arabic": "الضوء الأزرق التحذيري لمركبات الطوارئ",
+              "english": "flashing blue light, emergency lights",
+              "example": "Das Blaulicht signalisierte den Autofahrern, sofort eine Rettungsgasse zu bilden."
+            },
+            {
+              "german": "die Sirene, -n",
+              "arabic": "صفارة الإنذار الصوتية (بوق الإسعاف)",
+              "english": "siren",
+              "example": "Von Weitem hörte man die laute Sirene der herannahenden Einsatzkräfte."
+            },
+            {
+              "german": "die Krankentrage, -n",
+              "arabic": "نقالة نقل المرضى والمصابين",
+              "english": "stretcher, gurney",
+              "example": "Die Sanitäter schoben den Verletzten vorsichtig auf der Krankentrage in die Klinik."
+            },
+            {
+              "german": "der medizinische Notfall, -̈e",
+              "arabic": "حالة الطوارئ الطبية الحرجة",
+              "english": "medical emergency",
+              "example": "Bei Verdacht auf einen Herzinfarkt liegt ein lebensbedrohlicher medizinischer Notfall vor."
+            },
+            {
+              "german": "die Erstversorgung, -en",
+              "arabic": "الرعاية الطبية الأولية الفورية في موقع الحادث",
+              "english": "initial emergency treatment, first-line care",
+              "example": "Nach der erfolgreichen Erstversorgung vor Ort transportierte man die Frau in den Schockraum."
+            },
+            {
+              "german": "die Triage (Sg.)",
+              "arabic": "نظام فرز وتصنيف أولويات علاج المصابين (ترياج)",
+              "english": "triage",
+              "example": "In der Notaufnahme entscheidet die Triage nach Dringlichkeit über die Reihenfolge der Behandlung."
+            },
+            {
+              "german": "die Wiederbelebung, -en",
+              "arabic": "الإنعاش القلبي الرئوي (CPR)",
+              "english": "resuscitation, CPR",
+              "example": "Dank der sofortigen Wiederbelebung durch Ersthelfer überlebte der Mann den Herzstillstand."
+            },
+            {
+              "german": "die Notfallambulanz, -en",
+              "arabic": "عيادة الإسعاف والطوارئ للحالات العاجلة",
+              "english": "emergency outpatient clinic",
+              "example": "Am Wochenende hat die kassenärztliche Notfallambulanz für dringende Fälle geöffnet."
+            },
+            {
+              "german": "die Rettungsgasse, -n",
+              "arabic": "مسار الطوارئ بين مسارات السيارات على الطريق",
+              "english": "emergency corridor, rescue lane",
+              "example": "Bei stockendem Verkehr müssen alle Fahrzeuge sofort eine freie Rettungsgasse bilden."
+            }
+          ],
+          "description": "Notaufnahme, Notarzt, Rettungswagen, Blaulicht, Sirene, Trage und Triage.",
+          "details": "Notfallmedizin, Erstversorgung, Schockraum, Rettungsdienst und Reanimation (A1–B2)",
+          "arabicDescription": "قسم الطوارئ والإسعاف (Die Unfallstation): قسم الطوارئ (Notaufnahme)، طبيب الطوارئ (Notarzt)، سيارة الإسعاف (Rettungswagen)، الضوء الأزرق (Blaulicht)، صفارة الإنذار (Sirene)، نقالة المرضى (Trage)، حالة الطوارئ (Notfall)، الرعاية الأولية الفورية، تصنيف الحالات وفرزها (Triage)، والإنعاش القلبي الرئوي (Wiederbelebung).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Hilfe mit Blaulicht",
+              "intro": "Einfache Sätze über Krankenwagen, Notarzt und Sirene (A1).",
+              "paragraphs": [
+                [
+                  "Auf der Straße ist ein Unfall passiert.",
+                  "Ein Auto ruft die Notrufnummer 112 an.",
+                  "Schnell kommt [der Rettungswagen, -|ein Rettungswagen] mit lautem [das Blaulicht, -er|Blaulicht]."
+                ],
+                [
+                  "Wir hören [die Sirene, -n|die laute Sirene] schon von weitem.",
+                  "[der Notarzt, -̈e|Der Notarzt] steigt aus und hilft dem Verletzten.",
+                  "Er legt den Mann vorsichtig auf [die Krankentrage, -n|eine Krankentrage]."
+                ],
+                [
+                  "Das Auto fährt schnell in [die Notaufnahme, -n|die Notaufnahme].",
+                  "Dort helfen die Ärzte sofort."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Notfall in der Nacht",
+              "intro": "In die Notaufnahme fahren, Triage und Erste Hilfe (A2).",
+              "paragraphs": [
+                [
+                  "Mitten in der Nacht bekam mein Nachbar plötzlich starke Brustschmerzen und Atemnot.",
+                  "Wir erkannten sofort: Das ist [der medizinische Notfall, -̈e|ein akuter medizinischer Notfall]!"
+                ],
+                [
+                  "Der Notarzt leitete noch im Wohnzimmer [die Erstversorgung, -en|die Erstversorgung] ein und verabreichte Sauerstoff.",
+                  "Im Krankenhaus angekommen, wurden wir direkt in [die Notaufnahme, -n|die Notaufnahme] gebracht.",
+                  "Durch das System [die Triage (Sg.)|der Triage] wurde er sofort als Notfallpatient eingestuft und ohne Wartezeit untersucht."
+                ],
+                ["Die schnelle Hilfe hat ihm das Leben gerettet."]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Rettungskette und Schockraum-Management",
+              "intro": "Zusammenspiel von Notruf, Rettungsdienst und klinischer Akutversorgung (B1).",
+              "paragraphs": [
+                [
+                  "Die Effizienz der Rettungskette entscheidet bei polytraumatisierten Patienten über Leben und Tod.",
+                  "Auf der Autobahn sind Autofahrer gesetzlich verpflichtet, bei Stau vorausschauend [die Rettungsgasse, -n|eine freie Rettungsgasse] zu bilden, um Einsatzfahrzeugen freie Fahrt zu gewährleisten."
+                ],
+                [
+                  "Bei einem Herz-Kreislauf-Stillstand zählt jede Sekunde: Die unverzügliche [die Wiederbelebung, -en|Wiederbelebung] durch Passanten überbrückt die Zeit bis zum Eintreffen von [der Notarzt, -̈e|dem Notarzt]."
+                ],
+                [
+                  "In [die Notaufnahme, -n|der Notaufnahme] übernimmt das interdisziplinäre Schockraumteam nahtlos die Weiterbehandlung nach ATLS-Standards."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Klinische Akutmedizin, Manchester-Triage-System und Schockraum-Algorithmen",
+              "intro": "Schockraumversorgung, Advanced Life Support und präklinische Notfallmedizin (B2).",
+              "paragraphs": [
+                [
+                  "Zentrale Notaufnahmen (ZNA) fungieren als hochspezialisierte Schnittstellen zwischen präklinischer Rettungsmedizin und stationärer Maximalversorgung.",
+                  "Zur Priorisierung von Patientenströmen kommt flächendeckend das Manchester-Triage-System zum Einsatz, das Vitalbedrohungen binnen Sekunden farblich kategorisiert."
+                ],
+                [
+                  "Im Schockraum gewährleistet das Zusammenspiel von Unfallchirurgie, Anästhesie und Radiologie eine simultane Computertomografie ('Trauma-Scan') unter laufendem Advanced Life Support."
+                ],
+                [
+                  "Die kontinuierliche Weiterentwicklung von Tele-Notarzt-Systemen optimiert die Versorgungsqualität im ländlichen Raum nachhaltig."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "apotheke",
+      "title": "DIE APOTHEKE",
+      "topics": [
+        {
+          "id": "die_apotheke",
+          "title": "Die Apotheke",
+          "words": [
+            {
+              "german": "die Apotheke, -n",
+              "arabic": "الصيدلية (رمز الحرف A الأحمر في ألمانيا)",
+              "english": "pharmacy, chemist's, drugstore",
+              "example": "An dem großen roten 'A' erkennt man in Deutschland jede Apotheke sofort."
+            },
+            {
+              "german": "der Apotheker, -",
+              "arabic": "الصيدلي المؤهل علمياً",
+              "english": "pharmacist, chemist",
+              "example": "Der Apotheker berät mich ausführlich über die richtige Einnahme des Mittels."
+            },
+            {
+              "german": "das Medikament, -e",
+              "arabic": "الدواء والعقار الطبي",
+              "english": "medication, medicine, drug",
+              "example": "Nehmen Sie dieses wirksame Medikament bitte stets nach den Mahlzeiten ein."
+            },
+            {
+              "german": "die Tablette, -n",
+              "arabic": "القرص الدوائي / الحبة",
+              "english": "tablet, pill",
+              "example": "Schlucken Sie die Tablette unzerkaut mit einem großen Glas Wasser."
+            },
+            {
+              "german": "die Salbe, -n",
+              "arabic": "المرهم / الدهان الطبي الموضعي",
+              "english": "ointment, cream, salve",
+              "example": "Die kühlende Salbe lindert den Juckreiz des Mückenstichs sofort."
+            },
+            {
+              "german": "der Hustensaft, -̈e",
+              "arabic": "شراب علاج السعال والكحة",
+              "english": "cough syrup",
+              "example": "Ein Löffel pflanzlicher Hustensaft beruhigt den Reizhusten vor dem Schlafen."
+            },
+            {
+              "german": "die Packungsbeilage, -n",
+              "arabic": "النشرة الطبية المرفقة بعلبة الدواء (البانفليت)",
+              "english": "package insert, patient leaflet",
+              "example": "Lesen Sie vor der Anwendung aufmerksam die Packungsbeilage durch."
+            },
+            {
+              "german": "die Nebenwirkung, -en",
+              "arabic": "الأثر والعرَض الجانبي للدواء",
+              "english": "side effect",
+              "example": "Zu den bekannten Nebenwirkungen gehören leichte Müdigkeit und Schwindel."
+            },
+            {
+              "german": "die Dosierung, -en",
+              "arabic": "الجرعة الدوائية المحددة",
+              "english": "dosage",
+              "example": "Halten Sie sich strikt an die verordnete Dosierung von zwei Kapseln täglich."
+            },
+            {
+              "german": "die Tropfen (Pl.)",
+              "arabic": "القطرات الدوائية السائلة (للعين أو الفم)",
+              "english": "drops (medicine)",
+              "example": "Geben Sie dreimal täglich fünf Tropfen in das entzündete Auge."
+            },
+            {
+              "german": "das Schmerzmittel, -",
+              "arabic": "المسكّن الدوائي لتسكين الآلام",
+              "english": "painkiller, pain reliever",
+              "example": "Ibuprofen ist ein weit verbreitetes Schmerzmittel gegen Kopfschmerzen."
+            },
+            {
+              "german": "rezeptpflichtig (Adj.)",
+              "arabic": "يصرف بوصفة طبية فقط (لا يباع دون روشتة)",
+              "english": "prescription-only, requiring a prescription",
+              "example": "Starke Antibiotika sind in Deutschland ausnahmslos rezeptpflichtig."
+            }
+          ],
+          "description": "Apotheke, Apotheker, Medikamente, Tabletten, Salben, Beipackzettel und Dosierung.",
+          "details": "Arzneimittelabgabe, Rezeptpflicht, Schmerzmittel, Tropfen und pharmazeutische Beratung (A1–B2)",
+          "arabicDescription": "الصيدلية والأدوية (Die Apotheke): الصيدلية (Apotheke)، الصيدلي (Apotheker)، الأدوية والعقاقير (Medikament)، الأقراص والحبوب (Tablette)، المراهم الجلدية (Salbe)، شراب السعال (Hustensaft)، النشرة الدوائية المرفقة (Packungsbeilage/Beipackzettel)، الآثار الجانبية (Nebenwirkung)، والجرعة الدوائية (Dosierung).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Medikamente aus der Apotheke",
+              "intro": "Einfache Sätze über Apotheke, Tabletten und Medizin (A1).",
+              "paragraphs": [
+                [
+                  "Ich habe Halsschmerzen und Husten.",
+                  "Ich gehe in [die Apotheke, -n|die Apotheke] an der Ecke.",
+                  "[der Apotheker, -|Der Apotheker] gibt mir [der Hustensaft, -̈e|einen süßen Hustensaft] und Tabletten gegen Schmerzen."
+                ],
+                [
+                  "Ich nehme [die Tablette, -n|eine Tablette] mit einem Glas Wasser ein.",
+                  "Auf die Wunde an der Hand schmiere ich [die Salbe, -n|eine weiße Salbe].",
+                  "Morgen geht es mir bestimmt schon viel besser."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Das Rezept vom Arzt einlösen",
+              "intro": "Rezeptpflichtige Medikamente, Dosierung und Packungsbeilage (A2).",
+              "paragraphs": [
+                [
+                  "Nach meinem Arztbesuch ging ich direkt in die Apotheke, um mein Rezept einzulösen.",
+                  "Weil das Medikament [rezeptpflichtig (Adj.)|rezeptpflichtig] war, brauchte ich die ärztliche Verordnung."
+                ],
+                [
+                  "Die Pharmazeutin erklärte mir genau die richtige [die Dosierung, -en|Dosierung]: eine Tablette morgens und abends.",
+                  "Sie riet mir außerdem, vor der Einnahme [die Packungsbeilage, -n|die Packungsbeilage] zu lesen, um mögliche [die Nebenwirkung, -en|Nebenwirkungen] zu kennen."
+                ],
+                [
+                  "Zusätzlich kaufte ich mir [das Schmerzmittel, -|ein Schmerzmittel] für meine Kopfschmerzen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die pharmazeutische Beratungspflicht und Arzneimittelsicherheit",
+              "intro": "Wechselwirkungen, Notdienst und E-Rezept-Strukturen (B1).",
+              "paragraphs": [
+                [
+                  "Apotheken in Deutschland erfüllen einen unverzichtbaren Versorgungsauftrag, der weit über den reinen Verkauf von Waren hinausgeht.",
+                  "Ein studierter [der Apotheker, -|Apotheker] überprüft verordnete [das Medikament, -e|Medikamente] gewissenhaft auf gefährliche Wechselwirkungen mit anderen Präparaten."
+                ],
+                [
+                  "Besonders bei frei verkäuflichen Arzneien wie [die Tropfen (Pl.)|pflanzlichen Tropfen] oder Salben ist die fachkundige Aufklärung über Einnahmezeitpunkte und Kontraindikationen elementar."
+                ],
+                [
+                  "Über den flächendeckenden Nacht- und Notdienst ist die Bevölkerung rund um die Uhr verlässlich mit lebenswichtigen Arzneimitteln versorgt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Pharmakovigilanz, Rezepturherstellung und das E-Rezept-Ökosystem",
+              "intro": "Arzneimittelinteraktionen, personalisierte Rezepturen und Telematikinfrastruktur (B2).",
+              "paragraphs": [
+                [
+                  "Die Apotheke vor Ort bildet das Rückgrat der Pharmakovigilanz und Arzneimitteltherapiesicherheit (AMTS).",
+                  "Neben industriellen Fertigarzneimitteln stellen Offizinapotheken patientenindividuelle Rezepturen (Salben, Kapseln für Pädiatriepatienten) unter kontrollierten Reinraumbedingungen her."
+                ],
+                [
+                  "Die Implementierung der bundesweiten Telematikinfrastruktur erlaubt das kontaktlose Auslesen von E-Rezepten via Versichertenkarte, wodurch Fälschungsrisiken bei [rezeptpflichtig (Adj.)|rezeptpflichtigen Substanzen] eliminiert werden."
+                ],
+                [
+                  "Gleichzeitig sensibilisiert der Pharmazeut Patienten für das Risikoprofil seltener [die Nebenwirkung, -en|unerwünschter Arzneimittelwirkungen] im Rahmen chronischer Polypharmazie."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "alternativmedizin",
+      "title": "DIE ALTERNATIVMEDIZIN",
+      "topics": [
+        {
+          "id": "die_alternativmedizin",
+          "title": "Die Alternativmedizin",
+          "words": [
+            {
+              "german": "die Alternativmedizin (Sg.)",
+              "arabic": "الطب البديل والتكميلي",
+              "english": "alternative medicine, complementary medicine",
+              "example": "Viele chronisch kranke Menschen suchen Hilfe in Methoden der Alternativmedizin."
+            },
+            {
+              "german": "der Heilpraktiker, -",
+              "arabic": "المعالج الشعبي والطبيعي المرخص قانوناً بألمانيا",
+              "english": "naturopath, alternative medical practitioner",
+              "example": "In Deutschland darf ein staatlich geprüfter Heilpraktiker ohne Medizinstudium behandeln."
+            },
+            {
+              "german": "die Akupunktur (Sg.)",
+              "arabic": "الوخز بالإبر الصينية التقليدية",
+              "english": "acupuncture",
+              "example": "Die feine Akupunktur entlang der Meridiane soll Blockaden im Energiefluss lösen."
+            },
+            {
+              "german": "die Homöopathie (Sg.)",
+              "arabic": "المعالجة المثلية (الهوميوباثي بالجلوبولي)",
+              "english": "homeopathy",
+              "example": "Die Homöopathie arbeitet mit stark verdünnten Wirkstoffen nach dem Ähnlichkeitsprinzip."
+            },
+            {
+              "german": "die Naturheilkunde (Sg.)",
+              "arabic": "الطب الطبيعي والعلاج بوسائل الطبيعة",
+              "english": "naturopathy",
+              "example": "Kneipp-Güsse und Heilkräuter sind bewährte Säulen der traditionellen Naturheilkunde."
+            },
+            {
+              "german": "die Osteopathie (Sg.)",
+              "arabic": "طب تقويم العظام والأنسجة اليدوي (الأوستيوباثي)",
+              "english": "osteopathy",
+              "example": "Durch sanfte Handgriffe löst der Therapeut in der Osteopathie tiefe Gewebespannungen."
+            },
+            {
+              "german": "die Ganzheitlichkeit (Sg.)",
+              "arabic": "النظرة الشمولية المتكاملة للجسد والنفس",
+              "english": "holism, holistic approach",
+              "example": "Die Ganzheitlichkeit betrachtet Körper, Geist und Lebensumstände als Einheit."
+            },
+            {
+              "german": "die Akupunkturnadel, -n",
+              "arabic": "إبرة الوخز الصينية الدقيقة",
+              "english": "acupuncture needle",
+              "example": "Der Einstich der hauchdünnen Akupunkturnadel ist kaum zu spüren."
+            },
+            {
+              "german": "der Kräutertee, -s",
+              "arabic": "شاي الأعشاب الطبية (البابونج، النعناع)",
+              "english": "herbal tea",
+              "example": "Ein warmer Kamillen-Kräutertee beruhigt den gereizten Magen auf natürliche Weise."
+            },
+            {
+              "german": "die Selbstheilungskraft, -̈e",
+              "arabic": "قدرة وقوة الجسم على الشفاء الذاتي",
+              "english": "self-healing powers, innate healing capacity",
+              "example": "Gesunde Ernährung und Ruhe aktivieren die körpereigenen Selbstheilungskräfte."
+            },
+            {
+              "german": "die Phytotherapie (Sg.)",
+              "arabic": "العلاج بالنباتات والأعشاب الطبية المثبتة علمياً",
+              "english": "phytotherapy, herbal medicine",
+              "example": "In der Phytotherapie werden wirksame Pflanzenauszüge standardisiert verabreicht."
+            },
+            {
+              "german": "das Globuli, -",
+              "arabic": "حبيبات السكر الصغيرة في الهوميوباثي",
+              "english": "globules (homeopathic sugar pellets)",
+              "example": "Sie nahm drei kleine weiße Globuli vor dem Schlafengehen ein."
+            }
+          ],
+          "description": "Alternativmedizin, Heilpraktiker, Akupunktur, Homöopathie, Naturheilkunde und Phytotherapie.",
+          "details": "Komplementärmedizin, Osteopathie, Ganzheitlichkeit, Kräutermedizin und Selbstheilung (A1–B2)",
+          "arabicDescription": "الطب البديل والتكميلي (Die Alternativmedizin): الطب البديل (Alternativmedizin)، المعالج الطبيعي المرخص (Heilpraktiker)، الوخز بالإبر الصينية (Akupunktur)، المعالجة المثلية (Homöopathie)، طب الأعشاب والعلاج الطبيعي (Naturheilkunde)، طب العظام (Osteopathie)، العلاج الشمولي (Ganzheitlichkeit)، شاي الأعشاب، وقدرات الشفاء الذاتي للجسم.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Tee und Natur für die Gesundheit",
+              "intro": "Einfache Sätze über Kräutertee, Natur und Entspannung (A1).",
+              "paragraphs": [
+                [
+                  "Wenn ich krank bin, trinke ich viel [der Kräutertee, -s|heißen Kräutertee].",
+                  "Pfefferminze und Kamille tun meinem Bauch gut.",
+                  "Die Natur hat viele gute Pflanzen für uns."
+                ],
+                [
+                  "Meine Freundin geht zu einer Praxis für [die Naturheilkunde (Sg.)|Naturheilkunde].",
+                  "Dort bekommt sie sanfte Hilfe ohne schwere Chemie.",
+                  "Unser Körper hat starke [die Selbstheilungskraft, -̈e|Selbstheilungskräfte]."
+                ],
+                ["Ruhe, frische Luft und gesunder Schlaf helfen immer."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Meine erste Akupunktur-Sitzung",
+              "intro": "Traditionelle Chinesische Medizin, Nadeln und Heilpraktiker (A2).",
+              "paragraphs": [
+                [
+                  "Weil meine Rückenschmerzen nicht verschwinden wollten, empfahl mir eine Kollegin [der Heilpraktiker, -|einen Heilpraktiker].",
+                  "Er schlug mir eine Behandlung mit [die Akupunktur (Sg.)|Akupunktur] vor."
+                ],
+                [
+                  "Ich legte mich auf eine bequeme Liege.",
+                  "Vorsichtig setzte er an bestimmten Punkten [die Akupunkturnadel, -n|feine Akupunkturnadeln] in die Haut.",
+                  "Nach zwanzig Minuten fühlte ich eine angenehme Wärme im Rücken und die Verspannungen ließen nach."
+                ],
+                ["Ich war positiv überrascht von dieser Methode."]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Schulmedizin und Komplementärmedizin im Dialog",
+              "intro": "Integrative Medizin, Evidenz und ganzheitliche Behandlungsansätze (B1).",
+              "paragraphs": [
+                [
+                  "Immer mehr Mediziner befürworten heute eine sinnvolle Synthese aus universitärer Schulmedizin und fundierter [die Alternativmedizin (Sg.)|Komplementärmedizin].",
+                  "Während akute Notfälle zwingend in die Hände der Notfallmedizin gehören, bietet [die Ganzheitlichkeit (Sg.)|Ganzheitlichkeit] wertvolle Impulse bei chronischen Schmerzsyndromen."
+                ],
+                [
+                  "Methoden wie [die Osteopathie (Sg.)|Osteopathie] und evidenzbasierte [die Phytotherapie (Sg.)|Phytotherapie] mobilisieren körpereigene [die Selbstheilungskraft, -̈e|Selbstheilungskräfte] und werden von vielen gesetzlichen Krankenkassen bezuschusst."
+                ],
+                [
+                  "Verfahren wie [die Homöopathie (Sg.)|die Homöopathie] stehen wegen mangelnder wissenschaftlicher Wirksamkeitsnachweise über den Placebo-Effekt hinaus in der Kritik, erfreuen sich aber ungebrochener Beliebtheit."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Wissenschaftstheoretische Kontroversen, Placeboforschung und Phytopharmakologie",
+              "intro": "Evidenzbasierte Kriterien, klinische Studien und psychosomatische Dimensionen (B2).",
+              "paragraphs": [
+                [
+                  "Die wissenschaftstheoretische Beurteilung alternativer Heilmethoden erfordert eine differenzierte methodische Betrachtung.",
+                  "Während die rationale [die Phytotherapie (Sg.)|Phytotherapie] durch doppelblinde, randomisierte Studien pharmakologische Wirkmechanismen (z. B. Hyperforin im Johanniskraut) nachweist, operiert [die Homöopathie (Sg.)|die klassische Homöopathie] jenseits der Avogadro-Konstante."
+                ],
+                [
+                  "Moderne Placeboforschung belegt jedoch eindrucksvoll, dass empathische Zuwendung durch [der Heilpraktiker, -|den Therapeuten] messbare neuroendokrine Reaktionen und Schmerzlinderung triggert."
+                ],
+                [
+                  "Zukunftsträchtige Versorgungsmodelle integrieren wirksame Naturheilverfahren in standardisierte klinische Pfade ('Integrative Onkologie')."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wellness",
+      "title": "WELLNESS",
+      "topics": [
+        {
+          "id": "wellness",
+          "title": "Wellness",
+          "words": [
+            {
+              "german": "das Wellness (Sg.)",
+              "arabic": "الاستجمام والعناية بالصحة والعافية (السبا)",
+              "english": "wellness, spa",
+              "example": "Ein Wellness-Wochenende in den Bergen bringt neue Energie für den Alltag."
+            },
+            {
+              "german": "die Sauna, Saunen",
+              "arabic": "حمام الساونا الحراري الفنلندي",
+              "english": "sauna",
+              "example": "In der heißen Sauna schwitzen die Besucher bei neunzig Grad Celsius."
+            },
+            {
+              "german": "die Massage, -n",
+              "arabic": "التدليك الطبي والمساج",
+              "english": "massage",
+              "example": "Eine kräftige Massage löst die tiefen Muskelverspannungen im Schulterbereich."
+            },
+            {
+              "german": "das Dampfbad, -̈er",
+              "arabic": "حمام البخار الرطب (الحمام التركي)",
+              "english": "steam bath, steam room",
+              "example": "Der warme feuchte Nebel in dem Dampfbad befreit die Atemwege spürbar."
+            },
+            {
+              "german": "der Whirlpool, -s",
+              "arabic": "حوض التدليك المائي الساخن (الجاكوزي)",
+              "english": "whirlpool, hot tub, jacuzzi",
+              "example": "Im blubbernden warmen Wasser von dem Whirlpool kann man herrlich abschalten."
+            },
+            {
+              "german": "die Entspannung, -en",
+              "arabic": "الاسترخاء والراحة النفسية والجسدية",
+              "english": "relaxation",
+              "example": "Sanfte Musik und gedämpftes Licht fördern eine tiefe körperliche Entspannung."
+            },
+            {
+              "german": "das Thermalbad, -̈er",
+              "arabic": "حمام المياه المعدنية الحارة (المصحة الحرارية)",
+              "english": "thermal bath, hot spring spa",
+              "example": "Das mineralstoffreiche Wasser in dem Thermalbad lindert rheumatische Beschwerden."
+            },
+            {
+              "german": "die Erholung (Sg.)",
+              "arabic": "النقاهة والراحة واستعادة الحيوية",
+              "english": "recovery, rest, recreation",
+              "example": "Nach anstrengenden Prüfungen brauche ich ein paar Tage pure Erholung."
+            },
+            {
+              "german": "die Gesichtsmaske, -n",
+              "arabic": "قناع العناية بالوجه ونضارة البشرة",
+              "english": "face mask (cosmetic)",
+              "example": "Eine feuchtigkeitsspendende Gesichtsmaske pflegt die trockene Haut im Winter."
+            },
+            {
+              "german": "das Aromaöl, -e",
+              "arabic": "الزيت العطري الطبيعي للاسترخاء",
+              "english": "aroma oil, essential oil",
+              "example": "Der Duft von beruhigendem Lavendel-Aromaöl erfüllte den Ruheraum."
+            },
+            {
+              "german": "die Auszeit, -en",
+              "arabic": "فترة الاستراحة والتوقف المؤقت عن ضغط العمل",
+              "english": "time-out, break",
+              "example": "Wir gönnen uns eine wohlverdiente Auszeit fernab von Termindruck und E-Mails."
+            },
+            {
+              "german": "energie tanken",
+              "arabic": "يشحن طاقته وحيويته من جديد",
+              "english": "to recharge one's batteries",
+              "example": "Im Spa kann man wunderbar die Seele baumeln lassen und neue Energie tanken."
+            }
+          ],
+          "description": "Sauna, Massage, Dampfbad, Whirlpool, Thermalbad, Aromatherapie und Regeneration.",
+          "details": "Spa, Erholung, Selbstfürsorge, Aufguss, Stressabbau und gesundes Entspannen (A1–B2)",
+          "arabicDescription": "الاستجمام والعافية (Wellness): السبا والاستجمام (Wellness)، الساونا الفنلندية (Sauna)، التدليك والمساج (Massage)، حمام البخار (Dampfbad)، حوض الجاكوزي (Whirlpool)، الاسترخاء العميق (Entspannung)، الحمامات الحرارية المعدنية (Thermalbad)، أقنعة الوجه، الزيوت العطرية، وإعادة شحن الطاقة البدنية والنفسية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein erholsamer Tag im Spa",
+              "intro": "Einfache Sätze über Sauna, Massage und Entspannung (A1).",
+              "paragraphs": [
+                [
+                  "Heute habe ich frei und mache [das Wellness (Sg.)|Wellness].",
+                  "Ich gehe in [die Sauna, Saunen|die heiße Sauna] und schwitze zehn Minuten.",
+                  "Danach dusche ich kalt ab."
+                ],
+                [
+                  "Im Anschluss bekomme ich [die Massage, -n|eine wunderbare Massage] für meinen Rücken.",
+                  "Ich liege im warmen Wasser in [der Whirlpool, -s|dem Whirlpool].",
+                  "Es ist ruhig und ich spüre tiefe [die Entspannung, -en|Entspannung]."
+                ],
+                [
+                  "Hier kann ich neue [energie tanken|Energie tanken] für die ganze Woche."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Kurztrip ins Thermalbad",
+              "intro": "Thermalquellen, Dampfbäder und Aromaöle (A2).",
+              "paragraphs": [
+                [
+                  "Am vergangenen Wochenende fuhr ich mit meiner besten Freundin in [das Thermalbad, -̈er|ein bekanntes Thermalbad].",
+                  "Das warme Wasser aus der natürlichen Heilquelle tat meinen Gelenken unglaublich gut."
+                ],
+                [
+                  "Zwischendurch besuchten wir [das Dampfbad, -̈er|das Dampfbad] mit Eukalyptusduft, der die Bronchien reinigte.",
+                  "Nach einer entspannenden Behandlung mit [das Aromaöl, -e|warmem Aromaöl] machten wir ein langes Nickerchen im Ruheraum."
+                ],
+                [
+                  "Diese kleine [die Auszeit, -en|Auszeit] brachte uns die nötige [die Erholung (Sg.)|Erholung] nach einer stressigen Arbeitsphase."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die Kunst der Entschleunigung und moderne Badekultur",
+              "intro": "Kneipp-Prinzipien, Saunakultur und Burnout-Prävention (B1).",
+              "paragraphs": [
+                [
+                  "In einer leistungsorientierten Gesellschaft wird bewusste Selbstfürsorge zur unverzichtbaren Gesundheitsvorsorge.",
+                  "Regelmäßige Besuche in [die Sauna, Saunen|der Sauna] trainieren das Herz-Kreislauf-System durch den Wechsel von Hyperthermie und Kältereiz."
+                ],
+                [
+                  "Physiotherapeutische Anwendungen wie [die Massage, -n|Massagen] lösen myofasziale Verklebungen und senken den Spiegel des Stresshormons Cortisol im Blut."
+                ],
+                [
+                  "Ein Tag in mineralreichen [das Thermalbad, -̈er|Thermalbädern] ermöglicht mentale Regeneration, um den Akku wieder aufzuladen und frische [energie tanken|Energie zu tanken]."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Balneologie, Thermotherapie und vegetative Regeneration",
+              "intro": "Parasympathikus-Aktivierung, Balneotherapie und neurovegetative Entlastung (B2).",
+              "paragraphs": [
+                [
+                  "Die wissenschaftliche Balneologie erforscht die therapeutischen Wirkungen mineralischer Thermalquellen auf den menschlichen Organismus.",
+                  "Thermalsole-Bäder entlasten das muskuloskelettale System durch hydrostatischen Auftrieb und modulieren immunologische Entzündungsmediatoren."
+                ],
+                [
+                  "Thermotherapien aktivieren den Parasympathikus ('Rest and Digest'), regulieren den arteriellen Gefäßtonus und fördern [die Entspannung, -en|zentralnervöse Regeneration]."
+                ],
+                [
+                  "Moderne ganzheitliche Health-Resorts verbinden traditionsreiche Kurbad-Konzepte mit evidenzbasierten Stressmanagement-Programmen, um präventiv chronischen Erschöpfungssyndromen entgegenzuwirken."
+                ]
+              ]
+            }
+          }
         }
       ]
     }

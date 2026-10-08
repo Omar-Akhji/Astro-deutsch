@@ -38,8 +38,15 @@ export function initFamilyStoryTooltips(): void {
     const tooltipExample = tooltip?.querySelector<HTMLElement>("[data-tooltip-example]");
     const rawGlossary = story.dataset["glossary"];
     if (
-      !tooltip || !tooltipGerman || !tooltipTranslation || !tooltipArabic || !tooltipExplanation || !tooltipExample || !rawGlossary
-    ) continue;
+      !tooltip
+      || !tooltipGerman
+      || !tooltipTranslation
+      || !tooltipArabic
+      || !tooltipExplanation
+      || !tooltipExample
+      || !rawGlossary
+    )
+      continue;
 
     let parsedList: GlossaryEntry[] = [];
     try {
@@ -56,7 +63,11 @@ export function initFamilyStoryTooltips(): void {
       entries.set(entry.german, entry);
       entries.set(entry.german.toLowerCase(), entry);
 
-      const cleanForm = entry.german.split(",", 2)[0]?.trim().replace(/\s*\(Pl\.\)/i, "") ?? "";
+      const cleanForm =
+        entry.german
+          .split(",", 2)[0]
+          ?.trim()
+          .replace(/\s*\(Pl\.\)/i, "") ?? "";
       entries.set(cleanForm, entry);
       entries.set(cleanForm.toLowerCase(), entry);
 
@@ -96,16 +107,20 @@ export function initFamilyStoryTooltips(): void {
 
     const show = (word: HTMLElement) => {
       const rawWord = (word.dataset["word"] ?? "").trim();
-      const cleanRaw = rawWord.split(",", 2)[0]?.trim().replace(/\s*\(Pl\.\)/i, "") ?? "";
+      const cleanRaw =
+        rawWord
+          .split(",", 2)[0]
+          ?.trim()
+          .replace(/\s*\(Pl\.\)/i, "") ?? "";
       const noArticleRaw = cleanRaw.replace(/^(der|die|das|der\/die|ein|eine)\s+/i, "").trim();
 
       const entry =
-        entries.get(rawWord) ??
-        entries.get(rawWord.toLowerCase()) ??
-        entries.get(cleanRaw) ??
-        entries.get(cleanRaw.toLowerCase()) ??
-        entries.get(noArticleRaw) ??
-        entries.get(noArticleRaw.toLowerCase());
+        entries.get(rawWord)
+        ?? entries.get(rawWord.toLowerCase())
+        ?? entries.get(cleanRaw)
+        ?? entries.get(cleanRaw.toLowerCase())
+        ?? entries.get(noArticleRaw)
+        ?? entries.get(noArticleRaw.toLowerCase());
 
       if (!entry) return;
 
@@ -123,9 +138,9 @@ export function initFamilyStoryTooltips(): void {
 
       const left = Math.max(16, Math.min(bounds.left, globalThis.innerWidth - tooltipWidth - 16));
       const top =
-        bounds.bottom + tooltipHeight + 12 < globalThis.innerHeight
-          ? bounds.bottom + 8
-          : Math.max(16, bounds.top - tooltipHeight - 8);
+        bounds.bottom + tooltipHeight + 12 < globalThis.innerHeight ?
+          bounds.bottom + 8
+        : Math.max(16, bounds.top - tooltipHeight - 8);
 
       tooltip.style.setProperty("--tooltip-left", `${left.toString()}px`);
       tooltip.style.setProperty("--tooltip-top", `${top.toString()}px`);

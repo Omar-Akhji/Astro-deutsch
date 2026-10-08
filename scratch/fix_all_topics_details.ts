@@ -69,7 +69,7 @@ const topicDetailsMap: Record<string, string> = {
 };
 
 const vocabDir = path.resolve("src/data/vocabulary");
-const files = fs.readdirSync(vocabDir).filter(f => f.endsWith(".json"));
+const files = fs.readdirSync(vocabDir).filter((f) => f.endsWith(".json"));
 
 let updatedCount = 0;
 
@@ -78,7 +78,7 @@ for (const file of files) {
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
   let changed = false;
-  for (const sec of (data.sections || [])) {
+  for (const sec of data.sections || []) {
     for (const topic of sec.topics) {
       if (topicDetailsMap[topic.id]) {
         const oldDetails = topic.details;
@@ -97,4 +97,6 @@ for (const file of files) {
   }
 }
 
-console.log(`\nSuccessfully updated details for ${updatedCount} topics across all vocabulary files!`);
+console.log(
+  `\nSuccessfully updated details for ${updatedCount} topics across all vocabulary files!`,
+);

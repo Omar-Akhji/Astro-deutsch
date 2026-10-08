@@ -5,12 +5,12 @@
   "description": "Wörter für Schule, Universität und die moderne Arbeitswelt.",
   "sections": [
     {
-      "id": "schule_und_uni",
-      "title": "Schule und Universität",
+      "id": "schule",
+      "title": "DIE SCHULE",
       "topics": [
         {
           "id": "in_der_schule",
-          "title": "In der Schule",
+          "title": "Das Klassenzimmer",
           "words": [
             {
               "german": "die Schule, -n",
@@ -192,8 +192,1832 @@
           "arabicDescription": "النظام المدرسي والحياة الدراسية في ألمانيا. يتناول هذا الدرس مراحل التعليم (المدرسة الابتدائية، والمدرسة الثانوية، والجمنازيوم المؤهل للجامعة)، ونظام العلامات والدرجات في ألمانيا (من 1 ممتاز إلى 6 راسب)، ومفردات الفصول والامتحانات والواجبات المدرسية."
         },
         {
+          "id": "die_schulfaecher",
+          "title": "Die Schulfächer",
+          "words": [
+            {
+              "german": "das Schulfach, -̈er",
+              "arabic": "المادة الدراسية في المدرسة",
+              "english": "school subject",
+              "example": "Mein liebstes Schulfach ist Biologie, weil wir dort viel über Tiere und Natur lernen."
+            },
+            {
+              "german": "die Mathematik (Mathe)",
+              "arabic": "مادة الرياضيات والحساب",
+              "english": "mathematics, maths",
+              "example": "In Mathematik lösen die Schüler heute schwierige Gleichungen an der Tafel."
+            },
+            {
+              "german": "das Fach Deutsch (Sg.)",
+              "arabic": "مادة اللغة الألمانية والأدب",
+              "english": "German (subject)",
+              "example": "Im Fach Deutsch analysieren wir Gedichte von Goethe und schreiben Aufsätze."
+            },
+            {
+              "german": "der Englischunterricht (Sg.)",
+              "arabic": "درس وحصة اللغة الإنجليزية",
+              "english": "English class",
+              "example": "Im Englischunterricht üben wir flüssiges Sprechen und grammatikalische Zeiten."
+            },
+            {
+              "german": "die Biologie (Bio)",
+              "arabic": "علم الأحياء والكائنات الحية (البيولوجيا)",
+              "english": "biology",
+              "example": "In Bio betrachten wir Pflanzenzellen unter dem Mikroskop."
+            },
+            {
+              "german": "die Physik (Sg.)",
+              "arabic": "علم الفيزياء وقوانين الطبيعة",
+              "english": "physics",
+              "example": "Der Physiklehrer demonstriert die Gesetze der Schwerkraft mit einer Stahlkugel."
+            },
+            {
+              "german": "die Chemie (Sg.)",
+              "arabic": "علم الكيمياء والتفاعلات",
+              "english": "chemistry",
+              "example": "In Chemie mischen wir Flüssigkeiten und beobachten spannende Farbwechsel."
+            },
+            {
+              "german": "die Geschichte (Sg.)",
+              "arabic": "مادة التاريخ",
+              "english": "history (subject)",
+              "example": "In Geschichte besprechen wir die Französische Revolution und das Römische Reich."
+            },
+            {
+              "german": "die Erdkunde (Sg.)",
+              "arabic": "مادة الجغرافيا وعلوم الأرض",
+              "english": "geography",
+              "example": "In Erdkunde arbeiten wir mit dem großen Atlas und lernen Länder und Hauptstädte."
+            },
+            {
+              "german": "der Stundenplan, -̈e",
+              "arabic": "جدول الحصص الأسبوعي",
+              "english": "class schedule, timetable",
+              "example": "Am Sonntagabend packe ich meine Schultasche passend zum Stundenplan für Montag."
+            },
+            {
+              "german": "die Schulnote, -n",
+              "arabic": "العلامة والدرجة المدرسية (1 ممتاز إلى 6 راسب)",
+              "english": "school grade, mark",
+              "example": "In Deutschland ist eine Eins die beste Schulnote und eine Sechs die schlechteste."
+            },
+            {
+              "german": "das Zeugnis, -se",
+              "arabic": "الشهادة المدرسية والتقرير الفصلي",
+              "english": "report card, school certificate",
+              "example": "Vor den Sommerferien bekommen alle Schüler ihr Zeugnis mit allen Noten überreicht."
+            }
+          ],
+          "description": "Schulfächer, Stundenplan, Mathe, Deutsch, Naturwissenschaften, Geschichte und Noten.",
+          "details": "Schulsystem, Notenskala 1 bis 6, Fächerkombinationen und Abiturvorbereitung (A1–B2)",
+          "arabicDescription": "المواد الدراسية (Die Schulfächer): مفردات المواد الدراسية (Schulfach)، الرياضيات (Mathe)، اللغة الألمانية (Deutsch)، الأحياء (Biologie)، الفيزياء، الكيمياء، التاريخ، جدول الحصص (Stundenplan)، وسلم الدرجات المدرسية الألماني من 1 (ممتاز) إلى 6 (راسب).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Mein Stundenplan in der Schule",
+              "intro": "Einfache Sätze über Lieblingsfächer, Mathe, Deutsch und Hausaufgaben (A1).",
+              "paragraphs": [
+                [
+                  "Ich gehe in die fünfte Klasse und habe viele Fächer.",
+                  "Mein [der Stundenplan, -̈e|Stundenplan] hängt an der Wand über meinem Schreibtisch.",
+                  "Am Montag habe ich zwei Stunden [die Mathematik (Mathe)|Mathematik] und eine Stunde Kunst.",
+                  "Mathe macht mir Spaß, weil ich gern mit Zahlen rechne."
+                ],
+                [
+                  "Am Dienstag lernen wir Grammatik in dem [das Fach Deutsch (Sg.)|Fach Deutsch].",
+                  "Danach haben wir [der Englischunterricht (Sg.)|Englischunterricht] bei einer netten Lehrerin.",
+                  "Jedes [das Schulfach, -̈er|Schulfach] ist interessant und wichtig.",
+                  "Für die Klassenarbeit möchte ich eine gute Note bekommen."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Naturwissenschaften und das Schulzeugnis",
+              "intro": "Physik, Chemie, Biologie und das deutsche Notensystem (A2).",
+              "paragraphs": [
+                [
+                  "Ab der siebten Klasse bekommen die Schüler neue naturwissenschaftliche Schulfächer.",
+                  "In [die Biologie (Bio)|Biologie] lernen wir, wie das Herz schlägt und wie Bäume Sauerstoff produzieren.",
+                  "Besonders spannend ist der Unterricht in [die Chemie (Sg.)|Chemie] und [die Physik (Sg.)|Physik], wo wir Experimente machen.",
+                  "In [die Erdkunde (Sg.)|Erdkunde] und [die Geschichte (Sg.)|Geschichte] erfahren wir viel über fremde Kontinente und vergangene Jahrhunderte."
+                ],
+                [
+                  "Das deutsche Notensystem unterscheidet sich von vielen anderen Ländern: Eine Eins ist 'sehr gut', eine Vier ist 'ausreichend'.",
+                  "Wenn jemand eine Fünf oder Sechs als [die Schulnote, -n|Schulnote] erhält, hat er das Ziel leider nicht erreicht.",
+                  "Am Schuljahresende freuen sich alle auf [das Zeugnis, -se|das Zeugnis] und die langen Sommerferien.",
+                  "Mit fleißigem Lernen schafft man einen erfolgreichen Schulabschluss."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Fächerkanon und gymnasiale Oberstufe in Deutschland",
+              "intro": "Kurssystem der Oberstufe, Abiturprüfungen und Fächerwahl (B1).",
+              "paragraphs": [
+                [
+                  "Das deutsche Schulsystem zeichnet sich durch seine traditionelle Dreigliedrigkeit aus Hauptschule, Realschule und Gymnasium aus.",
+                  "In der gymnasialen Oberstufe löst sich der starre Klassenverband auf: Schüler wählen individuelle Leistungskurse und Grundkurse aus dem gesellschaftswissenschaftlichen, mathematisch-naturwissenschaftlichen und sprachlichen Aufgabenfeld.",
+                  "Dabei bilden Kernfächer wie [das Fach Deutsch (Sg.)|Deutsch] und [die Mathematik (Mathe)|Mathematik] das verbindliche Fundament bis zum Abitur."
+                ],
+                [
+                  "Die naturwissenschaftliche Bildung in [die Biologie (Bio)|Biologie], [die Chemie (Sg.)|Chemie] und [die Physik (Sg.)|Physik] legt den Grundstein für spätere MINT-Studiengänge (Mathematik, Informatik, Naturwissenschaften und Technik).",
+                  "Historisch-politische Bildung im Fach [die Geschichte (Sg.)|Geschichte] schärft das demokratische Urteilsvermögen heranwachsender Staatsbürger."
+                ],
+                [
+                  "Die erreichten Punkte im Abiturzeugnis fließen in den 'Numerus Clausus' (NC) ein, welcher den unmittelbaren Hochschulzugang regelt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Curriculare Didaktik, Kompetenzorientierung und Bildungsföderalismus",
+              "intro": "Kultusministerkonferenz (KMK), PISA-Folgen und Bildungsstandards (B2).",
+              "paragraphs": [
+                [
+                  "Das deutsche Bildungswesen unterliegt dem verfassungsrechtlich verankerten Bildungsföderalismus gemäß Artikel 7 des Grundgesetzes, wodurch die Kulturhoheit vollumfänglich bei den 16 Bundesländern liegt.",
+                  "Die Ständige Konferenz der Kultusminister (KMK) koordiniert die curriculare Harmonisierung, um die Vergleichbarkeit von Abschlüssen und Bildungsstandards bundesweit zu gewährleisten."
+                ],
+                [
+                  "Seit dem 'PISA-Schock' der frühen 2000er-Jahre vollzog die Schulpädagogik einen Paradigmenwechsel vom reinen Stoffkanon hin zu outputorientierten Bildungsstandards.",
+                  "In jedem [das Schulfach, -̈er|Schulfach] werden nicht isolierte Fakten memoriert, sondern kumulative Kompetenzen operationalisiert: Im mathematisch-naturwissenschaftlichen Unterricht dominiert problemorientiertes Modellieren, während geisteswissenschaftliche Fächer hermeneutische Textkompetenz und Quellenkritik forcieren."
+                ],
+                [
+                  "Dies reflektiert den Anspruch, Schüler zu autonomem epistemischem Denken und interdisziplinärer Reflexionsfähigkeit im Zeitalter digitaler Informationsfluten zu befähigen."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "im_labor",
+          "title": "Im Labor",
+          "words": [
+            {
+              "german": "das Labor, -e",
+              "arabic": "المختبر / المعمل العلمي",
+              "english": "laboratory, lab",
+              "example": "Im modern ausgestatteten Schullabor führen die Schüler chemische Versuche durch."
+            },
+            {
+              "german": "das Mikroskop, -e",
+              "arabic": "المجهر (الميكروسكوب)",
+              "english": "microscope",
+              "example": "Unter dem optischen Mikroskop werden winzige Wassertropfen und Einzeller sichtbar."
+            },
+            {
+              "german": "das Reagenzglas, -̈er",
+              "arabic": "أنبوب الاختبار الزجاجي",
+              "english": "test tube",
+              "example": "Er füllt eine blaue Flüssigkeit mit der Pipette vorsichtig in das schmale Reagenzglas."
+            },
+            {
+              "german": "der Bunsenbrenner, -",
+              "arabic": "موقد بنزن الغازي للتسخين",
+              "english": "Bunsen burner",
+              "example": "Mit einem Gasanzünder entzündet die Lehrerin die heiße blaue Flamme des Bunsenbrenners."
+            },
+            {
+              "german": "die Schutzbrille, -n",
+              "arabic": "نظارة الوقاية لحماية العينين",
+              "english": "safety goggles, safety glasses",
+              "example": "Aus Sicherheitsgründen muss jeder im Chemiesaal eine Schutzbrille über den Augen tragen."
+            },
+            {
+              "german": "der Laborkittel, -",
+              "arabic": "معطف ومريول المختبر الأبيض",
+              "english": "lab coat",
+              "example": "Der weiße Laborkittel aus reiner Baumwolle schützt die Kleidung vor Säurespritzern."
+            },
+            {
+              "german": "das Experiment, -e",
+              "arabic": "التجربة العلمية المخبرية",
+              "english": "experiment",
+              "example": "Das naturwissenschaftliche Experiment beweist, dass Sauerstoff die Verbrennung fördert."
+            },
+            {
+              "german": "die Pipette, -n",
+              "arabic": "الماصة المخبرية لنقل قطرات السوائل",
+              "english": "pipette, dropper",
+              "example": "Mit der gläsernen Pipette dosiert die Schülerin exakt drei Tropfen Säure."
+            },
+            {
+              "german": "das Becherglas, -̈er",
+              "arabic": "الكأس الزجاجي المدرج (البيكر)",
+              "english": "beaker",
+              "example": "Im hitzebeständigen Becherglas wird das Gemisch auf der Heizplatte erwärmt."
+            },
+            {
+              "german": "protokollieren (protokollierte, hat protokolliert)",
+              "arabic": "يسجل ويدون الملاحظات والنتائج",
+              "english": "to record, log, write a protocol",
+              "example": "Während des Versuchs müssen alle Beobachtungen und Messwerte minutiös protokolliert werden."
+            },
+            {
+              "german": "die Chemikalie, -n",
+              "arabic": "المادة الكيميائية",
+              "english": "chemical",
+              "example": "Gefährliche Chemikalien werden in einem abschließbaren Sicherheitsschrank gelagert."
+            },
+            {
+              "german": "die Sicherheitsvorschrift, -en",
+              "arabic": "تعليمات وقواعد السلامة الإلزامية",
+              "english": "safety regulation",
+              "example": "Jeder Verstoß gegen die Sicherheitsvorschrift im Labor kann zum Unterrichtsausschluss führen."
+            }
+          ],
+          "description": "Labor, Mikroskop, Reagenzglas, Bunsenbrenner, Schutzbrille, Laborkittel, Experiment und Pipette.",
+          "details": "Naturwissenschaftlicher Fachunterricht, Sicherheitsregeln, Messprotokolle und Reaktionen (A1–B2)",
+          "arabicDescription": "في المختبر المدرسي (Im Labor): مفردات المختبر (Labor)، المجهر (Mikroskop)، أنبوب الاختبار (Reagenzglas)، موقد بنزن (Bunsenbrenner)، نظارة الوقاية (Schutzbrille)، مريول المختبر (Laborkittel)، التجربة العلمية (Experiment)، والماصة وقواعد السلامة.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Unser Chemieunterricht im Labor",
+              "intro": "Einfache Sätze über Schutzbrille, Kittel, Reagenzglas und Mikroskop (A1).",
+              "paragraphs": [
+                [
+                  "Heute haben wir Unterricht in dem großen [das Labor, -e|Labor].",
+                  "Bevor wir anfangen, ziehe ich meinen weißen [der Laborkittel, -|Laborkittel] an.",
+                  "Auf die Nase setze ich eine durchsichtige [die Schutzbrille, -n|Schutzbrille].",
+                  "Sicherheit ist sehr wichtig beim Arbeiten."
+                ],
+                [
+                  "Auf dem Tisch steht ein [das Mikroskop, -e|Mikroskop] und ein dünnes [das Reagenzglas, -̈er|Reagenzglas].",
+                  "Der Lehrer zündet [der Bunsenbrenner, -|den Bunsenbrenner] an und zeigt uns [das Experiment, -e|das Experiment].",
+                  "Wir schauen staunend zu, wie das Wasser kocht.",
+                  "Naturwissenschaften sind spannend und machen viel Spaß."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein wissenschaftlicher Versuch",
+              "intro": "Sorgfältiges Experimentieren mit Pipette, Becherglas und Protokoll (A2).",
+              "paragraphs": [
+                [
+                  "In der Chemiestunde arbeiten wir heute zu zweit an einer Laborstation.",
+                  "Mit einer feinen [die Pipette, -n|Pipette] tropfen wir Indikatorflüssigkeit in ein [das Becherglas, -̈er|Becherglas].",
+                  "Plötzlich verfärbt sich die Lösung von farblos zu leuchtend rot.",
+                  "Wir müssen genau beobachten und jeden Schritt sauber im Laborheft [protokollieren (protokollierte, hat protokolliert)|protokollieren]."
+                ],
+                [
+                  "Jede [die Chemikalie, -n|Chemikalie] muss nach dem Versuch fachgerecht entsorgt werden.",
+                  "Unsere Lehrerin erinnert uns ständig an [die Sicherheitsvorschrift, -en|die Sicherheitsvorschriften], damit niemand verletzt wird.",
+                  "Nach der Stunde waschen wir die Gläser gründlich mit destilliertem Wasser aus.",
+                  "Präzises Arbeiten ist das A und O für jeden echten Forscher."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Forschergeist im Schulalltag: 'Jugend forscht' und Laborpraxis",
+              "intro": "Wissenschaftliche Arbeitsmethoden, Gefahrstoffverordnung und Nachwuchsförderung (B1).",
+              "paragraphs": [
+                [
+                  "Das naturwissenschaftliche Praktikum im Schullabor bildet die Brücke zwischen abstrakter theoretischer Formel und empirischer Realität.",
+                  "Schüler lernen hier den klassischen Zyklus wissenschaftlicher Erkenntnisgewinnung: Hypothesenbildung, Versuchsaufbau, Durchführung und kritische Fehleranalyse.",
+                  "Wer ein anspruchsvolles [das Experiment, -e|Experiment] durchführt, muss sämtliche Messreihen fehlerfrei [protokollieren (protokollierte, hat protokolliert)|protokollieren], um reproduzierbare Resultate zu erzielen."
+                ],
+                [
+                  "Dabei unterliegt jedes Schul-[das Labor, -e|Labor] den strengen Regularien der Gefahrstoffverordnung (GefStoffV).",
+                  "Gefahrstoffsymbole - von ätzend über entzündbar bis giftig - müssen beherrscht werden, und der Abzug gewährleistet den gefahrlosen Umgang mit Dämpfen."
+                ],
+                [
+                  "Viele engagierte Schüler nutzen das Labor nachmittags für den bundesweiten Wettbewerb 'Jugend forscht', der seit 1965 herausragende Talente im naturwissenschaftlichen Bereich fördert und Karrieren begründet."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Epistemologie des Experiments, Stöchiometrie und quantitative Analytik",
+              "intro": "Wissenschaftstheorie von Karl Popper, Maßanalyse und Laborsicherheitsnormen (B2).",
+              "paragraphs": [
+                [
+                  "In der Wissenschaftstheorie nach Karl Popper dient [das Experiment, -e|das Experiment] nicht der definitiven Verifikation, sondern der systematischen Falsifikation theoretischer Postulate.",
+                  "Im modernen Laborunterricht vollzieht sich der Übergang von rein phänomenologischen Schauversuchen zur quantitativen Stöchiometrie und instrumentellen Analytik.",
+                  "Schüler bestimmen Konzentrationen mittels Säure-Base-Titration unter Verwendung kalibrierter Büretten oder ermitteln Reaktionskinetiken spektrophotometrisch."
+                ],
+                [
+                  "Die Einhaltung jeder [die Sicherheitsvorschrift, -en|Sicherheitsvorschrift] gemäß GUV-SR 2003 (Richtlinien für Sicherheit im Unterricht) ist dabei nicht nur formaljuristische Pflicht, sondern schult den Habitus professioneller Laborpraxis."
+                ],
+                [
+                  "Vom Tragen der persönlichen Schutzausrüstung wie [die Schutzbrille, -n|Schutzbrille] und [der Laborkittel, -|Laborkittel] bis hin zur umweltgerechten Neutralisation toxischer Schwermetallabfälle manifestiert sich im Labor die ethische Verantwortung angewandter Naturwissenschaften."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "in_der_pause",
+          "title": "In der Pause",
+          "words": [
+            {
+              "german": "die Schulpause, -n",
+              "arabic": "الاستراحة والفسحة المدرسية",
+              "english": "school break, recess",
+              "example": "Nach zwei Stunden Unterricht freuen sich alle Kinder auf die zwanzigminütige Schulpause."
+            },
+            {
+              "german": "der Schulhof, -̈e",
+              "arabic": "باحة وفناء المدرسة الخارجي",
+              "english": "schoolyard, school playground",
+              "example": "In der großen Pause rennen die Schüler hinaus auf den sonnigen Schulhof."
+            },
+            {
+              "german": "das Pausenbrot, -e",
+              "arabic": "سندويتش الفسحة المدرسية الخفيف",
+              "english": "packed lunch, school sandwich",
+              "example": "Seine Mutter hat ihm ein gesundes Pausenbrot mit Vollkorn und Gurkenscheiben geschmiert."
+            },
+            {
+              "german": "die Brotdose, -n",
+              "arabic": "علبة حفظ السندويتشات والطعام",
+              "english": "lunchbox",
+              "example": "In der bunten Brotdose liegen Apfelschnitze und ein belegtes Käsebrot."
+            },
+            {
+              "german": "der Pausengong, -s",
+              "arabic": "جرس الاستراحة وإشارة انتهاء الحصة",
+              "english": "school bell, break chime",
+              "example": "Sobald der Pausengong ertönt, packen die Schüler ihre Bücher zusammen."
+            },
+            {
+              "german": "die Trinkflasche, -n",
+              "arabic": "قنينة ومطارة الماء الشخصية",
+              "english": "water bottle",
+              "example": "Am Trinkwasserspender füllt sie ihre Edelstahl-Trinkflasche mit frischem Wasser auf."
+            },
+            {
+              "german": "fangen spielen",
+              "arabic": "يلعب لعبة المطاردة والجري",
+              "english": "to play tag",
+              "example": "Die jüngeren Kinder lieben es, auf dem Pausenhof wild fangen zu spielen."
+            },
+            {
+              "german": "der Mitschüler, -",
+              "arabic": "زميل الدراسة في الفصل",
+              "english": "classmate, schoolmate",
+              "example": "Mit meinen netten Mitschülern lerne ich oft gemeinsam für Klassenarbeiten."
+            },
+            {
+              "german": "die Pausenaufsicht, -en",
+              "arabic": "مناوبة ومراقبة المعلمين في الفناء",
+              "english": "playground duty, yard duty",
+              "example": "Zwei Lehrer führen als Pausenaufsicht die Aufsicht und schlichten kleine Streitigkeiten."
+            },
+            {
+              "german": "sich unterhalten (unterhielt sich, hat sich unterhalten)",
+              "arabic": "يتجاذب أطراف الحديث ويدردش",
+              "english": "to chat, converse",
+              "example": "Auf den Bänken sitzen Jugendliche und unterhalten sich über ihre Wochenendpläne."
+            },
+            {
+              "german": "die Mensa, Mensen",
+              "arabic": "مطعم ومقصف المدرسة والجامعة",
+              "english": "cafeteria, school canteen",
+              "example": "In der Mittagspause essen viele Schüler ein warmes vegetarisches Gericht in der Mensa."
+            },
+            {
+              "german": "frische Luft schnappen",
+              "arabic": "يستنشق هواءً نقياً للاستجمام",
+              "english": "to get some fresh air",
+              "example": "Man sollte in der Pause unbedingt nach draußen gehen, um frische Luft zu schnappen."
+            }
+          ],
+          "description": "Schulpause, Schulhof, Pausenbrot, Brotdose, Pausengong, Mitschüler, Trinkflasche und Aufsicht.",
+          "details": "Pausenkultur, Schulverpflegung, Bewegungspausen, Hofaufsicht und Pausenspiele (A1–B2)",
+          "arabicDescription": "الاستراحة والفسحة المدرسية (In der Pause): مفردات الاستراحة (Schulpause)، فناء المدرسة (Schulhof)، سندويتش الفسحة (Pausenbrot)، علبة الطعام (Brotdose)، جرس المدرسة (Pausengong)، زملاء الفصل (Mitschüler)، ومناوبة المعلمين (Pausenaufsicht).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Die große Pause auf dem Hof",
+              "intro": "Einfache Sätze über Pause, Schulhof, Essen und Spielen (A1).",
+              "paragraphs": [
+                [
+                  "Ding-dong! [der Pausengong, -s|Der Pausengong] läutet laut durch das Schulhaus.",
+                  "Endlich ist die große [die Schulpause, -n|Schulpause] da!",
+                  "Alle Kinder rennen lachend hinaus auf [der Schulhof, -̈e|den Schulhof].",
+                  "Ich öffne meinen Rucksack und hole [die Brotdose, -n|die Brotdose] heraus."
+                ],
+                [
+                  "Ich esse mein leckeres [das Pausenbrot, -e|Pausenbrot] und trinke Wasser aus [die Trinkflasche, -n|der Trinkflasche].",
+                  "Zusammen mit meinen Freunden möchte ich [fangen spielen|fangen spielen].",
+                  "Ein anderer [der Mitschüler, -|Mitschüler] spielt Fußball auf dem Rasen.",
+                  "Die Pause ist die schönste Zeit am ganzen Schultag."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Zwanzig Minuten Durchatmen",
+              "intro": "Gesunde Ernährung, Hofaufsicht und Entspannung zwischen den Stunden (A2).",
+              "paragraphs": [
+                [
+                  "Nach zwei anstrengenden Stunden Mathematik brauchen alle Köpfe eine Pause.",
+                  "Wir gehen nach draußen, um uns zu bewegen und [frische Luft schnappen|frische Luft zu schnappen].",
+                  "Auf dem Hof tragen zwei Lehrer gelbe Warnwesten und haben [die Pausenaufsicht, -en|die Pausenaufsicht].",
+                  "Sie achten darauf, dass niemand sich wehtut und alles friedlich bleibt."
+                ],
+                [
+                  "Ich setze mich mit meinen besten Freunden auf eine Holzbank, wo wir [sich unterhalten (unterhielt sich, hat sich unterhalten)|uns unterhalten].",
+                  "In der Mittagspause gehen wir später gemeinsam in [die Mensa, Mensen|die Mensa], wo es warme Nudeln gibt.",
+                  "Erholte Schüler können sich in der nächsten Stunde wieder viel besser konzentrieren.",
+                  "Pausen sind unverzichtbar für ein gesundes Schulleben."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Pausenphilosophie: Vom Toben zur bewegten Schule",
+              "intro": "Konzept der 'Bewegten Schule', Schulkiosk und Sozialkompetenzförderung (B1).",
+              "paragraphs": [
+                [
+                  "Die Schulpause erfüllt im modernen pädagogischen Diskurs weit mehr als bloße Erholungsfunktionen.",
+                  "Im Rahmen des Konzepts der 'Bewegten Schule' transformieren viele deutsche Lehranstalten den asphaltierten [der Schulhof, -̈e|Schulhof] in naturnahe Erlebnislandschaften mit Kletterzonen, Tischtennisplatten und Ruheinseln.",
+                  "Körperliche Bewegung nach intensivem Stillsitzen fördert nachweislich die Durchblutung des präfrontalen Kortex und reaktiviert die kognitiven Aufnahmekapazitäten."
+                ],
+                [
+                  "Auch das Thema gesunde Schulverpflegung steht im Fokus: Initiativen ersetzen zuckerhaltige Snacks am Kiosk durch vollwertiges [das Pausenbrot, -e|Pausenbrot] und kostenlose Wasserspender für [die Trinkflasche, -n|die Trinkflasche]."
+                ],
+                [
+                  "Pausen fungieren zudem als wichtiges soziales Lernfeld, in dem Konflikte ausgehandelt und Empathie trainiert werden, stets begleitet durch die dezentrale [die Pausenaufsicht, -en|Pausenaufsicht] der Lehrkräfte."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Chronopsychologie der Vigilanz, Aufsichtspflicht und Peer-Group-Dynamiken",
+              "intro": "Ultradiane Rhythmen, BGB-Haftungsrecht bei Aufsichtspflichtverletzung und Schulklima (B2).",
+              "paragraphs": [
+                [
+                  "Die chronopsychologische Rhythmisierung des Unterrichtstages korrespondiert mit endogenen ultradianen Leistungskurven (BRAC - Basic Rest-Activity Cycle).",
+                  "Nach ca. 90 Minuten kontinuierlicher Aufmerksamkeitsfokussierung sinkt die Vigilanz dramatisch, weshalb [die Schulpause, -n|die Schulpause] als obligate neurophysiologische Konsolidierungsphase fungiert."
+                ],
+                [
+                  "Rechtlich tangiert der Pausenbetrieb die zivilrechtliche Aufsichtspflicht nach § 832 BGB:",
+                  "Die [die Pausenaufsicht, -en|Pausenaufsicht] muss kontinuierlich, präventiv und altersadäquat agieren, um Gefahrenquellen zu eliminieren, ohne die Autonomieentwicklung der Schüler ungebührlich zu beschneiden."
+                ],
+                [
+                  "Aus entwicklungspsychologischer Sicht ist das Areal des Schulhofes die primäre Arena informeller Peer-Group-Sozialisation:",
+                  "Hier werden informelle Hierarchien ausgehandelt, Inklusions- und Exklusionsmechanismen wirksam und Resilienzfaktoren ausgebildet, die das psychosoziale Schulklima maßgeblich konstituieren."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_sporthalle",
+          "title": "Die Sporthalle",
+          "words": [
+            {
+              "german": "die Sporthalle, -n",
+              "arabic": "صالة الألعاب الرياضية والجمباز",
+              "english": "sports hall, gymnasium",
+              "example": "In der großen Sporthalle gibt es Linien für Handball, Basketball und Volleyball."
+            },
+            {
+              "german": "der Sportunterricht (Sg.)",
+              "arabic": "حصة التربية البدنية والرياضية",
+              "english": "PE, physical education",
+              "example": "Zweimal in der Woche haben die Schüler Sportunterricht, um sich fit zu halten."
+            },
+            {
+              "german": "die Umkleidekabine, -n",
+              "arabic": "غرفة تبديل الملابس الرياضية",
+              "english": "changing room, locker room",
+              "example": "Vor dem Sport ziehen sich die Mädchen und Jungen in getrennten Umkleidekabinen um."
+            },
+            {
+              "german": "die Turnmatte, -n",
+              "arabic": "بساط ومرتبة الجمباز الإسفنجية",
+              "english": "gym mat, tumbling mat",
+              "example": "Eine dicke blaue Turnmatte dämpft den Sprung bei der Landung sicher ab."
+            },
+            {
+              "german": "der Barren, -",
+              "arabic": "جهاز المتوازي في رياضة الجمباز",
+              "english": "parallel bars",
+              "example": "Am Barren trainieren die Turner Schwünge und Stützübungen mit den Armen."
+            },
+            {
+              "german": "der Schwebebalken, -",
+              "arabic": "عارضة التوازن الخشبية",
+              "english": "balance beam",
+              "example": "Auf dem nur zehn Zentimeter breiten Schwebebalken balanciert die Turnerin elegant."
+            },
+            {
+              "german": "der Sprungkasten, -̈",
+              "arabic": "صندوق القفز الخشبي المبطن بالجلد",
+              "english": "vaulting box",
+              "example": "Mit kräftigem Absprung vom Sprungbrett springt er über den ledernen Sprungkasten."
+            },
+            {
+              "german": "das Kletterseil, -e",
+              "arabic": "حبل التسلق السميك المتدلي من السقف",
+              "english": "climbing rope",
+              "example": "Die fittesten Schüler klettern am Kletterseil ganz nach oben bis unter die Decke."
+            },
+            {
+              "german": "der Basketballkorb, -̈e",
+              "arabic": "سلة كرة السلة المعلقة",
+              "english": "basketball hoop",
+              "example": "Er wirft den orangenen Ball mit einer hohen Flugkurve direkt in den Basketballkorb."
+            },
+            {
+              "german": "die Hallenschuhe (Pl.)",
+              "arabic": "الأحذية الرياضية المخصصة لأرضية الصالة",
+              "english": "indoor sports shoes",
+              "example": "In der Turnhalle darf man nur Hallenschuhe mit heller, abriebfester Sohle tragen."
+            },
+            {
+              "german": "sich aufwärmen (wärmte sich auf, hat sich aufgewärmt)",
+              "arabic": "يقوم بالإحماء والتسخين قبل التمرين",
+              "english": "to warm up",
+              "example": "Vor jedem Wettkampf muss man sich gründlich aufwärmen, um Verletzungen zu vermeiden."
+            },
+            {
+              "german": "der Schiedsrichter, -",
+              "arabic": "حكم المباراة والنزاهة الرياضية",
+              "english": "referee, umpire",
+              "example": "Der Schiedsrichter pfeift mit der Trillerpfeife und unterbricht das Spiel wegen eines Fouls."
+            }
+          ],
+          "description": "Sporthalle, Turnhalle, Sportunterricht, Barren, Schwebebalken, Kasten, Turnmatte und Kletterseil.",
+          "details": "Schulsport, Geräteturnen, Ballspiele, Aufwärmen und Bundesjugendspiele (A1–B2)",
+          "arabicDescription": "صالة الألعاب الرياضية (Die Sporthalle): مفردات الصالة الرياضية (Sporthalle/Turnhalle)، حصة الرياضة (Sportunterricht)، المتوازي (Barren)، عارضة التوازن (Schwebebalken)، صندوق القفز (Kasten)، بساط الجمباز (Turnmatte)، حبل التسلق (Kletterseil)، والإحماء الرياضي (aufwärmen).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Sport in der Turnhalle",
+              "intro": "Einfache Sätze über Turnhalle, Sportschuhe, Laufen und Ballspiele (A1).",
+              "paragraphs": [
+                [
+                  "Heute haben wir [der Sportunterricht (Sg.)|Sportunterricht] in der Schule.",
+                  "Ich gehe in [die Umkleidekabine, -n|die Umkleidekabine] und ziehe mein T-Shirt und die Hose an.",
+                  "Für den Boden brauche ich saubere [die Hallenschuhe (Pl.)|Hallenschuhe].",
+                  "Wir betreten die große [die Sporthalle, -n|Sporthalle] und beginnen zu rennen."
+                ],
+                [
+                  "Zuerst müssen wir [sich aufwärmen (wärmte sich auf, hat sich aufgewärmt)|uns aufwärmen] und Dehnübungen machen.",
+                  "Der Lehrer legt eine weiche [die Turnmatte, -n|Turnmatte] auf den Boden.",
+                  "Danach werfen wir den Ball in [der Basketballkorb, -̈e|den Basketballkorb].",
+                  "Sportunterricht macht fit und bringt viel Energie."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Geräteturnen und Mannschaftsspiele",
+              "intro": "Gerätturnen mit Kasten, Schwebebalken und Barren sowie Bundesjugendspiele (A2).",
+              "paragraphs": [
+                [
+                  "Im Winter üben wir im Sportunterricht traditionelles Geräteturnen.",
+                  "Wir bauen verschiedene Stationen auf: den hohen [der Barren, -|Barren], [das Kletterseil, -e|das Kletterseil] und [der Sprungkasten, -̈|den Sprungkasten].",
+                  "Viele Mädchen üben elegante Sprünge auf dem schmalen [der Schwebebalken, -|Schwebebalken].",
+                  "Man braucht viel Mut und Konzentration, um sauber über den Kasten zu springen."
+                ],
+                [
+                  "In der zweiten Hälfte der Stunde spielen wir Völkerball oder Hallenfußball.",
+                  "Unser Sportlehrer ist [der Schiedsrichter, -|der Schiedsrichter] und pfeift streng bei jedem Foul.",
+                  "Im Sommer freuen sich alle Schüler auf die Bundesjugendspiele auf dem Sportplatz.",
+                  "Gemeinsamer Sport stärkt den Teamgeist und die Gesundheit."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Vom Turnvater Jahn zu den Bundesjugendspielen",
+              "intro": "Historische Wurzeln des Schulsports, Fairness und motorische Förderung (B1).",
+              "paragraphs": [
+                [
+                  "Die Tradition des deutschen Schulturnens geht historisch auf Friedrich Ludwig Jahn, den sogenannten 'Turnvater Jahn', im frühen 19. Jahrhundert zurück.",
+                  "Jahn erfand klassische Turngeräte wie den [der Barren, -|Barren] und das Reck, um die Jugend durch körperliche Ertüchtigung zu stärken.",
+                  "Bis heute bildet das Geräteturnen an Geräten wie dem [der Sprungkasten, -̈|Sprungkasten] einen festen Bestandteil der Lehrpläne."
+                ],
+                [
+                  "Ein fester jährlicher Fixpunkt sind die bundesweiten 'Bundesjugendspiele', bei denen Schüler sich in Leichtathletik, Schwimmen oder Turnen messen.",
+                  "Vor jedem Wettkampf ist es elementar, [sich aufwärmen (wärmte sich auf, hat sich aufgewärmt)|sich aufzuwärmen], um Muskelzerrungen vorzubeugen."
+                ],
+                [
+                  "Zugleich wandelt sich der Schulsport: Neben traditionellen Leistungswettkämpfen gewinnen Kooperation, Inklusion und Trendsportarten wie Parkour und Ultimate Frisbee zunehmend an Gewicht."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Motorische Plastizität, Sensomotorik und sportorthopädische Prävention",
+              "intro": "Biomechanik der Dämpfung bei Prallböden, intramuskuläre Koordination und Sportpädagogik (B2).",
+              "paragraphs": [
+                [
+                  "Die bauliche Konzeption moderner Sportstätten gehorcht strengen sportorthopädischen und biomechanischen Normen gemäß DIN 18032.",
+                  "Der Schwingboden in [die Sporthalle, -n|der Sporthalle] fungiert als flächen- oder punktelastisches System, das vertikale Stoßkräfte absorbiert und Gelenke der Heranwachsenden vor repetitiven Überlastungsschäden schützt.",
+                  "Spezielle [die Hallenschuhe (Pl.)|Hallenschuhe] mit nicht-markierenden Gummimischungen gewährleisten eine definierte Reibungszahl (Gleitreibung vs. Haftreibung), um Torsionsverletzungen des Kniebandapparates bei abrupten Richtungswechseln zu verhindern."
+                ],
+                [
+                  "Aus bewegungswissenschaftlicher Sicht schult das Geräteturnen am [der Schwebebalken, -|Schwebebalken] die vestibuläre und propriozeptive Wahrnehmung sowie die intramuskuläre Koordination."
+                ],
+                [
+                  "Moderne sportpädagogische Konzeptionen überwinden dabei das rein leistungsorientierte Paradigma zugunsten einer ganzheitlichen Gesundheitsförderung, welche lebenslange Bewegungsmotivation und somatische Resilienz gegen die Folgen sedenterer Lebensweisen im Alltag stiftet."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "universitaet",
+      "title": "DIE UNIVERSITÄT",
+      "topics": [
+        {
+          "id": "die_universitaet",
+          "title": "Die Universität",
+          "words": [
+            {
+              "german": "die Universität, -en",
+              "arabic": "الجامعة",
+              "english": "university",
+              "example": "Die Universität Heidelberg ist die älteste Hochschule auf deutschem Boden."
+            },
+            {
+              "german": "das Studium, Studien",
+              "arabic": "الدراسة الجامعية والتخصص الأكاديمي",
+              "english": "university studies, degree program",
+              "example": "Nach dem Abitur beginnt sie ein Studium der Rechtswissenschaften in München."
+            },
+            {
+              "german": "der Hörsaal, -säle",
+              "arabic": "مدرج وقاعة المحاضرات الكبرى بالجامعة",
+              "english": "lecture hall, auditorium",
+              "example": "Im vollbesetzten Hörsaal lauschen Hunderte Erstsemester den Worten des Dozenten."
+            },
+            {
+              "german": "die Vorlesung, -en",
+              "arabic": "المحاضرة الجامعية العامة",
+              "english": "lecture",
+              "example": "Die Vorlesung zur Einführung in die Volkswirtschaftslehre findet montags um zehn Uhr statt."
+            },
+            {
+              "german": "das Seminar, -e",
+              "arabic": "الحلقة الدراسية النقاشية التفاعلية (السيمينار)",
+              "english": "seminar",
+              "example": "Im Seminar diskutieren die Studierenden in kleiner Gruppe über wissenschaftliche Texte."
+            },
+            {
+              "german": "der Professor, -en",
+              "arabic": "الأستاذ الجامعي (البروفيسور)",
+              "english": "professor",
+              "example": "Die Professorin leitet das renommierte Forschungsinstitut für Quantenphysik."
+            },
+            {
+              "german": "der Student, -en",
+              "arabic": "الطالب الجامعي (المسجل في الجامعة)",
+              "english": "university student",
+              "example": "Als Student verbringt man vor den Prüfungen viele Nächte am Schreibtisch."
+            },
+            {
+              "german": "die Universitätsbibliothek, -en",
+              "arabic": "مكتبة الجامعة المركزية (UB)",
+              "english": "university library",
+              "example": "In der Universitätsbibliothek leiht er Fachliteratur für seine Abschlussarbeit aus."
+            },
+            {
+              "german": "die Hausarbeit, -en",
+              "arabic": "البحث الأكاديمي والورقة البحثية الفصلية",
+              "english": "term paper, research paper",
+              "example": "In den Semesterferien muss sie eine zwanzigseitige Hausarbeit in Geschichte verfassen."
+            },
+            {
+              "german": "die Klausur, -en",
+              "arabic": "الامتحان التحريري الفصلي",
+              "english": "written exam",
+              "example": "Am Ende des Semesters schreiben die Prüflinge eine 90-minütige Klausur."
+            },
+            {
+              "german": "der Bachelorabschluss, -̈e",
+              "arabic": "درجة البكالوريوس الأكاديمية (3-4 سنوات)",
+              "english": "bachelor's degree",
+              "example": "Nach sechs Semestern Regelstudienzeit schließt er sein Studium mit dem Bachelorabschluss ab."
+            },
+            {
+              "german": "immatrikulieren (immatrikulierte, hat immatrikuliert)",
+              "arabic": "يسجل قيده رسمياً في الجامعة",
+              "english": "to matriculate, enroll",
+              "example": "Vor Beginn des Wintersemesters muss man sich im Studentensekretariat offiziell immatrikulieren."
+            }
+          ],
+          "description": "Universität, Studium, Hörsaal, Vorlesung, Seminar, Professor, Student, Bibliothek und Master.",
+          "details": "Hochschulsystem, Bologna-Prozess, Bachelor/Master, Hausarbeiten und Klausuren (A1–B2)",
+          "arabicDescription": "الجامعة والتعليم العالي (Die Universität): مفردات الجامعة (Universität/Uni)، الدراسة الجامعية (Studium)، مدرج المحاضرات (Hörsaal)، المحاضرة (Vorlesung)، السيمينار (Seminar)، الأستاذ الجامعي (Professor)، الطالب (Student)، المكتبة الجامعية (Bibliothek)، وامتحانات الكلاوزور ودرجتي البكالوريوس والماجستير.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "title": "Mein Leben an der Universität",
+              "intro": "Einfache Sätze über Universität, Hörsaal, Professor und Bibliothek (A1).",
+              "paragraphs": [
+                [
+                  "Ich bin zwanzig Jahre alt und lerne an einer großen [die Universität, -en|Universität].",
+                  "Jeden Morgen gehe ich in [der Hörsaal, -säle|den Hörsaal].",
+                  "Dort hält [der Professor, -en|der Professor] eine interessante Rede über Medizin.",
+                  "Ich sitze mit vielen anderen Studenten zusammen und schreibe Notizen in mein Heft."
+                ],
+                [
+                  "Am Nachmittag gehe ich in [die Universitätsbibliothek, -en|die Universitätsbibliothek].",
+                  "Dort ist es ganz leise und ich lese schwere Bücher für mein [das Studium, Studien|Studium].",
+                  "Jeder [der Student, -en|Student] lernt fleißig für die Prüfung.",
+                  "Das Studentenleben ist aufregend und macht mich selbstständig."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Vorlesungen, Seminare und Klausuren",
+              "intro": "Unterschied zwischen Vorlesung und Seminar sowie Bachelor und Klausuren (A2).",
+              "paragraphs": [
+                [
+                  "An der Hochschule gibt es verschiedene Arten von Lehrveranstaltungen.",
+                  "In einer großen [die Vorlesung, -en|Vorlesung] hört man meistens nur zu, während der Professor spricht.",
+                  "In einem kleinen [das Seminar, -e|Seminar] diskutieren wir aktiv über aktuelle Forschungsprojekte.",
+                  "Wer ein neues Fach studieren will, muss sich zuerst im Studentensekretariat [immatrikulieren (immatrikulierte, hat immatrikuliert)|immatrikulieren]."
+                ],
+                [
+                  "Am Ende des Semesters steht die stressige Prüfungsphase an.",
+                  "Für manche Fächer muss man eine schriftliche [die Klausur, -en|Klausur] bestehen, für andere eine wissenschaftliche [die Hausarbeit, -en|Hausarbeit] schreiben.",
+                  "Nach drei Jahren harter Arbeit erreicht man den begehrten [der Bachelorabschluss, -̈e|Bachelorabschluss].",
+                  "Danach kann man direkt arbeiten oder noch einen Master anschließen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Das deutsche Hochschulsystem: Vom Humboldtschen Bildungsideal zum Bologna-Prozess",
+              "intro": "Wilhelm von Humboldt, Bologna-Reform und gebührenfreies Studieren in Deutschland (B1).",
+              "paragraphs": [
+                [
+                  "Die deutsche Universitätstradition wurde maßgeblich durch Wilhelm von Humboldt und das von ihm formulierte Bildungsideal geprägt: die unauflösliche Einheit von Forschung und Lehre sowie die akademische Freiheit der Studierenden.",
+                  "Hochschulen sollten keine reinen Berufsschulen sein, sondern Stätten zweckfreier wissenschaftlicher Wahrheitsfindung."
+                ],
+                [
+                  "Um die Jahrtausendwende transformierte der europäische Bologna-Prozess die deutsche Hochschullandschaft grundlegend:",
+                  "Traditionelle Abschlüsse wie Diplom und Magister wurden durch das zweistufige System aus [der Bachelorabschluss, -̈e|Bachelorabschluss] und konsekutivem Master substituiert, gemessen in standardisierten ECTS-Leistungspunkten."
+                ],
+                [
+                  "Ein weltweites Alleinstellungsmerkmal bleibt die Gebührenfreiheit: An fast allen staatlichen Universitäten in Deutschland zahlen einheimische und internationale Studierende keine Studiengebühren, sondern lediglich einen Semesterbeitrag inklusive Semesterticket."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Differenziert & Komplex",
+              "title": "Akademische Epistemologie, Drittmittelforschung und Exzellenzstrategie",
+              "intro": "Wissenschaftsfreiheit (Art. 5 Abs. 3 GG), Exzellenzcluster und Peer-Review-Verfahren (B2).",
+              "paragraphs": [
+                [
+                  "Die verfassungsrechtliche Garantie der Freiheit von Wissenschaft, Forschung und Lehre (Artikel 5 Absatz 3 GG) konstituiert die institutionelle Autonomie der deutschen Hochschulen.",
+                  "Im Rahmen der bundesweiten 'Exzellenzstrategie' konkurrieren Spitzenuniversitäten um prestigeträchtige Exzellenzcluster und Milliardenförderungen zur Schärfung ihrer internationalen Forschungsprofile."
+                ],
+                [
+                  "Die wissenschaftliche Praxis im Hauptstudium verlangt die Beherrschung rigoroser methodologischer Standards:",
+                  "Beim Verfassen einer wissenschaftlichen [die Hausarbeit, -en|Hausarbeit] oder Thesis müssen Studierende Primärquellen hermeneutisch erschließen, empirische Methoden anwenden und Zitationsstandards peinlich genau beachten, um Plagiatsvorwürfe auszuschließen."
+                ],
+                [
+                  "Gleichzeitig forciert das Zusammenspiel von grundfinanzierten Planstellen und drittmittelakquirierten Forschungsprojekten (DFG, EU Horizon) den Wettbewerb im akademischen Mittelbau.",
+                  "Dies etabliert [die Universität, -en|die Universität] als Hochleistungsmotor transformativer gesellschaftlicher und technologischer Innovationen."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "arbeitswelt",
+      "title": "DIE ARBEITSWELT",
+      "topics": [
+        {
+          "id": "die_bewerbung",
+          "title": "Die Bewerbung",
+          "words": [
+            {
+              "german": "die Bewerbung, -en",
+              "arabic": "طلب التوظيف / ملف التقدم للعمل",
+              "english": "job application",
+              "example": "Ich habe meine Bewerbung per E-Mail an die Personalabteilung geschickt."
+            },
+            {
+              "german": "das Anschreiben, -",
+              "arabic": "خطاب التغطية والتحفيز (المرفق مع السيرة الذاتية)",
+              "english": "cover letter",
+              "example": "Im Anschreiben erkläre ich kurz meine Motivation für die offene Stelle."
+            },
+            {
+              "german": "der Lebenslauf, -̈e",
+              "arabic": "السيرة الذاتية (C.V.)",
+              "english": "curriculum vitae, resume",
+              "example": "Ein tabellarischer Lebenslauf enthält alle Stationen der Ausbildung und Berufserfahrung."
+            },
+            {
+              "german": "das Vorstellungsgespräch, -e",
+              "arabic": "المقابلة الشخصية للتوظيف",
+              "english": "job interview",
+              "example": "Beim Vorstellungsgespräch am Dienstag stelle ich mich dem Team vor."
+            },
+            {
+              "german": "die Stellenausschreibung, -en",
+              "arabic": "إعلان الوظيفة الشاغرة",
+              "english": "job advertisement, posting",
+              "example": "Die Firma hat eine interessante Stellenausschreibung für Webentwickler veröffentlicht."
+            },
+            {
+              "german": "das Zeugnis, -se",
+              "arabic": "الشهادة (المدرسية، الجامعية أو شهادة الخبرة المهنية)",
+              "english": "certificate, reference letter",
+              "example": "Mein ehemaliger Arbeitgeber hat mir ein sehr gutes Arbeitszeugnis ausgestellt."
+            },
+            {
+              "german": "die Qualifikation, -en",
+              "arabic": "المؤهل العلمي أو المهني",
+              "english": "qualification",
+              "example": "Für diesen anspruchsvollen Posten braucht man technische Qualifikationen."
+            },
+            {
+              "german": "die Berufserfahrung, -en",
+              "arabic": "الخبرة العملية والمهنية",
+              "english": "work experience",
+              "example": "Sie bringt fünf Jahre Berufserfahrung im internationalen Vertrieb mit."
+            },
+            {
+              "german": "der Arbeitgeber, -",
+              "arabic": "صاحب العمل / رب العمل أو الشركة المشغلة",
+              "english": "employer",
+              "example": "Der neue Arbeitgeber bietet flexible Arbeitszeiten und Weiterbildungen."
+            },
+            {
+              "german": "die Gehaltsvorstellung, -en",
+              "arabic": "توقعات الراتب المنشود",
+              "english": "salary expectation",
+              "example": "In der Online-Maske musste ich meine jährliche Gehaltsvorstellung eintragen."
+            },
+            {
+              "german": "die Zusage, -n",
+              "arabic": "الموافقة والقبول في الوظيفة",
+              "english": "acceptance, job offer confirmation",
+              "example": "Nach zwei Wochen erhielt er endlich die schriftliche Zusage für den Job."
+            },
+            {
+              "german": "die Absage, -n",
+              "arabic": "الرفض والاعتذار عن قبول الطلب",
+              "english": "rejection letter",
+              "example": "Leider bekam sie eine Absage, weil die Konkurrenz sehr groß war."
+            }
+          ],
+          "description": "Bewerbungsschreiben, Lebenslauf, Zeugnisse, Vorstellungsgespräch und Zusage.",
+          "details": "Bewerbungsprozess, Unterlagen, Gehaltsvorstellung und Vorstellungsgespräch (A1–B2)",
+          "arabicDescription": "التقدم للوظيفة (Die Bewerbung): مفردات طلب التوظيف، السيرة الذاتية (Lebenslauf)، خطاب التقديم (Anschreiben)، المقابلة الشخصية (Vorstellungsgespräch)، شهادات الخبرة (Zeugnisse)، التوقعات المالية للراتب (Gehaltsvorstellung)، والقبول أو الرفض في سوق العمل الألماني.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "intro": "Einfache Sätze und grundlegender Wortschatz (A1).",
+              "title": "Ich schreibe eine Bewerbung",
+              "paragraphs": [
+                [
+                  "Ich suche eine neue Arbeit in Deutschland.",
+                  "Heute schreibe ich [die Bewerbung, -en|meine Bewerbung] für ein Büro.",
+                  "Zuerst erstelle ich [der Lebenslauf, -̈e|meinen Lebenslauf] am Computer.",
+                  "Dort stehen mein Name, meine Schule und meine Hobbys."
+                ],
+                [
+                  "Dann verfasse ich [das Anschreiben, -|ein kurzes Anschreiben].",
+                  "Ich schreibe: 'Sehr geehrte Damen und Herren, ich möchte gern bei Ihnen arbeiten.'",
+                  "Ich scanne auch [das Zeugnis, -se|mein Zeugnis] ein und hänge es an die E-Mail an."
+                ],
+                [
+                  "Ich hoffe auf ein freundliches [das Vorstellungsgespräch, -e|Vorstellungsgespräch].",
+                  "Wenn alles klappt, schickt [der Arbeitgeber, -|der Arbeitgeber] mir bald [die Zusage, -n|eine Zusage]!"
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "intro": "Zusammenhängende Sätze und praktische Alltagssituationen (A2).",
+              "title": "Schritt für Schritt zum neuen Job",
+              "paragraphs": [
+                [
+                  "Letzte Woche habe ich in einer Online-Jobbörse [die Stellenausschreibung, -en|eine Stellenausschreibung] entdeckt.",
+                  "Das Profil passte genau zu mir, denn die Firma verlangte gute Deutschkenntnisse und etwas [die Berufserfahrung, -en|Berufserfahrung]."
+                ],
+                [
+                  "Ich habe sorgfältig [das Anschreiben, -|mein Anschreiben] formuliert und betont, welche [die Qualifikation, -en|Qualifikationen] ich besitze.",
+                  "Im tabellarischen [der Lebenslauf, -̈e|Lebenslauf] habe ich meine bisherigen Praktika aufgelistet.",
+                  "Außerdem habe ich meine [die Gehaltsvorstellung, -en|Gehaltsvorstellung] realistisch angegeben."
+                ],
+                [
+                  "Gestern kam der ersehnte Anruf: Ich bin zu einem persönlichen [das Vorstellungsgespräch, -e|Vorstellungsgespräch] eingeladen!",
+                  "Ich bin ein wenig nervös, aber ich freue mich sehr darauf, mich persönlich vorzustellen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "intro": "Detaillierte Schilderungen und beruflicher Kontext (B1).",
+              "title": "Das Vorstellungsgespräch und die Zusage",
+              "paragraphs": [
+                [
+                  "Der Bewerbungsprozess in Deutschland erfordert Gründlichkeit und eine professionelle Vorbereitung.",
+                  "Nachdem ich [die Bewerbung, -en|meine Bewerbung] mit lückenlosem [der Lebenslauf, -̈e|Lebenslauf] und allen relevanten [das Zeugnis, -se|Zeugnissen] eingereicht hatte, erhielt ich die Einladung zum Gespräch."
+                ],
+                [
+                  "Beim [das Vorstellungsgespräch, -e|Vorstellungsgespräch] saßen mir die Personalleiterin und der Teamleiter gegenüber.",
+                  "Sie stellten detaillierte Fragen zu meiner praktischen [die Berufserfahrung, -en|Berufserfahrung] und wollten wissen, warum ich mich gerade für ihr Unternehmen entschieden habe.",
+                  "Auch über meine [die Gehaltsvorstellung, -en|Gehaltsvorstellung] haben wir offen und sachlich verhandelt."
+                ],
+                [
+                  "Das Gespräch verlief in einer sehr angenehmen Atmosphäre.",
+                  "Wenige Tage später erhielt ich statt einer befürchteten [die Absage, -n|Absage] die freudige Nachricht: [der Arbeitgeber, -|Der Arbeitgeber] übermittelte mir [die Zusage, -n|die feste Zusage] und bot mir einen unbefristeten Arbeitsvertrag an."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "intro": "Fachsprachliche Nuancen und anspruchsvolle Diskurse (B2).",
+              "title": "Professionelles Bewerbungsmanagement im Fachkräftemarkt",
+              "paragraphs": [
+                [
+                  "Angesichts des fortschreitenden Wandels auf dem Arbeitsmarkt hat sich das Anforderungsprofil an Bewerber grundlegend transformiert.",
+                  "Eine aussagekräftige [die Bewerbung, -en|Bewerbung] erschöpft sich heute nicht mehr in formalen Floskeln, sondern verlangt ein passgenaues [das Anschreiben, -|Anschreiben], das die eigene Eignung pointiert mit den Anforderungen der [die Stellenausschreibung, -en|Stellenausschreibung] verknüpft."
+                ],
+                [
+                  "Ein strukturierter [der Lebenslauf, -̈e|Lebenslauf] muss methodische Kompetenzen und fachliche [die Qualifikation, -en|Qualifikationen] transparent dokumentieren, gestützt durch qualifizierte [das Zeugnis, -se|Arbeitszeugnisse], die vergangene Erfolge plausibel untermauern.",
+                  "Im mehrstufigen Assessment-Center und im anspruchsvollen [das Vorstellungsgespräch, -e|Vorstellungsgespräch] erwarten moderne [der Arbeitgeber, -|Arbeitgeber] neben fundierter [die Berufserfahrung, -en|Berufserfahrung] vor allem ausgeprägte Problemlösungskompetenz und emotionale Intelligenz."
+                ],
+                [
+                  "Wer in Gehaltsverhandlungen seine [die Gehaltsvorstellung, -en|Gehaltsvorstellung] marktgerecht und selbstbewusst argumentiert, erhöht die Chancen auf [die Zusage, -n|eine lukrative Zusage] signifikant und vermeidet frühzeitige [die Absage, -n|Absagen] in einem wettbewerbsintensiven Recruitingumfeld."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "berufe",
+          "title": "Berufe",
+          "words": [
+            {
+              "german": "der Beruf, -e",
+              "arabic": "المهنة / الوظيفة",
+              "english": "profession, occupation, job",
+              "example": "Was bist du von Beruf? Ich arbeite als Buchhalter."
+            },
+            {
+              "german": "der Handwerker, -",
+              "arabic": "الحرفي (نجار، سباك، كهربائي، إلخ)",
+              "english": "craftsman, tradesman",
+              "example": "Der Handwerker repariert das Dach und verlegt neue Fliesen im Bad."
+            },
+            {
+              "german": "die Ärztin, -nen",
+              "arabic": "الطبيبة",
+              "english": "female doctor, physician",
+              "example": "Die Ärztin untersucht die Patientin und verschreibt ein wirksames Medikament."
+            },
+            {
+              "german": "der Ingenieur, -e",
+              "arabic": "المهندس",
+              "english": "engineer",
+              "example": "Der Ingenieur konstruiert energieeffiziente Motoren für Elektroautos."
+            },
+            {
+              "german": "der Lehrer, -",
+              "arabic": "المعلم / المدرس",
+              "english": "teacher",
+              "example": "Unser Lehrer erklärt den Schülern grammatikalische Regeln mit viel Geduld."
+            },
+            {
+              "german": "die Pflegefachkraft, -̈e",
+              "arabic": "أخصائي / ممرض الرعاية الصحية والتمريض",
+              "english": "nurse, healthcare specialist",
+              "example": "Die engagierte Pflegefachkraft kümmert sich rührend um ältere Menschen."
+            },
+            {
+              "german": "der Verkäufer, -",
+              "arabic": "البائع في المتجر",
+              "english": "salesperson, shop assistant",
+              "example": "Der freundliche Verkäufer berät die Kunden bei der Auswahl der Schuhe."
+            },
+            {
+              "german": "der Programmierer, -",
+              "arabic": "المبرمج ومطور البرمجيات",
+              "english": "programmer, software developer",
+              "example": "Als Programmierer schreibt er sauberen Code für moderne Webanwendungen."
+            },
+            {
+              "german": "die Ausbildung, -en",
+              "arabic": "التدريب المهني المزدوج (نظري وعملي)",
+              "english": "vocational training, apprenticeship",
+              "example": "In Deutschland dauert eine duale Ausbildung meist drei Jahre."
+            },
+            {
+              "german": "das Praktikum, Praktika",
+              "arabic": "التدريب الميداني / فترة التمرين العملي",
+              "english": "internship",
+              "example": "Während der Semesterferien absolviere ich ein Praktikum in einer Marketingagentur."
+            },
+            {
+              "german": "die Vollzeitstelle, -n",
+              "arabic": "وظيفة بدوام كامل (غالباً 40 ساعة أسبوعياً)",
+              "english": "full-time position",
+              "example": "Nach dem Abschluss fand sie sofort eine unbefristete Vollzeitstelle."
+            },
+            {
+              "german": "die Teilzeit (Sg.)",
+              "arabic": "العمل بدوام جزئي",
+              "english": "part-time work",
+              "example": "Um mehr Zeit für die Kinder zu haben, arbeitet er vorübergehend in Teilzeit."
+            }
+          ],
+          "description": "Berufsbilder, Handwerk, Dienstleistungen, Ausbildung, Studium und Arbeitsverhältnisse.",
+          "details": "Vielfalt der Berufe, Ausbildungswege, Vollzeit, Teilzeit und Karriere (A1–B2)",
+          "arabicDescription": "المهن والوظائف (Berufe): أسماء المهن (Beruf)، الحرفيين (Handwerker)، الأطباء (Ärztin)، المهندسين (Ingenieur)، المدرسين، الممرضين والمبرمجين. مفردات مسارات التأهيل: التدريب المهني الثنائي (Ausbildung)، التدريب العملي (Praktikum)، والعمل بدوام كامل (Vollzeit) أو جزئي (Teilzeit).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "intro": "Einfache Sätze und grundlegender Wortschatz (A1).",
+              "title": "Was bist du von Beruf?",
+              "paragraphs": [
+                [
+                  "Viele Menschen haben einen interessanten [der Beruf, -e|Beruf].",
+                  "Mein Vater ist [der Handwerker, -|Handwerker]. Er baut schöne Tische und repariert Türen.",
+                  "Meine Mutter ist [die Ärztin, -nen|Ärztin] in einem Krankenhaus. Sie hilft kranken Menschen."
+                ],
+                [
+                  "Mein Bruder lernt gern Sprachen und ist [der Lehrer, -|Lehrer] an einer Grundschule.",
+                  "Ich selbst arbeite als [der Verkäufer, -|Verkäufer] in einem Supermarkt.",
+                  "Ich spreche jeden Tag mit vielen netten Kunden."
+                ],
+                [
+                  "Mein Freund Max ist [der Programmierer, -|Programmierer].",
+                  "Er sitzt am Computer und programmiert Spiele. Das gefällt ihm sehr gut."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "intro": "Zusammenhängende Sätze und praktische Alltagssituationen (A2).",
+              "title": "Mein Weg in die Arbeitswelt",
+              "paragraphs": [
+                [
+                  "Nach der Schule stand ich vor einer wichtigen Entscheidung: Sollte ich studieren oder eine praktische [die Ausbildung, -en|Ausbildung] machen?",
+                  "Zuerst habe ich ein dreimonatiges [das Praktikum, Praktika|Praktikum] bei einem mittelständischen Betrieb gemacht."
+                ],
+                [
+                  "Dort habe ich mit einem erfahrenen [der Ingenieur, -e|Ingenieur] zusammengearbeitet.",
+                  "Er zeigte mir, wie Maschinen konstruiert und geprüft werden.",
+                  "Die Arbeit war faszinierend, erforderte aber viel technisches Verständnis."
+                ],
+                [
+                  "Jetzt habe ich eine feste [die Vollzeitstelle, -n|Vollzeitstelle] gefunden.",
+                  "Meine Kollegin arbeitet wegen ihrer Familie in [die Teilzeit (Sg.)|Teilzeit], was ihr große Flexibilität ermöglicht."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "intro": "Detaillierte Schilderungen und beruflicher Kontext (B1).",
+              "title": "Berufliche Perspektiven und Weiterentwicklung",
+              "paragraphs": [
+                [
+                  "Das deutsche Ausbildungssystem genießt weltweit hohes Ansehen, da Theorie und Praxis eng miteinander verzahnt sind.",
+                  "Wer eine dreijährige duale [die Ausbildung, -en|Ausbildung] erfolgreich abschließt, besitzt exzellente Aussichten auf dem Arbeitsmarkt."
+                ],
+                [
+                  "In Krankenhäusern und Pflegeheimen wird jede qualifizierte [die Pflegefachkraft, -̈e|Pflegefachkraft] dringend gesucht, da der demografische Wandel spürbar ist.",
+                  "Gleichzeitig wächst der Bedarf im IT-Sektor unaufhaltsam: Ein fähiger [der Programmierer, -|Programmierer] kann sich seine Projekte oft aussuchen."
+                ],
+                [
+                  "Viele Arbeitnehmer beginnen nach dem Studium mit einem praxisorientierten [das Praktikum, Praktika|Praktikum], bevor sie in eine reguläre [die Vollzeitstelle, -n|Vollzeitstelle] übernommen werden.",
+                  "Für viele Eltern ist das Modell der [die Teilzeit (Sg.)|Teilzeit] ein bewährter Kompromiss, um Beruf und Familienleben harmonisch zu vereinbaren."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "intro": "Fachsprachliche Nuancen und anspruchsvolle Diskurse (B2).",
+              "title": "Strukturwandel und neue Berufsbilder im 21. Jahrhundert",
+              "paragraphs": [
+                [
+                  "Die digitale Transformation und der ökologische Wandel verändern traditionelle Berufsfelder in rasantem Tempo.",
+                  "Während klassische Handwerksberufe durch Automatisierung und moderne Werkstoffe eine Renaissance erleben, übernimmt ein spezialisierter [der Ingenieur, -e|Ingenieur] heute vermehrt systemische Schnittstellenaufgaben."
+                ],
+                [
+                  "Gleichzeitig verändert künstliche Intelligenz die Tätigkeitsprofile in Wissensberufen: Ein professioneller [der Programmierer, -|Programmierer] konzentriert sich zunehmend auf Architekturkonzepte und Qualitätssicherung statt auf reine Routineprogrammierung.",
+                  "Im Bildungs- und Gesundheitswesen bleibt der menschliche Faktor hingegen unersetzlich; weder [der Lehrer, -|ein Lehrer] noch eine examinierte [die Pflegefachkraft, -̈e|Pflegefachkraft] lassen sich durch Algorithmen substituieren."
+                ],
+                [
+                  "Die Flexibilisierung von Arbeitszeitmodellen führt dazu, dass starre Grenzen zwischen [die Vollzeitstelle, -n|Vollzeitstelle] und [die Teilzeit (Sg.)|Teilzeit] durch agile Arbeitskonzepte und Remote-Work aufgeweicht werden.",
+                  "Lebenslanges Lernen ist zur conditio sine qua non geworden, um in jedem anspruchsvollen [der Beruf, -e|Beruf] zukunftsfähig zu bleiben."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_organigramm",
+          "title": "Das Organigramm",
+          "words": [
+            {
+              "german": "das Organigramm, -e",
+              "arabic": "الهيكل التنظيمي / المخطط الهيكلي للشركة",
+              "english": "organizational chart, org chart",
+              "example": "Das Organigramm veranschaulicht die Führungsstruktur und Abteilungen des Unternehmens."
+            },
+            {
+              "german": "die Geschäftsführung, -en",
+              "arabic": "الإدارة التنفيذية / مجلس الإدارة",
+              "english": "management, executive board, managing directors",
+              "example": "Die Geschäftsführung trifft strategische Entscheidungen für die Zukunft des Betriebs."
+            },
+            {
+              "german": "die Abteilung, -en",
+              "arabic": "القسم / الفرع في الشركة",
+              "english": "department, division",
+              "example": "In welcher Abteilung arbeitest du? Ich gehöre zur IT-Abteilung."
+            },
+            {
+              "german": "der Abteilungsleiter, -",
+              "arabic": "رئيس القسم / مدير الإدارة",
+              "english": "department head, department manager",
+              "example": "Unser Abteilungsleiter koordiniert die wöchentlichen Aufgaben und Ziele."
+            },
+            {
+              "german": "das Team, -s",
+              "arabic": "فريق العمل",
+              "english": "team",
+              "example": "Unser Team arbeitet engagiert an der Fertigstellung des Softwareprojekts."
+            },
+            {
+              "german": "die Hierarchie, -n",
+              "arabic": "التسلسل الهرمي / التدرج الإداري",
+              "english": "hierarchy",
+              "example": "Flache Hierarchien ermöglichen schnelle Entscheidungen und direkte Kommunikation."
+            },
+            {
+              "german": "der Mitarbeiter, -",
+              "arabic": "الموظف / العامل",
+              "english": "employee, staff member, coworker",
+              "example": "Das Unternehmen beschäftigt über zweihundert festangestellte Mitarbeiter."
+            },
+            {
+              "german": "die Personalabteilung, -en",
+              "arabic": "قسم شؤون الموظفين والموارد البشرية (HR)",
+              "english": "human resources department (HR)",
+              "example": "Bei Fragen zu Urlaubsanträgen oder Verträgen hilft die Personalabteilung."
+            },
+            {
+              "german": "das Marketing (Sg.)",
+              "arabic": "إدارة التسويق والدعاية",
+              "english": "marketing",
+              "example": "Das Marketing plant eine neue Werbekampagne in den sozialen Medien."
+            },
+            {
+              "german": "der Vertrieb (Sg.)",
+              "arabic": "إدارة المبيعات والتوزيع",
+              "english": "sales, sales department",
+              "example": "Der Vertrieb kontaktiert potenzielle Neukunden und schließt Kaufverträge ab."
+            },
+            {
+              "german": "die Buchhaltung, -en",
+              "arabic": "قسم الحسابات والمالية",
+              "english": "accounting department, bookkeeping",
+              "example": "Die Buchhaltung prüft alle Rechnungen und überwacht die pünktlichen Zahlungen."
+            },
+            {
+              "german": "die Zuständigkeit, -en",
+              "arabic": "الاختصاص / نطاق المسؤولية",
+              "english": "responsibility, remit, jurisdiction",
+              "example": "Für technische Probleme liegt die Zuständigkeit beim IT-Support."
+            }
+          ],
+          "description": "Unternehmensstruktur, Abteilungen, Geschäftsführung, Teamleitung und Hierarchien.",
+          "details": "Organigramm, HR, Marketing, Vertrieb, Buchhaltung und Zuständigkeiten (A1–B2)",
+          "arabicDescription": "الهيكل التنظيمي للشركة (Das Organigramm): مخطط الشركة (Organigramm)، الإدارة التنفيذية (Geschäftsführung)، الأقسام (Abteilungen)، قسم الموارد البشرية (Personalabteilung / HR)، التسويق (Marketing)، المبيعات (Vertrieb)، المحاسبة (Buchhaltung)، والمسؤوليات والصلاحيات (Zuständigkeit).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "intro": "Einfache Sätze und grundlegender Wortschatz (A1).",
+              "title": "Unser Team und der Chef",
+              "paragraphs": [
+                [
+                  "In unserer Firma arbeiten viele Menschen.",
+                  "An der Wand im Eingang hängt [das Organigramm, -e|ein großes Organigramm].",
+                  "Ganz oben steht [die Geschäftsführung, -en|die Geschäftsführung].",
+                  "Der Chef leitet das ganze Unternehmen."
+                ],
+                [
+                  "Unsere Firma hat verschiedene [die Abteilung, -en|Abteilungen].",
+                  "Ich arbeite gern in meinem kleinen [das Team, -s|Team].",
+                  "Jeder [der Mitarbeiter, -|Mitarbeiter] hat einen Schreibtisch und einen Computer."
+                ],
+                [
+                  "Mein [der Abteilungsleiter, -|Abteilungsleiter] ist sehr freundlich.",
+                  "Er erklärt uns jeden Morgen die Aufgaben für den Tag."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "intro": "Zusammenhängende Sätze und praktische Alltagssituationen (A2).",
+              "title": "Wer macht was im Betrieb?",
+              "paragraphs": [
+                [
+                  "Wenn neue Kollegen in den Betrieb kommen, lernen sie zuerst die Struktur kennen.",
+                  "In unserer [die Abteilung, -en|Abteilung] herrscht eine sehr angenehme Arbeitsatmosphäre.",
+                  "Wenn wir Fragen zu unserem Arbeitsvertrag haben, gehen wir direkt in [die Personalabteilung, -en|die Personalabteilung]."
+                ],
+                [
+                  "Für den Verkauf unserer Produkte ist [der Vertrieb (Sg.)|der Vertrieb] zuständig.",
+                  "Die Kollegen im [das Marketing (Sg.)|Marketing] entwerfen bunte Broschüren und Online-Werbung, um neue Kunden zu gewinnen."
+                ],
+                [
+                  "Am Monatsende zahlt [die Buchhaltung, -en|die Buchhaltung] pünktlich alle Gehälter aus und bezahlt offene Rechnungen.",
+                  "So weiß jeder Kollege genau, was seine konkrete [die Zuständigkeit, -en|Zuständigkeit] ist."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "intro": "Detaillierte Schilderungen und beruflicher Kontext (B1).",
+              "title": "Unternehmensorganisation und flache Hierarchien",
+              "paragraphs": [
+                [
+                  "Ein klar gegliedertes [das Organigramm, -e|Organigramm] schafft Transparenz und verhindert Kompetenzgerangel im Betriebsalltag.",
+                  "Während traditionelle Großkonzerne oft eine starre und steile [die Hierarchie, -n|Hierarchie] aufweisen, setzen moderne Start-ups auf flache Strukturen."
+                ],
+                [
+                  "An der Spitze trägt [die Geschäftsführung, -en|die Geschäftsführung] die Gesamtverantwortung für die wirtschaftliche Entwicklung des Unternehmens.",
+                  "Jeder [der Abteilungsleiter, -|Abteilungsleiter] fungiert als Bindeglied zwischen Vorstand und operativer Ebene, delegiert Aufgaben und fördert seine [der Mitarbeiter, -|Mitarbeiter]."
+                ],
+                [
+                  "Eine enge Abstimmung zwischen [das Marketing (Sg.)|Marketing], [der Vertrieb (Sg.)|Vertrieb] und [die Buchhaltung, -en|Buchhaltung] gewährleistet, dass Aufträge reibungslos abgewickelt werden.",
+                  "Klare [die Zuständigkeit, -en|Zuständigkeiten] innerhalb der Teams verhindern Missverständnisse und steigern die Produktivität beträchtlich."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "intro": "Fachsprachliche Nuancen und anspruchsvolle Diskurse (B2).",
+              "title": "Agile Organisationsstrukturen im Zeitalter digitaler Transformation",
+              "paragraphs": [
+                [
+                  "Das klassisch-pyramidale [das Organigramm, -e|Organigramm] stößt in dynamischen, technologiegetriebenen Märkten zunehmend an seine funktionalen Grenzen.",
+                  "Matrixorganisationen und crossfunktionale Netzwerke lösen starre Silos auf, wodurch die strikte [die Hierarchie, -n|Hierarchie] zugunsten dezentraler Entscheidungsbefugnisse zurücktritt."
+                ],
+                [
+                  "Für [die Geschäftsführung, -en|die Geschäftsführung] bedeutet dies einen Paradigmenwechsel vom autoritären Befehlswesen hin zu dienender Führung ('Servant Leadership').",
+                  "Gleichzeitig wandelt sich die Rolle der [die Personalabteilung, -en|Personalabteilung] vom reinen Administrationsorgan zum strategischen People-&-Culture-Partner, der Talente akquiriert und adaptive Lernkulturen etabliert."
+                ],
+                [
+                  "Wenn [das Marketing (Sg.)|Marketing] und [der Vertrieb (Sg.)|Vertrieb] in integrierten Revenue-Teams agieren und [die Buchhaltung, -en|die Buchhaltung] durch KI-gestützte Controlling-Systeme entlastet wird, definiert sich [die Zuständigkeit, -en|Zuständigkeit] nicht mehr über Stellenbeschreibungen, sondern über ergebnisorientierte Wertschöpfungsbeiträge."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "buero",
+      "title": "DAS BÜRO",
+      "topics": [
+        {
+          "id": "bueromoebel",
+          "title": "Büromöbel",
+          "words": [
+            {
+              "german": "der Schreibtisch, -e",
+              "arabic": "مكتب الكتابة والعمل",
+              "english": "desk, writing desk",
+              "example": "Auf meinem Schreibtisch stehen ein Monitor, eine Tastatur und eine Kaffeetasse."
+            },
+            {
+              "german": "der Bürostuhl, -̈e",
+              "arabic": "كرسي المكتب الدوار",
+              "english": "office chair, swivel chair",
+              "example": "Ein hochwertiger Bürostuhl entlastet die Wirbelsäule bei langem Sitzen."
+            },
+            {
+              "german": "der Aktenschrank, -̈e",
+              "arabic": "خزانة الملفات والمستندات",
+              "english": "filing cabinet",
+              "example": "Im abschließbaren Aktenschrank lagern wir vertrauliche Verträge und Akten."
+            },
+            {
+              "german": "der Rollcontainer, -",
+              "arabic": "وحدة أدراج متحركة أسفل المكتب",
+              "english": "mobile pedestal, under-desk drawer unit",
+              "example": "Im Rollcontainer bewahre ich Stifte, Notizblöcke und mein Ladekabel auf."
+            },
+            {
+              "german": "der Stehtisch, -e",
+              "arabic": "طاولة العمل وقوفاً (مكتب قابل لتعديل الارتفاع)",
+              "english": "standing desk, height-adjustable desk",
+              "example": "Dank des elektrischen Stehtischs kann ich abwechselnd im Sitzen und Stehen arbeiten."
+            },
+            {
+              "german": "das Whiteboard, -s",
+              "arabic": "اللوح الأبيض للكتابة التفاعلية",
+              "english": "whiteboard",
+              "example": "Am Whiteboard sammeln wir neue Projektideen mit bunten Markern."
+            },
+            {
+              "german": "die Trennwand, -̈e",
+              "arabic": "القاطع المكتبي / حاجز الخصوصية وعزل الصوت",
+              "english": "partition, office divider, acoustic screen",
+              "example": "Eine schallschluckende Trennwand dämpft den Geräuschpegel im Großraumbüro."
+            },
+            {
+              "german": "die Ergonomie (Sg.)",
+              "arabic": "هندسة بيئة العمل الصحية (راحة الجسم أثناء العمل)",
+              "english": "ergonomics",
+              "example": "Gute Ergonomie am Bildschirmarbeitsplatz beugt Nacken- und Rückenschmerzen vor."
+            },
+            {
+              "german": "die Schreibtischlampe, -n",
+              "arabic": "مصباح المكتب للإضاءة المباشرة",
+              "english": "desk lamp",
+              "example": "Die LED-Schreibtischlampe sorgt an dunklen Wintertagen für blendfreies Licht."
+            },
+            {
+              "german": "das Bücherregal, -e",
+              "arabic": "رف الكتب والمراجع",
+              "english": "bookshelf, bookcase",
+              "example": "Im Bücherregal stehen Nachschlagewerke, Fachzeitschriften und Handbücher."
+            },
+            {
+              "german": "das Rollregal, -e",
+              "arabic": "رف متحرك بعجلات للتخزين",
+              "english": "mobile shelf, trolley shelf",
+              "example": "Das Rollregal bringt häufig benötigte Ordner flexibel an jeden Arbeitsplatz."
+            },
+            {
+              "german": "die Kabelwanne, -n",
+              "arabic": "مجرى وقناة تنظيم الكابلات تحت المكتب",
+              "english": "cable tray, cable organizer",
+              "example": "Die Kabelwanne unter der Tischplatte verhindert unordentlichen Kabelsalat."
+            }
+          ],
+          "description": "Schreibtische, Bürostühle, Aktenschränke, Ergonomie und moderne Arbeitsplatzgestaltung.",
+          "details": "Ergonomische Büromöbel, Stehtische, Rollcontainer und Stauraum (A1–B2)",
+          "arabicDescription": "أثاث المكاتب (Büromöbel): مفردات تجهيز بيئة العمل، المكتب (Schreibtisch)، كرسي المكتب المريح (Bürostuhl)، خزانة الملفات (Aktenschrank)، الطاولة القابلة للرفع (Stehtisch)، وحدة الأدراج المتنقلة (Rollcontainer)، وقواعد بيئة العمل الصحية (Ergonomie).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "intro": "Einfache Sätze und grundlegender Wortschatz (A1).",
+              "title": "Mein neuer Arbeitsplatz im Büro",
+              "paragraphs": [
+                [
+                  "Ich habe einen schönen Arbeitsplatz im Büro.",
+                  "Hier steht mein großer [der Schreibtisch, -e|Schreibtisch].",
+                  "Davor steht [der Bürostuhl, -̈e|ein bequemer Bürostuhl]. Man kann ihn drehen und in der Höhe verstellen."
+                ],
+                [
+                  "Unter dem Tisch habe ich [der Rollcontainer, -|einen Rollcontainer] für meine Stifte.",
+                  "An der Wand steht [der Aktenschrank, -̈e|ein großer Aktenschrank] voller Ordner.",
+                  "Auf dem Tisch leuchtet [die Schreibtischlampe, -n|eine helle Schreibtischlampe]."
+                ],
+                [
+                  "Im Zimmer gibt es auch [das Whiteboard, -s|ein Whiteboard].",
+                  "Dort schreiben wir wichtige Notizen und Termine auf."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "intro": "Zusammenhängende Sätze und praktische Alltagssituationen (A2).",
+              "title": "Gesünder arbeiten mit passenden Möbeln",
+              "paragraphs": [
+                [
+                  "Letzten Monat hat unsere Firma neue Büromöbel für alle Mitarbeiter angeschafft.",
+                  "Weil viele Kollegen oft über Rückenschmerzen klagten, bekamen wir moderne Möbel."
+                ],
+                [
+                  "Besonders toll ist der neue höhenverstellbare [der Stehtisch, -e|Stehtisch].",
+                  "Auf Knopfdruck fährt die Tischplatte nach oben, sodass man bequem im Stehen arbeiten kann.",
+                  "Auch der ergonomische [der Bürostuhl, -̈e|Bürostuhl] unterstützt den Rücken optimal."
+                ],
+                [
+                  "Zwischen den Tischen trennt uns [die Trennwand, -̈e|eine Trennwand], die den Schall dämpft.",
+                  "Unter jedem Tisch hält [die Kabelwanne, -n|eine praktische Kabelwanne] alle Computerkabel ordentlich zusammen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "intro": "Detaillierte Schilderungen und beruflicher Kontext (B1).",
+              "title": "Ergonomie und Wohlbefinden am Arbeitsplatz",
+              "paragraphs": [
+                [
+                  "Wer täglich acht Stunden vor dem Bildschirm verbringt, weiß, wie entscheidend durchdachte [die Ergonomie (Sg.)|Ergonomie] für die Gesundheit ist.",
+                  "Schlechte Möbel führen unweigerlich zu chronischen Haltungsschäden, Verspannungen und vorzeitiger Ermüdung."
+                ],
+                [
+                  "Deshalb investieren zukunftsorientierte Unternehmen in ergonomische Arbeitsplätze.",
+                  "Ein flexibler [der Stehtisch, -e|Stehtisch] ermöglicht den dynamischen Wechsel zwischen Sitz- und Stehphasen während langer Arbeitstage.",
+                  "Ein voll konfigurierbarer [der Bürostuhl, -̈e|Bürostuhl] mit Synchronmechanik und Lordosenstütze passt sich exakt der Anatomie des Nutzers an."
+                ],
+                [
+                  "Zur Ordnung tragen strukturierte Stauräume bei: Während vertrauliche Personaldaten im abschließbaren [der Aktenschrank, -̈e|Aktenschrank] verschwinden, bleiben tägliche Arbeitsmittel im [der Rollcontainer, -|Rollcontainer] stets griffbereit.",
+                  "Im Großraumbüro sorgt zudem eine stoffbezogene [die Trennwand, -̈e|Trennwand] für akustische Privatsphäre und ungestörtes Telefonieren."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "intro": "Fachsprachliche Nuancen und anspruchsvolle Diskurse (B2).",
+              "title": "New-Work-Konzepte: Desk-Sharing und ergonomische Workspace-Architektur",
+              "paragraphs": [
+                [
+                  "Die Renaissance moderner Bürolandschaften im Kontext von New Work verdrängt starre Einzelarbeitsplätze zugunsten flexibler Multispace-Konzepte.",
+                  "Dabei verschmilzt funktionale [die Ergonomie (Sg.)|Ergonomie] mit anspruchsvollem Industriedesign, um kollaborative und konzentrierte Arbeitsphasen gleichermaßen zu unterstützen."
+                ],
+                [
+                  "Der motorisierte [der Stehtisch, -e|Stehtisch] ist heute Standard und lässt sich bei Desk-Sharing-Modellen per Benutzerprofil sekundenschnell auf individuelle Höhen voreinstellen.",
+                  "Ein Hochleistungs-[der Bürostuhl, -̈e|Bürostuhl] garantiert durch multidimensionale Armlehnen und reaktive Gegengewichtseinstellungen eine optimale Druckverteilung."
+                ],
+                [
+                  "Mobile Elemente wie das wendige [das Rollregal, -e|Rollregal] und magnetische [das Whiteboard, -s|Whiteboards] ermöglichen agile Projektarbeit in wechselnden Teamkonstellationen.",
+                  "Gleichzeitig reduzieren integrierte [die Kabelwanne, -n|Kabelwannen] und raumhohe akustische [die Trennwand, -̈e|Trennwände] visuelle Unruhe sowie Lärmemissionen, wodurch eine konzentrierte, produktivitätsfördernde Arbeitsatmosphäre entsteht."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "der_buerobedarf",
+          "title": "Der Bürobedarf",
+          "words": [
+            {
+              "german": "der Bürobedarf (Sg.)",
+              "arabic": "المستلزمات والأدوات المكتبية",
+              "english": "office supplies, stationery",
+              "example": "Jeden Monat bestellen wir neuen Bürobedarf für unsere gesamte Abteilung."
+            },
+            {
+              "german": "der Locher, -",
+              "arabic": "خرامة الورق لتخريم المستندات",
+              "english": "hole punch, paper punch",
+              "example": "Mit dem Locher stanzt sie zwei saubere Löcher in die Dokumente."
+            },
+            {
+              "german": "das Heftgerät, -e",
+              "arabic": "الدباسة المكتبية (التّاكر)",
+              "english": "stapler",
+              "example": "Das Heftgerät verbindet mehrere lose Blätter mit einer Metallklammer."
+            },
+            {
+              "german": "die Büroklammer, -n",
+              "arabic": "مشبك الورق المعدني",
+              "english": "paperclip",
+              "example": "Ich hefte die Quittung mit einer kleinen Büroklammer an das Formular."
+            },
+            {
+              "german": "der Notizblock, -̈e",
+              "arabic": "دفتر ومفكرة تدوين الملاحظات",
+              "english": "notepad, scratchpad",
+              "example": "Während des Telefonats schreibe ich wichtige Telefonnummern auf den Notizblock."
+            },
+            {
+              "german": "der Kugelschreiber, -",
+              "arabic": "قلم حبر جاف",
+              "english": "ballpoint pen",
+              "example": "Bitte unterschreiben Sie den Vertrag mit einem blauen Kugelschreiber."
+            },
+            {
+              "german": "der Textmarker, -",
+              "arabic": "قلم التظليل والتلوين الفسفوري",
+              "english": "highlighter",
+              "example": "Mit einem gelben Textmarker markiert er wesentliche Textstellen im Bericht."
+            },
+            {
+              "german": "der Ordner, -",
+              "arabic": "ملف الحفظ السميك ذو الحلقات (كلاسور)",
+              "english": "ring binder, folder",
+              "example": "Alle Rechnungen des laufenden Jahres sind chronologisch im Ordner abgeheftet."
+            },
+            {
+              "german": "das Klebeband, -̈er",
+              "arabic": "الشريط اللاصق (سيلوتيب)",
+              "english": "adhesive tape, scotch tape",
+              "example": "Wir verschließen das schwere Paket sorgfältig mit reißfestem Klebeband."
+            },
+            {
+              "german": "die Schere, -n",
+              "arabic": "المقص المكتبي",
+              "english": "scissors",
+              "example": "Mit der scharfen Schere schneidet sie das Etikett sauber aus."
+            },
+            {
+              "german": "das Kopierpapier, -e",
+              "arabic": "ورق الطباعة والتصوير (A4)",
+              "english": "printer paper, copy paper",
+              "example": "Der Drucker zeigt eine Warnung: Es fehlt neues weißes Kopierpapier."
+            },
+            {
+              "german": "die Haftnotiz, -en",
+              "arabic": "الوريقات اللاصقة الصغيرة للملاحظات السريعة (بوست إت)",
+              "english": "sticky note, post-it note",
+              "example": "Ich klebe eine gelbe Haftnotiz mit einer Erinnerung auf meinen Bildschirm."
+            }
+          ],
+          "description": "Schreibwaren, Ordner, Hefter, Locher, Büroklammern und Verbrauchsmaterialien.",
+          "details": "Bürobedarf, Schreibutensilien, Archivierung und das papierlose Büro (A1–B2)",
+          "arabicDescription": "المستلزمات المكتبية (Der Bürobedarf): الأدوات المكتبية المستهلكة، خرامة الورق (Locher)، الدباسة (Heftgerät)، مشابك الورق (Büroklammer)، دفاتر الملاحظات (Notizblock)، أقلام الحبر (Kugelschreiber)، أقلام التظليل (Textmarker)، ملفات الحفظ (Ordner)، وأوراق الطباعة (Kopierpapier).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "intro": "Einfache Sätze und grundlegender Wortschatz (A1).",
+              "title": "Was brauche ich auf meinem Schreibtisch?",
+              "paragraphs": [
+                [
+                  "In unserem Büro haben wir viel [der Bürobedarf (Sg.)|Bürobedarf].",
+                  "Ich habe immer [der Kugelschreiber, -|einen blauen Kugelschreiber] in der Hand.",
+                  "Wenn der Chef spricht, schreibe ich Notizen auf [der Notizblock, -̈e|meinen Notizblock]."
+                ],
+                [
+                  "Hier liegt auch [die Büroklammer, -n|eine kleine Büroklammer]. Sie hält zwei Blätter zusammen.",
+                  "Mit [der Locher, -|dem Locher] mache ich Löcher in das Papier.",
+                  "Dann lege ich das Blatt sauber in [der Ordner, -|den grünen Ordner]."
+                ],
+                [
+                  "Wenn etwas wichtig ist, nehme ich [die Haftnotiz, -en|eine gelbe Haftnotiz] und klebe sie an den Computer."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "intro": "Zusammenhängende Sätze und praktische Alltagssituationen (A2).",
+              "title": "Materialbestellung für die Abteilung",
+              "paragraphs": [
+                [
+                  "Jeden ersten Montag im Monat überprüfe ich den Schrank mit den Vorräten.",
+                  "Heute stelle ich fest, dass wir wieder neuen [der Bürobedarf (Sg.)|Bürobedarf] bestellen müssen."
+                ],
+                [
+                  "Im Drucker gibt es fast kein [das Kopierpapier, -e|Kopierpapier] mehr, und wir drucken täglich viele Berichte.",
+                  "Außerdem ist [das Heftgerät, -e|das Heftgerät] auf dem Empfangstisch kaputtgegangen, und wir brauchen Klammern.",
+                  "Die Kollegen haben mich gebeten, auch bunte [der Textmarker, -|Textmarker] und eine neue [die Schere, -n|Schere] zu bestellen."
+                ],
+                [
+                  "Ich fülle die Bestellliste im Intranet aus und füge noch ein paar Rollen [das Klebeband, -̈er|Klebeband] hinzu.",
+                  "Übermorgen liefert die Post alle Pakete direkt ins Büro."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "intro": "Detaillierte Schilderungen und beruflicher Kontext (B1).",
+              "title": "Organisation im Aktenchaos",
+              "paragraphs": [
+                [
+                  "Trotz fortschreitender Digitalisierung ist ein gut sortierter Vorrat an Schreibutensilien im Geschäftsalltag unverzichtbar.",
+                  "Wer wichtige Dokumente manuell verarbeitet, greift täglich zu vertrauten Werkzeugen wie [der Locher, -|Locher], [das Heftgerät, -e|Heftgerät] und [die Büroklammer, -n|Büroklammern]."
+                ],
+                [
+                  "Zur Vorbereitung von Audits oder Steuerprüfungen muss jedes Originaldokument vorschriftsmäßig in [der Ordner, -|einem stabilen Ordner] archiviert und beschriftet werden.",
+                  "Wichtige Fristen oder Zwischenergebnisse markieren Mitarbeiter mit einem leuchtenden [der Textmarker, -|Textmarker], um bei Rückfragen schnell den Überblick zu behalten."
+                ],
+                [
+                  "Kurze Telefonnotizen oder Passworterinnerungen landen oft temporär auf einer farbigen [die Haftnotiz, -en|Haftnotiz] am Monitorrand.",
+                  "Effizientes Dokumentenmanagement beginnt eben mit verlässlichem, hochwertigem [der Bürobedarf (Sg.)|Bürobedarf]."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "intro": "Fachsprachliche Nuancen und anspruchsvolle Diskurse (B2).",
+              "title": "Vom Papierstapel zum digitalen Arbeitsplatz: Ressourceneffizienz im Büro",
+              "paragraphs": [
+                [
+                  "Im Zuge betrieblicher Nachhaltigkeitsstrategien vollzieht sich in Unternehmen ein radikaler Paradigmenwechsel bei der Beschaffung von [der Bürobedarf (Sg.)|Bürobedarf].",
+                  "Der früher exzessive Verbrauch von gebleichtem [das Kopierpapier, -e|Kopierpapier] weicht zertifizierten Recyclingpapieren oder vollständig digitalisierten Workflow-Systemen."
+                ],
+                [
+                  "Während physische Utensilien wie [das Heftgerät, -e|Heftgeräte], [die Büroklammer, -n|Büroklammern] und raumgreifende [der Ordner, -|Aktenordner] schrittweise durch revisionssichere Dokumentenmanagementsysteme (DMS) substituiert werden, bleibt haptisches Material bei Kreativprozessen begehrt.",
+                  "Agile Brainstorming-Sessions stützen sich nach wie vor auf analoge Hilfsmittel wie [die Haftnotiz, -en|Haftnotizen] und [der Notizblock, -̈e|Notizblöcke], um Ideen im Raum visuell zu strukturieren."
+                ],
+                [
+                  "Ein umweltbewusstes Beschaffungswesen setzt heute auf zirkuläre Materialkreisläufe, nachfüllbare [der Kugelschreiber, -|Kugelschreiber] und lösungsmittelfreies [das Klebeband, -̈er|Klebeband], um den ökologischen Fußabdruck der Büroinfrastruktur nachhaltig zu minimieren."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "der_besprechungsraum",
+          "title": "Der Besprechungsraum",
+          "words": [
+            {
+              "german": "der Besprechungsraum, -̈e",
+              "arabic": "غرفة وقاعة الاجتماعات",
+              "english": "meeting room, conference room",
+              "example": "Wir haben den großen Besprechungsraum im dritten Stock für das Kundengespräch reserviert."
+            },
+            {
+              "german": "der Beamer, -",
+              "arabic": "جهاز العرض الضوئي (البروجكتور)",
+              "english": "projector",
+              "example": "Der Beamer projiziert die Folien scharf an die helle Wand."
+            },
+            {
+              "german": "die Leinwand, -̈e",
+              "arabic": "شاشة العرض البيضاء",
+              "english": "projection screen",
+              "example": "Der Kollege fährt die elektrische Leinwand vor der Präsentation herunter."
+            },
+            {
+              "german": "das Flipchart, -s",
+              "arabic": "اللوح الورقي القلاب للرسومات والشرح",
+              "english": "flipchart",
+              "example": "Am Flipchart notiert der Moderator die zentralen Diskussionspunkte mit dicken Stiften."
+            },
+            {
+              "german": "die Videokonferenz, -en",
+              "arabic": "مؤتمر واجتماع الفيديو المرئي عبر الإنترنت",
+              "english": "video conference",
+              "example": "Um Reisekosten zu sparen, schalten wir die Kollegen aus München per Videokonferenz zu."
+            },
+            {
+              "german": "die Tagesordnung, -en",
+              "arabic": "جدول أعمال الاجتماع (الأجندة)",
+              "english": "agenda",
+              "example": "Zu Beginn des Meetings gehen wir die einzelnen Punkte der Tagesordnung durch."
+            },
+            {
+              "german": "das Protokoll, -e",
+              "arabic": "محضر الاجتماع الرسمي لتوثيق القرارات",
+              "english": "minutes, protocol, meeting notes",
+              "example": "Wer schreibt heute das Protokoll und hält alle getroffenen Vereinbarungen fest?"
+            },
+            {
+              "german": "die Präsentation, -en",
+              "arabic": "العرض التقديمي (السلايدات)",
+              "english": "presentation",
+              "example": "Ihre Präsentation über die neuen Verkaufszahlen hat den Vorstand voll überzeugt."
+            },
+            {
+              "german": "das Mikrofon, -e",
+              "arabic": "الميكروفون الصوتي",
+              "english": "microphone",
+              "example": "Bitte schalten Sie das Mikrofon stumm, wenn Sie gerade nicht sprechen."
+            },
+            {
+              "german": "die Moderation, -en",
+              "arabic": "إدارة وتسيير الجلسة أو الحوار",
+              "english": "moderation, chairing of a meeting",
+              "example": "Eine neutrale Moderation hilft dabei, die Diskussion zielgerichtet zu halten."
+            },
+            {
+              "german": "der Konferenztisch, -e",
+              "arabic": "طاولة المؤتمرات والاجتماعات الكبيرة",
+              "english": "conference table",
+              "example": "Um den langen Konferenztisch herum haben zwölf Personen bequem Platz."
+            },
+            {
+              "german": "das Brainstorming, -s",
+              "arabic": "العصف الذهني وتوليد الأفكار الحرة",
+              "english": "brainstorming",
+              "example": "Im Brainstorming sammeln wir spontane Ideen ohne sofortige Kritik."
+            }
+          ],
+          "description": "Konferenzräume, Präsentationstechnik, Beamer, Whiteboards und hybride Meetings.",
+          "details": "Besprechungsraum, Tagesordnung, Protokoll, Moderation und Videokonferenz (A1–B2)",
+          "arabicDescription": "غرفة الاجتماعات (Der Besprechungsraum): قاعة المؤتمرات والاجتماعات، جهاز العرض الضوئي (Beamer)، شاشة العرض (Leinwand)، اللوح القلاب (Flipchart)، الاجتماعات المرئية عبر الإنترنت (Videokonferenz)، جدول الأعمال (Tagesordnung)، محضر الاجتماع (Protokoll)، والعرض التقديمي (Präsentation).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Einstieg & Alltag",
+              "intro": "Einfache Sätze und grundlegender Wortschatz (A1).",
+              "title": "Das Meeting um zehn Uhr",
+              "paragraphs": [
+                [
+                  "Um zehn Uhr haben wir ein Meeting.",
+                  "Wir gehen zusammen in [der Besprechungsraum, -̈e|den Besprechungsraum].",
+                  "Mitten im Raum steht [der Konferenztisch, -e|ein großer Konferenztisch] mit vielen Stühlen."
+                ],
+                [
+                  "Unser Chef schaltet [der Beamer, -|den Beamer] ein.",
+                  "Das Bild erscheint an [die Leinwand, -̈e|der Leinwand].",
+                  "Wir sehen eine interessante [die Präsentation, -en|Präsentation] über unsere neuen Produkte."
+                ],
+                [
+                  "Am Rand steht [das Flipchart, -s|ein Flipchart].",
+                  "Dort schreibt der Kollege mit einem dicken Stift wichtige Wörter auf.",
+                  "Das Meeting dauert eine Stunde und alle hören aufmerksam zu."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "intro": "Zusammenhängende Sätze und praktische Alltagssituationen (A2).",
+              "title": "Vorbereitung für das Projektmeeting",
+              "paragraphs": [
+                [
+                  "Heute Nachmittag findet unsere wöchentliche Teambesprechung statt.",
+                  "Ich habe den Auftrag bekommen, [der Besprechungsraum, -̈e|den Besprechungsraum] vorzubereiten."
+                ],
+                [
+                  "Zuerst teste ich die Technik: [der Beamer, -|Der Beamer] funktioniert einwandfrei und verbindet sich schnell mit dem Laptop.",
+                  "Weil zwei Kolleginnen im Homeoffice arbeiten, starten wir [die Videokonferenz, -en|eine Videokonferenz].",
+                  "Ich stelle sicher, dass [das Mikrofon, -e|das Mikrofon] auf dem Tisch keinen Hall erzeugt."
+                ],
+                [
+                  "Jedem Teilnehmer lege ich [die Tagesordnung, -en|die Tagesordnung] auf den Platz.",
+                  "Mein Kollege Markus übernimmt heute die Aufgabe und schreibt [das Protokoll, -e|das Protokoll]."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "intro": "Detaillierte Schilderungen und beruflicher Kontext (B1).",
+              "title": "Effiziente Meetingkultur und Beschlussfassung",
+              "paragraphs": [
+                [
+                  "Zeit ist im Berufsalltag eine kostbare Ressource, weshalb professionell strukturierte Besprechungen über den Projekterfolg entscheiden.",
+                  "Bevor das Team in [der Besprechungsraum, -̈e|den Besprechungsraum] gerufen wird, muss eine präzise [die Tagesordnung, -en|Tagesordnung] an alle Beteiligten verschickt werden."
+                ],
+                [
+                  "Eine souveräne [die Moderation, -en|Moderation] stellt sicher, dass Redezeiten eingehalten werden und die Diskussion nicht vom eigentlichen Thema abschweift.",
+                  "Zu Beginn führen wir oft ein kurzes [das Brainstorming, -s|Brainstorming] am [das Flipchart, -s|Flipchart] durch, um innovative Lösungsansätze für aktuelle Engpässe zu sammeln."
+                ],
+                [
+                  "Anschließend folgt [die Präsentation, -en|die Präsentation] der konkreten Zwischenergebnisse auf der großen [die Leinwand, -̈e|Leinwand].",
+                  "Damit keine wertvollen Beschlüsse verloren gehen, hält der Protokollant alle Verantwortlichkeiten und Deadlines verbindlich in [das Protokoll, -e|dem Protokoll] fest."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "intro": "Fachsprachliche Nuancen und anspruchsvolle Diskurse (B2).",
+              "title": "Hybride Kollaborationsmodelle und digitale Konferenztechnik",
+              "paragraphs": [
+                [
+                  "Die Etablierung hybrider Arbeitswelten hat die funktionale Konzeptionierung von [der Besprechungsraum, -̈e|Besprechungsräumen] revolutioniert.",
+                  "Moderne Besprechungszonen fungieren nicht länger als reine Versammlungsorte physisch anwesender Akteure, sondern als medientechnische Hubs für simultane Kollaboration."
+                ],
+                [
+                  "Hochauflösende Kamerasysteme mit KI-gestützter Sprechertracking-Funktion und multidirektionale Decken-[das Mikrofon, -e|Mikrofone] binden Remote-Teilnehmer via [die Videokonferenz, -en|Videokonferenz] so ein, dass Nähe und Interaktionsdynamik gewahrt bleiben.",
+                  "Klassische Projektionsflächen werden vermehrt durch interaktive Touch-Displays ersetzt, die den traditionellen [der Beamer, -|Beamer] ablösen und digitales [das Brainstorming, -s|Brainstorming] synchron auf allen Endgeräten spiegeln."
+                ],
+                [
+                  "Gleichzeitig erfordert die hybride Meetingkultur eine geschärfte [die Moderation, -en|Moderation]: Der Moderator muss digitale Wortmeldungen mit Wortbeiträgen am [der Konferenztisch, -e|Konferenztisch] ausbalancieren, die strikte Einhaltung der [die Tagesordnung, -en|Tagesordnung] steuern und ein lückenloses, digitales [das Protokoll, -e|Protokoll] zur Nachverfolgung generieren."
+                ]
+              ]
+            }
+          }
+        },
+        {
           "id": "buero_und_arbeit",
-          "title": "Büro und Arbeit",
+          "title": "Der Büroalltag",
           "words": [
             {
               "german": "die Arbeit, -en",

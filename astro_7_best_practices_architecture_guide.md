@@ -69,18 +69,15 @@ alwaysApply: false
   - Configure collections using `defineCollection` and schemas from `astro/zod` (Zod 4):
 
     ```ts
-    import { defineCollection } from 'astro:content';
-    import { z } from 'astro/zod';
-    import { glob } from 'astro/loaders';
+    import { defineCollection } from "astro:content";
+    import { z } from "astro/zod";
+    import { glob } from "astro/loaders";
 
     export const collections = {
       blog: defineCollection({
-        loader: glob({ pattern: '**/*.{md,mdx}', base: './src/data/blog' }),
-        schema: ({ image }) => z.object({
-          title: z.string(),
-          pubDate: z.coerce.date(),
-          cover: image(),
-        }),
+        loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/data/blog" }),
+        schema: ({ image }) =>
+          z.object({ title: z.string(), pubDate: z.coerce.date(), cover: image() }),
       }),
     };
     ```
@@ -100,9 +97,11 @@ alwaysApply: false
 
 - **Live Collections (`src/live.config.ts`)**:
   - For dynamic data sources (real-time stock prices, inventory levels, live CMS webhooks) without
-    triggering full site rebuilds, use `defineLiveCollection` and query with `getLiveEntry()` / `getLiveCollection()`.
+    triggering full site rebuilds, use `defineLiveCollection` and query with `getLiveEntry()` /
+    `getLiveCollection()`.
   - Requires an on-demand SSR adapter (e.g. `@astrojs/node`).
-  - Take advantage of Astro 7 cache hints: pass `cacheHint` to `Astro.cache.set(cacheHint)` or invalidate granularly using `context.cache.invalidate(entry)`.
+  - Take advantage of Astro 7 cache hints: pass `cacheHint` to `Astro.cache.set(cacheHint)` or
+    invalidate granularly using `context.cache.invalidate(entry)`.
 
 ---
 
@@ -112,7 +111,7 @@ alwaysApply: false
 
   ```ts
   // astro.config.mjs
-  import { defineConfig } from 'astro/config';
+  import { defineConfig } from "astro/config";
 
   export default defineConfig({
     security: {
@@ -122,11 +121,16 @@ alwaysApply: false
   });
   ```
 
-  > [!WARNING]
-  > **CSP Architectural Caveats (from Astro 6/7 Docs)**:
-  > - **`<ClientRouter />` Incompatibility**: Astro's `<ClientRouter />` is **not supported out of the box** with `security.csp: true` due to dynamic runtime script injection. If CSP is enabled, consider adopting browser-native View Transitions or supplying explicit script hashes.
-  > - **Dev Mode**: Vite dev server does not evaluate CSP hashes; test CSP strictly via `bun run build` and `bun run preview`.
-  > - **Syntax Highlighting**: Shiki injects inline styles incompatible with default CSP hashes. Use `<Prism />` or supply style hashes if strict CSP is required.
+  > [!WARNING] **CSP Architectural Caveats (from Astro 6/7 Docs)**:
+  >
+  > - **`<ClientRouter />` Incompatibility**: Astro's `<ClientRouter />` is **not supported out of
+  >   the box** with `security.csp: true` due to dynamic runtime script injection. If CSP is
+  >   enabled, consider adopting browser-native View Transitions or supplying explicit script
+  >   hashes.
+  > - **Dev Mode**: Vite dev server does not evaluate CSP hashes; test CSP strictly via
+  >   `bun run build` and `bun run preview`.
+  > - **Syntax Highlighting**: Shiki injects inline styles incompatible with default CSP hashes. Use
+  >   `<Prism />` or supply style hashes if strict CSP is required.
 
 - **Type-Safe Environment Variables**:
   - Enforce schemas in `astro.config.mjs` via `envField`:
@@ -144,8 +148,8 @@ alwaysApply: false
   - Import safely from virtual modules:
 
     ```ts
-    import { DATABASE_SECRET } from 'astro:env/server';
-    import { PUBLIC_SITE_URL } from 'astro:env/client';
+    import { DATABASE_SECRET } from "astro:env/server";
+    import { PUBLIC_SITE_URL } from "astro:env/client";
     ```
 
 ---
@@ -155,12 +159,12 @@ alwaysApply: false
 - Define backend endpoints in `src/actions/index.ts` using `defineAction`:
 
   ```ts
-  import { defineAction } from 'astro:actions';
-  import { z } from 'astro/zod';
+  import { defineAction } from "astro:actions";
+  import { z } from "astro/zod";
 
   export const server = {
     subscribe: defineAction({
-      accept: 'form',
+      accept: "form",
       input: z.object({ email: z.string().email() }),
       handler: async ({ email }) => {
         // execute mutation logic
@@ -171,7 +175,8 @@ alwaysApply: false
   ```
 
 - Progressive enhancement support: `<form action={actions.subscribe} method="POST">`.
-- Gating and Authorization: Authorize inside the action handler or globally via `getActionContext(context)` inside `src/middleware.ts`.
+- Gating and Authorization: Authorize inside the action handler or globally via
+  `getActionContext(context)` inside `src/middleware.ts`.
 
 ---
 
@@ -194,7 +199,8 @@ alwaysApply: false
 - Bind component lifecycle logic to `astro:page-load` instead of `DOMContentLoaded` or
   `window.onload`.
 - Opt-out individual links or forms using `data-astro-reload`.
-- *Note*: If `security.csp` is enabled, use standard MPA browser navigation or native browser view transitions to avoid script-hash policy violations.
+- _Note_: If `security.csp` is enabled, use standard MPA browser navigation or native browser view
+  transitions to avoid script-hash policy violations.
 
 ---
 

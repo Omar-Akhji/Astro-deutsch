@@ -1,6 +1,6 @@
 ---
-import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import { getVocabularySlug } from "@/features/vocabulary";
+import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import { getGradient, VOCABULARY_GRADIENTS } from "@/shared/lib";
 import BackButton from "@/shared/ui/BackButton.astro";
@@ -12,10 +12,7 @@ export async function getStaticPaths() {
   const { data: vocabularyList } = await getVocabularyList();
   const items = vocabularyList ?? [];
 
-  return items.map((item) => ({
-    params: { slug: getVocabularySlug(item) },
-    props: { item },
-  }));
+  return items.map((item) => ({ params: { slug: getVocabularySlug(item) }, props: { item } }));
 }
 
 const { slug } = Astro.params;
@@ -109,7 +106,10 @@ const extraSchema =
                 </div>
 
                 {section.topics.length > 0 ?
-                  <ul class="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 tablet:gap-5 lg:grid-cols-3" role="list">
+                  <ul
+                    class="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 tablet:gap-5 lg:grid-cols-3"
+                    role="list"
+                  >
                     {section.topics.map((topic) => (
                       <li>
                         <a
@@ -154,7 +154,10 @@ const extraSchema =
             </h2>
 
             {item.words && item.words.length > 0 ?
-              <ul class="m-0 grid list-none gap-4 p-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3" role="list">
+              <ul
+                class="m-0 grid list-none gap-4 p-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                role="list"
+              >
                 {item.words.map((word) => (
                   <li>
                     <article class="group">

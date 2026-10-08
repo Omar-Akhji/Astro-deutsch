@@ -22,7 +22,10 @@ const COLOR_BORDER_MAP: Record<string, string> = {
 <article class="overflow-hidden rounded-2xl border-[1.5px] border-white/10 bg-zinc-900/50 shadow-2xl backdrop-blur-xl">
   <!-- Browser/Email Header -->
   <header class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-3 py-2.5 mobile:px-4 mobile:py-3">
-    <div class="flex shrink-0 gap-1.5" aria-hidden="true">
+    <div
+      class="flex shrink-0 gap-1.5"
+      aria-hidden="true"
+    >
       <div class="size-3 rounded-full bg-red-500/50"></div>
       <div class="size-3 rounded-full bg-amber-500/50"></div>
       <div class="size-3 rounded-full bg-emerald-500/50"></div>
@@ -53,9 +56,7 @@ const COLOR_BORDER_MAP: Record<string, string> = {
       </dd>
     </div>
     <div class="flex items-center gap-2.5 px-4 py-2.5 mobile:gap-3 mobile:px-6 mobile:py-3">
-      <dt class="shrink-0 text-xs font-bold tracking-widest text-zinc-500 uppercase">
-        Betreff:
-      </dt>
+      <dt class="shrink-0 text-xs font-bold tracking-widest text-zinc-500 uppercase">Betreff:</dt>
       <dd class="m-0 flex min-w-0 items-center gap-2 text-xs font-semibold wrap-break-word text-white mobile:text-sm">
         <Tag
           class="shrink-0 text-zinc-400"
@@ -69,9 +70,15 @@ const COLOR_BORDER_MAP: Record<string, string> = {
   <!-- Email Content Area -->
   <div class="relative p-4 pt-6 mobile:p-6 mobile:pt-8 tablet:p-8 tablet:pt-10">
     <!-- Background Pattern -->
-    <div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-size-[20px_20px] opacity-5" aria-hidden="true"></div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-size-[20px_20px] opacity-5"
+      aria-hidden="true"
+    ></div>
 
-    <ol class="relative m-0 list-none space-y-4 p-0 mobile:space-y-6" role="list">
+    <ol
+      class="relative m-0 list-none space-y-4 p-0 mobile:space-y-6"
+      role="list"
+    >
       {sections.map((section, sectionIndex) => (
         <li class="group relative">
           <!-- Annotation Label -->

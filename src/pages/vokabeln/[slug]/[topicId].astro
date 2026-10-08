@@ -1,11 +1,11 @@
 ---
-import { BookOpen, Headphones, Users } from "lucide-astro";
 import { getVocabularySlug, TopicStory, VocabularyTable } from "@/features/vocabulary";
 import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import BackButton from "@/shared/ui/BackButton.astro";
 import GlassCard from "@/shared/ui/GlassCard.astro";
 import { Hero } from "@/widgets/hero";
+import { BookOpen, Headphones, Users } from "lucide-astro";
 
 export async function getStaticPaths() {
   const { data: vocabularyList } = await getVocabularyList();
@@ -13,10 +13,7 @@ export async function getStaticPaths() {
   return items.flatMap((item) => {
     const slug = getVocabularySlug(item);
     return (item.sections ?? []).flatMap((section) =>
-      section.topics.map((topic) => ({
-        params: { slug, topicId: topic.id },
-        props: { item },
-      })),
+      section.topics.map((topic) => ({ params: { slug, topicId: topic.id }, props: { item } })),
     );
   });
 }
@@ -70,8 +67,8 @@ const extraSchema =
     }
   : undefined;
 const heroDescription =
-  topic?.description ??
-  (topic?.id === "stammbaum" ?
+  topic?.description
+  ?? (topic?.id === "stammbaum" ?
     "Familienmitglieder, Verwandtschaftsverhältnisse und Beziehungsstatus im Überblick."
   : `Wichtige Wörter, Redewendungen und Sprachübungen zum Thema ${topic?.title ?? ""} im Bereich ${section?.title ?? item?.german ?? ""}.`);
 
@@ -94,11 +91,7 @@ const heroStats = [
       },
     ]
   : []),
-  {
-    label: "Niveaustufen",
-    value: "4 Niveaus (A1 · A2 · B1 · B2)",
-    icon: Headphones,
-  },
+  { label: "Niveaustufen", value: "4 Niveaus (A1 · A2 · B1 · B2)", icon: Headphones },
 ];
 ---
 
@@ -117,7 +110,12 @@ const heroStats = [
         <Hero
           category={item.category}
           description={heroDescription}
-          example={topic.details ?? (topic.id === "stammbaum" ? "Stammbaum, Verwandtschaft und Beziehungsstatus (A1–B2)" : undefined)}
+          example={
+            topic.details
+            ?? (topic.id === "stammbaum" ?
+              "Stammbaum, Verwandtschaft und Beziehungsstatus (A1–B2)"
+            : undefined)
+          }
           stats={heroStats}
           title={topic.title}
           variant="compact"

@@ -5,12 +5,1459 @@
   "description": "Hobbys, Sport und Unterhaltung für eine aktive Freizeitgestaltung.",
   "sections": [
     {
-      "id": "hobbys_und_sport",
-      "title": "Hobbys und Sport",
+      "id": "theater",
+      "title": "DAS THEATER",
       "topics": [
         {
+          "id": "das_theater",
+          "title": "Das Theater",
+          "words": [
+            {
+              "german": "das Theater, -",
+              "arabic": "المسرح (المبنى وفن المسرح)",
+              "english": "theater, theatre",
+              "example": "Heute Abend gehen wir ins Theater, um ein bekanntes Drama zu sehen."
+            },
+            {
+              "german": "die Bühne, -n",
+              "arabic": "خشبة المسرح والمنصة",
+              "english": "stage",
+              "example": "Auf der großen Bühne stehen die Kulissen für das neue Theaterstück."
+            },
+            {
+              "german": "der Schauspieler, -",
+              "arabic": "الممثل المسرحي أو السينمائي",
+              "english": "actor",
+              "example": "Der talentierte Schauspieler verkörpert seine Rolle mit tiefer Leidenschaft."
+            },
+            {
+              "german": "das Theaterstück, -e",
+              "arabic": "المسرحية (العرض المسرحي)",
+              "english": "play, theater play",
+              "example": "Goethes 'Faust' ist das berühmteste deutsche Theaterstück der Literaturgeschichte."
+            },
+            {
+              "german": "die Eintrittskarte, -n",
+              "arabic": "تذكرة الدخول",
+              "english": "ticket, admission ticket",
+              "example": "Wir haben unsere Eintrittskarten bereits zwei Wochen im Voraus online reserviert."
+            },
+            {
+              "german": "der Vorhang, -̈e",
+              "arabic": "ستارة المسرح القماشية",
+              "english": "curtain (theater)",
+              "example": "Sobald der schwere rote Vorhang aufgeht, wird es im Saal mucksmäuschenstill."
+            },
+            {
+              "german": "das Publikum (Sg.)",
+              "arabic": "الجمهور والمشاهدون",
+              "english": "audience",
+              "example": "Das begeisterte Publikum erhob sich von den Sitzen und spendete Beifall."
+            },
+            {
+              "german": "der Applaus (Sg.)",
+              "arabic": "التصفيق الحار والاستحسان",
+              "english": "applause",
+              "example": "Nach der gelungenen Schlussszene brach tosender Applaus im gesamten Saal aus."
+            },
+            {
+              "german": "die Garderobe, -n",
+              "arabic": "غرفة إيداع المعاطف والحقائب (أو ملابس الممثلين)",
+              "english": "cloakroom, wardrobe",
+              "example": "Wir gaben unsere dicken Wintermäntel an der Garderobe im Foyer ab."
+            },
+            {
+              "german": "die Theaterpause, -n",
+              "arabic": "استراحة العرض المسرحي بين الفصول",
+              "english": "intermission, interval",
+              "example": "In der zwanzigminütigen Theaterpause tranken wir ein Glas Sekt im Foyer."
+            },
+            {
+              "german": "die Regie, -n",
+              "arabic": "الإخراج المسرحي",
+              "english": "direction (theater/film)",
+              "example": "Die mutige Regie verlieh dem historischen Stück eine überraschend moderne Note."
+            },
+            {
+              "german": "der Beifall (Sg.)",
+              "arabic": "الهتاف والتصفيق التشجيعي",
+              "english": "cheers, applause, acclaim",
+              "example": "Die Darsteller verbeugten sich mehrfach unter langanhaltendem Beifall."
+            }
+          ],
+          "description": "Theatergebäude, Bühne, Schauspieler, Theaterstücke, Eintrittskarten und Applaus.",
+          "details": "Theaterbesuch, Inszenierung, Dramaturgie, Kulturabende und Premieren (A1–B2)",
+          "arabicDescription": "المسرح (Das Theater): مفردات خشبة المسرح (Bühne)، الممثلين (Schauspieler)، المسرحية (Theaterstück)، تذاكر الدخول (Eintrittskarte)، الستارة (Vorhang)، الجمهور (Publikum)، التصفيق (Applaus/Beifall)، وغرفة تبديل الملابس والإخراج (Regie).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein schöner Abend im Theater",
+              "intro": "Einfache Sätze über Theater, Schauspieler, Bühne und Applaus (A1).",
+              "paragraphs": [
+                [
+                  "Heute ziehe ich ein schönes Kleid an.",
+                  "Ich gehe mit Freunden in [das Theater, -|das Theater].",
+                  "An der Kasse zeige ich [die Eintrittskarte, -n|meine Eintrittskarte]."
+                ],
+                [
+                  "An [die Garderobe, -n|der Garderobe] gebe ich meine Jacke ab.",
+                  "Im Saal ist es dunkel und gemütlich.",
+                  "[der Vorhang, -̈e|Der rote Vorhang] geht auf und wir sehen [die Bühne, -n|die Bühne]."
+                ],
+                [
+                  "[der Schauspieler, -|Ein toller Schauspieler] spricht laut und deutlich.",
+                  "Am Ende klatscht [das Publikum (Sg.)|das Publikum] und es gibt viel [der Applaus (Sg.)|Applaus]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Klassiker auf der Bühne erleben",
+              "intro": "Kartenreservierung, Theaterpause und moderne Inszenierungen (A2).",
+              "paragraphs": [
+                [
+                  "Letzten Samstag haben wir uns [das Theaterstück, -e|ein bekanntes Theaterstück] von Schiller angesehen.",
+                  "Die Plätze in der fünften Reihe hatten wir schon vor Wochen gebucht."
+                ],
+                [
+                  "Vor Beginn des Stücks warteten viele Besucher im Foyer.",
+                  "Als die Glocke läutete, nahmen alle ihre Plätze ein.",
+                  "In [die Theaterpause, -n|der Theaterpause] haben wir über die spannende Handlung gesprochen und Brezeln gegessen."
+                ],
+                [
+                  "Die Darsteller spielten mit großer Begeisterung.",
+                  "Am Schluss stand der ganze Saal auf und spendete langanhaltenden [der Beifall (Sg.)|Beifall] für das gesamte Ensemble."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Theaterkultur und lebendige Bühnenkunst",
+              "intro": "Traditionelle Dramen, Regiekonzepte und die Faszination des Live-Spiels (B1).",
+              "paragraphs": [
+                [
+                  "Im Zeitalter von Kino und Streaming-Portalen besitzt [das Theater, -|das Theater] einen unverwechselbaren, intimen Zauber.",
+                  "Der unmittelbare Kontakt zwischen den Darstellern auf [die Bühne, -n|der Bühne] und den Zuschauern im Saal erzeugt eine greifbare Spannung."
+                ],
+                [
+                  "Eine gelungene [die Regie, -n|Regie] interpretiert historische Texte neu und schlägt Brücken zu aktuellen gesellschaftlichen Konflikten.",
+                  "Wenn ein begabter [der Schauspieler, -|Schauspieler] komplexe Emotionen glaubhaft transportiert, zieht er [das Publikum (Sg.)|das gesamte Publikum] in seinen Bann."
+                ],
+                [
+                  "Der krönende Abschluss jeder Premiere ist der Moment, wenn das Licht angeht und begeisterter [der Applaus (Sg.)|Applaus] den Saal erfüllt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Theaterästhetik, Diskurskultur und die Rolle der darstellenden Künste",
+              "intro": "Postdramatisches Theater, Subventionen und gesellschaftliche Relevanz (B2).",
+              "paragraphs": [
+                [
+                  "Die deutschsprachige Theaterlandschaft zeichnet sich durch ein weltweit einzigartiges Netz fest subventionierter Stadt- und Staatstheater aus.",
+                  "Hier fungiert die Bühne nicht als reine Unterhaltungsstätte, sondern als Forum für kritische gesellschaftspolitische Diskurse."
+                ],
+                [
+                  "Avantgardistische [die Regie, -n|Regiekonzepte] dekonstruieren den klassischen Kanon dramatischer [das Theaterstück, -e|Theaterstücke], brechen die 'vierte Wand' auf und fordern [das Publikum (Sg.)|das Publikum] zur intellektuellen Auseinandersetzung heraus."
+                ],
+                [
+                  "Wenn sich [der Vorhang, -̈e|der Vorhang] schließt, reflektiert der anhaltende [der Beifall (Sg.)|Beifall] nicht nur handwerkliche Schauspielkunst, sondern die transformative Kraft kollektiver ästhetischer Erfahrung."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "musik",
+      "title": "DIE MUSIK",
+      "topics": [
+        {
+          "id": "das_orchester",
+          "title": "Das Orchester",
+          "words": [
+            {
+              "german": "das Orchester, -",
+              "arabic": "الأوركسترا (الفرقة الموسيقية الكبيرة)",
+              "english": "orchestra",
+              "example": "Das Symphonieorchester besteht aus über achtzig hochqualifizierten Musikern."
+            },
+            {
+              "german": "der Dirigent, -en",
+              "arabic": "قائد الأوركسترا والمايسترو",
+              "english": "conductor, maestro",
+              "example": "Der Dirigent hebt den Taktstock und gibt den Musikern den präzisen Einsatz."
+            },
+            {
+              "german": "die Philharmonie, -n",
+              "arabic": "دار الأوركسترا الفيلهارمونية",
+              "english": "philharmonic hall, philharmonic orchestra",
+              "example": "In der Berliner Philharmonie herrscht eine weltweit gerühmte Raumakustik."
+            },
+            {
+              "german": "die Partitur, -en",
+              "arabic": "النوتة الموسيقية الشاملة لجميع الآلات",
+              "english": "score, musical score",
+              "example": "Auf dem Pult des Dirigenten liegt die dicke Partitur der neunten Symphonie."
+            },
+            {
+              "german": "die Symphonie, -n",
+              "arabic": "السيمفونية (المؤلفة الموسيقية الكلاسيكية)",
+              "english": "symphony",
+              "example": "Beethovens fünfte Symphonie ist an ihren vier markanten Anfangstönen sofort erkennbar."
+            },
+            {
+              "german": "das Streichinstrument, -e",
+              "arabic": "الآلة الوترية ذات القوس (كمان، فيولا، تشيلو)",
+              "english": "string instrument, strings",
+              "example": "Geigen und Celli gehören zur Familie der Streichinstrumente im Orchester."
+            },
+            {
+              "german": "das Blasinstrument, -e",
+              "arabic": "آلة النفخ الهوائية (فلوت، بوق، كلارينيت)",
+              "english": "wind instrument, brass / woodwind",
+              "example": "Trompeten und Hörner sind kraftvolle Blasinstrumente im hinteren Orchesterbereich."
+            },
+            {
+              "german": "die Pauke, -n",
+              "arabic": "طبلة الأوركسترا الضخمة (الدف الكبير)",
+              "english": "timpani, kettledrum",
+              "example": "Beim dramatischen Finale schlägt der Musiker kräftig auf die Pauke."
+            },
+            {
+              "german": "der Taktstock, -̈e",
+              "arabic": "عصا المايسترو لضبط الإيقاع",
+              "english": "baton (conductor)",
+              "example": "Mit minimalen Bewegungen des Taktstocks führt der Maestro das Tempo der Musiker."
+            },
+            {
+              "german": "der Konzertsaal, -̈e",
+              "arabic": "قاعة الحفلات الموسيقية الكبرى",
+              "english": "concert hall",
+              "example": "Der hölzerne Konzertsaal reflektiert den Klang warm und ausgewogen."
+            },
+            {
+              "german": "die Generalprobe, -n",
+              "arabic": "البروفة النهائية الشاملة قبل العرض",
+              "english": "dress rehearsal, final rehearsal",
+              "example": "Vor der Premiere am Freitag fand gestern die anstrengende Generalprobe statt."
+            },
+            {
+              "german": "der Solist, -en",
+              "arabic": "العازف المنفرد (السوليست)",
+              "english": "soloist",
+              "example": "Der berühmte Solist spielte das virtuose Violinkonzert ohne Noten auswendig."
+            }
+          ],
+          "description": "Symphonieorchester, Dirigent, Philharmonie, Partitur, Instrumentengruppen und Konzerte.",
+          "details": "Klassische Musik, Taktstock, Streicher, Bläser, Solisten und Akustik (A1–B2)",
+          "arabicDescription": "الأوركسترا السيمفونية (Das Orchester): قائد الأوركسترا (Dirigent)، دار الأوبرا والفيلهارموني (Philharmonie)، النوتة الموسيقية الشاملة (Partitur)، السيمفونية، الآلات الوترية والنفخية، الإيقاع وعصا القيادة (Taktstock)، والبروفة العامة (Generalprobe).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Große Musik im Orchester",
+              "intro": "Einfache Sätze über Musiker, Instrumente und den Dirigenten (A1).",
+              "paragraphs": [
+                [
+                  "In einem [das Orchester, -|Orchester] spielen viele Menschen zusammen.",
+                  "Vorne steht [der Dirigent, -en|der Dirigent].",
+                  "Er hält [der Taktstock, -̈e|einen kleinen Taktstock] in der Hand und schlägt den Takt."
+                ],
+                [
+                  "Viele Musiker spielen Geige; das ist [das Streichinstrument, -e|ein Streichinstrument].",
+                  "Andere blasen in Trompeten; das ist [das Blasinstrument, -e|ein Blasinstrument].",
+                  "Ganz hinten steht [die Pauke, -n|die große Pauke]."
+                ],
+                [
+                  "[der Konzertsaal, -̈e|Der Konzertsaal] ist wunderschön und die Musik klingt herrlich."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein Abend in der Philharmonie",
+              "intro": "Klassisches Konzert, Solisten und Beethovens Symphonien (A2).",
+              "paragraphs": [
+                [
+                  "Gestern Abend hatte ich das Glück, ein Konzert in [die Philharmonie, -n|der Philharmonie] zu besuchen.",
+                  "Auf dem Programm stand [die Symphonie, -n|eine berühmte Symphonie] von Mozart."
+                ],
+                [
+                  "Vor Beginn trat [der Solist, -en|ein junger Solist] mit seinem Cello auf die Bühne.",
+                  "Er spielte so gefühlvoll, dass der ganze Saal den Atem anhielt.",
+                  "Am Vormittag hatte das Orchester noch [die Generalprobe, -n|die Generalprobe] absolviert, damit jeder Ton perfekt saß."
+                ],
+                [
+                  "Es war ein unvergessliches Klangerlebnis für alle Musikliebhaber."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Präzision und Harmonie im Klangkörper",
+              "intro": "Zusammenspiel verschiedener Instrumentengruppen und Orchesterleitung (B1).",
+              "paragraphs": [
+                [
+                  "Ein professionelles [das Orchester, -|Symphonieorchester] gleicht einem hochkomplexen Uhrwerk, bei dem jedes Rädchen exakt ineinandergreifen muss.",
+                  "Vor dem Maestro liegt [die Partitur, -en|die Partitur], die jede einzelne Stimme aller Instrumentengruppen simultan abbildet."
+                ],
+                [
+                  "Mit feinsten Gesten steuert [der Dirigent, -en|der Dirigent] Lautstärke, Phrasierung und Tempo.",
+                  "Während [das Streichinstrument, -e|die Streichinstrumente] für den warmen Grundklang sorgen, setzen [das Blasinstrument, -e|die Blasinstrumente] leuchtende Akzente und [die Pauke, -n|die Pauken] kraftvolle Höhepunkte."
+                ],
+                [
+                  "Erst nach unzähligen Proben und einer perfekten [die Generalprobe, -n|Generalprobe] entfaltet ein Werk im vollbesetzten [der Konzertsaal, -̈e|Konzertsaal] seine emotionale Wucht."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Akustische Architektur, Interpretationstradition und Orchesterkultur",
+              "intro": "Historische Aufführungspraxis, Raumakustik und synchrone Interpretation (B2).",
+              "paragraphs": [
+                [
+                  "Die Realisierung monumentaler Werke wie Mahlers Auferstehungs-[die Symphonie, -n|Symphonie] verlangt vom Klangkörper eine außergewöhnliche künstlerische Reife.",
+                  "Renommierte Institutionen wie [die Philharmonie, -n|die Philharmonie] bieten dank spezieller Weinberg-Architektur eine transparente Klangverteilung auf sämtlichen Rängen."
+                ],
+                [
+                  "Der musikalische Leiter führt die Musiker über [der Taktstock, -̈e|den Taktstock] durch metrische Modulationen und polychrome Klangwelten, wobei [der Solist, -en|der Solist] im Dialog mit dem Tutti höchste interpretatorische Nuancierung beweist."
+                ],
+                [
+                  "Die symphonische Tradition verbindet handwerkliche Perfektion mit kollektiver Empathie und konstituiert damit ein immaterielles Kulturgut von universeller Ausstrahlung."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "die_musikinstrumente",
+          "title": "Die Musikinstrumente",
+          "words": [
+            {
+              "german": "das Musikinstrument, -e",
+              "arabic": "الآلة الموسيقية",
+              "english": "musical instrument",
+              "example": "Jedes Kind sollte die Gelegenheit haben, ein Musikinstrument zu erlernen."
+            },
+            {
+              "german": "die Gitarre, -n",
+              "arabic": "الجيتار (القيثارة)",
+              "english": "guitar",
+              "example": "Am Lagerfeuer spielte er bekannte Lieder auf seiner akustischen Gitarre."
+            },
+            {
+              "german": "das Klavier, -e",
+              "arabic": "البيانو والبيانو ذو الأجنحة",
+              "english": "piano",
+              "example": "Das schwarze Klavier hat weiße und schwarze Tasten aus edlem Holz."
+            },
+            {
+              "german": "die Geige, -n",
+              "arabic": "الكمان (الفيولين)",
+              "english": "violin, fiddle",
+              "example": "Sie streicht mit dem Bogen sanft über die vier Saiten der Geige."
+            },
+            {
+              "german": "die Flöte, -n",
+              "arabic": "الناي / الفلوت",
+              "english": "flute",
+              "example": "In der Grundschule lernen viele Kinder zunächst das Spielen auf der Blockflöte."
+            },
+            {
+              "german": "das Schlagzeug, -e",
+              "arabic": "مجموعة الطبول والدرامز (الإيقاع)",
+              "english": "drums, drum kit",
+              "example": "Der Schlagzeuger hält mit dem Schlagzeug den energiegeladenen Rhythmus der Rockband."
+            },
+            {
+              "german": "die Trompete, -n",
+              "arabic": "البوق النحاسي (الترمبيت)",
+              "english": "trumpet",
+              "example": "Der helle, glänzende Ton der Trompete schallte durch den gesamten Raum."
+            },
+            {
+              "german": "der Bass, -̈e",
+              "arabic": "الباس (جيتار البيس ذو الترددات المنخفضة)",
+              "english": "bass, bass guitar",
+              "example": "Der tiefe Ton von dem Bass bringt den Boden zum Vibrieren."
+            },
+            {
+              "german": "das Saxofon, -e",
+              "arabic": "الساكسفون (آلة الجاز)",
+              "english": "saxophone",
+              "example": "Das Saxofon erzeugt einen unverwechselbaren, rauchigen Klang im Jazzclub."
+            },
+            {
+              "german": "das Akkordeon, -s",
+              "arabic": "الأكورديون (آلة المنفاخ الشعبية)",
+              "english": "accordion",
+              "example": "In der Volksmusik begleitet das handliche Akkordeon fröhliche Volkstänze."
+            },
+            {
+              "german": "die Saite, -n",
+              "arabic": "الوتر الموسيقي للآلات الوترية",
+              "english": "string (instrument)",
+              "example": "Beim Stimmen ist mir leider eine dünne Saite der Gitarre gerissen."
+            },
+            {
+              "german": "üben",
+              "arabic": "يتدرب / يمارس التمارين الموسيقية",
+              "english": "to practice, to rehearse",
+              "example": "Um ein Meister zu werden, muss man jeden Tag diszipliniert Tonleitern üben."
+            }
+          ],
+          "description": "Musikinstrumente, Gitarre, Klavier, Geige, Flöte, Schlagzeug, Bass und Notenlehre.",
+          "details": "Instrumentengruppen, Saiten, Tasten, Üben und musikalisches Lernen (A1–B2)",
+          "arabicDescription": "الآلات الموسيقية (Die Musikinstrumente): الآلات الموسيقية، الجيتار (Gitarre)، البيانو (Klavier)، الكمان (Geige/Violine)، الفلوت (Flöte)، الطبول (Schlagzeug)، البوق (Trompete)، الباس (Bass)، الأوتار (Saite)، وممارسة التمارين اليومية (üben).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ich lerne ein Musikinstrument",
+              "intro": "Einfache Sätze über Gitarre, Klavier und das tägliche Üben (A1).",
+              "paragraphs": [
+                [
+                  "Ich liebe Musik und möchte [das Musikinstrument, -e|ein Musikinstrument] lernen.",
+                  "In meinem Zimmer steht [das Klavier, -e|ein Klavier].",
+                  "Ich drücke auf die weißen Tasten und höre helle Töne."
+                ],
+                [
+                  "Mein Freund hat [die Gitarre, -n|eine neue Gitarre].",
+                  "Sie hat sechs [die Saite, -n|Saiten]. Er zupft die Saiten mit den Fingern.",
+                  "Seine Schwester spielt [die Flöte, -n|Flöte]."
+                ],
+                [
+                  "Jeden Nachmittag müssen wir dreißig Minuten [üben|üben].",
+                  "Musik machen macht richtig Spaß!"
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Unsere kleine Schülerband",
+              "intro": "Schlagzeug, Bass, Gitarre und Bandproben im Keller (A2).",
+              "paragraphs": [
+                [
+                  "Letztes Jahr haben meine Freunde und ich eine Band an der Schule gegründet.",
+                  "Ich spiele [die Gitarre, -n|E-Gitarre] und mein bester Kumpel Leo spielt [das Schlagzeug, -e|Schlagzeug]."
+                ],
+                [
+                  "Für den richtigen Beat sorgt Sarah auf [der Bass, -̈e|dem Bass].",
+                  "Jeden Samstag treffen wir uns im Keller, um neue Songs zu [üben|üben].",
+                  "Manchmal kommt auch Felix mit seinem glänzenden [das Saxofon, -e|Saxofon] vorbei und spielt tolle Solos."
+                ],
+                [
+                  "Nächsten Monat haben wir unseren ersten Auftritt auf dem Schulfest."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Hingabe und Disziplin beim Musizieren",
+              "intro": "Musikalische Ausbildung, Intonation und Instrumentenpflege (B1).",
+              "paragraphs": [
+                [
+                  "Das Erlernen eines Instruments schult Konzentration, Feinmotorik und emotionalen Ausdruck gleichermaßen.",
+                  "Ob man sich für [die Geige, -n|die Geige] oder [das Klavier, -e|das Klavier] entscheidet: Ohne beharrliches [üben|Üben] lassen sich keine klanglichen Fortschritte erzielen."
+                ],
+                [
+                  "Saiteninstrumente reagieren sensibel auf Temperatur- und Luftfeuchtigkeitsschwankungen, weshalb jede einzelne [die Saite, -n|Saite] vor dem Spiel präzise gestimmt werden muss.",
+                  "Blasinstrumente wie [die Trompete, -n|die Trompete] verlangen hingegen eine ausgefeilte Atem- und Ansatztechnik."
+                ],
+                [
+                  "Wer diese technischen Hürden meistert, erlebt die unvergleichliche Freude des gemeinsamen Musizierens."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Instrumentenbau, Polyphonie und klangliche Differenzierung",
+              "intro": "Klangfarben, Resonanzkörper und historische Akustik (B2).",
+              "paragraphs": [
+                [
+                  "Die bauliche Evolution von Saiten- und Blasinstrumenten spiegelt Jahrhunderte handwerklicher und physikalischer Innovation wider.",
+                  "Bei der Meistergeige erzeugt das Zusammenspiel von Fichtenholzdecke, Steg und gespannten [die Saite, -n|Saiten] komplexe Obertöne von unvergleichlicher Brillanz."
+                ],
+                [
+                  "Auf dem Konzertflügel ermöglicht die Repetitionsmechanik das Nuancieren feinster dynamischer Abstufungen zwischen Pianissimo und Fortissimo, wodurch polyphone Strukturen des [das Klavier, -e|Klaviers] transparent hervortreten."
+                ],
+                [
+                  "Die Verschmelzung afroamerikanischer Rhythmen mit europäischen Blech- und Holzblasinstrumenten wie [das Saxofon, -e|dem Saxofon] legte im frühen 20. Jahrhundert das Fundament für Jazz und moderne Populärmusik."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_konzert",
+          "title": "Das Konzert",
+          "words": [
+            {
+              "german": "das Konzert, -e",
+              "arabic": "الحفلة الموسيقية المباشرة",
+              "english": "concert",
+              "example": "Am Freitagabend findet ein mitreißendes Konzert im Olympiastadion statt."
+            },
+            {
+              "german": "die Band, -s",
+              "arabic": "الفرقة الموسيقية الغنائية",
+              "english": "band, music band",
+              "example": "Die Band spielt eine Mischung aus modernem Pop und Indie-Rock."
+            },
+            {
+              "german": "der Sänger, -",
+              "arabic": "المغني والمطرب",
+              "english": "singer, vocalist",
+              "example": "Der charismatische Sänger sang den Refrain zusammen mit den Zuschauern."
+            },
+            {
+              "german": "die Bühne, -n",
+              "arabic": "منصة ومسرح العرض الحي",
+              "english": "stage",
+              "example": "Bunte Scheinwerfer und Lasereffekte beleuchteten die riesige Bühne."
+            },
+            {
+              "german": "der Fan, -s",
+              "arabic": "المعجب والمشجع الموسيقي",
+              "english": "fan, supporter",
+              "example": "Tausende begeisterte Fans standen stundenlang vor der Halle an."
+            },
+            {
+              "german": "die Eintrittskarte, -n",
+              "arabic": "تذكرة دخول الحفل",
+              "english": "ticket, concert ticket",
+              "example": "Die begehrte Eintrittskarte war innerhalb von drei Minuten restlos ausverkauft."
+            },
+            {
+              "german": "die Stimmung, -en",
+              "arabic": "الأجواء المعنوية والحماسية",
+              "english": "atmosphere, mood",
+              "example": "Im Publikum herrschte von der ersten Minute an eine fantastische Stimmung."
+            },
+            {
+              "german": "das Festival, -s",
+              "arabic": "المهرجان الموسيقي الصيفي (في الهواء الطلق)",
+              "english": "festival, music festival",
+              "example": "Auf dem dreitägigen Open-Air-Festival zelten Musikfans auf den Wiesen."
+            },
+            {
+              "german": "die Zugabe, -n",
+              "arabic": "الأغنية الإضافية نزولاً عند رغبة الجمهور (الإنكور)",
+              "english": "encore",
+              "example": "Nach lautstarken Rufen spielte die Gruppe noch zwei emotionale Zugaben."
+            },
+            {
+              "german": "der Klang, -̈e",
+              "arabic": "الصوت واللحن الرنان",
+              "english": "sound, acoustics",
+              "example": "Der volle Klang der Gitarrenverstärker füllte die ganze Arena aus."
+            },
+            {
+              "german": "die Musikanlage, -n",
+              "arabic": "نظام التكبير الصوتي (الساوند سيستم)",
+              "english": "sound system, PA system",
+              "example": "Die gewaltige Musikanlage lieferte druckvolle Bässe ohne störendes Verzerrungsgeräusch."
+            },
+            {
+              "german": "jubeln",
+              "arabic": "يهتف بفرح ويشجع بحماس",
+              "english": "to cheer",
+              "example": "Die Menge fing laut an zu jubeln, als die Musiker die Bühne betraten."
+            }
+          ],
+          "description": "Live-Konzerte, Bands, Sänger, Festivalbühnen, Fans, Stimmung und Zugaben.",
+          "details": "Konzertveranstaltungen, Live-Musik, Open-Air-Festivals und Soundtechnik (A1–B2)",
+          "arabicDescription": "الحفلة الموسيقية (Das Konzert): الحفلات الحية (Live-Konzert)، الفرق الموسيقية (Band)، المطرب (Sänger)، خشبة المسرح، المعجبون (Fans)، تذاكر الدخول، الأجواء الحماسية (Stimmung)، المهرجانات (Festivals)، وطلب إعادة العزف (Zugabe).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mein erstes Pop-Konzert",
+              "intro": "Einfache Sätze über Musik, Sänger, Bühne und jubelnde Fans (A1).",
+              "paragraphs": [
+                [
+                  "Gestern war ich auf [das Konzert, -e|einem Konzert].",
+                  "Ich hatte [die Eintrittskarte, -n|eine Eintrittskarte] für die erste Reihe.",
+                  "[die Band, -s|Die Band] kam auf [die Bühne, -n|die Bühne] und alle fingen an zu [jubeln|jubeln]."
+                ],
+                [
+                  "[der Sänger, -|Der Sänger] hatte eine wunderschöne Stimme.",
+                  "Alle [der Fan, -s|Fans] sangen die Lieder laut mit.",
+                  "[die Stimmung, -en|Die Stimmung] war wirklich super."
+                ],
+                [
+                  "Am Ende spielte die Gruppe noch [die Zugabe, -n|eine Zugabe].",
+                  "Das war ein toller Abend!"
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Sommerfestival unter freiem Himmel",
+              "intro": "Open-Air-Konzerte, Soundanlagen und Festivalcamping (A2).",
+              "paragraphs": [
+                [
+                  "Im Juli war ich mit meinen Freunden auf [das Festival, -s|einem großen Musikfestival] am See.",
+                  "Drei Tage lang spielten verschiedene Bands auf mehreren Bühnen."
+                ],
+                [
+                  "[die Musikanlage, -n|Die riesige Musikanlage] sorgte dafür, dass [der Klang, -̈e|der kraftvolle Klang] bis zum Campingplatz zu hören war.",
+                  "Als der Headliner am Samstag auftrat, kochte [die Stimmung, -en|die Stimmung] regelrecht über."
+                ],
+                [
+                  "Die Besucher tanzten im Scheinwerferlicht und feierten bis tief in die Nacht.",
+                  "Trotz des Regens am Sonntag war es das beste Event des Sommers."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die Faszination des Live-Erlebnisses",
+              "intro": "Kollektive Begeisterung, Akustik und Bühnenshows (B1).",
+              "paragraphs": [
+                [
+                  "Keine Studioaufnahme kann die rohe Energie eines echten Live-[das Konzert, -e|Konzerts] vollständig ersetzen.",
+                  "Wenn tausende gleichgesinnte [der Fan, -s|Fans] gemeinsam im Takt springen und [jubeln|jubeln], entsteht eine elektrisierende Dynamik."
+                ],
+                [
+                  "Für den Erfolg ist modernste Veranstaltungstechnik ausschlaggebend: Eine perfekt ausgesteuerte [die Musikanlage, -n|Musikanlage] garantiert einen glasklaren [der Klang, -̈e|Klang] selbst in riesigen Stadien."
+                ],
+                [
+                  "Nach zwei schweißtreibenden Stunden fordert das Publikum lautstark [die Zugabe, -n|eine Zugabe], bevor die Musiker unter tosendem Beifall die Bühne verlassen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Live-Entertainment, Touring-Logistik und Festivalökonomie",
+              "intro": "Eventmanagement, Audio-Engineering und ökonomische Dimensionen von Mega-Touren (B2).",
+              "paragraphs": [
+                [
+                  "Die globale Musikindustrie hat sich von physischen Tonträgerverkäufen weitgehend auf das lukrative Live-Entertainment-Segment verlagert.",
+                  "Megatourneen internationaler Acts füllen Stadien weltweit, wobei der Erwerb einer [die Eintrittskarte, -n|Eintrittskarte] durch dynamische Preisanpassungssysteme ('Dynamic Pricing') zunehmend zur ökonomischen Hürde wird."
+                ],
+                [
+                  "Auf gigantischen [das Festival, -s|Festivals] müssen Soundingenieure komplexe Line-Array-Systeme einmessen, um Schallreflexionen zu minimieren und [die Stimmung, -en|die akustische Atmosphäre] auf weitläufigem Terrain zu sichern."
+                ],
+                [
+                  "Das kollektive Ritual des Konzerts manifestiert ein tiefes Bedürfnis nach analoger Verbundenheit in einer digitalisierten Freizeitkultur."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "musik_hoeren",
+          "title": "Musik hören",
+          "words": [
+            {
+              "german": "die Musik (Sg.)",
+              "arabic": "الموسيقى",
+              "english": "music",
+              "example": "Gute Musik hilft mir dabei, mich nach einem langen Arbeitstag zu entspannen."
+            },
+            {
+              "german": "der Kopfhörer, -",
+              "arabic": "سماعات الرأس والأذن",
+              "english": "headphones, earphones",
+              "example": "In der vollen U-Bahn setze ich meine Kopfhörer mit Geräuschunterdrückung auf."
+            },
+            {
+              "german": "das Lied, -er",
+              "arabic": "الأغنية / الأنشودة",
+              "english": "song",
+              "example": "Dieses fröhliche Lied erinnert mich immer an meinen Urlaub in Italien."
+            },
+            {
+              "german": "die Playlist, -s",
+              "arabic": "قائمة التشغيل الموسيقية",
+              "english": "playlist",
+              "example": "Ich habe mir eine spezielle Playlist für das morgendliche Fitnesstraining erstellt."
+            },
+            {
+              "german": "die Melodie, -n",
+              "arabic": "اللحن والنغمة الموسيقية",
+              "english": "melody, tune",
+              "example": "Die sanfte Melodie des Klaviers beruhigt die aufgeregten Gedanken."
+            },
+            {
+              "german": "der Rhythmus, Rhythmen",
+              "arabic": "الإيقاع والوزن الموسيقي",
+              "english": "rhythm",
+              "example": "Der schnelle Rhythmus der Trommeln lädt sofort zum Tanzen ein."
+            },
+            {
+              "german": "das Album, Alben",
+              "arabic": "الألبوم الموسيقي الكامل",
+              "english": "album (music)",
+              "example": "Das neue Album der Rockgruppe enthält zwölf abwechslungsreiche Tracks."
+            },
+            {
+              "german": "die Lautstärke (Sg.)",
+              "arabic": "درجة علو الصوت",
+              "english": "volume (audio)",
+              "example": "Regulieren Sie die Lautstärke, um Ihr Gehör langfristig zu schonen."
+            },
+            {
+              "german": "der Ohrwurm, -̈er",
+              "arabic": "اللحن أو الأغنية العالقة في الذهن وتتكرر لا إرادياً",
+              "english": "earworm (catchy song stuck in one's head)",
+              "example": "Seit heute Morgen habe ich einen hartnäckigen Ohrwurm, den ich nicht loswerde."
+            },
+            {
+              "german": "das Musikgenre, -s",
+              "arabic": "النوع والنمط الموسيقي (جاز، كلاسيك، روك)",
+              "english": "music genre",
+              "example": "Mein musikalischer Geschmack beschränkt sich nicht auf ein einziges Musikgenre."
+            },
+            {
+              "german": "mitsingen",
+              "arabic": "يردد الغناء مع المؤدي",
+              "english": "to sing along",
+              "example": "Im Auto kann man laut und ungeniert bei jedem bekannten Refrain mitsingen."
+            },
+            {
+              "german": "entspannen",
+              "arabic": "يسترخي ويرتاح",
+              "english": "to relax, to unwind",
+              "example": "Bei klassischer Instrumentalmusik kann ich wunderbar abschalten und entspannen."
+            }
+          ],
+          "description": "Musikgenuss, Kopfhörer, Playlists, Melodien, Alben, Lautstärke und Ohrwürmer.",
+          "details": "Alltägliches Musikhören, Streaming, Songtexte, Musikgenres und Entspannung (A1–B2)",
+          "arabicDescription": "الاستماع إلى الموسيقى (Musik hören): الاستماع للموسيقى، سماعات الرأس (Kopfhörer)، قوائم التشغيل (Playlist)، الألحان (Melodie)، الأغاني (Lied/Song)، الإيقاع (Rhythmus)، الألبومات (Album)، دندنة الأغنية في الرأس (Ohrwurm)، والأنواع الموسيقية (Genre).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ich höre gern Musik",
+              "intro": "Einfache Sätze über Musik, Kopfhörer und Lieder (A1).",
+              "paragraphs": [
+                [
+                  "Ich höre jeden Tag [die Musik (Sg.)|Musik].",
+                  "Im Bus setze ich [der Kopfhörer, -|meine Kopfhörer] auf.",
+                  "Ich starte [die Playlist, -s|meine Playlist] auf dem Smartphone."
+                ],
+                [
+                  "[das Lied, -er|Das Lied] hat eine schöne [die Melodie, -n|Melodie].",
+                  "[der Rhythmus, Rhythmen|Der Rhythmus] ist schnell und macht gute Laune.",
+                  "Ich möchte leise [mitsingen|mitsingen]."
+                ],
+                [
+                  "Bei schöner Musik kann ich mich wunderbar [entspannen|entspannen]."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Der hartnäckige Ohrwurm",
+              "intro": "Radiosongs, Alben und Melodien, die im Kopf bleiben (A2).",
+              "paragraphs": [
+                [
+                  "Heute Morgen hörte ich beim Frühstück ein neues Lied im Radio.",
+                  "Schon nach zwei Minuten hatte ich [der Ohrwurm, -̈er|einen echten Ohrwurm].",
+                  "Die ganze Fahrt zur Arbeit sang ich die Melodie vor mich hin."
+                ],
+                [
+                  "Am Nachmittag kaufte ich mir das komplette [das Album, Alben|Album] der Band online.",
+                  "Ich stellte [die Lautstärke (Sg.)|die Lautstärke] etwas höher und genoss alle Songs.",
+                  "Es ist faszinierend, wie ein einzelner Song den ganzen Tag verschönern kann."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Musik als Begleiter unseres Alltags",
+              "intro": "Einfluss von Musik auf Stimmung, Konzentration und Wohlbefinden (B1).",
+              "paragraphs": [
+                [
+                  "Für viele Menschen ist [die Musik (Sg.)|Musik] ein unverzichtbarer Soundtrack ihres Lebens.",
+                  "Ob beim Sport, bei der konzentrierten Arbeit oder auf langen Reisen: Passende Klänge helfen dabei, fokussiert zu bleiben oder nach Anstrengungen zu [entspannen|entspannen]."
+                ],
+                [
+                  "Moderne Streaming-Dienste bieten maßgeschneiderte [die Playlist, -s|Playlists] für jede Lebenslage und jedes [das Musikgenre, -s|Musikgenre].",
+                  "Wenn eine einprägsame [die Melodie, -n|Melodie] und ein treibender [der Rhythmus, Rhythmen|Rhythmus] harmonieren, entsteht oft ein Song, bei dem man automatisch [mitsingen|mitsingen] möchte."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Neuroästhetik des Hörens und die Transformation des Musikkonsums",
+              "intro": "Dopaminausschüttung, Sounddesign und kuratierte Algorithmen (B2).",
+              "paragraphs": [
+                [
+                  "Die neurowissenschaftliche Forschung belegt, dass der Konsum harmonischer Klangfolgen im Gehirn massive Dopaminausschüttungen im Belohnungssystem stimuliert.",
+                  "Moderne Kopfhörer mit aktiver Geräuschunterdrückung schaffen eine akustische Oase, die den Nutzer vollständig von seiner Umwelt isoliert."
+                ],
+                [
+                  "Gleichzeitig hat der Übergang vom kohärenten [das Album, Alben|Album] zur fragmentierten Single-Kultur und algorithmischen Playlists die Haltung von Hörern verändert.",
+                  "Künstler komponieren Refrains heute oft so, dass sie innerhalb von Sekunden als viraler [der Ohrwurm, -̈er|Ohrwurm] auf Social-Media-Plattformen zünden."
+                ],
+                [
+                  "Trotz dieses Trends bleibt der bewusste, kontemplative Musikgenuss eine der tiefgründigsten Formen ästhetischer Selbstfürsorge."
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hobbys",
+      "title": "HOBBYS",
+      "topics": [
+        {
+          "id": "kunst_und_basteln",
+          "title": "Kunst und Basteln",
+          "words": [
+            {
+              "german": "das Basteln (Sg.)",
+              "arabic": "الأعمال اليدوية والحرفية (صناعة المجسمات والأشكال)",
+              "english": "crafting, handicrafts",
+              "example": "Am regnerischen Sonntagnachmittag macht das Basteln mit den Kindern viel Freude."
+            },
+            {
+              "german": "die Malerei (Sg.)",
+              "arabic": "فن الرسم والتصوير التشكيلي",
+              "english": "painting (art)",
+              "example": "Die Malerei ist für viele Menschen ein wunderbarer Weg, Gefühle auszudrücken."
+            },
+            {
+              "german": "der Pinsel, -",
+              "arabic": "فرشاة الرسم والتلوين",
+              "english": "paintbrush, brush",
+              "example": "Mit einem feinen Pinsel malt sie die zarten Konturen der Blüten."
+            },
+            {
+              "german": "die Farbe, -n",
+              "arabic": "اللون / طلاء الرسم (مائية، زيتية، أكريليك)",
+              "english": "color, paint",
+              "example": "Auf der Palette mischt der Künstler blaue und gelbe Farben zu einem satten Grün."
+            },
+            {
+              "german": "die Leinwand, -̈e",
+              "arabic": "لوحة القماش المشدودة للرسم (الكانفاس)",
+              "english": "canvas",
+              "example": "Er spannte eine weiße Leinwand auf die Holzstaffelei im Atelier."
+            },
+            {
+              "german": "der Klebstoff, -e",
+              "arabic": "الصمغ / الغراء اللاصق",
+              "english": "glue, adhesive",
+              "example": "Tragen Sie den Klebstoff dünn auf das Papier auf, damit keine Wellen entstehen."
+            },
+            {
+              "german": "das Tonpapier, -e",
+              "arabic": "الورق الملون المقوى للأشغال اليدوية",
+              "english": "construction paper, colored card",
+              "example": "Aus buntem Tonpapier schneiden wir Sterne für die Weihnachtsdekoration aus."
+            },
+            {
+              "german": "die Skizze, -n",
+              "arabic": "الرسم التخطيطي الأولي (الاسكتش)",
+              "english": "sketch, rough drawing",
+              "example": "Bevor er mit dem Gemälde begann, zeichnete er eine schnelle Skizze mit Bleistift."
+            },
+            {
+              "german": "die Knete (Sg.)",
+              "arabic": "معجون التشكيل / الصلصال للأطفال",
+              "english": "modelling clay, play dough",
+              "example": "Kinder formen aus bunter Knete gern kleine Tiere und Fantasiefiguren."
+            },
+            {
+              "german": "das Kunstwerk, -e",
+              "arabic": "العمل الفني / التحفة الفنية",
+              "english": "work of art, artwork",
+              "example": "Das fertige Kunstwerk hängt jetzt im Wohnzimmer über dem Kamin."
+            },
+            {
+              "german": "die Kreativität (Sg.)",
+              "arabic": "الإبداع والابتكار الفني",
+              "english": "creativity",
+              "example": "Beim freien Zeichnen kann man seiner Kreativität völlig freien Lauf lassen."
+            },
+            {
+              "german": "die Staffelei, -en",
+              "arabic": "حامل لوحة الرسم الخشبي",
+              "english": "easel",
+              "example": "Die schwere hölzerne Staffelei hält das Ölgemälde sicher auf Augenhöhe."
+            }
+          ],
+          "description": "Malerei, Pinsel, Farben, Leinwände, Klebstoff, Skizzen und kreatives Gestalten.",
+          "details": "Bildende Kunst, Do-It-Yourself, Basteltechniken und kreativer Ausdruck (A1–B2)",
+          "arabicDescription": "الفنون والأعمال اليدوية (Kunst und Basteln): الرسم والتلوين (Malerei)، فرشاة الرسم (Pinsel)، الألوان (Farben)، لوحة الرسم القماشية (Leinwand)، الغراء اللاصق (Klebstoff)، الورق المقوى، الصلصال، والابتكار والأعمال الفنية اليدوية.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Bunte Bilder malen",
+              "intro": "Einfache Sätze über Farben, Pinsel und Basteln (A1).",
+              "paragraphs": [
+                [
+                  "Heute habe ich Zeit für [das Basteln (Sg.)|das Basteln].",
+                  "Ich nehme [der Pinsel, -|einen Pinsel] und viele bunte [die Farbe, -n|Farben].",
+                  "Vor mir steht eine weiße [die Leinwand, -̈e|Leinwand]."
+                ],
+                [
+                  "Ich male eine gelbe Sonne und ein blaues Meer.",
+                  "Mit [der Klebstoff, -e|dem Klebstoff] klebe ich ein Boot aus [das Tonpapier, -e|Tonpapier] auf das Bild.",
+                  "Mein Bild ist ein schönes [das Kunstwerk, -e|Kunstwerk] geworden."
+                ],
+                ["Malen macht glücklich und entspannt den Kopf."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Kreative Stunden im Atelier",
+              "intro": "Skizzen anfertigen, Maltechniken ausprobieren und Gestalten (A2).",
+              "paragraphs": [
+                [
+                  "Am Wochenende habe ich einen Malkurs für Einsteiger besucht.",
+                  "Zuerst zeigte uns die Kursleiterin, wie man mit Kohle [die Skizze, -n|eine genaue Skizze] anfertigt."
+                ],
+                [
+                  "Danach durften wir mit Acrylfarben experimentieren.",
+                  "Jeder stellte seine Leinwand auf [die Staffelei, -en|eine Staffelei] und mischte individuelle Töne.",
+                  "Es war erstaunlich zu sehen, wie viel [die Kreativität (Sg.)|Kreativität] in jedem Teilnehmer steckte."
+                ],
+                [
+                  "Am Ende des Tages nahmen alle stolz ihre eigenen Bilder mit nach Hause."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Handwerkliche Kunst als Ausgleich zum digitalen Alltag",
+              "intro": "Haptisches Gestalten, Do-it-yourself und künstlerische Entfaltung (B1).",
+              "paragraphs": [
+                [
+                  "In einer zunehmend digitalisierten Welt suchen immer mehr Menschen einen Ausgleich in manuellen, handwerklichen Tätigkeiten.",
+                  "Ob traditionelle [die Malerei (Sg.)|Malerei] mit Ölfarben oder kreatives [das Basteln (Sg.)|Basteln] mit Naturmaterialien: Das Arbeiten mit den eigenen Händen beruhigt das Nervensystem."
+                ],
+                [
+                  "Wer sich intensiv mit Bildaufbau und Farbharmonien beschäftigt, entdeckt oft ganz neue Facetten der eigenen [die Kreativität (Sg.)|Kreativität].",
+                  "Aus einer anfänglich flüchtigen [die Skizze, -n|Skizze] wächst schrittweise ein individuelles [das Kunstwerk, -e|Kunstwerk] heran, das die persönliche Handschrift des Schöpfers trägt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Bildende Kunst, Materialästhetik und Gestaltungspsychologie",
+              "intro": "Komposition, Farbtheorie und psychologische Dimensionen des Kunstschaffens (B2).",
+              "paragraphs": [
+                [
+                  "Die bewusste Auseinandersetzung mit haptischen Werkstoffen offenbart die tiefere Dimension bildnerischen Gestaltens.",
+                  "Die Textur gespannter [die Leinwand, -̈e|Leinwände], die Viskosität pastoser Ölfarben und der Duktus dynamischer Pinselstriche erzeugen ein sensorisches Zusammenspiel, das jenseits digitaler Reproduzierbarkeit liegt."
+                ],
+                [
+                  "Gestaltungspsychologisch betrachtet fungiert der Schaffensprozess als Katharsis und nonverbale Kommunikation.",
+                  "Hierbei transformiert [die Kreativität (Sg.)|kreative Imagination] rohe Farbpigmente und Werkstoffe in ein vielschichtiges ästhetisches Statement von zeitloser Gültigkeit."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "naehen_und_stricken",
+          "title": "Nähen und Stricken",
+          "words": [
+            {
+              "german": "das Nähen (Sg.)",
+              "arabic": "الخياطة وحياكة الأقمشة",
+              "english": "sewing",
+              "example": "Das Nähen von eigener Kleidung liegt voll im Trend der Nachhaltigkeit."
+            },
+            {
+              "german": "das Stricken (Sg.)",
+              "arabic": "حياكة وتريكو الصوف بالإبرتين",
+              "english": "knitting",
+              "example": "Das Stricken von warmen Schals und Mützen ist ihr liebstes Winterhobby."
+            },
+            {
+              "german": "die Nadel, -n",
+              "arabic": "إبرة الخياطة المعدنية",
+              "english": "needle",
+              "example": "Vorsicht beim Hantieren mit der spitzen Nadel, damit du dich nicht stichst."
+            },
+            {
+              "german": "der Faden, -̈",
+              "arabic": "الخيط",
+              "english": "thread",
+              "example": "Fädeln Sie den reißfesten Faden durch das kleine Öhr der Nadel."
+            },
+            {
+              "german": "die Wolle (Sg.)",
+              "arabic": "الصوف الطبيعي أو الصناعي",
+              "english": "wool, yarn",
+              "example": "Aus dieser weichen Merinowolle stricke ich kuschelige Wintersocken."
+            },
+            {
+              "german": "die Nähmaschine, -n",
+              "arabic": "ماكينة / آلة الخياطة",
+              "english": "sewing machine",
+              "example": "Mit der elektrischen Nähmaschine gelingen saubere und gleichmäßige Nähte im Nu."
+            },
+            {
+              "german": "der Stoff, -e",
+              "arabic": "القماش والنسيج",
+              "english": "fabric, cloth, material",
+              "example": "Ich habe zwei Meter gestreiften Baumwollstoff für eine Sommerbluse gekauft."
+            },
+            {
+              "german": "der Knopf, -̈e",
+              "arabic": "الزر في الملابس",
+              "english": "button (clothing)",
+              "example": "An meinem Lieblingshemd ist leider ein oberer Knopf abgefallen."
+            },
+            {
+              "german": "das Schnittmuster, -",
+              "arabic": "باترون وقالب تفصيل الملابس",
+              "english": "sewing pattern",
+              "example": "Sie legt das Schnittmuster auf den Stoff und schneidet die Teile mit Nahtzugabe zu."
+            },
+            {
+              "german": "die Stricknadel, -n",
+              "arabic": "إبرة حياكة الصوف الطويلة",
+              "english": "knitting needle",
+              "example": "Mit zwei langen Stricknadeln aus Bambus gleitet das Garn besonders leise."
+            },
+            {
+              "german": "die Stoffschere, -n",
+              "arabic": "مقص الأقمشة الحاد",
+              "english": "fabric shears, tailor's scissors",
+              "example": "Benutze die Stoffschere niemals für Papier, sonst wird sie schnell stumpf."
+            },
+            {
+              "german": "flicken",
+              "arabic": "يرقع ويثبت الملابس الممزقة",
+              "english": "to mend, to patch",
+              "example": "Ich werde das kleine Loch an der Jeans sauber flicken, statt sie wegzuwerfen."
+            }
+          ],
+          "description": "Nadel, Faden, Wolle, Stoffe, Nähmaschinen, Schnittmuster und Upcycling.",
+          "details": "Handarbeit, Textilgestaltung, Schneiderhandwerk, Stricken und Reparieren (A1–B2)",
+          "arabicDescription": "الخياطة والحياكة (Nähen und Stricken): الخياطة (Nähen)، حياكة الصوف (Stricken)، الإبرة (Nadel)، الخيط (Faden)، الصوف (Wolle)، ماكينة الخياطة (Nähmaschine)، الأقمشة (Stoff)، الأزرار (Knopf)، باترون التفصيل (Schnittmuster)، وإصلاح الملابس.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ich nähe einen Knopf an",
+              "intro": "Einfache Sätze über Nadel, Faden und kleine Reparaturen (A1).",
+              "paragraphs": [
+                [
+                  "An meiner Jacke fehlt [der Knopf, -̈e|ein Knopf].",
+                  "Ich hole [die Nadel, -n|eine Nadel] und [der Faden, -̈|einen schwarzen Faden].",
+                  "Ich ziehe den Faden durch das kleine Loch."
+                ],
+                [
+                  "Jetzt kann ich [das Nähen (Sg.)|das Nähen] beginnen.",
+                  "Ich nähe den Knopf fest an [der Stoff, -e|den Stoff].",
+                  "Meine Oma mag lieber [das Stricken (Sg.)|das Stricken]."
+                ],
+                [
+                  "Sie nimmt bunte [die Wolle (Sg.)|Wolle] und strickt mir einen warmen Schal."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Mein erster selbst genähter Kissenbezug",
+              "intro": "Mit der Nähmaschine arbeiten, Stoff zuschneiden und Kissen nähen (A2).",
+              "paragraphs": [
+                [
+                  "Zum Geburtstag bekam ich [die Nähmaschine, -n|eine elektrische Nähmaschine] geschenkt.",
+                  "Als erstes Projekt wollte ich ein buntes Kissen für mein Sofa nähen."
+                ],
+                [
+                  "Im Stoffladen kaufte ich hübschen [der Stoff, -e|Stoff] mit Blumenmustern.",
+                  "Zu Hause legte ich [das Schnittmuster, -|das Schnittmuster] auf den Tisch und schnitt die Maße mit [die Stoffschere, -n|der Stoffschere] zu."
+                ],
+                [
+                  "Das Nähen ging überraschend leicht und die Nähte wurden schön gerade.",
+                  "Es fühlt sich großartig an, Dinge selbst herzustellen statt neu zu kaufen."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Textiles Handwerk und nachhaltige Mode",
+              "intro": "Slow Fashion, Kleiderreparatur und Upcycling im Alltag (B1).",
+              "paragraphs": [
+                [
+                  "Gegen die Wegwerfmentalität der Fast-Fashion-Industrie formiert sich eine wachsende Gegenbewegung.",
+                  "Immer mehr Menschen besinnen sich auf klassische Kulturtechniken wie [das Nähen (Sg.)|Nähen] und [das Stricken (Sg.)|Stricken]."
+                ],
+                [
+                  "Statt beschädigte Kleidungsstücke vorschnell zu entsorgen, lernen junge Leute wieder, Löcher sorgfältig zu [flicken|flicken] oder Kleidungsstücke kreativ umzuschneidern."
+                ],
+                [
+                  "Wer sich ein präzises [das Schnittmuster, -|Schnittmuster] vornimmt und mit hochwertiger [die Wolle (Sg.)|Wolle] oder Leinen arbeitet, kreiert zeitlose Unikate, die Generationen überdauern."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Sartoriale Ästhetik, Haute Couture und handwerkliche Meisterschaft",
+              "intro": "Schnitttechnik, Textilphysik und soziokulturelle Bedeutung des Schneiderhandwerks (B2).",
+              "paragraphs": [
+                [
+                  "Die maßgeschneiderte Textilgestaltung repräsentiert eine hochentwickelte Symbiose aus mathematischer Präzision und ästhetischem Feingefühl.",
+                  "Das Konstruieren komplexer [das Schnittmuster, -|Schnittmuster] erfordert tiefes Verständnis textiler Faltenwürfe, Fadenläufe und Gewebespannungen."
+                ],
+                [
+                  "An modernen computergestützten [die Nähmaschine, -n|Nähmaschinen] lassen sich feinste Sticharten millimetergenau programmieren, während in traditionsreichen Ateliers der Haute Couture handgeführte [die Nadel, -n|Nadeln] für unsichtbare Pikiersäume unerlässlich bleiben."
+                ],
+                [
+                  "Das Revival textiler Handarbeit manifestiert eine Sehnsucht nach stofflicher Authentizität in einer Welt ephemerer Konsumgüter."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_kino",
+          "title": "Das Kino",
+          "words": [
+            {
+              "german": "das Kino, -s",
+              "arabic": "دار السينما",
+              "english": "cinema, movie theater",
+              "example": "Am Samstagabend verabreden wir uns vor dem Kino am Potsdamer Platz."
+            },
+            {
+              "german": "der Film, -e",
+              "arabic": "الفيلم السينمائي",
+              "english": "movie, film",
+              "example": "Der neue historische Film wurde von den Kritikern hoch gelobt."
+            },
+            {
+              "german": "die Kinoleinwand, -̈e",
+              "arabic": "شاشة السينما العملاقة",
+              "english": "cinema screen, movie screen",
+              "example": "Auf der riesigen Kinoleinwand wirken die Naturaufnahmen atemberaubend echt."
+            },
+            {
+              "german": "das Popcorn (Sg.)",
+              "arabic": "الفشار (الذرة المنفوخة)",
+              "english": "popcorn",
+              "example": "Zu einem echten Kinobesuch gehört für mich eine große Tüte süßes Popcorn."
+            },
+            {
+              "german": "der Kinosessel, -",
+              "arabic": "كرسي / مقعد السينما الوثير",
+              "english": "cinema seat",
+              "example": "Die bequemen Kinosessel lassen sich weit nach hinten verstellen."
+            },
+            {
+              "german": "der Kinosaal, -̈e",
+              "arabic": "صالة وقاعة العرض السينمائي",
+              "english": "cinema auditorium, theater hall",
+              "example": "Im größten Kinosaal finden über fünfhundert Zuschauer gleichzeitig Platz."
+            },
+            {
+              "german": "der Filmvorschaufilm, -e",
+              "arabic": "الإعلان التشويقي للفيلم (التريلر)",
+              "english": "trailer, movie trailer",
+              "example": "Vor Beginn der Hauptvorstellung liefen drei spannende Filmvorschaufilme."
+            },
+            {
+              "german": "die 3D-Brille, -n",
+              "arabic": "نظارة العرض ثلاثي الأبعاد",
+              "english": "3D glasses",
+              "example": "Setzen Sie die 3D-Brille auf, sobald der Science-Fiction-Streifen startet."
+            },
+            {
+              "german": "das Kinoticket, -s",
+              "arabic": "تذكرة السينما",
+              "english": "movie ticket",
+              "example": "Wir haben das Kinoticket kontaktlos mit dem Smartphone am Einlass vorgezeigt."
+            },
+            {
+              "german": "das Filmgenre, -s",
+              "arabic": "النوع السينمائي (كوميدي، إثارة، دراما، خيال)",
+              "english": "film genre",
+              "example": "Science-Fiction ist mein absolutes Lieblings-Filmgenre im Kino."
+            },
+            {
+              "german": "die Filmvorführung, -en",
+              "arabic": "العرض السينمائي (وقت العرض)",
+              "english": "screening, showing",
+              "example": "Die späte Filmvorführung um 22:30 Uhr war fast komplett ausgebucht."
+            },
+            {
+              "german": "der Blockbuster, -",
+              "arabic": "الفيلم الضخم واسع الجماهيرية وعالي الإيرادات",
+              "english": "blockbuster",
+              "example": "Hollywood investiert hunderte Millionen Dollar in jeden neuen Blockbuster."
+            }
+          ],
+          "description": "Kinosäle, Leinwand, Blockbuster, Popcorn, Kinosessel, Vorstellungen und Filmgenres.",
+          "details": "Kinoerlebnis, Soundeffekte, Premieren, Filmfestivals und Cineastik (A1–B2)",
+          "arabicDescription": "السينما (Das Kino): دور السينما، شاشة العرض الضخمة (Leinwand)، الفشار (Popcorn)، مقاعد السينما المريحة (Kinositz)، الأفلام السينمائية، عروض الأفلام، نظارات الأبعاد الثلاثية (3D-Brille)، الأفلام الضخمة (Blockbuster)، وأنواع الأفلام (Genre).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein schöner Nachmittag im Kino",
+              "intro": "Einfache Sätze über Kino, Film, Popcorn und Sitze (A1).",
+              "paragraphs": [
+                [
+                  "Heute gehe ich in [das Kino, -s|das Kino].",
+                  "An der Kasse kaufe ich [das Kinoticket, -s|mein Kinoticket].",
+                  "Ich hole mir eine große Tüte [das Popcorn (Sg.)|Popcorn] und eine Cola."
+                ],
+                [
+                  "Ich gehe in [der Kinosaal, -̈e|den dunklen Kinosaal].",
+                  "Ich setze mich in einen weichen [der Kinosessel, -|Kinosessel].",
+                  "Das Licht geht aus und [die Kinoleinwand, -̈e|die Kinoleinwand] leuchtet auf."
+                ],
+                [
+                  "[der Film, -e|Der Film] ist sehr lustig und alle lachen laut."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Ein spannender 3D-Filmabend",
+              "intro": "3D-Brillen, Actionfilme und Filmvorschauen (A2).",
+              "paragraphs": [
+                [
+                  "Gestern haben sich meine Freunde und ich [der Blockbuster, -|den neuesten Blockbuster] im Premierenkino angesehen.",
+                  "Weil es ein Animationsfilm war, bekamen wir am Eingang [die 3D-Brille, -n|eine 3D-Brille]."
+                ],
+                [
+                  "Vor dem Hauptfilm lief [der Filmvorschaufilm, -e|ein spektakulärer Filmvorschaufilm] über das nächste Weltraumabenteuer.",
+                  "Die Toneffekte im Saal waren so gewaltig, dass die Sitze vibrierten."
+                ],
+                [
+                  "Wir waren uns alle einig: Ein Film auf der großen Leinwand ist ein unvergleichliches Erlebnis, das man zu Hause nicht nachmachen kann."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Kinozauber versus Heimkino-Streaming",
+              "intro": "Gemeinschaftliches Filmerlebnis, Akustik und filmische Vielfalt (B1).",
+              "paragraphs": [
+                [
+                  "Trotz der Bequemlichkeit privater Streaming-Dienste behält [das Kino, -s|das Kino] seine unverwechselbare Faszination.",
+                  "Das immersive Eintauchen in fremde Welten auf einer deckenhohen [die Kinoleinwand, -̈e|Kinoleinwand] in Verbindung mit modernem Dolby-Atmos-Surround-Sound setzt Standards."
+                ],
+                [
+                  "Darüber hinaus ist der Kinobesuch ein soziales Gemeinschaftserlebnis: Das kollektive Erschrecken im Horrorfilm oder das synchrone Lachen im Saal schafft Verbundenheit."
+                ],
+                [
+                  "Während Programmkinos künstlerisch anspruchsvolle Arthouse-Werke pflegen, garantieren die Multiplexe packende Unterhaltung für Fans jedes [das Filmgenre, -s|Filmgenres]."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Cineastische Ästhetik, Kinodistribution und audiovisuelle Immersion",
+              "intro": "Kinoökonomie, Filmfestivals und die Magie der siebten Kunst (B2).",
+              "paragraphs": [
+                [
+                  "Die Filmkunst, die traditionsreich als siebte Kunst bezeichnet wird, lebt von der spezifischen Rezeptionssituation des abgedunkelten Kinoraums.",
+                  "Im Zeitalter digitaler Verwertungsketten verteidigen Kinobetreiber das exklusive Auswertungsfenster ('Theatrical Window') gegen Plattformbetreiber."
+                ],
+                [
+                  "Während ein kommerzieller [der Blockbuster, -|Blockbuster] auf visuelle Überwältigung und Franchisewerte setzt, zelebrieren Autorenfilmer subtile Montage, Lichtdramaturgie und narrative Tiefe."
+                ],
+                [
+                  "Das Kino bleibt der sakrale Raum für narrative Großentwürfe, der kollektive Mythen stiftet und gesellschaftliche Träume spiegelt."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "fotografieren",
+          "title": "Fotografieren",
+          "words": [
+            {
+              "german": "die Fotografie (Sg.)",
+              "arabic": "فن التصوير الضوئي الفوتوغرافي",
+              "english": "photography",
+              "example": "Die Fotografie erlaubt es uns, flüchtige Augenblicke für die Ewigkeit festzuhalten."
+            },
+            {
+              "german": "die Kamera, -s",
+              "arabic": "آلة التصوير / الكاميرا",
+              "english": "camera",
+              "example": "Ich hänge mir die schwere Spiegelreflex-Kamera um den Hals."
+            },
+            {
+              "german": "das Foto, -s",
+              "arabic": "الصورة الفوتوغرافية (اللّقطة)",
+              "english": "photo, photograph",
+              "example": "Auf dieser Reise habe ich über fünfhundert wunderschöne Fotos geschossen."
+            },
+            {
+              "german": "das Objektiv, -e",
+              "arabic": "عدسة الكاميرا الزجاجية",
+              "english": "lens, camera lens",
+              "example": "Für Porträts verwende ich ein lichtstarkes Objektiv mit schöner Hintergrundunschärfe."
+            },
+            {
+              "german": "das Stativ, -e",
+              "arabic": "حامل الكاميرا ثلاثي القوائم (الترايبود)",
+              "english": "tripod",
+              "example": "Bei Nachtaufnahmen verhindert ein stabiles Stativ jede Erschütterung der Kamera."
+            },
+            {
+              "german": "der Auslöser, -",
+              "arabic": "زر التقاط الصورة (الزناد)",
+              "english": "shutter release, shutter button",
+              "example": "Drücken Sie den Auslöser halb durch, damit das Bild automatisch fokussiert."
+            },
+            {
+              "german": "der Blitz, -e",
+              "arabic": "فلاش الكاميرا للإضاءة الخاطفة",
+              "english": "flash (camera)",
+              "example": "In Museen ist das Fotografieren mit Blitz meist streng verboten."
+            },
+            {
+              "german": "die Blende, -n",
+              "arabic": "فتحة العدسة (Aperture)",
+              "english": "aperture (lens)",
+              "example": "Eine offene Blende sorgt für viel Lichteinfall und eine geringe Schärfentiefe."
+            },
+            {
+              "german": "die Belichtungszeit, -en",
+              "arabic": "سرعة الغالق / زمن التعريض الضوئي",
+              "english": "exposure time, shutter speed",
+              "example": "Eine extrem kurze Belichtungszeit friert schnelle Bewegungen von Sportlern ein."
+            },
+            {
+              "german": "die Speicherkarte, -n",
+              "arabic": "بطاقة الذاكرة الرقمية (SD Card)",
+              "english": "memory card, SD card",
+              "example": "Ich habe eine schnelle Speicherkarte mit 128 Gigabyte Speicherplatz eingelegt."
+            },
+            {
+              "german": "das Fotomotiv, -e",
+              "arabic": "الموضوع أو المشهد المصوّر",
+              "english": "subject, motif (photo)",
+              "example": "Der Sonnenuntergang über den schneebedeckten Bergen war ein spektakuläres Fotomotiv."
+            },
+            {
+              "german": "fokussieren",
+              "arabic": "يضبط بؤرة العدسة والتركيز (الفوكس)",
+              "english": "to focus (camera)",
+              "example": "Der Autofokus hilft dabei, das Auge der porträtierten Person exakt zu fokussieren."
+            }
+          ],
+          "description": "Kamera, Objektive, Stative, Auslöser, Belichtung, Motive und Bildkomposition.",
+          "details": "Digitale Fotografie, Blende, Verschlusszeit, ISO, Porträts und Landschaftsaufnahmen (A1–B2)",
+          "arabicDescription": "التصوير الفوتوغرافي (Fotografieren): آلة التصوير والكاميرا (Kamera)، الصور (Foto)، عدسة الكاميرا (Objektiv)، حامل الكاميرا الثلاثي (Stativ)، زر الالتقاط (Auslöser)، الفلاش، فتحة العدسة (Blende)، سرعة الغالق، بطاقة الذاكرة، وضبط التركيز والفوكس.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Mein Hobby: Fotografieren",
+              "intro": "Einfache Sätze über Kamera, Fotos, Auslöser und schöne Motive (A1).",
+              "paragraphs": [
+                [
+                  "Ich habe [die Kamera, -s|eine neue Kamera].",
+                  "Ich gehe in den Park und suche ein schönes [das Fotomotiv, -e|Fotomotiv].",
+                  "Ich sehe eine bunte Blume im Gras."
+                ],
+                [
+                  "Ich muss das Bild genau [fokussieren|fokussieren].",
+                  "Dann drücke ich auf [der Auslöser, -|den Auslöser]. Klick!",
+                  "[das Foto, -s|Das Foto] wird sofort auf [die Speicherkarte, -n|der Speicherkarte] gespeichert."
+                ],
+                [
+                  "Am Abend zeige ich meiner Familie die Bilder auf dem Computer."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Landschaften im goldenen Licht",
+              "intro": "Objektive wechseln, Stative nutzen und Belichtung einstellen (A2).",
+              "paragraphs": [
+                [
+                  "Letzten Sonntag stand ich um fünf Uhr morgens auf, um den Sonnenaufgang zu fotografieren.",
+                  "Ich packte mein schweres [das Stativ, -e|Stativ] und zwei verschiedene [das Objektiv, -e|Objektive] in den Rucksack."
+                ],
+                [
+                  "Als das erste Morgenlicht über die Hügel strömte, schraubte ich die Kamera fest.",
+                  "Um das sanfte Licht einzufangen, stellte ich [die Belichtungszeit, -en|eine längere Belichtungszeit] an der Kamera ein.",
+                  "Weil es noch dämmerte, verzichtete ich auf [der Blitz, -e|den grellen Blitz], um die natürliche Lichtstimmung nicht zu zerstören."
+                ],
+                ["Die Aufnahmen wurden gestochen scharf und farbenprächtig."]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Die Kunst der manuellen Belichtung",
+              "intro": "Zusammenspiel von Blende, Verschlusszeit und Bildkomposition (B1).",
+              "paragraphs": [
+                [
+                  "Ambitionierte [die Fotografie (Sg.)|Fotografie] beginnt dort, wo man die automatischen Modi der Kamera verlässt.",
+                  "Das sogenannte Belichtungsdreieck aus ISO-Empfindlichkeit, [die Blende, -n|Blende] und Verschlusszeit entscheidet über die Bildwirkung."
+                ],
+                [
+                  "Eine weit geöffnete Blende erzeugt das begehrte Bokeh im Hintergrund eines Porträts, während eine geschlossene Blende maximale Tiefenschärfe in Landschaftsaufnahmen liefert."
+                ],
+                [
+                  "Wer den [der Auslöser, -|Auslöser] bewusst im perfekten Moment betätigt, schafft Bilder, die Geschichten erzählen."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Visuelle Narration, Sensorarchitektur und fotografische Ethik",
+              "intro": "Vollformatsensoren, RAW-Entwicklung und die Macht des Bildes (B2).",
+              "paragraphs": [
+                [
+                  "Die Evolution digitaler Vollformatsensoren und hochpräziser asphärischer [das Objektiv, -e|Objektive] hat die Grenzen des technisch Machbaren im Low-Light-Bereich enorm erweitert.",
+                  "Fotografen entwickeln verlustfreie RAW-Dateien in der digitalen Dunkelkammer, um feinste Dynamikumfänge zwischen tiefsten Schatten und Spitzlichtern herauszuarbeiten."
+                ],
+                [
+                  "Doch jenseits technischer Parameter wie [die Belichtungszeit, -en|Belichtungszeit] und optischer Auflösung bleibt die Wahl des [das Fotomotiv, -e|Fotomotivs] ein zutiefst ethischer und intellektueller Akt."
+                ],
+                [
+                  "Bilder besitzen die Macht, historische Narrative zu prägen, Missstände offenzulegen oder ästhetische Paradigmen zu begründen."
+                ]
+              ]
+            }
+          }
+        },
+        {
           "id": "freizeitaktivitaeten",
-          "title": "Freizeitaktivitäten",
+          "title": "Spiele",
           "words": [
             {
               "german": "lesen",
@@ -189,6 +1636,325 @@
           "description": "Hobbys, Erholung, Kulturveranstaltungen, Sport und Vereinsleben.",
           "details": "Hobbys, Sport, Kino, Theater und Wochenendgestaltung (A1–B2)",
           "arabicDescription": "الأنشطة الترفيهية والهوايات وقضاء أوقات الفراغ في ألمانيا. يتناول هذا الدرس ممارسة الرياضة، والنوادي والجمعيات الرياضية والثقافية (Vereine) ذات الشهرة العريقة في المجتمع الألماني، وحضور السينما والمسرح، والطهي، والسفر والاستجمام في الطبيعة."
+        }
+      ]
+    },
+    {
+      "id": "ferien",
+      "title": "FERIEN",
+      "topics": [
+        {
+          "id": "am_strand",
+          "title": "Am Strand",
+          "words": [
+            {
+              "german": "der Strand, -̈e",
+              "arabic": "الشاطئ الرملي / البلاج",
+              "english": "beach",
+              "example": "Im Sommer verbringen wir unseren Urlaub am weißen Sandstrand an der Ostsee."
+            },
+            {
+              "german": "das Meer, -e",
+              "arabic": "البحر",
+              "english": "sea, ocean",
+              "example": "Das Wasser in dem Meer ist herrlich erfrischend und kristallklar."
+            },
+            {
+              "german": "der Sand (Sg.)",
+              "arabic": "الرمل",
+              "english": "sand",
+              "example": "Die Kinder bauen hohe Burgen und verzierte Gräben aus feuchtem Sand."
+            },
+            {
+              "german": "die Welle, -n",
+              "arabic": "الموجة البحرية",
+              "english": "wave (water)",
+              "example": "Hohe Wellen rollen mit lautem Rauschen an das flache Ufer."
+            },
+            {
+              "german": "der Sonnenschirm, -e",
+              "arabic": "مظلة الشمس / الشماسية",
+              "english": "parasol, beach umbrella",
+              "example": "Wir spannen den großen Sonnenschirm auf, um Schutz vor der Mittagshitze zu haben."
+            },
+            {
+              "german": "das Strandtuch, -̈er",
+              "arabic": "منشفة وبشكير الشاطئ",
+              "english": "beach towel",
+              "example": "Ich breite mein buntes Strandtuch auf dem warmen Sand aus."
+            },
+            {
+              "german": "die Sonnencreme, -s",
+              "arabic": "كريم واقي الشمس",
+              "english": "sunscreen, sun lotion",
+              "example": "Cremen Sie sich gründlich mit Sonnencreme ein, besonders Schultern und Nase."
+            },
+            {
+              "german": "die Muschel, -n",
+              "arabic": "الصدفة / القوقعة البحرية",
+              "english": "seashell, clam",
+              "example": "Am Spülsaum sammelt meine kleine Tochter glänzende Muscheln in einem Eimer."
+            },
+            {
+              "german": "die Strandpromenade, -n",
+              "arabic": "كورنيش وممشى الشاطئ السياحي",
+              "english": "beach promenade",
+              "example": "Abends schlendern wir an der lebhaften Strandpromenade entlang und essen Eis."
+            },
+            {
+              "german": "die Badehose, -n",
+              "arabic": "سروال السباحة (شورت البحر)",
+              "english": "swimming trunks",
+              "example": "Er packt seine Badehose und die Schwimmbrille in die Strandtasche."
+            },
+            {
+              "german": "der Sonnenbrand, -̈e",
+              "arabic": "حرق الشمس واحمرار الجلد",
+              "english": "sunburn",
+              "example": "Wer zu lange ohne Schutz in der prallen Sonne liegt, riskiert einen schmerzhaften Sonnenbrand."
+            },
+            {
+              "german": "die Düne, -n",
+              "arabic": "الكثيب الرملي الساحلي",
+              "english": "dune, sand dune",
+              "example": "Hinter den grasbewachsenen Dünen weht ein frischer Wind vom Meer her."
+            }
+          ],
+          "description": "Sommerurlaub, Strand, Meer, Wellen, Sand, Muscheln, Sonnencreme und Entspannung.",
+          "details": "Badeurlaub, Nord- und Ostseeküste, Strandkörbe, Gezeiten und Sonnenschutz (A1–B2)",
+          "arabicDescription": "على شاطئ البحر (Am Strand): شاطئ البحر (Strand)، البحر (Meer)، الرمال (Sand)، الأمواج (Welle)، مظلة الشمس (Sonnenschirm)، منشفة الشاطئ، واقي الشمس (Sonnencreme)، الأصداف البحرية (Muschel)، كورنيش الشاطئ (Strandpromenade)، ملابس السباحة، وحروق الشمس.",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Ein sonniger Tag am Strand",
+              "intro": "Einfache Sätze über Strand, Meer, Sand und Sonne (A1).",
+              "paragraphs": [
+                [
+                  "Heute ist es sehr warm und ich gehe an [der Strand, -̈e|den Strand].",
+                  "Ich sehe das blaue [das Meer, -e|Meer] und höre [die Welle, -n|die Wellen].",
+                  "Ich laufe barfuß durch [der Sand (Sg.)|den weichen Sand]."
+                ],
+                [
+                  "Ich lege [das Strandtuch, -̈er|mein Strandtuch] unter [der Sonnenschirm, -e|einen Sonnenschirm].",
+                  "Ganz wichtig: Ich benutze viel [die Sonnencreme, -s|Sonnencreme] gegen die Sonne.",
+                  "Im Wasser finde ich eine hübsche weiße [die Muschel, -n|Muschel]."
+                ],
+                ["Am Strand zu sein ist mein liebster Sommerurlaub."]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Urlaub an der Ostsee",
+              "intro": "Strandkörbe, Dünen und Abendspaziergänge auf der Promenade (A2).",
+              "paragraphs": [
+                [
+                  "Letzte Woche habe ich mit meiner Familie Urlaub an der deutschen Ostseeküste gemacht.",
+                  "Wir mieteten einen traditionellen Strandkorb direkt hinter [die Düne, -n|den Dünen]."
+                ],
+                [
+                  "Mein Bruder zog seine [die Badehose, -n|Badehose] an und sprang mutig in das kühle Wasser.",
+                  "Obwohl der Himmel bewölkt war, bekam ich am ersten Nachmittag leichten [der Sonnenbrand, -̈e|Sonnenbrand]."
+                ],
+                [
+                  "Am späten Nachmittag spazierten wir über [die Strandpromenade, -n|die Strandpromenade], kauften frische Fischbrötchen und beobachteten die Segelboote am Horizont."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Erholung und Naturschutz an den deutschen Küsten",
+              "intro": "Die Gezeiten an der Nordsee, Dünenlandschaften und maritimes Flair (B1).",
+              "paragraphs": [
+                [
+                  "Die Küstenregionen an Nord- und Ostsee erfreuen sich ungebrochener Beliebtheit bei erholungssuchenden Urlaubern.",
+                  "Während an der Ostsee das ruhige Wasser zum Baden einlädt, prägen an der Nordsee Ebbe und Flut den Rhythmus am [der Strand, -̈e|Strand]."
+                ],
+                [
+                  "Wanderungen durch das UNESCO-Weltnaturerbe Wattenmeer bieten Einblicke in ein einzigartiges Ökosystem voller [die Muschel, -n|Muscheln] und Wattwürmer.",
+                  "Zum Schutz der Küsten vor Sturmfluten ist das Betreten geschützter [die Düne, -n|Dünen] streng untersagt, da der Dünengrasbewuchs den losen Sand vor Erosion bewahrt."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Maritimer Tourismus, Küstenschutz und ökologisches Gleichgewicht",
+              "intro": "Spannungsverhältnis zwischen Tourismuswirtschaft und empfindlicher Küstenökologie (B2).",
+              "paragraphs": [
+                [
+                  "Der Strandtourismus bildet das ökonomische Rückgrat vieler Küstengemeinden, wirft jedoch gravierende ökologische Fragen auf.",
+                  "Die Versiegelung von Naturflächen durch überdimensionierte [die Strandpromenade, -n|Strandpromenaden] und Hotelanlagen verändert das Mikroklima empfindlicher Uferzonen."
+                ],
+                [
+                  "Gleichzeitig fordern der steigende Meeresspiegel und häufigere Sturmfluten massive Investitionen in ingenieurtechnischen Küstenschutz.",
+                  "Durch gezielten Sandvorspülungen werden gefährdete [der Strand, -̈e|Strandabschnitte] stabilisiert, um das Hinterland vor den zerstörerischen Kräften mächtiger [die Welle, -n|Wellen] zu schützen."
+                ],
+                [
+                  "Ein nachhaltiges Destinationsmanagement muss den Schutz bedrohter Küstenbiotope mit den Bedürfnissen touristischer Erholung harmonisieren."
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "das_zelten",
+          "title": "Das Zelten",
+          "words": [
+            {
+              "german": "das Zelten (Sg.)",
+              "arabic": "التخييم ونصب الخيام في الطبيعة (الكامبينغ)",
+              "english": "camping, tenting",
+              "example": "Das Zelten in den Bergen ist ein wunderbares Abenteuer für Naturfreunde."
+            },
+            {
+              "german": "das Zelt, -e",
+              "arabic": "الخيمة",
+              "english": "tent",
+              "example": "Wir bauten unser wasserdichtes Zelt auf einer grünen Waldwiese auf."
+            },
+            {
+              "german": "der Schlafsack, -̈e",
+              "arabic": "كيس النوم المبطن (سليبينغ باج)",
+              "english": "sleeping bag",
+              "example": "In einem warmen Daunenschlafsack friert man selbst bei Minusgraden nicht."
+            },
+            {
+              "german": "die Isomatte, -n",
+              "arabic": "الفرشة العازلة للأرضية والرطوبة",
+              "english": "sleeping mat, foam camping mat",
+              "example": "Die aufblasbare Isomatte schützt vor Bodenkälte und spitzen Steinen."
+            },
+            {
+              "german": "der Campingplatz, -̈e",
+              "arabic": "موقع ومخيم التخييم المخصص",
+              "english": "campsite, campground",
+              "example": "Auf dem modernen Campingplatz gibt es saubere Duschen und Stromanschlüsse."
+            },
+            {
+              "german": "der Gaskocher, -",
+              "arabic": "موقد الغاز المتنقل للطهي الخارجي",
+              "english": "camping gas stove",
+              "example": "Auf dem kleinen Gaskocher bereiteten wir uns morgens heißen Kaffee zu."
+            },
+            {
+              "german": "die Taschenlampe, -n",
+              "arabic": "المصباح اليدوي (الكشاف)",
+              "english": "flashlight, torch",
+              "example": "Wenn es dunkel wird, leuchtet uns die LED-Taschenlampe den Weg zum Zelt."
+            },
+            {
+              "german": "der Hering, -e",
+              "arabic": "وتد تثبيت الخيمة في التربة",
+              "english": "tent peg, tent stake",
+              "example": "Mit einem Hammer schlagen wir die Heringe tief in den festen Boden."
+            },
+            {
+              "german": "der Rucksack, -̈e",
+              "arabic": "حقيبة الظهر للرحلات",
+              "english": "backpack, rucksack",
+              "example": "In meinem sechzig Liter fassenden Rucksack hat die ganze Campingausrüstung Platz."
+            },
+            {
+              "german": "das Lagerfeuer, -",
+              "arabic": "نار المخيم",
+              "english": "campfire",
+              "example": "Am knisternden Lagerfeuer sangen wir Lieder und rösteten Marshmallows."
+            },
+            {
+              "german": "das Mückenspray, -s",
+              "arabic": "بخاخ طرد البعوض والحشرات",
+              "english": "mosquito spray, insect repellent",
+              "example": "Vergessen Sie am See niemals ein wirksames Mückenspray gegen Insektenstiche."
+            },
+            {
+              "german": "die freie Natur (Sg.)",
+              "arabic": "الطبيعة المفتوحة في الهواء الطلق",
+              "english": "the great outdoors, open nature",
+              "example": "Nach einer Woche im Büro genieße ich die Stille in der freien Natur."
+            }
+          ],
+          "description": "Camping, Zelt aufbauen, Schlafsack, Isomatte, Gaskocher, Lagerfeuer und Naturerlebnis.",
+          "details": "Outdoor-Abenteuer, Campingplatz, Wandern, Biwakieren und Ausrüstung (A1–B2)",
+          "arabicDescription": "التخييم والأنشطة البرية (Das Zelten): التخييم (Camping/Zelten)، خيمة النوم (Zent)، كيس النوم (Schlafsack)، الفرشة العازلة (Isomatte)، موقع التخييم (Campingplatz)، موقد الغاز المتنقل (Gaskocher)، المصباح اليدوي، أوتاد الخيمة (Hering)، حقيبة الظهر، ونار المخيم (Lagerfeuer).",
+          "stories": {
+            "A1": {
+              "level": "A1",
+              "badge": "A1 – Grundstufe",
+              "title": "Eine Nacht im Zelt",
+              "intro": "Einfache Sätze über Camping, Schlafsack und Taschenlampe (A1).",
+              "paragraphs": [
+                [
+                  "Am Wochenende fahre ich mit Freunden in den Wald.",
+                  "Wir machen [das Zelten (Sg.)|Zelten] an einem kleinen See.",
+                  "Wir bauen zusammen [das Zelt, -e|unser Zelt] auf einer Wiese auf."
+                ],
+                [
+                  "Ich lege [die Isomatte, -n|meine Isomatte] und [der Schlafsack, -̈e|meinen weichen Schlafsack] hinein.",
+                  "In der Nacht ist es stockdunkel, aber ich habe [die Taschenlampe, -n|eine Taschenlampe].",
+                  "Wir machen [das Lagerfeuer, -|ein Lagerfeuer] und kochen Tee."
+                ],
+                [
+                  "Schlafen in [die freie Natur (Sg.)|der freien Natur] ist ein großes Abenteuer."
+                ]
+              ]
+            },
+            "A2": {
+              "level": "A2",
+              "badge": "A2 – Erweiterte Grundlagen",
+              "title": "Wochenendausflug auf den Campingplatz",
+              "intro": "Campingausrüstung, Zeltheringe und Kochen auf dem Gaskocher (A2).",
+              "paragraphs": [
+                [
+                  "Letzten Freitag haben wir unsere Rucksäcke gepackt und sind zu einem schönen [der Campingplatz, -̈e|Campingplatz] am Fluss gefahren.",
+                  "Als erstes spannten wir die Seile und schlugen alle [der Hering, -e|Heringe] fest in den Rasen, damit das Zelt bei Wind stabil blieb."
+                ],
+                [
+                  "Zum Abendessen kochten wir Nudeln mit Tomatensoße auf [der Gaskocher, -|unserem Gaskocher].",
+                  "Weil es in Ufernähe viele Mücken gab, sprühten wir uns gründlich mit [das Mückenspray, -s|Mückenspray] ein."
+                ],
+                [
+                  "Eingekuschelt in [der Schlafsack, -̈e|den Schlafsack] schliefen wir beim beruhigenden Rauschen des Wassers wunderbar ein."
+                ]
+              ]
+            },
+            "B1": {
+              "level": "B1",
+              "badge": "B1 – Selbstständige Sprachverwendung",
+              "title": "Abenteuerlust und Minimalismus beim Trekking",
+              "intro": "Selbstversorgung unterwegs, Ausrüstungsgewicht und Wildcamping-Regeln (B1).",
+              "paragraphs": [
+                [
+                  "Mehrtägige Trekkingtouren mit Zelt erfordern vorausschauende Planung und funktionale Ausrüstung.",
+                  "Jedes Gramm im [der Rucksack, -̈e|Rucksack] zählt, weshalb erfahrene Wanderer ultraleichte Zelte und kompakte Kocher bevorzugen."
+                ],
+                [
+                  "In Deutschland ist das sogenannte Wildcampen in [die freie Natur (Sg.)|der freien Natur] abseits offizieller [der Campingplatz, -̈e|Campingplätze] größtenteils reglementiert oder verboten.",
+                  "Umso wichtiger ist es, designierte Naturlagerplätze zu nutzen und die 'Leave No Trace'-Prinzipien zu beherzigen: Keinen Müll hinterlassen, kein offenes Feuer entzünden und wildlebende Tiere respektieren."
+                ]
+              ]
+            },
+            "B2": {
+              "level": "B2",
+              "badge": "B2 – Vertiefte Fachkompetenz",
+              "title": "Outdoor-Revival, Naturphilosophie und Resilienz in der Wildnis",
+              "intro": "Entschleunigung, Mikroabenteuer und ökologischer Fußabdruck (B2).",
+              "paragraphs": [
+                [
+                  "Die Renaissance des Outdoor-Lebensstils reflektiert ein tiefes zivilisatorisches Unbehagen an städtischer Überreizung und permanenter digitaler Erreichbarkeit.",
+                  "Die bewusste Reduktion auf vitale Grundbedürfnisse — Wärme im [der Schlafsack, -̈e|Schlafsack], Nahrung vom [der Gaskocher, -|Gaskocher] und Schutz im [das Zelt, -e|Zelt] — initiiert einen heilsamen Prozess der Entschleunigung."
+                ],
+                [
+                  "Gleichzeitig fordern sogenannte 'Mikroabenteuer' eine geschärfte ökologische Ethik ein, um Übernutzung fragiler Berg- und Waldökosysteme durch unbedachtes Konsumverhalten zu verhindern."
+                ],
+                [
+                  "Das Leben unter freiem Himmel schult praktische Resilienz und revitalisiert die archaische Beziehung zwischen Mensch und Biosphäre."
+                ]
+              ]
+            }
+          }
         }
       ]
     }

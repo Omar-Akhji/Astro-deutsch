@@ -80,7 +80,7 @@ const cleanedQuestionText = computed(() => {
 </script>
 
 <template>
-  <article :class="['mx-auto w-full animate-fade-in', isTableRow ? '' : 'space-y-6']">
+  <article :class="['animate-fade-in mx-auto w-full', isTableRow ? '' : 'space-y-6']">
     <TeilHeader
       v-if="isShowTeilHeader && !isTableRow"
       :teil="props.question.teil"
