@@ -2,7 +2,7 @@
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import { PartyPopper, Sparkles, ThumbsUp, Zap } from "lucide-vue-next";
 import { gsap } from "@/shared/lib";
-import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import AnimateOnScroll from "@/shared/ui/islands/AnimateOnScroll.vue";
 
 interface Props {
   score: number;

@@ -14,7 +14,7 @@ import {
   Utensils,
 } from "lucide-vue-next";
 import { cn } from "@/shared/lib";
-import AnimateOnScroll from "@/shared/ui/AnimateOnScroll.vue";
+import AnimateOnScroll from "@/shared/ui/islands/AnimateOnScroll.vue";
 import { getCategoryStyle, THEMEN_CATEGORY_COLORS } from "../lib/category-config.ts";
 import type { Thema } from "../model/types.ts";
 import ThemaCard from "./ThemaCard.vue";

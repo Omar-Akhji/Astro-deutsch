@@ -2,7 +2,7 @@
 import { PruefungSection } from "@/features/pruefung";
 import { getExamLevels } from "@/features/pruefung/server.ts";
 import Layout from "@/layouts/Layout.astro";
-import PageHeader from "@/shared/ui/PageHeader.astro";
+import PageHeader from "@/shared/ui/page-header/PageHeader.astro";
 import { ClipboardList } from "lucide-astro";
 
 const { data: examLevels } = await getExamLevels();

@@ -1,18 +1,19 @@
-// Generic Design System Primitives
-export { default as AnimateOnScroll } from "./AnimateOnScroll.vue";
-export { default as BackButton } from "./BackButton.astro";
-export { default as Card } from "./Card.astro";
-export { default as CardBody } from "./CardBody.astro";
-export { default as CardModal } from "./CardModal.astro";
-export { default as CardSkeleton } from "./CardSkeleton.astro";
-export { default as CardWithModal } from "./CardWithModal.astro";
-export { default as GlassCard } from "./GlassCard.astro";
-export { default as PageHeader } from "./PageHeader.astro";
-export { default as PageHeaderSkeleton } from "./PageHeaderSkeleton.astro";
-export { default as Skeleton } from "./Skeleton.astro";
-export { default as SkeletonLayouts } from "./SkeletonLayouts.astro";
-export { default as TextAudioPlayer } from "./TextAudioPlayer.vue";
-export { setupCardModalListeners } from "./card-modal";
+// Generic Design System Primitives & Components
+export {
+  Card,
+  CardBody,
+  CardModal,
+  CardSkeleton,
+  CardWithModal,
+  GlassCard,
+  setupCardModalListeners,
+} from "./card";
+export { BackButton } from "./button";
+export { PageHeader, PageHeaderSkeleton } from "./page-header";
+export { Skeleton, SkeletonLayouts } from "./skeleton";
+
+// Client-side Islands
+export { AnimateOnScroll, TextAudioPlayer } from "./islands";
 
 // Composite Layout Widgets (Re-exported from @/widgets for backward compatibility)
 export { Footer, FooterSkeleton } from "@/widgets/footer";

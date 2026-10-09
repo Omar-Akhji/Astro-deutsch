@@ -2,7 +2,7 @@
 import { VocabularySection } from "@/features/vocabulary";
 import { getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
-import PageHeader from "@/shared/ui/PageHeader.astro";
+import PageHeader from "@/shared/ui/page-header/PageHeader.astro";
 import { Languages } from "lucide-astro";
 
 const { data: vocabularyList } = await getVocabularyList();
