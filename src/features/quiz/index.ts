@@ -1,4 +1,3 @@
-export * from "./lib/exam-structure.ts";
 export * from "./lib/use-quiz.ts";
 export * from "./model/schema.ts";
 export type * from "./model/types.ts";

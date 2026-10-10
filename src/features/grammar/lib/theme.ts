@@ -8,7 +8,7 @@ export interface GrammarThemePalette {
   borderAccent: string;
 }
 
-export const GRAMMAR_THEME_PALETTES: GrammarThemePalette[] = [
+const GRAMMAR_THEME_PALETTES: GrammarThemePalette[] = [
   {
     badgeClass: "border-sky-500/30 bg-sky-500/10 text-sky-400",
     cardBorderClass: "border-2 border-sky-500/30 hover:border-sky-500/50 shadow-sky-500/5",

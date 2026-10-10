@@ -9,7 +9,7 @@ export interface GenderInfo {
   textClass: string;
 }
 
-export const GENDER_STYLES: Record<
+const GENDER_STYLES: Record<
   "der" | "die" | "das" | "pl",
   { badgeClass: string; borderClass: string; textClass: string }
 > = {

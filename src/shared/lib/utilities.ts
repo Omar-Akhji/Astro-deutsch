@@ -39,18 +39,3 @@ export const getGradient = (index: number, gradients?: string[] | null): string 
 export const getFirstLetter = (text: string): string => {
   return text.charAt(0).toUpperCase();
 };
-
-/**
- * Groups items of an array by a callback selector using native ES2024 Object.groupBy when
- * available.
- *
- * @param items - Iterable list of items.
- * @param keySelector - Function returning the group key for an item.
- * @returns Object mapping keys to arrays of items.
- */
-export function groupByKey<T, K extends PropertyKey>(
-  items: Iterable<T>,
-  keySelector: (item: T) => K,
-): Partial<Record<K, T[]>> {
-  return Object.groupBy(items, keySelector);
-}

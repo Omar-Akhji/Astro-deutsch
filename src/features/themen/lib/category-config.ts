@@ -13,7 +13,7 @@ export interface CategoryThemeStyle {
   badge: string;
 }
 
-export const THEMEN_CATEGORY_CONFIG: Record<ThemaCategory, CategoryThemeStyle> = {
+const THEMEN_CATEGORY_CONFIG: Record<ThemaCategory, CategoryThemeStyle> = {
   essen: {
     color: "orange-500",
     text: "text-orange-500",
@@ -84,22 +84,6 @@ const DEFAULT_CATEGORY_STYLE: CategoryThemeStyle = {
 export const THEMEN_CATEGORY_COLORS: Record<string, string> = Object.fromEntries(
   Object.entries(THEMEN_CATEGORY_CONFIG).map(([k, v]) => [k, v.color]),
 );
-
-const THEMA_CATEGORIES = new Set<string>([
-  "essen",
-  "tech",
-  "gesellschaft",
-  "bildung",
-  "gesundheit",
-  "freizeit",
-  "umwelt",
-  "arbeit",
-]);
-
-/** Type guard for ThemaCategory keys */
-export function isThemaCategory(category: string): category is ThemaCategory {
-  return THEMA_CATEGORIES.has(category);
-}
 
 /**
  * Returns pre-split structured styling tokens for a category. Prevents runtime string parsing and

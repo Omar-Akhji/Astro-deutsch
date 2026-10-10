@@ -14,7 +14,7 @@ const topicStoriesCatalogSchema = z.record(z.string(), storiesRecordSchema);
 const parsedTopicStories = topicStoriesCatalogSchema.parse(topicStoriesJson);
 
 /** All curated story contents loaded directly from topic-stories.json. */
-export const TOPIC_STORIES = new Map<string, TopicStoriesRecord>(
+const TOPIC_STORIES = new Map<string, TopicStoriesRecord>(
   Object.entries(parsedTopicStories),
 );
 

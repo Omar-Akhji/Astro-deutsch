@@ -7,7 +7,7 @@ export interface EnrichedWord extends Word {
   genderInfo: GenderInfo;
 }
 
-export const KNOWN_ADJECTIVES = new Set([
+const KNOWN_ADJECTIVES = new Set([
   "ledig",
   "verheiratet",
   "geschieden",
@@ -40,7 +40,7 @@ export const KNOWN_ADJECTIVES = new Set([
 ]);
 
 /** Classifies a vocabulary word into a grammatical part of speech category. */
-export function classifyWord(word: Word): PartOfSpeechCategory {
+function classifyWord(word: Word): PartOfSpeechCategory {
   if (word.partOfSpeech) {
     return word.partOfSpeech;
   }
