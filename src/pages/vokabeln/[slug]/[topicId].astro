@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 
 const { slug, topicId } = Astro.params;
 
-if (!slug || !topicId) {
+if (!(slug && topicId)) {
   throw new Error("Fehlende Vokabel-Parameter.");
 }
 
@@ -37,60 +37,58 @@ const topic = result?.topic;
 const section = result?.section;
 
 const pageTitle =
-  topic && item ?
-    `${topic.title} – Wortschatz ${item.german} (${item.category}) | Elite Regewelt`
-  : "Vokabel Thema | Elite Regewelt";
+  topic && item
+    ? `${topic.title} – Wortschatz ${item.german} (${item.category}) | Elite Regewelt`
+    : "Vokabel Thema | Elite Regewelt";
 
 const pageDescription =
-  topic && item ?
-    `Lerne deutsche Vokabeln & Ausdrücke zu ${topic.title} im Bereich ${item.german}. Inklusive arabischer Übersetzung, Beispielsätzen und praktischen Übungen.`
-  : "Lerne deutsche Vokabeln systematisch.";
+  topic && item
+    ? `Lerne deutsche Vokabeln & Ausdrücke zu ${topic.title} im Bereich ${item.german}. Inklusive arabischer Übersetzung, Beispielsätzen und praktischen Übungen.`
+    : "Lerne deutsche Vokabeln systematisch.";
 
 const extraSchema =
-  topic && item ?
-    {
-      "@type": "LearningResource",
-      name: `${topic.title} – Wortschatz ${item.german}`,
-      description: `Deutsche Vokabeln und Ausdrücke für ${topic.title} (${item.german}) mit arabischer Bedeutung und Beispielsätzen.`,
-      url: `https://elite-regewelt.com/vokabeln/${slug}/${topic.id}/`,
-      educationalLevel: item.category || "A1-B2",
-      inLanguage: ["de", "ar"],
-      learningResourceType: "Vocabulary List",
-      hasPart: topic.words
-        ?.slice(0, 30)
-        .map((w) => ({
+  topic && item
+    ? {
+        "@type": "LearningResource",
+        name: `${topic.title} – Wortschatz ${item.german}`,
+        description: `Deutsche Vokabeln und Ausdrücke für ${topic.title} (${item.german}) mit arabischer Bedeutung und Beispielsätzen.`,
+        url: `https://elite-regewelt.com/vokabeln/${slug}/${topic.id}/`,
+        educationalLevel: item.category || "A1-B2",
+        inLanguage: ["de", "ar"],
+        learningResourceType: "Vocabulary List",
+        hasPart: topic.words?.slice(0, 30).map((w) => ({
           "@type": "DefinedTerm",
           name: w.german,
           description: w.arabic,
           ...(w.example && { disambiguatingDescription: w.example }),
         })),
-    }
-  : undefined;
+      }
+    : undefined;
 const heroDescription =
-  topic?.description
-  ?? (topic?.id === "stammbaum" ?
-    "Familienmitglieder, Verwandtschaftsverhältnisse und Beziehungsstatus im Überblick."
-  : `Wichtige Wörter, Redewendungen und Sprachübungen zum Thema ${topic?.title ?? ""} im Bereich ${section?.title ?? item?.german ?? ""}.`);
+  topic?.description ??
+  (topic?.id === "stammbaum"
+    ? "Familienmitglieder, Verwandtschaftsverhältnisse und Beziehungsstatus im Überblick."
+    : `Wichtige Wörter, Redewendungen und Sprachübungen zum Thema ${topic?.title ?? ""} im Bereich ${section?.title ?? item?.german ?? ""}.`);
 
 const heroStats = [
-  ...(topic?.familyTree && topic.familyTree.length > 0 ?
-    [
-      {
-        label: "Familienmitglieder",
-        value: `${topic.familyTree.length} Personen im Stammbaum`,
-        icon: Users,
-      },
-    ]
-  : []),
-  ...(topic?.words && topic.words.length > 0 ?
-    [
-      {
-        label: "Wortschatz",
-        value: `${topic.words.length} Vokabeln (Nomen · Verben · Adj.)`,
-        icon: BookOpen,
-      },
-    ]
-  : []),
+  ...(topic?.familyTree && topic.familyTree.length > 0
+    ? [
+        {
+          label: "Familienmitglieder",
+          value: `${topic.familyTree.length} Personen im Stammbaum`,
+          icon: Users,
+        },
+      ]
+    : []),
+  ...(topic?.words && topic.words.length > 0
+    ? [
+        {
+          label: "Wortschatz",
+          value: `${topic.words.length} Vokabeln (Nomen · Verben · Adj.)`,
+          icon: BookOpen,
+        },
+      ]
+    : []),
   { label: "Niveaustufen", value: "4 Niveaus (A1 · A2 · B1 · B2)", icon: Headphones },
 ];
 ---

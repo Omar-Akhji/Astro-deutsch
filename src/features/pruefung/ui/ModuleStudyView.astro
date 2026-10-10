@@ -21,18 +21,16 @@ const section = examData.sections.find((s) => s.id === `${level.toLowerCase()}-$
 const filteredRedemittel = Object.entries(redemittel).filter(([category]) => {
   const normalizedCategory = category.toLowerCase();
   const isVocabulary =
-    normalizedCategory.includes("konnektoren")
-    || normalizedCategory.includes("zeitausdrücke")
-    || normalizedCategory.includes("wortschatz");
+    normalizedCategory.includes("konnektoren") ||
+    normalizedCategory.includes("zeitausdrücke") ||
+    normalizedCategory.includes("wortschatz");
 
-  return module === "sprechen" ?
-      normalizedCategory.includes("sprechen") || isVocabulary
+  return module === "sprechen"
+    ? normalizedCategory.includes("sprechen") || isVocabulary
     : normalizedCategory.includes("schreiben") || isVocabulary;
 });
 
-const getPartNumber = (partName: string) => {
-  return partName.match(/\d+/)?.[0] ?? "";
-};
+const getPartNumber = (partName: string) => partName.match(/\d+/)?.[0] ?? "";
 
 interface EnrichedRedemittelCategory {
   category: string;
@@ -69,9 +67,8 @@ const isEmailTask = (taskType: string) => {
 
 const secTitle = section?.title.toLowerCase() ?? "";
 
-const enrichedParts: EnrichedPart[] =
-  section ?
-    section.parts.map((part) => {
+const enrichedParts: EnrichedPart[] = section
+  ? section.parts.map((part) => {
       const partNumber = getPartNumber(part.name);
       const matchingCategories = filteredRedemittel.filter(([category]) =>
         category.toLowerCase().includes(`${secTitle} ${partNumber}`),

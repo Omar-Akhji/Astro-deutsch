@@ -26,11 +26,11 @@ export function parseGrammarItem(text: string): ParsedGrammarItem {
   if (explanation && exampleStr) {
     // Check if the content inside parens is just a grammatical note rather than an example sentence
     const isNote =
-      exampleStr.startsWith("stilistisch besser")
-      || exampleStr.startsWith("Konj. II")
-      || exampleStr.startsWith("Ausnahme:")
-      || exampleStr.startsWith("Ausnahmen:")
-      || exampleStr.startsWith("Diminutiv");
+      exampleStr.startsWith("stilistisch besser") ||
+      exampleStr.startsWith("Konj. II") ||
+      exampleStr.startsWith("Ausnahme:") ||
+      exampleStr.startsWith("Ausnahmen:") ||
+      exampleStr.startsWith("Diminutiv");
 
     if (isNote) {
       return {

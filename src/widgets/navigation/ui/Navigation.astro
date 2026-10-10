@@ -34,13 +34,13 @@ const computedMobileNavLinks = mobileNavLinks.map((link) => ({
 }));
 
 const showBackButton =
-  pathname !== "/vokabeln"
-  && pathname !== "/vokabeln/"
-  && pathname !== "/grammatik"
-  && pathname !== "/grammatik/"
-  && pathname !== "/pruefung"
-  && pathname !== "/pruefung/"
-  && pathname !== "/";
+  pathname !== "/vokabeln" &&
+  pathname !== "/vokabeln/" &&
+  pathname !== "/grammatik" &&
+  pathname !== "/grammatik/" &&
+  pathname !== "/pruefung" &&
+  pathname !== "/pruefung/" &&
+  pathname !== "/";
 
 const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/register");
 ---

@@ -31,19 +31,16 @@ const redemittel = redemittelResponse.data;
 const themen = themenResponse.data;
 
 const moduleName = module.charAt(0).toUpperCase() + module.slice(1);
-const pageTitle =
-  currentExam ?
-    `${currentExam.level.toUpperCase()} ${moduleName} Vorbereitung & Redemittel | Elite Regewelt`
+const pageTitle = currentExam
+  ? `${currentExam.level.toUpperCase()} ${moduleName} Vorbereitung & Redemittel | Elite Regewelt`
   : `Modul ${moduleName} Vorbereitung | Elite Regewelt`;
 
-const pageDescription =
-  currentExam ?
-    `Gezieltes Training für das Prüfungsmodul ${moduleName} (${currentExam.level.toUpperCase()}). Redemittel, Argumente und Themen für Goethe & ÖSD.`
+const pageDescription = currentExam
+  ? `Gezieltes Training für das Prüfungsmodul ${moduleName} (${currentExam.level.toUpperCase()}). Redemittel, Argumente und Themen für Goethe & ÖSD.`
   : `Struktur-Checkliste und Redemittel für den ${moduleName}-Teil der Deutschprüfung.`;
 
-const moduleSchema =
-  currentExam ?
-    {
+const moduleSchema = currentExam
+  ? {
       "@type": "LearningResource",
       name: `${currentExam.level.toUpperCase()} ${moduleName} Training & Redemittel`,
       description: pageDescription,

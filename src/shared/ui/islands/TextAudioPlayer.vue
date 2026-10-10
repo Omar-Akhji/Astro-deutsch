@@ -79,12 +79,11 @@ let activeUtterance: SpeechSynthesisUtterance | null = null;
 let advanceTimer: ReturnType<typeof setTimeout> | null = null;
 let germanVoice: SpeechSynthesisVoice | null = null;
 
-const cleanTextForSpeech = (raw: string): string => {
-  return raw
+const cleanTextForSpeech = (raw: string): string =>
+  raw
     .replaceAll(/[„“”"«»]/g, "")
     .replaceAll(/\s+/g, " ")
     .trim();
-};
 
 const totalCount = computed(() => resolvedSentences.value.length);
 
@@ -126,15 +125,15 @@ const loadGermanVoice = () => {
   germanVoice =
     voices.find(
       (v) =>
-        v.lang.startsWith("de")
-        && (v.name.includes("Natural")
-          || v.name.includes("Google")
-          || v.name.includes("Katja")
-          || v.name.includes("Conrad")
-          || v.localService),
-    )
-    ?? voices.find((v) => v.lang.startsWith("de"))
-    ?? null;
+        v.lang.startsWith("de") &&
+        (v.name.includes("Natural") ||
+          v.name.includes("Google") ||
+          v.name.includes("Katja") ||
+          v.name.includes("Conrad") ||
+          v.localService),
+    ) ??
+    voices.find((v) => v.lang.startsWith("de")) ??
+    null;
 };
 
 const syncDomHighlight = () => {
@@ -154,7 +153,7 @@ const syncDomHighlight = () => {
     }
   }
 
-  if (!props.autoScroll || (!isPlaying.value && !isPaused.value)) return;
+  if (!props.autoScroll || !(isPlaying.value || isPaused.value)) return;
 
   const activeEl = domSentenceElements.value[currentIndex.value];
   if (activeEl) {
@@ -482,11 +481,11 @@ const handleOtherPlayerPlay = (event: Event) => {
   if (!(event instanceof CustomEvent)) return;
   const detail: unknown = event.detail;
   if (
-    typeof detail === "object"
-    && detail !== null
-    && "id" in detail
-    && detail.id !== instanceId
-    && (isPlaying.value || isPaused.value)
+    typeof detail === "object" &&
+    detail !== null &&
+    "id" in detail &&
+    detail.id !== instanceId &&
+    (isPlaying.value || isPaused.value)
   ) {
     pause();
   }

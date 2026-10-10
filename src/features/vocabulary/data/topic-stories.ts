@@ -1,7 +1,7 @@
 import { z } from "astro/zod";
 import { storiesRecordSchema } from "../model/schema.ts";
 import type { CefrLevel, StoryDefinition, TopicStoriesRecord } from "../model/types.ts";
-import topicStoriesJson from "./topic-stories.json";
+import topicStoriesJson from "./topic-stories.json" with { type: "json" };
 
 export type {
   CefrLevel,

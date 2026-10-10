@@ -1,9 +1,9 @@
 ---
+import { Award, Check, Clock, FileEdit, Layers, Lightbulb, MessageSquare } from "lucide-astro";
 import { getExamLevel } from "@/features/pruefung/server.ts";
 import Layout from "@/layouts/Layout.astro";
 import BackButton from "@/shared/ui/button/BackButton.astro";
 import { Hero } from "@/widgets/hero";
-import { Award, Check, Clock, FileEdit, Layers, Lightbulb, MessageSquare } from "lucide-astro";
 
 export async function getStaticPaths() {
   return [{ params: { level: "b1" } }, { params: { level: "b2" } }];
@@ -17,19 +17,16 @@ if (!level) {
 
 const { data: currentExam } = await getExamLevel(level);
 
-const pageTitle =
-  currentExam ?
-    `${currentExam.title} Vorbereitung: Struktur, Zeiten & Modelltests | Elite Regewelt`
+const pageTitle = currentExam
+  ? `${currentExam.title} Vorbereitung: Struktur, Zeiten & Modelltests | Elite Regewelt`
   : "Prüfungsvorbereitung | Elite Regewelt";
 
-const pageDescription =
-  currentExam ?
-    `Vollständige Vorbereitung auf ${currentExam.title} (Goethe & ÖSD). Prüfungsstruktur, Zeitvorgaben, Bestehensgrenze (${currentExam.passingScore}) und Modelltests.`
+const pageDescription = currentExam
+  ? `Vollständige Vorbereitung auf ${currentExam.title} (Goethe & ÖSD). Prüfungsstruktur, Zeitvorgaben, Bestehensgrenze (${currentExam.passingScore}) und Modelltests.`
   : "Bereite dich auf deine Deutschprüfung vor.";
 
-const examSchema =
-  currentExam ?
-    {
+const examSchema = currentExam
+  ? {
       "@type": "Course",
       name: `${currentExam.title} Vorbereitung`,
       description: currentExam.description,
@@ -95,9 +92,8 @@ function getExamModuleTheme(moduleId: string): ExamModuleTheme {
   };
 }
 
-const heroStats =
-  currentExam ?
-    [
+const heroStats = currentExam
+  ? [
       { label: "Module", value: "4 Module (Lesen · Hören · Schreiben · Sprechen)", icon: Layers },
       { label: "Gesamtdauer", value: currentExam.totalDuration, icon: Clock },
       {
@@ -109,9 +105,8 @@ const heroStats =
     ]
   : [];
 
-const heroExample =
-  currentExam ?
-    `Offizielle Prüfungsstruktur für ${currentExam.title}: Zeitlimits, Bewertungskriterien und Strategien`
+const heroExample = currentExam
+  ? `Offizielle Prüfungsstruktur für ${currentExam.title}: Zeitlimits, Bewertungskriterien und Strategien`
   : undefined;
 ---
 

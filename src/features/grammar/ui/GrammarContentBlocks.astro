@@ -23,9 +23,9 @@ function getCellRawText(cell: GrammarCell): string {
 const badgeStyle = theme?.badgeClass ?? "border-yellow/30 bg-yellow/10 text-yellow";
 
 const isPerfektPlusquamperfektGrid =
-  blocks.length === 2
-  && blocks.some((b) => b.title === "Perfekt")
-  && blocks.some((b) => b.title === "Plusquamperfekt");
+  blocks.length === 2 &&
+  blocks.some((b) => b.title === "Perfekt") &&
+  blocks.some((b) => b.title === "Plusquamperfekt");
 ---
 
 <div class="space-y-6">

@@ -23,8 +23,9 @@ const {
 
 const pathname = Astro.url.pathname;
 const normalizedPathname = pathname.endsWith("/") ? pathname : `${pathname}/`;
-const siteUrl =
-  Astro.site ? Astro.site.toString().replace(/\/$/, "") : "https://elite-regewelt.com";
+const siteUrl = Astro.site
+  ? Astro.site.toString().replace(/\/$/, "")
+  : "https://elite-regewelt.com";
 const canonicalUrl = new URL(normalizedPathname, siteUrl).href;
 const ogImageUrl = new URL("/og-image.png", siteUrl).href;
 
@@ -73,9 +74,8 @@ const formatSegmentName = (segment: string) => {
 
 // Breadcrumb structured data for Google SERP
 const pathSegments = pathname.split("/").filter(Boolean);
-const breadcrumbItems =
-  customBreadcrumbs ?
-    customBreadcrumbs.map((b, index) => ({
+const breadcrumbItems = customBreadcrumbs
+  ? customBreadcrumbs.map((b, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: b.name,

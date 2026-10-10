@@ -61,9 +61,8 @@ const glossary = [
     german: word.german,
     arabic: word.arabic,
     translation: word.english ?? "",
-    explanation:
-      word.english ?
-        `A word used to talk about family: ${word.english}.`
+    explanation: word.english
+      ? `A word used to talk about family: ${word.english}.`
       : "A word used to talk about family.",
     example: word.example ?? "",
   })),

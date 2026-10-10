@@ -2,7 +2,8 @@
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 
 type RenderableComponent =
-  AstroComponentFactory | ((properties: Record<string, unknown>) => unknown);
+  | AstroComponentFactory
+  | ((properties: Record<string, unknown>) => unknown);
 
 interface Props {
   icon: RenderableComponent;

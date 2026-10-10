@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 
 const { section, topicId } = Astro.params;
 
-if (!section || !topicId) {
+if (!(section && topicId)) {
   throw new Error("Fehlende Grammatik-Parameter.");
 }
 
@@ -33,36 +33,36 @@ const currentSection = sectionResponse.data;
 const currentTopic = topicResponse.data;
 
 const pageTitle =
-  currentTopic && currentSection ?
-    `${currentTopic.title} – Deutsche Grammatik (${currentTopic.category}) | Elite Regewelt`
-  : "Grammatik Thema | Elite Regewelt";
+  currentTopic && currentSection
+    ? `${currentTopic.title} – Deutsche Grammatik (${currentTopic.category}) | Elite Regewelt`
+    : "Grammatik Thema | Elite Regewelt";
 
 const pageDescription =
-  currentTopic && currentSection ?
-    `${currentTopic.description || `Lerne ${currentTopic.title} im Bereich ${currentSection.title}.`} Grammatikregeln, Beispielsätze und Übersichtstabellen.`
-  : "Lerne deutsche Grammatik systematisch.";
+  currentTopic && currentSection
+    ? `${currentTopic.description || `Lerne ${currentTopic.title} im Bereich ${currentSection.title}.`} Grammatikregeln, Beispielsätze und Übersichtstabellen.`
+    : "Lerne deutsche Grammatik systematisch.";
 
 const extraSchema =
-  currentTopic && currentSection ?
-    {
-      "@type": "TechArticle",
-      headline: `${currentTopic.title} – Deutsche Grammatik`,
-      description: currentTopic.description,
-      educationalLevel: "A1-B2",
-      inLanguage: "de",
-      articleSection: currentSection.title,
-      about: { "@type": "Thing", name: currentTopic.title, description: currentTopic.category },
-    }
-  : undefined;
+  currentTopic && currentSection
+    ? {
+        "@type": "TechArticle",
+        headline: `${currentTopic.title} – Deutsche Grammatik`,
+        description: currentTopic.description,
+        educationalLevel: "A1-B2",
+        inLanguage: "de",
+        articleSection: currentSection.title,
+        about: { "@type": "Thing", name: currentTopic.title, description: currentTopic.category },
+      }
+    : undefined;
 
 const subtopicsCount = currentTopic?.subtopics?.length ?? (currentTopic?.content ? 1 : 0);
 const tablesCount =
-  (currentTopic?.hasTable ? 1 : 0)
-  + (currentTopic?.subtopics?.filter((s) => s.hasTable).length ?? 0);
+  (currentTopic?.hasTable ? 1 : 0) +
+  (currentTopic?.subtopics?.filter((s) => s.hasTable).length ?? 0);
 const rulesCount =
-  (currentTopic?.content?.length ?? 0)
-  + (currentTopic?.subtopics?.reduce((accumulator, s) => accumulator + (s.content?.length ?? 0), 0)
-    ?? 0);
+  (currentTopic?.content?.length ?? 0) +
+  (currentTopic?.subtopics?.reduce((accumulator, s) => accumulator + (s.content?.length ?? 0), 0) ??
+    0);
 
 const heroStats = [
   {
@@ -79,10 +79,10 @@ const heroStats = [
 ];
 
 const heroExample =
-  currentTopic?.example
-  ?? (currentTopic?.subtopics && currentTopic.subtopics.length > 0 ?
-    currentTopic.subtopics.map((s) => s.title).join(" · ")
-  : "Regeln, Tabellen & Beispielsätze (A1–B2)");
+  currentTopic?.example ??
+  (currentTopic?.subtopics && currentTopic.subtopics.length > 0
+    ? currentTopic.subtopics.map((s) => s.title).join(" · ")
+    : "Regeln, Tabellen & Beispielsätze (A1–B2)");
 ---
 
 <Layout

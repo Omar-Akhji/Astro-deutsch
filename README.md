@@ -15,7 +15,7 @@ bun install
 bun run dev
 ```
 
-`bun run build` runs ESLint, Astro and TypeScript checks, then creates the production site in
+`bun run build` runs Biome, Astro and TypeScript checks, then creates the production site in
 `dist/`. Use `bun run preview` to serve that build locally.
 
 ## Deploy to Vercel

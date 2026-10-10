@@ -24,9 +24,9 @@ export const getGradient = (index: number, gradients?: string[] | null): string 
     return "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
   }
   return (
-    gradients[index % gradients.length]
-    ?? gradients[0]
-    ?? "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    gradients[index % gradients.length] ??
+    gradients[0] ??
+    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
   );
 };
 
@@ -36,9 +36,7 @@ export const getGradient = (index: number, gradients?: string[] | null): string 
  * @param text - The string to extract the first letter from.
  * @returns A single capitalized letter.
  */
-export const getFirstLetter = (text: string): string => {
-  return text.charAt(0).toUpperCase();
-};
+export const getFirstLetter = (text: string): string => text.charAt(0).toUpperCase();
 
 /**
  * Groups items of an array by a callback selector using native ES2024 Object.groupBy when

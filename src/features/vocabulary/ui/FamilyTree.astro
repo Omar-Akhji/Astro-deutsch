@@ -42,9 +42,7 @@ const levels = [1, 2, 3, 4].flatMap((level) => {
   return group.length > 0 ? [group] : [];
 });
 
-const isCouple = (group: unknown): group is [FamilyMember, FamilyMember] => {
-  return Array.isArray(group);
-};
+const isCouple = (group: unknown): group is [FamilyMember, FamilyMember] => Array.isArray(group);
 
 const getCardClasses = (member: FamilyMember) => {
   const isSelf = member.relation === "self";

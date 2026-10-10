@@ -53,12 +53,12 @@ export function classifyWord(word: Word): PartOfSpeechCategory {
   }
 
   if (
-    lower.startsWith("der ")
-    || lower.startsWith("die ")
-    || lower.startsWith("das ")
-    || lower.startsWith("der/die ")
-    || lower.startsWith("das/der ")
-    || lower.startsWith("die/der ")
+    lower.startsWith("der ") ||
+    lower.startsWith("die ") ||
+    lower.startsWith("das ") ||
+    lower.startsWith("der/die ") ||
+    lower.startsWith("das/der ") ||
+    lower.startsWith("die/der ")
   ) {
     return "noun";
   }
@@ -73,14 +73,14 @@ export function classifyWord(word: Word): PartOfSpeechCategory {
   }
 
   if (
-    lower.endsWith("ig")
-    || lower.endsWith("lich")
-    || lower.endsWith("isch")
-    || lower.endsWith("bar")
-    || lower.endsWith("haft")
-    || lower.endsWith("los")
-    || lower.endsWith("voll")
-    || lower.endsWith("sam")
+    lower.endsWith("ig") ||
+    lower.endsWith("lich") ||
+    lower.endsWith("isch") ||
+    lower.endsWith("bar") ||
+    lower.endsWith("haft") ||
+    lower.endsWith("los") ||
+    lower.endsWith("voll") ||
+    lower.endsWith("sam")
   ) {
     return "adjective";
   }

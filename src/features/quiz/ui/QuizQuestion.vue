@@ -19,7 +19,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), { variant: "standard" });
 
-const emit = defineEmits<{ (e: "answer", val: string | string[]): void }>();
+const emit = defineEmits<(e: "answer", val: string | string[]) => void>();
 
 const isHeader = computed(() => props.variant === "header");
 const isTableRow = computed(() => props.variant === "table-row" || props.variant === "example-row");
@@ -45,38 +45,33 @@ const contextLabel = computed(() => {
   return "Text:";
 });
 
-const isRichtigFalsch = computed(() => {
-  return (
-    props.question.options?.length === 2
-    && props.question.options[0] === "Richtig"
-    && props.question.options[1] === "Falsch"
-  );
-});
+const isRichtigFalsch = computed(
+  () =>
+    props.question.options?.length === 2 &&
+    props.question.options[0] === "Richtig" &&
+    props.question.options[1] === "Falsch",
+);
 
-const isJaNein = computed(() => {
-  return (
-    props.question.options?.length === 2
-    && props.question.options[0] === "Ja"
-    && props.question.options[1] === "Nein"
-  );
-});
+const isJaNein = computed(
+  () =>
+    props.question.options?.length === 2 &&
+    props.question.options[0] === "Ja" &&
+    props.question.options[1] === "Nein",
+);
 
-const isAbc = computed(() => {
-  return (
-    props.question.options?.length === 3
-    && props.question.options[0] === "a"
-    && props.question.options[1] === "b"
-    && props.question.options[2] === "c"
-  );
-});
+const isAbc = computed(
+  () =>
+    props.question.options?.length === 3 &&
+    props.question.options[0] === "a" &&
+    props.question.options[1] === "b" &&
+    props.question.options[2] === "c",
+);
 
-const isCompactRow = computed(() => {
-  return isRichtigFalsch.value || isJaNein.value || (isTableRow.value && isAbc.value);
-});
+const isCompactRow = computed(
+  () => isRichtigFalsch.value || isJaNein.value || (isTableRow.value && isAbc.value),
+);
 
-const cleanedQuestionText = computed(() => {
-  return props.question.question.replace(/^\d+\.\s*/, "");
-});
+const cleanedQuestionText = computed(() => props.question.question.replace(/^\d+\.\s*/, ""));
 </script>
 
 <template>

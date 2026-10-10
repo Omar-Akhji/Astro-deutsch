@@ -27,8 +27,8 @@ export function speakGerman(text: string, rate = 0.9): boolean {
     const germanVoice =
       voices.find(
         (v) =>
-          v.lang.startsWith("de")
-          && (v.name.includes("Natural") || v.name.includes("Google") || v.localService),
+          v.lang.startsWith("de") &&
+          (v.name.includes("Natural") || v.name.includes("Google") || v.localService),
       ) ?? voices.find((v) => v.lang.startsWith("de"));
 
     if (germanVoice) {

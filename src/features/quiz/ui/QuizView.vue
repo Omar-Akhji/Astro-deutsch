@@ -23,9 +23,7 @@ const SKILL_TITLES = new Map([
   ["sprechen", "Sprechen"],
 ]);
 
-const skillTitle = computed(() => {
-  return SKILL_TITLES.get(props.skill) ?? props.skill;
-});
+const skillTitle = computed(() => SKILL_TITLES.get(props.skill) ?? props.skill);
 
 const {
   currentQuestionIndex,
@@ -41,9 +39,7 @@ const {
 
 const parsedTeils = computed(() => parseTeils(props.initialQuestions, props.skill));
 
-const goBackUrl = computed(() => {
-  return `/pruefung/${props.level}/modelltests`;
-});
+const goBackUrl = computed(() => `/pruefung/${props.level}/modelltests`);
 
 const handleExit = () => {
   if (globalThis.window !== undefined) {

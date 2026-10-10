@@ -1,6 +1,6 @@
+import { getCollection } from "astro:content";
 import type { ApiResponse } from "@/shared/model";
 import type { GrammarSection, GrammarTopic } from "../model/types.ts";
-import { getCollection } from "astro:content";
 
 export async function getGrammarSections(): Promise<ApiResponse<GrammarSection[]>> {
   const entries = await getCollection("grammar");

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, computed, watch, onBeforeUnmount } from "vue";
-import { ChevronDown, Copy, Check, Volume2 } from "lucide-vue-next";
+import { Check, ChevronDown, Copy, Volume2 } from "lucide-vue-next";
+import { computed, onBeforeUnmount, ref, watch } from "vue";
 import { speakGerman } from "@/shared/lib";
 import gsap from "@/shared/lib/gsap.ts";
 import type { PhraseGroup } from "../model/types.ts";
@@ -21,7 +21,9 @@ watch(
   speakingPhrase,
   (phrase) => {
     const button = componentRef.value?.querySelector<HTMLElement>("[data-speaking-phrase]");
-    if (!button) return;
+    if (!button) {
+      return;
+    }
     gsap.killTweensOf(button);
     if (phrase && !globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       gsap.to(button, { scale: 1.12, duration: 0.25, repeat: 3, yoyo: true, ease: "sine.inOut" });
@@ -34,7 +36,9 @@ watch(
 
 onBeforeUnmount(() => {
   const button = componentRef.value?.querySelector<HTMLElement>("[data-speaking-phrase]");
-  if (button) gsap.killTweensOf(button);
+  if (button) {
+    gsap.killTweensOf(button);
+  }
 });
 
 const handleCopyText = async (text: string) => {
@@ -43,25 +47,29 @@ const handleCopyText = async (text: string) => {
       await navigator.clipboard.writeText(text);
       copiedPhrase.value = text;
       setTimeout(() => {
-        if (copiedPhrase.value === text) copiedPhrase.value = null;
+        if (copiedPhrase.value === text) {
+          copiedPhrase.value = null;
+        }
       }, 1500);
     }
-  } catch (error: unknown) {
-    console.warn("Clipboard copy failed", error);
-  }
+  } catch {}
 };
 
 const handlePlayPhrase = (text: string) => {
   speakingPhrase.value = text;
   speakGerman(text, 0.88);
   setTimeout(() => {
-    if (speakingPhrase.value === text) speakingPhrase.value = null;
+    if (speakingPhrase.value === text) {
+      speakingPhrase.value = null;
+    }
   }, 1800);
 };
 
 const processedPhrases = computed(() => {
   const strings = props.group.phrases.filter((p): p is string => typeof p === "string");
-  if (strings.length === 0) return [];
+  if (strings.length === 0) {
+    return [];
+  }
 
   const groups: { title: string | null; items: string[] }[] = [];
   let currentGroup: { title: string | null; items: string[] } = { title: null, items: [] };
@@ -84,146 +92,95 @@ const processedPhrases = computed(() => {
 </script>
 
 <template>
-  <div
-    ref="componentRef"
-    :class="[
-      'group transition-all duration-300',
-      props.isChecklistItem ? 'bg-transparent' : (
-        'overflow-hidden rounded-2xl border-2 border-white/10 bg-surface-raised/70 shadow-sm backdrop-blur-md hover:border-yellow/30 hover:bg-surface-raised/90'
-      ),
-    ]"
-  >
+  <div ref="componentRef" :class="[
+    'group transition-all duration-300',
+    props.isChecklistItem ? 'bg-transparent' : (
+      'overflow-hidden rounded-2xl border-2 border-white/10 bg-surface-raised/70 shadow-sm backdrop-blur-md hover:border-yellow/30 hover:bg-surface-raised/90'
+    ),
+  ]">
     <!-- Header - Always Visible -->
-    <button
-      type="button"
+    <button type="button"
       class="flex w-full cursor-pointer items-center justify-between border-none bg-transparent px-6 py-4 text-left transition-colors select-none hover:bg-white/5 focus:outline-hidden focus-visible:bg-white/10"
-      @click="isOpen = !isOpen"
-      @keydown.enter.prevent="isOpen = !isOpen"
-      @keydown.space.prevent="isOpen = !isOpen"
-    >
+      @click="isOpen = !isOpen" @keydown.enter.prevent="isOpen = !isOpen" @keydown.space.prevent="isOpen = !isOpen">
       <div class="flex items-center gap-4">
-        <span
-          v-if="/\d+/.test(props.group.label)"
-          class="flex size-7 shrink-0 items-center justify-center rounded-xl border-[1.5px] border-yellow/30 bg-yellow/15 text-xs font-black text-yellow backdrop-blur-md"
-        >
+        <span v-if="/\d+/.test(props.group.label)"
+          class="flex size-7 shrink-0 items-center justify-center rounded-xl border-[1.5px] border-yellow/30 bg-yellow/15 text-xs font-black text-yellow backdrop-blur-md">
           {{ props.group.label.match(/\d+/)?.[0] }}
         </span>
-        <h4
-          :class="[
-            'text-sm font-bold transition-colors tablet:text-[15px]',
-            props.isChecklistItem ?
-              'text-zinc-200 group-hover:text-yellow'
+        <h4 :class="[
+          'text-sm font-bold transition-colors tablet:text-[15px]',
+          props.isChecklistItem ?
+            'text-zinc-200 group-hover:text-yellow'
             : 'text-white group-hover:text-yellow',
-          ]"
-        >
+        ]">
           {{ props.group.label.replace(/^.*?\d+\s*[·–:]\s*/, "") }}
         </h4>
-        <span
-          v-if="props.group.badge"
-          class="rounded-full border-[1.5px] border-yellow/30 bg-yellow/15 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-yellow uppercase"
-        >
+        <span v-if="props.group.badge"
+          class="rounded-full border-[1.5px] border-yellow/30 bg-yellow/15 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-yellow uppercase">
           {{ props.group.badge }}
         </span>
       </div>
       <div class="flex items-center gap-4">
         <div :class="['transition-transform duration-300', isOpen ? 'rotate-180' : '']">
-          <ChevronDown
-            :class="[
-              'size-4.5 transition-colors tablet:size-5',
-              isOpen ? 'text-yellow'
+          <ChevronDown :class="[
+            'size-4.5 transition-colors tablet:size-5',
+            isOpen ? 'text-yellow'
               : props.isChecklistItem ? 'text-amber-400/50'
-              : 'text-mist-400',
-            ]"
-          />
+                : 'text-mist-400',
+          ]" />
         </div>
       </div>
     </button>
 
     <!-- Expandable Content -->
-    <div
-      :class="[
-        'overflow-hidden transition-all duration-300 ease-in-out',
-        isOpen ? 'max-h-200 opacity-100' : 'max-h-0 opacity-0',
-      ]"
-    >
-      <div
-        :class="[
-          'p-6',
-          props.isChecklistItem ?
-            'border-t border-white/10 bg-white/2'
+    <div :class="[
+      'overflow-hidden transition-all duration-300 ease-in-out',
+      isOpen ? 'max-h-200 opacity-100' : 'max-h-0 opacity-0',
+    ]">
+      <div :class="[
+        'p-6',
+        props.isChecklistItem ?
+          'border-t border-white/10 bg-white/2'
           : 'border-t border-white/5 bg-black/20',
-        ]"
-      >
-        <div
-          v-if="processedPhrases.length > 0"
-          class="space-y-6"
-        >
-          <div
-            v-for="(phraseGroup, gIndex) in processedPhrases"
-            :key="phraseGroup.title ?? gIndex"
-            class="space-y-3"
-          >
-            <h5
-              v-if="phraseGroup.title"
-              class="px-1 text-[11px] font-bold tracking-widest text-mist-400 uppercase"
-            >
+      ]">
+        <div v-if="processedPhrases.length > 0" class="space-y-6">
+          <div v-for="(phraseGroup, gIndex) in processedPhrases" :key="phraseGroup.title ?? gIndex" class="space-y-3">
+            <h5 v-if="phraseGroup.title" class="px-1 text-[11px] font-bold tracking-widest text-mist-400 uppercase">
               {{ phraseGroup.title }}
             </h5>
-            <div
-              class="rounded-xl border-[1.5px] border-white/5 bg-surface-overlay/40 p-3.5 backdrop-blur-sm"
-            >
+            <div class="rounded-xl border-[1.5px] border-white/5 bg-surface-overlay/40 p-3.5 backdrop-blur-sm">
               <div class="space-y-2.5">
-                <div
-                  v-for="item in phraseGroup.items"
-                  :key="item"
-                  class="group/item flex items-center justify-between gap-3 rounded-lg p-2 transition-colors hover:bg-white/5"
-                >
+                <div v-for="item in phraseGroup.items" :key="item"
+                  class="group/item flex items-center justify-between gap-3 rounded-lg p-2 transition-colors hover:bg-white/5">
                   <div class="flex min-w-0 flex-1 items-start gap-3">
                     <div class="mt-2 size-1.5 shrink-0 rounded-full bg-yellow/60" />
-                    <p
-                      class="text-sm leading-relaxed whitespace-pre-line text-white/90 tablet:text-[15px]"
-                    >
+                    <p class="text-sm leading-relaxed whitespace-pre-line text-white/90 tablet:text-[15px]">
                       {{ item }}
                     </p>
                   </div>
 
                   <!-- Action Buttons: Audio & Copy -->
                   <div
-                    class="flex shrink-0 items-center gap-1 opacity-80 transition-opacity group-hover/item:opacity-100"
-                  >
+                    class="flex shrink-0 items-center gap-1 opacity-80 transition-opacity group-hover/item:opacity-100">
                     <!-- Listen Button -->
-                    <button
-                      type="button"
+                    <button type="button"
                       class="flex size-7 items-center justify-center rounded-md border-[1.5px] border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
                       :class="{ 'border-yellow bg-yellow/20 text-yellow': speakingPhrase === item }"
-                      :data-speaking-phrase="speakingPhrase === item ? 'true' : undefined"
-                      title="Aussprechen"
-                      aria-label="Aussprache anhören"
-                      @click="handlePlayPhrase(item)"
-                    >
+                      :data-speaking-phrase="speakingPhrase === item ? 'true' : undefined" title="Aussprechen"
+                      aria-label="Aussprache anhören" @click="handlePlayPhrase(item)">
                       <Volume2 class="size-3.5" />
                     </button>
 
                     <!-- Copy Button -->
-                    <button
-                      type="button"
+                    <button type="button"
                       class="flex size-7 items-center justify-center rounded-md border-[1.5px] border-white/10 bg-white/5 text-mist-400 transition-all hover:border-yellow/40 hover:bg-yellow/10 hover:text-yellow"
                       :class="{
                         'border-emerald-500/50 bg-emerald-500/20 text-emerald-400':
                           copiedPhrase === item,
-                      }"
-                      title="In die Zwischenablage kopieren"
-                      aria-label="Ausdruck kopieren"
-                      @click="handleCopyText(item)"
-                    >
-                      <Check
-                        v-if="copiedPhrase === item"
-                        class="size-3.5 text-emerald-400"
-                      />
-                      <Copy
-                        v-else
-                        class="size-3.5"
-                      />
+                      }" title="In die Zwischenablage kopieren" aria-label="Ausdruck kopieren"
+                      @click="handleCopyText(item)">
+                      <Check v-if="copiedPhrase === item" class="size-3.5 text-emerald-400" />
+                      <Copy v-else class="size-3.5" />
                     </button>
                   </div>
                 </div>

@@ -13,9 +13,7 @@ const props = defineProps<Props>();
 
 const emit = defineEmits<{ (e: "restart"): void; (e: "exit"): void }>();
 
-const percentage = computed(() => {
-  return Math.round((props.score / props.total) * 100);
-});
+const percentage = computed(() => Math.round((props.score / props.total) * 100));
 
 const circleRef = ref<SVGCircleElement | null>(null);
 const displayedPercent = ref(0);

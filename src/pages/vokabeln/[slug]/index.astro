@@ -25,23 +25,20 @@ const vocabularyResponse = await getVocabularyById(slug);
 const item = preloadedItem ?? vocabularyResponse.data;
 
 const totalTopics =
-  item?.sections?.reduce((accumulator, sec) => accumulator + sec.topics.length, 0)
-  ?? item?.words?.length
-  ?? 0;
+  item?.sections?.reduce((accumulator, sec) => accumulator + sec.topics.length, 0) ??
+  item?.words?.length ??
+  0;
 
-const pageTitle =
-  item ?
-    `${item.german} Vokabeln & Wortschatz (${item.category}) | Elite Regewelt`
+const pageTitle = item
+  ? `${item.german} Vokabeln & Wortschatz (${item.category}) | Elite Regewelt`
   : "Vokabel Lektion | Elite Regewelt";
 
-const pageDescription =
-  item ?
-    `Lerne deutsche Vokabeln zum Thema ${item.german} (${item.category}). Wortschatz mit arabischer Übersetzung, Beispielsätzen und praktischen Übungen.`
+const pageDescription = item
+  ? `Lerne deutsche Vokabeln zum Thema ${item.german} (${item.category}). Wortschatz mit arabischer Übersetzung, Beispielsätzen und praktischen Übungen.`
   : "Lerne wichtige deutsche Vokabeln systematisch.";
 
-const extraSchema =
-  item ?
-    {
+const extraSchema = item
+  ? {
       "@type": "CollectionPage",
       name: `${item.german} Vokabeln & Wortschatz (${item.category})`,
       description: pageDescription,

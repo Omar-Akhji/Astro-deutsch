@@ -5,7 +5,7 @@ interface Props {
 }
 
 const props = defineProps<Props>();
-const emit = defineEmits<{ (e: "click"): void }>();
+const emit = defineEmits<(e: "click") => void>();
 </script>
 
 <template>

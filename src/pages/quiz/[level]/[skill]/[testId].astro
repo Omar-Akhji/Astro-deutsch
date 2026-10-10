@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 const { level, skill, testId } = Astro.params;
 const { questions } = Astro.props;
 
-if (!level || !skill || !testId) {
+if (!(level && skill && testId)) {
   throw new Error("Fehlende Quiz-Parameter.");
 }
 const skillLabels: Record<string, string> = {

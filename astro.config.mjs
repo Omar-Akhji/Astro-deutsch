@@ -26,11 +26,11 @@ export default defineConfig({
     vue(),
     sitemap({
       filter: (page) =>
-        !page.includes("/404") && !page.endsWith("/login/") && !page.endsWith("/register/"),
+        !(page.includes("/404") || page.endsWith("/login/") || page.endsWith("/register/")),
       changefreq: ChangeFreqEnum.WEEKLY,
       priority: 0.8,
       serialize(item) {
-        const CORE_HUBS = [
+        const CoreHubs = [
           "https://elite-regewelt.com/vokabeln/",
           "https://elite-regewelt.com/grammatik/",
           "https://elite-regewelt.com/pruefung/",
@@ -40,7 +40,7 @@ export default defineConfig({
         if (item.url === "https://elite-regewelt.com/") {
           item.priority = 1;
           item.changefreq = ChangeFreqEnum.DAILY;
-        } else if (CORE_HUBS.includes(item.url)) {
+        } else if (CoreHubs.includes(item.url)) {
           item.priority = 0.9;
           item.changefreq = ChangeFreqEnum.WEEKLY;
         } else if (item.url.includes("/quiz/")) {

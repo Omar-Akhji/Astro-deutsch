@@ -23,9 +23,7 @@ export function useQuiz(questions: Question[]): UseQuizReturn {
   );
   const currentQuestionIndex = ref(0);
 
-  const currentQuestion = computed(() => {
-    return questions[currentQuestionIndex.value] ?? questions[0];
-  });
+  const currentQuestion = computed(() => questions[currentQuestionIndex.value] ?? questions[0]);
 
   const progress = computed(() => {
     if (isFinished.value) return 100;
@@ -44,9 +42,9 @@ export function useQuiz(questions: Question[]): UseQuizReturn {
       let isCorrect = false;
 
       isCorrect =
-        Array.isArray(answer) && Array.isArray(correct) ?
-          JSON.stringify(answer) === JSON.stringify(correct)
-        : answer === correct;
+        Array.isArray(answer) && Array.isArray(correct)
+          ? JSON.stringify(answer) === JSON.stringify(correct)
+          : answer === correct;
 
       if (isCorrect) {
         currentScore++;

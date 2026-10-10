@@ -72,9 +72,9 @@ const isCategoryKey = (key: string): key is CategoryKey => Object.hasOwn(categor
 const filteredGroups = computed<FilteredThemaGroup[]>(() => {
   const groups: FilteredThemaGroup[] = [];
   const entries: CategoryKey[] =
-    activeCategory.value && isCategoryKey(activeCategory.value) ?
-      [activeCategory.value]
-    : Object.keys(categoryConfig).filter(isCategoryKey);
+    activeCategory.value && isCategoryKey(activeCategory.value)
+      ? [activeCategory.value]
+      : Object.keys(categoryConfig).filter(isCategoryKey);
 
   for (const categoryId of entries) {
     const config = Object.entries(categoryConfig).find(([key]) => key === categoryId)?.[1];

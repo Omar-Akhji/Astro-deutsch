@@ -3,7 +3,7 @@ import { gsap } from "@/shared/lib";
 export function setupDesktopNav(): void {
   const nav = document.querySelector<HTMLElement>("#desktop-nav");
   const indicator = document.querySelector<HTMLElement>("#desktop-nav-indicator");
-  if (!nav || !indicator || nav.offsetParent === null) return;
+  if (!(nav && indicator) || nav.offsetParent === null) return;
 
   const activeLink = nav.querySelector<HTMLElement>('a[aria-current="page"]');
   if (activeLink && activeLink.offsetWidth > 0) {

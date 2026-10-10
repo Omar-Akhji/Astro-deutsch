@@ -29,7 +29,7 @@ const updateIndicator = (immediate = false) => {
   nextTick(() => {
     const tabs = tabsRef.value;
     const indicator = indicatorRef.value;
-    if (!tabs || !indicator) return;
+    if (!(tabs && indicator)) return;
 
     const activeButton = tabs.querySelector('button[data-active="true"]');
     if (!(activeButton instanceof HTMLElement)) return;

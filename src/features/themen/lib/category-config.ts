@@ -3,7 +3,14 @@
  * Tailwind CSS classes are kept intact for Tailwind v4 compiler scanning.
  */
 export type ThemaCategory =
-  "essen" | "tech" | "gesellschaft" | "bildung" | "gesundheit" | "freizeit" | "umwelt" | "arbeit";
+  | "essen"
+  | "tech"
+  | "gesellschaft"
+  | "bildung"
+  | "gesundheit"
+  | "freizeit"
+  | "umwelt"
+  | "arbeit";
 
 export interface CategoryThemeStyle {
   color: string;

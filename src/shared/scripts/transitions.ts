@@ -62,7 +62,7 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
   const toPath = e.to.pathname;
   const container = document.querySelector("#skeleton-container");
   const content = document.querySelector("#page-content");
-  if (!container || !content) return;
+  if (!(container && content)) return;
 
   // Normalize path to match data-skeleton attributes (remove trailing slash except root)
   const targetPath = toPath === "/" ? "/" : toPath.replace(/\/$/, "");
@@ -106,7 +106,7 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
 document.addEventListener("astro:after-swap", () => {
   const container = document.querySelector("#skeleton-container");
   const content = document.querySelector("#page-content");
-  if (!container || !content) return;
+  if (!(container && content)) return;
 
   container.classList.add("hidden");
   container.setAttribute("aria-hidden", "true");

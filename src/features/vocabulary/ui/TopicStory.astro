@@ -102,29 +102,30 @@ const glossary = [
     german: word.german,
     arabic: word.arabic,
     translation: word.english ?? "",
-    explanation:
-      word.english ? `Wortschatz-Bedeutung: ${word.english}.` : "Wichtiger Begriff zum Thema.",
+    explanation: word.english
+      ? `Wortschatz-Bedeutung: ${word.english}.`
+      : "Wichtiger Begriff zum Thema.",
     example: word.example ?? "",
   })),
 ];
 
 const preparedLevels = levels.map((lvl) => {
   const lvlStory =
-    Object.entries(storiesRecord).find(([key]) => key === lvl)?.[1]
-    ?? topic.story
-    ?? getTopicStory(topic.id, topic, categoryTitle, lvl);
+    Object.entries(storiesRecord).find(([key]) => key === lvl)?.[1] ??
+    topic.story ??
+    getTopicStory(topic.id, topic, categoryTitle, lvl);
   const sentences: string[] = [];
   let runningSentenceIndex = 0;
 
-  const preparedParagraphs = lvlStory.paragraphs.map((paragraph) => {
-    return paragraph.map((sentence) => {
+  const preparedParagraphs = lvlStory.paragraphs.map((paragraph) =>
+    paragraph.map((sentence) => {
       const plain = cleanTextForSpeech(sentence);
       sentences.push(plain);
       const sIndex = runningSentenceIndex;
       runningSentenceIndex += 1;
       return { index: sIndex, tokens: parseSentenceTokens(sentence) };
-    });
-  });
+    }),
+  );
 
   return {
     level: lvl,

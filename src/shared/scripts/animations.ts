@@ -47,27 +47,27 @@ function initializeGsapUtilityAnimations(root: ParentNode) {
       gsap.fromTo(
         element,
         reverse ? { autoAlpha: 0.6, scale: 1.1 } : { autoAlpha: 0.5 },
-        reverse ?
-          {
-            autoAlpha: 0.4,
-            scale: 0.9,
-            x: -20,
-            y: 30,
-            duration: 5,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut",
-          }
-        : {
-            autoAlpha: 0.8,
-            scale: 1.15,
-            x: 30,
-            y: -20,
-            duration: 4,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut",
-          },
+        reverse
+          ? {
+              autoAlpha: 0.4,
+              scale: 0.9,
+              x: -20,
+              y: 30,
+              duration: 5,
+              repeat: -1,
+              yoyo: true,
+              ease: "sine.inOut",
+            }
+          : {
+              autoAlpha: 0.8,
+              scale: 1.15,
+              x: 30,
+              y: -20,
+              duration: 4,
+              repeat: -1,
+              yoyo: true,
+              ease: "sine.inOut",
+            },
       );
     } else if (element.matches("[data-gsap-shimmer]")) {
       gsap.fromTo(

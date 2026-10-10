@@ -1,4 +1,5 @@
 ﻿import { defineConfig, devices } from "@playwright/test";
+import process from "node:process";
 
 const isCI = Boolean(process.env["CI"]);
 

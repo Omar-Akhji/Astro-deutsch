@@ -49,8 +49,9 @@ export const GRAMMAR_THEME_PALETTES: GrammarThemePalette[] = [
 ];
 
 export function getGrammarTheme(index: number): GrammarThemePalette {
-  const safeIndex =
-    Number.isSafeInteger(index) ? Math.abs(index) % GRAMMAR_THEME_PALETTES.length : NaN;
+  const safeIndex = Number.isSafeInteger(index)
+    ? Math.abs(index) % GRAMMAR_THEME_PALETTES.length
+    : Number.NaN;
   const palette = Number.isFinite(safeIndex) ? GRAMMAR_THEME_PALETTES.at(safeIndex) : undefined;
   return (
     palette ?? {

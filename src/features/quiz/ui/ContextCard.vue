@@ -11,7 +11,7 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const emit = defineEmits<{ (e: "selectAd", ad: { letter: string; content: string }): void }>();
+const emit = defineEmits<(e: "selectAd", ad: { letter: string; content: string }) => void>();
 
 const ads = computed(() => {
   if (props.skill === "lesen" && props.question.teil === 3) {

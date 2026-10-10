@@ -1,0 +1,133 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "src/**",
+      "e2e/**",
+      "*.ts",
+      "*.js",
+      "*.mjs",
+      "*.json",
+      "!**/dist",
+      "!**/.astro",
+      "!**/node_modules",
+      "!**/src/data",
+      "!**/.gemini",
+      "!**/.agents",
+      "!**/skills-catalog",
+      "!**/bun.lock"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "attributePosition": "multiline"
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "double"
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "astro": "all",
+      "vue": "all",
+      "playwright": "all",
+      "tailwind": "all",
+      "test": "all",
+      "types": "all",
+      "qwik": "none",
+      "react": "none",
+      "reactNative": "none",
+      "solid": "none",
+      "svelte": "none",
+      "next": "none"
+    },
+    "rules": {
+      "preset": "all",
+      "correctness": {
+        "noUnresolvedImports": "off",
+        "useQwikValidLexicalScope": "off",
+        "useImportExtensions": "off",
+        "noNodejsModules": "off"
+      },
+      "complexity": {
+        "useLiteralKeys": "off",
+        "noExcessiveCognitiveComplexity": "off",
+        "noExcessiveLinesPerFunction": "off"
+      },
+      "performance": {
+        "noBarrelFile": "off",
+        "noReExportAll": "off",
+        "useTopLevelRegex": "off"
+      },
+      "style": {
+        "noDefaultExport": "off",
+        "useFilenamingConvention": "off",
+        "noMagicNumbers": "off",
+        "noTernary": "off",
+        "noIncrementDecrement": "off",
+        "noContinue": "off",
+        "useNamingConvention": "off",
+        "useExportsLast": "off",
+        "useBlockStatements": "off",
+        "useGlobalThis": "off",
+        "noProcessEnv": "off"
+      },
+      "suspicious": {
+        "noAlert": "off",
+        "noConsole": "off"
+      },
+      "security": {
+        "noSecrets": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.astro", "**/*.vue"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ],
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

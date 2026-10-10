@@ -58,8 +58,9 @@ export function parseTeils(questions: Question[], skill: string): ParsedTeil[] {
     const firstQuestion = allInTeil[0];
     if (!firstQuestion) continue;
     const isGrouped = isGroupedTeil(skill, teilNumber);
-    const activeContext =
-      isGrouped ? findActiveContext(questions, firstQuestion, teilNumber) : undefined;
+    const activeContext = isGrouped
+      ? findActiveContext(questions, firstQuestion, teilNumber)
+      : undefined;
     const exampleQuestion = allInTeil.find((q) => q.id === 0);
     const group = allInTeil.filter((q) => q.id !== 0);
 
