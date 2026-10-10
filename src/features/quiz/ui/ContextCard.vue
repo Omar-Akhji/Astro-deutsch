@@ -48,7 +48,7 @@ const ads = computed(() => {
         >
           {{ ad.letter }}
         </div>
-        <p class="font-serif text-xs leading-relaxed text-white/80 tablet:text-sm">
+        <p class="font-courier font-bold text-xs leading-relaxed text-white/90 tablet:text-sm">
           {{ ad.content }}
         </p>
         <div
@@ -73,7 +73,7 @@ const ads = computed(() => {
         <div class="h-px flex-1 bg-white/5" />
       </div>
       <p
-        class="mb-4 font-serif text-xs leading-relaxed whitespace-pre-line text-white/80 tablet:text-sm"
+        class="mb-4 font-courier font-bold text-xs leading-relaxed whitespace-pre-line text-white/90 tablet:text-sm"
       >
         {{ props.context }}
       </p>

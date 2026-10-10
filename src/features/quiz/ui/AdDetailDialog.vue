@@ -68,7 +68,7 @@ const handleCancel = (e: Event) => {
         </div>
       </div>
 
-      <p class="font-serif text-base leading-relaxed font-light text-white/90 tablet:text-lg">
+      <p class="font-courier font-bold text-base leading-relaxed text-white/95 tablet:text-lg">
         {{ props.selectedAd.content }}
       </p>
 
