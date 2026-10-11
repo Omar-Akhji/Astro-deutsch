@@ -7,9 +7,11 @@ const cache = new Map<string, Buffer>();
 const MAX_CACHE_ITEMS = 500;
 const GOOGLE_TTS_MAX_CHUNK = 180;
 const EDGE_TIMEOUT_MS = 2500;
+const EDGE_CIRCUIT_BREAKER_MS = 15 * 60 * 1000; // 15 minutes cooldown when Edge TTS fails
+let edgeTtsFailingUntil = 0;
 
-async function fetchGoogleTTSChunk(chunk: string, lang = "de"): Promise<Buffer> {
-  const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&client=tw-ob&q=${encodeURIComponent(chunk)}`;
+async function fetchGoogleTTSChunk(chunk: string): Promise<Buffer> {
+  const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=de&client=tw-ob&q=${encodeURIComponent(chunk)}`;
   const res = await fetch(url, {
     headers: {
       "User-Agent":
@@ -23,9 +25,9 @@ async function fetchGoogleTTSChunk(chunk: string, lang = "de"): Promise<Buffer> 
   return Buffer.from(await res.arrayBuffer());
 }
 
-async function fetchGoogleTTS(text: string, lang = "de"): Promise<Buffer> {
+async function fetchGoogleTTS(text: string): Promise<Buffer> {
   if (text.length <= GOOGLE_TTS_MAX_CHUNK) {
-    return fetchGoogleTTSChunk(text, lang);
+    return fetchGoogleTTSChunk(text);
   }
 
   const words = text.split(" ");
@@ -41,7 +43,7 @@ async function fetchGoogleTTS(text: string, lang = "de"): Promise<Buffer> {
   }
   if (current) chunks.push(current.trim());
 
-  const buffers = await Promise.all(chunks.map((chunk) => fetchGoogleTTSChunk(chunk, lang)));
+  const buffers = await Promise.all(chunks.map((chunk) => fetchGoogleTTSChunk(chunk)));
   return Buffer.concat(buffers);
 }
 
@@ -120,16 +122,33 @@ export const GET: APIRoute = async ({ request }) => {
   let audioBuffer: Buffer;
   let engine = "msedge";
 
-  try {
-    audioBuffer = await generateEdgeTTS(text, voice, rateOption);
-  } catch (edgeError: unknown) {
-    const msg = edgeError instanceof Error ? edgeError.message : String(edgeError);
-    console.warn(`[TTS] Edge TTS unavailable (${msg}), using resilient Google TTS fallback.`);
+  const isEdgeAvailable = Date.now() >= edgeTtsFailingUntil;
+
+  if (isEdgeAvailable) {
     try {
-      audioBuffer = await fetchGoogleTTS(text, "de");
+      audioBuffer = await generateEdgeTTS(text, voice, rateOption);
+      edgeTtsFailingUntil = 0;
+    } catch {
+      edgeTtsFailingUntil = Date.now() + EDGE_CIRCUIT_BREAKER_MS;
+      console.warn(
+        `[TTS] Edge TTS endpoint unavailable. Circuit breaker active: routing to Google TTS fallback for the next 15 minutes.`,
+      );
+      try {
+        audioBuffer = await fetchGoogleTTS(text);
+        engine = "google";
+      } catch (fallbackError: unknown) {
+        console.error("[TTS] Fallback engine also failed:", fallbackError);
+        const details =
+          fallbackError instanceof Error ? fallbackError.message : String(fallbackError);
+        return Response.json({ error: "Failed to generate speech", details }, { status: 500 });
+      }
+    }
+  } else {
+    try {
+      audioBuffer = await fetchGoogleTTS(text);
       engine = "google";
     } catch (fallbackError: unknown) {
-      console.error("[TTS] Fallback engine also failed:", fallbackError);
+      console.error("[TTS] Fallback engine failed:", fallbackError);
       const details =
         fallbackError instanceof Error ? fallbackError.message : String(fallbackError);
       return Response.json({ error: "Failed to generate speech", details }, { status: 500 });
