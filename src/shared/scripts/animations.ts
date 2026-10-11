@@ -188,6 +188,12 @@ function initPageAnimations(): void {
             ease: "power3.out",
             force3D: true,
             overwrite: "auto",
+            onStart: () => {
+              gsap.set(batch, { willChange: "transform, opacity" });
+            },
+            onComplete: () => {
+              gsap.set(batch, { clearProps: "willChange" });
+            },
           });
         },
       });
@@ -209,6 +215,12 @@ function initPageAnimations(): void {
             duration: SCROLL_REVEAL_DURATION,
             ease: "power3.out",
             overwrite: "auto",
+            onStart: () => {
+              gsap.set(batch, { willChange: "opacity" });
+            },
+            onComplete: () => {
+              gsap.set(batch, { clearProps: "willChange" });
+            },
           });
         },
       });
@@ -230,6 +242,12 @@ function initPageAnimations(): void {
             ease: "power3.out",
             force3D: true,
             overwrite: "auto",
+            onStart: () => {
+              gsap.set(batch, { willChange: "transform, opacity" });
+            },
+            onComplete: () => {
+              gsap.set(batch, { clearProps: "willChange" });
+            },
           });
         },
       });
@@ -250,6 +268,12 @@ function initPageAnimations(): void {
             ease: "power3.out",
             force3D: true,
             overwrite: "auto",
+            onStart: () => {
+              gsap.set(batch, { willChange: "transform, opacity" });
+            },
+            onComplete: () => {
+              gsap.set(batch, { clearProps: "willChange" });
+            },
           });
         },
       });
