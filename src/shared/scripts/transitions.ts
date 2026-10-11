@@ -11,7 +11,7 @@ function isPreparationEvent(event: Event): event is TransitionBeforePreparationE
  * Resolves an arbitrary navigation pathname to the matching skeleton key. Pure function separated
  * from DOM manipulation for testability and clarity.
  */
-export function resolveSkeletonRoute(pathname: string): string {
+function resolveSkeletonRoute(pathname: string): string {
   const target = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
   const lower = target.toLowerCase();
 

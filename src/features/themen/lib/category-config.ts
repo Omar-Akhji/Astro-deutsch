@@ -5,7 +5,7 @@
 type ThemaCategory =
   "essen" | "tech" | "gesellschaft" | "bildung" | "gesundheit" | "freizeit" | "umwelt" | "arbeit";
 
-export interface CategoryThemeStyle {
+interface CategoryThemeStyle {
   color: string;
   text: string;
   bg: string;

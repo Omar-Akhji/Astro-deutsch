@@ -92,7 +92,7 @@ function classifyWord(word: Word): PartOfSpeechCategory {
   return "adjective";
 }
 
-export interface ClassifiedWords {
+interface ClassifiedWords {
   nouns: EnrichedWord[];
   verbs: EnrichedWord[];
   adjectives: EnrichedWord[];

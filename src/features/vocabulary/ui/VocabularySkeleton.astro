@@ -7,7 +7,7 @@ import TopicStorySkeleton from "./TopicStorySkeleton.astro";
 import VocabularyTableSkeleton from "./VocabularyTableSkeleton.astro";
 
 interface Props {
-  variant?: "overview" | "level" | "detail" | "family-tree";
+  variant?: "overview" | "level" | "detail";
 }
 
 const { variant = "overview" } = Astro.props;
@@ -62,7 +62,7 @@ const { variant = "overview" } = Astro.props;
   </div>
 )}
 
-{(variant === "detail" || variant === "family-tree") && (
+{variant === "detail" && (
   <div class="relative min-h-dvh py-8">
     <div class="space-y-8">
       <!-- Compact Hero Header -->

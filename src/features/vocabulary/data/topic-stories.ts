@@ -11,7 +11,7 @@ const parsedTopicStories = topicStoriesCatalogSchema.parse(topicStoriesJson);
 /** All curated story contents loaded directly from topic-stories.json. */
 const TOPIC_STORIES = new Map<string, TopicStoriesRecord>(Object.entries(parsedTopicStories));
 
-export interface StoryToken {
+interface StoryToken {
   type: "text" | "word";
   content?: string;
   baseWord?: string;

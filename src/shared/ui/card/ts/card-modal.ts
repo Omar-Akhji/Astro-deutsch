@@ -4,7 +4,7 @@
  * cleanup.
  */
 
-export function setupCardModalListeners(): void {
+function setupCardModalListeners(): void {
   const win = globalThis as unknown as { __cardModalListenerAttached?: boolean };
   if (typeof window === "undefined" || win.__cardModalListenerAttached) {
     return;

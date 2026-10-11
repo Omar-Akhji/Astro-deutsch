@@ -6,8 +6,8 @@ export {
   CardSkeleton,
   CardWithModal,
   GlassCard,
-  setupCardModalListeners,
 } from "./card";
+
 export { BackButton } from "./button";
 export { PageHeader, PageHeaderSkeleton } from "./page-header";
 export { Skeleton, SkeletonLayouts } from "./skeleton";

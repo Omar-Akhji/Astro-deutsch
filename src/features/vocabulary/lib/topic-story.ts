@@ -24,7 +24,7 @@ function isGlossaryEntry(item: unknown): item is GlossaryEntry {
   );
 }
 
-export function initTopicStoryTooltips(): void {
+function initTopicStoryTooltips(): void {
   const stories = document.querySelectorAll<HTMLElement>(".topic-story");
   for (const story of stories) {
     if (story.dataset["tooltipBound"]) continue;

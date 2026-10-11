@@ -24,7 +24,6 @@ interface Props {
     | "vocabulary-overview"
     | "vocabulary-level"
     | "vocabulary-detail"
-    | "family-tree"
     | "pruefung-overview"
     | "pruefung-level"
     | "pruefung-modelltests"
@@ -115,11 +114,10 @@ const COL_IDS = ["c1", "c2", "c3", "c4", "c5", "c6"];
 {layout === "grammar-overview" && <GrammarSkeleton variant="overview" />}
 {layout === "grammar-detail" && <GrammarSkeleton variant="detail" />}
 
-<!-- 10-13. Vocabulary Feature Skeletons -->
+<!-- 10-12. Vocabulary Feature Skeletons -->
 {layout === "vocabulary-overview" && <VocabularySkeleton variant="overview" />}
 {layout === "vocabulary-level" && <VocabularySkeleton variant="level" />}
 {layout === "vocabulary-detail" && <VocabularySkeleton variant="detail" />}
-{layout === "family-tree" && <VocabularySkeleton variant="family-tree" />}
 
 <!-- 14-17. Prüfung Feature Skeletons -->
 {layout === "pruefung-overview" && <PruefungSkeleton variant="overview" />}

@@ -1,4 +1,4 @@
-export interface ParsedGrammarItem {
+interface ParsedGrammarItem {
   badge?: string | undefined;
   explanation?: string | undefined;
   examples: string[];

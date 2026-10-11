@@ -1,7 +1,7 @@
 import { ref, computed, type ComputedRef, type Ref } from "vue";
 import type { Question } from "../model/types.ts";
 
-export interface UseQuizReturn {
+interface UseQuizReturn {
   currentQuestionIndex: Ref<number>;
   score: ComputedRef<number>;
   isFinished: Ref<boolean>;
