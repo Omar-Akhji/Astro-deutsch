@@ -12,7 +12,6 @@ export default {
       {
         ignoreAtRules: [
           "tailwind",
-          "apply",
           "layer",
           "config",
           "theme",
@@ -25,6 +24,8 @@ export default {
         ],
       },
     ],
+    // Strictly disallow @apply in favor of normal CSS and inline utilities
+    "at-rule-disallowed-list": ["apply"],
     // Tailwind @apply allows arbitrary utility class lists in preludes
     "at-rule-prelude-no-invalid": null,
     // Tailwind v4 @utility block nesting support
