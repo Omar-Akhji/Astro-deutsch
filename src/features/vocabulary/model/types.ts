@@ -18,4 +18,3 @@ export type TopicStoriesRecord = z.infer<typeof storiesRecordSchema>;
 export type Topic = z.infer<typeof vocabularyTopicSchema>;
 export type VocabularySection = z.infer<typeof vocabularySectionSchema>;
 export type VocabularyItem = z.infer<typeof vocabularyCollectionSchema>;
-

@@ -12,4 +12,3 @@ export type GrammarSectionContent = z.infer<typeof grammarSectionContentSchema>;
 export type GrammarTableData = z.infer<typeof grammarTableDataSchema>;
 export type GrammarTopic = z.infer<typeof grammarTopicSchema>;
 export type GrammarSection = z.infer<typeof grammarCollectionSchema>;
-

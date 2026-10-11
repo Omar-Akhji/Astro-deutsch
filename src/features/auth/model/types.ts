@@ -10,5 +10,4 @@ export interface SignUpFormData {
   confirmPassword: string;
 }
 
-
 export type AuthView = "signin" | "signup";

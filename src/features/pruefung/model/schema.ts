@@ -10,7 +10,6 @@ const examPartSubSchema = z.object({
 });
 
 const examPartSchema = z.object({
-
   id: z.string(),
   title: z.string(),
   duration: z.string(),

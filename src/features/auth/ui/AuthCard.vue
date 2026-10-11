@@ -19,7 +19,6 @@ const handleToggleView = (target: AuthView) => {
   view.value = target;
 };
 
-
 watch(view, (newView) => {
   if (typeof history !== "undefined") {
     history.replaceState(null, "", newView === "signin" ? "/login" : "/register");

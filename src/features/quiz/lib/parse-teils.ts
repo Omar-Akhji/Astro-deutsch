@@ -5,7 +5,6 @@ interface TeilQuestionItem {
   questionIndex: number;
 }
 
-
 export interface ParsedTeil {
   teilNumber: number | undefined;
   isGrouped: boolean;
