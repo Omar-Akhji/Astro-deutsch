@@ -94,7 +94,7 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
             class:list={[
               "relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 laptop:px-5",
               {
-                "font-semibold text-black": link.isActive,
+                "text-black": link.isActive,
                 "text-mist-400 hover:bg-white/5 hover:text-white": !link.isActive,
               },
             ]}
@@ -189,7 +189,7 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
             "mt-1 text-[10px] leading-none tracking-tight transition-colors duration-200",
             {
               "font-bold text-white": link.isActive,
-              "font-medium text-mist-500 group-hover:text-mist-300": !link.isActive,
+              "font-semibold text-mist-500 group-hover:text-mist-300": !link.isActive,
             },
           ]}
         >

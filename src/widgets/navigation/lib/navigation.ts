@@ -61,13 +61,14 @@ function moveMobileIndicator(link: HTMLElement | null): void {
 function setDesktopActiveStyles(nav: HTMLElement, activeLink: HTMLElement | null): void {
   const links = nav.querySelectorAll<HTMLAnchorElement>("a");
   for (const link of links) {
+    link.classList.add("font-semibold");
     if (link === activeLink) {
       link.setAttribute("aria-current", "page");
-      link.classList.remove("text-mist-400");
-      link.classList.add("text-black", "font-semibold");
+      link.classList.remove("text-mist-400", "hover:bg-white/5");
+      link.classList.add("text-black");
     } else {
       link.removeAttribute("aria-current");
-      link.classList.remove("text-black", "font-semibold");
+      link.classList.remove("text-black");
       link.classList.add("text-mist-400");
     }
   }
@@ -85,15 +86,19 @@ function setMobileActiveStyles(dock: HTMLElement, activeLink: HTMLElement | null
       link.classList.remove("text-mist-500");
       icon?.classList.add("scale-110", "text-yellow");
       icon?.classList.remove("text-mist-500");
-      label?.classList.add("font-bold", "text-white");
-      label?.classList.remove("font-medium", "text-mist-500");
+      if (label) {
+        label.classList.remove("font-semibold", "text-mist-500");
+        label.classList.add("font-bold", "text-white");
+      }
     } else {
       link.removeAttribute("aria-current");
       link.classList.remove("bg-white/10", "text-yellow", "shadow-inner", "shadow-white/5");
       link.classList.add("text-mist-500");
       icon?.classList.remove("scale-110", "text-yellow");
-      label?.classList.remove("font-bold", "text-white");
-      label?.classList.add("font-medium", "text-mist-500");
+      if (label) {
+        label.classList.remove("font-bold", "text-white");
+        label.classList.add("font-semibold", "text-mist-500");
+      }
     }
   }
 }
