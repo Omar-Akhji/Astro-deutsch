@@ -1,6 +1,6 @@
-export type HeroVariant = "default" | "glass" | "compact";
+type HeroVariant = "default" | "glass" | "compact";
 
-export interface HeroStatItem<TComponent = unknown> {
+interface HeroStatItem<TComponent = unknown> {
   label: string;
   value: string;
   icon?: TComponent | undefined;

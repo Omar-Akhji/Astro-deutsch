@@ -1,7 +1,7 @@
 import type { TransitionBeforePreparationEvent } from "astro:transitions/client";
-import { wait } from "@/shared/lib";
 
 const SKELETON_DEV_DELAY_MS = 600;
+const delay = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms));
 
 function isPreparationEvent(event: Event): event is TransitionBeforePreparationEvent {
   return "to" in event && event.to instanceof URL;
@@ -35,7 +35,6 @@ export function resolveSkeletonRoute(pathname: string): string {
   if (lower.startsWith("/vokabeln")) {
     const parts = lower.split("/").filter(Boolean);
     if (parts.length === 1) return "/vokabeln";
-    if (parts.length >= 3 && parts[2] === "stammbaum") return "/vokabeln/family-tree";
     if (parts.length >= 3) return "/vokabeln/detail";
     if (parts.length === 2) return "/vokabeln/level";
   }
@@ -55,7 +54,7 @@ document.addEventListener("astro:before-preparation", (e: Event) => {
   if (import.meta.env.DEV) {
     const originalLoader = e.loader;
     e.loader = async (): Promise<void> => {
-      await Promise.all([originalLoader(), wait(SKELETON_DEV_DELAY_MS)]);
+      await Promise.all([originalLoader(), delay(SKELETON_DEV_DELAY_MS)]);
     };
   }
 

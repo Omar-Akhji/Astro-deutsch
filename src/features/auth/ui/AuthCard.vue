@@ -1,22 +1,24 @@
 <script setup lang="ts">
 import { ref, watch, onMounted } from "vue";
 import { UserCheck, UserPlus } from "lucide-vue-next";
+import type { AuthView } from "../model/types.ts";
 import SignInForm from "./SignInForm.vue";
 import SignUpForm from "./SignUpForm.vue";
 import { cn } from "@/shared/lib";
 
 interface Props {
-  defaultView: "signin" | "signup";
+  defaultView: AuthView;
 }
 
 const props = defineProps<Props>();
 
-const view = ref<"signin" | "signup">(props.defaultView);
+const view = ref<AuthView>(props.defaultView);
 const isPending = ref(false);
 
-const handleToggleView = (target: "signin" | "signup") => {
+const handleToggleView = (target: AuthView) => {
   view.value = target;
 };
+
 
 watch(view, (newView) => {
   if (typeof history !== "undefined") {

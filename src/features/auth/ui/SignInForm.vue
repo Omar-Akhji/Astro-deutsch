@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { Eye, EyeOff, Mail } from "lucide-vue-next";
+import type { AuthView, SignInFormData } from "../model/types.ts";
 import SocialButton from "./SocialButton.vue";
 
-const emit = defineEmits<{ (e: "toggle-view", target: "signin" | "signup"): void }>();
+const emit = defineEmits<{ (e: "toggle-view", target: AuthView): void }>();
 
 const DEMO_EMAIL = "lerner@deutschlernen.de";
 const DEMO_PASSWORD = "passwort123";
 
-const formData = ref({ email: "", password: "", rememberMe: false });
+const formData = ref<SignInFormData>({ email: "", password: "", rememberMe: false });
+
 const showPassword = ref(false);
 const error = ref<string | null>(null);
 const isPending = ref(false);

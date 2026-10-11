@@ -5,11 +5,10 @@ export interface SignInFormData {
 }
 
 export interface SignUpFormData {
-  name: string;
   email: string;
   password: string;
   confirmPassword: string;
-  agreeTerms: boolean;
 }
+
 
 export type AuthView = "signin" | "signup";

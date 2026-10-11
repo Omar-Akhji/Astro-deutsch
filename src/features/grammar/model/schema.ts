@@ -5,8 +5,8 @@ export const grammarCellSchema = z.union([
   z.object({ text: z.string(), highlight: z.boolean().optional() }),
 ]);
 
-export const grammarTableRowSchema = z.array(grammarCellSchema);
-export const grammarUsageSchema = z.object({ speaker: z.string(), text: z.string() });
+const grammarTableRowSchema = z.array(grammarCellSchema);
+const grammarUsageSchema = z.object({ speaker: z.string(), text: z.string() });
 
 export const grammarSectionContentSchema = z.object({
   title: z.string(),
@@ -19,7 +19,7 @@ export const grammarTableDataSchema = z.object({
   rows: z.array(grammarTableRowSchema),
 });
 
-export const grammarSubtopicSchema = z.object({
+const grammarSubtopicSchema = z.object({
   id: z.string(),
   number: z.string(),
   title: z.string(),

@@ -1,6 +1,6 @@
 import { z } from "astro/zod";
 
-export const examPartSubSchema = z.object({
+const examPartSubSchema = z.object({
   name: z.string(),
   taskType: z.string(),
   items: z.number(),
@@ -9,7 +9,8 @@ export const examPartSubSchema = z.object({
   checklist: z.array(z.string()).optional(),
 });
 
-export const examPartSchema = z.object({
+const examPartSchema = z.object({
+
   id: z.string(),
   title: z.string(),
   duration: z.string(),

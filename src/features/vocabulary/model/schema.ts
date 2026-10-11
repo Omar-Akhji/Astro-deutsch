@@ -1,6 +1,6 @@
 import { z } from "astro/zod";
 
-export const partOfSpeechSchema = z.enum(["noun", "verb", "adjective"]);
+const partOfSpeechSchema = z.enum(["noun", "verb", "adjective"]);
 
 export const wordSchema = z.object({
   german: z.string(),
@@ -31,7 +31,7 @@ export const storySchema = z.object({
   paragraphs: z.array(paragraphSchema),
 });
 
-export const storyLevelSchema = z.object({
+const storyLevelSchema = z.object({
   level: cefrLevelSchema.optional(),
   badge: z.string(),
   title: z.string(),

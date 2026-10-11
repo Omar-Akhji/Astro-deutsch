@@ -1,4 +1,4 @@
-export type GermanGender = "der" | "die" | "das" | "pl" | null;
+type GermanGender = "der" | "die" | "das" | "pl" | null;
 
 export interface GenderInfo {
   gender: GermanGender;

@@ -2,7 +2,7 @@
  * Strict category types and single-source-of-truth styling configuration for B1 Themen. Literal
  * Tailwind CSS classes are kept intact for Tailwind v4 compiler scanning.
  */
-export type ThemaCategory =
+type ThemaCategory =
   "essen" | "tech" | "gesellschaft" | "bildung" | "gesundheit" | "freizeit" | "umwelt" | "arbeit";
 
 export interface CategoryThemeStyle {

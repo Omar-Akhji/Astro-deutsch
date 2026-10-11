@@ -24,8 +24,8 @@ function isGlossaryEntry(item: unknown): item is GlossaryEntry {
   );
 }
 
-export function initFamilyStoryTooltips(): void {
-  const stories = document.querySelectorAll<HTMLElement>(".family-story, .topic-story");
+export function initTopicStoryTooltips(): void {
+  const stories = document.querySelectorAll<HTMLElement>(".topic-story");
   for (const story of stories) {
     if (story.dataset["tooltipBound"]) continue;
     story.dataset["tooltipBound"] = "true";
@@ -176,7 +176,7 @@ export function initFamilyStoryTooltips(): void {
 
 if (typeof document !== "undefined") {
   if (document.readyState === "complete" || document.readyState === "interactive") {
-    initFamilyStoryTooltips();
+    initTopicStoryTooltips();
   }
-  document.addEventListener("astro:page-load", initFamilyStoryTooltips);
+  document.addEventListener("astro:page-load", initTopicStoryTooltips);
 }

@@ -3,7 +3,7 @@ import { z } from "astro/zod";
 const stringArraySchema = z.array(z.string());
 const stringOrArraySchema = z.union([z.string(), stringArraySchema]);
 
-export const questionSchema = z.object({
+const questionSchema = z.object({
   id: z.number(),
   type: z.enum(["multiple-choice", "matching", "fill-in", "drag-drop", "fill-gap"]).optional(),
   question: z.string(),

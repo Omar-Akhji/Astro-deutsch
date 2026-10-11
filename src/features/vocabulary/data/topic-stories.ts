@@ -6,9 +6,9 @@ import topicStoriesJson from "./topic-stories.json";
 export type {
   CefrLevel,
   StoryDefinition,
-  StoryLevelDefinition,
   TopicStoriesRecord,
 } from "../model/types.ts";
+
 
 const topicStoriesCatalogSchema = z.record(z.string(), storiesRecordSchema);
 const parsedTopicStories = topicStoriesCatalogSchema.parse(topicStoriesJson);

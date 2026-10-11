@@ -1,9 +1,10 @@
 import type { Question } from "../model/types.ts";
 
-export interface TeilQuestionItem {
+interface TeilQuestionItem {
   question: Question;
   questionIndex: number;
 }
+
 
 export interface ParsedTeil {
   teilNumber: number | undefined;

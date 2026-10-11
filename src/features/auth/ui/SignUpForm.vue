@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { Eye, EyeOff, Lock, Mail } from "lucide-vue-next";
+import type { AuthView, SignUpFormData } from "../model/types.ts";
 import SocialButton from "./SocialButton.vue";
 
-const emit = defineEmits<{ (e: "toggle-view", target: "signin" | "signup"): void }>();
+const emit = defineEmits<{ (e: "toggle-view", target: AuthView): void }>();
 
-const formData = ref({ email: "", password: "", confirmPassword: "" });
+const formData = ref<SignUpFormData>({ email: "", password: "", confirmPassword: "" });
+
 const showPassword = ref(false);
 const error = ref<string | null>(null);
 const isPending = ref(false);

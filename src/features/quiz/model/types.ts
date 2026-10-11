@@ -1,4 +1,4 @@
-export type QuestionType = "multiple-choice" | "matching" | "fill-in" | "drag-drop" | "fill-gap";
+type QuestionType = "multiple-choice" | "matching" | "fill-in" | "drag-drop" | "fill-gap";
 
 export interface Question {
   id: number;
@@ -20,4 +20,3 @@ export interface Question {
   audioUrl?: string | undefined;
 }
 
-export type QuizData = Map<string, Map<string, Map<number, Question[]>>>;
