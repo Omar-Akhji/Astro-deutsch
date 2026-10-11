@@ -81,6 +81,7 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
         aria-label="Hauptnavigation"
         class="relative flex flex-wrap justify-center gap-1 overflow-hidden rounded-full border-2 border-white/10 bg-card/75 px-2 py-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-(--glass-blur) laptop:inline-flex laptop:gap-1.5"
         id="desktop-nav"
+        transition:persist="desktop-nav"
       >
         <!-- Sliding Indicator -->
         <div
@@ -92,7 +93,7 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
           <a
             aria-current={link.isActive ? "page" : undefined}
             class:list={[
-              "relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 laptop:px-5",
+              "relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200 laptop:px-5",
               {
                 "text-black": link.isActive,
                 "text-mist-400 hover:bg-white/5 hover:text-white": !link.isActive,
@@ -149,12 +150,13 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
 <!-- Mobile & Tablet Floating Dock (Bottom Navigation Bar) -->
 <nav
   aria-label="Mobile Navigation"
-  class="fixed inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-50 mx-auto flex max-w-sm items-center justify-around rounded-3xl border-2 border-white/12 bg-bg/85 px-1.5 py-1.5 shadow-[0_16px_40px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-all duration-300 tablet:max-w-md tablet:px-2 tablet:py-2 laptop:hidden"
+  class="fixed inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-50 mx-auto flex max-w-sm items-center justify-around rounded-3xl border-2 border-white/12 bg-bg/85 px-1.5 py-1.5 shadow-[0_16px_40px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-colors duration-300 tablet:max-w-md tablet:px-2 tablet:py-2 laptop:hidden"
   id="mobile-dock"
+  transition:persist="mobile-dock"
 >
   <!-- Mobile Sliding Active Tab Indicator -->
   <div
-    class="pointer-events-none absolute -top-1 left-0 h-0.5 w-6 -translate-x-1/2 rounded-full bg-linear-to-r from-yellow to-orange opacity-0 shadow-[0_0_8px_var(--color-yellow)]"
+    class="pointer-events-none absolute -top-1 left-0 h-0.5 w-6 rounded-full bg-linear-to-r from-yellow to-orange opacity-0 shadow-[0_0_8px_var(--color-yellow)]"
     id="mobile-dock-indicator"
   ></div>
 
@@ -165,7 +167,7 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
         aria-current={link.isActive ? "page" : undefined}
         aria-label={link.label}
         class:list={[
-          "group relative flex flex-1 flex-col items-center justify-center rounded-2xl px-2 py-1.5 transition-all duration-200 active:scale-95",
+          "group relative flex flex-1 flex-col items-center justify-center rounded-2xl px-2 py-1.5 transition-colors duration-200",
           {
             "bg-white/10 text-yellow shadow-inner shadow-white/5": link.isActive,
             "text-mist-500 hover:text-white": !link.isActive,
@@ -176,7 +178,7 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
       >
         <Icon
           class:list={[
-            "size-5 transition-transform duration-200",
+            "size-5 transition-transform duration-200 active:scale-90",
             {
               "scale-110 text-yellow": link.isActive,
               "group-hover:scale-105 group-hover:text-mist-200": !link.isActive,
@@ -186,10 +188,10 @@ const isAuthActive = pathname.startsWith("/login") || pathname.startsWith("/regi
 
         <span
           class:list={[
-            "mt-1 text-[10px] leading-none tracking-tight transition-colors duration-200",
+            "mt-1 text-[10px] font-semibold leading-none tracking-tight transition-colors duration-200",
             {
-              "font-bold text-white": link.isActive,
-              "font-semibold text-mist-500 group-hover:text-mist-300": !link.isActive,
+              "text-white": link.isActive,
+              "text-mist-500 group-hover:text-mist-300": !link.isActive,
             },
           ]}
         >

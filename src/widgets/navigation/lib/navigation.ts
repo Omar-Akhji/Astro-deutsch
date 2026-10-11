@@ -1,15 +1,42 @@
 import { gsap } from "@/shared/lib";
 
-function moveDesktopIndicator(link: HTMLElement | null): void {
+let currentDesktopTarget: HTMLElement | null = null;
+let currentMobileTarget: HTMLElement | null = null;
+let hasDesktopInit = false;
+let hasMobileInit = false;
+
+function moveDesktopIndicator(link: HTMLElement | null, immediate = false): void {
   const indicator = document.querySelector<HTMLElement>("#desktop-nav-indicator");
   if (!indicator) return;
 
   if (!link || link.offsetWidth === 0) {
+    currentDesktopTarget = null;
     gsap.to(indicator, {
       autoAlpha: 0,
-      duration: 0.25,
+      duration: 0.2,
       overwrite: "auto",
     });
+    return;
+  }
+
+  // Deduplication guard: do not restart or interrupt tween if already heading to/at this link
+  if (!immediate && currentDesktopTarget === link) {
+    return;
+  }
+  currentDesktopTarget = link;
+
+  if (immediate || !hasDesktopInit) {
+    gsap.killTweensOf(indicator);
+    gsap.set(indicator, {
+      x: link.offsetLeft,
+      width: link.offsetWidth,
+    });
+    gsap.to(indicator, {
+      autoAlpha: 1,
+      duration: 0.2,
+      overwrite: "auto",
+    });
+    hasDesktopInit = true;
     return;
   }
 
@@ -17,44 +44,56 @@ function moveDesktopIndicator(link: HTMLElement | null): void {
     x: link.offsetLeft,
     width: link.offsetWidth,
     autoAlpha: 1,
-    duration: 0.5,
-    ease: "power3.inOut",
+    duration: 0.45,
+    ease: "power2.out",
     overwrite: "auto",
-    onStart: () => {
-      gsap.set(indicator, { willChange: "transform, width, opacity" });
-    },
-    onComplete: () => {
-      gsap.set(indicator, { clearProps: "willChange" });
-    },
   });
 }
 
-function moveMobileIndicator(link: HTMLElement | null): void {
+function moveMobileIndicator(link: HTMLElement | null, immediate = false): void {
   const indicator = document.querySelector<HTMLElement>("#mobile-dock-indicator");
   if (!indicator) return;
 
   if (!link || link.offsetWidth === 0) {
+    currentMobileTarget = null;
     gsap.to(indicator, {
       autoAlpha: 0,
-      duration: 0.25,
+      duration: 0.2,
       overwrite: "auto",
     });
     return;
   }
 
+  // Deduplication guard: do not restart or interrupt tween if already heading to/at this link
+  if (!immediate && currentMobileTarget === link) {
+    return;
+  }
+  currentMobileTarget = link;
+
   const targetCenterX = link.offsetLeft + link.offsetWidth / 2;
+
+  if (immediate || !hasMobileInit) {
+    gsap.killTweensOf(indicator);
+    gsap.set(indicator, {
+      x: targetCenterX,
+      xPercent: -50,
+    });
+    gsap.to(indicator, {
+      autoAlpha: 1,
+      duration: 0.2,
+      overwrite: "auto",
+    });
+    hasMobileInit = true;
+    return;
+  }
+
   gsap.to(indicator, {
     x: targetCenterX,
+    xPercent: -50,
     autoAlpha: 1,
-    duration: 0.5,
-    ease: "power3.inOut",
+    duration: 0.45,
+    ease: "power2.out",
     overwrite: "auto",
-    onStart: () => {
-      gsap.set(indicator, { willChange: "transform, opacity" });
-    },
-    onComplete: () => {
-      gsap.set(indicator, { clearProps: "willChange" });
-    },
   });
 }
 
@@ -87,8 +126,8 @@ function setMobileActiveStyles(dock: HTMLElement, activeLink: HTMLElement | null
       icon?.classList.add("scale-110", "text-yellow");
       icon?.classList.remove("text-mist-500");
       if (label) {
-        label.classList.remove("font-semibold", "text-mist-500");
-        label.classList.add("font-bold", "text-white");
+        label.classList.remove("text-mist-500");
+        label.classList.add("text-white");
       }
     } else {
       link.removeAttribute("aria-current");
@@ -96,8 +135,8 @@ function setMobileActiveStyles(dock: HTMLElement, activeLink: HTMLElement | null
       link.classList.add("text-mist-500");
       icon?.classList.remove("scale-110", "text-yellow");
       if (label) {
-        label.classList.remove("font-bold", "text-white");
-        label.classList.add("font-semibold", "text-mist-500");
+        label.classList.remove("text-white");
+        label.classList.add("text-mist-500");
       }
     }
   }
@@ -121,7 +160,7 @@ function findMatchingLink(container: HTMLElement, currentPath: string): HTMLElem
   return null;
 }
 
-function setupDesktopNav(): void {
+function setupDesktopNav(immediate = false): void {
   const nav = document.querySelector<HTMLElement>("#desktop-nav");
   if (nav?.offsetParent == null) return;
 
@@ -129,7 +168,7 @@ function setupDesktopNav(): void {
   const activeLink = findMatchingLink(nav, currentPath);
 
   setDesktopActiveStyles(nav, activeLink);
-  moveDesktopIndicator(activeLink);
+  moveDesktopIndicator(activeLink, immediate);
 
   if (nav.dataset["hasClickBound"]) return;
   nav.dataset["hasClickBound"] = "true";
@@ -138,12 +177,12 @@ function setupDesktopNav(): void {
   for (const link of links) {
     link.addEventListener("click", () => {
       setDesktopActiveStyles(nav, link);
-      moveDesktopIndicator(link);
+      moveDesktopIndicator(link, false);
     });
   }
 }
 
-function setupMobileDock(): void {
+function setupMobileDock(immediate = false): void {
   const dock = document.querySelector<HTMLElement>("#mobile-dock");
   if (dock?.offsetParent == null) return;
 
@@ -151,7 +190,7 @@ function setupMobileDock(): void {
   const activeLink = findMatchingLink(dock, currentPath);
 
   setMobileActiveStyles(dock, activeLink);
-  moveMobileIndicator(activeLink);
+  moveMobileIndicator(activeLink, immediate);
 
   if (dock.dataset["hasClickBound"]) return;
   dock.dataset["hasClickBound"] = "true";
@@ -160,25 +199,31 @@ function setupMobileDock(): void {
   for (const link of links) {
     link.addEventListener("click", () => {
       setMobileActiveStyles(dock, link);
-      moveMobileIndicator(link);
+      moveMobileIndicator(link, false);
     });
   }
 }
 
-function syncAllNavigations(): void {
-  setupDesktopNav();
-  setupMobileDock();
+function syncAllNavigations(immediate = false): void {
+  setupDesktopNav(immediate);
+  setupMobileDock(immediate);
 }
 
 if (typeof document !== "undefined") {
   if (document.readyState === "complete" || document.readyState === "interactive") {
-    syncAllNavigations();
+    syncAllNavigations(true);
   }
-  document.addEventListener("astro:page-load", syncAllNavigations);
+  document.addEventListener("astro:page-load", () => {
+    syncAllNavigations(false);
+  });
 
   if (typeof ResizeObserver !== "undefined") {
+    let resizeTimer: number | null = null;
     const observer = new ResizeObserver(() => {
-      syncAllNavigations();
+      if (resizeTimer !== null) cancelAnimationFrame(resizeTimer);
+      resizeTimer = requestAnimationFrame(() => {
+        syncAllNavigations(true);
+      });
     });
 
     const observeContainers = () => {
