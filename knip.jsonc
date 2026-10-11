@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": [
+    "src/shared/scripts/*.ts",
+    "src/features/**/lib/*.ts",
+    "src/widgets/**/lib/*.ts",
+    "src/shared/ui/**/ts/*.ts",
+    "scripts/*.ts"
+  ]
+}
