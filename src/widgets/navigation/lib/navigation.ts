@@ -17,8 +17,8 @@ function moveDesktopIndicator(link: HTMLElement | null): void {
     x: link.offsetLeft,
     width: link.offsetWidth,
     autoAlpha: 1,
-    duration: 0.38,
-    ease: "power2.out",
+    duration: 0.5,
+    ease: "power3.inOut",
     overwrite: "auto",
     onStart: () => {
       gsap.set(indicator, { willChange: "transform, width, opacity" });
@@ -46,8 +46,8 @@ function moveMobileIndicator(link: HTMLElement | null): void {
   gsap.to(indicator, {
     x: targetCenterX,
     autoAlpha: 1,
-    duration: 0.35,
-    ease: "power2.out",
+    duration: 0.5,
+    ease: "power3.inOut",
     overwrite: "auto",
     onStart: () => {
       gsap.set(indicator, { willChange: "transform, opacity" });
