@@ -1,5 +1,5 @@
-import node from "@astrojs/node";
 import sitemap, { ChangeFreqEnum } from "@astrojs/sitemap";
+import vercel from "@astrojs/vercel";
 import vue from "@astrojs/vue";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, envField } from "astro/config";
@@ -8,7 +8,7 @@ import { defineConfig, envField } from "astro/config";
 export default defineConfig({
   site: "https://elite-regewelt.com",
   output: "static",
-  adapter: node({ mode: "standalone" }),
+  adapter: vercel(),
   trailingSlash: "always",
   build: { inlineStylesheets: "always" },
   security: { checkOrigin: true },

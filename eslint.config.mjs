@@ -24,6 +24,7 @@ const eslintConfig = defineConfig(
     name: "global-ignores",
     ignores: [
       "dist/**",
+      ".vercel/**",
       ".astro/**",
       "node_modules/**",
       "public/**",
