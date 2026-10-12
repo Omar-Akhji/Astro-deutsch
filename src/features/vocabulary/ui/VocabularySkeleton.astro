@@ -40,13 +40,13 @@ const { variant = "overview" } = Astro.props;
       <div class="grid gap-10 tablet:gap-12">
         {["sec1", "sec2"].map(() => (
           <section>
-            <div class="mb-6 flex flex-col items-start gap-4 rounded-2xl bg-white/10 p-5 md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6">
+            <div class="mb-6 flex flex-col items-start gap-4 rounded-2xl border-2 border-white/10 bg-transparent p-5 backdrop-blur-(--glass-blur) md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6">
               <Skeleton class="h-7 w-48 rounded-md bg-white/15" />
-              <Skeleton class="h-6 w-24 rounded-full bg-white/20" />
+              <Skeleton class="h-7 w-28 rounded-full border-[1.5px] border-white/20 bg-white/10" />
             </div>
             <div class="grid gap-4 sm:grid-cols-2 tablet:gap-5 lg:grid-cols-3">
               {["c1", "c2", "c3"].map(() => (
-                <div class="rounded-2xl border-2 border-(--glass-border) bg-card/75 p-5 shadow-sm backdrop-blur-(--glass-blur)">
+                <div class="rounded-2xl border-2 border-(--glass-border) bg-card p-5 shadow-sm backdrop-blur-(--glass-blur)">
                   <Skeleton class="mb-2 h-6 w-3/4 rounded-md bg-white/10" />
                   <div class="flex items-center gap-2 text-sm">
                     <Skeleton class="size-3.5 rounded-full bg-white/10" />
