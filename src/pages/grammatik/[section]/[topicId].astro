@@ -66,16 +66,19 @@ const rulesCount =
 
 const heroStats = [
   {
-    label: "Schwerpunkte",
+    label: "Themen",
     value: `${subtopicsCount} ${subtopicsCount === 1 ? "Schwerpunkt" : "Schwerpunkte"}`,
     icon: Layers,
   },
   {
-    label: "Struktur",
-    value: `${tablesCount} ${tablesCount === 1 ? "Tabelle" : "Tabellen"} · ${rulesCount} Regeln`,
+    label:
+      tablesCount > 0 ?
+        `${tablesCount} ${tablesCount === 1 ? "Tabelle" : "Tabellen"}`
+      : "Struktur",
+    value: `${rulesCount} ${rulesCount === 1 ? "Regel" : "Regeln"}`,
     icon: TableProperties,
   },
-  { label: "Niveau", value: "A1 · A2 · B1 · B2", icon: Languages },
+  { label: "A1 · A2 · B1 · B2", value: "4 Niveaus", icon: Languages },
 ];
 
 const heroExample =

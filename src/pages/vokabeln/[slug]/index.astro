@@ -2,7 +2,7 @@
 import { getVocabularySlug } from "@/features/vocabulary";
 import { getVocabularyById, getVocabularyList } from "@/features/vocabulary/server.ts";
 import Layout from "@/layouts/Layout.astro";
-import { getGradient, VOCABULARY_GRADIENTS } from "@/shared/lib";
+import { VOCABULARY_BORDER_COLORS } from "@/shared/lib";
 import BackButton from "@/shared/ui/button/BackButton.astro";
 import GlassCard from "@/shared/ui/card/GlassCard.astro";
 import { Hero } from "@/widgets/hero";
@@ -85,25 +85,31 @@ const extraSchema =
 
         {item.sections && item.sections.length > 0 ?
           <div class="grid gap-10 tablet:gap-12">
-            {item.sections.map((section, index) => (
-              <section
-                aria-labelledby={`section-${section.id}`}
-                data-animate="fade-up"
-              >
-                <div
-                  class="mb-6 flex flex-col items-start gap-4 rounded-2xl p-5 md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6"
-                  style={{ background: getGradient(index, VOCABULARY_GRADIENTS) }}
+            {item.sections.map((section, index) => {
+              const borderColor =
+                VOCABULARY_BORDER_COLORS[index % VOCABULARY_BORDER_COLORS.length];
+              return (
+                <section
+                  aria-labelledby={`section-${section.id}`}
+                  data-animate="fade-up"
                 >
-                  <h2
-                    class="m-0 text-xl font-semibold tracking-wide text-white uppercase tablet:text-2xl"
-                    id={`section-${section.id}`}
+                  <div
+                    class="mb-6 flex flex-col items-start gap-4 rounded-2xl border-2 bg-transparent p-5 backdrop-blur-(--glass-blur) md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6"
+                    style={{
+                      borderColor,
+                      boxShadow: `0 0 20px -3px ${borderColor}33`,
+                    }}
                   >
-                    {section.title}
-                  </h2>
-                  <div class="rounded-full bg-white/20 px-4 py-1 text-sm font-medium text-white backdrop-blur-sm">
-                    {section.topics.length} Themen
+                    <h2
+                      class="m-0 text-xl font-semibold tracking-wide text-white uppercase text-shadow-sm tablet:text-2xl"
+                      id={`section-${section.id}`}
+                    >
+                      {section.title}
+                    </h2>
+                    <div class="rounded-full border-[1.5px] border-white/20 bg-white/10 px-4 py-1 text-sm font-medium text-white backdrop-blur-sm">
+                      {section.topics.length} Themen
+                    </div>
                   </div>
-                </div>
 
                 {section.topics.length > 0 ?
                   <ul
@@ -140,7 +146,8 @@ const extraSchema =
                   </div>
                 }
               </section>
-            ))}
+            );
+          })}
           </div>
         : <section
             class="mb-12 text-white"

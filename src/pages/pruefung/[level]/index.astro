@@ -95,17 +95,35 @@ function getExamModuleTheme(moduleId: string): ExamModuleTheme {
   };
 }
 
+const rawScore = currentExam?.passingScore ?? "";
+const parenIndex = rawScore.indexOf("(");
+const hasParen = parenIndex !== -1;
+const passingScoreValue =
+  hasParen ? rawScore.slice(0, parenIndex).trim() : (rawScore || "60%");
+const passingScoreLabel =
+  hasParen ?
+    rawScore
+      .slice(parenIndex + 1)
+      .replace(")", "")
+      .replace(" pro Modul", "")
+      .trim()
+  : "60 von 100 Punkten";
+
 const heroStats =
   currentExam ?
     [
-      { label: "Module", value: "4 Module (Lesen · Hören · Schreiben · Sprechen)", icon: Layers },
+      {
+        label: "Lesen · Hören · Schreiben · Sprechen",
+        value: "4 Module",
+        icon: Layers,
+      },
       { label: "Gesamtdauer", value: currentExam.totalDuration, icon: Clock },
       {
-        label: "Bestehensgrenze",
-        value: currentExam.passingScore.replace(" pro Modul", ""),
+        label: passingScoreLabel,
+        value: passingScoreValue,
         icon: Award,
       },
-      { label: "Simulation", value: "Modelltests verfügbar", icon: FileEdit },
+      { label: "Simulation", value: "Modelltests", icon: FileEdit },
     ]
   : [];
 

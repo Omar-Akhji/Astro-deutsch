@@ -77,7 +77,7 @@ const heroStats = [
     [
       {
         label: "Familienmitglieder",
-        value: `${topic.familyTree.length} Personen im Stammbaum`,
+        value: `${topic.familyTree.length} Personen`,
         icon: Users,
       },
     ]
@@ -85,13 +85,13 @@ const heroStats = [
   ...(topic?.words && topic.words.length > 0 ?
     [
       {
-        label: "Wortschatz",
-        value: `${topic.words.length} Vokabeln (Nomen · Verben · Adj.)`,
+        label: "Nomen · Verben · Adj.",
+        value: `${topic.words.length} Vokabeln`,
         icon: BookOpen,
       },
     ]
   : []),
-  { label: "Niveaustufen", value: "4 Niveaus (A1 · A2 · B1 · B2)", icon: Headphones },
+  { label: "A1 · A2 · B1 · B2", value: "4 Niveaus", icon: Headphones },
 ];
 ---
 

@@ -24,15 +24,17 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
 const isPrimaryHero = headingLevel === "h1";
 const animateFadeIn = isPrimaryHero ? undefined : "fade-in";
 const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
+const displayCategory =
+  category && /^Kapitel\b/i.test(category) ? "Wortschatz" : category;
 ---
 
 <section
   class:list={[
-    "relative overflow-hidden rounded-3xl shadow-2xl transition-all",
+    "relative overflow-hidden rounded-2xl shadow-xl transition-all",
     {
-      "border-2 border-(--glass-border) bg-card": isGlassBorder,
+      "border-2 border-(--glass-border) bg-card backdrop-blur-(--glass-blur)": isGlassBorder,
       "mbe-6 p-4 mobile:p-6 tablet:p-8": variant === "compact",
-      "mbe-8 mobile:mbe-12 p-5 mobile:p-8 tablet:p-10 laptop:p-12": variant !== "compact",
+      "mbe-8 mobile:mbe-12 p-6 mobile:p-8 tablet:p-10 laptop:p-12": variant !== "compact",
     },
   ]}
   data-animate={animateFadeIn}
@@ -50,7 +52,7 @@ const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
       class:list={["mbe-4 flex flex-wrap items-center gap-3", { "justify-center": !gradient }]}
       data-animate={animateFadeUp}
     >
-      {category && (
+      {displayCategory && (
         <span
           class:list={[
             "inline-block rounded-full px-6 py-2 font-bold",
@@ -61,7 +63,7 @@ const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
             },
           ]}
         >
-          {category}
+          {displayCategory}
         </span>
       )}
       {badge && (
@@ -95,7 +97,7 @@ const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
 
     <p
       class:list={[
-        "m-0 mx-auto max-w-3xl text-base leading-relaxed tablet:text-lg laptop:text-xl",
+        "m-0 mx-auto w-full max-w-4xl text-base leading-relaxed text-pretty tablet:max-w-5xl tablet:text-lg laptop:max-w-6xl laptop:text-xl",
         { "text-white/90": gradient, "text-mist-300": !gradient },
       ]}
       data-animate={animateFadeUp}
@@ -114,20 +116,25 @@ const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
 
     {stats && stats.length > 0 && (
       <dl
-        class="mbs-8 flex flex-wrap justify-center gap-4 mobile:gap-6 tablet:gap-8"
+        class:list={[
+          "mbs-8 grid gap-3 border-t border-white/10 pt-6 mobile:gap-4 tablet:gap-6",
+          {
+            "mx-auto max-w-xs grid-cols-1": stats.length === 1,
+            "mx-auto max-w-lg grid-cols-1 min-[480px]:grid-cols-2": stats.length === 2,
+            "grid-cols-1 min-[480px]:grid-cols-3": stats.length === 3,
+            "grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-4": stats.length >= 4,
+          },
+        ]}
         data-animate="zoom-in"
       >
         {stats.map((stat) => (
-          <div class="flex items-center gap-2">
-            <dt class="sr-only">{stat.label}</dt>
-            <dd class="m-0 flex items-center gap-2 text-sm text-mist-500 tablet:text-base">
-              {stat.icon && (
-                <span class="flex size-5 items-center justify-center text-yellow tablet:size-6">
-                  <stat.icon class="size-full" />
-                </span>
-              )}
+          <div class="flex flex-col items-center justify-center rounded-lg border border-white/5 bg-white/2 px-4 py-3 text-center">
+            <dd class="m-0 text-xl font-bold font-mono tracking-tight text-white tablet:text-2xl">
               {stat.value}
             </dd>
+            <dt class="mt-1 text-xs font-medium uppercase tracking-wider text-mist-400">
+              {stat.label}
+            </dt>
           </div>
         ))}
       </dl>

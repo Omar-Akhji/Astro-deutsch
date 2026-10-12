@@ -6,6 +6,13 @@ export const VOCABULARY_GRADIENTS = [
   "linear-gradient(135deg, #0284c7 0%, #0369a1 100%)", // Slate azure
 ];
 
+export const VOCABULARY_BORDER_COLORS = [
+  "#d97706", // Rich amber gold
+  "#ea580c", // Warm terracotta
+  "#059669", // Deep forest emerald
+  "#0284c7", // Slate azure
+];
+
 /** Prüfung exam level cards */
 export const PRUEFUNG_GRADIENTS = [
   "linear-gradient(135deg, #4f46e5 0%, #3730a3 100%)", // Royal indigo
