@@ -32,7 +32,7 @@ const { variant = "overview" } = Astro.props;
       <!-- Compact Hero Header -->
       <HeroSkeleton
         variant="compact"
-        statsCount={4}
+        statsCount={3}
         hasExample={true}
       />
 
@@ -53,7 +53,6 @@ const { variant = "overview" } = Astro.props;
               class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5"
               style="width: 175px;"
             >
-              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
               <Skeleton
                 class="h-3.5 rounded-md bg-white/15"
                 style="width: 45px;"
@@ -69,7 +68,6 @@ const { variant = "overview" } = Astro.props;
               class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5"
               style="width: 180px;"
             >
-              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
               <Skeleton
                 class="h-3.5 rounded-md bg-white/15"
                 style="width: 49px;"
@@ -85,7 +83,6 @@ const { variant = "overview" } = Astro.props;
               class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5"
               style="width: 205px;"
             >
-              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
               <Skeleton
                 class="h-3.5 rounded-md bg-white/15"
                 style="width: 75px;"
@@ -101,7 +98,6 @@ const { variant = "overview" } = Astro.props;
               class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3 py-1.5 max-w-full"
               style="width: 348px;"
             >
-              <span class="size-2 shrink-0 rounded-full bg-white/20"></span>
               <Skeleton
                 class="h-3.5 shrink-0 rounded-md bg-white/15"
                 style="width: 72px;"
@@ -109,18 +105,6 @@ const { variant = "overview" } = Astro.props;
               <Skeleton
                 class="h-3.5 flex-1 rounded-md bg-white/10"
                 style="width: 226px;"
-              />
-            </div>
-
-            <!-- Modelltests CTA Button (Live width: 124px) -->
-            <div
-              class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-white/10 bg-white/5 px-3.5 py-1.5 shadow-sm"
-              style="width: 124px;"
-            >
-              <Skeleton class="size-3.5 shrink-0 rounded-sm bg-white/15" />
-              <Skeleton
-                class="h-3.5 flex-1 rounded-md bg-white/15"
-                style="width: 72px;"
               />
             </div>
           </div>

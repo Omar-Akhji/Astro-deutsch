@@ -24,8 +24,7 @@ const isGlassBorder = !gradient || variant === "glass" || variant === "compact";
 const isPrimaryHero = headingLevel === "h1";
 const animateFadeIn = isPrimaryHero ? undefined : "fade-in";
 const animateFadeUp = isPrimaryHero ? undefined : "fade-up";
-const displayCategory =
-  category && /^Kapitel\b/i.test(category) ? "Wortschatz" : category;
+const displayCategory = category && /^Kapitel\b/i.test(category) ? "Wortschatz" : category;
 ---
 
 <section
@@ -58,7 +57,7 @@ const displayCategory =
             "inline-block rounded-full px-6 py-2 font-bold",
             {
               "bg-black/20 text-xs text-white tablet:text-sm": gradient,
-              "bg-linear-to-br from-yellow to-orange text-lg text-black shadow-lg shadow-yellow/20 tablet:text-xl":
+              "border-2 border-yellow bg-transparent text-lg text-yellow shadow-sm shadow-yellow/10 tablet:text-xl":
                 !gradient,
             },
           ]}

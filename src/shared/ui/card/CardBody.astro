@@ -29,6 +29,12 @@ const {
 
 const HeadingTag = headingLevel;
 const iconText = icon ?? getFirstLetter(title);
+
+// Extract the primary accent color from gradient (hex, var(), oklch, rgb)
+const accentColor =
+  gradient.match(
+    /(#[0-9a-fA-F]{3,8}|var\(--[^)]+\)|oklch\([^)]+\)|rgba?\([^)]+\)|hsla?\([^)]+\))/,
+  )?.[0] ?? "#f1c40f";
 ---
 
 <article class="h-full">
@@ -36,11 +42,13 @@ const iconText = icon ?? getFirstLetter(title);
     class="group relative z-1 flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl border-2 border-white/10 bg-[oklch(18%_0.012_245deg/75%)] p-4 text-left no-underline shadow-[0_4px_20px_-2px_rgba(0,0,0,0.3)] backdrop-blur-(--glass-blur) transition-all duration-250 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:border-yellow/35 hover:bg-[oklch(21%_0.015_245deg/90%)] hover:shadow-[0_16px_36px_-8px_rgba(0,0,0,0.5),0_0_24px_-2px_rgba(255,220,0,0.15)] tablet:p-5"
     data-card-link
   >
-    <figure class="m-0 aspect-video w-full overflow-hidden rounded-2xl">
+    <figure
+      class="card-figure-frame m-0 aspect-video w-full overflow-hidden rounded-2xl border-2 bg-transparent"
+      style={{ "--card-accent": accentColor }}
+    >
       <div
         aria-hidden="true"
         class="flex h-full w-full items-center justify-center transition-transform duration-500 group-hover:scale-110"
-        style={{ background: gradient }}
       >
         <span
           class:list={[
@@ -48,8 +56,16 @@ const iconText = icon ?? getFirstLetter(title);
               "text-4xl tablet:text-6xl": variant === "large",
               "text-3xl tablet:text-5xl": variant !== "large",
             },
-            "font-bold text-white/40 drop-shadow-md drop-shadow-white/20 transition-transform duration-500 group-hover:scale-110",
+            "font-bold select-none transition-transform duration-500",
           ]}
+          style={{
+            backgroundImage: gradient,
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            WebkitTextFillColor: "transparent",
+            filter: "drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4))",
+          }}
         >
           {iconText}
         </span>
@@ -102,3 +118,18 @@ const iconText = icon ?? getFirstLetter(title);
     </div>
   </div>
 </article>
+
+<style>
+  .card-figure-frame {
+    border-color: rgb(255 255 255 / 15%);
+    border-color: color-mix(in srgb, var(--card-accent) 40%, transparent);
+    transition:
+      border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .group:hover .card-figure-frame {
+    border-color: color-mix(in srgb, var(--card-accent) 85%, transparent);
+    box-shadow: 0 0 20px -3px color-mix(in srgb, var(--card-accent) 25%, transparent);
+  }
+</style>

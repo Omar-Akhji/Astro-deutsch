@@ -86,8 +86,7 @@ const extraSchema =
         {item.sections && item.sections.length > 0 ?
           <div class="grid gap-10 tablet:gap-12">
             {item.sections.map((section, index) => {
-              const borderColor =
-                VOCABULARY_BORDER_COLORS[index % VOCABULARY_BORDER_COLORS.length];
+              const borderColor = VOCABULARY_BORDER_COLORS[index % VOCABULARY_BORDER_COLORS.length];
               return (
                 <section
                   aria-labelledby={`section-${section.id}`}
@@ -95,10 +94,7 @@ const extraSchema =
                 >
                   <div
                     class="mb-6 flex flex-col items-start gap-4 rounded-2xl border-2 bg-transparent p-5 backdrop-blur-(--glass-blur) md:flex-row md:items-center md:justify-between tablet:mb-7 tablet:p-6"
-                    style={{
-                      borderColor,
-                      boxShadow: `0 0 20px -3px ${borderColor}33`,
-                    }}
+                    style={{ borderColor, boxShadow: `0 0 20px -3px ${borderColor}33` }}
                   >
                     <h2
                       class="m-0 text-xl font-semibold tracking-wide text-white uppercase text-shadow-sm tablet:text-2xl"
@@ -111,43 +107,43 @@ const extraSchema =
                     </div>
                   </div>
 
-                {section.topics.length > 0 ?
-                  <ul
-                    class="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 tablet:gap-5 lg:grid-cols-3"
-                    role="list"
-                  >
-                    {section.topics.map((topic) => (
-                      <li>
-                        <a
-                          class="group block no-underline"
-                          href={`/vokabeln/${slug}/${topic.id}/`}
-                        >
-                          <GlassCard
-                            class="p-5 transition-[translate,border-color,box-shadow] duration-300 group-hover:-translate-y-1 group-hover:border-yellow hover:border-yellow group-hover:shadow-[0_0_20px_rgba(241,196,15,0.15)]"
-                            rounded="2xl"
+                  {section.topics.length > 0 ?
+                    <ul
+                      class="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 tablet:gap-5 lg:grid-cols-3"
+                      role="list"
+                    >
+                      {section.topics.map((topic) => (
+                        <li>
+                          <a
+                            class="group block no-underline"
+                            href={`/vokabeln/${slug}/${topic.id}/`}
                           >
-                            <h3 class="mb-2 text-lg font-semibold text-white group-hover:text-yellow">
-                              {topic.title}
-                            </h3>
-                            <div class="flex items-center gap-2 text-sm text-zinc-400">
-                              <ArrowRight
-                                class="text-secondary transition-colors duration-200 group-hover:text-yellow"
-                                size={14}
-                              />
-                              <span>{topic.title} lernen</span>
-                            </div>
-                          </GlassCard>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                : <div class="text-zinc-450 rounded-xl border-[1.5px] border-dashed border-white/10 p-6 text-center">
-                    Noch keine Themen in diesem Bereich.
-                  </div>
-                }
-              </section>
-            );
-          })}
+                            <GlassCard
+                              class="p-5 transition-[translate,border-color,box-shadow] duration-300 group-hover:-translate-y-1 group-hover:border-yellow hover:border-yellow group-hover:shadow-[0_0_20px_rgba(241,196,15,0.15)]"
+                              rounded="2xl"
+                            >
+                              <h3 class="mb-2 text-lg font-semibold text-white group-hover:text-yellow">
+                                {topic.title}
+                              </h3>
+                              <div class="flex items-center gap-2 text-sm text-zinc-400">
+                                <ArrowRight
+                                  class="text-secondary transition-colors duration-200 group-hover:text-yellow"
+                                  size={14}
+                                />
+                                <span>{topic.title} lernen</span>
+                              </div>
+                            </GlassCard>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  : <div class="text-zinc-450 rounded-xl border-[1.5px] border-dashed border-white/10 p-6 text-center">
+                      Noch keine Themen in diesem Bereich.
+                    </div>
+                  }
+                </section>
+              );
+            })}
           </div>
         : <section
             class="mb-12 text-white"

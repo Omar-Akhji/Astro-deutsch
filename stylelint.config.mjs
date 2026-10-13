@@ -1,4 +1,4 @@
-/** @type {import('stylelint').Config} */
+/** @type {import("stylelint").Config} */
 export default {
   extends: [
     "stylelint-config-standard",
@@ -33,12 +33,7 @@ export default {
     // Modern CSS module import notation (e.g. @import "tailwindcss")
     "import-notation": "string",
     // Preserve font family names capitalization (e.g. Courier New)
-    "value-keyword-case": [
-      "lower",
-      {
-        ignoreProperties: ["font-family", "/^--font/"],
-      },
-    ],
+    "value-keyword-case": ["lower", { ignoreProperties: ["font-family", "/^--font/"] }],
     // Flexible alpha values for modern oklch gamut colors
     "alpha-value-notation": null,
     // Allow compact custom property declarations and inline styles
@@ -59,9 +54,7 @@ export default {
     "no-duplicate-at-import-rules": true,
     "declaration-block-no-duplicate-properties": [
       true,
-      {
-        ignore: ["consecutive-duplicates-with-different-values"],
-      },
+      { ignore: ["consecutive-duplicates-with-different-values"] },
     ],
     "declaration-block-no-duplicate-custom-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
@@ -100,9 +93,7 @@ export default {
     // Pseudo-classes and pseudo-elements (support Vue & Astro scoped scoping)
     "selector-pseudo-class-no-unknown": [
       true,
-      {
-        ignorePseudoClasses: ["global", "deep", "slotted", "is", "where", "has"],
-      },
+      { ignorePseudoClasses: ["global", "deep", "slotted", "is", "where", "has"] },
     ],
     "selector-pseudo-element-no-unknown": [
       true,
@@ -141,12 +132,7 @@ export default {
     "keyframe-selector-notation": "percentage-unless-within-keyword-only-block",
     "number-max-precision": 4,
     "comment-whitespace-inside": "always",
-    "max-nesting-depth": [
-      4,
-      {
-        ignore: ["blockless-at-rules", "pseudo-classes"],
-      },
-    ],
+    "max-nesting-depth": [4, { ignore: ["blockless-at-rules", "pseudo-classes"] }],
     "selector-max-compound-selectors": 4,
 
     // Vendor prefix cleanliness (prefer standard modern CSS & build-tool autowrapping)
@@ -155,9 +141,7 @@ export default {
     "selector-no-vendor-prefix": true,
     "property-no-vendor-prefix": [
       true,
-      {
-        ignoreProperties: ["appearance", "-webkit-appearance", "-webkit-scrollbar"],
-      },
+      { ignoreProperties: ["appearance", "-webkit-appearance", "-webkit-scrollbar"] },
     ],
     "value-no-vendor-prefix": true,
   },

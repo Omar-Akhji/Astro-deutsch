@@ -98,8 +98,7 @@ function getExamModuleTheme(moduleId: string): ExamModuleTheme {
 const rawScore = currentExam?.passingScore ?? "";
 const parenIndex = rawScore.indexOf("(");
 const hasParen = parenIndex !== -1;
-const passingScoreValue =
-  hasParen ? rawScore.slice(0, parenIndex).trim() : (rawScore || "60%");
+const passingScoreValue = hasParen ? rawScore.slice(0, parenIndex).trim() : rawScore || "60%";
 const passingScoreLabel =
   hasParen ?
     rawScore
@@ -112,17 +111,8 @@ const passingScoreLabel =
 const heroStats =
   currentExam ?
     [
-      {
-        label: "Lesen · Hören · Schreiben · Sprechen",
-        value: "4 Module",
-        icon: Layers,
-      },
-      { label: "Gesamtdauer", value: currentExam.totalDuration, icon: Clock },
-      {
-        label: passingScoreLabel,
-        value: passingScoreValue,
-        icon: Award,
-      },
+      { label: "Lesen · Hören · Schreiben · Sprechen", value: "4 Module", icon: Layers },
+      { label: passingScoreLabel, value: passingScoreValue, icon: Award },
       { label: "Simulation", value: "Modelltests", icon: FileEdit },
     ]
   : [];
@@ -190,14 +180,6 @@ const heroExample =
                   </a>
                 );
               })}
-
-              <a
-                class="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-amber-500/40 bg-amber-500/15 px-3.5 py-1.5 text-xs font-bold text-amber-300 no-underline shadow-sm shadow-amber-500/10 transition-all hover:border-amber-400 hover:bg-amber-500/25 hover:text-amber-200"
-                href={`/pruefung/${currentExam.id}/modelltests/`}
-              >
-                <FileEdit class="size-3.5" />
-                <span>Modelltests</span>
-              </a>
             </div>
           </div>
         </nav>

@@ -74,22 +74,10 @@ const heroDescription =
 
 const heroStats = [
   ...(topic?.familyTree && topic.familyTree.length > 0 ?
-    [
-      {
-        label: "Familienmitglieder",
-        value: `${topic.familyTree.length} Personen`,
-        icon: Users,
-      },
-    ]
+    [{ label: "Familienmitglieder", value: `${topic.familyTree.length} Personen`, icon: Users }]
   : []),
   ...(topic?.words && topic.words.length > 0 ?
-    [
-      {
-        label: "Nomen · Verben · Adj.",
-        value: `${topic.words.length} Vokabeln`,
-        icon: BookOpen,
-      },
-    ]
+    [{ label: "Nomen · Verben · Adj.", value: `${topic.words.length} Vokabeln`, icon: BookOpen }]
   : []),
   { label: "A1 · A2 · B1 · B2", value: "4 Niveaus", icon: Headphones },
 ];
@@ -100,12 +88,8 @@ const heroStats = [
   extraSchema={extraSchema}
   title={pageTitle}
 >
-  {!item || !topic ?
-    <div class="px-8 py-16 text-center text-white">
-      <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
-      <BackButton />
-    </div>
-  : <div class="relative min-h-dvh py-8">
+  {item && topic ?
+    <div class="relative min-h-dvh py-8">
       <div class="animate-fade-in">
         <Hero
           category={item.category}
@@ -143,6 +127,10 @@ const heroStats = [
           </section>
         }
       </div>
+    </div>
+  : <div class="px-8 py-16 text-center text-white">
+      <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
+      <BackButton />
     </div>
   }
 </Layout>

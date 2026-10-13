@@ -72,9 +72,7 @@ const heroStats = [
   },
   {
     label:
-      tablesCount > 0 ?
-        `${tablesCount} ${tablesCount === 1 ? "Tabelle" : "Tabellen"}`
-      : "Struktur",
+      tablesCount > 0 ? `${tablesCount} ${tablesCount === 1 ? "Tabelle" : "Tabellen"}` : "Struktur",
     value: `${rulesCount} ${rulesCount === 1 ? "Regel" : "Regeln"}`,
     icon: TableProperties,
   },
@@ -93,13 +91,8 @@ const heroExample =
   extraSchema={extraSchema}
   title={pageTitle}
 >
-  {!currentTopic || !currentSection ?
-    <div class="px-8 py-16 text-center text-white">
-      <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
-      <p class="mb-8 text-zinc-400">Das gewünschte Grammatikthema existiert nicht.</p>
-      <BackButton />
-    </div>
-  : <div class="relative min-h-dvh py-8">
+  {currentTopic && currentSection ?
+    <div class="relative min-h-dvh py-8">
       <div class="animate-fade-in space-y-8">
         <!-- Compact Hero Header -->
         <Hero
@@ -273,6 +266,11 @@ const heroExample =
           </section>
         )}
       </div>
+    </div>
+  : <div class="px-8 py-16 text-center text-white">
+      <h1 class="mb-4 text-3xl">Thema nicht gefunden</h1>
+      <p class="mb-8 text-zinc-400">Das gewünschte Grammatikthema existiert nicht.</p>
+      <BackButton />
     </div>
   }
 </Layout>

@@ -60,16 +60,8 @@ const moduleSchema =
   extraSchema={moduleSchema}
   title={pageTitle}
 >
-  {!currentExam || !redemittel ?
-    <div class="px-8 py-16 text-center text-white">
-      <h1 class="mb-4 text-3xl">Lektion nicht gefunden</h1>
-      <p class="mb-8 text-zinc-400">Das gewünschte Prüfungsmodul existiert nicht.</p>
-      <BackButton
-        href={`/pruefung/${level}/`}
-        label="Zurück zum Prüfungsniveau"
-      />
-    </div>
-  : <div
+  {currentExam && redemittel ?
+    <div
       class="animate-fade-in"
       data-animate="fade-up"
     >
@@ -79,6 +71,14 @@ const moduleSchema =
         level={level}
         module={module}
         redemittel={redemittel}
+      />
+    </div>
+  : <div class="px-8 py-16 text-center text-white">
+      <h1 class="mb-4 text-3xl">Lektion nicht gefunden</h1>
+      <p class="mb-8 text-zinc-400">Das gewünschte Prüfungsmodul existiert nicht.</p>
+      <BackButton
+        href={`/pruefung/${level}/`}
+        label="Zurück zum Prüfungsniveau"
       />
     </div>
   }

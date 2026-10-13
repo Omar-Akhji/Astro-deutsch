@@ -173,7 +173,7 @@ function initPageAnimations(): void {
     // 2. Zoom-in animations (e.g. badges, decorative dividers, stat boxes)
     const zoomElements = gsap.utils.toArray<HTMLElement>('[data-animate="zoom-in"]');
     if (zoomElements.length > 0) {
-      gsap.set(zoomElements, { autoAlpha: 0, scale: 0.97, y: 8, force3D: true });
+      gsap.set(zoomElements, { autoAlpha: 0, scale: 0.97, force3D: true });
 
       ScrollTrigger.batch(zoomElements, {
         interval: 0.08,
@@ -192,7 +192,7 @@ function initPageAnimations(): void {
               gsap.set(batch, { willChange: "transform, opacity" });
             },
             onComplete: () => {
-              gsap.set(batch, { clearProps: "willChange" });
+              gsap.set(batch, { clearProps: "transform,opacity,willChange" });
             },
           });
         },
