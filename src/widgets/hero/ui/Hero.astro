@@ -47,41 +47,39 @@ const displayCategory = category && /^Kapitel\b/i.test(category) ? "Wortschatz" 
       },
     ]}
   >
-    {(displayCategory || badge) && (
-      <div
-        class:list={["mbe-4 flex flex-wrap items-center gap-3", { "justify-center": !gradient }]}
-        data-animate={animateFadeUp}
-      >
-        {displayCategory && (
-          <span
-            class:list={[
-              "inline-block rounded-full px-6 py-2 font-bold",
-              {
-                "bg-black/20 text-xs text-white tablet:text-sm": gradient,
-                "border-2 border-yellow bg-transparent text-lg text-yellow shadow-sm shadow-yellow/10 tablet:text-xl":
-                  !gradient,
-              },
-            ]}
-          >
-            {displayCategory}
-          </span>
-        )}
-        {badge && (
-          <span
-            class:list={[
-              "inline-block rounded-lg px-3 py-1.5 text-xs font-bold shadow-sm tablet:text-sm",
-              {
-                "bg-white/20 text-white": gradient,
-                "border-[1.5px] border-white/15 bg-white/10 text-mist-200 backdrop-blur-md":
-                  !gradient,
-              },
-            ]}
-          >
-            {badge}
-          </span>
-        )}
-      </div>
-    )}
+    <div
+      class:list={["mbe-4 flex flex-wrap items-center gap-3", { "justify-center": !gradient }]}
+      data-animate={animateFadeUp}
+    >
+      {displayCategory && (
+        <span
+          class:list={[
+            "inline-block rounded-full px-6 py-2 font-bold",
+            {
+              "bg-black/20 text-xs text-white tablet:text-sm": gradient,
+              "border-2 border-yellow bg-transparent text-lg text-yellow shadow-sm shadow-yellow/10 tablet:text-xl":
+                !gradient,
+            },
+          ]}
+        >
+          {displayCategory}
+        </span>
+      )}
+      {badge && (
+        <span
+          class:list={[
+            "inline-block rounded-lg px-3 py-1.5 text-xs font-bold shadow-sm tablet:text-sm",
+            {
+              "bg-white/20 text-white": gradient,
+              "border-[1.5px] border-white/15 bg-white/10 text-mist-200 backdrop-blur-md":
+                !gradient,
+            },
+          ]}
+        >
+          {badge}
+        </span>
+      )}
+    </div>
 
     <HeadingTag
       class:list={[
